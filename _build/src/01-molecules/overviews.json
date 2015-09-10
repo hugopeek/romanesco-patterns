@@ -1,0 +1,46 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRow",
+                    "category": "m_overviews"
+                },{
+                    "name": "overviewRowBasic",
+                    "category": "m_base"
+                },{
+                    "name": "overviewRowIconBasic",
+                    "category": "m_base"
+                },{
+                    "name": "overviewRowImageBasic",
+                    "category": "m_base"
+                },{
+                    "name": "overviewRowImageLeft",
+                    "category": "m_base"
+                },{
+                    "name": "overviewRowImageTop",
+                    "category": "m_base"
+                },{
+                    "name": "overviewRowTitle",
+                    "category": "m_base"
+                },{
+                    "name": "overviewRowFluid",
+                    "category": "m_fluid"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_overviews",
+                    "parent": "01-molecules"
+                },{
+                    "name": "m_base",
+                    "parent": "m_overviews"
+                },{
+                    "name": "m_fluid",
+                    "parent": "m_overviews"
+                }
+            ]
+        }
+    }
+}

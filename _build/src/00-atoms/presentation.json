@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "favicons",
+                    "category": "a_presentation"
+                },{
+                    "name": "logo",
+                    "category": "a_presentation"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_presentation",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

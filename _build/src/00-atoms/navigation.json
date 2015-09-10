@@ -1,0 +1,46 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "breadcrumbOuter",
+                    "category": "a_breadcrumbs"
+                },{
+                    "name": "breadcrumbRow",
+                    "category": "a_breadcrumbs"
+                },{
+                    "name": "breadcrumbCurrent",
+                    "category": "a_breadcrumbs"
+                },{
+                    "name": "navWrapper",
+                    "category": "a_primary"
+                },{
+                    "name": "navItem",
+                    "category": "a_primary"
+                },{
+                    "name": "navItemWrapper",
+                    "category": "a_primary"
+                },{
+                    "name": "navItemParent",
+                    "category": "a_primary"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_navigation",
+                    "parent": "00-atoms"
+                },{
+                    "name": "a_breadcrumbs",
+                    "parent": "a_navigation"
+                },{
+                    "name": "a_primary",
+                    "parent": "a_navigation"
+                },{
+                    "name": "a_offcanvas",
+                    "parent": "a_navigation"
+                }
+            ]
+        }
+    }
+}

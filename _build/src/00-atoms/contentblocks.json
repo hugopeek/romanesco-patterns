@@ -1,0 +1,55 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbCTASelect",
+                    "category": "a_cta"
+                },{
+                    "name": "cbLayoutBackgrounds",
+                    "category": "a_layouts"
+                },{
+                    "name": "cbOverviewColsDesktop",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbOverviewColsMobile",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbOverviewColsRatio",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbOverviewRowImg",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbOverviewRowImgFallback",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbOverviewSortBy",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbOverviewTemplates",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbOverviewTemplatesFluid",
+                    "category": "a_overviews"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_contentblocks",
+                    "parent": "00-atoms"
+                },{
+                    "name": "a_cta",
+                    "parent": "a_contentblocks"
+                },{
+                    "name": "a_layouts",
+                    "parent": "a_contentblocks"
+                },{
+                    "name": "a_overviews",
+                    "parent": "a_contentblocks"
+                }
+            ]
+        }
+    }
+}

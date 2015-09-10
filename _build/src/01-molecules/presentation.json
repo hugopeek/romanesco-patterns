@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "hero",
+                    "category": "m_presentation"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_presentation",
+                    "parent": "01-molecules"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "PatternLab",
+    "lowCaseName": "patternlab",
+    "description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
+    "author": "Hugo Peek",
+    "version": "0.1.0",
+
+    "package": {
+        "elements": {
+            "categories": [
+                {
+                    "name": "00-atoms"
+                },{
+                    "name": "01-molecules"
+                },{
+                    "name": "02-organisms"
+                },{
+                    "name": "03-templates"
+                },{
+                    "name": "04-pages"
+                }
+            ]
+        }
+    }
+}

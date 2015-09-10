@@ -1,0 +1,34 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbLayoutSingleColumn",
+                    "category": "o_layouts"
+                },{
+                    "name": "cbLayoutTwoColumns",
+                    "category": "o_layouts"
+                },{
+                    "name": "cbLayoutThreeColumns",
+                    "category": "o_layouts"
+                },{
+                    "name": "cbLayoutFourColumns",
+                    "category": "o_layouts"
+                },{
+                    "name": "cbLayoutContentSidebar",
+                    "category": "o_layouts"
+                },{
+                    "name": "cbLayoutSidebarContent",
+                    "category": "o_layouts"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_layouts",
+                    "parent": "02-organisms"
+                }
+            ]
+        }
+    }
+}

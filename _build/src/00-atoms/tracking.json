@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "hitCount",
+                    "category": "a_tracking"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_tracking",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

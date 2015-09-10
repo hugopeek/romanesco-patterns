@@ -1,0 +1,25 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewOuter",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterSpecific",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterFluid",
+                    "category": "o_overviews"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_overviews",
+                    "parent": "02-organisms"
+                }
+            ]
+        }
+    }
+}

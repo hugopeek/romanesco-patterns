@@ -1,0 +1,338 @@
+{
+	"name": "PatternLab",
+	"lowCaseName": "patternlab",
+	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
+	"author": "Hugo Peek",
+	"version": "0.1.0",
+	"package": {
+		"elements": {
+			"categories": [
+				{
+					"name": "00-atoms"
+				},
+				{
+					"name": "01-molecules"
+				},
+				{
+					"name": "02-organisms"
+				},
+				{
+					"name": "03-templates"
+				},
+				{
+					"name": "04-pages"
+				},
+				{
+					"name": "a_contentblocks",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "a_cta",
+					"parent": "a_contentblocks"
+				},
+				{
+					"name": "a_layouts",
+					"parent": "a_contentblocks"
+				},
+				{
+					"name": "a_overviews",
+					"parent": "a_contentblocks"
+				},
+				{
+					"name": "a_navigation",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "a_breadcrumbs",
+					"parent": "a_navigation"
+				},
+				{
+					"name": "a_primary",
+					"parent": "a_navigation"
+				},
+				{
+					"name": "a_offcanvas",
+					"parent": "a_navigation"
+				},
+				{
+					"name": "a_presentation",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "a_tracking",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "m_cta",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "m_layouts",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "m_navigation",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "m_overviews",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "m_base",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_fluid",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_presentation",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "m_tracking",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "o_global",
+					"parent": "02-organisms"
+				},
+				{
+					"name": "o_layouts",
+					"parent": "02-organisms"
+				},
+				{
+					"name": "o_overviews",
+					"parent": "02-organisms"
+				}
+			],
+			"chunks": [
+				{
+					"name": "cbCTASelect",
+					"category": "a_cta"
+				},
+				{
+					"name": "cbLayoutBackgrounds",
+					"category": "a_layouts"
+				},
+				{
+					"name": "cbOverviewColsDesktop",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewColsMobile",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewColsRatio",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewRowImg",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewRowImgFallback",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewSortBy",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewTemplates",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewTemplatesFluid",
+					"category": "a_overviews"
+				},
+				{
+					"name": "breadcrumbOuter",
+					"category": "a_breadcrumbs"
+				},
+				{
+					"name": "breadcrumbRow",
+					"category": "a_breadcrumbs"
+				},
+				{
+					"name": "breadcrumbCurrent",
+					"category": "a_breadcrumbs"
+				},
+				{
+					"name": "navWrapper",
+					"category": "a_primary"
+				},
+				{
+					"name": "navItem",
+					"category": "a_primary"
+				},
+				{
+					"name": "navItemWrapper",
+					"category": "a_primary"
+				},
+				{
+					"name": "navItemParent",
+					"category": "a_primary"
+				},
+				{
+					"name": "favicons",
+					"category": "a_presentation"
+				},
+				{
+					"name": "logo",
+					"category": "a_presentation"
+				},
+				{
+					"name": "hitCount",
+					"category": "a_tracking"
+				},
+				{
+					"name": "ctaContentBlock",
+					"category": "m_cta"
+				},
+				{
+					"name": "ctaHeader",
+					"category": "m_cta"
+				},
+				{
+					"name": "cbLayoutSingleColumnNested",
+					"category": "m_layouts"
+				},
+				{
+					"name": "cbLayoutTwoColumnsNested",
+					"category": "m_layouts"
+				},
+				{
+					"name": "cbLayoutThreeColumnsNested",
+					"category": "m_layouts"
+				},
+				{
+					"name": "cbLayoutFourColumnsNested",
+					"category": "m_layouts"
+				},
+				{
+					"name": "cbLayoutContentSidebarNested",
+					"category": "m_layouts"
+				},
+				{
+					"name": "cbLayoutSidebarContentNested",
+					"category": "m_layouts"
+				},
+				{
+					"name": "breadcrumbs",
+					"category": "m_navigation"
+				},
+				{
+					"name": "mainNav",
+					"category": "m_navigation"
+				},
+				{
+					"name": "subNav",
+					"category": "m_navigation"
+				},
+				{
+					"name": "offCanvasNav",
+					"category": "m_navigation"
+				},
+				{
+					"name": "overviewRow",
+					"category": "m_overviews"
+				},
+				{
+					"name": "overviewRowBasic",
+					"category": "m_base"
+				},
+				{
+					"name": "overviewRowIconBasic",
+					"category": "m_base"
+				},
+				{
+					"name": "overviewRowImageBasic",
+					"category": "m_base"
+				},
+				{
+					"name": "overviewRowImageLeft",
+					"category": "m_base"
+				},
+				{
+					"name": "overviewRowImageTop",
+					"category": "m_base"
+				},
+				{
+					"name": "overviewRowTitle",
+					"category": "m_base"
+				},
+				{
+					"name": "overviewRowFluid",
+					"category": "m_fluid"
+				},
+				{
+					"name": "hero",
+					"category": "m_presentation"
+				},
+				{
+					"name": "getHitCount",
+					"category": "m_tracking"
+				},
+				{
+					"name": "googleAnalytics",
+					"category": "m_tracking"
+				},
+				{
+					"name": "head",
+					"category": "o_global"
+				},
+				{
+					"name": "header",
+					"category": "o_global"
+				},
+				{
+					"name": "script",
+					"category": "o_global"
+				},
+				{
+					"name": "footer",
+					"category": "o_global"
+				},
+				{
+					"name": "cbLayoutSingleColumn",
+					"category": "o_layouts"
+				},
+				{
+					"name": "cbLayoutTwoColumns",
+					"category": "o_layouts"
+				},
+				{
+					"name": "cbLayoutThreeColumns",
+					"category": "o_layouts"
+				},
+				{
+					"name": "cbLayoutFourColumns",
+					"category": "o_layouts"
+				},
+				{
+					"name": "cbLayoutContentSidebar",
+					"category": "o_layouts"
+				},
+				{
+					"name": "cbLayoutSidebarContent",
+					"category": "o_layouts"
+				},
+				{
+					"name": "overviewOuter",
+					"category": "o_overviews"
+				},
+				{
+					"name": "overviewOuterSpecific",
+					"category": "o_overviews"
+				},
+				{
+					"name": "overviewOuterFluid",
+					"category": "o_overviews"
+				}
+			]
+		}
+	}
+}
