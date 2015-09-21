@@ -2,12 +2,15 @@
 <html lang="[[++cultureKey]]">
 
 [[$head]]
-[[$header]]
 
 <body id="home">
 
 <div class="pusher">
-    [[$header]]
+    [[$headerBasic?
+        &masthead=`0`
+        &hero=`1`
+        &search=`0`
+    ]]
     [[$subNav]]
     [[$offCanvasNav]]
 

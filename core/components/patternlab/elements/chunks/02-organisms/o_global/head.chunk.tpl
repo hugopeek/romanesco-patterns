@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="[[!++site_url]]">
 
-    <link href="_patternlab/dist/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
-
-    <!-- DEV ONLY!! -->
-    <link href="_patternlab/css/custom.css" rel="stylesheet">
+    <link href="[[++patternlab.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
 
     [[++head_additional]]
     [[$favicons? &tileColor=`[[++favicon_tile_color]]` &themeColor=`[[++favicon_theme_color]]`]]
 
-    [[-$googleAnalytics]]
+    [[If?
+        &subject=`[[++patternlab.dev_mode]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`<link href="[[++patternlab.custom_css_path]]" rel="stylesheet">`
+        &else=`[[$googleAnalytics]]`
+    ]]
 </head>

@@ -1,4 +1,4 @@
-<div class="ui stackable two column grid">
+<div class="ui [[+cols]] column doubling stackable [[+padding]] grid">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@Bootstrap` &else=`getCache`]]?
         &element=`pdoResources`
         &cacheKey=`overviews`
@@ -15,11 +15,11 @@
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
 
         &row_tpl=`[[+row_tpl]]`
-        &cols_mobile=`[[+cols_mobile]]`
-        &cols_desktop=`[[+cols_desktop]]`
         &wrapper=`[[+wrapper]]`
+        &de_emphasize=`[[+de_emphasize]]`
         &link_text=`[[+link_text]]`
         &title_field=`[[+title_field]]`
+        &title_hierarchy=`[[+title_hierarchy]]`
     ]]
 </div>
 

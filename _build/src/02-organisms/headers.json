@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "headerBasic",
+                    "category": "o_headers"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_headers",
+                    "parent": "02-organisms"
+                }
+            ]
+        }
+    }
+}

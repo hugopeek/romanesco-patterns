@@ -39,6 +39,10 @@
 					"parent": "a_contentblocks"
 				},
 				{
+					"name": "a_settings",
+					"parent": "a_contentblocks"
+				},
+				{
 					"name": "a_navigation",
 					"parent": "00-atoms"
 				},
@@ -99,6 +103,10 @@
 					"parent": "02-organisms"
 				},
 				{
+					"name": "o_headers",
+					"parent": "02-organisms"
+				},
+				{
 					"name": "o_layouts",
 					"parent": "02-organisms"
 				},
@@ -117,27 +125,11 @@
 					"category": "a_layouts"
 				},
 				{
-					"name": "cbOverviewColsDesktop",
-					"category": "a_overviews"
-				},
-				{
-					"name": "cbOverviewColsMobile",
-					"category": "a_overviews"
-				},
-				{
-					"name": "cbOverviewColsRatio",
-					"category": "a_overviews"
-				},
-				{
 					"name": "cbOverviewRowImg",
 					"category": "a_overviews"
 				},
 				{
 					"name": "cbOverviewRowImgFallback",
-					"category": "a_overviews"
-				},
-				{
-					"name": "cbOverviewSortBy",
 					"category": "a_overviews"
 				},
 				{
@@ -147,6 +139,26 @@
 				{
 					"name": "cbOverviewTemplatesFluid",
 					"category": "a_overviews"
+				},
+				{
+					"name": "cbOverviewTitleHierarchy",
+					"category": "a_overviews"
+				},
+				{
+					"name": "cbSettingColumns",
+					"category": "a_settings"
+				},
+				{
+					"name": "cbSettingColumnsExtra",
+					"category": "a_settings"
+				},
+				{
+					"name": "cbSettingPadding",
+					"category": "a_settings"
+				},
+				{
+					"name": "cbSettingSortBy",
+					"category": "a_settings"
 				},
 				{
 					"name": "breadcrumbOuter",
@@ -249,6 +261,10 @@
 					"category": "m_base"
 				},
 				{
+					"name": "overviewRowIconLeft",
+					"category": "m_base"
+				},
+				{
 					"name": "overviewRowImageBasic",
 					"category": "m_base"
 				},
@@ -262,6 +278,10 @@
 				},
 				{
 					"name": "overviewRowTitle",
+					"category": "m_base"
+				},
+				{
+					"name": "overviewRowTitleSub",
 					"category": "m_base"
 				},
 				{
@@ -285,16 +305,16 @@
 					"category": "o_global"
 				},
 				{
-					"name": "header",
-					"category": "o_global"
-				},
-				{
 					"name": "script",
 					"category": "o_global"
 				},
 				{
 					"name": "footer",
 					"category": "o_global"
+				},
+				{
+					"name": "headerBasic",
+					"category": "o_headers"
 				},
 				{
 					"name": "cbLayoutSingleColumn",
@@ -333,6 +353,32 @@
 					"category": "o_overviews"
 				}
 			]
-		}
+		},
+		"systemSettings": [
+			{
+				"key": "semantic_dist_path",
+				"type": "textfield",
+				"area": "Paths",
+				"value": "semantic/dist"
+			},
+			{
+				"key": "custom_css_path",
+				"type": "textfield",
+				"area": "Paths",
+				"value": "semantic/css/custom.css"
+			},
+			{
+				"key": "custom_js_path",
+				"type": "textfield",
+				"area": "Paths",
+				"value": "semantic/js/site.js"
+			},
+			{
+				"key": "dev_mode",
+				"type": "combo-boolean",
+				"area": "Settings",
+				"value": "1"
+			}
+		]
 	}
 }

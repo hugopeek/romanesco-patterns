@@ -1,3 +1,3 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="_patternlab/dist/semantic.min.js"></script>
-<script src="_patternlab/js/site.js"></script>
+<script src="[[++patternlab.semantic_dist_path]]/semantic.min.js"></script>
+<script src="[[++patternlab.custom_js_path]]"></script>

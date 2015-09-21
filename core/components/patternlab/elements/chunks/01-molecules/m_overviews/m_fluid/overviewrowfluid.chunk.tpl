@@ -15,13 +15,13 @@
 
 <div class="ui vertical stripe segment [[+background]]">
     <div class="ui container">
-        <div class="ui two column stackable grid [[+interchange]]">
+        <div class="ui stackable equal width grid [[+interchange]]">
             <div class="column">
                 <a href="[[~[[+id]]]]">
                     [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
                 </a>
             </div>
-            <div class="floated column">
+            <div class="[[+cols]] wide floated column">
                 <h2 class="ui heading">
                     <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
                 </h2>

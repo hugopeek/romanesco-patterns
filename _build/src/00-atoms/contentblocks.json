@@ -9,22 +9,10 @@
                     "name": "cbLayoutBackgrounds",
                     "category": "a_layouts"
                 },{
-                    "name": "cbOverviewColsDesktop",
-                    "category": "a_overviews"
-                },{
-                    "name": "cbOverviewColsMobile",
-                    "category": "a_overviews"
-                },{
-                    "name": "cbOverviewColsRatio",
-                    "category": "a_overviews"
-                },{
                     "name": "cbOverviewRowImg",
                     "category": "a_overviews"
                 },{
                     "name": "cbOverviewRowImgFallback",
-                    "category": "a_overviews"
-                },{
-                    "name": "cbOverviewSortBy",
                     "category": "a_overviews"
                 },{
                     "name": "cbOverviewTemplates",
@@ -32,6 +20,21 @@
                 },{
                     "name": "cbOverviewTemplatesFluid",
                     "category": "a_overviews"
+                },{
+                    "name": "cbOverviewTitleHierarchy",
+                    "category": "a_overviews"
+                },{
+                    "name": "cbSettingColumns",
+                    "category": "a_settings"
+                },{
+                    "name": "cbSettingColumnsExtra",
+                    "category": "a_settings"
+                },{
+                    "name": "cbSettingPadding",
+                    "category": "a_settings"
+                },{
+                    "name": "cbSettingSortBy",
+                    "category": "a_settings"
                 }
             ],
 
@@ -47,6 +50,9 @@
                     "parent": "a_contentblocks"
                 },{
                     "name": "a_overviews",
+                    "parent": "a_contentblocks"
+                },{
+                    "name": "a_settings",
                     "parent": "a_contentblocks"
                 }
             ]

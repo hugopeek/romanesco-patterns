@@ -12,6 +12,9 @@
                     "name": "overviewRowIconBasic",
                     "category": "m_base"
                 },{
+                    "name": "overviewRowIconLeft",
+                    "category": "m_base"
+                },{
                     "name": "overviewRowImageBasic",
                     "category": "m_base"
                 },{
@@ -22,6 +25,9 @@
                     "category": "m_base"
                 },{
                     "name": "overviewRowTitle",
+                    "category": "m_base"
+                },{
+                    "name": "overviewRowTitleSub",
                     "category": "m_base"
                 },{
                     "name": "overviewRowFluid",

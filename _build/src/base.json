@@ -20,6 +20,29 @@
                     "name": "04-pages"
                 }
             ]
-        }
+        },
+        "systemSettings": [
+            {
+                "key": "semantic_dist_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "semantic/dist"
+            },{
+                "key": "custom_css_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "semantic/css/custom.css"
+            },{
+                "key": "custom_js_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "semantic/js/site.js"
+            },{
+                "key": "dev_mode",
+                "type": "combo-boolean",
+                "area": "Settings",
+                "value": "1"
+            }
+        ]
     }
 }

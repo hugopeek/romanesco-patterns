@@ -1,4 +1,4 @@
-<nav id="submenu" class="ui large pointing secondary menu">
+<nav id="submenu" class="ui large inverted pointing menu blue">
     <div class="ui container">
         [[pdoMenu?
             &parents=`[[UltimateParent]]`

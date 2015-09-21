@@ -1,6 +1,6 @@
-<div class="row overview [[+row_tpl:stripString=`overviewRow`:lcase:replace=`basic== basic`]]">
+<div class="ui [[+cols]] column doubling stackable [[+padding]] grid">
     [[!getCache?
-        &element=`getResources`
+        &element=`pdoResources`
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
