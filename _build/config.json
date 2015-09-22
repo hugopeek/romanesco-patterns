@@ -145,6 +145,14 @@
 					"category": "a_overviews"
 				},
 				{
+					"name": "cbSettingButtonSize",
+					"category": "a_settings"
+				},
+				{
+					"name": "cbSettingButtonType",
+					"category": "a_settings"
+				},
+				{
 					"name": "cbSettingColumns",
 					"category": "a_settings"
 				},
@@ -302,6 +310,10 @@
 				},
 				{
 					"name": "head",
+					"category": "o_global"
+				},
+				{
+					"name": "header",
 					"category": "o_global"
 				},
 				{

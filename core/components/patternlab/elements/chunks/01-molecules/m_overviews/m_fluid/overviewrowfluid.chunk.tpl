@@ -13,11 +13,11 @@
    &then=`[[+idx:mod:eq=`0`:then=`computer reversed tablet reversed`]]`
 ]]
 
-<div class="ui vertical stripe segment [[+background]]">
+<section class="ui vertical stripe segment [[+background]]">
     <div class="ui container">
         <div class="ui stackable equal width grid [[+interchange]]">
             <div class="column">
-                <a href="[[~[[+id]]]]">
+                <a class="ui image" href="[[~[[+id]]]]">
                     [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
                 </a>
             </div>
@@ -30,4 +30,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

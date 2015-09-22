@@ -1,4 +1,4 @@
-<div class="ui [[+cols]] column doubling stackable [[+padding]] grid">
+<div class="ui [[+cols]] column doubling stackable [[+padding]] [[!If? &subject=`[[+wrapper]]` &operator=`EQ` &operand=`1` &then=`cards` &else=`grid`]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@Bootstrap` &else=`getCache`]]?
         &element=`pdoResources`
         &cacheKey=`overviews`
