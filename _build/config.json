@@ -27,19 +27,19 @@
 					"parent": "00-atoms"
 				},
 				{
-					"name": "a_cta",
+					"name": "a_cb_cta",
 					"parent": "a_contentblocks"
 				},
 				{
-					"name": "a_layouts",
+					"name": "a_cb_layouts",
 					"parent": "a_contentblocks"
 				},
 				{
-					"name": "a_overviews",
+					"name": "a_cb_overviews",
 					"parent": "a_contentblocks"
 				},
 				{
-					"name": "a_settings",
+					"name": "a_cb_settings",
 					"parent": "a_contentblocks"
 				},
 				{
@@ -47,16 +47,20 @@
 					"parent": "00-atoms"
 				},
 				{
-					"name": "a_breadcrumbs",
+					"name": "a_nav_breadcrumbs",
 					"parent": "a_navigation"
 				},
 				{
-					"name": "a_primary",
+					"name": "a_nav_primary",
 					"parent": "a_navigation"
 				},
 				{
-					"name": "a_offcanvas",
+					"name": "a_nav_offcanvas",
 					"parent": "a_navigation"
+				},
+				{
+					"name": "a_overviews",
+					"parent": "00-atoms"
 				},
 				{
 					"name": "a_presentation",
@@ -83,11 +87,15 @@
 					"parent": "01-molecules"
 				},
 				{
-					"name": "m_base",
+					"name": "m_ov_base",
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_fluid",
+					"name": "m_ov_team",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_ov_testimonial",
 					"parent": "m_overviews"
 				},
 				{
@@ -118,83 +126,83 @@
 			"chunks": [
 				{
 					"name": "cbCTASelect",
-					"category": "a_cta"
+					"category": "a_cb_cta"
 				},
 				{
 					"name": "cbLayoutBackgrounds",
-					"category": "a_layouts"
+					"category": "a_cb_layouts"
 				},
 				{
 					"name": "cbOverviewRowImg",
-					"category": "a_overviews"
+					"category": "a_cb_overviews"
 				},
 				{
 					"name": "cbOverviewRowImgFallback",
-					"category": "a_overviews"
+					"category": "a_cb_overviews"
 				},
 				{
 					"name": "cbOverviewTemplates",
-					"category": "a_overviews"
+					"category": "a_cb_overviews"
 				},
 				{
 					"name": "cbOverviewTemplatesFluid",
-					"category": "a_overviews"
+					"category": "a_cb_overviews"
 				},
 				{
 					"name": "cbOverviewTitleHierarchy",
-					"category": "a_overviews"
+					"category": "a_cb_overviews"
 				},
 				{
 					"name": "cbSettingButtonSize",
-					"category": "a_settings"
+					"category": "a_cb_settings"
 				},
 				{
 					"name": "cbSettingButtonType",
-					"category": "a_settings"
+					"category": "a_cb_settings"
 				},
 				{
 					"name": "cbSettingColumns",
-					"category": "a_settings"
+					"category": "a_cb_settings"
 				},
 				{
 					"name": "cbSettingColumnsExtra",
-					"category": "a_settings"
+					"category": "a_cb_settings"
 				},
 				{
 					"name": "cbSettingPadding",
-					"category": "a_settings"
+					"category": "a_cb_settings"
 				},
 				{
 					"name": "cbSettingSortBy",
-					"category": "a_settings"
+					"category": "a_cb_settings"
 				},
 				{
 					"name": "breadcrumbOuter",
-					"category": "a_breadcrumbs"
+					"category": "a_nav_breadcrumbs"
 				},
 				{
 					"name": "breadcrumbRow",
-					"category": "a_breadcrumbs"
+					"category": "a_nav_breadcrumbs"
 				},
 				{
 					"name": "breadcrumbCurrent",
-					"category": "a_breadcrumbs"
+					"category": "a_nav_breadcrumbs"
 				},
 				{
 					"name": "navWrapper",
-					"category": "a_primary"
+					"category": "a_nav_primary"
 				},
 				{
 					"name": "navItem",
-					"category": "a_primary"
+					"category": "a_nav_primary"
 				},
 				{
 					"name": "navItemWrapper",
-					"category": "a_primary"
+					"category": "a_nav_primary"
 				},
 				{
 					"name": "navItemParent",
-					"category": "a_primary"
+					"category": "a_nav_primary"
 				},
 				{
 					"name": "favicons",
@@ -261,40 +269,56 @@
 					"category": "m_overviews"
 				},
 				{
+					"name": "overviewRowFluid",
+					"category": "m_overviews"
+				},
+				{
 					"name": "overviewRowBasic",
-					"category": "m_base"
+					"category": "m_ov_base"
 				},
 				{
 					"name": "overviewRowIconBasic",
-					"category": "m_base"
+					"category": "m_ov_base"
 				},
 				{
 					"name": "overviewRowIconLeft",
-					"category": "m_base"
+					"category": "m_ov_base"
 				},
 				{
 					"name": "overviewRowImageBasic",
-					"category": "m_base"
+					"category": "m_ov_base"
 				},
 				{
 					"name": "overviewRowImageLeft",
-					"category": "m_base"
+					"category": "m_ov_base"
 				},
 				{
-					"name": "overviewRowImageTop",
-					"category": "m_base"
+					"name": "overviewRowImageFluid",
+					"category": "m_ov_base"
 				},
 				{
 					"name": "overviewRowTitle",
-					"category": "m_base"
+					"category": "m_ov_base"
 				},
 				{
 					"name": "overviewRowTitleSub",
-					"category": "m_base"
+					"category": "m_ov_base"
 				},
 				{
-					"name": "overviewRowFluid",
-					"category": "m_fluid"
+					"name": "overviewRowTeamBasic",
+					"category": "m_ov_team"
+				},
+				{
+					"name": "overviewRowTeamFluid",
+					"category": "m_ov_team"
+				},
+				{
+					"name": "overviewRowTestimonialBasic",
+					"category": "m_ov_testimonial"
+				},
+				{
+					"name": "overviewRowTestimonialWide",
+					"category": "m_ov_testimonial"
 				},
 				{
 					"name": "hero",
@@ -363,6 +387,96 @@
 				{
 					"name": "overviewOuterFluid",
 					"category": "o_overviews"
+				}
+			],
+			"tvs": [
+				{
+					"caption": "Image (Default)",
+					"name": "overview_img_default",
+					"description": "This is the most common overview image, in a regular 4:3 aspect ratio.",
+					"type": "imageplus",
+					"category": "a_overviews",
+					"sortOrder": "1",
+					"inputProperties": {
+						"targetWidth": "960",
+						"targetRatio": "1.33",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`960`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					}
+				},
+				{
+					"caption": "Image (Square)",
+					"name": "overview_img_square",
+					"description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
+					"type": "imageplus",
+					"category": "a_overviews",
+					"sortOrder": "2",
+					"inputProperties": {
+						"targetWidth": "800",
+						"targetRatio": "1.0",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					}
+				},
+				{
+					"caption": "Image (Wide)",
+					"name": "overview_img_wide",
+					"description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
+					"type": "imageplus",
+					"category": "a_overviews",
+					"sortOrder": "3",
+					"inputProperties": {
+						"targetWidth": "960",
+						"targetRatio": "1.77",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`960`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					},
+					"templates": [
+						"defaultOverview",
+						"defaultDetail"
+					]
+				},
+				{
+					"caption": "Image (Panorama)",
+					"name": "overview_img_pano",
+					"description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
+					"type": "imageplus",
+					"category": "a_overviews",
+					"sortOrder": "4",
+					"inputProperties": {
+						"targetWidth": "1600",
+						"targetRatio": "2.35",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`1600`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					}
+				},
+				{
+					"caption": "Icon (SVG)",
+					"name": "overview_icon_svg",
+					"description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
+					"type": "file",
+					"category": "a_overviews",
+					"sortOrder": "10"
+				},
+				{
+					"caption": "Icon (Font)",
+					"name": "overview_icon_font",
+					"description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
+					"type": "file",
+					"category": "a_overviews",
+					"sortOrder": "11"
 				}
 			]
 		},

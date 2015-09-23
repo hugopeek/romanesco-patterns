@@ -1,0 +1,1 @@
+<img src="[[pthumb? &input=`[[++overview_img_fallback]]` &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width:mpy=`[[+mpy]]`]]&zc=1`]]">

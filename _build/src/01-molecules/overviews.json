@@ -6,32 +6,50 @@
                     "name": "overviewRow",
                     "category": "m_overviews"
                 },{
+                    "name": "overviewRowFluid",
+                    "category": "m_overviews"
+                },{
                     "name": "overviewRowBasic",
-                    "category": "m_base"
+                    "category": "m_ov_base"
                 },{
                     "name": "overviewRowIconBasic",
-                    "category": "m_base"
+                    "category": "m_ov_base"
                 },{
                     "name": "overviewRowIconLeft",
-                    "category": "m_base"
+                    "category": "m_ov_base"
                 },{
                     "name": "overviewRowImageBasic",
-                    "category": "m_base"
+                    "category": "m_ov_base"
                 },{
                     "name": "overviewRowImageLeft",
-                    "category": "m_base"
+                    "category": "m_ov_base"
                 },{
-                    "name": "overviewRowImageTop",
-                    "category": "m_base"
+                    "name": "overviewRowImageFluid",
+                    "category": "m_ov_base"
                 },{
                     "name": "overviewRowTitle",
-                    "category": "m_base"
+                    "category": "m_ov_base"
                 },{
                     "name": "overviewRowTitleSub",
-                    "category": "m_base"
+                    "category": "m_ov_base"
                 },{
-                    "name": "overviewRowFluid",
-                    "category": "m_fluid"
+                    "name": "overviewRowTeamBasic",
+                    "category": "m_ov_team"
+                },{
+                    "name": "overviewRowTeamFluid",
+                    "category": "m_ov_team"
+                },{
+                    "name": "overviewRowTestimonialBasic",
+                    "category": "m_ov_testimonial"
+                },{
+                    "name": "overviewRowTestimonialWide",
+                    "category": "m_ov_testimonial"
+                },{
+                    "name": "overviewRowBlogBasic",
+                    "category": "m_ov_blog"
+                },{
+                    "name": "overviewRowBlogFluid",
+                    "category": "m_ov_blog"
                 }
             ],
 
@@ -40,10 +58,16 @@
                     "name": "m_overviews",
                     "parent": "01-molecules"
                 },{
-                    "name": "m_base",
+                    "name": "m_ov_base",
                     "parent": "m_overviews"
                 },{
-                    "name": "m_fluid",
+                    "name": "m_ov_team",
+                    "parent": "m_overviews"
+                },{
+                    "name": "m_ov_testimonial",
+                    "parent": "m_overviews"
+                },{
+                    "name": "m_ov_blog",
                     "parent": "m_overviews"
                 }
             ]

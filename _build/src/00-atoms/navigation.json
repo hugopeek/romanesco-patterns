@@ -4,25 +4,25 @@
             "chunks": [
                 {
                     "name": "breadcrumbOuter",
-                    "category": "a_breadcrumbs"
+                    "category": "a_nav_breadcrumbs"
                 },{
                     "name": "breadcrumbRow",
-                    "category": "a_breadcrumbs"
+                    "category": "a_nav_breadcrumbs"
                 },{
                     "name": "breadcrumbCurrent",
-                    "category": "a_breadcrumbs"
+                    "category": "a_nav_breadcrumbs"
                 },{
                     "name": "navWrapper",
-                    "category": "a_primary"
+                    "category": "a_nav_primary"
                 },{
                     "name": "navItem",
-                    "category": "a_primary"
+                    "category": "a_nav_primary"
                 },{
                     "name": "navItemWrapper",
-                    "category": "a_primary"
+                    "category": "a_nav_primary"
                 },{
                     "name": "navItemParent",
-                    "category": "a_primary"
+                    "category": "a_nav_primary"
                 }
             ],
 
@@ -31,13 +31,13 @@
                     "name": "a_navigation",
                     "parent": "00-atoms"
                 },{
-                    "name": "a_breadcrumbs",
+                    "name": "a_nav_breadcrumbs",
                     "parent": "a_navigation"
                 },{
-                    "name": "a_primary",
+                    "name": "a_nav_primary",
                     "parent": "a_navigation"
                 },{
-                    "name": "a_offcanvas",
+                    "name": "a_nav_offcanvas",
                     "parent": "a_navigation"
                 }
             ]

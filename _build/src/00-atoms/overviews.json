@@ -1,0 +1,97 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [],
+
+            "tvs": [
+                {
+                    "caption": "Image (Default)",
+                    "name": "overview_img_default",
+                    "description": "This is the most common overview image, in a regular 4:3 aspect ratio.",
+                    "type": "imageplus",
+                    "category": "a_overviews",
+                    "sortOrder": "1",
+                    "inputProperties": {
+                        "targetWidth": "960",
+                        "targetRatio": "1.33",
+                        "allowAltTag": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`960`]]&zc=1",
+                        "outputChunk": "cbOverviewRowImg"
+                    }
+                },{
+                    "caption": "Image (Square)",
+                    "name": "overview_img_square",
+                    "description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
+                    "type": "imageplus",
+                    "category": "a_overviews",
+                    "sortOrder": "2",
+                    "inputProperties": {
+                        "targetWidth": "800",
+                        "targetRatio": "1.0",
+                        "allowAltTag": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+                        "outputChunk": "cbOverviewRowImg"
+                    }
+                },{
+                    "caption": "Image (Wide)",
+                    "name": "overview_img_wide",
+                    "description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
+                    "type": "imageplus",
+                    "category": "a_overviews",
+                    "sortOrder": "3",
+                    "inputProperties": {
+                        "targetWidth": "960",
+                        "targetRatio": "1.77",
+                        "allowAltTag": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`960`]]&zc=1",
+                        "outputChunk": "cbOverviewRowImg"
+                    },
+                    "templates": ["defaultOverview", "defaultDetail"]
+                },{
+                    "caption": "Image (Panorama)",
+                    "name": "overview_img_pano",
+                    "description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
+                    "type": "imageplus",
+                    "category": "a_overviews",
+                    "sortOrder": "4",
+                    "inputProperties": {
+                        "targetWidth": "1600",
+                        "targetRatio": "2.35",
+                        "allowAltTag": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`1600`]]&zc=1",
+                        "outputChunk": "cbOverviewRowImg"
+                    }
+                },{
+                    "caption": "Icon (SVG)",
+                    "name": "overview_icon_svg",
+                    "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
+                    "type": "file",
+                    "category": "a_overviews",
+                    "sortOrder": "10"
+                },{
+                    "caption": "Icon (Font)",
+                    "name": "overview_icon_font",
+                    "description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
+                    "type": "file",
+                    "category": "a_overviews",
+                    "sortOrder": "11"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_overviews",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

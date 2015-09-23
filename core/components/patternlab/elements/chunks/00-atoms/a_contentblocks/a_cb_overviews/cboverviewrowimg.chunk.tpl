@@ -1,0 +1,1 @@
+<img src="[[pthumb? &input=`[[+url]]` &options=`[[+options]]`]]" alt="[[+alt]]">

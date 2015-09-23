@@ -1,5 +1,5 @@
 [[!getCache?
-    &element=`pdoResources`
+    &element=`getResources`
     &cacheKey=`overviews`
     [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
@@ -8,7 +8,7 @@
     &limit=`[[+limit]]`
     &tpl=`overviewRowFluid`
     &includeTVs=`1`
-    &processTVs=`overview_image`
+    &processTVs=`1`
     &showHidden=`[[+show_hidden:default=`0`]]`
     &sortby=`[[+sortby]]`
     &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`

@@ -4,43 +4,43 @@
             "chunks": [
                 {
                     "name": "cbCTASelect",
-                    "category": "a_cta"
+                    "category": "a_cb_cta"
                 },{
                     "name": "cbLayoutBackgrounds",
-                    "category": "a_layouts"
+                    "category": "a_cb_layouts"
                 },{
                     "name": "cbOverviewRowImg",
-                    "category": "a_overviews"
+                    "category": "a_cb_overviews"
                 },{
                     "name": "cbOverviewRowImgFallback",
-                    "category": "a_overviews"
+                    "category": "a_cb_overviews"
                 },{
                     "name": "cbOverviewTemplates",
-                    "category": "a_overviews"
+                    "category": "a_cb_overviews"
                 },{
                     "name": "cbOverviewTemplatesFluid",
-                    "category": "a_overviews"
+                    "category": "a_cb_overviews"
                 },{
                     "name": "cbOverviewTitleHierarchy",
-                    "category": "a_overviews"
+                    "category": "a_cb_overviews"
                 },{
                     "name": "cbSettingButtonSize",
-                    "category": "a_settings"
+                    "category": "a_cb_settings"
                 },{
                     "name": "cbSettingButtonType",
-                    "category": "a_settings"
+                    "category": "a_cb_settings"
                 },{
                     "name": "cbSettingColumns",
-                    "category": "a_settings"
+                    "category": "a_cb_settings"
                 },{
                     "name": "cbSettingColumnsExtra",
-                    "category": "a_settings"
+                    "category": "a_cb_settings"
                 },{
                     "name": "cbSettingPadding",
-                    "category": "a_settings"
+                    "category": "a_cb_settings"
                 },{
                     "name": "cbSettingSortBy",
-                    "category": "a_settings"
+                    "category": "a_cb_settings"
                 }
             ],
 
@@ -49,16 +49,16 @@
                     "name": "a_contentblocks",
                     "parent": "00-atoms"
                 },{
-                    "name": "a_cta",
+                    "name": "a_cb_cta",
                     "parent": "a_contentblocks"
                 },{
-                    "name": "a_layouts",
+                    "name": "a_cb_layouts",
                     "parent": "a_contentblocks"
                 },{
-                    "name": "a_overviews",
+                    "name": "a_cb_overviews",
                     "parent": "a_contentblocks"
                 },{
-                    "name": "a_settings",
+                    "name": "a_cb_settings",
                     "parent": "a_contentblocks"
                 }
             ]
