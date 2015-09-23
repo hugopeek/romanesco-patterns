@@ -15,7 +15,7 @@
 
 <section class="ui vertical stripe segment [[+background]]">
     <div class="ui container">
-        <div class="ui stackable equal width grid [[+interchange]]">
+        <div class="ui stackable equal width very relaxed grid [[+interchange]]">
             [[!$[[+row_tpl]]]]
         </div>
     </div>

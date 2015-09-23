@@ -11,7 +11,7 @@
     </div>
 
     <div class="eleven wide column">
-        <div class="ui padded pointing segment secondary">
+        <div class="ui padded left pointing segment secondary">
             <p class="quote">[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
         </div>
     </div>

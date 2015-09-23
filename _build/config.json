@@ -99,6 +99,10 @@
 					"parent": "m_overviews"
 				},
 				{
+					"name": "m_ov_blog",
+					"parent": "m_overviews"
+				},
+				{
 					"name": "m_presentation",
 					"parent": "01-molecules"
 				},
@@ -319,6 +323,14 @@
 				{
 					"name": "overviewRowTestimonialWide",
 					"category": "m_ov_testimonial"
+				},
+				{
+					"name": "overviewRowBlogBasic",
+					"category": "m_ov_blog"
+				},
+				{
+					"name": "overviewRowBlogFluid",
+					"category": "m_ov_blog"
 				},
 				{
 					"name": "hero",

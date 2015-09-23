@@ -14,3 +14,5 @@ Team (circular)=overviewRowTeamBasic
 
 Testimonial (vertical)=overviewRowTestimonialBasic
 Testimonial (horizontal)=overviewRowTestimonialWide
+
+Blog=overviewRowBlogBasic

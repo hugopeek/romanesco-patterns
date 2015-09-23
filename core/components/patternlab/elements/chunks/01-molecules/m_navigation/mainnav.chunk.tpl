@@ -13,6 +13,11 @@
 
         [[$navItemsTheme]]
 
-        <a class="item toc">Menu<i class="sidebar icon"></i></a>
+        <div class="item toc">
+            <button class="ui right labeled icon button">
+                <i class="sidebar icon"></i>
+                Menu
+            </button>
+        </div>
     </div>
 </nav>
