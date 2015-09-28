@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbSliderOuter",
+                    "category": "o_slider"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_slider",
+                    "parent": "02-organisms"
+                }
+            ]
+        }
+    }
+}

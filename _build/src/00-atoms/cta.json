@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "ctaTVInputOptions",
+                    "category": "a_cta"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_cta",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

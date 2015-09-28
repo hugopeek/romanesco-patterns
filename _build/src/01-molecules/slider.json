@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbSliderImageRow",
+                    "category": "m_slider"
+                },{
+                    "name": "cbSliderContentRow",
+                    "category": "m_slider"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_slider",
+                    "parent": "01-molecules"
+                }
+            ]
+        }
+    }
+}

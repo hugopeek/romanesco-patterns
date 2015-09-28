@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -41,6 +41,10 @@
 				{
 					"name": "a_cb_settings",
 					"parent": "a_contentblocks"
+				},
+				{
+					"name": "a_cta",
+					"parent": "00-atoms"
 				},
 				{
 					"name": "a_navigation",
@@ -107,6 +111,10 @@
 					"parent": "01-molecules"
 				},
 				{
+					"name": "m_slider",
+					"parent": "01-molecules"
+				},
+				{
 					"name": "m_tracking",
 					"parent": "01-molecules"
 				},
@@ -124,6 +132,10 @@
 				},
 				{
 					"name": "o_overviews",
+					"parent": "02-organisms"
+				},
+				{
+					"name": "o_slider",
 					"parent": "02-organisms"
 				}
 			],
@@ -179,6 +191,10 @@
 				{
 					"name": "cbSettingSortBy",
 					"category": "a_cb_settings"
+				},
+				{
+					"name": "ctaTVInputOptions",
+					"category": "a_cta"
 				},
 				{
 					"name": "breadcrumbOuter",
@@ -337,6 +353,14 @@
 					"category": "m_presentation"
 				},
 				{
+					"name": "cbSliderImageRow",
+					"category": "m_slider"
+				},
+				{
+					"name": "cbSliderContentRow",
+					"category": "m_slider"
+				},
+				{
 					"name": "getHitCount",
 					"category": "m_tracking"
 				},
@@ -399,6 +423,10 @@
 				{
 					"name": "overviewOuterFluid",
 					"category": "o_overviews"
+				},
+				{
+					"name": "cbSliderOuter",
+					"category": "o_slider"
 				}
 			],
 			"tvs": [

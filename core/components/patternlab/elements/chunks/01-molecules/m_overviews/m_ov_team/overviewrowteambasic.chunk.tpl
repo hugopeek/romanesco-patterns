@@ -1,4 +1,4 @@
-<a class="ui circular image" href="[[~[[+id]]]]">
+<a class="ui image" href="[[~[[+id]]]]">
     [[+tv.team_member_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
 </a>
 <div class="center aligned content">
