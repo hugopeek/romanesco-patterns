@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"package": {
 		"elements": {
 			"categories": [
@@ -445,7 +445,11 @@
 					"outputProperties": {
 						"phpThumbParams": "w=[[++max_thumb_width:empty=`960`]]&zc=1",
 						"outputChunk": "cbOverviewRowImg"
-					}
+					},
+					"templates": [
+						"Default - Overview",
+						"Default - Detail"
+					]
 				},
 				{
 					"caption": "Image (Square)",
@@ -462,7 +466,11 @@
 					"outputProperties": {
 						"phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
 						"outputChunk": "cbOverviewRowImg"
-					}
+					},
+					"templates": [
+						"Default - Overview",
+						"Default - Detail"
+					]
 				},
 				{
 					"caption": "Image (Wide)",
@@ -481,8 +489,8 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"defaultOverview",
-						"defaultDetail"
+						"Default - Overview",
+						"Default - Detail"
 					]
 				},
 				{
@@ -500,7 +508,11 @@
 					"outputProperties": {
 						"phpThumbParams": "w=[[++max_thumb_width:empty=`1600`]]&zc=1",
 						"outputChunk": "cbOverviewRowImg"
-					}
+					},
+					"templates": [
+						"Default - Overview",
+						"Default - Detail"
+					]
 				},
 				{
 					"caption": "Icon (SVG)",
@@ -508,7 +520,11 @@
 					"description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
 					"type": "file",
 					"category": "a_overviews",
-					"sortOrder": "10"
+					"sortOrder": "10",
+					"templates": [
+						"Default - Overview",
+						"Default - Detail"
+					]
 				},
 				{
 					"caption": "Icon (Font)",
@@ -516,7 +532,11 @@
 					"description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
 					"type": "file",
 					"category": "a_overviews",
-					"sortOrder": "11"
+					"sortOrder": "11",
+					"templates": [
+						"Default - Overview",
+						"Default - Detail"
+					]
 				}
 			]
 		},

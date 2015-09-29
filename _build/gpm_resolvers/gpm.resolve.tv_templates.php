@@ -17,23 +17,33 @@ if ($object->xpdo) {
             $tvs = array (
   'overview_img_default' => 
   array (
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
   ),
   'overview_img_square' => 
   array (
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
   ),
   'overview_img_wide' => 
   array (
-    0 => 'defaultOverview',
-    1 => 'defaultDetail',
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
   ),
   'overview_img_pano' => 
   array (
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
   ),
   'overview_icon_svg' => 
   array (
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
   ),
   'overview_icon_font' => 
   array (
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
   ),
 );
             foreach ($tvs as $tvName => $templateNames) {

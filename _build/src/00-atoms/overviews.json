@@ -19,7 +19,11 @@
                     "outputProperties": {
                         "phpThumbParams": "w=[[++max_thumb_width:empty=`960`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
-                    }
+                    },
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail"
+                    ]
                 },{
                     "caption": "Image (Square)",
                     "name": "overview_img_square",
@@ -35,7 +39,11 @@
                     "outputProperties": {
                         "phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
-                    }
+                    },
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail"
+                    ]
                 },{
                     "caption": "Image (Wide)",
                     "name": "overview_img_wide",
@@ -52,7 +60,10 @@
                         "phpThumbParams": "w=[[++max_thumb_width:empty=`960`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
                     },
-                    "templates": ["defaultOverview", "defaultDetail"]
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail"
+                    ]
                 },{
                     "caption": "Image (Panorama)",
                     "name": "overview_img_pano",
@@ -68,21 +79,33 @@
                     "outputProperties": {
                         "phpThumbParams": "w=[[++max_thumb_width:empty=`1600`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
-                    }
+                    },
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail"
+                    ]
                 },{
                     "caption": "Icon (SVG)",
                     "name": "overview_icon_svg",
                     "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
                     "type": "file",
                     "category": "a_overviews",
-                    "sortOrder": "10"
+                    "sortOrder": "10",
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail"
+                    ]
                 },{
                     "caption": "Icon (Font)",
                     "name": "overview_icon_font",
                     "description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
                     "type": "file",
                     "category": "a_overviews",
-                    "sortOrder": "11"
+                    "sortOrder": "11",
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail"
+                    ]
                 }
             ],
 
