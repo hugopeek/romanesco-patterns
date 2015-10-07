@@ -1,18 +1,18 @@
-Title only=overviewRowTitleBasic
-Title + Subtitle=overviewRowTitleSub
-Title + Content=overviewRowBasic
+Title only=overviewRowBasic
+Title only (List)=overviewRowBasicList
+Title only (Card)=overviewRowBasicCard
+Title only (Link card)=overviewRowBasicLinkCard
+Title + Subtitle=overviewRowSubtitle
+Title + Subtitle (Card)=overviewRowSubtitleCard
 
-Image only=overviewRowImageLight
-Image (top) + Content=overviewRowImageBasic
-Image (left) + Content=overviewRowImageLeft
+Image only=overviewRowImageMinimal
+Image only (Card)=overviewRowImageMinimalCard
+Image top + Title=overviewRowImageBasic
+Image top + Title (Card)=overviewRowImageBasicCard
+Image left + Title=overviewRowImageLeft
+Image left + Title (Card)=overviewRowImageLeftCard
 
-Icon (top) + Content=overviewRowIconBasic
-Icon (left) + Content=overviewRowIconLeft
-
-Team (cards)=overviewRowTeamBasic
-Team (circular)=overviewRowTeamBasic
-
-Testimonial (vertical)=overviewRowTestimonialBasic
-Testimonial (horizontal)=overviewRowTestimonialWide
-
-Blog=overviewRowBlogBasic
+Icon top=overviewRowIconBasic
+Icon top (Card)=overviewRowIconBasicCard
+Icon left=overviewRowIconLeft
+Icon left (Card)=overviewRowIconLeftCard

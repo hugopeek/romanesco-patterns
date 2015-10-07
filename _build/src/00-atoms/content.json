@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "buttonHrefBasic",
+                    "category": "a_buttons"
+                },{
+                    "name": "buttonHrefOverview",
+                    "category": "a_buttons"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_buttons",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

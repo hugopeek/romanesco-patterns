@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "introtextDescription",
+                    "category": "a_content"
+                },{
+                    "name": "introtextSingleParagraph",
+                    "category": "a_content"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_content",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

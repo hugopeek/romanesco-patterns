@@ -1,4 +1,4 @@
-[[!getCache?
+[[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
     &element=`getResources`
     &cacheKey=`overviews`
     [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
@@ -18,6 +18,19 @@
     &background_odd=`[[+background_odd]]`
     &cols=`[[+cols]]`
     &cols_interchange=`[[+cols_interchange]]`
-    &link_text=`[[+link_text]]`
+
     &title_field=`[[+title_field]]`
+    &link_text=`[[+link_text]]`
+    &img_snap=`[[+img_snap]]`
+    &img_inflate=`[[+img_inflate]]`
 ]]
+
+[[+pagination:eq=`1`:then=`
+<div class="ui grid container">
+    <div class="center aligned column">
+        <div class="ui pagination menu">
+            [[!+page.nav]]
+        </div>
+    </div>
+</div>
+`]]

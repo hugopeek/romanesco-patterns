@@ -1,0 +1,1 @@
+<p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>

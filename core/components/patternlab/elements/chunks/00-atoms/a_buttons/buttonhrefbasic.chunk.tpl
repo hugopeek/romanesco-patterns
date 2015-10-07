@@ -1,0 +1,1 @@
+<a class="[[+button_size]] [[+button_block]] [[+button_type]] ui button" href="[[+link]]" [[+attributes]]>[[+button_text]]</a>

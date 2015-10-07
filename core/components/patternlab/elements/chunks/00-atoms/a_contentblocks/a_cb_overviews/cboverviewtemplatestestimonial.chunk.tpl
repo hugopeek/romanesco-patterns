@@ -1,0 +1,2 @@
+Testimonial (vertical)=overviewRowTestimonialBasic
+Testimonial (horizontal)=overviewRowTestimonialWide
