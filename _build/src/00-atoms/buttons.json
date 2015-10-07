@@ -1,30 +1,19 @@
 {
     "package": {
         "elements": {
-            "chunks": [],
-
-            "tvs": [
+            "chunks": [
                 {
-                    "caption": "Author",
-                    "name": "article_author",
-                    "description": "Select the author of this article. He or she must be a MODX user.",
-                    "type": "listbox",
-                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
-                    "category": "About",
-                    "sortOrder": "1",
-                    "templates": [
-                        "Blog - Article",
-                        "News - Item"
-                    ]
+                    "name": "buttonHrefBasic",
+                    "category": "a_buttons"
+                },{
+                    "name": "buttonHrefOverview",
+                    "category": "a_buttons"
                 }
             ],
-
             "categories": [
                 {
-                    "name": "a_blog",
+                    "name": "a_buttons",
                     "parent": "00-atoms"
-                },{
-                    "name": "About"
                 }
             ]
         }

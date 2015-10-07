@@ -1,6 +1,6 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+layout_column]]`]]
 
-<div class="ui [[+cols]] column doubling stackable [[+padding]] nested [[+[[+prefix]].box_type]]">
+<div class="ui [[+cols]] column doubling stackable [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[!getCache?
         &element=`getResources`
         &cacheKey=`overviews`
@@ -20,6 +20,7 @@
         &column_type=`[[+[[+prefix]].column_type]]`
         &title_field=`[[+title_field]]`
         &title_hierarchy=`[[+title_hierarchy]]`
+        &show_subtitle=`[[+show_subtitle]]`
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
         &de_emphasize=`[[+de_emphasize]]`

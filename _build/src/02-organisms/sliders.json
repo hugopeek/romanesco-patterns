@@ -4,13 +4,13 @@
             "chunks": [
                 {
                     "name": "cbSliderOuter",
-                    "category": "o_slider"
+                    "category": "o_sliders"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "o_slider",
+                    "name": "o_sliders",
                     "parent": "02-organisms"
                 }
             ]

@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowIconTop",
+                    "category": "m_ov_icons"
+                },{
+                    "name": "overviewRowIconTopCard",
+                    "category": "m_ov_icons"
+                },{
+                    "name": "overviewRowIconTopLinkCard",
+                    "category": "m_ov_icons"
+                },{
+                    "name": "overviewRowIconLeft",
+                    "category": "m_ov_icons"
+                },{
+                    "name": "overviewRowIconCompact",
+                    "category": "m_ov_icons"
+                }
+            ]
+        }
+    }
+}

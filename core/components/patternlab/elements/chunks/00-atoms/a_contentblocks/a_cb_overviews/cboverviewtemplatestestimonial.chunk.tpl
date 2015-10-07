@@ -1,2 +1,3 @@
-Testimonial (vertical)=overviewRowTestimonialBasic
-Testimonial (horizontal)=overviewRowTestimonialWide
+Testimonial vertical=overviewRowTestimonialBasic
+Testimonial horizontal=overviewRowTestimonialWide
+Testimonial compact=overviewRowTestimonialCompact

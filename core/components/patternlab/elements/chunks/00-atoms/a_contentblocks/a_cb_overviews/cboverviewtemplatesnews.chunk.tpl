@@ -1,1 +1,2 @@
-News=overviewRowNewsBasic
+News default=overviewRowNewsBasic
+News compact=overviewRowNewsCompact

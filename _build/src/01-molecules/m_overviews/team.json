@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowTeamBasic",
+                    "category": "m_ov_team"
+                },{
+                    "name": "overviewRowTeamBasicCard",
+                    "category": "m_ov_team"
+                },{
+                    "name": "overviewRowTeamCompact",
+                    "category": "m_ov_team"
+                },{
+                    "name": "overviewRowTeamFluid",
+                    "category": "m_ov_team"
+                }
+            ]
+        }
+    }
+}

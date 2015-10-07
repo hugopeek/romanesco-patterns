@@ -6,13 +6,11 @@
     </figure>
 
     <div class="eleven wide column">
-        <h2><a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a></h2>
-        <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
-    </div>
-
-    <div class="sixteen wide column">
-        <a href="[[~[[+parent]]]]"><i class="bookmark icon"></i> [[#[[+parent]].menutitle]]</a>
-        <a href="[[~[[+id]]]]" class="ui right floated primary button">[[+link_text]]</a>
+        [[!$headerHierarchyLink]]
+        [[!$introtextDescription]]
     </div>
 </div>
 
+<div class="extra content">
+    <a href="[[~[[+id]]]]" class="ui right floated primary button">[[+link_text]]</a>
+</div>

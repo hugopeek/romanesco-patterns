@@ -25,12 +25,4 @@
     &img_inflate=`[[+img_inflate]]`
 ]]
 
-[[+pagination:eq=`1`:then=`
-<div class="ui grid container">
-    <div class="center aligned column">
-        <div class="ui pagination menu">
-            [[!+page.nav]]
-        </div>
-    </div>
-</div>
-`]]
+[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]

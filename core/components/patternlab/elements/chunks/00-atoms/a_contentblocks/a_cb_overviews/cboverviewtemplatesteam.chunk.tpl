@@ -1,2 +1,3 @@
-Team (cards)=overviewRowTeamBasic
-Team (circular)=overviewRowTeamBasic
+Team default=overviewRowTeamBasic
+Team default (Card)=overviewRowTeamBasicCard
+Team compact=overviewRowTeamCompact

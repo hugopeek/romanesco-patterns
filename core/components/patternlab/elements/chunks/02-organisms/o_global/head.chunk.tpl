@@ -16,7 +16,7 @@
         &subject=`[[++patternlab.dev_mode]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<link href="[[++patternlab.custom_css_path]]" rel="stylesheet">`
+        &then=``
         &else=`[[$googleAnalytics]]`
     ]]
 </head>

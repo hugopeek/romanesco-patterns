@@ -1,0 +1,32 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [],
+
+            "tvs": [
+                {
+                    "caption": "Author",
+                    "name": "article_author",
+                    "description": "Select the author of this article. He or she must be a MODX user.",
+                    "type": "listbox",
+                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
+                    "category": "About",
+                    "sortOrder": "1",
+                    "templates": [
+                        "Blog - Article",
+                        "News - Item"
+                    ]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_blog",
+                    "parent": "00-atoms"
+                },{
+                    "name": "About"
+                }
+            ]
+        }
+    }
+}

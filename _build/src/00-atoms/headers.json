@@ -3,16 +3,22 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "introtextDescription",
-                    "category": "a_content"
+                    "name": "headerHierarchy",
+                    "category": "a_headers"
                 },{
-                    "name": "introtextSingleParagraph",
-                    "category": "a_content"
+                    "name": "headerHierarchyLink",
+                    "category": "a_headers"
+                },{
+                    "name": "headerHierarchySubtitle",
+                    "category": "a_headers"
+                },{
+                    "name": "headerHierarchySubtitleLink",
+                    "category": "a_headers"
                 }
             ],
             "categories": [
                 {
-                    "name": "a_content",
+                    "name": "a_headers",
                     "parent": "00-atoms"
                 }
             ]

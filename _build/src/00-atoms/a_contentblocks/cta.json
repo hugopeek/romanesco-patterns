@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbLayoutBackgrounds",
-                    "category": "a_cb_layouts"
+                    "name": "cbCTASelect",
+                    "category": "a_cb_cta"
                 }
             ]
         }

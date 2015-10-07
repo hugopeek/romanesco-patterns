@@ -6,14 +6,19 @@
 <body>
 
 <div class="pusher">
-    [[$header]]
-    [[$subNav]]
-    [[$offCanvasNav]]
+    [[$headerBasic?
+        &masthead=`0`
+        &hero=`1`
+        &search=`0`
+    ]]
+    [[$subNavHorizontal]]
 
     <main id="main" role="main">
         <article id="content">
 
-            <h1 class="ui dividing header container">[[*pagetitle]]</h1>
+            <div class="ui container">
+                <h1 class="ui header huge">[[*longtitle:empty=`[[*pagetitle]]`]]</h1>
+            </div>
 
             [[*content]]
         </article>
@@ -22,6 +27,7 @@
     [[$footer]]
 </div>
 
+[[$offCanvasNav]]
 [[$script]]
 
 </body>

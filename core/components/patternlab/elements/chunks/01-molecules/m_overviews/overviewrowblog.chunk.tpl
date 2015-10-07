@@ -1,3 +1,3 @@
-<section class="[[!If? &subject=`[[+wrapper]]` &operator=`EQ` &operand=`1` &then=`card` &else=`column`]] blog">
+<article class="[[+column_type]] blog">
     [[!$[[+row_tpl]]]]
-</section>
+</article>

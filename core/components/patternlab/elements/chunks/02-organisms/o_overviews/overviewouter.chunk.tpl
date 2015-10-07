@@ -1,6 +1,6 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+layout_column]]`]]
 
-<div class="ui [[+cols]] column doubling stackable [[+padding]] nested [[+[[+prefix]].box_type]]">
+<div class="ui [[+cols]] column doubling stackable [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
         &element=`getResources`
         &cacheKey=`overviews`
@@ -20,18 +20,11 @@
         &column_type=`[[+[[+prefix]].column_type]]`
         &title_field=`[[+title_field]]`
         &title_hierarchy=`[[+title_hierarchy]]`
+        &show_subtitle=`[[+show_subtitle]]`
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
         &de_emphasize=`[[+de_emphasize]]`
     ]]
 </div>
 
-[[+pagination:eq=`1`:then=`
-<div class="ui grid container">
-    <div class="center aligned column">
-        <div class="ui pagination menu">
-            [[!+page.nav]]
-        </div>
-    </div>
-</div>
-`]]
+[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]

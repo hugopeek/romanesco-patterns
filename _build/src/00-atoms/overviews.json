@@ -5,11 +5,11 @@
 
             "tvs": [
                 {
-                    "caption": "Image (Default)",
-                    "name": "overview_img_default",
-                    "description": "This is the most common overview image, in a regular 4:3 aspect ratio.",
+                    "caption": "Image (Landscape)",
+                    "name": "overview_img_landscape",
+                    "description": "This is the default overview image, in a regular 4:3 aspect ratio.",
                     "type": "imageplus",
-                    "category": "a_overviews",
+                    "category": "Overview - Image",
                     "sortOrder": "1",
                     "inputProperties": {
                         "targetWidth": "960",
@@ -22,15 +22,39 @@
                     },
                     "templates": [
                         "Default - Overview",
-                        "Default - Detail"
+                        "Default - Detail",
+                        "Blog - Article",
+                        "News - Item"
+                    ]
+                },{
+                    "caption": "Image (Portrait)",
+                    "name": "overview_img_portrait",
+                    "description": "This is the default overview image, in a regular 4:3 aspect ratio.",
+                    "type": "imageplus",
+                    "category": "Overview - Image",
+                    "sortOrder": "2",
+                    "inputProperties": {
+                        "targetWidth": "720",
+                        "targetRatio": "0.75",
+                        "allowAltTag": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`720`]]&zc=1",
+                        "outputChunk": "cbOverviewRowImg"
+                    },
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail",
+                        "Blog - Article",
+                        "News - Item"
                     ]
                 },{
                     "caption": "Image (Square)",
                     "name": "overview_img_square",
                     "description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
                     "type": "imageplus",
-                    "category": "a_overviews",
-                    "sortOrder": "2",
+                    "category": "Overview - Image",
+                    "sortOrder": "3",
                     "inputProperties": {
                         "targetWidth": "800",
                         "targetRatio": "1.0",
@@ -42,15 +66,17 @@
                     },
                     "templates": [
                         "Default - Overview",
-                        "Default - Detail"
+                        "Default - Detail",
+                        "Blog - Article",
+                        "News - Item"
                     ]
                 },{
                     "caption": "Image (Wide)",
                     "name": "overview_img_wide",
                     "description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
                     "type": "imageplus",
-                    "category": "a_overviews",
-                    "sortOrder": "3",
+                    "category": "Overview - Image",
+                    "sortOrder": "5",
                     "inputProperties": {
                         "targetWidth": "960",
                         "targetRatio": "1.77",
@@ -62,15 +88,17 @@
                     },
                     "templates": [
                         "Default - Overview",
-                        "Default - Detail"
+                        "Default - Detail",
+                        "Blog - Article",
+                        "News - Item"
                     ]
                 },{
                     "caption": "Image (Panorama)",
                     "name": "overview_img_pano",
                     "description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
                     "type": "imageplus",
-                    "category": "a_overviews",
-                    "sortOrder": "4",
+                    "category": "Overview - Image",
+                    "sortOrder": "6",
                     "inputProperties": {
                         "targetWidth": "1600",
                         "targetRatio": "2.35",
@@ -82,14 +110,31 @@
                     },
                     "templates": [
                         "Default - Overview",
-                        "Default - Detail"
+                        "Default - Detail",
+                        "Blog - Article",
+                        "News - Item"
+                    ]
+                },{
+                    "caption": "Image priority",
+                    "name": "overview_img_priority",
+                    "description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
+                    "category": "Overview - Image",
+                    "sortOrder": "99",
+                    "type": "listbox",
+                    "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
+                    "defaultValue": "landscape",
+                    "templates": [
+                        "Default - Overview",
+                        "Default - Detail",
+                        "Blog - Article",
+                        "News - Item"
                     ]
                 },{
                     "caption": "Icon (SVG)",
                     "name": "overview_icon_svg",
                     "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
                     "type": "file",
-                    "category": "a_overviews",
+                    "category": "Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
                         "Default - Overview",
@@ -100,7 +145,7 @@
                     "name": "overview_icon_font",
                     "description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
                     "type": "file",
-                    "category": "a_overviews",
+                    "category": "Overview - Icon",
                     "sortOrder": "11",
                     "templates": [
                         "Default - Overview",
@@ -113,6 +158,10 @@
                 {
                     "name": "a_overviews",
                     "parent": "00-atoms"
+                },{
+                    "name": "Overview - Image"
+                },{
+                    "name": "Overview - Icon"
                 }
             ]
         }

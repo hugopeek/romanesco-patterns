@@ -1,48 +1,7 @@
 {
     "package": {
         "elements": {
-            "chunks": [
-                {
-                    "name": "cbCTASelect",
-                    "category": "a_cb_cta"
-                },{
-                    "name": "cbLayoutBackgrounds",
-                    "category": "a_cb_layouts"
-                },{
-                    "name": "cbOverviewRowImg",
-                    "category": "a_cb_overviews"
-                },{
-                    "name": "cbOverviewRowImgFallback",
-                    "category": "a_cb_overviews"
-                },{
-                    "name": "cbOverviewTemplates",
-                    "category": "a_cb_overviews"
-                },{
-                    "name": "cbOverviewTemplatesFluid",
-                    "category": "a_cb_overviews"
-                },{
-                    "name": "cbOverviewTitleHierarchy",
-                    "category": "a_cb_overviews"
-                },{
-                    "name": "cbSettingButtonSize",
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingButtonType",
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingColumns",
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingColumnsExtra",
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingPadding",
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingSortBy",
-                    "category": "a_cb_settings"
-                }
-            ],
+            "chunks": [],
 
             "categories": [
                 {

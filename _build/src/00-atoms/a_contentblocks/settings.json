@@ -3,8 +3,23 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbLayoutBackgrounds",
-                    "category": "a_cb_layouts"
+                    "name": "cbSettingButtonSize",
+                    "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingButtonType",
+                    "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingColumns",
+                    "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingColumnsExtra",
+                    "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingPadding",
+                    "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingSortBy",
+                    "category": "a_cb_settings"
                 }
             ]
         }

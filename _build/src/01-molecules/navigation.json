@@ -12,6 +12,12 @@
                     "name": "subNav",
                     "category": "m_navigation"
                 },{
+                    "name": "subNavHorizontal",
+                    "category": "m_navigation"
+                },{
+                    "name": "subNavVertical",
+                    "category": "m_navigation"
+                },{
                     "name": "offCanvasNav",
                     "category": "m_navigation"
                 }

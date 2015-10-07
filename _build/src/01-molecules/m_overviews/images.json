@@ -1,0 +1,33 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowImageBasic",
+                    "category": "m_ov_images"
+                },{
+                    "name": "overviewRowImageTop",
+                    "category": "m_ov_images"
+                },{
+                    "name": "overviewRowImageTopCard",
+                    "category": "m_ov_images"
+                },{
+                    "name": "overviewRowImageTopLinkCard",
+                    "category": "m_ov_images"
+                },{
+                    "name": "overviewRowImageLeft",
+                    "category": "m_ov_images"
+                },{
+                    "name": "overviewRowImageLeftCard",
+                    "category": "m_ov_images"
+                },{
+                    "name": "overviewRowImageCompact",
+                    "category": "m_ov_images"
+                },{
+                    "name": "overviewRowImageFluid",
+                    "category": "m_ov_images"
+                }
+            ]
+        }
+    }
+}

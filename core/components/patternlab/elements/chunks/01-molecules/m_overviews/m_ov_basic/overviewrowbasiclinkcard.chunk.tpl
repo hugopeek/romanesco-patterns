@@ -1,7 +1,5 @@
 <div class="content">
-    <[[+title_hierarchy]] class="ui [[+de_emphasize:is=`1`:then=`small`]] header">
-        [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
-    </[[+title_hierarchy]]>
+    [[!$headerHierarchy]]
 </div>
 
 [[!If?

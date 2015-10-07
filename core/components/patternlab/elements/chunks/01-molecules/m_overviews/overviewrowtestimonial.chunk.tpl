@@ -1,3 +1,3 @@
-<section class="testimonial">
+<div class="[[+column_type]] testimonial">
     [[!$[[+row_tpl]]]]
-</section>
+</div>

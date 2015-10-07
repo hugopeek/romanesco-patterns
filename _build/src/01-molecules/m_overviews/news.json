@@ -1,0 +1,15 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowNewsBasic",
+                    "category": "m_ov_news"
+                },{
+                    "name": "overviewRowNewsCompact",
+                    "category": "m_ov_news"
+                }
+            ]
+        }
+    }
+}

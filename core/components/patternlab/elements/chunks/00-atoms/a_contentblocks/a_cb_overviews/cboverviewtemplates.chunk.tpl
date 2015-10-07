@@ -1,18 +1,18 @@
 Title only=overviewRowBasic
-Title only (List)=overviewRowBasicList
 Title only (Card)=overviewRowBasicCard
 Title only (Link card)=overviewRowBasicLinkCard
-Title + Subtitle=overviewRowSubtitle
-Title + Subtitle (Card)=overviewRowSubtitleCard
+Title compact=overviewRowCompact
 
-Image only=overviewRowImageMinimal
-Image only (Card)=overviewRowImageMinimalCard
-Image top + Title=overviewRowImageBasic
-Image top + Title (Card)=overviewRowImageBasicCard
-Image left + Title=overviewRowImageLeft
-Image left + Title (Card)=overviewRowImageLeftCard
+Image only=overviewRowImageBasic
+Image top=overviewRowImageTop
+Image top (Card)=overviewRowImageTopCard
+Image top (Link card)=overviewRowImageTopLinkCard
+Image left=overviewRowImageLeft
+Image left (Card)=overviewRowImageLeftCard
+Image compact=overviewRowImageCompact
 
-Icon top=overviewRowIconBasic
-Icon top (Card)=overviewRowIconBasicCard
+Icon top=overviewRowIconTop
+Icon top (Card)=overviewRowIconTopCard
+Icon top (Link card)=overviewRowIconTopLinkCard
 Icon left=overviewRowIconLeft
-Icon left (Card)=overviewRowIconLeftCard
+Icon compact=overviewRowIconCompact

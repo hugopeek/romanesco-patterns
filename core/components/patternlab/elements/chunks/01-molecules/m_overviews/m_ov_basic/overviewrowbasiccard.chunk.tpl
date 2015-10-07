@@ -1,13 +1,11 @@
 <div class="content">
-    <[[+title_hierarchy]] class="[[+de_emphasize:is=`1`:then=`sub`]] header">
-        <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
-    </[[+title_hierarchy]]>
+    [[$headerHierarchyLink]]
 
     [[!If?
         &subject=`[[+show_introtext]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>`
+        &then=`[[$introtextDescription]]`
     ]]
 </div>
 

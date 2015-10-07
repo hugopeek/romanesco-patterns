@@ -3,8 +3,32 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbLayoutBackgrounds",
-                    "category": "a_cb_layouts"
+                    "name": "cbOverviewRowImg",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewRowImgFallback",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTemplates",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTemplatesFluid",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTemplatesBlog",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTemplatesNews",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTemplatesTeam",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTemplatesTestimonial",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTitleHierarchy",
+                    "category": "a_cb_overviews"
                 }
             ]
         }

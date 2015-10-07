@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowBasic",
+                    "category": "m_ov_basic"
+                },{
+                    "name": "overviewRowBasicCard",
+                    "category": "m_ov_basic"
+                },{
+                    "name": "overviewRowBasicLinkCard",
+                    "category": "m_ov_basic"
+                },{
+                    "name": "overviewRowCompact",
+                    "category": "m_ov_basic"
+                }
+            ]
+        }
+    }
+}

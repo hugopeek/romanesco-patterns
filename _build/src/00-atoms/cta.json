@@ -7,13 +7,20 @@
                     "category": "a_cta"
                 }
             ],
-
             "categories": [
                 {
                     "name": "a_cta",
                     "parent": "00-atoms"
                 }
             ]
-        }
+        },
+        "systemSettings": [
+            {
+                "key": "cta_container_id",
+                "type": "numberfield",
+                "area": "Pages",
+                "value": ""
+            }
+        ]
     }
 }

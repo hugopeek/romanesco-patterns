@@ -1,7 +1,8 @@
 <div class="ui inverted vertical segment violet">
     [[If?
         &subject=`[[*header_cta]]`
-        &operator=`notempty`
+        &operator=`isnot`
+        &operand=`0`
         &then=`[[$ctaHeader]]`
         &else=`
         <div class="ui grid container">

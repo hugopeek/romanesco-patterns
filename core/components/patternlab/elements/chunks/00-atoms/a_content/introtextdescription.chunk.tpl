@@ -1,1 +1,1 @@
-<p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
+<div class="content description">[[+introtext]]</div>

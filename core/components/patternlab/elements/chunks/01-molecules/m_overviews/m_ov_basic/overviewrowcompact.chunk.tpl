@@ -1,1 +1,1 @@
-[[$headerHierarchy]]
+[[!$headerHierarchyLink]]

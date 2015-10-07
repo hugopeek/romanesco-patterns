@@ -1,0 +1,12 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbLayoutBackgrounds",
+                    "category": "a_cb_layouts"
+                }
+            ]
+        }
+    }
+}

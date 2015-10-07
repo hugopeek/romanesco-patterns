@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -21,6 +21,21 @@
 				},
 				{
 					"name": "04-pages"
+				},
+				{
+					"name": "a_blog",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "About"
+				},
+				{
+					"name": "a_buttons",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "a_content",
+					"parent": "00-atoms"
 				},
 				{
 					"name": "a_contentblocks",
@@ -47,6 +62,10 @@
 					"parent": "00-atoms"
 				},
 				{
+					"name": "a_headers",
+					"parent": "00-atoms"
+				},
+				{
 					"name": "a_navigation",
 					"parent": "00-atoms"
 				},
@@ -63,8 +82,18 @@
 					"parent": "a_navigation"
 				},
 				{
+					"name": "a_nav_pagination",
+					"parent": "a_navigation"
+				},
+				{
 					"name": "a_overviews",
 					"parent": "00-atoms"
+				},
+				{
+					"name": "Overview - Image"
+				},
+				{
+					"name": "Overview - Icon"
 				},
 				{
 					"name": "a_presentation",
@@ -91,15 +120,15 @@
 					"parent": "01-molecules"
 				},
 				{
-					"name": "m_ov_base",
+					"name": "m_ov_basic",
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_ov_team",
+					"name": "m_ov_images",
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_ov_testimonial",
+					"name": "m_ov_icons",
 					"parent": "m_overviews"
 				},
 				{
@@ -107,11 +136,23 @@
 					"parent": "m_overviews"
 				},
 				{
+					"name": "m_ov_news",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_ov_team",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_ov_testimonials",
+					"parent": "m_overviews"
+				},
+				{
 					"name": "m_presentation",
 					"parent": "01-molecules"
 				},
 				{
-					"name": "m_slider",
+					"name": "m_sliders",
 					"parent": "01-molecules"
 				},
 				{
@@ -135,66 +176,46 @@
 					"parent": "02-organisms"
 				},
 				{
-					"name": "o_slider",
+					"name": "o_sliders",
 					"parent": "02-organisms"
 				}
 			],
 			"chunks": [
 				{
-					"name": "cbCTASelect",
-					"category": "a_cb_cta"
+					"name": "buttonHrefBasic",
+					"category": "a_buttons"
 				},
 				{
-					"name": "cbLayoutBackgrounds",
-					"category": "a_cb_layouts"
+					"name": "buttonHrefOverview",
+					"category": "a_buttons"
 				},
 				{
-					"name": "cbOverviewRowImg",
-					"category": "a_cb_overviews"
+					"name": "introtextDescription",
+					"category": "a_content"
 				},
 				{
-					"name": "cbOverviewRowImgFallback",
-					"category": "a_cb_overviews"
-				},
-				{
-					"name": "cbOverviewTemplates",
-					"category": "a_cb_overviews"
-				},
-				{
-					"name": "cbOverviewTemplatesFluid",
-					"category": "a_cb_overviews"
-				},
-				{
-					"name": "cbOverviewTitleHierarchy",
-					"category": "a_cb_overviews"
-				},
-				{
-					"name": "cbSettingButtonSize",
-					"category": "a_cb_settings"
-				},
-				{
-					"name": "cbSettingButtonType",
-					"category": "a_cb_settings"
-				},
-				{
-					"name": "cbSettingColumns",
-					"category": "a_cb_settings"
-				},
-				{
-					"name": "cbSettingColumnsExtra",
-					"category": "a_cb_settings"
-				},
-				{
-					"name": "cbSettingPadding",
-					"category": "a_cb_settings"
-				},
-				{
-					"name": "cbSettingSortBy",
-					"category": "a_cb_settings"
+					"name": "introtextSingleParagraph",
+					"category": "a_content"
 				},
 				{
 					"name": "ctaTVInputOptions",
 					"category": "a_cta"
+				},
+				{
+					"name": "headerHierarchy",
+					"category": "a_headers"
+				},
+				{
+					"name": "headerHierarchyLink",
+					"category": "a_headers"
+				},
+				{
+					"name": "headerHierarchySubtitle",
+					"category": "a_headers"
+				},
+				{
+					"name": "headerHierarchySubtitleLink",
+					"category": "a_headers"
 				},
 				{
 					"name": "breadcrumbOuter",
@@ -223,6 +244,10 @@
 				{
 					"name": "navItemParent",
 					"category": "a_nav_primary"
+				},
+				{
+					"name": "paginationFluid",
+					"category": "a_nav_pagination"
 				},
 				{
 					"name": "favicons",
@@ -281,6 +306,14 @@
 					"category": "m_navigation"
 				},
 				{
+					"name": "subNavHorizontal",
+					"category": "m_navigation"
+				},
+				{
+					"name": "subNavVertical",
+					"category": "m_navigation"
+				},
+				{
 					"name": "offCanvasNav",
 					"category": "m_navigation"
 				},
@@ -289,64 +322,16 @@
 					"category": "m_overviews"
 				},
 				{
-					"name": "overviewRowFluid",
+					"name": "overviewRowLink",
 					"category": "m_overviews"
 				},
 				{
-					"name": "overviewRowBasic",
-					"category": "m_ov_base"
+					"name": "overviewRowList",
+					"category": "m_overviews"
 				},
 				{
-					"name": "overviewRowIconBasic",
-					"category": "m_ov_base"
-				},
-				{
-					"name": "overviewRowIconLeft",
-					"category": "m_ov_base"
-				},
-				{
-					"name": "overviewRowImageBasic",
-					"category": "m_ov_base"
-				},
-				{
-					"name": "overviewRowImageLeft",
-					"category": "m_ov_base"
-				},
-				{
-					"name": "overviewRowImageFluid",
-					"category": "m_ov_base"
-				},
-				{
-					"name": "overviewRowTitle",
-					"category": "m_ov_base"
-				},
-				{
-					"name": "overviewRowTitleSub",
-					"category": "m_ov_base"
-				},
-				{
-					"name": "overviewRowTeamBasic",
-					"category": "m_ov_team"
-				},
-				{
-					"name": "overviewRowTeamFluid",
-					"category": "m_ov_team"
-				},
-				{
-					"name": "overviewRowTestimonialBasic",
-					"category": "m_ov_testimonial"
-				},
-				{
-					"name": "overviewRowTestimonialWide",
-					"category": "m_ov_testimonial"
-				},
-				{
-					"name": "overviewRowBlogBasic",
-					"category": "m_ov_blog"
-				},
-				{
-					"name": "overviewRowBlogFluid",
-					"category": "m_ov_blog"
+					"name": "overviewRowFluid",
+					"category": "m_overviews"
 				},
 				{
 					"name": "hero",
@@ -354,11 +339,11 @@
 				},
 				{
 					"name": "cbSliderImageRow",
-					"category": "m_slider"
+					"category": "m_sliders"
 				},
 				{
 					"name": "cbSliderContentRow",
-					"category": "m_slider"
+					"category": "m_sliders"
 				},
 				{
 					"name": "getHitCount",
@@ -417,6 +402,22 @@
 					"category": "o_overviews"
 				},
 				{
+					"name": "overviewOuterBlog",
+					"category": "o_overviews"
+				},
+				{
+					"name": "overviewOuterNews",
+					"category": "o_overviews"
+				},
+				{
+					"name": "overviewOuterTeam",
+					"category": "o_overviews"
+				},
+				{
+					"name": "overviewOuterTestimonials",
+					"category": "o_overviews"
+				},
+				{
 					"name": "overviewOuterSpecific",
 					"category": "o_overviews"
 				},
@@ -426,16 +427,213 @@
 				},
 				{
 					"name": "cbSliderOuter",
-					"category": "o_slider"
+					"category": "o_sliders"
+				},
+				{
+					"name": "cbCTASelect",
+					"category": "a_cb_cta"
+				},
+				{
+					"name": "cbLayoutBackgrounds",
+					"category": "a_cb_layouts"
+				},
+				{
+					"name": "cbOverviewRowImg",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewRowImgFallback",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTemplates",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTemplatesFluid",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTemplatesBlog",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTemplatesNews",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTemplatesTeam",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTemplatesTestimonial",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTitleHierarchy",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbSettingButtonSize",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingButtonType",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingColumns",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingColumnsExtra",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingPadding",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingSortBy",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "overviewRowBasic",
+					"category": "m_ov_basic"
+				},
+				{
+					"name": "overviewRowBasicCard",
+					"category": "m_ov_basic"
+				},
+				{
+					"name": "overviewRowBasicLinkCard",
+					"category": "m_ov_basic"
+				},
+				{
+					"name": "overviewRowCompact",
+					"category": "m_ov_basic"
+				},
+				{
+					"name": "overviewRowBlogBasic",
+					"category": "m_ov_blog"
+				},
+				{
+					"name": "overviewRowBlogCompact",
+					"category": "m_ov_blog"
+				},
+				{
+					"name": "overviewRowBlogFluid",
+					"category": "m_ov_blog"
+				},
+				{
+					"name": "overviewRowIconTop",
+					"category": "m_ov_icons"
+				},
+				{
+					"name": "overviewRowIconTopCard",
+					"category": "m_ov_icons"
+				},
+				{
+					"name": "overviewRowIconTopLinkCard",
+					"category": "m_ov_icons"
+				},
+				{
+					"name": "overviewRowIconLeft",
+					"category": "m_ov_icons"
+				},
+				{
+					"name": "overviewRowIconCompact",
+					"category": "m_ov_icons"
+				},
+				{
+					"name": "overviewRowImageBasic",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowImageTop",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowImageTopCard",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowImageTopLinkCard",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowImageLeft",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowImageLeftCard",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowImageCompact",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowImageFluid",
+					"category": "m_ov_images"
+				},
+				{
+					"name": "overviewRowNewsBasic",
+					"category": "m_ov_news"
+				},
+				{
+					"name": "overviewRowNewsCompact",
+					"category": "m_ov_news"
+				},
+				{
+					"name": "overviewRowTeamBasic",
+					"category": "m_ov_team"
+				},
+				{
+					"name": "overviewRowTeamBasicCard",
+					"category": "m_ov_team"
+				},
+				{
+					"name": "overviewRowTeamCompact",
+					"category": "m_ov_team"
+				},
+				{
+					"name": "overviewRowTeamFluid",
+					"category": "m_ov_team"
+				},
+				{
+					"name": "overviewRowTestimonialBasic",
+					"category": "m_ov_testimonials"
+				},
+				{
+					"name": "overviewRowTestimonialWide",
+					"category": "m_ov_testimonials"
+				},
+				{
+					"name": "overviewRowTestimonialCompact",
+					"category": "m_ov_testimonials"
 				}
 			],
 			"tvs": [
 				{
-					"caption": "Image (Default)",
-					"name": "overview_img_default",
-					"description": "This is the most common overview image, in a regular 4:3 aspect ratio.",
+					"caption": "Author",
+					"name": "article_author",
+					"description": "Select the author of this article. He or she must be a MODX user.",
+					"type": "listbox",
+					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
+					"category": "About",
+					"sortOrder": "1",
+					"templates": [
+						"Blog - Article",
+						"News - Item"
+					]
+				},
+				{
+					"caption": "Image (Landscape)",
+					"name": "overview_img_landscape",
+					"description": "This is the default overview image, in a regular 4:3 aspect ratio.",
 					"type": "imageplus",
-					"category": "a_overviews",
+					"category": "Overview - Image",
 					"sortOrder": "1",
 					"inputProperties": {
 						"targetWidth": "960",
@@ -448,7 +646,32 @@
 					},
 					"templates": [
 						"Default - Overview",
-						"Default - Detail"
+						"Default - Detail",
+						"Blog - Article",
+						"News - Item"
+					]
+				},
+				{
+					"caption": "Image (Portrait)",
+					"name": "overview_img_portrait",
+					"description": "This is the default overview image, in a regular 4:3 aspect ratio.",
+					"type": "imageplus",
+					"category": "Overview - Image",
+					"sortOrder": "2",
+					"inputProperties": {
+						"targetWidth": "720",
+						"targetRatio": "0.75",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`720`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					},
+					"templates": [
+						"Default - Overview",
+						"Default - Detail",
+						"Blog - Article",
+						"News - Item"
 					]
 				},
 				{
@@ -456,8 +679,8 @@
 					"name": "overview_img_square",
 					"description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
 					"type": "imageplus",
-					"category": "a_overviews",
-					"sortOrder": "2",
+					"category": "Overview - Image",
+					"sortOrder": "3",
 					"inputProperties": {
 						"targetWidth": "800",
 						"targetRatio": "1.0",
@@ -469,7 +692,9 @@
 					},
 					"templates": [
 						"Default - Overview",
-						"Default - Detail"
+						"Default - Detail",
+						"Blog - Article",
+						"News - Item"
 					]
 				},
 				{
@@ -477,8 +702,8 @@
 					"name": "overview_img_wide",
 					"description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
 					"type": "imageplus",
-					"category": "a_overviews",
-					"sortOrder": "3",
+					"category": "Overview - Image",
+					"sortOrder": "5",
 					"inputProperties": {
 						"targetWidth": "960",
 						"targetRatio": "1.77",
@@ -490,7 +715,9 @@
 					},
 					"templates": [
 						"Default - Overview",
-						"Default - Detail"
+						"Default - Detail",
+						"Blog - Article",
+						"News - Item"
 					]
 				},
 				{
@@ -498,8 +725,8 @@
 					"name": "overview_img_pano",
 					"description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
 					"type": "imageplus",
-					"category": "a_overviews",
-					"sortOrder": "4",
+					"category": "Overview - Image",
+					"sortOrder": "6",
 					"inputProperties": {
 						"targetWidth": "1600",
 						"targetRatio": "2.35",
@@ -511,7 +738,25 @@
 					},
 					"templates": [
 						"Default - Overview",
-						"Default - Detail"
+						"Default - Detail",
+						"Blog - Article",
+						"News - Item"
+					]
+				},
+				{
+					"caption": "Image priority",
+					"name": "overview_img_priority",
+					"description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
+					"category": "Overview - Image",
+					"sortOrder": "99",
+					"type": "listbox",
+					"inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
+					"defaultValue": "landscape",
+					"templates": [
+						"Default - Overview",
+						"Default - Detail",
+						"Blog - Article",
+						"News - Item"
 					]
 				},
 				{
@@ -519,7 +764,7 @@
 					"name": "overview_icon_svg",
 					"description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
 					"type": "file",
-					"category": "a_overviews",
+					"category": "Overview - Icon",
 					"sortOrder": "10",
 					"templates": [
 						"Default - Overview",
@@ -531,7 +776,7 @@
 					"name": "overview_icon_font",
 					"description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
 					"type": "file",
-					"category": "a_overviews",
+					"category": "Overview - Icon",
 					"sortOrder": "11",
 					"templates": [
 						"Default - Overview",
@@ -564,6 +809,18 @@
 				"type": "combo-boolean",
 				"area": "Settings",
 				"value": "1"
+			},
+			{
+				"key": "user_team_id",
+				"type": "numberfield",
+				"area": "Users",
+				"value": ""
+			},
+			{
+				"key": "cta_container_id",
+				"type": "numberfield",
+				"area": "Pages",
+				"value": ""
 			}
 		]
 	}

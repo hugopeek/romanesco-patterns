@@ -1,0 +1,18 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowBlogBasic",
+                    "category": "m_ov_blog"
+                },{
+                    "name": "overviewRowBlogCompact",
+                    "category": "m_ov_blog"
+                },{
+                    "name": "overviewRowBlogFluid",
+                    "category": "m_ov_blog"
+                }
+            ]
+        }
+    }
+}

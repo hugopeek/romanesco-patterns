@@ -1,6 +1,6 @@
+--- Select a CTA ---==0||
 [[getResources?
-    &parents=`261`
-    &tplFirst=` == `
+    &parents=`[[++overview_cta_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`

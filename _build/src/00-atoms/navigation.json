@@ -23,6 +23,9 @@
                 },{
                     "name": "navItemParent",
                     "category": "a_nav_primary"
+                },{
+                    "name": "paginationFluid",
+                    "category": "a_nav_pagination"
                 }
             ],
 
@@ -38,6 +41,9 @@
                     "parent": "a_navigation"
                 },{
                     "name": "a_nav_offcanvas",
+                    "parent": "a_navigation"
+                },{
+                    "name": "a_nav_pagination",
                     "parent": "a_navigation"
                 }
             ]

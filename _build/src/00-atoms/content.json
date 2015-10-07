@@ -3,16 +3,16 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "buttonHrefBasic",
-                    "category": "a_buttons"
+                    "name": "introtextDescription",
+                    "category": "a_content"
                 },{
-                    "name": "buttonHrefOverview",
-                    "category": "a_buttons"
+                    "name": "introtextSingleParagraph",
+                    "category": "a_content"
                 }
             ],
             "categories": [
                 {
-                    "name": "a_buttons",
+                    "name": "a_content",
                     "parent": "00-atoms"
                 }
             ]

@@ -1,1 +1,2 @@
-Blog=overviewRowBlogBasic
+Blog regular=overviewRowBlogBasic
+Blog compact=overviewRowBlogCompact

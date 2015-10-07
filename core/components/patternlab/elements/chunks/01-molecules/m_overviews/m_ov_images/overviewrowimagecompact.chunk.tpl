@@ -1,17 +1,13 @@
-<div class="ui stackable content grid">
-    <a class="five wide column" href="[[~[[+id]]]]">
-        <figure class="ui rounded image">
-            [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-        </figure>
-    </a>
+<a class="ui avatar image">
+    [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
+</a>
 
-    <div class="eleven wide column">
-        <h2><a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a></h2>
-        <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
-    </div>
-</div>
-
-<div class="extra content">
-    <a href="[[~[[+parent]]]]"><i class="bookmark icon"></i> [[#[[+parent]].pagetitle]]</a>
-    <a href="[[~[[+id]]]]" class="ui right floated primary button">[[+link_text]]</a>
+<div class="content">
+    <a href="[[~[[+id]]]]" class="header">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
+    [[If?
+        &subject=`[[+show_subtitle]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`<div class="description">[[+longtitle:empty=`[[+pagetitle]]`]]</div>`
+    ]]
 </div>

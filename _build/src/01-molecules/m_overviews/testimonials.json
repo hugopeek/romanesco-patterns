@@ -1,0 +1,18 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowTestimonialBasic",
+                    "category": "m_ov_testimonials"
+                },{
+                    "name": "overviewRowTestimonialWide",
+                    "category": "m_ov_testimonials"
+                },{
+                    "name": "overviewRowTestimonialCompact",
+                    "category": "m_ov_testimonials"
+                }
+            ]
+        }
+    }
+}

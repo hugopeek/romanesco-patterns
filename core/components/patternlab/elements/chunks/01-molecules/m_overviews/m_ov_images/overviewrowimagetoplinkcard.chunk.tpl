@@ -1,15 +1,19 @@
-<a class="ui rounded image" href="[[~[[+id]]]]">
+<figure class="ui rounded image">
     [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-</a>
+</figure>
 
 <div class="content">
-    <h2><a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a></h2>
-    [[+show_introtext:is=`1`:then=`<p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>`]]
+    [[If?
+        &subject=`[[+show_subtitle]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`[[!$headerHierarchySubtitle]]`
+        &else=`[[!$headerHierarchy]]`
+    ]]
+    [[If?
+        &subject=`[[+show_introtext]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`[[!$introtextDescription]]`
+    ]]
 </div>
-
-[[!If?
-    &subject=`[[+link_text]]`
-    &operator=`isnot`
-    &operand=`0`
-    &then=`<a href="[[~[[+id]]]]" class="ui bottom attached [[+de_emphasize:is=`1`:then=`small`:else=`primary`]] button">[[+link_text]]</a>`
-]]
