@@ -12,6 +12,18 @@
                     "name": "overviewRowList",
                     "category": "m_overviews"
                 },{
+                    "name": "overviewRowBlog",
+                    "category": "m_overviews"
+                },{
+                    "name": "overviewRowNews",
+                    "category": "m_overviews"
+                },{
+                    "name": "overviewRowTeam",
+                    "category": "m_overviews"
+                },{
+                    "name": "overviewRowTestimonial",
+                    "category": "m_overviews"
+                },{
                     "name": "overviewRowFluid",
                     "category": "m_overviews"
                 }

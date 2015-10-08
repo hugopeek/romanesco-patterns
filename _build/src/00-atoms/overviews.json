@@ -164,6 +164,24 @@
                     "name": "Overview - Icon"
                 }
             ]
-        }
+        },
+        "systemSettings": [
+            {
+                "key": "news_container_id",
+                "type": "numberfield",
+                "area": "Pages",
+                "value": ""
+            },{
+                "key": "team_container_id",
+                "type": "numberfield",
+                "area": "Pages",
+                "value": ""
+            },{
+                "key": "testimonial_container_id",
+                "type": "numberfield",
+                "area": "Pages",
+                "value": ""
+            }
+        ]
     }
 }

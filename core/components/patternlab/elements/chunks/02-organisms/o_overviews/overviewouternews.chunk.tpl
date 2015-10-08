@@ -6,13 +6,13 @@
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
-        &parents=`[[+parent]]`
-        &depth=`[[+depth]]`
+        &parents=`[[++patternlab.news_container_id]]`
+        &depth=`99`
         &limit=`[[+limit]]`
-        &tpl=`overviewRow[[+[[+prefix]].row_type]]`
+        &tpl=`overviewRowNews[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
-        &showHidden=`[[+show_hidden:default=`0`]]`
+        &showHidden=`1`
         &sortby=`[[+sortby]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
 

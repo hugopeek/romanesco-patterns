@@ -15,25 +15,52 @@ if ($object->xpdo) {
         case xPDOTransport::ACTION_UPGRADE:
             /* list of tvs and templates for each */
             $tvs = array (
-  'overview_img_default' => 
+  'article_author' => 
+  array (
+    0 => 'Blog - Article',
+    1 => 'News - Item',
+  ),
+  'overview_img_landscape' => 
   array (
     0 => 'Default - Overview',
     1 => 'Default - Detail',
+    2 => 'Blog - Article',
+    3 => 'News - Item',
+  ),
+  'overview_img_portrait' => 
+  array (
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
+    2 => 'Blog - Article',
+    3 => 'News - Item',
   ),
   'overview_img_square' => 
   array (
     0 => 'Default - Overview',
     1 => 'Default - Detail',
+    2 => 'Blog - Article',
+    3 => 'News - Item',
   ),
   'overview_img_wide' => 
   array (
     0 => 'Default - Overview',
     1 => 'Default - Detail',
+    2 => 'Blog - Article',
+    3 => 'News - Item',
   ),
   'overview_img_pano' => 
   array (
     0 => 'Default - Overview',
     1 => 'Default - Detail',
+    2 => 'Blog - Article',
+    3 => 'News - Item',
+  ),
+  'overview_img_priority' => 
+  array (
+    0 => 'Default - Overview',
+    1 => 'Default - Detail',
+    2 => 'Blog - Article',
+    3 => 'News - Item',
   ),
   'overview_icon_svg' => 
   array (

@@ -1,8 +1,13 @@
-<figure class="icon">
-    <img src="[[+tv.overview_icon]]" class="icon-svg" alt="[[+pagetitle]]">
-</figure>
+<a class="ui avatar image">
+    <img class="ui icon image" src="[[+tv.overview_icon_svg:empty=`[[++overview_icon_fallback]]`]]" alt="[[+pagetitle]]">
+</a>
+
 <div class="content">
-    <h2><a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a></h2>
-    <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
-    <p><a href="[[~[[+id]]]]" class="btn btn-primary">[[+link_text]]</a></p>
+    <a href="[[~[[+id]]]]" class="header">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
+    [[If?
+        &subject=`[[+show_subtitle]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`<div class="description">[[+longtitle:empty=`[[+pagetitle]]`]]</div>`
+    ]]
 </div>
