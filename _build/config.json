@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"package": {
 		"elements": {
 			"categories": [
@@ -27,7 +27,8 @@
 					"parent": "00-atoms"
 				},
 				{
-					"name": "About"
+					"name": "About",
+					"parent": "a_blog"
 				},
 				{
 					"name": "a_buttons",
@@ -62,6 +63,14 @@
 					"parent": "00-atoms"
 				},
 				{
+					"name": "a_global",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "Global - Images",
+					"parent": "a_global"
+				},
+				{
 					"name": "a_headers",
 					"parent": "00-atoms"
 				},
@@ -90,10 +99,12 @@
 					"parent": "00-atoms"
 				},
 				{
-					"name": "Overview - Image"
+					"name": "Overview - Image",
+					"parent": "a_overviews"
 				},
 				{
-					"name": "Overview - Icon"
+					"name": "Overview - Icon",
+					"parent": "a_overviews"
 				},
 				{
 					"name": "a_presentation",
@@ -178,6 +189,18 @@
 				{
 					"name": "o_sliders",
 					"parent": "02-organisms"
+				},
+				{
+					"name": "t_basic",
+					"parent": "03-templates"
+				},
+				{
+					"name": "t_publication",
+					"parent": "03-templates"
+				},
+				{
+					"name": "t_global",
+					"parent": "03-templates"
 				}
 			],
 			"chunks": [
@@ -200,6 +223,10 @@
 				{
 					"name": "ctaTVInputOptions",
 					"category": "a_cta"
+				},
+				{
+					"name": "globalBackgroundImgCSS",
+					"category": "a_global"
 				},
 				{
 					"name": "headerHierarchy",
@@ -454,6 +481,14 @@
 					"category": "a_cb_layouts"
 				},
 				{
+					"name": "cbGlobalBackgrounds",
+					"category": "a_cb_layouts"
+				},
+				{
+					"name": "cbGlobalBackgroundRowImg",
+					"category": "a_cb_layouts"
+				},
+				{
 					"name": "cbOverviewRowImg",
 					"category": "a_cb_overviews"
 				},
@@ -645,6 +680,20 @@
 					]
 				},
 				{
+					"caption": "Global background images",
+					"name": "global_background_img",
+					"description": "These backgrounds can be applied to CB layouts (under their Settings wheel) and possibly to other elements too.",
+					"type": "migx",
+					"category": "Global - Images",
+					"sortOrder": "1",
+					"inputProperties": {
+						"configs": "global_background_images"
+					},
+					"templates": [
+						"GlobalBackgrounds"
+					]
+				},
+				{
 					"caption": "Image (Landscape)",
 					"name": "overview_img_landscape",
 					"description": "This is the default overview image, in a regular 4:3 aspect ratio.",
@@ -661,10 +710,14 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Default - Overview",
-						"Default - Detail",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Basic - Overview",
+						"Basic - Detail",
 						"Blog - Article",
-						"News - Item"
+						"News - Article"
 					]
 				},
 				{
@@ -684,10 +737,14 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Default - Overview",
-						"Default - Detail",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Basic - Overview",
+						"Basic - Detail",
 						"Blog - Article",
-						"News - Item"
+						"News - Article"
 					]
 				},
 				{
@@ -707,10 +764,14 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Default - Overview",
-						"Default - Detail",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Basic - Overview",
+						"Basic - Detail",
 						"Blog - Article",
-						"News - Item"
+						"News - Article"
 					]
 				},
 				{
@@ -730,10 +791,14 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Default - Overview",
-						"Default - Detail",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Basic - Overview",
+						"Basic - Detail",
 						"Blog - Article",
-						"News - Item"
+						"News - Article"
 					]
 				},
 				{
@@ -753,10 +818,14 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Default - Overview",
-						"Default - Detail",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Basic - Overview",
+						"Basic - Detail",
 						"Blog - Article",
-						"News - Item"
+						"News - Article"
 					]
 				},
 				{
@@ -769,10 +838,14 @@
 					"inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
 					"defaultValue": "landscape",
 					"templates": [
-						"Default - Overview",
-						"Default - Detail",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Basic - Overview",
+						"Basic - Detail",
 						"Blog - Article",
-						"News - Item"
+						"News - Article"
 					]
 				},
 				{
@@ -783,8 +856,10 @@
 					"category": "Overview - Icon",
 					"sortOrder": "10",
 					"templates": [
-						"Default - Overview",
-						"Default - Detail"
+						"BasicOverview",
+						"BasicDetail",
+						"Basic - Overview",
+						"Basic - Detail"
 					]
 				},
 				{
@@ -795,9 +870,45 @@
 					"category": "Overview - Icon",
 					"sortOrder": "11",
 					"templates": [
-						"Default - Overview",
-						"Default - Detail"
+						"BasicOverview",
+						"BasicDetail",
+						"Basic - Overview",
+						"Basic - Detail"
 					]
+				}
+			],
+			"templates": [
+				{
+					"name": "BasicOverview",
+					"category": "t_basic"
+				},
+				{
+					"name": "BasicDetail",
+					"category": "t_basic"
+				},
+				{
+					"name": "Home",
+					"category": "t_basic"
+				},
+				{
+					"name": "BlogOverview",
+					"icon": "icon-pencil",
+					"category": "t_publication"
+				},
+				{
+					"name": "BlogArticle",
+					"icon": "icon-pencil",
+					"category": "t_publication"
+				},
+				{
+					"name": "NewsArticle",
+					"icon": "icon-newspaper-o",
+					"category": "t_publication"
+				},
+				{
+					"name": "GlobalBackgrounds",
+					"icon": "icon-image",
+					"category": "t_global"
 				}
 			]
 		},
@@ -835,8 +946,7 @@
 			{
 				"key": "blog_container_id",
 				"type": "numberfield",
-				"area": "Pages",
-				"value": ""
+				"area": "Pages"
 			},
 			{
 				"key": "cta_container_id",
@@ -845,22 +955,24 @@
 				"value": ""
 			},
 			{
+				"key": "backgrounds_container_id",
+				"type": "numberfield",
+				"area": "Pages"
+			},
+			{
 				"key": "news_container_id",
 				"type": "numberfield",
-				"area": "Pages",
-				"value": ""
+				"area": "Pages"
 			},
 			{
 				"key": "team_container_id",
 				"type": "numberfield",
-				"area": "Pages",
-				"value": ""
+				"area": "Pages"
 			},
 			{
 				"key": "testimonial_container_id",
 				"type": "numberfield",
-				"area": "Pages",
-				"value": ""
+				"area": "Pages"
 			}
 		]
 	}

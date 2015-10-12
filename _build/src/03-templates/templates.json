@@ -1,0 +1,46 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "BasicOverview",
+                    "category": "t_basic"
+                },{
+                    "name": "BasicDetail",
+                    "category": "t_basic"
+                },{
+                    "name": "Home",
+                    "category": "t_basic"
+                },{
+                    "name": "BlogOverview",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "BlogArticle",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "NewsArticle",
+                    "icon": "icon-newspaper-o",
+                    "category": "t_publication"
+                },{
+                    "name": "GlobalBackgrounds",
+                    "icon": "icon-image",
+                    "category": "t_global"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_basic",
+                    "parent": "03-templates"
+                },{
+                    "name": "t_publication",
+                    "parent": "03-templates"
+                },{
+                    "name": "t_global",
+                    "parent": "03-templates"
+                }
+            ]
+        }
+    }
+}

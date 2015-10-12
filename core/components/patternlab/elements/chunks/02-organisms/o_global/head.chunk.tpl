@@ -19,4 +19,6 @@
         &then=``
         &else=`[[$googleAnalytics]]`
     ]]
+
+    <link rel="stylesheet" href="assets/css/backgrounds.css">
 </head>

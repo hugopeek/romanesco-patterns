@@ -21,10 +21,14 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Basic - Overview",
+                        "Basic - Detail",
                         "Blog - Article",
-                        "News - Item"
+                        "News - Article"
                     ]
                 },{
                     "caption": "Image (Portrait)",
@@ -43,10 +47,14 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Basic - Overview",
+                        "Basic - Detail",
                         "Blog - Article",
-                        "News - Item"
+                        "News - Article"
                     ]
                 },{
                     "caption": "Image (Square)",
@@ -65,10 +73,14 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Basic - Overview",
+                        "Basic - Detail",
                         "Blog - Article",
-                        "News - Item"
+                        "News - Article"
                     ]
                 },{
                     "caption": "Image (Wide)",
@@ -87,10 +99,14 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Basic - Overview",
+                        "Basic - Detail",
                         "Blog - Article",
-                        "News - Item"
+                        "News - Article"
                     ]
                 },{
                     "caption": "Image (Panorama)",
@@ -109,10 +125,14 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Basic - Overview",
+                        "Basic - Detail",
                         "Blog - Article",
-                        "News - Item"
+                        "News - Article"
                     ]
                 },{
                     "caption": "Image priority",
@@ -124,10 +144,14 @@
                     "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
                     "defaultValue": "landscape",
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Basic - Overview",
+                        "Basic - Detail",
                         "Blog - Article",
-                        "News - Item"
+                        "News - Article"
                     ]
                 },{
                     "caption": "Icon (SVG)",
@@ -137,8 +161,10 @@
                     "category": "Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail"
+                        "BasicOverview",
+                        "BasicDetail",
+                        "Basic - Overview",
+                        "Basic - Detail"
                     ]
                 },{
                     "caption": "Icon (Font)",
@@ -148,8 +174,10 @@
                     "category": "Overview - Icon",
                     "sortOrder": "11",
                     "templates": [
-                        "Default - Overview",
-                        "Default - Detail"
+                        "BasicOverview",
+                        "BasicDetail",
+                        "Basic - Overview",
+                        "Basic - Detail"
                     ]
                 }
             ],
@@ -159,9 +187,11 @@
                     "name": "a_overviews",
                     "parent": "00-atoms"
                 },{
-                    "name": "Overview - Image"
+                    "name": "Overview - Image",
+                    "parent": "a_overviews"
                 },{
-                    "name": "Overview - Icon"
+                    "name": "Overview - Icon",
+                    "parent": "a_overviews"
                 }
             ]
         },
@@ -169,18 +199,15 @@
             {
                 "key": "news_container_id",
                 "type": "numberfield",
-                "area": "Pages",
-                "value": ""
+                "area": "Pages"
             },{
                 "key": "team_container_id",
                 "type": "numberfield",
-                "area": "Pages",
-                "value": ""
+                "area": "Pages"
             },{
                 "key": "testimonial_container_id",
                 "type": "numberfield",
-                "area": "Pages",
-                "value": ""
+                "area": "Pages"
             }
         ]
     }
