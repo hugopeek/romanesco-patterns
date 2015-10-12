@@ -1,6 +1,6 @@
 --- Select a CTA ---==0||
 [[getResources?
-    &parents=`[[++overview_cta_id]]`
+    &parents=`[[++patternlab.cta_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`

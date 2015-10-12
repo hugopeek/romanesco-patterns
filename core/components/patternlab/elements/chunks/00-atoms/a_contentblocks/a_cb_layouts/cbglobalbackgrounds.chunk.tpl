@@ -1,5 +1,5 @@
 [[getImageList?
-    &docid=`[[++patternlab.backgrounds_container_id]]`
+    &docid=`[[++patternlab.global_backgrounds_id]]`
     &tvname=`global_background_img`
     &tpl=`cbGlobalBackgroundRowImg`
 ]]

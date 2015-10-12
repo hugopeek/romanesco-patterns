@@ -7,9 +7,35 @@
                     "category": "a_cta"
                 }
             ],
+            "tvs": [
+                {
+                    "caption": "Call to action (CTA)",
+                    "name": "header_cta",
+                    "description": "Select the CTA you want to show in the header of this page. You can create CTA's under Content > Global Content > Call To Actions.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "20",
+                    "inputOptionValues": "@CHUNK ctaTVInputOptions",
+                    "templates": [
+                        "Home",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Homepage",
+                        "Basic - Overview",
+                        "Basic - Detail",
+                        "Blog - Article",
+                        "News - Article"
+                    ]
+                }
+            ],
             "categories": [
                 {
                     "name": "a_cta",
+                    "parent": "00-atoms"
+                },{
+                    "name": "a_header",
                     "parent": "00-atoms"
                 }
             ]
@@ -18,8 +44,7 @@
             {
                 "key": "cta_container_id",
                 "type": "numberfield",
-                "area": "Pages",
-                "value": ""
+                "area": "Pages"
             }
         ]
     }

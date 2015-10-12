@@ -5,6 +5,9 @@
                 {
                     "name": "globalBackgroundImgCSS",
                     "category": "a_global"
+                },{
+                    "name": "globalBackgroundImgTVOptions",
+                    "category": "a_global"
                 }
             ],
             "tvs": [
@@ -21,6 +24,26 @@
                     "templates": [
                         "GlobalBackgrounds"
                     ]
+                },{
+                    "caption": "Background",
+                    "name": "header_background",
+                    "description": "Select a background for this header. You can create these backgrounds under Content > Global Content > Backgrounds.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "10",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "templates": [
+                        "Home",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Homepage",
+                        "Basic - Overview",
+                        "Basic - Detail",
+                        "Blog - Article",
+                        "News - Article"
+                    ]
                 }
             ],
             "categories": [
@@ -28,14 +51,23 @@
                     "name": "a_global",
                     "parent": "00-atoms"
                 },{
+                    "name": "a_header",
+                    "parent": "00-atoms"
+                },{
                     "name": "Global - Images",
                     "parent": "a_global"
+                },{
+                    "name": "Global - SVG",
+                    "parent": "a_global"
+                },{
+                    "name": "Header",
+                    "parent": "a_header"
                 }
             ]
         },
         "systemSettings": [
             {
-                "key": "backgrounds_container_id",
+                "key": "global_backgrounds_id",
                 "type": "numberfield",
                 "area": "Pages"
             }

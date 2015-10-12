@@ -63,12 +63,32 @@
 					"parent": "00-atoms"
 				},
 				{
+					"name": "a_header",
+					"parent": "00-atoms"
+				},
+				{
 					"name": "a_global",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "a_header",
 					"parent": "00-atoms"
 				},
 				{
 					"name": "Global - Images",
 					"parent": "a_global"
+				},
+				{
+					"name": "Global - SVG",
+					"parent": "a_global"
+				},
+				{
+					"name": "Header",
+					"parent": "a_header"
+				},
+				{
+					"name": "a_header",
+					"parent": "00-atoms"
 				},
 				{
 					"name": "a_headers",
@@ -226,6 +246,10 @@
 				},
 				{
 					"name": "globalBackgroundImgCSS",
+					"category": "a_global"
+				},
+				{
+					"name": "globalBackgroundImgTVOptions",
 					"category": "a_global"
 				},
 				{
@@ -680,6 +704,27 @@
 					]
 				},
 				{
+					"caption": "Call to action (CTA)",
+					"name": "header_cta",
+					"description": "Select the CTA you want to show in the header of this page. You can create CTA's under Content > Global Content > Call To Actions.",
+					"type": "listbox",
+					"category": "Header",
+					"sortOrder": "20",
+					"inputOptionValues": "@CHUNK ctaTVInputOptions",
+					"templates": [
+						"Home",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Homepage",
+						"Basic - Overview",
+						"Basic - Detail",
+						"Blog - Article",
+						"News - Article"
+					]
+				},
+				{
 					"caption": "Global background images",
 					"name": "global_background_img",
 					"description": "These backgrounds can be applied to CB layouts (under their Settings wheel) and possibly to other elements too.",
@@ -691,6 +736,67 @@
 					},
 					"templates": [
 						"GlobalBackgrounds"
+					]
+				},
+				{
+					"caption": "Background",
+					"name": "header_background",
+					"description": "Select a background for this header. You can create these backgrounds under Content > Global Content > Backgrounds.",
+					"type": "listbox",
+					"category": "Header",
+					"sortOrder": "10",
+					"inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+					"templates": [
+						"Home",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Homepage",
+						"Basic - Overview",
+						"Basic - Detail",
+						"Blog - Article",
+						"News - Article"
+					]
+				},
+				{
+					"caption": "Main title",
+					"name": "header_title",
+					"description": "This will be displayed in the header section below the main menu. The title will be inherited on child pages, but can also be overwritten by entering something new.",
+					"type": "text",
+					"category": "Header",
+					"sortOrder": "1",
+					"templates": [
+						"Home",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Homepage",
+						"Basic - Overview",
+						"Basic - Detail",
+						"Blog - Article",
+						"News - Article"
+					]
+				},
+				{
+					"caption": "Subtitle",
+					"name": "header_subtitle",
+					"description": "This will be displayed under the main title. Also inherited and overwritable on child pages.",
+					"type": "textarea",
+					"category": "Header",
+					"sortOrder": "2",
+					"templates": [
+						"Home",
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Homepage",
+						"Basic - Overview",
+						"Basic - Detail",
+						"Blog - Article",
+						"News - Article"
 					]
 				},
 				{
@@ -888,6 +994,7 @@
 				},
 				{
 					"name": "Home",
+					"icon": "icon-home",
 					"category": "t_basic"
 				},
 				{
@@ -951,11 +1058,10 @@
 			{
 				"key": "cta_container_id",
 				"type": "numberfield",
-				"area": "Pages",
-				"value": ""
+				"area": "Pages"
 			},
 			{
-				"key": "backgrounds_container_id",
+				"key": "global_backgrounds_id",
 				"type": "numberfield",
 				"area": "Pages"
 			},

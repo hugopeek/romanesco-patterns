@@ -1,4 +1,4 @@
-<div class="ui inverted vertical segment violet">
+<div class="ui vertical segment [[*header_background:empty=`inverted violet`]]">
     [[If?
         &subject=`[[*header_cta]]`
         &operator=`isnot`
