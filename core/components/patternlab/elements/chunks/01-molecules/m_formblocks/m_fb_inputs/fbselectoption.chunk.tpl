@@ -1,33 +1,29 @@
 [[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 
-<div id="[[+name]]" class="form-group [[+field_type]]-group [[+option_other:notempty=`other`]] [[!+fb[[*id]].error.[[+name]]:notempty=`has-error`]]">
-    <label for="[[+name]]" class="control-label [[+field_layout:is=`form-horizontal`:then=`col-sm-4`:else=`form-default`]]">[[+field_name]][[+field_required:is=`1`:then=`<span class="required">*</span>`]]</label>
-    <div class="[[+field_layout:is=`form-horizontal`:then=`col-sm-8`:else=`form-default`]]">
-        [[!+fb[[*id]].error.[[+name]]:notempty=`<span class="label label-danger">[[!+fb[[*id]].error.[[+name]]]]</span>`]]
-        [[+rows]]
+<div id="[[+name]]" class="grouped fields">
+    <label for="[[+name]]">[[+field_name]]</label>
 
-        [[+option_other:is=`1`:then=`
-        <div class="[[+field_type]] other">
-            <label>
-                <input type="[[+field_type]]"
-                       name="[[+name]][[+field_type:is=`checkbox`:then=`[]`]]"
-                       id="[[+name]]-last"
-                       class="collapse-other"
-                       value="[[+option_other_value]]"
-                       data-group="no-group"
-                       data-target="[[+name]]-other"
-                [[+field_helptext:notempty=`aria-describedby="[[+name]]-help"`]]
-                [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+option_other_value]]`]]
+    [[+rows]]
+
+    [[+option_other:is=`1`:then=`
+    <div class="ui field [[+field_type]] checkbox other [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
+        <input type="[[+field_type]]"
+               name="[[+name]][[+field_type:is=`checkbox`:then=`[]`]]"
+               id="[[+name]]-last"
+               class="hidden collapse-other"
+               value="[[+option_other_value]]"
+               tabindex="0"
+               data-group="no-group"
+               data-target="[[+name]]-other"
+               [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+option_other_value]]`]]
                 >
-                [[+option_other_value]]
-            </label>
+        <label>[[+option_other_value]]</label>
 
-            <div id="[[+name]]-other" class="collapse">
-                <input type="text" class="form-control" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_other_placeholder]]" autofocus>
-            </div>
+        <div id="[[+name]]-other" class="field collapse">
+            <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_other_placeholder]]">
         </div>
-        `]]
-
-        [[+field_helptext:notempty=`<span id="[[+name]]-help" class="help-block">[[+field_helptext]]</span>`]]
     </div>
+    `]]
+
+    [[+field_helptext:notempty=`<p class="help">[[+field_helptext]]</p>`]]
 </div>

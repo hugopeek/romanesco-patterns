@@ -259,6 +259,9 @@
                     "name": "m_formblocks",
                     "parent": "01-molecules"
                 },{
+                    "name": "o_formblocks",
+                    "parent": "02-organisms"
+                },{
                     "name": "f_formblocks",
                     "parent": "05-formulas"
                 },{
@@ -266,7 +269,7 @@
                     "parent": "06-computations"
                 },{
                     "name": "a_fb_inputs",
-                    "parent": "m_formblocks"
+                    "parent": "a_formblocks"
                 },{
                     "name": "m_fb_email",
                     "parent": "m_formblocks"
