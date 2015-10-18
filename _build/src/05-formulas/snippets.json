@@ -39,6 +39,10 @@
                     "description": "Output the necessary class names for overview items, based on their template.",
                     "category": "f_framework"
                 },{
+                    "name": "iconInputOptions",
+                    "description": "Generates input options with all Semantic UI icon classes.",
+                    "category": "f_framework"
+                },{
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Slick slider through CDN.",
                     "category": "f_sliders"

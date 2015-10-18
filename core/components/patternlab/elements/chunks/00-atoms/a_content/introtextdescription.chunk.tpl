@@ -1,1 +1,1 @@
-<div class="content description">[[+introtext]]</div>
+<div class="description">[[+introtext]]</div>

@@ -24,6 +24,7 @@
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
         &de_emphasize=`[[+de_emphasize]]`
+        &icon_type=`[[+icon_type]]`
     ]]
 </div>
 

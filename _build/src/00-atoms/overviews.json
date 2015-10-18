@@ -170,9 +170,14 @@
                     "caption": "Icon (Font)",
                     "name": "overview_icon_font",
                     "description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
-                    "type": "file",
+                    "type": "listbox",
+                    "inputOptionValues": "@CHUNK iconTVInputOptions",
                     "category": "Overview - Icon",
                     "sortOrder": "11",
+                    "inputProperties": {
+                        "typeAhead": "true",
+                        "typeAheadDelay": "400"
+                    },
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",

@@ -6,8 +6,8 @@
         [[If?
             &subject=`[[+field_default]]`
             &operator=`notempty`
-            &then=`<option selected="true" disabled="disabled">[[+field_default]]</option>
-        `]]
+            &then=`<option selected="true" disabled="disabled">[[+field_default]]</option>`
+        ]]
         [[+rows]]
     </select>
     [[+field_helptext:notempty=`<p class="help">[[+field_helptext]]</p>`]]

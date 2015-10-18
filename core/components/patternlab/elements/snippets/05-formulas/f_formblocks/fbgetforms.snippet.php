@@ -1,5 +1,5 @@
 <?php
-$parentID = $modx->getOption('patternlab.form_container_id');
+$parentID = $modx->getOption('patternlab.fb_container_id');
 
 $output = $modx->runSnippet('getResources', (array(
     'parents' => $parentID,

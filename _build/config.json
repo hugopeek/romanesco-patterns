@@ -419,6 +419,10 @@
 					"category": "a_global"
 				},
 				{
+					"name": "iconTVInputOptions",
+					"category": "a_global"
+				},
+				{
 					"name": "headerHierarchy",
 					"category": "a_headers"
 				},
@@ -728,6 +732,10 @@
 				},
 				{
 					"name": "cbSettingColumnsExtra",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingIconType",
 					"category": "a_cb_settings"
 				},
 				{
@@ -1328,9 +1336,14 @@
 					"caption": "Icon (Font)",
 					"name": "overview_icon_font",
 					"description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
-					"type": "file",
+					"type": "listbox",
+					"inputOptionValues": "@CHUNK iconTVInputOptions",
 					"category": "Overview - Icon",
 					"sortOrder": "11",
+					"inputProperties": {
+						"typeAhead": "true",
+						"typeAheadDelay": "400"
+					},
 					"templates": [
 						"BasicOverview",
 						"BasicDetail",
@@ -1445,6 +1458,11 @@
 					"category": "f_framework"
 				},
 				{
+					"name": "iconInputOptions",
+					"description": "Generates input options with all Semantic UI icon classes.",
+					"category": "f_framework"
+				},
+				{
 					"name": "sliderLoadAssets",
 					"description": "Load CSS and JS dependencies for Slick slider through CDN.",
 					"category": "f_sliders"
@@ -1534,54 +1552,54 @@
 			},
 			{
 				"key": "fb_container_id",
-				"type": "numberfield",
-				"area": "Pages"
+				"type": "textfield",
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_save_form",
 				"type": "combo-boolean",
-				"area": "Settings",
+				"area": "FormBlocks - Settings",
 				"value": "1"
 			},
 			{
 				"key": "fb_input_textfield_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_input_textarea_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_input_email_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_select_option_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_select_option_collapse_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_select_dropdown_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_select_dropdown_auto_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "fb_accept_terms_id",
 				"type": "textfield",
-				"area": "Pages"
+				"area": "FormBlocks - Pages"
 			},
 			{
 				"key": "global_backgrounds_id",

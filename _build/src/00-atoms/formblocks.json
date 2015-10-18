@@ -298,45 +298,45 @@
         "systemSettings": [
             {
                 "key": "fb_container_id",
-                "type": "numberfield",
-                "area": "Pages"
+                "type": "textfield",
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_save_form",
                 "type": "combo-boolean",
-                "area": "Settings",
+                "area": "FormBlocks - Settings",
                 "value": "1"
             },{
                 "key": "fb_input_textfield_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_input_textarea_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_input_email_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_select_option_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_select_option_collapse_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_select_dropdown_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_select_dropdown_auto_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             },{
                 "key": "fb_accept_terms_id",
                 "type": "textfield",
-                "area": "Pages"
+                "area": "FormBlocks - Pages"
             }
         ]
     }

@@ -1,0 +1,2 @@
+SVG=svg
+Font=font

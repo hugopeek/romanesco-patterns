@@ -4,12 +4,12 @@ $prefix = $modx->getOption('prefix', $scriptProperties, '');
 
 switch($input) {
     case stripos($input,'linkcard') !== false:
-        $box_type = "link cards";
+        $box_type = "centered link cards";
         $row_type = "link";
         $column_type = "card";
         break;
     case stripos($input,'card') !== false:
-        $box_type = "cards";
+        $box_type = "centered cards";
         $row_type = "";
         $column_type = "card";
         break;
@@ -23,8 +23,13 @@ switch($input) {
         $row_type = "";
         $column_type = "item";
         break;
+    case stripos($input,'icontop') !== false:
+        $box_type = "centered grid";
+        $row_type = "";
+        $column_type = "center aligned column";
+        break;
     default:
-        $box_type = "grid";
+        $box_type = "centered grid";
         $row_type = "";
         $column_type = "column";
         break;
