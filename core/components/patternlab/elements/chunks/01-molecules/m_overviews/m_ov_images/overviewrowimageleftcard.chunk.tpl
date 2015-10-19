@@ -6,11 +6,28 @@
     </figure>
 
     <div class="eleven wide column">
-        [[!$headerHierarchyLink]]
-        [[!$introtextDescription]]
+        [[If?
+            &subject=`[[+show_subtitle]]`
+            &operator=`EQ`
+            &operand=`1`
+            &then=`[[!$headerHierarchySubtitleLink]]`
+            &else=`[[!$headerHierarchyLink]]`
+        ]]
+        [[If?
+            &subject=`[[+show_introtext]]`
+            &operator=`EQ`
+            &operand=`1`
+            &then=`[[!$introtextDescription]]`
+        ]]
     </div>
 </div>
 
-<div class="extra content">
-    <a href="[[~[[+id]]]]" class="ui right floated primary button">[[+link_text]]</a>
-</div>
+[[If?
+    &subject=`[[+link_text]]`
+    &operator=`isnot`
+    &operand=`0`
+    &then=`
+    <div class="extra content">
+        <a href="[[~[[+id]]]]" class="ui right floated [[+de_emphasize:is=`1`:then=`small`:else=`large primary`]] button">[[+link_text]]</a>
+    </div>`
+]]

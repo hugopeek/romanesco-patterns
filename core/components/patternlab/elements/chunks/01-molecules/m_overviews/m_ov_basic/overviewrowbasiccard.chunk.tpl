@@ -1,15 +1,21 @@
 <div class="content">
-    [[$headerHierarchyLink]]
+    [[If?
+        &subject=`[[+show_subtitle]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`[[!$headerHierarchySubtitleLink]]`
+        &else=`[[!$headerHierarchyLink]]`
+    ]]
 
-    [[!If?
+    [[If?
         &subject=`[[+show_introtext]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`[[$introtextDescription]]`
+        &then=`[[!$introtextDescription]]`
     ]]
 </div>
 
-[[!If?
+[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`

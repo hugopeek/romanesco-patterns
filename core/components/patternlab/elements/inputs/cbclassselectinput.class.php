@@ -9,7 +9,8 @@ class SelectInput extends cbBaseInput {
      * @return array
      */
     public function getJavaScripts() {
-        $assetsUrl = $this->modx->getOption('patternlab.assets_url', null, MODX_ASSETS_URL . 'components/patternlab/');
+        //$assetsUrl = $this->modx->getOption('patternlab.assets_url', null, MODX_ASSETS_URL . 'components/patternlab/');
+        $assetsUrl = $this->modx->getOption('assets/', null, MODX_ASSETS_URL . 'components/patternlab/');
         return array(
             $assetsUrl . 'js/inputs/cbselect.input.js',
         );

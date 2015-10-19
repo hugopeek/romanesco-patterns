@@ -9,7 +9,12 @@
                     &then=`[[!$headerHierarchySubtitle? &classes=`inverted`]]`
                     &else=`[[!$headerHierarchy? &classes=`inverted`]]`
                 ]]
-                [[!$buttonHrefOverview]]
+                [[If?
+                    &subject=`[[+link_text]]`
+                    &operator=`isnot`
+                    &operand=`0`
+                    &then=`[[!$buttonHrefOverview]]`
+                ]]
             </div>
         </div>
     </div>

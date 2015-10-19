@@ -5,7 +5,7 @@
         </a>
     </figure>
 
-    <div class="eleven wide column">
+    <div class="eleven wide [[If? &subject=`[[+show_introtext]]` &operator=`EQ` &operand=`0` &then=`middle aligned`]] column">
         [[!$overviewRowBasic]]
     </div>
 </div>

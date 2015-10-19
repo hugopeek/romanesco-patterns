@@ -1,3 +1,4 @@
 Testimonial vertical=overviewRowTestimonialBasic
 Testimonial horizontal=overviewRowTestimonialWide
+Testimonial logos=overviewRowTestimonialLogo
 Testimonial compact=overviewRowTestimonialCompact

@@ -1,16 +1,15 @@
-<div class="ui stackable content">
-    <a class="five wide column" href="[[~[[+id]]]]">
-        <figure class="ui rounded image">
-            [[+tv.testimonial_person_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-        </figure>
-        <div class="ui header">
-            [[+tv.testimonial_person_name]]
-            <div class="ui header">[[+tv.testimonial_person_company]]</div>
-        </div>
-    </a>
+<div class="ui padded down pointing segment secondary">
+    <p class="quote">[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
+</div>
 
-    <div class="eleven wide column">
-        <h2><a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a></h2>
-        <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
-    </div>
+<div class="ui center aligned basic segment">
+    <a class="ui small circular image" href="[[~[[+id]]]]">
+        [[+tv.testimonial_person_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
+    </a>
+</div>
+
+<div class="ui small center aligned header">
+    [[+tv.testimonial_person_name]]
+    <div class="sub header">[[+tv.testimonial_company_name]]</div>
+    <div class="ui star rating" data-rating="[[+tv.testimonial_rating_overall]]" data-max-rating="5"></div>
 </div>

@@ -859,6 +859,10 @@
 					"category": "m_ov_testimonials"
 				},
 				{
+					"name": "overviewRowTestimonialLogo",
+					"category": "m_ov_testimonials"
+				},
+				{
 					"name": "overviewRowTestimonialCompact",
 					"category": "m_ov_testimonials"
 				}
