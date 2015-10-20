@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -149,10 +149,6 @@
 					"parent": "a_header"
 				},
 				{
-					"name": "a_header",
-					"parent": "00-atoms"
-				},
-				{
 					"name": "a_headers",
 					"parent": "00-atoms"
 				},
@@ -195,6 +191,10 @@
 				{
 					"name": "a_tracking",
 					"parent": "00-atoms"
+				},
+				{
+					"name": "m_contentblocks",
+					"parent": "01-molecules"
 				},
 				{
 					"name": "m_cta",
@@ -319,6 +319,22 @@
 					"category": "a_buttons"
 				},
 				{
+					"name": "headerHierarchy",
+					"category": "a_content"
+				},
+				{
+					"name": "headerHierarchyLink",
+					"category": "a_content"
+				},
+				{
+					"name": "headerHierarchySubtitle",
+					"category": "a_content"
+				},
+				{
+					"name": "headerHierarchySubtitleLink",
+					"category": "a_content"
+				},
+				{
 					"name": "introtextDescription",
 					"category": "a_content"
 				},
@@ -423,22 +439,6 @@
 					"category": "a_global"
 				},
 				{
-					"name": "headerHierarchy",
-					"category": "a_headers"
-				},
-				{
-					"name": "headerHierarchyLink",
-					"category": "a_headers"
-				},
-				{
-					"name": "headerHierarchySubtitle",
-					"category": "a_headers"
-				},
-				{
-					"name": "headerHierarchySubtitleLink",
-					"category": "a_headers"
-				},
-				{
 					"name": "breadcrumbOuter",
 					"category": "a_nav_breadcrumbs"
 				},
@@ -481,6 +481,14 @@
 				{
 					"name": "hitCount",
 					"category": "a_tracking"
+				},
+				{
+					"name": "cbHeaderIconSVG",
+					"category": "m_contentblocks"
+				},
+				{
+					"name": "cbHeaderIconFont",
+					"category": "m_contentblocks"
 				},
 				{
 					"name": "ctaContentBlock",
@@ -732,6 +740,10 @@
 				},
 				{
 					"name": "cbSettingColumnsExtra",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingIconClass",
 					"category": "a_cb_settings"
 				},
 				{
@@ -1359,6 +1371,13 @@
 			"plugins": [
 				{
 					"name": "cbClassSelectInput",
+					"category": "c_contentblocks",
+					"events": [
+						"ContentBlocks_RegisterInputs"
+					]
+				},
+				{
+					"name": "cbHeadingImageInput",
 					"category": "c_contentblocks",
 					"events": [
 						"ContentBlocks_RegisterInputs"

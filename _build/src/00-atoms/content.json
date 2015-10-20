@@ -3,6 +3,18 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "headerHierarchy",
+                    "category": "a_content"
+                },{
+                    "name": "headerHierarchyLink",
+                    "category": "a_content"
+                },{
+                    "name": "headerHierarchySubtitle",
+                    "category": "a_content"
+                },{
+                    "name": "headerHierarchySubtitleLink",
+                    "category": "a_content"
+                },{
                     "name": "introtextDescription",
                     "category": "a_content"
                 },{

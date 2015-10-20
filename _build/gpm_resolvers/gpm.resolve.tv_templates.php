@@ -20,57 +20,209 @@ if ($object->xpdo) {
     0 => 'Blog - Article',
     1 => 'News - Item',
   ),
+  'header_cta' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
+  ),
+  'header_background' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
+  ),
+  'header_title' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
+  ),
+  'header_subtitle' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
+  ),
+  'fb_email_to' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_email_cc' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_email_bcc' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_email_from' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_email_from_name' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_email_subject' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_redirect_id' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_submit_button' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_form_layout' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_email_template' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_email_template_rows' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_autoresponder_toggle' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_autoresponder_from' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_autoresponder_from_name' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_autoresponder_reply_to' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_autoresponder_subject' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_autoresponder_message' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'global_background_img' => 
+  array (
+    0 => 'GlobalBackgrounds',
+  ),
   'overview_img_landscape' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
-    2 => 'Blog - Article',
-    3 => 'News - Item',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'BlogArticle',
+    3 => 'NewsArticle',
+    4 => 'Basic - Overview',
+    5 => 'Basic - Detail',
+    6 => 'Blog - Article',
+    7 => 'News - Article',
   ),
   'overview_img_portrait' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
-    2 => 'Blog - Article',
-    3 => 'News - Item',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'BlogArticle',
+    3 => 'NewsArticle',
+    4 => 'Basic - Overview',
+    5 => 'Basic - Detail',
+    6 => 'Blog - Article',
+    7 => 'News - Article',
   ),
   'overview_img_square' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
-    2 => 'Blog - Article',
-    3 => 'News - Item',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'BlogArticle',
+    3 => 'NewsArticle',
+    4 => 'Basic - Overview',
+    5 => 'Basic - Detail',
+    6 => 'Blog - Article',
+    7 => 'News - Article',
   ),
   'overview_img_wide' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
-    2 => 'Blog - Article',
-    3 => 'News - Item',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'BlogArticle',
+    3 => 'NewsArticle',
+    4 => 'Basic - Overview',
+    5 => 'Basic - Detail',
+    6 => 'Blog - Article',
+    7 => 'News - Article',
   ),
   'overview_img_pano' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
-    2 => 'Blog - Article',
-    3 => 'News - Item',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'BlogArticle',
+    3 => 'NewsArticle',
+    4 => 'Basic - Overview',
+    5 => 'Basic - Detail',
+    6 => 'Blog - Article',
+    7 => 'News - Article',
   ),
   'overview_img_priority' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
-    2 => 'Blog - Article',
-    3 => 'News - Item',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'BlogArticle',
+    3 => 'NewsArticle',
+    4 => 'Basic - Overview',
+    5 => 'Basic - Detail',
+    6 => 'Blog - Article',
+    7 => 'News - Article',
   ),
   'overview_icon_svg' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'Basic - Overview',
+    3 => 'Basic - Detail',
   ),
   'overview_icon_font' => 
   array (
-    0 => 'Default - Overview',
-    1 => 'Default - Detail',
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'Basic - Overview',
+    3 => 'Basic - Detail',
   ),
 );
             foreach ($tvs as $tvName => $templateNames) {

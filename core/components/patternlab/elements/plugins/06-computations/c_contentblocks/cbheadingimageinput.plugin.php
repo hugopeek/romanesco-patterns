@@ -7,13 +7,13 @@
 if ($modx->event->name == 'ContentBlocks_RegisterInputs') {
     // Load your own class. No need to require cbBaseInput, that's already loaded.
     $path = $modx->getOption('patternlab.core_path', null, MODX_CORE_PATH . 'components/patternlab/');
-    require_once($path . 'elements/inputs/cbclassselectinput.class.php');
+    require_once($path . 'elements/inputs/cbheadingimageinput.class.php');
 
     // Create an instance of your input type, passing the $contentBlocks var
-    $instance = new SelectInput($contentBlocks);
+    $instance = new HeadingImageInput($contentBlocks);
     
     // Pass back your input reference as key, and the instance as value
     $modx->event->output(array(
-        'selectinput' => $instance
+        'headingimageinput' => $instance
     ));
 }

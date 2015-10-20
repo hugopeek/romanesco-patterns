@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbHeaderIconSVG",
+                    "category": "m_contentblocks"
+                },{
+                    "name": "cbHeaderIconFont",
+                    "category": "m_contentblocks"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_contentblocks",
+                    "parent": "01-molecules"
+                }
+            ]
+        }
+    }
+}

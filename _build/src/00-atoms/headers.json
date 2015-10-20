@@ -1,21 +1,7 @@
 {
     "package": {
         "elements": {
-            "chunks": [
-                {
-                    "name": "headerHierarchy",
-                    "category": "a_headers"
-                },{
-                    "name": "headerHierarchyLink",
-                    "category": "a_headers"
-                },{
-                    "name": "headerHierarchySubtitle",
-                    "category": "a_headers"
-                },{
-                    "name": "headerHierarchySubtitleLink",
-                    "category": "a_headers"
-                }
-            ],
+            "chunks": [],
             "tvs": [
                 {
                     "caption": "Main title",
@@ -59,9 +45,6 @@
             ],
             "categories": [
                 {
-                    "name": "a_header",
-                    "parent": "00-atoms"
-                },{
                     "name": "a_headers",
                     "parent": "00-atoms"
                 }

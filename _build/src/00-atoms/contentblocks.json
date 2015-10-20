@@ -6,6 +6,10 @@
                     "name": "cbClassSelectInput",
                     "category": "c_contentblocks",
                     "events": ["ContentBlocks_RegisterInputs"]
+                },{
+                    "name": "cbHeadingImageInput",
+                    "category": "c_contentblocks",
+                    "events": ["ContentBlocks_RegisterInputs"]
                 }
             ],
 
