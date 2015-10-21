@@ -17,7 +17,7 @@
         <article id="content">
 
             <div class="ui container">
-                <h1 class="ui header huge">[[*longtitle:empty=`[[*pagetitle]]`]]</h1>
+                <h1 class="ui main header huge">[[*longtitle:empty=`[[*pagetitle]]`]]</h1>
             </div>
 
             [[*content]]

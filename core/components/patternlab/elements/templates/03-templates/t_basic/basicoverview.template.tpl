@@ -13,7 +13,9 @@
     <main id="main" role="main">
         <article id="content">
 
-            <h1 class="ui dividing header container">[[*pagetitle]]</h1>
+            <div class="ui container">
+                <h1 class="ui main header huge">[[*longtitle:empty=`[[*pagetitle]]`]]</h1>
+            </div>
 
             [[*content]]
         </article>
