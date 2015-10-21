@@ -679,6 +679,10 @@
 					"category": "a_cb_cta"
 				},
 				{
+					"name": "cbLayoutAlignment",
+					"category": "a_cb_layouts"
+				},
+				{
 					"name": "cbLayoutBackgrounds",
 					"category": "a_cb_layouts"
 				},

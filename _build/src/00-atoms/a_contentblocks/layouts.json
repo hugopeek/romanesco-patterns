@@ -3,6 +3,9 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "cbLayoutAlignment",
+                    "category": "a_cb_layouts"
+                },{
                     "name": "cbLayoutBackgrounds",
                     "category": "a_cb_layouts"
                 },{
