@@ -1,4 +1,4 @@
-[[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+layout_column]]`]]
+[[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+unique_idx]]`]]
 
 <div class="ui [[+cols]] column doubling stackable [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[!getCache?
@@ -24,5 +24,6 @@
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
         &de_emphasize=`[[+de_emphasize]]`
+        &icon_type=`[[+icon_type]]`
     ]]
 </div>

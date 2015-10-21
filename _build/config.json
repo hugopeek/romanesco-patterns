@@ -347,6 +347,14 @@
 					"category": "a_content"
 				},
 				{
+					"name": "dividerBasic",
+					"category": "a_content"
+				},
+				{
+					"name": "dividerHeading",
+					"category": "a_content"
+				},
+				{
 					"name": "ctaTVInputOptions",
 					"category": "a_cta"
 				},
