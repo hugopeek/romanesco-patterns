@@ -224,6 +224,17 @@ if ($object->xpdo) {
     2 => 'Basic - Overview',
     3 => 'Basic - Detail',
   ),
+  'overview_link_text' => 
+  array (
+    0 => 'BasicOverview',
+    1 => 'BasicDetail',
+    2 => 'BlogArticle',
+    3 => 'NewsArticle',
+    4 => 'Basic - Overview',
+    5 => 'Basic - Detail',
+    6 => 'Blog - Article',
+    7 => 'News - Article',
+  ),
 );
             foreach ($tvs as $tvName => $templateNames) {
                 if (!is_array($templateNames) || empty($templateNames)) continue;
