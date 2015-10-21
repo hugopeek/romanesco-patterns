@@ -323,19 +323,19 @@
 					"category": "a_buttons"
 				},
 				{
-					"name": "headerHierarchy",
+					"name": "headingHierarchy",
 					"category": "a_content"
 				},
 				{
-					"name": "headerHierarchyLink",
+					"name": "headingHierarchyLink",
 					"category": "a_content"
 				},
 				{
-					"name": "headerHierarchySubtitle",
+					"name": "headingHierarchySubtitle",
 					"category": "a_content"
 				},
 				{
-					"name": "headerHierarchySubtitleLink",
+					"name": "headingHierarchySubtitleLink",
 					"category": "a_content"
 				},
 				{

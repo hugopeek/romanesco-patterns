@@ -7,8 +7,8 @@
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`[[!$headerHierarchySubtitle]]`
-        &else=`[[!$headerHierarchy]]`
+        &then=`[[!$headingHierarchySubtitle]]`
+        &else=`[[!$headingHierarchy]]`
     ]]
     [[If?
         &subject=`[[+show_introtext]]`

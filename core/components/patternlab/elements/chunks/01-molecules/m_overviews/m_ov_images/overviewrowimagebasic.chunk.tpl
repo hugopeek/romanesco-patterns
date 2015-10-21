@@ -6,8 +6,8 @@
                     &subject=`[[+show_subtitle]]`
                     &operator=`EQ`
                     &operand=`1`
-                    &then=`[[!$headerHierarchySubtitle? &classes=`inverted`]]`
-                    &else=`[[!$headerHierarchy? &classes=`inverted`]]`
+                    &then=`[[!$headingHierarchySubtitle? &classes=`inverted`]]`
+                    &else=`[[!$headingHierarchy? &classes=`inverted`]]`
                 ]]
                 [[If?
                     &subject=`[[+link_text]]`
