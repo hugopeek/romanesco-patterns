@@ -26,8 +26,5 @@
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`
-    <div class="extra content">
-        <a href="[[~[[+id]]]]" class="ui right floated [[+de_emphasize:is=`1`:then=`small`:else=`large primary`]] button">[[+link_text]]</a>
-    </div>`
+    &then=`<div class="extra content">[[!$buttonHrefOverview? &classes=`right floated`]]</div>`
 ]]

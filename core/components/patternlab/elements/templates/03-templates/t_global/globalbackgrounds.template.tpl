@@ -11,9 +11,9 @@
     content: ' ';
     display: block;
     position: absolute;
-    left: 0;
+    left: -1%;
     top: 0;
-    width: 100%;
+    width: 102%;
     height: 100%;
     z-index: -1;
     background-repeat: no-repeat;

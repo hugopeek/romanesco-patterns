@@ -25,10 +25,9 @@
     &operand=`1`
     &then=`<div class="content">[[!$introtextDescription]]</div>`
 ]]
-
-[[!If?
+[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`<a href="[[~[[+id]]]]" class="ui bottom attached [[+de_emphasize:is=`1`:then=`small`:else=`large primary`]] button">[[+link_text]]</a>`
+    &then=`[[!$buttonHrefOverview? &classes=`bottom attached`]]`
 ]]

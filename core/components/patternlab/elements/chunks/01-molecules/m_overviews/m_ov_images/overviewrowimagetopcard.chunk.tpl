@@ -22,5 +22,5 @@
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`<a href="[[~[[+id]]]]" class="[[+de_emphasize:is=`1`:then=`small`:else=`primary`]] bottom attached ui button">[[+link_text]]</a>`
+    &then=`[[!$buttonHrefOverview? &classes=`bottom attached`]]`
 ]]

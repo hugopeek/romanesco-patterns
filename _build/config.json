@@ -185,6 +185,10 @@
 					"parent": "a_overviews"
 				},
 				{
+					"name": "Overview - Settings",
+					"parent": "a_overviews"
+				},
+				{
 					"name": "a_presentation",
 					"parent": "00-atoms"
 				},
@@ -1369,6 +1373,24 @@
 						"BasicDetail",
 						"Basic - Overview",
 						"Basic - Detail"
+					]
+				},
+				{
+					"caption": "Link / button text",
+					"name": "overview_link_text",
+					"description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Remember that if no button text is set in Overview CB, no button will be shown!",
+					"type": "text",
+					"category": "Overview - Settings",
+					"sortOrder": "1",
+					"templates": [
+						"BasicOverview",
+						"BasicDetail",
+						"BlogArticle",
+						"NewsArticle",
+						"Basic - Overview",
+						"Basic - Detail",
+						"Blog - Article",
+						"News - Article"
 					]
 				}
 			],

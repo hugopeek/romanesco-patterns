@@ -1,1 +1,1 @@
-<a class="[[+classes]] ui button" href="[[+link]]" [[+attributes]]>[[+button_text]]</a>
+<a href="[[+link]]" class="[[+classes]] ui button" [[+attributes]]>[[+button_text]]</a>
