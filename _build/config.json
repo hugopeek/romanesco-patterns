@@ -73,8 +73,8 @@
 					"parent": "00-atoms"
 				},
 				{
-					"name": "a_header",
-					"parent": "00-atoms"
+					"name": "CTA - Settings",
+					"parent": "a_cta"
 				},
 				{
 					"name": "a_formblocks",
@@ -931,6 +931,18 @@
 					]
 				},
 				{
+					"caption": "Availability",
+					"name": "cta_availability",
+					"description": "Where would you like to be able to place this CTA?",
+					"type": "checkbox",
+					"category": "CTA - Settings",
+					"sortOrder": "1",
+					"inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
+					"templates": [
+						"GlobalCTA"
+					]
+				},
+				{
 					"caption": "Email address recipient",
 					"name": "fb_email_to",
 					"description": "Submitted forms will be sent to this address. If this field is empty, the form will be sent to the default email address of the website (which can be found under Extras > Configuration).",
@@ -1557,6 +1569,11 @@
 				{
 					"name": "GlobalBackgrounds",
 					"icon": "icon-image",
+					"category": "t_global"
+				},
+				{
+					"name": "GlobalCTA",
+					"icon": "icon-bullhorn",
 					"category": "t_global"
 				},
 				{
