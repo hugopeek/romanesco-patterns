@@ -20,57 +20,9 @@ if ($object->xpdo) {
     0 => 'Blog - Article',
     1 => 'News - Item',
   ),
-  'header_cta' => 
+  'cta_availability' => 
   array (
-    0 => 'Home',
-    1 => 'BasicOverview',
-    2 => 'BasicDetail',
-    3 => 'BlogArticle',
-    4 => 'NewsArticle',
-    5 => 'Homepage',
-    6 => 'Basic - Overview',
-    7 => 'Basic - Detail',
-    8 => 'Blog - Article',
-    9 => 'News - Article',
-  ),
-  'header_background' => 
-  array (
-    0 => 'Home',
-    1 => 'BasicOverview',
-    2 => 'BasicDetail',
-    3 => 'BlogArticle',
-    4 => 'NewsArticle',
-    5 => 'Homepage',
-    6 => 'Basic - Overview',
-    7 => 'Basic - Detail',
-    8 => 'Blog - Article',
-    9 => 'News - Article',
-  ),
-  'header_title' => 
-  array (
-    0 => 'Home',
-    1 => 'BasicOverview',
-    2 => 'BasicDetail',
-    3 => 'BlogArticle',
-    4 => 'NewsArticle',
-    5 => 'Homepage',
-    6 => 'Basic - Overview',
-    7 => 'Basic - Detail',
-    8 => 'Blog - Article',
-    9 => 'News - Article',
-  ),
-  'header_subtitle' => 
-  array (
-    0 => 'Home',
-    1 => 'BasicOverview',
-    2 => 'BasicDetail',
-    3 => 'BlogArticle',
-    4 => 'NewsArticle',
-    5 => 'Homepage',
-    6 => 'Basic - Overview',
-    7 => 'Basic - Detail',
-    8 => 'Blog - Article',
-    9 => 'News - Article',
+    0 => 'GlobalCTA',
   ),
   'fb_email_to' => 
   array (
@@ -143,6 +95,58 @@ if ($object->xpdo) {
   'global_background_img' => 
   array (
     0 => 'GlobalBackgrounds',
+  ),
+  'header_cta' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
+  ),
+  'header_background' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
+  ),
+  'header_title' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
+  ),
+  'header_subtitle' => 
+  array (
+    0 => 'Home',
+    1 => 'BasicOverview',
+    2 => 'BasicDetail',
+    3 => 'BlogArticle',
+    4 => 'NewsArticle',
+    5 => 'Homepage',
+    6 => 'Basic - Overview',
+    7 => 'Basic - Detail',
+    8 => 'Blog - Article',
+    9 => 'News - Article',
   ),
   'overview_img_landscape' => 
   array (

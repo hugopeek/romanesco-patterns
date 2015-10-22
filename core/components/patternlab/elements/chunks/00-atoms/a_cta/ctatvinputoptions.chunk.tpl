@@ -8,4 +8,5 @@
     &limit=`99`
     &sortBy=`menuindex`
     &sortDir=`ASC`
+    &tvFilters=`cta_availability==%header%`
 ]]
