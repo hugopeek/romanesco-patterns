@@ -1,7 +1,8 @@
 [[%formblocks.email.introtext]]<br><br>
 
+[[!fbEmailGetJSON:toPlaceholder=`data`? &formID=`[[*id]]`]]
 [[!fbSimplxWidgeteer?
-    &dataSet=`[[!fbEmailGetJSON? &formID=`[[*id]]`]]`
+    &dataSet=`[[+data]]`
     &useChunkMatching=`true`
     &chunkMatchRoot=`true`
     &chunkPrefix=`fbEmailRow_`

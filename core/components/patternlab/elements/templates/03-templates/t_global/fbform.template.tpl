@@ -23,7 +23,7 @@
     &fiarReplyTo=`[[*fb_autoresponder_reply_to:empty=`[[++client_email:empty=`[[++emailsender]]`]]`]]`
     &fiarSubject=`[[*fb_autoresponder_subject:empty=`[[%formblocks.autoresponder.subject]]`]]`
 
-    &customValidators=`requiredIf,requiredIfNot`
+    [[-&customValidators=`requiredIf,requiredIfNot`]]
     &validate=`
         [[!fbValidateProcessJson? &json=`[[!fbEmailGetJSON? &formID=`[[*id]]`]]`]]
         [[cbGetFieldContent:notempty=`fb[[*id]]-email:email:required,`? &field=`[[++patternlab.fb_input_email_id]]`]]
