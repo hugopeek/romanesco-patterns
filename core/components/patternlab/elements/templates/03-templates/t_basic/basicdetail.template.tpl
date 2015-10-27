@@ -11,17 +11,20 @@
         &hero=`1`
         &search=`0`
     ]]
-    [[$subNavHorizontal]]
 
     <main id="main" role="main">
-        <article id="content">
+        <div class="ui container grid">
+            <article class="sixteen wide twelve wide computer column">
 
-            <div class="ui container">
-                <h1 class="ui main header huge">[[*longtitle:empty=`[[*pagetitle]]`]]</h1>
-            </div>
+                <h1 class="ui main header huge">[[*pagetitle]]</h1>
 
-            [[*content]]
-        </article>
+                [[*content]]
+            </article>
+
+            <aside class="four wide column computer only">
+                [[$subNavVertical]]
+            </aside>
+        </div>
     </main>
 
     [[$footer]]

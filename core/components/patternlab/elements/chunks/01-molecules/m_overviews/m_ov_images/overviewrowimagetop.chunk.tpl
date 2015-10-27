@@ -1,7 +1,5 @@
 <figure>
-    <a class="ui rounded image" href="[[~[[+id]]]]">
-        [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-    </a>
+    [[!$imageLandscapeLink? &classes=`rounded`]]
 </figure>
 
 [[!$overviewRowBasic]]

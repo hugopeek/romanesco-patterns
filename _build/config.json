@@ -153,6 +153,10 @@
 					"parent": "00-atoms"
 				},
 				{
+					"name": "a_images",
+					"parent": "00-atoms"
+				},
+				{
 					"name": "a_navigation",
 					"parent": "00-atoms"
 				},
@@ -449,6 +453,14 @@
 				{
 					"name": "iconTVInputOptions",
 					"category": "a_global"
+				},
+				{
+					"name": "imageLandscape",
+					"category": "a_images"
+				},
+				{
+					"name": "imageLandscapeLink",
+					"category": "a_images"
 				},
 				{
 					"name": "breadcrumbOuter",
@@ -905,8 +917,10 @@
 					"category": "About",
 					"sortOrder": "1",
 					"templates": [
+						"BlogArticle",
+						"NewsArticle",
 						"Blog - Article",
-						"News - Item"
+						"News - Article"
 					]
 				},
 				{

@@ -1,7 +1,5 @@
 <div class="column">
-    <a class="ui rounded image" href="[[~[[+id]]]]">
-        [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-    </a>
+    [[!$imageLandscapeLink? &classes=`rounded`]]
 </div>
 <div class="[[+cols]] wide floated column">
     <h2 class="ui header">

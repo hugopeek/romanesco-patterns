@@ -13,8 +13,10 @@
                     "category": "About",
                     "sortOrder": "1",
                     "templates": [
+                        "BlogArticle",
+                        "NewsArticle",
                         "Blog - Article",
-                        "News - Item"
+                        "News - Article"
                     ]
                 }
             ],

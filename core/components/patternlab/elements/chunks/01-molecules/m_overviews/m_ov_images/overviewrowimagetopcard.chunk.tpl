@@ -1,6 +1,4 @@
-<figure class="ui rounded image">
-    [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-</figure>
+[[!$imageLandscape? &classes=`rounded`]]
 
 <div class="content">
     [[If?

@@ -23,5 +23,5 @@
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`<div class="content">[[!$introtextDescription]]</div>`
+    &then=`<div class="content">[[!$introtextDescription:stripTags=`<p><div>`]]</div>`
 ]]

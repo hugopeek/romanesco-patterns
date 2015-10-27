@@ -1,8 +1,6 @@
 <div class="ui stackable content grid">
     <figure class="five wide column">
-        <a href="[[~[[+id]]]]" class="ui rounded image">
-            [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-        </a>
+        [[!$imageLandscapeLink? &classes=`rounded`]]
     </figure>
 
     <div class="eleven wide column">

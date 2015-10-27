@@ -1,6 +1,4 @@
-<figure class="ui rounded image">
-    [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback]]`]]
-</figure>
+[[!$imageLandscape? &classes=`rounded`]]
 
 <div class="content">
     [[If?
@@ -14,6 +12,6 @@
         &subject=`[[+show_introtext]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`[[!$introtextDescription]]`
+        &then=`[[!$introtextDescription:stripTags=`<p><div>`]]`
     ]]
 </div>

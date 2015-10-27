@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "imageLandscape",
+                    "category": "a_images"
+                },{
+                    "name": "imageLandscapeLink",
+                    "category": "a_images"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_images",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

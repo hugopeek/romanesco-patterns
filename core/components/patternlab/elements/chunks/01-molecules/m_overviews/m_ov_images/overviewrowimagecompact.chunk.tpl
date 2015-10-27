@@ -1,6 +1,4 @@
-<a class="ui avatar image">
-    [[+tv.overview_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
-</a>
+[[!$imageLandscapeLink? &classes=`avatar`]]
 
 <div class="content">
     <a href="[[~[[+id]]]]" class="header">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
