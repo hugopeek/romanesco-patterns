@@ -1,5 +1,11 @@
 <a class="ui image" href="[[~[[+id]]]]">
-    [[+tv.team_member_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
+    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?
+        &tvname=`team_member_image`
+        &docid=`[[+id]]`
+        &options=`w=800&h=800&zc=1`
+        &type=`tpl`
+        &tpl=`cbOverviewRowImg`
+    ]]
 </a>
 
 <div class="center aligned content">

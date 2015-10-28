@@ -33,7 +33,7 @@
                 },{
                     "caption": "Image (Portrait)",
                     "name": "overview_img_portrait",
-                    "description": "This is the default overview image, in a regular 4:3 aspect ratio.",
+                    "description": "This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content.",
                     "type": "imageplus",
                     "category": "Overview - Image",
                     "sortOrder": "2",

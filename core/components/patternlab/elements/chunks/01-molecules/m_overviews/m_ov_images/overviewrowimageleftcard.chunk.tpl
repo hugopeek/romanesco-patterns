@@ -1,6 +1,14 @@
 <div class="ui stackable content grid">
     <figure class="five wide column">
-        [[!$imageLandscapeLink? &classes=`rounded`]]
+        <a class="ui rounded image" href="[[~[[+id]]]]">
+            [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
+                &tvname=`overview_img_landscape`
+                &docid=`[[+id]]`
+                &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`
+                &type=`tpl`
+                &tpl=`cbOverviewRowImg`
+            ]]
+        </a>
     </figure>
 
     <div class="eleven wide column">

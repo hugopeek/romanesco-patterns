@@ -1,7 +1,13 @@
 <div class="ui mobile reversed stackable grid">
     <div class="four wide tablet six wide computer five wide large screen five wide widescreen center aligned column">
         <a class="ui circular image" href="[[~[[+id]]]]">
-            [[+tv.testimonial_person_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
+            [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?
+                &tvname=`testimonial_person_image`
+                &docid=`[[+id]]`
+                &options=`w=800&h=800&zc=1`
+                &type=`tpl`
+                &tpl=`cbOverviewRowImg`
+            ]]
         </a>
         <div class="ui small header">
             [[+tv.testimonial_person_name]]

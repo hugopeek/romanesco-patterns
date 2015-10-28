@@ -4,7 +4,13 @@
 
 <div class="ui center aligned basic segment">
     <a class="ui small circular image" href="[[~[[+id]]]]">
-        [[+tv.testimonial_person_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
+        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?
+            &tvname=`testimonial_person_image`
+            &docid=`[[+id]]`
+            &options=`w=800&h=800&zc=1`
+            &type=`tpl`
+            &tpl=`cbOverviewRowImg`
+        ]]
     </a>
 </div>
 

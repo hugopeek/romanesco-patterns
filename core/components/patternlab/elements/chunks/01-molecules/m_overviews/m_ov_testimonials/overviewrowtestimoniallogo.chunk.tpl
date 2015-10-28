@@ -18,5 +18,11 @@
             </div>
         </div>
     </div>
-    [[+tv.testimonial_company_image:empty=`[[$cbOverviewRowImgFallback]]`]]
+    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
+        &tvname=`testimonial_company_image`
+        &docid=`[[+id]]`
+        &options=`w=600&zc=1`
+        &type=`tpl`
+        &tpl=`cbOverviewRowImg`
+    ]]
 </figure>

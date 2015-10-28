@@ -1,17 +1,24 @@
 <div class="column">
     <a class="ui circular image" href="[[~[[+id]]]]">
-        [[+tv.team_member_image:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`]]
+        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?
+            &tvname=`team_member_image`
+            &docid=`[[+id]]`
+            &options=`w=800&h=800&zc=1`
+            &type=`tpl`
+            &tpl=`cbOverviewRowImg`
+        ]]
     </a>
 </div>
+
 <div class="[[+cols]] wide floated column">
     <h2 class="ui header">
-        <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
+        <a href="[[~[[+id]]]]">[[+tv.team_member_firstname]]</a>
         <div class="sub header">[[+tv.team_member_jobtitle]]</div>
     </h2>
     <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
     <p>
         <a href="[[~[[+id]]]]" class="ui primary button">[[+link_text]]</a>
         <span class="or">of</span>
-        <a href="[[~[[++blog_overview_id]]? &author=`daniel`]]">lees [[+tv.team_member_firstname]]s blogartikelen</a>
+        <a href="[[~[[++patternlab.blog_container_id]]? &author=`[[+tv.team_member_firstname]]`]]">lees [[+tv.team_member_firstname]]s blogartikelen</a>
     </p>
 </div>
