@@ -17,8 +17,10 @@ if ($object->xpdo) {
             $tvs = array (
   'article_author' => 
   array (
-    0 => 'Blog - Article',
-    1 => 'News - Item',
+    0 => 'BlogArticle',
+    1 => 'NewsArticle',
+    2 => 'Blog - Article',
+    3 => 'News - Article',
   ),
   'cta_availability' => 
   array (
