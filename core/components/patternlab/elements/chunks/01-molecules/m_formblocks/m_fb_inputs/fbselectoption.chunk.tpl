@@ -1,6 +1,6 @@
 [[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 
-<div id="[[+name]]" class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] grouped fields [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
+<div id="[[+name]]" class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] grouped [[+field_layout]] fields [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
     <label for="[[+name]]">[[+field_name]]</label>
 
     [[+rows]]
