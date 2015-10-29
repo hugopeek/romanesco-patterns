@@ -3,7 +3,7 @@
 
 [[$head]]
 
-<body>
+<body id="blog">
 
 <div class="pusher">
     [[$headerBasic?

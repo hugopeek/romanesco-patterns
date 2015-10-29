@@ -1,6 +1,6 @@
 [[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 
-<div class="field [[+field_layout]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]] [[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]]">
+<div class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] [[+field_layout]] field [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
     <label for="[[+name]]">[[+field_name]]</label>
     <select name="[[+name]]" class="ui dropdown">
         [[If?

@@ -11,7 +11,6 @@
            data-group="[[+collapse_target:isnot=``:then=`[[+name]]`:default=`no-group`]]"
            data-target="[[+collapse_target:default=`no-target`]]"
            data-toggle="collapse"
-           [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+field_option]]`]]
-    >
+           [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+field_option]]`]]>
     <label>[[+option]]</label>
 </div>

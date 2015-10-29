@@ -1,4 +1,5 @@
 <?php
+// Not implemented yet!!
 $parent = $modx->getOption('parent', $scriptProperties, '');
 $id = $modx->getOption('id', $scriptProperties, '');
 $blogparent = $modx->getOption('patternlab.blog_container_id', $scriptProperties, '');

@@ -1,12 +1,12 @@
 [[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 
-<div id="[[+name]]" class="grouped fields">
+<div id="[[+name]]" class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] grouped fields [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
     <label for="[[+name]]">[[+field_name]]</label>
 
     [[+rows]]
 
     [[+option_other:is=`1`:then=`
-    <div class="ui field [[+field_type]] checkbox other [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
+    <div class="ui field [[+field_type]] checkbox other">
         <input type="[[+field_type]]"
                name="[[+name]][[+field_type:is=`checkbox`:then=`[]`]]"
                id="[[+name]]-last"
@@ -15,8 +15,7 @@
                tabindex="0"
                data-group="no-group"
                data-target="[[+name]]-other"
-               [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+option_other_value]]`]]
-                >
+               [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+option_other_value]]`]]>
         <label>[[+option_other_value]]</label>
 
         <div id="[[+name]]-other" class="field collapse">
