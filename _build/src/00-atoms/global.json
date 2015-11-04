@@ -73,6 +73,10 @@
                 "key": "global_backgrounds_id",
                 "type": "numberfield",
                 "area": "Pages"
+            },{
+                "key": "global_footer_id",
+                "type": "numberfield",
+                "area": "Pages"
             }
         ]
     }

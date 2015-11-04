@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "plugins": [
+                {
+                    "name": "plLexiconMgr",
+                    "category": "c_global",
+                    "events": ["OnDocFormRender"]
+                },{
+                    "name": "plLexiconWeb",
+                    "category": "c_global",
+                    "events": ["OnHandleRequest"]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "c_global",
+                    "parent": "06-computations"
+                }
+            ]
+        }
+    }
+}

@@ -37,8 +37,16 @@
 					"parent": "a_blog"
 				},
 				{
+					"name": "Comments",
+					"parent": "a_blog"
+				},
+				{
 					"name": "a_buttons",
 					"parent": "00-atoms"
+				},
+				{
+					"name": "a_btn_social",
+					"parent": "a_buttons"
 				},
 				{
 					"name": "a_content",
@@ -47,10 +55,6 @@
 				{
 					"name": "a_contentblocks",
 					"parent": "00-atoms"
-				},
-				{
-					"name": "c_contentblocks",
-					"parent": "06-computations"
 				},
 				{
 					"name": "a_cb_cta",
@@ -89,14 +93,6 @@
 					"parent": "02-organisms"
 				},
 				{
-					"name": "f_formblocks",
-					"parent": "05-formulas"
-				},
-				{
-					"name": "c_formblocks",
-					"parent": "06-computations"
-				},
-				{
 					"name": "a_fb_inputs",
 					"parent": "a_formblocks"
 				},
@@ -107,10 +103,6 @@
 				{
 					"name": "m_fb_inputs",
 					"parent": "m_formblocks"
-				},
-				{
-					"name": "f_fb_modifiers",
-					"parent": "f_formblocks"
 				},
 				{
 					"name": "Settings - Email",
@@ -193,7 +185,7 @@
 					"parent": "00-atoms"
 				},
 				{
-					"name": "a_tracking",
+					"name": "a_stats",
 					"parent": "00-atoms"
 				},
 				{
@@ -202,6 +194,10 @@
 				},
 				{
 					"name": "m_cta",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "m_global",
 					"parent": "01-molecules"
 				},
 				{
@@ -253,7 +249,11 @@
 					"parent": "01-molecules"
 				},
 				{
-					"name": "m_tracking",
+					"name": "m_social",
+					"parent": "01-molecules"
+				},
+				{
+					"name": "m_stats",
 					"parent": "01-molecules"
 				},
 				{
@@ -289,6 +289,14 @@
 					"parent": "03-templates"
 				},
 				{
+					"name": "f_formblocks",
+					"parent": "05-formulas"
+				},
+				{
+					"name": "f_fb_modifiers",
+					"parent": "f_formblocks"
+				},
+				{
 					"name": "f_basic",
 					"parent": "05-formulas"
 				},
@@ -311,6 +319,18 @@
 				{
 					"name": "f_sliders",
 					"parent": "05-formulas"
+				},
+				{
+					"name": "c_contentblocks",
+					"parent": "06-computations"
+				},
+				{
+					"name": "c_formblocks",
+					"parent": "06-computations"
+				},
+				{
+					"name": "c_global",
+					"parent": "06-computations"
 				}
 			],
 			"chunks": [
@@ -321,6 +341,54 @@
 				{
 					"name": "buttonHrefOverview",
 					"category": "a_buttons"
+				},
+				{
+					"name": "buttonSocialConnectFacebook",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectGoogleplus",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectInstagram",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectLinkedin",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectPinterest",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectTwitter",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectYoutube",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareFacebook",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareGoogleplus",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareLinkedin",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialSharePinterest",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareTwitter",
+					"category": "a_btn_social"
 				},
 				{
 					"name": "headingHierarchy",
@@ -492,7 +560,7 @@
 				},
 				{
 					"name": "hitCount",
-					"category": "a_tracking"
+					"category": "a_stats"
 				},
 				{
 					"name": "cbHeaderIconSVG",
@@ -509,6 +577,10 @@
 				{
 					"name": "ctaHeader",
 					"category": "m_cta"
+				},
+				{
+					"name": "structuredDataSite",
+					"category": "m_global"
 				},
 				{
 					"name": "cbLayoutSingleColumnNested",
@@ -603,12 +675,24 @@
 					"category": "m_sliders"
 				},
 				{
+					"name": "socialConnectButtons",
+					"category": "m_social"
+				},
+				{
+					"name": "socialConnectButtonsTeam",
+					"category": "m_social"
+				},
+				{
+					"name": "socialShareButtons",
+					"category": "m_social"
+				},
+				{
 					"name": "getHitCount",
-					"category": "m_tracking"
+					"category": "m_stats"
 				},
 				{
 					"name": "googleAnalytics",
-					"category": "m_tracking"
+					"category": "m_stats"
 				},
 				{
 					"name": "head",
@@ -903,6 +987,21 @@
 					"type": "listbox",
 					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
 					"category": "About",
+					"sortOrder": "1",
+					"templates": [
+						"BlogArticle",
+						"NewsArticle",
+						"Blog - Article",
+						"News - Article"
+					]
+				},
+				{
+					"caption": "Comments",
+					"name": "article_comments",
+					"description": "Enable or disable comments for this article.",
+					"type": "option",
+					"inputOptionValues": "Active==1||Disabled==0",
+					"category": "Comments",
 					"sortOrder": "1",
 					"templates": [
 						"BlogArticle",
@@ -1416,34 +1515,49 @@
 					]
 				}
 			],
-			"plugins": [
+			"templates": [
 				{
-					"name": "cbClassSelectInput",
-					"category": "c_contentblocks",
-					"events": [
-						"ContentBlocks_RegisterInputs"
-					]
+					"name": "BasicOverview",
+					"category": "t_basic"
 				},
 				{
-					"name": "cbHeadingImageInput",
-					"category": "c_contentblocks",
-					"events": [
-						"ContentBlocks_RegisterInputs"
-					]
+					"name": "BasicDetail",
+					"category": "t_basic"
 				},
 				{
-					"name": "fbLexiconMgr",
-					"category": "c_formblocks",
-					"events": [
-						"OnDocFormRender"
-					]
+					"name": "Home",
+					"icon": "icon-home",
+					"category": "t_basic"
 				},
 				{
-					"name": "fbLexiconWeb",
-					"category": "c_formblocks",
-					"events": [
-						"OnHandleRequest"
-					]
+					"name": "BlogOverview",
+					"icon": "icon-pencil",
+					"category": "t_publication"
+				},
+				{
+					"name": "BlogArticle",
+					"icon": "icon-pencil",
+					"category": "t_publication"
+				},
+				{
+					"name": "NewsArticle",
+					"icon": "icon-newspaper-o",
+					"category": "t_publication"
+				},
+				{
+					"name": "GlobalBackgrounds",
+					"icon": "icon-image",
+					"category": "t_global"
+				},
+				{
+					"name": "GlobalCTA",
+					"icon": "icon-bullhorn",
+					"category": "t_global"
+				},
+				{
+					"name": "fbForm",
+					"icon": "icon-check-square-o",
+					"category": "t_global"
 				}
 			],
 			"snippets": [
@@ -1539,49 +1653,48 @@
 					"category": "f_sliders"
 				}
 			],
-			"templates": [
+			"plugins": [
 				{
-					"name": "BasicOverview",
-					"category": "t_basic"
+					"name": "cbClassSelectInput",
+					"category": "c_contentblocks",
+					"events": [
+						"ContentBlocks_RegisterInputs"
+					]
 				},
 				{
-					"name": "BasicDetail",
-					"category": "t_basic"
+					"name": "cbHeadingImageInput",
+					"category": "c_contentblocks",
+					"events": [
+						"ContentBlocks_RegisterInputs"
+					]
 				},
 				{
-					"name": "Home",
-					"icon": "icon-home",
-					"category": "t_basic"
+					"name": "fbLexiconMgr",
+					"category": "c_formblocks",
+					"events": [
+						"OnDocFormRender"
+					]
 				},
 				{
-					"name": "BlogOverview",
-					"icon": "icon-pencil",
-					"category": "t_publication"
+					"name": "fbLexiconWeb",
+					"category": "c_formblocks",
+					"events": [
+						"OnHandleRequest"
+					]
 				},
 				{
-					"name": "BlogArticle",
-					"icon": "icon-pencil",
-					"category": "t_publication"
+					"name": "plLexiconMgr",
+					"category": "c_global",
+					"events": [
+						"OnDocFormRender"
+					]
 				},
 				{
-					"name": "NewsArticle",
-					"icon": "icon-newspaper-o",
-					"category": "t_publication"
-				},
-				{
-					"name": "GlobalBackgrounds",
-					"icon": "icon-image",
-					"category": "t_global"
-				},
-				{
-					"name": "GlobalCTA",
-					"icon": "icon-bullhorn",
-					"category": "t_global"
-				},
-				{
-					"name": "fbForm",
-					"icon": "icon-check-square-o",
-					"category": "t_global"
+					"name": "plLexiconWeb",
+					"category": "c_global",
+					"events": [
+						"OnHandleRequest"
+					]
 				}
 			]
 		},
@@ -1679,6 +1792,11 @@
 			},
 			{
 				"key": "global_backgrounds_id",
+				"type": "numberfield",
+				"area": "Pages"
+			},
+			{
+				"key": "global_footer_id",
 				"type": "numberfield",
 				"area": "Pages"
 			},

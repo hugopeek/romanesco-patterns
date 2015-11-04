@@ -4,13 +4,13 @@
             "chunks": [
                 {
                     "name": "hitCount",
-                    "category": "a_tracking"
+                    "category": "a_stats"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "a_tracking",
+                    "name": "a_stats",
                     "parent": "00-atoms"
                 }
             ]

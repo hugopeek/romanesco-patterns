@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "plugins": [
+                {
+                    "name": "fbLexiconMgr",
+                    "category": "c_formblocks",
+                    "events": ["OnDocFormRender"]
+                },{
+                    "name": "fbLexiconWeb",
+                    "category": "c_formblocks",
+                    "events": ["OnHandleRequest"]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "c_formblocks",
+                    "parent": "06-computations"
+                }
+            ]
+        }
+    }
+}

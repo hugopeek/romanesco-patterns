@@ -1,0 +1,25 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "socialConnectButtons",
+                    "category": "m_social"
+                },{
+                    "name": "socialConnectButtonsTeam",
+                    "category": "m_social"
+                },{
+                    "name": "socialShareButtons",
+                    "category": "m_social"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_social",
+                    "parent": "01-molecules"
+                }
+            ]
+        }
+    }
+}

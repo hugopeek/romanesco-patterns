@@ -1,0 +1,7 @@
+<a class="circular [[+classes]] ui button linkedin icon"
+   title="[[+title:empty=`[[%patternlab.social.connect_linkedin_title]]`]]"
+   target="_blank"
+   href="[[+account:empty=`[[++social_linkedin]]`]]"
+   property="sameAs">
+    <i class="linkedin icon"></i>
+</a>

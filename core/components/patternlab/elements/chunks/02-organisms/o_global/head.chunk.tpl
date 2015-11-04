@@ -8,6 +8,7 @@
     <base href="[[!++site_url]]">
 
     <link href="[[++patternlab.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/backgrounds.css">
 
     [[++head_additional]]
     [[$favicons? &tileColor=`[[++favicon_tile_color]]` &themeColor=`[[++favicon_theme_color]]`]]
@@ -20,5 +21,5 @@
         &else=`[[$googleAnalytics]]`
     ]]
 
-    <link rel="stylesheet" href="assets/css/backgrounds.css">
+    [[$structuredDataSite]]
 </head>

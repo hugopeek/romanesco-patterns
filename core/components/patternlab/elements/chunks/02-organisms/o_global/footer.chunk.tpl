@@ -1,5 +1,5 @@
 <footer id="footer" class="ui vertical segment inverted">
-    [[#[[++footer_id]].content]]
+    [[#[[[[++footer_id:empty=`++patternlab.global_footer_id`]]]].content]]
 
     <div class="ui container section divider"></div>
 
@@ -22,7 +22,7 @@
         </div>
 
         <div class="four wide column right aligned">
-            <p>[[%bootqamp.footer.qredits_text]] <a class="q-box" title="[[%bootqamp.footer.qredits_title]]" href="http://qaraqter.nl" target="_blank"></a></p>
+            <p>[[%patternlab.footer.qredits_text]] <a class="q-box" title="[[%patternlab.footer.qredits_title]]" href="http://qaraqter.nl" target="_blank"></a></p>
         </div>
     </div>
 </footer>

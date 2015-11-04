@@ -4,16 +4,16 @@
             "chunks": [
                 {
                     "name": "getHitCount",
-                    "category": "m_tracking"
+                    "category": "m_stats"
                 },{
                     "name": "googleAnalytics",
-                    "category": "m_tracking"
+                    "category": "m_stats"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "m_tracking",
+                    "name": "m_stats",
                     "parent": "01-molecules"
                 }
             ]

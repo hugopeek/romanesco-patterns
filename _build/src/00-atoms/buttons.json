@@ -8,12 +8,51 @@
                 },{
                     "name": "buttonHrefOverview",
                     "category": "a_buttons"
+                },{
+                    "name": "buttonSocialConnectFacebook",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialConnectGoogleplus",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialConnectInstagram",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialConnectLinkedin",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialConnectPinterest",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialConnectTwitter",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialConnectYoutube",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialShareFacebook",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialShareGoogleplus",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialShareLinkedin",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialSharePinterest",
+                    "category": "a_btn_social"
+                },{
+                    "name": "buttonSocialShareTwitter",
+                    "category": "a_btn_social"
                 }
             ],
             "categories": [
                 {
                     "name": "a_buttons",
                     "parent": "00-atoms"
+                },{
+                    "name": "a_btn_social",
+                    "parent": "a_buttons"
                 }
             ]
         }

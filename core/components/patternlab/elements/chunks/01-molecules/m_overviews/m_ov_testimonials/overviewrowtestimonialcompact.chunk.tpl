@@ -1,5 +1,14 @@
 <div class="ui padded down pointing segment secondary">
-    <p class="quote">[[+longtitle]]</p>
+    <p class="quote" property="itemReviewed" typeof="Organization">
+        <span property="review">[[+longtitle]]</span>
+    </p>
+    <div class="ui star rating"
+         data-rating="[[+tv.testimonial_rating_overall]]"
+         data-max-rating="5"
+         property="reviewRating"
+         typeof="http://schema.org/Rating">
+        <span property="ratingValue">[[+tv.testimonial_rating_overall]]</span>
+    </div>
 </div>
 
 <div class="ui basic segment">
@@ -12,6 +21,8 @@
             &tpl=`cbOverviewRowImg`
         ]]
     </figure>
-    <span class="name">[[+tv.testimonial_person_name]]</span>
+    <span class="name" property="author" typeof="http://schema.org/Person">
+        <span property="name">[[+tv.testimonial_person_name]]</span>
+    </span>
     <span class="meta"><em>[[+tv.testimonial_company_name]]</em></span>
 </div>

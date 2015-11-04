@@ -1,1 +1,1 @@
-<li class="active">[[+pagetitle]]</li>
+<div class="active section">[[+menutitle:empty=`[[+pagetitle]]`]]</div>

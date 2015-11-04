@@ -1,6 +1,5 @@
-<ol class="breadcrumb" itemprop="breadcrumb">
-    <li class="home">
-        <a href="[[~1]]"><i class="fa fa-home"></i></a>
-    </li>
+<div class="ui breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+    <a class="section" href="[[~[[++site_start]]]]"><i class="icon home"></i></a>
+    <i class="right angle icon divider"></i>
     [[+crumbs]]
-</ol>
+</div>

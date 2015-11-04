@@ -65,49 +65,6 @@
                 }
             ],
 
-            "snippets": [
-                {
-                    "name": "fbEmailGetJSON",
-                    "category": "f_formblocks"
-                },{
-                    "name": "fbGetForms",
-                    "category": "f_formblocks"
-                },{
-                    "name": "fbLoadAssets",
-                    "category": "f_formblocks"
-                },{
-                    "name": "fbSimplxWidgeteer",
-                    "category": "f_formblocks"
-                },{
-                    "name": "fbValidateProcessJSON",
-                    "category": "f_formblocks"
-                },{
-                    "name": "fbPrefixOutput",
-                    "category": "f_fb_modifiers"
-                },{
-                    "name": "fbResetNonAlpha",
-                    "category": "f_fb_modifiers"
-                },{
-                    "name": "fbStripAsAlias",
-                    "category": "f_fb_modifiers"
-                },{
-                    "name": "fbStripNonAlpha",
-                    "category": "f_fb_modifiers"
-                }
-            ],
-
-            "plugins": [
-                {
-                    "name": "fbLexiconMgr",
-                    "category": "c_formblocks",
-                    "events": ["OnDocFormRender"]
-                },{
-                    "name": "fbLexiconWeb",
-                    "category": "c_formblocks",
-                    "events": ["OnHandleRequest"]
-                }
-            ],
-
             "tvs": [
                 {
                     "caption": "Email address recipient",
@@ -262,12 +219,6 @@
                     "name": "o_formblocks",
                     "parent": "02-organisms"
                 },{
-                    "name": "f_formblocks",
-                    "parent": "05-formulas"
-                },{
-                    "name": "c_formblocks",
-                    "parent": "06-computations"
-                },{
                     "name": "a_fb_inputs",
                     "parent": "a_formblocks"
                 },{
@@ -276,9 +227,6 @@
                 },{
                     "name": "m_fb_inputs",
                     "parent": "m_formblocks"
-                },{
-                    "name": "f_fb_modifiers",
-                    "parent": "f_formblocks"
                 },{
                     "name": "Settings - Email",
                     "parent": "a_formblocks"

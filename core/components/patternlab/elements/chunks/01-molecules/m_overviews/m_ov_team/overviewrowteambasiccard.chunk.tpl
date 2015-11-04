@@ -17,16 +17,7 @@
         &then=`<p class="meta">[[+tv.team_member_jobtitle]]</p>`
     ]]
 
-    [[If?
-        &subject=`[[+tv.team_member_twitter]]`
-        &operator=`notempty`
-        &then=`<a href="[[+tv.team_member_twitter]]" class="ui circular twitter icon button"><i class="twitter icon"></i></a>`
-    ]]
-    [[If?
-        &subject=`[[+tv.team_member_linkedin]]`
-        &operator=`notempty`
-        &then=`<a href="[[+tv.team_member_linkedin]]" class="ui circular linkedin icon button"><i class="linkedin icon"></i></a>`
-    ]]
+    [[!$socialConnectButtonsTeam? &button_type=`basic`]]
 </div>
 
 [[If?

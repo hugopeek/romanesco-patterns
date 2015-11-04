@@ -10,15 +10,24 @@
             ]]
         </a>
         <div class="ui small header">
-            [[+tv.testimonial_person_name]]
+            <span property="author" typeof="http://schema.org/Person">
+                <span property="name">[[+tv.testimonial_person_name]]</span>
+            </span>
             <div class="sub header">[[+tv.testimonial_company_name]]</div>
-            <div class="ui star rating" data-rating="[[+tv.testimonial_rating_overall]]" data-max-rating="5"></div>
+            <div class="ui star rating"
+                 data-rating="[[+tv.testimonial_rating_overall]]"
+                 data-max-rating="5"
+                 property="reviewRating"
+                 typeof="http://schema.org/Rating">
+                <span property="ratingValue">[[+tv.testimonial_rating_overall]]</span>
+            </div>
         </div>
     </div>
 
     <div class="twelve wide tablet ten wide computer eleven wide large screen eleven wide widescreen column">
-        <div class="ui padded left pointing segment secondary">
-            <p class="quote">[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
+        <div class="ui padded left pointing segment secondary" property="itemReviewed" typeof="Organization">
+            <meta property="legalName" content="[[++site_name]]">
+            <p class="quote" property="review">[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
         </div>
     </div>
 </div>

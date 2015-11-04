@@ -1,4 +1,4 @@
-[[If:toPlaceholder=`container_type`?
+[[!If:toPlaceholder=`container_type`?
     &subject=`[[*parent]]`
     &operator=`EQ`
     &operand=`[[++patternlab.blog_container_id]]`

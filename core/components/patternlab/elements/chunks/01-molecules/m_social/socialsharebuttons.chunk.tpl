@@ -1,0 +1,5 @@
+[[!$buttonSocialShareFacebook? &classes=`[[+button_type]]`]]
+[[!$buttonSocialShareTwitter? &classes=`[[+button_type]]`]]
+[[-!$buttonSocialShareGoogleplus? &classes=`[[+button_type]]`]]
+[[!$buttonSocialShareLinkedin? &classes=`[[+button_type]]`]]
+[[-!$buttonSocialSharePinterest? &classes=`[[+button_type]]`]]

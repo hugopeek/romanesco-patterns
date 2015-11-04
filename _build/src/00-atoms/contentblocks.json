@@ -1,25 +1,10 @@
 {
     "package": {
         "elements": {
-            "plugins": [
-                {
-                    "name": "cbClassSelectInput",
-                    "category": "c_contentblocks",
-                    "events": ["ContentBlocks_RegisterInputs"]
-                },{
-                    "name": "cbHeadingImageInput",
-                    "category": "c_contentblocks",
-                    "events": ["ContentBlocks_RegisterInputs"]
-                }
-            ],
-
             "categories": [
                 {
                     "name": "a_contentblocks",
                     "parent": "00-atoms"
-                },{
-                    "name": "c_contentblocks",
-                    "parent": "06-computations"
                 },{
                     "name": "a_cb_cta",
                     "parent": "a_contentblocks"

@@ -15,6 +15,7 @@
         <a href="[[~[[+id]]]]">[[+tv.team_member_firstname]]</a>
         <div class="sub header">[[+tv.team_member_jobtitle]]</div>
     </h2>
+    <p>[[!$socialConnectButtonsTeam]]</p>
     <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
     <p>
         <a href="[[~[[+id]]]]" class="ui primary button">[[+link_text]]</a>

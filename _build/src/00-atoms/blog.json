@@ -18,6 +18,20 @@
                         "Blog - Article",
                         "News - Article"
                     ]
+                },{
+                    "caption": "Comments",
+                    "name": "article_comments",
+                    "description": "Enable or disable comments for this article.",
+                    "type": "option",
+                    "inputOptionValues": "Active==1||Disabled==0",
+                    "category": "Comments",
+                    "sortOrder": "1",
+                    "templates": [
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Blog - Article",
+                        "News - Article"
+                    ]
                 }
             ],
 
@@ -27,6 +41,9 @@
                     "parent": "00-atoms"
                 },{
                     "name": "About",
+                    "parent": "a_blog"
+                },{
+                    "name": "Comments",
                     "parent": "a_blog"
                 }
             ]
