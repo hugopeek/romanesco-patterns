@@ -4,6 +4,9 @@
 $_lang['patternlab.footer.qredits_text'] = 'Site with';
 $_lang['patternlab.footer.qredits_title'] = 'Responsive webdesign with MODX in Utrecht';
 
+// Navigation
+$_lang['patternlab.menu.overview'] = 'Overview';
+
 // Social elements
 $_lang['patternlab.social.connect_facebook_company'] = 'Visit our Facebook page';
 $_lang['patternlab.social.connect_googleplus_company'] = 'Find us on Google+';
