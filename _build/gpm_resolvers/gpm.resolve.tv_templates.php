@@ -22,6 +22,13 @@ if ($object->xpdo) {
     2 => 'Blog - Article',
     3 => 'News - Article',
   ),
+  'article_comments' => 
+  array (
+    0 => 'BlogArticle',
+    1 => 'NewsArticle',
+    2 => 'Blog - Article',
+    3 => 'News - Article',
+  ),
   'cta_availability' => 
   array (
     0 => 'GlobalCTA',
