@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/backgrounds.css">
 
     [[++head_additional]]
-    [[$favicons? &tileColor=`[[++favicon_tile_color]]` &themeColor=`[[++favicon_theme_color]]`]]
+    [[$favicons]]
 
     [[If?
         &subject=`[[++patternlab.dev_mode]]`

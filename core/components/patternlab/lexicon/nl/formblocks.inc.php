@@ -29,7 +29,8 @@ $_lang['formblocks.collections.children.back_to_collection_label'] = 'FormBlocks
 //-----------------------------------------------------
 
 // Form template
-$_lang['formblocks.form.validation_error'] = 'Het formulier kon helaas niet verstuurd worden. Vul a.u.b. alle verplichte velden in en probeer het opnieuw.';
+$_lang['formblocks.form.validation_error_heading'] = 'Ai, er is iets mis gegaan!';
+$_lang['formblocks.form.validation_error_message'] = 'Het formulier kon helaas niet worden verstuurd, omdat niet alle verplichte velden zijn ingevuld. Vul a.u.b. de ontbrekende velden in (in rood gemarkeerd) en probeer het opnieuw.';
 $_lang['formblocks.form.submit_button'] = 'Verzenden';
 
 // Email template

@@ -39,9 +39,9 @@
 <div class="ui error message">
     <i class="close icon"></i>
     <div class="header">
-        Something went wrong with your submission
+        [[%formblocks.form.validation_error_heading]]
     </div>
-    <p>[[%formblocks.form.validation_error]]</p>
+    <p>[[%formblocks.form.validation_error_message]]</p>
 </div>
 `]]
 

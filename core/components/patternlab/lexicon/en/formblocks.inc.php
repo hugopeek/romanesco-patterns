@@ -33,7 +33,8 @@ $_lang['formblocks.cb.input_textarea_description'] = 'You can add an optional pl
 //-----------------------------------------------------
 
 // Form template
-$_lang['formblocks.form.validation_error'] = 'Unfortunately, the form could not be sent. Please fill in all required fields and try again.';
+$_lang['formblocks.form.validation_error_heading'] = 'Uh oh, something went wrong!';
+$_lang['formblocks.form.validation_error_message'] = 'The form could not be sent, because not all required fields were filled. Please fill in the remaining fields (marked in red) and try again.';
 $_lang['formblocks.form.submit_button'] = 'Send';
 
 // Email template

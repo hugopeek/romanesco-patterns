@@ -6,14 +6,15 @@
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
-        &parents=`[[++patternlab.news_container_id]]`
+        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.news_container_id]]`]]`
+        &resources=`[[+resources]]`
         &depth=`99`
         &limit=`[[+limit]]`
         &tpl=`overviewRowNews[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
         &showHidden=`1`
-        &sortby=`[[+sortby]]`
+        &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
 
         &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`

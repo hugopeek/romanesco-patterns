@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "toolbarBasic",
+                    "category": "o_interface"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_interface",
+                    "parent": "02-organisms"
+                }
+            ]
+        }
+    }
+}

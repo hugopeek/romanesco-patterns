@@ -1,17 +1,20 @@
-<nav id="menu" class="ui large secondary menu" role="navigation">
+<nav id="menu" class="ui large secondary [[++navbar_sticky:is=`1`:then=`sticky`]] menu" role="navigation">
     <div class="ui container">
-        [[$logo]]
-
+        <div class="item branding">
+            [[$logo]]
+        </div>
+        
         <div class="right menu">
             [[pdoMenu?
                 &startId=`0`
                 &level=`1`
+                &resources=`[[++navbar_resources]]`
                 &tplOuter=`navWrapper`
                 &tpl=`navItem`
             ]]
         </div>
 
-        [[$navItemsTheme]]
+        [[$mainNavItemsTheme]]
 
         <div class="item toc">
             <button class="ui right labeled icon button">

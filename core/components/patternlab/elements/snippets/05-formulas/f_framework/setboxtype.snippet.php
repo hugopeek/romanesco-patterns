@@ -31,9 +31,14 @@ switch($input) {
     case stripos($input,'logo') !== false:
         $box_type = "centered middle aligned grid";
         $row_type = "";
-        $column_type = "center aligned column";
+        $column_type = "center aligned column logo";
         break;
-    case stripos($input,'assessorwide') !== false:
+    case stripos($input,'assessorbasic') !== false:
+        $box_type = "centered cards";
+        $row_type = "";
+        $column_type = "basic card";
+        break;
+    case stripos($input,'assessor') !== false:
         $box_type = "centered cards";
         $row_type = "";
         $column_type = "card";

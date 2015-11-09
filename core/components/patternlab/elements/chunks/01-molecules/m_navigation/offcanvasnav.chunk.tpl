@@ -1,5 +1,11 @@
 <nav id="off-canvas" class="ui right inverted vertical accordion menu sidebar">
-    <a href="[[~[[++site_start]]]]" class="item home">Home</a>
+    <div class="item home">
+        <a href="[[~[[++site_start]]]]" class="ui image brand badge"></a>
+        <a href="[[~[[++site_start]]]]">[[%patternlab.menu.brand]]</a>
+        <button class="ui tiny compact circular basic inverted right floated close icon button">
+            <i class="close icon"></i>
+        </button>
+    </div>
     [[pdoMenu?
         &parents=`0`
         &level=`2`
@@ -8,4 +14,5 @@
         &tplParentRow=`navItemParent`
         &tplInnerRow=`navItem`
     ]]
+    [[$offCanvasNavItemsTheme]]
 </nav>

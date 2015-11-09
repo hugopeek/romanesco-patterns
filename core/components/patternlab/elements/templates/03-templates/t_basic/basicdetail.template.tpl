@@ -12,8 +12,10 @@
         &search=`0`
     ]]
 
+    [[[[getResourceLevel:ne=`1`:then=`$toolbarBasic`]]]]
+
     <main id="main" role="main">
-        <div class="ui container grid">
+        <div class="ui grid container">
             <article id="content" class="sixteen wide twelve wide computer column">
 
                 <h1 class="ui main header huge">[[*pagetitle]]</h1>

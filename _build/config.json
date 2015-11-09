@@ -265,6 +265,10 @@
 					"parent": "02-organisms"
 				},
 				{
+					"name": "o_interface",
+					"parent": "02-organisms"
+				},
+				{
 					"name": "o_layouts",
 					"parent": "02-organisms"
 				},
@@ -713,6 +717,10 @@
 				{
 					"name": "headerBasic",
 					"category": "o_headers"
+				},
+				{
+					"name": "toolbarBasic",
+					"category": "o_interface"
 				},
 				{
 					"name": "cbLayoutSingleColumn",

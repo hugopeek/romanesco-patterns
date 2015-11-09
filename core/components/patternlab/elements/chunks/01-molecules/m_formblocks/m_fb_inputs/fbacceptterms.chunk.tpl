@@ -1,5 +1,5 @@
 <div id="fb[[*id]]-accept-terms" class="required inline field [[!If? &subject=`[[+fb[[*id]].error.fb[[*id]]-accept-terms]]` &operator=`notempty` &then=`error`]]">
-    <div class="ui checkbox">
+    <div class="ui field checkbox">
         <input type="checkbox"
                name="fb[[*id]]-accept-terms[]"
                id="fb[[*id]]-accept-terms-1"
