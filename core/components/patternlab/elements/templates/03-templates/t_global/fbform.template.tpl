@@ -9,19 +9,17 @@
     &emailBCC=`[[*fb_email_bcc]]`
     &emailFrom=`[[*fb_email_from:empty=`[[++emailsender]]`]]`
     &emailFromName=`[[*fb_email_from_name:empty=`[[++site_name]]`]]`
-    [[!If?
-        &subject=`[[cbGetFieldContent? &field=`[[++patternlab.fb_input_email_id]]`]]`
-        &operator=`notempty`
-        &then=`&emailReplyTo=`[[+fb[[*id]]-email]]``
-    ]]
+    [[cbGetFieldContent:notempty=`&emailReplyTo=`[[+fb[[*id]]-email]]``? &field=`[[++patternlab.fb_input_email_id]]`]]
     &emailSubject=`[[*fb_email_subject:empty=`[[%formblocks.email.subject]]`]]`
 
+    [[*fb_autoresponder_toggle:eq=`1`:then=`
     &fiarTpl=`fbAutoresponder`
-    &fiarToField=`[[*fb_autoresponder_toggle:eq=`1`:then=`fb[[*id]]-email`]]`
+    &fiarToField=`fb[[*id]]-email`
     &fiarFrom=`[[*fb_autoresponder_from:empty=`[[++emailsender]]`]]`
     &fiarFromName=`[[*fb_autoresponder_from_name:empty=`[[++site_name]]`]]`
     &fiarReplyTo=`[[*fb_autoresponder_reply_to:empty=`[[++client_email:empty=`[[++emailsender]]`]]`]]`
     &fiarSubject=`[[*fb_autoresponder_subject:empty=`[[%formblocks.autoresponder.subject]]`]]`
+    `]]
 
     [[-&customValidators=`requiredIf,requiredIfNot`]]
     &validate=`
