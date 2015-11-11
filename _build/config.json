@@ -189,6 +189,10 @@
 					"parent": "00-atoms"
 				},
 				{
+					"name": "a_search",
+					"parent": "00-atoms"
+				},
+				{
 					"name": "a_stats",
 					"parent": "00-atoms"
 				},
@@ -253,6 +257,10 @@
 					"parent": "01-molecules"
 				},
 				{
+					"name": "m_search",
+					"parent": "01-molecules"
+				},
+				{
 					"name": "m_sliders",
 					"parent": "01-molecules"
 				},
@@ -282,6 +290,10 @@
 				},
 				{
 					"name": "o_overviews",
+					"parent": "02-organisms"
+				},
+				{
+					"name": "o_search",
 					"parent": "02-organisms"
 				},
 				{
@@ -571,6 +583,22 @@
 					"category": "a_presentation"
 				},
 				{
+					"name": "searchButton",
+					"category": "a_search"
+				},
+				{
+					"name": "searchButtonPaging",
+					"category": "a_search"
+				},
+				{
+					"name": "searchButtonPagingActive",
+					"category": "a_search"
+				},
+				{
+					"name": "searchResultTag",
+					"category": "a_search"
+				},
+				{
 					"name": "hitCount",
 					"category": "a_stats"
 				},
@@ -683,6 +711,22 @@
 					"category": "m_presentation"
 				},
 				{
+					"name": "searchField",
+					"category": "m_search"
+				},
+				{
+					"name": "searchFieldFullscreen",
+					"category": "m_search"
+				},
+				{
+					"name": "searchResultContainer",
+					"category": "m_search"
+				},
+				{
+					"name": "searchResultRow",
+					"category": "m_search"
+				},
+				{
 					"name": "cbSliderImageRow",
 					"category": "m_sliders"
 				},
@@ -785,6 +829,10 @@
 				{
 					"name": "overviewOuterFluid",
 					"category": "o_overviews"
+				},
+				{
+					"name": "searchResultOuter",
+					"category": "o_search"
 				},
 				{
 					"name": "cbSliderOuter",
@@ -1852,6 +1900,24 @@
 				"key": "testimonial_container_id",
 				"type": "numberfield",
 				"area": "Pages"
+			},
+			{
+				"key": "search_add_to_menu",
+				"type": "combo-boolean",
+				"area": "Search",
+				"value": "0"
+			},
+			{
+				"key": "search_result_id",
+				"type": "textfield",
+				"area": "Search",
+				"value": ""
+			},
+			{
+				"key": "search_result_limit",
+				"type": "textfield",
+				"area": "Search",
+				"value": "10"
 			}
 		]
 	}

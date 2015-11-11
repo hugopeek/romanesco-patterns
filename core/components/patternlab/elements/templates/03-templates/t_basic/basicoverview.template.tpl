@@ -18,7 +18,7 @@
         <article id="content">
 
             <div class="ui container">
-                <h1 class="ui main header huge">[[*pagetitle]]</h1>
+                <h1 class="ui main [[*heading_main_alignment]] header huge">[[*pagetitle]]</h1>
             </div>
 
             [[*content]]

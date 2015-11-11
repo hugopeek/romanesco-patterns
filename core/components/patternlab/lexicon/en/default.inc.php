@@ -8,7 +8,7 @@ $_lang['patternlab.footer.qredits_title'] = 'Responsive webdesign with MODX in U
 $_lang['patternlab.menu.brand'] = 'Home';
 $_lang['patternlab.menu.overview'] = 'Overview';
 
-// Social elements
+// Social
 $_lang['patternlab.social.connect_facebook_company'] = 'Visit our Facebook page';
 $_lang['patternlab.social.connect_googleplus_company'] = 'Find us on Google+';
 $_lang['patternlab.social.connect_linkedin_company'] = 'Connect with us on LinkedIn';
@@ -34,3 +34,8 @@ $_lang['patternlab.social.share_twitter_title'] = 'Tweet about this';
 // Blog
 $_lang['patternlab.blog.written_by'] = 'Written by';
 $_lang['patternlab.blog.written_on'] = 'on';
+
+// Search
+$_lang['patternlab.search.field_placeholder'] = 'What are you looking for?';
+$_lang['patternlab.search.field_button_text'] = 'Search';
+$_lang['patternlab.search.result_button_text'] = 'Go to this page';

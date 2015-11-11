@@ -1,0 +1,28 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "searchField",
+                    "category": "m_search"
+                },{
+                    "name": "searchFieldFullscreen",
+                    "category": "m_search"
+                },{
+                    "name": "searchResultContainer",
+                    "category": "m_search"
+                },{
+                    "name": "searchResultRow",
+                    "category": "m_search"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_search",
+                    "parent": "01-molecules"
+                }
+            ]
+        }
+    }
+}

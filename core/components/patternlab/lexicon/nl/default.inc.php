@@ -8,7 +8,7 @@ $_lang['patternlab.footer.qredits_title'] = 'Responsive webdesign met MODX CMS i
 $_lang['patternlab.menu.brand'] = 'Home';
 $_lang['patternlab.menu.overview'] = 'Overzicht';
 
-// Social elements
+// Social
 $_lang['patternlab.social.connect_facebook_title'] = 'Bezoek onze Facebook pagina';
 $_lang['patternlab.social.connect_googleplus_title'] = 'Bekijk ons Google+ profiel';
 $_lang['patternlab.social.connect_instagram_title'] = 'Volg ons op Instagram';
@@ -34,3 +34,8 @@ $_lang['patternlab.social.share_twitter_title'] = 'Tweeten';
 // Blog
 $_lang['patternlab.blog.written_by'] = 'Geschreven door';
 $_lang['patternlab.blog.written_on'] = 'op';
+
+// Search
+$_lang['patternlab.search.field_placeholder'] = 'Waar ben je naar op zoek?';
+$_lang['patternlab.search.field_button_text'] = 'Zoeken';
+$_lang['patternlab.search.result_button_text'] = 'Ga naar deze pagina';
