@@ -18,6 +18,13 @@
     ]]
 </[[+title_hierarchy]]>
 
+[[If?
+    &subject=`[[+show_introtext]]`
+    &operator=`EQ`
+    &operand=`1`
+    &then=`[[!$introtextDescription]]`
+]]
+
 <p>
     [[!$socialConnectButtonsTeam? &button_type=`basic`]]
 </p>

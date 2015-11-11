@@ -53,6 +53,10 @@
 					"parent": "00-atoms"
 				},
 				{
+					"name": "Content",
+					"parent": "a_content"
+				},
+				{
 					"name": "a_contentblocks",
 					"parent": "00-atoms"
 				},
@@ -186,6 +190,10 @@
 				},
 				{
 					"name": "a_stats",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "a_taxonomy",
 					"parent": "00-atoms"
 				},
 				{
@@ -567,6 +575,10 @@
 					"category": "a_stats"
 				},
 				{
+					"name": "tagItemBasic",
+					"category": "a_taxonomy"
+				},
+				{
 					"name": "cbHeaderIconSVG",
 					"category": "m_contentblocks"
 				},
@@ -895,6 +907,10 @@
 					"category": "m_ov_blog"
 				},
 				{
+					"name": "overviewRowBlogQuote",
+					"category": "m_ov_blog"
+				},
+				{
 					"name": "overviewRowIconTop",
 					"category": "m_ov_icons"
 				},
@@ -1016,6 +1032,20 @@
 						"NewsArticle",
 						"Blog - Article",
 						"News - Article"
+					]
+				},
+				{
+					"caption": "Main heading alignment",
+					"name": "heading_main_alignment",
+					"description": "Specify how to align the pagetitle, in order to match content alignment.",
+					"category": "Content",
+					"sortOrder": "1",
+					"type": "listbox",
+					"inputOptionValues": "Left==left aligned||Center==center aligned||Right==right aligned",
+					"defaultValue": "left aligned",
+					"templates": [
+						"BasicOverview",
+						"Basic - Overview"
 					]
 				},
 				{

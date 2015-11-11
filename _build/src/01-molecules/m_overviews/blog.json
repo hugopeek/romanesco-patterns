@@ -11,6 +11,9 @@
                 },{
                     "name": "overviewRowBlogFluid",
                     "category": "m_ov_blog"
+                },{
+                    "name": "overviewRowBlogQuote",
+                    "category": "m_ov_blog"
                 }
             ]
         }

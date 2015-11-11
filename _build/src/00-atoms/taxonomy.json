@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "tagItemBasic",
+                    "category": "a_taxonomy"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_taxonomy",
+                    "parent": "00-atoms"
+                }
+            ]
+        }
+    }
+}

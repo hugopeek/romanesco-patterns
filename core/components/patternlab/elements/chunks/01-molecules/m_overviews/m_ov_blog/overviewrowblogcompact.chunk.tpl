@@ -7,12 +7,11 @@
 <div class="content">
     <a href="[[~[[+id]]]]" class="header">
         [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
-        <span class="meta date">[[+createdon:strtotime:date=`%d-%m`]]</span>
     </a>
-    [[If?
-        &subject=`[[+show_subtitle]]`
-        &operator=`EQ`
-        &operand=`1`
-        &then=`<div class="description">[[+longtitle:empty=`[[+pagetitle]]`]]</div>`
-    ]]
+    <div class="description">
+        <span class="meta date">
+            <i class="icon calendar"></i>
+            [[+publishedon:strtotime:date=`%e %B %Y`]]
+        </span>
+    </div>
 </div>

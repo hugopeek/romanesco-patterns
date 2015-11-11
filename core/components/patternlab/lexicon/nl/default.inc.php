@@ -30,3 +30,7 @@ $_lang['patternlab.social.share_googleplus_title'] = 'Geef dit een +1';
 $_lang['patternlab.social.share_linkedin_title'] = 'Delen via LinkedIn';
 $_lang['patternlab.social.share_pinterest_title'] = 'Pinnen';
 $_lang['patternlab.social.share_twitter_title'] = 'Tweeten';
+
+// Blog
+$_lang['patternlab.blog.written_by'] = 'Geschreven door';
+$_lang['patternlab.blog.written_on'] = 'op';

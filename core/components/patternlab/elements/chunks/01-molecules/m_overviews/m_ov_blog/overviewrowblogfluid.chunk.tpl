@@ -20,7 +20,7 @@
             <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
         </a>
         <span class="meta">
-            <em>Geschreven door <a href="[[~[[+team_member_id]]]]">[[+tv.article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]</a> op [[+publishedon:strtotime:date=`%e %B %Y`]]</em>
+            <em>[[%patternlab.blog.written_by]] <a href="[[~[[+team_member_id]]]]">[[+tv.article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]</a> [[%patternlab.blog.written_on]] [[+publishedon:strtotime:date=`%e %B %Y`]]</em>
         </span>
     </p>
     <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>

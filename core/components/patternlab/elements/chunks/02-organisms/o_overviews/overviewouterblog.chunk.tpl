@@ -29,3 +29,5 @@
 </div>
 
 [[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]
+
+<script id="dsq-count-scr" src="//[[++disqus_shortname]].disqus.com/count.js" async></script>
