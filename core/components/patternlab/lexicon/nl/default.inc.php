@@ -7,6 +7,8 @@ $_lang['patternlab.footer.qredits_title'] = 'Responsive webdesign met MODX CMS i
 // Navigation
 $_lang['patternlab.menu.brand'] = 'Home';
 $_lang['patternlab.menu.overview'] = 'Overzicht';
+$_lang['patternlab.menu.logo_title'] = 'Homepage van [[++site_name]]';
+$_lang['patternlab.menu.close_title'] = 'Sluiten';
 
 // Social
 $_lang['patternlab.social.connect_facebook_title'] = 'Bezoek onze Facebook pagina';

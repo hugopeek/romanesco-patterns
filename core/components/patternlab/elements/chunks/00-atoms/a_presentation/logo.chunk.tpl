@@ -1,1 +1,1 @@
-<a class="brand logo" href="[[~[[++site_start]]]]">[[++site_name]]</a>
+<a class="brand logo" href="[[~[[++site_start]]]]" title="[[%patternlab.menu.logo_title]]">[[++site_name]]</a>
