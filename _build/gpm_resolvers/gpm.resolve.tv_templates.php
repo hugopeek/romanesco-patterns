@@ -29,6 +29,11 @@ if ($object->xpdo) {
     2 => 'Blog - Article',
     3 => 'News - Article',
   ),
+  'heading_main_alignment' => 
+  array (
+    0 => 'BasicOverview',
+    1 => 'Basic - Overview',
+  ),
   'cta_availability' => 
   array (
     0 => 'GlobalCTA',
