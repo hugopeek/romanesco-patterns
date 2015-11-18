@@ -8,7 +8,7 @@
     </div>
     [[pdoMenu?
         &parents=`0`
-        &level=`2`
+        &level=`3`
         &tplOuter=`navWrapper`
         &tpl=`navItemWrapper`
         &tplParentRow=`navItemParent`

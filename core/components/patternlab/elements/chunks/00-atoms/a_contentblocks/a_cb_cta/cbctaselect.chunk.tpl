@@ -7,4 +7,5 @@
     &showUnpublished=`1`
     &sortBy=`menuindex`
     &sortDir=`ASC`
+    &tvFilters=`cta_availability==%content%`
 ]]
