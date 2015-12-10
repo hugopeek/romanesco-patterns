@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "projectHubOuter",
+                    "category": "o_project"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_project",
+                    "parent": "02-organisms"
+                }
+            ]
+        }
+    }
+}

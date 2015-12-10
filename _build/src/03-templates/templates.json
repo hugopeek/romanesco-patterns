@@ -36,6 +36,10 @@
                     "name": "fbForm",
                     "icon": "icon-check-square-o",
                     "category": "t_global"
+                },{
+                    "name": "ProjectHub",
+                    "icon": "icon-list",
+                    "category": "t_project"
                 }
             ],
             "categories": [
@@ -47,6 +51,9 @@
                     "parent": "03-templates"
                 },{
                     "name": "t_global",
+                    "parent": "03-templates"
+                },{
+                    "name": "t_project",
                     "parent": "03-templates"
                 }
             ]

@@ -1,0 +1,16 @@
+<div class="[[!If? &subject=`[[+entry_date:strtotime]]` &operator=`GTE` &operand=`[[!Time]]` &then=`muted`]] event">
+    <div class="label">
+        <i class="[[+entry_status:eq=`1`:then=`checkmark`:else=`pencil`]] icon"></i>
+    </div>
+    <div class="content">
+        <div class="date">
+            [[+entry_date:strtotime:date=`%e %B %Y`]]
+        </div>
+        <div class="summary">
+            [[+entry_title]]
+        </div>
+        <div class="expandable extra text">
+            [[+entry_description]]
+        </div>
+    </div>
+</div>

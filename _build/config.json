@@ -189,6 +189,14 @@
 					"parent": "00-atoms"
 				},
 				{
+					"name": "a_project",
+					"parent": "00-atoms"
+				},
+				{
+					"name": "Project Hub",
+					"parent": "a_project"
+				},
+				{
 					"name": "a_search",
 					"parent": "00-atoms"
 				},
@@ -257,6 +265,10 @@
 					"parent": "01-molecules"
 				},
 				{
+					"name": "m_project",
+					"parent": "01-molecules"
+				},
+				{
 					"name": "m_search",
 					"parent": "01-molecules"
 				},
@@ -293,6 +305,10 @@
 					"parent": "02-organisms"
 				},
 				{
+					"name": "o_project",
+					"parent": "02-organisms"
+				},
+				{
 					"name": "o_search",
 					"parent": "02-organisms"
 				},
@@ -310,6 +326,10 @@
 				},
 				{
 					"name": "t_global",
+					"parent": "03-templates"
+				},
+				{
+					"name": "t_project",
 					"parent": "03-templates"
 				},
 				{
@@ -711,6 +731,10 @@
 					"category": "m_presentation"
 				},
 				{
+					"name": "projectHubRow",
+					"category": "m_project"
+				},
+				{
 					"name": "searchField",
 					"category": "m_search"
 				},
@@ -829,6 +853,10 @@
 				{
 					"name": "overviewOuterFluid",
 					"category": "o_overviews"
+				},
+				{
+					"name": "projectHubOuter",
+					"category": "o_project"
 				},
 				{
 					"name": "searchResultOuter",
@@ -1599,6 +1627,20 @@
 						"Blog - Article",
 						"News - Article"
 					]
+				},
+				{
+					"caption": "Project hub timeline",
+					"name": "project_hub_timeline",
+					"description": "In this timeline you can keep track of the projects' progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
+					"type": "migx",
+					"category": "Project Hub",
+					"sortOrder": "1",
+					"inputProperties": {
+						"configs": "project_hub_timeline"
+					},
+					"templates": [
+						"ProjectHub"
+					]
 				}
 			],
 			"templates": [
@@ -1644,6 +1686,11 @@
 					"name": "fbForm",
 					"icon": "icon-check-square-o",
 					"category": "t_global"
+				},
+				{
+					"name": "ProjectHub",
+					"icon": "icon-list",
+					"category": "t_project"
 				}
 			],
 			"snippets": [
