@@ -5,6 +5,15 @@
                 {
                     "name": "hero",
                     "category": "m_presentation"
+                },{
+                    "name": "sliderImageRow",
+                    "category": "m_presentation"
+                },{
+                    "name": "sliderImageContentRow",
+                    "category": "m_presentation"
+                },{
+                    "name": "accordionBasicRow",
+                    "category": "m_presentation"
                 }
             ],
 

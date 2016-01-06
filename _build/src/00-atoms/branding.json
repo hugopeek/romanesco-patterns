@@ -4,16 +4,16 @@
             "chunks": [
                 {
                     "name": "favicons",
-                    "category": "a_presentation"
+                    "category": "a_branding"
                 },{
                     "name": "logo",
-                    "category": "a_presentation"
+                    "category": "a_branding"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "a_presentation",
+                    "name": "a_branding",
                     "parent": "00-atoms"
                 }
             ]

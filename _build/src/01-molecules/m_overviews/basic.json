@@ -12,7 +12,7 @@
                     "name": "overviewRowBasicLinkCard",
                     "category": "m_ov_basic"
                 },{
-                    "name": "overviewRowCompact",
+                    "name": "overviewRowBasicCompact",
                     "category": "m_ov_basic"
                 }
             ]

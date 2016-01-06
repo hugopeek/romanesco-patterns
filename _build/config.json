@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.5.7",
+	"version": "0.5.8",
 	"package": {
 		"elements": {
 			"categories": [
@@ -39,6 +39,10 @@
 				{
 					"name": "Comments",
 					"parent": "a_blog"
+				},
+				{
+					"name": "a_branding",
+					"parent": "00-atoms"
 				},
 				{
 					"name": "a_buttons",
@@ -185,10 +189,6 @@
 					"parent": "a_overviews"
 				},
 				{
-					"name": "a_presentation",
-					"parent": "00-atoms"
-				},
-				{
 					"name": "a_project",
 					"parent": "00-atoms"
 				},
@@ -273,10 +273,6 @@
 					"parent": "01-molecules"
 				},
 				{
-					"name": "m_sliders",
-					"parent": "01-molecules"
-				},
-				{
 					"name": "m_social",
 					"parent": "01-molecules"
 				},
@@ -293,15 +289,15 @@
 					"parent": "02-organisms"
 				},
 				{
-					"name": "o_interface",
-					"parent": "02-organisms"
-				},
-				{
 					"name": "o_layouts",
 					"parent": "02-organisms"
 				},
 				{
 					"name": "o_overviews",
+					"parent": "02-organisms"
+				},
+				{
+					"name": "o_presentation",
 					"parent": "02-organisms"
 				},
 				{
@@ -313,7 +309,7 @@
 					"parent": "02-organisms"
 				},
 				{
-					"name": "o_sliders",
+					"name": "o_toolbars",
 					"parent": "02-organisms"
 				},
 				{
@@ -379,6 +375,14 @@
 			],
 			"chunks": [
 				{
+					"name": "favicons",
+					"category": "a_branding"
+				},
+				{
+					"name": "logo",
+					"category": "a_branding"
+				},
+				{
 					"name": "buttonHrefBasic",
 					"category": "a_buttons"
 				},
@@ -435,6 +439,14 @@
 					"category": "a_btn_social"
 				},
 				{
+					"name": "headingBasic",
+					"category": "a_content"
+				},
+				{
+					"name": "headingBasicSubtitle",
+					"category": "a_content"
+				},
+				{
 					"name": "headingHierarchy",
 					"category": "a_content"
 				},
@@ -456,6 +468,14 @@
 				},
 				{
 					"name": "introtextSingleParagraph",
+					"category": "a_content"
+				},
+				{
+					"name": "imageBasic",
+					"category": "a_content"
+				},
+				{
+					"name": "imageBasicLink",
 					"category": "a_content"
 				},
 				{
@@ -595,14 +615,6 @@
 					"category": "a_nav_pagination"
 				},
 				{
-					"name": "favicons",
-					"category": "a_presentation"
-				},
-				{
-					"name": "logo",
-					"category": "a_presentation"
-				},
-				{
 					"name": "searchButton",
 					"category": "a_search"
 				},
@@ -731,6 +743,18 @@
 					"category": "m_presentation"
 				},
 				{
+					"name": "sliderImageRow",
+					"category": "m_presentation"
+				},
+				{
+					"name": "sliderImageContentRow",
+					"category": "m_presentation"
+				},
+				{
+					"name": "accordionBasicRow",
+					"category": "m_presentation"
+				},
+				{
 					"name": "projectHubRow",
 					"category": "m_project"
 				},
@@ -749,14 +773,6 @@
 				{
 					"name": "searchResultRow",
 					"category": "m_search"
-				},
-				{
-					"name": "cbSliderImageRow",
-					"category": "m_sliders"
-				},
-				{
-					"name": "cbSliderContentRow",
-					"category": "m_sliders"
 				},
 				{
 					"name": "socialConnectButtons",
@@ -797,10 +813,6 @@
 				{
 					"name": "headerBasic",
 					"category": "o_headers"
-				},
-				{
-					"name": "toolbarBasic",
-					"category": "o_interface"
 				},
 				{
 					"name": "cbLayoutSingleColumn",
@@ -855,6 +867,14 @@
 					"category": "o_overviews"
 				},
 				{
+					"name": "sliderOuter",
+					"category": "o_presentation"
+				},
+				{
+					"name": "accordionOuter",
+					"category": "o_presentation"
+				},
+				{
 					"name": "projectHubOuter",
 					"category": "o_project"
 				},
@@ -863,8 +883,8 @@
 					"category": "o_search"
 				},
 				{
-					"name": "cbSliderOuter",
-					"category": "o_sliders"
+					"name": "toolbarBasic",
+					"category": "o_toolbars"
 				},
 				{
 					"name": "cbCTASelect",
@@ -955,6 +975,10 @@
 					"category": "a_cb_settings"
 				},
 				{
+					"name": "cbSettingContainerType",
+					"category": "a_cb_settings"
+				},
+				{
 					"name": "overviewRowBasic",
 					"category": "m_ov_basic"
 				},
@@ -967,7 +991,7 @@
 					"category": "m_ov_basic"
 				},
 				{
-					"name": "overviewRowCompact",
+					"name": "overviewRowBasicCompact",
 					"category": "m_ov_basic"
 				},
 				{
@@ -1108,20 +1132,6 @@
 						"NewsArticle",
 						"Blog - Article",
 						"News - Article"
-					]
-				},
-				{
-					"caption": "Main heading alignment",
-					"name": "heading_main_alignment",
-					"description": "Specify how to align the pagetitle, in order to match content alignment.",
-					"category": "Content",
-					"sortOrder": "1",
-					"type": "listbox",
-					"inputOptionValues": "Left==left aligned||Center==center aligned||Right==right aligned",
-					"defaultValue": "left aligned",
-					"templates": [
-						"BasicOverview",
-						"Basic - Overview"
 					]
 				},
 				{

@@ -3,14 +3,14 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbSliderOuter",
-                    "category": "o_sliders"
+                    "name": "toolbarBasic",
+                    "category": "o_toolbars"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "o_sliders",
+                    "name": "o_toolbars",
                     "parent": "02-organisms"
                 }
             ]

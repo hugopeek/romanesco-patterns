@@ -26,6 +26,9 @@
                 },{
                     "name": "cbSettingSortBy",
                     "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingContainerType",
+                    "category": "a_cb_settings"
                 }
             ]
         }

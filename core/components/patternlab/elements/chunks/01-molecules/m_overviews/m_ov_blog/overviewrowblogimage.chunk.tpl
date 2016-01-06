@@ -17,18 +17,21 @@
         <i class="icon comments"></i>
         <a href="[[~[[+id]]? &scheme=`full`]]#disqus_thread">Comments</a>
     </span>
-    <div class="ui tag labels">
-        [[!TaggerGetTags? &resources=`[[+id]]` &rowTpl=`tagItemBasic`]]
-    </div>
 </p>
 
 <p class="description">
     [[+introtext:stripString=`<p>`:stripString=`</p>`]]
 </p>
 
+<div class="ui divider"></div>
+
+<div class="ui tag labels">
+    [[!TaggerGetTags? &resources=`[[+id]]` &rowTpl=`tagItemBasic`]]
+</div>
+
 [[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`[[!$buttonHrefOverview]]`
+    &then=`[[!$buttonHrefOverview? &classes=`tiny right floated`]]`
 ]]
