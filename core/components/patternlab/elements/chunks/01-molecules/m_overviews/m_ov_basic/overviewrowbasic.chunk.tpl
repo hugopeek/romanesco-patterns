@@ -1,16 +1,16 @@
-[[If?
+[[[[If?
     &subject=`[[+show_subtitle]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`[[!$headingHierarchySubtitleLink]]`
-    &else=`[[!$headingHierarchyLink]]`
-]]
-[[If?
+    &then=`!$headingHierarchySubtitleLink`
+    &else=`!$headingHierarchyLink`
+]]]]
+[[[[If?
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`[[!$introtextDescription]]`
-]]
+    &then=`!$introtextDescription`
+]]]]
 [[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`

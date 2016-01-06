@@ -1,11 +1,11 @@
 <div class="content">
-    [[If?
+    [[[[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`[[!$headingHierarchySubtitle]]`
-        &else=`[[!$headingHierarchy]]`
-    ]]
+        &then=`!$headingHierarchySubtitle`
+        &else=`!$headingHierarchy`
+    ]]]]
 </div>
 
 [[If?
