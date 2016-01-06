@@ -29,8 +29,8 @@
                 </div>
             </div>
 
-            <div class="ui text container">
-                <h1 class="ui main header huge">[[*pagetitle]]</h1>
+            <div class="ui introduction text container">
+                <h1 class="ui huge header">[[*pagetitle]]</h1>
                 <p class="meta date"><em>[[*publishedon:strtotime:date=`%e %B %Y`]]</em></p>
             </div>
 

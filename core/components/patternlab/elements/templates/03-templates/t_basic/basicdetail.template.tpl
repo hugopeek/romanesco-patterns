@@ -17,9 +17,6 @@
     <main id="main" role="main">
         <div class="ui grid container">
             <article id="content" class="sixteen wide twelve wide computer column">
-
-                <h1 class="ui main header huge">[[*pagetitle]]</h1>
-
                 [[*content]]
             </article>
 
