@@ -1,0 +1,27 @@
+{
+    "package":{
+        "resources": [
+            {
+                "pagetitle": "Footers",
+                "file": "p_global/footers.html",
+                "context_key": "global",
+                "template": "BasicOverview"
+            },{
+                "pagetitle": "Forms",
+                "file": "p_global/forms.html",
+                "context_key": "global",
+                "template": "BasicOverview"
+            },{
+                "pagetitle": "Call To Actions",
+                "file": "p_global/cta.html",
+                "context_key": "global",
+                "template": "BasicOverview"
+            },{
+                "pagetitle": "Backgrounds",
+                "file": "p_global/backgrounds.html",
+                "context_key": "global",
+                "template": "GlobalBackgrounds"
+            }
+        ]
+    }
+}

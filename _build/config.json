@@ -357,7 +357,7 @@
 					"parent": "05-formulas"
 				},
 				{
-					"name": "f_sliders",
+					"name": "f_presentation",
 					"parent": "05-formulas"
 				},
 				{
@@ -1793,7 +1793,7 @@
 				{
 					"name": "sliderLoadAssets",
 					"description": "Load CSS and JS dependencies for Slick slider through CDN.",
-					"category": "f_sliders"
+					"category": "f_presentation"
 				}
 			],
 			"plugins": [
@@ -1975,6 +1975,86 @@
 				"type": "textfield",
 				"area": "Search",
 				"value": "10"
+			}
+		],
+		"resources": [
+			{
+				"pagetitle": "Footers",
+				"file": "p_global/footers.html",
+				"context_key": "global",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Forms",
+				"file": "p_global/forms.html",
+				"context_key": "global",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Call To Actions",
+				"file": "p_global/cta.html",
+				"context_key": "global",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Backgrounds",
+				"file": "p_global/backgrounds.html",
+				"context_key": "global",
+				"template": "GlobalBackgrounds"
+			},
+			{
+				"pagetitle": "Atoms",
+				"parent": "Pattern library",
+				"file": "p_global/p_pattern-library/00-atoms.html",
+				"properties": "p_global/p_pattern-library/00-atoms.json",
+				"context_key": "hub",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Molecules",
+				"parent": "Pattern library",
+				"file": "p_global/p_pattern-library/01-molecules.html",
+				"properties": "p_global/p_pattern-library/01-molecules.json",
+				"context_key": "hub",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Organisms",
+				"parent": "Pattern library",
+				"file": "p_global/p_pattern-library/02-organisms.html",
+				"properties": "p_global/p_pattern-library/02-organisms.json",
+				"context_key": "hub",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Templates",
+				"parent": "Pattern library",
+				"file": "p_global/p_pattern-library/03-templates.html",
+				"properties": "p_global/p_pattern-library/03-templates.json",
+				"context_key": "hub",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Pages",
+				"parent": "Pattern library",
+				"file": "p_global/p_pattern-library/04-pages.html",
+				"properties": "p_global/p_pattern-library/04-pages.json",
+				"context_key": "hub",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Project Hub",
+				"file": "p_hub/project-hub.html",
+				"properties": "p_hub/project-hub.json",
+				"context_key": "hub",
+				"template": "BasicOverview"
+			},
+			{
+				"pagetitle": "Pattern Library",
+				"file": "p_hub/pattern-library.html",
+				"properties": "p_hub/pattern-library.json",
+				"context_key": "hub",
+				"template": "BasicOverview"
 			}
 		]
 	}

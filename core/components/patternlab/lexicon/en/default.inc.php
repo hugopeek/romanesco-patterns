@@ -82,8 +82,21 @@ $_lang['patternlab.menu.clear_cache_overviews_description'] = 'Remove cache file
 
 $_lang['collections.forms.children'] = 'Forms';
 $_lang['collections.forms.children.create'] = 'Add form';
-$_lang['collections.forms.children.back_to_collection_label'] = 'Back to Forms overview';
+$_lang['collections.forms.children.back_to_collection_label'] = 'Back to overview';
 
 $_lang['collections.cta.children'] = 'Call To Actions';
 $_lang['collections.cta.children.create'] = 'Add CTA';
-$_lang['collections.cta.children.back_to_collection_label'] = 'Back to CTA overview';
+$_lang['collections.cta.children.back_to_collection_label'] = 'Back to overview';
+
+$_lang['collections.blog.children'] = 'Blog articles';
+$_lang['collections.blog.children.create'] = 'New article';
+$_lang['collections.blog.children.back_to_collection_label'] = 'Back to overview';
+
+$_lang['collections.team.children'] = 'Team';
+$_lang['collections.team.children.create'] = 'Add teammember';
+$_lang['collections.team.children.back_to_collection_label'] = 'Back to overview';
+
+$_lang['collections.testimonials.children'] = 'Testimonials';
+$_lang['collections.testimonials.children.create'] = 'Add testimonial';
+$_lang['collections.testimonials.children.back_to_collection_label'] = 'Back to overview';
+

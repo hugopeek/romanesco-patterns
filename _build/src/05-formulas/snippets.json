@@ -45,7 +45,7 @@
                 },{
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Slick slider through CDN.",
-                    "category": "f_sliders"
+                    "category": "f_presentation"
                 }
             ],
             "categories": [
@@ -65,7 +65,7 @@
                     "name": "f_framework",
                     "parent": "05-formulas"
                 },{
-                    "name": "f_sliders",
+                    "name": "f_presentation",
                     "parent": "05-formulas"
                 }
             ]

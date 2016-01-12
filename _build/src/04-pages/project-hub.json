@@ -1,0 +1,19 @@
+{
+    "package":{
+        "resources": [
+            {
+                "pagetitle": "Project Hub",
+                "file": "p_hub/project-hub.html",
+                "properties": "p_hub/project-hub.json",
+                "context_key": "hub",
+                "template": "BasicOverview"
+            },{
+                "pagetitle": "Pattern Library",
+                "file": "p_hub/pattern-library.html",
+                "properties": "p_hub/pattern-library.json",
+                "context_key": "hub",
+                "template": "BasicOverview"
+            }
+        ]
+    }
+}
