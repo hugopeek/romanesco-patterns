@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "projectHubRow",
+                    "category": "m_project"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_project",
+                    "parent": "02-molecules"
+                }
+            ]
+        }
+    }
+}

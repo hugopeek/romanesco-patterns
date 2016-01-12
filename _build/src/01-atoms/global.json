@@ -1,0 +1,83 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "globalBackgroundImgCSS",
+                    "category": "a_global"
+                },{
+                    "name": "globalBackgroundImgTVOptions",
+                    "category": "a_global"
+                },{
+                    "name": "iconTVInputOptions",
+                    "category": "a_global"
+                }
+            ],
+            "tvs": [
+                {
+                    "caption": "Global background images",
+                    "name": "global_background_img",
+                    "description": "These backgrounds can be applied to CB layouts (under their Settings wheel) and possibly to other elements too.",
+                    "type": "migx",
+                    "category": "Global - Images",
+                    "sortOrder": "1",
+                    "inputProperties": {
+                        "configs": "global_background_images"
+                    },
+                    "templates": [
+                        "GlobalBackgrounds"
+                    ]
+                },{
+                    "caption": "Background",
+                    "name": "header_background",
+                    "description": "Select a background for this header. You can create these backgrounds under Content > Global Content > Backgrounds.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "10",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "templates": [
+                        "Home",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "BlogArticle",
+                        "NewsArticle",
+                        "Homepage",
+                        "Basic - Overview",
+                        "Basic - Detail",
+                        "Blog - Article",
+                        "News - Article"
+                    ]
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_global",
+                    "parent": "01-atoms"
+                },{
+                    "name": "a_header",
+                    "parent": "01-atoms"
+                },{
+                    "name": "Global - Images",
+                    "parent": "a_global"
+                },{
+                    "name": "Global - SVG",
+                    "parent": "a_global"
+                },{
+                    "name": "Header",
+                    "parent": "a_header"
+                }
+            ]
+        },
+        "systemSettings": [
+            {
+                "key": "global_backgrounds_id",
+                "type": "numberfield",
+                "area": "Pages"
+            },{
+                "key": "global_footer_id",
+                "type": "numberfield",
+                "area": "Pages"
+            }
+        ]
+    }
+}

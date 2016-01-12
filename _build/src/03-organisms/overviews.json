@@ -1,0 +1,37 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewOuter",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterBlog",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterNews",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterTeam",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterTestimonials",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterSpecific",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterFluid",
+                    "category": "o_overviews"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_overviews",
+                    "parent": "03-organisms"
+                }
+            ]
+        }
+    }
+}

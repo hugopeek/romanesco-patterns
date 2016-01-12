@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "getHitCount",
+                    "category": "m_stats"
+                },{
+                    "name": "googleAnalytics",
+                    "category": "m_stats"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_stats",
+                    "parent": "02-molecules"
+                }
+            ]
+        }
+    }
+}

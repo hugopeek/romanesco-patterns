@@ -1,0 +1,62 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "BasicOverview",
+                    "category": "t_basic"
+                },{
+                    "name": "BasicDetail",
+                    "category": "t_basic"
+                },{
+                    "name": "Home",
+                    "icon": "icon-home",
+                    "category": "t_basic"
+                },{
+                    "name": "BlogOverview",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "BlogArticle",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "NewsArticle",
+                    "icon": "icon-newspaper-o",
+                    "category": "t_publication"
+                },{
+                    "name": "GlobalBackgrounds",
+                    "icon": "icon-image",
+                    "category": "t_global"
+                },{
+                    "name": "GlobalCTA",
+                    "icon": "icon-bullhorn",
+                    "category": "t_global"
+                },{
+                    "name": "fbForm",
+                    "icon": "icon-check-square-o",
+                    "category": "t_global"
+                },{
+                    "name": "ProjectHub",
+                    "icon": "icon-list",
+                    "category": "t_project"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_basic",
+                    "parent": "04-templates"
+                },{
+                    "name": "t_publication",
+                    "parent": "04-templates"
+                },{
+                    "name": "t_global",
+                    "parent": "04-templates"
+                },{
+                    "name": "t_project",
+                    "parent": "04-templates"
+                }
+            ]
+        }
+    }
+}

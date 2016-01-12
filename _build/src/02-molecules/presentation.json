@@ -1,0 +1,28 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "hero",
+                    "category": "m_presentation"
+                },{
+                    "name": "sliderImageRow",
+                    "category": "m_presentation"
+                },{
+                    "name": "sliderImageContentRow",
+                    "category": "m_presentation"
+                },{
+                    "name": "accordionBasicRow",
+                    "category": "m_presentation"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_presentation",
+                    "parent": "02-molecules"
+                }
+            ]
+        }
+    }
+}

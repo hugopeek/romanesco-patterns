@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "sliderOuter",
+                    "category": "o_presentation"
+                },{
+                    "name": "accordionOuter",
+                    "category": "o_presentation"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_presentation",
+                    "parent": "03-organisms"
+                }
+            ]
+        }
+    }
+}

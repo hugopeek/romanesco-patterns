@@ -8,29 +8,29 @@
 		"elements": {
 			"categories": [
 				{
-					"name": "00-atoms"
+					"name": "01-atoms"
 				},
 				{
-					"name": "01-molecules"
+					"name": "02-molecules"
 				},
 				{
-					"name": "02-organisms"
+					"name": "03-organisms"
 				},
 				{
-					"name": "03-templates"
+					"name": "04-templates"
 				},
 				{
-					"name": "04-pages"
+					"name": "05-pages"
 				},
 				{
-					"name": "05-formulas"
+					"name": "06-formulas"
 				},
 				{
-					"name": "06-computations"
+					"name": "07-computations"
 				},
 				{
 					"name": "a_blog",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "About",
@@ -42,11 +42,11 @@
 				},
 				{
 					"name": "a_branding",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_buttons",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_btn_social",
@@ -54,7 +54,7 @@
 				},
 				{
 					"name": "a_content",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "Content",
@@ -62,7 +62,7 @@
 				},
 				{
 					"name": "a_contentblocks",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_cb_cta",
@@ -82,7 +82,7 @@
 				},
 				{
 					"name": "a_cta",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "CTA - Settings",
@@ -90,15 +90,15 @@
 				},
 				{
 					"name": "a_formblocks",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "m_formblocks",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "o_formblocks",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "a_fb_inputs",
@@ -130,11 +130,11 @@
 				},
 				{
 					"name": "a_global",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_header",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "Global - Images",
@@ -150,11 +150,11 @@
 				},
 				{
 					"name": "a_headers",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_navigation",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_nav_breadcrumbs",
@@ -174,7 +174,7 @@
 				},
 				{
 					"name": "a_overviews",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "Overview - Image",
@@ -190,7 +190,7 @@
 				},
 				{
 					"name": "a_project",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "Project Hub",
@@ -198,39 +198,39 @@
 				},
 				{
 					"name": "a_search",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_stats",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "a_taxonomy",
-					"parent": "00-atoms"
+					"parent": "01-atoms"
 				},
 				{
 					"name": "m_contentblocks",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_cta",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_global",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_layouts",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_navigation",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_overviews",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_ov_basic",
@@ -262,75 +262,75 @@
 				},
 				{
 					"name": "m_presentation",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_project",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_search",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_social",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "m_stats",
-					"parent": "01-molecules"
+					"parent": "02-molecules"
 				},
 				{
 					"name": "o_global",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "o_headers",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "o_layouts",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "o_overviews",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "o_presentation",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "o_project",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "o_search",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "o_toolbars",
-					"parent": "02-organisms"
+					"parent": "03-organisms"
 				},
 				{
 					"name": "t_basic",
-					"parent": "03-templates"
+					"parent": "04-templates"
 				},
 				{
 					"name": "t_publication",
-					"parent": "03-templates"
+					"parent": "04-templates"
 				},
 				{
 					"name": "t_global",
-					"parent": "03-templates"
+					"parent": "04-templates"
 				},
 				{
 					"name": "t_project",
-					"parent": "03-templates"
+					"parent": "04-templates"
 				},
 				{
 					"name": "f_formblocks",
-					"parent": "05-formulas"
+					"parent": "06-formulas"
 				},
 				{
 					"name": "f_fb_modifiers",
@@ -338,39 +338,39 @@
 				},
 				{
 					"name": "f_basic",
-					"parent": "05-formulas"
+					"parent": "06-formulas"
 				},
 				{
 					"name": "f_modifiers",
-					"parent": "05-formulas"
+					"parent": "06-formulas"
 				},
 				{
 					"name": "f_resources",
-					"parent": "05-formulas"
+					"parent": "06-formulas"
 				},
 				{
 					"name": "f_json",
-					"parent": "05-formulas"
+					"parent": "06-formulas"
 				},
 				{
 					"name": "f_framework",
-					"parent": "05-formulas"
+					"parent": "06-formulas"
 				},
 				{
 					"name": "f_presentation",
-					"parent": "05-formulas"
+					"parent": "06-formulas"
 				},
 				{
 					"name": "c_contentblocks",
-					"parent": "06-computations"
+					"parent": "07-computations"
 				},
 				{
 					"name": "c_formblocks",
-					"parent": "06-computations"
+					"parent": "07-computations"
 				},
 				{
 					"name": "c_global",
-					"parent": "06-computations"
+					"parent": "07-computations"
 				}
 			],
 			"chunks": [
@@ -2005,40 +2005,40 @@
 			{
 				"pagetitle": "Atoms",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/00-atoms.html",
-				"properties": "p_global/p_pattern-library/00-atoms.json",
+				"file": "p_global/p_pattern-library/01-atoms.html",
+				"properties": "p_global/p_pattern-library/01-atoms.json",
 				"context_key": "hub",
 				"template": "BasicOverview"
 			},
 			{
 				"pagetitle": "Molecules",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/01-molecules.html",
-				"properties": "p_global/p_pattern-library/01-molecules.json",
+				"file": "p_global/p_pattern-library/02-molecules.html",
+				"properties": "p_global/p_pattern-library/02-molecules.json",
 				"context_key": "hub",
 				"template": "BasicOverview"
 			},
 			{
 				"pagetitle": "Organisms",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/02-organisms.html",
-				"properties": "p_global/p_pattern-library/02-organisms.json",
+				"file": "p_global/p_pattern-library/03-organisms.html",
+				"properties": "p_global/p_pattern-library/03-organisms.json",
 				"context_key": "hub",
 				"template": "BasicOverview"
 			},
 			{
 				"pagetitle": "Templates",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/03-templates.html",
-				"properties": "p_global/p_pattern-library/03-templates.json",
+				"file": "p_global/p_pattern-library/04-templates.html",
+				"properties": "p_global/p_pattern-library/04-templates.json",
 				"context_key": "hub",
 				"template": "BasicOverview"
 			},
 			{
 				"pagetitle": "Pages",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/04-pages.html",
-				"properties": "p_global/p_pattern-library/04-pages.json",
+				"file": "p_global/p_pattern-library/05-pages.html",
+				"properties": "p_global/p_pattern-library/05-pages.json",
 				"context_key": "hub",
 				"template": "BasicOverview"
 			},

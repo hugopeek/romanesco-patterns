@@ -92,7 +92,7 @@ class HeadingImageInput extends cbBaseInput {
         // Grab the template from a .tpl file
         $corePath = $this->modx->getOption('patternlab.core_path', null, MODX_CORE_PATH . 'components/patternlab/');
 
-        $template = file_get_contents($corePath . 'elements/templates/03-templates/t_manager/cbheadingimageinput.template.tpl');
+        $template = file_get_contents($corePath . 'elements/inputs/cbheadingimageinput.template.tpl');
 
         // Wrap the template, giving the input a reference of "headingimageinput", and
         // add it to the returned array.

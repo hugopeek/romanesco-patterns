@@ -1,0 +1,52 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "breadcrumbOuter",
+                    "category": "a_nav_breadcrumbs"
+                },{
+                    "name": "breadcrumbRow",
+                    "category": "a_nav_breadcrumbs"
+                },{
+                    "name": "breadcrumbCurrent",
+                    "category": "a_nav_breadcrumbs"
+                },{
+                    "name": "navWrapper",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItem",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemWrapper",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemParent",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "paginationFluid",
+                    "category": "a_nav_pagination"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_navigation",
+                    "parent": "01-atoms"
+                },{
+                    "name": "a_nav_breadcrumbs",
+                    "parent": "a_navigation"
+                },{
+                    "name": "a_nav_primary",
+                    "parent": "a_navigation"
+                },{
+                    "name": "a_nav_offcanvas",
+                    "parent": "a_navigation"
+                },{
+                    "name": "a_nav_pagination",
+                    "parent": "a_navigation"
+                }
+            ]
+        }
+    }
+}

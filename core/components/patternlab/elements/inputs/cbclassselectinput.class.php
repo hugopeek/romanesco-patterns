@@ -25,7 +25,7 @@ class SelectInput extends cbBaseInput {
         // Grab the template from a .tpl file
         $corePath = $this->modx->getOption('patternlab.core_path', null, MODX_CORE_PATH . 'components/patternlab/');
 
-        $template = file_get_contents($corePath . 'elements/templates/03-templates/t_manager/cbselectinput.template.tpl');
+        $template = file_get_contents($corePath . 'elements/inputs/cbclassselectinput.template.tpl');
         
         // Wrap the template, giving the input a reference of "selectinput", and
         // add it to the returned array.

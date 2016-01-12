@@ -9,19 +9,19 @@
         "elements": {
             "categories": [
                 {
-                    "name": "00-atoms"
+                    "name": "01-atoms"
                 },{
-                    "name": "01-molecules"
+                    "name": "02-molecules"
                 },{
-                    "name": "02-organisms"
+                    "name": "03-organisms"
                 },{
-                    "name": "03-templates"
+                    "name": "04-templates"
                 },{
-                    "name": "04-pages"
+                    "name": "05-pages"
                 },{
-                    "name": "05-formulas"
+                    "name": "06-formulas"
                 },{
-                    "name": "06-computations"
+                    "name": "07-computations"
                 }
             ]
         },
