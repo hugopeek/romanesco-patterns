@@ -38,7 +38,7 @@
                     "category": "t_global"
                 },{
                     "name": "ProjectHub",
-                    "icon": "icon-list",
+                    "icon": "icon-history",
                     "category": "t_project"
                 }
             ],

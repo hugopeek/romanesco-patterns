@@ -5,6 +5,7 @@
                 "pagetitle": "Footers",
                 "file": "05-pages/p_global/footers.html",
                 "context_key": "global",
+                "template": "BasicOverview",
                 "class_key": "CollectionContainer",
                 "others": [{
                     "name": "collections_template",
@@ -14,6 +15,7 @@
                 "pagetitle": "Forms",
                 "file": "05-pages/p_global/forms.html",
                 "context_key": "global",
+                "template": "BasicOverview",
                 "class_key": "CollectionContainer",
                 "others": [{
                     "name": "collections_template",
@@ -23,6 +25,7 @@
                 "pagetitle": "Call To Actions",
                 "file": "05-pages/p_global/cta.html",
                 "context_key": "global",
+                "template": "BasicOverview",
                 "class_key": "CollectionContainer",
                 "others": [{
                     "name": "collections_template",

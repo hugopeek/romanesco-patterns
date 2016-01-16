@@ -27,6 +27,9 @@
                     "name": "introtextSingleParagraph",
                     "category": "a_content"
                 },{
+                    "name": "richTextSegment",
+                    "category": "a_content"
+                },{
                     "name": "imageBasic",
                     "category": "a_content"
                 },{

@@ -1,0 +1,15 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbFieldAlignment",
+                    "category": "a_cb_fields"
+                },{
+                    "name": "cbFieldPadding",
+                    "category": "a_cb_fields"
+                }
+            ]
+        }
+    }
+}

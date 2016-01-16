@@ -12,6 +12,9 @@
                     "name": "a_cb_layouts",
                     "parent": "a_contentblocks"
                 },{
+                    "name": "a_cb_fields",
+                    "parent": "a_contentblocks"
+                },{
                     "name": "a_cb_overviews",
                     "parent": "a_contentblocks"
                 },{

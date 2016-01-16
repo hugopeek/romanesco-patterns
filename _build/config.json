@@ -73,6 +73,10 @@
 					"parent": "a_contentblocks"
 				},
 				{
+					"name": "a_cb_fields",
+					"parent": "a_contentblocks"
+				},
+				{
 					"name": "a_cb_overviews",
 					"parent": "a_contentblocks"
 				},
@@ -468,6 +472,10 @@
 				},
 				{
 					"name": "introtextSingleParagraph",
+					"category": "a_content"
+				},
+				{
+					"name": "richTextSegment",
 					"category": "a_content"
 				},
 				{
@@ -891,6 +899,14 @@
 					"category": "a_cb_cta"
 				},
 				{
+					"name": "cbFieldAlignment",
+					"category": "a_cb_fields"
+				},
+				{
+					"name": "cbFieldPadding",
+					"category": "a_cb_fields"
+				},
+				{
 					"name": "cbLayoutAlignment",
 					"category": "a_cb_layouts"
 				},
@@ -976,6 +992,10 @@
 				},
 				{
 					"name": "cbSettingContainerType",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingSegmentType",
 					"category": "a_cb_settings"
 				},
 				{
@@ -1699,7 +1719,7 @@
 				},
 				{
 					"name": "ProjectHub",
-					"icon": "icon-list",
+					"icon": "icon-history",
 					"category": "t_project"
 				}
 			],
@@ -1982,6 +2002,7 @@
 				"pagetitle": "Footers",
 				"file": "05-pages/p_global/footers.html",
 				"context_key": "global",
+				"template": "BasicOverview",
 				"class_key": "CollectionContainer",
 				"others": [
 					{
@@ -1994,6 +2015,7 @@
 				"pagetitle": "Forms",
 				"file": "05-pages/p_global/forms.html",
 				"context_key": "global",
+				"template": "BasicOverview",
 				"class_key": "CollectionContainer",
 				"others": [
 					{
@@ -2006,6 +2028,7 @@
 				"pagetitle": "Call To Actions",
 				"file": "05-pages/p_global/cta.html",
 				"context_key": "global",
+				"template": "BasicOverview",
 				"class_key": "CollectionContainer",
 				"others": [
 					{
