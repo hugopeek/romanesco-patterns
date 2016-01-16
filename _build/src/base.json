@@ -3,7 +3,7 @@
     "lowCaseName": "patternlab",
     "description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
     "author": "Hugo Peek",
-    "version": "0.5.8",
+    "version": "0.6.0",
 
     "package": {
         "elements": {
@@ -30,17 +30,17 @@
                 "key": "semantic_dist_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "semantic/dist"
+                "value": "assets/semantic/dist"
             },{
                 "key": "custom_css_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "semantic/css/custom.css"
+                "value": "assets/css/site.css"
             },{
                 "key": "custom_js_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "semantic/js/site.js"
+                "value": "assets/js/site.js"
             },{
                 "key": "dev_mode",
                 "type": "combo-boolean",

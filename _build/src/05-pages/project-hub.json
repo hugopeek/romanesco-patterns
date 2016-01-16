@@ -3,16 +3,18 @@
         "resources": [
             {
                 "pagetitle": "Project Hub",
-                "file": "p_hub/project-hub.html",
-                "properties": "p_hub/project-hub.json",
+                "file": "05-pages/p_hub/project-hub.html",
+                "properties": "05-pages/p_hub/project-hub.json",
                 "context_key": "hub",
-                "template": "BasicOverview"
+                "template": "ProjectHub",
+                "published": "1"
             },{
                 "pagetitle": "Pattern Library",
-                "file": "p_hub/pattern-library.html",
-                "properties": "p_hub/pattern-library.json",
+                "file": "05-pages/p_hub/pattern-library.html",
+                "properties": "05-pages/p_hub/pattern-library.json",
                 "context_key": "hub",
-                "template": "BasicOverview"
+                "template": "BasicOverview",
+                "published": "1"
             }
         ]
     }

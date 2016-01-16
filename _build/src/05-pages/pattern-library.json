@@ -4,38 +4,43 @@
             {
                 "pagetitle": "Atoms",
                 "parent": "Pattern library",
-                "file": "p_global/p_pattern-library/01-atoms.html",
-                "properties": "p_global/p_pattern-library/01-atoms.json",
+                "file": "05-pages/p_hub/p_pattern-library/01-atoms.html",
+                "properties": "05-pages/p_hub/p_pattern-library/01-atoms.json",
                 "context_key": "hub",
-                "template": "BasicOverview"
+                "template": "BasicOverview",
+                "published": "1"
             },{
                 "pagetitle": "Molecules",
                 "parent": "Pattern library",
-                "file": "p_global/p_pattern-library/02-molecules.html",
-                "properties": "p_global/p_pattern-library/02-molecules.json",
+                "file": "05-pages/p_hub/p_pattern-library/02-molecules.html",
+                "properties": "05-pages/p_hub/p_pattern-library/02-molecules.json",
                 "context_key": "hub",
-                "template": "BasicOverview"
+                "template": "BasicOverview",
+                "published": "1"
             },{
                 "pagetitle": "Organisms",
                 "parent": "Pattern library",
-                "file": "p_global/p_pattern-library/03-organisms.html",
-                "properties": "p_global/p_pattern-library/03-organisms.json",
+                "file": "05-pages/p_hub/p_pattern-library/03-organisms.html",
+                "properties": "05-pages/p_hub/p_pattern-library/03-organisms.json",
                 "context_key": "hub",
-                "template": "BasicOverview"
+                "template": "BasicOverview",
+                "published": "1"
             },{
                 "pagetitle": "Templates",
                 "parent": "Pattern library",
-                "file": "p_global/p_pattern-library/04-templates.html",
-                "properties": "p_global/p_pattern-library/04-templates.json",
+                "file": "05-pages/p_hub/p_pattern-library/04-templates.html",
+                "properties": "05-pages/p_hub/p_pattern-library/04-templates.json",
                 "context_key": "hub",
-                "template": "BasicOverview"
+                "template": "BasicOverview",
+                "published": "1"
             },{
                 "pagetitle": "Pages",
                 "parent": "Pattern library",
-                "file": "p_global/p_pattern-library/05-pages.html",
-                "properties": "p_global/p_pattern-library/05-pages.json",
+                "file": "05-pages/p_hub/p_pattern-library/05-pages.html",
+                "properties": "05-pages/p_hub/p_pattern-library/05-pages.json",
                 "context_key": "hub",
-                "template": "BasicOverview"
+                "template": "BasicOverview",
+                "published": "1"
             }
         ]
     }

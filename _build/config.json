@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "Pattern Lab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.5.8",
+	"version": "0.6.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -1846,19 +1846,19 @@
 				"key": "semantic_dist_path",
 				"type": "textfield",
 				"area": "Paths",
-				"value": "semantic/dist"
+				"value": "assets/semantic/dist"
 			},
 			{
 				"key": "custom_css_path",
 				"type": "textfield",
 				"area": "Paths",
-				"value": "semantic/css/custom.css"
+				"value": "assets/css/site.css"
 			},
 			{
 				"key": "custom_js_path",
 				"type": "textfield",
 				"area": "Paths",
-				"value": "semantic/js/site.js"
+				"value": "assets/js/site.js"
 			},
 			{
 				"key": "dev_mode",
@@ -1980,81 +1980,106 @@
 		"resources": [
 			{
 				"pagetitle": "Footers",
-				"file": "p_global/footers.html",
+				"file": "05-pages/p_global/footers.html",
 				"context_key": "global",
-				"template": "BasicOverview"
+				"class_key": "CollectionContainer",
+				"others": [
+					{
+						"name": "collections_template",
+						"value": "6"
+					}
+				]
 			},
 			{
 				"pagetitle": "Forms",
-				"file": "p_global/forms.html",
+				"file": "05-pages/p_global/forms.html",
 				"context_key": "global",
-				"template": "BasicOverview"
+				"class_key": "CollectionContainer",
+				"others": [
+					{
+						"name": "collections_template",
+						"value": "2"
+					}
+				]
 			},
 			{
 				"pagetitle": "Call To Actions",
-				"file": "p_global/cta.html",
+				"file": "05-pages/p_global/cta.html",
 				"context_key": "global",
-				"template": "BasicOverview"
+				"class_key": "CollectionContainer",
+				"others": [
+					{
+						"name": "collections_template",
+						"value": "3"
+					}
+				]
 			},
 			{
 				"pagetitle": "Backgrounds",
-				"file": "p_global/backgrounds.html",
+				"file": "05-pages/p_global/backgrounds.html",
 				"context_key": "global",
 				"template": "GlobalBackgrounds"
 			},
 			{
 				"pagetitle": "Atoms",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/01-atoms.html",
-				"properties": "p_global/p_pattern-library/01-atoms.json",
+				"file": "05-pages/p_hub/p_pattern-library/01-atoms.html",
+				"properties": "05-pages/p_hub/p_pattern-library/01-atoms.json",
 				"context_key": "hub",
-				"template": "BasicOverview"
+				"template": "BasicOverview",
+				"published": "1"
 			},
 			{
 				"pagetitle": "Molecules",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/02-molecules.html",
-				"properties": "p_global/p_pattern-library/02-molecules.json",
+				"file": "05-pages/p_hub/p_pattern-library/02-molecules.html",
+				"properties": "05-pages/p_hub/p_pattern-library/02-molecules.json",
 				"context_key": "hub",
-				"template": "BasicOverview"
+				"template": "BasicOverview",
+				"published": "1"
 			},
 			{
 				"pagetitle": "Organisms",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/03-organisms.html",
-				"properties": "p_global/p_pattern-library/03-organisms.json",
+				"file": "05-pages/p_hub/p_pattern-library/03-organisms.html",
+				"properties": "05-pages/p_hub/p_pattern-library/03-organisms.json",
 				"context_key": "hub",
-				"template": "BasicOverview"
+				"template": "BasicOverview",
+				"published": "1"
 			},
 			{
 				"pagetitle": "Templates",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/04-templates.html",
-				"properties": "p_global/p_pattern-library/04-templates.json",
+				"file": "05-pages/p_hub/p_pattern-library/04-templates.html",
+				"properties": "05-pages/p_hub/p_pattern-library/04-templates.json",
 				"context_key": "hub",
-				"template": "BasicOverview"
+				"template": "BasicOverview",
+				"published": "1"
 			},
 			{
 				"pagetitle": "Pages",
 				"parent": "Pattern library",
-				"file": "p_global/p_pattern-library/05-pages.html",
-				"properties": "p_global/p_pattern-library/05-pages.json",
+				"file": "05-pages/p_hub/p_pattern-library/05-pages.html",
+				"properties": "05-pages/p_hub/p_pattern-library/05-pages.json",
 				"context_key": "hub",
-				"template": "BasicOverview"
+				"template": "BasicOverview",
+				"published": "1"
 			},
 			{
 				"pagetitle": "Project Hub",
-				"file": "p_hub/project-hub.html",
-				"properties": "p_hub/project-hub.json",
+				"file": "05-pages/p_hub/project-hub.html",
+				"properties": "05-pages/p_hub/project-hub.json",
 				"context_key": "hub",
-				"template": "BasicOverview"
+				"template": "ProjectHub",
+				"published": "1"
 			},
 			{
 				"pagetitle": "Pattern Library",
-				"file": "p_hub/pattern-library.html",
-				"properties": "p_hub/pattern-library.json",
+				"file": "05-pages/p_hub/pattern-library.html",
+				"properties": "05-pages/p_hub/pattern-library.json",
 				"context_key": "hub",
-				"template": "BasicOverview"
+				"template": "BasicOverview",
+				"published": "1"
 			}
 		]
 	}

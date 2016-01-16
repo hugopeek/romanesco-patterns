@@ -80,6 +80,10 @@ $_lang['patternlab.menu.clear_cache_overviews_description'] = 'Remove cache file
 // Collection views
 // ---------------------------------------------------------------------
 
+$_lang['collections.footers.children'] = 'Footers';
+$_lang['collections.footers.children.create'] = 'Add footer';
+$_lang['collections.footers.children.back_to_collection_label'] = 'Back to overview';
+
 $_lang['collections.forms.children'] = 'Forms';
 $_lang['collections.forms.children.create'] = 'Add form';
 $_lang['collections.forms.children.back_to_collection_label'] = 'Back to overview';

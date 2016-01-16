@@ -3,22 +3,34 @@
         "resources": [
             {
                 "pagetitle": "Footers",
-                "file": "p_global/footers.html",
+                "file": "05-pages/p_global/footers.html",
                 "context_key": "global",
-                "template": "BasicOverview"
+                "class_key": "CollectionContainer",
+                "others": [{
+                    "name": "collections_template",
+                    "value": "6"
+                }]
             },{
                 "pagetitle": "Forms",
-                "file": "p_global/forms.html",
+                "file": "05-pages/p_global/forms.html",
                 "context_key": "global",
-                "template": "BasicOverview"
+                "class_key": "CollectionContainer",
+                "others": [{
+                    "name": "collections_template",
+                    "value": "2"
+                }]
             },{
                 "pagetitle": "Call To Actions",
-                "file": "p_global/cta.html",
+                "file": "05-pages/p_global/cta.html",
                 "context_key": "global",
-                "template": "BasicOverview"
+                "class_key": "CollectionContainer",
+                "others": [{
+                    "name": "collections_template",
+                    "value": "3"
+                }]
             },{
                 "pagetitle": "Backgrounds",
-                "file": "p_global/backgrounds.html",
+                "file": "05-pages/p_global/backgrounds.html",
                 "context_key": "global",
                 "template": "GlobalBackgrounds"
             }

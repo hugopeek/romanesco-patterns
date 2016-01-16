@@ -22,7 +22,7 @@
         </div>
 
         <div class="four wide column right aligned">
-            <p>[[%patternlab.footer.qredits_text]] <a class="q-box" title="[[%patternlab.footer.qredits_title]]" href="http://qaraqter.nl" target="_blank"></a></p>
+            <p><a class="q-box" title="[[%patternlab.footer.qredits_title]]" href="http://websitelikethis.com" target="_blank">WebsiteLikeThis</a></p>
         </div>
     </div>
 </footer>
