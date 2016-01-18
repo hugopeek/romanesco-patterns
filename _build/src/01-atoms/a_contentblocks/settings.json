@@ -29,9 +29,6 @@
                 },{
                     "name": "cbSettingContainerType",
                     "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingSegmentType",
-                    "category": "a_cb_settings"
                 }
             ]
         }

@@ -6,13 +6,16 @@
                     "name": "hero",
                     "category": "m_presentation"
                 },{
-                    "name": "sliderImageRow",
+                    "name": "sliderRowImage",
                     "category": "m_presentation"
                 },{
-                    "name": "sliderImageContentRow",
+                    "name": "sliderRowImageContent",
                     "category": "m_presentation"
                 },{
-                    "name": "accordionBasicRow",
+                    "name": "accordionRowBasic",
+                    "category": "m_presentation"
+                },{
+                    "name": "tabsRowBasic",
                     "category": "m_presentation"
                 }
             ],

@@ -487,11 +487,23 @@
 					"category": "a_content"
 				},
 				{
+					"name": "iconSVG",
+					"category": "a_content"
+				},
+				{
 					"name": "dividerBasic",
 					"category": "a_content"
 				},
 				{
 					"name": "dividerHeading",
+					"category": "a_content"
+				},
+				{
+					"name": "quoteBasic",
+					"category": "a_content"
+				},
+				{
+					"name": "videoYoutube",
 					"category": "a_content"
 				},
 				{
@@ -508,7 +520,7 @@
 				},
 				{
 					"name": "fbContentBlock",
-					"category": "m_formblocks"
+					"category": "o_formblocks"
 				},
 				{
 					"name": "fbEmail",
@@ -751,15 +763,19 @@
 					"category": "m_presentation"
 				},
 				{
-					"name": "sliderImageRow",
+					"name": "sliderRowImage",
 					"category": "m_presentation"
 				},
 				{
-					"name": "sliderImageContentRow",
+					"name": "sliderRowImageContent",
 					"category": "m_presentation"
 				},
 				{
-					"name": "accordionBasicRow",
+					"name": "accordionRowBasic",
+					"category": "m_presentation"
+				},
+				{
+					"name": "tabsRowBasic",
 					"category": "m_presentation"
 				},
 				{
@@ -883,6 +899,10 @@
 					"category": "o_presentation"
 				},
 				{
+					"name": "tabsOuter",
+					"category": "o_presentation"
+				},
+				{
 					"name": "projectHubOuter",
 					"category": "o_project"
 				},
@@ -904,6 +924,14 @@
 				},
 				{
 					"name": "cbFieldPadding",
+					"category": "a_cb_fields"
+				},
+				{
+					"name": "cbFieldSegmentType",
+					"category": "a_cb_fields"
+				},
+				{
+					"name": "cbFieldAccordionType",
 					"category": "a_cb_fields"
 				},
 				{
@@ -992,10 +1020,6 @@
 				},
 				{
 					"name": "cbSettingContainerType",
-					"category": "a_cb_settings"
-				},
-				{
-					"name": "cbSettingSegmentType",
 					"category": "a_cb_settings"
 				},
 				{
@@ -1813,6 +1837,11 @@
 				{
 					"name": "sliderLoadAssets",
 					"description": "Load CSS and JS dependencies for Slick slider through CDN.",
+					"category": "f_presentation"
+				},
+				{
+					"name": "tabsGenerateNav",
+					"description": "Generates the navigation buttons needed by the Tabs CB.",
 					"category": "f_presentation"
 				}
 			],

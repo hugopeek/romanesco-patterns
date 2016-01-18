@@ -8,6 +8,12 @@
                 },{
                     "name": "cbFieldPadding",
                     "category": "a_cb_fields"
+                },{
+                    "name": "cbFieldSegmentType",
+                    "category": "a_cb_fields"
+                },{
+                    "name": "cbFieldAccordionType",
+                    "category": "a_cb_fields"
                 }
             ]
         }

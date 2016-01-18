@@ -36,10 +36,19 @@
                     "name": "imageBasicLink",
                     "category": "a_content"
                 },{
+                    "name": "iconSVG",
+                    "category": "a_content"
+                },{
                     "name": "dividerBasic",
                     "category": "a_content"
                 },{
                     "name": "dividerHeading",
+                    "category": "a_content"
+                },{
+                    "name": "quoteBasic",
+                    "category": "a_content"
+                },{
+                    "name": "videoYoutube",
                     "category": "a_content"
                 }
             ],

@@ -46,6 +46,10 @@
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Slick slider through CDN.",
                     "category": "f_presentation"
+                },{
+                    "name": "tabsGenerateNav",
+                    "description": "Generates the navigation buttons needed by the Tabs CB.",
+                    "category": "f_presentation"
                 }
             ],
             "categories": [
