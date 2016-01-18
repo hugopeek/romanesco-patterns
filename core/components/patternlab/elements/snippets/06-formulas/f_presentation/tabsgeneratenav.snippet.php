@@ -16,7 +16,7 @@ $tabheaders = '';
 
 $idx = 1;
 foreach($tabs as $id => $title) {
-    $tabheaders .= $modx->getChunk('tabsRowHeading', array(
+    $tabheaders .= $modx->getChunk('tabsNavItem', array(
         'idx' => $idx,
         'id' => $id,
         'heading' => $title
