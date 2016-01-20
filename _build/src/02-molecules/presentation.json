@@ -17,6 +17,9 @@
                 },{
                     "name": "tabsRowBasic",
                     "category": "m_presentation"
+                },{
+                    "name": "layoutStyleSwitcher",
+                    "category": "m_presentation"
                 }
             ],
 

@@ -12,7 +12,7 @@
         &search=`0`
     ]]
 
-    [[[[getResourceLevel:ne=`1`:then=`$toolbarBasic`]]]]
+    [[$toolbarBasic]]
 
     <main id="main" role="main">
         <article id="content">

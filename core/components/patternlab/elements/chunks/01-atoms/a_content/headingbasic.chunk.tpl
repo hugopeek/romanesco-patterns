@@ -1,1 +1,1 @@
-<[[+level]] class="ui header">[[+unique_idx:eq=`1`:then=`[[*pagetitle]]`:else=`[[+value]]`]]</[[+level]]>
+<[[+level]] class="ui header">[[+value]]</[[+level]]>

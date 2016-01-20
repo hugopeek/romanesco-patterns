@@ -1,8 +1,9 @@
 <nav id="breadcrumbs">
-    [[BreadCrumb?
-        &showHomeCrumb=`0`
-        &containerTpl=`breadcrumbOuter`
-        &linkCrumbTpl=`breadcrumbRow`
-        &currentCrumbTpl=`breadcrumbCurrent`
+    [[pdoCrumbs?
+        &showHome=`0`
+        &tplWrapper=`breadcrumbOuter`
+        &tpl=`breadcrumbRow`
+        &tplCurrent=`breadcrumbCurrent`
+        &outputSeparator=``
     ]]
 </nav>
