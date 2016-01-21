@@ -14,6 +14,12 @@
                 },{
                     "name": "cbFieldAccordionType",
                     "category": "a_cb_fields"
+                },{
+                    "name": "cbFieldMessageType",
+                    "category": "a_cb_fields"
+                },{
+                    "name": "cbFieldMessageSize",
+                    "category": "a_cb_fields"
                 }
             ]
         }
