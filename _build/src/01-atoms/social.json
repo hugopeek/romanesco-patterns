@@ -1,0 +1,43 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [],
+
+            "categories": [
+                {
+                    "name": "a_social",
+                    "parent": "01-atoms"
+                }
+            ]
+        },
+
+        "systemSettings": [
+            {
+                "key": "social_twitter",
+                "type": "textfield",
+                "area": "Social",
+                "value": ""
+            },{
+                "key": "twitter_consumer_key",
+                "type": "textfield",
+                "area": "Social",
+                "value": ""
+            },{
+                "key": "twitter_consumer_secret",
+                "type": "textfield",
+                "area": "Social",
+                "value": ""
+            },{
+                "key": "twitter_access_token",
+                "type": "textfield",
+                "area": "Social",
+                "value": ""
+            },{
+                "key": "twitter_access_token_secret",
+                "type": "textfield",
+                "area": "Social",
+                "value": ""
+            }
+        ]
+    }
+}

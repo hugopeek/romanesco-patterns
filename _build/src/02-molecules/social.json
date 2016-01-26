@@ -11,6 +11,12 @@
                 },{
                     "name": "socialShareButtons",
                     "category": "m_social"
+                },{
+                    "name": "twitterFeedRowBasic",
+                    "category": "m_social"
+                },{
+                    "name": "twitterFeedRowCompact",
+                    "category": "m_social"
                 }
             ],
 

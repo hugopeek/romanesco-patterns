@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "twitterFeedOuter",
+                    "category": "o_social"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_social",
+                    "parent": "03-organisms"
+                }
+            ]
+        }
+    }
+}

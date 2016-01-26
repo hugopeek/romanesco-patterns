@@ -209,6 +209,10 @@
 					"parent": "01-atoms"
 				},
 				{
+					"name": "a_social",
+					"parent": "01-atoms"
+				},
+				{
 					"name": "a_stats",
 					"parent": "01-atoms"
 				},
@@ -322,6 +326,10 @@
 				},
 				{
 					"name": "o_search",
+					"parent": "03-organisms"
+				},
+				{
+					"name": "o_social",
 					"parent": "03-organisms"
 				},
 				{
@@ -835,6 +843,14 @@
 					"category": "m_social"
 				},
 				{
+					"name": "twitterFeedRowBasic",
+					"category": "m_social"
+				},
+				{
+					"name": "twitterFeedRowCompact",
+					"category": "m_social"
+				},
+				{
 					"name": "getHitCount",
 					"category": "m_stats"
 				},
@@ -935,6 +951,10 @@
 					"category": "o_search"
 				},
 				{
+					"name": "twitterFeedOuter",
+					"category": "o_social"
+				},
+				{
 					"name": "toolbarBasic",
 					"category": "o_toolbars"
 				},
@@ -964,6 +984,14 @@
 				},
 				{
 					"name": "cbFieldMessageSize",
+					"category": "a_cb_fields"
+				},
+				{
+					"name": "cbTwitterTemplates",
+					"category": "a_cb_fields"
+				},
+				{
+					"name": "cbTwitterTimelineType",
 					"category": "a_cb_fields"
 				},
 				{
@@ -2056,6 +2084,36 @@
 				"type": "textfield",
 				"area": "Search",
 				"value": "10"
+			},
+			{
+				"key": "social_twitter",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_consumer_key",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_consumer_secret",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_access_token",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_access_token_secret",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
 			}
 		],
 		"resources": [
