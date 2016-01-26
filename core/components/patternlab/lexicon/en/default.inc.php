@@ -48,6 +48,11 @@ $_lang['patternlab.social.share_twitter_title'] = 'Tweet about this';
 $_lang['patternlab.blog.written_by'] = 'Written by';
 $_lang['patternlab.blog.written_on'] = 'on';
 
+// Testimonials
+// ---------------------------------------------------------------------
+
+$_lang['patternlab.testimonials.logo_title'] = 'Read why [[+pagetitle]] loves to work with us!';
+
 // Search
 // ---------------------------------------------------------------------
 
