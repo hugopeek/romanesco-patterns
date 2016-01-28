@@ -29,11 +29,6 @@ if ($object->xpdo) {
     2 => 'Blog - Article',
     3 => 'News - Article',
   ),
-  'heading_main_alignment' => 
-  array (
-    0 => 'BasicOverview',
-    1 => 'Basic - Overview',
-  ),
   'cta_availability' => 
   array (
     0 => 'GlobalCTA',
@@ -252,6 +247,10 @@ if ($object->xpdo) {
     5 => 'Basic - Detail',
     6 => 'Blog - Article',
     7 => 'News - Article',
+  ),
+  'project_hub_timeline' => 
+  array (
+    0 => 'ProjectHub',
   ),
 );
             foreach ($tvs as $tvName => $templateNames) {

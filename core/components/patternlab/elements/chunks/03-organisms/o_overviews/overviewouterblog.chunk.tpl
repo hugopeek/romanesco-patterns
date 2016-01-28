@@ -6,15 +6,15 @@
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
-        &parents=`[[If? &subject=`[[+resources_blog]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.blog_container_id]]`]]`
-        &resources=`[[+resources_blog]]`
+        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.blog_container_id]]`]]`
+        &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
         &depth=`99`
         &limit=`[[+limit]]`
         &tpl=`overviewRowBlog[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
         &showHidden=`1`
-        &sortby=`[[If? &subject=`[[+resources_blog]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources_blog]])` &else=`[[+sortby]]`]]`
+        &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
 
         &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`

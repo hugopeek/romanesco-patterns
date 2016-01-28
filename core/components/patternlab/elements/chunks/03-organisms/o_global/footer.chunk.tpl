@@ -8,7 +8,7 @@
             <p>&copy; [[Time:date=`%Y`]] - [[++site_name]]</p>
         </div>
         
-        <div class="eight wide column center aligned">
+        <div class="twelve wide column right aligned">
             <div class="ui horizontal inverted bulleted list">
                 [[getResources?
                     &parents=`[[++common_pages_id]]`
@@ -19,10 +19,6 @@
                     &sortdir=`ASC`
                 ]]
             </div>
-        </div>
-
-        <div class="four wide column right aligned">
-            <p><a class="q-box" title="[[%patternlab.footer.qredits_title]]" href="http://websitelikethis.com" target="_blank">WebsiteLikeThis</a></p>
         </div>
     </div>
 </footer>
