@@ -12,6 +12,7 @@
         &tplOuter=`navWrapper`
         &tpl=`navItemWrapper`
         &tplParentRow=`navItemParent`
+        &tplParentRowActive=`navItemParentActive`
         &tplInnerRow=`navItem`
     ]]
     [[$offCanvasNavItemsTheme]]

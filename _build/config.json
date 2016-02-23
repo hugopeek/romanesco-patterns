@@ -627,7 +627,15 @@
 					"category": "a_nav_primary"
 				},
 				{
+					"name": "navItemInnerWrapper",
+					"category": "a_nav_primary"
+				},
+				{
 					"name": "navItemParent",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItemParentActive",
 					"category": "a_nav_primary"
 				},
 				{

@@ -1,4 +1,4 @@
-<div class="item">
+<div class="item active">
     <a class="title">
         <i class="dropdown icon"></i>
         [[+menutitle]]
