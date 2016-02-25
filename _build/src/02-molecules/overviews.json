@@ -12,10 +12,7 @@
                     "name": "overviewRowList",
                     "category": "m_overviews"
                 },{
-                    "name": "overviewRowBlog",
-                    "category": "m_overviews"
-                },{
-                    "name": "overviewRowNews",
+                    "name": "overviewRowArticle",
                     "category": "m_overviews"
                 },{
                     "name": "overviewRowTeam",
@@ -43,10 +40,7 @@
                     "name": "m_ov_icons",
                     "parent": "m_overviews"
                 },{
-                    "name": "m_ov_blog",
-                    "parent": "m_overviews"
-                },{
-                    "name": "m_ov_news",
+                    "name": "m_ov_publication",
                     "parent": "m_overviews"
                 },{
                     "name": "m_ov_team",

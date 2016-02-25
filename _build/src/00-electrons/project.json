@@ -1,7 +1,6 @@
 {
     "package": {
         "elements": {
-            "chunks": [],
             "tvs": [
                 {
                     "caption": "Project hub timeline",
@@ -20,11 +19,11 @@
             ],
             "categories": [
                 {
-                    "name": "a_project",
-                    "parent": "01-atoms"
+                    "name": "e_project",
+                    "parent": "00-electrons"
                 },{
                     "name": "Project Hub",
-                    "parent": "a_project"
+                    "parent": "e_project"
                 }
             ]
         },

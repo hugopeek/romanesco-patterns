@@ -1,3 +1,3 @@
 Default=overviewRowImageFluid
-Blog=overviewRowBlogFluid
+Publication=overviewRowArticleFluid
 Team=overviewRowTeamFluid

@@ -2,10 +2,10 @@
 // Not implemented yet!!
 $parent = $modx->getOption('parent', $scriptProperties, '');
 $id = $modx->getOption('id', $scriptProperties, '');
-$blogparent = $modx->getOption('patternlab.blog_container_id', $scriptProperties, '');
+$pubparent = $modx->getOption('patternlab.publication_container_id', $scriptProperties, '');
 $fullwidth = $modx->getOption('fullwidth', $scriptProperties, '');
 
-if ($parent === $blogparent) {
+if ($parent === $pubparent) {
     if ($fullwidth === 0) {
         $container_type = 'text';
     } else {

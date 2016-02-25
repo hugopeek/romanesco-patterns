@@ -1,8 +1,6 @@
 {
     "package": {
         "elements": {
-            "chunks": [],
-
             "tvs": [
                 {
                     "caption": "Image (Landscape)",
@@ -23,12 +21,16 @@
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Image (Portrait)",
@@ -49,12 +51,16 @@
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Image (Square)",
@@ -75,12 +81,16 @@
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Image (Wide)",
@@ -101,12 +111,16 @@
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Image (Panorama)",
@@ -127,12 +141,16 @@
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Image priority",
@@ -146,12 +164,16 @@
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Icon (SVG)",
@@ -194,38 +216,38 @@
                     "templates": [
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 }
             ],
 
             "categories": [
                 {
-                    "name": "a_overviews",
-                    "parent": "01-atoms"
+                    "name": "e_overviews",
+                    "parent": "00-electrons"
                 },{
                     "name": "Overview - Image",
-                    "parent": "a_overviews"
+                    "parent": "e_overviews"
                 },{
                     "name": "Overview - Icon",
-                    "parent": "a_overviews"
+                    "parent": "e_overviews"
                 },{
                     "name": "Overview - Settings",
-                    "parent": "a_overviews"
+                    "parent": "e_overviews"
                 }
             ]
         },
         "systemSettings": [
             {
-                "key": "news_container_id",
-                "type": "numberfield",
-                "area": "Pages"
-            },{
                 "key": "team_container_id",
                 "type": "numberfield",
                 "area": "Pages"

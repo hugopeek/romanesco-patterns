@@ -6,11 +6,11 @@
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
-        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.news_container_id]]`]]`
+        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.publication_container_id]]`]]`
         &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
         &depth=`99`
         &limit=`[[+limit]]`
-        &tpl=`overviewRowNews[[+[[+prefix]].row_type]]`
+        &tpl=`overviewRowArticle[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
         &showHidden=`1`
@@ -29,3 +29,5 @@
 </div>
 
 [[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]
+
+<script id="dsq-count-scr" src="//[[++disqus_shortname]].disqus.com/count.js" async></script>

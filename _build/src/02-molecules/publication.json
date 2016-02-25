@@ -3,14 +3,15 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "hitCount",
-                    "category": "a_stats"
+                    "name": "commentsDisqus",
+                    "category": "m_publication"
                 }
             ],
+
             "categories": [
                 {
-                    "name": "a_stats",
-                    "parent": "01-atoms"
+                    "name": "m_publication",
+                    "parent": "02-molecules"
                 }
             ]
         }

@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowArticleBasic",
+                    "category": "m_ov_publication"
+                },{
+                    "name": "overviewRowArticleCompact",
+                    "category": "m_ov_publication"
+                },{
+                    "name": "overviewRowArticleFluid",
+                    "category": "m_ov_publication"
+                },{
+                    "name": "overviewRowArticleQuote",
+                    "category": "m_ov_publication"
+                }
+            ]
+        }
+    }
+}

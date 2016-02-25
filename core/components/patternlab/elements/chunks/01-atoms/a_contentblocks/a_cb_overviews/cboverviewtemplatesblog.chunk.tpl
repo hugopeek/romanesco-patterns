@@ -1,3 +1,0 @@
-Blog regular=overviewRowBlogBasic
-Blog compact=overviewRowBlogCompact
-Blog quote=overviewRowBlogQuote

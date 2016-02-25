@@ -1,8 +1,6 @@
 {
     "package": {
         "elements": {
-            "chunks": [],
-
             "tvs": [
                 {
                     "caption": "Author",
@@ -10,13 +8,15 @@
                     "description": "Select the author of this article. He or she must be a MODX user.",
                     "type": "listbox",
                     "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
-                    "category": "About",
+                    "category": "Article - About",
                     "sortOrder": "1",
                     "templates": [
-                        "BlogArticle",
-                        "NewsArticle",
-                        "Blog - Article",
-                        "News - Article"
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Comments",
@@ -24,33 +24,34 @@
                     "description": "Enable or disable comments for this article.",
                     "type": "option",
                     "inputOptionValues": "Active==1||Disabled==0",
-                    "category": "Comments",
+                    "category": "Article - Comments",
                     "sortOrder": "1",
                     "templates": [
-                        "BlogArticle",
-                        "NewsArticle",
-                        "Blog - Article",
-                        "News - Article"
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 }
             ],
-
             "categories": [
                 {
-                    "name": "a_blog",
-                    "parent": "01-atoms"
+                    "name": "e_publication",
+                    "parent": "00-electrons"
                 },{
-                    "name": "About",
-                    "parent": "a_blog"
+                    "name": "Article - About",
+                    "parent": "e_publication"
                 },{
-                    "name": "Comments",
-                    "parent": "a_blog"
+                    "name": "Article - Comments",
+                    "parent": "e_publication"
                 }
             ]
         },
         "systemSettings": [
             {
-                "key": "blog_container_id",
+                "key": "publication_container_id",
                 "type": "numberfield",
                 "area": "Pages"
             }

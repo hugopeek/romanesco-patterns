@@ -33,7 +33,7 @@ switch($input) {
         $row_type = "";
         $column_type = "center aligned column logo";
         break;
-    case stripos($input,'assessorbasic') !== false:
+    case stripos($input,'assessorbasic') !== false: // @Todo: shouldn't be here, project specific...
         $box_type = "centered cards";
         $row_type = "";
         $column_type = "basic card";

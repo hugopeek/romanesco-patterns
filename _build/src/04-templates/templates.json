@@ -13,16 +13,20 @@
                     "icon": "icon-home",
                     "category": "t_basic"
                 },{
-                    "name": "BlogOverview",
+                    "name": "Publications",
                     "icon": "icon-pencil",
                     "category": "t_publication"
                 },{
-                    "name": "BlogArticle",
+                    "name": "ArticleTraditional",
                     "icon": "icon-pencil",
                     "category": "t_publication"
                 },{
-                    "name": "NewsArticle",
-                    "icon": "icon-newspaper-o",
+                    "name": "ArticleReadability",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "ArticleSidenotes",
+                    "icon": "icon-pencil",
                     "category": "t_publication"
                 },{
                     "name": "GlobalBackgrounds",

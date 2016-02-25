@@ -1,0 +1,60 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Call to action (CTA)",
+                    "name": "header_cta",
+                    "description": "Select the CTA you want to show in the header of this page. You can create CTA's under Content > Global Content > Call To Actions.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "20",
+                    "inputOptionValues": "@CHUNK ctaTVInputOptions",
+                    "templates": [
+                        "Home",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
+                        "Homepage",
+                        "Basic - Overview",
+                        "Basic - Detail",
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
+                    ]
+                },{
+                    "caption": "Availability",
+                    "name": "cta_availability",
+                    "description": "Where would you like to be able to place this CTA?",
+                    "type": "checkbox",
+                    "category": "CTA - Settings",
+                    "sortOrder": "1",
+                    "inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
+                    "templates": [
+                        "GlobalCTA"
+                    ]
+                }
+            ],
+            "categories": [
+                {
+                    "name": "e_cta",
+                    "parent": "00-electrons"
+                },{
+                    "name": "CTA - Settings",
+                    "parent": "e_cta"
+                }
+            ]
+        },
+        "systemSettings": [
+            {
+                "key": "cta_container_id",
+                "type": "numberfield",
+                "area": "Pages"
+            }
+        ]
+    }
+}

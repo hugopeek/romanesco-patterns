@@ -45,9 +45,9 @@ $_lang['collections.cta.children'] = 'Call To Actions';
 $_lang['collections.cta.children.create'] = 'Add CTA';
 $_lang['collections.cta.children.back_to_collection_label'] = 'Back to overview';
 
-$_lang['collections.blog.children'] = 'Blog articles';
-$_lang['collections.blog.children.create'] = 'New article';
-$_lang['collections.blog.children.back_to_collection_label'] = 'Back to overview';
+$_lang['collections.publication.children'] = 'Articles';
+$_lang['collections.publication.children.create'] = 'New article';
+$_lang['collections.publication.children.back_to_collection_label'] = 'Back to overview';
 
 $_lang['collections.team.children'] = 'Team';
 $_lang['collections.team.children.create'] = 'Add teammember';

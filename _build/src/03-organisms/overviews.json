@@ -6,10 +6,7 @@
                     "name": "overviewOuter",
                     "category": "o_overviews"
                 },{
-                    "name": "overviewOuterBlog",
-                    "category": "o_overviews"
-                },{
-                    "name": "overviewOuterNews",
+                    "name": "overviewOuterPublication",
                     "category": "o_overviews"
                 },{
                     "name": "overviewOuterTeam",

@@ -1,16 +1,5 @@
 {
     "package": {
-        "elements": {
-            "chunks": [],
-
-            "categories": [
-                {
-                    "name": "a_social",
-                    "parent": "01-atoms"
-                }
-            ]
-        },
-
         "systemSettings": [
             {
                 "key": "social_twitter",

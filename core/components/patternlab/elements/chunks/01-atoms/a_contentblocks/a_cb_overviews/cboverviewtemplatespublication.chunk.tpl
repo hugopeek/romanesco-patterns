@@ -1,0 +1,3 @@
+Article regular=overviewRowArticleBasic
+Article compact=overviewRowArticleCompact
+Article quote=overviewRowArticleQuote

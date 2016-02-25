@@ -39,17 +39,18 @@ $_lang['patternlab.social.share_linkedin_title'] = 'Delen via LinkedIn';
 $_lang['patternlab.social.share_pinterest_title'] = 'Pinnen';
 $_lang['patternlab.social.share_twitter_title'] = 'Tweeten';
 
-// Blog
+// Publication
 // ---------------------------------------------------------------------
 
-$_lang['patternlab.blog.written_by'] = 'Geschreven door';
-$_lang['patternlab.blog.written_on'] = 'op';
+$_lang['patternlab.article.written_by'] = 'Geschreven door';
+$_lang['patternlab.article.written_on'] = 'op';
+$_lang['patternlab.article.back_to_overview'] = 'Alle artikelen';
 
 
 // Testimonials
 // ---------------------------------------------------------------------
 
-$_lang['patternlab.testimonials.logo_title'] = 'Read why [[+pagetitle]] loves to work with us!';
+$_lang['patternlab.testimonials.logo_title'] = 'Lees waarom [[+pagetitle]] graag met ons samenwerkt!';
 
 // Search
 // ---------------------------------------------------------------------

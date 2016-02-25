@@ -15,10 +15,7 @@
                     "name": "cbOverviewTemplatesFluid",
                     "category": "a_cb_overviews"
                 },{
-                    "name": "cbOverviewTemplatesBlog",
-                    "category": "a_cb_overviews"
-                },{
-                    "name": "cbOverviewTemplatesNews",
+                    "name": "cbOverviewTemplatesPublication",
                     "category": "a_cb_overviews"
                 },{
                     "name": "cbOverviewTemplatesTeam",

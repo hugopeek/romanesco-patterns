@@ -1,7 +1,6 @@
 {
     "package": {
         "elements": {
-            "chunks": [],
             "tvs": [
                 {
                     "caption": "Main title",
@@ -14,13 +13,17 @@
                         "Home",
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Homepage",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 },{
                     "caption": "Subtitle",
@@ -33,20 +36,27 @@
                         "Home",
                         "BasicOverview",
                         "BasicDetail",
-                        "BlogArticle",
-                        "NewsArticle",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
                         "Homepage",
                         "Basic - Overview",
                         "Basic - Detail",
-                        "Blog - Article",
-                        "News - Article"
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
                     ]
                 }
             ],
             "categories": [
                 {
-                    "name": "a_headers",
-                    "parent": "01-atoms"
+                    "name": "e_headers",
+                    "parent": "00-electrons"
+                },{
+                    "name": "Header",
+                    "parent": "e_headers"
                 }
             ]
         }

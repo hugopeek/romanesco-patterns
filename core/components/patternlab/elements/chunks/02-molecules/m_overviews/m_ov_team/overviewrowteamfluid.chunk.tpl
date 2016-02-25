@@ -19,7 +19,5 @@
     <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
     <p>
         <a href="[[~[[+id]]]]" class="ui primary button">[[+link_text]]</a>
-        <span class="or">of</span>
-        <a href="[[~[[++patternlab.blog_container_id]]? &author=`[[+tv.team_member_firstname]]`]]">lees [[+tv.team_member_firstname]]s blogartikelen</a>
     </p>
 </div>

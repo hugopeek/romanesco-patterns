@@ -3,7 +3,7 @@
 
 [[$head]]
 
-<body id="blog">
+<body id="publication">
 
 <div class="pusher">
     [[$headerBasic?
@@ -14,11 +14,6 @@
 
     <main id="main" role="main">
         <article id="content">
-
-            <div class="ui container">
-                <h1 class="ui main header huge">[[*pagetitle]]</h1>
-            </div>
-
             [[*content]]
         </article>
     </main>

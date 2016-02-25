@@ -1,0 +1,69 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Global background images",
+                    "name": "global_background_img",
+                    "description": "These backgrounds can be applied to CB layouts (under their Settings wheel) and possibly to other elements too.",
+                    "type": "migx",
+                    "category": "Global - Images",
+                    "sortOrder": "1",
+                    "inputProperties": {
+                        "configs": "global_background_images"
+                    },
+                    "templates": [
+                        "GlobalBackgrounds"
+                    ]
+                },{
+                    "caption": "Background",
+                    "name": "header_background",
+                    "description": "Select a background for this header. You can create these backgrounds under Content > Global Content > Backgrounds.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "10",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "templates": [
+                        "Home",
+                        "BasicOverview",
+                        "BasicDetail",
+                        "Publications",
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
+                        "Homepage",
+                        "Basic - Overview",
+                        "Basic - Detail",
+                        "Publications - Overview",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
+                    ]
+                }
+            ],
+            "categories": [
+                {
+                    "name": "e_global",
+                    "parent": "00-electrons"
+                },{
+                    "name": "Global - Images",
+                    "parent": "e_global"
+                },{
+                    "name": "Global - SVG",
+                    "parent": "e_global"
+                }
+            ]
+        },
+        "systemSettings": [
+            {
+                "key": "global_backgrounds_id",
+                "type": "numberfield",
+                "area": "Pages"
+            },{
+                "key": "global_footer_id",
+                "type": "numberfield",
+                "area": "Pages"
+            }
+        ]
+    }
+}
