@@ -43,13 +43,13 @@
 </div>
 `]]
 
-<form id="form-[[+title]]" class="ui large form" name="fb[[*id]]" action="[[~[[+currentID]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[+title]]" class="ui large form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
     <input type="text" name="workemail" class="hidden" value="">
 
-    <div class="ui segments">
+    <div class="ui [[+segment_type]]">
         [[*content]]
 
-        <div class="ui padded segment">
+        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
             <input class="large primary ui button" type="submit" name="submit-[[+title]]" value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
         </div>
     </div>

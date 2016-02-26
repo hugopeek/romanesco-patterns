@@ -15,7 +15,7 @@
     [[[[getResourceLevel:ne=`1`:then=`$toolbarBasic`]]]]
 
     <main id="main" role="main">
-        <div class="ui grid container">
+        <div class="ui relaxed grid container">
             <article id="content" class="sixteen wide twelve wide computer column">
                 [[*content]]
             </article>

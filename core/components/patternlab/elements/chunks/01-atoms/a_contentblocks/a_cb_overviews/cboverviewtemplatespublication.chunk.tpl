@@ -1,3 +1,3 @@
-Article regular=overviewRowArticleBasic
+Article traditional=overviewRowArticleBasic
 Article compact=overviewRowArticleCompact
 Article quote=overviewRowArticleQuote

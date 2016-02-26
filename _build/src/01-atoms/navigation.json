@@ -21,6 +21,9 @@
                     "name": "navItemWrapper",
                     "category": "a_nav_primary"
                 },{
+                    "name": "navItemInner",
+                    "category": "a_nav_primary"
+                },{
                     "name": "navItemInnerWrapper",
                     "category": "a_nav_primary"
                 },{

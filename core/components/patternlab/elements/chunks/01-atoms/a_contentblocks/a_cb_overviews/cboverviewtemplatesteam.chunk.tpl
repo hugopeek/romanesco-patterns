@@ -1,3 +1,3 @@
-Team default=overviewRowTeamBasic
-Team default (Card)=overviewRowTeamBasicCard
+Team regular=overviewRowTeamBasic
+Team regular (Card)=overviewRowTeamBasicCard
 Team compact=overviewRowTeamCompact

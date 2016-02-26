@@ -1,0 +1,12 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbFormSegmentType",
+                    "category": "a_cb_formblocks"
+                }
+            ]
+        }
+    }
+}
