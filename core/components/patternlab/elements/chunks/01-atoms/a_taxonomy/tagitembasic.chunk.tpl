@@ -1,1 +1,1 @@
-<div class="ui label">[[+tag]]</div>
+<span class="ui label">[[+tag]]</span>

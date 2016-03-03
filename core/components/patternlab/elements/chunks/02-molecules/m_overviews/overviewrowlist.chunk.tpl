@@ -1,3 +1,3 @@
-<div class="[[+column_type]]" href="[[~[[+id]]]]">
+<div class="[[+column_type]]">
     [[!$[[+row_tpl]]]]
 </div>

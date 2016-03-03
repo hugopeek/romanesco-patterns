@@ -47,6 +47,9 @@ $_lang['patternlab.social.share_twitter_title'] = 'Tweet about this';
 
 $_lang['patternlab.article.written_by'] = 'Written by';
 $_lang['patternlab.article.written_on'] = 'on';
+$_lang['patternlab.article.comments'] = 'Comments';
+$_lang['patternlab.article.share_this'] = 'Share this article';
+$_lang['patternlab.article.more_articles'] = 'Read other articles';
 $_lang['patternlab.article.back_to_overview'] = 'All articles';
 
 // Testimonials

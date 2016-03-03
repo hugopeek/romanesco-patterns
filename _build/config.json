@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "PatternLab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.7.2",
+	"version": "0.7.3",
 	"package": {
 		"elements": {
 			"categories": [
@@ -1224,6 +1224,26 @@
 					"category": "a_taxonomy"
 				},
 				{
+					"name": "tagItemBasicLink",
+					"category": "a_taxonomy"
+				},
+				{
+					"name": "tagItemCount",
+					"category": "a_taxonomy"
+				},
+				{
+					"name": "tagItemCountLink",
+					"category": "a_taxonomy"
+				},
+				{
+					"name": "tagItemCountLinkHighlight",
+					"category": "a_taxonomy"
+				},
+				{
+					"name": "tagItemRaw",
+					"category": "a_taxonomy"
+				},
+				{
 					"name": "headingBasicSubtitle",
 					"category": "m_content"
 				},
@@ -1424,7 +1444,11 @@
 					"category": "m_project"
 				},
 				{
-					"name": "commentsDisqus",
+					"name": "articleAuthorBio",
+					"category": "m_publication"
+				},
+				{
+					"name": "articleCommentsDisqus",
 					"category": "m_publication"
 				},
 				{
@@ -1772,6 +1796,14 @@
 					"category": "m_ov_publication"
 				},
 				{
+					"name": "overviewRowArticleImageBasic",
+					"category": "m_ov_publication"
+				},
+				{
+					"name": "overviewRowArticleItemBasic",
+					"category": "m_ov_publication"
+				},
+				{
 					"name": "overviewRowArticleCompact",
 					"category": "m_ov_publication"
 				},
@@ -1924,6 +1956,11 @@
 					"category": "f_modifiers"
 				},
 				{
+					"name": "getResourceLevel",
+					"description": "Shows the level based on the number of parent ID's.",
+					"category": "f_resources"
+				},
+				{
 					"name": "getChildCount",
 					"description": "Returns the amount of child pages a resource has.",
 					"category": "f_resources"
@@ -1951,6 +1988,11 @@
 				{
 					"name": "setBoxType",
 					"description": "Output the necessary class names for overview items, based on their template.",
+					"category": "f_framework"
+				},
+				{
+					"name": "setUserPlaceholders",
+					"description": "Make any extended fields that are attached to a MODX user available as placeholder.",
 					"category": "f_framework"
 				},
 				{

@@ -1,64 +1,182 @@
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
-[[!setUserPlaceholders? &userId=`[[*article_author]]`]]
+[[setUserPlaceholders? &userId=`[[*article_author]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
 [[$head]]
 
-<body id="publication">
+<body id="publication-detail">
 
 <div class="pusher">
-    [[$headerBasic?
+    [[$headerPublication?
         &masthead=`0`
         &hero=`1`
         &search=`0`
     ]]
 
-    <main id="main" role="main">
-        <article id="content">
+    [[[[getResourceLevel:ne=`1`:then=`$toolbarBasic`]]]]
 
-            <div class="ui container">
-                <div class="ui two column grid">
-                    <div class="column">
-                        <a href="[[~[[*parent]]]]" class="basic ui button"><i class="icon left arrow"></i>[[%patternlab.article.back_to_overview]]</a>
+    <main id="main" role="main">
+        <div class="ui very relaxed stackable grid container">
+            <article id="content" class="eleven wide publication column">
+
+                <header class="publication introduction">
+                    <h1 class="ui huge header">[[*pagetitle]]</h1>
+                    <p class="meta">
+                        <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
+                            <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
+                        </a>
+                        <span class="author">[[*article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]</span>
+                        <span class="date">
+                            <i class="calendar icon"></i>
+                            [[*publishedon:strtotime:date=`%e %B %Y`]]
+                        </span>
+                        <span class="views">
+                            <i class="eye icon"></i>
+                            [[!Rowboat?
+                                &table=`modx_hits`
+                                &tpl=`hitCount`
+                                &limit=`1`
+                                &columns=`hit_count`
+                                &where=`{"hit_key":"[[*id]]"}`
+                                &cacheResults=`0`
+                            ]]
+                        </span>
+                    </p>
+                </header>
+
+                [[*content]]
+
+                [[+team_member_id:notempty=`
+                <aside id="author-about" class="ui segment">
+                    <div class="ui two column equal width grid">
+                        <div class="four wide column">
+                            <a href="[[~[[+team_member_id]]]]" class="ui image">
+                                <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=400&h=400&zc=1` &type=`thumb`]]">
+                            </a>
+                        </div>
+                        <div class="column">
+                            [[getResources?
+                                &resources=`[[+team_member_id]]`
+                                &tpl=`articleAuthorBio`
+                                &includeTVs=`1`
+                            ]]
+                        </div>
+                    </div>
+                </aside>
+                `]]
+
+                [[*article_comments:isnot=`0`:then=`
+                <section id="comments" class="ui vertical stripe segment white">
+                    <h2 class="ui big header">[[%patternlab.article.comments]]</h2>
+                    [[$articleCommentsDisqus]]
+                </section>
+                `]]
+
+                <footer class="ui vertical stripe segment white">
+                    <div class="ui two column grid">
+                        <div class="column">
+                            <a href="[[~[[*parent]]]]" class="primary ui button"><i class="icon left arrow"></i>[[%patternlab.article.back_to_overview]]</a>
+                        </div>
+                        <div class="right aligned column">
+                            [[!$socialShareButtons]]
+                        </div>
+                    </div>
+                </footer>
+            </article>
+
+            <aside id="sidebar" class="five wide column">
+                <div class="ui equal width middle aligned grid">
+                    <div class="large screen only column">
+                        [[%patternlab.article.share_this]]
                     </div>
                     <div class="right aligned column">
                         [[!$socialShareButtons? &button_type=`basic`]]
                     </div>
                 </div>
-            </div>
 
-            <div class="ui introduction container">
-                <h1 class="ui huge header">[[*pagetitle]]</h1>
-                <p class="meta date"><em>[[*publishedon:strtotime:date=`%e %B %Y`]]</em></p>
-            </div>
-
-            [[*content]]
-
-        </article>
-
-        <aside class="ui container">
-            [[[[*article_comments:isnot=`0`:then=`$commentsDisqus`]]]]
-        </aside>
-
-        <div class="ui vertical stripe segment white">
-            <div class="ui container">
-                <div class="ui two column grid">
-                    <div class="column">
-                        <a href="[[~[[*parent]]]]" class="primary ui button"><i class="icon left arrow"></i>[[%patternlab.article.back_to_overview]]</a>
+                <section class="ui basic vertical segment">
+                    [[$dividerHeading?
+                        &divider_section=`section`
+                        &divider_icon_class=`tags icon`
+                        &divider_icon_circular=`1`
+                    ]]
+                    <div class="ui large labels">
+                        [[!TaggerGetTags?
+                            &groups=`2`
+                            &target=`[[*parent]]`
+                            &rowTpl=`tagItemCountLinkHighlight`
+                        ]]
                     </div>
-                    <div class="right aligned column">
-                        [[!$socialShareButtons]]
+                </section>
+
+                <section>
+                    <h3>[[%patternlab.article.more_articles]]</h3>
+
+                    <div class="ui top attached tabular menu">
+                        <a class="item active"
+                           data-tab="segment-publication-1"
+                           role="tab"
+                           aria-selected="false">
+                            [[%patternlab.article.]]
+                        </a>
+                        <a class="item"
+                           data-tab="segment-publication-2"
+                           role="tab"
+                           aria-selected="false">
+                            [[%patternlab.article.more_articles]]
+                        </a>
                     </div>
-                </div>
-            </div>
-            
-            <div class="ui container">
-                <aside class="column">
-                    
-                </aside>
-            </div>
+
+                    <div class="ui bottom attached active tab segment"
+                         data-tab="segment-publication-1"
+                         role="tabpanel"
+                         aria-hidden="false">
+                        <div class="ui divided items">
+                            [[getResources?
+                                &parents=`[[++patternlab.publication_container_id]]`
+                                &tpl=`overviewRowArticleItemBasic`
+                                &includeTVs=`1`
+                                &processTVs=`1`
+                                &showHidden=`1`
+                                &sortby=`publishedon`
+                                &sortdir=`DESC`
+
+                                &column_type=`item`
+                                &title_field=`pagetitle`
+                                &title_hierarchy=`h4`
+                                &meta_elements=`date`
+                                &show_introtext=`0`
+                            ]]
+                        </div>
+
+                    </div>
+                    <div class="ui bottom attached tab segment"
+                         data-tab="segment-publication-2"
+                         role="tabpanel"
+                         aria-hidden="false">
+                        <div class="ui divided items">
+                            [[getResources?
+                                &parents=`-1`
+                                &resources=`[[Hits? &parents=`[[++patternlab.publication_container_id]]` &limit=`5` &outputSeparator=`,`]]`
+                                &tpl=`overviewRowArticleItemBasic`
+                                &includeTVs=`1`
+                                &processTVs=`1`
+                                &showHidden=`1`
+                                &sortby=`FIELD(modResource.id, [[Hits? &parents=`[[++patternlab.publication_container_id]]` &limit=`5` &outputSeparator=`,`]] )`
+                                &sortdir=`ASC`
+
+                                &column_type=`item`
+                                &title_field=`pagetitle`
+                                &title_hierarchy=`h4`
+                                &meta_elements=`views`
+                                &show_introtext=`0`
+                            ]]
+                        </div>
+                    </div>
+                </section>
+            </aside>
         </div>
     </main>
 

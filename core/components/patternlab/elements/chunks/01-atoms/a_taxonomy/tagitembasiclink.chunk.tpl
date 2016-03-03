@@ -1,0 +1,1 @@
+<a class="ui label" href="[[+uri]]">[[+tag]]</a>

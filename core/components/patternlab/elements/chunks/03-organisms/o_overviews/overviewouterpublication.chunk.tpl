@@ -16,6 +16,7 @@
         &showHidden=`1`
         &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
+        &where=`[[!TaggerGetResourcesWhere]]`
 
         &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`
         &column_type=`[[+[[+prefix]].column_type]]`
@@ -28,6 +29,6 @@
     ]]
 </div>
 
-[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]
+[[[[+pagination:eq=`1`:then=`$paginationFluid`]]]]
 
 <script id="dsq-count-scr" src="//[[++disqus_shortname]].disqus.com/count.js" async></script>

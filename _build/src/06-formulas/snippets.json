@@ -15,6 +15,10 @@
                     "description": "Opposed to stripString, which only allows you to strip a single value, stripWords lets you enter multiple (comma separated) values.",
                     "category": "f_modifiers"
                 },{
+                    "name": "getResourceLevel",
+                    "description": "Shows the level based on the number of parent ID's.",
+                    "category": "f_resources"
+                },{
                     "name": "getChildCount",
                     "description": "Returns the amount of child pages a resource has.",
                     "category": "f_resources"
@@ -37,6 +41,10 @@
                 },{
                     "name": "setBoxType",
                     "description": "Output the necessary class names for overview items, based on their template.",
+                    "category": "f_framework"
+                },{
+                    "name": "setUserPlaceholders",
+                    "description": "Make any extended fields that are attached to a MODX user available as placeholder.",
                     "category": "f_framework"
                 },{
                     "name": "iconInputOptions",

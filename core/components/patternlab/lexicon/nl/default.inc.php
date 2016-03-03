@@ -44,6 +44,8 @@ $_lang['patternlab.social.share_twitter_title'] = 'Tweeten';
 
 $_lang['patternlab.article.written_by'] = 'Geschreven door';
 $_lang['patternlab.article.written_on'] = 'op';
+$_lang['patternlab.article.comments'] = 'Reacties';
+$_lang['patternlab.article.share_this'] = 'Deel dit artikel';
 $_lang['patternlab.article.back_to_overview'] = 'Alle artikelen';
 
 

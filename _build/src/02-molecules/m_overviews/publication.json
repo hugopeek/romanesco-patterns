@@ -6,6 +6,12 @@
                     "name": "overviewRowArticleBasic",
                     "category": "m_ov_publication"
                 },{
+                    "name": "overviewRowArticleImageBasic",
+                    "category": "m_ov_publication"
+                },{
+                    "name": "overviewRowArticleItemBasic",
+                    "category": "m_ov_publication"
+                },{
                     "name": "overviewRowArticleCompact",
                     "category": "m_ov_publication"
                 },{
