@@ -49,8 +49,12 @@ $_lang['patternlab.article.written_by'] = 'Written by';
 $_lang['patternlab.article.written_on'] = 'on';
 $_lang['patternlab.article.comments'] = 'Comments';
 $_lang['patternlab.article.share_this'] = 'Share this article';
-$_lang['patternlab.article.more_articles'] = 'Read other articles';
 $_lang['patternlab.article.back_to_overview'] = 'All articles';
+
+$_lang['patternlab.article.read_another'] = 'Read another article';
+$_lang['patternlab.article.latest'] = 'Latest';
+$_lang['patternlab.article.most_viewed'] = 'Most viewed';
+$_lang['patternlab.article.related'] = 'Related';
 
 // Testimonials
 // ---------------------------------------------------------------------

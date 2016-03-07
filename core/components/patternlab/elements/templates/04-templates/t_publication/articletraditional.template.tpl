@@ -18,16 +18,19 @@
     [[[[getResourceLevel:ne=`1`:then=`$toolbarBasic`]]]]
 
     <main id="main" role="main">
-        <div class="ui very relaxed stackable grid container">
-            <article id="content" class="eleven wide publication column">
+        <div class="ui very relaxed grid container">
+            <article id="content" class="sixteen wide mobile eleven wide large screen publication column">
 
                 <header class="publication introduction">
                     <h1 class="ui huge header">[[*pagetitle]]</h1>
                     <p class="meta">
-                        <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
-                            <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
-                        </a>
-                        <span class="author">[[*article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]</span>
+
+                        <span class="author">
+                            <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
+                                <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
+                            </a>
+                            [[*article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]
+                        </span>
                         <span class="date">
                             <i class="calendar icon"></i>
                             [[*publishedon:strtotime:date=`%e %B %Y`]]
@@ -86,17 +89,19 @@
                 </footer>
             </article>
 
-            <aside id="sidebar" class="five wide column">
-                <div class="ui equal width middle aligned grid">
-                    <div class="large screen only column">
-                        [[%patternlab.article.share_this]]
+            <aside id="sidebar" class="sixteen wide mobile five wide large screen column">
+                <section class="ui equal width middle aligned large screen only grid">
+                    <div class="column">
+                        <h3 class="ui tiny header">
+                            [[%patternlab.article.share_this]]
+                        </h3>
                     </div>
                     <div class="right aligned column">
                         [[!$socialShareButtons? &button_type=`basic`]]
                     </div>
-                </div>
+                </section>
 
-                <section class="ui basic vertical segment">
+                <section class="ui vertical stripe segment white">
                     [[$dividerHeading?
                         &divider_section=`section`
                         &divider_icon_class=`tags icon`
@@ -111,21 +116,21 @@
                     </div>
                 </section>
 
-                <section>
-                    <h3>[[%patternlab.article.more_articles]]</h3>
+                <section class="ui vertical stripe segment white">
+                    <h3>[[%patternlab.article.read_another]]</h3>
 
                     <div class="ui top attached tabular menu">
                         <a class="item active"
                            data-tab="segment-publication-1"
                            role="tab"
                            aria-selected="false">
-                            [[%patternlab.article.]]
+                            [[%patternlab.article.latest]]
                         </a>
                         <a class="item"
                            data-tab="segment-publication-2"
                            role="tab"
                            aria-selected="false">
-                            [[%patternlab.article.more_articles]]
+                            [[%patternlab.article.most_viewed]]
                         </a>
                     </div>
 

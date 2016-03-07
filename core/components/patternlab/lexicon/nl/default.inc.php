@@ -48,6 +48,11 @@ $_lang['patternlab.article.comments'] = 'Reacties';
 $_lang['patternlab.article.share_this'] = 'Deel dit artikel';
 $_lang['patternlab.article.back_to_overview'] = 'Alle artikelen';
 
+$_lang['patternlab.article.read_another'] = 'Lees nog een artikel';
+$_lang['patternlab.article.latest'] = 'Laatst toegevoegd';
+$_lang['patternlab.article.most_viewed'] = 'Meest gelezen';
+$_lang['patternlab.article.related'] = 'Gerelateerde artikelen';
+
 
 // Testimonials
 // ---------------------------------------------------------------------
