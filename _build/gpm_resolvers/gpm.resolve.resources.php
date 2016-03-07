@@ -51,41 +51,6 @@ if (!function_exists('createResource')) {
         } else {
             $tvs = array();
         }
-        
-        if (isset($resource['others'])) {
-            $others = $resource['others'];
-            unset($resource['others']);
-
-            $taggerCorePath = $modx->getOption('tagger.core_path', null, $modx->getOption('core_path', null, MODX_CORE_PATH) . 'components/tagger/');
-            if (file_exists($taggerCorePath . 'model/tagger/tagger.class.php')) {
-                /** @var Tagger $tagger */
-                $tagger = $modx->getService(
-                    'tagger',
-                    'Tagger',
-                    $taggerCorePath . 'model/tagger/',
-                    array(
-                        'core_path' => $taggerCorePath
-                    )
-                );
-            
-                $tagger = $tagger instanceof Tagger;
-            } else {
-                $tagger = null;
-            }
-            
-            foreach ($others as $other) {
-                if (($tagger == true) && (strpos($other['name'], 'tagger-') !== false)) {
-                    $groupAlias = preg_replace('/tagger-/', '', $other['name'], 1);
-            
-                    $group = $modx->getObject('TaggerGroup', array('alias' => $groupAlias));
-                    if ($group) {
-                        $other['name'] = 'tagger-' . $group->id;
-                    }
-                }
-            
-                $resource[$other['name']] = $other['value'];
-            }
-        }
 
         $res = $modx->runProcessor('resource/create', $resource);
         $resObject = $res->getObject();
@@ -116,41 +81,6 @@ if (!function_exists('updateResource')) {
             unset($resource['tvs']);
         } else {
             $tvs = array();
-        }
-
-        if (isset($resource['others'])) {
-            $others = $resource['others'];
-            unset($resource['others']);
-
-            $taggerCorePath = $modx->getOption('tagger.core_path', null, $modx->getOption('core_path', null, MODX_CORE_PATH) . 'components/tagger/');
-            if (file_exists($taggerCorePath . 'model/tagger/tagger.class.php')) {
-                /** @var Tagger $tagger */
-                $tagger = $modx->getService(
-                    'tagger',
-                    'Tagger',
-                    $taggerCorePath . 'model/tagger/',
-                    array(
-                        'core_path' => $taggerCorePath
-                    )
-                );
-            
-                $tagger = $tagger instanceof Tagger;
-            } else {
-                $tagger = null;
-            }
-
-            foreach ($others as $other) {
-                if (($tagger == true) && (strpos($other['name'], 'tagger-') !== false)) {
-                    $groupAlias = preg_replace('/tagger-/', '', $other['name'], 1);
-                
-                    $group = $modx->getObject('TaggerGroup', array('alias' => $groupAlias));
-                    if ($group) {
-                        $other['name'] = 'tagger-' . $group->id;
-                    }
-                }
-
-                $resource[$other['name']] = $other['value'];
-            }
         }
 
         $res = $modx->runProcessor('resource/update', $resource);
@@ -197,16 +127,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-      0 => 
-      array (
-        'name' => 'collections_template',
-        'value' => '6',
-      ),
-    ),
-    'link_attributes' => '',
-    'properties' => '',
+    'collections_template' => '6',
     'template' => 'BasicOverview',
   ),
   1 => 
@@ -229,16 +150,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-      0 => 
-      array (
-        'name' => 'collections_template',
-        'value' => '2',
-      ),
-    ),
-    'link_attributes' => '',
-    'properties' => '',
+    'collections_template' => '2',
     'template' => 'BasicOverview',
   ),
   2 => 
@@ -261,16 +173,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-      0 => 
-      array (
-        'name' => 'collections_template',
-        'value' => '3',
-      ),
-    ),
-    'link_attributes' => '',
-    'properties' => '',
+    'collections_template' => '3',
     'template' => 'BasicOverview',
   ),
   3 => 
@@ -293,11 +196,6 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'GlobalBackgrounds',
   ),
   4 => 
@@ -320,11 +218,6 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -348,11 +241,6 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -376,11 +264,6 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -404,11 +287,6 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -432,11 +310,6 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -460,11 +333,6 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'ProjectHub',
     'published' => 1,
   ),
@@ -488,17 +356,10 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'others' => 
-    array (
-    ),
-    'link_attributes' => '',
-    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
 );
-
-        if (isset($options['install_resources']) && empty($options['install_resources'])) return true;
 
         $resourceMap = getResourceMap();
         $toRemove = $resourceMap;
@@ -578,21 +439,10 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
                     }
                 }
             } else {
-                if ($resource['set_as_home'] == 1) {
-                    unset($resource['set_as_home']);
-                    $resource['id'] = $siteStart;
-                
-                    $resId = updateResource($resource);
-                
-                    if ($resId !== false) {
-                        $resourceMap[$resource['pagetitle']] = $resId;
-                    }
-                } else {
-                    $resId = createResource($resource);
+                $resId = createResource($resource);
 
-                    if ($resId !== false) {
-                        $resourceMap[$resource['pagetitle']] = $resId;
-                    }
+                if ($resId !== false) {
+                    $resourceMap[$resource['pagetitle']] = $resId;
                 }
             }
         }
