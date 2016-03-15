@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
+[[setTemplateType? &type=`detail`]]
 [[$head]]
 
 <body id="detail">
@@ -17,7 +18,7 @@
     <main id="main" role="main">
         <div class="ui relaxed grid container">
             <article id="content" class="sixteen wide twelve wide computer column">
-                [[*content]]
+                [[*content? &template_type=`detail`]]
             </article>
 
             <aside id="sidebar" class="four wide column computer only">
