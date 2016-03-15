@@ -17,7 +17,7 @@
     </span>
     <span class="comments">
         <i class="icon comments"></i>
-        <a href="[[~[[+id]]? &scheme=`full`]]#disqus_thread">Comments</a>
+        <a href="[[~[[+id]]? &scheme=`full`]]#disqus_thread">[[%patternlab.article.comments:lcase]]</a>
     </span>
 </p>
 
