@@ -547,6 +547,17 @@
 					]
 				},
 				{
+					"caption": "Dynamic recipient address",
+					"name": "fb_email_to_dynamic",
+					"description": "You can place any snippet / pdoField call here that outputs a single email address. Retrieve something inside a resource by using the [[+current_id]] value. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+					"category": "Settings - Advanced",
+					"sortOrder": "1",
+					"type": "textarea",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
 					"caption": "Email template",
 					"name": "fb_email_template",
 					"description": "Optional. Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.",

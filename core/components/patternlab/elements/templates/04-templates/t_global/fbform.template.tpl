@@ -4,7 +4,7 @@
     &hooks=`spam,email,[[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]][[++patternlab.fb_save_form:eq=`1`:then=`FormItSaveForm,`]]redirect`
 
     &emailTpl=`[[*fb_email_template:empty=`fbEmail`]]`
-    &emailTo=`[[*fb_email_to:empty=`[[++client_email:empty=`[[++emailsender]]`]]`]]`
+    &emailTo=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to:empty=`[[++client_email:empty=`[[++emailsender]]`]]`]]`]]`
     &emailCC=`[[*fb_email_cc]]`
     &emailBCC=`[[*fb_email_bcc]]`
     &emailFrom=`[[*fb_email_from:empty=`[[++emailsender]]`]]`
