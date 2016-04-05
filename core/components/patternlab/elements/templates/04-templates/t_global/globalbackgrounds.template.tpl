@@ -4,13 +4,13 @@
     &tpl=`globalBackgroundImgCSS`
 ]]
 
-/* Load all header images for Publications */
+/* Load all backgrounds based on an overview image */
 [[pdoResources?
-    &parents=`[[++patternlab.publication_container_id]]`
+    &parents=`0`
     &limit=`0`
     &tpl=`overviewBackgroundImgCSS`
     &includeTVs=`overview_img_pano,overview_img_wide`
-    &tvFilters=`overview_img_pano!==||overview_img_wide!==`
+    &tvFilters=`header_background_img!==`
 ]]
 
 /* Styles that apply to all backgrounds */
