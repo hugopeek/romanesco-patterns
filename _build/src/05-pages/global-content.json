@@ -7,6 +7,8 @@
                 "context_key": "global",
                 "template": "BasicOverview",
                 "class_key": "CollectionContainer",
+                "published": "1",
+                "searchable": "0",
                 "others": [{
                     "name": "collections_template",
                     "value": "6"
@@ -17,6 +19,8 @@
                 "context_key": "global",
                 "template": "BasicOverview",
                 "class_key": "CollectionContainer",
+                "published": "1",
+                "searchable": "0",
                 "others": [{
                     "name": "collections_template",
                     "value": "2"
@@ -27,6 +31,8 @@
                 "context_key": "global",
                 "template": "BasicOverview",
                 "class_key": "CollectionContainer",
+                "published": "1",
+                "searchable": "0",
                 "others": [{
                     "name": "collections_template",
                     "value": "3"
@@ -35,6 +41,9 @@
                 "pagetitle": "Backgrounds",
                 "file": "05-pages/p_global/backgrounds.html",
                 "context_key": "global",
+                "content_type": "css",
+                "published": "1",
+                "searchable": "0",
                 "template": "GlobalBackgrounds"
             }
         ]
