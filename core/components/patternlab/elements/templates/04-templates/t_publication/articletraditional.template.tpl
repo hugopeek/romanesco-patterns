@@ -9,7 +9,7 @@
 <body id="publication-detail">
 
 <div class="pusher">
-    [[$headerPublication?
+    [[$headerBasic?
         &masthead=`0`
         &hero=`1`
         &search=`0`
@@ -19,7 +19,7 @@
 
     <main id="main" role="main">
         <div class="ui very relaxed grid container">
-            <article id="content" class="sixteen wide mobile eleven wide large screen publication column">
+            <article id="content" class="sixteen wide mobile eleven wide computer publication column">
 
                 <header class="publication introduction">
                     <h1 class="ui huge header">[[*pagetitle]]</h1>
@@ -89,7 +89,7 @@
                 </footer>
             </article>
 
-            <aside id="sidebar" class="sixteen wide mobile five wide large screen column">
+            <aside id="sidebar" class="sixteen wide mobile five wide computer column">
                 <section class="ui equal width middle aligned large screen only grid">
                     <div class="column">
                         <h3 class="ui tiny header">
@@ -107,7 +107,7 @@
                         &divider_icon_class=`tags icon`
                         &divider_icon_circular=`1`
                     ]]
-                    <div class="ui large labels">
+                    <div class="ui labels">
                         [[!TaggerGetTags?
                             &groups=`2`
                             &target=`[[*parent]]`
