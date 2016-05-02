@@ -1,0 +1,26 @@
+# Changelog for Romanesco
+
+## Romanesco 0.8.0
+Released on April 17, 2016
+
+New features:
+- Add ContentBlocks for arranging content in tabs
+
+
+Improvements:
+- Add changelog
+- Flexible sidebar width on CB layouts containing sidebar
+- Assign categories to CB elements
+
+Fixes:
+- Fix header image and title inheritance
+- Add symlink for backgrounds.css to web context
+
+ContentBlocks added or edited:
+- [Field - New] Tabs (Rich Text)
+- [Field - New] Tabs (Flexible Content)
+- [Field - New] Twitter feed
+- [Layout - Updated] Content + Sidebar
+- [Layout - Updated] Sidebar + Content
+- [Layout - Updated] Content + Sidebar (Nested)
+- [Layout - Updated] Sidebar + Content (Nested)

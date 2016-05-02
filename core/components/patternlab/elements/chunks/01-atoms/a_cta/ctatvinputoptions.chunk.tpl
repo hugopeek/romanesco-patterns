@@ -1,4 +1,4 @@
---- Select a CTA ---==0||
+--- Select a CTA ---==@INHERIT||
 [[getResources?
     &parents=`[[++patternlab.cta_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`

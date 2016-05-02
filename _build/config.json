@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "PatternLab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.7.3",
+	"version": "0.8.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -384,6 +384,10 @@
 					"parent": "06-formulas"
 				},
 				{
+					"name": "f_templatevars",
+					"parent": "06-formulas"
+				},
+				{
 					"name": "f_json",
 					"parent": "06-formulas"
 				},
@@ -410,12 +414,25 @@
 			],
 			"tvs": [
 				{
+					"caption": "Availability",
+					"name": "cta_availability",
+					"description": "Where would you like to be able to place this CTA?",
+					"type": "checkbox",
+					"category": "CTA - Settings",
+					"sortOrder": "1",
+					"inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
+					"templates": [
+						"GlobalCTA"
+					]
+				},
+				{
 					"caption": "Call to action (CTA)",
 					"name": "header_cta",
-					"description": "Select the CTA you want to show in the header of this page. You can create CTA's under Content > Global Content > Call To Actions.",
+					"description": "Select a CTA for in the header. CTA's can be created under Global Content. This will replace the Title values, but Background settings still apply. Please note that the value might be inherited, but not visible on site because of the Inheritance setting.",
 					"type": "listbox",
 					"category": "Header",
 					"sortOrder": "20",
+					"defaultValue": "@INHERIT",
 					"inputOptionValues": "@CHUNK ctaTVInputOptions",
 					"templates": [
 						"Home",
@@ -432,18 +449,6 @@
 						"Article - Traditional",
 						"Article - Readability",
 						"Article - Sidenotes"
-					]
-				},
-				{
-					"caption": "Availability",
-					"name": "cta_availability",
-					"description": "Where would you like to be able to place this CTA?",
-					"type": "checkbox",
-					"category": "CTA - Settings",
-					"sortOrder": "1",
-					"inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
-					"templates": [
-						"GlobalCTA"
 					]
 				},
 				{
@@ -549,7 +554,7 @@
 				{
 					"caption": "Dynamic recipient address",
 					"name": "fb_email_to_dynamic",
-					"description": "You can place any snippet / pdoField call here that outputs a single email address. Retrieve something inside a resource by using the [[+current_id]] value. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+					"description": "You can place any snippet / FastField call here that outputs a single email address. Retrieve something inside a resource by using the [[+current_id]] value. WARNING: populating this field will override the default recipient address, so test thoroughly!",
 					"category": "Settings - Advanced",
 					"sortOrder": "1",
 					"type": "textarea",
@@ -664,11 +669,12 @@
 				{
 					"caption": "Background",
 					"name": "header_background",
-					"description": "Select a background for this header. You can create these backgrounds under Content > Global Content > Backgrounds.",
+					"description": "Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.",
 					"type": "listbox",
 					"category": "Header",
 					"sortOrder": "10",
 					"inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+					"defaultValue": "@inherit",
 					"templates": [
 						"Home",
 						"BasicOverview",
@@ -689,10 +695,11 @@
 				{
 					"caption": "Main title",
 					"name": "header_title",
-					"description": "This will be displayed in the header section below the main menu. The title will be inherited on child pages, but can also be overwritten by entering something new.",
+					"description": "This will be displayed in the header section below the main menu. The text will automatically be inherited on child pages, but can easily be overwritten by entering something new, or deleted.",
 					"type": "text",
 					"category": "Header",
 					"sortOrder": "1",
+					"defaultValue": "@INHERIT",
 					"templates": [
 						"Home",
 						"BasicOverview",
@@ -713,10 +720,62 @@
 				{
 					"caption": "Subtitle",
 					"name": "header_subtitle",
-					"description": "This will be displayed under the main title. Also inherited and overwritable on child pages.",
+					"description": "This will be displayed under the main title. Will also be inherited on child pages by default.",
 					"type": "textarea",
 					"category": "Header",
 					"sortOrder": "2",
+					"defaultValue": "@INHERIT",
+					"templates": [
+						"Home",
+						"BasicOverview",
+						"BasicDetail",
+						"Publications",
+						"ArticleTraditional",
+						"ArticleReadability",
+						"ArticleSidenotes",
+						"Homepage",
+						"Basic - Overview",
+						"Basic - Detail",
+						"Publications - Overview",
+						"Article - Traditional",
+						"Article - Readability",
+						"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Background image",
+					"name": "header_background_img",
+					"description": "Use an overview image of this resource as background. This will override the Background setting above, and will NOT be inherited on child pages.",
+					"type": "option",
+					"category": "Header",
+					"sortOrder": "11",
+					"inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
+					"templates": [
+						"Home",
+						"BasicOverview",
+						"BasicDetail",
+						"Publications",
+						"ArticleTraditional",
+						"ArticleReadability",
+						"ArticleSidenotes",
+						"Homepage",
+						"Basic - Overview",
+						"Basic - Detail",
+						"Publications - Overview",
+						"Article - Traditional",
+						"Article - Readability",
+						"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Inheritance",
+					"name": "header_inheritance",
+					"description": "This setting controls whether values are inherited or not on all child pages of this resource.",
+					"type": "checkbox",
+					"category": "Header",
+					"sortOrder": "99",
+					"defaultValue": "@INHERIT inherit_titles||inherit_background",
+					"inputOptionValues": "Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
 					"templates": [
 						"Home",
 						"BasicOverview",
@@ -1431,6 +1490,10 @@
 					"category": "m_presentation"
 				},
 				{
+					"name": "heroTitles",
+					"category": "m_presentation"
+				},
+				{
 					"name": "sliderRowImage",
 					"category": "m_presentation"
 				},
@@ -2020,6 +2083,11 @@
 					"name": "tabsGenerateNav",
 					"description": "Generates the navigation buttons needed by the Tabs CB.",
 					"category": "f_presentation"
+				},
+				{
+					"name": "getRawTVValue",
+					"description": "Get the raw value of a TV. Can be used to check if @inherit is being used.",
+					"category": "f_templatevars"
 				}
 			],
 			"plugins": [
@@ -2235,6 +2303,8 @@
 				"context_key": "global",
 				"template": "BasicOverview",
 				"class_key": "CollectionContainer",
+				"published": "1",
+				"searchable": "0",
 				"others": [
 					{
 						"name": "collections_template",
@@ -2248,6 +2318,8 @@
 				"context_key": "global",
 				"template": "BasicOverview",
 				"class_key": "CollectionContainer",
+				"published": "1",
+				"searchable": "0",
 				"others": [
 					{
 						"name": "collections_template",
@@ -2261,6 +2333,8 @@
 				"context_key": "global",
 				"template": "BasicOverview",
 				"class_key": "CollectionContainer",
+				"published": "1",
+				"searchable": "0",
 				"others": [
 					{
 						"name": "collections_template",
@@ -2272,6 +2346,9 @@
 				"pagetitle": "Backgrounds",
 				"file": "05-pages/p_global/backgrounds.html",
 				"context_key": "global",
+				"content_type": "css",
+				"published": "1",
+				"searchable": "0",
 				"template": "GlobalBackgrounds"
 			},
 			{
@@ -2334,6 +2411,19 @@
 				"context_key": "hub",
 				"template": "BasicOverview",
 				"published": "1"
+			},
+			{
+				"pagetitle": "Backgrounds CSS",
+				"content": "[[++patternlab.global_backgrounds_id]]",
+				"alias": "assets/css/backgrounds",
+				"context_key": "web",
+				"content_type": "css",
+				"template": "GlobalBackgrounds",
+				"class_key": "modSymLink",
+				"published": "1",
+				"hidemenu": "1",
+				"show_in_tree": "0",
+				"searchable": "0"
 			}
 		]
 	}

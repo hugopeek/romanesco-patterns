@@ -58,6 +58,10 @@
                     "name": "tabsGenerateNav",
                     "description": "Generates the navigation buttons needed by the Tabs CB.",
                     "category": "f_presentation"
+                },{
+                    "name": "getRawTVValue",
+                    "description": "Get the raw value of a TV. Can be used to check if @inherit is being used.",
+                    "category": "f_templatevars"
                 }
             ],
             "categories": [
@@ -69,6 +73,9 @@
                     "parent": "06-formulas"
                 },{
                     "name": "f_resources",
+                    "parent": "06-formulas"
+                },{
+                    "name": "f_templatevars",
                     "parent": "06-formulas"
                 },{
                     "name": "f_json",
