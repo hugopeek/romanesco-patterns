@@ -6,6 +6,9 @@
                     "name": "globalBackgroundImgCSS",
                     "category": "a_global"
                 },{
+                    "name": "globalBackgroundImgOverviewCSS",
+                    "category": "a_global"
+                },{
                     "name": "globalBackgroundImgTVOptions",
                     "category": "a_global"
                 },{

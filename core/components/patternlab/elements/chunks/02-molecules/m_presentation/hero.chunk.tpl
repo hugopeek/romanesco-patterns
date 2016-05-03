@@ -18,7 +18,7 @@
     &subject=`[[getRawTVValue? &tv=`header_background`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
-    &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_background`:then=`*header_background`]]]]`
+    &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_background`:then=`*header_background`:else=``]]]]`
     &else=`[[*header_background]]`
 ]]
 
@@ -26,7 +26,7 @@
     &subject=`[[*header_background_img]]`
     &operator=`notempty`
     &then=`[[*alias]] background`
-    &else=`[[+header_background_inherited:empty=`[[++header_background_default]]`]]`
+    &else=`[[+header_background:empty=`[[++header_background_default]]`]]`
 ]]
 
 <div class="ui vertical stripe segment [[+header_background_class]]">

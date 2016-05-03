@@ -23,7 +23,7 @@
                     "category": "Header",
                     "sortOrder": "10",
                     "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
-                    "defaultValue": "@inherit",
+                    "defaultValue": "@INHERIT",
                     "templates": [
                         "Home",
                         "BasicOverview",

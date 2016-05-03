@@ -8,7 +8,7 @@
 [[pdoResources?
     &parents=`0`
     &limit=`0`
-    &tpl=`overviewBackgroundImgCSS`
+    &tpl=`globalBackgroundImgOverviewCSS`
     &includeTVs=`overview_img_pano,overview_img_wide`
     &tvFilters=`header_background_img!==`
 ]]
