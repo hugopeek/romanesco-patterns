@@ -4,5 +4,5 @@
     &tvname=`global_background_img`
     &tpl=`@CODE: [[+background_title]]==[[+background_title:stripAsAlias]] [[+background_inverted:is=`1`:then=`inverted`]] background`
     &outputSeparator=`||`
-]]
-||Default background==0
+]]||
+Default background==[[++header_background_default]]
