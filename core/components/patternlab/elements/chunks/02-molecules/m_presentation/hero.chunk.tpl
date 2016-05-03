@@ -30,18 +30,18 @@
 ]]
 
 <div class="ui vertical stripe segment [[+header_background_class]]">
-    [[If?
+    [[[[[[If?
         &subject=`[[getRawTVValue? &tv=`header_cta`]]`
         &operator=`EQ`
         &operand=`@INHERIT`
-        &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_cta`:then=`$ctaHeader`:else=`$heroTitles`]]]]`
+        &then=`#[[*parent]].header_inheritance:contains=`inherit_cta`:then=`$ctaHeader`:else=`$heroTitles``
         &else=`
-        [[[[If?
+        If?
             &subject=`[[getRawTVValue? &tv=`header_cta`]]`
             &operator=`isnot`
             &operand=`@INHERIT`
             &then=`$ctaHeader`
             &else=`$heroTitles`
-        ]]]]`
-    ]]
+        `
+    ]]]]]]
 </div>
