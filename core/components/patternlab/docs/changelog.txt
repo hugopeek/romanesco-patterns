@@ -4,17 +4,17 @@
 Released on April 17, 2016
 
 New features:
-- Add ContentBlocks for arranging content in tabs
+- Add content blocks for arranging content in tabs
+- Add Twitter content block
 
-
-Improvements:
+Fixes and improvements:
 - Add changelog
-- Flexible sidebar width on CB layouts containing sidebar
-- Assign categories to CB elements
-
-Fixes:
-- Fix header image and title inheritance
 - Add symlink for backgrounds.css to web context
+- Flexible sidebar width on CB layouts containing a sidebar
+- Assign categories to CB elements
+- Fix header image and title inheritance
+- Fix broken image sliders
+- Update jQuery to 2.1.4 and add local fallback for CDN
 
 ContentBlocks added or edited:
 - [Field - New] Tabs (Rich Text)
