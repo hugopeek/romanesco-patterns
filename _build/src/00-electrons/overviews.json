@@ -19,18 +19,8 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_basic",
+                        "@@templates_publication"
                     ]
                 },{
                     "caption": "Image (Portrait)",
@@ -49,18 +39,8 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_basic",
+                        "@@templates_publication"
                     ]
                 },{
                     "caption": "Image (Square)",
@@ -79,18 +59,8 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_basic",
+                        "@@templates_publication"
                     ]
                 },{
                     "caption": "Image (Wide)",
@@ -109,18 +79,8 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_basic",
+                        "@@templates_publication"
                     ]
                 },{
                     "caption": "Image (Panorama)",
@@ -139,18 +99,8 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_basic",
+                        "@@templates_publication"
                     ]
                 },{
                     "caption": "Image priority",
@@ -162,18 +112,8 @@
                     "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
                     "defaultValue": "landscape",
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_basic",
+                        "@@templates_publication"
                     ]
                 },{
                     "caption": "Icon (SVG)",
@@ -183,10 +123,7 @@
                     "category": "Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Basic - Overview",
-                        "Basic - Detail"
+                        "@@templates_basic"
                     ]
                 },{
                     "caption": "Icon (Font)",
@@ -201,10 +138,7 @@
                         "typeAheadDelay": "400"
                     },
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Basic - Overview",
-                        "Basic - Detail"
+                        "@@templates_basic"
                     ]
                 },{
                     "caption": "Link / button text",
@@ -214,18 +148,8 @@
                     "category": "Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_basic",
+                        "@@templates_publication"
                     ]
                 }
             ],

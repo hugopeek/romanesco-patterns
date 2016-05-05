@@ -3,7 +3,7 @@
     "lowCaseName": "patternlab",
     "description": "PatternLab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
     "author": "Hugo Peek",
-    "version": "0.8.0",
+    "version": "0.8.1",
 
     "package": {
         "elements": {

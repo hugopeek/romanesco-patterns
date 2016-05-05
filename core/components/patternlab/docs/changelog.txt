@@ -1,7 +1,17 @@
 # Changelog for Romanesco
 
+## Romanesco 0.8.1
+Released on May 5, 2016
+
+New features:
+- Add status grid for keeping track of progress per page
+
+Fixes and improvements:
+- Use snippets in JSON config files for assigning templates
+
+
 ## Romanesco 0.8.0
-Released on April 17, 2016
+Released on May 5, 2016
 
 New features:
 - Add content blocks for arranging content in tabs

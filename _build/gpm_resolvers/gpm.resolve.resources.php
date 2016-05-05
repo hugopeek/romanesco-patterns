@@ -51,6 +51,41 @@ if (!function_exists('createResource')) {
         } else {
             $tvs = array();
         }
+        
+        if (isset($resource['others'])) {
+            $others = $resource['others'];
+            unset($resource['others']);
+
+            $taggerCorePath = $modx->getOption('tagger.core_path', null, $modx->getOption('core_path', null, MODX_CORE_PATH) . 'components/tagger/');
+            if (file_exists($taggerCorePath . 'model/tagger/tagger.class.php')) {
+                /** @var Tagger $tagger */
+                $tagger = $modx->getService(
+                    'tagger',
+                    'Tagger',
+                    $taggerCorePath . 'model/tagger/',
+                    array(
+                        'core_path' => $taggerCorePath
+                    )
+                );
+            
+                $tagger = $tagger instanceof Tagger;
+            } else {
+                $tagger = null;
+            }
+            
+            foreach ($others as $other) {
+                if (($tagger == true) && (strpos($other['name'], 'tagger-') !== false)) {
+                    $groupAlias = preg_replace('/tagger-/', '', $other['name'], 1);
+            
+                    $group = $modx->getObject('TaggerGroup', array('alias' => $groupAlias));
+                    if ($group) {
+                        $other['name'] = 'tagger-' . $group->id;
+                    }
+                }
+            
+                $resource[$other['name']] = $other['value'];
+            }
+        }
 
         $res = $modx->runProcessor('resource/create', $resource);
         $resObject = $res->getObject();
@@ -81,6 +116,41 @@ if (!function_exists('updateResource')) {
             unset($resource['tvs']);
         } else {
             $tvs = array();
+        }
+
+        if (isset($resource['others'])) {
+            $others = $resource['others'];
+            unset($resource['others']);
+
+            $taggerCorePath = $modx->getOption('tagger.core_path', null, $modx->getOption('core_path', null, MODX_CORE_PATH) . 'components/tagger/');
+            if (file_exists($taggerCorePath . 'model/tagger/tagger.class.php')) {
+                /** @var Tagger $tagger */
+                $tagger = $modx->getService(
+                    'tagger',
+                    'Tagger',
+                    $taggerCorePath . 'model/tagger/',
+                    array(
+                        'core_path' => $taggerCorePath
+                    )
+                );
+            
+                $tagger = $tagger instanceof Tagger;
+            } else {
+                $tagger = null;
+            }
+
+            foreach ($others as $other) {
+                if (($tagger == true) && (strpos($other['name'], 'tagger-') !== false)) {
+                    $groupAlias = preg_replace('/tagger-/', '', $other['name'], 1);
+                
+                    $group = $modx->getObject('TaggerGroup', array('alias' => $groupAlias));
+                    if ($group) {
+                        $other['name'] = 'tagger-' . $group->id;
+                    }
+                }
+
+                $resource[$other['name']] = $other['value'];
+            }
         }
 
         $res = $modx->runProcessor('resource/update', $resource);
@@ -127,8 +197,19 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'collections_template' => '6',
+    'others' => 
+    array (
+      0 => 
+      array (
+        'name' => 'collections_template',
+        'value' => '6',
+      ),
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
+    'published' => 1,
+    'searchable' => 0,
   ),
   1 => 
   array (
@@ -150,8 +231,19 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'collections_template' => '2',
+    'others' => 
+    array (
+      0 => 
+      array (
+        'name' => 'collections_template',
+        'value' => '2',
+      ),
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
+    'published' => 1,
+    'searchable' => 0,
   ),
   2 => 
   array (
@@ -173,8 +265,19 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
-    'collections_template' => '3',
+    'others' => 
+    array (
+      0 => 
+      array (
+        'name' => 'collections_template',
+        'value' => '3',
+      ),
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
+    'published' => 1,
+    'searchable' => 0,
   ),
   3 => 
   array (
@@ -196,7 +299,15 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'GlobalBackgrounds',
+    'content_type' => 'css',
+    'published' => 1,
+    'searchable' => 0,
   ),
   4 => 
   array (
@@ -218,6 +329,11 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -241,6 +357,11 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -264,6 +385,11 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -287,6 +413,11 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -310,6 +441,11 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
@@ -333,6 +469,11 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'ProjectHub',
     'published' => 1,
   ),
@@ -356,10 +497,48 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'tvs' => 
     array (
     ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
   ),
+  11 => 
+  array (
+    'pagetitle' => 'Backgrounds CSS',
+    'alias' => 'assets/css/backgrounds',
+    'parent' => 0,
+    'content' => '[[++patternlab.global_backgrounds_id]]',
+    'context_key' => 'web',
+    'class_key' => 'modSymLink',
+    'longtitle' => '',
+    'description' => '',
+    'isfolder' => 0,
+    'introtext' => '',
+    'deleted' => 0,
+    'menutitle' => '',
+    'hide_children_in_tree' => 0,
+    'show_in_tree' => 0,
+    'set_as_home' => 0,
+    'tvs' => 
+    array (
+    ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
+    'template' => 'GlobalBackgrounds',
+    'content_type' => 'css',
+    'published' => 1,
+    'hidemenu' => 1,
+    'searchable' => 0,
+  ),
 );
+
+        if (isset($options['install_resources']) && empty($options['install_resources'])) return true;
 
         $resourceMap = getResourceMap();
         $toRemove = $resourceMap;
@@ -439,10 +618,21 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
                     }
                 }
             } else {
-                $resId = createResource($resource);
+                if ($resource['set_as_home'] == 1) {
+                    unset($resource['set_as_home']);
+                    $resource['id'] = $siteStart;
+                
+                    $resId = updateResource($resource);
+                
+                    if ($resId !== false) {
+                        $resourceMap[$resource['pagetitle']] = $resId;
+                    }
+                } else {
+                    $resId = createResource($resource);
 
-                if ($resId !== false) {
-                    $resourceMap[$resource['pagetitle']] = $resId;
+                    if ($resId !== false) {
+                        $resourceMap[$resource['pagetitle']] = $resId;
+                    }
                 }
             }
         }

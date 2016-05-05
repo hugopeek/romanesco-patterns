@@ -23,20 +23,7 @@
                     "defaultValue": "@INHERIT",
                     "inputOptionValues": "@CHUNK ctaTVInputOptions",
                     "templates": [
-                        "Home",
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Homepage",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_all"
                     ]
                 }
             ],

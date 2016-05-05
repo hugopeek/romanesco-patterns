@@ -11,20 +11,7 @@
                     "sortOrder": "1",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "Home",
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Homepage",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_all"
                     ]
                 },{
                     "caption": "Subtitle",
@@ -35,20 +22,7 @@
                     "sortOrder": "2",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "Home",
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Homepage",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_all"
                     ]
                 },{
                     "caption": "Background image",
@@ -59,20 +33,7 @@
                     "sortOrder": "11",
                     "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
                     "templates": [
-                        "Home",
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Homepage",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_all"
                     ]
                 },{
                     "caption": "Inheritance",
@@ -84,20 +45,7 @@
                     "defaultValue": "@INHERIT inherit_titles||inherit_background",
                     "inputOptionValues": "Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
                     "templates": [
-                        "Home",
-                        "BasicOverview",
-                        "BasicDetail",
-                        "Publications",
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Homepage",
-                        "Basic - Overview",
-                        "Basic - Detail",
-                        "Publications - Overview",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_all"
                     ]
                 }
             ],

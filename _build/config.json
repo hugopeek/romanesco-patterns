@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "PatternLab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.8.0",
+	"version": "0.8.1",
 	"package": {
 		"elements": {
 			"categories": [
@@ -101,6 +101,10 @@
 				},
 				{
 					"name": "Project Hub",
+					"parent": "e_project"
+				},
+				{
+					"name": "Status",
 					"parent": "e_project"
 				},
 				{
@@ -436,19 +440,19 @@
 					"inputOptionValues": "@CHUNK ctaTVInputOptions",
 					"templates": [
 						"Home",
-						"BasicOverview",
-						"BasicDetail",
-						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Homepage",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -677,19 +681,19 @@
 					"defaultValue": "@INHERIT",
 					"templates": [
 						"Home",
-						"BasicOverview",
-						"BasicDetail",
-						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Homepage",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -702,19 +706,19 @@
 					"defaultValue": "@INHERIT",
 					"templates": [
 						"Home",
-						"BasicOverview",
-						"BasicDetail",
-						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Homepage",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -727,19 +731,19 @@
 					"defaultValue": "@INHERIT",
 					"templates": [
 						"Home",
-						"BasicOverview",
-						"BasicDetail",
-						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Homepage",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -752,19 +756,19 @@
 					"inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
 					"templates": [
 						"Home",
-						"BasicOverview",
-						"BasicDetail",
-						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Homepage",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -778,19 +782,19 @@
 					"inputOptionValues": "Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
 					"templates": [
 						"Home",
-						"BasicOverview",
-						"BasicDetail",
-						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Homepage",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -811,17 +815,17 @@
 					},
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
 						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -842,17 +846,17 @@
 					},
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
 						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -873,17 +877,17 @@
 					},
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
 						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -904,17 +908,17 @@
 					},
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
 						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -935,17 +939,17 @@
 					},
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
 						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -959,17 +963,17 @@
 					"defaultValue": "landscape",
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
 						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -981,9 +985,9 @@
 					"sortOrder": "10",
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
-						"Basic - Overview",
-						"Basic - Detail"
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail"
 					]
 				},
 				{
@@ -1000,9 +1004,9 @@
 					},
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
-						"Basic - Overview",
-						"Basic - Detail"
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail"
 					]
 				},
 				{
@@ -1014,17 +1018,17 @@
 					"sortOrder": "1",
 					"templates": [
 						"BasicOverview",
-						"BasicDetail",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
 						"Publications",
-						"ArticleTraditional",
-						"ArticleReadability",
-						"ArticleSidenotes",
-						"Basic - Overview",
-						"Basic - Detail",
-						"Publications - Overview",
-						"Article - Traditional",
-						"Article - Readability",
-						"Article - Sidenotes"
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
@@ -1039,6 +1043,33 @@
 					},
 					"templates": [
 						"ProjectHub"
+					]
+				},
+				{
+					"caption": "Status indicator",
+					"name": "status_indicator",
+					"description": "In this timeline you can keep track of the projects' progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
+					"type": "migx",
+					"category": "Status",
+					"sortOrder": "1",
+					"inputProperties": {
+						"configs": "project_hub_timeline"
+					},
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
 					]
 				},
 				{
