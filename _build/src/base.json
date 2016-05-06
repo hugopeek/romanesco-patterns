@@ -37,12 +37,32 @@
                 "key": "custom_css_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "assets/css/site.css"
+                "value": "assets/css"
             },{
                 "key": "custom_js_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "assets/js/site.js"
+                "value": "assets/semantic/dist/themes/romanesco/assets/js"
+            },{
+                "key": "date_format_short",
+                "type": "textfield",
+                "area": "Settings",
+                "value": "%d-%m-%Y"
+            },{
+                "key": "date_format_medium",
+                "type": "textfield",
+                "area": "Settings",
+                "value": "%e %b %Y"
+            },{
+                "key": "date_format_long",
+                "type": "textfield",
+                "area": "Settings",
+                "value": "%e %B %Y"
+            },{
+                "key": "date_format_full",
+                "type": "textfield",
+                "area": "Settings",
+                "value": "%A %e %B, %Y"
             },{
                 "key": "dev_mode",
                 "type": "combo-boolean",

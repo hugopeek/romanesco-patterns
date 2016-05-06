@@ -65,3 +65,18 @@ $_lang['patternlab.testimonials.logo_title'] = 'Lees waarom [[+pagetitle]] graag
 $_lang['patternlab.search.field_placeholder'] = 'Waar ben je naar op zoek?';
 $_lang['patternlab.search.field_button_text'] = 'Zoeken';
 $_lang['patternlab.search.result_button_text'] = 'Ga naar deze pagina';
+
+
+// PROJECT HUB CONTEXT
+// =====================================================================
+
+// Status grid
+// ---------------------------------------------------------------------
+
+$_lang['patternlab.status.table_status_indicator'] = 'Status';
+$_lang['patternlab.status.table_id'] = 'ID';
+$_lang['patternlab.status.table_resource'] = 'Pagina';
+$_lang['patternlab.status.table_improvements'] = 'Verbeteringen';
+$_lang['patternlab.status.table_assigned_user'] = 'Beheerder';
+$_lang['patternlab.status.table_help'] = 'Problemen';
+$_lang['patternlab.status.table_notes'] = 'Notities / Toelichting';

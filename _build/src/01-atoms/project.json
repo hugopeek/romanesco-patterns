@@ -1,0 +1,25 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "statusNotesGetUser",
+                    "category": "a_project"
+                },{
+                    "name": "statusNotesGetDate",
+                    "category": "a_project"
+                },{
+                    "name": "statusGridColumnNotes",
+                    "category": "a_project"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_project",
+                    "parent": "01-atoms"
+                }
+            ]
+        }
+    }
+}

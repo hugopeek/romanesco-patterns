@@ -1,0 +1,1 @@
+<td class="[[+priority:eq=`low`:then=`disabled`]] [[+note:contains=`[[+modx.user.username]]`:then=`warning`:else=``]] [[+priority:eq=`high`:then=`negative`]]">[[+note]]</td>

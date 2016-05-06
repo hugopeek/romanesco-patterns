@@ -15,6 +15,10 @@
                     "description": "Opposed to stripString, which only allows you to strip a single value, stripWords lets you enter multiple (comma separated) values.",
                     "category": "f_modifiers"
                 },{
+                    "name": "parseTags",
+                    "description": "Takes in a comma separated string and turns each value into a tag.",
+                    "category": "f_modifiers"
+                },{
                     "name": "getResourceLevel",
                     "description": "Shows the level based on the number of parent ID's.",
                     "category": "f_resources"
@@ -53,6 +57,10 @@
                 },{
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Slick slider through CDN.",
+                    "category": "f_presentation"
+                },{
+                    "name": "statusGridLoadAssets",
+                    "description": "Load JS dependencies for status grid.",
                     "category": "f_presentation"
                 },{
                     "name": "tabsGenerateNav",

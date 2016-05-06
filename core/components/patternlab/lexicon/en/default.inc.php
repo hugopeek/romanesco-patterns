@@ -67,3 +67,18 @@ $_lang['patternlab.testimonials.logo_title'] = 'Read why [[+pagetitle]] loves to
 $_lang['patternlab.search.field_placeholder'] = 'What are you looking for?';
 $_lang['patternlab.search.field_button_text'] = 'Search';
 $_lang['patternlab.search.result_button_text'] = 'Go to this page';
+
+
+// PROJECT HUB CONTEXT
+// =====================================================================
+
+// Status grid
+// ---------------------------------------------------------------------
+
+$_lang['patternlab.status.table_status_indicator'] = 'Status';
+$_lang['patternlab.status.table_id'] = 'ID';
+$_lang['patternlab.status.table_resource'] = 'Resource';
+$_lang['patternlab.status.table_improvements'] = 'Improvements';
+$_lang['patternlab.status.table_assigned_user'] = 'Editor';
+$_lang['patternlab.status.table_help'] = 'Issues';
+$_lang['patternlab.status.table_notes'] = 'Notes / Explanations';

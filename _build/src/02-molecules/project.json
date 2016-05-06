@@ -5,6 +5,9 @@
                 {
                     "name": "projectHubRow",
                     "category": "m_project"
+                },{
+                    "name": "statusGridRow",
+                    "category": "m_project"
                 }
             ],
 

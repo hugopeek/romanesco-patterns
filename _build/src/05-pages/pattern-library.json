@@ -8,6 +8,7 @@
                 "properties": "05-pages/p_hub/p_pattern-library/01-atoms.json",
                 "context_key": "hub",
                 "template": "BasicOverview",
+                "menuindex": "1",
                 "published": "1"
             },{
                 "pagetitle": "Molecules",
@@ -16,6 +17,7 @@
                 "properties": "05-pages/p_hub/p_pattern-library/02-molecules.json",
                 "context_key": "hub",
                 "template": "BasicOverview",
+                "menuindex": "2",
                 "published": "1"
             },{
                 "pagetitle": "Organisms",
@@ -24,6 +26,7 @@
                 "properties": "05-pages/p_hub/p_pattern-library/03-organisms.json",
                 "context_key": "hub",
                 "template": "BasicOverview",
+                "menuindex": "3",
                 "published": "1"
             },{
                 "pagetitle": "Templates",
@@ -32,6 +35,7 @@
                 "properties": "05-pages/p_hub/p_pattern-library/04-templates.json",
                 "context_key": "hub",
                 "template": "BasicOverview",
+                "menuindex": "4",
                 "published": "1"
             },{
                 "pagetitle": "Pages",
@@ -40,6 +44,7 @@
                 "properties": "05-pages/p_hub/p_pattern-library/05-pages.json",
                 "context_key": "hub",
                 "template": "BasicOverview",
+                "menuindex": "5",
                 "published": "1"
             }
         ]

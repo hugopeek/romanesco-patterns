@@ -208,6 +208,10 @@
 					"parent": "a_navigation"
 				},
 				{
+					"name": "a_project",
+					"parent": "01-atoms"
+				},
+				{
 					"name": "a_search",
 					"parent": "01-atoms"
 				},
@@ -1048,12 +1052,116 @@
 				{
 					"caption": "Status indicator",
 					"name": "status_indicator",
-					"description": "In this timeline you can keep track of the projects' progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
-					"type": "migx",
+					"description": "Is this page ready for prime time at this point?",
+					"type": "option",
 					"category": "Status",
 					"sortOrder": "1",
+					"defaultValue": "not-done",
+					"inputOptionValues": "Yes, it's finished==done||No, but it's almost there==almost-done||No, it needs (way) more work==not-done||Yes, but the content is outdated==expired",
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Improvements",
+					"name": "status_improvements",
+					"description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
+					"type": "checkbox",
+					"category": "Status",
+					"sortOrder": "2",
+					"inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					],
+					"outputProperties": {
+						"delimiter": ","
+					}
+				},
+				{
+					"caption": "Assigned editor",
+					"name": "status_assigned_user",
+					"description": "Who is best suited to take a look at these improvements?",
+					"type": "listbox",
+					"category": "Status",
+					"sortOrder": "3",
+					"inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Help!",
+					"name": "status_help",
+					"description": "What seems to be the problem? You can explain it in more detail in the Notes section below. If you are getting an error message, please include the exact phrase in your note, together with the step(s) you performed prior to the error.",
+					"type": "checkbox",
+					"category": "Status",
+					"sortOrder": "4",
+					"inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Notes / Explanations",
+					"name": "status_notes",
+					"description": "You can add multiple notes here, effectively creating a little journal of this page. The latest notes are shown on top, and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
+					"type": "migx",
+					"category": "Status",
+					"sortOrder": "99",
 					"inputProperties": {
-						"configs": "project_hub_timeline"
+						"configs": "status_notes"
 					},
 					"templates": [
 						"Home",
@@ -1305,6 +1413,18 @@
 					"category": "a_nav_tabs"
 				},
 				{
+					"name": "statusNotesGetUser",
+					"category": "a_project"
+				},
+				{
+					"name": "statusNotesGetDate",
+					"category": "a_project"
+				},
+				{
+					"name": "statusGridColumnNotes",
+					"category": "a_project"
+				},
+				{
 					"name": "searchButton",
 					"category": "a_search"
 				},
@@ -1553,6 +1673,10 @@
 					"category": "m_project"
 				},
 				{
+					"name": "statusGridRow",
+					"category": "m_project"
+				},
+				{
 					"name": "articleAuthorBio",
 					"category": "m_publication"
 				},
@@ -1694,6 +1818,10 @@
 				},
 				{
 					"name": "projectHubOuter",
+					"category": "o_project"
+				},
+				{
+					"name": "statusGridOuter",
 					"category": "o_project"
 				},
 				{
@@ -2065,6 +2193,11 @@
 					"category": "f_modifiers"
 				},
 				{
+					"name": "parseTags",
+					"description": "Takes in a comma separated string and turns each value into a tag.",
+					"category": "f_modifiers"
+				},
+				{
 					"name": "getResourceLevel",
 					"description": "Shows the level based on the number of parent ID's.",
 					"category": "f_resources"
@@ -2112,6 +2245,11 @@
 				{
 					"name": "sliderLoadAssets",
 					"description": "Load CSS and JS dependencies for Slick slider through CDN.",
+					"category": "f_presentation"
+				},
+				{
+					"name": "statusGridLoadAssets",
+					"description": "Load JS dependencies for status grid.",
 					"category": "f_presentation"
 				},
 				{
@@ -2181,13 +2319,37 @@
 				"key": "custom_css_path",
 				"type": "textfield",
 				"area": "Paths",
-				"value": "assets/css/site.css"
+				"value": "assets/css"
 			},
 			{
 				"key": "custom_js_path",
 				"type": "textfield",
 				"area": "Paths",
-				"value": "assets/js/site.js"
+				"value": "assets/semantic/dist/themes/romanesco/assets/js"
+			},
+			{
+				"key": "date_format_short",
+				"type": "textfield",
+				"area": "Settings",
+				"value": "%d-%m-%Y"
+			},
+			{
+				"key": "date_format_medium",
+				"type": "textfield",
+				"area": "Settings",
+				"value": "%e %b %Y"
+			},
+			{
+				"key": "date_format_long",
+				"type": "textfield",
+				"area": "Settings",
+				"value": "%e %B %Y"
+			},
+			{
+				"key": "date_format_full",
+				"type": "textfield",
+				"area": "Settings",
+				"value": "%A %e %B, %Y"
 			},
 			{
 				"key": "dev_mode",
@@ -2393,6 +2555,7 @@
 				"properties": "05-pages/p_hub/p_pattern-library/01-atoms.json",
 				"context_key": "hub",
 				"template": "BasicOverview",
+				"menuindex": "1",
 				"published": "1"
 			},
 			{
@@ -2402,6 +2565,7 @@
 				"properties": "05-pages/p_hub/p_pattern-library/02-molecules.json",
 				"context_key": "hub",
 				"template": "BasicOverview",
+				"menuindex": "2",
 				"published": "1"
 			},
 			{
@@ -2411,6 +2575,7 @@
 				"properties": "05-pages/p_hub/p_pattern-library/03-organisms.json",
 				"context_key": "hub",
 				"template": "BasicOverview",
+				"menuindex": "3",
 				"published": "1"
 			},
 			{
@@ -2420,6 +2585,7 @@
 				"properties": "05-pages/p_hub/p_pattern-library/04-templates.json",
 				"context_key": "hub",
 				"template": "BasicOverview",
+				"menuindex": "4",
 				"published": "1"
 			},
 			{
@@ -2429,6 +2595,7 @@
 				"properties": "05-pages/p_hub/p_pattern-library/05-pages.json",
 				"context_key": "hub",
 				"template": "BasicOverview",
+				"menuindex": "5",
 				"published": "1"
 			},
 			{
@@ -2437,6 +2604,7 @@
 				"properties": "05-pages/p_hub/project-hub.json",
 				"context_key": "hub",
 				"template": "ProjectHub",
+				"menuindex": "1",
 				"published": "1"
 			},
 			{
@@ -2445,6 +2613,16 @@
 				"properties": "05-pages/p_hub/pattern-library.json",
 				"context_key": "hub",
 				"template": "BasicOverview",
+				"menuindex": "2",
+				"published": "1"
+			},
+			{
+				"pagetitle": "Status Grid",
+				"file": "05-pages/p_hub/status-grid.html",
+				"properties": "05-pages/p_hub/status-grid.json",
+				"context_key": "hub",
+				"template": "BasicOverview",
+				"menuindex": "10",
 				"published": "1"
 			},
 			{
