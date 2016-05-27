@@ -554,7 +554,7 @@
 					"sortOrder": "5",
 					"type": "listbox",
 					"inputOptionValues": "Stacked==vertical||Horizontal==horizontal||Inline==inline",
-					"defaultValue": "form-horizontal",
+					"defaultValue": "horizontal",
 					"templates": [
 						"fbForm"
 					]
@@ -1083,6 +1083,9 @@
 					"category": "Status",
 					"sortOrder": "2",
 					"inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
+					"outputProperties": {
+						"delimiter": ","
+					},
 					"templates": [
 						"Home",
 "BasicOverview",
@@ -1098,10 +1101,7 @@
 "Article - Traditional",
 "Article - Readability",
 "Article - Sidenotes"
-					],
-					"outputProperties": {
-						"delimiter": ","
-					}
+					]
 				},
 				{
 					"caption": "Assigned editor",
@@ -1727,6 +1727,10 @@
 				{
 					"name": "googleAnalytics",
 					"category": "m_stats"
+				},
+				{
+					"name": "fbLayoutFieldset",
+					"category": "o_formblocks"
 				},
 				{
 					"name": "fbContentBlock",

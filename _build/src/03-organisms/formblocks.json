@@ -3,6 +3,9 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "fbLayoutFieldset",
+                    "category": "o_formblocks"
+                },{
                     "name": "fbContentBlock",
                     "category": "o_formblocks"
                 },{

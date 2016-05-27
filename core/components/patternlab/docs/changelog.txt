@@ -8,6 +8,7 @@ New features:
 
 Fixes and improvements:
 - Use snippets in JSON config files for assigning templates
+- Load FormBlocks fieldset layout with chunk
 
 
 ## Romanesco 0.8.0

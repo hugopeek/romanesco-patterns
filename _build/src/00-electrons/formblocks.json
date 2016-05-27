@@ -73,7 +73,7 @@
                     "sortOrder": "5",
                     "type": "listbox",
                     "inputOptionValues": "Stacked==vertical||Horizontal==horizontal||Inline==inline",
-                    "defaultValue": "form-horizontal",
+                    "defaultValue": "horizontal",
                     "templates": ["fbForm"]
                 },{
                     "caption": "Dynamic recipient address",
