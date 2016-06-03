@@ -2323,7 +2323,7 @@
 				"key": "custom_css_path",
 				"type": "textfield",
 				"area": "Paths",
-				"value": "assets/css"
+				"value": "assets/semantic/dist/themes/romanesco/assets/css"
 			},
 			{
 				"key": "custom_js_path",
@@ -2360,6 +2360,12 @@
 				"type": "combo-boolean",
 				"area": "Settings",
 				"value": "1"
+			},
+			{
+				"key": "cb_code_id",
+				"type": "numberfield",
+				"area": "Settings",
+				"value": ""
 			},
 			{
 				"key": "user_team_id",

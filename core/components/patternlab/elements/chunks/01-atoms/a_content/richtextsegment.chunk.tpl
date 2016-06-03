@@ -1,5 +1,5 @@
 [[+segment_type:notempty=`
 <div class="ui [[+padding]] [[+alignment]] [[+segment_type]] segment">
-    [[+content]]
+    [[+content:replace=`<table>==<table class="ui table">`]]
 </div>
-`:empty=`[[+content]]`]]
+`:empty=`[[+content:replace=`<table>==<table class="ui table">`]]`]]

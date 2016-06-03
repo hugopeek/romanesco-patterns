@@ -1,5 +1,17 @@
 # Changelog for Romanesco
 
+## Romanesco 0.9.0
+Released on May 5, 2016
+
+New features:
+- Add front-end pattern library
+
+Fixes and improvements:
+- Load FormBlocks fieldset layout with chunk
+- Display syntax highlighted code snippets with Prism.js
+- Fixed adding tables and links with Redactor
+
+
 ## Romanesco 0.8.1
 Released on May 5, 2016
 
@@ -8,7 +20,6 @@ New features:
 
 Fixes and improvements:
 - Use snippets in JSON config files for assigning templates
-- Load FormBlocks fieldset layout with chunk
 
 
 ## Romanesco 0.8.0

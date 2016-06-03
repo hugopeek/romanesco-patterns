@@ -25,4 +25,4 @@
     &img_inflate=`[[+img_inflate]]`
 ]]
 
-[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]
+[[[[+pagination:eq=`1`:then=`$paginationFluid`]]]]

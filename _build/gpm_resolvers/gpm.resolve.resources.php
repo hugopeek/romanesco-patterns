@@ -336,6 +336,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
+    'menuindex' => 1,
   ),
   5 => 
   array (
@@ -364,6 +365,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
+    'menuindex' => 2,
   ),
   6 => 
   array (
@@ -392,6 +394,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
+    'menuindex' => 3,
   ),
   7 => 
   array (
@@ -420,6 +423,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
+    'menuindex' => 4,
   ),
   8 => 
   array (
@@ -448,6 +452,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
+    'menuindex' => 5,
   ),
   9 => 
   array (
@@ -476,6 +481,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'properties' => '',
     'template' => 'ProjectHub',
     'published' => 1,
+    'menuindex' => 1,
   ),
   10 => 
   array (
@@ -504,8 +510,38 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'properties' => '',
     'template' => 'BasicOverview',
     'published' => 1,
+    'menuindex' => 2,
   ),
   11 => 
+  array (
+    'pagetitle' => 'Status Grid',
+    'alias' => 'status-grid',
+    'parent' => 0,
+    'content' => '',
+    'context_key' => 'hub',
+    'class_key' => 'modDocument',
+    'longtitle' => '',
+    'description' => '',
+    'isfolder' => 0,
+    'introtext' => '',
+    'deleted' => 0,
+    'menutitle' => '',
+    'hide_children_in_tree' => 0,
+    'show_in_tree' => 1,
+    'set_as_home' => 0,
+    'tvs' => 
+    array (
+    ),
+    'others' => 
+    array (
+    ),
+    'link_attributes' => '',
+    'properties' => '',
+    'template' => 'BasicOverview',
+    'published' => 1,
+    'menuindex' => 10,
+  ),
+  12 => 
   array (
     'pagetitle' => 'Backgrounds CSS',
     'alias' => 'assets/css/backgrounds',

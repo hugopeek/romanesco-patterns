@@ -28,4 +28,4 @@
     ]]
 </div>
 
-[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]
+[[[[+pagination:eq=`1`:then=`$paginationFluid`]]]]
