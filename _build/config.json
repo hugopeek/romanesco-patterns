@@ -100,6 +100,10 @@
 					"parent": "00-electrons"
 				},
 				{
+					"name": "Pattern Library",
+					"parent": "e_project"
+				},
+				{
 					"name": "Project Hub",
 					"parent": "e_project"
 				},
@@ -378,6 +382,10 @@
 				{
 					"name": "f_fb_modifiers",
 					"parent": "f_formblocks"
+				},
+				{
+					"name": "f_project",
+					"parent": "06-formulas"
 				},
 				{
 					"name": "f_basic",
@@ -1413,6 +1421,14 @@
 					"category": "a_nav_tabs"
 				},
 				{
+					"name": "displayRawElement",
+					"category": "a_project"
+				},
+				{
+					"name": "listIncludedElementsRow",
+					"category": "a_project"
+				},
+				{
 					"name": "statusNotesGetUser",
 					"category": "a_project"
 				},
@@ -2180,6 +2196,10 @@
 				{
 					"name": "fbStripNonAlpha",
 					"category": "f_fb_modifiers"
+				},
+				{
+					"name": "listIncludedChunks",
+					"category": "f_project"
 				},
 				{
 					"name": "Time",

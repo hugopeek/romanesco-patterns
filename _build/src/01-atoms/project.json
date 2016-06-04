@@ -3,6 +3,12 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "displayRawElement",
+                    "category": "a_project"
+                },{
+                    "name": "listIncludedElementsRow",
+                    "category": "a_project"
+                },{
                     "name": "statusNotesGetUser",
                     "category": "a_project"
                 },{
