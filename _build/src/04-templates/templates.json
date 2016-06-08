@@ -29,6 +29,14 @@
                     "icon": "icon-pencil",
                     "category": "t_publication"
                 },{
+                    "name": "Team",
+                    "icon": "icon-person",
+                    "category": "t_team"
+                },{
+                    "name": "Testimonial",
+                    "icon": "icon-chat",
+                    "category": "t_testimonials"
+                },{
                     "name": "GlobalBackgrounds",
                     "icon": "icon-image",
                     "category": "t_global"
@@ -52,6 +60,12 @@
                     "parent": "04-templates"
                 },{
                     "name": "t_publication",
+                    "parent": "04-templates"
+                },{
+                    "name": "t_team",
+                    "parent": "04-templates"
+                },{
+                    "name": "t_testimonials",
                     "parent": "04-templates"
                 },{
                     "name": "t_global",

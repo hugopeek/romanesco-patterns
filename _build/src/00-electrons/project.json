@@ -83,6 +83,9 @@
                     "name": "e_project",
                     "parent": "00-electrons"
                 },{
+                    "name": "Pattern Library",
+                    "parent": "e_project"
+                },{
                     "name": "Project Hub",
                     "parent": "e_project"
                 },{
