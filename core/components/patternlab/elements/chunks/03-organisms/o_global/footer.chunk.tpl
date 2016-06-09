@@ -1,5 +1,5 @@
 <footer id="footer" class="ui vertical segment inverted">
-    [[#[[[[++footer_id:empty=`++patternlab.global_footer_id`]]]].content]]
+    [[#[[++footer_id:empty=`[[++patternlab.global_footer_id]]`]].content]]
 
     <div class="ui container section divider"></div>
 

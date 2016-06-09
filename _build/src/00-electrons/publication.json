@@ -48,13 +48,6 @@
                     "parent": "e_publication"
                 }
             ]
-        },
-        "systemSettings": [
-            {
-                "key": "publication_container_id",
-                "type": "numberfield",
-                "area": "Pages"
-            }
-        ]
+        }
     }
 }

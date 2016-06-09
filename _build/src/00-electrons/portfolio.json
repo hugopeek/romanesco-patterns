@@ -1,0 +1,54 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Client",
+                    "name": "project_client",
+                    "description": "Select the client for this project. If this list is empty, you need to add the client first in the Clients component.",
+                    "type": "listbox",
+                    "inputOptionValues": "@CHUNK clientTVInputOptions",
+                    "category": "Project - Participants",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                },{
+                    "caption": "Project team",
+                    "name": "project_team",
+                    "description": "Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
+                    "type": "listbox-multiple",
+                    "inputOptionValues": "@CHUNK teamTVInputOptions",
+                    "category": "Project - Participants",
+                    "sortOrder": "2",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                },{
+                    "caption": "Testimonials",
+                    "name": "project_testimonials",
+                    "description": "",
+                    "type": "listbox-multiple",
+                    "inputOptionValues": "@CHUNK testimonialTVInputOptions",
+                    "category": "Project - Review",
+                    "sortOrder": "3",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                }
+            ],
+            "categories": [
+                {
+                    "name": "e_portfolio",
+                    "parent": "00-electrons"
+                },{
+                    "name": "Project - Participants",
+                    "parent": "e_portfolio"
+                },{
+                    "name": "Project - Review",
+                    "parent": "e_portfolio"
+                }
+            ]
+        }
+    }
+}

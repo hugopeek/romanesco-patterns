@@ -103,19 +103,6 @@
                         "@@templates_publication"
                     ]
                 },{
-                    "caption": "Image priority",
-                    "name": "overview_img_priority",
-                    "description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
-                    "category": "Overview - Image",
-                    "sortOrder": "99",
-                    "type": "listbox",
-                    "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
-                    "defaultValue": "landscape",
-                    "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication"
-                    ]
-                },{
                     "caption": "Icon (SVG)",
                     "name": "overview_icon_svg",
                     "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
@@ -151,6 +138,19 @@
                         "@@templates_basic",
                         "@@templates_publication"
                     ]
+                },{
+                    "caption": "Image priority",
+                    "name": "overview_img_priority",
+                    "description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
+                    "category": "Overview - Settings",
+                    "sortOrder": "10",
+                    "type": "listbox",
+                    "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
+                    "defaultValue": "landscape",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication"
+                    ]
                 }
             ],
 
@@ -172,11 +172,19 @@
         },
         "systemSettings": [
             {
+                "key": "publication_container_id",
+                "type": "numberfield",
+                "area": "Pages"
+            },{
                 "key": "team_container_id",
                 "type": "numberfield",
                 "area": "Pages"
             },{
                 "key": "testimonial_container_id",
+                "type": "numberfield",
+                "area": "Pages"
+            },{
+                "key": "portfolio_container_id",
                 "type": "numberfield",
                 "area": "Pages"
             }

@@ -1,0 +1,30 @@
+{
+    "package": {
+        "elements": {
+            "categories": [
+                {
+                    "name": "e_information",
+                    "parent": "00-electrons"
+                },{
+                    "name": "e_action",
+                    "parent": "e_information"
+                },{
+                    "name": "e_event",
+                    "parent": "e_information"
+                },{
+                    "name": "e_organisation",
+                    "parent": "e_information"
+                },{
+                    "name": "e_person",
+                    "parent": "e_information"
+                },{
+                    "name": "e_place",
+                    "parent": "e_information"
+                },{
+                    "name": "e_review",
+                    "parent": "e_information"
+                }
+            ]
+        }
+    }
+}

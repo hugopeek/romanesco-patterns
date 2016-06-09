@@ -1,0 +1,74 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Address",
+                    "name": "place_address",
+                    "description": "",
+                    "type": "text",
+                    "category": "Place",
+                    "sortOrder": "1",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Street name",
+                    "name": "place_street_name",
+                    "description": "",
+                    "type": "text",
+                    "category": "Place",
+                    "sortOrder": "2",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "House number",
+                    "name": "place_house_nr",
+                    "description": "",
+                    "type": "text",
+                    "category": "Place",
+                    "sortOrder": "3",
+                    "templates": [
+                        ""
+                 ,{
+                    "caption": "Zip code",
+                    "name": "place_zipcode",
+                    "description": "",
+                    "type": "text",
+                    "category": "Place",
+                    "sortOrder": "4",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Province",
+                    "name": "place_province",
+                    "description": "",
+                    "type": "text",
+                    "category": "Place",
+                    "sortOrder": "10",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Country",
+                    "name": "place_country",
+                    "description": "",
+                    "type": "text",
+                    "category": "Place",
+                    "sortOrder": "11",
+                    "templates": [
+                        ""
+                    ]
+                }
+            ],
+            "categories": [
+                {
+                    "name": "Place",
+                    "parent": "e_place"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Profile picture",
+                    "name": "person_image",
+                    "description": "A headshot of this person.",
+                    "type": "imageplus",
+                    "category": "Person - Presentation",
+                    "sortOrder": "1",
+                    "inputProperties": {
+                        "targetWidth": "800",
+                        "targetRatio": "1.0",
+                        "allowAltTag": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+                        "outputChunk": "cbOverviewRowImg"
+                    },
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Informal picture",
+                    "name": "person_image_loose",
+                    "description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in a mouseover effect with the profile picture for example, or in areas where a little playfulness is allowed.",
+                    "type": "imageplus",
+                    "category": "Person - Presentation",
+                    "sortOrder": "1",
+                    "inputProperties": {
+                        "targetWidth": "800",
+                        "targetRatio": "1.0",
+                        "allowAltTag": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+                        "outputChunk": "cbOverviewRowImg"
+                    },
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "First name",
+                    "name": "person_firstname",
+                    "description": "",
+                    "type": "text",
+                    "category": "Person - Information",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Last name",
+                    "name": "person_lastname",
+                    "description": "",
+                    "type": "text",
+                    "category": "Person - Information",
+                    "sortOrder": "2",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Gender",
+                    "name": "person_gender",
+                    "description": "",
+                    "type": "options",
+                    "category": "Person - Information",
+                    "sortOrder": "3",
+                    "inputOptionValues": "Male==m||Female==f||Other==o",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Job title",
+                    "name": "person_jobtitle",
+                    "description": "The role of this person inside the team.",
+                    "type": "text",
+                    "category": "Person - Information",
+                    "sortOrder": "5",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Personal website or blog",
+                    "name": "person_url",
+                    "description": "",
+                    "type": "url",
+                    "category": "Person - Information",
+                    "sortOrder": "10",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Email address",
+                    "name": "person_email",
+                    "description": "",
+                    "type": "email",
+                    "category": "Person - Contact",
+                    "sortOrder": "10",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Phone number",
+                    "name": "person_phone",
+                    "description": "",
+                    "type": "text",
+                    "category": "Person - Contact",
+                    "sortOrder": "11",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },
+                {
+                    "caption": "Mobile number",
+                    "name": "person_mobile",
+                    "description": "",
+                    "type": "text",
+                    "category": "Person - Contact",
+                    "sortOrder": "12",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                }
+            ],
+            "categories": [
+                {
+                    "name": "e_person",
+                    "parent": "00-electrons"
+                },{
+                    "name": "Person - Image",
+                    "parent": "e_team"
+                },{
+                    "name": "Person - Information",
+                    "parent": "e_team"
+                },{
+                    "name": "Person - Contact",
+                    "parent": "e_team"
+                }
+            ]
+        }
+    }
+}
