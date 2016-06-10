@@ -81,21 +81,25 @@
                     "templates": [
                         "@@templates_team"
                     ]
+                },{
+                    "caption": "Personal website or blog",
+                    "name": "person_url",
+                    "description": "",
+                    "type": "url",
+                    "category": "Person - Information",
+                    "sortOrder": "10",
+                    "templates": [
+                        "@@templates_team"
+                    ]
                 }
             ],
 
             "categories": [
                 {
-                    "name": "e_info_person",
-                    "parent": "00-electrons"
-                },{
-                    "name": "Person - Image",
+                    "name": "Person - Presentation",
                     "parent": "e_info_person"
                 },{
                     "name": "Person - Information",
-                    "parent": "e_info_person"
-                },{
-                    "name": "Person - Contact",
                     "parent": "e_info_person"
                 }
             ]

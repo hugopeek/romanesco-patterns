@@ -21,11 +21,17 @@ module.exports = function(grunt) {
                             match: 'templates_publication',
                             replacement: '<%= grunt.file.read("src_snippets/template-list-publication") %>'
                         },{
+                            match: 'templates_client',
+                            replacement: '<%= grunt.file.read("src_snippets/template-list-client") %>'
+                        },{
                             match: 'templates_team',
                             replacement: '<%= grunt.file.read("src_snippets/template-list-team") %>'
                         },{
                             match: 'templates_testimonial',
                             replacement: '<%= grunt.file.read("src_snippets/template-list-testimonial") %>'
+                        },{
+                            match: 'templates_portfolio',
+                            replacement: '<%= grunt.file.read("src_snippets/template-list-portfolio") %>'
                         }
                     ]
                 },

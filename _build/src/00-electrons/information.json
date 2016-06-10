@@ -1,28 +1,10 @@
 {
     "package": {
         "elements": {
-            "tvs": [
-                {
-                    "caption": "Website",
-                    "name": "information_url",
-                    "description": "",
-                    "type": "url",
-                    "category": "Information",
-                    "sortOrder": "1",
-                    "templates": [
-                        "@@templates_portfolio",
-                        "@@templates_client"
-                    ]
-                }
-            ],
-
             "categories": [
                 {
                     "name": "e_information",
                     "parent": "00-electrons"
-                },{
-                    "name": "Information",
-                    "parent": "e_information"
                 },{
                     "name": "e_info_action",
                     "parent": "e_information"
@@ -43,9 +25,6 @@
                     "parent": "e_information"
                 },{
                     "name": "e_info_place",
-                    "parent": "e_information"
-                },{
-                    "name": "e_info_review",
                     "parent": "e_information"
                 }
             ]

@@ -62,13 +62,13 @@
             "categories": [
                 {
                     "name": "About",
-                    "parent": "e_creativework"
+                    "parent": "e_info_creativework"
                 },{
                     "name": "Comments",
-                    "parent": "e_creativework"
+                    "parent": "e_info_creativework"
                 },{
                     "name": "Participants",
-                    "parent": "e_creativework"
+                    "parent": "e_info_creativework"
                 }
             ]
         }

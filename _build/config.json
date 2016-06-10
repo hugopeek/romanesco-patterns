@@ -3,7 +3,7 @@
 	"lowCaseName": "patternlab",
 	"description": "PatternLab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.8.1",
+	"version": "0.9.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -80,6 +80,54 @@
 					"parent": "e_headers"
 				},
 				{
+					"name": "e_hub",
+					"parent": "00-electrons"
+				},
+				{
+					"name": "Pattern Library",
+					"parent": "e_hub"
+				},
+				{
+					"name": "Project Hub",
+					"parent": "e_hub"
+				},
+				{
+					"name": "Status",
+					"parent": "e_hub"
+				},
+				{
+					"name": "e_information",
+					"parent": "00-electrons"
+				},
+				{
+					"name": "e_info_action",
+					"parent": "e_information"
+				},
+				{
+					"name": "e_info_creativework",
+					"parent": "e_information"
+				},
+				{
+					"name": "e_info_event",
+					"parent": "e_information"
+				},
+				{
+					"name": "e_info_intangible",
+					"parent": "e_information"
+				},
+				{
+					"name": "e_info_organisation",
+					"parent": "e_information"
+				},
+				{
+					"name": "e_info_person",
+					"parent": "e_information"
+				},
+				{
+					"name": "e_info_place",
+					"parent": "e_information"
+				},
+				{
 					"name": "e_overviews",
 					"parent": "00-electrons"
 				},
@@ -96,32 +144,12 @@
 					"parent": "e_overviews"
 				},
 				{
-					"name": "e_project",
+					"name": "e_social",
 					"parent": "00-electrons"
 				},
 				{
-					"name": "Pattern Library",
-					"parent": "e_project"
-				},
-				{
-					"name": "Project Hub",
-					"parent": "e_project"
-				},
-				{
-					"name": "Status",
-					"parent": "e_project"
-				},
-				{
-					"name": "e_publication",
-					"parent": "00-electrons"
-				},
-				{
-					"name": "Article - About",
-					"parent": "e_publication"
-				},
-				{
-					"name": "Article - Comments",
-					"parent": "e_publication"
+					"name": "Social",
+					"parent": "e_social"
 				},
 				{
 					"name": "a_branding",
@@ -188,6 +216,10 @@
 					"parent": "01-atoms"
 				},
 				{
+					"name": "a_hub",
+					"parent": "01-atoms"
+				},
+				{
 					"name": "a_navigation",
 					"parent": "01-atoms"
 				},
@@ -210,10 +242,6 @@
 				{
 					"name": "a_nav_tabs",
 					"parent": "a_navigation"
-				},
-				{
-					"name": "a_project",
-					"parent": "01-atoms"
 				},
 				{
 					"name": "a_search",
@@ -260,6 +288,10 @@
 					"parent": "02-molecules"
 				},
 				{
+					"name": "m_hub",
+					"parent": "02-molecules"
+				},
+				{
 					"name": "m_layouts",
 					"parent": "02-molecules"
 				},
@@ -300,10 +332,6 @@
 					"parent": "02-molecules"
 				},
 				{
-					"name": "m_project",
-					"parent": "02-molecules"
-				},
-				{
 					"name": "m_publication",
 					"parent": "02-molecules"
 				},
@@ -332,6 +360,10 @@
 					"parent": "03-organisms"
 				},
 				{
+					"name": "o_hub",
+					"parent": "03-organisms"
+				},
+				{
 					"name": "o_layouts",
 					"parent": "03-organisms"
 				},
@@ -341,10 +373,6 @@
 				},
 				{
 					"name": "o_presentation",
-					"parent": "03-organisms"
-				},
-				{
-					"name": "o_project",
 					"parent": "03-organisms"
 				},
 				{
@@ -368,11 +396,19 @@
 					"parent": "04-templates"
 				},
 				{
+					"name": "t_connection",
+					"parent": "04-templates"
+				},
+				{
+					"name": "t_confirmation",
+					"parent": "04-templates"
+				},
+				{
 					"name": "t_global",
 					"parent": "04-templates"
 				},
 				{
-					"name": "t_project",
+					"name": "t_hub",
 					"parent": "04-templates"
 				},
 				{
@@ -384,7 +420,7 @@
 					"parent": "f_formblocks"
 				},
 				{
-					"name": "f_project",
+					"name": "f_hub",
 					"parent": "06-formulas"
 				},
 				{
@@ -426,6 +462,54 @@
 				{
 					"name": "c_global",
 					"parent": "07-computations"
+				},
+				{
+					"name": "About",
+					"parent": "e_info_creativework"
+				},
+				{
+					"name": "Comments",
+					"parent": "e_info_creativework"
+				},
+				{
+					"name": "Participants",
+					"parent": "e_info_creativework"
+				},
+				{
+					"name": "Rating",
+					"parent": "e_info_intangible"
+				},
+				{
+					"name": "Contact",
+					"parent": "e_info_intangible"
+				},
+				{
+					"name": "Address",
+					"parent": "e_info_intangible"
+				},
+				{
+					"name": "Date",
+					"parent": "e_info_intangible"
+				},
+				{
+					"name": "e_info_organisation",
+					"parent": "e_information"
+				},
+				{
+					"name": "Org. - Presentation",
+					"parent": "e_info_organisation"
+				},
+				{
+					"name": "Org. - Information",
+					"parent": "e_info_organisation"
+				},
+				{
+					"name": "Person - Presentation",
+					"parent": "e_info_person"
+				},
+				{
+					"name": "Person - Information",
+					"parent": "e_info_person"
 				}
 			],
 			"tvs": [
@@ -810,6 +894,151 @@
 					]
 				},
 				{
+					"caption": "Project hub timeline",
+					"name": "project_hub_timeline",
+					"description": "In this timeline you can keep track of the projects' progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
+					"type": "migx",
+					"category": "Project Hub",
+					"sortOrder": "1",
+					"inputProperties": {
+						"configs": "project_hub_timeline"
+					},
+					"templates": [
+						"ProjectHub"
+					]
+				},
+				{
+					"caption": "Status indicator",
+					"name": "status_indicator",
+					"description": "Is this page ready for prime time at this point?",
+					"type": "option",
+					"category": "Status",
+					"sortOrder": "1",
+					"defaultValue": "not-done",
+					"inputOptionValues": "Yes, it's finished==done||No, but it's almost there==almost-done||No, it needs (way) more work==not-done||Yes, but the content is outdated==expired",
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Improvements",
+					"name": "status_improvements",
+					"description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
+					"type": "checkbox",
+					"category": "Status",
+					"sortOrder": "2",
+					"inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
+					"outputProperties": {
+						"delimiter": ","
+					},
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Assigned editor",
+					"name": "status_assigned_user",
+					"description": "Who is best suited to take a look at these improvements?",
+					"type": "listbox",
+					"category": "Status",
+					"sortOrder": "3",
+					"inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Help!",
+					"name": "status_help",
+					"description": "What seems to be the problem? You can explain it in more detail in the Notes section below. If you are getting an error message, please include the exact phrase in your note, together with the step(s) you performed prior to the error.",
+					"type": "checkbox",
+					"category": "Status",
+					"sortOrder": "4",
+					"inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Notes / Explanations",
+					"name": "status_notes",
+					"description": "You can add multiple notes here, effectively creating a little journal of this page. The latest notes are shown on top, and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
+					"type": "migx",
+					"category": "Status",
+					"sortOrder": "99",
+					"inputProperties": {
+						"configs": "status_notes"
+					},
+					"templates": [
+						"Home",
+"BasicOverview",
+"BasicDetail",
+"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Homepage",
+"Basic - Overview",
+"Basic - Detail",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
 					"caption": "Image (Landscape)",
 					"name": "overview_img_landscape",
 					"description": "This is the default overview image, in a regular 4:3 aspect ratio.",
@@ -965,30 +1194,6 @@
 					]
 				},
 				{
-					"caption": "Image priority",
-					"name": "overview_img_priority",
-					"description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
-					"category": "Overview - Image",
-					"sortOrder": "99",
-					"type": "listbox",
-					"inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
-					"defaultValue": "landscape",
-					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"Basic - Overview",
-"Basic - Detail",
-						"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
-"Publications - Overview",
-"Article - Traditional",
-"Article - Readability",
-"Article - Sidenotes"
-					]
-				},
-				{
 					"caption": "Icon (SVG)",
 					"name": "overview_icon_svg",
 					"description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
@@ -1044,157 +1249,124 @@
 					]
 				},
 				{
-					"caption": "Project hub timeline",
-					"name": "project_hub_timeline",
-					"description": "In this timeline you can keep track of the projects' progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
-					"type": "migx",
-					"category": "Project Hub",
-					"sortOrder": "1",
-					"inputProperties": {
-						"configs": "project_hub_timeline"
-					},
-					"templates": [
-						"ProjectHub"
-					]
-				},
-				{
-					"caption": "Status indicator",
-					"name": "status_indicator",
-					"description": "Is this page ready for prime time at this point?",
-					"type": "option",
-					"category": "Status",
-					"sortOrder": "1",
-					"defaultValue": "not-done",
-					"inputOptionValues": "Yes, it's finished==done||No, but it's almost there==almost-done||No, it needs (way) more work==not-done||Yes, but the content is outdated==expired",
-					"templates": [
-						"Home",
-"BasicOverview",
-"BasicDetail",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
-"Homepage",
-"Basic - Overview",
-"Basic - Detail",
-"Publications - Overview",
-"Article - Traditional",
-"Article - Readability",
-"Article - Sidenotes"
-					]
-				},
-				{
-					"caption": "Improvements",
-					"name": "status_improvements",
-					"description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
-					"type": "checkbox",
-					"category": "Status",
-					"sortOrder": "2",
-					"inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
-					"outputProperties": {
-						"delimiter": ","
-					},
-					"templates": [
-						"Home",
-"BasicOverview",
-"BasicDetail",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
-"Homepage",
-"Basic - Overview",
-"Basic - Detail",
-"Publications - Overview",
-"Article - Traditional",
-"Article - Readability",
-"Article - Sidenotes"
-					]
-				},
-				{
-					"caption": "Assigned editor",
-					"name": "status_assigned_user",
-					"description": "Who is best suited to take a look at these improvements?",
+					"caption": "Image priority",
+					"name": "overview_img_priority",
+					"description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
+					"category": "Overview - Settings",
+					"sortOrder": "10",
 					"type": "listbox",
-					"category": "Status",
+					"inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
+					"defaultValue": "landscape",
+					"templates": [
+						"BasicOverview",
+"BasicDetail",
+"Basic - Overview",
+"Basic - Detail",
+						"Publications",
+"ArticleTraditional",
+"ArticleReadability",
+"ArticleSidenotes",
+"Publications - Overview",
+"Article - Traditional",
+"Article - Readability",
+"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Twitter account",
+					"name": "social_twitter",
+					"description": "Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
+					"type": "text",
+					"category": "Social",
+					"sortOrder": "1",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "LinkedIn profile",
+					"name": "social_linkedin",
+					"description": "",
+					"type": "url",
+					"category": "Social",
+					"sortOrder": "2",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Facebook page",
+					"name": "social_facebook",
+					"description": "",
+					"type": "url",
+					"category": "Social",
 					"sortOrder": "3",
-					"inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
 					"templates": [
-						"Home",
-"BasicOverview",
-"BasicDetail",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
-"Homepage",
-"Basic - Overview",
-"Basic - Detail",
-"Publications - Overview",
-"Article - Traditional",
-"Article - Readability",
-"Article - Sidenotes"
+						"Team"
 					]
 				},
 				{
-					"caption": "Help!",
-					"name": "status_help",
-					"description": "What seems to be the problem? You can explain it in more detail in the Notes section below. If you are getting an error message, please include the exact phrase in your note, together with the step(s) you performed prior to the error.",
-					"type": "checkbox",
-					"category": "Status",
+					"caption": "Instagram profile",
+					"name": "social_instagram",
+					"description": "",
+					"type": "url",
+					"category": "Social",
 					"sortOrder": "4",
-					"inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
 					"templates": [
-						"Home",
-"BasicOverview",
-"BasicDetail",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
-"Homepage",
-"Basic - Overview",
-"Basic - Detail",
-"Publications - Overview",
-"Article - Traditional",
-"Article - Readability",
-"Article - Sidenotes"
+						"Team"
 					]
 				},
 				{
-					"caption": "Notes / Explanations",
-					"name": "status_notes",
-					"description": "You can add multiple notes here, effectively creating a little journal of this page. The latest notes are shown on top, and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
-					"type": "migx",
-					"category": "Status",
-					"sortOrder": "99",
-					"inputProperties": {
-						"configs": "status_notes"
-					},
+					"caption": "Pinterest board",
+					"name": "social_pinterest",
+					"description": "",
+					"type": "url",
+					"category": "Social",
+					"sortOrder": "5",
 					"templates": [
-						"Home",
-"BasicOverview",
-"BasicDetail",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
-"Homepage",
-"Basic - Overview",
-"Basic - Detail",
-"Publications - Overview",
-"Article - Traditional",
-"Article - Readability",
-"Article - Sidenotes"
+						"Team"
+					]
+				},
+				{
+					"caption": "Youtube channel",
+					"name": "social_youtube",
+					"description": "",
+					"type": "url",
+					"category": "Social",
+					"sortOrder": "10",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Google+ profile",
+					"name": "social_googleplus",
+					"description": "",
+					"type": "url",
+					"category": "Social",
+					"sortOrder": "11",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Github account",
+					"name": "social_github",
+					"description": "",
+					"type": "url",
+					"category": "Social",
+					"sortOrder": "20",
+					"templates": [
+						"Team"
 					]
 				},
 				{
 					"caption": "Author",
-					"name": "article_author",
+					"name": "author",
 					"description": "Select the author of this article. He or she must be a MODX user.",
 					"type": "listbox",
 					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
-					"category": "Article - About",
+					"category": "About",
 					"sortOrder": "1",
 					"templates": [
 						"ArticleTraditional",
@@ -1207,11 +1379,11 @@
 				},
 				{
 					"caption": "Comments",
-					"name": "article_comments",
-					"description": "Enable or disable comments for this article.",
+					"name": "comments",
+					"description": "Enable or disable comments.",
 					"type": "option",
 					"inputOptionValues": "Active==1||Disabled==0",
-					"category": "Article - Comments",
+					"category": "Comments",
 					"sortOrder": "1",
 					"templates": [
 						"ArticleTraditional",
@@ -1220,6 +1392,334 @@
 						"Article - Traditional",
 						"Article - Readability",
 						"Article - Sidenotes"
+					]
+				},
+				{
+					"caption": "Client",
+					"name": "client",
+					"description": "If this list is empty, you need to add the client first in the Clients component.",
+					"type": "listbox",
+					"inputOptionValues": "@CHUNK clientTVInputOptions",
+					"category": "Participants",
+					"sortOrder": "1",
+					"templates": [
+						"Portfolio"
+					]
+				},
+				{
+					"caption": "Contributors",
+					"name": "contributors",
+					"description": "Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
+					"type": "listbox-multiple",
+					"inputOptionValues": "@CHUNK teamTVInputOptions",
+					"category": "Participants",
+					"sortOrder": "2",
+					"templates": [
+						"Portfolio"
+					]
+				},
+				{
+					"caption": "Rating value",
+					"name": "rating_value",
+					"description": "How did the user value this product or service?",
+					"type": "options",
+					"category": "Rating",
+					"sortOrder": "1",
+					"inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
+					"templates": [
+						"Testimonial"
+					]
+				},
+				{
+					"caption": "Email address",
+					"name": "contact_email",
+					"description": "",
+					"type": "email",
+					"category": "Contact",
+					"sortOrder": "1",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Phone number",
+					"name": "contact_phone",
+					"description": "",
+					"type": "text",
+					"category": "Contact",
+					"sortOrder": "2",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Mobile number",
+					"name": "contact_mobile",
+					"description": "",
+					"type": "text",
+					"category": "Contact",
+					"sortOrder": "3",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Street name",
+					"name": "address_street_name",
+					"description": "",
+					"type": "text",
+					"category": "Address",
+					"sortOrder": "2",
+					"templates": [
+						""
+					]
+				},
+				{
+					"caption": "House number",
+					"name": "address_house_number",
+					"description": "",
+					"type": "text",
+					"category": "Address",
+					"sortOrder": "3",
+					"templates": [
+						""
+					]
+				},
+				{
+					"caption": "Postal code",
+					"name": "address_postal_code",
+					"description": "",
+					"type": "text",
+					"category": "Address",
+					"sortOrder": "4",
+					"templates": [
+						""
+					]
+				},
+				{
+					"caption": "Locality",
+					"name": "address_locality",
+					"description": "",
+					"type": "text",
+					"category": "Address",
+					"sortOrder": "10",
+					"templates": [
+						""
+					]
+				},
+				{
+					"caption": "Region",
+					"name": "address_region",
+					"description": "",
+					"type": "text",
+					"category": "Address",
+					"sortOrder": "11",
+					"templates": [
+						""
+					]
+				},
+				{
+					"caption": "Country",
+					"name": "address_country",
+					"description": "",
+					"type": "text",
+					"category": "Address",
+					"sortOrder": "12",
+					"templates": [
+						""
+					]
+				},
+				{
+					"caption": "Start date",
+					"name": "date_start",
+					"description": "",
+					"type": "date",
+					"category": "Date",
+					"sortOrder": "1",
+					"templates": [
+						"Portfolio"
+					]
+				},
+				{
+					"caption": "End date",
+					"name": "date_end",
+					"description": "",
+					"type": "date",
+					"category": "Date",
+					"sortOrder": "2",
+					"templates": [
+						"Portfolio"
+					]
+				},
+				{
+					"caption": "Date completed",
+					"name": "date_published",
+					"description": "",
+					"type": "date",
+					"category": "Date",
+					"sortOrder": "3",
+					"templates": [
+						"Portfolio"
+					]
+				},
+				{
+					"caption": "Organisation logo (SVG)",
+					"name": "organisation_logo_svg",
+					"description": "You'll likely get the best (sharpest) results when uploading an SVG. Try to keep the aspect ratio around 16:9 for best results.",
+					"type": "file",
+					"category": "Org. - Presentation",
+					"sortOrder": "1",
+					"templates": [
+						"Client"
+					]
+				},
+				{
+					"caption": "Organisation logo (Image)",
+					"name": "organisation_logo_img",
+					"description": "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px.",
+					"type": "imageplus",
+					"category": "Org. - Presentation",
+					"sortOrder": "2",
+					"inputProperties": {
+						"targetWidth": "600",
+						"targetRatio": "1.77",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`600`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					},
+					"templates": [
+						"Client"
+					]
+				},
+				{
+					"caption": "Organisation name",
+					"name": "organisation_name",
+					"description": "",
+					"type": "text",
+					"category": "Org. - Information",
+					"sortOrder": "5",
+					"templates": [
+						"Client"
+					]
+				},
+				{
+					"caption": "Organisation size",
+					"name": "organisation_size",
+					"description": "How many employees does this organisation have?",
+					"type": "number",
+					"category": "Org. - Information",
+					"sortOrder": "6",
+					"templates": [
+						"Client"
+					]
+				},
+				{
+					"caption": "Organisation website",
+					"name": "organisation_url",
+					"description": "",
+					"type": "url",
+					"category": "Org. - Information",
+					"sortOrder": "10",
+					"templates": [
+						"Client"
+					]
+				},
+				{
+					"caption": "Profile picture",
+					"name": "person_image",
+					"description": "A headshot of this person.",
+					"type": "imageplus",
+					"category": "Person - Presentation",
+					"sortOrder": "1",
+					"inputProperties": {
+						"targetWidth": "800",
+						"targetRatio": "1.0",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					},
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Informal picture",
+					"name": "person_image_loose",
+					"description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in a mouseover effect with the profile picture for example, or in areas where a little playfulness is allowed.",
+					"type": "imageplus",
+					"category": "Person - Presentation",
+					"sortOrder": "1",
+					"inputProperties": {
+						"targetWidth": "800",
+						"targetRatio": "1.0",
+						"allowAltTag": "true"
+					},
+					"outputProperties": {
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+						"outputChunk": "cbOverviewRowImg"
+					},
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "First name",
+					"name": "person_firstname",
+					"description": "",
+					"type": "text",
+					"category": "Person - Information",
+					"sortOrder": "1",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Last name",
+					"name": "person_lastname",
+					"description": "",
+					"type": "text",
+					"category": "Person - Information",
+					"sortOrder": "2",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Gender",
+					"name": "person_gender",
+					"description": "",
+					"type": "options",
+					"category": "Person - Information",
+					"sortOrder": "3",
+					"inputOptionValues": "Male==m||Female==f||Other==o",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Job title",
+					"name": "person_jobtitle",
+					"description": "The role of this person inside the team.",
+					"type": "text",
+					"category": "Person - Information",
+					"sortOrder": "5",
+					"templates": [
+						"Team"
+					]
+				},
+				{
+					"caption": "Personal website or blog",
+					"name": "person_url",
+					"description": "",
+					"type": "url",
+					"category": "Person - Information",
+					"sortOrder": "10",
+					"templates": [
+						"Team"
 					]
 				}
 			],
@@ -1373,6 +1873,26 @@
 					"category": "a_global"
 				},
 				{
+					"name": "displayRawElement",
+					"category": "a_hub"
+				},
+				{
+					"name": "listIncludedElementsRow",
+					"category": "a_hub"
+				},
+				{
+					"name": "statusNotesGetUser",
+					"category": "a_hub"
+				},
+				{
+					"name": "statusNotesGetDate",
+					"category": "a_hub"
+				},
+				{
+					"name": "statusGridColumnNotes",
+					"category": "a_hub"
+				},
+				{
 					"name": "breadcrumbOuter",
 					"category": "a_nav_breadcrumbs"
 				},
@@ -1419,26 +1939,6 @@
 				{
 					"name": "tabsNavItem",
 					"category": "a_nav_tabs"
-				},
-				{
-					"name": "displayRawElement",
-					"category": "a_project"
-				},
-				{
-					"name": "listIncludedElementsRow",
-					"category": "a_project"
-				},
-				{
-					"name": "statusNotesGetUser",
-					"category": "a_project"
-				},
-				{
-					"name": "statusNotesGetDate",
-					"category": "a_project"
-				},
-				{
-					"name": "statusGridColumnNotes",
-					"category": "a_project"
 				},
 				{
 					"name": "searchButton",
@@ -1581,6 +2081,14 @@
 					"category": "m_global"
 				},
 				{
+					"name": "projectHubRow",
+					"category": "m_hub"
+				},
+				{
+					"name": "statusGridRow",
+					"category": "m_hub"
+				},
+				{
 					"name": "cbLayoutSingleColumnNested",
 					"category": "m_layouts"
 				},
@@ -1685,14 +2193,6 @@
 					"category": "m_presentation"
 				},
 				{
-					"name": "projectHubRow",
-					"category": "m_project"
-				},
-				{
-					"name": "statusGridRow",
-					"category": "m_project"
-				},
-				{
 					"name": "articleAuthorBio",
 					"category": "m_publication"
 				},
@@ -1777,6 +2277,14 @@
 					"category": "o_headers"
 				},
 				{
+					"name": "projectHubOuter",
+					"category": "o_hub"
+				},
+				{
+					"name": "statusGridOuter",
+					"category": "o_hub"
+				},
+				{
 					"name": "cbLayoutSingleColumn",
 					"category": "o_layouts"
 				},
@@ -1835,14 +2343,6 @@
 				{
 					"name": "tabsOuter",
 					"category": "o_presentation"
-				},
-				{
-					"name": "projectHubOuter",
-					"category": "o_project"
-				},
-				{
-					"name": "statusGridOuter",
-					"category": "o_project"
 				},
 				{
 					"name": "searchResultOuter",
@@ -2140,6 +2640,26 @@
 					"category": "t_publication"
 				},
 				{
+					"name": "Client",
+					"icon": "icon-building",
+					"category": "t_connection"
+				},
+				{
+					"name": "Team",
+					"icon": "icon-user",
+					"category": "t_connection"
+				},
+				{
+					"name": "Testimonial",
+					"icon": "icon-comment",
+					"category": "t_confirmation"
+				},
+				{
+					"name": "Portfolio",
+					"icon": "icon-briefcase",
+					"category": "t_confirmation"
+				},
+				{
 					"name": "GlobalBackgrounds",
 					"icon": "icon-image",
 					"category": "t_global"
@@ -2157,7 +2677,7 @@
 				{
 					"name": "ProjectHub",
 					"icon": "icon-history",
-					"category": "t_project"
+					"category": "t_hub"
 				}
 			],
 			"snippets": [
@@ -2199,7 +2719,7 @@
 				},
 				{
 					"name": "listIncludedChunks",
-					"category": "f_project"
+					"category": "f_hub"
 				},
 				{
 					"name": "Time",
@@ -2354,25 +2874,25 @@
 			{
 				"key": "date_format_short",
 				"type": "textfield",
-				"area": "Settings",
+				"area": "Date and Time",
 				"value": "%d-%m-%Y"
 			},
 			{
 				"key": "date_format_medium",
 				"type": "textfield",
-				"area": "Settings",
+				"area": "Date and Time",
 				"value": "%e %b %Y"
 			},
 			{
 				"key": "date_format_long",
 				"type": "textfield",
-				"area": "Settings",
+				"area": "Date and Time",
 				"value": "%e %B %Y"
 			},
 			{
 				"key": "date_format_full",
 				"type": "textfield",
-				"area": "Settings",
+				"area": "Date and Time",
 				"value": "%A %e %B, %Y"
 			},
 			{
@@ -2382,15 +2902,15 @@
 				"value": "1"
 			},
 			{
-				"key": "cb_code_id",
-				"type": "numberfield",
-				"area": "Settings",
-				"value": ""
-			},
-			{
 				"key": "user_team_id",
 				"type": "numberfield",
 				"area": "Users",
+				"value": ""
+			},
+			{
+				"key": "cb_field_code_id",
+				"type": "numberfield",
+				"area": "ContentBlocks - Settings",
 				"value": ""
 			},
 			{
@@ -2412,42 +2932,42 @@
 			{
 				"key": "fb_input_textfield_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "fb_input_textarea_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "fb_input_email_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "fb_select_option_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "fb_select_option_collapse_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "fb_select_dropdown_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "fb_select_dropdown_auto_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "fb_accept_terms_id",
 				"type": "textfield",
-				"area": "FormBlocks - Pages"
+				"area": "FormBlocks - CB fields"
 			},
 			{
 				"key": "global_backgrounds_id",
@@ -2456,6 +2976,11 @@
 			},
 			{
 				"key": "global_footer_id",
+				"type": "numberfield",
+				"area": "Pages"
+			},
+			{
+				"key": "publication_container_id",
 				"type": "numberfield",
 				"area": "Pages"
 			},
@@ -2470,7 +2995,12 @@
 				"area": "Pages"
 			},
 			{
-				"key": "publication_container_id",
+				"key": "portfolio_container_id",
+				"type": "numberfield",
+				"area": "Pages"
+			},
+			{
+				"key": "client_container_id",
 				"type": "numberfield",
 				"area": "Pages"
 			},
@@ -2521,152 +3051,6 @@
 				"type": "textfield",
 				"area": "Social",
 				"value": ""
-			}
-		],
-		"resources": [
-			{
-				"pagetitle": "Footers",
-				"file": "05-pages/p_global/footers.html",
-				"context_key": "global",
-				"template": "BasicOverview",
-				"class_key": "CollectionContainer",
-				"published": "1",
-				"searchable": "0",
-				"others": [
-					{
-						"name": "collections_template",
-						"value": "6"
-					}
-				]
-			},
-			{
-				"pagetitle": "Forms",
-				"file": "05-pages/p_global/forms.html",
-				"context_key": "global",
-				"template": "BasicOverview",
-				"class_key": "CollectionContainer",
-				"published": "1",
-				"searchable": "0",
-				"others": [
-					{
-						"name": "collections_template",
-						"value": "2"
-					}
-				]
-			},
-			{
-				"pagetitle": "Call To Actions",
-				"file": "05-pages/p_global/cta.html",
-				"context_key": "global",
-				"template": "BasicOverview",
-				"class_key": "CollectionContainer",
-				"published": "1",
-				"searchable": "0",
-				"others": [
-					{
-						"name": "collections_template",
-						"value": "3"
-					}
-				]
-			},
-			{
-				"pagetitle": "Backgrounds",
-				"file": "05-pages/p_global/backgrounds.html",
-				"context_key": "global",
-				"content_type": "css",
-				"published": "1",
-				"searchable": "0",
-				"template": "GlobalBackgrounds"
-			},
-			{
-				"pagetitle": "Atoms",
-				"parent": "Pattern library",
-				"file": "05-pages/p_hub/p_pattern-library/01-atoms.html",
-				"properties": "05-pages/p_hub/p_pattern-library/01-atoms.json",
-				"context_key": "hub",
-				"template": "BasicOverview",
-				"menuindex": "1",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Molecules",
-				"parent": "Pattern library",
-				"file": "05-pages/p_hub/p_pattern-library/02-molecules.html",
-				"properties": "05-pages/p_hub/p_pattern-library/02-molecules.json",
-				"context_key": "hub",
-				"template": "BasicOverview",
-				"menuindex": "2",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Organisms",
-				"parent": "Pattern library",
-				"file": "05-pages/p_hub/p_pattern-library/03-organisms.html",
-				"properties": "05-pages/p_hub/p_pattern-library/03-organisms.json",
-				"context_key": "hub",
-				"template": "BasicOverview",
-				"menuindex": "3",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Templates",
-				"parent": "Pattern library",
-				"file": "05-pages/p_hub/p_pattern-library/04-templates.html",
-				"properties": "05-pages/p_hub/p_pattern-library/04-templates.json",
-				"context_key": "hub",
-				"template": "BasicOverview",
-				"menuindex": "4",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Pages",
-				"parent": "Pattern library",
-				"file": "05-pages/p_hub/p_pattern-library/05-pages.html",
-				"properties": "05-pages/p_hub/p_pattern-library/05-pages.json",
-				"context_key": "hub",
-				"template": "BasicOverview",
-				"menuindex": "5",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Project Hub",
-				"file": "05-pages/p_hub/project-hub.html",
-				"properties": "05-pages/p_hub/project-hub.json",
-				"context_key": "hub",
-				"template": "ProjectHub",
-				"menuindex": "1",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Pattern Library",
-				"file": "05-pages/p_hub/pattern-library.html",
-				"properties": "05-pages/p_hub/pattern-library.json",
-				"context_key": "hub",
-				"template": "BasicOverview",
-				"menuindex": "2",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Status Grid",
-				"file": "05-pages/p_hub/status-grid.html",
-				"properties": "05-pages/p_hub/status-grid.json",
-				"context_key": "hub",
-				"template": "BasicOverview",
-				"menuindex": "10",
-				"published": "1"
-			},
-			{
-				"pagetitle": "Backgrounds CSS",
-				"content": "[[++patternlab.global_backgrounds_id]]",
-				"alias": "assets/css/backgrounds",
-				"context_key": "web",
-				"content_type": "css",
-				"template": "GlobalBackgrounds",
-				"class_key": "modSymLink",
-				"published": "1",
-				"hidemenu": "1",
-				"show_in_tree": "0",
-				"searchable": "0"
 			}
 		]
 	}

@@ -29,13 +29,21 @@
                     "icon": "icon-pencil",
                     "category": "t_publication"
                 },{
+                    "name": "Client",
+                    "icon": "icon-building",
+                    "category": "t_connection"
+                },{
                     "name": "Team",
-                    "icon": "icon-person",
-                    "category": "t_team"
+                    "icon": "icon-user",
+                    "category": "t_connection"
                 },{
                     "name": "Testimonial",
-                    "icon": "icon-chat",
-                    "category": "t_testimonials"
+                    "icon": "icon-comment",
+                    "category": "t_confirmation"
+                },{
+                    "name": "Portfolio",
+                    "icon": "icon-briefcase",
+                    "category": "t_confirmation"
                 },{
                     "name": "GlobalBackgrounds",
                     "icon": "icon-image",
@@ -51,7 +59,7 @@
                 },{
                     "name": "ProjectHub",
                     "icon": "icon-history",
-                    "category": "t_project"
+                    "category": "t_hub"
                 }
             ],
             "categories": [
@@ -62,16 +70,16 @@
                     "name": "t_publication",
                     "parent": "04-templates"
                 },{
-                    "name": "t_team",
+                    "name": "t_connection",
                     "parent": "04-templates"
                 },{
-                    "name": "t_testimonials",
+                    "name": "t_confirmation",
                     "parent": "04-templates"
                 },{
                     "name": "t_global",
                     "parent": "04-templates"
                 },{
-                    "name": "t_project",
+                    "name": "t_hub",
                     "parent": "04-templates"
                 }
             ]

@@ -108,7 +108,7 @@
                     "name": "date_start",
                     "description": "",
                     "type": "date",
-                    "category": "Dates",
+                    "category": "Date",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_portfolio"
@@ -118,7 +118,7 @@
                     "name": "date_end",
                     "description": "",
                     "type": "date",
-                    "category": "Dates",
+                    "category": "Date",
                     "sortOrder": "2",
                     "templates": [
                         "@@templates_portfolio"
@@ -128,7 +128,7 @@
                     "name": "date_published",
                     "description": "",
                     "type": "date",
-                    "category": "Dates",
+                    "category": "Date",
                     "sortOrder": "3",
                     "templates": [
                         "@@templates_portfolio"
@@ -145,6 +145,9 @@
                     "parent": "e_info_intangible"
                 },{
                     "name": "Address",
+                    "parent": "e_info_intangible"
+                },{
+                    "name": "Date",
                     "parent": "e_info_intangible"
                 }
             ]
