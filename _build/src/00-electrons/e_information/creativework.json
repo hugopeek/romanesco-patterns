@@ -1,0 +1,76 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Author",
+                    "name": "author",
+                    "description": "Select the author of this article. He or she must be a MODX user.",
+                    "type": "listbox",
+                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
+                    "category": "About",
+                    "sortOrder": "1",
+                    "templates": [
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
+                    ]
+                },{
+                    "caption": "Comments",
+                    "name": "comments",
+                    "description": "Enable or disable comments.",
+                    "type": "option",
+                    "inputOptionValues": "Active==1||Disabled==0",
+                    "category": "Comments",
+                    "sortOrder": "1",
+                    "templates": [
+                        "ArticleTraditional",
+                        "ArticleReadability",
+                        "ArticleSidenotes",
+                        "Article - Traditional",
+                        "Article - Readability",
+                        "Article - Sidenotes"
+                    ]
+                },{
+                    "caption": "Client",
+                    "name": "client",
+                    "description": "If this list is empty, you need to add the client first in the Clients component.",
+                    "type": "listbox",
+                    "inputOptionValues": "@CHUNK clientTVInputOptions",
+                    "category": "Participants",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                },{
+                    "caption": "Contributors",
+                    "name": "contributors",
+                    "description": "Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
+                    "type": "listbox-multiple",
+                    "inputOptionValues": "@CHUNK teamTVInputOptions",
+                    "category": "Participants",
+                    "sortOrder": "2",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "About",
+                    "parent": "e_creativework"
+                },{
+                    "name": "Comments",
+                    "parent": "e_creativework"
+                },{
+                    "name": "Participants",
+                    "parent": "e_creativework"
+                }
+            ]
+        }
+    }
+}

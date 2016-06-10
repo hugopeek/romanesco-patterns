@@ -1,0 +1,153 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Rating value",
+                    "name": "rating_value",
+                    "description": "How did the user value this product or service?",
+                    "type": "options",
+                    "category": "Rating",
+                    "sortOrder": "1",
+                    "inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
+                    "templates": [
+                        "@@templates_testimonial"
+                    ]
+                },{
+                    "caption": "Email address",
+                    "name": "contact_email",
+                    "description": "",
+                    "type": "email",
+                    "category": "Contact",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Phone number",
+                    "name": "contact_phone",
+                    "description": "",
+                    "type": "text",
+                    "category": "Contact",
+                    "sortOrder": "2",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Mobile number",
+                    "name": "contact_mobile",
+                    "description": "",
+                    "type": "text",
+                    "category": "Contact",
+                    "sortOrder": "3",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
+                    "caption": "Street name",
+                    "name": "address_street_name",
+                    "description": "",
+                    "type": "text",
+                    "category": "Address",
+                    "sortOrder": "2",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "House number",
+                    "name": "address_house_number",
+                    "description": "",
+                    "type": "text",
+                    "category": "Address",
+                    "sortOrder": "3",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Postal code",
+                    "name": "address_postal_code",
+                    "description": "",
+                    "type": "text",
+                    "category": "Address",
+                    "sortOrder": "4",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Locality",
+                    "name": "address_locality",
+                    "description": "",
+                    "type": "text",
+                    "category": "Address",
+                    "sortOrder": "10",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Region",
+                    "name": "address_region",
+                    "description": "",
+                    "type": "text",
+                    "category": "Address",
+                    "sortOrder": "11",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Country",
+                    "name": "address_country",
+                    "description": "",
+                    "type": "text",
+                    "category": "Address",
+                    "sortOrder": "12",
+                    "templates": [
+                        ""
+                    ]
+                },{
+                    "caption": "Start date",
+                    "name": "date_start",
+                    "description": "",
+                    "type": "date",
+                    "category": "Dates",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                },{
+                    "caption": "End date",
+                    "name": "date_end",
+                    "description": "",
+                    "type": "date",
+                    "category": "Dates",
+                    "sortOrder": "2",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                },{
+                    "caption": "Date completed",
+                    "name": "date_published",
+                    "description": "",
+                    "type": "date",
+                    "category": "Dates",
+                    "sortOrder": "3",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "Rating",
+                    "parent": "e_info_intangible"
+                },{
+                    "name": "Contact",
+                    "parent": "e_info_intangible"
+                },{
+                    "name": "Address",
+                    "parent": "e_info_intangible"
+                }
+            ]
+        }
+    }
+}

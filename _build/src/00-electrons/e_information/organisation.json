@@ -7,7 +7,7 @@
                     "name": "organisation_logo_svg",
                     "description": "You'll likely get the best (sharpest) results when uploading an SVG. Try to keep the aspect ratio around 16:9 for best results.",
                     "type": "file",
-                    "category": "Organisation - Presentation",
+                    "category": "Presentation",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_client"
@@ -17,7 +17,7 @@
                     "name": "organisation_logo_img",
                     "description": "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px.",
                     "type": "imageplus",
-                    "category": "Organisation - Presentation",
+                    "category": "Presentation",
                     "sortOrder": "2",
                     "inputProperties": {
                         "targetWidth": "600",
@@ -36,7 +36,7 @@
                     "name": "organisation_name",
                     "description": "",
                     "type": "text",
-                    "category": "Organisation - Information",
+                    "category": "Information",
                     "sortOrder": "5",
                     "templates": [
                         "@@templates_client"
@@ -46,48 +46,8 @@
                     "name": "organisation_size",
                     "description": "How many employees does this organisation have?",
                     "type": "number",
-                    "category": "Organisation - Information",
+                    "category": "Information",
                     "sortOrder": "6",
-                    "templates": [
-                        "@@templates_client"
-                    ]
-                },{
-                    "caption": "Organisation website",
-                    "name": "organisation_url",
-                    "description": "",
-                    "type": "url",
-                    "category": "Organisation - Information",
-                    "sortOrder": "7",
-                    "templates": [
-                        "@@templates_client"
-                    ]
-                },{
-                    "caption": "Email address",
-                    "name": "organisation_email",
-                    "description": "",
-                    "type": "email",
-                    "category": "Organisation - Contact",
-                    "sortOrder": "10",
-                    "templates": [
-                        "@@templates_client"
-                    ]
-                },{
-                    "caption": "Phone number",
-                    "name": "organisation_phone",
-                    "description": "",
-                    "type": "text",
-                    "category": "Organisation - Contact",
-                    "sortOrder": "11",
-                    "templates": [
-                        "@@templates_client"
-                    ]
-                },{
-                    "caption": "Mobile number",
-                    "name": "organisation_mobile",
-                    "description": "",
-                    "type": "text",
-                    "category": "Organisation - Contact",
-                    "sortOrder": "12",
                     "templates": [
                         "@@templates_client"
                     ]
@@ -99,13 +59,10 @@
                     "name": "e_info_organisation",
                     "parent": "e_information"
                 },{
-                    "name": "Organisation - Presentation",
+                    "name": "Presentation",
                     "parent": "e_info_organisation"
                 },{
-                    "name": "Organisation - Information",
-                    "parent": "e_info_organisation"
-                },{
-                    "name": "Organisation - Contact",
+                    "name": "Information",
                     "parent": "e_info_organisation"
                 }
             ]

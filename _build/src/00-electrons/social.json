@@ -62,6 +62,16 @@
                     "templates": [
                         "@@templates_team"
                     ]
+                },{
+                    "caption": "Personal website or blog",
+                    "name": "social_url",
+                    "description": "",
+                    "type": "url",
+                    "category": "Social",
+                    "sortOrder": "10",
+                    "templates": [
+                        "@@templates_team"
+                    ]
                 }
             ],
 

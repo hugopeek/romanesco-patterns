@@ -81,46 +81,6 @@
                     "templates": [
                         "@@templates_team"
                     ]
-                },{
-                    "caption": "Personal website or blog",
-                    "name": "person_url",
-                    "description": "",
-                    "type": "url",
-                    "category": "Person - Information",
-                    "sortOrder": "10",
-                    "templates": [
-                        "@@templates_team"
-                    ]
-                },{
-                    "caption": "Email address",
-                    "name": "person_email",
-                    "description": "",
-                    "type": "email",
-                    "category": "Person - Contact",
-                    "sortOrder": "10",
-                    "templates": [
-                        "@@templates_team"
-                    ]
-                },{
-                    "caption": "Phone number",
-                    "name": "person_phone",
-                    "description": "",
-                    "type": "text",
-                    "category": "Person - Contact",
-                    "sortOrder": "11",
-                    "templates": [
-                        "@@templates_team"
-                    ]
-                },{
-                    "caption": "Mobile number",
-                    "name": "person_mobile",
-                    "description": "",
-                    "type": "text",
-                    "category": "Person - Contact",
-                    "sortOrder": "12",
-                    "templates": [
-                        "@@templates_team"
-                    ]
                 }
             ],
 
