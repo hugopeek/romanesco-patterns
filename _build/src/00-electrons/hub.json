@@ -78,22 +78,24 @@
                     ]
                 }
             ],
+
             "categories": [
                 {
-                    "name": "e_project",
+                    "name": "e_hub",
                     "parent": "00-electrons"
                 },{
                     "name": "Pattern Library",
-                    "parent": "e_project"
+                    "parent": "e_hub"
                 },{
                     "name": "Project Hub",
-                    "parent": "e_project"
+                    "parent": "e_hub"
                 },{
                     "name": "Status",
-                    "parent": "e_project"
+                    "parent": "e_hub"
                 }
             ]
         },
+
         "systemSettings": []
     }
 }

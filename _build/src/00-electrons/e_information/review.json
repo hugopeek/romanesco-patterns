@@ -15,13 +15,11 @@
                     ]
                 }
             ],
+
             "categories": [
                 {
-                    "name": "e_review",
-                    "parent": "e_information"
-                },{
                     "name": "Review - Rating",
-                    "parent": "e_review"
+                    "parent": "e_info_review"
                 }
             ]
         }

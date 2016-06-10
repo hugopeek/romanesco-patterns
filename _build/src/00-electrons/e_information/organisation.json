@@ -93,28 +93,22 @@
                     ]
                 }
             ],
+
             "categories": [
                 {
-                    "name": "e_organisation",
+                    "name": "e_info_organisation",
                     "parent": "e_information"
                 },{
                     "name": "Organisation - Presentation",
-                    "parent": "e_organisation"
+                    "parent": "e_info_organisation"
                 },{
                     "name": "Organisation - Information",
-                    "parent": "e_organisation"
+                    "parent": "e_info_organisation"
                 },{
                     "name": "Organisation - Contact",
-                    "parent": "e_organisation"
+                    "parent": "e_info_organisation"
                 }
             ]
-        },
-        "systemSettings": [
-            {
-                "key": "team_container_id",
-                "type": "numberfield",
-                "area": "Pages"
-            }
-        ]
+        }
     }
 }

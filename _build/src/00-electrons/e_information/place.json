@@ -7,7 +7,7 @@
                     "name": "place_address",
                     "description": "",
                     "type": "text",
-                    "category": "Place",
+                    "category": "Location",
                     "sortOrder": "1",
                     "templates": [
                         ""
@@ -17,7 +17,7 @@
                     "name": "place_street_name",
                     "description": "",
                     "type": "text",
-                    "category": "Place",
+                    "category": "Location",
                     "sortOrder": "2",
                     "templates": [
                         ""
@@ -27,16 +27,17 @@
                     "name": "place_house_nr",
                     "description": "",
                     "type": "text",
-                    "category": "Place",
+                    "category": "Location",
                     "sortOrder": "3",
                     "templates": [
                         ""
-                 ,{
+                    ]
+                },{
                     "caption": "Zip code",
                     "name": "place_zipcode",
                     "description": "",
                     "type": "text",
-                    "category": "Place",
+                    "category": "Location",
                     "sortOrder": "4",
                     "templates": [
                         ""
@@ -46,7 +47,7 @@
                     "name": "place_province",
                     "description": "",
                     "type": "text",
-                    "category": "Place",
+                    "category": "Location",
                     "sortOrder": "10",
                     "templates": [
                         ""
@@ -56,17 +57,18 @@
                     "name": "place_country",
                     "description": "",
                     "type": "text",
-                    "category": "Place",
+                    "category": "Location",
                     "sortOrder": "11",
                     "templates": [
                         ""
                     ]
                 }
             ],
+            
             "categories": [
                 {
-                    "name": "Place",
-                    "parent": "e_place"
+                    "name": "Location",
+                    "parent": "e_info_place"
                 }
             ]
         }

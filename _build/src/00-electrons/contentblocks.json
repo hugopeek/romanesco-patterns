@@ -1,0 +1,12 @@
+{
+    "package": {
+        "systemSettings": [
+            {
+                "key": "cb_field_code_id",
+                "type": "numberfield",
+                "area": "Settings",
+                "value": ""
+            }
+        ]
+    }
+}

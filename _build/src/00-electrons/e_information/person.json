@@ -111,8 +111,7 @@
                     "templates": [
                         "@@templates_team"
                     ]
-                },
-                {
+                },{
                     "caption": "Mobile number",
                     "name": "person_mobile",
                     "description": "",
@@ -124,19 +123,20 @@
                     ]
                 }
             ],
+
             "categories": [
                 {
-                    "name": "e_person",
+                    "name": "e_info_person",
                     "parent": "00-electrons"
                 },{
                     "name": "Person - Image",
-                    "parent": "e_team"
+                    "parent": "e_info_person"
                 },{
                     "name": "Person - Information",
-                    "parent": "e_team"
+                    "parent": "e_info_person"
                 },{
                     "name": "Person - Contact",
-                    "parent": "e_team"
+                    "parent": "e_info_person"
                 }
             ]
         }

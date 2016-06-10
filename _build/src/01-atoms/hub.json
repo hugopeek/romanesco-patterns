@@ -4,25 +4,24 @@
             "chunks": [
                 {
                     "name": "displayRawElement",
-                    "category": "a_project"
+                    "category": "a_hub"
                 },{
                     "name": "listIncludedElementsRow",
-                    "category": "a_project"
+                    "category": "a_hub"
                 },{
                     "name": "statusNotesGetUser",
-                    "category": "a_project"
+                    "category": "a_hub"
                 },{
                     "name": "statusNotesGetDate",
-                    "category": "a_project"
+                    "category": "a_hub"
                 },{
                     "name": "statusGridColumnNotes",
-                    "category": "a_project"
+                    "category": "a_hub"
                 }
             ],
-
             "categories": [
                 {
-                    "name": "a_project",
+                    "name": "a_hub",
                     "parent": "01-atoms"
                 }
             ]

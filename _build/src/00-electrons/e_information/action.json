@@ -7,7 +7,7 @@
                     "name": "action_date_start",
                     "description": "",
                     "type": "date",
-                    "category": "Project - Data",
+                    "category": "Project - Milestones",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_portfolio"
@@ -17,7 +17,7 @@
                     "name": "action_date_end",
                     "description": "",
                     "type": "date",
-                    "category": "Project - Data",
+                    "category": "Project - Milestones",
                     "sortOrder": "2",
                     "templates": [
                         "@@templates_portfolio"
@@ -27,7 +27,7 @@
                     "name": "action_date_completed",
                     "description": "",
                     "type": "date",
-                    "category": "Project - Data",
+                    "category": "Project - Milestones",
                     "sortOrder": "3",
                     "templates": [
                         "@@templates_portfolio"
@@ -44,13 +44,14 @@
                     ]
                 }
             ],
+
             "categories": [
                 {
-                    "name": "Project - Data",
-                    "parent": "e_action"
+                    "name": "Project - Milestones",
+                    "parent": "e_info_action"
                 },{
                     "name": "Project - Information",
-                    "parent": "e_action"
+                    "parent": "e_info_action"
                 }
             ]
         }

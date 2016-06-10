@@ -151,6 +151,7 @@
                     "templates": ["fbForm"]
                 }
             ],
+
             "categories": [
                 {
                     "name": "e_formblocks",
@@ -170,6 +171,7 @@
                 }
             ]
         },
+
         "systemSettings": [
             {
                 "key": "fb_container_id",
@@ -183,35 +185,35 @@
             },{
                 "key": "fb_input_textfield_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             },{
                 "key": "fb_input_textarea_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             },{
                 "key": "fb_input_email_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             },{
                 "key": "fb_select_option_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             },{
                 "key": "fb_select_option_collapse_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             },{
                 "key": "fb_select_dropdown_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             },{
                 "key": "fb_select_dropdown_auto_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             },{
                 "key": "fb_accept_terms_id",
                 "type": "textfield",
-                "area": "FormBlocks - Pages"
+                "area": "FormBlocks - CB fields"
             }
         ]
     }

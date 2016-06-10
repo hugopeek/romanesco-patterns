@@ -29,6 +29,7 @@
                     ]
                 }
             ],
+
             "categories": [
                 {
                     "name": "e_global",
@@ -42,6 +43,7 @@
                 }
             ]
         },
+
         "systemSettings": [
             {
                 "key": "global_backgrounds_id",

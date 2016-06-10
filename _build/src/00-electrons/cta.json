@@ -27,6 +27,7 @@
                     ]
                 }
             ],
+
             "categories": [
                 {
                     "name": "e_cta",
@@ -37,6 +38,7 @@
                 }
             ]
         },
+
         "systemSettings": [
             {
                 "key": "cta_container_id",

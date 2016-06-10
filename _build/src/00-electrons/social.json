@@ -63,8 +63,19 @@
                         "@@templates_team"
                     ]
                 }
+            ],
+
+            "categories": [
+                {
+                    "name": "e_social",
+                    "parent": "00-electrons"
+                },{
+                    "name": "Social",
+                    "parent": "e_social"
+                }
             ]
         },
+
         "systemSettings": [
             {
                 "key": "social_twitter",

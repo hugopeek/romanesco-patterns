@@ -4,16 +4,16 @@
             "chunks": [
                 {
                     "name": "projectHubRow",
-                    "category": "m_project"
+                    "category": "m_hub"
                 },{
                     "name": "statusGridRow",
-                    "category": "m_project"
+                    "category": "m_hub"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "m_project",
+                    "name": "m_hub",
                     "parent": "02-molecules"
                 }
             ]

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/backgrounds.css">
 
     [[cbHasField?
-        &field=`[[++patternlab.cb_code_id]]`
+        &field=`[[++patternlab.cb_field_code_id]]`
         &then=`<link rel="stylesheet" href="[[++patternlab.custom_css_path]]/prism.css">`
     ]]
 

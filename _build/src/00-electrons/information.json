@@ -6,22 +6,22 @@
                     "name": "e_information",
                     "parent": "00-electrons"
                 },{
-                    "name": "e_action",
+                    "name": "e_info_action",
                     "parent": "e_information"
                 },{
-                    "name": "e_event",
+                    "name": "e_info_event",
                     "parent": "e_information"
                 },{
-                    "name": "e_organisation",
+                    "name": "e_info_organisation",
                     "parent": "e_information"
                 },{
-                    "name": "e_person",
+                    "name": "e_info_person",
                     "parent": "e_information"
                 },{
-                    "name": "e_place",
+                    "name": "e_info_place",
                     "parent": "e_information"
                 },{
-                    "name": "e_review",
+                    "name": "e_info_review",
                     "parent": "e_information"
                 }
             ]

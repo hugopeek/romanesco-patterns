@@ -187,6 +187,10 @@
                 "key": "portfolio_container_id",
                 "type": "numberfield",
                 "area": "Pages"
+            },{
+                "key": "client_container_id",
+                "type": "numberfield",
+                "area": "Pages"
             }
         ]
     }

@@ -4,16 +4,16 @@
             "chunks": [
                 {
                     "name": "projectHubOuter",
-                    "category": "o_project"
+                    "category": "o_hub"
                 },{
                     "name": "statusGridOuter",
-                    "category": "o_project"
+                    "category": "o_hub"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "o_project",
+                    "name": "o_hub",
                     "parent": "03-organisms"
                 }
             ]
