@@ -1,0 +1,28 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "infoNamePerson",
+                    "category": "a_information"
+                },{
+                    "name": "infoNameOrganisation",
+                    "category": "a_information"
+                },{
+                    "name": "infoReviewSegment",
+                    "category": "a_information"
+                },{
+                    "name": "infoRatingStars",
+                    "category": "a_information"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_information",
+                    "parent": "01-atoms"
+                }
+            ]
+        }
+    }
+}

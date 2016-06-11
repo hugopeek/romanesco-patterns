@@ -13,6 +13,7 @@
         &tpl=`overviewRowTestimonial[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
+        &tvPrefix=``
         &showHidden=`1`
         &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`

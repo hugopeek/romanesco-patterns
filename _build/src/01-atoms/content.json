@@ -42,9 +42,6 @@
                 {
                     "name": "a_content",
                     "parent": "01-atoms"
-                },{
-                    "name": "Content",
-                    "parent": "a_content"
                 }
             ]
         }

@@ -2,24 +2,24 @@
     <div class="ui dimmer">
         <div class="content">
             <div class="center">
-                [[If?
+                [[[[If?
                     &subject=`[[+show_subtitle]]`
                     &operator=`EQ`
                     &operand=`1`
-                    &then=`[[!$headingHierarchySubtitle? &classes=`inverted`]]`
-                    &else=`[[!$headingHierarchy? &classes=`inverted`]]`
-                ]]
-                [[If?
+                    &then=`!$headingHierarchySubtitle? &classes=`inverted``
+                    &else=`!$headingHierarchy? &classes=`inverted``
+                ]]]]
+                [[[[If?
                     &subject=`[[+link_text]]`
                     &operator=`isnot`
                     &operand=`0`
-                    &then=`[[!$buttonHrefOverview]]`
-                ]]
+                    &then=`!$buttonHrefOverview`
+                ]]]]
             </div>
         </div>
     </div>
     [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
-        &tvname=`testimonial_company_image`
+        &tvname=`organisation_logo_img`
         &docid=`[[+id]]`
         &options=`w=600&zc=1`
         &type=`tpl`

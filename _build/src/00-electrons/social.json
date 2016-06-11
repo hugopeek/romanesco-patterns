@@ -76,7 +76,7 @@
                     "caption": "Github account",
                     "name": "social_github",
                     "description": "",
-                    "type": "url",
+                    "type": "text",
                     "category": "Social",
                     "sortOrder": "20",
                     "templates": [
