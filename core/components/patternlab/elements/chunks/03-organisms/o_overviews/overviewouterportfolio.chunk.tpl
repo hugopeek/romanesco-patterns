@@ -6,11 +6,11 @@
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
-        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.team_container_id]]`]]`
+        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.portfolio_container_id]]`]]`
         &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
         &depth=`99`
         &limit=`[[+limit]]`
-        &tpl=`overviewRowPerson[[+[[+prefix]].row_type]]`
+        &tpl=`overviewRowProject[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
         &tvPrefix=``

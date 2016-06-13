@@ -3,8 +3,8 @@
         "elements": {
             "tvs": [
                 {
-                    "caption": "Organisation logo (SVG)",
-                    "name": "organisation_logo_svg",
+                    "caption": "Organization logo (SVG)",
+                    "name": "organization_logo_svg",
                     "description": "You'll likely get the best (sharpest) results when uploading an SVG. Try to keep the aspect ratio around 16:9 for best results.",
                     "type": "file",
                     "category": "Org. - Presentation",
@@ -13,8 +13,8 @@
                         "@@templates_client"
                     ]
                 },{
-                    "caption": "Organisation logo (Image)",
-                    "name": "organisation_logo_img",
+                    "caption": "Organization logo (Image)",
+                    "name": "organization_logo_img",
                     "description": "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px.",
                     "type": "imageplus",
                     "category": "Org. - Presentation",
@@ -32,32 +32,43 @@
                         "@@templates_client"
                     ]
                 },{
-                    "caption": "Organisation name",
-                    "name": "organisation_name",
-                    "description": "",
-                    "type": "text",
+                    "caption": "Organization sector",
+                    "name": "organization_sector",
+                    "description": "What type of organization is this?",
+                    "type": "listbox",
                     "category": "Org. - Information",
                     "sortOrder": "5",
+                    "inputOptionValues": "Public (government)==public||Private business==private||Non-profit organization==community",
                     "templates": [
                         "@@templates_client"
                     ]
                 },{
-                    "caption": "Organisation size",
-                    "name": "organisation_size",
-                    "description": "How many employees does this organisation have?",
-                    "type": "number",
+                    "caption": "Organization industry",
+                    "name": "organization_industry",
+                    "description": "In what field is this organization active?",
+                    "type": "text",
                     "category": "Org. - Information",
                     "sortOrder": "6",
                     "templates": [
                         "@@templates_client"
                     ]
                 },{
-                    "caption": "Organisation website",
-                    "name": "organisation_url",
+                    "caption": "Organization size",
+                    "name": "organization_size",
+                    "description": "How many employees does this organization have?",
+                    "type": "number",
+                    "category": "Org. - Information",
+                    "sortOrder": "10",
+                    "templates": [
+                        "@@templates_client"
+                    ]
+                },{
+                    "caption": "Organization website",
+                    "name": "organization_url",
                     "description": "",
                     "type": "url",
                     "category": "Org. - Information",
-                    "sortOrder": "10",
+                    "sortOrder": "20",
                     "templates": [
                         "@@templates_client"
                     ]
@@ -66,14 +77,14 @@
 
             "categories": [
                 {
-                    "name": "e_info_organisation",
+                    "name": "e_info_organization",
                     "parent": "e_information"
                 },{
                     "name": "Org. - Presentation",
-                    "parent": "e_info_organisation"
+                    "parent": "e_info_organization"
                 },{
                     "name": "Org. - Information",
-                    "parent": "e_info_organisation"
+                    "parent": "e_info_organization"
                 }
             ]
         }

@@ -3,7 +3,7 @@
         [[$imgOverviewPersonLink? &classes=`circular`]]
         <div class="ui small header">
             [[$infoNamePerson]]
-            [[$infoNameOrganisation? &classes=`sub header`]]
+            [[$infoNameOrganization? &classes=`sub header`]]
             [[$infoRatingStars]]
         </div>
     </div>

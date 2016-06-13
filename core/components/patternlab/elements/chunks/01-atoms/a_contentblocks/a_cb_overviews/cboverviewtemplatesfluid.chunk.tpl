@@ -1,3 +1,4 @@
 Regular=overviewRowImageFluid
 Publication=overviewRowArticleFluid
-Team=overviewRowTeamFluid
+Team=overviewRowPersonFluid
+Portfolio=overviewRowProjectFluid

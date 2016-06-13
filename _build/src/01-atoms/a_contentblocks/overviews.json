@@ -24,6 +24,12 @@
                     "name": "cbOverviewTemplatesTestimonial",
                     "category": "a_cb_overviews"
                 },{
+                    "name": "cbOverviewTemplatesClient",
+                    "category": "a_cb_overviews"
+                },{
+                    "name": "cbOverviewTemplatesPortfolio",
+                    "category": "a_cb_overviews"
+                },{
                     "name": "cbOverviewTitleHierarchy",
                     "category": "a_cb_overviews"
                 }

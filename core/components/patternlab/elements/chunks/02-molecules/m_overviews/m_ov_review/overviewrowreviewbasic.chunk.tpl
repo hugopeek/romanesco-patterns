@@ -6,6 +6,6 @@
 
 <div class="ui small center aligned header">
     [[$infoNamePerson]]
-    [[$infoNameOrganisation? &classes=`sub header`]]
+    [[$infoNameOrganization? &classes=`sub header`]]
     [[$infoRatingStars]]
 </div>

@@ -1,0 +1,15 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowOrganizationBasic",
+                    "category": "m_ov_organization"
+                },{
+                    "name": "overviewRowOrganizationLogo",
+                    "category": "m_ov_organization"
+                }
+            ]
+        }
+    }
+}

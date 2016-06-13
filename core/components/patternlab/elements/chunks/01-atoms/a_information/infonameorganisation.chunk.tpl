@@ -1,1 +1,1 @@
-<div class="[[+classes]]" property="publisher" typeof="Organization">[[+organisation_name]]</div>
+<div class="[[+classes]]" property="publisher" typeof="Organization">[[+organization_name]]</div>

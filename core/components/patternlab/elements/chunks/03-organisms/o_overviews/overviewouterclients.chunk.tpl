@@ -1,16 +1,16 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+layout_column]]`]]
 
-<div class="ui [[+cols]] column doubling stackable [[+padding]] nested [[+[[+prefix]].box_type]]">
+<div class="ui [[+cols]] column doubling [[+row_tpl:containsnot=`logo`:then=`stackable`]] [[+padding]] nested [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
         &element=`getResources`
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
-        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.team_container_id]]`]]`
+        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.client_container_id]]`]]`
         &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
         &depth=`99`
         &limit=`[[+limit]]`
-        &tpl=`overviewRowPerson[[+[[+prefix]].row_type]]`
+        &tpl=`overviewRowOrganization[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
         &tvPrefix=``

@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowReviewBasic",
+                    "category": "m_ov_review"
+                },{
+                    "name": "overviewRowReviewWide",
+                    "category": "m_ov_review"
+                },{
+                    "name": "overviewRowReviewLogo",
+                    "category": "m_ov_review"
+                },{
+                    "name": "overviewRowReviewCompact",
+                    "category": "m_ov_review"
+                }
+            ]
+        }
+    }
+}

@@ -8,5 +8,5 @@
 <div class="ui basic segment">
     [[$imgOverviewPersonAvatar]]
     [[$infoNamePerson]]
-    <span class="meta"><em>[[+organisation_name]]</em></span>
+    <span class="meta"><em>[[+organization_name]]</em></span>
 </div>

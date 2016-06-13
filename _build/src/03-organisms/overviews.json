@@ -6,6 +6,12 @@
                     "name": "overviewOuter",
                     "category": "o_overviews"
                 },{
+                    "name": "overviewOuterSpecific",
+                    "category": "o_overviews"
+                },{
+                    "name": "overviewOuterFluid",
+                    "category": "o_overviews"
+                },{
                     "name": "overviewOuterPublication",
                     "category": "o_overviews"
                 },{
@@ -15,10 +21,10 @@
                     "name": "overviewOuterTestimonials",
                     "category": "o_overviews"
                 },{
-                    "name": "overviewOuterSpecific",
+                    "name": "overviewOuterClients",
                     "category": "o_overviews"
                 },{
-                    "name": "overviewOuterFluid",
+                    "name": "overviewOuterPortfolio",
                     "category": "o_overviews"
                 }
             ],

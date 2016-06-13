@@ -1,0 +1,15 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowProjectBasic",
+                    "category": "m_ov_project"
+                },{
+                    "name": "overviewRowProjectFluid",
+                    "category": "m_ov_project"
+                }
+            ]
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <article class="item">
     <div class="content">
-        <a class="header" href="[[~[[+id]]]]">[[+menutitle]]</a>
+        <a class="header" href="[[~[[+id]]]]">[[+menutitle:empty=`[[+pagetitle]]`]]</a>
         <div class="meta">
             [[+meta_elements:contains=`date`:then=`
             <span class="date">

@@ -4,22 +4,22 @@
             "chunks": [
                 {
                     "name": "overviewRowArticleBasic",
-                    "category": "m_ov_publication"
+                    "category": "m_ov_article"
                 },{
                     "name": "overviewRowArticleImageBasic",
-                    "category": "m_ov_publication"
+                    "category": "m_ov_article"
                 },{
                     "name": "overviewRowArticleItemBasic",
-                    "category": "m_ov_publication"
+                    "category": "m_ov_article"
                 },{
                     "name": "overviewRowArticleCompact",
-                    "category": "m_ov_publication"
+                    "category": "m_ov_article"
                 },{
                     "name": "overviewRowArticleFluid",
-                    "category": "m_ov_publication"
+                    "category": "m_ov_article"
                 },{
                     "name": "overviewRowArticleQuote",
-                    "category": "m_ov_publication"
+                    "category": "m_ov_article"
                 }
             ]
         }

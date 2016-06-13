@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewRowPersonBasic",
+                    "category": "m_ov_person"
+                },{
+                    "name": "overviewRowPersonBasicCard",
+                    "category": "m_ov_person"
+                },{
+                    "name": "overviewRowPersonCompact",
+                    "category": "m_ov_person"
+                },{
+                    "name": "overviewRowPersonFluid",
+                    "category": "m_ov_person"
+                }
+            ]
+        }
+    }
+}

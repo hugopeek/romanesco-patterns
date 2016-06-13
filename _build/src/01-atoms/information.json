@@ -9,9 +9,6 @@
                     "name": "infoNameOrganisation",
                     "category": "a_information"
                 },{
-                    "name": "infoReviewSegment",
-                    "category": "a_information"
-                },{
                     "name": "infoRatingStars",
                     "category": "a_information"
                 }

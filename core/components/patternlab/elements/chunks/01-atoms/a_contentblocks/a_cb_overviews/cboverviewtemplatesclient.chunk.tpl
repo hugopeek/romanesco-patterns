@@ -1,0 +1,2 @@
+Client regular=overviewRowOrganizationBasic
+Client logo=overviewRowOrganizationLogo

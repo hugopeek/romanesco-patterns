@@ -4,19 +4,19 @@
             "chunks": [
                 {
                     "name": "overviewRowIconTop",
-                    "category": "m_ov_icons"
+                    "category": "m_ov_icon"
                 },{
                     "name": "overviewRowIconTopCard",
-                    "category": "m_ov_icons"
+                    "category": "m_ov_icon"
                 },{
                     "name": "overviewRowIconTopLinkCard",
-                    "category": "m_ov_icons"
+                    "category": "m_ov_icon"
                 },{
                     "name": "overviewRowIconLeft",
-                    "category": "m_ov_icons"
+                    "category": "m_ov_icon"
                 },{
                     "name": "overviewRowIconCompact",
-                    "category": "m_ov_icons"
+                    "category": "m_ov_icon"
                 }
             ]
         }

@@ -4,28 +4,28 @@
             "chunks": [
                 {
                     "name": "overviewRowImageBasic",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageTop",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageTopCard",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageTopLinkCard",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageLeft",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageLeftCard",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageCompact",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageFluid",
-                    "category": "m_ov_images"
+                    "category": "m_ov_image"
                 }
             ]
         }
