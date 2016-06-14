@@ -31,17 +31,17 @@
                 },{
                     "name": "Client",
                     "icon": "icon-building",
-                    "category": "t_connection"
+                    "category": "t_people"
                 },{
-                    "name": "Team",
+                    "name": "TeamMember",
                     "icon": "icon-user",
-                    "category": "t_connection"
+                    "category": "t_people"
                 },{
                     "name": "Testimonial",
                     "icon": "icon-comment",
                     "category": "t_confirmation"
                 },{
-                    "name": "Portfolio",
+                    "name": "PortfolioProject",
                     "icon": "icon-briefcase",
                     "category": "t_confirmation"
                 },{
@@ -70,7 +70,7 @@
                     "name": "t_publication",
                     "parent": "04-templates"
                 },{
-                    "name": "t_connection",
+                    "name": "t_people",
                     "parent": "04-templates"
                 },{
                     "name": "t_confirmation",
