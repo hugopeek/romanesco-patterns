@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cbSelectCTA",
+                    "category": "a_cb_select"
+                },{
+                    "name": "cbSelectTeam",
+                    "category": "a_cb_select"
+                },{
+                    "name": "cbSelectClients",
+                    "category": "a_cb_select"
+                },{
+                    "name": "cbSelectTestimonials",
+                    "category": "a_cb_select"
+                },{
+                    "name": "cbSelectPortfolio",
+                    "category": "a_cb_select"
+                }
+            ]
+        }
+    }
+}

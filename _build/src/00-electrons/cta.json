@@ -16,12 +16,12 @@
                 },{
                     "caption": "Call to action (CTA)",
                     "name": "header_cta",
-                    "description": "Select a CTA for in the header. CTA's can be created under Global Content. This will replace the Title values, but Background settings still apply. Please note that the value might be inherited, but not visible on site because of the Inheritance setting.",
+                    "description": "Select a CTA for display in header. CTAs can be created under Global Content. This will replace the Title values, but Background settings still apply. Please note that possibly inherited CTAs might not be visible on page because of Inheritance setting.",
                     "type": "listbox",
                     "category": "Header",
                     "sortOrder": "20",
                     "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK ctaTVInputOptions",
+                    "inputOptionValues": "@CHUNK tvOptionsCTA",
                     "templates": [
                         "@@templates_all"
                     ]

@@ -8,7 +8,7 @@
     <base href="[[!++site_url]]">
 
     <link href="[[!++patternlab.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/backgrounds.css">
+    <link rel="stylesheet" href="[[getContextSetting? &context=`web` &setting=`site_url`]]assets/css/backgrounds.css">
 
     [[cbHasField?
         &field=`[[++patternlab.cb_field_code_id]]`

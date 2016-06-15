@@ -168,10 +168,6 @@
 					"parent": "01-atoms"
 				},
 				{
-					"name": "Content",
-					"parent": "a_content"
-				},
-				{
 					"name": "a_contentblocks",
 					"parent": "01-atoms"
 				},
@@ -200,10 +196,6 @@
 					"parent": "a_contentblocks"
 				},
 				{
-					"name": "a_cta",
-					"parent": "01-atoms"
-				},
-				{
 					"name": "a_formblocks",
 					"parent": "01-atoms"
 				},
@@ -217,6 +209,14 @@
 				},
 				{
 					"name": "a_hub",
+					"parent": "01-atoms"
+				},
+				{
+					"name": "a_images",
+					"parent": "01-atoms"
+				},
+				{
+					"name": "a_information",
 					"parent": "01-atoms"
 				},
 				{
@@ -245,6 +245,10 @@
 				},
 				{
 					"name": "a_search",
+					"parent": "01-atoms"
+				},
+				{
+					"name": "a_select",
 					"parent": "01-atoms"
 				},
 				{
@@ -292,6 +296,10 @@
 					"parent": "02-molecules"
 				},
 				{
+					"name": "m_information",
+					"parent": "02-molecules"
+				},
+				{
 					"name": "m_layouts",
 					"parent": "02-molecules"
 				},
@@ -308,23 +316,31 @@
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_ov_images",
+					"name": "m_ov_image",
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_ov_icons",
+					"name": "m_ov_icon",
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_ov_publication",
+					"name": "m_ov_article",
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_ov_team",
+					"name": "m_ov_person",
 					"parent": "m_overviews"
 				},
 				{
-					"name": "m_ov_testimonials",
+					"name": "m_ov_organization",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_ov_review",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_ov_project",
 					"parent": "m_overviews"
 				},
 				{
@@ -396,7 +412,7 @@
 					"parent": "04-templates"
 				},
 				{
-					"name": "t_connection",
+					"name": "t_people",
 					"parent": "04-templates"
 				},
 				{
@@ -492,16 +508,16 @@
 					"parent": "e_info_intangible"
 				},
 				{
-					"name": "e_info_organisation",
+					"name": "e_info_organization",
 					"parent": "e_information"
 				},
 				{
 					"name": "Org. - Presentation",
-					"parent": "e_info_organisation"
+					"parent": "e_info_organization"
 				},
 				{
 					"name": "Org. - Information",
-					"parent": "e_info_organisation"
+					"parent": "e_info_organization"
 				},
 				{
 					"name": "Person - Presentation",
@@ -528,12 +544,12 @@
 				{
 					"caption": "Call to action (CTA)",
 					"name": "header_cta",
-					"description": "Select a CTA for in the header. CTA's can be created under Global Content. This will replace the Title values, but Background settings still apply. Please note that the value might be inherited, but not visible on site because of the Inheritance setting.",
+					"description": "Select a CTA for display in header. CTAs can be created under Global Content. This will replace the Title values, but Background settings still apply. Please note that possibly inherited CTAs might not be visible on page because of Inheritance setting.",
 					"type": "listbox",
 					"category": "Header",
 					"sortOrder": "20",
 					"defaultValue": "@INHERIT",
-					"inputOptionValues": "@CHUNK ctaTVInputOptions",
+					"inputOptionValues": "@CHUNK tvOptionsCTA",
 					"templates": [
 						"Home",
 "BasicOverview",
@@ -548,7 +564,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -789,7 +811,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -814,7 +842,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -839,7 +873,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -864,7 +904,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -890,7 +936,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -930,7 +982,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -958,7 +1016,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -983,7 +1047,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -1008,7 +1078,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -1035,7 +1111,13 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Client",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial"
 					]
 				},
 				{
@@ -1280,7 +1362,8 @@
 					"category": "Social",
 					"sortOrder": "1",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1291,7 +1374,8 @@
 					"category": "Social",
 					"sortOrder": "2",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1302,7 +1386,8 @@
 					"category": "Social",
 					"sortOrder": "3",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1313,7 +1398,8 @@
 					"category": "Social",
 					"sortOrder": "4",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1324,7 +1410,8 @@
 					"category": "Social",
 					"sortOrder": "5",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1335,7 +1422,8 @@
 					"category": "Social",
 					"sortOrder": "10",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1346,23 +1434,25 @@
 					"category": "Social",
 					"sortOrder": "11",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
 					"caption": "Github account",
 					"name": "social_github",
 					"description": "",
-					"type": "url",
+					"type": "text",
 					"category": "Social",
 					"sortOrder": "20",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
 					"caption": "Author",
-					"name": "author",
+					"name": "author_select",
 					"description": "Select the author of this article. He or she must be a MODX user.",
 					"type": "listbox",
 					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
@@ -1379,7 +1469,7 @@
 				},
 				{
 					"caption": "Comments",
-					"name": "comments",
+					"name": "comments_toggle",
 					"description": "Enable or disable comments.",
 					"type": "option",
 					"inputOptionValues": "Active==1||Disabled==0",
@@ -1396,26 +1486,28 @@
 				},
 				{
 					"caption": "Client",
-					"name": "client",
+					"name": "client_select",
 					"description": "If this list is empty, you need to add the client first in the Clients component.",
 					"type": "listbox",
-					"inputOptionValues": "@CHUNK clientTVInputOptions",
+					"inputOptionValues": "@CHUNK tvSelectClient",
 					"category": "Participants",
 					"sortOrder": "1",
 					"templates": [
-						"Portfolio"
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
 					"caption": "Contributors",
-					"name": "contributors",
+					"name": "contributors_select",
 					"description": "Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
 					"type": "listbox-multiple",
-					"inputOptionValues": "@CHUNK teamTVInputOptions",
+					"inputOptionValues": "@CHUNK tvSelectTeam",
 					"category": "Participants",
 					"sortOrder": "2",
 					"templates": [
-						"Portfolio"
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1438,7 +1530,8 @@
 					"category": "Contact",
 					"sortOrder": "1",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1449,7 +1542,8 @@
 					"category": "Contact",
 					"sortOrder": "2",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1460,7 +1554,8 @@
 					"category": "Contact",
 					"sortOrder": "3",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1537,7 +1632,8 @@
 					"category": "Date",
 					"sortOrder": "1",
 					"templates": [
-						"Portfolio"
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1548,7 +1644,8 @@
 					"category": "Date",
 					"sortOrder": "2",
 					"templates": [
-						"Portfolio"
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1559,12 +1656,13 @@
 					"category": "Date",
 					"sortOrder": "3",
 					"templates": [
-						"Portfolio"
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
-					"caption": "Organisation logo (SVG)",
-					"name": "organisation_logo_svg",
+					"caption": "Organization logo (SVG)",
+					"name": "organization_logo_svg",
 					"description": "You'll likely get the best (sharpest) results when uploading an SVG. Try to keep the aspect ratio around 16:9 for best results.",
 					"type": "file",
 					"category": "Org. - Presentation",
@@ -1574,8 +1672,8 @@
 					]
 				},
 				{
-					"caption": "Organisation logo (Image)",
-					"name": "organisation_logo_img",
+					"caption": "Organization logo (Image)",
+					"name": "organization_logo_img",
 					"description": "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px.",
 					"type": "imageplus",
 					"category": "Org. - Presentation",
@@ -1594,21 +1692,22 @@
 					]
 				},
 				{
-					"caption": "Organisation name",
-					"name": "organisation_name",
-					"description": "",
-					"type": "text",
+					"caption": "Organization sector",
+					"name": "organization_sector",
+					"description": "What type of organization is this?",
+					"type": "listbox",
 					"category": "Org. - Information",
 					"sortOrder": "5",
+					"inputOptionValues": "Public (government)==public||Private business==private||Non-profit organization==community",
 					"templates": [
 						"Client"
 					]
 				},
 				{
-					"caption": "Organisation size",
-					"name": "organisation_size",
-					"description": "How many employees does this organisation have?",
-					"type": "number",
+					"caption": "Organization industry",
+					"name": "organization_industry",
+					"description": "In what field is this organization active?",
+					"type": "text",
 					"category": "Org. - Information",
 					"sortOrder": "6",
 					"templates": [
@@ -1616,12 +1715,23 @@
 					]
 				},
 				{
-					"caption": "Organisation website",
-					"name": "organisation_url",
+					"caption": "Organization size",
+					"name": "organization_size",
+					"description": "How many employees does this organization have?",
+					"type": "number",
+					"category": "Org. - Information",
+					"sortOrder": "10",
+					"templates": [
+						"Client"
+					]
+				},
+				{
+					"caption": "Organization website",
+					"name": "organization_url",
 					"description": "",
 					"type": "url",
 					"category": "Org. - Information",
-					"sortOrder": "10",
+					"sortOrder": "20",
 					"templates": [
 						"Client"
 					]
@@ -1643,7 +1753,8 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1663,7 +1774,8 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1674,7 +1786,8 @@
 					"category": "Person - Information",
 					"sortOrder": "1",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1685,7 +1798,8 @@
 					"category": "Person - Information",
 					"sortOrder": "2",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1697,7 +1811,8 @@
 					"sortOrder": "3",
 					"inputOptionValues": "Male==m||Female==f||Other==o",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1708,7 +1823,8 @@
 					"category": "Person - Information",
 					"sortOrder": "5",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				},
 				{
@@ -1719,7 +1835,8 @@
 					"category": "Person - Information",
 					"sortOrder": "10",
 					"templates": [
-						"Team"
+						"TeamMember",
+"Team - Member"
 					]
 				}
 			],
@@ -1833,10 +1950,6 @@
 					"category": "a_content"
 				},
 				{
-					"name": "ctaTVInputOptions",
-					"category": "a_cta"
-				},
-				{
 					"name": "fbRenderFormWrapper",
 					"category": "a_formblocks"
 				},
@@ -1891,6 +2004,30 @@
 				{
 					"name": "statusGridColumnNotes",
 					"category": "a_hub"
+				},
+				{
+					"name": "imgOverviewPersonLink",
+					"category": "a_images"
+				},
+				{
+					"name": "imgOverviewPersonAvatar",
+					"category": "a_images"
+				},
+				{
+					"name": "imgOverviewPersonAvatarLink",
+					"category": "a_images"
+				},
+				{
+					"name": "infoNamePerson",
+					"category": "a_information"
+				},
+				{
+					"name": "infoNameOrganisation",
+					"category": "a_information"
+				},
+				{
+					"name": "infoRatingStars",
+					"category": "a_information"
 				},
 				{
 					"name": "breadcrumbOuter",
@@ -1955,6 +2092,31 @@
 				{
 					"name": "searchResultTag",
 					"category": "a_search"
+				},
+				{
+					"name": "tvSelectCTA",
+					"description": "Get available CTAs and turn them into input options for use in a selection TV.",
+					"category": "a_select"
+				},
+				{
+					"name": "tvSelectTeam",
+					"description": "Get available team members and turn them into input options for use in a selection TV.",
+					"category": "a_select"
+				},
+				{
+					"name": "tvSelectClients",
+					"description": "Get available clients and turn them into input options for use in a selection TV.",
+					"category": "a_select"
+				},
+				{
+					"name": "tvSelectTestimonials",
+					"description": "Get available clients and turn them into input options for use in a selection TV.",
+					"category": "a_select"
+				},
+				{
+					"name": "tvSelectPortfolio",
+					"description": "Get available projects and turn them into input options for use in a selection TV.",
+					"category": "a_select"
 				},
 				{
 					"name": "hitCount",
@@ -2089,6 +2251,10 @@
 					"category": "m_hub"
 				},
 				{
+					"name": "infoReviewSegment",
+					"category": "m_information"
+				},
+				{
 					"name": "cbLayoutSingleColumnNested",
 					"category": "m_layouts"
 				},
@@ -2149,19 +2315,27 @@
 					"category": "m_overviews"
 				},
 				{
+					"name": "overviewRowFluid",
+					"category": "m_overviews"
+				},
+				{
 					"name": "overviewRowArticle",
 					"category": "m_overviews"
 				},
 				{
-					"name": "overviewRowTeam",
+					"name": "overviewRowPerson",
 					"category": "m_overviews"
 				},
 				{
-					"name": "overviewRowTestimonial",
+					"name": "overviewRowReview",
 					"category": "m_overviews"
 				},
 				{
-					"name": "overviewRowFluid",
+					"name": "overviewRowOrganization",
+					"category": "m_overviews"
+				},
+				{
+					"name": "overviewRowProject",
 					"category": "m_overviews"
 				},
 				{
@@ -2186,10 +2360,6 @@
 				},
 				{
 					"name": "tabsRowBasic",
-					"category": "m_presentation"
-				},
-				{
-					"name": "layoutStyleSwitcher",
 					"category": "m_presentation"
 				},
 				{
@@ -2221,7 +2391,7 @@
 					"category": "m_social"
 				},
 				{
-					"name": "socialConnectButtonsTeam",
+					"name": "socialConnectButtonsPerson",
 					"category": "m_social"
 				},
 				{
@@ -2313,6 +2483,14 @@
 					"category": "o_overviews"
 				},
 				{
+					"name": "overviewOuterSpecific",
+					"category": "o_overviews"
+				},
+				{
+					"name": "overviewOuterFluid",
+					"category": "o_overviews"
+				},
+				{
 					"name": "overviewOuterPublication",
 					"category": "o_overviews"
 				},
@@ -2325,11 +2503,11 @@
 					"category": "o_overviews"
 				},
 				{
-					"name": "overviewOuterSpecific",
+					"name": "overviewOuterClients",
 					"category": "o_overviews"
 				},
 				{
-					"name": "overviewOuterFluid",
+					"name": "overviewOuterPortfolio",
 					"category": "o_overviews"
 				},
 				{
@@ -2355,10 +2533,6 @@
 				{
 					"name": "toolbarBasic",
 					"category": "o_toolbars"
-				},
-				{
-					"name": "cbCTASelect",
-					"category": "a_cb_cta"
 				},
 				{
 					"name": "cbFieldAlignment",
@@ -2441,8 +2615,36 @@
 					"category": "a_cb_overviews"
 				},
 				{
+					"name": "cbOverviewTemplatesClient",
+					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbOverviewTemplatesPortfolio",
+					"category": "a_cb_overviews"
+				},
+				{
 					"name": "cbOverviewTitleHierarchy",
 					"category": "a_cb_overviews"
+				},
+				{
+					"name": "cbSelectCTA",
+					"category": "a_cb_select"
+				},
+				{
+					"name": "cbSelectTeam",
+					"category": "a_cb_select"
+				},
+				{
+					"name": "cbSelectClients",
+					"category": "a_cb_select"
+				},
+				{
+					"name": "cbSelectTestimonials",
+					"category": "a_cb_select"
+				},
+				{
+					"name": "cbSelectPortfolio",
+					"category": "a_cb_select"
 				},
 				{
 					"name": "cbSettingButtonSize",
@@ -2481,6 +2683,30 @@
 					"category": "a_cb_settings"
 				},
 				{
+					"name": "overviewRowArticleBasic",
+					"category": "m_ov_article"
+				},
+				{
+					"name": "overviewRowArticleImageBasic",
+					"category": "m_ov_article"
+				},
+				{
+					"name": "overviewRowArticleItemBasic",
+					"category": "m_ov_article"
+				},
+				{
+					"name": "overviewRowArticleCompact",
+					"category": "m_ov_article"
+				},
+				{
+					"name": "overviewRowArticleFluid",
+					"category": "m_ov_article"
+				},
+				{
+					"name": "overviewRowArticleQuote",
+					"category": "m_ov_article"
+				},
+				{
 					"name": "overviewRowBasic",
 					"category": "m_ov_basic"
 				},
@@ -2498,111 +2724,99 @@
 				},
 				{
 					"name": "overviewRowIconTop",
-					"category": "m_ov_icons"
+					"category": "m_ov_icon"
 				},
 				{
 					"name": "overviewRowIconTopCard",
-					"category": "m_ov_icons"
+					"category": "m_ov_icon"
 				},
 				{
 					"name": "overviewRowIconTopLinkCard",
-					"category": "m_ov_icons"
+					"category": "m_ov_icon"
 				},
 				{
 					"name": "overviewRowIconLeft",
-					"category": "m_ov_icons"
+					"category": "m_ov_icon"
 				},
 				{
 					"name": "overviewRowIconCompact",
-					"category": "m_ov_icons"
+					"category": "m_ov_icon"
 				},
 				{
 					"name": "overviewRowImageBasic",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
 					"name": "overviewRowImageTop",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
 					"name": "overviewRowImageTopCard",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
 					"name": "overviewRowImageTopLinkCard",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
 					"name": "overviewRowImageLeft",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
 					"name": "overviewRowImageLeftCard",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
 					"name": "overviewRowImageCompact",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
 					"name": "overviewRowImageFluid",
-					"category": "m_ov_images"
+					"category": "m_ov_image"
 				},
 				{
-					"name": "overviewRowArticleBasic",
-					"category": "m_ov_publication"
+					"name": "overviewRowOrganizationBasic",
+					"category": "m_ov_organization"
 				},
 				{
-					"name": "overviewRowArticleImageBasic",
-					"category": "m_ov_publication"
+					"name": "overviewRowOrganizationLogo",
+					"category": "m_ov_organization"
 				},
 				{
-					"name": "overviewRowArticleItemBasic",
-					"category": "m_ov_publication"
+					"name": "overviewRowPersonBasic",
+					"category": "m_ov_person"
 				},
 				{
-					"name": "overviewRowArticleCompact",
-					"category": "m_ov_publication"
+					"name": "overviewRowPersonBasicCard",
+					"category": "m_ov_person"
 				},
 				{
-					"name": "overviewRowArticleFluid",
-					"category": "m_ov_publication"
+					"name": "overviewRowPersonCompact",
+					"category": "m_ov_person"
 				},
 				{
-					"name": "overviewRowArticleQuote",
-					"category": "m_ov_publication"
+					"name": "overviewRowPersonFluid",
+					"category": "m_ov_person"
 				},
 				{
-					"name": "overviewRowTeamBasic",
-					"category": "m_ov_team"
+					"name": "overviewRowProjectBasic",
+					"category": "m_ov_project"
 				},
 				{
-					"name": "overviewRowTeamBasicCard",
-					"category": "m_ov_team"
+					"name": "overviewRowProjectFluid",
+					"category": "m_ov_project"
 				},
 				{
-					"name": "overviewRowTeamCompact",
-					"category": "m_ov_team"
+					"name": "overviewRowReviewBasic",
+					"category": "m_ov_review"
 				},
 				{
-					"name": "overviewRowTeamFluid",
-					"category": "m_ov_team"
+					"name": "overviewRowReviewWide",
+					"category": "m_ov_review"
 				},
 				{
-					"name": "overviewRowTestimonialBasic",
-					"category": "m_ov_testimonials"
-				},
-				{
-					"name": "overviewRowTestimonialWide",
-					"category": "m_ov_testimonials"
-				},
-				{
-					"name": "overviewRowTestimonialLogo",
-					"category": "m_ov_testimonials"
-				},
-				{
-					"name": "overviewRowTestimonialCompact",
-					"category": "m_ov_testimonials"
+					"name": "overviewRowReviewCompact",
+					"category": "m_ov_review"
 				}
 			],
 			"templates": [
@@ -2642,20 +2856,20 @@
 				{
 					"name": "Client",
 					"icon": "icon-building",
-					"category": "t_connection"
+					"category": "t_people"
 				},
 				{
-					"name": "Team",
+					"name": "TeamMember",
 					"icon": "icon-user",
-					"category": "t_connection"
+					"category": "t_people"
 				},
 				{
 					"name": "Testimonial",
-					"icon": "icon-comment",
+					"icon": "icon-comment-o",
 					"category": "t_confirmation"
 				},
 				{
-					"name": "Portfolio",
+					"name": "PortfolioProject",
 					"icon": "icon-briefcase",
 					"category": "t_confirmation"
 				},
@@ -2724,6 +2938,11 @@
 				{
 					"name": "Time",
 					"description": "Returns current timestamp.",
+					"category": "f_basic"
+				},
+				{
+					"name": "getContextSetting",
+					"description": "Retrieve settings from a context of choice.",
 					"category": "f_basic"
 				},
 				{

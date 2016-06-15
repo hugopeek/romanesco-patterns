@@ -1,0 +1,35 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "tvSelectCTA",
+                    "description": "Get available CTAs and turn them into input options for use in a selection TV.",
+                    "category": "a_select"
+                },{
+                    "name": "tvSelectTeam",
+                    "description": "Get available team members and turn them into input options for use in a selection TV.",
+                    "category": "a_select"
+                },{
+                    "name": "tvSelectClients",
+                    "description": "Get available clients and turn them into input options for use in a selection TV.",
+                    "category": "a_select"
+                },{
+                    "name": "tvSelectTestimonials",
+                    "description": "Get available clients and turn them into input options for use in a selection TV.",
+                    "category": "a_select"
+                },{
+                    "name": "tvSelectPortfolio",
+                    "description": "Get available projects and turn them into input options for use in a selection TV.",
+                    "category": "a_select"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_select",
+                    "parent": "01-atoms"
+                }
+            ]
+        }
+    }
+}

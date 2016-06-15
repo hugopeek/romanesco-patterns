@@ -38,7 +38,7 @@
                     "category": "t_people"
                 },{
                     "name": "Testimonial",
-                    "icon": "icon-comment",
+                    "icon": "icon-comment-o",
                     "category": "t_confirmation"
                 },{
                     "name": "PortfolioProject",
