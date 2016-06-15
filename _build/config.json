@@ -172,10 +172,6 @@
 					"parent": "01-atoms"
 				},
 				{
-					"name": "a_cb_cta",
-					"parent": "a_contentblocks"
-				},
-				{
 					"name": "a_cb_layouts",
 					"parent": "a_contentblocks"
 				},
@@ -184,7 +180,11 @@
 					"parent": "a_contentblocks"
 				},
 				{
-					"name": "a_cb_formblocks",
+					"name": "a_cb_settings",
+					"parent": "a_contentblocks"
+				},
+				{
+					"name": "a_cb_select",
 					"parent": "a_contentblocks"
 				},
 				{
@@ -192,7 +192,7 @@
 					"parent": "a_contentblocks"
 				},
 				{
-					"name": "a_cb_settings",
+					"name": "a_cb_formblocks",
 					"parent": "a_contentblocks"
 				},
 				{

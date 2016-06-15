@@ -20,6 +20,7 @@
         &processTVs=`1`
         &tplOuter=`@INLINE [[+wrapper]]`
         &tpl=`statusGridRow`
+        &where=`{"contentType:=":"text/html"}`
     ]]
     </tbody>
 </table>
