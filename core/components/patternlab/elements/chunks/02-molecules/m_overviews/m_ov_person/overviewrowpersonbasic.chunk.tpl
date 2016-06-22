@@ -1,12 +1,12 @@
-[[$imgOverviewPersonLink? &classes=`circular`]]
+[[!$imgOverviewPersonLink? &classes=`circular`]]
 
 <[[+title_hierarchy]] class="ui header">
-    <a href="[[~[[+id]]]]">[[+person_firstname]]</a>
+    <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
     [[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<p class="sub header">[[+person_jobtitle]]</p>`
+        &then=`<p class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</p>`
     ]]
 </[[+title_hierarchy]]>
 

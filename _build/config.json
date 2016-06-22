@@ -549,7 +549,7 @@
 					"category": "Header",
 					"sortOrder": "20",
 					"defaultValue": "@INHERIT",
-					"inputOptionValues": "@CHUNK tvOptionsCTA",
+					"inputOptionValues": "@CHUNK tvSelectCTA",
 					"templates": [
 						"Home",
 "BasicOverview",
@@ -1148,7 +1148,9 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1179,7 +1181,9 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1210,7 +1214,9 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1241,7 +1247,9 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1272,7 +1280,9 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1327,7 +1337,9 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1351,7 +1363,9 @@
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
-"Article - Sidenotes"
+"Article - Sidenotes",
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1806,7 +1820,7 @@
 					"caption": "Gender",
 					"name": "person_gender",
 					"description": "",
-					"type": "options",
+					"type": "option",
 					"category": "Person - Information",
 					"sortOrder": "3",
 					"inputOptionValues": "Male==m||Female==f||Other==o",
@@ -1975,6 +1989,10 @@
 				},
 				{
 					"name": "globalBackgroundImgOverviewCSS",
+					"category": "a_global"
+				},
+				{
+					"name": "globalBackgroundImgPersonCSS",
 					"category": "a_global"
 				},
 				{
@@ -2791,6 +2809,10 @@
 					"category": "m_ov_person"
 				},
 				{
+					"name": "overviewRowPersonTile",
+					"category": "m_ov_person"
+				},
+				{
 					"name": "overviewRowPersonCompact",
 					"category": "m_ov_person"
 				},
@@ -2800,6 +2822,10 @@
 				},
 				{
 					"name": "overviewRowProjectBasic",
+					"category": "m_ov_project"
+				},
+				{
+					"name": "overviewRowProjectTile",
 					"category": "m_ov_project"
 				},
 				{

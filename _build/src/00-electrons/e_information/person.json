@@ -64,7 +64,7 @@
                     "caption": "Gender",
                     "name": "person_gender",
                     "description": "",
-                    "type": "options",
+                    "type": "option",
                     "category": "Person - Information",
                     "sortOrder": "3",
                     "inputOptionValues": "Male==m||Female==f||Other==o",

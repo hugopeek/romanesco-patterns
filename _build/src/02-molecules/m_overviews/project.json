@@ -6,6 +6,9 @@
                     "name": "overviewRowProjectBasic",
                     "category": "m_ov_project"
                 },{
+                    "name": "overviewRowProjectTile",
+                    "category": "m_ov_project"
+                },{
                     "name": "overviewRowProjectFluid",
                     "category": "m_ov_project"
                 }

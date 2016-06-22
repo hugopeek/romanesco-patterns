@@ -11,7 +11,7 @@
         <div class="twelve wide column right aligned">
             <div class="ui horizontal inverted bulleted list">
                 [[getResources?
-                    &parents=`[[++common_pages_id]]`
+                    &parents=`[[++common_pages_id:empty=`[[++patternlab.common_pages_id]]`]]`
                     &depth=`0`
                     &limit=`6`
                     &tpl=`@INLINE <a class="item" href="[[!~[[+id]]]]">[[+menutitle:empty=`[[+pagetitle]]`]]</a>`

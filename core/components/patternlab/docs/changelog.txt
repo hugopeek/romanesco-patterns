@@ -5,11 +5,15 @@ Released on May 5, 2016
 
 New features:
 - Add front-end pattern library
+- Add templates for Team and Testimonial
+- Add templates for Clients and Portfolio
 
 Fixes and improvements:
+- Refactor overview elements for better reusability [BREAKING CHANGES]
 - Load FormBlocks fieldset layout with chunk
 - Display syntax highlighted code snippets with Prism.js
-- Fixed adding tables and links with Redactor
+- Fix layout backgrounds not working on subdomains
+- Fix adding tables and links with Redactor
 
 
 ## Romanesco 0.8.1

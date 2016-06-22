@@ -9,6 +9,9 @@
                     "name": "overviewRowPersonBasicCard",
                     "category": "m_ov_person"
                 },{
+                    "name": "overviewRowPersonTile",
+                    "category": "m_ov_person"
+                },{
                     "name": "overviewRowPersonCompact",
                     "category": "m_ov_person"
                 },{

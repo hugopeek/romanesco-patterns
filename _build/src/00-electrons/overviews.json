@@ -20,7 +20,8 @@
                     },
                     "templates": [
                         "@@templates_basic",
-                        "@@templates_publication"
+                        "@@templates_publication",
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Image (Portrait)",
@@ -40,7 +41,8 @@
                     },
                     "templates": [
                         "@@templates_basic",
-                        "@@templates_publication"
+                        "@@templates_publication",
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Image (Square)",
@@ -60,7 +62,8 @@
                     },
                     "templates": [
                         "@@templates_basic",
-                        "@@templates_publication"
+                        "@@templates_publication",
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Image (Wide)",
@@ -80,7 +83,8 @@
                     },
                     "templates": [
                         "@@templates_basic",
-                        "@@templates_publication"
+                        "@@templates_publication",
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Image (Panorama)",
@@ -100,7 +104,8 @@
                     },
                     "templates": [
                         "@@templates_basic",
-                        "@@templates_publication"
+                        "@@templates_publication",
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Icon (SVG)",
@@ -136,7 +141,8 @@
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_basic",
-                        "@@templates_publication"
+                        "@@templates_publication",
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Image priority",
@@ -149,7 +155,8 @@
                     "defaultValue": "landscape",
                     "templates": [
                         "@@templates_basic",
-                        "@@templates_publication"
+                        "@@templates_publication",
+                        "@@templates_portfolio"
                     ]
                 }
             ],

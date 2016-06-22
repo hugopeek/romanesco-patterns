@@ -21,7 +21,7 @@
                     "category": "Header",
                     "sortOrder": "20",
                     "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvOptionsCTA",
+                    "inputOptionValues": "@CHUNK tvSelectCTA",
                     "templates": [
                         "@@templates_all"
                     ]

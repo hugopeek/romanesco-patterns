@@ -35,24 +35,32 @@ $_lang['patternlab.menu.clear_cache_overviews_description'] = 'Remove cache file
 
 $_lang['collections.footers.children'] = 'Footers';
 $_lang['collections.footers.children.create'] = 'Add footer';
-$_lang['collections.footers.children.back_to_collection_label'] = 'Back to overview';
+$_lang['collections.footers.children.back_to_collection_label'] = 'All footers';
 
 $_lang['collections.forms.children'] = 'Forms';
 $_lang['collections.forms.children.create'] = 'Add form';
-$_lang['collections.forms.children.back_to_collection_label'] = 'Back to overview';
+$_lang['collections.forms.children.back_to_collection_label'] = 'All forms';
 
 $_lang['collections.cta.children'] = 'Call To Actions';
 $_lang['collections.cta.children.create'] = 'Add CTA';
-$_lang['collections.cta.children.back_to_collection_label'] = 'Back to overview';
+$_lang['collections.cta.children.back_to_collection_label'] = 'All CTAs';
 
 $_lang['collections.publication.children'] = 'Articles';
 $_lang['collections.publication.children.create'] = 'New article';
-$_lang['collections.publication.children.back_to_collection_label'] = 'Back to overview';
+$_lang['collections.publication.children.back_to_collection_label'] = 'All articles';
 
 $_lang['collections.team.children'] = 'Team';
 $_lang['collections.team.children.create'] = 'Add teammember';
-$_lang['collections.team.children.back_to_collection_label'] = 'Back to overview';
+$_lang['collections.team.children.back_to_collection_label'] = 'Back to team';
 
 $_lang['collections.testimonials.children'] = 'Testimonials';
 $_lang['collections.testimonials.children.create'] = 'Add testimonial';
-$_lang['collections.testimonials.children.back_to_collection_label'] = 'Back to overview';
+$_lang['collections.testimonials.children.back_to_collection_label'] = 'All testimonials';
+
+$_lang['collections.library.children'] = 'Pattern Library';
+$_lang['collections.library.children.create'] = 'Add component';
+$_lang['collections.library.children.back_to_collection_label'] = 'Back to library';
+
+$_lang['collections.portfolio.children'] = 'Portfolio';
+$_lang['collections.portfolio.children.create'] = 'Add project';
+$_lang['collections.portfolio.children.back_to_collection_label'] = 'Back to portfolio';

@@ -37,6 +37,16 @@ switch($input) {
         $row_type = "segment";
         $column_type = "segment";
         break;
+    case stripos($input,'ProjectTile') !== false:
+        $box_type = "grid";
+        $row_type = "";
+        $column_type = "ui dimmable column [[+alias]] background";
+        break;
+    case stripos($input,'PersonTile') !== false:
+        $box_type = "grid";
+        $row_type = "";
+        $column_type = "ui column [[+alias]] background";
+        break;
     case stripos($input,'Item') !== false:
         $box_type = "items";
         $row_type = "";

@@ -1,19 +1,5 @@
-/* Load all backgrounds set under Global Content */
-[[getImageList?
-    &tvname=`global_background_img`
-    &tpl=`globalBackgroundImgCSS`
-]]
-
-/* Load all backgrounds based on an overview image */
-[[pdoResources?
-    &parents=`0`
-    &limit=`0`
-    &tpl=`globalBackgroundImgOverviewCSS`
-    &includeTVs=`overview_img_pano,overview_img_wide`
-    &tvFilters=`header_background_img!==`
-]]
-
 /* Styles that apply to all backgrounds */
+
 .background {
     position: relative;
     overflow: hidden;
@@ -44,3 +30,41 @@
 .background.inverted {
     background-color: transparent !important;
 }
+
+
+/* Load all backgrounds set under Global Content */
+
+[[getImageList?
+    &tvname=`global_background_img`
+    &tpl=`globalBackgroundImgCSS`
+]]
+
+
+/* Load all backgrounds based on an overview image */
+
+[[pdoResources?
+    &parents=`0`
+    &limit=`0`
+    &tpl=`globalBackgroundImgOverviewCSS`
+    &includeTVs=`overview_img_pano,overview_img_wide`
+    &tvFilters=`header_background_img!==`
+]]
+
+/* Load backgrounds for all tiled Portfolio overviews */
+
+[[pdoResources?
+    &parents=`[[++patternlab.portfolio_container_id]]`
+    &limit=`0`
+    &tpl=`globalBackgroundImgOverviewCSS`
+    &includeTVs=`overview_img_pano,overview_img_wide`
+]]
+
+
+/* Load backgrounds for all tiled Team overviews */
+
+[[pdoResources?
+    &parents=`[[++patternlab.team_container_id]]`
+    &limit=`0`
+    &tpl=`globalBackgroundImgPersonCSS`
+    &includeTVs=`person_image,person_image_loose`
+]]

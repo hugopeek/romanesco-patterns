@@ -1,1 +1,2 @@
 Project regular=overviewRowProjectBasic
+Project tile=overviewRowProjectTile
