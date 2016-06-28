@@ -1,7 +1,18 @@
 # Changelog for Romanesco
 
+## Romanesco 0.9.1
+Released on June 28, 2016
+
+New features:
+- Add Slider / Gallery combo CB
+
+Fixes and improvements:
+- Organize front-end dependencies in assets/vendor folder
+
+---
+
 ## Romanesco 0.9.0
-Released on May 5, 2016
+Released on June 22, 2016
 
 New features:
 - Add front-end pattern library
@@ -15,6 +26,7 @@ Fixes and improvements:
 - Fix layout backgrounds not working on subdomains
 - Fix adding tables and links with Redactor
 
+---
 
 ## Romanesco 0.8.1
 Released on May 5, 2016
@@ -25,6 +37,7 @@ New features:
 Fixes and improvements:
 - Use snippets in JSON config files for assigning templates
 
+---
 
 ## Romanesco 0.8.0
 Released on May 5, 2016

@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * parseTags output filter
  * by Mark Hamstra (http://www.markhamstra.nl)
  * free to use / modify / distribute to your will

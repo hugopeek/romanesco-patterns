@@ -1,4 +1,8 @@
 <?php
+/**
+ * @todo: Is this snippet used anywhere?
+ */
+
 $parents = $modx->getOption('parents',$scriptProperties,true);
 
 $output = $modx->runSnippet('getResources', (array(

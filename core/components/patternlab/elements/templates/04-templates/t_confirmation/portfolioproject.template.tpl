@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
-[[setTemplateType? &type=`detail`]]
 [[$head]]
 
-<body id="detail">
+<body id="portfolio">
 
 <div class="pusher">
     [[$headerBasic?
@@ -13,18 +12,12 @@
         &search=`0`
     ]]
 
-    [[[[getResourceLevel:ne=`1`:then=`$toolbarBasic`]]]]
+    [[$toolbarBasic]]
 
     <main id="main" role="main">
-        <div class="ui relaxed grid container">
-            <article id="content" class="sixteen wide twelve wide computer column">
-                [[*content]]
-            </article>
-
-            <aside id="sidebar" class="four wide column computer only">
-                [[$subNavVertical]]
-            </aside>
-        </div>
+        <article id="content">
+            [[*content]]
+        </article>
     </main>
 
     [[$footer]]

@@ -23,12 +23,20 @@
 $pathTpl = $modx->getOption('pathTpl', $scriptProperties, '');
 $docid = $modx->getOption('docid', $scriptProperties, '');
 $createfolder = $modx->getOption('createFolder', $scriptProperties, false);
+$tvname = $modx->getOption('tvname', $scriptProperties, '');
+
 $path = '';
 $createpath = false;
 
 if (empty($pathTpl)) {
     $modx->log(MODX_LOG_LEVEL_ERROR, '[resourceMediaPath]: pathTpl not specified.');
     return;
+}
+
+if (empty($docid) && $modx->getPlaceholder('mediasource_docid')) {
+    // placeholder was set by some script
+    // warning: the parser may not render placeholders, e.g. &docid=`[[*parent]]` may fail
+    $docid = $modx->getPlaceholder('mediasource_docid');
 }
 
 if (empty($docid) && $modx->getPlaceholder('docid')) {
@@ -86,19 +94,22 @@ if ($resource = $modx->getObject('modResource', $docid)) {
             $breadcrumbpath .= $parentids[$i] . '/';
         }
         $path = str_replace('{breadcrumb}', $breadcrumbpath, $path);
+    }
 
-    } else {
-        $path = str_replace('{id}', $docid, $path);
-        $path = str_replace('{pagetitle}', $resource->get('pagetitle'), $path);
-        $path = str_replace('{alias}', $resource->get('alias'), $path);
-        $path = str_replace('{parent}', $resource->get('parent'), $path);
-        $path = str_replace('{ultimateparent}', $ultimateParent, $path);
-        if ($template = $resource->getOne('Template')) {
-            $path = str_replace('{templatename}', $template->get('templatename'), $path);
-        }
-        if ($user = $modx->user) {
-            $path = str_replace('{username}', $modx->user->get('username'), $path);
-        }
+    if (!empty($tvname)){
+        $path = str_replace('{tv_value}', $resource->getTVValue($tvname), $path);
+    }
+    $path = str_replace('{id}', $docid, $path);
+    $path = str_replace('{pagetitle}', $resource->get('pagetitle'), $path);
+    $path = str_replace('{alias}', $resource->get('alias'), $path);
+    $path = str_replace('{parent}', $resource->get('parent'), $path);
+    $path = str_replace('{context_key}', $resource->get('context_key'), $path);
+    $path = str_replace('{ultimateparent}', $ultimateParent, $path);
+    if ($template = $resource->getOne('Template')) {
+        $path = str_replace('{templatename}', $template->get('templatename'), $path);
+    }
+    if ($user = $modx->user) {
+        $path = str_replace('{username}', $modx->user->get('username'), $path);
     }
 
     $fullpath = $modx->getOption('base_path') . $path;
@@ -108,8 +119,7 @@ if ($resource = $modx->getObject('modResource', $docid)) {
         $permissions = octdec('0' . (int)($modx->getOption('new_folder_permissions', null, '755', true)));
         if (!@mkdir($fullpath, $permissions, true)) {
             $modx->log(MODX_LOG_LEVEL_ERROR, sprintf('[resourceMediaPath]: could not create directory %s).', $fullpath));
-        }
-        else{
+        } else {
             chmod($fullpath, $permissions);
         }
     }

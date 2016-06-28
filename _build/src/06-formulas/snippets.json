@@ -23,6 +23,10 @@
                     "description": "Takes in a comma separated string and turns each value into a tag.",
                     "category": "f_modifiers"
                 },{
+                    "name": "textToNumber",
+                    "description": "Turn a written number into an actual numeric value.",
+                    "category": "f_modifiers"
+                },{
                     "name": "getResourceLevel",
                     "description": "Shows the level based on the number of parent ID's.",
                     "category": "f_resources"
