@@ -15,6 +15,9 @@
                     "name": "sliderRowImageContent",
                     "category": "m_presentation"
                 },{
+                    "name": "galleryRowImage",
+                    "category": "m_presentation"
+                },{
                     "name": "accordionRowBasic",
                     "category": "m_presentation"
                 },{

@@ -21,6 +21,9 @@
                     "name": "cbFieldMessageSize",
                     "category": "a_cb_fields"
                 },{
+                    "name": "cbGalleryDisplayType",
+                    "category": "a_cb_fields"
+                },{
                     "name": "cbTwitterTemplates",
                     "category": "a_cb_fields"
                 },{

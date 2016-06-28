@@ -6,6 +6,9 @@
                     "name": "sliderOuter",
                     "category": "o_presentation"
                 },{
+                    "name": "galleryOuter",
+                    "category": "o_presentation"
+                },{
                     "name": "accordionOuter",
                     "category": "o_presentation"
                 },{
