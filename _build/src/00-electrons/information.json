@@ -18,7 +18,7 @@
                     "name": "e_info_intangible",
                     "parent": "e_information"
                 },{
-                    "name": "e_info_organisation",
+                    "name": "e_info_organization",
                     "parent": "e_information"
                 },{
                     "name": "e_info_person",

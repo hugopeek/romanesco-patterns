@@ -77,9 +77,6 @@
 
             "categories": [
                 {
-                    "name": "e_info_organization",
-                    "parent": "e_information"
-                },{
                     "name": "Org. - Presentation",
                     "parent": "e_info_organization"
                 },{
