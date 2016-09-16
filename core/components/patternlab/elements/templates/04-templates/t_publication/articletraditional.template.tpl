@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
+[[setTemplateType? &type=`detail`]]
 [[setUserPlaceholders? &userId=`[[*article_author]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
