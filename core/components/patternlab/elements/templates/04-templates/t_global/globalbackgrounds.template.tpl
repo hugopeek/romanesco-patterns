@@ -6,7 +6,7 @@
 }
 .background:before,
 .background:after {
-    content: ' ';
+    content: '';
     display: block;
     position: absolute;
     left: -1%;
@@ -45,12 +45,18 @@
 [[pdoResources?
     &parents=`0`
     &limit=`0`
+    &showUnpublished=`1`
     &tpl=`globalBackgroundImgOverviewCSS`
     &includeTVs=`overview_img_pano,overview_img_wide`
     &tvFilters=`header_background_img!==`
 ]]
 
 /* Load backgrounds for all tiled Portfolio overviews */
+
+.background.project:after {
+    position: relative;
+    padding-top: 65%;
+}
 
 [[pdoResources?
     &parents=`[[++patternlab.portfolio_container_id]]`
@@ -61,6 +67,11 @@
 
 
 /* Load backgrounds for all tiled Team overviews */
+
+.background.person:after {
+    position: relative;
+    padding-top: 100%;
+}
 
 [[pdoResources?
     &parents=`[[++patternlab.team_container_id]]`
