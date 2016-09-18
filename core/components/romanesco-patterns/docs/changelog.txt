@@ -1,5 +1,15 @@
 # Changelog for Romanesco
 
+## Romanesco 0.10.0
+
+New features:
+- Add option to divide columns horizontally or celled
+
+Fixes and improvements:
+- Split PatternLab package into Romanesco Patterns and Backyard [BC]
+
+---
+
 ## Romanesco 0.9.1
 Released on June 28, 2016
 

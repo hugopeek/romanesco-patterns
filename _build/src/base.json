@@ -1,9 +1,9 @@
 {
-    "name": "PatternLab",
-    "lowCaseName": "patternlab",
-    "description": "PatternLab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
+    "name": "Romanesco Patterns",
+    "lowCaseName": "romanesco-patterns",
+    "description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
     "author": "Hugo Peek",
-    "version": "0.9.0",
+    "version": "0.10.0",
 
     "package": {
         "elements": {
@@ -18,8 +18,6 @@
                     "name": "03-organisms"
                 },{
                     "name": "04-templates"
-                },{
-                    "name": "05-pages"
                 },{
                     "name": "06-formulas"
                 },{
