@@ -1,5 +1,5 @@
 <div class="column">
-    [[$imgOverviewPersonLink? &classes=`circular`]]
+    [[!$imgOverviewPersonLink? &classes=`circular`]]
 </div>
 
 <div class="[[+cols]] wide floated column">

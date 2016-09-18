@@ -1,4 +1,4 @@
-[[$imgOverviewPersonAvatarLink]]
+[[!$imgOverviewPersonAvatarLink]]
 
 <div class="content">
     <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>
@@ -6,6 +6,6 @@
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<div class="description">[[+person_jobtitle]]</div>`
+        &then=`<div class="description">[[+person_jobtitle:empty=`[[+longtitle]]`]]</div>`
     ]]
 </div>

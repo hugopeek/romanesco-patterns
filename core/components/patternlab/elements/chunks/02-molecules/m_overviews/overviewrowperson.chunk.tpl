@@ -1,3 +1,3 @@
-<section class="center aligned [[+column_type]] team" style="min-height: 300px;">
+<section class="[[+column_type]] person">
     [[!$[[+row_tpl]]]]
 </section>

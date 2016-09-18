@@ -1,4 +1,4 @@
-[[$imgOverviewPersonLink]]
+[[!$imgOverviewPersonLink]]
 
 <div class="center aligned content">
     <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>

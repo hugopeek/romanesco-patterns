@@ -1,3 +1,3 @@
-<section class="[[+column_type]] portfolio" style="min-height: 300px;">
+<section class="[[+column_type]] project">
     [[!$[[+row_tpl]]]]
 </section>

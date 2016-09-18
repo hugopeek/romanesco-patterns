@@ -51,7 +51,7 @@
                     "category": "Address",
                     "sortOrder": "2",
                     "templates": [
-                        ""
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "House number",
@@ -61,7 +61,7 @@
                     "category": "Address",
                     "sortOrder": "3",
                     "templates": [
-                        ""
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Postal code",
@@ -71,7 +71,7 @@
                     "category": "Address",
                     "sortOrder": "4",
                     "templates": [
-                        ""
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Locality",
@@ -81,7 +81,7 @@
                     "category": "Address",
                     "sortOrder": "10",
                     "templates": [
-                        ""
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Region",
@@ -91,7 +91,7 @@
                     "category": "Address",
                     "sortOrder": "11",
                     "templates": [
-                        ""
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Country",
@@ -101,7 +101,7 @@
                     "category": "Address",
                     "sortOrder": "12",
                     "templates": [
-                        ""
+                        "@@templates_portfolio"
                     ]
                 },{
                     "caption": "Start date",
