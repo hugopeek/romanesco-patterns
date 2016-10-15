@@ -7,6 +7,7 @@ New features:
 
 Fixes and improvements:
 - Split PatternLab package into Romanesco Patterns and Backyard [BC]
+- Change prefix of FormBlocks system settings [BC]
 - Change / fix all paths related to old PatternLab package
 
 ---

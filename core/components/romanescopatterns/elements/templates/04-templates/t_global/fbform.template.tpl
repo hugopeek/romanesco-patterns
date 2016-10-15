@@ -1,7 +1,7 @@
 [[*pagetitle:fbStripAsAlias:toPlaceholder=`title`]]
 
 [[!FormIt?
-    &hooks=`spam,email,[[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]][[++patternlab.fb_save_form:eq=`1`:then=`FormItSaveForm,`]]redirect`
+    &hooks=`spam,email,[[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]][[++formblocks.save_form:eq=`1`:then=`FormItSaveForm,`]]redirect`
 
     &emailTpl=`[[*fb_email_template:empty=`fbEmail`]]`
     &emailTo=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to:empty=`[[++client_email:empty=`[[++emailsender]]`]]`]]`]]`
@@ -9,7 +9,7 @@
     &emailBCC=`[[*fb_email_bcc]]`
     &emailFrom=`[[*fb_email_from:empty=`[[++emailsender]]`]]`
     &emailFromName=`[[*fb_email_from_name:empty=`[[++site_name]]`]]`
-    [[cbGetFieldContent:notempty=`&emailReplyTo=`[[+fb[[*id]]-email]]``? &field=`[[++patternlab.fb_input_email_id]]`]]
+    [[cbGetFieldContent:notempty=`&emailReplyTo=`[[+fb[[*id]]-email]]``? &field=`[[++formblocks.cb_input_email_id]]`]]
     &emailSubject=`[[*fb_email_subject:empty=`[[%formblocks.email.subject]]`]]`
 
     [[*fb_autoresponder_toggle:eq=`1`:then=`
@@ -24,8 +24,8 @@
     [[-&customValidators=`requiredIf,requiredIfNot`]]
     &validate=`
         [[!fbValidateProcessJSON? &json=`[[!fbEmailGetJSON? &formID=`[[*id]]`]]`]]
-        [[cbGetFieldContent:notempty=`fb[[*id]]-email:email:required,`? &field=`[[++patternlab.fb_input_email_id]]`]]
-        [[cbGetFieldContent:notempty=`fb[[*id]]-accept-terms:required,`? &field=`[[++patternlab.fb_accept_terms_id]]`]]
+        [[cbGetFieldContent:notempty=`fb[[*id]]-email:email:required,`? &field=`[[++formblocks.cb_input_email_id]]`]]
+        [[cbGetFieldContent:notempty=`fb[[*id]]-accept-terms:required,`? &field=`[[++formblocks.cb_accept_terms_id]]`]]
         [[$fbValidateCustomFields:notempty=`[[$fbValidateCustomFields]]`]]
         workemail:blank`
     &placeholderPrefix=`fb[[*id]].`
