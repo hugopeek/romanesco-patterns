@@ -1,6 +1,6 @@
 --- Select a team member ---==||
 [[getResources?
-    &parents=`[[++patternlab.team_container_id]]`
+    &parents=`[[++romanesco.team_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`

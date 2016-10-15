@@ -73,7 +73,7 @@
 
                 [[*article_comments:isnot=`0`:then=`
                 <section id="comments" class="ui vertical stripe segment white">
-                    <h2 class="ui big header">[[%patternlab.article.comments]]</h2>
+                    <h2 class="ui big header">[[%romanesco.article.comments]]</h2>
                     [[$articleCommentsDisqus]]
                 </section>
                 `]]
@@ -81,7 +81,7 @@
                 <footer class="ui vertical stripe segment white">
                     <div class="ui two column grid">
                         <div class="column">
-                            <a href="[[~[[*parent]]]]" class="primary ui button"><i class="icon left arrow"></i>[[%patternlab.article.back_to_overview]]</a>
+                            <a href="[[~[[*parent]]]]" class="primary ui button"><i class="icon left arrow"></i>[[%romanesco.article.back_to_overview]]</a>
                         </div>
                         <div class="right aligned column">
                             [[!$socialShareButtons]]
@@ -94,7 +94,7 @@
                 <section class="ui equal width middle aligned large screen only grid">
                     <div class="column">
                         <h3 class="ui tiny header">
-                            [[%patternlab.article.share_this]]
+                            [[%romanesco.article.share_this]]
                         </h3>
                     </div>
                     <div class="right aligned column">
@@ -118,20 +118,20 @@
                 </section>
 
                 <section class="ui vertical stripe segment white">
-                    <h3>[[%patternlab.article.read_another]]</h3>
+                    <h3>[[%romanesco.article.read_another]]</h3>
 
                     <div class="ui top attached tabular menu">
                         <a class="item active"
                            data-tab="segment-publication-1"
                            role="tab"
                            aria-selected="false">
-                            [[%patternlab.article.latest]]
+                            [[%romanesco.article.latest]]
                         </a>
                         <a class="item"
                            data-tab="segment-publication-2"
                            role="tab"
                            aria-selected="false">
-                            [[%patternlab.article.most_viewed]]
+                            [[%romanesco.article.most_viewed]]
                         </a>
                     </div>
 
@@ -141,7 +141,7 @@
                          aria-hidden="false">
                         <div class="ui divided items">
                             [[getResources?
-                                &parents=`[[++patternlab.publication_container_id]]`
+                                &parents=`[[++romanesco.publication_container_id]]`
                                 &tpl=`overviewRowArticleItemBasic`
                                 &includeTVs=`1`
                                 &processTVs=`1`
@@ -165,12 +165,12 @@
                         <div class="ui divided items">
                             [[getResources?
                                 &parents=`-1`
-                                &resources=`[[Hits? &parents=`[[++patternlab.publication_container_id]]` &limit=`5` &outputSeparator=`,`]]`
+                                &resources=`[[Hits? &parents=`[[++romanesco.publication_container_id]]` &limit=`5` &outputSeparator=`,`]]`
                                 &tpl=`overviewRowArticleItemBasic`
                                 &includeTVs=`1`
                                 &processTVs=`1`
                                 &showHidden=`1`
-                                &sortby=`FIELD(modResource.id, [[Hits? &parents=`[[++patternlab.publication_container_id]]` &limit=`5` &outputSeparator=`,`]] )`
+                                &sortby=`FIELD(modResource.id, [[Hits? &parents=`[[++romanesco.publication_container_id]]` &limit=`5` &outputSeparator=`,`]] )`
                                 &sortdir=`ASC`
 
                                 &column_type=`item`

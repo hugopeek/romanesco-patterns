@@ -6,7 +6,7 @@
         <div class="six wide tablet six wide computer four wide large screen column">
             [[SimpleSearchForm?
                 &tpl=`searchField`
-                &landing=`[[++patternlab.search_result_id]]`
+                &landing=`[[++romanesco.search_result_id]]`
             ]]
         </div>
     </div>

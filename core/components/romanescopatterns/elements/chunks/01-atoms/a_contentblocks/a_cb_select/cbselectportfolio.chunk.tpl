@@ -1,5 +1,5 @@
 [[getResources?
-    &parents=`[[++patternlab.portfolio_container_id]]`
+    &parents=`[[++romanesco.portfolio_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]=[[+id]]`
     &limit=`99`
     &showHidden=`1`

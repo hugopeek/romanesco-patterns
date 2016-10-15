@@ -47,10 +47,12 @@
         "systemSettings": [
             {
                 "key": "global_backgrounds_id",
+                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             },{
                 "key": "global_footer_id",
+                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             }

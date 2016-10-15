@@ -4,7 +4,7 @@
  *
  */
 
-$assetsPathJS = $modx->getOption('patternlab.custom_js_path');
+$assetsPathJS = $modx->getOption('romanesco.custom_js_path');
 
 // Footer
 $modx->regClientScript($assetsPathJS . '/tablesort.js');

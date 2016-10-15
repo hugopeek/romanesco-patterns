@@ -1,6 +1,6 @@
 --- Select a testimonial ---==||
 [[getResources?
-    &parents=`[[++patternlab.testimonial_container_id]]`
+    &parents=`[[++romanesco.testimonial_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`

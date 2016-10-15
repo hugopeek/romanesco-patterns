@@ -1,5 +1,5 @@
 <a class="circular [[+classes]] ui button facebook icon"
-   title="[[+title:empty=`[[%patternlab.social.connect_facebook_title]]`]]"
+   title="[[+title:empty=`[[%romanesco.social.connect_facebook_title]]`]]"
    target="_blank"
    href="[[+account:empty=`[[++social_facebook]]`]]"
    property="sameAs">

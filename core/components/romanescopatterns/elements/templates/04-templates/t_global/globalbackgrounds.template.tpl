@@ -59,7 +59,7 @@
 }
 
 [[pdoResources?
-    &parents=`[[++patternlab.portfolio_container_id]]`
+    &parents=`[[++romanesco.portfolio_container_id]]`
     &limit=`0`
     &tpl=`globalBackgroundImgOverviewCSS`
     &includeTVs=`overview_img_pano,overview_img_wide`
@@ -74,7 +74,7 @@
 }
 
 [[pdoResources?
-    &parents=`[[++patternlab.team_container_id]]`
+    &parents=`[[++romanesco.team_container_id]]`
     &limit=`0`
     &tpl=`globalBackgroundImgPersonCSS`
     &includeTVs=`person_image,person_image_loose`

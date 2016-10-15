@@ -1,6 +1,6 @@
 --- Select a client ---==||
 [[getResources?
-    &parents=`[[++patternlab.client_container_id]]`
+    &parents=`[[++romanesco.client_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`

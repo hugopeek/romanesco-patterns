@@ -2,7 +2,7 @@
 // Not implemented yet!!
 $parent = $modx->getOption('parent', $scriptProperties, '');
 $id = $modx->getOption('id', $scriptProperties, '');
-$pubparent = $modx->getOption('patternlab.publication_container_id', $scriptProperties, '');
+$pubparent = $modx->getOption('romanesco.publication_container_id', $scriptProperties, '');
 $fullwidth = $modx->getOption('fullwidth', $scriptProperties, '');
 
 if ($parent === $pubparent) {

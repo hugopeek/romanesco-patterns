@@ -21,7 +21,7 @@
             <div class="ui container">
                 <div class="ui two column grid">
                     <div class="column">
-                        <a href="[[~[[*parent]]]]" class="basic ui button"><i class="icon left arrow"></i>[[%patternlab.article.back_to_overview]]</a>
+                        <a href="[[~[[*parent]]]]" class="basic ui button"><i class="icon left arrow"></i>[[%romanesco.article.back_to_overview]]</a>
                     </div>
                     <div class="right aligned column">
                         [[!$socialShareButtons? &button_type=`basic`]]
@@ -46,7 +46,7 @@
             <div class="ui container">
                 <div class="ui two column grid">
                     <div class="column">
-                        <a href="[[~[[*parent]]]]" class="primary ui button"><i class="icon left arrow"></i>[[%patternlab.article.back_to_overview]]</a>
+                        <a href="[[~[[*parent]]]]" class="primary ui button"><i class="icon left arrow"></i>[[%romanesco.article.back_to_overview]]</a>
                     </div>
                     <div class="right aligned column">
                         [[!$socialShareButtons]]

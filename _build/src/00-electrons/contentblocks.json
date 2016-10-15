@@ -3,6 +3,7 @@
         "systemSettings": [
             {
                 "key": "cb_field_code_id",
+                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""

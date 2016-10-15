@@ -1,6 +1,6 @@
 --- Select a CTA ---==@INHERIT||
 [[getResources?
-    &parents=`[[++patternlab.cta_container_id]]`
+    &parents=`[[++romanesco.cta_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`

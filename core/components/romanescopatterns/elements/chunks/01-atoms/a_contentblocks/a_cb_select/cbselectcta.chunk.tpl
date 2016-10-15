@@ -1,6 +1,6 @@
 --- Select a CTA ---=
 [[getResources?
-    &parents=`[[++patternlab.cta_container_id]]`
+    &parents=`[[++romanesco.cta_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]=[[+id]]`
     &limit=`99`
     &showHidden=`1`

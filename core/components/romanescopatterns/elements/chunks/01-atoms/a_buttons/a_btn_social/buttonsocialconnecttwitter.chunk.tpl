@@ -1,5 +1,5 @@
 <a class="circular [[+classes]] ui button twitter icon"
-   title="[[+title:empty=`[[%patternlab.social.connect_twitter_title]]`]]"
+   title="[[+title:empty=`[[%romanesco.social.connect_twitter_title]]`]]"
    target="_blank"
    href="https://twitter.com/[[+account:empty=`[[++social_twitter]]`]]"
    property="sameAs">

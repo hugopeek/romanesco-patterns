@@ -10,6 +10,6 @@
     </p>
     <p class="extract"><em>[[+extract]]</em></p>
     <a class="primary ui button" href="[[+link]]" title="[[+longtitle]]">
-        [[%patternlab.search.result_button_text]]
+        [[%romanesco.search.result_button_text]]
     </a>
 </section>

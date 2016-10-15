@@ -1,6 +1,6 @@
 --- Select a project ---==||
 [[getResources?
-    &parents=`[[++patternlab.portfolio_container_id]]`
+    &parents=`[[++romanesco.portfolio_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`
