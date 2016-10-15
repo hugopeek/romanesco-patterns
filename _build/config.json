@@ -1,9 +1,9 @@
 {
-	"name": "PatternLab",
-	"lowCaseName": "patternlab",
-	"description": "PatternLab MODX: an experiment to combine the atomic design philosophy with MODX templating structure.",
+	"name": "RomanescoPatterns",
+	"lowCaseName": "romanescopatterns",
+	"description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure. Romanesco Patterns is the pattern library that contains all core elements of a typical Romanesco installation.",
 	"author": "Hugo Peek",
-	"version": "0.9.0",
+	"version": "0.10.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -21,9 +21,6 @@
 				},
 				{
 					"name": "04-templates"
-				},
-				{
-					"name": "05-pages"
 				},
 				{
 					"name": "06-formulas"
@@ -116,7 +113,7 @@
 					"parent": "e_information"
 				},
 				{
-					"name": "e_info_organisation",
+					"name": "e_info_organization",
 					"parent": "e_information"
 				},
 				{
@@ -468,10 +465,6 @@
 					"parent": "06-formulas"
 				},
 				{
-					"name": "c_contentblocks",
-					"parent": "07-computations"
-				},
-				{
 					"name": "c_formblocks",
 					"parent": "07-computations"
 				},
@@ -506,10 +499,6 @@
 				{
 					"name": "Date",
 					"parent": "e_info_intangible"
-				},
-				{
-					"name": "e_info_organization",
-					"parent": "e_information"
 				},
 				{
 					"name": "Org. - Presentation",
@@ -1580,7 +1569,8 @@
 					"category": "Address",
 					"sortOrder": "2",
 					"templates": [
-						""
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1591,7 +1581,8 @@
 					"category": "Address",
 					"sortOrder": "3",
 					"templates": [
-						""
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1602,7 +1593,8 @@
 					"category": "Address",
 					"sortOrder": "4",
 					"templates": [
-						""
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1613,7 +1605,8 @@
 					"category": "Address",
 					"sortOrder": "10",
 					"templates": [
-						""
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1624,7 +1617,8 @@
 					"category": "Address",
 					"sortOrder": "11",
 					"templates": [
-						""
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -1635,7 +1629,8 @@
 					"category": "Address",
 					"sortOrder": "12",
 					"templates": [
-						""
+						"PortfolioProject",
+"Porfolio - Project"
 					]
 				},
 				{
@@ -3071,20 +3066,6 @@
 			],
 			"plugins": [
 				{
-					"name": "cbClassSelectInput",
-					"category": "c_contentblocks",
-					"events": [
-						"ContentBlocks_RegisterInputs"
-					]
-				},
-				{
-					"name": "cbHeadingImageInput",
-					"category": "c_contentblocks",
-					"events": [
-						"ContentBlocks_RegisterInputs"
-					]
-				},
-				{
 					"name": "fbLexiconMgr",
 					"category": "c_formblocks",
 					"events": [
@@ -3115,66 +3096,6 @@
 			]
 		},
 		"systemSettings": [
-			{
-				"key": "semantic_dist_path",
-				"type": "textfield",
-				"area": "Paths",
-				"value": "assets/semantic/dist"
-			},
-			{
-				"key": "custom_css_path",
-				"type": "textfield",
-				"area": "Paths",
-				"value": "assets/semantic/dist/themes/romanesco/assets/css"
-			},
-			{
-				"key": "custom_js_path",
-				"type": "textfield",
-				"area": "Paths",
-				"value": "assets/semantic/dist/themes/romanesco/assets/js"
-			},
-			{
-				"key": "custom_vendor_path",
-				"type": "textfield",
-				"area": "Paths",
-				"value": "assets/semantic/dist/themes/romanesco/assets/vendor"
-			},
-			{
-				"key": "date_format_short",
-				"type": "textfield",
-				"area": "Date and Time",
-				"value": "%d-%m-%Y"
-			},
-			{
-				"key": "date_format_medium",
-				"type": "textfield",
-				"area": "Date and Time",
-				"value": "%e %b %Y"
-			},
-			{
-				"key": "date_format_long",
-				"type": "textfield",
-				"area": "Date and Time",
-				"value": "%e %B %Y"
-			},
-			{
-				"key": "date_format_full",
-				"type": "textfield",
-				"area": "Date and Time",
-				"value": "%A %e %B, %Y"
-			},
-			{
-				"key": "dev_mode",
-				"type": "combo-boolean",
-				"area": "Settings",
-				"value": "1"
-			},
-			{
-				"key": "user_team_id",
-				"type": "numberfield",
-				"area": "Users",
-				"value": ""
-			},
 			{
 				"key": "cb_field_code_id",
 				"type": "numberfield",

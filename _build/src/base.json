@@ -1,7 +1,7 @@
 {
-    "name": "Romanesco Patterns",
-    "lowCaseName": "romanesco-patterns",
-    "description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
+    "name": "RomanescoPatterns",
+    "lowCaseName": "romanescopatterns",
+    "description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure. Romanesco Patterns is the pattern library that contains all core elements of a typical Romanesco installation.",
     "author": "Hugo Peek",
     "version": "0.10.0",
 
@@ -24,60 +24,6 @@
                     "name": "07-computations"
                 }
             ]
-        },
-
-        "systemSettings": [
-            {
-                "key": "semantic_dist_path",
-                "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist"
-            },{
-                "key": "custom_css_path",
-                "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist/themes/romanesco/assets/css"
-            },{
-                "key": "custom_js_path",
-                "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist/themes/romanesco/assets/js"
-            },{
-                "key": "custom_vendor_path",
-                "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist/themes/romanesco/assets/vendor"
-            },{
-                "key": "date_format_short",
-                "type": "textfield",
-                "area": "Date and Time",
-                "value": "%d-%m-%Y"
-            },{
-                "key": "date_format_medium",
-                "type": "textfield",
-                "area": "Date and Time",
-                "value": "%e %b %Y"
-            },{
-                "key": "date_format_long",
-                "type": "textfield",
-                "area": "Date and Time",
-                "value": "%e %B %Y"
-            },{
-                "key": "date_format_full",
-                "type": "textfield",
-                "area": "Date and Time",
-                "value": "%A %e %B, %Y"
-            },{
-                "key": "dev_mode",
-                "type": "combo-boolean",
-                "area": "Settings",
-                "value": "1"
-            },{
-                "key": "user_team_id",
-                "type": "numberfield",
-                "area": "Users",
-                "value": ""
-            }
-        ]
+        }
     }
 }

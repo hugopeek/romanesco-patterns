@@ -1,4 +1,4 @@
-# Changelog for Romanesco
+# Changelog for the Romanesco pattern library
 
 ## Romanesco 0.10.0
 
@@ -7,6 +7,7 @@ New features:
 
 Fixes and improvements:
 - Split PatternLab package into Romanesco Patterns and Backyard [BC]
+- Change / fix all paths related to old PatternLab package
 
 ---
 
