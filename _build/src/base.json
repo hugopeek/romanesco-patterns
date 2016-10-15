@@ -1,7 +1,7 @@
 {
-    "name": "RomanescoPatterns",
-    "lowCaseName": "romanescopatterns",
-    "description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure. Romanesco Patterns is the pattern library that contains all core elements of a typical Romanesco installation.",
+    "name": "Romanesco",
+    "lowCaseName": "romanesco",
+    "description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
     "author": "Hugo Peek",
     "version": "0.10.0",
 

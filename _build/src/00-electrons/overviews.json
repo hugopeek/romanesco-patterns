@@ -180,27 +180,22 @@
         "systemSettings": [
             {
                 "key": "publication_container_id",
-                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             },{
                 "key": "team_container_id",
-                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             },{
                 "key": "testimonial_container_id",
-                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             },{
                 "key": "portfolio_container_id",
-                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             },{
                 "key": "client_container_id",
-                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             }

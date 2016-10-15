@@ -3,19 +3,16 @@
         "systemSettings": [
             {
                 "key": "search_add_to_menu",
-                "namespace": "romanesco",
                 "type": "combo-boolean",
                 "area": "Search",
                 "value": "0"
             },{
                 "key": "search_result_id",
-                "namespace": "romanesco",
                 "type": "textfield",
                 "area": "Search",
                 "value": ""
             },{
                 "key": "search_result_limit",
-                "namespace": "romanesco",
                 "type": "textfield",
                 "area": "Search",
                 "value": "10"

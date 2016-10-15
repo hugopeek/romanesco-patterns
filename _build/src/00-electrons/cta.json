@@ -42,7 +42,6 @@
         "systemSettings": [
             {
                 "key": "cta_container_id",
-                "namespace": "romanesco",
                 "type": "numberfield",
                 "area": "Pages"
             }

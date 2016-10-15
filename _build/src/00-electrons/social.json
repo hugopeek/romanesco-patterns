@@ -99,31 +99,26 @@
         "systemSettings": [
             {
                 "key": "social_twitter",
-                "namespace": "romanesco",
                 "type": "textfield",
                 "area": "Social",
                 "value": ""
             },{
                 "key": "twitter_consumer_key",
-                "namespace": "romanesco",
                 "type": "textfield",
                 "area": "Social",
                 "value": ""
             },{
                 "key": "twitter_consumer_secret",
-                "namespace": "romanesco",
                 "type": "textfield",
                 "area": "Social",
                 "value": ""
             },{
                 "key": "twitter_access_token",
-                "namespace": "romanesco",
                 "type": "textfield",
                 "area": "Social",
                 "value": ""
             },{
                 "key": "twitter_access_token_secret",
-                "namespace": "romanesco",
                 "type": "textfield",
                 "area": "Social",
                 "value": ""
