@@ -15,6 +15,9 @@
                     "name": "globalBackgroundImgTVOptions",
                     "category": "a_global"
                 },{
+                    "name": "globalBackgroundImgTVOptionsRow",
+                    "category": "a_global"
+                },{
                     "name": "iconTVInputOptions",
                     "category": "a_global"
                 }
