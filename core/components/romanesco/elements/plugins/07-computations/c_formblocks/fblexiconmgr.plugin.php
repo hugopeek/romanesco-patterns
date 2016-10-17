@@ -1,2 +1,2 @@
 <?php
-$modx->controller->addLexiconTopic('patternlab:formblocks');
+$modx->controller->addLexiconTopic('romanescobackyard:formblocks');
