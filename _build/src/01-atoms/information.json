@@ -6,7 +6,7 @@
                     "name": "infoNamePerson",
                     "category": "a_information"
                 },{
-                    "name": "infoNameOrganisation",
+                    "name": "infoNameOrganization",
                     "category": "a_information"
                 },{
                     "name": "infoRatingStars",
