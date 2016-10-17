@@ -3097,6 +3097,60 @@
 		},
 		"systemSettings": [
 			{
+				"key": "semantic_dist_path",
+				"type": "textfield",
+				"area": "Paths",
+				"value": "assets/semantic/dist"
+			},
+			{
+				"key": "custom_css_path",
+				"type": "textfield",
+				"area": "Paths",
+				"value": "assets/semantic/dist/themes/romanesco/assets/css"
+			},
+			{
+				"key": "custom_js_path",
+				"type": "textfield",
+				"area": "Paths",
+				"value": "assets/semantic/dist/themes/romanesco/assets/js"
+			},
+			{
+				"key": "custom_vendor_path",
+				"type": "textfield",
+				"area": "Paths",
+				"value": "assets/semantic/dist/themes/romanesco/assets/vendor"
+			},
+			{
+				"key": "date_format_short",
+				"type": "textfield",
+				"area": "Date and Time",
+				"value": "%d-%m-%Y"
+			},
+			{
+				"key": "date_format_medium",
+				"type": "textfield",
+				"area": "Date and Time",
+				"value": "%e %b %Y"
+			},
+			{
+				"key": "date_format_long",
+				"type": "textfield",
+				"area": "Date and Time",
+				"value": "%e %B %Y"
+			},
+			{
+				"key": "date_format_full",
+				"type": "textfield",
+				"area": "Date and Time",
+				"value": "%A %e %B, %Y"
+			},
+			{
+				"key": "dev_mode",
+				"type": "combo-boolean",
+				"area": "Settings",
+				"value": "1"
+			},
+			{
 				"key": "cb_field_code_id",
 				"type": "numberfield",
 				"area": "ContentBlocks - Settings",
