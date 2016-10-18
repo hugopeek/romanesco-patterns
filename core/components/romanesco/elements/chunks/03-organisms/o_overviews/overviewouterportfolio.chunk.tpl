@@ -13,6 +13,7 @@
         &tpl=`overviewRowProject[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
+        &tvPrefix=``
         &showHidden=`1`
         &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
@@ -25,8 +26,6 @@
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
         &de_emphasize=`[[+de_emphasize]]`
-
-        &tvPrefix=``
     ]]
 </div>
 

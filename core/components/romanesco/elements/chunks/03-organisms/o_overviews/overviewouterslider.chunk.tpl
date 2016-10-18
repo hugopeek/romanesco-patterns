@@ -9,6 +9,7 @@
     &tpl=`overviewRowFluid`
     &includeTVs=`1`
     &processTVs=`1`
+    &tvPrefix=``
     &showHidden=`[[+show_hidden:default=`0`]]`
     &sortby=`[[+sortby]]`
     &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`

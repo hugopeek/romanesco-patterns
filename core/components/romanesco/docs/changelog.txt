@@ -3,12 +3,25 @@
 ## Romanesco 0.10.0
 
 New features:
-- Add option to divide columns horizontally or celled
+- Add option to divide CB layout columns
+- Add template to view Testimonials as logo
+- Add justified alignment setting to CB field options
+- Add alignment setting to heading chunk
 
 Fixes and improvements:
 - Split PatternLab package into Romanesco Patterns and Backyard [BC]
 - Change prefix of FormBlocks system settings [BC]
 - Change / fix all paths related to old PatternLab package [BC]
+- Name changes to improve overall logic [BC]
+- Fix nested layout grids in detail templates receiving incorrect margins
+- Fix TV names in Person and Article overviews
+- Fix caching of nested chunks in Testimonial overviews
+- Fix common pages menu in footer
+- Remove auto-calculated height from gallery image thumbnails
+- Remove / refactor parts that where too project-specific
+- Add ID to hero container, to allow for more accurate targeting in CSS
+- Add some missing class names
+- Various other minor fixes
 
 ---
 
@@ -66,12 +79,3 @@ Fixes and improvements:
 - Fix header image and title inheritance
 - Fix broken image sliders
 - Update jQuery to 2.1.4 and add local fallback for CDN
-
-ContentBlocks added or edited:
-- [Field - New] Tabs (Rich Text)
-- [Field - New] Tabs (Flexible Content)
-- [Field - New] Twitter feed
-- [Layout - Updated] Content + Sidebar
-- [Layout - Updated] Sidebar + Content
-- [Layout - Updated] Content + Sidebar (Nested)
-- [Layout - Updated] Sidebar + Content (Nested)

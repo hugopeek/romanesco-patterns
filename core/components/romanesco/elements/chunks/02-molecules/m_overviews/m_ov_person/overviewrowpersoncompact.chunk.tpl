@@ -1,7 +1,7 @@
 [[!$imgOverviewPersonAvatarLink]]
 
 <div class="content">
-    <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>
+    <a href="[[~[[+id]]]]" class="header">[[+person_firstname:empty=`[[+pagetitle]]`]]</a>
     [[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`

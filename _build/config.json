@@ -1455,7 +1455,7 @@
 				},
 				{
 					"caption": "Author",
-					"name": "author_select",
+					"name": "author_id",
 					"description": "Select the author of this article. He or she must be a MODX user.",
 					"type": "listbox",
 					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
@@ -1488,13 +1488,13 @@
 					]
 				},
 				{
-					"caption": "Client",
-					"name": "client_select",
+					"caption": "Organization",
+					"name": "organization_id",
 					"description": "If this list is empty, you need to add the client first in the Clients component.",
 					"type": "listbox",
 					"inputOptionValues": "@CHUNK tvSelectClient",
-					"category": "Participants",
-					"sortOrder": "1",
+					"category": "About",
+					"sortOrder": "2",
 					"templates": [
 						"PortfolioProject",
 "Porfolio - Project"
@@ -1502,12 +1502,12 @@
 				},
 				{
 					"caption": "Contributors",
-					"name": "contributors_select",
+					"name": "contributors_id",
 					"description": "Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
 					"type": "listbox-multiple",
 					"inputOptionValues": "@CHUNK tvSelectTeam",
-					"category": "Participants",
-					"sortOrder": "2",
+					"category": "About",
+					"sortOrder": "3",
 					"templates": [
 						"PortfolioProject",
 "Porfolio - Project"
@@ -1995,6 +1995,10 @@
 					"category": "a_global"
 				},
 				{
+					"name": "globalBackgroundImgTVOptionsRow",
+					"category": "a_global"
+				},
+				{
 					"name": "iconTVInputOptions",
 					"category": "a_global"
 				},
@@ -2035,7 +2039,7 @@
 					"category": "a_information"
 				},
 				{
-					"name": "infoNameOrganisation",
+					"name": "infoNameOrganization",
 					"category": "a_information"
 				},
 				{
@@ -2117,13 +2121,13 @@
 					"category": "a_select"
 				},
 				{
-					"name": "tvSelectClients",
+					"name": "tvSelectClient",
 					"description": "Get available clients and turn them into input options for use in a selection TV.",
 					"category": "a_select"
 				},
 				{
-					"name": "tvSelectTestimonials",
-					"description": "Get available clients and turn them into input options for use in a selection TV.",
+					"name": "tvSelectTestimonial",
+					"description": "Get available testimonials and turn them into input options for use in a selection TV.",
 					"category": "a_select"
 				},
 				{
@@ -2604,6 +2608,10 @@
 					"category": "a_cb_layouts"
 				},
 				{
+					"name": "cbLayoutDivider",
+					"category": "a_cb_layouts"
+				},
+				{
 					"name": "cbGlobalBackgrounds",
 					"category": "a_cb_layouts"
 				},
@@ -2845,6 +2853,10 @@
 				},
 				{
 					"name": "overviewRowReviewWide",
+					"category": "m_ov_review"
+				},
+				{
+					"name": "overviewRowReviewLogo",
 					"category": "m_ov_review"
 				},
 				{
