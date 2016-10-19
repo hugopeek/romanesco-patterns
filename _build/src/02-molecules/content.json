@@ -12,6 +12,12 @@
                     "name": "headingHierarchySubtitleLink",
                     "category": "m_content"
                 },{
+                    "name": "headerIconFont",
+                    "category": "m_content"
+                },{
+                    "name": "headerIconSVG",
+                    "category": "m_content"
+                },{
                     "name": "imageBasicLink",
                     "category": "m_content"
                 },{

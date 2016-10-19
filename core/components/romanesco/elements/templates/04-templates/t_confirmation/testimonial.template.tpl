@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
-[[setTemplateType? &type=`detail`]]
 [[$head]]
 
 <body id="detail">

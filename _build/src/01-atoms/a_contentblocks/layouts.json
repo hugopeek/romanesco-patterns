@@ -9,6 +9,9 @@
                     "name": "cbLayoutBackgrounds",
                     "category": "a_cb_layouts"
                 },{
+                    "name": "cbLayoutDivider",
+                    "category": "a_cb_layouts"
+                },{
                     "name": "cbGlobalBackgrounds",
                     "category": "a_cb_layouts"
                 },{

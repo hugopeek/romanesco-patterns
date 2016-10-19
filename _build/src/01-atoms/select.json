@@ -11,12 +11,12 @@
                     "description": "Get available team members and turn them into input options for use in a selection TV.",
                     "category": "a_select"
                 },{
-                    "name": "tvSelectClients",
+                    "name": "tvSelectClient",
                     "description": "Get available clients and turn them into input options for use in a selection TV.",
                     "category": "a_select"
                 },{
-                    "name": "tvSelectTestimonials",
-                    "description": "Get available clients and turn them into input options for use in a selection TV.",
+                    "name": "tvSelectTestimonial",
+                    "description": "Get available testimonials and turn them into input options for use in a selection TV.",
                     "category": "a_select"
                 },{
                     "name": "tvSelectPortfolio",

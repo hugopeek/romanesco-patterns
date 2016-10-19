@@ -1,1 +1,1 @@
-<[[+level]] class="ui header">[[+value]]</[[+level]]>
+<[[+level]] class="ui [[+alignment]] header">[[+value]]</[[+level]]>

@@ -1,4 +1,4 @@
-<span vocab="http://schema.org/" typeof="Organization">
+<span class="buttons social connect" vocab="http://schema.org/" typeof="Organization">
     <meta property="name" content="[[++site_name]]">
     [[If?
         &subject=`[[++social_twitter]]`
@@ -23,7 +23,7 @@
     [[If?
         &subject=`[[++social_instagram]]`
         &operator=`notempty`
-        &then=`[[$buttonSocialConnectLinkedin? &classes=`[[+button_type]]`]]`
+        &then=`[[$buttonSocialConnectInstagram? &classes=`[[+button_type]]`]]`
     ]]
     [[If?
         &subject=`[[++social_pinterest]]`

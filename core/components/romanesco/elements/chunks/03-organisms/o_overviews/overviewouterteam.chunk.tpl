@@ -1,6 +1,6 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+layout_column]]`]]
 
-<div class="ui [[+cols]] column doubling stackable [[+padding]] nested [[+[[+prefix]].box_type]]">
+<div class="ui [[+cols]] column doubling stackable [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
         &element=`getResources`
         &cacheKey=`overviews`
@@ -13,6 +13,7 @@
         &tpl=`overviewRowPerson[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
+        &tvPrefix=``
         &showHidden=`1`
         &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
@@ -25,8 +26,6 @@
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
         &de_emphasize=`[[+de_emphasize]]`
-
-        &tvPrefix=``
     ]]
 </div>
 

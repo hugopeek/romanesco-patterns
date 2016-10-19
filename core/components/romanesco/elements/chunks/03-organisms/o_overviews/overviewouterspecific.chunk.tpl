@@ -12,6 +12,7 @@
         &tpl=`overviewRow[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
+        &tvPrefix=``
         &showHidden=`1`
         &sortby=`FIELD(modResource.id, [[+resources]])`
         &sortdir=`ASC`
