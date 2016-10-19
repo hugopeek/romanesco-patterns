@@ -265,10 +265,6 @@
 					"parent": "m_content"
 				},
 				{
-					"name": "m_contentblocks",
-					"parent": "02-molecules"
-				},
-				{
 					"name": "m_cta",
 					"parent": "02-molecules"
 				},
@@ -2176,6 +2172,14 @@
 					"category": "m_content"
 				},
 				{
+					"name": "headerIconFont",
+					"category": "m_content"
+				},
+				{
+					"name": "headerIconSVG",
+					"category": "m_content"
+				},
+				{
 					"name": "imageBasicLink",
 					"category": "m_content"
 				},
@@ -2186,14 +2190,6 @@
 				{
 					"name": "richTextMessage",
 					"category": "m_content"
-				},
-				{
-					"name": "cbHeaderIconSVG",
-					"category": "m_contentblocks"
-				},
-				{
-					"name": "cbHeaderIconFont",
-					"category": "m_contentblocks"
 				},
 				{
 					"name": "ctaContentBlock",
