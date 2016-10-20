@@ -1,4 +1,4 @@
-[[+tv.overview_img_pano:notempty=`
+[[+overview_img_pano:notempty=`
 <a class="ui rounded image" href="[[~[[+id]]]]">
     [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
         &tvname=`overview_img_pano`
