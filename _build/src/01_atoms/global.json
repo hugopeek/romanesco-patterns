@@ -1,0 +1,34 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "globalBackgroundImgCSS",
+                    "category": "a_global"
+                },{
+                    "name": "globalBackgroundImgOverviewCSS",
+                    "category": "a_global"
+                },{
+                    "name": "globalBackgroundImgPersonCSS",
+                    "category": "a_global"
+                },{
+                    "name": "globalBackgroundImgTVOptions",
+                    "category": "a_global"
+                },{
+                    "name": "globalBackgroundImgTVOptionsRow",
+                    "category": "a_global"
+                },{
+                    "name": "iconTVInputOptions",
+                    "category": "a_global"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_global",
+                    "parent": "01_atoms"
+                }
+            ]
+        }
+    }
+}

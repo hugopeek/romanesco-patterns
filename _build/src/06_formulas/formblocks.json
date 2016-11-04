@@ -1,0 +1,46 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "fbEmailGetJSON",
+                    "category": "f_formblocks"
+                },{
+                    "name": "fbGetForms",
+                    "category": "f_formblocks"
+                },{
+                    "name": "fbLoadAssets",
+                    "category": "f_formblocks"
+                },{
+                    "name": "fbSimplxWidgeteer",
+                    "category": "f_formblocks"
+                },{
+                    "name": "fbValidateProcessJSON",
+                    "category": "f_formblocks"
+                },{
+                    "name": "fbPrefixOutput",
+                    "category": "f_fb_modifiers"
+                },{
+                    "name": "fbResetNonAlpha",
+                    "category": "f_fb_modifiers"
+                },{
+                    "name": "fbStripAsAlias",
+                    "category": "f_fb_modifiers"
+                },{
+                    "name": "fbStripNonAlpha",
+                    "category": "f_fb_modifiers"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "f_formblocks",
+                    "parent": "06_formulas"
+                },{
+                    "name": "f_fb_modifiers",
+                    "parent": "f_formblocks"
+                }
+            ]
+        }
+    }
+}

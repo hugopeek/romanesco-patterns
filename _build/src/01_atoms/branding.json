@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "favicons",
+                    "category": "a_branding"
+                },{
+                    "name": "logo",
+                    "category": "a_branding"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_branding",
+                    "parent": "01_atoms"
+                }
+            ]
+        }
+    }
+}

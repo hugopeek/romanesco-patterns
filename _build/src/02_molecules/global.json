@@ -1,0 +1,18 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "structuredDataSite",
+                    "category": "m_global"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "m_global",
+                    "parent": "02_molecules"
+                }
+            ]
+        }
+    }
+}

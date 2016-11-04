@@ -1,0 +1,18 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "hitCount",
+                    "category": "a_stats"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_stats",
+                    "parent": "01_atoms"
+                }
+            ]
+        }
+    }
+}

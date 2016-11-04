@@ -1,0 +1,25 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "imgOverviewPersonLink",
+                    "category": "a_images"
+                },{
+                    "name": "imgOverviewPersonAvatar",
+                    "category": "a_images"
+                },{
+                    "name": "imgOverviewPersonAvatarLink",
+                    "category": "a_images"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_images",
+                    "parent": "01_atoms"
+                }
+            ]
+        }
+    }
+}

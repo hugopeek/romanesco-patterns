@@ -8,29 +8,29 @@
 		"elements": {
 			"categories": [
 				{
-					"name": "00-electrons"
+					"name": "00_electrons"
 				},
 				{
-					"name": "01-atoms"
+					"name": "01_atoms"
 				},
 				{
-					"name": "02-molecules"
+					"name": "02_molecules"
 				},
 				{
-					"name": "03-organisms"
+					"name": "03_organisms"
 				},
 				{
-					"name": "04-templates"
+					"name": "04_templates"
 				},
 				{
-					"name": "06-formulas"
+					"name": "06_formulas"
 				},
 				{
-					"name": "07-computations"
+					"name": "07_computations"
 				},
 				{
 					"name": "e_cta",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "CTA - Settings",
@@ -38,7 +38,7 @@
 				},
 				{
 					"name": "e_formblocks",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "Settings - Email",
@@ -58,7 +58,7 @@
 				},
 				{
 					"name": "e_global",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "Global - Images",
@@ -70,7 +70,7 @@
 				},
 				{
 					"name": "e_headers",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "Header",
@@ -78,7 +78,7 @@
 				},
 				{
 					"name": "e_hub",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "Pattern Library",
@@ -94,7 +94,7 @@
 				},
 				{
 					"name": "e_information",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "e_info_action",
@@ -126,7 +126,7 @@
 				},
 				{
 					"name": "e_overviews",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "Overview - Image",
@@ -142,7 +142,7 @@
 				},
 				{
 					"name": "e_social",
-					"parent": "00-electrons"
+					"parent": "00_electrons"
 				},
 				{
 					"name": "Social",
@@ -150,11 +150,11 @@
 				},
 				{
 					"name": "a_branding",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_buttons",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_btn_social",
@@ -162,11 +162,11 @@
 				},
 				{
 					"name": "a_content",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_contentblocks",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_cb_layouts",
@@ -194,7 +194,7 @@
 				},
 				{
 					"name": "a_formblocks",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_fb_inputs",
@@ -202,23 +202,23 @@
 				},
 				{
 					"name": "a_global",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_hub",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_images",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_information",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_navigation",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_nav_breadcrumbs",
@@ -242,23 +242,23 @@
 				},
 				{
 					"name": "a_search",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_select",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_stats",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_taxonomy",
-					"parent": "01-atoms"
+					"parent": "01_atoms"
 				},
 				{
 					"name": "m_content",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "Content",
@@ -266,11 +266,11 @@
 				},
 				{
 					"name": "m_cta",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_formblocks",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_fb_email",
@@ -282,27 +282,27 @@
 				},
 				{
 					"name": "m_global",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_hub",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_information",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_layouts",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_navigation",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_overviews",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_ov_basic",
@@ -338,91 +338,91 @@
 				},
 				{
 					"name": "m_presentation",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_publication",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_search",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_social",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "m_stats",
-					"parent": "02-molecules"
+					"parent": "02_molecules"
 				},
 				{
 					"name": "o_formblocks",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_global",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_headers",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_hub",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_layouts",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_overviews",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_presentation",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_search",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_social",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "o_toolbars",
-					"parent": "03-organisms"
+					"parent": "03_organisms"
 				},
 				{
 					"name": "t_basic",
-					"parent": "04-templates"
+					"parent": "04_templates"
 				},
 				{
 					"name": "t_publication",
-					"parent": "04-templates"
+					"parent": "04_templates"
 				},
 				{
 					"name": "t_people",
-					"parent": "04-templates"
+					"parent": "04_templates"
 				},
 				{
 					"name": "t_confirmation",
-					"parent": "04-templates"
+					"parent": "04_templates"
 				},
 				{
 					"name": "t_global",
-					"parent": "04-templates"
+					"parent": "04_templates"
 				},
 				{
 					"name": "t_hub",
-					"parent": "04-templates"
+					"parent": "04_templates"
 				},
 				{
 					"name": "f_formblocks",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_fb_modifiers",
@@ -430,43 +430,43 @@
 				},
 				{
 					"name": "f_hub",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_basic",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_modifiers",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_resources",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_templatevars",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_json",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_framework",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_presentation",
-					"parent": "06-formulas"
+					"parent": "06_formulas"
 				},
 				{
 					"name": "c_formblocks",
-					"parent": "07-computations"
+					"parent": "07_computations"
 				},
 				{
 					"name": "c_global",
-					"parent": "07-computations"
+					"parent": "07_computations"
 				},
 				{
 					"name": "About",

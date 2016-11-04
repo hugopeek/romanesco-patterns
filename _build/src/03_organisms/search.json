@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "searchResultOuter",
+                    "category": "o_search"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_search",
+                    "parent": "03_organisms"
+                }
+            ]
+        }
+    }
+}

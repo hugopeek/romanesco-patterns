@@ -1,0 +1,88 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "BasicOverview",
+                    "category": "t_basic"
+                },{
+                    "name": "BasicDetail",
+                    "category": "t_basic"
+                },{
+                    "name": "Home",
+                    "icon": "icon-home",
+                    "category": "t_basic"
+                },{
+                    "name": "Publications",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "ArticleTraditional",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "ArticleReadability",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "ArticleSidenotes",
+                    "icon": "icon-pencil",
+                    "category": "t_publication"
+                },{
+                    "name": "Client",
+                    "icon": "icon-building",
+                    "category": "t_people"
+                },{
+                    "name": "TeamMember",
+                    "icon": "icon-user",
+                    "category": "t_people"
+                },{
+                    "name": "Testimonial",
+                    "icon": "icon-comment-o",
+                    "category": "t_confirmation"
+                },{
+                    "name": "PortfolioProject",
+                    "icon": "icon-briefcase",
+                    "category": "t_confirmation"
+                },{
+                    "name": "GlobalBackgrounds",
+                    "icon": "icon-image",
+                    "category": "t_global"
+                },{
+                    "name": "GlobalCTA",
+                    "icon": "icon-bullhorn",
+                    "category": "t_global"
+                },{
+                    "name": "fbForm",
+                    "icon": "icon-check-square-o",
+                    "category": "t_global"
+                },{
+                    "name": "ProjectHub",
+                    "icon": "icon-history",
+                    "category": "t_hub"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_basic",
+                    "parent": "04_templates"
+                },{
+                    "name": "t_publication",
+                    "parent": "04_templates"
+                },{
+                    "name": "t_people",
+                    "parent": "04_templates"
+                },{
+                    "name": "t_confirmation",
+                    "parent": "04_templates"
+                },{
+                    "name": "t_global",
+                    "parent": "04_templates"
+                },{
+                    "name": "t_hub",
+                    "parent": "04_templates"
+                }
+            ]
+        }
+    }
+}

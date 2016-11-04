@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "ctaContentBlock",
+                    "category": "m_cta"
+                },{
+                    "name": "ctaHeader",
+                    "category": "m_cta"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_cta",
+                    "parent": "02_molecules"
+                }
+            ]
+        }
+    }
+}

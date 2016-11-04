@@ -1,0 +1,49 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "headingBasic",
+                    "category": "a_content"
+                },{
+                    "name": "headingHierarchy",
+                    "category": "a_content"
+                },{
+                    "name": "headingHierarchyLink",
+                    "category": "a_content"
+                },{
+                    "name": "introtextDescription",
+                    "category": "a_content"
+                },{
+                    "name": "introtextSingleParagraph",
+                    "category": "a_content"
+                },{
+                    "name": "richTextSegment",
+                    "category": "a_content"
+                },{
+                    "name": "imageBasic",
+                    "category": "a_content"
+                },{
+                    "name": "iconSVG",
+                    "category": "a_content"
+                },{
+                    "name": "dividerBasic",
+                    "category": "a_content"
+                },{
+                    "name": "quoteBasic",
+                    "category": "a_content"
+                },{
+                    "name": "videoYoutube",
+                    "category": "a_content"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "a_content",
+                    "parent": "01_atoms"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "articleAuthorBio",
+                    "category": "m_publication"
+                },{
+                    "name": "articleCommentsDisqus",
+                    "category": "m_publication"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_publication",
+                    "parent": "02_molecules"
+                }
+            ]
+        }
+    }
+}

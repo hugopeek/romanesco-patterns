@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "listIncludedChunks",
+                    "category": "f_hub"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "f_hub",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

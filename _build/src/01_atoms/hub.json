@@ -1,0 +1,30 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "displayRawElement",
+                    "category": "a_hub"
+                },{
+                    "name": "listIncludedElementsRow",
+                    "category": "a_hub"
+                },{
+                    "name": "statusNotesGetUser",
+                    "category": "a_hub"
+                },{
+                    "name": "statusNotesGetDate",
+                    "category": "a_hub"
+                },{
+                    "name": "statusGridColumnNotes",
+                    "category": "a_hub"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_hub",
+                    "parent": "01_atoms"
+                }
+            ]
+        }
+    }
+}

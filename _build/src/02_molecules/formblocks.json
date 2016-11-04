@@ -1,0 +1,61 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "fbInputTextfield",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputTextarea",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputEmail",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbSelectDropdown",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbSelectOption",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputFile",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputHidden",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbAcceptTerms",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbEmailRow",
+                    "category": "m_fb_email"
+                },{
+                    "name": "fbEmailRow_settings",
+                    "category": "m_fb_email"
+                },{
+                    "name": "fbEmailRow_xx",
+                    "category": "m_fb_email"
+                },{
+                    "name": "fbEmailRow_xx_terms",
+                    "category": "m_fb_email"
+                },{
+                    "name": "fbEmailRow_xx_email",
+                    "category": "m_fb_email"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_formblocks",
+                    "parent": "02_molecules"
+                },{
+                    "name": "m_fb_email",
+                    "parent": "m_formblocks"
+                },{
+                    "name": "m_fb_inputs",
+                    "parent": "m_formblocks"
+                }
+            ]
+        }
+    }
+}

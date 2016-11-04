@@ -1,0 +1,31 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "socialConnectButtons",
+                    "category": "m_social"
+                },{
+                    "name": "socialConnectButtonsPerson",
+                    "category": "m_social"
+                },{
+                    "name": "socialShareButtons",
+                    "category": "m_social"
+                },{
+                    "name": "twitterFeedRowBasic",
+                    "category": "m_social"
+                },{
+                    "name": "twitterFeedRowCompact",
+                    "category": "m_social"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_social",
+                    "parent": "02_molecules"
+                }
+            ]
+        }
+    }
+}
