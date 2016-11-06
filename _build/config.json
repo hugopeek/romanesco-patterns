@@ -3100,6 +3100,13 @@
 					"events": [
 						"OnHandleRequest"
 					]
+				},
+				{
+					"name": "hideEmptyTVCategories",
+					"category": "c_global",
+					"events": [
+						"OnManagerPageInit"
+					]
 				}
 			]
 		},
