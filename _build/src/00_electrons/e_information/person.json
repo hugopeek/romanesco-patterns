@@ -85,7 +85,7 @@
                     "caption": "Personal website or blog",
                     "name": "person_url",
                     "description": "",
-                    "type": "url",
+                    "type": "text",
                     "category": "Person - Information",
                     "sortOrder": "10",
                     "templates": [

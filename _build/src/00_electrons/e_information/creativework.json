@@ -34,28 +34,6 @@
                         "Article - Readability",
                         "Article - Sidenotes"
                     ]
-                },{
-                    "caption": "Organization",
-                    "name": "organization_id",
-                    "description": "If this list is empty, you need to add the client first in the Clients component.",
-                    "type": "listbox",
-                    "inputOptionValues": "@CHUNK tvSelectClient",
-                    "category": "About",
-                    "sortOrder": "2",
-                    "templates": [
-                        "@@templates_portfolio"
-                    ]
-                },{
-                    "caption": "Contributors",
-                    "name": "contributors_id",
-                    "description": "Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
-                    "type": "listbox-multiple",
-                    "inputOptionValues": "@CHUNK tvSelectTeam",
-                    "category": "About",
-                    "sortOrder": "3",
-                    "templates": [
-                        "@@templates_portfolio"
-                    ]
                 }
             ],
 

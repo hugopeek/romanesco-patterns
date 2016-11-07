@@ -29,6 +29,14 @@
 					"name": "07_computations"
 				},
 				{
+					"name": "e_connections",
+					"parent": "00_electrons"
+				},
+				{
+					"name": "Connections",
+					"parent": "e_connections"
+				},
+				{
 					"name": "e_cta",
 					"parent": "00_electrons"
 				},
@@ -514,6 +522,41 @@
 				}
 			],
 			"tvs": [
+				{
+					"caption": "Person",
+					"name": "person_id",
+					"description": "Connect a MODX user to this item. Only active users will be shown.",
+					"type": "listbox",
+					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
+					"category": "Connections",
+					"sortOrder": "1"
+				},
+				{
+					"caption": "Organization",
+					"name": "organization_id",
+					"description": "Connect the related organization(s). If this list is empty, you need to create an Organizations container first and register its ID under System Settings.",
+					"type": "listbox-multiple",
+					"inputOptionValues": "@CHUNK tvSelectClient",
+					"category": "Connections",
+					"sortOrder": "2",
+					"templates": [
+						"PortfolioProject",
+"Porfolio - Project"
+					]
+				},
+				{
+					"caption": "Contributors",
+					"name": "contributors_id",
+					"description": "Link the team members that worked on this item. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
+					"type": "listbox-multiple",
+					"inputOptionValues": "@CHUNK tvSelectTeam",
+					"category": "Connections",
+					"sortOrder": "3",
+					"templates": [
+						"PortfolioProject",
+"Porfolio - Project"
+					]
+				},
 				{
 					"caption": "Availability",
 					"name": "cta_availability",
@@ -1484,32 +1527,6 @@
 					]
 				},
 				{
-					"caption": "Organization",
-					"name": "organization_id",
-					"description": "If this list is empty, you need to add the client first in the Clients component.",
-					"type": "listbox",
-					"inputOptionValues": "@CHUNK tvSelectClient",
-					"category": "About",
-					"sortOrder": "2",
-					"templates": [
-						"PortfolioProject",
-"Porfolio - Project"
-					]
-				},
-				{
-					"caption": "Contributors",
-					"name": "contributors_id",
-					"description": "Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
-					"type": "listbox-multiple",
-					"inputOptionValues": "@CHUNK tvSelectTeam",
-					"category": "About",
-					"sortOrder": "3",
-					"templates": [
-						"PortfolioProject",
-"Porfolio - Project"
-					]
-				},
-				{
 					"caption": "Rating value",
 					"name": "rating_value",
 					"description": "How did the user value this product or service?",
@@ -1734,7 +1751,7 @@
 					"caption": "Organization website",
 					"name": "organization_url",
 					"description": "",
-					"type": "url",
+					"type": "text",
 					"category": "Org. - Information",
 					"sortOrder": "20",
 					"templates": [
@@ -1836,7 +1853,7 @@
 					"caption": "Personal website or blog",
 					"name": "person_url",
 					"description": "",
-					"type": "url",
+					"type": "text",
 					"category": "Person - Information",
 					"sortOrder": "10",
 					"templates": [

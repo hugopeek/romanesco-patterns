@@ -3,6 +3,7 @@
 ## Romanesco 0.10.2
 
 Fixes and improvements:
+- Add Connections category for electrons
 - Hide empty TV categories after moving TV's with FC
 
 ## Romanesco 0.10.1
