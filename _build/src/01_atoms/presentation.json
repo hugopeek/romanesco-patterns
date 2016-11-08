@@ -3,13 +3,17 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "hitCount",
-                    "category": "a_stats"
+                    "name": "favicons",
+                    "category": "a_presentation"
+                },{
+                    "name": "logo",
+                    "category": "a_presentation"
                 }
             ],
+
             "categories": [
                 {
-                    "name": "a_stats",
+                    "name": "a_presentation",
                     "parent": "01_atoms"
                 }
             ]

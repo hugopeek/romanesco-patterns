@@ -257,7 +257,7 @@
 					"parent": "01_atoms"
 				},
 				{
-					"name": "a_stats",
+					"name": "a_data",
 					"parent": "01_atoms"
 				},
 				{
@@ -361,7 +361,7 @@
 					"parent": "02_molecules"
 				},
 				{
-					"name": "m_stats",
+					"name": "m_data",
 					"parent": "02_molecules"
 				},
 				{
@@ -2162,7 +2162,7 @@
 				},
 				{
 					"name": "hitCount",
-					"category": "a_stats"
+					"category": "a_data"
 				},
 				{
 					"name": "tagItemBasic",
@@ -2454,11 +2454,11 @@
 				},
 				{
 					"name": "getHitCount",
-					"category": "m_stats"
+					"category": "m_data"
 				},
 				{
 					"name": "googleAnalytics",
-					"category": "m_stats"
+					"category": "m_data"
 				},
 				{
 					"name": "fbLayoutFieldset",
