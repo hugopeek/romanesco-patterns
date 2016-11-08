@@ -2,9 +2,14 @@
 
 ## Romanesco 0.10.2
 
+New features:
+
+-
+
 Fixes and improvements:
-- Add Connections category for electrons
+- Rearrange some electrons in new Connections category
 - Hide empty TV categories after moving TV's with FC
+- Fix broken path in fbLoadAssets snippet
 
 ## Romanesco 0.10.1
 Released on November 6, 2016

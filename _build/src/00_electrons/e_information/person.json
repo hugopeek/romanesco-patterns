@@ -72,6 +72,16 @@
                         "@@templates_team"
                     ]
                 },{
+                    "caption": "Birthdate",
+                    "name": "person_birthdate",
+                    "description": "",
+                    "type": "date",
+                    "category": "Person - Information",
+                    "sortOrder": "4",
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
                     "caption": "Job title",
                     "name": "person_jobtitle",
                     "description": "The role of this person inside the team.",

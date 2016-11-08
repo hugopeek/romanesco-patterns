@@ -74,7 +74,7 @@
                         "@@templates_portfolio"
                     ]
                 },{
-                    "caption": "Locality",
+                    "caption": "City / Town",
                     "name": "address_locality",
                     "description": "",
                     "type": "text",

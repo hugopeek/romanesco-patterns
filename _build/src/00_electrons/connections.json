@@ -7,7 +7,7 @@
                     "name": "person_id",
                     "description": "Connect a MODX user to this item. Only active users will be shown.",
                     "type": "listbox",
-                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
+                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )",
                     "category": "Connections",
                     "sortOrder": "1"
                 },{
