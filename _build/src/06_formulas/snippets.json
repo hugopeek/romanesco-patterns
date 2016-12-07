@@ -51,6 +51,10 @@
                     "description": "Get the value of a specific key from a JSON string.",
                     "category": "f_json"
                 },{
+                    "name": "jsonToHTML",
+                    "description": "Turn JSON object into an HTML table.",
+                    "category": "f_json"
+                },{
                     "name": "setBoxType",
                     "description": "Output the necessary class names for overview items, based on their template.",
                     "category": "f_framework"
@@ -77,6 +81,10 @@
                 },{
                     "name": "getRawTVValue",
                     "description": "Get the raw value of a TV. Can be used to check if @inherit is being used.",
+                    "category": "f_templatevars"
+                },{
+                    "name": "getTmplvarID",
+                    "description": "Get the ID of a TV, in case you only know its name.",
                     "category": "f_templatevars"
                 }
             ],

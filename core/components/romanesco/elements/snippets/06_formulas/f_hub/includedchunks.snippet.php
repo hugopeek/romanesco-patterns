@@ -1,6 +1,6 @@
 <?php
 /**
- * listIncludedChunks
+ * includedChunks
  *
  * This snippet is intended to list the chunks that are being used
  * inside another chunk. It needs the raw content of the chunk as input.
@@ -10,7 +10,7 @@
  * You can get the raw input by looking directly in the database table
  * of the chunk, using Rowboat for example:
  *
- * [[!Rowboat:toPlaceholder=`rawChunk`?
+ * [[!Rowboat:toPlaceholder=`raw_chunk`?
  *     &table=`modx_site_htmlsnippets`
  *     &tpl=`displayRawElement`
  *     &where=`{"name":"overviewRowBasic"}`
@@ -18,14 +18,14 @@
  *
  * Then scan the raw input for included chunks like this:
  *
- * [[!listIncludedChunks? &input=`[[+rawChunk]]`]]
+ * [[!includedChunks? &input=`[[+raw_chunk]]`]]
  *
  * If you want to see which chunks have references to a specific chunk
  * (the reverse thing, basically), you can use Rowboat again:
  *
  * [[Rowboat?
  *     &table=`modx_site_htmlsnippets`
- *     &tpl=`listIncludedElementsRow`
+ *     &tpl=`includedPatternsRow`
  *     &sortBy=`name`
  *     &where=`{ "snippet:LIKE":"%$buttonHrefOverview%" }`
  * ]]
@@ -38,7 +38,7 @@
  */
 
 $string = $input;
-$tpl = $modx->getOption('tpl', $scriptProperties, 'listIncludedElementsRow');
+$tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 
 // Find chunk names by their leading $ character
 $regex = '/(?<!\w)\$\w+/';
@@ -54,8 +54,17 @@ if (preg_match_all($regex, $string, $matches)) {
 
     // Process matches individually
     foreach ($result as $key => $value) {
-        $output[] = $modx->getChunk($tpl, array(
+        $query = $modx->newQuery('modChunk', array(
             'name' => $value
+        ));
+
+        // Also fetch category, for internal pattern library link
+        $query->select('category');
+        $category = $modx->getValue($query->prepare());
+
+        $output[] = $modx->getChunk($tpl, array(
+            'name' => $value,
+            'category' => $category
         ));
     }
 }

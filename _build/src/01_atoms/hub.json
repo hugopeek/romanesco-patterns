@@ -6,7 +6,10 @@
                     "name": "displayRawElement",
                     "category": "a_hub"
                 },{
-                    "name": "listIncludedElementsRow",
+                    "name": "displayRawTemplate",
+                    "category": "a_hub"
+                },{
+                    "name": "assignedTemplatesRow",
                     "category": "a_hub"
                 },{
                     "name": "statusNotesGetUser",

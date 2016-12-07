@@ -8,6 +8,27 @@
                 },{
                     "name": "statusGridOuter",
                     "category": "o_hub"
+                },{
+                    "name": "assignedTemplates",
+                    "category": "o_hub"
+                },{
+                    "name": "includedChunks",
+                    "category": "o_hub"
+                },{
+                    "name": "includedSnippets",
+                    "category": "o_hub"
+                },{
+                    "name": "includedTVs",
+                    "category": "o_hub"
+                },{
+                    "name": "referringChunks",
+                    "category": "o_hub"
+                },{
+                    "name": "referringTemplates",
+                    "category": "o_hub"
+                },{
+                    "name": "referringTVs",
+                    "category": "o_hub"
                 }
             ],
 

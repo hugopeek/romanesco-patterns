@@ -6,6 +6,9 @@
                     "name": "headingBasicSubtitle",
                     "category": "m_content"
                 },{
+                    "name": "headingBasicAnchor",
+                    "category": "m_content"
+                },{
                     "name": "headingHierarchySubtitle",
                     "category": "m_content"
                 },{

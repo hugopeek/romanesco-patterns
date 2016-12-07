@@ -8,6 +8,12 @@
                 },{
                     "name": "statusGridRow",
                     "category": "m_hub"
+                },{
+                    "name": "includedPatternsRow",
+                    "category": "m_hub"
+                },{
+                    "name": "patternLibraryActionButtons",
+                    "category": "m_hub"
                 }
             ],
 

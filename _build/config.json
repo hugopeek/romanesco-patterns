@@ -3,7 +3,7 @@
 	"lowCaseName": "romanesco",
 	"description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.10.1",
+	"version": "0.10.2",
 	"package": {
 		"elements": {
 			"categories": [
@@ -157,10 +157,6 @@
 					"parent": "e_social"
 				},
 				{
-					"name": "a_branding",
-					"parent": "01_atoms"
-				},
-				{
 					"name": "a_buttons",
 					"parent": "01_atoms"
 				},
@@ -199,6 +195,10 @@
 				{
 					"name": "a_cb_formblocks",
 					"parent": "a_contentblocks"
+				},
+				{
+					"name": "a_data",
+					"parent": "01_atoms"
 				},
 				{
 					"name": "a_formblocks",
@@ -249,15 +249,15 @@
 					"parent": "a_navigation"
 				},
 				{
+					"name": "a_presentation",
+					"parent": "01_atoms"
+				},
+				{
 					"name": "a_search",
 					"parent": "01_atoms"
 				},
 				{
 					"name": "a_select",
-					"parent": "01_atoms"
-				},
-				{
-					"name": "a_data",
 					"parent": "01_atoms"
 				},
 				{
@@ -277,6 +277,10 @@
 					"parent": "02_molecules"
 				},
 				{
+					"name": "m_data",
+					"parent": "02_molecules"
+				},
+				{
 					"name": "m_formblocks",
 					"parent": "02_molecules"
 				},
@@ -287,10 +291,6 @@
 				{
 					"name": "m_fb_inputs",
 					"parent": "m_formblocks"
-				},
-				{
-					"name": "m_global",
-					"parent": "02_molecules"
 				},
 				{
 					"name": "m_hub",
@@ -358,10 +358,6 @@
 				},
 				{
 					"name": "m_social",
-					"parent": "02_molecules"
-				},
-				{
-					"name": "m_data",
 					"parent": "02_molecules"
 				},
 				{
@@ -1876,68 +1872,16 @@
 			],
 			"chunks": [
 				{
-					"name": "favicons",
-					"category": "a_branding"
-				},
-				{
-					"name": "logo",
-					"category": "a_branding"
-				},
-				{
 					"name": "buttonHrefBasic",
+					"category": "a_buttons"
+				},
+				{
+					"name": "buttonHrefIcon",
 					"category": "a_buttons"
 				},
 				{
 					"name": "buttonHrefOverview",
 					"category": "a_buttons"
-				},
-				{
-					"name": "buttonSocialConnectFacebook",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialConnectGoogleplus",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialConnectInstagram",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialConnectLinkedin",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialConnectPinterest",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialConnectTwitter",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialConnectYoutube",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialShareFacebook",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialShareGoogleplus",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialShareLinkedin",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialSharePinterest",
-					"category": "a_btn_social"
-				},
-				{
-					"name": "buttonSocialShareTwitter",
-					"category": "a_btn_social"
 				},
 				{
 					"name": "headingBasic",
@@ -1982,6 +1926,10 @@
 				{
 					"name": "videoYoutube",
 					"category": "a_content"
+				},
+				{
+					"name": "hitCount",
+					"category": "a_data"
 				},
 				{
 					"name": "fbRenderFormWrapper",
@@ -2032,7 +1980,11 @@
 					"category": "a_hub"
 				},
 				{
-					"name": "listIncludedElementsRow",
+					"name": "displayRawTemplate",
+					"category": "a_hub"
+				},
+				{
+					"name": "assignedTemplatesRow",
 					"category": "a_hub"
 				},
 				{
@@ -2120,6 +2072,14 @@
 					"category": "a_nav_tabs"
 				},
 				{
+					"name": "favicons",
+					"category": "a_presentation"
+				},
+				{
+					"name": "logo",
+					"category": "a_presentation"
+				},
+				{
 					"name": "searchButton",
 					"category": "a_search"
 				},
@@ -2161,10 +2121,6 @@
 					"category": "a_select"
 				},
 				{
-					"name": "hitCount",
-					"category": "a_data"
-				},
-				{
 					"name": "tagItemBasic",
 					"category": "a_taxonomy"
 				},
@@ -2190,6 +2146,10 @@
 				},
 				{
 					"name": "headingBasicSubtitle",
+					"category": "m_content"
+				},
+				{
+					"name": "headingBasicAnchor",
 					"category": "m_content"
 				},
 				{
@@ -2227,6 +2187,18 @@
 				{
 					"name": "ctaHeader",
 					"category": "m_cta"
+				},
+				{
+					"name": "getHitCount",
+					"category": "m_data"
+				},
+				{
+					"name": "googleAnalytics",
+					"category": "m_data"
+				},
+				{
+					"name": "structuredDataSite",
+					"category": "m_data"
 				},
 				{
 					"name": "fbInputTextfield",
@@ -2281,15 +2253,19 @@
 					"category": "m_fb_email"
 				},
 				{
-					"name": "structuredDataSite",
-					"category": "m_global"
-				},
-				{
 					"name": "projectHubRow",
 					"category": "m_hub"
 				},
 				{
 					"name": "statusGridRow",
+					"category": "m_hub"
+				},
+				{
+					"name": "includedPatternsRow",
+					"category": "m_hub"
+				},
+				{
+					"name": "patternLibraryActionButtons",
 					"category": "m_hub"
 				},
 				{
@@ -2453,14 +2429,6 @@
 					"category": "m_social"
 				},
 				{
-					"name": "getHitCount",
-					"category": "m_data"
-				},
-				{
-					"name": "googleAnalytics",
-					"category": "m_data"
-				},
-				{
 					"name": "fbLayoutFieldset",
 					"category": "o_formblocks"
 				},
@@ -2498,6 +2466,34 @@
 				},
 				{
 					"name": "statusGridOuter",
+					"category": "o_hub"
+				},
+				{
+					"name": "assignedTemplates",
+					"category": "o_hub"
+				},
+				{
+					"name": "includedChunks",
+					"category": "o_hub"
+				},
+				{
+					"name": "includedSnippets",
+					"category": "o_hub"
+				},
+				{
+					"name": "includedTVs",
+					"category": "o_hub"
+				},
+				{
+					"name": "referringChunks",
+					"category": "o_hub"
+				},
+				{
+					"name": "referringTemplates",
+					"category": "o_hub"
+				},
+				{
+					"name": "referringTVs",
 					"category": "o_hub"
 				},
 				{
@@ -2583,6 +2579,54 @@
 				{
 					"name": "toolbarBasic",
 					"category": "o_toolbars"
+				},
+				{
+					"name": "buttonSocialConnectFacebook",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectGoogleplus",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectInstagram",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectLinkedin",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectPinterest",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectTwitter",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectYoutube",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareFacebook",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareGoogleplus",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareLinkedin",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialSharePinterest",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialShareTwitter",
+					"category": "a_btn_social"
 				},
 				{
 					"name": "cbFieldAlignment",
@@ -3002,7 +3046,23 @@
 					"category": "f_fb_modifiers"
 				},
 				{
-					"name": "listIncludedChunks",
+					"name": "includedChunks",
+					"category": "f_hub"
+				},
+				{
+					"name": "includedSnippets",
+					"category": "f_hub"
+				},
+				{
+					"name": "includedTVs",
+					"category": "f_hub"
+				},
+				{
+					"name": "includedPatternsLink",
+					"category": "f_hub"
+				},
+				{
+					"name": "setPatternType",
 					"category": "f_hub"
 				},
 				{
@@ -3066,6 +3126,11 @@
 					"category": "f_json"
 				},
 				{
+					"name": "jsonToHTML",
+					"description": "Turn JSON object into an HTML table.",
+					"category": "f_json"
+				},
+				{
 					"name": "setBoxType",
 					"description": "Output the necessary class names for overview items, based on their template.",
 					"category": "f_framework"
@@ -3098,6 +3163,11 @@
 				{
 					"name": "getRawTVValue",
 					"description": "Get the raw value of a TV. Can be used to check if @inherit is being used.",
+					"category": "f_templatevars"
+				},
+				{
+					"name": "getTmplvarID",
+					"description": "Get the ID of a TV, in case you only know its name.",
 					"category": "f_templatevars"
 				}
 			],
