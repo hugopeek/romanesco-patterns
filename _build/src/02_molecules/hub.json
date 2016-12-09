@@ -14,6 +14,9 @@
                 },{
                     "name": "patternLibraryActionButtons",
                     "category": "m_hub"
+                },{
+                    "name": "patternLibraryLabels",
+                    "category": "m_hub"
                 }
             ],
 

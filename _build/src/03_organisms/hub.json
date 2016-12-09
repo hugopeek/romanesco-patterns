@@ -24,6 +24,9 @@
                     "name": "referringChunks",
                     "category": "o_hub"
                 },{
+                    "name": "referringSnippets",
+                    "category": "o_hub"
+                },{
                     "name": "referringTemplates",
                     "category": "o_hub"
                 },{

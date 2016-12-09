@@ -6,6 +6,7 @@
  */
 
 $tpl = $modx->getOption('tpl', $scriptProperties, 'tagItemBasic');
+$iconClass = $modx->getOption('iconClass', $scriptProperties, 'info');
 
 if ($input == '') { return ''; } // Output filters are also processed when the input is empty, so check for that.
 $tags = explode(',',$input); // Based on a delimiter of comma-space.
@@ -14,7 +15,8 @@ $tags = explode(',',$input); // Based on a delimiter of comma-space.
 foreach ($tags as $key => $value) {
     $value = ucfirst($value);
     $output[] = $modx->getChunk($tpl,array(
-        'tag' => $value
+        'tag' => $value,
+        'icon_class' => $iconClass,
     ));
 }
 

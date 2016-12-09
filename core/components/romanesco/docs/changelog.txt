@@ -1,10 +1,20 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco 0.10.3
+## Romanesco 0.10.4
 
 New features:
 - Add ContentBlock for creating previous / next page navigation
 - Add ContentBlock for creating a button group
+
+Fixes and improvements:
+- Responsive images through srcset and picture attributes
+- Apply dividing options to Overview grids too
+
+---
+
+## Romanesco 0.10.3
+
+New features:
 - Add option to show an icon inside a button
 
 Fixes and improvements:

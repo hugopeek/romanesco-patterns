@@ -2129,6 +2129,10 @@
 					"category": "a_taxonomy"
 				},
 				{
+					"name": "tagItemIcon",
+					"category": "a_taxonomy"
+				},
+				{
 					"name": "tagItemCount",
 					"category": "a_taxonomy"
 				},
@@ -2266,6 +2270,10 @@
 				},
 				{
 					"name": "patternLibraryActionButtons",
+					"category": "m_hub"
+				},
+				{
+					"name": "patternLibraryLabels",
 					"category": "m_hub"
 				},
 				{
@@ -2486,6 +2494,10 @@
 				},
 				{
 					"name": "referringChunks",
+					"category": "o_hub"
+				},
+				{
+					"name": "referringSnippets",
 					"category": "o_hub"
 				},
 				{

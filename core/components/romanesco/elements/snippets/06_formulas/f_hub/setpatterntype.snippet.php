@@ -38,5 +38,7 @@ switch($input) {
         break;
 }
 
-$modx->toPlaceholder('type', $type);
-$modx->toPlaceholder('type_s', $type_s);
+//$modx->toPlaceholder('type', $type);
+//$modx->toPlaceholder('type_s', $type_s);
+
+return $type_s;

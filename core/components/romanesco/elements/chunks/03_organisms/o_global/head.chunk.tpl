@@ -12,7 +12,7 @@
 
     [[cbHasField?
         &field=`[[++romanesco.cb_field_code_id]]`
-        &then=`<link rel="stylesheet" href="[[++romanesco.custom_vendor_path]]/prism/prism.css">`
+        &then=`<link rel="stylesheet" href="[[++romanesco.custom_vendor_path]]/prism/prism.min.css">`
     ]]
 
     [[++head_additional]]

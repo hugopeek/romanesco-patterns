@@ -9,6 +9,9 @@
                     "name": "tagItemBasicLink",
                     "category": "a_taxonomy"
                 },{
+                    "name": "tagItemIcon",
+                    "category": "a_taxonomy"
+                },{
                     "name": "tagItemCount",
                     "category": "a_taxonomy"
                 },{
