@@ -15,6 +15,19 @@ if ($object->xpdo) {
         case xPDOTransport::ACTION_UPGRADE:
             /* list of tvs and templates for each */
             $tvs = array (
+  'person_id' => 
+  array (
+  ),
+  'organization_id' => 
+  array (
+    0 => 'PortfolioProject',
+    1 => 'Porfolio - Project',
+  ),
+  'contributors_id' => 
+  array (
+    0 => 'PortfolioProject',
+    1 => 'Porfolio - Project',
+  ),
   'cta_availability' => 
   array (
     0 => 'GlobalCTA',
@@ -361,16 +374,6 @@ if ($object->xpdo) {
     4 => 'Article - Readability',
     5 => 'Article - Sidenotes',
   ),
-  'organization_id' => 
-  array (
-    0 => 'PortfolioProject',
-    1 => 'Porfolio - Project',
-  ),
-  'contributors_id' => 
-  array (
-    0 => 'PortfolioProject',
-    1 => 'Porfolio - Project',
-  ),
   'comments_toggle' => 
   array (
     0 => 'ArticleTraditional',
@@ -489,6 +492,11 @@ if ($object->xpdo) {
     1 => 'Team - Member',
   ),
   'person_gender' => 
+  array (
+    0 => 'TeamMember',
+    1 => 'Team - Member',
+  ),
+  'person_birthdate' => 
   array (
     0 => 'TeamMember',
     1 => 'Team - Member',
