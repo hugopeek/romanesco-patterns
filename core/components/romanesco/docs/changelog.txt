@@ -15,11 +15,12 @@ Fixes and improvements:
 ## Romanesco 0.10.3
 
 New features:
-- Add option to show an icon inside a button
+- Add option to show an icon inside buttons and tags
+- Ability to add anchors inside basic headers
+- Add basic styling variant to Tabs CBs
 
 Fixes and improvements:
-- Responsive images through srcset and picture attributes
-- Apply dividing options to Overview grids too
+- Add specific CB layout for patterns in front-end library
 
 ---
 
