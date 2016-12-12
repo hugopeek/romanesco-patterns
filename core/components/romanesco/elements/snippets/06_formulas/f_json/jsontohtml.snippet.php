@@ -19,17 +19,21 @@ if (!class_exists('jsonToHTML')) {
         private static function _arrayToHtmlTableRecursive($arr) {
             $str = '<table class="ui compact very basic table"><tbody>';
             foreach ($arr as $key => $val) {
-                $str .= "<tr>";
-                $str .= "<td><strong>$key</strong></td>";
-                $str .= "<td>";
-                if (is_array($val)) {
-                    if (!empty($val)) {
-                        $str .= self::_arrayToHtmlTableRecursive($val);
+                // Exclude templates from result
+                // @todo: make this variable
+                if ($key != 'templates') {
+                    $str .= "<tr>";
+                    $str .= "<td><strong>$key</strong></td>";
+                    $str .= "<td>";
+                    if (is_array($val)) {
+                        if (!empty($val)) {
+                            $str .= self::_arrayToHtmlTableRecursive($val);
+                        }
+                    } else {
+                        $str .= "$val";
                     }
-                } else {
-                    $str .= "$val";
+                    $str .= "</td></tr>";
                 }
-                $str .= "</td></tr>";
             }
             $str .= "</tbody></table>";
 

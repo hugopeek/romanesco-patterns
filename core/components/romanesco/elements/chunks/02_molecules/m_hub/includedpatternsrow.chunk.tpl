@@ -1,7 +1,7 @@
-[[includedPatternsLink:toPlaceholder=`link`? &input=`[[+category]]`]]
+[[includedPatternsLink:toPlaceholder=`link_[[+unique_idx]]`? &input=`[[+category]]`]]
 [[+templatename:empty=`[[+name]]`:toPlaceholder=`name`]]
 
-<a class="item" href="[[+link]]#[[+name]]">
-    <span class="ui circular label">[[+link:setPatternType]]</span>
+<a class="item" href="[[+link_[[+unique_idx]]]]#[[+name]]">
+    <span class="ui circular label">[[+link_[[+unique_idx]]:setPatternType]]</span>
     [[+name]]
 </a>

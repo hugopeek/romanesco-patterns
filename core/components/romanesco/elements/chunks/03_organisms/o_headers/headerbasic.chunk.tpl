@@ -16,7 +16,7 @@
     ]]]]
 
     [[[[If?
-        &subject=`[[++bootquest.add_to_menu]]`
+        &subject=`[[++search.add_to_menu]]`
         &operator=`EQ`
         &operand=`1`
         &then=`$searchForm`

@@ -20,6 +20,9 @@
                 },{
                     "name": "cbLayoutSidebarContent",
                     "category": "o_layouts"
+                },{
+                    "name": "patternLayoutSingleColumn",
+                    "category": "o_layouts"
                 }
             ],
 
