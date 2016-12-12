@@ -1,0 +1,1 @@
+<pre><code class="language-[[+lang]]">[[+value]]</code>[[+label:notempty=`<div class="ui top right attached label">[[+label]]</div>`]]</pre>

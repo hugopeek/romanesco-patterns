@@ -29,6 +29,9 @@
                 },{
                     "name": "richTextMessage",
                     "category": "m_content"
+                },{
+                    "name": "codeSnippet",
+                    "category": "m_content"
                 }
             ],
 
