@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "cbHasFields",
+                    "category": "f_hub"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "f_contentblocks",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

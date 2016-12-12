@@ -180,23 +180,23 @@
         "systemSettings": [
             {
                 "key": "publication_container_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             },{
                 "key": "team_container_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             },{
                 "key": "testimonial_container_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             },{
                 "key": "portfolio_container_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             },{
                 "key": "client_container_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             }
         ]

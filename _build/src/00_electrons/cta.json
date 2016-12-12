@@ -42,7 +42,7 @@
         "systemSettings": [
             {
                 "key": "cta_container_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             }
         ]

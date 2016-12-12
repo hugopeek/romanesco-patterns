@@ -3,7 +3,7 @@
         "systemSettings": [
             {
                 "key": "cb_field_code_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""
             }
