@@ -1,0 +1,58 @@
+{
+    "package": {
+        "systemSettings": [
+            {
+                "key": "container_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Pages"
+            },{
+                "key": "save_form",
+                "namespace": "formblocks",
+                "type": "combo-boolean",
+                "area": "FormBlocks - Settings",
+                "value": "1"
+            },{
+                "key": "cb_input_textfield_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
+                "key": "cb_input_textarea_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
+                "key": "cb_input_email_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
+                "key": "cb_select_option_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
+                "key": "cb_select_option_collapse_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
+                "key": "cb_select_dropdown_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
+                "key": "cb_select_dropdown_auto_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
+                "key": "cb_accept_terms_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            }
+        ]
+    }
+}

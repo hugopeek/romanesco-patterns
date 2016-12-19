@@ -99,56 +99,6 @@
                     "sortOrder": "21",
                     "type": "text",
                     "templates": ["fbForm"]
-                },{
-                    "caption": "Autoresponder",
-                    "name": "fb_autoresponder_toggle",
-                    "description": "IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.",
-                    "category": "Autoresponder",
-                    "sortOrder": "1",
-                    "type": "option",
-                    "inputOptionValues": "On==1||Off==0",
-                    "defaultValue": "0",
-                    "templates": ["fbForm"]
-                },{
-                    "caption": "Autoresponder FROM address",
-                    "name": "fb_autoresponder_from",
-                    "description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like noreply@yourdomain.com. Defaults to emailsender system setting.",
-                    "category": "Autoresponder",
-                    "sortOrder": "2",
-                    "type": "email",
-                    "templates": ["fbForm"]
-                },{
-                    "caption": "Autoresponder FROM name",
-                    "name": "fb_autoresponder_from_name",
-                    "description": "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting.",
-                    "category": "Autoresponder",
-                    "sortOrder": "3",
-                    "type": "text",
-                    "templates": ["fbForm"]
-                },{
-                    "caption": "Autoresponder REPLY TO address",
-                    "name": "fb_autoresponder_reply_to",
-                    "description": "Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.",
-                    "category": "Autoresponder",
-                    "sortOrder": "4",
-                    "type": "email",
-                    "templates": ["fbForm"]
-                },{
-                    "caption": "Autoresponse subject",
-                    "name": "fb_autoresponder_subject",
-                    "description": "",
-                    "category": "Autoresponder",
-                    "sortOrder": "10",
-                    "type": "text",
-                    "templates": ["fbForm"]
-                },{
-                    "caption": "Autoresponse message",
-                    "name": "fb_autoresponder_message",
-                    "description": "The content of the email that will be sent. You can use placeholders here from the form fields you used. Just use the syntax [[+fb123-field-name]], so complete with prefix and correct name of the input field.",
-                    "category": "Autoresponder",
-                    "sortOrder": "11",
-                    "type": "richtext",
-                    "templates": ["fbForm"]
                 }
             ],
 
@@ -170,61 +120,6 @@
                     "parent": "e_formblocks"
                 }
             ]
-        },
-
-        "systemSettings": [
-            {
-                "key": "container_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - Pages"
-            },{
-                "key": "save_form",
-                "namespace": "formblocks",
-                "type": "combo-boolean",
-                "area": "FormBlocks - Settings",
-                "value": "1"
-            },{
-                "key": "cb_input_textfield_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            },{
-                "key": "cb_input_textarea_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            },{
-                "key": "cb_input_email_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            },{
-                "key": "cb_select_option_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            },{
-                "key": "cb_select_option_collapse_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            },{
-                "key": "cb_select_dropdown_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            },{
-                "key": "cb_select_dropdown_auto_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            },{
-                "key": "cb_accept_terms_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - CB fields"
-            }
-        ]
+        }
     }
 }
