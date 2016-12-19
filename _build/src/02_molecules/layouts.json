@@ -27,6 +27,9 @@
                 {
                     "name": "m_layouts",
                     "parent": "02_molecules"
+                },{
+                    "name": "m_lo_patterns",
+                    "parent": "m_layouts"
                 }
             ]
         }

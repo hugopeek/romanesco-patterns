@@ -305,6 +305,10 @@
 					"parent": "02_molecules"
 				},
 				{
+					"name": "m_lo_patterns",
+					"parent": "m_layouts"
+				},
+				{
 					"name": "m_navigation",
 					"parent": "02_molecules"
 				},
@@ -423,6 +427,10 @@
 				{
 					"name": "t_hub",
 					"parent": "04_templates"
+				},
+				{
+					"name": "f_contentblocks",
+					"parent": "06_formulas"
 				},
 				{
 					"name": "f_formblocks",
@@ -726,74 +734,6 @@
 					"category": "Settings - Advanced",
 					"sortOrder": "21",
 					"type": "text",
-					"templates": [
-						"fbForm"
-					]
-				},
-				{
-					"caption": "Autoresponder",
-					"name": "fb_autoresponder_toggle",
-					"description": "IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.",
-					"category": "Autoresponder",
-					"sortOrder": "1",
-					"type": "option",
-					"inputOptionValues": "On==1||Off==0",
-					"defaultValue": "0",
-					"templates": [
-						"fbForm"
-					]
-				},
-				{
-					"caption": "Autoresponder FROM address",
-					"name": "fb_autoresponder_from",
-					"description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like noreply@yourdomain.com. Defaults to emailsender system setting.",
-					"category": "Autoresponder",
-					"sortOrder": "2",
-					"type": "email",
-					"templates": [
-						"fbForm"
-					]
-				},
-				{
-					"caption": "Autoresponder FROM name",
-					"name": "fb_autoresponder_from_name",
-					"description": "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting.",
-					"category": "Autoresponder",
-					"sortOrder": "3",
-					"type": "text",
-					"templates": [
-						"fbForm"
-					]
-				},
-				{
-					"caption": "Autoresponder REPLY TO address",
-					"name": "fb_autoresponder_reply_to",
-					"description": "Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.",
-					"category": "Autoresponder",
-					"sortOrder": "4",
-					"type": "email",
-					"templates": [
-						"fbForm"
-					]
-				},
-				{
-					"caption": "Autoresponse subject",
-					"name": "fb_autoresponder_subject",
-					"description": "",
-					"category": "Autoresponder",
-					"sortOrder": "10",
-					"type": "text",
-					"templates": [
-						"fbForm"
-					]
-				},
-				{
-					"caption": "Autoresponse message",
-					"name": "fb_autoresponder_message",
-					"description": "The content of the email that will be sent. You can use placeholders here from the form fields you used. Just use the syntax [[+fb123-field-name]], so complete with prefix and correct name of the input field.",
-					"category": "Autoresponder",
-					"sortOrder": "11",
-					"type": "richtext",
 					"templates": [
 						"fbForm"
 					]
@@ -1486,6 +1426,74 @@
 					"templates": [
 						"TeamMember",
 "Team - Member"
+					]
+				},
+				{
+					"caption": "Autoresponder",
+					"name": "fb_autoresponder_toggle",
+					"description": "IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.",
+					"category": "Autoresponder",
+					"sortOrder": "1",
+					"type": "option",
+					"inputOptionValues": "On==1||Off==0",
+					"defaultValue": "0",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
+					"caption": "Autoresponder FROM address",
+					"name": "fb_autoresponder_from",
+					"description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like noreply@yourdomain.com. Defaults to emailsender system setting.",
+					"category": "Autoresponder",
+					"sortOrder": "2",
+					"type": "email",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
+					"caption": "Autoresponder FROM name",
+					"name": "fb_autoresponder_from_name",
+					"description": "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting.",
+					"category": "Autoresponder",
+					"sortOrder": "3",
+					"type": "text",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
+					"caption": "Autoresponder REPLY TO address",
+					"name": "fb_autoresponder_reply_to",
+					"description": "Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.",
+					"category": "Autoresponder",
+					"sortOrder": "4",
+					"type": "email",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
+					"caption": "Autoresponse subject",
+					"name": "fb_autoresponder_subject",
+					"description": "",
+					"category": "Autoresponder",
+					"sortOrder": "10",
+					"type": "text",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
+					"caption": "Autoresponse message",
+					"name": "fb_autoresponder_message",
+					"description": "The content of the email that will be sent. You can use placeholders here from the form fields you used. Just use the syntax [[+fb123-field-name]], so complete with prefix and correct name of the input field.",
+					"category": "Autoresponder",
+					"sortOrder": "11",
+					"type": "richtext",
+					"templates": [
+						"fbForm"
 					]
 				},
 				{
@@ -2185,6 +2193,10 @@
 					"category": "m_content"
 				},
 				{
+					"name": "codeSnippet",
+					"category": "m_content"
+				},
+				{
 					"name": "ctaContentBlock",
 					"category": "m_cta"
 				},
@@ -2477,35 +2489,11 @@
 					"category": "o_hub"
 				},
 				{
-					"name": "assignedTemplates",
+					"name": "includedPatternsOuter",
 					"category": "o_hub"
 				},
 				{
-					"name": "includedChunks",
-					"category": "o_hub"
-				},
-				{
-					"name": "includedSnippets",
-					"category": "o_hub"
-				},
-				{
-					"name": "includedTVs",
-					"category": "o_hub"
-				},
-				{
-					"name": "referringChunks",
-					"category": "o_hub"
-				},
-				{
-					"name": "referringSnippets",
-					"category": "o_hub"
-				},
-				{
-					"name": "referringTemplates",
-					"category": "o_hub"
-				},
-				{
-					"name": "referringTVs",
+					"name": "referringPatternsOuter",
 					"category": "o_hub"
 				},
 				{
@@ -2530,6 +2518,10 @@
 				},
 				{
 					"name": "cbLayoutSidebarContent",
+					"category": "o_layouts"
+				},
+				{
+					"name": "patternLayoutSingleColumn",
 					"category": "o_layouts"
 				},
 				{
@@ -2654,6 +2646,10 @@
 				},
 				{
 					"name": "cbFieldAccordionType",
+					"category": "a_cb_fields"
+				},
+				{
+					"name": "cbFieldTabType",
 					"category": "a_cb_fields"
 				},
 				{
@@ -2785,6 +2781,10 @@
 					"category": "a_cb_settings"
 				},
 				{
+					"name": "cbSettingImageType",
+					"category": "a_cb_settings"
+				},
+				{
 					"name": "cbSettingPadding",
 					"category": "a_cb_settings"
 				},
@@ -2795,6 +2795,26 @@
 				{
 					"name": "cbSettingContainerType",
 					"category": "a_cb_settings"
+				},
+				{
+					"name": "patternLayoutElectronTV",
+					"category": "m_lo_patterns"
+				},
+				{
+					"name": "patternLayoutElectronSystemSetting",
+					"category": "m_lo_patterns"
+				},
+				{
+					"name": "patternLayoutAtom",
+					"category": "m_lo_patterns"
+				},
+				{
+					"name": "patternLayoutMolecule",
+					"category": "m_lo_patterns"
+				},
+				{
+					"name": "patternLayoutOrganism",
+					"category": "m_lo_patterns"
 				},
 				{
 					"name": "overviewRowArticleBasic",
@@ -3021,6 +3041,10 @@
 				}
 			],
 			"snippets": [
+				{
+					"name": "cbHasFields",
+					"category": "f_contentblocks"
+				},
 				{
 					"name": "fbEmailGetJSON",
 					"category": "f_formblocks"
@@ -3278,14 +3302,97 @@
 			},
 			{
 				"key": "cb_field_code_id",
-				"type": "numberfield",
+				"type": "textfield",
 				"area": "ContentBlocks - Settings",
 				"value": ""
 			},
 			{
 				"key": "cta_container_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "global_backgrounds_id",
 				"type": "numberfield",
 				"area": "Pages"
+			},
+			{
+				"key": "global_footer_id",
+				"type": "numberfield",
+				"area": "Pages"
+			},
+			{
+				"key": "publication_container_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "team_container_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "testimonial_container_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "portfolio_container_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "client_container_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "search_add_to_menu",
+				"type": "combo-boolean",
+				"area": "Search",
+				"value": "0"
+			},
+			{
+				"key": "search_result_id",
+				"type": "textfield",
+				"area": "Search",
+				"value": ""
+			},
+			{
+				"key": "search_result_limit",
+				"type": "textfield",
+				"area": "Search",
+				"value": "10"
+			},
+			{
+				"key": "social_twitter",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_consumer_key",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_consumer_secret",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_access_token",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
+			},
+			{
+				"key": "twitter_access_token_secret",
+				"type": "textfield",
+				"area": "Social",
+				"value": ""
 			},
 			{
 				"key": "container_id",
@@ -3347,89 +3454,6 @@
 				"namespace": "formblocks",
 				"type": "textfield",
 				"area": "FormBlocks - CB fields"
-			},
-			{
-				"key": "global_backgrounds_id",
-				"type": "numberfield",
-				"area": "Pages"
-			},
-			{
-				"key": "global_footer_id",
-				"type": "numberfield",
-				"area": "Pages"
-			},
-			{
-				"key": "publication_container_id",
-				"type": "numberfield",
-				"area": "Pages"
-			},
-			{
-				"key": "team_container_id",
-				"type": "numberfield",
-				"area": "Pages"
-			},
-			{
-				"key": "testimonial_container_id",
-				"type": "numberfield",
-				"area": "Pages"
-			},
-			{
-				"key": "portfolio_container_id",
-				"type": "numberfield",
-				"area": "Pages"
-			},
-			{
-				"key": "client_container_id",
-				"type": "numberfield",
-				"area": "Pages"
-			},
-			{
-				"key": "search_add_to_menu",
-				"type": "combo-boolean",
-				"area": "Search",
-				"value": "0"
-			},
-			{
-				"key": "search_result_id",
-				"type": "textfield",
-				"area": "Search",
-				"value": ""
-			},
-			{
-				"key": "search_result_limit",
-				"type": "textfield",
-				"area": "Search",
-				"value": "10"
-			},
-			{
-				"key": "social_twitter",
-				"type": "textfield",
-				"area": "Social",
-				"value": ""
-			},
-			{
-				"key": "twitter_consumer_key",
-				"type": "textfield",
-				"area": "Social",
-				"value": ""
-			},
-			{
-				"key": "twitter_consumer_secret",
-				"type": "textfield",
-				"area": "Social",
-				"value": ""
-			},
-			{
-				"key": "twitter_access_token",
-				"type": "textfield",
-				"area": "Social",
-				"value": ""
-			},
-			{
-				"key": "twitter_access_token_secret",
-				"type": "textfield",
-				"area": "Social",
-				"value": ""
 			}
 		]
 	}

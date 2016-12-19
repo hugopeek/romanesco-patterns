@@ -21,6 +21,9 @@
                     "name": "cbSettingIconType",
                     "category": "a_cb_settings"
                 },{
+                    "name": "cbSettingImageType",
+                    "category": "a_cb_settings"
+                },{
                     "name": "cbSettingPadding",
                     "category": "a_cb_settings"
                 },{

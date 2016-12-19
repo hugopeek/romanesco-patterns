@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "patternLayoutElectronTV",
+                    "category": "m_lo_patterns"
+                },{
+                    "name": "patternLayoutElectronSystemSetting",
+                    "category": "m_lo_patterns"
+                },{
+                    "name": "patternLayoutAtom",
+                    "category": "m_lo_patterns"
+                },{
+                    "name": "patternLayoutMolecule",
+                    "category": "m_lo_patterns"
+                },{
+                    "name": "patternLayoutOrganism",
+                    "category": "m_lo_patterns"
+                }
+            ]
+        }
+    }
+}
