@@ -16,11 +16,17 @@
 ]]]]
 
 <div class="ui list">
+    [[[[If?
+        &subject=`assignedTVs`
+        &operator=`inarray`
+        &operand=`[[+pattern_list]]`
+        &then=`assignedTVs? &template=`[[+pattern_name:empty=``]]``
+    ]]]]
     [[If?
         &subject=`includedChunks`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`[[includedChunks? &input=`[[+raw_chunk]]`]]`
+        &then=`[[includedChunks? &input=`[[+raw_chunk:empty=`[[+raw_template]]`]]`]]`
     ]]
     [[If?
         &subject=`includedSnippets`
