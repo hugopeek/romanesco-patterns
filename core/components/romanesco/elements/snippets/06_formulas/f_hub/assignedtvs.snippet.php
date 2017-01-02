@@ -45,6 +45,7 @@ foreach ($tvList as $value) {
     $parent = $modx->getValue($query->prepare());
 
     // Output to a chunk that contains the link generator
+    // Filter all TVs under the Status tab, since that's not relevant info
     if (strpos($name, 'status_') === false) {
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,

@@ -1,17 +1,60 @@
-[[Rowboat:toPlaceholder=`raw_chunk`?
-    &table=`modx_site_htmlsnippets`
-    &tpl=`displayRawElement`
-    &where=`{"name":"[[+pattern_name]]"}`
-]]
+[[[[If?
+    &subject=`[[+pattern_template]]`
+    &operator=`inarray`
+    &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism`
+    &then=`
+        Rowboat:toPlaceholder=`raw_element`?
+            &table=`modx_site_htmlsnippets`
+            &tpl=`displayRawElement`
+            &where=`{"name":"[[+pattern_name]]"}`
+        `
+]]]]
 
 [[[[If?
-    &subject=`[[+raw_chunk]]`
-    &operator=`empty`
+    &subject=`[[+pattern_template]]`
+    &operator=`EQ`
+    &operand=`patternLayoutTemplate`
     &then=`
-        Rowboat:toPlaceholder=`raw_template`?
+        Rowboat:toPlaceholder=`raw_element`?
             &table=`modx_site_templates`
             &tpl=`displayRawTemplate`
             &where=`{"templatename":"[[+pattern_name]]"}`
+        `
+]]]]
+
+[[[[If?
+    &subject=`[[+pattern_template]]`
+    &operator=`EQ`
+    &operand=`patternLayoutFormula`
+    &then=`
+        Rowboat:toPlaceholder=`raw_element`?
+            &table=`modx_site_snippets`
+            &tpl=`displayRawElement`
+            &where=`{"name":"[[+pattern_name]]"}`
+        `
+]]]]
+
+[[[[If?
+    &subject=`[[+pattern_template]]`
+    &operator=`EQ`
+    &operand=`patternLayoutComputation`
+    &then=`
+        Rowboat:toPlaceholder=`raw_element`?
+            &table=`modx_site_plugins`
+            &tpl=`displayRawPlugin`
+            &where=`{"name":"[[+pattern_name]]"}`
+        `
+]]]]
+
+[[[[If?
+    &subject=`[[+pattern_template]]`
+    &operator=`EQ`
+    &operand=`patternLayoutBoson`
+    &then=`
+        Rowboat:toPlaceholder=`raw_element`?
+            &table=`modx_contentblocks_field`
+            &tpl=`displayRawContentBlock`
+            &where=`{"name":"[[+pattern_name]]"}`
         `
 ]]]]
 
@@ -23,21 +66,21 @@
         &then=`assignedTVs? &template=`[[+pattern_name:empty=``]]``
     ]]]]
     [[If?
+        &subject=`includedTVs`
+        &operator=`inarray`
+        &operand=`[[+pattern_list]]`
+        &then=`[[includedTVs? &input=`[[+raw_element]]`]]`
+    ]]
+    [[If?
         &subject=`includedChunks`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`[[includedChunks? &input=`[[+raw_chunk:empty=`[[+raw_template]]`]]`]]`
+        &then=`[[includedChunks? &input=`[[+raw_element]]`]]`
     ]]
     [[If?
         &subject=`includedSnippets`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`[[includedSnippets? &input=`[[+raw_chunk:empty=`[[+raw_template]]`]]`]]`
-    ]]
-    [[If?
-        &subject=`includedTVs`
-        &operator=`inarray`
-        &operand=`[[+pattern_list]]`
-        &then=`[[includedTVs? &input=`[[+raw_chunk:empty=`[[+raw_template]]`]]`]]`
+        &then=`[[includedSnippets? &input=`[[+raw_element]]`]]`
     ]]
 </div>

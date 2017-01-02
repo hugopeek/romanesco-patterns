@@ -2,13 +2,13 @@
 // Original script by Tran Duc Thang
 // @todo: write documentation and use chunks for the HTML templating
 
-$jsonText = $modx->getOption('json', $scriptProperties);
+$json = $modx->getOption('json', $scriptProperties, '');
 
 if (!class_exists('jsonToHTML')) {
     class jsonToHTML {
-        public static function jsonToDebug($jsonText = '')
+        public static function jsonToDebug($json = '')
         {
-            $arr = json_decode($jsonText, true);
+            $arr = json_decode($json, true);
             $html = '';
             if ($arr && is_array($arr)) {
                 $html .= self::_arrayToHtmlTableRecursive($arr);
@@ -22,15 +22,15 @@ if (!class_exists('jsonToHTML')) {
                 // Exclude templates from result
                 // @todo: make this variable
                 if ($key != 'templates') {
-                    $str .= "<tr>";
-                    $str .= "<td><strong>$key</strong></td>";
+                    $str .= "<tr class='top aligned'>";
+                    $str .= "<td style='width:0;'><strong>$key</strong></td>";
                     $str .= "<td>";
                     if (is_array($val)) {
                         if (!empty($val)) {
                             $str .= self::_arrayToHtmlTableRecursive($val);
                         }
                     } else {
-                        $str .= "$val";
+                        $str .= nl2br("$val");
                     }
                     $str .= "</td></tr>";
                 }
@@ -42,4 +42,4 @@ if (!class_exists('jsonToHTML')) {
     }
 }
 
-return jsonToHTML::jsonToDebug($jsonText);
+return jsonToHTML::jsonToDebug($json);

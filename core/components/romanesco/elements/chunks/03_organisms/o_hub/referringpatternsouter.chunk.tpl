@@ -13,7 +13,21 @@
             Rowboat?
                 &table=`modx_site_tmplvar_templates`
                 &tpl=`assignedTemplatesRow`
+                &limit=`0`
                 &where=`{ "tmplvarid":"[[+tmplvarid]]" }`
+            `
+    ]]]]
+    [[[[If?
+        &subject=`referringTVs`
+        &operator=`inarray`
+        &operand=`[[+pattern_list]]`
+        &then=`
+            Rowboat?
+                &table=`modx_site_tmplvars`
+                &tpl=`includedPatternsRow`
+                &sortBy=`name`
+                &limit=`0`
+                &where=`{ "elements:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
     [[[[If?
@@ -25,6 +39,7 @@
                 &table=`modx_site_htmlsnippets`
                 &tpl=`includedPatternsRow`
                 &sortBy=`name`
+                &limit=`0`
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
@@ -37,6 +52,7 @@
                 &table=`modx_site_snippets`
                 &tpl=`includedPatternsRow`
                 &sortBy=`name`
+                &limit=`0`
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
@@ -49,19 +65,20 @@
                 &table=`modx_site_templates`
                 &tpl=`includedPatternsRow`
                 &sortBy=`templatename`
+                &limit=`0`
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
     [[[[If?
-        &subject=`referringTVs`
+        &subject=`referringPages`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
         &then=`
             Rowboat?
-                &table=`modx_site_tmplvars`
-                &tpl=`includedPatternsRow`
-                &sortBy=`name`
-                &where=`{ "elements:LIKE":"%[[+pattern_name]]%" }`
+                &table=`modx_site_content`
+                &tpl=`includedPagesRow`
+                &limit=`0`
+                &where=`{ "properties:LIKE":"%\"field\":[[+field_id]],%" }`
             `
     ]]]]
 </div>
