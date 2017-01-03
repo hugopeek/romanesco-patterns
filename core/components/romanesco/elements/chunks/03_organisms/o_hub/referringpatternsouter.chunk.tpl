@@ -78,7 +78,7 @@
                 &table=`modx_site_content`
                 &tpl=`includedPagesRow`
                 &limit=`0`
-                &where=`{ "properties:LIKE":"%\"field\":[[+field_id]],%" }`
+                &where=`{ "properties:LIKE":"%\"field\":[[+[[+prefix]].id]],%" }`
             `
     ]]]]
 </div>

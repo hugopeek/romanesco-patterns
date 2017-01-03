@@ -5,21 +5,24 @@ $ContentBlocks->loadInputs();
 
 $cbField = $modx->getOption('cbField', $scriptProperties, '');
 $cbLayout = $modx->getOption('cbLayout', $scriptProperties, '');
+$prefix = $modx->getOption('prefix', $scriptProperties, 'cb');
 
 if ($cbField != '') {
     $field = $modx->getObject('cbField', array(
         'name' => $cbField
     ));
 
-    // Turn object into array and set all fields as placeholders
+    // Turn object into array
     $array = $field->toArray();
-    $modx->setPlaceholders($array);
+    // Set all fields as placeholders
+    // Use a prefix to prevent collisions
+    $modx->toPlaceholders($array, $prefix);
 
     // Set placeholder with all field settings parsed in an HTML table
     $settingsTable = $modx->runSnippet('jsonToHTML', array(
         'json' => $field->get('settings')
     ));
-    $modx->toPlaceholder('settings_table', $settingsTable);
+    $modx->toPlaceholder('settings_table', $settingsTable, $prefix);
 
     // Set placeholder with wrapper template, if present inside properties field
     $properties = $field->get('properties');
@@ -31,7 +34,7 @@ if ($cbField != '') {
             'tpl' => 'displayRawTemplate'
         ));
     }
-    $modx->toPlaceholder('wrapper_template', $wrapperTemplate);
+    $modx->toPlaceholder('wrapper_template', $wrapperTemplate, $prefix);
 }
 
 if ($cbLayout != '') {
@@ -41,5 +44,9 @@ if ($cbLayout != '') {
 
     $json = $layout->get('settings');
 }
+
+// Set separate placeholder with prefix, for easier retrieval of the other placeholders
+// Usage example: [[+[[+prefix]].placeholder]]
+$modx->toPlaceholder('prefix', $prefix);
 
 //print_r($json);
