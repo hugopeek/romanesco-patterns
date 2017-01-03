@@ -8,11 +8,6 @@
     </div>
 
     <div class="five wide right aligned column">
-        <i class="unhide link icon with visibility toggle and popup"
-           data-target="preview-[[+unique_idx]]"
-           data-targetState="visible"
-           data-content="[[%romanesco.patterns.preview_tooltip]]"
-           data-position="top center"></i>
         <i class="disabled code link icon with visibility toggle and popup"
            data-target="code-[[+unique_idx]]"
            data-targetState="hidden"
@@ -28,3 +23,20 @@
 </div>
 
 <div class="ui hidden divider"></div>
+
+<div id="code-[[+unique_idx]]" class="ui basic vertical segment hidden element">
+    <div class="ui two column stackable grid">
+        <div class="column">
+            [[$codeSnippet?
+                &value=`[[*[[+pattern_name]]:tag]]`
+                &label=`Page`
+            ]]
+        </div>
+        <div class="column">
+            [[$codeSnippet?
+                &value=`[[+[[+pattern_name]]:tag]]`
+                &label=`Tpl`
+            ]]
+        </div>
+    </div>
+</div>
