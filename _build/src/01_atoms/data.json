@@ -5,6 +5,12 @@
                 {
                     "name": "hitCount",
                     "category": "a_data"
+                },{
+                    "name": "rawName",
+                    "category": "a_data"
+                },{
+                    "name": "rawValue",
+                    "category": "a_data"
                 }
             ],
             "categories": [

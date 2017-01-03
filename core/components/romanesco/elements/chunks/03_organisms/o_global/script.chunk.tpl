@@ -7,4 +7,8 @@
     &field=`[[++romanesco.cb_field_code_id]]`
     &then=`<script src="[[++romanesco.custom_vendor_path]]/prism/prism.min.js"></script>`
 ]]
+[[cbHasFields?
+    &field=`84`
+    &then=`[[sliderLoadAssets]]`
+]]
 <script src="[[++romanesco.custom_js_path]]/site.js"></script>
