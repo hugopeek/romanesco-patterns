@@ -81,4 +81,23 @@
                 &where=`{ "properties:LIKE":"%\"field\":[[+[[+prefix]].id]],%" }`
             `
     ]]]]
+
+    [[Rowboat?
+        &table=`modx_contentblocks_field`
+        &tpl=`includedContentBlocksRow`
+        &limit=`0`
+        &where=`{ "template:LIKE":"%[[+pattern_name]]%" }`
+    ]]
+    [[Rowboat?
+        &table=`modx_contentblocks_field`
+        &tpl=`includedContentBlocksRow`
+        &limit=`0`
+        &where=`{ "properties:LIKE":"%[[+pattern_name]]%" }`
+    ]]
+    [[Rowboat?
+        &table=`modx_contentblocks_field`
+        &tpl=`includedContentBlocksRow`
+        &limit=`0`
+        &where=`{ "settings:LIKE":"%[[+pattern_name]]%" }`
+    ]]
 </div>

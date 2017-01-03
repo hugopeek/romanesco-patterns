@@ -1,6 +1,6 @@
 <?php
 // Get category name and parent ID
-$cat = $modx->getObject('modCategory', $input);
+$cat = $modx->getObject('modCategory', $input, '');
 $category = $cat->get('category');
 $parentID = $cat->get('parent');
 

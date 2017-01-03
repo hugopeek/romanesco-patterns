@@ -1,4 +1,4 @@
-[[setPatternPlaceholders? &cbField=`[[+pattern_name]]` &prefix=`l_[[+layout_id]]_[[+unique_idx]]`]]
+[[-setPatternPlaceholders? &cbField=`[[+pattern_name]]` &prefix=`pl_[[+layout_id]]_[[+layout_idx]]`]]
 
 <div class="ui two column middle aligned equal width grid">
     <div class="column">

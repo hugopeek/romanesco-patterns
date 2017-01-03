@@ -32,6 +32,10 @@ switch($input) {
         $type = "Computation";
         $type_s = "C";
         break;
+    case stripos($input,'boson') !== false:
+        $type = "Boson";
+        $type_s = "B";
+        break;
     default:
         $type = "undefined";
         $type_s = "U";
