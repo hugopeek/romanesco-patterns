@@ -1,5 +1,7 @@
 <?php
 $catID = $modx->getOption('input', $scriptProperties, '');
+$placeholder = $modx->getOption('toPlaceholder', $scriptProperties, '');
+$prefix = $modx->getOption('prefix', $scriptProperties, '');
 
 // Get category name and parent ID
 $category = $modx->getObject('modCategory', array(
@@ -15,6 +17,7 @@ if ($category) {
 // All Romanesco elements are nested at least 1 level deep, so if a category
 // has no parent, we can allow ourselves to assume it's part of a MODX extra.
 if (!$category && $parentID == 0) {
+    $modx->toPlaceholder('prefix', $prefix);
     return;
 }
 
@@ -39,15 +42,17 @@ if ($matchCat === $matchParent) {
 }
 
 // Get the resource with an alias that matches the category name
-$link = $modx->runSnippet('pdoResources', (array(
-    'parents' => '0',
-    'context' => 'hub',
-    'limit' => '1',
-    'tpl' => '@INLINE [[+uri]]',
-    'where' => '{ "uri:LIKE":"%' . $match . '" }'
-)
+$query = $modx->newQuery('modResource');
+$query->where(array(
+    'uri:LIKE' => '%' . $match,
 ));
+$query->select('uri');
+$link = $modx->getValue($query->prepare());
 
-// @todo: Link to the corresponding anchor of the subject
-
-return $link;
+// Output to placeholder if one is set
+if ($placeholder) {
+    $modx->toPlaceholder('prefix', $prefix);
+    $modx->toPlaceholder($placeholder, $link, $prefix);
+} else {
+    return $link;
+}

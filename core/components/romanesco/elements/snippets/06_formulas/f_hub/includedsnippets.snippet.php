@@ -26,6 +26,9 @@ $snippetList = $modx->runSnippet('Rowboat', (array(
 // Find included snippets by comparing them to the list
 $regex = '"(' . $snippetList . ')"';
 
+// Set idx start value to something high, to prevent overlap
+$idx = 1000;
+
 if (preg_match_all($regex, $string, $matches)) {
     foreach ($matches as $snippet) {
         $match = $snippet;
@@ -43,10 +46,14 @@ if (preg_match_all($regex, $string, $matches)) {
         $query->select('category');
         $category = $modx->getValue($query->prepare());
 
+        // Up idx value by 1, so a unique placeholder can be created
+        $idx++;
+
         // Output to a chunk that contains the link generator
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
-            'category' => $category
+            'category' => $category,
+            'idx' => $idx
         ));
     }
 }

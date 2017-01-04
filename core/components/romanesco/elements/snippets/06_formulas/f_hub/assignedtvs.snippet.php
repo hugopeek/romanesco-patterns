@@ -8,8 +8,6 @@ $template = $modx->getObject('modTemplate', array('templatename'=>$templateName)
 // Get the ID of the template
 if ($template) {
     $templateID = $template->get('id');
-
-    //return $templateID;
 }
 
 // Look in the tmplvar_templates table to find attached TVs
@@ -17,16 +15,18 @@ $assignedTVs = $modx->getCollection('modTemplateVarTemplate', array('templateid'
 
 foreach ($assignedTVs as $tv) {
     $tmplvarid = $tv->get('tmplvarid');
-
     $tvList .= $tmplvarid . ",";
 }
 
 // Turn result into array
 $tvList = array_filter(explode(',', $tvList));
 
-//print_r($tvList);
+// Sort list
+// @todo: sort array alphabetically
 sort($tvList);
-//@todo: sort array alphabetically
+
+// Set idx start value
+$idx = 3000;
 
 // Create a list of links to their corresponding PL locations
 foreach ($tvList as $value) {
@@ -44,12 +44,16 @@ foreach ($tvList as $value) {
     $query->select('parent');
     $parent = $modx->getValue($query->prepare());
 
+    // Up idx value by 1, so a unique placeholder can be created
+    $idx++;
+
     // Output to a chunk that contains the link generator
     // Filter all TVs under the Status tab, since that's not relevant info
     if (strpos($name, 'status_') === false) {
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
-            'category' => $parent
+            'category' => $parent,
+            'idx' => $idx
         ));
     }
 }

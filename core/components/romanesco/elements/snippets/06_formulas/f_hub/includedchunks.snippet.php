@@ -43,6 +43,9 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 // Find chunk names by their leading $ character
 $regex = '/(?<!\w)\$\w+/';
 
+// Set idx start value
+$idx = 0;
+
 if (preg_match_all($regex, $string, $matches)) {
     // Remove $ from all matches
     foreach ($matches as $match) {
@@ -53,20 +56,27 @@ if (preg_match_all($regex, $string, $matches)) {
     $result = array_unique($match);
 
     // Process matches individually
-    foreach ($result as $value) {
+    foreach ($result as $name) {
         // Also fetch category, to help ensure the correct resource is being linked
         $query = $modx->newQuery('modChunk', array(
-            'name' => $value
+            'name' => $name
         ));
         $query->select('category');
         $category = $modx->getValue($query->prepare());
 
+        // Up idx value by 1, so a unique placeholder can be created
+        $idx++;
+
         // Output to a chunk that contains the link generator
         $output[] = $modx->getChunk($tpl, array(
-            'name' => $value,
-            'category' => $category
+            'name' => $name,
+            'category' => $category,
+            'idx' => $idx
         ));
     }
+
+    // No idea how it sorts the result, but seems better than the default
+    sort($output);
 }
 
 return implode($output);

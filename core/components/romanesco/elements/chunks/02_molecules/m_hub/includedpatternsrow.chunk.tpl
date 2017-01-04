@@ -1,12 +1,17 @@
-[[includedPatternsLink:toPlaceholder=`link_[[+unique_idx]]`? &input=`[[+category]]`]]
 [[+templatename:empty=`[[+name]]`:toPlaceholder=`name`]]
 
+[[includedPatternsLink?
+    &input=`[[+category]]`
+    &prefix=`pl_[[+unique_idx]]_[[+idx]]`
+    &toPlaceholder=`link`
+]]
+
 [[If?
-    &subject=`[[+link_[[+unique_idx]]]]`
+    &subject=`[[+[[+prefix]].link]]`
     &operator=`notempty`
     &then=`
-        <a class="item" href="[[+link_[[+unique_idx]]]]#[[+name:lcase]]">
-            <span class="ui circular label">[[+link_[[+unique_idx]]:setPatternType]]</span>
+        <a class="item" href="[[+[[+prefix]].link]]#[[+name:lcase]]">
+            <span class="ui circular label">[[+[[+prefix]].link:setPatternType]]</span>
             [[+name]]
         </a>
     `
