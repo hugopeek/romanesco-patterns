@@ -1,4 +1,4 @@
 <a class="item" href="[[~[[+id]]]]">
-    <span class="ui circular label">P</span>
+    <span class="ui circular label">[[setPatternType? &input=`pages`]]</span>
     [[+pagetitle]]
 </a>

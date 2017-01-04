@@ -53,15 +53,15 @@ if (preg_match_all($regex, $string, $matches)) {
     $result = array_unique($match);
 
     // Process matches individually
-    foreach ($result as $key => $value) {
+    foreach ($result as $value) {
+        // Also fetch category, to help ensure the correct resource is being linked
         $query = $modx->newQuery('modChunk', array(
             'name' => $value
         ));
-
-        // Also fetch category, for internal pattern library link
         $query->select('category');
         $category = $modx->getValue($query->prepare());
 
+        // Output to a chunk that contains the link generator
         $output[] = $modx->getChunk($tpl, array(
             'name' => $value,
             'category' => $category

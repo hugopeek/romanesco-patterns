@@ -1,8 +1,22 @@
 <?php
+$catID = $modx->getOption('input', $scriptProperties, '');
+
 // Get category name and parent ID
-$cat = $modx->getObject('modCategory', $input, '');
-$category = $cat->get('category');
-$parentID = $cat->get('parent');
+$category = $modx->getObject('modCategory', array(
+    'id' => $catID
+));
+
+if ($category) {
+    $catName = $category->get('category');
+    $parentID = $category->get('parent');
+}
+
+// If category or parent is empty, don't generate any link.
+// All Romanesco elements are nested at least 1 level deep, so if a category
+// has no parent, we can allow ourselves to assume it's part of a MODX extra.
+if (!$category && $parentID == 0) {
+    return;
+}
 
 // Get parent name as well, to avoid issues with multiple matches
 $query = $modx->newQuery('modCategory', array(
@@ -12,7 +26,7 @@ $query->select('category');
 $parentName = $modx->getValue($query->prepare());
 
 // Grab only the last part of the category name
-$category = preg_match('([^_]+$)', $category, $matchCat);
+$catName = preg_match('([^_]+$)', $catName, $matchCat);
 $parent = preg_match('([^_]+$)', $parentName, $matchParent);
 $matchCat = strtolower($matchCat[0]);
 $matchParent = strtolower($matchParent[0]);

@@ -7,4 +7,6 @@ Organism=patternLayoutOrganism
 Template=patternLayoutTemplate
 Formula=patternLayoutFormula
 Computation=patternLayoutComputation
-Boson=patternLayoutBoson
+Boson (Field)=patternLayoutBosonField
+Boson (Layout)=patternLayoutBosonLayout
+Boson (Template)=patternLayoutBosonTemplate

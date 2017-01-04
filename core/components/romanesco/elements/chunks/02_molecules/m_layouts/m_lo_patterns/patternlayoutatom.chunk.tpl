@@ -18,6 +18,9 @@
            data-targetState="hidden"
            data-content="[[%romanesco.patterns.code_tooltip]]"
            data-position="top center"></i>
+        <i class="disabled comment outline link icon with popup"
+           data-content="[[%romanesco.patterns.comment_tooltip]]"
+           data-position="top center"></i>
 
         [[$buttonHrefIcon?
             &classes=`small primary`

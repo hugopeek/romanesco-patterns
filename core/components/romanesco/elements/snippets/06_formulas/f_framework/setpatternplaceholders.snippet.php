@@ -1,7 +1,7 @@
 <?php
 $cbCorePath = $modx->getOption('contentblocks.core_path', null, $modx->getOption('core_path').'components/contentblocks/');
 $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.'model/contentblocks/');
-$ContentBlocks->loadInputs();
+//$ContentBlocks->loadInputs();
 
 $cbField = $modx->getOption('cbField', $scriptProperties, '');
 $cbLayout = $modx->getOption('cbLayout', $scriptProperties, '');

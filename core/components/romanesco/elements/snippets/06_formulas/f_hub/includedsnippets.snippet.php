@@ -16,7 +16,7 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 // Create a list with all available snippets
 $snippetList = $modx->runSnippet('Rowboat', (array(
     'table' => 'modx_site_snippets',
-    'tpl' => 'inputOptionsRow',
+    'tpl' => 'rawName',
     'limit' => '0',
     'columns' => '{ "name":"" }',
     'outputSeparator' => '|'
@@ -27,26 +27,25 @@ $snippetList = $modx->runSnippet('Rowboat', (array(
 $regex = '"(' . $snippetList . ')"';
 
 if (preg_match_all($regex, $string, $matches)) {
-    // Remove $ from all matches
-    foreach ($matches as $match) {
-        $match = $match;
+    foreach ($matches as $snippet) {
+        $match = $snippet;
     }
 
     // Remove duplicates
     $result = array_unique($match);
 
     // Process matches individually
-    foreach ($result as $key => $value) {
-        $query = $modx->newQuery('modChunk', array(
-            'name' => $value
+    foreach ($result as $name) {
+        // Also fetch category, to help ensure the correct resource is being linked
+        $query = $modx->newQuery('modSnippet', array(
+            'name' => $name
         ));
-
-        // Also fetch category, for internal pattern library link
         $query->select('category');
         $category = $modx->getValue($query->prepare());
 
+        // Output to a chunk that contains the link generator
         $output[] = $modx->getChunk($tpl, array(
-            'name' => $value,
+            'name' => $name,
             'category' => $category
         ));
     }

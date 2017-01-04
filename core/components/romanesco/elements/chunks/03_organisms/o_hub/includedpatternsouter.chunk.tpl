@@ -59,28 +59,22 @@
 ]]]]
 
 <div class="ui list">
-    [[[[If?
+    [[If?
         &subject=`assignedTVs`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`assignedTVs? &template=`[[+pattern_name:empty=``]]``
-    ]]]]
-    [[If?
-        &subject=`includedTVs`
-        &operator=`inarray`
-        &operand=`[[+pattern_list]]`
-        &then=`[[includedTVs? &input=`[[+raw_element]]`]]`
-    ]]
-    [[If?
-        &subject=`includedChunks`
-        &operator=`inarray`
-        &operand=`[[+pattern_list]]`
-        &then=`[[includedChunks? &input=`[[+raw_element]]`]]`
-    ]]
-    [[If?
-        &subject=`includedSnippets`
-        &operator=`inarray`
-        &operand=`[[+pattern_list]]`
-        &then=`[[includedSnippets? &input=`[[+raw_element]]`]]`
+        &then=`[[assignedTVs? &template=`[[+pattern_name:empty=``]]`]]`
+        &else=`
+            [[If?
+                &subject=`[[+pattern_template]]`
+                &operator=`inarray`
+                &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutTemplate`
+                &then=`
+                    [[includedTVs? &input=`[[+raw_element]]`]]
+                    [[includedChunks? &input=`[[+raw_element]]`]]
+                    [[includedSnippets? &input=`[[+raw_element]]`]]
+                `
+            ]]
+        `
     ]]
 </div>
