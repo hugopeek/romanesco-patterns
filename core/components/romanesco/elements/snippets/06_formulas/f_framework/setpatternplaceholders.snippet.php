@@ -5,48 +5,58 @@ $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.
 
 $cbField = $modx->getOption('cbField', $scriptProperties, '');
 $cbLayout = $modx->getOption('cbLayout', $scriptProperties, '');
-$prefix = $modx->getOption('prefix', $scriptProperties, 'cb');
+$prefix = $modx->getOption('prefix', $scriptProperties, '');
 
-if ($cbField != '') {
+if ($cbField) {
     $field = $modx->getObject('cbField', array(
         'name' => $cbField
     ));
 
-    // Turn object into array
-    $array = $field->toArray();
-    // Set all fields as placeholders
-    // Use a prefix to prevent collisions
-    $modx->toPlaceholders($array, $prefix);
+    if ($field) {
+        // Create an array with all internal fields
+        $array = $field->toArray();
 
-    // Set placeholder with all field settings parsed in an HTML table
-    $settingsTable = $modx->runSnippet('jsonToHTML', array(
-        'json' => $field->get('settings')
-    ));
-    $modx->toPlaceholder('settings_table', $settingsTable, $prefix);
+        // Set all fields as placeholders
+        // Use a prefix to prevent collisions
+        $modx->toPlaceholders($array, $prefix);
 
-    // Set placeholder with wrapper template, if present inside properties field
-    $properties = $field->get('properties');
-    if (strpos($properties, 'wrapper_template') !== false) {
-        // Get the wrapper_template value from its JSON container
-        $wrapperTemplate = $modx->runSnippet('jsonGetValue', array(
-            'json' => $properties,
-            'key' => 'wrapper_template',
-            'tpl' => 'displayRawTemplate'
+        // Set placeholder with all field settings parsed in an HTML table
+        $settingsTable = $modx->runSnippet('jsonToHTML', array(
+            'json' => $field->get('settings')
         ));
+        $modx->toPlaceholder('settings_table', $settingsTable, $prefix);
+
+        // Set placeholder with wrapper template, if present inside properties field
+        $properties = $field->get('properties');
+        if (strpos($properties, 'wrapper_template') !== false) {
+            // Get the wrapper_template value from its JSON container
+            $wrapperTemplate = $modx->runSnippet('jsonGetValue', array(
+                'json' => $properties,
+                'key' => 'wrapper_template',
+                'tpl' => 'displayRawTemplate'
+            ));
+        }
+        $modx->toPlaceholder('wrapper_template', $wrapperTemplate, $prefix);
+
+        // Set separate placeholder with prefix, for easier retrieval of the other placeholders
+        // Usage example: [[+[[+cb]].placeholder]]
+        $modx->toPlaceholder('cf', $prefix);
     }
-    $modx->toPlaceholder('wrapper_template', $wrapperTemplate, $prefix);
+    else {
+        $modx->log(modX::LOG_LEVEL_WARN, '[setPatternPlaceholders] ' . $cbField . ' could not be processed');
+    }
 }
 
-if ($cbLayout != '') {
+if ($cbLayout) {
     $layout = $modx->getObject('cbLayout', array(
         'name' => $cbLayout
     ));
 
     $json = $layout->get('settings');
-}
 
-// Set separate placeholder with prefix, for easier retrieval of the other placeholders
-// Usage example: [[+[[+prefix]].placeholder]]
-$modx->toPlaceholder('prefix', $prefix);
+    // Set separate placeholder with prefix, for easier retrieval of the other placeholders
+    // Usage example: [[+[[+cb]].placeholder]]
+    $modx->toPlaceholder('cl', $prefix);
+}
 
 //print_r($json);

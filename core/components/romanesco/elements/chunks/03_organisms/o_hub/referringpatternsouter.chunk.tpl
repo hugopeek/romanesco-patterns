@@ -5,6 +5,7 @@
         &operand=`[[+pattern_list]]`
         &then=`getTmplvarID:toPlaceholder=`tmplvarid`? &tv=`[[+pattern_name:empty=``]]``
     ]]]]
+
     [[[[If?
         &subject=`assignedTemplates`
         &operator=`inarray`
@@ -17,6 +18,7 @@
                 &where=`{ "tmplvarid":"[[+tmplvarid]]" }`
             `
     ]]]]
+
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
@@ -30,6 +32,7 @@
                 &where=`{ "elements:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
+
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
@@ -43,6 +46,7 @@
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
+
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
@@ -56,6 +60,7 @@
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
+
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
@@ -69,6 +74,7 @@
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
+
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
@@ -81,18 +87,33 @@
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
             `
     ]]]]
+
     [[[[If?
         &subject=`[[+pattern_template]]`
-        &operator=`inarray`
-        &operand=`patternLayoutBosonField,patternLayoutBosonLayout,patternLayoutOrganism,patternLayoutBosonTemplate`
+        &operator=`EQ`
+        &operand=`patternLayoutBosonField`
         &then=`
             Rowboat?
                 &table=`modx_site_content`
                 &tpl=`includedPagesRow`
                 &limit=`0`
-                &where=`{ "properties:LIKE":"%\"field\":[[+[[+prefix]].id]],%" }`
+                &where=`{ "properties:LIKE":"%field__:[[+[[+cf]].id]],%" }`
             `
     ]]]]
+
+    [[[[If?
+        &subject=`[[+pattern_template]]`
+        &operator=`EQ`
+        &operand=`patternLayoutBosonLayout`
+        &then=`
+            Rowboat?
+                &table=`modx_site_content`
+                &tpl=`includedPagesRow`
+                &limit=`0`
+                &where=`{ "properties:LIKE":"%layout__:[[+[[+cl]].id]],%" }`
+            `
+    ]]]]
+
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`

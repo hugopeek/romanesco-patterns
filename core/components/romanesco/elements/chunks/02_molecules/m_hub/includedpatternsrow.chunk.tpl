@@ -2,16 +2,16 @@
 
 [[includedPatternsLink?
     &input=`[[+category]]`
-    &prefix=`pl_[[+unique_idx]]_[[+idx]]`
+    &prefix=`pl_[[+idx]]_[[+unique_idx]]`
     &toPlaceholder=`link`
 ]]
 
 [[If?
-    &subject=`[[+[[+prefix]].link]]`
+    &subject=`[[+[[+pl]].link]]`
     &operator=`notempty`
     &then=`
-        <a class="item" href="[[+[[+prefix]].link]]#[[+name:lcase]]">
-            <span class="ui circular label">[[+[[+prefix]].link:setPatternType]]</span>
+        <a class="item" href="[[+[[+pl]].link]]#[[+name:lcase]]">
+            <span class="ui circular label">[[+[[+pl]].link:setPatternType]]</span>
             [[+name]]
         </a>
     `

@@ -53,10 +53,23 @@
 [[[[If?
     &subject=`[[+pattern_template]]`
     &operator=`EQ`
-    &operand=`patternLayoutBoson`
+    &operand=`patternLayoutBosonField`
     &then=`
         Rowboat?
             &table=`modx_contentblocks_field`
+            &tpl=`displayRawContentBlock`
+            &where=`{"name":"[[+pattern_name]]"}`
+            &toPlaceholder=`raw_element`
+        `
+]]]]
+
+[[[[If?
+    &subject=`[[+pattern_template]]`
+    &operator=`EQ`
+    &operand=`patternLayoutBosonLayout`
+    &then=`
+        Rowboat?
+            &table=`modx_contentblocks_layout`
             &tpl=`displayRawContentBlock`
             &where=`{"name":"[[+pattern_name]]"}`
             &toPlaceholder=`raw_element`
@@ -68,16 +81,16 @@
         &subject=`assignedTVs`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`assignedTVs? &template=`[[+pattern_name:empty=``]]``
+        &then=`assignedTVs:toPlaceholder=`tv_list`? &template=`[[+pattern_name:empty=``]]``
     ]]]]
     [[If?
-        &subject=`[[+pattern_template]]`
-        &operator=`inarray`
-        &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutTemplate,patternLayoutBosonField,patternLayoutBosonLayout,patternLayoutBosonTemplate`
+        &subject=`[[+tv_list]]`
+        &operator=`empty`
         &then=`
             [[includedTVs? &input=`[[+raw_element]]`]]
             [[includedChunks? &input=`[[+raw_element]]`]]
             [[includedSnippets? &input=`[[+raw_element]]`]]
         `
+        &else=`[[+tv_list]]`
     ]]
 </div>

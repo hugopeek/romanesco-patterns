@@ -29,6 +29,9 @@ $regex = '"(' . $snippetList . ')"';
 // Set idx start value to something high, to prevent overlap
 $idx = 1000;
 
+// Define output array
+$output = array();
+
 if (preg_match_all($regex, $string, $matches)) {
     foreach ($matches as $snippet) {
         $match = $snippet;

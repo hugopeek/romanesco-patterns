@@ -17,6 +17,8 @@ if (!function_exists('createLink')) {
 
         if ($category) {
             $catName = strtolower($category->get('name'));
+        } else {
+            $modx->log(modX::LOG_LEVEL_WARN, '[referringBosons] Link could not be generated due to missing category ID');
         }
 
         // Use bosons as parent name, because we don't know if this is a layout or field

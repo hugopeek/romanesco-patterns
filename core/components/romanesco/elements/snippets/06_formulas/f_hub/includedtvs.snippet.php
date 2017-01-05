@@ -20,6 +20,9 @@ $regex = '/(?<!\w)\+\w+/';
 // Set idx start value to something high, to prevent overlap
 $idx = 2000;
 
+// Define output array
+$output = array();
+
 if (preg_match_all($regex, $string, $matches)) {
     // Remove + from all matches
     foreach ($matches as $match) {

@@ -1,4 +1,4 @@
-[[setBoxType? &input=`[[+row_tpl]]` &prefix=`pl_[[+layout_id]]_[[+layout_column]]`]]
+[[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+layout_column]]`]]
 
 <div class="ui [[+cols]] column doubling [[+row_tpl:containsnot=`logo`:then=`stackable`]] [[+padding]] nested [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?

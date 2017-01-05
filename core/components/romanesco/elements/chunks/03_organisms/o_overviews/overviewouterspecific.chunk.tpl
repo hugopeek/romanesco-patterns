@@ -1,4 +1,4 @@
-[[setBoxType? &input=`[[+row_tpl]]` &prefix=`pl_[[+layout_id]]_[[+unique_idx]]`]]
+[[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
 
 <div class="ui [[+cols]] column doubling stackable [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[!getCache?

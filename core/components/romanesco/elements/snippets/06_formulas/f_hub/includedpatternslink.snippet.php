@@ -17,7 +17,7 @@ if ($category) {
 // All Romanesco elements are nested at least 1 level deep, so if a category
 // has no parent, we can allow ourselves to assume it's part of a MODX extra.
 if (!$category && $parentID == 0) {
-    $modx->toPlaceholder('prefix', $prefix);
+    $modx->toPlaceholder('pl', $prefix);
     return;
 }
 
@@ -51,7 +51,7 @@ $link = $modx->getValue($query->prepare());
 
 // Output to placeholder if one is set
 if ($placeholder) {
-    $modx->toPlaceholder('prefix', $prefix);
+    $modx->toPlaceholder('pl', $prefix);
     $modx->toPlaceholder($placeholder, $link, $prefix);
 } else {
     return $link;

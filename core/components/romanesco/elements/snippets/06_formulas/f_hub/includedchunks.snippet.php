@@ -46,6 +46,9 @@ $regex = '/(?<!\w)\$\w+/';
 // Set idx start value
 $idx = 0;
 
+// Define output array
+$output = array();
+
 if (preg_match_all($regex, $string, $matches)) {
     // Remove $ from all matches
     foreach ($matches as $match) {

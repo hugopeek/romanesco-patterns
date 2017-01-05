@@ -8,6 +8,8 @@ $template = $modx->getObject('modTemplate', array('templatename'=>$templateName)
 // Get the ID of the template
 if ($template) {
     $templateID = $template->get('id');
+} else {
+    $modx->log(modX::LOG_LEVEL_WARN, '[assignedTVs] ' . $templateName . ' could not be processed');
 }
 
 // Look in the tmplvar_templates table to find attached TVs
@@ -27,6 +29,9 @@ sort($tvList);
 
 // Set idx start value
 $idx = 3000;
+
+// Define output array
+$output = array();
 
 // Create a list of links to their corresponding PL locations
 foreach ($tvList as $value) {
