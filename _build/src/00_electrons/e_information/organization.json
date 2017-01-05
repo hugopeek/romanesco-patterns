@@ -32,6 +32,16 @@
                         "@@templates_client"
                     ]
                 },{
+                    "caption": "Organization name",
+                    "name": "organization_name",
+                    "description": "",
+                    "type": "text",
+                    "category": "Org. - Information",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_client"
+                    ]
+                },{
                     "caption": "Organization sector",
                     "name": "organization_sector",
                     "description": "What type of organization is this?",
