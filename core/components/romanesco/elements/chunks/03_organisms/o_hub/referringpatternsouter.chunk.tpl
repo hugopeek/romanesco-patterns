@@ -18,9 +18,9 @@
             `
     ]]]]
     [[[[If?
-        &subject=`referringTVs`
+        &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`[[+pattern_list]]`
+        &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism`
         &then=`
             Rowboat?
                 &table=`modx_site_tmplvars`
@@ -31,9 +31,9 @@
             `
     ]]]]
     [[[[If?
-        &subject=`referringChunks`
+        &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`[[+pattern_list]]`
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
             Rowboat?
                 &table=`modx_site_htmlsnippets`
@@ -44,9 +44,9 @@
             `
     ]]]]
     [[[[If?
-        &subject=`referringSnippets`
+        &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`[[+pattern_list]]`
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
             Rowboat?
                 &table=`modx_site_snippets`
@@ -57,9 +57,9 @@
             `
     ]]]]
     [[[[If?
-        &subject=`referringTemplates`
+        &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`[[+pattern_list]]`
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
             Rowboat?
                 &table=`modx_site_templates`
@@ -70,9 +70,21 @@
             `
     ]]]]
     [[[[If?
-        &subject=`referringPages`
+        &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`[[+pattern_list]]`
+        &operand=`patternLayoutTemplate`
+        &then=`
+            Rowboat?
+                &table=`modx_site_content`
+                &tpl=`includedPagesRow`
+                &limit=`0`
+                &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
+            `
+    ]]]]
+    [[[[If?
+        &subject=`[[+pattern_template]]`
+        &operator=`inarray`
+        &operand=`patternLayoutBosonField,patternLayoutBosonLayout,patternLayoutOrganism,patternLayoutBosonTemplate`
         &then=`
             Rowboat?
                 &table=`modx_site_content`
@@ -82,9 +94,9 @@
             `
     ]]]]
     [[[[If?
-        &subject=`referringBosons`
+        &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`[[+pattern_list]]`
-        &then=`includedBosons? &pattern=`[[+pattern_name]]``
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
+        &then=`referringBosons? &pattern=`[[+pattern_name:empty=``]]``
     ]]]]
 </div>

@@ -9,12 +9,15 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'includedContentBlocksRow');
 if (!function_exists('createLink')) {
     function createLink($catID) {
         global $modx;
-        
+
         // Since we have an ID, let's go hunt for the category name
         $category = $modx->getObject('cbCategory', array(
             'id' => $catID
         ));
-        $catName = strtolower($category->get('name'));
+
+        if ($category) {
+            $catName = strtolower($category->get('name'));
+        }
 
         // Use bosons as parent name, because we don't know if this is a layout or field
         $parentName = 'bosons';
