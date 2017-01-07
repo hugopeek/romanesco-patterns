@@ -52,11 +52,25 @@ if ($cbLayout) {
         'name' => $cbLayout
     ));
 
-    $json = $layout->get('settings');
+    if ($layout) {
+        // Create an array with all internal fields
+        $array = $layout->toArray();
 
-    // Set separate placeholder with prefix, for easier retrieval of the other placeholders
-    // Usage example: [[+[[+cb]].placeholder]]
-    $modx->toPlaceholder('cl', $prefix);
+        // Set all fields as placeholders
+        // Use a prefix to prevent collisions
+        $modx->toPlaceholders($array, $prefix);
+
+        // Set placeholder with all field settings parsed in an HTML table
+        $settingsTable = $modx->runSnippet('jsonToHTML', array(
+            'json' => $layout->get('settings')
+        ));
+        $modx->toPlaceholder('settings_table', $settingsTable, $prefix);
+
+        // Set separate placeholder with prefix, for easier retrieval of the other placeholders
+        // Usage example: [[+[[+cl]].placeholder]]
+        $modx->toPlaceholder('cl', $prefix);
+    }
+    else {
+        $modx->log(modX::LOG_LEVEL_WARN, '[setPatternPlaceholders] ' . $cbLayout . ' could not be processed');
+    }
 }
-
-//print_r($json);

@@ -9,6 +9,9 @@
                     "name": "rawName",
                     "category": "a_data"
                 },{
+                    "name": "rawID",
+                    "category": "a_data"
+                },{
                     "name": "rawValue",
                     "category": "a_data"
                 }

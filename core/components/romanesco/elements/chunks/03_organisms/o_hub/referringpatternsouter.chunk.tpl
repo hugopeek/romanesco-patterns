@@ -95,9 +95,11 @@
         &then=`
             Rowboat?
                 &table=`modx_site_content`
-                &tpl=`includedPagesRow`
+                &tpl=`rawID`
                 &limit=`0`
-                &where=`{ "properties:LIKE":"%field__:[[+[[+cf]].id]],%" }`
+                &where=`{ "properties:LIKE":"%field__:[[+[[+cf]].id]]___settings%" }`
+                &outputSeparator=`,`
+                &toPlaceholder=`raw_pages`
             `
     ]]]]
 
@@ -108,9 +110,26 @@
         &then=`
             Rowboat?
                 &table=`modx_site_content`
-                &tpl=`includedPagesRow`
+                &tpl=`rawID`
                 &limit=`0`
-                &where=`{ "properties:LIKE":"%layout__:[[+[[+cl]].id]],%" }`
+                &where=`{ "properties:LIKE":"%layout__:[[+[[+cl]].id]]___content%" }`
+                &outputSeparator=`,`
+                &toPlaceholder=`raw_pages`
+            `
+    ]]]]
+
+    [[[[If?
+        &subject=`[[+raw_pages]]`
+        &operator=`notempty`
+        &then=`
+            pdoMenu?
+                &parents=`0`
+                &context=`web,hub`
+                &resources=`[[+raw_pages]]`
+                &showHidden=`1`
+                &showUnpublished=`1`
+                &tplOuter=`@INLINE [[+wrapper]]`
+                &tpl=`includedPagesRow`
             `
     ]]]]
 

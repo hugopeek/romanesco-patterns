@@ -2,3 +2,4 @@
     <span class="ui circular label">[[setPatternType? &input=`pages`]]</span>
     [[+pagetitle]]
 </a>
+[[+wrapper]]
