@@ -11,6 +11,10 @@
                     "description": "Retrieve settings from a context of choice.",
                     "category": "f_basic"
                 },{
+                    "name": "getElementDescription",
+                    "description": "Retrieve the description of an element of choice.",
+                    "category": "f_basic"
+                },{
                     "name": "stripAsAlias",
                     "description": "Output modifier that turns input into lowercase-hyphen-separated format and strips unwanted special characters.",
                     "category": "f_modifiers"
