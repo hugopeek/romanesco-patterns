@@ -155,7 +155,11 @@
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
         &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
-        &then=`referringBosons:toPlaceholder=`referring_bosons`? &pattern=`[[+pattern_name:empty=``]]``
+        &then=`
+            referringBosons:toPlaceholder=`referring_bosons`?
+                &pattern=`[[+pattern_name:empty=``]]`
+                &type=`[[+pattern_template]]`
+            `
     ]]]]
 
     [[- // Initially, every referring element query was controlled by a checkbox in CB.

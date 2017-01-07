@@ -39,33 +39,52 @@ if (!function_exists('createLink')) {
 
 // First, we need to know which CB elements contain the pattern name
 // Let's start searching inside fields first, since they're the most common
-$cbField = $modx->getCollection('cbField', array(
+$result = $modx->getCollection('cbField', array(
     'template:LIKE' => '%' . $pattern . '%',
     'OR:properties:LIKE' => '%' . $pattern . '%',
     'OR:settings:LIKE' => '%' . $pattern . '%'
 ));
 
-// Set matches if any fields where found
-if ($cbField) {
-    $matches = $cbField;
+// Maybe the field type is Chunk, meaning it is referenced by ID instead of name
+if (!$result) {
+    $query = $modx->newQuery('modChunk');
+    $query->where(array(
+        'name' => $pattern
+    ));
+    $query->select('id');
+    $patternID = $modx->getValue($query->prepare());
+
+    $result = $modx->getObject('cbField', array(
+        'properties:LIKE' => '%"chunk":"' . $patternID . '"%'
+    ));
+
+    if ($result) {
+        $name = $result->get('name');
+        $link = createLink($result->get('category'));
+
+        $output = $modx->getChunk($tpl, array(
+            'name' => $name,
+            'link' => $link
+        ));
+
+        return $output;
+    }
 }
 
 // If no fields where found, try the layouts table instead
-if (!$cbField) {
-    $cbLayout = $modx->getCollection('cbLayout', array(
+if (!$result) {
+    $result = $modx->getCollection('cbLayout', array(
         'template:LIKE' => '%' . $pattern . '%',
         'OR:settings:LIKE' => '%' . $pattern . '%'
     ));
-
-    $matches = $cbLayout;
 }
 
 // Proceed if any matches are present
-if ($matches) {
+if ($result) {
     // Turn each match into a list item with a link
-    foreach ($matches as $match) {
-        $name = $match->get('name');
-        $link = createLink($match->get('category'));
+    foreach ($result as $boson) {
+        $name = $boson->get('name');
+        $link = createLink($boson->get('category'));
 
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
@@ -74,4 +93,10 @@ if ($matches) {
     }
 
     return(implode($output));
+
+    //if ($placeholder) {
+    //    $modx->toPlaceholder($placeholder, $output);
+    //} else {
+    //    return $output;
+    //}
 }
