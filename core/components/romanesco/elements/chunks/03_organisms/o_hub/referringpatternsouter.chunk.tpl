@@ -1,4 +1,15 @@
 <div class="ui list">
+    [[-/**
+        * This should really be a snippet, but my PHP skills were not sufficient at the time.
+        *
+        * What all these snippet calls do, is query the database tables of each element type
+        * and look for signs of the given pattern name.
+        *
+        * All Rowboat calls are nested into their parent If call using the mosquito technique.
+        * This ensures that no database queries are being performed unless the If criteria are met.
+        */
+    ]]
+
     [[[[If?
         &subject=`assignedTemplates`
         &operator=`inarray`
@@ -16,6 +27,7 @@
                 &tpl=`assignedTemplatesRow`
                 &limit=`0`
                 &where=`{ "tmplvarid":"[[+tmplvarid]]" }`
+                &toPlaceholder=`[[+layout_column]]_assigned_templates`
             `
     ]]]]
 
@@ -30,6 +42,7 @@
                 &sortBy=`name`
                 &limit=`0`
                 &where=`{ "elements:LIKE":"%[[+pattern_name]]%" }`
+                &toPlaceholder=`referring_tvs`
             `
     ]]]]
 
@@ -44,6 +57,7 @@
                 &sortBy=`name`
                 &limit=`0`
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
+                &toPlaceholder=`referring_chunks`
             `
     ]]]]
 
@@ -58,6 +72,7 @@
                 &sortBy=`name`
                 &limit=`0`
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
+                &toPlaceholder=`referring_snippets`
             `
     ]]]]
 
@@ -72,6 +87,7 @@
                 &sortBy=`templatename`
                 &limit=`0`
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
+                &toPlaceholder=`referring_templates`
             `
     ]]]]
 
@@ -85,6 +101,7 @@
                 &tpl=`includedPagesRow`
                 &limit=`0`
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
+                &toPlaceholder=`referring_pages`
             `
     ]]]]
 
@@ -130,6 +147,7 @@
                 &showUnpublished=`1`
                 &tplOuter=`@INLINE [[+wrapper]]`
                 &tpl=`includedPagesRow`
+                &toPlaceholder=`referring_pages`
             `
     ]]]]
 
@@ -137,6 +155,27 @@
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
         &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
-        &then=`referringBosons? &pattern=`[[+pattern_name:empty=``]]``
+        &then=`referringBosons:toPlaceholder=`referring_bosons`? &pattern=`[[+pattern_name:empty=``]]``
     ]]]]
+
+    [[- // Initially, every referring element query was controlled by a checkbox in CB.
+        // This proved to be very had to maintain, so instead it's just the assigned templates that's
+        // being handled this way now.
+        //
+        // So if the Assigned Templates setting is not checked in CB, we can display the other elements (if set).
+    ]]
+
+    [[If?
+        &subject=`[[+[[+layout_column]]_assigned_templates]]`
+        &operator=`notempty`
+        &then=`[[+[[+layout_column]]_assigned_templates]]`
+        &else=`
+            [[+referring_tvs]]
+            [[+referring_chunks]]
+            [[+referring_snippets]]
+            [[+referring_templates]]
+            [[+referring_pages]]
+            [[+referring_bosons]]
+        `
+    ]]
 </div>
