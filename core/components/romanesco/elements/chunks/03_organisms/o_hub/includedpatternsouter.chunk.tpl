@@ -81,16 +81,16 @@
         &subject=`assignedTVs`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`assignedTVs:toPlaceholder=`tv_list`? &template=`[[+pattern_name:empty=``]]``
+        &then=`assignedTVs:toPlaceholder=`[[+layout_column]]_tv_list`? &template=`[[+pattern_name:empty=``]]``
     ]]]]
     [[If?
-        &subject=`[[+tv_list]]`
+        &subject=`[[+[[+layout_column]]_tv_list]]`
         &operator=`empty`
         &then=`
             [[includedTVs? &input=`[[+raw_element]]`]]
             [[includedChunks? &input=`[[+raw_element]]`]]
             [[includedSnippets? &input=`[[+raw_element]]`]]
         `
-        &else=`[[+tv_list]]`
+        &else=`[[+[[+layout_column]]_tv_list]]`
     ]]
 </div>
