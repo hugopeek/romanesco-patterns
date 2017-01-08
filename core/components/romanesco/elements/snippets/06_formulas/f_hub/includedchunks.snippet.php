@@ -37,7 +37,9 @@
  * @author Hugo Peek
  */
 
-$string = $input;
+$string = $modx->getOption('input', $scriptProperties, '');
+$patternName = $modx->getOption('name', $scriptProperties, '');
+$patternType = $modx->getOption('type', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 
 // Find chunk names by their leading $ character
@@ -77,9 +79,74 @@ if (preg_match_all($regex, $string, $matches)) {
             'idx' => $idx
         ));
     }
-
-    // No idea how it sorts the result, but seems better than the default
-    sort($output);
 }
+
+// If this pattern is a CB field with input type Chunk, then let's find that chunk
+if (stripos($patternType, 'bosonfield')) {
+    $cbCorePath = $modx->getOption('contentblocks.core_path', null, $modx->getOption('core_path').'components/contentblocks/');
+    $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.'model/contentblocks/');
+
+    // First, let's check if this field contains a chunk ID
+    $result = $modx->getObject('cbField', array(
+        'name' => $patternName,
+        'properties:LIKE' => '%"chunk":"%'
+    ));
+
+    // Do we have a winner?
+    if ($result) {
+        $properties = $result->get('properties');
+        $array = json_decode($properties, true);
+
+        $chunkID = $array['chunk'];
+
+        $chunk = $modx->getObject('modChunk', array(
+            'id' => $chunkID
+        ));
+
+        $idx++;
+
+        $output[] = $modx->getChunk($tpl, array(
+            'name' => $chunk->get('name'),
+            'category' => $chunk->get('category'),
+            'assigned' => 1,
+            'idx' => $idx
+        ));
+    }
+
+    // No? Then maybe it's a chunk selector
+    if (!$result) {
+        $result = $modx->getObject('cbField', array(
+            'name' => $patternName,
+            'properties:LIKE' => '%"available_chunks":"%'
+        ));
+
+        $properties = $result->get('properties');
+        $array = json_decode($properties, true);
+
+        $chunks = $array['available_chunks'];
+        $result = explode(',', $chunks);
+        
+        foreach ($result as $name) {
+            // Also fetch category, to help ensure the correct resource is being linked
+            $query = $modx->newQuery('modChunk', array(
+                'name' => $name
+            ));
+            $query->select('category');
+            $category = $modx->getValue($query->prepare());
+
+            $idx++;
+
+            $output[] = $modx->getChunk($tpl, array(
+                'name' => $name,
+                'category' => $category,
+                'assigned' => 1,
+                'idx' => $idx
+            ));
+        }
+    }
+}
+
+// No idea how it sorts the result, but seems better than the default
+sort($output);
 
 return implode($output);

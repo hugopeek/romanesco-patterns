@@ -13,6 +13,7 @@
         <a class="item" href="[[+[[+pl]].link]]#[[+name:lcase]]">
             <span class="ui circular label">[[+[[+pl]].link:setPatternType]]</span>
             [[+name]]
+            [[+assigned:eq=`1`:then=`<span class="ui right floated tiny blue label">Assigned</span>`]]
         </a>
     `
     &else=`

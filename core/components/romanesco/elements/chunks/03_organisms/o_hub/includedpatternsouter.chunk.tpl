@@ -88,7 +88,7 @@
         &operator=`empty`
         &then=`
             [[includedTVs? &input=`[[+raw_element]]`]]
-            [[includedChunks? &input=`[[+raw_element]]`]]
+            [[includedChunks? &input=`[[+raw_element]]` &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]
             [[includedSnippets? &input=`[[+raw_element]]`]]
         `
         &else=`[[+[[+layout_column]]_tv_list]]`
