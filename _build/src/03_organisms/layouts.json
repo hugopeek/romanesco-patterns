@@ -21,7 +21,7 @@
                     "name": "cbLayoutSidebarContent",
                     "category": "o_layouts"
                 },{
-                    "name": "patternLayoutSingleColumn",
+                    "name": "cbLayoutPattern",
                     "category": "o_layouts"
                 }
             ],

@@ -1,5 +1,3 @@
-[[-setPatternPlaceholders? &cbField=`[[+pattern_name]]` &prefix=`pl_[[+layout_id]]_[[+layout_idx]]`]]
-
 <div class="ui two column middle aligned equal width grid">
     <div class="column">
         [[$headingBasicAnchor?
@@ -20,24 +18,14 @@
            data-targetState="hidden"
            data-content="[[%romanesco.patterns.code_tooltip]]"
            data-position="top center"></i>
+        <i class="disabled comment outline link icon with popup"
+           data-content="[[%romanesco.patterns.comment_tooltip]]"
+           data-position="top center"></i>
 
         [[$buttonHrefIcon?
             &classes=`small primary`
             &icon_class=`lab`
             &button_text=`Backyard`
         ]]
-    </div>
-</div>
-
-<div class="ui divider"></div>
-
-<div class="ui nested stackable doubling equal width grid">
-    <div class="row">
-        <div id="preview-[[+unique_idx]]" class="[[+sidebar_width]] wide column">
-            [[+preview]]
-        </div>
-        <div id="code-[[+unique_idx]]" class="column hidden element">
-            [[+code]]
-        </div>
     </div>
 </div>

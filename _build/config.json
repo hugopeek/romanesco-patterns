@@ -305,10 +305,6 @@
 					"parent": "02_molecules"
 				},
 				{
-					"name": "m_lo_patterns",
-					"parent": "m_layouts"
-				},
-				{
 					"name": "m_navigation",
 					"parent": "02_molecules"
 				},
@@ -1718,6 +1714,17 @@
 					]
 				},
 				{
+					"caption": "Organization name",
+					"name": "organization_name",
+					"description": "",
+					"type": "text",
+					"category": "Org. - Information",
+					"sortOrder": "1",
+					"templates": [
+						"Client"
+					]
+				},
+				{
 					"caption": "Organization sector",
 					"name": "organization_sector",
 					"description": "What type of organization is this?",
@@ -1940,6 +1947,18 @@
 					"category": "a_data"
 				},
 				{
+					"name": "rawName",
+					"category": "a_data"
+				},
+				{
+					"name": "rawID",
+					"category": "a_data"
+				},
+				{
+					"name": "rawValue",
+					"category": "a_data"
+				},
+				{
 					"name": "fbRenderFormWrapper",
 					"category": "a_formblocks"
 				},
@@ -1989,6 +2008,14 @@
 				},
 				{
 					"name": "displayRawTemplate",
+					"category": "a_hub"
+				},
+				{
+					"name": "displayRawPlugin",
+					"category": "a_hub"
+				},
+				{
+					"name": "displayRawContentBlock",
 					"category": "a_hub"
 				},
 				{
@@ -2281,11 +2308,11 @@
 					"category": "m_hub"
 				},
 				{
-					"name": "patternLibraryActionButtons",
+					"name": "includedPagesRow",
 					"category": "m_hub"
 				},
 				{
-					"name": "patternLibraryLabels",
+					"name": "includedContentBlocksRow",
 					"category": "m_hub"
 				},
 				{
@@ -2314,6 +2341,10 @@
 				},
 				{
 					"name": "cbLayoutSidebarContentNested",
+					"category": "m_layouts"
+				},
+				{
+					"name": "cbLayoutPatternPreview",
 					"category": "m_layouts"
 				},
 				{
@@ -2521,7 +2552,7 @@
 					"category": "o_layouts"
 				},
 				{
-					"name": "patternLayoutSingleColumn",
+					"name": "cbLayoutPattern",
 					"category": "o_layouts"
 				},
 				{
@@ -2582,6 +2613,10 @@
 				},
 				{
 					"name": "toolbarBasic",
+					"category": "o_toolbars"
+				},
+				{
+					"name": "toolbarPattern",
 					"category": "o_toolbars"
 				},
 				{
@@ -2697,6 +2732,10 @@
 					"category": "a_cb_layouts"
 				},
 				{
+					"name": "cbLayoutTemplatesPattern",
+					"category": "a_cb_layouts"
+				},
+				{
 					"name": "cbOverviewRowImg",
 					"category": "a_cb_overviews"
 				},
@@ -2795,26 +2834,6 @@
 				{
 					"name": "cbSettingContainerType",
 					"category": "a_cb_settings"
-				},
-				{
-					"name": "patternLayoutElectronTV",
-					"category": "m_lo_patterns"
-				},
-				{
-					"name": "patternLayoutElectronSystemSetting",
-					"category": "m_lo_patterns"
-				},
-				{
-					"name": "patternLayoutAtom",
-					"category": "m_lo_patterns"
-				},
-				{
-					"name": "patternLayoutMolecule",
-					"category": "m_lo_patterns"
-				},
-				{
-					"name": "patternLayoutOrganism",
-					"category": "m_lo_patterns"
 				},
 				{
 					"name": "overviewRowArticleBasic",
@@ -3109,6 +3128,11 @@
 				{
 					"name": "getContextSetting",
 					"description": "Retrieve settings from a context of choice.",
+					"category": "f_basic"
+				},
+				{
+					"name": "getElementDescription",
+					"description": "Retrieve the description of an element of choice.",
 					"category": "f_basic"
 				},
 				{

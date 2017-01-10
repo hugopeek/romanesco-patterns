@@ -5,6 +5,9 @@
                 {
                     "name": "toolbarBasic",
                     "category": "o_toolbars"
+                },{
+                    "name": "toolbarPattern",
+                    "category": "o_toolbars"
                 }
             ],
 

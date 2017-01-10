@@ -12,10 +12,10 @@
                     "name": "includedPatternsRow",
                     "category": "m_hub"
                 },{
-                    "name": "patternLibraryActionButtons",
+                    "name": "includedPagesRow",
                     "category": "m_hub"
                 },{
-                    "name": "patternLibraryLabels",
+                    "name": "includedContentBlocksRow",
                     "category": "m_hub"
                 }
             ],

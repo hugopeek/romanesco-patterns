@@ -20,6 +20,9 @@
                 },{
                     "name": "cbLayoutSidebarContentNested",
                     "category": "m_layouts"
+                },{
+                    "name": "cbLayoutPatternPreview",
+                    "category": "m_layouts"
                 }
             ],
 
@@ -27,9 +30,6 @@
                 {
                     "name": "m_layouts",
                     "parent": "02_molecules"
-                },{
-                    "name": "m_lo_patterns",
-                    "parent": "m_layouts"
                 }
             ]
         }
