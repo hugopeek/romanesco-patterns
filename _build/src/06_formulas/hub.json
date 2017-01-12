@@ -12,10 +12,19 @@
                     "name": "includedTVs",
                     "category": "f_hub"
                 },{
+                    "name": "assignedTVs",
+                    "category": "f_hub"
+                },{
+                    "name": "referringBosons",
+                    "category": "f_hub"
+                },{
                     "name": "includedPatternsLink",
                     "category": "f_hub"
                 },{
                     "name": "setPatternType",
+                    "category": "f_hub"
+                },{
+                    "name": "setPatternPlaceholders",
                     "category": "f_hub"
                 }
             ],
