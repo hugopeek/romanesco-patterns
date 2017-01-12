@@ -455,6 +455,10 @@ if ($object->xpdo) {
   array (
     0 => 'Client',
   ),
+  'organization_name' => 
+  array (
+    0 => 'Client',
+  ),
   'organization_sector' => 
   array (
     0 => 'Client',
