@@ -92,7 +92,7 @@ if ($result) {
         ));
     }
 
-    return(implode($output));
+    return implode($output);
 
     //if ($placeholder) {
     //    $modx->toPlaceholder($placeholder, $output);
