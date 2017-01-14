@@ -13,7 +13,7 @@ $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.
 
 $resourceID = $modx->getOption('resource', $scriptProperties, $modx->resource->get('id'));
 $layoutIdx = $modx->getOption('layout', $scriptProperties, '');
-$filterFields = $modx->getOption('filterFields', $scriptProperties, '6,14,17,87');
+$filterFields = $modx->getOption('filterFields', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedContentBlocksRow');
 
 // Function to turn result into a link to its corresponding resource
@@ -75,24 +75,36 @@ $query->select('properties');
 $properties = $modx->getValue($query->prepare());
 
 // Prepare an array with just the content part
-$array = json_decode($properties, true);
-$array = json_decode($array['contentblocks']['content'], true);
+$propertiesArray = json_decode($properties, true);
+$propertiesArray = json_decode($propertiesArray['contentblocks']['content'], true);
 
-// Pick the current layout from the array, based on idx
-$result = $array[$layoutIdx];
+// If a layout idx is set, pick the corresponding layout from the array
+if ($layoutIdx != '') {
+    $result = $propertiesArray[$layoutIdx];
+} else {
+    $result = $propertiesArray; // And if not, just get all the fields
+}
 
-// Great! Now let's get all field IDs from this array
-$result = recursive_array_search($result, 'field');
-$result = array_unique($result);
+// Great! Now let's retrieve all field IDs from the array
+if (is_array($result)) {
+    $result = recursive_array_search($result, 'field');
+    $result = array_unique($result);
+} else {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[includedBosons] Result is not a valid array. Is the layout idx correct?');
+    return '';
+}
 
-// @todo: Filter user specified field IDs from results
+// User specified CB fields need to be excluded from result
+$arrayFilter = explode(',', $filterFields);
 
-if ($result) {
-    // Turn each match into a list item with a link
-    foreach ($result as $id) {
+// Turn each match into a list item with a link
+foreach ($result as $id) {
+    if (!in_array($id, $arrayFilter)) {
         $boson = $modx->getObject('cbField', array(
             'id' => $id
         ));
+    }
+    if ($boson) {
         $name = $boson->get('name');
         $link = createLink($boson->get('category'));
 
@@ -101,6 +113,6 @@ if ($result) {
             'link' => $link
         ));
     }
-
-    return implode($output);
 }
+
+return implode(array_unique($output));
