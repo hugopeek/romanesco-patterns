@@ -30,7 +30,7 @@
             &operand=`patternLayoutBosonField`
             &then=`
                 pdoMenu?
-                    &parents=`128`
+                    &parents=`[[++romanesco.backyard_container_id]]`
                     &showHidden=`1`
                     &showUnpublished=`1`
                     &includeTVs=`overview_icon_font`
@@ -41,7 +41,7 @@
                 `
             &else=`
                 pdoMenu?
-                    &parents=`128`
+                    &parents=`[[++romanesco.backyard_container_id]]`
                     &showHidden=`1`
                     &showUnpublished=`1`
                     &includeTVs=`overview_icon_font`

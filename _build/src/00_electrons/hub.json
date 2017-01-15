@@ -96,6 +96,12 @@
             ]
         },
 
-        "systemSettings": []
+        "systemSettings": [
+            {
+                "key": "backyard_container_id",
+                "type": "textfield",
+                "area": "Pages"
+            }
+        ]
     }
 }
