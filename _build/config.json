@@ -930,7 +930,7 @@
 					"type": "option",
 					"category": "Status",
 					"sortOrder": "1",
-					"defaultValue": "new",
+					"defaultValue": "not-done",
 					"inputOptionValues": "[Seed] Its idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting plant] This particular resource is performing really well==thriving||[Plagued plant] Somehow, this resource is having some difficulties staying healthy==struggling||[Wilting plant] The content is outdated or has outlived its purpose entirely==expired",
 					"templates": [
 						"Home",
@@ -3389,6 +3389,11 @@
 			{
 				"key": "global_footer_id",
 				"type": "numberfield",
+				"area": "Pages"
+			},
+			{
+				"key": "backyard_container_id",
+				"type": "textfield",
 				"area": "Pages"
 			},
 			{

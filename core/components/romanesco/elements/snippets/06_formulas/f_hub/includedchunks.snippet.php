@@ -42,7 +42,13 @@ $patternName = $modx->getOption('name', $scriptProperties, '');
 $patternType = $modx->getOption('type', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 
+// Finding chunks inside snippets only result in a lot of false positives, so let's disable that for now
+if (stripos($patternType, 'formula')) {
+    return '';
+}
+
 // Find chunk names by their leading $ character
+// @todo: Create a different pattern for finding chunks inside snippets
 $regex = '/(?<!\w)\$\w+/';
 
 // Set idx start value
