@@ -4,7 +4,7 @@
         &operator=`EQ`
         &operand=`svg`
         &then=`<img class="ui faded image" src="[[+overview_icon_svg:empty=`[[++overview_icon_fallback]]`]]" alt="[[+pagetitle]]">`
-        &else=`<i class="ui circular [[+overview_icon_svg:empty=`question`]] icon"></i>`
+        &else=`<i class="circular [[+overview_icon_font:empty=`question`]] icon"></i>`
     ]]
 </div>
 
