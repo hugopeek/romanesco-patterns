@@ -20,6 +20,9 @@
                 },{
                     "name": "cbLayoutTemplatesPattern",
                     "category": "a_cb_layouts"
+                },{
+                    "name": "cbLayoutStatusPattern",
+                    "category": "a_cb_layouts"
                 }
             ]
         }

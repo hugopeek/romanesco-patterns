@@ -1,13 +1,15 @@
-<div class="ui two column middle aligned equal width grid">
+[[$cbLayoutStatusPattern:filterLine=`[[+pattern_status]]`:stripString=`=[[+pattern_status]]`:toPlaceholder=`status_title`]]
+
+<div class="ui middle aligned equal width stackable grid">
     <div class="column">
         [[$headingBasicAnchor?
             &level=`h2`
-            &value=`[[+pattern_name]]`
+            &value=`[[+pattern_name]]<span class="ui mini [[+pattern_status]] empty circular label" title="[[+status_title]]"></span>`
             &alignment=`middle aligned`
         ]]
     </div>
 
-    <div class="five wide right aligned column">
+    <div class="seven wide right aligned column">
         <i class="unhide link icon with visibility toggle and popup"
            data-target="preview-[[+unique_idx]]"
            data-targetState="visible"
@@ -51,7 +53,7 @@
         ]]]]
 
         <div class="ui [[+backyard_pages:is=``:then=`disabled`]] small floating right labeled icon top right pointing primary dropdown button">
-            <span class="text">Backyard</span>
+            Backyard
             <i class="lab icon"></i>
             <div class="menu">
                 <div class="header">

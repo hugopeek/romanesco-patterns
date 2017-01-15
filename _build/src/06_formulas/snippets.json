@@ -31,6 +31,10 @@
                     "description": "Turn a written number into an actual numeric value.",
                     "category": "f_modifiers"
                 },{
+                    "name": "filterLine",
+                    "description": "Search the input for lines containing a specific string.",
+                    "category": "f_modifiers"
+                },{
                     "name": "getResourceLevel",
                     "description": "Shows the level based on the number of parent IDs.",
                     "category": "f_resources"
