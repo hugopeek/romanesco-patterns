@@ -88,7 +88,8 @@ if ($result) {
 
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
-            'link' => $link
+            'link' => $link,
+            'label_classes' => 'blue'
         ));
     }
 

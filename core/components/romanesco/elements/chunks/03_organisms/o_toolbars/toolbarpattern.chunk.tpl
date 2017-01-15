@@ -22,10 +22,46 @@
            data-content="[[%romanesco.patterns.comment_tooltip]]"
            data-position="top center"></i>
 
-        [[$buttonHrefIcon?
-            &classes=`small primary`
-            &icon_class=`lab`
-            &button_text=`Backyard`
-        ]]
+        [[[[If?
+            &subject=`[[+pattern_template]]`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`
+                pdoMenu?
+                    &parents=`128`
+                    &showHidden=`1`
+                    &showUnpublished=`1`
+                    &includeTVs=`overview_icon_font`
+                    &tplOuter=`navWrapper`
+                    &tpl=`navItemIcon`
+                    &where=`{ "properties:LIKE":"%field__:[[+[[+cf]].id]]___settings%" }`
+                    &toPlaceholder=`backyard_pages`
+                `
+            &else=`
+                pdoMenu?
+                    &parents=`128`
+                    &showHidden=`1`
+                    &showUnpublished=`1`
+                    &includeTVs=`overview_icon_font`
+                    &tplOuter=`navWrapper`
+                    &tpl=`navItemIcon`
+                    &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
+                    &toPlaceholder=`backyard_pages`
+                `
+        ]]]]
+
+        <div class="ui [[+backyard_pages:is=``:then=`disabled`]] small floating right labeled icon top right pointing primary dropdown button">
+            <span class="text">Backyard</span>
+            <i class="lab icon"></i>
+            <div class="menu">
+                <div class="header">
+                    View in context:
+                </div>
+                <div class="divider"></div>
+                [[+backyard_pages]]
+            </div>
+        </div>
     </div>
 </div>
+
+[[$dividerBasic]]

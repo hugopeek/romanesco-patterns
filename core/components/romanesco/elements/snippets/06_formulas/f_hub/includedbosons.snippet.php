@@ -110,7 +110,8 @@ foreach ($result as $id) {
 
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
-            'link' => $link
+            'link' => $link,
+            'label_classes' => ''
         ));
     }
 }

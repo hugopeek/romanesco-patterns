@@ -8,6 +8,9 @@
                 },{
                     "name": "toolbarPattern",
                     "category": "o_toolbars"
+                },{
+                    "name": "toolbarPatternElectron",
+                    "category": "o_toolbars"
                 }
             ],
 

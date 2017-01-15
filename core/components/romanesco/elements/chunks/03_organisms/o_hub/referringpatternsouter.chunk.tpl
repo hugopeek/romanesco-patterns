@@ -135,6 +135,10 @@
             `
     ]]]]
 
+    [[- // The If statements generating the raw_pages placeholder could be replaced
+        // by placing the where clause directly in the pdoMenu call.
+    ]]
+
     [[[[If?
         &subject=`[[+raw_pages]]`
         &operator=`notempty`

@@ -33,6 +33,9 @@
                     "name": "navItemParentActive",
                     "category": "a_nav_primary"
                 },{
+                    "name": "navItemIcon",
+                    "category": "a_nav_primary"
+                },{
                     "name": "paginationFluid",
                     "category": "a_nav_pagination"
                 },{

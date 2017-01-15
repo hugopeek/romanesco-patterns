@@ -23,19 +23,21 @@
             &unique_idx=`[[+unique_idx]]`
         ]]
 
-        [[$toolbarPattern?
-            &pattern_name=`[[+pattern_name]]`
-            &pattern_template=`[[+pattern_template]]`
-            &idx=`[[+idx]]`
-            &unique_idx=`[[+unique_idx]]`
-        ]]
-
         [[[[modifiedIf?
             &subject=`[[+pattern_template]]`
             &operator=`contains`
             &operand=`Electron`
-            &then=`$dividerBasic? &divider_hidden=`1``
-            &else=`$dividerBasic`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`[[+pattern_name]]`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`[[+pattern_name]]`
+                    &pattern_template=`[[+pattern_template]]`
+                    &idx=`[[+idx]]`
+                    &unique_idx=`[[+unique_idx]]`
+                `
         ]]]]
 
         [[[[modifiedIf?

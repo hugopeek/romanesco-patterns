@@ -2103,6 +2103,10 @@
 					"category": "a_nav_primary"
 				},
 				{
+					"name": "navItemIcon",
+					"category": "a_nav_primary"
+				},
+				{
 					"name": "paginationFluid",
 					"category": "a_nav_pagination"
 				},
@@ -2560,6 +2564,10 @@
 					"category": "o_layouts"
 				},
 				{
+					"name": "cbLayoutBackyard",
+					"category": "o_layouts"
+				},
+				{
 					"name": "overviewOuter",
 					"category": "o_overviews"
 				},
@@ -2621,6 +2629,10 @@
 				},
 				{
 					"name": "toolbarPattern",
+					"category": "o_toolbars"
+				},
+				{
+					"name": "toolbarPatternElectron",
 					"category": "o_toolbars"
 				},
 				{
@@ -3122,6 +3134,10 @@
 				},
 				{
 					"name": "referringBosons",
+					"category": "f_hub"
+				},
+				{
+					"name": "includedBosons",
 					"category": "f_hub"
 				},
 				{
