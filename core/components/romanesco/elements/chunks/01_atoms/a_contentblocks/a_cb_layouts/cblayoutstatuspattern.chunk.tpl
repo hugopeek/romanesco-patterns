@@ -1,8 +1,8 @@
-Solid (safe to use as instructed)=green
-Incoherent (works without issues, but might be refactored at some point)=yellow
-Conflicting (there are open issues related to this pattern)=orange
-Unstable (severely flawed, do not use)=red
-Experimental (just fiddling with some ideas here)=pink
-Untested (use at your own risk)=violet
-In review (under evaluation whether it belongs in the library or not)=purple
-Deprecated (will be deleted in the next major release)=grey
+[[%romanesco.patterns.status_green]]=green
+[[%romanesco.patterns.status_yellow]]=yellow
+[[%romanesco.patterns.status_orange]]=orange
+[[%romanesco.patterns.status_red]]=red
+[[%romanesco.patterns.status_pink]]=pink
+[[%romanesco.patterns.status_purple]]=purple
+[[%romanesco.patterns.status_blue]]=blue
+[[%romanesco.patterns.status_brown]]=brown
