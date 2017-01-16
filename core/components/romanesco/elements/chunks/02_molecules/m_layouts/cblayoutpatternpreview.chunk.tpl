@@ -13,9 +13,13 @@
                 &offset=`[[+idx:subtract=`1`]]`
             ]]
 
-            [[+render_example:replace=`&amp;==&`:replace=`&#91;==[`:replace=`&#93;==]`:replace=`&#96;==``:toPlaceholder=`example`]]
+            [[+render_example:replace=`&amp;==&`:replace=`&#91;==[`:replace=`&#93;==]`:replace=`&#96;==``]]
 
-            [[+example:ne=``:then=`
+            <i class="small circular code link icon with popup onclick"
+               data-html="[[+preview:htmlent]]"
+               data-position="right center"></i>
+
+            [[-+example:ne=``:then=`
             <div class="slider-minimal">
                 <div id="preview-example-[[+unique_idx]]">
                     [[+example]]
