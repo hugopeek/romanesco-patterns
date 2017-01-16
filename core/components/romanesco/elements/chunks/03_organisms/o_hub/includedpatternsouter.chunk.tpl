@@ -58,7 +58,7 @@
         Rowboat?
             &table=`modx_contentblocks_field`
             &tpl=`displayRawContentBlock`
-            &where=`{"name":"[[+pattern_name]]"}`
+            &where=`{"name":"[[+pattern_name]]","parent":"0"}`
             &toPlaceholder=`raw_element`
         `
 ]]]]

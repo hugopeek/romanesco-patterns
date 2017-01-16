@@ -126,28 +126,30 @@ if (stripos($patternType, 'bosonfield')) {
             'properties:LIKE' => '%"available_chunks":"%'
         ));
 
-        $properties = $result->get('properties');
-        $array = json_decode($properties, true);
+        if (is_object($result)) {
+            $properties = $result->get('properties');
+            $array = json_decode($properties, true);
 
-        $chunks = $array['available_chunks'];
-        $result = explode(',', $chunks);
-        
-        foreach ($result as $name) {
-            // Also fetch category, to help ensure the correct resource is being linked
-            $query = $modx->newQuery('modChunk', array(
-                'name' => $name
-            ));
-            $query->select('category');
-            $category = $modx->getValue($query->prepare());
+            $chunks = $array['available_chunks'];
+            $result = explode(',', $chunks);
 
-            $idx++;
+            foreach ($result as $name) {
+                // Also fetch category, to help ensure the correct resource is being linked
+                $query = $modx->newQuery('modChunk', array(
+                    'name' => $name
+                ));
+                $query->select('category');
+                $category = $modx->getValue($query->prepare());
 
-            $output[] = $modx->getChunk($tpl, array(
-                'name' => $name,
-                'category' => $category,
-                'assigned' => 1,
-                'idx' => $idx
-            ));
+                $idx++;
+
+                $output[] = $modx->getChunk($tpl, array(
+                    'name' => $name,
+                    'category' => $category,
+                    'assigned' => 1,
+                    'idx' => $idx
+                ));
+            }
         }
     }
 }
