@@ -1,23 +1,13 @@
 <div class="ui nested stackable doubling equal width grid">
     <div class="row">
-        <div id="preview-[[+unique_idx]]" class="[[+sidebar_width]] wide column">
-            [[!getCache:toPlaceholder=`render_example`?
-                &element=`cbGetFieldContent`
-                &cacheKey=`pattern_library`
-                [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
+        <div id="preview-[[+unique_idx]]" class="[[+sidebar_width]] wide preview column">
+            [[+preview]]
 
-                &field=`13`
-                &tpl=`rawValue`
-                &fieldSettingFilter=`label==MODX`
-                &limit=`1`
-                &offset=`[[+idx:subtract=`1`]]`
-            ]]
-
-            [[+render_example:replace=`&amp;==&`:replace=`&#91;==[`:replace=`&#93;==]`:replace=`&#96;==``]]
-
+            [[+code_field_raw:contains=`[[+pattern_name]]`:then=`
             <i class="small circular code link icon with popup onclick"
-               data-html="[[+preview:htmlent]]"
+               data-html="[[$codeSnippet:htmlent? &value=`[[+code_field_raw]]` &lang=`html` &label=`[[%romanesco.patterns.example_label]]`]]"
                data-position="right center"></i>
+            `]]
 
             [[-+example:ne=``:then=`
             <div class="slider-minimal">
@@ -31,7 +21,7 @@
             `:else=`[[+preview]]`]]
         </div>
 
-        <div id="code-[[+unique_idx]]" class="column hidden element">
+        <div id="code-[[+unique_idx]]" class="code column hidden element">
             [[+code]]
         </div>
     </div>
