@@ -94,6 +94,20 @@
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
+        &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism`
+        &then=`
+            Rowboat?
+                &table=`modx_site_content`
+                &tpl=`includedPagesRow`
+                &limit=`0`
+                &where=`{ "properties:LIKE":"%$[[+pattern_name]]%", "id:NOT LIKE":"[[*id]]" }`
+                &toPlaceholder=`referring_pages`
+            `
+    ]]]]
+
+    [[[[If?
+        &subject=`[[+pattern_template]]`
+        &operator=`inarray`
         &operand=`patternLayoutTemplate`
         &then=`
             Rowboat?

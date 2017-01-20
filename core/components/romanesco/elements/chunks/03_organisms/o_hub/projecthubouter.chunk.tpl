@@ -1,6 +1,7 @@
 <div class="ui container">
     <div class="ui large feed">
         [[getImageList?
+            &docid=`[[++romanesco.dashboard_id:empty=`[[*id]]`]]`
             &tvname=`project_hub_timeline`
             &tpl=`projectHubRow`
         ]]

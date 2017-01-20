@@ -1,0 +1,33 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "navWrapper",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItem",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemWrapper",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemInner",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemInnerWrapper",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemParent",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemParentActive",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemIcon",
+                    "category": "a_nav_primary"
+                }
+            ]
+        }
+    }
+}

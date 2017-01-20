@@ -1,0 +1,12 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "paginationFluid",
+                    "category": "a_nav_pagination"
+                }
+            ]
+        }
+    }
+}

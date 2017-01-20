@@ -229,11 +229,11 @@
 					"parent": "01_atoms"
 				},
 				{
-					"name": "a_nav_breadcrumbs",
+					"name": "a_nav_primary",
 					"parent": "a_navigation"
 				},
 				{
-					"name": "a_nav_primary",
+					"name": "a_nav_breadcrumbs",
 					"parent": "a_navigation"
 				},
 				{
@@ -910,9 +910,9 @@
 					]
 				},
 				{
-					"caption": "Project hub timeline",
+					"caption": "Project timeline",
 					"name": "project_hub_timeline",
-					"description": "In this timeline you can keep track of the projects' progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
+					"description": "In this timeline you can keep track of the project's progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
 					"type": "migx",
 					"category": "Project Hub",
 					"sortOrder": "1",
@@ -920,7 +920,7 @@
 						"configs": "project_hub_timeline"
 					},
 					"templates": [
-						"ProjectHub"
+						"ProjectDashboard"
 					]
 				},
 				{
@@ -931,7 +931,7 @@
 					"category": "Status",
 					"sortOrder": "1",
 					"defaultValue": "not-done",
-					"inputOptionValues": "[Seed] Its idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting plant] This particular resource is performing really well==thriving||[Plagued plant] Somehow, this resource is having some difficulties staying healthy==struggling||[Wilting plant] The content is outdated or has outlived its purpose entirely==expired",
+					"inputOptionValues": "[Seed] Its idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==thriving||[Plagued] Somehow, this resource is having some difficulties staying healthy==struggling||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
 					"templates": [
 						"Home",
 "BasicOverview",
@@ -2063,58 +2063,6 @@
 					"category": "a_information"
 				},
 				{
-					"name": "breadcrumbOuter",
-					"category": "a_nav_breadcrumbs"
-				},
-				{
-					"name": "breadcrumbRow",
-					"category": "a_nav_breadcrumbs"
-				},
-				{
-					"name": "breadcrumbCurrent",
-					"category": "a_nav_breadcrumbs"
-				},
-				{
-					"name": "navWrapper",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "navItem",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "navItemWrapper",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "navItemInner",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "navItemInnerWrapper",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "navItemParent",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "navItemParentActive",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "navItemIcon",
-					"category": "a_nav_primary"
-				},
-				{
-					"name": "paginationFluid",
-					"category": "a_nav_pagination"
-				},
-				{
-					"name": "tabsNavItem",
-					"category": "a_nav_tabs"
-				},
-				{
 					"name": "favicons",
 					"category": "a_presentation"
 				},
@@ -2856,6 +2804,58 @@
 					"category": "a_cb_settings"
 				},
 				{
+					"name": "breadcrumbOuter",
+					"category": "a_nav_breadcrumbs"
+				},
+				{
+					"name": "breadcrumbRow",
+					"category": "a_nav_breadcrumbs"
+				},
+				{
+					"name": "breadcrumbCurrent",
+					"category": "a_nav_breadcrumbs"
+				},
+				{
+					"name": "paginationFluid",
+					"category": "a_nav_pagination"
+				},
+				{
+					"name": "navWrapper",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItem",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItemWrapper",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItemInner",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItemInnerWrapper",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItemParent",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItemParentActive",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "navItemIcon",
+					"category": "a_nav_primary"
+				},
+				{
+					"name": "tabsNavItem",
+					"category": "a_nav_tabs"
+				},
+				{
 					"name": "overviewRowArticleBasic",
 					"category": "m_ov_article"
 				},
@@ -3074,8 +3074,8 @@
 					"category": "t_global"
 				},
 				{
-					"name": "ProjectHub",
-					"icon": "icon-history",
+					"name": "ProjectDashboard",
+					"icon": "icon-line-chart",
 					"category": "t_hub"
 				}
 			],
@@ -3394,6 +3394,16 @@
 			{
 				"key": "global_footer_id",
 				"type": "numberfield",
+				"area": "Pages"
+			},
+			{
+				"key": "dashboard_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "pattern_container_id",
+				"type": "textfield",
 				"area": "Pages"
 			},
 			{

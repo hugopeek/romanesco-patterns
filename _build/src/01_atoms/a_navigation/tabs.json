@@ -1,0 +1,12 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "tabsNavItem",
+                    "category": "a_nav_tabs"
+                }
+            ]
+        }
+    }
+}

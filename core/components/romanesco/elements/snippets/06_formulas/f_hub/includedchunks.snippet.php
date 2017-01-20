@@ -43,13 +43,13 @@ $patternType = $modx->getOption('type', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 
 // Finding chunks inside snippets only result in a lot of false positives, so let's disable that for now
+// @todo: Create a different pattern for finding chunks inside snippets
 if (stripos($patternType, 'formula')) {
     return '';
 }
 
-// Find chunk names by their leading $ character
-// @todo: Create a different pattern for finding chunks inside snippets
-$regex = '/(?<!\w)\$\w+/';
+// Find chunk names by their leading $ character or '&tpl' string
+$regex = '/((?<!\w)\&amp;tpl=&#96;\w+|(?<!\w)\$\w+)/';
 
 // Set idx start value
 $idx = 0;
@@ -58,10 +58,13 @@ $idx = 0;
 $output = array();
 
 if (preg_match_all($regex, $string, $matches)) {
-    // Remove $ from all matches
+    // Remove prefix from all matches
     foreach ($matches as $match) {
         $match = str_replace('$', '', $match);
+        $match = str_replace('&amp;tpl=&#96;', '', $match);
     }
+
+    //print_r($match);
 
     // Remove duplicates
     $result = array_unique($match);

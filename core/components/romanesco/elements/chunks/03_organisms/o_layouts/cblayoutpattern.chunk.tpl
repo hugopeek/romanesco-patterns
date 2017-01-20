@@ -1,4 +1,4 @@
-<div class="ui vertical stripe segment [[+background]]">
+<div class="ui vertical stripe pattern segment [[+background]]">
     <div class="ui [[+container_type]] [[+alignment]] container">
         [[[[If?
             &subject=`[[+pattern_template]]`
@@ -19,6 +19,8 @@
             &sidebar_width=`[[+sidebar_width]]`
             &pattern_name=`[[+pattern_name]]`
             &pattern_template=`[[+pattern_template]]`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
             &idx=`[[+idx]]`
             &unique_idx=`[[+unique_idx]]`
         ]]
@@ -30,11 +32,13 @@
             &then=`
                 $toolbarPatternElectron?
                     &pattern_name=`[[+pattern_name]]`
+                    &pattern_status=`[[+pattern_status]]`
                 `
             &else=`
                 $toolbarPattern?
                     &pattern_name=`[[+pattern_name]]`
                     &pattern_template=`[[+pattern_template]]`
+                    &pattern_status=`[[+pattern_status]]`
                     &idx=`[[+idx]]`
                     &unique_idx=`[[+unique_idx]]`
                 `

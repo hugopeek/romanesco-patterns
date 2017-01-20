@@ -1,0 +1,18 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "breadcrumbOuter",
+                    "category": "a_nav_breadcrumbs"
+                },{
+                    "name": "breadcrumbRow",
+                    "category": "a_nav_breadcrumbs"
+                },{
+                    "name": "breadcrumbCurrent",
+                    "category": "a_nav_breadcrumbs"
+                }
+            ]
+        }
+    }
+}

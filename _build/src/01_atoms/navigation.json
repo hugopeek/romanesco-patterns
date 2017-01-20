@@ -1,58 +1,15 @@
 {
     "package": {
         "elements": {
-            "chunks": [
-                {
-                    "name": "breadcrumbOuter",
-                    "category": "a_nav_breadcrumbs"
-                },{
-                    "name": "breadcrumbRow",
-                    "category": "a_nav_breadcrumbs"
-                },{
-                    "name": "breadcrumbCurrent",
-                    "category": "a_nav_breadcrumbs"
-                },{
-                    "name": "navWrapper",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItem",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItemWrapper",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItemInner",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItemInnerWrapper",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItemParent",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItemParentActive",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItemIcon",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "paginationFluid",
-                    "category": "a_nav_pagination"
-                },{
-                    "name": "tabsNavItem",
-                    "category": "a_nav_tabs"
-                }
-            ],
-
             "categories": [
                 {
                     "name": "a_navigation",
                     "parent": "01_atoms"
                 },{
-                    "name": "a_nav_breadcrumbs",
+                    "name": "a_nav_primary",
                     "parent": "a_navigation"
                 },{
-                    "name": "a_nav_primary",
+                    "name": "a_nav_breadcrumbs",
                     "parent": "a_navigation"
                 },{
                     "name": "a_nav_offcanvas",
