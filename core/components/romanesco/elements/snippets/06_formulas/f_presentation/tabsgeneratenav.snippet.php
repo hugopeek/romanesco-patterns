@@ -1,6 +1,15 @@
 <?php
 $doc = new DOMDocument();
-$doc->loadHTML('<meta http-equiv="content-type" content="text/html; charset=utf-8">'.$input);
+
+// Set error level to suppress warnings in log over special characters in HTML
+$internalErrors = libxml_use_internal_errors(true);
+
+// Load HTML
+$doc->loadHTML('<meta http-equiv="content-type" content="text/html; charset=utf-8">' . $input);
+
+// Restore error level
+$internalErrors = libxml_use_internal_errors(false);
+
 $divs = $doc->getElementsByTagName('div'); // Little flaky.. If div element changes, navigation breaks.
 
 $tabs = array();
