@@ -1,4 +1,13 @@
 <?php
+/**
+ * tabsGenerateNav
+ *
+ * Create tab buttons based on the tab content's HTML.
+ * Each content field contains data attributes with the correct text for each heading.
+ *
+ * Many thanks to @christianseel for coming up with the original idea and code!
+ */
+
 $doc = new DOMDocument();
 
 // Set error level to suppress warnings in log over special characters in HTML
