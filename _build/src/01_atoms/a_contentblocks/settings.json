@@ -9,6 +9,9 @@
                     "name": "cbSettingButtonType",
                     "category": "a_cb_settings"
                 },{
+                    "name": "cbSettingButtonOptions",
+                    "category": "a_cb_settings"
+                },{
                     "name": "cbSettingColumns",
                     "category": "a_cb_settings"
                 },{
@@ -19,6 +22,9 @@
                     "category": "a_cb_settings"
                 },{
                     "name": "cbSettingIconType",
+                    "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingIconOptions",
                     "category": "a_cb_settings"
                 },{
                     "name": "cbSettingImageType",

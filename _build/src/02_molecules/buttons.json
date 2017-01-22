@@ -1,0 +1,18 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "buttonOuter",
+                    "category": "m_buttons"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "m_buttons",
+                    "parent": "02_molecules"
+                }
+            ]
+        }
+    }
+}

@@ -13,6 +13,15 @@ Fixes and improvements:
 
 ---
 
+## Romanesco 0.10.5
+Released on ...
+
+Fixes and improvements:
+- Refactor Button CB to incorporate icon buttons [BC]
+- Fix first key not being rendered by jsonToHTML snippet
+
+---
+
 ## Romanesco 0.10.4
 Released on January 12, 2017
 
