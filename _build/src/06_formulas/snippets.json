@@ -67,6 +67,10 @@
                     "description": "Turn JSON object into an HTML table.",
                     "category": "f_json"
                 },{
+                    "name": "tvToJSON",
+                    "description": "Output the properties of given TV to a JSON object. The output could be used by jsonToHTML.",
+                    "category": "f_json"
+                },{
                     "name": "setBoxType",
                     "description": "Output the necessary class names for overview items, based on their template.",
                     "category": "f_framework"
