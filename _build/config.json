@@ -265,6 +265,10 @@
 					"parent": "01_atoms"
 				},
 				{
+					"name": "m_buttons",
+					"parent": "02_molecules"
+				},
+				{
 					"name": "m_content",
 					"parent": "02_molecules"
 				},
@@ -2140,6 +2144,10 @@
 					"category": "a_taxonomy"
 				},
 				{
+					"name": "buttonOuter",
+					"category": "m_buttons"
+				},
+				{
 					"name": "headingBasicSubtitle",
 					"category": "m_content"
 				},
@@ -2772,6 +2780,10 @@
 					"category": "a_cb_settings"
 				},
 				{
+					"name": "cbSettingButtonOptions",
+					"category": "a_cb_settings"
+				},
+				{
 					"name": "cbSettingColumns",
 					"category": "a_cb_settings"
 				},
@@ -2785,6 +2797,10 @@
 				},
 				{
 					"name": "cbSettingIconType",
+					"category": "a_cb_settings"
+				},
+				{
+					"name": "cbSettingIconOptions",
 					"category": "a_cb_settings"
 				},
 				{

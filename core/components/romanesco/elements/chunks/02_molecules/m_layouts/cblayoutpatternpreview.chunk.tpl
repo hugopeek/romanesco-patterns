@@ -1,6 +1,6 @@
 <div class="ui nested stackable doubling equal width grid">
     <div class="row">
-        <div id="preview-[[+unique_idx]]" class="[[+sidebar_width]] wide preview column">
+        <div id="preview-[[+unique_idx]]" class="[[+preview:contains=`field`:then=`ui form`]] [[+sidebar_width]] wide preview column">
             [[+preview]]
 
             [[+code_field_raw:contains=`[[+pattern_name]]`:then=`

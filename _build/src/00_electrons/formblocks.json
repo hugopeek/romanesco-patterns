@@ -68,11 +68,11 @@
                 },{
                     "caption": "Layout type",
                     "name": "fb_form_layout",
-                    "description": "Stacked means the labels are always above the input fields, Horizontal means the labels are next to the fields, Inline means everything is on 1 row (so only for very small forms).",
+                    "description": "Vertical means the labels are always above the input fields, Horizontal means the labels are next to the fields, Inline means everything is on 1 row (so only for very small forms).",
                     "category": "Settings - General",
                     "sortOrder": "5",
                     "type": "listbox",
-                    "inputOptionValues": "Stacked==vertical||Horizontal==horizontal||Inline==inline",
+                    "inputOptionValues": "Vertical==vertical||Horizontal==horizontal||Inline==inline",
                     "defaultValue": "horizontal",
                     "templates": ["fbForm"]
                 },{

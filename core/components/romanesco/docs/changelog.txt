@@ -16,9 +16,16 @@ Fixes and improvements:
 ## Romanesco 0.10.5
 Released on ...
 
+New features:
+- Add system setting for specifying Project Dashboard resource ID
+- Add system setting for specifying Pattern Library container ID
+- Add firstChildID snippet for fetching... the first child ID
+
 Fixes and improvements:
 - Refactor Button CB to incorporate icon buttons [BC]
 - Fix first key not being rendered by jsonToHTML snippet
+- Rename / re-purpose ProjectHub template to ProjectDashboard
+- Minor tweaks and fixes to Hub elements
 
 ---
 

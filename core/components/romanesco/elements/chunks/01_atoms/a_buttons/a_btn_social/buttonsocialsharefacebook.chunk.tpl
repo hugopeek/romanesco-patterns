@@ -2,5 +2,5 @@
    title="[[+title:empty=`[[%romanesco.social.share_facebook_title]]`]]"
    target="_blank"
    href="http://www.facebook.com/sharer/sharer.php?u=[[!++site_url]][[*uri]]">
-    <i class="facebook icon"></i>
+    <i class="facebook f icon"></i>
 </a>

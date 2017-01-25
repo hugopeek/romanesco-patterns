@@ -3,5 +3,5 @@
    target="_blank"
    href="[[+account:empty=`[[++social_facebook]]`]]"
    property="sameAs">
-    <i class="facebook icon"></i>
+    <i class="facebook f icon"></i>
 </a>
