@@ -16,9 +16,9 @@ if (!function_exists('jsonToHTML')) {
         $filterKeys = array("templates","process_tags","field_is_exposed");
 
         foreach ($array as $key => $value) {
-            // Exclude unwanted keys from result
+            // Exclude unwanted keys and keys with an empty value from result
             // @todo: When not set to 'true', the first item in the array will always be excluded
-            if (in_array($key, $filterKeys, true) == false) {
+            if (in_array($key, $filterKeys, true) == false && $value != false) {
                 $output .= "<tr class='top aligned'>";
                 $output .= "<td style='width:0;'><strong>$key</strong></td>";
                 $output .= "<td>";
