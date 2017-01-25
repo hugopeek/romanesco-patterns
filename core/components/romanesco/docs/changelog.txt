@@ -24,6 +24,7 @@ New features:
 Fixes and improvements:
 - Refactor Button CB to incorporate icon buttons [BC]
 - Fix first key not being rendered by jsonToHTML snippet
+- Include extension when searching for matching pattern URIs
 - Rename / re-purpose ProjectHub template to ProjectDashboard
 - Minor tweaks and fixes to Hub elements
 
