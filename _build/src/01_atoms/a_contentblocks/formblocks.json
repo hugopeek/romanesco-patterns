@@ -5,6 +5,9 @@
                 {
                     "name": "cbFormSegmentType",
                     "category": "a_cb_formblocks"
+                },{
+                    "name": "cbFormLabelPosition",
+                    "category": "a_cb_formblocks"
                 }
             ]
         }

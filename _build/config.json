@@ -2684,6 +2684,10 @@
 					"category": "a_cb_formblocks"
 				},
 				{
+					"name": "cbFormLabelPosition",
+					"category": "a_cb_formblocks"
+				},
+				{
 					"name": "cbLayoutAlignment",
 					"category": "a_cb_layouts"
 				},
