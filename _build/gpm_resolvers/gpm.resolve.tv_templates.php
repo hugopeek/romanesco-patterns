@@ -248,7 +248,7 @@ if ($object->xpdo) {
   ),
   'project_hub_timeline' => 
   array (
-    0 => 'ProjectHub',
+    0 => 'ProjectDashboard',
   ),
   'status_indicator' => 
   array (

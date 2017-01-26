@@ -3,7 +3,7 @@
 ## Romanesco 0.11
 Upcoming release
 
-New features:
+Planned features:
 - Add ContentBlock for creating previous / next page navigation
 - Add ContentBlock for creating a button group
 
@@ -14,7 +14,7 @@ Fixes and improvements:
 ---
 
 ## Romanesco 0.10.5
-Released on ...
+Released on January 26, 2017
 
 New features:
 - Add system setting for specifying Project Dashboard resource ID
