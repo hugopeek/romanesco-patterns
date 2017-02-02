@@ -5,6 +5,9 @@
                 {
                     "name": "headerBasic",
                     "category": "o_headers"
+                },{
+                    "name": "headerVertical",
+                    "category": "o_headers"
                 }
             ],
 

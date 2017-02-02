@@ -9,6 +9,9 @@
                     "name": "BasicDetail",
                     "category": "t_basic"
                 },{
+                    "name": "HeaderVertical",
+                    "category": "t_basic"
+                },{
                     "name": "Home",
                     "icon": "icon-home",
                     "category": "t_basic"

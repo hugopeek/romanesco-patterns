@@ -9,6 +9,9 @@
                     "name": "mainNav",
                     "category": "m_navigation"
                 },{
+                    "name": "mainNavVertical",
+                    "category": "m_navigation"
+                },{
                     "name": "subNav",
                     "category": "m_navigation"
                 },{

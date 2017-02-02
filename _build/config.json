@@ -590,6 +590,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -597,6 +598,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -769,6 +771,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -776,6 +779,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -800,6 +804,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -807,6 +812,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -831,6 +837,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -838,6 +845,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -862,6 +870,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -869,6 +878,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -894,6 +904,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -901,6 +912,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -940,6 +952,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -947,6 +960,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -974,6 +988,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -981,6 +996,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -1005,6 +1021,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1012,6 +1029,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -1036,6 +1054,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1043,6 +1062,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -1069,6 +1089,7 @@
 						"Home",
 "BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1076,6 +1097,7 @@
 "Homepage",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 "Publications - Overview",
 "Article - Traditional",
 "Article - Readability",
@@ -1107,8 +1129,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 						"Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1140,8 +1164,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 						"Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1173,8 +1199,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 						"Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1206,8 +1234,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 						"Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1239,8 +1269,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 						"Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1263,8 +1295,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
-"Basic - Detail"
+"Basic - Detail",
+"Header - Vertical"
 					]
 				},
 				{
@@ -1282,8 +1316,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
-"Basic - Detail"
+"Basic - Detail",
+"Header - Vertical"
 					]
 				},
 				{
@@ -1296,8 +1332,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 						"Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -1322,8 +1360,10 @@
 					"templates": [
 						"BasicOverview",
 "BasicDetail",
+"HeaderVertical",
 "Basic - Overview",
 "Basic - Detail",
+"Header - Vertical",
 						"Publications",
 "ArticleTraditional",
 "ArticleReadability",
@@ -2320,6 +2360,10 @@
 					"category": "m_navigation"
 				},
 				{
+					"name": "mainNavVertical",
+					"category": "m_navigation"
+				},
+				{
 					"name": "subNav",
 					"category": "m_navigation"
 				},
@@ -2473,6 +2517,10 @@
 				},
 				{
 					"name": "headerBasic",
+					"category": "o_headers"
+				},
+				{
+					"name": "headerVertical",
 					"category": "o_headers"
 				},
 				{
@@ -3031,6 +3079,10 @@
 				},
 				{
 					"name": "BasicDetail",
+					"category": "t_basic"
+				},
+				{
+					"name": "HeaderVertical",
 					"category": "t_basic"
 				},
 				{
