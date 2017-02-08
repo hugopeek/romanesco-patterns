@@ -21,7 +21,9 @@
             </article>
 
             <aside id="sidebar" class="four wide column computer only">
-                [[$subNavVertical]]
+                [[$subNavVertical?
+                    &sticky=`1`
+                ]]
             </aside>
         </div>
     </main>

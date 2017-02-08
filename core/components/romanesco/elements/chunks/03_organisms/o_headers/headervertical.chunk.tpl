@@ -1,4 +1,4 @@
-<header class="masthead">
+<header id="header" class="masthead inverted primary-color">
     [[[[If?
         &subject=`[[+masthead]]`
         &operator=`EQ`

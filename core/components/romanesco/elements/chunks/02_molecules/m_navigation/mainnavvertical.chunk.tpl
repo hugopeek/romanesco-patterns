@@ -1,4 +1,4 @@
-<nav id="menu-vertical" class="ui large secondary vertical menu" role="navigation">
+<nav id="menu-vertical" class="ui large inverted secondary vertical menu" role="navigation">
     <div class="item branding">
         [[$logo]]
     </div>
@@ -14,7 +14,7 @@
     [[$mainNavItemsTheme]]
 
     <div class="item toc">
-        <button class="ui right labeled icon button">
+        <button class="ui right labeled inverted basic icon button">
             <i class="sidebar icon"></i>
             Menu
         </button>
