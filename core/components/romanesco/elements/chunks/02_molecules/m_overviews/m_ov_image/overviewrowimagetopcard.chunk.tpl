@@ -1,6 +1,6 @@
 <figure class="ui rounded image">
     [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
-        &tvname=`overview_img_landscape`
+        &tvname=`overview_img_[[+img_type:empty=`wide`]]`
         &docid=`[[+id]]`
         &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`
         &type=`tpl`

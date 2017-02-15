@@ -2,7 +2,7 @@
     <figure class="five wide column">
         <a class="ui rounded image" href="[[~[[+id]]]]">
             [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
-                &tvname=`overview_img_landscape`
+                &tvname=`overview_img_[[+img_type:empty=`landscape`]]`
                 &docid=`[[+id]]`
                 &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`
                 &type=`tpl`
