@@ -1,6 +1,6 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
 
-<div class="ui [[+cols]] column doubling stackable [[+padding]] nested overview [[+[[+prefix]].box_type]]">
+<div class="ui [[+cols]] column doubling [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
         &element=`getResources`
         &cacheKey=`overviews`
@@ -25,6 +25,7 @@
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
         &de_emphasize=`[[+de_emphasize]]`
+        &img_type=`[[+img_type]]`
         &icon_type=`[[+icon_type]]`
     ]]
 </div>
