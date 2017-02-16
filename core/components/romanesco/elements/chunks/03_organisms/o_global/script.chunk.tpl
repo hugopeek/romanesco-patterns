@@ -11,4 +11,5 @@
     &field=`84`
     &then=`[[sliderLoadAssets]]`
 ]]
+[[++footer_additional]]
 <script src="[[++romanesco.custom_js_path]]/site.js"></script>
