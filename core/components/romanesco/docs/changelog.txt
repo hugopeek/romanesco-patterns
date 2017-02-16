@@ -11,6 +11,7 @@ New / planned features:
 Fixes and improvements:
 - Responsive images through srcset and picture attributes
 - Apply dividing options to Overview grids too
+- Add descriptions to all elements
 
 ---
 

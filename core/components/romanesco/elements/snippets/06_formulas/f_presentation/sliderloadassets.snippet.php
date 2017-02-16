@@ -5,9 +5,9 @@
  * Loads dependencies for the Slick carousel (http://kenwheeler.github.io/slick/).
  */
 
-$assetsPathCSS = $modx->getOption('romanesco.custom_css_path');
-$assetsPathJS = $modx->getOption('romanesco.custom_js_path');
-$assetsPathVendor = $modx->getOption('romanesco.custom_vendor_path');
+$assetsPathCSS = $modx->getOption('romanesco.custom_css_path', $scriptProperties, '');
+$assetsPathJS = $modx->getOption('romanesco.custom_js_path', $scriptProperties, '');
+$assetsPathVendor = $modx->getOption('romanesco.custom_vendor_path', $scriptProperties, '');
 
 // Head
 $modx->regClientCSS($assetsPathVendor . '/slick-carousel/slick.css');
