@@ -3,7 +3,7 @@
 	"lowCaseName": "romanesco",
 	"description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.10.5",
+	"version": "0.10.6",
 	"package": {
 		"elements": {
 			"categories": [
@@ -3154,6 +3154,7 @@
 			"snippets": [
 				{
 					"name": "cbHasFields",
+					"description": "This is a copy of the original cbHasField snippet that ships with ContentBlocks. The only difference is that it takes in a comma separate list of IDs, instead of just 1.",
 					"category": "f_contentblocks"
 				},
 				{
@@ -3320,7 +3321,7 @@
 				},
 				{
 					"name": "setBoxType",
-					"description": "Output the necessary class names for overview items, based on their template.",
+					"description": "Output the necessary class names for Overview patterns, based on their template. It was created because the chunks where getting a bit swamped by output modifiers trying to do the same thing.",
 					"category": "f_framework"
 				},
 				{
@@ -3330,7 +3331,7 @@
 				},
 				{
 					"name": "iconInputOptions",
-					"description": "Generates input options with all Semantic UI icon classes.",
+					"description": "Generate input options with all Semantic UI icon classes.",
 					"category": "f_framework"
 				},
 				{
@@ -3340,7 +3341,7 @@
 				},
 				{
 					"name": "sliderLoadAssets",
-					"description": "Load CSS and JS dependencies for Slick slider through CDN.",
+					"description": "Load CSS and JS dependencies for Slick slider.",
 					"category": "f_presentation"
 				},
 				{
@@ -3350,17 +3351,17 @@
 				},
 				{
 					"name": "tabsGenerateNav",
-					"description": "Generates the navigation buttons needed by the Tabs CB.",
+					"description": "Generate the tab buttons based on data-heading attribute in the tabs themselves. It basically links every tab button to the correct tab content.",
 					"category": "f_presentation"
 				},
 				{
 					"name": "getRawTVValue",
-					"description": "Get the raw value of a TV. Can be used to check if @inherit is being used.",
+					"description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you might want to get the unprocessed value instead, for instance if @inherit is being used.",
 					"category": "f_templatevars"
 				},
 				{
 					"name": "getTmplvarID",
-					"description": "Get the ID of a TV, in case you only know its name.",
+					"description": "Get the ID of a TV, in case you only know its name. Created for the front-end library, to help with listing included TVs.",
 					"category": "f_templatevars"
 				}
 			],
