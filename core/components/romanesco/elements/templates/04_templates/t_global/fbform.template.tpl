@@ -55,4 +55,4 @@
     </div>
 </form>
 
-[[fbLoadAssets]]
+[[fbLoadAssets? &uploadFile=`[[cbHasField? &field=`[[++formblocks.cb_input_file_id]]` &then=`1` &else=`0`]]`]]

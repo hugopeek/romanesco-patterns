@@ -48,6 +48,11 @@
                 "type": "textfield",
                 "area": "FormBlocks - CB fields"
             },{
+                "key": "cb_input_file_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
                 "key": "cb_accept_terms_id",
                 "namespace": "formblocks",
                 "type": "textfield",

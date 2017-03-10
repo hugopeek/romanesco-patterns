@@ -15,6 +15,12 @@
                     "name": "fbSelectOptionRow",
                     "category": "a_fb_inputs"
                 },{
+                    "name": "fbInputFileSingle",
+                    "category": "a_fb_inputs"
+                },{
+                    "name": "fbInputFileMultiple",
+                    "category": "a_fb_inputs"
+                },{
                     "name": "fbStripWordsLabel",
                     "category": "a_formblocks"
                 }

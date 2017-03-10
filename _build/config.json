@@ -2023,6 +2023,14 @@
 					"category": "a_fb_inputs"
 				},
 				{
+					"name": "fbInputFileSingle",
+					"category": "a_fb_inputs"
+				},
+				{
+					"name": "fbInputFileMultiple",
+					"category": "a_fb_inputs"
+				},
+				{
 					"name": "fbStripWordsLabel",
 					"category": "a_formblocks"
 				},
@@ -3618,6 +3626,12 @@
 			},
 			{
 				"key": "cb_select_dropdown_auto_id",
+				"namespace": "formblocks",
+				"type": "textfield",
+				"area": "FormBlocks - CB fields"
+			},
+			{
+				"key": "cb_input_file_id",
 				"namespace": "formblocks",
 				"type": "textfield",
 				"area": "FormBlocks - CB fields"

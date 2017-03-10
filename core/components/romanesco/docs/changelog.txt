@@ -1,21 +1,21 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco 0.11
+## Romanesco Patterns 0.11
 Upcoming release
 
 New / planned features:
 - Add ContentBlock for creating previous / next page navigation
 - Add ContentBlock for creating a button group
-- Add template with main navigation left of content area
 
 Fixes and improvements:
 - Responsive images through srcset and picture attributes
 - Apply dividing options to Overview grids too
 - Add descriptions to all elements
+- Add multiple file upload field to FormBlocks
 
 ---
 
-## Romanesco 0.10.6
+## Romanesco Patterns 0.10.6
 Released on February 22, 2017
 
 New features:
@@ -28,7 +28,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.10.5
+## Romanesco Patterns 0.10.5
 Released on January 26, 2017
 
 New features:
@@ -45,7 +45,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.10.4
+## Romanesco Patterns 0.10.4
 Released on January 12, 2017
 
 Fixes and improvements:
@@ -55,7 +55,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.10.3
+## Romanesco Patterns 0.10.3
 Internal build only
 
 New features:
@@ -68,7 +68,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.10.2
+## Romanesco Patterns 0.10.2
 Released on November 23, 2016
 
 New features:
@@ -83,7 +83,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.10.1
+## Romanesco Patterns 0.10.1
 Released on November 6, 2016
 
 Fixes and improvements:
@@ -93,7 +93,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.10.0
+## Romanesco Patterns 0.10.0
 Released on October 19, 2016
 
 New features:
@@ -119,7 +119,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.9.1
+## Romanesco Patterns 0.9.1
 Released on June 28, 2016
 
 New features:
@@ -130,7 +130,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.9.0
+## Romanesco Patterns 0.9.0
 Released on June 22, 2016
 
 New features:
@@ -147,7 +147,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.8.1
+## Romanesco Patterns 0.8.1
 Released on May 5, 2016
 
 New features:
@@ -158,7 +158,7 @@ Fixes and improvements:
 
 ---
 
-## Romanesco 0.8.0
+## Romanesco Patterns 0.8.0
 Released on May 5, 2016
 
 New features:
