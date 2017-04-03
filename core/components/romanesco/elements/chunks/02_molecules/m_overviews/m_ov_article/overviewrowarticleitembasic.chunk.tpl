@@ -4,7 +4,7 @@
         <div class="meta">
             [[+meta_elements:contains=`date`:then=`
             <span class="date">
-                [[+publishedon:strtotime:date=`%e %B %Y`]]
+                [[+publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
             </span>
             `]]
             [[+meta_elements:contains=`views`:then=`
