@@ -3,7 +3,7 @@
 
 [[$head]]
 
-<body id="[[*alias]]" class="organization">
+<body id="[[*alias]]" class="detail organization">
 
 <div class="pusher">
     [[$headerBasic?

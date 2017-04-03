@@ -6,7 +6,7 @@
 
 [[$head]]
 
-<body id="publication">
+<body id="[[*alias]]" class="narrow publication">
 
 <div class="pusher">
     [[$headerBasic?
