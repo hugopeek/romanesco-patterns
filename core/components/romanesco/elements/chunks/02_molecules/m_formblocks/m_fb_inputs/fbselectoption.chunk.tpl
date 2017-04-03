@@ -10,16 +10,16 @@
         <input type="[[+field_type]]"
                name="[[+name]][[+field_type:is=`checkbox`:then=`[]`]]"
                id="[[+name]]-last"
-               class="hidden collapse-other"
+               class="hidden"
                value="[[+option_other_value]]"
-               tabindex="0"
+               tabindex="[[+total:add=`1`]]"
                data-group="no-group"
                data-target="[[+name]]-other"
                [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+option_other_value]]`]]>
         <label>[[+option_other_value]]</label>
 
-        <div id="[[+name]]-other" class="field collapse">
-            <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_other_placeholder]]">
+        <div id="[[+name]]-other" class="field hidden">
+            <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_placeholder]]">
         </div>
     </div>
     `]]

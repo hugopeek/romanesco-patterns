@@ -7,7 +7,7 @@
            id="[[+name]]-[[+idx]]"
            value="[[+option]]"
            class="[[+collapse_target:isnot=``:then=`collapse-[[+field_type]]`]]"
-           tabindex="0"
+           tabindex="[[+idx]]"
            data-group="[[+collapse_target:isnot=``:then=`[[+name]]`:default=`no-group`]]"
            data-target="[[+collapse_target:default=`no-target`]]"
            data-toggle="collapse"
