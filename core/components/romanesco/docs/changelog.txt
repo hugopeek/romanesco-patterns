@@ -22,6 +22,7 @@ Fixes and improvements:
 - [FormBlocks] Add row template for auto-generated select options
 - [FormBlocks] Combine Select Dropdown and Select Options fields
 - [FormBlocks] Fix Other and Collapsible fields
+- [FormBlocks] Use fieldset / legend markup again in HTML
 
 ---
 
