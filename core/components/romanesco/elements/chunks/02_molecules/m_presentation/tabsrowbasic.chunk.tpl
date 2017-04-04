@@ -1,6 +1,6 @@
-[[+tab_type:is=`basic`:then=`basic vertical`:else=`bottom attached`:toPlaceholder=`segment_type`]]
+[[+tab_type:is=`basic`:then=`basic vertical`:else=`bottom attached`:toPlaceholder=`tab_segment`]]
 
-<div class="ui [[+segment_type]] [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
+<div class="ui [[+tab_segment]] [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
      data-tab="segment-[[+unique_idx]]-[[+idx]]"
      data-heading="[[+heading]]"
      role="tabpanel"
