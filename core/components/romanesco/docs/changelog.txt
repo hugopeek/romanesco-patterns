@@ -3,15 +3,25 @@
 ## Romanesco Patterns 0.11
 Upcoming release
 
-New / planned features:
+New features:
 - Add ContentBlock for creating previous / next page navigation
-- Add ContentBlock for creating a button group
+- Add CB layout + field for creating empty Segments
+- [FormBlocks] Add multiple file upload field
 
 Fixes and improvements:
 - Responsive images through srcset and picture attributes
 - Apply dividing options to Overview grids too
-- Add descriptions to all elements
-- Add multiple file upload field to FormBlocks
+- Add icon size and de-emphasize options to Icon SVG
+- Refactor gallery / slider combo and add captions
+- Prevent collisions between Tab and regular segment types
+- Add ability to override Google Analytics tracking code per context
+- Add submenus to HeaderVertical navigation
+- Add CTAs in HeaderVertical templates through hero unit in header
+- Start adding descriptions to all elements
+- [FormBlocks] Add ability to set dynamic redirect ID
+- [FormBlocks] Add row template for auto-generated select options
+- [FormBlocks] Combine Select Dropdown and Select Options fields
+- [FormBlocks] Fix Other and Collapsible fields
 
 ---
 
