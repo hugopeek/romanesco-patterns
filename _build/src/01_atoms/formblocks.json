@@ -4,25 +4,40 @@
             "chunks": [
                 {
                     "name": "fbRenderFormWrapper",
+                    "description": "",
                     "category": "a_formblocks"
                 },{
                     "name": "fbAutoresponder",
+                    "description": "",
+                    "category": "a_formblocks"
+                },{
+                    "name": "fbFileUploadProperties",
+                    "description": "These AjaxUpload settings need to be included in the FormIt call if a multiple file upload field is being used.",
+                    "category": "a_formblocks"
+                },{
+                    "name": "fbStripWordsLabel",
+                    "description": "",
                     "category": "a_formblocks"
                 },{
                     "name": "fbSelectDropdownRow",
+                    "description": "",
                     "category": "a_fb_inputs"
                 },{
                     "name": "fbSelectOptionRow",
+                    "description": "",
+                    "category": "a_fb_inputs"
+                },{
+                    "name": "fbSelectOptionRowResource",
+                    "description": "A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.",
                     "category": "a_fb_inputs"
                 },{
                     "name": "fbInputFileSingle",
+                    "description": "A basic input field for uploading a single file.",
                     "category": "a_fb_inputs"
                 },{
                     "name": "fbInputFileMultiple",
+                    "description": "If you want to let users upload more than 1 file, you need to replace the default file input field with this AjaxUpload field. The AjaxUpload extra takes care of both frontend functionality and backend processing. Just make sure it's installed!",
                     "category": "a_fb_inputs"
-                },{
-                    "name": "fbStripWordsLabel",
-                    "category": "a_formblocks"
                 }
             ],
 

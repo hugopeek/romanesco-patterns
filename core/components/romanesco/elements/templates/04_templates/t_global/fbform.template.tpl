@@ -1,7 +1,13 @@
 [[*pagetitle:fbStripAsAlias:toPlaceholder=`title`]]
 
+[[cbGetFieldContent:notempty=`1`:toPlaceholder=`upload_multiple`?
+    &field=`[[++formblocks.cb_input_file_id]]`
+    &fieldSettingFilter=`upload_limit!=1`
+]]
+
 [[!FormIt?
-    &hooks=`spam,email,[[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]][[++formblocks.save_form:eq=`1`:then=`FormItSaveForm,`]]redirect`
+    &preHooks=`[[+upload_multiple:eq=`1`:then=`Formit2AjaxUpload`]]`
+    &hooks=`spam,[[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]][[++formblocks.save_form:eq=`1`:then=`FormItSaveForm,`]]email,[[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]]redirect`
 
     &emailTpl=`[[*fb_email_template:empty=`fbEmail`]]`
     &emailTo=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to:empty=`[[++client_email:empty=`[[++emailsender]]`]]`]]`]]`
@@ -9,8 +15,14 @@
     &emailBCC=`[[*fb_email_bcc]]`
     &emailFrom=`[[*fb_email_from:empty=`[[++emailsender]]`]]`
     &emailFromName=`[[*fb_email_from_name:empty=`[[++site_name]]`]]`
-    [[cbGetFieldContent:notempty=`&emailReplyTo=`[[+fb[[*id]]-email]]``? &field=`[[++formblocks.cb_input_email_id]]`]]
     &emailSubject=`[[*fb_email_subject:empty=`[[%formblocks.email.subject]]`]]`
+    [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`&emailReplyTo=`[[+fb[[*id]]-email]]``]]
+
+    [[cbGetFieldContent?
+        &field=`[[++formblocks.cb_input_file_id]]`
+        &fieldSettingFilter=`upload_limit!=1`
+        &tpl=`fbFileUploadProperties`
+    ]]
 
     [[*fb_autoresponder_toggle:eq=`1`:then=`
     &fiarTpl=`fbAutoresponder`
@@ -24,8 +36,8 @@
     [[-&customValidators=`requiredIf,requiredIfNot`]]
     &validate=`
         [[!fbValidateProcessJSON? &json=`[[!fbEmailGetJSON? &formID=`[[*id]]`]]`]]
-        [[cbGetFieldContent:notempty=`fb[[*id]]-email:email:required,`? &field=`[[++formblocks.cb_input_email_id]]`]]
-        [[cbGetFieldContent:notempty=`fb[[*id]]-accept-terms:required,`? &field=`[[++formblocks.cb_accept_terms_id]]`]]
+        [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
+        [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[$fbValidateCustomFields:notempty=`[[$fbValidateCustomFields]]`]]
         workemail:blank`
     &placeholderPrefix=`fb[[*id]].`
@@ -55,4 +67,4 @@
     </div>
 </form>
 
-[[fbLoadAssets? &uploadFile=`[[cbHasField? &field=`[[++formblocks.cb_input_file_id]]` &then=`1` &else=`0`]]`]]
+[[fbLoadAssets? &uploadFile=`[[+upload_multiple]]`]]
