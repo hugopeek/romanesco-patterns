@@ -8,6 +8,9 @@
                 },{
                     "name": "ctaHeader",
                     "category": "m_cta"
+                },{
+                    "name": "ctaHeaderVertical",
+                    "category": "m_cta"
                 }
             ],
 
