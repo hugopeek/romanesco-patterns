@@ -30,7 +30,7 @@
         workemail:blank`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[+title]]`
-    &redirectTo=`[[*fb_redirect_id]]`
+    &redirectTo=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`
 ]]
 
 [[!+fb[[*id]].validation_error_message:notempty=`
