@@ -1,4 +1,4 @@
-[[%formblocks.email.introtext]]<br><br>
+[[%formblocks.email.introtext]]<br/><br/>
 
 [[!fbEmailGetJSON:toPlaceholder=`data`? &formID=`[[*id]]`]]
 [[!fbSimplxWidgeteer?
@@ -8,3 +8,7 @@
     &chunkPrefix=`fbEmailRow_`
     &chunkMatchingSelector=`field`
 ]]
+
+<br/><br/><br/>
+
+--- End of message ---

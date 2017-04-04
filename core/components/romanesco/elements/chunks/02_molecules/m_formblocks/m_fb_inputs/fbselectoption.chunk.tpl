@@ -1,12 +1,12 @@
 [[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 
-<div id="[[+name]]" class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] grouped [[+field_layout]] fields [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
+<div id="[[+name]]" class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] [[+option_layout:empty=`grouped`]] [[+field_layout]] [[+field_type]] fields [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
     <label for="[[+name]]">[[+field_name]]</label>
 
     [[+rows]]
 
     [[+option_other:is=`1`:then=`
-    <div class="ui field [[+field_type]] checkbox other">
+    <div class="ui collapsible [[+checkbox_type:empty=`[[+field_type]]`]] checkbox field">
         <input type="[[+field_type]]"
                name="[[+name]][[+field_type:is=`checkbox`:then=`[]`]]"
                id="[[+name]]-last"
@@ -17,10 +17,9 @@
                data-target="[[+name]]-other"
                [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+option_other_value]]`]]>
         <label>[[+option_other_value]]</label>
-
-        <div id="[[+name]]-other" class="field hidden">
-            <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_placeholder]]">
-        </div>
+    </div>
+    <div id="[[+name]]-other" class="field hidden">
+        <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_placeholder]]">
     </div>
     `]]
 
