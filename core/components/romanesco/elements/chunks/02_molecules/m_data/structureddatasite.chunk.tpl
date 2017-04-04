@@ -7,7 +7,7 @@
         "logo" : "[[++site_url]][[++logo_path]]",
         "contactPoint" : [{
             "@type" : "ContactPoint",
-            "telephone" : "[[++client_phone_primary]]",
+            "telephone" : "[[++client_phone]]",
             "contactType" : "customer service"
         }]
     }
