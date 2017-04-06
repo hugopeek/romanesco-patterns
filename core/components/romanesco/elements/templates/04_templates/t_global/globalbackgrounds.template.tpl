@@ -48,7 +48,9 @@
     &showUnpublished=`1`
     &tpl=`globalBackgroundImgOverviewCSS`
     &includeTVs=`overview_img_pano,overview_img_wide`
+    &processTVs=`1`
     &tvFilters=`header_background_img!==`
+    &tvPrefix=``
 ]]
 
 /* Load backgrounds for all tiled Portfolio overviews */
