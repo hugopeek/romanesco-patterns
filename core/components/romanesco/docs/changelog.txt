@@ -1,11 +1,11 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco Patterns 0.11
+## Romanesco Patterns 0.11.0
 Upcoming release
 
 New features:
-- Add ContentBlock for creating previous / next page navigation
-- Add CB layout + field for creating empty Segments
+- Add patterns for creating previous / next page navigation
+- Add CB layout + field for wrapping content in Semantic UI segments
 - [FormBlocks] Add multiple file upload field
 
 Fixes and improvements:
