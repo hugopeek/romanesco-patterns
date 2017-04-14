@@ -48,7 +48,7 @@
                     "type": "listbox",
                     "category": "Org. - Information",
                     "sortOrder": "5",
-                    "inputOptionValues": "Public (government)==public||Private business==private||Non-profit organization==community",
+                    "inputOptionValues": "--- Select a sector ---==||Public (government)==public||Private business==private||Non-profit organization==community",
                     "templates": [
                         "@@templates_client"
                     ]
@@ -75,7 +75,7 @@
                 },{
                     "caption": "Organization website",
                     "name": "organization_url",
-                    "description": "",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Org. - Information",
                     "sortOrder": "20",

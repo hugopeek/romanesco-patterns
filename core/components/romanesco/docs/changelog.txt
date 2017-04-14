@@ -17,6 +17,9 @@ Fixes and improvements:
 - Add ability to override Google Analytics tracking code per context
 - Add submenus to HeaderVertical navigation
 - Add CTAs in HeaderVertical templates through hero unit in header
+- Add more aliases for custom templates (for assigning TVs with GPM)
+- Add fallbacks to placeholders inside some patterns
+- Correct field types and descriptions of some information electrons
 - Start adding descriptions to all elements
 - [FormBlocks] Add ability to set dynamic redirect ID
 - [FormBlocks] Add row template for auto-generated select options

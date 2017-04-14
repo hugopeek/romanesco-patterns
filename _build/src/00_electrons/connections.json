@@ -19,7 +19,8 @@
                     "category": "Connections",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_portfolio",
+                        "@@templates_testimonial"
                     ]
                 },{
                     "caption": "Contributors",

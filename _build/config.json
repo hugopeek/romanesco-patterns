@@ -549,7 +549,10 @@
 					"sortOrder": "2",
 					"templates": [
 						"PortfolioProject",
-"Porfolio - Project"
+"Porfolio - Project",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -588,27 +591,33 @@
 					"inputOptionValues": "@CHUNK tvSelectCTA",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -780,27 +789,33 @@
 					"defaultValue": "@INHERIT",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -813,27 +828,33 @@
 					"defaultValue": "@INHERIT",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -846,27 +867,33 @@
 					"defaultValue": "@INHERIT",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -879,27 +906,33 @@
 					"inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -913,27 +946,33 @@
 					"inputOptionValues": "Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -961,27 +1000,33 @@
 					"inputOptionValues": "[Seed] Its idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==thriving||[Plagued] Somehow, this resource is having some difficulties staying healthy==struggling||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -997,27 +1042,33 @@
 					},
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1030,27 +1081,33 @@
 					"inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1063,27 +1120,33 @@
 					"inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1098,27 +1161,33 @@
 					},
 					"templates": [
 						"Home",
-"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
-"Publications",
-"ArticleTraditional",
-"ArticleReadability",
-"ArticleSidenotes",
 "Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
+"Publications",
 "Publications - Overview",
+"Blog",
+"ArticleTraditional",
 "Article - Traditional",
+"ArticleReadability",
 "Article - Readability",
+"ArticleSidenotes",
 "Article - Sidenotes",
 "TeamMember",
 "Team - Member",
+"Team",
 "Client",
+"Organization",
+"Relation",
 "PortfolioProject",
 "Porfolio - Project",
-"Testimonial"
+"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1396,91 +1465,99 @@
 					"sortOrder": "1",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
 					"caption": "LinkedIn profile",
 					"name": "social_linkedin",
-					"description": "",
-					"type": "url",
+					"description": "Please fill in the complete URL (including http(s)://).",
+					"type": "text",
 					"category": "Social",
 					"sortOrder": "2",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
 					"caption": "Facebook page",
 					"name": "social_facebook",
-					"description": "",
-					"type": "url",
+					"description": "Please fill in the complete URL (including http(s)://).",
+					"type": "text",
 					"category": "Social",
 					"sortOrder": "3",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
 					"caption": "Instagram profile",
 					"name": "social_instagram",
-					"description": "",
-					"type": "url",
+					"description": "Only fill in the account name (the part after https://instagram.com/).",
+					"type": "text",
 					"category": "Social",
 					"sortOrder": "4",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
 					"caption": "Pinterest board",
 					"name": "social_pinterest",
-					"description": "",
-					"type": "url",
+					"description": "Please fill in the complete URL (including http(s)://).",
+					"type": "text",
 					"category": "Social",
 					"sortOrder": "5",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
 					"caption": "Youtube channel",
 					"name": "social_youtube",
-					"description": "",
-					"type": "url",
+					"description": "Please fill in the complete URL (including http(s)://).",
+					"type": "text",
 					"category": "Social",
 					"sortOrder": "10",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
 					"caption": "Google+ profile",
 					"name": "social_googleplus",
-					"description": "",
-					"type": "url",
+					"description": "Please fill in the complete URL (including http(s)://).",
+					"type": "text",
 					"category": "Social",
 					"sortOrder": "11",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
 					"caption": "Github account",
 					"name": "social_github",
-					"description": "",
+					"description": "Only fill in the account name (the part after https://github.com/).",
 					"type": "text",
 					"category": "Social",
 					"sortOrder": "20",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
@@ -1589,12 +1666,14 @@
 					"caption": "Rating value",
 					"name": "rating_value",
 					"description": "How did the user value this product or service?",
-					"type": "options",
+					"type": "option",
 					"category": "Rating",
 					"sortOrder": "1",
 					"inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
 					"templates": [
-						"Testimonial"
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1606,7 +1685,8 @@
 					"sortOrder": "1",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
@@ -1618,7 +1698,8 @@
 					"sortOrder": "2",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
@@ -1630,7 +1711,8 @@
 					"sortOrder": "3",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
@@ -1749,7 +1831,9 @@
 					"category": "Org. - Presentation",
 					"sortOrder": "1",
 					"templates": [
-						"Client"
+						"Client",
+"Organization",
+"Relation"
 					]
 				},
 				{
@@ -1769,7 +1853,9 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"Client"
+						"Client",
+"Organization",
+"Relation"
 					]
 				},
 				{
@@ -1780,7 +1866,9 @@
 					"category": "Org. - Information",
 					"sortOrder": "1",
 					"templates": [
-						"Client"
+						"Client",
+"Organization",
+"Relation"
 					]
 				},
 				{
@@ -1790,9 +1878,11 @@
 					"type": "listbox",
 					"category": "Org. - Information",
 					"sortOrder": "5",
-					"inputOptionValues": "Public (government)==public||Private business==private||Non-profit organization==community",
+					"inputOptionValues": "--- Select a sector ---==||Public (government)==public||Private business==private||Non-profit organization==community",
 					"templates": [
-						"Client"
+						"Client",
+"Organization",
+"Relation"
 					]
 				},
 				{
@@ -1803,7 +1893,9 @@
 					"category": "Org. - Information",
 					"sortOrder": "6",
 					"templates": [
-						"Client"
+						"Client",
+"Organization",
+"Relation"
 					]
 				},
 				{
@@ -1814,18 +1906,22 @@
 					"category": "Org. - Information",
 					"sortOrder": "10",
 					"templates": [
-						"Client"
+						"Client",
+"Organization",
+"Relation"
 					]
 				},
 				{
 					"caption": "Organization website",
 					"name": "organization_url",
-					"description": "",
+					"description": "Please fill in the complete URL (including http(s)://).",
 					"type": "text",
 					"category": "Org. - Information",
 					"sortOrder": "20",
 					"templates": [
-						"Client"
+						"Client",
+"Organization",
+"Relation"
 					]
 				},
 				{
@@ -1846,7 +1942,11 @@
 					},
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1867,7 +1967,8 @@
 					},
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team"
 					]
 				},
 				{
@@ -1879,7 +1980,11 @@
 					"sortOrder": "1",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1891,7 +1996,11 @@
 					"sortOrder": "2",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1904,7 +2013,11 @@
 					"inputOptionValues": "Male==m||Female==f||Other==o",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1916,7 +2029,11 @@
 					"sortOrder": "4",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
@@ -1928,19 +2045,27 @@
 					"sortOrder": "5",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				},
 				{
 					"caption": "Personal website or blog",
 					"name": "person_url",
-					"description": "",
+					"description": "Please fill in the complete URL (including http(s)://).",
 					"type": "text",
 					"category": "Person - Information",
 					"sortOrder": "10",
 					"templates": [
 						"TeamMember",
-"Team - Member"
+"Team - Member",
+"Team",
+						"Testimonial",
+"Review",
+"Endorsement"
 					]
 				}
 			],

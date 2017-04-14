@@ -6,7 +6,7 @@
                     "caption": "Rating value",
                     "name": "rating_value",
                     "description": "How did the user value this product or service?",
-                    "type": "options",
+                    "type": "option",
                     "category": "Rating",
                     "sortOrder": "1",
                     "inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",

@@ -15,8 +15,8 @@
                 },{
                     "caption": "LinkedIn profile",
                     "name": "social_linkedin",
-                    "description": "",
-                    "type": "url",
+                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "type": "text",
                     "category": "Social",
                     "sortOrder": "2",
                     "templates": [
@@ -25,8 +25,8 @@
                 },{
                     "caption": "Facebook page",
                     "name": "social_facebook",
-                    "description": "",
-                    "type": "url",
+                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "type": "text",
                     "category": "Social",
                     "sortOrder": "3",
                     "templates": [
@@ -35,8 +35,8 @@
                 },{
                     "caption": "Instagram profile",
                     "name": "social_instagram",
-                    "description": "",
-                    "type": "url",
+                    "description": "Only fill in the account name (the part after https://instagram.com/).",
+                    "type": "text",
                     "category": "Social",
                     "sortOrder": "4",
                     "templates": [
@@ -45,8 +45,8 @@
                 },{
                     "caption": "Pinterest board",
                     "name": "social_pinterest",
-                    "description": "",
-                    "type": "url",
+                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "type": "text",
                     "category": "Social",
                     "sortOrder": "5",
                     "templates": [
@@ -55,8 +55,8 @@
                 },{
                     "caption": "Youtube channel",
                     "name": "social_youtube",
-                    "description": "",
-                    "type": "url",
+                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "type": "text",
                     "category": "Social",
                     "sortOrder": "10",
                     "templates": [
@@ -65,8 +65,8 @@
                 },{
                     "caption": "Google+ profile",
                     "name": "social_googleplus",
-                    "description": "",
-                    "type": "url",
+                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "type": "text",
                     "category": "Social",
                     "sortOrder": "11",
                     "templates": [
@@ -75,7 +75,7 @@
                 },{
                     "caption": "Github account",
                     "name": "social_github",
-                    "description": "",
+                    "description": "Only fill in the account name (the part after https://github.com/).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "20",

@@ -19,7 +19,8 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_team",
+                        "@@templates_testimonial"
                     ]
                 },{
                     "caption": "Informal picture",
@@ -48,7 +49,8 @@
                     "category": "Person - Information",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_team",
+                        "@@templates_testimonial"
                     ]
                 },{
                     "caption": "Last name",
@@ -58,7 +60,8 @@
                     "category": "Person - Information",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_team",
+                        "@@templates_testimonial"
                     ]
                 },{
                     "caption": "Gender",
@@ -69,7 +72,8 @@
                     "sortOrder": "3",
                     "inputOptionValues": "Male==m||Female==f||Other==o",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_team",
+                        "@@templates_testimonial"
                     ]
                 },{
                     "caption": "Birthdate",
@@ -79,7 +83,8 @@
                     "category": "Person - Information",
                     "sortOrder": "4",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_team",
+                        "@@templates_testimonial"
                     ]
                 },{
                     "caption": "Job title",
@@ -89,17 +94,19 @@
                     "category": "Person - Information",
                     "sortOrder": "5",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_team",
+                        "@@templates_testimonial"
                     ]
                 },{
                     "caption": "Personal website or blog",
                     "name": "person_url",
-                    "description": "",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Person - Information",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_team",
+                        "@@templates_testimonial"
                     ]
                 }
             ],
