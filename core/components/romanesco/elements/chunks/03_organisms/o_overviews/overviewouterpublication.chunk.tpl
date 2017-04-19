@@ -20,6 +20,7 @@
         &where=`[[!TaggerGetResourcesWhere]]`
 
         &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`
+        &cols=`[[+cols:textToNumber]]`
         &column_type=`[[+[[+prefix]].column_type]]`
         &title_field=`[[+title_field]]`
         &title_hierarchy=`[[+title_hierarchy]]`
