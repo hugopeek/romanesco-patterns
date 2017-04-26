@@ -9,8 +9,9 @@ New features:
 - [FormBlocks] Add multiple file upload field
 
 Fixes and improvements:
-- Responsive images through srcset and picture attributes
+- Responsive images through srcset and sizes attributes
 - Apply dividing options to Overview grids too
+- Cache each Overview type in its own custom cache partition
 - Add icon size and de-emphasize options to Icon SVG
 - Refactor gallery / slider combo and add captions
 - Prevent collisions between Tab and regular segment types

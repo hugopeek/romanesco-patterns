@@ -1,6 +1,6 @@
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
     &element=`getResources`
-    &cacheKey=`overviews`
+    &cacheKey=`gallery`
     [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
     &parents=`[[+parent]]`

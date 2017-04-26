@@ -3,7 +3,7 @@
 <div class="ui [[+cols]] column doubling stackable [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
         &element=`getResources`
-        &cacheKey=`overviews`
+        &cacheKey=`portfolio`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
         &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++romanesco.portfolio_container_id]]`]]`

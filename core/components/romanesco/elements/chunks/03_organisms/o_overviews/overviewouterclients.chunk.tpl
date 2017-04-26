@@ -3,7 +3,7 @@
 <div class="ui [[+cols]] column doubling [[+row_tpl:containsnot=`logo`:then=`stackable`]] [[+padding]] nested [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
         &element=`getResources`
-        &cacheKey=`overviews`
+        &cacheKey=`clients`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
         &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++romanesco.client_container_id]]`]]`
