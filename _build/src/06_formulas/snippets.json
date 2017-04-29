@@ -83,6 +83,10 @@
                     "description": "Generate input options with all Semantic UI icon classes.",
                     "category": "f_framework"
                 },{
+                    "name": "responsiveImgSrcset",
+                    "description": "Generate a number of srcset properties, for use inside an img tag.",
+                    "category": "f_framework"
+                },{
                     "name": "modifiedIf",
                     "description": "Customized version of the If snippet, which also accepts 'contains' and 'containsnot' operators.",
                     "category": "f_logic"

@@ -1118,6 +1118,9 @@
 					"category": "Status",
 					"sortOrder": "4",
 					"inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
+					"outputProperties": {
+						"delimiter": ","
+					},
 					"templates": [
 						"Home",
 "Homepage",
@@ -1228,7 +1231,7 @@
 				{
 					"caption": "Image (Portrait)",
 					"name": "overview_img_portrait",
-					"description": "This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content.",
+					"description": "This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.",
 					"type": "imageplus",
 					"category": "Overview - Image",
 					"sortOrder": "2",
@@ -2253,6 +2256,11 @@
 				},
 				{
 					"name": "imgOverviewPersonAvatarLink",
+					"category": "a_images"
+				},
+				{
+					"name": "imgResponsiveRowSrcset",
+					"description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
 					"category": "a_images"
 				},
 				{
@@ -3509,6 +3517,11 @@
 				{
 					"name": "iconInputOptions",
 					"description": "Generate input options with all Semantic UI icon classes.",
+					"category": "f_framework"
+				},
+				{
+					"name": "responsiveImgSrcset",
+					"description": "Generate a number of srcset properties, for use inside an img tag.",
 					"category": "f_framework"
 				},
 				{

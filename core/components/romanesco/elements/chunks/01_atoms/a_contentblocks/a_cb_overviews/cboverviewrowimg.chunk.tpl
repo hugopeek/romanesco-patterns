@@ -1,16 +1,27 @@
-[[-<img src="[[+url]]" alt="[[+alt]]">]]
+[[+img_scale:default=`100`:toPlaceholder=`scale`]]
+[[responsiveImgSrcset?
+    &breakpoints=`320,560,800,960,1024,1140,1280,1440,1600,1920`
+    &quality=`[[++thumb_quality:default=`65`]]`
+    &src=`[[+source.src]]`
+    &crop=`[[+crop.options]]`
+    &width=`[[+width]]`
+    &toPlaceholder=`srcset`
+]]
+[[-responsiveImgSrcset?
+    &breakpoints=`[[++responsive_img_breakpoints]]`
+    &quality=`[[++thumb_quality]]`
+    &src=`[[+source.src]]`
+    &crop=`[[+crop.options]]`
+    &width=`[[+width]]`
+    &toPlaceholder=`srcset`
+]]
 
-<img srcset="[[+source.src:pthumb=`[[+crop.options]]&w=1920`]] 1920w,
-        [[+source.src:pthumb=`[[+crop.options]]&w=1600`]] 1600w,
-        [[+source.src:pthumb=`[[+crop.options]]&w=1300`]] 1300w,
-        [[+source.src:pthumb=`[[+crop.options]]&w=992`]] 992w,
-        [[+source.src:pthumb=`[[+crop.options]]&w=768`]] 768w,
-        [[+source.src:pthumb=`[[+crop.options]]&w=360`]] 360w"
-     sizes="(min-width: 1300px) calc(100vw / [[+cols]]),
-        (min-width: 992px) calc(100vw / [[+cols]]),
-        (min-width: 768px) [[+cols:gt=`1`:then=`calc((768px - 2em) / 2)`:else=`768px`]],
-        (min-width: 360px) 100vw,
-        100vw"
+<img srcset="[[+srcset]]"
+     sizes="(min-width: 1300px) calc([[+scale]]vw / [[+cols]]),
+        (min-width: 992px) calc([[+scale]]vw / [[+cols]]),
+        (min-width: 768px) [[+cols:gt=`2`:then=`calc(([[+scale]]vw - 2em) / 2)`:else=`[[+scale]]vw`]],
+        (min-width: 360px) [[+scale]]vw,
+        [[+scale]]vw"
      src="[[+url]]"
-     alt="[[+alt]]"
+     alt="[[+alt:htmlent]]"
 />

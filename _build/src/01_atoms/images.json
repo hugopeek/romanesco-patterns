@@ -11,6 +11,10 @@
                 },{
                     "name": "imgOverviewPersonAvatarLink",
                     "category": "a_images"
+                },{
+                    "name": "imgResponsiveRowSrcset",
+                    "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
+                    "category": "a_images"
                 }
             ],
 
