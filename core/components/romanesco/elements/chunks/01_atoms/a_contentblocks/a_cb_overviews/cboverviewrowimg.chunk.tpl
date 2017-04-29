@@ -1,13 +1,5 @@
 [[+img_scale:default=`100`:toPlaceholder=`scale`]]
 [[responsiveImgSrcset?
-    &breakpoints=`320,560,800,960,1024,1140,1280,1440,1600,1920`
-    &quality=`[[++thumb_quality:default=`65`]]`
-    &src=`[[+source.src]]`
-    &crop=`[[+crop.options]]`
-    &width=`[[+width]]`
-    &toPlaceholder=`srcset`
-]]
-[[-responsiveImgSrcset?
     &breakpoints=`[[++responsive_img_breakpoints]]`
     &quality=`[[++thumb_quality]]`
     &src=`[[+source.src]]`
