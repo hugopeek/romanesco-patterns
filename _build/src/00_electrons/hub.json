@@ -60,6 +60,9 @@
                     "category": "Status",
                     "sortOrder": "4",
                     "inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
                     "templates": [
                         "@@templates_all"
                     ]

@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * iconInputOptions
  * Based on fontAwesomeInputOptions, but modified to be used with Semantic UI.
  * MODX Snippet
