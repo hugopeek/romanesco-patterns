@@ -38,6 +38,7 @@
                     "outputProperties": {
                         "delimiter": ","
                     },
+                    "display": "delim",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -63,6 +64,7 @@
                     "outputProperties": {
                         "delimiter": ","
                     },
+                    "display": "delim",
                     "templates": [
                         "@@templates_all"
                     ]

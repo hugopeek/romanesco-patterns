@@ -1040,6 +1040,7 @@
 					"outputProperties": {
 						"delimiter": ","
 					},
+					"display": "delim",
 					"templates": [
 						"Home",
 "Homepage",
@@ -1121,6 +1122,7 @@
 					"outputProperties": {
 						"delimiter": ","
 					},
+					"display": "delim",
 					"templates": [
 						"Home",
 "Homepage",
