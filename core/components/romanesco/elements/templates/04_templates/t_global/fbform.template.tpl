@@ -1,7 +1,7 @@
 [[*pagetitle:fbStripAsAlias:toPlaceholder=`title`]]
 
-[[cbGetFieldContent:notempty=`1`:toPlaceholder=`upload_multiple`?
-    &field=`[[++formblocks.cb_input_file_id]]`
+[[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`upload_multiple`?
+    &field=`[[++formblocks.cb_input_file_id:empty=`-1`]]`
     &fieldSettingFilter=`upload_limit!=1`
 ]]
 
@@ -19,7 +19,7 @@
     [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`&emailReplyTo=`[[+fb[[*id]]-email]]``]]
 
     [[cbGetFieldContent?
-        &field=`[[++formblocks.cb_input_file_id]]`
+        &field=`[[++formblocks.cb_input_file_id:empty=`-1`]]`
         &fieldSettingFilter=`upload_limit!=1`
         &tpl=`fbFileUploadProperties`
     ]]

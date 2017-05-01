@@ -4,9 +4,11 @@
 Upcoming release
 
 New features:
+- 
 
 Fixes and improvements:
 - Fix TV output options being reset to default on GPM build [#80]
+- Prevent form submission from failing when cb_input_file_id is empty
 
 ---
 
