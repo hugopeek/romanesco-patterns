@@ -39,6 +39,7 @@ if (isset($subject)) {
         $operator = strtolower($operator);
         switch ($operator) {
             case '!=':
+            case 'ne':
             case 'neq':
             case 'not':
             case 'isnot':
@@ -98,6 +99,10 @@ if (isset($subject)) {
             case 'includes':
                 $output = strpos($subject,$operand) !== false ? $then : (isset($else) ? $else : '');
                 break;
+            case 'numeric':
+            case 'isnumeric':
+                $output = is_numeric($subject) !== false ? $then : (isset($else) ? $else : '');
+                break;
             case '==':
             case '=':
             case 'eq':
@@ -113,4 +118,10 @@ if (isset($subject)) {
 }
 if (!empty($debug)) { var_dump($output); }
 unset($subject);
+
+$toPlaceholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
+if (!empty($toPlaceholder)) {
+    $modx->setPlaceholder($toPlaceholder, $output);
+    return '';
+}
 return $output;
