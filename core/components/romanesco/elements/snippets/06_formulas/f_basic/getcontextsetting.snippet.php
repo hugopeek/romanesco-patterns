@@ -12,9 +12,11 @@ $ctx = $modx->getOption('context', $scriptProperties, null);
 $setting = $modx->getOption('setting', $scriptProperties, null);
 
 if ($ctx == null) {
-    return 'No Context set';
+    $modx->log(modX::LOG_LEVEL_ERROR, '[getContextSetting] No Context set');
+    return '';
 } elseif ($setting === null) {
-    return 'No Setting set';
+    $modx->log(modX::LOG_LEVEL_ERROR, '[getContextSetting] No Setting set');
+    return '';
 } else {
     $csObj = $modx->getObject('modContextSetting',
         array(
@@ -27,5 +29,6 @@ if ($ctx == null) {
 if ($csObj) {
     return $csObj->get('value');
 } else {
-    return 'Context Setting not found';
+    $modx->log(modX::LOG_LEVEL_ERROR, '[getContextSetting] Context Setting not found');
+    return '';
 }
