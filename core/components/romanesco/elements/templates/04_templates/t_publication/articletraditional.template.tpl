@@ -54,19 +54,23 @@
                 [[*content]]
 
                 [[+team_member_id:notempty=`
-                <aside id="author-about" class="ui segment">
-                    <div class="ui two column equal width grid">
-                        <div class="four wide column">
-                            <a href="[[~[[+team_member_id]]]]" class="ui image">
-                                <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`person_image` &docid=`[[+team_member_id]]` &options=`w=400&h=400&zc=1` &type=`thumb`]]">
-                            </a>
-                        </div>
-                        <div class="column">
-                            [[getResources?
-                                &resources=`[[+team_member_id]]`
-                                &tpl=`articleAuthorBio`
-                                &includeTVs=`1`
-                            ]]
+                <aside id="author-about" class="ui vertical stripe segment white">
+                    <div class="ui container">
+                        <div class="ui segment">
+                            <div class="ui two column equal width grid">
+                                <div class="four wide column">
+                                    <a href="[[~[[+team_member_id]]]]" class="ui image">
+                                        <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`person_image` &docid=`[[+team_member_id]]` &options=`w=400&h=400&zc=1` &type=`thumb`]]">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    [[getResources?
+                                        &resources=`[[+team_member_id]]`
+                                        &tpl=`articleAuthorBio`
+                                        &includeTVs=`1`
+                                    ]]
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </aside>
