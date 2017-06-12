@@ -55,7 +55,7 @@
 </div>
 `]]
 
-<form id="form-[[+title]]" class="ui large form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[+title]]" class="ui large [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
     <input type="text" name="workemail" class="hidden" value="">
 
     <div class="ui [[+segment_type]]">
