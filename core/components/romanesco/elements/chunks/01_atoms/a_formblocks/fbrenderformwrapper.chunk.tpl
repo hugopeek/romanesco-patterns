@@ -3,6 +3,7 @@
     &resources=`[[+form_id]]`
     &current_id=`[[+current_id]]`
     &current_pagetitle=`[[+current_pagetitle]]`
+    &current_menutitle=`[[+current_menutitle]]`
     &segment_type=`[[+segment_type]]`
     &padding=`[[+padding]]`
 ]]
