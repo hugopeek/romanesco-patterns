@@ -1,4 +1,4 @@
-<a class="circular [[+classes]] ui button [[+classes:containsnot=`basic`:then=`google plus`]] icon"
+<a class="[[++img_corner_type]] [[+classes]] ui button [[+classes:containsnot=`basic`:then=`google plus`]] icon"
    title="[[+title:empty=`[[%romanesco.social.share_googleplus_title]]`]]"
    target="_blank"
    href="https://plus.google.com/share?url=[[!++site_url]][[*uri]]">

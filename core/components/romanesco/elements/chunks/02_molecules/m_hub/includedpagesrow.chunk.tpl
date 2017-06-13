@@ -1,5 +1,5 @@
 <a class="item" href="[[~[[+id]]]]">
-    <span class="ui circular label">[[setPatternType? &input=`pages`]]</span>
+    <span class="ui [[++img_corner_type]] label">[[setPatternType? &input=`pages`]]</span>
     [[+pagetitle]]
 </a>
 [[+wrapper]]

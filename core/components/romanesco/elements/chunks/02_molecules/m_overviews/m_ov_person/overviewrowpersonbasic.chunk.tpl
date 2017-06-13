@@ -1,4 +1,4 @@
-[[!$imgOverviewPersonLink? &classes=`circular`]]
+[[!$imgOverviewPersonLink? &classes=`[[++img_corner_type]]`]]
 
 <[[+title_hierarchy]] class="ui header">
     <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>

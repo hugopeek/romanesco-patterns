@@ -11,14 +11,14 @@
     &operator=`notempty`
     &then=`
         <a class="item" href="[[+[[+pl]].link]]#[[+name:lcase]]">
-            <span class="ui circular label">[[+[[+pl]].link:setPatternType]]</span>
+            <span class="ui [[++img_corner_type]] label">[[+[[+pl]].link:setPatternType]]</span>
             [[+name]]
             [[+assigned:eq=`1`:then=`<span class="ui right floated tiny blue label">Assigned</span>`]]
         </a>
     `
     &else=`
         <div class="disabled item">
-            <i class="small circular modx icon"></i>
+            <i class="small [[++img_corner_type]] modx icon"></i>
             [[+name]]
         </div>
     `

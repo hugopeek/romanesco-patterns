@@ -1,7 +1,7 @@
 [[!$infoReviewSegment? &pointer=`down`]]
 
 <div class="ui center aligned basic segment">
-    [[!$imgOverviewPersonLink? &classes=`small circular`]]
+    [[!$imgOverviewPersonLink? &classes=`small [[++img_corner_type]]`]]
 </div>
 
 <div class="ui small center aligned header">

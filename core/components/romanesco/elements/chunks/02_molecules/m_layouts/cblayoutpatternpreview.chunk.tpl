@@ -4,7 +4,7 @@
             [[+preview]]
 
             [[+code_field_raw:contains=`[[+pattern_name]]`:then=`
-            <i class="small circular code link icon with popup onclick"
+            <i class="small [[++img_corner_type]] code link icon with popup onclick"
                data-html="[[$codeSnippet:htmlent? &value=`[[+code_field_raw]]` &lang=`html` &label=`[[%romanesco.patterns.example_label]]`]]"
                data-position="right center"></i>
             `]]

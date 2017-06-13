@@ -1,4 +1,4 @@
-<a class="circular [[+classes]] ui button twitter icon"
+<a class="[[++img_corner_type]] [[+classes]] ui button twitter icon"
    title="[[+title:empty=`[[%romanesco.social.share_twitter_title]]`]]"
    target="_blank"
    href="https://twitter.com/intent/tweet?text=[[*longtitle:empty=`[[*pagetitle]]`]]&url=[[!++site_url]][[*uri]]&via=[[++social_twitter]]">

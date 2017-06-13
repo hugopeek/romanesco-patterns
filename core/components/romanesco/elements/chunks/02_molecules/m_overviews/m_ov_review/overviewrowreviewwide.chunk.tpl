@@ -1,7 +1,7 @@
 <div class="ui mobile reversed stackable grid">
     <div class="four wide tablet six wide computer five wide large screen five wide widescreen center aligned column">
         [[!$imgOverviewPersonLink?
-            &classes=`circular`
+            &classes=`[[++img_corner_type]]`
             &img_scale=`40`
         ]]
         <div class="ui small header">
