@@ -10,7 +10,7 @@
     </div>
 
     <div class="five wide right aligned column">
-        <i class="disabled comment outline link icon with popup"
+        <i class="disabled comment outline link icon with tooltip"
            data-content="[[%romanesco.patterns.comment_tooltip]]"
            data-position="top center"></i>
     </div>

@@ -22,10 +22,10 @@
                                 </a>
                             </div>
                             <div class="right aligned column">
-                                <i class="disabled heart outline link icon with popup"
+                                <i class="disabled heart outline link icon with tooltip"
                                    data-content="[[%romanesco.patterns.comment_tooltip]]"
                                    data-position="top center"></i>
-                                <i class="disabled comment outline link icon with popup"
+                                <i class="disabled comment outline link icon with tooltip"
                                    data-content="[[%romanesco.patterns.comment_tooltip]]"
                                    data-position="top center"></i>
                             </div>
