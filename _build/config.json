@@ -385,6 +385,10 @@
 					"parent": "03_organisms"
 				},
 				{
+					"name": "o_map",
+					"parent": "03_organisms"
+				},
+				{
 					"name": "o_overviews",
 					"parent": "03_organisms"
 				},
@@ -2759,6 +2763,10 @@
 					"category": "o_layouts"
 				},
 				{
+					"name": "mapLocation",
+					"category": "o_map"
+				},
+				{
 					"name": "overviewOuter",
 					"category": "o_overviews"
 				},
@@ -3695,6 +3703,11 @@
 				"key": "backyard_container_id",
 				"type": "textfield",
 				"area": "Pages"
+			},
+			{
+				"key": "mapbox_access_token",
+				"type": "textfield",
+				"area": "Map"
 			},
 			{
 				"key": "publication_container_id",

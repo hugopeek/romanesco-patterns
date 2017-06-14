@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "mapLocation",
+                    "category": "o_map"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_map",
+                    "parent": "03_organisms"
+                }
+            ]
+        }
+    }
+}

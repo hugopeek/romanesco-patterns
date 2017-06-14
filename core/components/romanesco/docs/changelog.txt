@@ -4,6 +4,7 @@
 Upcoming release
 
 New features:
+- [ContentBlocks] Add CB field for displaying map with marker
 - [FormBlocks] Add snippets for creating repeating input fields
 
 Fixes and improvements:

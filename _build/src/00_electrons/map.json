@@ -1,0 +1,11 @@
+{
+    "package": {
+        "systemSettings": [
+            {
+                "key": "mapbox_access_token",
+                "type": "textfield",
+                "area": "Map"
+            }
+        ]
+    }
+}
