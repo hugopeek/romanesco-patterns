@@ -1,4 +1,4 @@
-<a class="[[++img_corner_type]] [[+classes]] ui button pinterest icon"
+<a class="circular [[+classes]] ui button pinterest icon"
    title="[[+title:empty=`[[%romanesco.social.connect_pinterest_title]]`]]"
    target="_blank"
    href="[[+account:empty=`[[++social_pinterest]]`]]"

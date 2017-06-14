@@ -1,4 +1,4 @@
-<a class="[[++img_corner_type]] [[+classes]] ui button youtube icon"
+<a class="circular [[+classes]] ui button youtube icon"
    title="[[+title:empty=`[[%romanesco.social.connect_youtube_title]]`]]"
    target="_blank"
    href="[[+account:empty=`[[++social_youtube]]`]]"

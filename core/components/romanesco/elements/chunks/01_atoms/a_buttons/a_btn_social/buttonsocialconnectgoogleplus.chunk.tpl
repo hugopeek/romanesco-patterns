@@ -1,4 +1,4 @@
-<a class="[[++img_corner_type]] [[+classes]] ui button [[+classes:containsnot=`basic`:then=`google plus`]] icon"
+<a class="circular [[+classes]] ui button [[+classes:containsnot=`basic`:then=`google plus`]] icon"
    title="[[+title:empty=`[[%romanesco.social.connect_googleplus_title]]`]]"
    target="_blank"
    href="[[+account:empty=`[[++social_googleplus]]`]]"
