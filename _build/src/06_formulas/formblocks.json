@@ -18,6 +18,10 @@
                     "name": "fbValidateProcessJSON",
                     "category": "f_formblocks"
                 },{
+                    "name": "fbInputRepeater",
+                    "description": "Parse the HTML output of repeating form fields and remember the submitted values of each field, in case the page is reloaded.",
+                    "category": "f_formblocks"
+                },{
                     "name": "fbPrefixOutput",
                     "category": "f_fb_modifiers"
                 },{

@@ -4,7 +4,7 @@
 Upcoming release
 
 New features:
--
+- [FormBlocks] Add snippets for creating repeating input fields
 
 Fixes and improvements:
 - Replace popup class with tooltip to avoid collisions [#82]

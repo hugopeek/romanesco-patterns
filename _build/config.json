@@ -3370,6 +3370,11 @@
 					"category": "f_formblocks"
 				},
 				{
+					"name": "fbInputRepeater",
+					"description": "Parse the HTML output of repeating form fields and remember the submitted values of each field, in case the page is reloaded.",
+					"category": "f_formblocks"
+				},
+				{
 					"name": "fbPrefixOutput",
 					"category": "f_fb_modifiers"
 				},
@@ -3464,6 +3469,11 @@
 				{
 					"name": "filterLine",
 					"description": "Search the input for lines containing a specific string. And then return those lines.",
+					"category": "f_modifiers"
+				},
+				{
+					"name": "stripForJS",
+					"description": "Prepare the input for being used in Javascript. This means escaping certain characters to make sure the surrounding HTML doesn't break.",
 					"category": "f_modifiers"
 				},
 				{

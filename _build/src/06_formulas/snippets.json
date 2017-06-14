@@ -39,6 +39,10 @@
                     "description": "Search the input for lines containing a specific string. And then return those lines.",
                     "category": "f_modifiers"
                 },{
+                    "name": "stripForJS",
+                    "description": "Prepare the input for being used in Javascript. This means escaping certain characters to make sure the surrounding HTML doesn't break.",
+                    "category": "f_modifiers"
+                },{
                     "name": "getResourceLevel",
                     "description": "Show the level of a given resource based on the number of parent IDs. Useful for example if you only want to show a breadcrumb trail on pages that are two or three levels deep.",
                     "category": "f_resources"
