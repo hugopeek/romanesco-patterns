@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="[[++cultureKey]]">
+<html id="[[*context_key]]" lang="[[++cultureKey]]">
 
 [[$head]]
 

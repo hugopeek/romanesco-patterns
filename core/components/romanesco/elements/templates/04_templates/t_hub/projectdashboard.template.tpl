@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="[[++cultureKey]]">
+<html id="[[*context_key]]" lang="[[++cultureKey]]">
 
 [[$head]]
 
-<body id="[[*alias]]" class="project-hub">
+<body id="[[*alias]]" class="overview hub">
 
 <div class="pusher">
     [[$headerBasic?

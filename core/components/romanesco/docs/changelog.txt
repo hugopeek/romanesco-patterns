@@ -17,6 +17,7 @@ Fixes and improvements:
 - Fix TV output options being reset to default on GPM build [#80]
 - [FormBlocks] Prevent form submission failing when cb_input_file_id is empty
 - Configure grid settings for all Overviews with setBoxType snippet [#79]
+- Add id to HTML tag with context_key
 - Add inner container to all segments inside ArticleTraditional template
 
 ---
