@@ -1,8 +1,9 @@
-[[If:toPlaceholder=`attributes`?
+[[If:toPlaceholder=`btn_[[+unique_idx]].attributes`?
     &subject=`[[+new_window]]`
     &operator=`EQ`
     &operand=`1`
     &then=`target="_blank"`
+    &else=``
 ]]
 
 [[If?
@@ -14,7 +15,7 @@
             &link=`[[+link]]`
             &button_text=`[[+button_text]]`
             &classes=`[[+button_size]] [[+button_type]] [[+button_options:replace=`,== `]] [[+icon_options:replace=`,== `]] icon`
-            &attributes=`[[+attributes]]`
+            &attributes=`[[+btn_[[+unique_idx]].attributes]]`
             &icon_class=`[[+icon_class]]`
         ]]
     `
@@ -23,7 +24,7 @@
             &link=`[[+link]]`
             &button_text=`[[+button_text]]`
             &classes=`[[+button_size]] [[+button_type]] [[+button_options:replace=`,== `]]`
-            &attributes=`[[+attributes]]`
+            &attributes=`[[+btn_[[+unique_idx]].attributes]]`
         ]]
     `
 ]]
