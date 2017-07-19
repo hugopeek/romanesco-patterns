@@ -8,4 +8,5 @@
 
     &url=`[[+url]]`
     &alt=`[[+alt]]`
+    &classes=`rounded`
 ]]
