@@ -1,5 +1,10 @@
+[[+background_svg:notempty=`, url("/uploads/img/svg/[[+background_svg]]")`:toPlaceholder=`background_img_secondary`]]
+
 .background.[[+background_title:stripAsAlias]]:before {
-    background-image: url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=800&q=[[++img_quality]]` &type=`thumb`]]") !important;
+    background-image:
+        url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=800&q=[[++img_quality]]` &type=`thumb`]]")
+        [[+background_img_secondary]] !important
+    ;
     opacity: [[+background_opacity:div=`100`:replace=`,==.`:empty=`1`]];
 }
 .background.[[+background_title:stripAsAlias]]:after {
@@ -9,7 +14,10 @@
 @media
     (min-width: 800px) {
     .background.[[+background_title:stripAsAlias]]:before {
-        background-image: url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=1600&q=[[++img_quality]]` &type=`thumb`]]") !important;
+        background-image:
+            url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=1600&q=[[++img_quality]]` &type=`thumb`]]")
+            [[+background_img_secondary]] !important
+        ;
     }
 }
 
@@ -18,14 +26,20 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
     .background.[[+background_title:stripAsAlias]]:before {
-        background-image: url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=1200&q=[[++img_quality]]` &type=`thumb`]]") !important;
+        background-image:
+            url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=1200&q=[[++img_quality]]` &type=`thumb`]]")
+            [[+background_img_secondary]] !important
+        ;
     }
 }
 @media
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 800px),
     (min-resolution: 192dpi) and (min-width: 800px) {
     .background.[[+background_title:stripAsAlias]]:before {
-        background-image: url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]` &type=`thumb`]]") !important;
+        background-image:
+            url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]` &type=`thumb`]]")
+            [[+background_img_secondary]] !important
+        ;
     }
 }
 `]]
