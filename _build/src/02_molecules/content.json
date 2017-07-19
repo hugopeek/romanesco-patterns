@@ -21,6 +21,9 @@
                     "name": "headerIconSVG",
                     "category": "m_content"
                 },{
+                    "name": "imageOuter",
+                    "category": "m_content"
+                },{
                     "name": "imageBasicLink",
                     "category": "m_content"
                 },{

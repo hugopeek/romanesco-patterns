@@ -1001,7 +1001,7 @@
 					"category": "Status",
 					"sortOrder": "1",
 					"defaultValue": "not-done",
-					"inputOptionValues": "[Seed] Its idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==thriving||[Plagued] Somehow, this resource is having some difficulties staying healthy==struggling||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
+					"inputOptionValues": "[Seed] The idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==successful||[Plagued] Somehow, this resource is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
 					"templates": [
 						"Home",
 "Homepage",
@@ -2120,6 +2120,10 @@
 					"category": "a_content"
 				},
 				{
+					"name": "imageSVG",
+					"category": "a_content"
+				},
+				{
 					"name": "iconSVG",
 					"category": "a_content"
 				},
@@ -2384,6 +2388,10 @@
 				},
 				{
 					"name": "headerIconSVG",
+					"category": "m_content"
+				},
+				{
+					"name": "imageOuter",
 					"category": "m_content"
 				},
 				{
