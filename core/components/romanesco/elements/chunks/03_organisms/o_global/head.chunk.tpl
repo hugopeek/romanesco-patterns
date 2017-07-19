@@ -18,13 +18,13 @@
     [[++head_additional]]
     [[$favicons]]
 
-    [[If?
+    [[[[If?
         &subject=`[[++romanesco.dev_mode]]`
         &operator=`EQ`
         &operand=`1`
         &then=``
-        &else=`[[$googleAnalytics]]`
-    ]]
+        &else=`$googleAnalytics`
+    ]]]]
 
     [[$structuredDataSite]]
 </head>
