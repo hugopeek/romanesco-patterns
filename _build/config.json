@@ -2939,6 +2939,10 @@
 					"category": "a_cb_formblocks"
 				},
 				{
+					"name": "cbFormHelpPosition",
+					"category": "a_cb_formblocks"
+				},
+				{
 					"name": "cbLayoutAlignment",
 					"category": "a_cb_layouts"
 				},

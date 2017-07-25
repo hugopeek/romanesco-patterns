@@ -3,7 +3,7 @@
     "lowCaseName": "romanesco",
     "description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
     "author": "Hugo Peek",
-    "version": "0.11.0",
+    "version": "0.11.1",
 
     "package": {
         "elements": {

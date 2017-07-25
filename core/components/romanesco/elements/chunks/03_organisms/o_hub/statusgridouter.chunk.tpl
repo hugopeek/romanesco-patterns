@@ -10,6 +10,7 @@
 
 
 
+[[-
 <div class="ui grid">
     <div class="ten wide column"></div>
     <div class="six wide column">
@@ -23,6 +24,7 @@
         </table>
     </div>
 </div>
+]]
 
 <table class="ui very compact sortable celled status table">
     <thead>

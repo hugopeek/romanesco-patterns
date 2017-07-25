@@ -8,6 +8,9 @@
                 },{
                     "name": "cbFormLabelPosition",
                     "category": "a_cb_formblocks"
+                },{
+                    "name": "cbFormHelpPosition",
+                    "category": "a_cb_formblocks"
                 }
             ]
         }
