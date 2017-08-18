@@ -26,18 +26,25 @@ $tabs = array();
 $idx = 1;
 foreach($divs as $div) {
     if ($div->hasAttribute('data-tab')) {
-        $tabs[$div->getAttribute('data-tab')] = $div->getAttribute('data-heading');
+        $tabs[$div->getAttribute('data-tab')] = array(
+            'heading' => $div->getAttribute('data-heading'),
+            'level' => $div->getAttribute('data-heading-level'),
+            'subtitle' => $div->getAttribute('data-heading-subtitle'),
+            'icon' => $div->getAttribute('data-heading-icon')
+        );
     }
 }
 
 $tabheaders = '';
 
 $idx = 1;
-foreach($tabs as $id => $title) {
+foreach($tabs as $tab) {
     $tabheaders .= $modx->getChunk('tabsNavItem', array(
         'idx' => $idx,
-        'id' => $id,
-        'heading' => $title
+        'heading' => $tab['heading'],
+        'level' => $tab['level'],
+        'subtitle' => $tab['subtitle'],
+        'icon' => $tab['icon'],
     ));
     $idx++;
 }

@@ -5,6 +5,9 @@
                 {
                     "name": "tabsNavItem",
                     "category": "a_nav_tabs"
+                },{
+                    "name": "tabsNavItemIcon",
+                    "category": "a_nav_tabs"
                 }
             ]
         }
