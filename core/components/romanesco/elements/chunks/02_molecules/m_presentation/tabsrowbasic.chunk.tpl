@@ -1,4 +1,5 @@
-[[+tab_type:is=`basic`:then=`basic vertical`:else=`bottom attached`:toPlaceholder=`tab_segment`]]
+[[+tab_type:contains=`basic`:then=`basic vertical`:else=`bottom attached`:toPlaceholder=`tab_segment`]]
+[[+tab_type:contains=`pointing regular`:or:contains=`pointing segments`:then=``:else=`[[+tab_segment]]`:toPlaceholder=`tab_segment`]]
 
 <div class="ui [[+tab_segment]] [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
      data-tab="segment-[[+unique_idx]]-[[+idx]]"
