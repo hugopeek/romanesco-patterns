@@ -1,0 +1,30 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "breadcrumbs",
+                    "category": "m_nav_primary"
+                },{
+                    "name": "mainNav",
+                    "category": "m_nav_primary"
+                },{
+                    "name": "mainNavVertical",
+                    "category": "m_nav_primary"
+                },{
+                    "name": "subNav",
+                    "category": "m_nav_primary"
+                },{
+                    "name": "subNavHorizontal",
+                    "category": "m_nav_primary"
+                },{
+                    "name": "subNavVertical",
+                    "category": "m_nav_primary"
+                },{
+                    "name": "offCanvasNav",
+                    "category": "m_nav_primary"
+                }
+            ]
+        }
+    }
+}
