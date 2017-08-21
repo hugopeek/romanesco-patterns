@@ -7,7 +7,11 @@
  * Written numbers are used for setting column counts in SemanticUI, but as
  * numeric values they can be reused in other places too.
  * For example: to set the number of visible slides in the Slick js settings.
+ *
+ * Easter egg: reverses to numberToText functionality when input is numeric
  */
+
+$input = $modx->getOption('input', $scriptProperties, $input);
 
 $numbers = array(
     '1' => 'one',
@@ -28,6 +32,10 @@ $numbers = array(
     '16' => 'sixteen'
 );
 
-$output = array_search($input, $numbers);
+if (is_numeric($input)) {
+    $output = $numbers[$input];
+} else {
+    $output = array_search($input, $numbers);
+}
 
 return $output;
