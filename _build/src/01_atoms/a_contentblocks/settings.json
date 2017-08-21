@@ -33,6 +33,9 @@
                     "name": "cbSettingPadding",
                     "category": "a_cb_settings"
                 },{
+                    "name": "cbSettingPosition",
+                    "category": "a_cb_settings"
+                },{
                     "name": "cbSettingSortBy",
                     "category": "a_cb_settings"
                 },{

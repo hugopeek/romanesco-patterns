@@ -1,0 +1,21 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "tabsNavTop",
+                    "category": "m_nav_tabs"
+                },{
+                    "name": "tabsNavRight",
+                    "category": "m_nav_tabs"
+                },{
+                    "name": "tabsNavBottom",
+                    "category": "m_nav_tabs"
+                },{
+                    "name": "tabsNavLeft",
+                    "category": "m_nav_tabs"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<div class="ui stackable equal width grid">
+    <div class="[[+menu_cols]] wide column">
+        <div class="ui vertical fluid [[+menu_type_[[+idx]]]] menu">
+            [[+[[+pl]].tabs_menu]]
+        </div>
+    </div>
+    <div class="stretched column">
+        [[+rows]]
+    </div>
+</div>

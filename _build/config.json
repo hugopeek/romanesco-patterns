@@ -313,6 +313,14 @@
 					"parent": "02_molecules"
 				},
 				{
+					"name": "m_nav_primary",
+					"parent": "m_navigation"
+				},
+				{
+					"name": "m_nav_tabs",
+					"parent": "m_navigation"
+				},
+				{
 					"name": "m_overviews",
 					"parent": "02_molecules"
 				},
@@ -2539,34 +2547,6 @@
 					"category": "m_layouts"
 				},
 				{
-					"name": "breadcrumbs",
-					"category": "m_navigation"
-				},
-				{
-					"name": "mainNav",
-					"category": "m_navigation"
-				},
-				{
-					"name": "mainNavVertical",
-					"category": "m_navigation"
-				},
-				{
-					"name": "subNav",
-					"category": "m_navigation"
-				},
-				{
-					"name": "subNavHorizontal",
-					"category": "m_navigation"
-				},
-				{
-					"name": "subNavVertical",
-					"category": "m_navigation"
-				},
-				{
-					"name": "offCanvasNav",
-					"category": "m_navigation"
-				},
-				{
 					"name": "overviewRow",
 					"category": "m_overviews"
 				},
@@ -3076,6 +3056,10 @@
 					"category": "a_cb_settings"
 				},
 				{
+					"name": "cbSettingPosition",
+					"category": "a_cb_settings"
+				},
+				{
 					"name": "cbSettingSortBy",
 					"category": "a_cb_settings"
 				},
@@ -3138,6 +3122,50 @@
 				{
 					"name": "tabsNavItemIcon",
 					"category": "a_nav_tabs"
+				},
+				{
+					"name": "breadcrumbs",
+					"category": "m_nav_primary"
+				},
+				{
+					"name": "mainNav",
+					"category": "m_nav_primary"
+				},
+				{
+					"name": "mainNavVertical",
+					"category": "m_nav_primary"
+				},
+				{
+					"name": "subNav",
+					"category": "m_nav_primary"
+				},
+				{
+					"name": "subNavHorizontal",
+					"category": "m_nav_primary"
+				},
+				{
+					"name": "subNavVertical",
+					"category": "m_nav_primary"
+				},
+				{
+					"name": "offCanvasNav",
+					"category": "m_nav_primary"
+				},
+				{
+					"name": "tabsNavTop",
+					"category": "m_nav_tabs"
+				},
+				{
+					"name": "tabsNavRight",
+					"category": "m_nav_tabs"
+				},
+				{
+					"name": "tabsNavBottom",
+					"category": "m_nav_tabs"
+				},
+				{
+					"name": "tabsNavLeft",
+					"category": "m_nav_tabs"
 				},
 				{
 					"name": "overviewRowArticleBasic",
