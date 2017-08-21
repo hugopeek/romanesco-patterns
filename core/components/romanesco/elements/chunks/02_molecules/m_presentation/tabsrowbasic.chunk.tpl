@@ -4,8 +4,8 @@
      data-tab="segment-[[+unique_idx]]-[[+idx]]"
      data-heading="[[+heading]]"
      data-heading-level="[[+heading_level]]"
-     data-heading-subtitle="[[+heading_subtitle]]"
-     data-heading-icon="[[+heading_icon]]"
+     data-heading-subtitle="[[+heading_subtitle:empty=``]]"
+     data-heading-icon="[[+heading_icon:empty=``]]"
      role="tabpanel"
      aria-hidden="false">
     [[+content]]

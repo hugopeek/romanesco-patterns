@@ -8,6 +8,13 @@
  * Many thanks to @christianseel for the original idea and code.
  */
 
+$input = $modx->getOption('input', $scriptProperties, $input);
+$tpl = $modx->getOption('tpl', $scriptProperties, 'tabsNavItem');
+$tplIcon = $modx->getOption('tplIcon', $scriptProperties, 'tabsNavItemIcon');
+
+$prefix = $modx->getOption('prefix', $scriptProperties, '');
+$placeholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
+
 $doc = new DOMDocument();
 
 // Set error level to suppress warnings in log over special characters in HTML
@@ -39,7 +46,10 @@ $tabheaders = '';
 
 $idx = 1;
 foreach($tabs as $tab) {
-    $tabheaders .= $modx->getChunk('tabsNavItem', array(
+    if ($tab['icon']) {
+        $tpl = $tplIcon;
+    }
+    $tabheaders .= $modx->getChunk($tpl, array(
         'idx' => $idx,
         'heading' => $tab['heading'],
         'level' => $tab['level'],
@@ -49,4 +59,13 @@ foreach($tabs as $tab) {
     $idx++;
 }
 
+// Return placeholder with idx, so tab menu can be justified
+$modx->toPlaceholder('tabs_total', $idx - 1);
+
+// Output either to placeholder, or directly
+if ($placeholder) {
+    $modx->toPlaceholder('pl', $prefix);
+    $modx->toPlaceholder($placeholder, $tabheaders, $prefix);
+    return '';
+}
 return $tabheaders;

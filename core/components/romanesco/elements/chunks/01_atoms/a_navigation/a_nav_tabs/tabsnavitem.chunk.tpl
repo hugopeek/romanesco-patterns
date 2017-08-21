@@ -2,7 +2,8 @@
    data-tab="segment-[[+unique_idx]]-[[+idx]]"
    role="tab"
    aria-selected="false">
-    <[[+level]]>
+    <[[+level]] class="ui header">
         [[+heading]]
+        [[+subtitle:notempty=`<span class="sub header">[[+subtitle]]</span>`]]
     </[[+level]]>
 </div>
