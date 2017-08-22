@@ -4,6 +4,7 @@
     &c2=`right` &do2=``
     &c3=`bottom` &do3=`top attached`
     &c4=`left` &do4=``
+    &default=`bottom attached`
 ]]
 
 [[+tab_type:contains=`basic`:then=`basic vertical`:else=`[[+menu_attachment_[[+unique_idx]]]]`:toPlaceholder=`tab_segment`]]

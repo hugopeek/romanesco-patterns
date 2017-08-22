@@ -13,10 +13,11 @@
     &toPlaceholder=`tabs_menu`
 ]]
 
-[[[[Switch?
+[[Switch?
     &get=`[[+menu_position]]`
-    &c1=`top` &do1=`$tabsNavTop`
-    &c2=`right` &do2=`$tabsNavRight`
-    &c3=`bottom` &do3=`$tabsNavBottom`
-    &c4=`left` &do4=`$tabsNavLeft`
-]]]]
+    &c1=`top` &do1=`[[$tabsNavTop? &rows=`[[+rows]]`]]`
+    &c2=`right` &do2=`[[$tabsNavRight? &rows=`[[+rows]]`]]`
+    &c3=`bottom` &do3=`[[$tabsNavBottom? &rows=`[[+rows]]`]]`
+    &c4=`left` &do4=`[[$tabsNavLeft? &rows=`[[+rows]]`]]`
+    &default=`[[$tabsNavTop? &rows=`[[+rows]]`]]`
+]]
