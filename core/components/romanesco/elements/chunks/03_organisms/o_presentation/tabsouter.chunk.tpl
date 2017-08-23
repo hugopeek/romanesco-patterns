@@ -6,6 +6,13 @@
     &c4=`pointing regular` &do4=`pointing tabbed`
     &c5=`pointing segments` &do5=`tabbed secondary`
 ]]
+[[Switch:toPlaceholder=`segment_pointer`?
+    &get=`[[+menu_position]]`
+    &c1=`top` &do1=`down pointing`
+    &c2=`right` &do2=`left pointing`
+    &c3=`bottom` &do3=`up pointing`
+    &c4=`left` &do4=`right pointing`
+]]
 
 [[tabsGenerateNav?
     &input=`[[+rows]]`
