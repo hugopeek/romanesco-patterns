@@ -1,5 +1,18 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.11.2
+Upcoming release
+
+New features:
+- Add functionality to automatically reduce Tabs to Accordions on mobile
+
+Fixes and improvements:
+- Add more display variations to Tabs organism
+- Add option to select Tab menu position (top, right, bottom or left)
+- Add option to select Tab menu heading level (h2,h3,h4,h5,h6,span)
+
+---
+
 ## Romanesco Patterns 0.11.1
 Released on July 25, 2017
 
