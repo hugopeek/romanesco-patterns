@@ -10,12 +10,13 @@
 [[+tab_type:contains=`basic`:then=`basic vertical`:else=`[[+menu_attachment_[[+unique_idx]]]]`:toPlaceholder=`tab_segment`]]
 [[+tab_type:contains=`pointing regular`:or:contains=`pointing segments`:then=``:else=`[[+tab_segment]]`:toPlaceholder=`tab_segment`]]
 
-<div class="ui [[+tab_segment]] [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
+<div class="ui reducible [[+tab_segment]] [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
      data-tab="segment-[[+unique_idx]]-[[+idx]]"
      data-heading="[[+heading]]"
      data-heading-level="[[+heading_level]]"
      data-heading-subtitle="[[+heading_subtitle:empty=``]]"
      data-heading-icon="[[+heading_icon:empty=``]]"
+     data-menu-position="[[+menu_position]]"
      role="tabpanel"
      aria-hidden="false">
     [[+content]]
