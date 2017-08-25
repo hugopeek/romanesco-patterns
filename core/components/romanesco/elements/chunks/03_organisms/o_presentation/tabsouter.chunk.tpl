@@ -1,4 +1,4 @@
-[[Switch:toPlaceholder=`menu_type_[[+idx]]`?
+[[Switch:toPlaceholder=`menu_type_[[+unique_idx]]_[[+idx]]`?
     &get=`[[+tab_type]]`
     &c1=`regular` &do1=`[[+menu_position]] attached tabular`
     &c2=`basic` &do2=`pointing secondary tabular`

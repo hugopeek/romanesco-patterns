@@ -13,7 +13,7 @@
 <div class="ui reducible [[+tab_segment]] [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
      data-tab="segment-[[+unique_idx]]-[[+idx]]"
      data-heading="[[+heading]]"
-     data-heading-level="[[+heading_level]]"
+     data-heading-level="[[+heading_level:empty=`h4`]]"
      data-heading-subtitle="[[+heading_subtitle:empty=``]]"
      data-heading-icon="[[+heading_icon:empty=``]]"
      data-menu-position="[[+menu_position]]"

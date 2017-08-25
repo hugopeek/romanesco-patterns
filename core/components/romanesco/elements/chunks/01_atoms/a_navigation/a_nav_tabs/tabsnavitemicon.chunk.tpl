@@ -2,7 +2,7 @@
      data-tab="segment-[[+unique_idx]]-[[+idx]]"
      role="tab"
      aria-selected="false">
-    <[[+level]] class="ui center aligned icon header">
+    <[[+level]] class="ui [[+icon_position:is=`top`:then=`icon`]] [[+level:is=`span`:then=`tiny`]] header">
         <img class="ui image" src="[[+icon]]">
         <div class="content">
             [[+heading]]
