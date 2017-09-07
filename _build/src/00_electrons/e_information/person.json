@@ -10,12 +10,12 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "inputProperties": {
-                        "targetWidth": "800",
+                        "targetWidth": "400",
                         "targetRatio": "1.0",
                         "allowAltTag": "true"
                     },
                     "outputProperties": {
-                        "phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
@@ -30,12 +30,12 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "inputProperties": {
-                        "targetWidth": "800",
+                        "targetWidth": "400",
                         "targetRatio": "1.0",
                         "allowAltTag": "true"
                     },
                     "outputProperties": {
-                        "phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
@@ -89,7 +89,7 @@
                 },{
                     "caption": "Job title",
                     "name": "person_jobtitle",
-                    "description": "The role of this person inside the team.",
+                    "description": "",
                     "type": "text",
                     "category": "Person - Information",
                     "sortOrder": "5",

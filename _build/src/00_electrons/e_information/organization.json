@@ -20,12 +20,12 @@
                     "category": "Org. - Presentation",
                     "sortOrder": "2",
                     "inputProperties": {
-                        "targetWidth": "600",
+                        "targetWidth": "400",
                         "targetRatio": "1.77",
                         "allowAltTag": "true"
                     },
                     "outputProperties": {
-                        "phpThumbParams": "w=[[++max_thumb_width:empty=`600`]]&zc=1",
+                        "phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
