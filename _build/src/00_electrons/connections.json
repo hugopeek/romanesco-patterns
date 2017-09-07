@@ -5,11 +5,14 @@
                 {
                     "caption": "Person",
                     "name": "person_id",
-                    "description": "Connect a MODX user to this item. Only active users will be shown.",
+                    "description": "Connect a person to this item. This list is populated with all the persons that are listed on your Team page.",
                     "type": "listbox",
-                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )",
+                    "inputOptionValues": "@CHUNK tvSelectTeam",
                     "category": "Connections",
-                    "sortOrder": "1"
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_portfolio"
+                    ]
                 },{
                     "caption": "Organization",
                     "name": "organization_id",
@@ -33,6 +36,14 @@
                     "templates": [
                         "@@templates_portfolio"
                     ]
+                },{
+                    "caption": "MODX user",
+                    "name": "user_id",
+                    "description": "Connect a MODX user to this item. Only active users will be shown.",
+                    "type": "listbox",
+                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )",
+                    "category": "Connections",
+                    "sortOrder": "10"
                 }
             ],
             "categories": [
