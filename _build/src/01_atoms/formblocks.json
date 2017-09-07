@@ -31,6 +31,10 @@
                     "description": "A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.",
                     "category": "a_fb_inputs"
                 },{
+                    "name": "fbSelectOptionRowTag",
+                    "description": "A row template for options that let you select a tag. Initially designed to work with tags created by the Tagger extra, but could work with any tag system that outputs a [[+tag]] and an [[+alias]] placeholder.",
+                    "category": "a_fb_inputs"
+                },{
                     "name": "fbInputFileSingle",
                     "description": "A basic input field for uploading a single file.",
                     "category": "a_fb_inputs"
