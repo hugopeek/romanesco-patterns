@@ -17,15 +17,15 @@
     </div>
 </[[+title_hierarchy]]>
 
-[[If?
+[[[[If?
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`[[!$introtextSingleParagraph]]`
-]]
-[[If?
+    &then=`!$introtextSingleParagraph`
+]]]]
+[[[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`[[!$buttonHrefOverview]]`
-]]
+    &then=`!$buttonHrefOverview`
+]]]]

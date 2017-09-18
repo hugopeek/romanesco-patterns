@@ -17,12 +17,12 @@
     </div>
 </[[+title_hierarchy]]>
 
-[[If?
+[[[[If?
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`[[!$introtextSingleParagraph]]`
-]]
+    &then=`!$introtextSingleParagraph`
+]]]]
 [[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`

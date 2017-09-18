@@ -25,9 +25,9 @@
     &operand=`1`
     &then=`<div class="content">[[!$introtextDescription]]</div>`
 ]]
-[[If?
+[[[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`[[!$buttonHrefOverview? &classes=`bottom attached`]]`
-]]
+    &then=`!$buttonHrefOverview? &classes=`bottom attached``
+]]]]
