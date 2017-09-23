@@ -19,7 +19,7 @@
         <div class="item toc">
             <button class="ui right labeled icon button">
                 <i class="sidebar icon"></i>
-                Menu
+                <span>Menu</span>
             </button>
         </div>
     </div>

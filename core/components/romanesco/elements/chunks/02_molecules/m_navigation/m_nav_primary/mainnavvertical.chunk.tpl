@@ -18,7 +18,7 @@
     <div class="item toc">
         <button class="ui right labeled inverted basic icon button">
             <i class="sidebar icon"></i>
-            Menu
+            <span>Menu</span>
         </button>
     </div>
 </nav>
