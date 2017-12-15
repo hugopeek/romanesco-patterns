@@ -545,11 +545,15 @@
 				{
 					"caption": "Person",
 					"name": "person_id",
-					"description": "Connect a MODX user to this item. Only active users will be shown.",
+					"description": "Connect a person to this item. This list is populated with all the persons that are listed on your Team page.",
 					"type": "listbox",
-					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )",
+					"inputOptionValues": "@CHUNK tvSelectTeam",
 					"category": "Connections",
-					"sortOrder": "1"
+					"sortOrder": "1",
+					"templates": [
+						"PortfolioProject",
+"Porfolio - Project"
+					]
 				},
 				{
 					"caption": "Organization",
@@ -579,6 +583,15 @@
 						"PortfolioProject",
 "Porfolio - Project"
 					]
+				},
+				{
+					"caption": "MODX user",
+					"name": "user_id",
+					"description": "Connect a MODX user to this item. Only active users will be shown.",
+					"type": "listbox",
+					"inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )",
+					"category": "Connections",
+					"sortOrder": "10"
 				},
 				{
 					"caption": "Availability",
@@ -1861,12 +1874,12 @@
 					"category": "Org. - Presentation",
 					"sortOrder": "2",
 					"inputProperties": {
-						"targetWidth": "600",
+						"targetWidth": "400",
 						"targetRatio": "1.77",
 						"allowAltTag": "true"
 					},
 					"outputProperties": {
-						"phpThumbParams": "w=[[++max_thumb_width:empty=`600`]]&zc=1",
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
@@ -1949,12 +1962,12 @@
 					"category": "Person - Presentation",
 					"sortOrder": "1",
 					"inputProperties": {
-						"targetWidth": "800",
+						"targetWidth": "400",
 						"targetRatio": "1.0",
 						"allowAltTag": "true"
 					},
 					"outputProperties": {
-						"phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
@@ -1974,12 +1987,12 @@
 					"category": "Person - Presentation",
 					"sortOrder": "1",
 					"inputProperties": {
-						"targetWidth": "800",
+						"targetWidth": "400",
 						"targetRatio": "1.0",
 						"allowAltTag": "true"
 					},
 					"outputProperties": {
-						"phpThumbParams": "w=[[++max_thumb_width:empty=`800`]]&zc=1",
+						"phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
@@ -2056,7 +2069,7 @@
 				{
 					"caption": "Job title",
 					"name": "person_jobtitle",
-					"description": "The role of this person inside the team.",
+					"description": "",
 					"type": "text",
 					"category": "Person - Information",
 					"sortOrder": "5",
@@ -2196,6 +2209,11 @@
 				{
 					"name": "fbSelectOptionRowResource",
 					"description": "A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.",
+					"category": "a_fb_inputs"
+				},
+				{
+					"name": "fbSelectOptionRowTag",
+					"description": "A row template for options that let you select a tag. Initially designed to work with tags created by the Tagger extra, but could work with any tag system that outputs a [[+tag]] and an [[+alias]] placeholder.",
 					"category": "a_fb_inputs"
 				},
 				{
@@ -2623,6 +2641,16 @@
 					"category": "m_presentation"
 				},
 				{
+					"name": "cardsRowBasic",
+					"description": "A template for the Cards CB repeater. It uses the common pattern of an image, header, subtitle and link button.",
+					"category": "m_presentation"
+				},
+				{
+					"name": "cardsRowBasicLink",
+					"description": "Similar to cardsRowBasic, but it expects the parent to decide if the card should link somewhere or not. In other words: this template contains no links itself. This can be (ab)used to create cards without any link at all.",
+					"category": "m_presentation"
+				},
+				{
 					"name": "flexibleRowInnerWrapper",
 					"description": "The content inside a flexible Accordion or Tab CB is entered as a nested layout, meaning it's wrapped in columns. To properly display these columns in a grid, an additional wrapper is needed.",
 					"category": "m_presentation"
@@ -2808,6 +2836,10 @@
 					"category": "o_presentation"
 				},
 				{
+					"name": "cardsOuter",
+					"category": "o_presentation"
+				},
+				{
 					"name": "searchResultOuter",
 					"category": "o_search"
 				},
@@ -2937,6 +2969,10 @@
 				},
 				{
 					"name": "cbLayoutDivider",
+					"category": "a_cb_layouts"
+				},
+				{
+					"name": "cbLayoutResponsiveOptions",
 					"category": "a_cb_layouts"
 				},
 				{
