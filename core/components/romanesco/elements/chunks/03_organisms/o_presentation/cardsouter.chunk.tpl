@@ -1,3 +1,3 @@
-<div class="ui [[+cols]] [[+responsive:replace=`,== `]] [[+box_type:lcase]] cards">
+<div class="ui [[+cols]] [[+responsive:replace=`,== `]] cards">
     [[+rows]]
 </div>
