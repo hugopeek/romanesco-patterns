@@ -35,6 +35,10 @@
                     "description": "",
                     "category": "m_presentation"
                 },{
+                    "name": "flexibleRowInnerWrapper",
+                    "description": "The content inside a flexible Accordion or Tab CB is entered as a nested layout, meaning it's wrapped in columns. To properly display these columns in a grid, an additional wrapper is needed.",
+                    "category": "m_presentation"
+                },{
                     "name": "cardsRowBasic",
                     "description": "A template for the Cards CB repeater. It uses the common pattern of an image, header, subtitle and link button.",
                     "category": "m_presentation"
@@ -47,8 +51,8 @@
                     "description": "The correct card template is selected inside this wrapper. This is to avoid duplicate HTML and to keep the CB field flexible, logical and easy to use.",
                     "category": "m_presentation"
                 },{
-                    "name": "flexibleRowInnerWrapper",
-                    "description": "The content inside a flexible Accordion or Tab CB is entered as a nested layout, meaning it's wrapped in columns. To properly display these columns in a grid, an additional wrapper is needed.",
+                    "name": "cardsRowFlexible",
+                    "description": "A template for the slightly more advanced Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
                     "category": "m_presentation"
                 }
             ],

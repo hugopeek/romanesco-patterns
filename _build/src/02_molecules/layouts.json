@@ -23,6 +23,9 @@
                 },{
                     "name": "cbLayoutPatternPreview",
                     "category": "m_layouts"
+                },{
+                    "name": "cbLayoutCard",
+                    "category": "m_layouts"
                 }
             ],
 

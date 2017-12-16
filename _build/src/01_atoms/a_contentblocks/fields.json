@@ -27,6 +27,9 @@
                     "name": "cbGalleryDisplayType",
                     "category": "a_cb_fields"
                 },{
+                    "name": "cbCardContentType",
+                    "category": "a_cb_fields"
+                },{
                     "name": "cbTwitterTemplates",
                     "category": "a_cb_fields"
                 },{
