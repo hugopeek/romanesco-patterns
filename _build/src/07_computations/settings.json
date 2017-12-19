@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "plugins": [
+                {
+                    "name": "setResourceIDs",
+                    "category": "c_settings"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "c_settings",
+                    "parent": "07_computations"
+                }
+            ]
+        }
+    }
+}

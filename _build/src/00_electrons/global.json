@@ -47,11 +47,11 @@
         "systemSettings": [
             {
                 "key": "global_backgrounds_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             },{
                 "key": "global_footer_id",
-                "type": "numberfield",
+                "type": "textfield",
                 "area": "Pages"
             }
         ]

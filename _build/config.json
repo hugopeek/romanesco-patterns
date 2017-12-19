@@ -497,6 +497,10 @@
 					"parent": "07_computations"
 				},
 				{
+					"name": "c_settings",
+					"parent": "07_computations"
+				},
+				{
 					"name": "About",
 					"parent": "e_info_creativework"
 				},
@@ -3713,6 +3717,10 @@
 					"events": [
 						"OnManagerPageInit"
 					]
+				},
+				{
+					"name": "setResourceIDs",
+					"category": "c_settings"
 				}
 			]
 		},
@@ -3784,12 +3792,12 @@
 			},
 			{
 				"key": "global_backgrounds_id",
-				"type": "numberfield",
+				"type": "textfield",
 				"area": "Pages"
 			},
 			{
 				"key": "global_footer_id",
-				"type": "numberfield",
+				"type": "textfield",
 				"area": "Pages"
 			},
 			{
