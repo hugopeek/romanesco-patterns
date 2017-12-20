@@ -33,6 +33,9 @@
                 },{
                     "name": "fbStripNonAlpha",
                     "category": "f_fb_modifiers"
+                },{
+                    "name": "fbEmptyHook",
+                    "category": "f_fb_hooks"
                 }
             ],
 
@@ -42,6 +45,9 @@
                     "parent": "06_formulas"
                 },{
                     "name": "f_fb_modifiers",
+                    "parent": "f_formblocks"
+                },{
+                    "name": "f_fb_hooks",
                     "parent": "f_formblocks"
                 }
             ]

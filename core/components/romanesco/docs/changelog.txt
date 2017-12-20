@@ -1,5 +1,17 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.11.3
+Upcoming release
+
+New features:
+
+
+Fixes and improvements:
+- Enable editor to add custom (pre)hooks to FormBlocks forms
+- Add option to set form layout in Form CB itself
+
+---
+
 ## Romanesco Patterns 0.11.2
 Released on December 20, 2017
 

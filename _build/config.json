@@ -453,6 +453,10 @@
 					"parent": "f_formblocks"
 				},
 				{
+					"name": "f_fb_hooks",
+					"parent": "f_formblocks"
+				},
+				{
 					"name": "f_hub",
 					"parent": "06_formulas"
 				},
@@ -750,11 +754,33 @@
 					]
 				},
 				{
+					"caption": "Custom pre-hook(s)",
+					"name": "fb_prehooks",
+					"description": "A snippet name (or comma separated list of snippet names), containing the hook(s). These hooks are executed before the form is initialised.",
+					"category": "Settings - Advanced",
+					"sortOrder": "1",
+					"type": "text",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
+					"caption": "Custom hook(s)",
+					"name": "fb_hooks",
+					"description": "A snippet name (or comma separated list of snippet names), containing the hook(s). These hooks are executed after the form is submitted, but before any emails are sent.",
+					"category": "Settings - Advanced",
+					"sortOrder": "2",
+					"type": "text",
+					"templates": [
+						"fbForm"
+					]
+				},
+				{
 					"caption": "Dynamic recipient address",
 					"name": "fb_email_to_dynamic",
 					"description": "You can place any snippet / FastField call here that outputs a single email address. Retrieve something inside a resource by using the [[+current_id]] value. WARNING: populating this field will override the default recipient address, so test thoroughly!",
 					"category": "Settings - Advanced",
-					"sortOrder": "1",
+					"sortOrder": "10",
 					"type": "textarea",
 					"templates": [
 						"fbForm"
@@ -765,7 +791,7 @@
 					"name": "fb_redirect_dynamic",
 					"description": "This works the same way as the dynamic recipient address field: enter any formula that is able to decide where to redirect the user after form submission. If left empty, it falls back on the ID provided under general settings.",
 					"category": "Settings - Advanced",
-					"sortOrder": "2",
+					"sortOrder": "11",
 					"type": "text",
 					"templates": [
 						"fbForm"
@@ -3504,6 +3530,10 @@
 				{
 					"name": "fbStripNonAlpha",
 					"category": "f_fb_modifiers"
+				},
+				{
+					"name": "fbEmptyHook",
+					"category": "f_fb_hooks"
 				},
 				{
 					"name": "includedChunks",
