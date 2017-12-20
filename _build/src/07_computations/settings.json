@@ -4,7 +4,8 @@
             "plugins": [
                 {
                     "name": "setResourceIDs",
-                    "category": "c_settings"
+                    "category": "c_settings",
+                    "events": []
                 }
             ],
 

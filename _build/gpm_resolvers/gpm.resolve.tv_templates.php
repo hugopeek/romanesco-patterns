@@ -6,6 +6,10 @@
  *
  * @package romanesco
  * @subpackage build
+ *
+ * @var mixed $object
+ * @var modX $modx
+ * @var array $options
  */
 
 if ($object->xpdo) {
@@ -17,6 +21,8 @@ if ($object->xpdo) {
             $tvs = array (
   'person_id' => 
   array (
+    0 => 'PortfolioProject',
+    1 => 'Porfolio - Project',
   ),
   'organization_id' => 
   array (
@@ -30,6 +36,9 @@ if ($object->xpdo) {
   array (
     0 => 'PortfolioProject',
     1 => 'Porfolio - Project',
+  ),
+  'user_id' => 
+  array (
   ),
   'cta_availability' => 
   array (
@@ -893,4 +902,5 @@ if ($object->xpdo) {
             break;
     }
 }
+
 return true;
