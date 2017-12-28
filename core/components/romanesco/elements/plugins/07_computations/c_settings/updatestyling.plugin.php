@@ -38,13 +38,40 @@ switch($eventName) {
         $currentSettingsTheme = filterThemeSettings($currentSettings);
         $savedSettingsTheme = filterThemeSettings($savedSettings);
 
-        //$modx->log(modX::LOG_LEVEL_ERROR, 'Presentation settings: ' . print_r($currentSettingsTheme));
-        //$modx->log(modX::LOG_LEVEL_ERROR, 'Saved values: ' . print_r($savedSettingsTheme));
-
         // Compare saved settings to current settings
-        $result = array_diff($savedSettingsTheme, $currentSettingsTheme);
+        $updatedSettings = array_diff($savedSettingsTheme, $currentSettingsTheme);
 
-        $modx->log(modX::LOG_LEVEL_ERROR, 'Differences: ' . print_r($result));
+        // If any theme settings were updated, regenerate Semantic UI CSS
+        if ($updatedSettings) {
+
+            // Clear cache, to ensure build process uses the latest values
+            $modx->getCacheManager()->delete('clientconfig',array(xPDO::OPT_CACHE_KEY => 'system_settings'));
+            if ($modx->getOption('clientconfig.clear_cache', null, true)) {
+                $modx->getCacheManager()->delete('',array(xPDO::OPT_CACHE_KEY => 'resource'));
+            }
+
+            //$command = 'cd ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic && which gulp > ./logs/romanesco.log 2>./logs/error.log &';
+            $command = '/home/hugo/.npm-global/bin/gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css 2>&1';
+            $output = array();
+
+            // Create directory for logs
+            //exec('cd ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic && mkdir logs 2>&1', $output);
+
+            //$modx->log(modX::LOG_LEVEL_ERROR, 'Temp file "' . $tempFile . '"" created at ' . sys_get_temp_dir() );
+            //$modx->log(modX::LOG_LEVEL_ERROR, 'Temp file content:' . file_get_contents($tempFile) );
+
+
+            $output = array();
+            exec($command,$output,$return_value);
+        }
+
+        // Report any validation errors in log
+        if (array_filter($output)) {
+            foreach ($output as $line) {
+                $errorMsg .= "\n" . $line;
+            }
+            return (" Failure: " . $errorMsg);
+        }
 
         break;
 }

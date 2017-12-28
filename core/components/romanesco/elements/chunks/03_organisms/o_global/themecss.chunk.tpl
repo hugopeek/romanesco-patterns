@@ -26,10 +26,10 @@ Base Sizes
 --------------------*/
 
 /* This is the single variable that controls them all */
-@emSize   : 20px;
+@emSize   : 14px;
 
 /* The size of page text  */
-@fontSize : 14px;
+@fontSize : 1.2rem;
 
 
 /*-------------------
