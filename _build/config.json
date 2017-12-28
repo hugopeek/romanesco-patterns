@@ -2772,6 +2772,10 @@
 					"category": "o_global"
 				},
 				{
+					"name": "themeCSS",
+					"category": "o_global"
+				},
+				{
 					"name": "headerBasic",
 					"category": "o_headers"
 				},
@@ -3752,6 +3756,13 @@
 					"name": "setResourceIDs",
 					"category": "c_settings",
 					"events": []
+				},
+				{
+					"name": "updateStyling",
+					"category": "c_settings",
+					"events": [
+						"ClientConfig_ConfigChange"
+					]
 				}
 			]
 		},

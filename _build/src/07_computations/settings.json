@@ -6,6 +6,10 @@
                     "name": "setResourceIDs",
                     "category": "c_settings",
                     "events": []
+                },{
+                    "name": "updateStyling",
+                    "category": "c_settings",
+                    "events": ["ClientConfig_ConfigChange"]
                 }
             ],
 
