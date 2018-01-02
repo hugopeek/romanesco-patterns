@@ -1,4 +1,11 @@
 <?php
+
+// Check if exec function is available on the server
+if(@exec('echo EXEC') !== 'EXEC'){
+    $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Exec function not available');
+    return false;
+}
+
 $eventName = $modx->event->name;
 
 switch($eventName) {
@@ -50,18 +57,14 @@ switch($eventName) {
                 $modx->getCacheManager()->delete('',array(xPDO::OPT_CACHE_KEY => 'resource'));
             }
 
-            //$command = 'cd ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic && which gulp > ./logs/romanesco.log 2>./logs/error.log &';
+            //$command = '/home/hugo/.npm-global/bin/gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css > ./logs/romanesco.log 2>./logs/error.log &';
             $command = '/home/hugo/.npm-global/bin/gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css 2>&1';
             $output = array();
 
-            // Create directory for logs
-            //exec('cd ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic && mkdir logs 2>&1', $output);
+            // Create directory for logs (if it doesn't exist already)
+            exec('cd ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic && mkdir -p logs 2>&1', $output);
 
-            //$modx->log(modX::LOG_LEVEL_ERROR, 'Temp file "' . $tempFile . '"" created at ' . sys_get_temp_dir() );
-            //$modx->log(modX::LOG_LEVEL_ERROR, 'Temp file content:' . file_get_contents($tempFile) );
-
-
-            $output = array();
+            // Run gulp process to generate new CSS
             exec($command,$output,$return_value);
         }
 
@@ -70,7 +73,7 @@ switch($eventName) {
             foreach ($output as $line) {
                 $errorMsg .= "\n" . $line;
             }
-            return (" Failure: " . $errorMsg);
+            return (" Report: " . $errorMsg);
         }
 
         break;
