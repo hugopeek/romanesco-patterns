@@ -45,12 +45,21 @@ switch($eventName) {
         $currentSettingsTheme = filterThemeSettings($currentSettings);
         $savedSettingsTheme = filterThemeSettings($savedSettings);
 
+        // Remove leading '/' slash from path values
+        // This somehow gets added by MODX, resulting in these keys being incorrectly flagged as changed
+        if ($currentSettingsTheme['logo_path'][0] === '/' || $currentSettingsTheme['logo_badge_path'][0] === '/') {
+            $currentSettingsTheme['logo_path'] = substr($currentSettingsTheme['logo_path'], 1);
+            $currentSettingsTheme['logo_badge_path'] = substr($currentSettingsTheme['logo_badge_path'], 1);
+        }
+
         // Compare saved settings to current settings
         $updatedSettings = array_diff($savedSettingsTheme, $currentSettingsTheme);
+        $deletedSettings = array_diff($currentSettingsTheme, $savedSettingsTheme);
 
-        // If any theme settings were updated, regenerate Semantic UI CSS
-        if ($updatedSettings) {
+        $output = array();
 
+        // Regenerate styling elements if theme settings were updated or deleted
+        if ($updatedSettings || $deletedSettings) {
             // Clear cache, to ensure build process uses the latest values
             $modx->getCacheManager()->delete('clientconfig',array(xPDO::OPT_CACHE_KEY => 'system_settings'));
             if ($modx->getOption('clientconfig.clear_cache', null, true)) {
@@ -58,14 +67,40 @@ switch($eventName) {
             }
 
             //$command = '/home/hugo/.npm-global/bin/gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css > ./logs/romanesco.log 2>./logs/error.log &';
-            $command = '/home/hugo/.npm-global/bin/gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css 2>&1';
-            $output = array();
+            $command = 'gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css 2>&1';
 
             // Create directory for logs (if it doesn't exist already)
             exec('cd ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic && mkdir -p logs 2>&1', $output);
 
             // Run gulp process to generate new CSS
-            exec($command,$output,$return_value);
+            exec($command, $output, $return_value);
+
+            // Update favicon if a new logo image was provided
+            if (array_key_exists('logo_badge_path', $updatedSettings)) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Logo badge was changed');
+                $logoBadgePath = $modx->getOption('base_path') . $savedSettingsTheme['logo_badge_path'];
+
+                exec(
+                    'gulp generate-favicon' .
+                    ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'favicons/generate-favicons.js' .
+                    ' --name ' . escapeshellarg($modx->getOption('site_name')) .
+                    ' --img ' . escapeshellarg($logoBadgePath) .
+                    ' --primary ' . escapeshellarg($savedSettingsTheme['theme_color_primary']) .
+                    ' --secondary ' . escapeshellarg($savedSettingsTheme['theme_color_secondary']) .
+                    ' 2>&1',
+                    $output,
+                    $return_value
+                );
+
+                // Bump favicon version number to force refresh
+                $version = $modx->getObject('modSystemSetting', array('key' => 'romanesco.favicon_version'));
+                if ($version) {
+                    $version->set('value', $version->get('value') + 0.1);
+                    $version->save();
+                } else {
+                    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find favicon_version setting');
+                }
+            }
         }
 
         // Report any validation errors in log
