@@ -57,7 +57,7 @@ $themeOverride = $modx->runSnippet('setBoxTypeTheme', (array(
     'input' => $input,
 )));
 
-if ($themeOverride) {
+if (is_array($themeOverride)) {
     foreach ($themeOverride as $key => $value) {
         $modx->toPlaceholder($key, $value, $prefix);
     }
