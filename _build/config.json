@@ -297,6 +297,10 @@
 					"parent": "m_formblocks"
 				},
 				{
+					"name": "m_global",
+					"parent": "02_molecules"
+				},
+				{
 					"name": "m_hub",
 					"parent": "02_molecules"
 				},
@@ -2543,6 +2547,10 @@
 					"category": "m_fb_email"
 				},
 				{
+					"name": "themeVariables",
+					"category": "m_global"
+				},
+				{
 					"name": "projectHubRow",
 					"category": "m_hub"
 				},
@@ -2769,10 +2777,6 @@
 				},
 				{
 					"name": "footer",
-					"category": "o_global"
-				},
-				{
-					"name": "themeCSS",
 					"category": "o_global"
 				},
 				{
@@ -3703,6 +3707,11 @@
 				{
 					"name": "tabsGenerateNav",
 					"description": "Generate the tab buttons based on data-heading attribute in the tabs themselves. It basically links every tab button to the correct tab content.",
+					"category": "f_presentation"
+				},
+				{
+					"name": "getImageDimensions",
+					"description": "Retrieve width and height from physical image files. Auto detects SVGs.",
 					"category": "f_presentation"
 				},
 				{

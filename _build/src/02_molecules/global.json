@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "themeVariables",
+                    "category": "m_global"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_global",
+                    "parent": "02_molecules"
+                }
+            ]
+        }
+    }
+}
