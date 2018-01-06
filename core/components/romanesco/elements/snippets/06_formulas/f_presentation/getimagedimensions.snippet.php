@@ -15,7 +15,7 @@ $prefix = $modx->getOption('prefix', $scriptProperties, '');
 
 // Check if image is SVG
 if (strtolower($imgType) == 'svg') {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Image is SVG');
+    $modx->log(modX::LOG_LEVEL_INFO, '[UpdateStyling] Image is SVG');
 
     $xml = file_get_contents($imgPath);
     $attributes = simplexml_load_string($xml)->attributes();
@@ -45,7 +45,7 @@ if (strtolower($imgType) == 'svg') {
 
 // Validate image file and get dimensions
 else if (substr(mime_content_type($imgPath), 0, 5) === 'image') {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Logo is valid image file');
+    $modx->log(modX::LOG_LEVEL_INFO, '[UpdateStyling] Logo is valid image file');
 
     $img = getimagesize($imgPath);
 
@@ -58,12 +58,7 @@ else {
     return '';
 }
 
-
-$modx->log(modX::LOG_LEVEL_ERROR, 'width: ' . $output);
-$modx->log(modX::LOG_LEVEL_ERROR, 'height: ' . $height);
-
 $modx->toPlaceholder($phWidth, $width, $prefix);
 $modx->toPlaceholder($phHeight, $height, $prefix);
-
 
 return '';
