@@ -27,6 +27,10 @@
                     "description": "Opposed to the native MODX stripString modifier (which only allows you to strip a single value), stripWords lets you enter multiple (comma separated) values.",
                     "category": "f_modifiers"
                 },{
+                    "name": "splitString",
+                    "description": "Divide string into multiple sections, based on a delimiter. If used as a regular snippet, each part is output to a separate placeholder. If used as output modifier, you need to specify the number of the part you want to get.",
+                    "category": "f_modifiers"
+                },{
                     "name": "parseTags",
                     "description": "Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)",
                     "category": "f_modifiers"

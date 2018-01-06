@@ -3610,6 +3610,11 @@
 					"category": "f_modifiers"
 				},
 				{
+					"name": "splitString",
+					"description": "Break string apart based on given delimiter and output each part as separate placeholder. Can also be used directly on placeholder, in which case you need to specify the number of the part you want to get.",
+					"category": "f_modifiers"
+				},
+				{
 					"name": "parseTags",
 					"description": "Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)",
 					"category": "f_modifiers"
