@@ -1,11 +1,29 @@
 // Fonts
 //--------------------
 
-[[++theme_font_name:notempty=`@fontName: '[[++theme_font_name]]';`]]
+[[splitString?
+    &input=`[[++theme_font_header]]`
+    &prefix=`font_header`
+]]
+[[splitString?
+    &input=`[[++theme_font_page]]`
+    &prefix=`font_page`
+]]
+
 [[++theme_font_fallback:notempty=`@fontFallback: [[++theme_font_fallback]];`]]
 
-[[++theme_font_weights:notempty=`@googleFontSizes: '[[++theme_font_weights]]';`]]
-[[++theme_font_subset:notempty=`@googleSubset: '[[++theme_font_subset]]';`]]
+[[++theme_font_header:splitString=`2`]]
+
+[[++theme_font_page:notempty=`
+@pageFont: '[[+font_page.1]]', @fontFallback;
+@pageFontRequest: [[+font_page.1]]:[[+font_page.2:empty=`@{googleFontSizes}`]]&subset=[[+font_page.3:empty=`@{googleSubset}`]];
+`]]
+
+[[++theme_font_header:notempty=`
+@headerFont: '[[+font_header.1]]', @fontFallback;
+@headerFontRequest: [[+font_header.1]]:[[+font_header.2:empty=`@{googleFontSizes}`]]&subset=[[+font_header.3:empty=`@{googleSubset}`]];
+@googleFontRequest: '@{headerFontRequest}[[+font_page.1:notempty=`|@{pageFontRequest}`]]';
+`]]
 
 
 // Base Sizes
