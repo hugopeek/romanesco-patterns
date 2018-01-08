@@ -3611,7 +3611,7 @@
 				},
 				{
 					"name": "splitString",
-					"description": "Break string apart based on given delimiter and output each part as separate placeholder. Can also be used directly on placeholder, in which case you need to specify the number of the part you want to get.",
+					"description": "Divide string into multiple sections, based on a delimiter. If used as a regular snippet, each part is output to a separate placeholder. If used as output modifier, you need to specify the number of the part you want to get.",
 					"category": "f_modifiers"
 				},
 				{
@@ -3903,7 +3903,6 @@
 			},
 			{
 				"key": "favicon_version",
-				"value": "1.0",
 				"type": "textfield",
 				"area": "Presentation"
 			},

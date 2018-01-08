@@ -23,7 +23,7 @@
     ]]
 
     [[++head_additional]]
-    [[$favicons]]
+    [[[[++romanesco.favicon_version:notempty=`$favicons`]]]]
 
     [[[[If?
         &subject=`[[++romanesco.dev_mode]]`

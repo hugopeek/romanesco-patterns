@@ -67,17 +67,35 @@ switch($eventName) {
             }
 
             //$command = '/home/hugo/.npm-global/bin/gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css > ./logs/romanesco.log 2>./logs/error.log &';
-            $command = 'gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css 2>&1';
+            //$command = 'gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &';
 
             // Create directory for logs (if it doesn't exist already)
-            exec('cd ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic && mkdir -p logs 2>&1', $output);
+            //exec('cd ' . escapeshellcmd($modx->getOption('core_path')) . ' && mkdir -p logs 2>&1', $output);
+
+            // Terminate any existing gulp processes
+            $killCommand = "ps aux | grep '[g]ulpfile " . $modx->getOption('assets_path') . "semantic/gulpfile.js' | awk '{print $2}'";
+            exec(
+                'kill $(' . $killCommand . ') 2> /dev/null',
+                $output,
+                $return_kill
+            );
+
+            //$modx->log(modX::LOG_LEVEL_ERROR, 'return kill: ' . $return_kill);
 
             // Run gulp process to generate new CSS
-            exec($command, $output, $return_value);
+            exec(
+                'gulp build-css' .
+                ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js' .
+                ' > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log' .
+                ' 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &',
+                //' 2>&1 | tee -a ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log',
+                $output,
+                $return_css
+            );
 
             // Update favicon if a new logo image was provided
             if (array_key_exists('logo_badge_path', $updatedSettings)) {
-                $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Logo badge was changed');
+                //$modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Logo badge was changed');
                 $logoBadgePath = $modx->getOption('base_path') . $savedSettingsTheme['logo_badge_path'];
 
                 exec(
@@ -87,9 +105,10 @@ switch($eventName) {
                     ' --img ' . escapeshellarg($logoBadgePath) .
                     ' --primary ' . escapeshellarg($savedSettingsTheme['theme_color_primary']) .
                     ' --secondary ' . escapeshellarg($savedSettingsTheme['theme_color_secondary']) .
-                    ' 2>&1',
+                    ' > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log' .
+                    ' 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log &',
                     $output,
-                    $return_value
+                    $return_favicon
                 );
 
                 // Bump favicon version number to force refresh
@@ -101,6 +120,20 @@ switch($eventName) {
                     $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find favicon_version setting');
                 }
             }
+
+            // Prevent favicons from being loaded if badge image was removed
+            if (array_key_exists('logo_badge_path', $deletedSettings)) {
+                $version = $modx->getObject('modSystemSetting', array('key' => 'romanesco.favicon_version'));
+                if ($version) {
+                    $version->set('value', '');
+                    $version->save();
+                } else {
+                    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find favicon_version setting');
+                }
+            }
+
+            // Clear cache
+            $modx->cacheManager->refresh();
         }
 
         // Report any validation errors in log

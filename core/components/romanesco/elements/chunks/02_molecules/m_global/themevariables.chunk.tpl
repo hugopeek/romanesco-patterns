@@ -46,8 +46,8 @@
 // Logo
 //--------------------
 
-[[++logo_path:isnot=`/`:then=`@logoPath: '[[++logo_path]]';`]]
-[[++logo_badge_path:isnot=`/`:then=`@logoBadgePath: '[[++logo_badge_path]]';`]]
+@logoPath: '[[++logo_path]]';
+@logoBadgePath: '[[++logo_badge_path]]';
 
 [[[[++logo_path:isnot=`/`:then=`
     getImageDimensions?
