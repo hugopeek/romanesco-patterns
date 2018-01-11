@@ -65,5 +65,12 @@
 // Border Radius
 //--------------------
 
-[[++theme_border_radius:notempty=`@relativeBorderRadius: @relative[[++theme_border_radius]]px;`]]
-[[++theme_border_radius:notempty=`@absoluteBorderRadius: @[[++theme_border_radius]]px;`]]
+[[++theme_border_radius:eq=`0`:then=`
+@relativeBorderRadius: 0;
+@absoluteBorderRadius: 0;
+`]]
+
+[[++theme_border_radius:gt=`0`:then=`
+@relativeBorderRadius: @relative[[++theme_border_radius]]px;
+@absoluteBorderRadius: @[[++theme_border_radius]]px;
+`]]
