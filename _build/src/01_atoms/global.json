@@ -20,6 +20,9 @@
                 },{
                     "name": "iconTVInputOptions",
                     "category": "a_global"
+                },{
+                    "name": "themeScaleRatios",
+                    "category": "a_global"
                 }
             ],
 
