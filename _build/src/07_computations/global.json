@@ -5,7 +5,7 @@
                 {
                     "name": "plLexiconMgr",
                     "category": "c_global",
-                    "events": ["OnDocFormRender"]
+                    "events": ["OnDocFormRender","OnManagerPageAfterRender"]
                 },{
                     "name": "plLexiconWeb",
                     "category": "c_global",

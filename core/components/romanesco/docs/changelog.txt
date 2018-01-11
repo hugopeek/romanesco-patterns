@@ -9,6 +9,7 @@ New features:
 Fixes and improvements:
 - Enable editor to add custom (pre)hooks to FormBlocks forms
 - Add option to set form layout in Form CB itself
+- Mute strange and elusive ImagePlus output line
 
 ---
 

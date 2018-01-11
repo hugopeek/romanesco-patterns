@@ -2285,6 +2285,10 @@
 					"category": "a_global"
 				},
 				{
+					"name": "themeScaleRatios",
+					"category": "a_global"
+				},
+				{
 					"name": "displayRawElement",
 					"category": "a_hub"
 				},
@@ -3749,7 +3753,8 @@
 					"name": "plLexiconMgr",
 					"category": "c_global",
 					"events": [
-						"OnDocFormRender"
+						"OnDocFormRender",
+						"OnManagerPageAfterRender"
 					]
 				},
 				{
