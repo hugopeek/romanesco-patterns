@@ -1,5 +1,4 @@
 <?php
-
 // Check if exec function is available on the server
 if(@exec('echo EXEC') !== 'EXEC'){
     $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Exec function not available');
@@ -13,6 +12,7 @@ switch($eventName) {
         $path = $modx->getOption('clientconfig.core_path', null, $modx->getOption('core_path') . 'components/clientconfig/');
         $path .= 'model/clientconfig/';
         $clientConfig = $modx->getService('clientconfig','ClientConfig', $path);
+        $imgMediaSource = $modx->getObject('sources.modMediaSource', 15);
 
         // Get current configuration settings (before save)
         $currentSettings = $clientConfig->getSettings();
@@ -52,9 +52,16 @@ switch($eventName) {
             $currentSettingsTheme['logo_badge_path'] = substr($currentSettingsTheme['logo_badge_path'], 1);
         }
 
+        // Add media source to saved paths
+        $savedSettingsTheme['logo_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_path']);
+        $savedSettingsTheme['logo_badge_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_badge_path']);
+
         // Compare saved settings to current settings
         $updatedSettings = array_diff($savedSettingsTheme, $currentSettingsTheme);
         $deletedSettings = array_diff($currentSettingsTheme, $savedSettingsTheme);
+
+        //$modx->log(modX::LOG_LEVEL_ERROR, 'updated settings: ' . print_r($updatedSettings));
+        //$modx->log(modX::LOG_LEVEL_ERROR, 'deleted settings: ' . print_r($deletedSettings));
 
         $output = array();
 
@@ -80,8 +87,6 @@ switch($eventName) {
                 $return_kill
             );
 
-            //$modx->log(modX::LOG_LEVEL_ERROR, 'return kill: ' . $return_kill);
-
             // Run gulp process to generate new CSS
             exec(
                 'gulp build-css' .
@@ -100,7 +105,7 @@ switch($eventName) {
 
                 exec(
                     'gulp generate-favicon' .
-                    ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'favicons/generate-favicons.js' .
+                    ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/generate-favicons.js' .
                     ' --name ' . escapeshellarg($modx->getOption('site_name')) .
                     ' --img ' . escapeshellarg($logoBadgePath) .
                     ' --primary ' . escapeshellarg($savedSettingsTheme['theme_color_primary']) .

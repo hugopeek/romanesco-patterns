@@ -46,10 +46,10 @@
 // Logo
 //--------------------
 
-@logoPath: '[[++logo_path]]';
-@logoBadgePath: '[[++logo_badge_path]]';
+@logoPath: '[[++logo_path:isnot=`/assets/img/`:then=`[[++logo_path]]`:else=`/`]]';
+@logoBadgePath: '[[++logo_badge_path:isnot=`/assets/img/`:then=`[[++logo_badge_path]]`:else=`/`]]';
 
-[[[[++logo_path:isnot=`/`:then=`
+[[[[++logo_path:isnot=`/assets/img/`:then=`
     getImageDimensions?
         &image=`[[++base_path]][[++logo_path:replace=`/assets==assets`]]`
         &phWidth=`logo_width`
