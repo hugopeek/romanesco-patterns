@@ -1,10 +1,12 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.11.3
-Upcoming release
+Released on January 16, 2018
 
 New features:
-
+- Add UpdateStyling plugin to change styling theme from config settings
+- Add getImageDimensions snippet to retrieve width and height from image files
+- Add splitString snippet to divide output or placeholder into multiple sections
 
 Fixes and improvements:
 - Enable editor to add custom (pre)hooks to FormBlocks forms

@@ -80,6 +80,14 @@ if ($object->xpdo) {
   array (
     0 => 'fbForm',
   ),
+  'fb_prehooks' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_hooks' => 
+  array (
+    0 => 'fbForm',
+  ),
   'fb_email_to_dynamic' => 
   array (
     0 => 'fbForm',
