@@ -3773,11 +3773,13 @@
 				},
 				{
 					"name": "setResourceIDs",
+					"description": "Looks for resource IDs of Romanesco pages that were built by the Romanesco Backyard package. When a resource is found, the referring system setting is updated with the corresponding ID. Disabled by default.",
 					"category": "c_settings",
 					"events": []
 				},
 				{
-					"name": "updateStyling",
+					"name": "UpdateStyling",
+					"description": "Gets triggered when theme settings are changed in the ClientConfig CMP. It changes Semantic UI variables and triggers a new SUI build in the background. Requires NPM and the EXEC function to be available on the server.",
 					"category": "c_settings",
 					"events": [
 						"ClientConfig_ConfigChange"

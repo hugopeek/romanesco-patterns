@@ -1,4 +1,25 @@
 <?php
+/**
+ * UpdateStyling
+ *
+ * This plugin is activated when certain theme settings are changed in the
+ * ClientConfig CMP.
+ *
+ * It changes some variables used by Semantic UI to generate the CSS and it also
+ * triggers a new SUI build in the background. This requires NPM to be available
+ * on the server, as well as the exec function.
+ *
+ * NB! ENABLING THE EXEC FUNCTION ON YOUR SERVER IS A POTENTIAL SECURITY RISK!
+ * Please make sure your server and MODX install are sufficiently hardened
+ * before enabling this functionality. You can always update the SUI styling and
+ * run the build process manually, so there's no harm done if this plugin can't
+ * be activated.
+ *
+ * It also generates favicon images if a logo badge is provided. This relies on
+ * a few Gulp dependencies (see package.json) and the Real Favicon service:
+ * https://realfavicongenerator.net/favicon/gulp
+ */
+
 // Check if exec function is available on the server
 if(@exec('echo EXEC') !== 'EXEC'){
     $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Exec function not available');
@@ -60,9 +81,6 @@ switch($eventName) {
         $updatedSettings = array_diff($savedSettingsTheme, $currentSettingsTheme);
         $deletedSettings = array_diff($currentSettingsTheme, $savedSettingsTheme);
 
-        //$modx->log(modX::LOG_LEVEL_ERROR, 'updated settings: ' . print_r($updatedSettings));
-        //$modx->log(modX::LOG_LEVEL_ERROR, 'deleted settings: ' . print_r($deletedSettings));
-
         $output = array();
 
         // Regenerate styling elements if theme settings were updated or deleted
@@ -72,12 +90,6 @@ switch($eventName) {
             if ($modx->getOption('clientconfig.clear_cache', null, true)) {
                 $modx->getCacheManager()->delete('',array(xPDO::OPT_CACHE_KEY => 'resource'));
             }
-
-            //$command = '/home/hugo/.npm-global/bin/gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css > ./logs/romanesco.log 2>./logs/error.log &';
-            //$command = 'gulp --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js build-css > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &';
-
-            // Create directory for logs (if it doesn't exist already)
-            //exec('cd ' . escapeshellcmd($modx->getOption('core_path')) . ' && mkdir -p logs 2>&1', $output);
 
             // Terminate any existing gulp processes
             $killCommand = "ps aux | grep '[g]ulpfile " . $modx->getOption('assets_path') . "semantic/gulpfile.js' | awk '{print $2}'";
@@ -93,14 +105,12 @@ switch($eventName) {
                 ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js' .
                 ' > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log' .
                 ' 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &',
-                //' 2>&1 | tee -a ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log',
                 $output,
                 $return_css
             );
 
             // Update favicon if a new logo image was provided
             if (array_key_exists('logo_badge_path', $updatedSettings)) {
-                //$modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Logo badge was changed');
                 $logoBadgePath = $modx->getOption('base_path') . $savedSettingsTheme['logo_badge_path'];
 
                 exec(

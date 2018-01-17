@@ -49,6 +49,42 @@ switch($eventName) {
             }
         }
 
+        if (!function_exists('setContextSetting')) {
+            function setContextSetting($contextSetting, $contextKey, $alias)
+            {
+                global $modx;
+
+                // Get the resource
+                $query = $modx->newQuery('modResource');
+                $query->where(array(
+                    'context_key' => $contextKey,
+                    'alias' => $alias,
+                ));
+                $query->select('id');
+                $resourceID = $modx->getValue($query->prepare());
+
+                if (!$resourceID) {
+                    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find resource ID for: ' . $alias);
+                    return;
+                }
+
+                // Update context setting
+                $setting = $modx->getObject('modContextSetting', array(
+                    'context_key' => $contextKey,
+                    'key' => $contextSetting
+                ));
+
+                if ($setting) {
+                    $setting->set('value', $resourceID);
+                    $setting->save();
+                } else {
+                    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find context setting with key: ' . $contextSetting);
+                }
+
+                return;
+            }
+        }
+
         // Find resources and set correct IDs
         setResourceID('romanesco.cta_container_id', 'global','call-to-actions');
         setResourceID('romanesco.global_backgrounds_id', 'global','backgrounds');
@@ -56,6 +92,9 @@ switch($eventName) {
         setResourceID('romanesco.dashboard_id', 'hub','dashboard');
         setResourceID('romanesco.pattern_container_id', 'hub','patterns');
         setResourceID('romanesco.backyard_container_id', 'hub','backyard');
+
+        // Set site_start for Project Hub context
+        setContextSetting('site_start', 'hub','dashboard');
 
         break;
 }
