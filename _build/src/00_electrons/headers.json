@@ -3,12 +3,24 @@
         "elements": {
             "tvs": [
                 {
-                    "caption": "Main title",
-                    "name": "header_title",
-                    "description": "This will be displayed in the header section below the main menu. The text will automatically be inherited on child pages, but can easily be overwritten by entering something new, or deleted.",
-                    "type": "text",
+                    "caption": "Header visibility",
+                    "name": "header_visibility",
+                    "description": "Do you want to display the header on this page? If you turn this off, the page starts with the content area but the navigation bar will still be visible.",
+                    "type": "listbox",
                     "category": "Header",
                     "sortOrder": "1",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "On==1||Off==0||System default==default",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "Main title",
+                    "name": "header_title",
+                    "description": "This will be displayed in the header section, below navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
+                    "type": "text",
+                    "category": "Header",
+                    "sortOrder": "5",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_all"
@@ -19,7 +31,7 @@
                     "description": "This will be displayed under the main title. Will also be inherited on child pages by default.",
                     "type": "textarea",
                     "category": "Header",
-                    "sortOrder": "2",
+                    "sortOrder": "6",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_all"
@@ -27,7 +39,7 @@
                 },{
                     "caption": "Background image",
                     "name": "header_background_img",
-                    "description": "Use an overview image of this resource as background. This will override the Background setting above, and will NOT be inherited on child pages.",
+                    "description": "Use an Overview image of this resource as background. This will override the regular Background setting above and will NOT be inherited on child pages. If you want to use an image and inherit it too, add it as Global Background instead.",
                     "type": "option",
                     "category": "Header",
                     "sortOrder": "11",
@@ -38,12 +50,12 @@
                 },{
                     "caption": "Inheritance",
                     "name": "header_inheritance",
-                    "description": "This setting controls whether values are inherited or not on all child pages of this resource.",
+                    "description": "Select which elements to display on all child pages of this resource too. NB: when you turn inheritance OFF for an element, it will return to its default value from then on. This change, however, is NOT reflected under Template Variables (yet)!",
                     "type": "checkbox",
                     "category": "Header",
                     "sortOrder": "99",
-                    "defaultValue": "@INHERIT inherit_titles||inherit_background",
-                    "inputOptionValues": "Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
+                    "defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
+                    "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
                     "templates": [
                         "@@templates_all"
                     ]

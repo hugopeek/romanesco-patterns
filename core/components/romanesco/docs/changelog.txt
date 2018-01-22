@@ -1,5 +1,12 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.11.4
+Upcoming release
+
+New features:
+- Add option to disable page header
+
+
 ## Romanesco Patterns 0.11.3
 Released on January 16, 2018
 
