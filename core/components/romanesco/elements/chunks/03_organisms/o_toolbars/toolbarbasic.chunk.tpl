@@ -1,3 +1,13 @@
+[[modifiedIf?
+    &subject=`[[*toolbar_visibility]]`
+    &operator=`EQ`
+    &operand=`default`
+    &then=`[[++toolbar_visibility_default]]`
+    &else=`[[*toolbar_visibility]]`
+    &toPlaceholder=`toolbar_visibility`
+]]
+
+[[+toolbar_visibility:eq=`1`:then=`
 <div id="toolbar" class="ui vertical secondary segment">
     <div class="ui container">
         <div class="ui stackable relaxed grid">
@@ -13,3 +23,4 @@
         </div>
     </div>
 </div>
+`]]

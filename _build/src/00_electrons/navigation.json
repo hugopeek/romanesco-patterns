@@ -1,0 +1,31 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Toolbar visibility",
+                    "name": "toolbar_visibility",
+                    "description": "Do you want to display a toolbar on this page? The default toolbar contains breadcrumbs and search functionality. This setting is inherited on every child page.",
+                    "type": "listbox",
+                    "category": "Navigation",
+                    "sortOrder": "1",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "On==1||Off==0||System default==default",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "e_navigation",
+                    "parent": "00_electrons"
+                },{
+                    "name": "Navigation",
+                    "parent": "e_navigation"
+                }
+            ]
+        }
+    }
+}

@@ -5,7 +5,7 @@
                 {
                     "caption": "Header visibility",
                     "name": "header_visibility",
-                    "description": "Do you want to display the header on this page? If you turn this off, the page starts with the content area but the navigation bar will still be visible.",
+                    "description": "Do you want to display the header on this page? If you turn this off, the page starts with the content area but the navigation bar will still be visible. This setting is inherited by default, but you can change this with the Inheritance setting below.",
                     "type": "listbox",
                     "category": "Header",
                     "sortOrder": "1",

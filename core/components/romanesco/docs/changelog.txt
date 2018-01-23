@@ -5,6 +5,7 @@ Upcoming release
 
 New features:
 - Add option to disable page header
+- Add option to disable or override toolbar
 
 
 ## Romanesco Patterns 0.11.3

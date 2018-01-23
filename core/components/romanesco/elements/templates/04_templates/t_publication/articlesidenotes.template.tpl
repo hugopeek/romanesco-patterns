@@ -15,6 +15,13 @@
         &search=`0`
     ]]
 
+    [[[[If?
+        &subject=`[[$toolbarBasicTheme]]`
+        &operator=`isnull`
+        &then=`$toolbarBasic`
+        &else=`$toolbarBasicTheme`
+    ]]]]
+
     <main id="main" role="main">
         <article id="content">
 

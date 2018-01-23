@@ -13,7 +13,12 @@
     ]]
 
     <main id="main">
-        [[$toolbarBasic]]
+        [[[[If?
+            &subject=`[[$toolbarBasicTheme]]`
+            &operator=`isnull`
+            &then=`$toolbarBasic`
+            &else=`$toolbarBasicTheme`
+        ]]]]
 
         <article id="content">
             [[*content]]
