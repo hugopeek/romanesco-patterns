@@ -2,7 +2,7 @@
 
 .background.[[+background_title:stripAsAlias]]:before {
     background-image:
-        url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=800&q=[[++img_quality]]` &type=`thumb`]]")
+        url("[[ImagePlus? &value=`[[+background_img_portrait:empty=`[[+background_img]]`]]` &options=`w=800&q=[[++img_quality]]` &type=`thumb`]]")
         [[+background_img_secondary]] !important
     ;
     opacity: [[+background_opacity:div=`100`:replace=`,==.`:empty=`1`]];
@@ -27,7 +27,7 @@
     (min-resolution: 192dpi) {
     .background.[[+background_title:stripAsAlias]]:before {
         background-image:
-            url("[[ImagePlus? &value=`[[+background_img]]` &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]` &type=`thumb`]]")
+            url("[[ImagePlus? &value=`[[+background_img_portrait:empty=`[[+background_img]]`]]` &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]` &type=`thumb`]]")
             [[+background_img_secondary]] !important
         ;
     }
