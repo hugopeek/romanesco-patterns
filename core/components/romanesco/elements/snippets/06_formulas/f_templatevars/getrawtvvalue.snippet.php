@@ -6,6 +6,11 @@ $tvName = $modx->getOption('tv', $scriptProperties, '');
 $tv = $modx->getObject('modTemplateVar',array('name'=>$tvName));
 
 // Get the raw content of the TV
-$rawValue = $tv->getValue($resourceId);
+if (is_object($tv)) {
+    $rawValue = $tv->getValue($resourceId);
 
-return $rawValue;
+    return $rawValue;
+}
+else {
+    return '';
+}

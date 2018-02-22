@@ -5,8 +5,11 @@ $tvName = $modx->getOption('tv', $scriptProperties, '');
 $tv = $modx->getObject('modTemplateVar',array('name'=>$tvName));
 
 // Get the ID of the TV
-if ($tvName) {
+if (is_object($tv)) {
     $id = $tv->get('id');
 
     return $id;
+}
+else {
+    return '';
 }
