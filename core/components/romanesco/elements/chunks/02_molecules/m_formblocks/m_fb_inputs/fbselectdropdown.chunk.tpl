@@ -10,5 +10,6 @@
         ]]
         [[+rows]]
     </select>
-    [[+field_helptext:notempty=`<p class="help">[[+field_helptext]]</p>`]]
+    [[+fb[[*id]].error.[[+name]]]]
+    [[+field_helptext:notempty=`<span class="help">[[+field_helptext]]</span>`]]
 </div>

@@ -4,7 +4,7 @@
 <div id="[[+name]]" class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] [[+option_layout:empty=`grouped`]] [[+form_layout:empty=`[[+field_layout]]`]] [[+field_type]] fields [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
     <label for="[[+name]]">
         [[+field_name]]
-        [[+helptext_position:eq=`top`:then=`[[+help]]`]]
+        [[+helptext_position:eq=`top`:then=`[[+fb[[*id]].error.[[+name]]]] [[+help]]`]]
     </label>
 
     [[+rows]]
@@ -27,5 +27,5 @@
     </div>
     `]]
 
-    [[+helptext_position:eq=`bottom`:then=`[[+help]]`]]
+    [[+helptext_position:eq=`bottom`:then=`[[+fb[[*id]].error.[[+name]]]] [[+help]]`]]
 </div>

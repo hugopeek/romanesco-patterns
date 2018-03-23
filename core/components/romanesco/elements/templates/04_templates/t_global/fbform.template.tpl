@@ -52,6 +52,7 @@
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[$fbValidateCustomFields:notempty=`[[$fbValidateCustomFields]]`]]
         workemail:blank`
+    &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[+title]]`
     &redirectTo=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`
