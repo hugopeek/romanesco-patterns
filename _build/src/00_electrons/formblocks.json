@@ -76,16 +76,6 @@
                     "defaultValue": "horizontal",
                     "templates": ["fbForm"]
                 },{
-                    "caption": "Form size",
-                    "name": "fb_form_size",
-                    "description": "",
-                    "category": "Settings - General",
-                    "sortOrder": "6",
-                    "type": "listbox",
-                    "inputOptionValues": "Mini==mini||Tiny==tiny||Small==small||Medium==medium||Large==large||Big==big||Huge==huge||Massive==massive",
-                    "defaultValue": "large",
-                    "templates": ["fbForm"]
-                },{
                     "caption": "Custom pre-hook(s)",
                     "name": "fb_prehooks",
                     "description": "A snippet name (or comma separated list of snippet names), containing the hook(s). These hooks are executed before the form is initialised.",

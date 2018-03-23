@@ -3,6 +3,7 @@
     &current_id=`[[*id]]`
     &current_pagetitle=`[[*pagetitle]]`
     &current_menutitle=`[[*menutitle]]`
+    &form_size=`[[+form_size]]`
     &form_layout=`[[+form_layout]]`
     &segment_type=`[[+segment_type]]`
     &padding=`[[+padding]]`
