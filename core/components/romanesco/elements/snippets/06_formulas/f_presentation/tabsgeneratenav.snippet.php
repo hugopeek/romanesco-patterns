@@ -46,7 +46,7 @@ $tabheaders = '';
 
 $idx = 1;
 foreach($tabs as $tab) {
-    if ($tab['icon']) {
+    if ($tab['icon'] > 0) {
         $tpl = $tplIcon;
     }
     $tabheaders .= $modx->getChunk($tpl, array(
