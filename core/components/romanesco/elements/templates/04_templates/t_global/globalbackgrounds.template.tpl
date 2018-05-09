@@ -1,6 +1,6 @@
 /* Styles that apply to all backgrounds */
 
-.background {
+.background:not(body) {
     position: relative;
     overflow: hidden;
 }
@@ -31,6 +31,10 @@
     background-color: transparent !important;
 }
 
+/* Don't scroll full-screen backgrounds */
+    body.background:before {
+    position: fixed;
+}
 
 /* Load all backgrounds set under Global Content */
 
