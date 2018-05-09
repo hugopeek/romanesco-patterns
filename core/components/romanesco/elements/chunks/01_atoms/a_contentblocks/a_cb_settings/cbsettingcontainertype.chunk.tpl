@@ -1,3 +1,4 @@
-Standard width (container)=
+Standard width=
 Full width (fluid)=fluid
-Optimal readability (text)=text
+Slightly narrower=tightened
+Optimal readability=text
