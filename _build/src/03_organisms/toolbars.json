@@ -11,6 +11,9 @@
                 },{
                     "name": "toolbarPatternElectron",
                     "category": "o_toolbars"
+                },{
+                    "name": "toolbarKnowledgeBase",
+                    "category": "o_toolbars"
                 }
             ],
 

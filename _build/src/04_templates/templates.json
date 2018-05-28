@@ -17,7 +17,7 @@
                     "category": "t_basic"
                 },{
                     "name": "Publications",
-                    "icon": "icon-pencil",
+                    "icon": "icon-newspaper-o",
                     "category": "t_publication"
                 },{
                     "name": "ArticleTraditional",
@@ -31,6 +31,14 @@
                     "name": "ArticleSidenotes",
                     "icon": "icon-pencil",
                     "category": "t_publication"
+                },{
+                    "name": "kbSection",
+                    "icon": "icon-book",
+                    "category": "t_information"
+                },{
+                    "name": "kbArticleMarkdown",
+                    "icon": "icon-bookmark-o",
+                    "category": "t_information"
                 },{
                     "name": "Client",
                     "icon": "icon-building",
@@ -71,6 +79,9 @@
                     "parent": "04_templates"
                 },{
                     "name": "t_publication",
+                    "parent": "04_templates"
+                },{
+                    "name": "t_information",
                     "parent": "04_templates"
                 },{
                     "name": "t_people",

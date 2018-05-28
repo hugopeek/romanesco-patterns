@@ -5,6 +5,18 @@
                 {
                     "name": "infoReviewSegment",
                     "category": "m_information"
+                },{
+                    "name": "kbArticleFormPreview",
+                    "category": "m_information"
+                },{
+                    "name": "kbArticleFormFiles",
+                    "category": "m_information"
+                },{
+                    "name": "kbArticleFormFile",
+                    "category": "m_information"
+                },{
+                    "name": "kbArticleFormImage",
+                    "category": "m_information"
                 }
             ],
 

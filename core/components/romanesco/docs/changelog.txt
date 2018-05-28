@@ -1,9 +1,10 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco Patterns 0.11.4
+## Romanesco Patterns 0.12.0
 Upcoming release
 
 New features:
+- Add elements for creating a Knowledge Base
 - Add option to disable page header
 - Add option to disable or override toolbar
 

@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "kbArticleFormCreate",
+                    "category": "o_information"
+                },{
+                    "name": "kbArticleFormUpdate",
+                    "category": "o_information"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_information",
+                    "parent": "03_organisms"
+                }
+            ]
+        }
+    }
+}

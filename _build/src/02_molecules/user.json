@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "loginForm",
+                    "category": "m_user"
+                },{
+                    "name": "logoutForm",
+                    "category": "m_user"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_user",
+                    "parent": "02_molecules"
+                }
+            ]
+        }
+    }
+}

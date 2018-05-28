@@ -3,7 +3,7 @@
 	"lowCaseName": "romanesco",
 	"description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
 	"author": "Hugo Peek",
-	"version": "0.11.3",
+	"version": "0.12.0",
 	"package": {
 		"elements": {
 			"categories": [
@@ -385,6 +385,10 @@
 					"parent": "02_molecules"
 				},
 				{
+					"name": "m_user",
+					"parent": "02_molecules"
+				},
+				{
 					"name": "o_formblocks",
 					"parent": "03_organisms"
 				},
@@ -398,6 +402,10 @@
 				},
 				{
 					"name": "o_hub",
+					"parent": "03_organisms"
+				},
+				{
+					"name": "o_information",
 					"parent": "03_organisms"
 				},
 				{
@@ -434,6 +442,10 @@
 				},
 				{
 					"name": "t_publication",
+					"parent": "04_templates"
+				},
+				{
+					"name": "t_information",
 					"parent": "04_templates"
 				},
 				{
@@ -2667,6 +2679,22 @@
 					"category": "m_information"
 				},
 				{
+					"name": "kbArticleFormPreview",
+					"category": "m_information"
+				},
+				{
+					"name": "kbArticleFormFiles",
+					"category": "m_information"
+				},
+				{
+					"name": "kbArticleFormFile",
+					"category": "m_information"
+				},
+				{
+					"name": "kbArticleFormImage",
+					"category": "m_information"
+				},
+				{
 					"name": "cbLayoutSingleColumnNested",
 					"category": "m_layouts"
 				},
@@ -2844,6 +2872,14 @@
 					"category": "m_social"
 				},
 				{
+					"name": "loginForm",
+					"category": "m_user"
+				},
+				{
+					"name": "logoutForm",
+					"category": "m_user"
+				},
+				{
 					"name": "fbLayoutFieldset",
 					"category": "o_formblocks"
 				},
@@ -2894,6 +2930,14 @@
 				{
 					"name": "referringPatternsOuter",
 					"category": "o_hub"
+				},
+				{
+					"name": "kbArticleFormCreate",
+					"category": "o_information"
+				},
+				{
+					"name": "kbArticleFormUpdate",
+					"category": "o_information"
 				},
 				{
 					"name": "cbLayoutSingleColumn",
@@ -3001,6 +3045,10 @@
 				},
 				{
 					"name": "toolbarPatternElectron",
+					"category": "o_toolbars"
+				},
+				{
+					"name": "toolbarKnowledgeBase",
 					"category": "o_toolbars"
 				},
 				{
@@ -3520,7 +3568,7 @@
 				},
 				{
 					"name": "Publications",
-					"icon": "icon-pencil",
+					"icon": "icon-newspaper-o",
 					"category": "t_publication"
 				},
 				{
@@ -3537,6 +3585,16 @@
 					"name": "ArticleSidenotes",
 					"icon": "icon-pencil",
 					"category": "t_publication"
+				},
+				{
+					"name": "kbSection",
+					"icon": "icon-book",
+					"category": "t_information"
+				},
+				{
+					"name": "kbArticleMarkdown",
+					"icon": "icon-bookmark-o",
+					"category": "t_information"
 				},
 				{
 					"name": "Client",
