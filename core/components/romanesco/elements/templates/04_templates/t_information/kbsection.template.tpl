@@ -21,14 +21,23 @@
         ]]]]
 
         <article id="content">
+            [[*content:notempty=`
             <div class="ui vertical stripe segment white">
-                [[*content]]
+                <div class="ui container">
+                    [[*content]]
+                </div>
+            </div>
+            `]]
 
-                [[!pdoPage?
-                    &element=`getTickets`
-                ]]
+            [[!pdoPage?
+                &element=`getTickets`
+                &tpl=`kbOverviewRowBasic`
+            ]]
 
-                [[!+page.nav]]
+            <div class="ui vertical stripe segment white">
+                <div class="ui container">
+                    [[!+page.nav]]
+                </div>
             </div>
 
         </article>

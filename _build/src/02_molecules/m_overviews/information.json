@@ -1,0 +1,15 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "kbOverviewRowBasic",
+                    "category": "m_ov_information"
+                },{
+                    "name": "kbOverviewRowCardBasic",
+                    "category": "m_ov_information"
+                }
+            ]
+        }
+    }
+}

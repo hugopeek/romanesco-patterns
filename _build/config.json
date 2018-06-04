@@ -1,9 +1,9 @@
 {
 	"name": "Romanesco",
 	"lowCaseName": "romanesco",
-	"description": "Romanesco is an experiment to combine the atomic design philosophy with MODX templating structure.",
+	"description": "Romanesco is an engineering toolkit that combines the atomic design philosophy with MODX templating.",
 	"author": "Hugo Peek",
-	"version": "0.12.0",
+	"version": "0.12.1",
 	"package": {
 		"elements": {
 			"categories": [
@@ -370,6 +370,10 @@
 				},
 				{
 					"name": "m_ov_project",
+					"parent": "m_overviews"
+				},
+				{
+					"name": "m_ov_information",
 					"parent": "m_overviews"
 				},
 				{
@@ -3510,6 +3514,10 @@
 				{
 					"name": "overviewRowImageFluid",
 					"category": "m_ov_image"
+				},
+				{
+					"name": "kbOverviewRowBasic",
+					"category": "m_ov_information"
 				},
 				{
 					"name": "overviewRowOrganizationBasic",

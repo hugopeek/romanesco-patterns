@@ -1,6 +1,6 @@
 <li class="comment ticket-comment" id="comment-[[+id]]">
     <a class="avatar">
-        <img src="[[+avatar]]" alt="[[+fullname]] avatar">
+        <img src="[[+avatar]]" alt="Avatar of [[+fullname]]">
     </a>
     <div class="content">
         <a class="author">[[+fullname]]</a>
@@ -15,11 +15,15 @@
             [[+comment_edit_link]]
         </div>
     </div>
-    [[+children:notempty=`
-    <ol class="comments">
-        [[+children]]
-    </ol>
-    `:else=``]]
+
+    [[If?
+        &subject=`[[+children]]`
+        &operator=`notempty`
+        &then=`
+        <ol class="comments">
+            [[+children]]
+        </ol>`
+    ]]
 </li>
 <!--tickets_rating_positive  positive-->
 <!--tickets_rating_negative  negative-->
