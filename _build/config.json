@@ -293,6 +293,10 @@
 					"parent": "02_molecules"
 				},
 				{
+					"name": "m_feedback",
+					"parent": "02_molecules"
+				},
+				{
 					"name": "m_formblocks",
 					"parent": "02_molecules"
 				},
@@ -2597,6 +2601,22 @@
 				{
 					"name": "structuredDataSite",
 					"category": "m_data"
+				},
+				{
+					"name": "commentWrapper",
+					"category": "m_feedback"
+				},
+				{
+					"name": "commentRowBasic",
+					"category": "m_feedback"
+				},
+				{
+					"name": "commentRowGuest",
+					"category": "m_feedback"
+				},
+				{
+					"name": "commentForm",
+					"category": "m_feedback"
 				},
 				{
 					"name": "fbInputTextfield",

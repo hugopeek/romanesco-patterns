@@ -22,14 +22,22 @@
 
         <article id="content">
             <div class="ui vertical stripe segment white markdown-body">
-                [[Markdown? &input=`[[*content:replace=``==&#96;`]]`]]
-                [[-*content:replace=`&#96;==``]]
+                <div class="ui container">
+                    [[Markdown? &input=`[[*content:replace=``==&#96;`]]`]]
+                    [[-*content:replace=`&#96;==``]]
+                </div>
             </div>
 
             <div class="ui vertical stripe segment secondary">
-                [[!TicketComments?
-                    &permissions=``
-                ]]
+                <div class="ui container">
+                    [[!TicketComments?
+                        &tplComments=`commentWrapper`
+                        &tplCommentAuth=`commentRowBasic`
+                        &tplCommentGuest=`commentRowGuest`
+                        &tplCommentForm=`commentForm`
+                        &gravatarSize=`150`
+                    ]]
+                </div>
             </div>
         </article>
 
