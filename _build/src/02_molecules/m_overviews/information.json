@@ -6,7 +6,7 @@
                     "name": "kbOverviewRowBasic",
                     "category": "m_ov_information"
                 },{
-                    "name": "kbOverviewRowCardBasic",
+                    "name": "kbOverviewRowBasicCard",
                     "category": "m_ov_information"
                 }
             ]

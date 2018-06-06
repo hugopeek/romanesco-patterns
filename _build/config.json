@@ -3520,6 +3520,10 @@
 					"category": "m_ov_information"
 				},
 				{
+					"name": "kbOverviewRowBasicCard",
+					"category": "m_ov_information"
+				},
+				{
 					"name": "overviewRowOrganizationBasic",
 					"category": "m_ov_organization"
 				},
