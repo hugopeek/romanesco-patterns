@@ -3928,7 +3928,7 @@
 					]
 				},
 				{
-					"name": "plLexiconMgr",
+					"name": "ManagerAugmentations",
 					"category": "c_global",
 					"events": [
 						"OnDocFormRender",
@@ -3936,7 +3936,7 @@
 					]
 				},
 				{
-					"name": "plLexiconWeb",
+					"name": "LexiconWeb",
 					"category": "c_global",
 					"events": [
 						"OnHandleRequest"
@@ -3947,6 +3947,14 @@
 					"category": "c_global",
 					"events": [
 						"OnManagerPageInit"
+					]
+				},
+				{
+					"name": "MarkdownMimeType",
+					"category": "c_global",
+					"events": [
+						"OnBeforeDocFormSave",
+						"OnWebPagePrerender"
 					]
 				},
 				{

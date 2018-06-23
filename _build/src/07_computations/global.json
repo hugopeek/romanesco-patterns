@@ -3,17 +3,21 @@
         "elements": {
             "plugins": [
                 {
-                    "name": "plLexiconMgr",
+                    "name": "ManagerAugmentations",
                     "category": "c_global",
                     "events": ["OnDocFormRender","OnManagerPageAfterRender"]
                 },{
-                    "name": "plLexiconWeb",
+                    "name": "LexiconWeb",
                     "category": "c_global",
                     "events": ["OnHandleRequest"]
                 },{
                     "name": "hideEmptyTVCategories",
                     "category": "c_global",
                     "events": ["OnManagerPageInit"]
+                },{
+                    "name": "MarkdownMimeType",
+                    "category": "c_global",
+                    "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
                 }
             ],
 
