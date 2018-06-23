@@ -24,7 +24,6 @@
             <div class="ui vertical stripe segment white markdown-body">
                 <div class="ui container">
                     [[Markdown? &input=`[[*content:replace=``==&#96;`]]`]]
-                    [[-*content:replace=`&#96;==``]]
                 </div>
             </div>
 
