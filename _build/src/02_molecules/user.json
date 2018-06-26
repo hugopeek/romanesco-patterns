@@ -6,7 +6,13 @@
                     "name": "loginForm",
                     "category": "m_user"
                 },{
+                    "name": "loginFormCompact",
+                    "category": "m_user"
+                },{
                     "name": "logoutForm",
+                    "category": "m_user"
+                },{
+                    "name": "logoutFormCompact",
                     "category": "m_user"
                 }
             ],

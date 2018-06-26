@@ -2535,6 +2535,10 @@
 					"category": "a_taxonomy"
 				},
 				{
+					"name": "tagItemFlag",
+					"category": "a_taxonomy"
+				},
+				{
 					"name": "buttonOuter",
 					"category": "m_buttons"
 				},
@@ -2900,7 +2904,15 @@
 					"category": "m_user"
 				},
 				{
+					"name": "loginFormCompact",
+					"category": "m_user"
+				},
+				{
 					"name": "logoutForm",
+					"category": "m_user"
+				},
+				{
+					"name": "logoutFormCompact",
 					"category": "m_user"
 				},
 				{

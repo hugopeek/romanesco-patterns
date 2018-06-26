@@ -11,14 +11,27 @@
 <div id="toolbar" class="ui vertical secondary segment">
     <div class="ui container">
         <div class="ui stackable relaxed grid">
-            <div class="ten wide tablet ten wide computer twelve wide large screen middle aligned column">
+            <div class="sixteen wide mobile nine wide computer ten wide large screen middle aligned column">
                 [[$breadcrumbs]]
             </div>
-            <div class="six wide tablet six wide computer four wide large screen column">
-                [[SimpleSearchForm?
-                    &tpl=`searchField`
-                    &landing=`[[++romanesco.search_result_id]]`
-                ]]
+            <div class="sixteen wide mobile seven wide computer six wide large screen column">
+                <div class="ui equal width grid">
+                    <div class="column">
+                        [[SimpleSearchForm?
+                            &tpl=`searchField`
+                            &landing=`[[++romanesco.search_result_id]]`
+                        ]]
+                    </div>
+                    <div class="compact column">
+                        [[!Login?
+                            &tplType=`modChunk`
+                            &loginTpl=`loginFormCompact`
+                            &logoutTpl=`logoutFormCompact`
+                            &form_size=`small`
+                            &form_layout=`vertical`
+                        ]]
+                    </div>
+                </div>
             </div>
         </div>
     </div>
