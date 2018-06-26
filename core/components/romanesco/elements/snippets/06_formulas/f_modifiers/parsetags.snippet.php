@@ -13,7 +13,9 @@ $tags = explode(',',$input); // Based on a delimiter of comma-space.
 
 // Process them individually
 foreach ($tags as $key => $value) {
-    $value = ucfirst($value);
+    if (stripos($tpl,'flag') === false) {
+        $value = ucfirst($value);
+    }
     $output[] = $modx->getChunk($tpl,array(
         'tag' => $value,
         'icon_class' => $iconClass,

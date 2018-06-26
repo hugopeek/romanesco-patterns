@@ -1,0 +1,1 @@
+<i class="[[+tag]] flag"></i>

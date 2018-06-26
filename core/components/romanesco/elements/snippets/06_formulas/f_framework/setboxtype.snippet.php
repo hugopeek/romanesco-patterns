@@ -17,7 +17,7 @@
  *
  * Example setBoxTypeTheme snippet:
  *
- * <php?
+ * <?php
  * switch($input) {
  *     case stripos($input,'Card') !== false:
  *         $box_type = "cards";
