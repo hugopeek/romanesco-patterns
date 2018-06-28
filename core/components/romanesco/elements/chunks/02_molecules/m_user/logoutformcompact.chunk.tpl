@@ -1,8 +1,9 @@
 [[+errors:notempty=`<div class="ui error message">[[+errors]]</div>`]]
 
-<div class="ui right labeled icon top right pointing dropdown button">
-    <i class="caret down icon"></i>
-    <span class="text">[[!+modx.user.id:userinfo=`username`]]</span>
+<div class="ui right dropdown item">
+    [[!+modx.user.id:userinfo=`username`]]
+    <i class="dropdown icon"></i>
+
     <div class="menu">
         <div class="header">User settings</div>
 
