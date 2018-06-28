@@ -1,18 +1,11 @@
-<section class="ui vertical stripe segment white tickets-row">
+<section class="ui vertical stripe segment white ticket">
     <div class="ui container">
         <h2 class="title"><a href="[[~[[+id]]]]">[[+pagetitle]]</a></h2>
         <div class="content lead">
-            [[+introtext]]
+            [[+introtext:ellipsis=`400`]]
         </div>
 
-        <div class="ui hidden divider"></div>
-
-        <a href="[[~[[+id]]]]" class="ui primary right labeled icon button">
-            Read more
-            <i class="angle double right icon"></i>
-        </a>
-
-        <footer class="ui equal width meta secondary segment grid ticket-meta" data-id="[[+id]]">
+        <footer class="ui equal width meta grid ticket-meta" data-id="[[+id]]">
             <div class="compact column">
                 <i class="calendar icon"></i> [[+date_ago]]
             </div>
@@ -46,7 +39,6 @@
             </div>
         </footer>
     </div>
-
 </section>
 <!--tickets_can_vote <span class="vote rating" title="[[%ticket_refrain]]"><i class="circular plus icon"></i></span>-->
 <!--tickets_cant_vote <span class="rating[[+rating_positive]][[+rating_negative]]" title="[[%ticket_rating_total]] [[+rating_total]]: ↑[[+rating_plus]] [[%ticket_rating_and]] ↓[[+rating_minus]]">[[+rating]]</span>-->

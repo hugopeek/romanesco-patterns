@@ -16,7 +16,7 @@
         [[[[If?
             &subject=`[[$toolbarKnowledgeBaseTheme]]`
             &operator=`isnull`
-            &then=`$toolbarKnowledgeBase`
+            &then=`$toolbarKnowledgeBase? &search_form_size=`large` &search_field_classes=`transparent``
             &else=`$toolbarKnowledgeBaseTheme`
         ]]]]
 
