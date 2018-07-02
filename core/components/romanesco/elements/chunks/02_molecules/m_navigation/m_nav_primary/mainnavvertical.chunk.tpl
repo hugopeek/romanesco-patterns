@@ -5,7 +5,9 @@
 
     [[!getCache?
         &element=`pdoMenu`
-        &cacheKey=`nav_[[!+modx.user.id:memberof=`[[++romanesco.member_groups_frontend]]`:then=`member`:else=`anonymous`]]`
+        [[!++romanesco.member_groups:eq=`1`:then=`
+        &cacheKey=`[[!+modx.user.id:memberof=`[[++romanesco.member_groups_frontend]]`:then=`nav_member`:else=`nav_anonymous`]]`
+        `:else=``]]
     
         &parents=`0`
         &level=`3`
