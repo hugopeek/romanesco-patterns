@@ -32,6 +32,7 @@
             [[!pdoPage?
                 &element=`getTickets`
                 &tpl=`kbOverviewRowBasic`
+                &checkPermissions=`list`
             ]]
 
             <div class="ui vertical stripe segment white">

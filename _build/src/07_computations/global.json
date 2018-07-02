@@ -11,6 +11,10 @@
                     "category": "c_global",
                     "events": ["OnHandleRequest"]
                 },{
+                    "name": "ClearCustomCache",
+                    "category": "c_global",
+                    "events": ["OnSiteRefresh","OnDocFormSave"]
+                },{
                     "name": "hideEmptyTVCategories",
                     "category": "c_global",
                     "events": ["OnManagerPageInit"]

@@ -3955,6 +3955,14 @@
 					]
 				},
 				{
+					"name": "ClearCustomCache",
+					"category": "c_global",
+					"events": [
+						"OnSiteRefresh",
+						"OnDocFormSave"
+					]
+				},
+				{
 					"name": "hideEmptyTVCategories",
 					"category": "c_global",
 					"events": [
@@ -4158,6 +4166,18 @@
 				"type": "textfield",
 				"area": "Social",
 				"value": ""
+			},
+			{
+				"key": "member_groups_frontend",
+				"type": "textfield",
+				"area": "Users",
+				"value": "Administrator"
+			},
+			{
+				"key": "member_groups",
+				"type": "combo-boolean",
+				"area": "Users",
+				"value": "0"
 			},
 			{
 				"key": "container_id",

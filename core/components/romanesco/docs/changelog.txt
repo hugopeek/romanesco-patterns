@@ -4,9 +4,11 @@
 Upcoming release
 
 New features:
--
+- Allow resource / member groups with exclusive access rights to be added
+- Exclude members only submenu items in vertical nav and KB overviews
 
 Fixes and improvements:
+- Fix snippet not found errors for empty fastField tags in MODX 2.6
 - Regulate MIME type of Markdown resources with plugin
 
 

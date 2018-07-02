@@ -1,0 +1,17 @@
+{
+    "package": {
+        "systemSettings": [
+            {
+                "key": "member_groups_frontend",
+                "type": "textfield",
+                "area": "Users",
+                "value": "Administrator"
+            },{
+                "key": "member_groups",
+                "type": "combo-boolean",
+                "area": "Users",
+                "value": "0"
+            }
+        ]
+    }
+}
