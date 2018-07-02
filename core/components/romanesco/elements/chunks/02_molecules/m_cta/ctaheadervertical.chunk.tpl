@@ -1,1 +1,1 @@
-[[#[[*header_cta]].content]]
+[[#[[*header_cta:empty=`0`]].content]]
