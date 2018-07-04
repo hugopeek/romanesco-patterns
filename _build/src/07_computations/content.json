@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "plugins": [
+                {
+                    "name": "MarkdownMimeType",
+                    "category": "c_content",
+                    "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
+                },{
+                    "name": "setResourceGroup",
+                    "category": "c_content",
+                    "events": ["OnBeforeDocFormSave"]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "c_content",
+                    "parent": "07_computations"
+                }
+            ]
+        }
+    }
+}

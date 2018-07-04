@@ -18,9 +18,16 @@ $contexts = explode(',',$contexts);
 //    $modx->user->addSessionContext($ctx);
 //}
 
-$modx->user->addSessionContext('kb');
+$modx->user->addSessionContext('hub');
 
-$modx->log(modX::LOG_LEVEL_ERROR, '[LACTX] user: ' . $modx->user->get('username'));
+$modx->switchContext('hub');
+
+if ($modx->user->isAuthenticated('hub')) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[LACTX] user is logged in: ' . $modx->user->get('username'));
+}
+
+
+//$modx->log(modX::LOG_LEVEL_ERROR, '[LACTX] user: ' . $modx->user->get('username'));
 //$modx->log(modX::LOG_LEVEL_ERROR, '[LACTX] context: ' . $modx->context->get('key'));
 
 return true;

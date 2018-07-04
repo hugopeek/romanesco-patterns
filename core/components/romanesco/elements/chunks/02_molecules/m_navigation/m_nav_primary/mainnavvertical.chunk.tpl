@@ -3,12 +3,7 @@
         [[$logo]]
     </div>
 
-    [[!getCache?
-        &element=`pdoMenu`
-        [[!++romanesco.member_groups:eq=`1`:then=`
-        &cacheKey=`[[!+modx.user.id:memberof=`[[++romanesco.member_groups_frontend]]`:then=`nav_member`:else=`nav_anonymous`]]`
-        `:else=``]]
-    
+    [[pdoMenu?
         &parents=`0`
         &level=`3`
         &tplOuter=`navWrapper`
@@ -17,6 +12,8 @@
         &tplParentRowActive=`navItemParentActive`
         &tplInnerRow=`navItem`
         &checkPermissions=`list`
+        &cache=`1`
+        &cache_key=`[[!+modx.user.id:memberof=`[[++romanesco.member_groups_frontend]]`:then=`nav_member`:else=`nav_anonymous`]]`
     ]]
 
     [[$mainNavItemsTheme]]

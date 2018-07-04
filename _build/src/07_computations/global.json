@@ -13,15 +13,11 @@
                 },{
                     "name": "ClearCustomCache",
                     "category": "c_global",
-                    "events": ["OnSiteRefresh","OnDocFormSave"]
+                    "events": [""]
                 },{
                     "name": "hideEmptyTVCategories",
                     "category": "c_global",
                     "events": ["OnManagerPageInit"]
-                },{
-                    "name": "MarkdownMimeType",
-                    "category": "c_global",
-                    "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
                 }
             ],
 

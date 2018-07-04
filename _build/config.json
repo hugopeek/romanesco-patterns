@@ -525,6 +525,10 @@
 					"parent": "06_formulas"
 				},
 				{
+					"name": "c_content",
+					"parent": "07_computations"
+				},
+				{
 					"name": "c_formblocks",
 					"parent": "07_computations"
 				},
@@ -3926,6 +3930,21 @@
 			],
 			"plugins": [
 				{
+					"name": "MarkdownMimeType",
+					"category": "c_content",
+					"events": [
+						"OnBeforeDocFormSave",
+						"OnWebPagePrerender"
+					]
+				},
+				{
+					"name": "setResourceGroup",
+					"category": "c_content",
+					"events": [
+						"OnBeforeDocFormSave"
+					]
+				},
+				{
 					"name": "fbLexiconMgr",
 					"category": "c_formblocks",
 					"events": [
@@ -3958,8 +3977,7 @@
 					"name": "ClearCustomCache",
 					"category": "c_global",
 					"events": [
-						"OnSiteRefresh",
-						"OnDocFormSave"
+						""
 					]
 				},
 				{
@@ -3967,14 +3985,6 @@
 					"category": "c_global",
 					"events": [
 						"OnManagerPageInit"
-					]
-				},
-				{
-					"name": "MarkdownMimeType",
-					"category": "c_global",
-					"events": [
-						"OnBeforeDocFormSave",
-						"OnWebPagePrerender"
 					]
 				},
 				{
