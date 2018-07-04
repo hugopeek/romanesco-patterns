@@ -114,6 +114,11 @@
                 "key": "backyard_container_id",
                 "type": "textfield",
                 "area": "Pages"
+            },{
+                "key": "private_backyard",
+                "type": "combo-boolean",
+                "area": "Users",
+                "value": "0"
             }
         ]
     }

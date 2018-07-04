@@ -4095,6 +4095,12 @@
 				"area": "Pages"
 			},
 			{
+				"key": "private_backyard",
+				"type": "combo-boolean",
+				"area": "Users",
+				"value": "0"
+			},
+			{
 				"key": "mapbox_access_token",
 				"type": "textfield",
 				"area": "Map"
