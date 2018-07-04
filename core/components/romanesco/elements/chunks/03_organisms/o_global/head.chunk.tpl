@@ -26,11 +26,10 @@
     [[[[++romanesco.favicon_version:notempty=`$favicons`]]]]
 
     [[[[If?
-        &subject=`[[++romanesco.dev_mode]]`
-        &operator=`EQ`
-        &operand=`1`
-        &then=``
-        &else=`$googleAnalytics`
+        &subject=`[[getContextSetting:default=`[[++google_analytics_ua]]`? &context=`[[*context_key]]` &setting=`google_analytics_ua`]]`
+        &operator=`notempty`
+        &then=`$googleAnalytics`
+        &else=``
     ]]]]
 
     [[$structuredDataSite]]
