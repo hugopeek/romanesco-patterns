@@ -26,9 +26,9 @@ if ($ctx == null) {
     );
 }
 
-if ($csObj) {
+if (is_object($csObj)) {
     return $csObj->get('value');
 } else {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[getContextSetting] Context Setting not found');
+    $modx->log(modX::LOG_LEVEL_INFO, '[getContextSetting] Context Setting not found');
     return '';
 }
