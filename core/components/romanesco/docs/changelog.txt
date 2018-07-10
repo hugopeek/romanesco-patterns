@@ -10,6 +10,7 @@ New features:
 Fixes and improvements:
 - Add setting to make project hub private (require login)
 - Load Google Analytics if configuration / context setting is set
+- Fix object not found handling in latest plugins
 - Fix snippet not found errors for empty fastField tags in MODX 2.6
 - Regulate MIME type of Markdown resources with plugin
 
