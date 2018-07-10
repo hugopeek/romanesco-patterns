@@ -1,4 +1,11 @@
 <?php
+/**
+ * checkPermissions
+ *
+ * Check if user has access permissions for a certain context and redirect to
+ * unauthorized page if that's not the case.
+ */
+
 $context = $modx->getOption('context', $scriptProperties, $modx->context->get('key'));
 $redirectTo = $modx->getOption('redirectTo', $scriptProperties, null);
 

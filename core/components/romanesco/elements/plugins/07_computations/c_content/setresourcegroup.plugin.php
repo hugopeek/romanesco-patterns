@@ -1,20 +1,20 @@
 <?php
-/*
+/**
  * setResourceGroup
  *
  * Add resource to a specific group, based on certain conditions or variables.
  */
 
-$resourceGroup = $modx->getObject('modResourceGroup',1);
-$resourceGroupName = $resourceGroup->get('name');
-
-if (!is_object($resourceGroup)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[setResourceGroup] Resource group not found.');
-    return false;
-}
-
 switch ($modx->event->name) {
     case 'OnDocFormSave':
+        $resourceGroup = $modx->getObject('modResourceGroup',1);
+
+        if (!is_object($resourceGroup)) {
+            $modx->log(modX::LOG_LEVEL_INFO, '[setResourceGroup] No resource group was found.');
+            break;
+        } else {
+            $resourceGroupName = $resourceGroup->get('name');
+        }
 
         // Tickets
         if ($resource->get('class_key','Ticket')) {

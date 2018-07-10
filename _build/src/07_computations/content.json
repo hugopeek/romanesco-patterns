@@ -9,7 +9,7 @@
                 },{
                     "name": "setResourceGroup",
                     "category": "c_content",
-                    "events": ["OnBeforeDocFormSave"]
+                    "events": ["OnDocFormSave"]
                 }
             ],
 
