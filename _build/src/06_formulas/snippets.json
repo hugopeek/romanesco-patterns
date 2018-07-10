@@ -123,7 +123,7 @@
                     "description": "Get the ID of a TV, in case you only know its name. Created for the front-end library, to help with listing included TVs.",
                     "category": "f_templatevars"
                 },{
-                    "name": "checkPermission",
+                    "name": "checkPermissions",
                     "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
                     "category": "f_users"
                 }

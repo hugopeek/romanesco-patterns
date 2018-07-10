@@ -3932,7 +3932,7 @@
 					"category": "f_templatevars"
 				},
 				{
-					"name": "checkPermission",
+					"name": "checkPermissions",
 					"description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
 					"category": "f_users"
 				}
