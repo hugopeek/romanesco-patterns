@@ -68,6 +68,10 @@
                     "icon": "icon-check-square-o",
                     "category": "t_global"
                 },{
+                    "name": "fbRegister",
+                    "icon": "icon-user-plus",
+                    "category": "t_global"
+                },{
                     "name": "ProjectDashboard",
                     "icon": "icon-line-chart",
                     "category": "t_hub"

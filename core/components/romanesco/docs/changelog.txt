@@ -4,6 +4,7 @@
 Upcoming release
 
 New features:
+- Add registration form template to FormBlocks
 - Allow resource / member groups with exclusive access rights to be added
 - Exclude members only submenu items in vertical nav and KB overviews
 

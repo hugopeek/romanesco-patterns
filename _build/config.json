@@ -1809,6 +1809,99 @@
 					]
 				},
 				{
+					"caption": "Activation",
+					"name": "fb_activation_toggle",
+					"description": "Whether or not new users need to activate their account via email. IMPORTANT! For the activation process to know which email address to use, the Input (Email) field needs to be present in the form. And beware of bots when activating a user immediately!",
+					"category": "Registration",
+					"sortOrder": "1",
+					"type": "option",
+					"inputOptionValues": "After email confirmation==1||Immediately==0",
+					"defaultValue": "1",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "Activation page",
+					"name": "fb_activation_resource_id",
+					"description": "The page where the ConfirmRegister snippet for email activation is located. Enter the ID of the page, or drag the page from the menu tree to this input field. Defaults to the activation_resource_id system setting.",
+					"category": "Registration",
+					"sortOrder": "2",
+					"type": "number",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "Activation TTL",
+					"name": "fb_activation_ttl",
+					"description": "Number of minutes until the activation email expires. Defaults to 3 hours.",
+					"category": "Registration",
+					"sortOrder": "5",
+					"type": "number",
+					"defaultValue": "180",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "Username field",
+					"name": "fb_username_field",
+					"description": "The name of the form field where the new user will enter a username. You can use the label name of the ContentBlock field here, or the name in the HTML. You can also enter the email field as username, if that suits your use case better.",
+					"category": "Registration",
+					"sortOrder": "10",
+					"type": "text",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "Password field",
+					"name": "fb_password_field",
+					"description": "The name of the form field where the new user will enter a password. If you leave this empty, a password will be generated instead. You can use the label name of the ContentBlock field here, or the name in the HTML.",
+					"category": "Registration",
+					"sortOrder": "11",
+					"type": "text",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "User groups",
+					"name": "fb_usergroups",
+					"description": "Optional. A comma-separated list of user group names or IDs to add the newly-registered user to.",
+					"category": "Registration",
+					"sortOrder": "20",
+					"type": "text",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "User groups field",
+					"name": "fb_usergroups_field",
+					"description": "Optional. The name of the form field that decides which user groups the new user will belong to. You can use the label name of the ContentBlock field here, or the name in the HTML.",
+					"category": "Registration",
+					"sortOrder": "21",
+					"type": "text",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "Extended user fields",
+					"name": "fb_extended_toggle",
+					"description": "If switched on, any extra fields in the form are added to the extended field in the user profile.",
+					"category": "Registration",
+					"sortOrder": "30",
+					"type": "option",
+					"inputOptionValues": "No==0||Yes==1",
+					"defaultValue": "0",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
 					"caption": "Author",
 					"name": "author_id",
 					"description": "Select the author of this article. He or she must be a MODX user.",
@@ -3684,6 +3777,11 @@
 					"category": "t_global"
 				},
 				{
+					"name": "fbRegister",
+					"icon": "icon-user-plus",
+					"category": "t_global"
+				},
+				{
 					"name": "ProjectDashboard",
 					"icon": "icon-line-chart",
 					"category": "t_hub"
@@ -4009,6 +4107,14 @@
 					"events": [
 						"ClientConfig_ConfigChange"
 					]
+				}
+			],
+			"systemSettings": [
+				{
+					"key": "activation_resource_id",
+					"namespace": "formblocks",
+					"type": "textfield",
+					"area": "FormBlocks - Registration"
 				}
 			]
 		},
