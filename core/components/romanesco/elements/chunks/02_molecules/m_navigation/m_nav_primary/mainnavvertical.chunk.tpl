@@ -3,7 +3,7 @@
         [[$logo]]
     </div>
 
-    [[pdoMenu?
+    [[!pdoMenu?
         &parents=`0`
         &level=`3`
         &tplOuter=`navWrapper`
