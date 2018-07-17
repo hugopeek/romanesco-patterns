@@ -30,6 +30,14 @@
                     "defaultValue": "180",
                     "templates": ["fbRegister"]
                 },{
+                    "caption": "Activation email",
+                    "name": "fb_activation_email",
+                    "description": "The content of the activation email. Make sure it contains the [[+confirmUrl]] placeholder for the confirmation link!",
+                    "category": "Settings - Email",
+                    "sortOrder": "20",
+                    "type": "richtext",
+                    "templates": ["fbRegister"]
+                },{
                     "caption": "Username field",
                     "name": "fb_username_field",
                     "description": "The name of the form field where the new user will enter a username. You can use the label name of the ContentBlock field here, or the name in the HTML. You can also enter the email field as username, if that suits your use case better.",

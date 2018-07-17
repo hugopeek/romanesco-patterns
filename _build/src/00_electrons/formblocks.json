@@ -48,7 +48,10 @@
                     "category": "Settings - Email",
                     "sortOrder": "10",
                     "type": "text",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
                 },{
                     "caption": "Redirect page",
                     "name": "fb_redirect_id",
@@ -56,7 +59,10 @@
                     "category": "Settings - General",
                     "sortOrder": "90",
                     "type": "number",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
                 },{
                     "caption": "Text in submit button",
                     "name": "fb_submit_button",
@@ -82,7 +88,10 @@
                     "category": "Settings - Advanced",
                     "sortOrder": "1",
                     "type": "text",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
                 },{
                     "caption": "Custom hook(s)",
                     "name": "fb_hooks",
@@ -90,7 +99,10 @@
                     "category": "Settings - Advanced",
                     "sortOrder": "2",
                     "type": "text",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
                 },{
                     "caption": "Dynamic recipient address",
                     "name": "fb_email_to_dynamic",
@@ -106,7 +118,10 @@
                     "category": "Settings - Advanced",
                     "sortOrder": "11",
                     "type": "text",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
                 },{
                     "caption": "Email template",
                     "name": "fb_email_template",
@@ -141,6 +156,9 @@
                     "parent": "e_formblocks"
                 },{
                     "name": "Autoresponder",
+                    "parent": "e_formblocks"
+                },{
+                    "name": "Registration",
                     "parent": "e_formblocks"
                 }
             ]

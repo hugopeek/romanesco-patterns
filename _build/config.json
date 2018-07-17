@@ -65,6 +65,10 @@
 					"parent": "e_formblocks"
 				},
 				{
+					"name": "Registration",
+					"parent": "e_formblocks"
+				},
+				{
 					"name": "e_global",
 					"parent": "00_electrons"
 				},
@@ -755,7 +759,8 @@
 					"sortOrder": "10",
 					"type": "text",
 					"templates": [
-						"fbForm"
+						"fbForm",
+						"fbRegister"
 					]
 				},
 				{
@@ -766,7 +771,8 @@
 					"sortOrder": "90",
 					"type": "number",
 					"templates": [
-						"fbForm"
+						"fbForm",
+						"fbRegister"
 					]
 				},
 				{
@@ -801,7 +807,8 @@
 					"sortOrder": "1",
 					"type": "text",
 					"templates": [
-						"fbForm"
+						"fbForm",
+						"fbRegister"
 					]
 				},
 				{
@@ -812,7 +819,8 @@
 					"sortOrder": "2",
 					"type": "text",
 					"templates": [
-						"fbForm"
+						"fbForm",
+						"fbRegister"
 					]
 				},
 				{
@@ -834,7 +842,8 @@
 					"sortOrder": "11",
 					"type": "text",
 					"templates": [
-						"fbForm"
+						"fbForm",
+						"fbRegister"
 					]
 				},
 				{
@@ -1840,6 +1849,17 @@
 					"sortOrder": "5",
 					"type": "number",
 					"defaultValue": "180",
+					"templates": [
+						"fbRegister"
+					]
+				},
+				{
+					"caption": "Activation email",
+					"name": "fb_activation_email",
+					"description": "The content of the activation email. Make sure it contains the [[+confirmUrl]] placeholder for the confirmation link!",
+					"category": "Settings - Email",
+					"sortOrder": "20",
+					"type": "richtext",
 					"templates": [
 						"fbRegister"
 					]

@@ -6,8 +6,9 @@
 
     &activation=`[[*fb_activation_toggle:default=`1`]]`
     &activationttl=`[[*fb_activation_ttl:default=`180`]]`
-    &activationEmailTpl=`[[*fb_email_template:empty=`fbEmailActivation`]]`
-    &activationEmailSubject=`[[*fb_email_subject:empty=`[[%formblocks.email.subject_activation]]`]]`
+    &activationEmailTpl=`[[*fb_email_content:empty=`[[%formblocks.registration.email_content]]`]]`
+    &activationEmailTplType=`inline`
+    &activationEmailSubject=`[[*fb_email_subject:empty=`[[%formblocks.registration.email_subject]]`]]`
 
     &emailField=`[[+fb[[*id]]-email]]`
     &usernameField=`fb[[*id]]-[[*fb_username_field:default=`username`:fbStripAsAlias:stripString=`fb[[*id]]-`]]`
@@ -26,7 +27,7 @@
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[+title]]`
-    &successMsg=`[[%formblocks.form.activation_success_message]]`
+    &successMsg=`[[%formblocks.registration.success_message]]`
 
     &activationResourceId=`[[*fb_activation_resource_id:empty=`[[++formblocks.activation_resource_id]]`]]`
     &submittedResourceId=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`
@@ -36,9 +37,9 @@
 <div class="ui error message">
     <i class="close icon"></i>
     <div class="header">
-        [[%formblocks.form.validation_error_heading]]
+        [[%formblocks.registration.validation_error_heading]]
     </div>
-    <p>[[%formblocks.form.validation_error_message]]</p>
+    <p>[[%formblocks.registration.validation_error_message]]</p>
 </div>
 `]]
 
