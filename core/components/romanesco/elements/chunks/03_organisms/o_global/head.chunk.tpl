@@ -31,12 +31,12 @@
         &then=`$googleAnalytics`
     ]]]]
 
-    [[If?
+    [[[[If?
         &subject=`[[++romanesco.private_backyard]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`[[!checkPermissions? &context=`hub`]]`
-    ]]
+        &then=`!checkPermissions? &context=`hub``
+    ]]]]
 
     [[$structuredDataSite]]
 </head>
