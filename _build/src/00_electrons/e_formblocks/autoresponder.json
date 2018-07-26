@@ -15,7 +15,7 @@
                 },{
                     "caption": "Autoresponder FROM address",
                     "name": "fb_autoresponder_from",
-                    "description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like noreply@yourdomain.com. Defaults to emailsender system setting.",
+                    "description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like mail@yourdomain.com. Defaults to emailsender system setting.",
                     "category": "Autoresponder",
                     "sortOrder": "2",
                     "type": "email",
@@ -47,7 +47,7 @@
                 },{
                     "caption": "Autoresponse message",
                     "name": "fb_autoresponder_message",
-                    "description": "The content of the email that will be sent. You can use placeholders here from the form fields you used. Just use the syntax [[+fb123-field-name]], so complete with prefix and correct name of the input field.",
+                    "description": "The content of the email that will be sent. You can use placeholders here from the form fields with the following syntax: [[+fb123-field-name]]. So with ID prefix and hyphenated field name.",
                     "category": "Autoresponder",
                     "sortOrder": "11",
                     "type": "richtext",

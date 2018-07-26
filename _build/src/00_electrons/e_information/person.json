@@ -25,7 +25,7 @@
                 },{
                     "caption": "Informal picture",
                     "name": "person_image_loose",
-                    "description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in a mouseover effect with the profile picture for example, or in areas where a little playfulness is allowed.",
+                    "description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in areas and situations where a little playfulness is allowed.",
                     "type": "imageplus",
                     "category": "Person - Presentation",
                     "sortOrder": "1",

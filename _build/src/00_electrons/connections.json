@@ -28,7 +28,7 @@
                 },{
                     "caption": "Contributors",
                     "name": "contributors_id",
-                    "description": "Link the team members that worked on this item. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
+                    "description": "Team members that worked on this item. You can only select persons listed on your Team page, so if you want to add external contributors: add them to the team page first (can be unpublished).",
                     "type": "listbox-multiple",
                     "inputOptionValues": "@CHUNK tvSelectTeam",
                     "category": "Connections",

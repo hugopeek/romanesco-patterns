@@ -16,7 +16,7 @@
                 },{
                     "caption": "Call to action (CTA)",
                     "name": "header_cta",
-                    "description": "Select a CTA for display in header. CTAs can be created under Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. CTAs are not inherited by default.",
+                    "description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
                     "type": "listbox",
                     "category": "Header",
                     "sortOrder": "20",

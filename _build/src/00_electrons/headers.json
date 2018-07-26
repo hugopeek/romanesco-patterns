@@ -5,7 +5,7 @@
                 {
                     "caption": "Header visibility",
                     "name": "header_visibility",
-                    "description": "Do you want to display the header on this page? If you turn this off, the page starts with the content area but the navigation bar will still be visible. This setting is inherited by default, but you can change this with the Inheritance setting below.",
+                    "description": "If you turn this off, the page starts with the content area but the navigation bar will still be visible. Inherited by default, but you can change this with the Inheritance setting below.",
                     "type": "listbox",
                     "category": "Header",
                     "sortOrder": "1",
@@ -17,7 +17,7 @@
                 },{
                     "caption": "Main title",
                     "name": "header_title",
-                    "description": "This will be displayed in the header section, below navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
+                    "description": "Title below the navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
                     "type": "text",
                     "category": "Header",
                     "sortOrder": "5",
@@ -39,7 +39,7 @@
                 },{
                     "caption": "Background image",
                     "name": "header_background_img",
-                    "description": "Use an Overview image of this resource as background. This will override the regular Background setting above and will NOT be inherited on child pages. If you want to use an image and inherit it too, add it as Global Background instead.",
+                    "description": "Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.",
                     "type": "option",
                     "category": "Header",
                     "sortOrder": "11",
@@ -50,7 +50,7 @@
                 },{
                     "caption": "Inheritance",
                     "name": "header_inheritance",
-                    "description": "Select which elements to display on all child pages of this resource too. NB: when you turn inheritance OFF for an element, it will return to its default value from then on. This change, however, is NOT reflected under Template Variables (yet)!",
+                    "description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
                     "type": "checkbox",
                     "category": "Header",
                     "sortOrder": "99",

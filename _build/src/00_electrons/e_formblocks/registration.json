@@ -5,7 +5,7 @@
                 {
                     "caption": "Activation",
                     "name": "fb_activation_toggle",
-                    "description": "Whether or not new users need to activate their account via email. IMPORTANT! For the activation process to know which email address to use, the Input (Email) field needs to be present in the form. And beware of bots when activating a user immediately!",
+                    "description": "Whether or not new users need to activate their account via email. IMPORTANT! For the activation process to know which address to use, the Input (Email) field needs to be present in the form.",
                     "category": "Registration",
                     "sortOrder": "1",
                     "type": "option",
@@ -15,7 +15,7 @@
                 },{
                     "caption": "Activation page",
                     "name": "fb_activation_resource_id",
-                    "description": "The page where the ConfirmRegister snippet for email activation is located. Enter the ID of the page, or drag the page from the menu tree to this input field. Defaults to the activation_resource_id system setting.",
+                    "description": "Page containing the ConfirmRegister snippet for email activation. Enter page ID or drag the page from the menu tree to this input field. Defaults to the activation_resource_id system setting.",
                     "category": "Registration",
                     "sortOrder": "2",
                     "type": "number",
@@ -40,7 +40,7 @@
                 },{
                     "caption": "Username field",
                     "name": "fb_username_field",
-                    "description": "The name of the form field where the new user will enter a username. You can use the label name of the ContentBlock field here, or the name in the HTML. You can also enter the email field as username, if that suits your use case better.",
+                    "description": "Name of the form field that will receive the username. You can use the label name of the CB field here, or the input name in the HTML.",
                     "category": "Registration",
                     "sortOrder": "10",
                     "type": "text",
@@ -48,7 +48,7 @@
                 },{
                     "caption": "Password field",
                     "name": "fb_password_field",
-                    "description": "The name of the form field where the new user will enter a password. If you leave this empty, a password will be generated instead. You can use the label name of the ContentBlock field here, or the name in the HTML.",
+                    "description": "Name of the form field that will receive a password. If empty, a password will be generated instead. You can use the label name of the CB field here, or the input name in the HTML.",
                     "category": "Registration",
                     "sortOrder": "11",
                     "type": "text",

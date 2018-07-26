@@ -8,11 +8,11 @@
                     "category": "f_basic"
                 },{
                     "name": "getContextSetting",
-                    "description": "Retrieve a specific setting from a context of choice. A possible scenario where you might want to \"borrow\" a setting from another context, is when certain assets are only available in that context. This snippet lets you retrieve the correct site_url.",
+                    "description": "Retrieve a specific setting from a context of choice. Useful if you want to \"borrow\" a setting from another context, e.g. the correct site_url for assets only available in that context.",
                     "category": "f_basic"
                 },{
                     "name": "getElementDescription",
-                    "description": "Retrieve the description of an element of choice. Used in the front-end library to prevent having to enter the same information twice. So if you're browsing the pattern library, then yes: this paragraph is also loaded with getElementDescription!",
+                    "description": "Retrieve the description of an element. Used in the front-end library to prevent having to enter the same information twice. This paragraph is also loaded with getElementDescription!",
                     "category": "f_basic"
                 },{
                     "name": "firstChildID",
@@ -28,7 +28,7 @@
                     "category": "f_modifiers"
                 },{
                     "name": "splitString",
-                    "description": "Divide string into multiple sections, based on a delimiter. If used as a regular snippet, each part is output to a separate placeholder. If used as output modifier, you need to specify the number of the part you want to get.",
+                    "description": "Divide string into multiple sections, based on a delimiter. Regular snippet call outputs sections to placeholders. If used as output modifier, specify the number of the part you want to get.",
                     "category": "f_modifiers"
                 },{
                     "name": "parseTags",
@@ -56,7 +56,7 @@
                     "category": "f_resources"
                 },{
                     "name": "getCrosslinks",
-                    "description": "Return the IDs of all resources that link to current resource through a certain TV. Did that make sense? It means you can scan your project for other resources linked to the current one. I.e.: show relevant book reviews in blog posts and vice versa.",
+                    "description": "Return the IDs of resources that link to current resource through a given TV. Did that make sense? For example: you can show things like relevant tags or reviews in blog posts and vice versa.",
                     "category": "f_resources"
                 },{
                     "name": "resourceTVInputOptions",
@@ -64,7 +64,7 @@
                     "category": "f_resources"
                 },{
                     "name": "resourceMediaPath",
-                    "description": "Standalone version of a snippet that comes with MIGX, which generates subfolders in media sources. If you are expecting lots of images to be added inside lots of resources (say: a portfolio), resourceMediaPath will keep your folder structure tidy.",
+                    "description": "Standalone version of a snippet that comes with MIGX. Generates subfolders in media sources. Keeps your folder structure tidy when adding lots of images in lots of resources (e.g. galleries).",
                     "category": "f_resources"
                 },{
                     "name": "jsonGetValue",
@@ -116,7 +116,7 @@
                     "category": "f_presentation"
                 },{
                     "name": "getRawTVValue",
-                    "description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you might want to get the unprocessed value instead, for instance if @inherit is being used.",
+                    "description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you need the unprocessed value instead, e.g. when using @inherit.",
                     "category": "f_templatevars"
                 },{
                     "name": "getTmplvarID",

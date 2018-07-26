@@ -626,7 +626,7 @@
 				{
 					"caption": "Contributors",
 					"name": "contributors_id",
-					"description": "Link the team members that worked on this item. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).",
+					"description": "Team members that worked on this item. You can only select persons listed on your Team page, so if you want to add external contributors: add them to the team page first (can be unpublished).",
 					"type": "listbox-multiple",
 					"inputOptionValues": "@CHUNK tvSelectTeam",
 					"category": "Connections",
@@ -660,7 +660,7 @@
 				{
 					"caption": "Call to action (CTA)",
 					"name": "header_cta",
-					"description": "Select a CTA for display in header. CTAs can be created under Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. CTAs are not inherited by default.",
+					"description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
 					"type": "listbox",
 					"category": "Header",
 					"sortOrder": "20",
@@ -826,7 +826,7 @@
 				{
 					"caption": "Dynamic recipient address",
 					"name": "fb_email_to_dynamic",
-					"description": "You can place any snippet / FastField call here that outputs a single email address. Retrieve something inside a resource by using the [[+current_id]] value. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+					"description": "Optional. Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
 					"category": "Settings - Advanced",
 					"sortOrder": "10",
 					"type": "textarea",
@@ -837,7 +837,7 @@
 				{
 					"caption": "Dynamic redirect page",
 					"name": "fb_redirect_dynamic",
-					"description": "This works the same way as the dynamic recipient address field: enter any formula that is able to decide where to redirect the user after form submission. If left empty, it falls back on the ID provided under general settings.",
+					"description": "Optional. Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.",
 					"category": "Settings - Advanced",
 					"sortOrder": "11",
 					"type": "text",
@@ -860,7 +860,7 @@
 				{
 					"caption": "Email template rows",
 					"name": "fb_email_template_rows",
-					"description": "Optional. Name of the chunk containing the customized HTML for the template rows. This will be used to display each individual field in your email. Use [[+label]] and [[+value]] placeholders to show the content.",
+					"description": "Optional. Chunk containing the customized HTML for the template rows. This will be used to display each field in your email. Use [[+label]] and [[+value]] placeholders to show the content.",
 					"category": "Settings - Advanced",
 					"sortOrder": "21",
 					"type": "text",
@@ -925,7 +925,7 @@
 				{
 					"caption": "Header visibility",
 					"name": "header_visibility",
-					"description": "Do you want to display the header on this page? If you turn this off, the page starts with the content area but the navigation bar will still be visible. This setting is inherited by default, but you can change this with the Inheritance setting below.",
+					"description": "If you turn this off, the page starts with the content area but the navigation bar will still be visible. Inherited by default, but you can change this with the Inheritance setting below.",
 					"type": "listbox",
 					"category": "Header",
 					"sortOrder": "1",
@@ -965,7 +965,7 @@
 				{
 					"caption": "Main title",
 					"name": "header_title",
-					"description": "This will be displayed in the header section, below navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
+					"description": "Title below the navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
 					"type": "text",
 					"category": "Header",
 					"sortOrder": "5",
@@ -1043,7 +1043,7 @@
 				{
 					"caption": "Background image",
 					"name": "header_background_img",
-					"description": "Use an Overview image of this resource as background. This will override the regular Background setting above and will NOT be inherited on child pages. If you want to use an image and inherit it too, add it as Global Background instead.",
+					"description": "Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.",
 					"type": "option",
 					"category": "Header",
 					"sortOrder": "11",
@@ -1082,7 +1082,7 @@
 				{
 					"caption": "Inheritance",
 					"name": "header_inheritance",
-					"description": "Select which elements to display on all child pages of this resource too. NB: when you turn inheritance OFF for an element, it will return to its default value from then on. This change, however, is NOT reflected under Template Variables (yet)!",
+					"description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
 					"type": "checkbox",
 					"category": "Header",
 					"sortOrder": "99",
@@ -1122,7 +1122,7 @@
 				{
 					"caption": "Project timeline",
 					"name": "project_hub_timeline",
-					"description": "In this timeline you can keep track of the project's progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
+					"description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
 					"type": "migx",
 					"category": "Project Hub",
 					"sortOrder": "1",
@@ -1136,7 +1136,7 @@
 				{
 					"caption": "Status indicator",
 					"name": "status_indicator",
-					"description": "How is this resource doing?",
+					"description": "What is the current development stage and condition of this page?",
 					"type": "option",
 					"category": "Status",
 					"sortOrder": "1",
@@ -1258,7 +1258,7 @@
 				{
 					"caption": "Help!",
 					"name": "status_help",
-					"description": "What seems to be the problem? You can explain it in more detail in the Notes section below. If you are getting an error message, please include the exact phrase in your note, together with the step(s) you performed prior to the error.",
+					"description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
 					"type": "checkbox",
 					"category": "Status",
 					"sortOrder": "4",
@@ -1301,7 +1301,7 @@
 				{
 					"caption": "Notes / Explanations",
 					"name": "status_notes",
-					"description": "You can add multiple notes here, effectively creating a little journal of this page. The latest notes are shown on top, and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
+					"description": "Create a mini journal of this page. Latest notes are shown on top and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
 					"type": "migx",
 					"category": "Status",
 					"sortOrder": "99",
@@ -1594,7 +1594,7 @@
 				{
 					"caption": "Link / button text",
 					"name": "overview_link_text",
-					"description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Remember that if no button text is set in Overview CB, no button will be shown!",
+					"description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!",
 					"type": "text",
 					"category": "Overview - Settings",
 					"sortOrder": "1",
@@ -1765,7 +1765,7 @@
 				{
 					"caption": "Autoresponder FROM address",
 					"name": "fb_autoresponder_from",
-					"description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like noreply@yourdomain.com. Defaults to emailsender system setting.",
+					"description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like mail@yourdomain.com. Defaults to emailsender system setting.",
 					"category": "Autoresponder",
 					"sortOrder": "2",
 					"type": "email",
@@ -1809,7 +1809,7 @@
 				{
 					"caption": "Autoresponse message",
 					"name": "fb_autoresponder_message",
-					"description": "The content of the email that will be sent. You can use placeholders here from the form fields you used. Just use the syntax [[+fb123-field-name]], so complete with prefix and correct name of the input field.",
+					"description": "The content of the email that will be sent. You can use placeholders here from the form fields with the following syntax: [[+fb123-field-name]]. So with ID prefix and hyphenated field name.",
 					"category": "Autoresponder",
 					"sortOrder": "11",
 					"type": "richtext",
@@ -1820,7 +1820,7 @@
 				{
 					"caption": "Activation",
 					"name": "fb_activation_toggle",
-					"description": "Whether or not new users need to activate their account via email. IMPORTANT! For the activation process to know which email address to use, the Input (Email) field needs to be present in the form. And beware of bots when activating a user immediately!",
+					"description": "Whether or not new users need to activate their account via email. IMPORTANT! For the activation process to know which address to use, the Input (Email) field needs to be present in the form.",
 					"category": "Registration",
 					"sortOrder": "1",
 					"type": "option",
@@ -1833,7 +1833,7 @@
 				{
 					"caption": "Activation page",
 					"name": "fb_activation_resource_id",
-					"description": "The page where the ConfirmRegister snippet for email activation is located. Enter the ID of the page, or drag the page from the menu tree to this input field. Defaults to the activation_resource_id system setting.",
+					"description": "Page containing the ConfirmRegister snippet for email activation. Enter page ID or drag the page from the menu tree to this input field. Defaults to the activation_resource_id system setting.",
 					"category": "Registration",
 					"sortOrder": "2",
 					"type": "number",
@@ -1867,7 +1867,7 @@
 				{
 					"caption": "Username field",
 					"name": "fb_username_field",
-					"description": "The name of the form field where the new user will enter a username. You can use the label name of the ContentBlock field here, or the name in the HTML. You can also enter the email field as username, if that suits your use case better.",
+					"description": "Name of the form field that will receive the username. You can use the label name of the CB field here, or the input name in the HTML.",
 					"category": "Registration",
 					"sortOrder": "10",
 					"type": "text",
@@ -1878,7 +1878,7 @@
 				{
 					"caption": "Password field",
 					"name": "fb_password_field",
-					"description": "The name of the form field where the new user will enter a password. If you leave this empty, a password will be generated instead. You can use the label name of the ContentBlock field here, or the name in the HTML.",
+					"description": "Name of the form field that will receive a password. If empty, a password will be generated instead. You can use the label name of the CB field here, or the input name in the HTML.",
 					"category": "Registration",
 					"sortOrder": "11",
 					"type": "text",
@@ -2245,7 +2245,7 @@
 				{
 					"caption": "Informal picture",
 					"name": "person_image_loose",
-					"description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in a mouseover effect with the profile picture for example, or in areas where a little playfulness is allowed.",
+					"description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in areas and situations where a little playfulness is allowed.",
 					"type": "imageplus",
 					"category": "Person - Presentation",
 					"sortOrder": "1",
@@ -2476,7 +2476,7 @@
 				},
 				{
 					"name": "fbSelectOptionRowTag",
-					"description": "A row template for options that let you select a tag. Initially designed to work with tags created by the Tagger extra, but could work with any tag system that outputs a [[+tag]] and an [[+alias]] placeholder.",
+					"description": "A row template for options that let you select a tag. Initially designed to work with the Tagger extra, but should work with any tag system that outputs [[+tag]] and [[+alias]] placeholders.",
 					"category": "a_fb_inputs"
 				},
 				{
@@ -2486,7 +2486,7 @@
 				},
 				{
 					"name": "fbInputFileMultiple",
-					"description": "If you want to let users upload more than 1 file, you need to replace the default file input field with this AjaxUpload field. The AjaxUpload extra takes care of both frontend functionality and backend processing. Just make sure it's installed!",
+					"description": "Use this file input field if you want users to upload more than 1 file. The AjaxUpload extra takes care of frontend functionality and backend processing. Just make sure it's installed!",
 					"category": "a_fb_inputs"
 				},
 				{
@@ -2913,12 +2913,12 @@
 				},
 				{
 					"name": "hero",
-					"description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor fine grained control over the output while keeping it easy to configure.",
+					"description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor some control over the output.",
 					"category": "m_presentation"
 				},
 				{
 					"name": "heroTitles",
-					"description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (H1/H2 or the likes).",
+					"description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
 					"category": "m_presentation"
 				},
 				{
@@ -2963,7 +2963,7 @@
 				},
 				{
 					"name": "cardsRowBasicLink",
-					"description": "Similar to cardsRowBasic, but it expects the parent to decide if the card should link somewhere or not. In other words: this template contains no links itself. This can be (ab)used to create cards without any link at all.",
+					"description": "Similar to cardsRowBasic, but lets the parent decide if the card should be a link or not. In other words: it contains NO links itself. Can be (ab)used to create cards without any link at all.",
 					"category": "m_presentation"
 				},
 				{
@@ -2973,7 +2973,7 @@
 				},
 				{
 					"name": "cardsRowFlexible",
-					"description": "A template for the slightly more advanced Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
+					"description": "Template for Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
 					"category": "m_presentation"
 				},
 				{
@@ -3234,6 +3234,10 @@
 				},
 				{
 					"name": "buttonSocialConnectYoutube",
+					"category": "a_btn_social"
+				},
+				{
+					"name": "buttonSocialConnectGithub",
 					"category": "a_btn_social"
 				},
 				{
@@ -3815,7 +3819,7 @@
 				},
 				{
 					"name": "cbRenderCodeField",
-					"description": "This snippet can be used in a CB Code field in conjunction with a field setting, to control how the :tag modifier is rendered. Useful for dealing with MODX tags inside a Code field, i.e. when writing documentation.",
+					"description": "For use in a CB Code field, together with a field setting to control how the :tag modifier is rendered. Useful for dealing with MODX tags inside a Code field, i.e. when writing documentation.",
 					"category": "f_contentblocks"
 				},
 				{
@@ -3906,12 +3910,12 @@
 				},
 				{
 					"name": "getContextSetting",
-					"description": "Retrieve a specific setting from a context of choice. A possible scenario where you might want to \"borrow\" a setting from another context, is when certain assets are only available in that context. This snippet lets you retrieve the correct site_url.",
+					"description": "Retrieve a specific setting from a context of choice. Useful if you want to \"borrow\" a setting from another context, e.g. the correct site_url for assets only available in that context.",
 					"category": "f_basic"
 				},
 				{
 					"name": "getElementDescription",
-					"description": "Retrieve the description of an element of choice. Used in the front-end library to prevent having to enter the same information twice. So if you're browsing the pattern library, then yes: this paragraph is also loaded with getElementDescription!",
+					"description": "Retrieve the description of an element. Used in the front-end library to prevent having to enter the same information twice. This paragraph is also loaded with getElementDescription!",
 					"category": "f_basic"
 				},
 				{
@@ -3931,7 +3935,7 @@
 				},
 				{
 					"name": "splitString",
-					"description": "Divide string into multiple sections, based on a delimiter. If used as a regular snippet, each part is output to a separate placeholder. If used as output modifier, you need to specify the number of the part you want to get.",
+					"description": "Divide string into multiple sections, based on a delimiter. Regular snippet call outputs sections to placeholders. If used as output modifier, specify the number of the part you want to get.",
 					"category": "f_modifiers"
 				},
 				{
@@ -3966,7 +3970,7 @@
 				},
 				{
 					"name": "getCrosslinks",
-					"description": "Return the IDs of all resources that link to current resource through a certain TV. Did that make sense? It means you can scan your project for other resources linked to the current one. I.e.: show relevant book reviews in blog posts and vice versa.",
+					"description": "Return the IDs of resources that link to current resource through a given TV. Did that make sense? For example: you can show things like relevant tags or reviews in blog posts and vice versa.",
 					"category": "f_resources"
 				},
 				{
@@ -3976,7 +3980,7 @@
 				},
 				{
 					"name": "resourceMediaPath",
-					"description": "Standalone version of a snippet that comes with MIGX, which generates subfolders in media sources. If you are expecting lots of images to be added inside lots of resources (say: a portfolio), resourceMediaPath will keep your folder structure tidy.",
+					"description": "Standalone version of a snippet that comes with MIGX. Generates subfolders in media sources. Keeps your folder structure tidy when adding lots of images in lots of resources (e.g. galleries).",
 					"category": "f_resources"
 				},
 				{
@@ -4041,7 +4045,7 @@
 				},
 				{
 					"name": "getRawTVValue",
-					"description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you might want to get the unprocessed value instead, for instance if @inherit is being used.",
+					"description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you need the unprocessed value instead, e.g. when using @inherit.",
 					"category": "f_templatevars"
 				},
 				{
@@ -4116,13 +4120,13 @@
 				},
 				{
 					"name": "setResourceIDs",
-					"description": "Looks for resource IDs of Romanesco pages that were built by the Romanesco Backyard package. When a resource is found, the referring system setting is updated with the corresponding ID. Disabled by default.",
+					"description": "Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.",
 					"category": "c_settings",
 					"events": []
 				},
 				{
 					"name": "UpdateStyling",
-					"description": "Gets triggered when theme settings are changed in the ClientConfig CMP. It updates certain Semantic UI variables and triggers a new SUI build in the background. Requires NPM and the EXEC function to be available on the server.",
+					"description": "Fires when theme settings are changed under Configuration. It updates Semantic UI theme.variables and triggers a new SUI build in the background. Requires NPM and EXEC function on the server.",
 					"category": "c_settings",
 					"events": [
 						"ClientConfig_ConfigChange"
@@ -4191,7 +4195,7 @@
 				"key": "dev_mode",
 				"type": "combo-boolean",
 				"area": "Settings",
-				"value": "1"
+				"value": "0"
 			},
 			{
 				"key": "cb_field_code_id",

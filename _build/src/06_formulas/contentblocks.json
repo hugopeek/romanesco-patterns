@@ -8,7 +8,7 @@
                     "category": "f_contentblocks"
                 },{
                     "name": "cbRenderCodeField",
-                    "description": "This snippet can be used in a CB Code field in conjunction with a field setting, to control how the :tag modifier is rendered. Useful for dealing with MODX tags inside a Code field, i.e. when writing documentation.",
+                    "description": "For use in a CB Code field, together with a field setting to control how the :tag modifier is rendered. Useful for dealing with MODX tags inside a Code field, i.e. when writing documentation.",
                     "category": "f_contentblocks"
                 }
             ],

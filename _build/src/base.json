@@ -71,7 +71,7 @@
                 "key": "dev_mode",
                 "type": "combo-boolean",
                 "area": "Settings",
-                "value": "1"
+                "value": "0"
             }
         ]
     }

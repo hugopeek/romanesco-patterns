@@ -5,7 +5,7 @@
                 {
                     "caption": "Project timeline",
                     "name": "project_hub_timeline",
-                    "description": "In this timeline you can keep track of the project's progress and see what's coming up next. You can also link to all related project files and resources from here, so you can find them back more easily.",
+                    "description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
                     "type": "migx",
                     "category": "Project Hub",
                     "sortOrder": "1",
@@ -18,7 +18,7 @@
                 },{
                     "caption": "Status indicator",
                     "name": "status_indicator",
-                    "description": "How is this resource doing?",
+                    "description": "What is the current development stage and condition of this page?",
                     "type": "option",
                     "category": "Status",
                     "sortOrder": "1",
@@ -56,7 +56,7 @@
                 },{
                     "caption": "Help!",
                     "name": "status_help",
-                    "description": "What seems to be the problem? You can explain it in more detail in the Notes section below. If you are getting an error message, please include the exact phrase in your note, together with the step(s) you performed prior to the error.",
+                    "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
                     "type": "checkbox",
                     "category": "Status",
                     "sortOrder": "4",
@@ -71,7 +71,7 @@
                 },{
                     "caption": "Notes / Explanations",
                     "name": "status_notes",
-                    "description": "You can add multiple notes here, effectively creating a little journal of this page. The latest notes are shown on top, and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
+                    "description": "Create a mini journal of this page. Latest notes are shown on top and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
                     "type": "migx",
                     "category": "Status",
                     "sortOrder": "99",

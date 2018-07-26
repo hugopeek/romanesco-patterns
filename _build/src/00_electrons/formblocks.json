@@ -106,7 +106,7 @@
                 },{
                     "caption": "Dynamic recipient address",
                     "name": "fb_email_to_dynamic",
-                    "description": "You can place any snippet / FastField call here that outputs a single email address. Retrieve something inside a resource by using the [[+current_id]] value. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+                    "description": "Optional. Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
                     "category": "Settings - Advanced",
                     "sortOrder": "10",
                     "type": "textarea",
@@ -114,7 +114,7 @@
                 },{
                     "caption": "Dynamic redirect page",
                     "name": "fb_redirect_dynamic",
-                    "description": "This works the same way as the dynamic recipient address field: enter any formula that is able to decide where to redirect the user after form submission. If left empty, it falls back on the ID provided under general settings.",
+                    "description": "Optional. Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.",
                     "category": "Settings - Advanced",
                     "sortOrder": "11",
                     "type": "text",
@@ -133,7 +133,7 @@
                 },{
                     "caption": "Email template rows",
                     "name": "fb_email_template_rows",
-                    "description": "Optional. Name of the chunk containing the customized HTML for the template rows. This will be used to display each individual field in your email. Use [[+label]] and [[+value]] placeholders to show the content.",
+                    "description": "Optional. Chunk containing the customized HTML for the template rows. This will be used to display each field in your email. Use [[+label]] and [[+value]] placeholders to show the content.",
                     "category": "Settings - Advanced",
                     "sortOrder": "21",
                     "type": "text",

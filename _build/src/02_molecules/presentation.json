@@ -4,11 +4,11 @@
             "chunks": [
                 {
                     "name": "hero",
-                    "description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor fine grained control over the output while keeping it easy to configure.",
+                    "description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor some control over the output.",
                     "category": "m_presentation"
                 },{
                     "name": "heroTitles",
-                    "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (H1/H2 or the likes).",
+                    "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
                     "category": "m_presentation"
                 },{
                     "name": "heroVertical",
@@ -44,7 +44,7 @@
                     "category": "m_presentation"
                 },{
                     "name": "cardsRowBasicLink",
-                    "description": "Similar to cardsRowBasic, but it expects the parent to decide if the card should link somewhere or not. In other words: this template contains no links itself. This can be (ab)used to create cards without any link at all.",
+                    "description": "Similar to cardsRowBasic, but lets the parent decide if the card should be a link or not. In other words: it contains NO links itself. Can be (ab)used to create cards without any link at all.",
                     "category": "m_presentation"
                 },{
                     "name": "cardsRowInnerWrapper",
@@ -52,7 +52,7 @@
                     "category": "m_presentation"
                 },{
                     "name": "cardsRowFlexible",
-                    "description": "A template for the slightly more advanced Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
+                    "description": "Template for Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
                     "category": "m_presentation"
                 }
             ],
