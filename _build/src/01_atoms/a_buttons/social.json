@@ -24,6 +24,9 @@
                     "name": "buttonSocialConnectYoutube",
                     "category": "a_btn_social"
                 },{
+                    "name": "buttonSocialConnectGithub",
+                    "category": "a_btn_social"
+                },{
                     "name": "buttonSocialShareFacebook",
                     "category": "a_btn_social"
                 },{
