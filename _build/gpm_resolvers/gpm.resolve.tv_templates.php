@@ -67,10 +67,16 @@ if ($object->xpdo) {
   'fb_email_subject' => 
   array (
     0 => 'fbForm',
+    1 => 'fbRegister',
+  ),
+  'fb_activation_email' => 
+  array (
+    0 => 'fbRegister',
   ),
   'fb_redirect_id' => 
   array (
     0 => 'fbForm',
+    1 => 'fbRegister',
   ),
   'fb_submit_button' => 
   array (
@@ -83,10 +89,12 @@ if ($object->xpdo) {
   'fb_prehooks' => 
   array (
     0 => 'fbForm',
+    1 => 'fbRegister',
   ),
   'fb_hooks' => 
   array (
     0 => 'fbForm',
+    1 => 'fbRegister',
   ),
   'fb_email_to_dynamic' => 
   array (
@@ -95,6 +103,7 @@ if ($object->xpdo) {
   'fb_redirect_dynamic' => 
   array (
     0 => 'fbForm',
+    1 => 'fbRegister',
   ),
   'fb_email_template' => 
   array (
@@ -127,6 +136,38 @@ if ($object->xpdo) {
   'fb_autoresponder_message' => 
   array (
     0 => 'fbForm',
+  ),
+  'fb_activation_toggle' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_activation_resource_id' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_activation_ttl' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_username_field' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_password_field' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_usergroups' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_usergroups_field' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_extended_toggle' => 
+  array (
+    0 => 'fbRegister',
   ),
   'global_background_img' => 
   array (

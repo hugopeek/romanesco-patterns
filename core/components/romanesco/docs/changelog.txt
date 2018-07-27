@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.12.1
-Upcoming release
+Released on July 27, 2018
 
 New features:
 - Add registration form template to FormBlocks
@@ -9,6 +9,9 @@ New features:
 - Exclude members only submenu items in vertical nav and KB overviews
 
 Fixes and improvements:
+- Shorten element descriptions to 191 characters (this changed in MODX 2.6)
+- Disable raw code tag in pattern examples (this broke in MODX 2.6)
+- Add Github to social buttons (and some other small tweaks)
 - Add setting to make project hub private (require login)
 - Load Google Analytics if configuration / context setting is set
 - Fix object not found handling in latest plugins
