@@ -1,5 +1,17 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.12.2
+Released on ...
+
+New features:
+- Add option to wrap CTAs in segment
+
+Fixes and improvements:
+- Fix empty subtitles returning as NULL in Tab headers
+- Fix fallback image in publication overviews
+- Better explanation for Label position setting in forms
+- Remove hideEmptyTVCategories plugin (hidden by default in MODX 2.6)
+
 ## Romanesco Patterns 0.12.1
 Released on July 27, 2018
 
@@ -12,7 +24,7 @@ Fixes and improvements:
 - Shorten element descriptions to 191 characters (this changed in MODX 2.6)
 - Disable raw code tag in pattern examples (this broke in MODX 2.6)
 - Add Github to social buttons (and some other small tweaks)
-- Add setting to make project hub private (require login)
+- Add setting to make project hub private (requires Login)
 - Load Google Analytics if configuration / context setting is set
 - Fix object not found handling in latest plugins
 - Fix snippet not found errors for empty fastField tags in MODX 2.6

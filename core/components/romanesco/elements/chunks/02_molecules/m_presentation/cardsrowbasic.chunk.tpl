@@ -5,9 +5,9 @@
 `]]
 <div class="content">
     [[+heading:notempty=`
-    <a href="[[+link]]">
-        <[[+heading_level]] class="header">[[+heading]]</[[+heading_level]]>
-    </a>
+    <[[+heading_level]] class="header">
+        <a href="[[+link]]">[[+heading]]</a>
+    </[[+heading_level]]>
     `]]
     [[+subtitle:notempty=`
     <div class="meta">[[+subtitle]]</div>

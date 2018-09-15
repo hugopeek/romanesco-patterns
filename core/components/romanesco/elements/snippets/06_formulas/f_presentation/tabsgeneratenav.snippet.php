@@ -49,13 +49,23 @@ foreach($tabs as $tab) {
     if ($tab['icon'] > 0) {
         $tpl = $tplIcon;
     }
-    $tabheaders .= $modx->getChunk($tpl, array(
+
+    // Check if subtitle is not null (it returns as not empty sometimes)
+    if (is_null($tab['subtitle'])) {
+        $subtitle = $tab['subtitle'];
+    } else {
+        $subtitle = '';
+    }
+
+    $properties = array(
         'idx' => $idx,
         'heading' => $tab['heading'],
         'level' => $tab['level'],
-        'subtitle' => $tab['subtitle'],
+        'subtitle' => $subtitle,
         'icon' => $tab['icon'],
-    ));
+    );
+
+    $tabheaders .= $modx->getChunk($tpl, $properties);
     $idx++;
 }
 

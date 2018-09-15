@@ -14,10 +14,6 @@
                     "name": "ClearCustomCache",
                     "category": "c_global",
                     "events": [""]
-                },{
-                    "name": "hideEmptyTVCategories",
-                    "category": "c_global",
-                    "events": ["OnManagerPageInit"]
                 }
             ],
 
