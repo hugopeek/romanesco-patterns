@@ -50,18 +50,11 @@ foreach($tabs as $tab) {
         $tpl = $tplIcon;
     }
 
-    // Check if subtitle is not null (it returns as not empty sometimes)
-    if (is_null($tab['subtitle'])) {
-        $subtitle = $tab['subtitle'];
-    } else {
-        $subtitle = '';
-    }
-
     $properties = array(
         'idx' => $idx,
         'heading' => $tab['heading'],
         'level' => $tab['level'],
-        'subtitle' => $subtitle,
+        'subtitle' => $tab['subtitle'],
         'icon' => $tab['icon'],
     );
 

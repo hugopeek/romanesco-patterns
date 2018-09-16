@@ -4,6 +4,10 @@
    aria-selected="false">
     <[[+level]] class="ui [[+level:is=`span`:then=`tiny`]] header">
         [[+heading]]
-        [[+subtitle:notempty=`<span class="sub header">[[+subtitle]]</span>`]]
+        [[If?
+            &subject=`[[+subtitle]]`
+            &operator=`notempty`
+            &then=`<span class="sub header">[[+subtitle]]</span>`
+        ]]
     </[[+level]]>
 </div>
