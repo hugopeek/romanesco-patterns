@@ -3269,6 +3269,10 @@
 					"category": "a_cb_fields"
 				},
 				{
+					"name": "cbFieldSize",
+					"category": "a_cb_fields"
+				},
+				{
 					"name": "cbFieldSegmentType",
 					"category": "a_cb_fields"
 				},
@@ -3282,10 +3286,6 @@
 				},
 				{
 					"name": "cbFieldMessageType",
-					"category": "a_cb_fields"
-				},
-				{
-					"name": "cbFieldMessageSize",
 					"category": "a_cb_fields"
 				},
 				{
@@ -4109,13 +4109,6 @@
 					"category": "c_global",
 					"events": [
 						""
-					]
-				},
-				{
-					"name": "hideEmptyTVCategories",
-					"category": "c_global",
-					"events": [
-						"OnManagerPageInit"
 					]
 				},
 				{

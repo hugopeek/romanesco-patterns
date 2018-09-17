@@ -4,9 +4,15 @@
 Released on ...
 
 New features:
-- Add option to wrap CTAs in segment
+-
 
 Fixes and improvements:
+- Add option to wrap CTAs in segment
+- Add size and layout_type settings to Quote CB
+- Add titles to button links
+- Always set first value in form dropdown as empty default option
+- Change CB message size setting to generic field size and use for Quote
+- Add inverted layout type to Accordions
 - Fix empty subtitles returning as NULL in Tab headers
 - Fix fallback image in publication overviews
 - Better explanation for Label position setting in forms
