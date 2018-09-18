@@ -1,10 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.12.2
-Released on ...
-
-New features:
--
+Released on September 18, 2018
 
 Fixes and improvements:
 - Add option to wrap CTAs in segment
