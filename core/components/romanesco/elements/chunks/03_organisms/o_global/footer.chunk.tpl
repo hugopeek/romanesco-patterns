@@ -1,4 +1,12 @@
 [[modifiedIf?
+    &subject=`[[getRawTVValue? &tv=`footer_type`]]`
+    &operator=`EQ`
+    &operand=`@INHERIT default`
+    &then=`[[[[#[[*parent]].footer_inheritance:contains=`inherit_type`:then=`*footer_type:replace=`default==[[++global_footer_id]]``:else=`++global_footer_id`]]]]`
+    &else=`[[*footer_type]]`
+    &toPlaceholder=`footer_type`
+]]
+[[modifiedIf?
     &subject=`[[getRawTVValue? &tv=`footer_background`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
@@ -22,7 +30,7 @@
 ]]]]]]
 
 <footer id="footer" class="ui vertical segment [[+footer_background]]">
-    [[#[[*footer_type:empty=`[[++global_footer_id:empty=`0`]]`]].content]]
+    [[#[[+footer_type]].content]]
 
     [[[[If?
         &subject=`[[$footerCopyrightTheme]]`
