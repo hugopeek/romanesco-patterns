@@ -1,4 +1,12 @@
 [[modifiedIf?
+    &subject=`[[getRawTVValue? &tv=`footer_visibility`]]`
+    &operator=`EQ`
+    &operand=`@INHERIT default`
+    &then=`[[[[#[[*parent]].footer_inheritance:contains=`inherit_visibility`:then=`*footer_visibility:replace=`default==[[++footer_visibility_default]]``:else=`++footer_visibility_default`]]]]`
+    &else=`[[*footer_visibility]]`
+    &toPlaceholder=`footer_visibility`
+]]
+[[modifiedIf?
     &subject=`[[getRawTVValue? &tv=`footer_type`]]`
     &operator=`EQ`
     &operand=`@INHERIT default`
@@ -29,6 +37,7 @@
     &else=`*footer_cta:notempty=`$ctaFooter``
 ]]]]]]
 
+[[+footer_visibility:eq=`1`:then=`
 <footer id="footer" class="ui vertical segment [[+footer_background]]">
     [[#[[+footer_type]].content]]
 
@@ -39,3 +48,4 @@
         &else=`$footerCopyrightTheme`
     ]]]]
 </footer>
+`]]
