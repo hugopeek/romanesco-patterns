@@ -7,6 +7,10 @@
                     "category": "c_content",
                     "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
                 },{
+                    "name": "InjectInvertedClasses",
+                    "category": "c_content",
+                    "events": ["OnWebPagePrerender"]
+                },{
                     "name": "setResourceGroup",
                     "category": "c_content",
                     "events": ["OnDocFormSave"]
