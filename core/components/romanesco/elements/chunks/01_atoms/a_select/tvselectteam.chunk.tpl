@@ -1,4 +1,4 @@
---- Select a team member ---==||
+--- Select team member ---==||
 [[getResources?
     &parents=`[[++romanesco.team_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`

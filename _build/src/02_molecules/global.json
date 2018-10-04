@@ -5,6 +5,9 @@
                 {
                     "name": "themeVariables",
                     "category": "m_global"
+                },{
+                    "name": "footerCopyright",
+                    "category": "m_global"
                 }
             ],
 

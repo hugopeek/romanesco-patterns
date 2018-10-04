@@ -1,6 +1,6 @@
---- Select testimonial ---==||
+--- Select CTA ---==@INHERIT||
 [[getResources?
-    &parents=`[[++romanesco.testimonial_container_id]]`
+    &parents=`[[++romanesco.cta_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`
@@ -8,4 +8,5 @@
     &limit=`99`
     &sortBy=`menuindex`
     &sortDir=`ASC`
+    &tvFilters=`cta_availability==%header%`
 ]]

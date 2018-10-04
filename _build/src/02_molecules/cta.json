@@ -9,6 +9,9 @@
                     "name": "ctaHeader",
                     "category": "m_cta"
                 },{
+                    "name": "ctaFooter",
+                    "category": "m_cta"
+                },{
                     "name": "ctaHeaderVertical",
                     "category": "m_cta"
                 }

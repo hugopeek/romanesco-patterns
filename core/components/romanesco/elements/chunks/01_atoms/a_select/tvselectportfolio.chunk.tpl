@@ -1,4 +1,4 @@
---- Select a project ---==||
+--- Select project ---==||
 [[getResources?
     &parents=`[[++romanesco.portfolio_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`

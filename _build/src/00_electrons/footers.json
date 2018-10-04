@@ -1,0 +1,104 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Footer visibility",
+                    "name": "footer_visibility",
+                    "description": "If you turn this off, the closing footer section will not be displayed. Inherited by default, but you can change this with the Inheritance setting below.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "1",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "On==1||Off==0||System default==default",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "Footer type",
+                    "name": "footer_type",
+                    "description": "Choose which content to display inside the footer. You can add different footers under Global Content > Footers. A default footer can be defined under Configuration, or as context setting.",
+                    "type": "option",
+                    "category": "Footer",
+                    "sortOrder": "2",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "@CHUNK tvSelectFooter",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "Background",
+                    "name": "footer_background",
+                    "description": "Select a background for this footer. You can define these backgrounds under Global Content > Backgrounds. Will also be inherited by default.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "10",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "Call to action (CTA)",
+                    "name": "footer_cta",
+                    "description": "This CTA will be displayed above the footer itself. It will have a different background than the rest of the footer, which you can select below. Inherited by default.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "20",
+                    "defaultValue": "@INHERIT",
+                    "inputOptionValues": "@CHUNK tvSelectFooterCTA",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "CTA background",
+                    "name": "footer_cta_background",
+                    "description": "Select a background for the CTA. To make it stand out, select a background that contrasts nicely with the footer background. Also inherited by default.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "21",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "Inheritance",
+                    "name": "footer_inheritance",
+                    "description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
+                    "type": "checkbox",
+                    "category": "Footer",
+                    "sortOrder": "99",
+                    "defaultValue": "@INHERIT inherit_visibility||inherit_type||inherit_background||inherit_cta||inherit_cta_background",
+                    "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit type==inherit_type||Inherit background==inherit_background||Inherit CTA==inherit_cta||Inherit CTA background==inherit_cta_background",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "e_footers",
+                    "parent": "00_electrons"
+                },{
+                    "name": "Footer",
+                    "parent": "e_footers",
+                    "rank": "99"
+                }
+            ]
+        },
+
+        "systemSettings": [
+            {
+                "key": "footer_container_id",
+                "type": "textfield",
+                "area": "Pages"
+            }
+        ]
+    }
+}

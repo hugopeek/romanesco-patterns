@@ -37,6 +37,18 @@
                         "@@templates_all"
                     ]
                 },{
+                    "caption": "Background",
+                    "name": "header_background",
+                    "description": "Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "10",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
                     "caption": "Background image",
                     "name": "header_background_img",
                     "description": "Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.",
@@ -44,6 +56,18 @@
                     "category": "Header",
                     "sortOrder": "11",
                     "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "Call to action (CTA)",
+                    "name": "header_cta",
+                    "description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "20",
+                    "defaultValue": "@INHERIT",
+                    "inputOptionValues": "@CHUNK tvSelectHeaderCTA",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -56,6 +80,10 @@
                     "sortOrder": "99",
                     "defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
                     "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
                     "templates": [
                         "@@templates_all"
                     ]

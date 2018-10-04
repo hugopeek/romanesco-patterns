@@ -1,4 +1,4 @@
---- Select a client ---==||
+--- Select client ---==||
 [[getResources?
     &parents=`[[++romanesco.client_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`

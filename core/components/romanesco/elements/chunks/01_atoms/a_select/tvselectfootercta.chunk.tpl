@@ -1,4 +1,4 @@
---- Select a CTA ---==@INHERIT||
+--- Select CTA ---==@INHERIT||
 [[getResources?
     &parents=`[[++romanesco.cta_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
@@ -8,5 +8,5 @@
     &limit=`99`
     &sortBy=`menuindex`
     &sortDir=`ASC`
-    &tvFilters=`cta_availability==%header%`
+    &tvFilters=`cta_availability==%footer%`
 ]]
