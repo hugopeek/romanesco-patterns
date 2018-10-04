@@ -1,5 +1,24 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.12.3
+Released on October 4, 2018
+
+New features:
+- Add OpenGraph metadata to head
+- Add snippet for clipping characters from start or end of string
+- Add plugin for injecting inverted classes into content (requires HtmlPageDom)
+- Add options for controlling footer and bottom CTA content
+
+Fixes and improvements:
+- Include homepage in basic template list, so they also have Overview TVs
+- Fix author image in compact article overview template
+- Disable Disqus comment count in overviews (was acting buggy)
+- Prevent decimals in calculated image dimensions from breaking variables file
+- Allow overrides for head and footer chunks in all templates
+- Fix issues when using multiple file upload fields in form
+- Sort available forms by menuindex in Forms CB
+
+
 ## Romanesco Patterns 0.12.2
 Released on September 18, 2018
 
@@ -14,6 +33,7 @@ Fixes and improvements:
 - Fix fallback image in publication overviews
 - Better explanation for Label position setting in forms
 - Remove hideEmptyTVCategories plugin (hidden by default in MODX 2.6)
+
 
 ## Romanesco Patterns 0.12.1
 Released on July 27, 2018

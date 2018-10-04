@@ -7,8 +7,13 @@
         &operator=`GT`
         &operand=`1`
         &then=`$fbInputFileMultiple`
-        &else=`$fbInputFileSingle`
     ]]]]
+    [[!If?
+        &subject=`[[+upload_limit]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`<input type="file" name="[[+name]]" id="[[+name]]">`
+    ]]
     [[+fb[[*id]].error.[[+name]]]]
     [[+field_helptext:notempty=`<span class="help">[[+field_helptext]]</span>`]]
 </div>

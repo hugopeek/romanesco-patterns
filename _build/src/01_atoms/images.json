@@ -15,6 +15,10 @@
                     "name": "imgResponsiveRowSrcset",
                     "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
                     "category": "a_images"
+                },{
+                    "name": "imgOpenGraphRow",
+                    "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
+                    "category": "a_images"
                 }
             ],
 

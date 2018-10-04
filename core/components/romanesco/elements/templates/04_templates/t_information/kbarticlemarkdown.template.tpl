@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
-[[$head]]
+[[[[If?
+    &subject=`[[$headTheme]]`
+    &operator=`isnull`
+    &then=`$head`
+    &else=`$headTheme`
+]]]]
 
 <body id="[[*alias]]" class="header-vertical">
 
@@ -40,7 +45,12 @@
             </div>
         </article>
 
-        [[$footer]]
+        [[[[If?
+            &subject=`[[$footerTheme]]`
+            &operator=`isnull`
+            &then=`$footer`
+            &else=`$footerTheme`
+        ]]]]
     </main>
 </div>
 

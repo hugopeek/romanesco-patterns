@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
-[[$head]]
+[[[[If?
+    &subject=`[[$headTheme]]`
+    &operator=`isnull`
+    &then=`$head`
+    &else=`$headTheme`
+]]]]
 
 <body id="[[*alias]]" class="overview portfolio">
 
@@ -25,7 +30,12 @@
         </article>
     </main>
 
-    [[$footer]]
+    [[[[If?
+        &subject=`[[$footerTheme]]`
+        &operator=`isnull`
+        &then=`$footer`
+        &else=`$footerTheme`
+    ]]]]
 </div>
 
 [[$offCanvasNav]]

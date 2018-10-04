@@ -6,8 +6,9 @@ $output = $modx->runSnippet('getResources', (array(
     'limit' => 99,
     'showHidden' => 1,
     'showUnpublished' => 1,
-    'tpl' => '@INLINE [[+pagetitle]]=[[+id]]'
-    )
-));
+    'tpl' => '@INLINE [[+pagetitle]]=[[+id]]',
+    'sortby' => 'menuindex',
+    'sortdir' => 'ASC',
+)));
 
 return $output;

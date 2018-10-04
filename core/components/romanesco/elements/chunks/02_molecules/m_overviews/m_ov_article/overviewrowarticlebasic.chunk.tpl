@@ -21,7 +21,7 @@
         <i class="eye icon"></i>
         [[!$getHitCount:empty=`0`]]
     </span>
-    [[+comments_toggle:eq=`1`:then=`
+    [[-+comments_toggle:eq=`1`:then=`
     <span class="comments">
         <i class="icon comments"></i>
         <a href="[[~[[+id]]? &scheme=`full`]]#disqus_thread">[[%romanesco.article.comments:lcase]]</a>

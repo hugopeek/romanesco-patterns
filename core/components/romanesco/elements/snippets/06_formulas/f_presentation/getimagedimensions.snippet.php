@@ -58,7 +58,7 @@ else {
     return '';
 }
 
-$modx->toPlaceholder($phWidth, $width, $prefix);
-$modx->toPlaceholder($phHeight, $height, $prefix);
+$modx->toPlaceholder($phWidth, round($width, 0), $prefix);
+$modx->toPlaceholder($phHeight, round($height, 0), $prefix);
 
 return '';

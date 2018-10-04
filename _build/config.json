@@ -45,6 +45,15 @@
 					"parent": "e_cta"
 				},
 				{
+					"name": "e_footers",
+					"parent": "00_electrons"
+				},
+				{
+					"name": "Footer",
+					"parent": "e_footers",
+					"rank": "99"
+				},
+				{
 					"name": "e_formblocks",
 					"parent": "00_electrons"
 				},
@@ -658,14 +667,218 @@
 					]
 				},
 				{
-					"caption": "Call to action (CTA)",
-					"name": "header_cta",
-					"description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
+					"caption": "Footer visibility",
+					"name": "footer_visibility",
+					"description": "If you turn this off, the closing footer section will not be displayed. Inherited by default, but you can change this with the Inheritance setting below.",
 					"type": "listbox",
-					"category": "Header",
+					"category": "Footer",
+					"sortOrder": "1",
+					"defaultValue": "@INHERIT default",
+					"inputOptionValues": "On==1||Off==0||System default==default",
+					"templates": [
+						"Home",
+"Homepage",
+"BasicOverview",
+"Basic - Overview",
+"BasicDetail",
+"Basic - Detail",
+"HeaderVertical",
+"Header - Vertical",
+"Publications",
+"Publications - Overview",
+"Blog",
+"ArticleTraditional",
+"Article - Traditional",
+"ArticleReadability",
+"Article - Readability",
+"ArticleSidenotes",
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Team",
+"Client",
+"Organization",
+"Relation",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial",
+"Review",
+"Endorsement"
+					]
+				},
+				{
+					"caption": "Footer type",
+					"name": "footer_type",
+					"description": "Choose which content to display inside the footer. You can add different footers under Global Content > Footers. A default footer can be defined under Configuration, or as context setting.",
+					"type": "option",
+					"category": "Footer",
+					"sortOrder": "2",
+					"defaultValue": "@INHERIT default",
+					"inputOptionValues": "@CHUNK tvSelectFooter",
+					"templates": [
+						"Home",
+"Homepage",
+"BasicOverview",
+"Basic - Overview",
+"BasicDetail",
+"Basic - Detail",
+"HeaderVertical",
+"Header - Vertical",
+"Publications",
+"Publications - Overview",
+"Blog",
+"ArticleTraditional",
+"Article - Traditional",
+"ArticleReadability",
+"Article - Readability",
+"ArticleSidenotes",
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Team",
+"Client",
+"Organization",
+"Relation",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial",
+"Review",
+"Endorsement"
+					]
+				},
+				{
+					"caption": "Background",
+					"name": "footer_background",
+					"description": "Select a background for this footer. You can define these backgrounds under Global Content > Backgrounds. Will also be inherited by default.",
+					"type": "listbox",
+					"category": "Footer",
+					"sortOrder": "10",
+					"inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+					"defaultValue": "@INHERIT",
+					"templates": [
+						"Home",
+"Homepage",
+"BasicOverview",
+"Basic - Overview",
+"BasicDetail",
+"Basic - Detail",
+"HeaderVertical",
+"Header - Vertical",
+"Publications",
+"Publications - Overview",
+"Blog",
+"ArticleTraditional",
+"Article - Traditional",
+"ArticleReadability",
+"Article - Readability",
+"ArticleSidenotes",
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Team",
+"Client",
+"Organization",
+"Relation",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial",
+"Review",
+"Endorsement"
+					]
+				},
+				{
+					"caption": "Call to action (CTA)",
+					"name": "footer_cta",
+					"description": "This CTA will be displayed above the footer itself. It will have a different background than the rest of the footer, which you can select below. Inherited by default.",
+					"type": "listbox",
+					"category": "Footer",
 					"sortOrder": "20",
 					"defaultValue": "@INHERIT",
-					"inputOptionValues": "@CHUNK tvSelectCTA",
+					"inputOptionValues": "@CHUNK tvSelectFooterCTA",
+					"templates": [
+						"Home",
+"Homepage",
+"BasicOverview",
+"Basic - Overview",
+"BasicDetail",
+"Basic - Detail",
+"HeaderVertical",
+"Header - Vertical",
+"Publications",
+"Publications - Overview",
+"Blog",
+"ArticleTraditional",
+"Article - Traditional",
+"ArticleReadability",
+"Article - Readability",
+"ArticleSidenotes",
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Team",
+"Client",
+"Organization",
+"Relation",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial",
+"Review",
+"Endorsement"
+					]
+				},
+				{
+					"caption": "CTA background",
+					"name": "footer_cta_background",
+					"description": "Select a background for the CTA. To make it stand out, select a background that contrasts nicely with the footer background. Also inherited by default.",
+					"type": "listbox",
+					"category": "Footer",
+					"sortOrder": "21",
+					"inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+					"defaultValue": "@INHERIT",
+					"templates": [
+						"Home",
+"Homepage",
+"BasicOverview",
+"Basic - Overview",
+"BasicDetail",
+"Basic - Detail",
+"HeaderVertical",
+"Header - Vertical",
+"Publications",
+"Publications - Overview",
+"Blog",
+"ArticleTraditional",
+"Article - Traditional",
+"ArticleReadability",
+"Article - Readability",
+"ArticleSidenotes",
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Team",
+"Client",
+"Organization",
+"Relation",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial",
+"Review",
+"Endorsement"
+					]
+				},
+				{
+					"caption": "Inheritance",
+					"name": "footer_inheritance",
+					"description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
+					"type": "checkbox",
+					"category": "Footer",
+					"sortOrder": "99",
+					"defaultValue": "@INHERIT inherit_visibility||inherit_type||inherit_background||inherit_cta||inherit_cta_background",
+					"inputOptionValues": "Inherit visibility==inherit_visibility||Inherit type==inherit_type||Inherit background==inherit_background||Inherit CTA==inherit_cta||Inherit CTA background==inherit_cta_background",
+					"outputProperties": {
+						"delimiter": ","
+					},
+					"display": "delim",
 					"templates": [
 						"Home",
 "Homepage",
@@ -883,46 +1096,6 @@
 					]
 				},
 				{
-					"caption": "Background",
-					"name": "header_background",
-					"description": "Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.",
-					"type": "listbox",
-					"category": "Header",
-					"sortOrder": "10",
-					"inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
-					"defaultValue": "@INHERIT",
-					"templates": [
-						"Home",
-"Homepage",
-"BasicOverview",
-"Basic - Overview",
-"BasicDetail",
-"Basic - Detail",
-"HeaderVertical",
-"Header - Vertical",
-"Publications",
-"Publications - Overview",
-"Blog",
-"ArticleTraditional",
-"Article - Traditional",
-"ArticleReadability",
-"Article - Readability",
-"ArticleSidenotes",
-"Article - Sidenotes",
-"TeamMember",
-"Team - Member",
-"Team",
-"Client",
-"Organization",
-"Relation",
-"PortfolioProject",
-"Porfolio - Project",
-"Testimonial",
-"Review",
-"Endorsement"
-					]
-				},
-				{
 					"caption": "Header visibility",
 					"name": "header_visibility",
 					"description": "If you turn this off, the page starts with the content area but the navigation bar will still be visible. Inherited by default, but you can change this with the Inheritance setting below.",
@@ -1041,6 +1214,46 @@
 					]
 				},
 				{
+					"caption": "Background",
+					"name": "header_background",
+					"description": "Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.",
+					"type": "listbox",
+					"category": "Header",
+					"sortOrder": "10",
+					"inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+					"defaultValue": "@INHERIT",
+					"templates": [
+						"Home",
+"Homepage",
+"BasicOverview",
+"Basic - Overview",
+"BasicDetail",
+"Basic - Detail",
+"HeaderVertical",
+"Header - Vertical",
+"Publications",
+"Publications - Overview",
+"Blog",
+"ArticleTraditional",
+"Article - Traditional",
+"ArticleReadability",
+"Article - Readability",
+"ArticleSidenotes",
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Team",
+"Client",
+"Organization",
+"Relation",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial",
+"Review",
+"Endorsement"
+					]
+				},
+				{
 					"caption": "Background image",
 					"name": "header_background_img",
 					"description": "Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.",
@@ -1048,6 +1261,46 @@
 					"category": "Header",
 					"sortOrder": "11",
 					"inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
+					"templates": [
+						"Home",
+"Homepage",
+"BasicOverview",
+"Basic - Overview",
+"BasicDetail",
+"Basic - Detail",
+"HeaderVertical",
+"Header - Vertical",
+"Publications",
+"Publications - Overview",
+"Blog",
+"ArticleTraditional",
+"Article - Traditional",
+"ArticleReadability",
+"Article - Readability",
+"ArticleSidenotes",
+"Article - Sidenotes",
+"TeamMember",
+"Team - Member",
+"Team",
+"Client",
+"Organization",
+"Relation",
+"PortfolioProject",
+"Porfolio - Project",
+"Testimonial",
+"Review",
+"Endorsement"
+					]
+				},
+				{
+					"caption": "Call to action (CTA)",
+					"name": "header_cta",
+					"description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
+					"type": "listbox",
+					"category": "Header",
+					"sortOrder": "20",
+					"defaultValue": "@INHERIT",
+					"inputOptionValues": "@CHUNK tvSelectHeaderCTA",
 					"templates": [
 						"Home",
 "Homepage",
@@ -1088,6 +1341,10 @@
 					"sortOrder": "99",
 					"defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
 					"inputOptionValues": "Inherit visibility==inherit_visibility||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
+					"outputProperties": {
+						"delimiter": ","
+					},
+					"display": "delim",
 					"templates": [
 						"Home",
 "Homepage",
@@ -1396,11 +1653,13 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
 						"Publications",
 "ArticleTraditional",
@@ -1431,11 +1690,13 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
 						"Publications",
 "ArticleTraditional",
@@ -1466,11 +1727,13 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
 						"Publications",
 "ArticleTraditional",
@@ -1501,11 +1764,13 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
 						"Publications",
 "ArticleTraditional",
@@ -1536,11 +1801,13 @@
 						"outputChunk": "cbOverviewRowImg"
 					},
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
 						"Publications",
 "ArticleTraditional",
@@ -1562,11 +1829,13 @@
 					"category": "Overview - Icon",
 					"sortOrder": "10",
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical"
 					]
 				},
@@ -1583,11 +1852,13 @@
 						"typeAheadDelay": "400"
 					},
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical"
 					]
 				},
@@ -1599,11 +1870,13 @@
 					"category": "Overview - Settings",
 					"sortOrder": "1",
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
 						"Publications",
 "ArticleTraditional",
@@ -1627,11 +1900,13 @@
 					"inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
 					"defaultValue": "landscape",
 					"templates": [
-						"BasicOverview",
-"BasicDetail",
-"HeaderVertical",
+						"Home",
+"Homepage",
+"BasicOverview",
 "Basic - Overview",
+"BasicDetail",
 "Basic - Detail",
+"HeaderVertical",
 "Header - Vertical",
 						"Publications",
 "ArticleTraditional",
@@ -2567,6 +2842,11 @@
 					"category": "a_images"
 				},
 				{
+					"name": "imgOpenGraphRow",
+					"description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
+					"category": "a_images"
+				},
+				{
 					"name": "infoNamePerson",
 					"category": "a_information"
 				},
@@ -2603,8 +2883,18 @@
 					"category": "a_search"
 				},
 				{
-					"name": "tvSelectCTA",
-					"description": "Get available CTAs and turn them into input options for use in a selection TV.",
+					"name": "tvSelectHeaderCTA",
+					"description": "Get available CTAs for the header and turn them into input options for use in a selection TV.",
+					"category": "a_select"
+				},
+				{
+					"name": "tvSelectFooterCTA",
+					"description": "Get available CTAs for the footer and turn them into input options for use in a selection TV.",
+					"category": "a_select"
+				},
+				{
+					"name": "tvSelectFooter",
+					"description": "Get available footers and turn them into input options for use in a selection TV.",
 					"category": "a_select"
 				},
 				{
@@ -2716,6 +3006,10 @@
 					"category": "m_cta"
 				},
 				{
+					"name": "ctaFooter",
+					"category": "m_cta"
+				},
+				{
 					"name": "ctaHeaderVertical",
 					"category": "m_cta"
 				},
@@ -2729,6 +3023,10 @@
 				},
 				{
 					"name": "structuredDataSite",
+					"category": "m_data"
+				},
+				{
+					"name": "openGraphMeta",
 					"category": "m_data"
 				},
 				{
@@ -2801,6 +3099,10 @@
 				},
 				{
 					"name": "themeVariables",
+					"category": "m_global"
+				},
+				{
+					"name": "footerCopyright",
 					"category": "m_global"
 				},
 				{
@@ -3939,6 +4241,11 @@
 					"category": "f_modifiers"
 				},
 				{
+					"name": "clipString",
+					"description": "Trim the edges of a string. The given value represents the number of characters that will be clipped. If the value is negative, they will be clipped from the end of the string.",
+					"category": "f_modifiers"
+				},
+				{
 					"name": "parseTags",
 					"description": "Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)",
 					"category": "f_modifiers"
@@ -4065,6 +4372,13 @@
 					"category": "c_content",
 					"events": [
 						"OnBeforeDocFormSave",
+						"OnWebPagePrerender"
+					]
+				},
+				{
+					"name": "InjectInvertedClasses",
+					"category": "c_content",
+					"events": [
 						"OnWebPagePrerender"
 					]
 				},
@@ -4198,6 +4512,11 @@
 			},
 			{
 				"key": "cta_container_id",
+				"type": "textfield",
+				"area": "Pages"
+			},
+			{
+				"key": "footer_container_id",
 				"type": "textfield",
 				"area": "Pages"
 			},

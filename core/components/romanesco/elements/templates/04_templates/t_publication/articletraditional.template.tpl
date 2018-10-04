@@ -4,7 +4,12 @@
 [[setUserPlaceholders? &userId=`[[*author_id]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
-[[$head]]
+[[[[If?
+    &subject=`[[$headTheme]]`
+    &operator=`isnull`
+    &then=`$head`
+    &else=`$headTheme`
+]]]]
 
 <body id="[[*alias]]" class="detail publication">
 
@@ -203,7 +208,12 @@
         </div>
     </main>
 
-    [[$footer]]
+    [[[[If?
+    &subject=`[[$footerTheme]]`
+    &operator=`isnull`
+    &then=`$footer`
+    &else=`$footerTheme`
+    ]]]]
 </div>
 
 [[$offCanvasNav]]
