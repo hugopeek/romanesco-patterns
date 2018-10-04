@@ -86,6 +86,7 @@ switch($eventName) {
         }
 
         // Find resources and set correct IDs
+        setResourceID('romanesco.footer_container_id', 'global','footers');
         setResourceID('romanesco.cta_container_id', 'global','call-to-actions');
         setResourceID('romanesco.global_backgrounds_id', 'global','backgrounds');
         setResourceID('formblocks.container_id', 'global','forms');
