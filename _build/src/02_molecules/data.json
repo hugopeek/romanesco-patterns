@@ -11,6 +11,9 @@
                 },{
                     "name": "structuredDataSite",
                     "category": "m_data"
+                },{
+                    "name": "openGraphMeta",
+                    "category": "m_data"
                 }
             ],
 
