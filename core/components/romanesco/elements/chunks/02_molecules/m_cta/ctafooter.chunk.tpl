@@ -8,5 +8,7 @@
 ]]
 
 <footer id="final-call" class="ui center aligned vertical stripe segment [[+footer_cta_background]] cta">
-    [[#[[*footer_cta:empty=`0`]].content]]
+    <div class="ui container">
+        [[#[[*footer_cta:empty=`0`]].content]]
+    </div>
 </footer>

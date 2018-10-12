@@ -79,7 +79,7 @@
     padding-top: 100%;
 }
 
-[[pdoResources?
+[[-pdoResources?
     &parents=`[[++romanesco.team_container_id]]`
     &limit=`0`
     &tpl=`globalBackgroundImgPersonCSS`
