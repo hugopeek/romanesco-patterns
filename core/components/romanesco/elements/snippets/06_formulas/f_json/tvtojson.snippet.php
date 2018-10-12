@@ -14,6 +14,9 @@
  */
 
 $tvName = $modx->getOption('tv', $scriptProperties, '');
+$showName = $modx->getOption('showName', $scriptProperties, 0);
+$showSource = $modx->getOption('showSource', $scriptProperties, 1);
+$optionsDelimiter = $modx->getOption('optionsDelimiter', $scriptProperties, '<br>');
 
 // Get the TV by name
 $tv = $modx->getObject('modTemplateVar', array('name'=>$tvName));
@@ -36,21 +39,50 @@ if ($tv) {
         $sourceName = $modx->getValue($query->prepare());
     }
 
+    // Control output delimiter of input options
+    $inputOptions = $tv->get('elements');
+    if ($optionsDelimiter) {
+        $inputOptions = str_replace('||', $optionsDelimiter, $inputOptions);
+    }
+
     // Create a new object with altered elements
     // The new key names mimic the properties used by GPM
     $tvAltered = array(
         'caption' => $tv->get('caption'),
+        'name' => $tv->get('name'),
         'description' => $tv->get('description'),
-        //'name' => $tv->get('name'),
         'type' => $tv->get('type'),
         'category' => $catName,
         'sortOrder' => $tv->get('rank'),
-        'inputOptionValues' => str_replace('||', '<br>', $tv->get('elements')),
+        'inputOptionValues' => $inputOptions,
         'defaultValue' => $tv->get('default_text'),
-        'inputProperties' => $tv->get('input_properties'),
-        'outputProperties' => $tv->get('output_properties'),
+        'inputProperties' => array_diff($tv->get('input_properties'),array(null)),
+        'outputProperties' => array_diff($tv->get('output_properties'),array(null)),
+        'display' => $tv->get('display'),
         'mediaSource' => $sourceName // Not a GPM property, but good to know anyway
     );
+
+    // Remove undesired keys
+    $tvAltered = array_diff($tvAltered,array(null,'description'));
+
+    if ($tvAltered['display'] == 'default') {
+        unset($tvAltered['display']);
+    }
+    if ($tvAltered['inputProperties']['allowBlank'] == 'true') {
+        unset($tvAltered['inputProperties']['allowBlank']);
+    }
+    if (!$showName) {
+        unset($tvAltered['name']);
+    }
+    if (!$showSource) {
+        unset($tvAltered['mediaSource']);
+    }
+    if (empty($tvAltered['inputProperties'])) {
+        unset($tvAltered['inputProperties']);
+    }
+    if (empty($tvAltered['outputProperties'])) {
+        unset($tvAltered['outputProperties']);
+    }
 
     // Output as JSON object
     return json_encode($tvAltered);
