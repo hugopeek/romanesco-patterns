@@ -11,6 +11,14 @@
  * Usage example:
  * [[tvToJSON? &tv=`[[+pattern_name]]`]]
  *
+ * For GPM compatible output:
+ * [[!tvToJSON?
+ *     &tv=`overview_img_landscape`
+ *     &showName=`1`
+ *     &showSource=`0`
+ *     &optionsDelimiter=`0`
+ * ]]
+ *
  */
 
 $tvName = $modx->getOption('tv', $scriptProperties, '');

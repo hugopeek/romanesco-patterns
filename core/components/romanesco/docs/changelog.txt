@@ -1,5 +1,15 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.12.4
+Released on ...
+
+Fixes and improvements:
+- Replace Grunt task for generating GPM config with PHP script
+- Make tvToJSON output suitable for use in GPM configs
+- Disable CSS background images for Tiled overviews
+- Fix sidebar not showing on largest screen on Team and Client pages
+
+
 ## Romanesco Patterns 0.12.3
 Released on October 4, 2018
 
