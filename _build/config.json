@@ -612,7 +612,7 @@
                     "category": "Connections",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -624,8 +624,8 @@
                     "category": "Connections",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_portfolio",
-                        "@@templates_testimonial"
+                        "PortfolioProject","Portfolio - Project",
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -637,7 +637,7 @@
                     "category": "Connections",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -671,7 +671,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "On==1||Off==0||System default==default",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -684,7 +684,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "@CHUNK tvSelectFooter",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -697,7 +697,7 @@
                     "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -710,7 +710,7 @@
                     "defaultValue": "@INHERIT",
                     "inputOptionValues": "@CHUNK tvSelectFooterCTA",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -723,7 +723,7 @@
                     "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -740,7 +740,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -938,7 +938,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "On==1||Off==0||System default==default",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -950,7 +950,7 @@
                     "sortOrder": "5",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -962,7 +962,7 @@
                     "sortOrder": "6",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -975,7 +975,7 @@
                     "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -987,7 +987,7 @@
                     "sortOrder": "11",
                     "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1000,7 +1000,7 @@
                     "defaultValue": "@INHERIT",
                     "inputOptionValues": "@CHUNK tvSelectHeaderCTA",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1017,7 +1017,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1044,7 +1044,7 @@
                     "defaultValue": "not-done",
                     "inputOptionValues": "[Seed] The idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==successful||[Plagued] Somehow, this resource is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1060,7 +1060,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1072,7 +1072,7 @@
                     "sortOrder": "3",
                     "inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1088,7 +1088,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1102,7 +1102,7 @@
                         "configs": "status_notes"
                     },
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1115,7 +1115,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "On==1||Off==0||System default==default",
                     "templates": [
-                        "@@templates_all"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1135,9 +1135,9 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication",
-                        "@@templates_portfolio"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1157,9 +1157,9 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication",
-                        "@@templates_portfolio"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1179,9 +1179,9 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication",
-                        "@@templates_portfolio"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1201,9 +1201,9 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication",
-                        "@@templates_portfolio"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1223,9 +1223,9 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication",
-                        "@@templates_portfolio"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1236,7 +1236,7 @@
                     "category": "Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_basic"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical"
                     ]
                 },
                 {
@@ -1252,7 +1252,7 @@
                         "typeAheadDelay": "400"
                     },
                     "templates": [
-                        "@@templates_basic"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical"
                     ]
                 },
                 {
@@ -1263,9 +1263,9 @@
                     "category": "Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication",
-                        "@@templates_portfolio"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1278,9 +1278,9 @@
                     "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano",
                     "defaultValue": "landscape",
                     "templates": [
-                        "@@templates_basic",
-                        "@@templates_publication",
-                        "@@templates_portfolio"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1291,7 +1291,7 @@
                     "category": "Social",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1302,7 +1302,7 @@
                     "category": "Social",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1313,7 +1313,7 @@
                     "category": "Social",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1324,7 +1324,7 @@
                     "category": "Social",
                     "sortOrder": "4",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1335,7 +1335,7 @@
                     "category": "Social",
                     "sortOrder": "5",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1346,7 +1346,7 @@
                     "category": "Social",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1357,7 +1357,7 @@
                     "category": "Social",
                     "sortOrder": "11",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1368,7 +1368,7 @@
                     "category": "Social",
                     "sortOrder": "20",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1586,7 +1586,7 @@
                     "sortOrder": "1",
                     "inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
                     "templates": [
-                        "@@templates_testimonial"
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1597,7 +1597,7 @@
                     "category": "Contact",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1608,7 +1608,7 @@
                     "category": "Contact",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1619,7 +1619,7 @@
                     "category": "Contact",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1630,7 +1630,7 @@
                     "category": "Address",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1641,7 +1641,7 @@
                     "category": "Address",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1652,7 +1652,7 @@
                     "category": "Address",
                     "sortOrder": "4",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1663,7 +1663,7 @@
                     "category": "Address",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1674,7 +1674,7 @@
                     "category": "Address",
                     "sortOrder": "11",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1685,7 +1685,7 @@
                     "category": "Address",
                     "sortOrder": "12",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1696,7 +1696,7 @@
                     "category": "Date",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1707,7 +1707,7 @@
                     "category": "Date",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1718,7 +1718,7 @@
                     "category": "Date",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_portfolio"
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1729,7 +1729,7 @@
                     "category": "Org. - Presentation",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_client"
+                        "Client","Organization","Relation"
                     ]
                 },
                 {
@@ -1749,7 +1749,7 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_client"
+                        "Client","Organization","Relation"
                     ]
                 },
                 {
@@ -1760,7 +1760,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_client"
+                        "Client","Organization","Relation"
                     ]
                 },
                 {
@@ -1772,7 +1772,7 @@
                     "sortOrder": "5",
                     "inputOptionValues": "--- Select a sector ---==||Public (government)==public||Private business==private||Non-profit organization==community",
                     "templates": [
-                        "@@templates_client"
+                        "Client","Organization","Relation"
                     ]
                 },
                 {
@@ -1783,7 +1783,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "6",
                     "templates": [
-                        "@@templates_client"
+                        "Client","Organization","Relation"
                     ]
                 },
                 {
@@ -1794,7 +1794,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_client"
+                        "Client","Organization","Relation"
                     ]
                 },
                 {
@@ -1805,7 +1805,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "20",
                     "templates": [
-                        "@@templates_client"
+                        "Client","Organization","Relation"
                     ]
                 },
                 {
@@ -1825,8 +1825,8 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "TeamMember","Team - Member","Team",
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1846,7 +1846,7 @@
                         "outputChunk": "cbOverviewRowImg"
                     },
                     "templates": [
-                        "@@templates_team"
+                        "TeamMember","Team - Member","Team"
                     ]
                 },
                 {
@@ -1857,8 +1857,8 @@
                     "category": "Person - Information",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "TeamMember","Team - Member","Team",
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1869,8 +1869,8 @@
                     "category": "Person - Information",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "TeamMember","Team - Member","Team",
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1882,8 +1882,8 @@
                     "sortOrder": "3",
                     "inputOptionValues": "Male==m||Female==f||Other==o",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "TeamMember","Team - Member","Team",
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1894,8 +1894,8 @@
                     "category": "Person - Information",
                     "sortOrder": "4",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "TeamMember","Team - Member","Team",
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1906,8 +1906,8 @@
                     "category": "Person - Information",
                     "sortOrder": "5",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "TeamMember","Team - Member","Team",
+                        "Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1918,8 +1918,8 @@
                     "category": "Person - Information",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "TeamMember","Team - Member","Team",
+                        "Testimonial","Review","Endorsement"
                     ]
                 }
             ],

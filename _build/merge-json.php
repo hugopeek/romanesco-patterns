@@ -3,12 +3,16 @@
  *
  */
 
+// Use external library for validating JSON
 require_once '../core/components/romanesco/vendor/autoload.php';
 use Seld\JsonLint\JsonParser;
 $parser = new JsonParser();
 
 // Get all JSON files from src folder
 $sources = glob("{src/*.json,src/*/*.json,src/*/*/*.json}", GLOB_BRACE);
+
+// Get template lists for linking TV assignments in bulk
+$templateList = glob("{src_snippets/*}", GLOB_BRACE);
 
 // Set base of config file
 $baseArray = json_decode(file_get_contents('src/base.json'), TRUE);
@@ -38,7 +42,17 @@ foreach ($sources as $index => $source) {
     $baseArray = array_merge_recursive($baseArray,$sourceArray);
 }
 
-$output = json_encode($baseArray,  JSON_PRETTY_PRINT);
+$output = json_encode($baseArray, JSON_PRETTY_PRINT);
+
+// Fill placeholders with corresponding template names
+foreach ($templateList as $file) {
+    $list = file_get_contents($file);
+    $list = str_replace(array("\r", "\n"), '', $list);
+    $filename = pathinfo($file)['filename'];
+
+    // Insert list wherever filename matches an @@template_list value
+    $output = str_replace('@@' . $filename, $list, $output);
+}
 
 // Validate output one more time
 $validateOutput = $parser->lint($output);
