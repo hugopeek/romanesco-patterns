@@ -138,17 +138,21 @@
 
             "categories": [
                 {
-                    "name": "Rating",
-                    "parent": "e_info_intangible"
-                },{
                     "name": "Contact",
-                    "parent": "e_info_intangible"
+                    "parent": "e_info_intangible",
+                    "rank": 100
                 },{
                     "name": "Address",
-                    "parent": "e_info_intangible"
+                    "parent": "e_info_intangible",
+                    "rank": 101
                 },{
                     "name": "Date",
-                    "parent": "e_info_intangible"
+                    "parent": "e_info_intangible",
+                    "rank": 102
+                },{
+                    "name": "Rating",
+                    "parent": "e_info_intangible",
+                    "rank": 110
                 }
             ]
         }

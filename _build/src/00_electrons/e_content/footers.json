@@ -79,17 +79,6 @@
                         "@@templates_all"
                     ]
                 }
-            ],
-
-            "categories": [
-                {
-                    "name": "e_footers",
-                    "parent": "00_electrons"
-                },{
-                    "name": "Footer",
-                    "parent": "e_footers",
-                    "rank": "99"
-                }
             ]
         },
 

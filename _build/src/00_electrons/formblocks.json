@@ -147,19 +147,24 @@
                     "parent": "00_electrons"
                 },{
                     "name": "Settings - Email",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 1
                 },{
                     "name": "Settings - General",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 2
                 },{
                     "name": "Settings - Advanced",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 3
                 },{
                     "name": "Autoresponder",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 10
                 },{
                     "name": "Registration",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 20
                 }
             ]
         }

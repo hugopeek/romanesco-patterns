@@ -40,13 +40,16 @@
             "categories": [
                 {
                     "name": "About",
-                    "parent": "e_info_creativework"
+                    "parent": "e_info_creativework",
+                    "rank": 150
                 },{
                     "name": "Comments",
-                    "parent": "e_info_creativework"
+                    "parent": "e_info_creativework",
+                    "rank": 151
                 },{
                     "name": "Participants",
-                    "parent": "e_info_creativework"
+                    "parent": "e_info_creativework",
+                    "rank": 152
                 }
             ]
         }

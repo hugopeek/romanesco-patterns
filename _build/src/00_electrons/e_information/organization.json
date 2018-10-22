@@ -87,11 +87,13 @@
 
             "categories": [
                 {
-                    "name": "Org. - Presentation",
-                    "parent": "e_info_organization"
-                },{
                     "name": "Org. - Information",
-                    "parent": "e_info_organization"
+                    "parent": "e_info_organization",
+                    "rank": 140
+                },{
+                    "name": "Org. - Presentation",
+                    "parent": "e_info_organization",
+                    "rank": 141
                 }
             ]
         }

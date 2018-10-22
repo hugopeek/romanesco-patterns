@@ -1,0 +1,41 @@
+{
+    "package": {
+        "elements": {
+            "categories": [
+                {
+                    "name": "e_content",
+                    "parent": "00_electrons"
+                },{
+                    "name": "e_headers",
+                    "parent": "e_content"
+                },{
+                    "name": "Header",
+                    "parent": "e_headers",
+                    "rank": 1
+                },{
+                    "name": "e_footers",
+                    "parent": "e_content"
+                },{
+                    "name": "Footer",
+                    "parent": "e_footers",
+                    "rank": 999
+                },{
+                    "name": "e_contentblocks",
+                    "parent": "e_content"
+                },{
+                    "name": "e_cta",
+                    "parent": "e_content"
+                },{
+                    "name": "CTA - Settings",
+                    "parent": "e_cta"
+                },{
+                    "name": "e_purpose",
+                    "parent": "e_content"
+                },{
+                    "name": "Purpose",
+                    "parent": "e_purpose"
+                }
+            ]
+        }
+    }
+}

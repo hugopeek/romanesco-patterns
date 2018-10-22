@@ -113,11 +113,13 @@
 
             "categories": [
                 {
-                    "name": "Person - Presentation",
-                    "parent": "e_info_person"
-                },{
                     "name": "Person - Information",
-                    "parent": "e_info_person"
+                    "parent": "e_info_person",
+                    "rank": 130
+                },{
+                    "name": "Person - Presentation",
+                    "parent": "e_info_person",
+                    "rank": 131
                 }
             ]
         }

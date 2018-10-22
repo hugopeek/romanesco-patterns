@@ -91,7 +91,8 @@
                     "parent": "00_electrons"
                 },{
                     "name": "Social",
-                    "parent": "e_social"
+                    "parent": "e_social",
+                    "rank": 50
                 }
             ]
         },

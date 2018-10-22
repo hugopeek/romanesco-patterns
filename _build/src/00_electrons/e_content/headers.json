@@ -88,16 +88,6 @@
                         "@@templates_all"
                     ]
                 }
-            ],
-
-            "categories": [
-                {
-                    "name": "e_headers",
-                    "parent": "00_electrons"
-                },{
-                    "name": "Header",
-                    "parent": "e_headers"
-                }
             ]
         }
     }

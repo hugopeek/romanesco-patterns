@@ -23,7 +23,8 @@
                     "parent": "00_electrons"
                 },{
                     "name": "Navigation",
-                    "parent": "e_navigation"
+                    "parent": "e_navigation",
+                    "rank": 30
                 }
             ]
         }

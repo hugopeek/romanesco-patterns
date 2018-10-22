@@ -14,16 +14,6 @@
                         "GlobalCTA"
                     ]
                 }
-            ],
-
-            "categories": [
-                {
-                    "name": "e_cta",
-                    "parent": "00_electrons"
-                },{
-                    "name": "CTA - Settings",
-                    "parent": "e_cta"
-                }
             ]
         },
 

@@ -167,13 +167,16 @@
                     "parent": "00_electrons"
                 },{
                     "name": "Overview - Image",
-                    "parent": "e_overviews"
+                    "parent": "e_overviews",
+                    "rank": 10
                 },{
                     "name": "Overview - Icon",
-                    "parent": "e_overviews"
+                    "parent": "e_overviews",
+                    "rank": 11
                 },{
                     "name": "Overview - Settings",
-                    "parent": "e_overviews"
+                    "parent": "e_overviews",
+                    "rank": 12
                 }
             ]
         },

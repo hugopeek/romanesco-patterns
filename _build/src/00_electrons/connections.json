@@ -52,7 +52,8 @@
                     "parent": "00_electrons"
                 },{
                     "name": "Connections",
-                    "parent": "e_connections"
+                    "parent": "e_connections",
+                    "rank": 40
                 }
             ]
         }
