@@ -1,0 +1,74 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Content purpose",
+                    "name": "content_purpose",
+                    "description": "Describe the primary function of this content. Even though you can select multiple options, try to narrow it down to just 1 if possible. This will make the content more focused and the editing process a little easier.",
+                    "type": "listbox-multiple",
+                    "category": "Theme",
+                    "sortOrder": 1,
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 3 AND `softDelete` = 0 ORDER BY position",
+                    "inputProperties": {
+                        "typeAhead": "false",
+                        "typeAheadDelay": "250",
+                        "stackItems": "true"
+                    },
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim"
+                },
+                {
+                    "caption": "Content result",
+                    "name": "content_result",
+                    "description": "Describe the desired effect of this page. What did the visitor gain from reading this? And what good will that do for you?",
+                    "type": "richtext",
+                    "category": "Theme",
+                    "sortOrder": 10
+                },
+                {
+                    "caption": "Content follow-up",
+                    "name": "content_followup",
+                    "description": "Based on the answer to the previous question: describe the action you want the visitor to take after viewing this content. Buy your product, request a demo, subscribe to your newsletter, share the content, change their opinion, donate to your cause...",
+                    "type": "text",
+                    "category": "Theme",
+                    "sortOrder": 11
+                },
+                {
+                    "caption": "Why is this page needed?",
+                    "name": "content_why",
+                    "description": "Drill down to the core of the subject to answer the ultimate question: is this page absolutely necessary? If not: shelve this page for later and move on to the next.",
+                    "type": "redactor",
+                    "category": "Theme",
+                    "sortOrder": 20
+                },
+                {
+                    "caption": "Priority",
+                    "name": "content_priority",
+                    "description": "Based on the answer to the previous question: indicate how important and urgent the publication of this page is.",
+                    "type": "option",
+                    "category": "Theme",
+                    "sortOrder": 30,
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 4 AND `softDelete` = 0 ORDER BY position",
+                    "inputProperties": {
+                        "columns": "1"
+                    },
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim"
+                },
+                {
+                    "caption": "Repurposing",
+                    "name": "content_repurpose",
+                    "description": "Can you think of ways to reuse this content in different places or scenarios? Or if this content is being repurposed from somewhere else: can you point to that source? NB: connections are not saved until you save the page itself!",
+                    "type": "richtext",
+                    "category": "Theme",
+                    "sortOrder": 50
+                }
+            ]
+        }
+    }
+}
