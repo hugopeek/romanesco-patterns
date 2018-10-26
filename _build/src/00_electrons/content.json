@@ -34,6 +34,12 @@
                 },{
                     "name": "Purpose",
                     "parent": "e_purpose"
+                },{
+                    "name": "e_status",
+                    "parent": "e_content"
+                },{
+                    "name": "Status",
+                    "parent": "e_status"
                 }
             ]
         }

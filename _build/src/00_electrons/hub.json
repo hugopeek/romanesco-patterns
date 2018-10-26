@@ -15,72 +15,6 @@
                     "templates": [
                         "ProjectDashboard"
                     ]
-                },{
-                    "caption": "Status indicator",
-                    "name": "status_indicator",
-                    "description": "What is the current development stage and condition of this page?",
-                    "type": "option",
-                    "category": "Status",
-                    "sortOrder": "1",
-                    "defaultValue": "not-done",
-                    "inputOptionValues": "[Seed] The idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==successful||[Plagued] Somehow, this resource is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
-                    "templates": [
-                        "@@templates_all"
-                    ]
-                },{
-                    "caption": "Improvements",
-                    "name": "status_improvements",
-                    "description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
-                    "type": "checkbox",
-                    "category": "Status",
-                    "sortOrder": "2",
-                    "inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
-                    "outputProperties": {
-                        "delimiter": ","
-                    },
-                    "display": "delim",
-                    "templates": [
-                        "@@templates_all"
-                    ]
-                },{
-                    "caption": "Assigned editor",
-                    "name": "status_assigned_user",
-                    "description": "Who is best suited to take a look at these improvements?",
-                    "type": "listbox",
-                    "category": "Status",
-                    "sortOrder": "3",
-                    "inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
-                    "templates": [
-                        "@@templates_all"
-                    ]
-                },{
-                    "caption": "Help!",
-                    "name": "status_help",
-                    "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
-                    "type": "checkbox",
-                    "category": "Status",
-                    "sortOrder": "4",
-                    "inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
-                    "outputProperties": {
-                        "delimiter": ","
-                    },
-                    "display": "delim",
-                    "templates": [
-                        "@@templates_all"
-                    ]
-                },{
-                    "caption": "Notes / Explanations",
-                    "name": "status_notes",
-                    "description": "Create a mini journal of this page. Latest notes are shown on top and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
-                    "type": "migx",
-                    "category": "Status",
-                    "sortOrder": "99",
-                    "inputProperties": {
-                        "configs": "status_notes"
-                    },
-                    "templates": [
-                        "@@templates_all"
-                    ]
                 }
             ],
 
@@ -93,9 +27,6 @@
                     "parent": "e_hub"
                 },{
                     "name": "Project Hub",
-                    "parent": "e_hub"
-                },{
-                    "name": "Status",
                     "parent": "e_hub"
                 }
             ]

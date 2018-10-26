@@ -3,11 +3,11 @@
         "elements": {
             "tvs": [
                 {
-                    "caption": "Content purpose",
-                    "name": "content_purpose",
-                    "description": "Describe the primary function of this content. Even though you can select multiple options, try to narrow it down to just 1 if possible. This will make the content more focused and the editing process a little easier.",
+                    "caption": "Content type",
+                    "name": "content_type",
+                    "description": "Select the primary function of this content. Try to narrow it down to just 1 if possible. This will make the content more focused and the editing process a little easier.",
                     "type": "listbox-multiple",
-                    "category": "Theme",
+                    "category": "Purpose",
                     "sortOrder": 1,
                     "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 3 AND `softDelete` = 0 ORDER BY position",
                     "inputProperties": {
@@ -18,38 +18,90 @@
                     "outputProperties": {
                         "delimiter": ","
                     },
-                    "display": "delim"
+                    "display": "delim",
+                    "templates": [
+                        "@@templates_all"
+                    ]
                 },
                 {
-                    "caption": "Content result",
-                    "name": "content_result",
-                    "description": "Describe the desired effect of this page. What did the visitor gain from reading this? And what good will that do for you?",
-                    "type": "richtext",
-                    "category": "Theme",
-                    "sortOrder": 10
-                },
-                {
-                    "caption": "Content follow-up",
-                    "name": "content_followup",
-                    "description": "Based on the answer to the previous question: describe the action you want the visitor to take after viewing this content. Buy your product, request a demo, subscribe to your newsletter, share the content, change their opinion, donate to your cause...",
-                    "type": "text",
-                    "category": "Theme",
-                    "sortOrder": 11
-                },
-                {
-                    "caption": "Why is this page needed?",
-                    "name": "content_why",
-                    "description": "Drill down to the core of the subject to answer the ultimate question: is this page absolutely necessary? If not: shelve this page for later and move on to the next.",
+                    "caption": "Brief",
+                    "name": "content_brief",
+                    "description": "Write a short summary of what this page should be about. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.",
                     "type": "redactor",
-                    "category": "Theme",
-                    "sortOrder": 20
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "advAttrib": "1",
+                        "buttonFullScreen": "1",
+                        "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
+                        "minHeight": "130"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Outline",
+                    "name": "content_outline",
+                    "description": "Give an overview of the main page structure. Like a table of contents, but feel free to add ideas in between.",
+                    "type": "redactor",
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "advAttrib": "1",
+                        "buttonFullScreen": "1",
+                        "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
+                        "minHeight": "210"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Result",
+                    "name": "content_result",
+                    "description": "Describe the desired effect of this page. How did it help the visitor? And what good will that do for you?",
+                    "type": "redactor",
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "advAttrib": "1",
+                        "buttonFullScreen": "1",
+                        "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link",
+                        "minHeight": "80"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Follow-up",
+                    "name": "content_cta",
+                    "description": "What kind of action do you want the visitor to take after viewing this content? View related content, get in touch, subscribe to your newsletter, buy your product, donate to your cause...",
+                    "type": "text",
+                    "category": "Purpose",
+                    "sortOrder": 11,
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Tone of voice",
+                    "name": "content_tone",
+                    "description": "Decide what writing style to adopt for this page. Formal, fun, pragmatic, provocative...",
+                    "type": "text",
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "templates": [
+                        "@@templates_all"
+                    ]
                 },
                 {
                     "caption": "Priority",
                     "name": "content_priority",
-                    "description": "Based on the answer to the previous question: indicate how important and urgent the publication of this page is.",
+                    "description": "Zoom out a little and ask yourself: do we really need this page? And do we need it now? If it turns out to be neither urgent nor important, consider deleting it again.",
                     "type": "option",
-                    "category": "Theme",
+                    "category": "Purpose",
                     "sortOrder": 30,
                     "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 4 AND `softDelete` = 0 ORDER BY position",
                     "inputProperties": {
@@ -58,15 +110,72 @@
                     "outputProperties": {
                         "delimiter": ","
                     },
-                    "display": "delim"
+                    "display": "delim",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Related content",
+                    "name": "content_related",
+                    "type": "superboxselect",
+                    "sortOrder": 0,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"published:=\":\"1\"},{\"hidemenu:=\":\"0\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Attachments",
+                    "name": "content_attachments",
+                    "type": "superboxselect",
+                    "sortOrder": 0,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modStaticResource\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "External links",
+                    "name": "content_external_links",
+                    "type": "superboxselect",
+                    "sortOrder": 0,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
                 },
                 {
                     "caption": "Repurposing",
                     "name": "content_repurpose",
                     "description": "Can you think of ways to reuse this content in different places or scenarios? Or if this content is being repurposed from somewhere else: can you point to that source? NB: connections are not saved until you save the page itself!",
                     "type": "richtext",
-                    "category": "Theme",
-                    "sortOrder": 50
+                    "category": "Purpose",
+                    "sortOrder": 50,
+                    "templates": [
+                        "@@templates_all"
+                    ]
                 }
             ]
         }
