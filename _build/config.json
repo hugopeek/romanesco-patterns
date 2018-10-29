@@ -34,24 +34,58 @@
                 },
                 {
                     "name": "Connections",
-                    "parent": "e_connections"
+                    "parent": "e_connections",
+                    "rank": 40
+                },
+                {
+                    "name": "e_content",
+                    "parent": "00_electrons"
+                },
+                {
+                    "name": "e_headers",
+                    "parent": "e_content"
+                },
+                {
+                    "name": "Header",
+                    "parent": "e_headers",
+                    "rank": 1
+                },
+                {
+                    "name": "e_footers",
+                    "parent": "e_content"
+                },
+                {
+                    "name": "Footer",
+                    "parent": "e_footers",
+                    "rank": 999
+                },
+                {
+                    "name": "e_contentblocks",
+                    "parent": "e_content"
                 },
                 {
                     "name": "e_cta",
-                    "parent": "00_electrons"
+                    "parent": "e_content"
                 },
                 {
                     "name": "CTA - Settings",
                     "parent": "e_cta"
                 },
                 {
-                    "name": "e_footers",
-                    "parent": "00_electrons"
+                    "name": "e_purpose",
+                    "parent": "e_content"
                 },
                 {
-                    "name": "Footer",
-                    "parent": "e_footers",
-                    "rank": "99"
+                    "name": "Purpose",
+                    "parent": "e_purpose"
+                },
+                {
+                    "name": "e_status",
+                    "parent": "e_content"
+                },
+                {
+                    "name": "Status",
+                    "parent": "e_status"
                 },
                 {
                     "name": "e_formblocks",
@@ -59,43 +93,36 @@
                 },
                 {
                     "name": "Settings - Email",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 1
                 },
                 {
                     "name": "Settings - General",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 2
                 },
                 {
                     "name": "Settings - Advanced",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 3
                 },
                 {
                     "name": "Autoresponder",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 10
                 },
                 {
                     "name": "Registration",
-                    "parent": "e_formblocks"
+                    "parent": "e_formblocks",
+                    "rank": 20
                 },
                 {
                     "name": "e_global",
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Global - Images",
+                    "name": "Global - Backgrounds",
                     "parent": "e_global"
-                },
-                {
-                    "name": "Global - SVG",
-                    "parent": "e_global"
-                },
-                {
-                    "name": "e_headers",
-                    "parent": "00_electrons"
-                },
-                {
-                    "name": "Header",
-                    "parent": "e_headers"
                 },
                 {
                     "name": "e_hub",
@@ -107,10 +134,6 @@
                 },
                 {
                     "name": "Project Hub",
-                    "parent": "e_hub"
-                },
-                {
-                    "name": "Status",
                     "parent": "e_hub"
                 },
                 {
@@ -151,7 +174,8 @@
                 },
                 {
                     "name": "Navigation",
-                    "parent": "e_navigation"
+                    "parent": "e_navigation",
+                    "rank": 30
                 },
                 {
                     "name": "e_overviews",
@@ -159,15 +183,18 @@
                 },
                 {
                     "name": "Overview - Image",
-                    "parent": "e_overviews"
+                    "parent": "e_overviews",
+                    "rank": 10
                 },
                 {
                     "name": "Overview - Icon",
-                    "parent": "e_overviews"
+                    "parent": "e_overviews",
+                    "rank": 11
                 },
                 {
                     "name": "Overview - Settings",
-                    "parent": "e_overviews"
+                    "parent": "e_overviews",
+                    "rank": 12
                 },
                 {
                     "name": "e_social",
@@ -175,7 +202,8 @@
                 },
                 {
                     "name": "Social",
-                    "parent": "e_social"
+                    "parent": "e_social",
+                    "rank": 50
                 },
                 {
                     "name": "a_buttons",
@@ -559,47 +587,58 @@
                 },
                 {
                     "name": "About",
-                    "parent": "e_info_creativework"
+                    "parent": "e_info_creativework",
+                    "rank": 150
                 },
                 {
                     "name": "Comments",
-                    "parent": "e_info_creativework"
+                    "parent": "e_info_creativework",
+                    "rank": 151
                 },
                 {
                     "name": "Participants",
-                    "parent": "e_info_creativework"
-                },
-                {
-                    "name": "Rating",
-                    "parent": "e_info_intangible"
+                    "parent": "e_info_creativework",
+                    "rank": 152
                 },
                 {
                     "name": "Contact",
-                    "parent": "e_info_intangible"
+                    "parent": "e_info_intangible",
+                    "rank": 100
                 },
                 {
                     "name": "Address",
-                    "parent": "e_info_intangible"
+                    "parent": "e_info_intangible",
+                    "rank": 101
                 },
                 {
                     "name": "Date",
-                    "parent": "e_info_intangible"
+                    "parent": "e_info_intangible",
+                    "rank": 102
                 },
                 {
-                    "name": "Org. - Presentation",
-                    "parent": "e_info_organization"
+                    "name": "Rating",
+                    "parent": "e_info_intangible",
+                    "rank": 110
                 },
                 {
                     "name": "Org. - Information",
-                    "parent": "e_info_organization"
+                    "parent": "e_info_organization",
+                    "rank": 140
                 },
                 {
-                    "name": "Person - Presentation",
-                    "parent": "e_info_person"
+                    "name": "Org. - Presentation",
+                    "parent": "e_info_organization",
+                    "rank": 141
                 },
                 {
                     "name": "Person - Information",
-                    "parent": "e_info_person"
+                    "parent": "e_info_person",
+                    "rank": 130
+                },
+                {
+                    "name": "Person - Presentation",
+                    "parent": "e_info_person",
+                    "rank": 131
                 }
             ],
             "tvs": [
@@ -648,100 +687,6 @@
                     "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )",
                     "category": "Connections",
                     "sortOrder": "10"
-                },
-                {
-                    "caption": "Availability",
-                    "name": "cta_availability",
-                    "description": "Where would you like to be able to place this CTA?",
-                    "type": "checkbox",
-                    "category": "CTA - Settings",
-                    "sortOrder": "1",
-                    "inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
-                    "templates": [
-                        "GlobalCTA"
-                    ]
-                },
-                {
-                    "caption": "Footer visibility",
-                    "name": "footer_visibility",
-                    "description": "If you turn this off, the closing footer section will not be displayed. Inherited by default, but you can change this with the Inheritance setting below.",
-                    "type": "listbox",
-                    "category": "Footer",
-                    "sortOrder": "1",
-                    "defaultValue": "@INHERIT default",
-                    "inputOptionValues": "On==1||Off==0||System default==default",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Footer type",
-                    "name": "footer_type",
-                    "description": "Choose which content to display inside the footer. You can add different footers under Global Content > Footers. A default footer can be defined under Configuration, or as context setting.",
-                    "type": "option",
-                    "category": "Footer",
-                    "sortOrder": "2",
-                    "defaultValue": "@INHERIT default",
-                    "inputOptionValues": "@CHUNK tvSelectFooter",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Background",
-                    "name": "footer_background",
-                    "description": "Select a background for this footer. You can define these backgrounds under Global Content > Backgrounds. Will also be inherited by default.",
-                    "type": "listbox",
-                    "category": "Footer",
-                    "sortOrder": "10",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
-                    "defaultValue": "@INHERIT",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Call to action (CTA)",
-                    "name": "footer_cta",
-                    "description": "This CTA will be displayed above the footer itself. It will have a different background than the rest of the footer, which you can select below. Inherited by default.",
-                    "type": "listbox",
-                    "category": "Footer",
-                    "sortOrder": "20",
-                    "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvSelectFooterCTA",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "CTA background",
-                    "name": "footer_cta_background",
-                    "description": "Select a background for the CTA. To make it stand out, select a background that contrasts nicely with the footer background. Also inherited by default.",
-                    "type": "listbox",
-                    "category": "Footer",
-                    "sortOrder": "21",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
-                    "defaultValue": "@INHERIT",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Inheritance",
-                    "name": "footer_inheritance",
-                    "description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
-                    "type": "checkbox",
-                    "category": "Footer",
-                    "sortOrder": "99",
-                    "defaultValue": "@INHERIT inherit_visibility||inherit_type||inherit_background||inherit_cta||inherit_cta_background",
-                    "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit type==inherit_type||Inherit background==inherit_background||Inherit CTA==inherit_cta||Inherit CTA background==inherit_cta_background",
-                    "outputProperties": {
-                        "delimiter": ","
-                    },
-                    "display": "delim",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
                 },
                 {
                     "caption": "Email address recipient",
@@ -872,7 +817,7 @@
                 {
                     "caption": "Dynamic recipient address",
                     "name": "fb_email_to_dynamic",
-                    "description": "Optional. Place any snippet \/ FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+                    "description": "Optional. Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
                     "category": "Settings - Advanced",
                     "sortOrder": "10",
                     "type": "textarea",
@@ -917,107 +862,15 @@
                 {
                     "caption": "Global background images",
                     "name": "global_background_img",
-                    "description": "These backgrounds can be applied to CB layouts (under their Settings wheel) and possibly to other elements too.",
+                    "description": "These backgrounds can be applied to page headers, CB layouts (under their Settings wheel) and possibly to other elements too.",
                     "type": "migx",
-                    "category": "Global - Images",
+                    "category": "Global - Backgrounds",
                     "sortOrder": "1",
                     "inputProperties": {
                         "configs": "global_background_images"
                     },
                     "templates": [
                         "GlobalBackgrounds"
-                    ]
-                },
-                {
-                    "caption": "Header visibility",
-                    "name": "header_visibility",
-                    "description": "If you turn this off, the page starts with the content area but the navigation bar will still be visible. Inherited by default, but you can change this with the Inheritance setting below.",
-                    "type": "listbox",
-                    "category": "Header",
-                    "sortOrder": "1",
-                    "defaultValue": "@INHERIT default",
-                    "inputOptionValues": "On==1||Off==0||System default==default",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Main title",
-                    "name": "header_title",
-                    "description": "Title below the navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
-                    "type": "text",
-                    "category": "Header",
-                    "sortOrder": "5",
-                    "defaultValue": "@INHERIT",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Subtitle",
-                    "name": "header_subtitle",
-                    "description": "This will be displayed under the main title. Will also be inherited on child pages by default.",
-                    "type": "textarea",
-                    "category": "Header",
-                    "sortOrder": "6",
-                    "defaultValue": "@INHERIT",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Background",
-                    "name": "header_background",
-                    "description": "Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.",
-                    "type": "listbox",
-                    "category": "Header",
-                    "sortOrder": "10",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
-                    "defaultValue": "@INHERIT",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Background image",
-                    "name": "header_background_img",
-                    "description": "Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.",
-                    "type": "option",
-                    "category": "Header",
-                    "sortOrder": "11",
-                    "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Call to action (CTA)",
-                    "name": "header_cta",
-                    "description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
-                    "type": "listbox",
-                    "category": "Header",
-                    "sortOrder": "20",
-                    "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvSelectHeaderCTA",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Inheritance",
-                    "name": "header_inheritance",
-                    "description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
-                    "type": "checkbox",
-                    "category": "Header",
-                    "sortOrder": "99",
-                    "defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
-                    "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
-                    "outputProperties": {
-                        "delimiter": ","
-                    },
-                    "display": "delim",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1032,77 +885,6 @@
                     },
                     "templates": [
                         "ProjectDashboard"
-                    ]
-                },
-                {
-                    "caption": "Status indicator",
-                    "name": "status_indicator",
-                    "description": "What is the current development stage and condition of this page?",
-                    "type": "option",
-                    "category": "Status",
-                    "sortOrder": "1",
-                    "defaultValue": "not-done",
-                    "inputOptionValues": "[Seed] The idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==successful||[Plagued] Somehow, this resource is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Improvements",
-                    "name": "status_improvements",
-                    "description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
-                    "type": "checkbox",
-                    "category": "Status",
-                    "sortOrder": "2",
-                    "inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
-                    "outputProperties": {
-                        "delimiter": ","
-                    },
-                    "display": "delim",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Assigned editor",
-                    "name": "status_assigned_user",
-                    "description": "Who is best suited to take a look at these improvements?",
-                    "type": "listbox",
-                    "category": "Status",
-                    "sortOrder": "3",
-                    "inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Help!",
-                    "name": "status_help",
-                    "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
-                    "type": "checkbox",
-                    "category": "Status",
-                    "sortOrder": "4",
-                    "inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
-                    "outputProperties": {
-                        "delimiter": ","
-                    },
-                    "display": "delim",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Notes \/ Explanations",
-                    "name": "status_notes",
-                    "description": "Create a mini journal of this page. Latest notes are shown on top and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
-                    "type": "migx",
-                    "category": "Status",
-                    "sortOrder": "99",
-                    "inputProperties": {
-                        "configs": "status_notes"
-                    },
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -1256,7 +1038,7 @@
                     ]
                 },
                 {
-                    "caption": "Link \/ button text",
+                    "caption": "Link / button text",
                     "name": "overview_link_text",
                     "description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!",
                     "type": "text",
@@ -1286,7 +1068,7 @@
                 {
                     "caption": "Twitter account",
                     "name": "social_twitter",
-                    "description": "Only fill in the account name (the part after https:\/\/twitter.com\/). This way, this setting can be used by other Twitter functionality throughout the site.",
+                    "description": "Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "1",
@@ -1297,7 +1079,7 @@
                 {
                     "caption": "LinkedIn profile",
                     "name": "social_linkedin",
-                    "description": "Please fill in the complete URL (including http(s):\/\/).",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "2",
@@ -1308,7 +1090,7 @@
                 {
                     "caption": "Facebook page",
                     "name": "social_facebook",
-                    "description": "Please fill in the complete URL (including http(s):\/\/).",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "3",
@@ -1319,7 +1101,7 @@
                 {
                     "caption": "Instagram profile",
                     "name": "social_instagram",
-                    "description": "Only fill in the account name (the part after https:\/\/instagram.com\/).",
+                    "description": "Only fill in the account name (the part after https://instagram.com/).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "4",
@@ -1330,7 +1112,7 @@
                 {
                     "caption": "Pinterest board",
                     "name": "social_pinterest",
-                    "description": "Please fill in the complete URL (including http(s):\/\/).",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "5",
@@ -1341,7 +1123,7 @@
                 {
                     "caption": "Youtube channel",
                     "name": "social_youtube",
-                    "description": "Please fill in the complete URL (including http(s):\/\/).",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "10",
@@ -1352,7 +1134,7 @@
                 {
                     "caption": "Google+ profile",
                     "name": "social_googleplus",
-                    "description": "Please fill in the complete URL (including http(s):\/\/).",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "11",
@@ -1363,12 +1145,468 @@
                 {
                     "caption": "Github account",
                     "name": "social_github",
-                    "description": "Only fill in the account name (the part after https:\/\/github.com\/).",
+                    "description": "Only fill in the account name (the part after https://github.com/).",
                     "type": "text",
                     "category": "Social",
                     "sortOrder": "20",
                     "templates": [
                         "TeamMember","Team - Member","Team"
+                    ]
+                },
+                {
+                    "caption": "Availability",
+                    "name": "cta_availability",
+                    "description": "Where would you like to be able to place this CTA?",
+                    "type": "checkbox",
+                    "category": "CTA - Settings",
+                    "sortOrder": "1",
+                    "inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
+                    "templates": [
+                        "GlobalCTA"
+                    ]
+                },
+                {
+                    "caption": "Footer visibility",
+                    "name": "footer_visibility",
+                    "description": "If you turn this off, the closing footer section will not be displayed. Inherited by default, but you can change this with the Inheritance setting below.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "1",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "On==1||Off==0||System default==default",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Footer type",
+                    "name": "footer_type",
+                    "description": "Choose which content to display inside the footer. You can add different footers under Global Content > Footers. A default footer can be defined under Configuration, or as context setting.",
+                    "type": "option",
+                    "category": "Footer",
+                    "sortOrder": "2",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "@CHUNK tvSelectFooter",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Background",
+                    "name": "footer_background",
+                    "description": "Select a background for this footer. You can define these backgrounds under Global Content > Backgrounds. Will also be inherited by default.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "10",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Call to action (CTA)",
+                    "name": "footer_cta",
+                    "description": "This CTA will be displayed above the footer itself. It will have a different background than the rest of the footer, which you can select below. Inherited by default.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "20",
+                    "defaultValue": "@INHERIT",
+                    "inputOptionValues": "@CHUNK tvSelectFooterCTA",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "CTA background",
+                    "name": "footer_cta_background",
+                    "description": "Select a background for the CTA. To make it stand out, select a background that contrasts nicely with the footer background. Also inherited by default.",
+                    "type": "listbox",
+                    "category": "Footer",
+                    "sortOrder": "21",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Inheritance",
+                    "name": "footer_inheritance",
+                    "description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
+                    "type": "checkbox",
+                    "category": "Footer",
+                    "sortOrder": "99",
+                    "defaultValue": "@INHERIT inherit_visibility||inherit_type||inherit_background||inherit_cta||inherit_cta_background",
+                    "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit type==inherit_type||Inherit background==inherit_background||Inherit CTA==inherit_cta||Inherit CTA background==inherit_cta_background",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Header visibility",
+                    "name": "header_visibility",
+                    "description": "If you turn this off, the page starts with the content area but the navigation bar will still be visible. Inherited by default, but you can change this with the Inheritance setting below.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "1",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "On==1||Off==0||System default==default",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Main title",
+                    "name": "header_title",
+                    "description": "Title below the navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
+                    "type": "text",
+                    "category": "Header",
+                    "sortOrder": "5",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Subtitle",
+                    "name": "header_subtitle",
+                    "description": "This will be displayed under the main title. Will also be inherited on child pages by default.",
+                    "type": "textarea",
+                    "category": "Header",
+                    "sortOrder": "6",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Background",
+                    "name": "header_background",
+                    "description": "Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "10",
+                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "defaultValue": "@INHERIT",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Background image",
+                    "name": "header_background_img",
+                    "description": "Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.",
+                    "type": "option",
+                    "category": "Header",
+                    "sortOrder": "11",
+                    "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Call to action (CTA)",
+                    "name": "header_cta",
+                    "description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
+                    "type": "listbox",
+                    "category": "Header",
+                    "sortOrder": "20",
+                    "defaultValue": "@INHERIT",
+                    "inputOptionValues": "@CHUNK tvSelectHeaderCTA",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Inheritance",
+                    "name": "header_inheritance",
+                    "description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
+                    "type": "checkbox",
+                    "category": "Header",
+                    "sortOrder": "99",
+                    "defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
+                    "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Content type",
+                    "name": "content_type",
+                    "description": "Select the primary function of this content. Try to narrow it down to just 1 if possible. This will make the content more focused and the editing process a little easier.",
+                    "type": "listbox-multiple",
+                    "category": "Purpose",
+                    "sortOrder": 1,
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 3 AND `softDelete` = 0 ORDER BY position",
+                    "inputProperties": {
+                        "typeAhead": "false",
+                        "typeAheadDelay": "250",
+                        "stackItems": "true"
+                    },
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Brief",
+                    "name": "content_brief",
+                    "description": "Write a short summary of what this page should be about. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.",
+                    "type": "redactor",
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "advAttrib": "1",
+                        "buttonFullScreen": "1",
+                        "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
+                        "minHeight": "130"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Outline",
+                    "name": "content_outline",
+                    "description": "Give an overview of the main page structure. Like a table of contents, but feel free to add ideas in between.",
+                    "type": "redactor",
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "advAttrib": "1",
+                        "buttonFullScreen": "1",
+                        "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
+                        "minHeight": "210"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Result",
+                    "name": "content_result",
+                    "description": "Describe the desired effect of this page. How did it help the visitor? And what good will that do for you?",
+                    "type": "redactor",
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "advAttrib": "1",
+                        "buttonFullScreen": "1",
+                        "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link",
+                        "minHeight": "80"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Follow-up",
+                    "name": "content_cta",
+                    "description": "What kind of action do you want the visitor to take after viewing this content? View related content, get in touch, subscribe to your newsletter, buy your product, donate to your cause...",
+                    "type": "text",
+                    "category": "Purpose",
+                    "sortOrder": 11,
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Tone of voice",
+                    "name": "content_tone",
+                    "description": "Decide what writing style to adopt for this page. Formal, fun, pragmatic, provocative...",
+                    "type": "text",
+                    "category": "Purpose",
+                    "sortOrder": 10,
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Priority",
+                    "name": "content_priority",
+                    "description": "Zoom out a little and ask yourself: do we really need this page? And do we need it now? If it turns out to be neither urgent nor important, consider deleting it again.",
+                    "type": "option",
+                    "category": "Purpose",
+                    "sortOrder": 30,
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 4 AND `softDelete` = 0 ORDER BY position",
+                    "inputProperties": {
+                        "columns": "1"
+                    },
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Related content",
+                    "name": "content_related",
+                    "type": "superboxselect",
+                    "sortOrder": 0,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"published:=\":\"1\"},{\"hidemenu:=\":\"0\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Attachments",
+                    "name": "content_attachments",
+                    "type": "superboxselect",
+                    "sortOrder": 0,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modStaticResource\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "External links",
+                    "name": "content_external_links",
+                    "type": "superboxselect",
+                    "sortOrder": 0,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Repurposing",
+                    "name": "content_repurpose",
+                    "description": "Can you think of ways to reuse this content in different places or scenarios? Or if this content is being repurposed from somewhere else: can you point to that source? NB: connections are not saved until you save the page itself!",
+                    "type": "richtext",
+                    "category": "Purpose",
+                    "sortOrder": 50,
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Progress indicator",
+                    "name": "status_progress",
+                    "description": "What is the current development stage of this page?",
+                    "type": "option",
+                    "category": "Status",
+                    "sortOrder": "1",
+                    "defaultValue": "not-done",
+                    "inputOptionValues": "[Seed] The idea is ready to take root, but this page is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==review||[Healthy plant] Watered, fertilized and growing steadily==done",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Health indicator",
+                    "name": "status_health",
+                    "description": "What is the current condition of this page?",
+                    "type": "option",
+                    "category": "Status",
+                    "sortOrder": "1",
+                    "defaultValue": "stable",
+                    "inputOptionValues": "[Fruiting] This particular page is performing really well==successful||[Healthy] Nothing out of the ordinary, does what it's supposed to do==stable||[Plagued] Somehow, this page is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Improvements",
+                    "name": "status_improvements",
+                    "description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
+                    "type": "checkbox",
+                    "category": "Status",
+                    "sortOrder": "2",
+                    "inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Help!",
+                    "name": "status_help",
+                    "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
+                    "type": "checkbox",
+                    "category": "Status",
+                    "sortOrder": "4",
+                    "inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Notes / Explanations",
+                    "name": "status_notes",
+                    "description": "Create a mini journal of this page. Latest notes are shown on top and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
+                    "type": "migx",
+                    "category": "Status",
+                    "sortOrder": "99",
+                    "inputProperties": {
+                        "configs": "status_notes"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Assigned editor",
+                    "name": "status_assigned_user",
+                    "description": "Who is best suited to take a look at these improvements?",
+                    "type": "listbox",
+                    "category": "Status",
+                    "sortOrder": "3",
+                    "inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Due date",
+                    "name": "planning_date_completed",
+                    "description": "",
+                    "type": "date",
+                    "category": "Date",
+                    "sortOrder": "2",
+                    "templates": [
+                        "PortfolioProject","Portfolio - Project"
                     ]
                 },
                 {
@@ -1656,7 +1894,7 @@
                     ]
                 },
                 {
-                    "caption": "City \/ Town",
+                    "caption": "City / Town",
                     "name": "address_locality",
                     "description": "",
                     "type": "text",
@@ -1800,7 +2038,7 @@
                 {
                     "caption": "Organization website",
                     "name": "organization_url",
-                    "description": "Please fill in the complete URL (including http(s):\/\/).",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Org. - Information",
                     "sortOrder": "20",
@@ -1913,7 +2151,7 @@
                 {
                     "caption": "Personal website or blog",
                     "name": "person_url",
-                    "description": "Please fill in the complete URL (including http(s):\/\/).",
+                    "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "category": "Person - Information",
                     "sortOrder": "10",
@@ -2506,7 +2744,7 @@
                 },
                 {
                     "name": "heroTitles",
-                    "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1\/H2).",
+                    "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
                     "category": "m_presentation"
                 },
                 {
@@ -3740,25 +3978,25 @@
                 "key": "semantic_dist_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "assets\/semantic\/dist"
+                "value": "assets/semantic/dist"
             },
             {
                 "key": "custom_css_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "assets\/semantic\/dist\/themes\/romanesco\/assets\/css"
+                "value": "assets/semantic/dist/themes/romanesco/assets/css"
             },
             {
                 "key": "custom_js_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "assets\/semantic\/dist\/themes\/romanesco\/assets\/js"
+                "value": "assets/semantic/dist/themes/romanesco/assets/js"
             },
             {
                 "key": "custom_vendor_path",
                 "type": "textfield",
                 "area": "Paths",
-                "value": "assets\/semantic\/dist\/themes\/romanesco\/assets\/vendor"
+                "value": "assets/semantic/dist/themes/romanesco/assets/vendor"
             },
             {
                 "key": "date_format_short",
@@ -3789,22 +4027,6 @@
                 "type": "combo-boolean",
                 "area": "Settings",
                 "value": "0"
-            },
-            {
-                "key": "cb_field_code_id",
-                "type": "textfield",
-                "area": "ContentBlocks - Settings",
-                "value": ""
-            },
-            {
-                "key": "cta_container_id",
-                "type": "textfield",
-                "area": "Pages"
-            },
-            {
-                "key": "footer_container_id",
-                "type": "textfield",
-                "area": "Pages"
             },
             {
                 "key": "global_backgrounds_id",
@@ -3931,6 +4153,22 @@
                 "type": "combo-boolean",
                 "area": "Users",
                 "value": "0"
+            },
+            {
+                "key": "cb_field_code_id",
+                "type": "textfield",
+                "area": "ContentBlocks - Settings",
+                "value": ""
+            },
+            {
+                "key": "cta_container_id",
+                "type": "textfield",
+                "area": "Pages"
+            },
+            {
+                "key": "footer_container_id",
+                "type": "textfield",
+                "area": "Pages"
             },
             {
                 "key": "container_id",

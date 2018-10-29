@@ -42,7 +42,7 @@ foreach ($sources as $index => $source) {
     $baseArray = array_merge_recursive($baseArray,$sourceArray);
 }
 
-$output = json_encode($baseArray, JSON_PRETTY_PRINT);
+$output = json_encode($baseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
 // Fill placeholders with corresponding template names
 foreach ($templateList as $file) {
