@@ -1,9 +1,11 @@
 <div class="ui container">
     <div class="ui large feed">
-        [[getImageList?
-            &docid=`[[++romanesco.dashboard_id:empty=`[[*id]]`]]`
-            &tvname=`project_hub_timeline`
+        [[migxLoopCollection?
+            &packageName=`romanescobackyard`
+            &classname=`rmTimeline`
             &tpl=`projectHubRow`
+            &where=`{"resource_id":"[[++romanesco.dashboard_id:empty=`[[*id]]`]]","type":"project-hub"}`
+            &sortConfig=`[{"sortby":"date","sortdir":"DESC"}]`
         ]]
         <div class="event">
             <div class="label">

@@ -40,6 +40,12 @@
                 },{
                     "name": "Status",
                     "parent": "e_status"
+                },{
+                    "name": "e_timeline",
+                    "parent": "e_content"
+                },{
+                    "name": "Timeline",
+                    "parent": "e_status"
                 }
             ]
         }

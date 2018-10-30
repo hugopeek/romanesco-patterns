@@ -88,6 +88,14 @@
                     "parent": "e_status"
                 },
                 {
+                    "name": "e_timeline",
+                    "parent": "e_content"
+                },
+                {
+                    "name": "Timeline",
+                    "parent": "e_status"
+                },
+                {
                     "name": "e_formblocks",
                     "parent": "00_electrons"
                 },
@@ -878,10 +886,10 @@
                     "name": "project_hub_timeline",
                     "description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
                     "type": "migx",
-                    "category": "Project Hub",
-                    "sortOrder": "1",
+                    "category": "Timeline",
+                    "sortOrder": 1,
                     "inputProperties": {
-                        "configs": "project_hub_timeline"
+                        "configs": "project_hub_timeline:romanescobackyard"
                     },
                     "templates": [
                         "ProjectDashboard"
