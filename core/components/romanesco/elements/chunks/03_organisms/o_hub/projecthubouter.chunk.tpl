@@ -4,7 +4,7 @@
             &packageName=`romanescobackyard`
             &classname=`rmTimeline`
             &tpl=`projectHubRow`
-            &where=`{"resource_id":"[[++romanesco.dashboard_id:empty=`[[*id]]`]]","type":"project-hub"}`
+            &where=`{"resource_id":"[[++romanesco.dashboard_id:empty=`[[*id]]`]]","type":"project-hub","deleted":"0"}`
             &sortConfig=`[{"sortby":"date","sortdir":"DESC"}]`
         ]]
         <div class="event">

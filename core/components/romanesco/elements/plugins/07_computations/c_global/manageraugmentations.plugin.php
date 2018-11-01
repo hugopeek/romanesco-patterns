@@ -2,8 +2,9 @@
 $modx->controller->addLexiconTopic('romanescobackyard:manager');
 
 switch ($modx->event->name) {
-    // Load custom CSS styles for ContentBlocks
+    // Load custom CSS styles
     case 'OnDocFormRender':
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css');
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/contentblocks.css');
         break;
         

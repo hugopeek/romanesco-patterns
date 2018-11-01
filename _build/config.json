@@ -578,6 +578,10 @@
                     "parent": "06_formulas"
                 },
                 {
+                    "name": "f_toolshed",
+                    "parent": "06_formulas"
+                },
+                {
                     "name": "c_content",
                     "parent": "07_computations"
                 },
@@ -3896,6 +3900,16 @@
                     "name": "checkPermissions",
                     "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
                     "category": "f_users"
+                },
+                {
+                    "name": "SetOptionGroup",
+                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration.",
+                    "category": "f_toolshed"
+                },
+                {
+                    "name": "SetOptionAlias",
+                    "description": "After save hook for MIGXdb configs, that generates an alias based on the name (if no alias is present).",
+                    "category": "f_toolshed"
                 }
             ],
             "plugins": [

@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "SetOptionGroup",
+                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration.",
+                    "category": "f_toolshed"
+                },{
+                    "name": "SetOptionAlias",
+                    "description": "After save hook for MIGXdb configs, that generates an alias based on the name (if no alias is present).",
+                    "category": "f_toolshed"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "f_toolshed",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}
