@@ -1358,7 +1358,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 3 AND `softDelete` = 0 ORDER BY position",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_type` AND `deleted` = 0 ORDER BY sortorder",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -1452,7 +1452,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `setinputoptions_inputoptions` WHERE `group` = 4 AND `softDelete` = 0 ORDER BY position",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_priority` AND `deleted` = 0 ORDER BY sortorder",
                     "inputProperties": {
                         "columns": "1"
                     },
@@ -3902,13 +3902,13 @@
                     "category": "f_users"
                 },
                 {
-                    "name": "SetOptionGroup",
-                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration.",
+                    "name": "migxSaveOption",
+                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration. Also generates an alias if none is present and increments the sort order.",
                     "category": "f_toolshed"
                 },
                 {
-                    "name": "SetOptionAlias",
-                    "description": "After save hook for MIGXdb configs, that generates an alias based on the name (if no alias is present).",
+                    "name": "migxSaveOptionGroup",
+                    "description": "After save hook for MIGXdb that updates the key in child options too if you change it. Also increments the sort order.",
                     "category": "f_toolshed"
                 }
             ],
@@ -3954,6 +3954,7 @@
                     "category": "c_global",
                     "events": [
                         "OnDocFormRender",
+                        "OnManagerPageBeforeRender",
                         "OnManagerPageAfterRender"
                     ]
                 },

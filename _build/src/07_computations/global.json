@@ -5,7 +5,7 @@
                 {
                     "name": "ManagerAugmentations",
                     "category": "c_global",
-                    "events": ["OnDocFormRender","OnManagerPageAfterRender"]
+                    "events": ["OnDocFormRender","OnManagerPageBeforeRender","OnManagerPageAfterRender"]
                 },{
                     "name": "LexiconWeb",
                     "category": "c_global",

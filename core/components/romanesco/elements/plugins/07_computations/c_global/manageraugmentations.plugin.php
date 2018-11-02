@@ -4,10 +4,14 @@ $modx->controller->addLexiconTopic('romanescobackyard:manager');
 switch ($modx->event->name) {
     // Load custom CSS styles
     case 'OnDocFormRender':
-        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css');
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/contentblocks.css');
         break;
-        
+
+    // Load CSS for manager on different event
+    case 'OnManagerPageBeforeRender':
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css');
+        break;
+
     // Mute rogue output lines from certain packages
     case 'OnManagerPageAfterRender':
         $removeLineImagePlus = $modx->getOption('core_path') . 'components/imageplus/elements/tv/output/';

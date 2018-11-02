@@ -3,12 +3,12 @@
         "elements": {
             "snippets": [
                 {
-                    "name": "SetOptionGroup",
-                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration.",
+                    "name": "migxSaveOption",
+                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration. Also generates an alias if none is present and increments the sort order.",
                     "category": "f_toolshed"
                 },{
-                    "name": "SetOptionAlias",
-                    "description": "After save hook for MIGXdb configs, that generates an alias based on the name (if no alias is present).",
+                    "name": "migxSaveOptionGroup",
+                    "description": "After save hook for MIGXdb that updates the key in child options too if you change it. Also increments the sort order.",
                     "category": "f_toolshed"
                 }
             ],
