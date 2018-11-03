@@ -1352,13 +1352,13 @@
                     ]
                 },
                 {
-                    "caption": "Content type",
-                    "name": "content_type",
+                    "caption": "Content purpose",
+                    "name": "content_purpose",
                     "description": "Select the primary function of this content. Try to narrow it down to just 1 if possible. This will make the content more focused and the editing process a little easier.",
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_type` AND `deleted` = 0 ORDER BY sortorder",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_type` AND `deleted` = 0 ORDER BY position",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -1378,7 +1378,7 @@
                     "description": "Write a short summary of what this page should be about. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.",
                     "type": "redactor",
                     "category": "Purpose",
-                    "sortOrder": 10,
+                    "sortOrder": 2,
                     "inputProperties": {
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
@@ -1395,7 +1395,7 @@
                     "description": "Give an overview of the main page structure. Like a table of contents, but feel free to add ideas in between.",
                     "type": "redactor",
                     "category": "Purpose",
-                    "sortOrder": 10,
+                    "sortOrder": 3,
                     "inputProperties": {
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
@@ -1440,7 +1440,7 @@
                     "description": "Decide what writing style to adopt for this page. Formal, fun, pragmatic, provocative...",
                     "type": "text",
                     "category": "Purpose",
-                    "sortOrder": 10,
+                    "sortOrder": 20,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -1468,7 +1468,8 @@
                     "caption": "Related content",
                     "name": "content_related",
                     "type": "superboxselect",
-                    "sortOrder": 0,
+                    "category": "Purpose",
+                    "sortOrder": 31,
                     "inputProperties": {
                         "selectType": "resources",
                         "allowBlank": "1",
@@ -1485,7 +1486,8 @@
                     "caption": "Attachments",
                     "name": "content_attachments",
                     "type": "superboxselect",
-                    "sortOrder": 0,
+                    "category": "Purpose",
+                    "sortOrder": 40,
                     "inputProperties": {
                         "selectType": "resources",
                         "allowBlank": "1",
@@ -1502,7 +1504,8 @@
                     "caption": "External links",
                     "name": "content_external_links",
                     "type": "superboxselect",
-                    "sortOrder": 0,
+                    "category": "Purpose",
+                    "sortOrder": 41,
                     "inputProperties": {
                         "selectType": "resources",
                         "allowBlank": "1",
