@@ -18,7 +18,7 @@
                 },{
                     "name": "Footer",
                     "parent": "e_footers",
-                    "rank": 999
+                    "rank": 99
                 },{
                     "name": "e_contentblocks",
                     "parent": "e_content"
@@ -41,11 +41,18 @@
                     "name": "Status",
                     "parent": "e_status"
                 },{
+                    "name": "e_links",
+                    "parent": "e_content"
+                },{
+                    "name": "Links",
+                    "parent": "e_links",
+                    "rank": 100
+                },{
                     "name": "e_timeline",
                     "parent": "e_content"
                 },{
                     "name": "Timeline",
-                    "parent": "e_status"
+                    "parent": "e_timeline"
                 }
             ]
         }

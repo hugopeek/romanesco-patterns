@@ -1,0 +1,62 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Related content",
+                    "name": "links_related",
+                    "type": "superboxselect",
+                    "category": "Links",
+                    "sortOrder": 1,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"published:=\":\"1\"},{\"hidemenu:=\":\"0\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Attachments",
+                    "name": "links_attachment",
+                    "type": "superboxselect",
+                    "category": "Links",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modStaticResource\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "External links",
+                    "name": "links_external",
+                    "type": "superboxselect",
+                    "category": "Links",
+                    "sortOrder": 11,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                }
+            ]
+        }
+    }
+}

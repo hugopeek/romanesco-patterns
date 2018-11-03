@@ -57,7 +57,7 @@
                 {
                     "name": "Footer",
                     "parent": "e_footers",
-                    "rank": 999
+                    "rank": 99
                 },
                 {
                     "name": "e_contentblocks",
@@ -88,12 +88,21 @@
                     "parent": "e_status"
                 },
                 {
+                    "name": "e_links",
+                    "parent": "e_content"
+                },
+                {
+                    "name": "Links",
+                    "parent": "e_links",
+                    "rank": 100
+                },
+                {
                     "name": "e_timeline",
                     "parent": "e_content"
                 },
                 {
                     "name": "Timeline",
-                    "parent": "e_status"
+                    "parent": "e_timeline"
                 },
                 {
                     "name": "e_formblocks",
@@ -1352,9 +1361,63 @@
                     ]
                 },
                 {
+                    "caption": "Related content",
+                    "name": "links_related",
+                    "type": "superboxselect",
+                    "category": "Links",
+                    "sortOrder": 1,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"published:=\":\"1\"},{\"hidemenu:=\":\"0\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Attachments",
+                    "name": "links_attachment",
+                    "type": "superboxselect",
+                    "category": "Links",
+                    "sortOrder": 10,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modStaticResource\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "External links",
+                    "name": "links_external",
+                    "type": "superboxselect",
+                    "category": "Links",
+                    "sortOrder": 11,
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
+                        "pageSize": "20"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
                     "caption": "Content purpose",
                     "name": "content_purpose",
-                    "description": "Select the primary function of this content. Try to narrow it down to just 1 if possible. This will make the content more focused and the editing process a little easier.",
+                    "description": "Select the primary function(s) of this content. You can focus on just 1 topic, or create a chain of topics to use as blueprint for your storyline.",
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
@@ -1375,7 +1438,7 @@
                 {
                     "caption": "Brief",
                     "name": "content_brief",
-                    "description": "Write a short summary of what this page should be about. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.",
+                    "description": "Try to turn the content purpose into a short summary. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.",
                     "type": "redactor",
                     "category": "Purpose",
                     "sortOrder": 2,
@@ -1383,7 +1446,7 @@
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
                         "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
-                        "minHeight": "130"
+                        "minHeight": 130
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
@@ -1400,7 +1463,7 @@
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
                         "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
-                        "minHeight": "210"
+                        "minHeight": 210
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
@@ -1417,7 +1480,7 @@
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
                         "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link",
-                        "minHeight": "80"
+                        "minHeight": 130
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
@@ -1460,60 +1523,6 @@
                         "delimiter": ","
                     },
                     "display": "delim",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Related content",
-                    "name": "content_related",
-                    "type": "superboxselect",
-                    "category": "Purpose",
-                    "sortOrder": 31,
-                    "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"published:=\":\"1\"},{\"hidemenu:=\":\"0\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
-                    },
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Attachments",
-                    "name": "content_attachments",
-                    "type": "superboxselect",
-                    "category": "Purpose",
-                    "sortOrder": 40,
-                    "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"class_key:=\":\"modStaticResource\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
-                    },
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "External links",
-                    "name": "content_external_links",
-                    "type": "superboxselect",
-                    "category": "Purpose",
-                    "sortOrder": 41,
-                    "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
-                    },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
