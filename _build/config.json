@@ -1421,7 +1421,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_type` AND `deleted` = 0 ORDER BY position",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_purpose` AND `deleted` = 0 ORDER BY position",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -1515,7 +1515,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_priority` AND `deleted` = 0 ORDER BY sortorder",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_priority` AND `deleted` = 0 ORDER BY position",
                     "inputProperties": {
                         "columns": "1"
                     },
@@ -1528,12 +1528,29 @@
                     ]
                 },
                 {
-                    "caption": "Repurposing",
-                    "name": "content_repurpose",
-                    "description": "Can you think of ways to reuse this content in different places or scenarios? Or if this content is being repurposed from somewhere else: can you point to that source? NB: connections are not saved until you save the page itself!",
-                    "type": "richtext",
+                    "caption": "Re-purpose (Source)",
+                    "name": "content_repurpose_src",
+                    "description": "On which existing sources will this content be based? If the source is already pointing to this page as destination, it will show up automatically.",
+                    "type": "migxdb",
                     "category": "Purpose",
                     "sortOrder": 50,
+                    "inputProperties": {
+                        "configs": "content_repurpose_src:romanescobackyard"
+                    },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                    ]
+                },
+                {
+                    "caption": "Re-purpose (Destination)",
+                    "name": "content_repurpose_dest",
+                    "description": "Can you think of ways to reuse this content in other places or scenarios? If the destination doesn't exist yet, just enter Title and Description as an idea.",
+                    "type": "migxdb",
+                    "category": "Purpose",
+                    "sortOrder": 51,
+                    "inputProperties": {
+                        "configs": "content_repurpose_dest:romanescobackyard"
+                    },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -1544,7 +1561,7 @@
                     "description": "What is the current development stage of this page?",
                     "type": "option",
                     "category": "Status",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "defaultValue": "not-done",
                     "inputOptionValues": "[Seed] The idea is ready to take root, but this page is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==review||[Healthy plant] Watered, fertilized and growing steadily==done",
                     "templates": [
@@ -1557,7 +1574,7 @@
                     "description": "What is the current condition of this page?",
                     "type": "option",
                     "category": "Status",
-                    "sortOrder": "1",
+                    "sortOrder": 2,
                     "defaultValue": "stable",
                     "inputOptionValues": "[Fruiting] This particular page is performing really well==successful||[Healthy] Nothing out of the ordinary, does what it's supposed to do==stable||[Plagued] Somehow, this page is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
                     "templates": [
@@ -3915,12 +3932,22 @@
                 },
                 {
                     "name": "migxSaveOption",
-                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration. Also generates an alias if none is present and increments the sort order.",
+                    "description": "After save hook for MIGXdb. Gets and sets the group (parent) ID inside a nested configuration. Also generates an alias if none is present and increments the sort order.",
                     "category": "f_toolshed"
                 },
                 {
                     "name": "migxSaveOptionGroup",
-                    "description": "After save hook for MIGXdb that updates the key in child options too if you change it. Also increments the sort order.",
+                    "description": "After save hook for MIGXdb. Updates existing keys in child options if you change this setting in Group. Also increments the sort order.",
+                    "category": "f_toolshed"
+                },
+                {
+                    "name": "migxSaveRepurposeSrc",
+                    "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose destination.",
+                    "category": "f_toolshed"
+                },
+                {
+                    "name": "migxSaveRepurposeDest",
+                    "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose source.",
                     "category": "f_toolshed"
                 }
             ],

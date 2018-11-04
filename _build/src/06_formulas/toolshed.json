@@ -4,11 +4,19 @@
             "snippets": [
                 {
                     "name": "migxSaveOption",
-                    "description": "After save hook that gets and sets the group (parent) ID inside a nested MIGXdb configuration. Also generates an alias if none is present and increments the sort order.",
+                    "description": "After save hook for MIGXdb. Gets and sets the group (parent) ID inside a nested configuration. Also generates an alias if none is present and increments the sort order.",
                     "category": "f_toolshed"
                 },{
                     "name": "migxSaveOptionGroup",
-                    "description": "After save hook for MIGXdb that updates the key in child options too if you change it. Also increments the sort order.",
+                    "description": "After save hook for MIGXdb. Updates existing keys in child options if you change this setting in Group. Also increments the sort order.",
+                    "category": "f_toolshed"
+                },{
+                    "name": "migxSaveRepurposeSrc",
+                    "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose destination.",
+                    "category": "f_toolshed"
+                },{
+                    "name": "migxSaveRepurposeDest",
+                    "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose source.",
                     "category": "f_toolshed"
                 }
             ],

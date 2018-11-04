@@ -8,7 +8,7 @@
                     "description": "What is the current development stage of this page?",
                     "type": "option",
                     "category": "Status",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "defaultValue": "not-done",
                     "inputOptionValues": "[Seed] The idea is ready to take root, but this page is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==review||[Healthy plant] Watered, fertilized and growing steadily==done",
                     "templates": [
@@ -20,7 +20,7 @@
                     "description": "What is the current condition of this page?",
                     "type": "option",
                     "category": "Status",
-                    "sortOrder": "1",
+                    "sortOrder": 2,
                     "defaultValue": "stable",
                     "inputOptionValues": "[Fruiting] This particular page is performing really well==successful||[Healthy] Nothing out of the ordinary, does what it's supposed to do==stable||[Plagued] Somehow, this page is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
                     "templates": [

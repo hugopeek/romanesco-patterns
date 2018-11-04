@@ -9,7 +9,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_type` AND `deleted` = 0 ORDER BY position",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_purpose` AND `deleted` = 0 ORDER BY position",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -103,7 +103,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_priority` AND `deleted` = 0 ORDER BY sortorder",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_priority` AND `deleted` = 0 ORDER BY position",
                     "inputProperties": {
                         "columns": "1"
                     },
@@ -116,12 +116,29 @@
                     ]
                 },
                 {
-                    "caption": "Repurposing",
-                    "name": "content_repurpose",
-                    "description": "Can you think of ways to reuse this content in different places or scenarios? Or if this content is being repurposed from somewhere else: can you point to that source? NB: connections are not saved until you save the page itself!",
-                    "type": "richtext",
+                    "caption": "Re-purpose (Source)",
+                    "name": "content_repurpose_src",
+                    "description": "On which existing sources will this content be based? If the source is already pointing to this page as destination, it will show up automatically.",
+                    "type": "migxdb",
                     "category": "Purpose",
                     "sortOrder": 50,
+                    "inputProperties": {
+                        "configs": "content_repurpose_src:romanescobackyard"
+                    },
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
+                    "caption": "Re-purpose (Destination)",
+                    "name": "content_repurpose_dest",
+                    "description": "Can you think of ways to reuse this content in other places or scenarios? If the destination doesn't exist yet, just enter Title and Description as an idea.",
+                    "type": "migxdb",
+                    "category": "Purpose",
+                    "sortOrder": 51,
+                    "inputProperties": {
+                        "configs": "content_repurpose_dest:romanescobackyard"
+                    },
                     "templates": [
                         "@@templates_all"
                     ]
