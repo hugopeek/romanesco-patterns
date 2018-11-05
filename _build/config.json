@@ -1421,7 +1421,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_purpose` AND `deleted` = 0 ORDER BY position",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPurpose",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -1515,7 +1515,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_priority` AND `deleted` = 0 ORDER BY position",
+                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `modx_romanesco_options` WHERE `key` = `content_purpose` AND `deleted` = 0 ORDER BY position",
                     "inputProperties": {
                         "columns": "1"
                     },
@@ -2480,6 +2480,17 @@
                 {
                     "name": "tvSelectPortfolio",
                     "description": "Get available projects and turn them into input options for use in a selection TV.",
+                    "category": "a_select"
+                },
+                {
+                    "name": "tvSelectInputOption",
+                    "description": "Generate a list of input options, which are globally defined in a MIGXdb grid. You can narrow down the selection by appending a property set with a key name inside (eg: @ContentPurpose).",
+                    "properties": [
+                        {
+                            "name": "inputOptionKey",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_select"
                 },
                 {

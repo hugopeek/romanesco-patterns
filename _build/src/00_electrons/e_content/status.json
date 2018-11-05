@@ -10,7 +10,7 @@
                     "category": "Status",
                     "sortOrder": 1,
                     "defaultValue": "not-done",
-                    "inputOptionValues": "[Seed] The idea is ready to take root, but this page is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==review||[Healthy plant] Watered, fertilized and growing steadily==done",
+                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusProgress",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -22,7 +22,7 @@
                     "category": "Status",
                     "sortOrder": 2,
                     "defaultValue": "stable",
-                    "inputOptionValues": "[Fruiting] This particular page is performing really well==successful||[Healthy] Nothing out of the ordinary, does what it's supposed to do==stable||[Plagued] Somehow, this page is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
+                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusHealth",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -43,7 +43,7 @@
                     ]
                 },{
                     "caption": "Help!",
-                    "name": "status_help",
+                    "name": "status_issues",
                     "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
                     "type": "checkbox",
                     "category": "Status",
@@ -53,19 +53,6 @@
                         "delimiter": ","
                     },
                     "display": "delim",
-                    "templates": [
-                        "@@templates_all"
-                    ]
-                },{
-                    "caption": "Notes / Explanations",
-                    "name": "status_notes",
-                    "description": "Create a mini journal of this page. Latest notes are shown on top and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
-                    "type": "migx",
-                    "category": "Status",
-                    "sortOrder": "99",
-                    "inputProperties": {
-                        "configs": "status_notes"
-                    },
                     "templates": [
                         "@@templates_all"
                     ]

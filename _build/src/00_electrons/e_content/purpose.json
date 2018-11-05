@@ -9,7 +9,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_purpose` AND `deleted` = 0 ORDER BY position",
+                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPurpose",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -103,7 +103,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `romanesco_options` WHERE `key` = `content_priority` AND `deleted` = 0 ORDER BY position",
+                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPriority",
                     "inputProperties": {
                         "columns": "1"
                     },
