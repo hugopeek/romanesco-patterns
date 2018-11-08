@@ -1421,7 +1421,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPurpose",
+                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPurpose",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -1515,7 +1515,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@SELECT `name` AS `name`,`id` FROM `modx_romanesco_options` WHERE `key` = `content_purpose` AND `deleted` = 0 ORDER BY position",
+                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPriority",
                     "inputProperties": {
                         "columns": "1"
                     },
@@ -1563,7 +1563,7 @@
                     "category": "Status",
                     "sortOrder": 1,
                     "defaultValue": "not-done",
-                    "inputOptionValues": "[Seed] The idea is ready to take root, but this page is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==review||[Healthy plant] Watered, fertilized and growing steadily==done",
+                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusProgress",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -1576,7 +1576,7 @@
                     "category": "Status",
                     "sortOrder": 2,
                     "defaultValue": "stable",
-                    "inputOptionValues": "[Fruiting] This particular page is performing really well==successful||[Healthy] Nothing out of the ordinary, does what it's supposed to do==stable||[Plagued] Somehow, this page is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired",
+                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusHealth",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -1599,7 +1599,7 @@
                 },
                 {
                     "caption": "Help!",
-                    "name": "status_help",
+                    "name": "status_issues",
                     "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
                     "type": "checkbox",
                     "category": "Status",
@@ -1609,20 +1609,6 @@
                         "delimiter": ","
                     },
                     "display": "delim",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
-                    ]
-                },
-                {
-                    "caption": "Notes / Explanations",
-                    "name": "status_notes",
-                    "description": "Create a mini journal of this page. Latest notes are shown on top and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!",
-                    "type": "migx",
-                    "category": "Status",
-                    "sortOrder": "99",
-                    "inputProperties": {
-                        "configs": "status_notes"
-                    },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -3959,6 +3945,11 @@
                 {
                     "name": "migxSaveRepurposeDest",
                     "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose source.",
+                    "category": "f_toolshed"
+                },
+                {
+                    "name": "migxSaveRelated",
+                    "description": "After save hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, watch your back with those!",
                     "category": "f_toolshed"
                 }
             ],

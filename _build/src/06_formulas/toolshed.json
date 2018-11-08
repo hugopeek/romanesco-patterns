@@ -18,6 +18,10 @@
                     "name": "migxSaveRepurposeDest",
                     "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose source.",
                     "category": "f_toolshed"
+                },{
+                    "name": "migxSaveRelated",
+                    "description": "After save hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, watch your back with those!",
+                    "category": "f_toolshed"
                 }
             ],
 
