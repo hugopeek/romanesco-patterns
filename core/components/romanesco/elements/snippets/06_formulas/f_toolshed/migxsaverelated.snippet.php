@@ -13,6 +13,15 @@ $createdon = $object->get('createdon');
 $createdby = $object->get('createdby');
 $weight = $object->get('weight');
 
+// Set current resource as source (if no source was set)
+if (!$source) {
+    $object->set('source', $properties['resource_id']);
+    $object->save();
+
+    // Update source variable
+    $source = $object->get('source');
+}
+
 // Check if cross-link exists already
 $existingSrc = $modx->getObject('rmCrosslinkRelated', array('source' => $source, 'destination' => $destination));
 $existingDest = $modx->getObject('rmCrosslinkRelated', array('source' => $destination, 'destination' => $source));
