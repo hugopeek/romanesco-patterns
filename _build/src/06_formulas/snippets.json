@@ -79,6 +79,10 @@
                     "description": "Turn a JSON object into an HTML table. For documentation purposes.",
                     "category": "f_json"
                 },{
+                    "name": "jsonImportInputOptions",
+                    "description": "Generate input options from a JSON file. These options are written directly into their database table inside the Backyard package.",
+                    "category": "f_json"
+                },{
                     "name": "tvToJSON",
                     "description": "Output the properties of given TV to a JSON object. The output could be used by jsonToHTML to generate an HTML table.",
                     "category": "f_json"

@@ -5,16 +5,11 @@
                 {
                     "caption": "Related content",
                     "name": "links_related",
-                    "type": "superboxselect",
+                    "type": "migxdb",
                     "category": "Links",
                     "sortOrder": 1,
                     "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"published:=\":\"1\"},{\"hidemenu:=\":\"0\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
+                        "configs": "content_related_src:romanescobackyard"
                     },
                     "templates": [
                         "@@templates_all"

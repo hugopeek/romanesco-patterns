@@ -1363,16 +1363,11 @@
                 {
                     "caption": "Related content",
                     "name": "links_related",
-                    "type": "superboxselect",
+                    "type": "migxdb",
                     "category": "Links",
                     "sortOrder": 1,
                     "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"published:=\":\"1\"},{\"hidemenu:=\":\"0\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
+                        "configs": "content_related_src:romanescobackyard"
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
@@ -1587,8 +1582,8 @@
                     "description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
                     "type": "checkbox",
                     "category": "Status",
-                    "sortOrder": "2",
-                    "inputOptionValues": "[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other",
+                    "sortOrder": 3,
+                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusImprovements",
                     "outputProperties": {
                         "delimiter": ","
                     },
@@ -1603,8 +1598,8 @@
                     "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
                     "type": "checkbox",
                     "category": "Status",
-                    "sortOrder": "4",
-                    "inputOptionValues": "[Manager] I'm having issues (or lost the way) while navigating MODX==manager||[Content] I'm having a problem when adding or editing content==content||[Styling] Things don't look as they should on the website==styling||[Technical] The output is incorrect on the site, or there's no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I'm stuck with something and could really use your advice or opinion==concept||[Other] Something else==other",
+                    "sortOrder": 4,
+                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusIssues",
                     "outputProperties": {
                         "delimiter": ","
                     },
@@ -1616,10 +1611,10 @@
                 {
                     "caption": "Assigned editor",
                     "name": "status_assigned_user",
-                    "description": "Who is best suited to take a look at these improvements?",
+                    "description": "Who is responsible for editing and maintaining this page?",
                     "type": "listbox",
                     "category": "Status",
-                    "sortOrder": "3",
+                    "sortOrder": 10,
                     "inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
@@ -1630,10 +1625,10 @@
                     "name": "planning_date_completed",
                     "description": "",
                     "type": "date",
-                    "category": "Date",
-                    "sortOrder": "2",
+                    "category": "Status",
+                    "sortOrder": 20,
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
@@ -3860,6 +3855,11 @@
                 {
                     "name": "jsonToHTML",
                     "description": "Turn a JSON object into an HTML table. For documentation purposes.",
+                    "category": "f_json"
+                },
+                {
+                    "name": "jsonImportInputOptions",
+                    "description": "Generate input options from a JSON file. These options are written directly into their database table inside the Backyard package.",
                     "category": "f_json"
                 },
                 {
