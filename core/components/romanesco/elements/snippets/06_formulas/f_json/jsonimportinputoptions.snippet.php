@@ -50,6 +50,13 @@ $optionsArray = json_decode($options, true);
 
 foreach ($optionsArray['groups'] as $group) {
     $groupID = '';
+
+    // Prevent NULL on NOT NULL field errors
+    if (!isset($group['deleted'])) {
+        $group['deleted'] = 0;
+    }
+
+    // Assume group key is the same as any existing "old" key
     $oldKey = $group['key'];
 
     // Check if group exists
@@ -62,7 +69,11 @@ foreach ($optionsArray['groups'] as $group) {
         $existingGroup = $modx->getObject('rmOptionGroup', array(
             'name' => $group['name']
         ));
-        $oldKey = $existingGroup->get('key'); // for updating options
+
+        // If group key was changed, use previous key to fetch existing options correctly
+        if (is_object($existingGroup)) {
+            $oldKey = $existingGroup->get('key');
+        }
     }
 
     // Update existing group with new data
@@ -71,9 +82,7 @@ foreach ($optionsArray['groups'] as $group) {
         $existingGroup->set('description', $group['description']);
         $existingGroup->set('key', $group['key']);
         $existingGroup->set('position', $group['position']);
-        if ($group['deleted']) {
-            $existingGroup->set('deleted', $group['deleted']);
-        }
+        $existingGroup->set('deleted', $group['deleted']);
         $existingGroup->save();
         $groupID = $existingGroup->get('id'); // for connecting options
     }
@@ -91,31 +100,27 @@ foreach ($optionsArray['groups'] as $group) {
 
     // Same drill for the options
     foreach ($group['options'] as $option) {
+        // Prevent NULL on NOT NULL field errors
+        if (!isset($option['deleted'])) {
+            $option['deleted'] = 0;
+        }
 
         // Generate alias if none was set
-        if (!$option['alias']) {
+        if (!isset($option['alias'])) {
             $option['alias'] = $modx->runSnippet('stripAsAlias', array('input' => $option['name']));
         }
 
         // Check if option exists
         $existingOption = $modx->getObject('rmOption', array(
             'alias' => $option['alias'],
-            'key' => $group['key'],
+            'key' => $oldKey,
         ));
 
         // Perform second check on name, to see if user wants to update alias for existing option
         if (!is_object($existingOption)) {
             $existingOption = $modx->getObject('rmOption', array(
                 'name' => $option['name'],
-                'key' => $group['key'],
-            ));
-        }
-
-        // Perform second check on name, to see if user wants to update alias for existing option
-        if (!is_object($existingOption)) {
-            $existingOption = $modx->getObject('rmOption', array(
-                'name' => $option['name'],
-                'key' => $oldKey, // check for old key, in case parent key was updated
+                'key' => $oldKey,
             ));
         }
 
@@ -126,9 +131,7 @@ foreach ($optionsArray['groups'] as $group) {
             $existingOption->set('alias', $option['alias']);
             $existingOption->set('key', $group['key']);
             $existingOption->set('position', $option['position']);
-            if ($option['deleted']){
-                $existingOption->set('deleted', $option['deleted']);
-            }
+            $existingOption->set('deleted', $option['deleted']);
             $existingOption->save();
         }
         // Or create new option
