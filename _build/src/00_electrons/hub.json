@@ -6,7 +6,7 @@
                     "caption": "Project timeline",
                     "name": "project_hub_timeline",
                     "description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
-                    "type": "migx",
+                    "type": "migxdb",
                     "category": "Timeline",
                     "sortOrder": 1,
                     "inputProperties": {

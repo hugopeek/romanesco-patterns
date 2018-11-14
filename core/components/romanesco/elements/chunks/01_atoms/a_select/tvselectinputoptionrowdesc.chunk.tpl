@@ -1,0 +1,1 @@
+<b>[[+name]]</b>[[+description:before=`<br>`]]==[[+[[+linkType]]]]

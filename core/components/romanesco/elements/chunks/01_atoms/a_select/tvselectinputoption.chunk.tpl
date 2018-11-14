@@ -1,8 +1,8 @@
-[[migxLoopCollection?
+[[+firstOption:after=`==||`]][[migxLoopCollection?
     &packageName=`romanescobackyard`
     &classname=`[[+className]]`
-    &tpl=`@CODE: <b>[[+name]]</b><br>[[+description]]==[[+id]]`
+    &tpl=`[[+rowTpl]]`
     &outputSeparator=`||`
     &where=`{"key":"[[+inputOptionKey]]"}`
-    &sortConfig=`[{"sortby":"position","sortdir":"ASC"}]`
+    &sortConfig=`[{"sortby":"[[+sortBy]]","sortdir":"[[+sortDir]]"}]`
 ]]

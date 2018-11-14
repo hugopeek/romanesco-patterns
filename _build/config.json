@@ -898,7 +898,7 @@
                     "caption": "Project timeline",
                     "name": "project_hub_timeline",
                     "description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
-                    "type": "migx",
+                    "type": "migxdb",
                     "category": "Timeline",
                     "sortOrder": 1,
                     "inputProperties": {
@@ -1416,7 +1416,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPurpose",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPurpose",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -1510,7 +1510,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPriority",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPriority",
                     "inputProperties": {
                         "columns": "1"
                     },
@@ -1557,8 +1557,8 @@
                     "type": "option",
                     "category": "Status",
                     "sortOrder": 1,
-                    "defaultValue": "not-done",
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusProgress",
+                    "defaultValue": "to-do",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@StatusProgress",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -1571,7 +1571,7 @@
                     "category": "Status",
                     "sortOrder": 2,
                     "defaultValue": "stable",
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusHealth",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@StatusHealth",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -1579,15 +1579,13 @@
                 {
                     "caption": "Improvements",
                     "name": "status_improvements",
-                    "description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
-                    "type": "checkbox",
+                    "description": "How can we make this page better? This is aimed at the content editors team. If you have technical issues, please enter those in 'Help!' below.",
+                    "type": "migxdb",
                     "category": "Status",
                     "sortOrder": 3,
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusImprovements",
-                    "outputProperties": {
-                        "delimiter": ","
+                    "inputProperties": {
+                        "configs": "status_improvements:romanescobackyard"
                     },
-                    "display": "delim",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -1595,27 +1593,32 @@
                 {
                     "caption": "Help!",
                     "name": "status_issues",
-                    "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
-                    "type": "checkbox",
+                    "description": "What kind of problem(s) are you experiencing? This is aimed at the developers. Please create separate items if you have more than 1 issue and include any relevant info (like error messages).",
+                    "type": "migxdb",
                     "category": "Status",
                     "sortOrder": 4,
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusIssues",
-                    "outputProperties": {
-                        "delimiter": ","
+                    "inputProperties": {
+                        "configs": "status_issues:romanescobackyard"
                     },
-                    "display": "delim",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
                 },
                 {
-                    "caption": "Assigned editor",
-                    "name": "status_assigned_user",
+                    "caption": "Content owner",
+                    "name": "content_owner",
                     "description": "Who is responsible for editing and maintaining this page?",
-                    "type": "listbox",
+                    "type": "superboxselect",
                     "category": "Status",
                     "sortOrder": 10,
-                    "inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
+                    "inputProperties": {
+                        "selectType": "users",
+                        "maxElements": "1",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "0",
+                        "pageSize": "10"
+                    },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
                     ]
@@ -2470,8 +2473,38 @@
                         {
                             "name": "inputOptionKey",
                             "value": ""
+                        },
+                        {
+                            "name": "className",
+                            "value": "rmOption"
+                        },
+                        {
+                            "name": "rowTpl",
+                            "value": "tvSelectInputOptionRow"
+                        },
+                        {
+                            "name": "linkType",
+                            "value": "id"
+                        },
+                        {
+                            "name": "sortBy",
+                            "value": "position"
+                        },
+                        {
+                            "name": "sortDir",
+                            "value": "ASC"
                         }
                     ],
+                    "category": "a_select"
+                },
+                {
+                    "name": "tvSelectInputOptionRow",
+                    "description": "Basic row template for rendering input options inside the TV.",
+                    "category": "a_select"
+                },
+                {
+                    "name": "tvSelectInputOptionRowDesc",
+                    "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
                     "category": "a_select"
                 },
                 {

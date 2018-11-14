@@ -9,12 +9,13 @@
                     "type": "option",
                     "category": "Status",
                     "sortOrder": 1,
-                    "defaultValue": "not-done",
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusProgress",
+                    "defaultValue": "to-do",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@StatusProgress",
                     "templates": [
                         "@@templates_all"
                     ]
-                },{
+                },
+                {
                     "caption": "Health indicator",
                     "name": "status_health",
                     "description": "What is the current condition of this page?",
@@ -22,52 +23,59 @@
                     "category": "Status",
                     "sortOrder": 2,
                     "defaultValue": "stable",
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusHealth",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@StatusHealth",
                     "templates": [
                         "@@templates_all"
                     ]
-                },{
+                },
+                {
                     "caption": "Improvements",
                     "name": "status_improvements",
-                    "description": "How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.",
-                    "type": "checkbox",
+                    "description": "How can we make this page better? This is aimed at the content editors team. If you have technical issues, please enter those in 'Help!' below.",
+                    "type": "migxdb",
                     "category": "Status",
                     "sortOrder": 3,
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusImprovements",
-                    "outputProperties": {
-                        "delimiter": ","
+                    "inputProperties": {
+                        "configs": "status_improvements:romanescobackyard"
                     },
-                    "display": "delim",
                     "templates": [
                         "@@templates_all"
                     ]
-                },{
+                },
+                {
                     "caption": "Help!",
                     "name": "status_issues",
-                    "description": "Indicate the nature of the problem(s) you are experiencing. You can explain it in more detail in the Notes section below. Please include any relevant info such as error messages there too.",
-                    "type": "checkbox",
+                    "description": "What kind of problem(s) are you experiencing? This is aimed at the developers. Please create separate items if you have more than 1 issue and include any relevant info (like error messages).",
+                    "type": "migxdb",
                     "category": "Status",
                     "sortOrder": 4,
-                    "inputOptionValues": "@CHUNK tvSelectOptionAlias@StatusIssues",
-                    "outputProperties": {
-                        "delimiter": ","
+                    "inputProperties": {
+                        "configs": "status_issues:romanescobackyard"
                     },
-                    "display": "delim",
                     "templates": [
                         "@@templates_all"
                     ]
-                },{
-                    "caption": "Assigned editor",
-                    "name": "status_assigned_user",
+                },
+                {
+                    "caption": "Content owner",
+                    "name": "content_owner",
                     "description": "Who is responsible for editing and maintaining this page?",
-                    "type": "listbox",
+                    "type": "superboxselect",
                     "category": "Status",
                     "sortOrder": 10,
-                    "inputOptionValues": "@SELECT '' AS name, '' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )",
+                    "inputProperties": {
+                        "selectType": "users",
+                        "maxElements": "1",
+                        "allowBlank": "1",
+                        "depth": "10",
+                        "limitRelatedContext": "0",
+                        "pageSize": "10"
+                    },
                     "templates": [
                         "@@templates_all"
                     ]
-                },{
+                },
+                {
                     "caption": "Due date",
                     "name": "planning_date_completed",
                     "description": "",

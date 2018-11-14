@@ -33,10 +33,35 @@
                 },{
                     "name": "tvSelectInputOption",
                     "description": "Generate a list of input options, which are globally defined in a MIGXdb grid. You can narrow down the selection by appending a property set with a key name inside (eg: @ContentPurpose).",
-                    "properties": [{
-                        "name": "inputOptionKey",
-                        "value": ""
-                    }],
+                    "properties": [
+                        {
+                            "name": "inputOptionKey",
+                            "value": ""
+                        },{
+                            "name": "className",
+                            "value": "rmOption"
+                        },{
+                            "name": "rowTpl",
+                            "value": "tvSelectInputOptionRow"
+                        },{
+                            "name": "linkType",
+                            "value": "id"
+                        },{
+                            "name": "sortBy",
+                            "value": "position"
+                        },{
+                            "name": "sortDir",
+                            "value": "ASC"
+                        }
+                    ],
+                    "category": "a_select"
+                },{
+                    "name": "tvSelectInputOptionRow",
+                    "description": "Basic row template for rendering input options inside the TV.",
+                    "category": "a_select"
+                },{
+                    "name": "tvSelectInputOptionRowDesc",
+                    "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
                     "category": "a_select"
                 }
             ],

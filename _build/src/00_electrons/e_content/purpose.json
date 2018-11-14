@@ -9,7 +9,7 @@
                     "type": "listbox-multiple",
                     "category": "Purpose",
                     "sortOrder": 1,
-                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPurpose",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPurpose",
                     "inputProperties": {
                         "typeAhead": "false",
                         "typeAheadDelay": "250",
@@ -103,7 +103,7 @@
                     "type": "option",
                     "category": "Purpose",
                     "sortOrder": 30,
-                    "inputOptionValues": "@CHUNK tvSelectOptionID@ContentPriority",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPriority",
                     "inputProperties": {
                         "columns": "1"
                     },
