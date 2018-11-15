@@ -16,18 +16,18 @@ if (is_object($object)) {
 }
 
 // Increment sort order of new items
-if ($properties['object_id'] === 'new') {
-
-    // Ask for last position
-    $q = $modx->newQuery('rmOptionGroup');
-    $q->select(array(
-        "max(position)",
-    ));
-    $lastPosition = $modx->getValue($q->prepare());
-
-    // Set and Save
-    $object->set('position', ++$lastPosition);
-    $object->save();
-}
+//if ($properties['object_id'] === 'new') {
+//
+//    // Ask for last position
+//    $q = $modx->newQuery('rmOptionGroup');
+//    $q->select(array(
+//        "max(position)",
+//    ));
+//    $lastPosition = $modx->getValue($q->prepare());
+//
+//    // Set and Save
+//    $object->set('position', ++$lastPosition);
+//    $object->save();
+//}
 
 return '';
