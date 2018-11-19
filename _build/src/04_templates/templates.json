@@ -32,6 +32,10 @@
                     "icon": "icon-pencil",
                     "category": "t_publication"
                 },{
+                    "name": "Download",
+                    "icon": "icon-download",
+                    "category": "t_publication"
+                },{
                     "name": "kbSection",
                     "icon": "icon-book",
                     "category": "t_information"

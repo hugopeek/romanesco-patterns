@@ -918,7 +918,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "On==1||Off==0||System default==default",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -939,7 +939,7 @@
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
                     ]
                 },
@@ -961,7 +961,7 @@
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
                     ]
                 },
@@ -983,7 +983,7 @@
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
                     ]
                 },
@@ -1005,7 +1005,7 @@
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
                     ]
                 },
@@ -1027,7 +1027,7 @@
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
                     ]
                 },
@@ -1067,7 +1067,7 @@
                     "sortOrder": "1",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
                     ]
                 },
@@ -1082,7 +1082,7 @@
                     "defaultValue": "landscape",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
                     ]
                 },
@@ -1196,7 +1196,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "On==1||Off==0||System default==default",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1209,7 +1209,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "@CHUNK tvSelectFooter",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1222,7 +1222,7 @@
                     "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1235,7 +1235,7 @@
                     "defaultValue": "@INHERIT",
                     "inputOptionValues": "@CHUNK tvSelectFooterCTA",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1248,7 +1248,7 @@
                     "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1265,7 +1265,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1278,7 +1278,7 @@
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "On==1||Off==0||System default==default",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1290,7 +1290,7 @@
                     "sortOrder": "5",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1302,7 +1302,7 @@
                     "sortOrder": "6",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1315,7 +1315,7 @@
                     "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
                     "defaultValue": "@INHERIT",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1327,7 +1327,7 @@
                     "sortOrder": "11",
                     "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1340,7 +1340,7 @@
                     "defaultValue": "@INHERIT",
                     "inputOptionValues": "@CHUNK tvSelectHeaderCTA",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1357,7 +1357,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1370,7 +1370,7 @@
                         "configs": "content_related_src:romanescobackyard"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1388,7 +1388,7 @@
                         "pageSize": "20"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1406,7 +1406,7 @@
                         "pageSize": "20"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1427,7 +1427,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1444,7 +1444,7 @@
                         "minHeight": 130
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1461,7 +1461,7 @@
                         "minHeight": 210
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1478,7 +1478,7 @@
                         "minHeight": 130
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1489,7 +1489,7 @@
                     "category": "Purpose",
                     "sortOrder": 11,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1500,7 +1500,7 @@
                     "category": "Purpose",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1519,7 +1519,7 @@
                     },
                     "display": "delim",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1533,7 +1533,7 @@
                         "configs": "content_repurpose_src:romanescobackyard"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1547,7 +1547,7 @@
                         "configs": "content_repurpose_dest:romanescobackyard"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1560,7 +1560,7 @@
                     "defaultValue": "to-do",
                     "inputOptionValues": "@CHUNK tvSelectInputOption@StatusProgress",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1573,7 +1573,7 @@
                     "defaultValue": "stable",
                     "inputOptionValues": "@CHUNK tvSelectInputOption@StatusHealth",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1587,7 +1587,7 @@
                         "configs": "status_improvements:romanescobackyard"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1601,7 +1601,7 @@
                         "configs": "status_issues:romanescobackyard"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1620,7 +1620,7 @@
                         "pageSize": "10"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1631,7 +1631,7 @@
                     "category": "Status",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review","Endorsement"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
                 },
                 {
@@ -1820,7 +1820,8 @@
                         "ArticleSidenotes",
                         "Article - Traditional",
                         "Article - Readability",
-                        "Article - Sidenotes"
+                        "Article - Sidenotes",
+                        "Download"
                     ]
                 },
                 {
@@ -2977,6 +2978,10 @@
                     "category": "o_hub"
                 },
                 {
+                    "name": "kanbanGridOuter",
+                    "category": "o_hub"
+                },
+                {
                     "name": "includedPatternsOuter",
                     "category": "o_hub"
                 },
@@ -3649,6 +3654,11 @@
                 {
                     "name": "ArticleSidenotes",
                     "icon": "icon-pencil",
+                    "category": "t_publication"
+                },
+                {
+                    "name": "Download",
+                    "icon": "icon-download",
                     "category": "t_publication"
                 },
                 {

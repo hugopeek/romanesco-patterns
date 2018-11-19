@@ -1,5 +1,12 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.13.1
+Released on ...
+
+New features:
+- Add front-end output for content purpose elements
+- Add template for Downloads
+
 ## Romanesco Patterns 0.13.0
 Released on November 15, 2018
 
