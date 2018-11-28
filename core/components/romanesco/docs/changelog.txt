@@ -8,7 +8,7 @@ New features:
 - Add template for Downloads
 
 Fixes and improvements:
-- Add optional antispam hook to forms
+- Add optional anti-spam hook to forms
 
 
 ## Romanesco Patterns 0.13.0
