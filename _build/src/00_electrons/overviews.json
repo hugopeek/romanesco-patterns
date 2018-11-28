@@ -115,7 +115,8 @@
                     "category": "Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_basic"
+                        "@@templates_basic",
+                        "Download"
                     ]
                 },{
                     "caption": "Icon (Font)",
@@ -130,7 +131,8 @@
                         "typeAheadDelay": "400"
                     },
                     "templates": [
-                        "@@templates_basic"
+                        "@@templates_basic",
+                        "Download"
                     ]
                 },{
                     "caption": "Link / button text",
