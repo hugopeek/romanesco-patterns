@@ -1039,7 +1039,8 @@
                     "category": "Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Download"
                     ]
                 },
                 {
@@ -1055,7 +1056,8 @@
                         "typeAheadDelay": "400"
                     },
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","Basic - Detail","HeaderVertical","Header - Vertical",
+                        "Download"
                     ]
                 },
                 {
@@ -4293,6 +4295,13 @@
                 "type": "combo-boolean",
                 "area": "FormBlocks - Settings",
                 "value": "1"
+            },
+            {
+                "key": "antispam",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Settings",
+                "value": ""
             },
             {
                 "key": "cb_input_textfield_id",

@@ -14,6 +14,7 @@
     &hooks=`
         spam,
         [[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]]
+        [[++formblocks.antispam:notempty=`[[++formblocks.antispam]],`]]
         [[++formblocks.save_form:eq=`1`:then=`FormItSaveForm,`]]
         [[*fb_hooks:notempty=`[[*fb_hooks]],`]]
         email,
@@ -76,6 +77,8 @@
 
         [[*content:containsnot=`type="submit"`:then=`
         <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
+            [[[[++formblocks.antispam:is=`recaptchav2`:then=`!recaptchav2_render`]]]]
+            [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
             <input class="[[+form_size]] primary ui button" type="submit" name="submit-[[+title]]" value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
         </div>
         `]]

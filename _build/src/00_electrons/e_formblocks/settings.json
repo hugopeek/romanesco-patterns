@@ -13,6 +13,12 @@
                 "area": "FormBlocks - Settings",
                 "value": "1"
             },{
+                "key": "antispam",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Settings",
+                "value": ""
+            },{
                 "key": "cb_input_textfield_id",
                 "namespace": "formblocks",
                 "type": "textfield",
