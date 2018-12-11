@@ -1,0 +1,12 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "tocNavItem",
+                    "category": "a_nav_toc"
+                }
+            ]
+        }
+    }
+}

@@ -9,7 +9,13 @@
                     "name": "BasicDetail",
                     "category": "t_basic"
                 },{
+                    "name": "BasicDetailToC",
+                    "category": "t_basic"
+                },{
                     "name": "HeaderVertical",
+                    "category": "t_basic"
+                },{
+                    "name": "HeaderVerticalToC",
                     "category": "t_basic"
                 },{
                     "name": "Home",

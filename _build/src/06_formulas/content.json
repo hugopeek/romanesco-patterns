@@ -1,0 +1,20 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "tableOfContents",
+                    "description": "",
+                    "category": "f_content"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "f_content",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}
