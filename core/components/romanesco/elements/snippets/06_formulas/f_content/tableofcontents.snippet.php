@@ -25,7 +25,7 @@ $resourceURI = $modx->resource->get('uri');
 // Feed output to HtmlPageDom
 $dom = new HtmlPageCrawler($content);
 
-// Do your thing
+// Get all headings on the page
 $toc = $dom
     ->filter('h1,h2,h3,h4,h5,h6')
     ->each(function(HtmlPageCrawler $node){
@@ -33,13 +33,20 @@ $toc = $dom
         $anchor = $node->getAttribute('id');
         $level = $node->nodeName();
 
-        return array(
-            "text" => $text,
-            "anchor" => $anchor,
-            "level" => $level,
-        );
+        if (isset($anchor)) {
+            return array(
+                "text" => $text,
+                "anchor" => $anchor,
+                "level" => $level,
+            );
+        }
+
+        return '';
     })
 ;
+
+// Remove empty headings from array (why are they there?)
+$toc = array_filter($toc);
 
 $idx = 0;
 
@@ -54,4 +61,4 @@ foreach ($toc as $index => $item) {
 
 //$toc->html();
 
-return implode(array_unique($output));
+return implode($output);

@@ -11,6 +11,10 @@
                     "category": "c_content",
                     "events": ["OnWebPagePrerender"]
                 },{
+                    "name": "TableOfContents",
+                    "category": "c_content",
+                    "events": ["OnWebPagePrerender"]
+                },{
                     "name": "setResourceGroup",
                     "category": "c_content",
                     "events": ["OnDocFormSave"]

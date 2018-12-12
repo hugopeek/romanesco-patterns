@@ -4,8 +4,9 @@
 Released on ...
 
 New features:
-- Add front-end output for content purpose elements
+- Add template with Table of Contents menu
 - Add template for Downloads
+- Add front-end layouts for content purpose elements
 
 Fixes and improvements:
 - Add optional anti-spam hook to forms
