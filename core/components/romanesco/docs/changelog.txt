@@ -10,6 +10,7 @@ New features:
 
 Fixes and improvements:
 - Add optional anti-spam hook to forms
+- Add option to select background for rich text segments too
 
 
 ## Romanesco Patterns 0.13.0
