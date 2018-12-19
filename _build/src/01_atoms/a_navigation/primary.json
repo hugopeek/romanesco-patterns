@@ -26,6 +26,18 @@
                 },{
                     "name": "navItemIcon",
                     "category": "a_nav_primary"
+                },{
+                    "name": "navItemDropdown",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemDropdownWrapper",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemDropdownParent",
+                    "category": "a_nav_primary"
+                },{
+                    "name": "navItemDropdownCategory",
+                    "category": "a_nav_primary"
                 }
             ]
         }

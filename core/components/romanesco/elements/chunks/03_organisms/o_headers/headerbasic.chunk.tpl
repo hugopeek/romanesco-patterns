@@ -23,7 +23,7 @@
         &then=`$masthead`
     ]]]]
 
-    [[[[If? &subject=`[[$mainNavTheme]]` &operator=`isnull` &then=`$mainNav` &else=`$mainNavTheme`]]]]
+    [[[[If? &subject=`[[$mainNavTheme]]` &operator=`isnull` &then=`$mainNavDropdown` &else=`$mainNavTheme`]]]]
 
     [[[[If?
         &subject=`[[+hero]]`

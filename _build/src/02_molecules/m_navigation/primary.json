@@ -12,6 +12,9 @@
                     "name": "mainNavVertical",
                     "category": "m_nav_primary"
                 },{
+                    "name": "mainNavDropdown",
+                    "category": "m_nav_primary"
+                },{
                     "name": "subNav",
                     "category": "m_nav_primary"
                 },{
