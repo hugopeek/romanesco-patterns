@@ -1,3 +1,3 @@
-<div class="ui link list">
+<ul class="ui link list">
     [[+wrapper]]
-</div>
+</ul>

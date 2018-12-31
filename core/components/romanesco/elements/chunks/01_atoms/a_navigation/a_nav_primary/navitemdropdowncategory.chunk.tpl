@@ -1,8 +1,7 @@
-[[+idx:mod=`6`:eq=`0`:then=`</div><div class="row">`]]
-
-<div class="column">
-    <a class="ui tiny header" href="[[+link]]">[[+menutitle]]</a>
-    <div class="ui link list">
+[[-+idx:mod=`6`:eq=`0`:then=`</ul><ul class="row">`]]
+<li class="item column">
+    <a class="ui tiny header title">[[+menutitle]]</a>
+    <ul class="menu content">
         [[+wrapper]]
-    </div>
-</div>
+    </ul>
+</li>

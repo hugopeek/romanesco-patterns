@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="[[*context_key]]" lang="[[++cultureKey]]">
+<html id="[[*context_key]]" class="no-js" lang="[[++cultureKey]]">
 
 [[[[If?
     &subject=`[[$headTheme]]`
@@ -46,7 +46,8 @@
     ]]]]
 </div>
 
-[[$offCanvasNav]]
+<div id="off-canvas" class="ui right inverted vertical menu sidebar"></div>
+[[-$offCanvasNav]]
 [[$script]]
 
 </body>

@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add main navigation with dropdown submenus
 - Add template with Table of Contents menu
 - Add template for Downloads
 - Add front-end layouts for content purpose elements

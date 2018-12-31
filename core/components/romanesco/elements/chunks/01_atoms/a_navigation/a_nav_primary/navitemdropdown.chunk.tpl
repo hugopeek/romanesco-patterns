@@ -1,3 +1,5 @@
-<a class="item [[+classnames]]" href="[[+link]]" title="[[+pagetitle]]" [[+attributes]]>
-    [[+menutitle]]
-</a>
+<li class="item">
+    <a class="[[+classnames]]" href="[[+link]]" title="[[+pagetitle]]" [[+attributes]]>
+        [[+menutitle]]
+    </a>
+</li>

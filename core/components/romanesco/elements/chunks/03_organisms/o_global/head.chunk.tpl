@@ -11,6 +11,8 @@
 
     <base href="[[!++site_url]]">
 
+    <script>document.documentElement.className = 'js';</script>
+
     <link href="[[!++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
     <link rel="stylesheet" href="[[getContextSetting? &context=`web` &setting=`site_url`]]assets/css/backgrounds.css">
 
