@@ -8,7 +8,6 @@
         [[+wrapper]]
     </ul>
 </li>
-
 `:else=`
 <li class="item">
     <a class="title" href="[[+link]]">
