@@ -47,7 +47,7 @@
 </div>
 
 <nav id="off-canvas" class="ui right inverted vertical accordion menu sidebar"></nav>
-[[-$offCanvasNav]]
+
 [[$script]]
 
 </body>

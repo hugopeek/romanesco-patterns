@@ -36,6 +36,9 @@
                     "name": "navItemDropdownParent",
                     "category": "a_nav_primary"
                 },{
+                    "name": "navItemDropdownParentActive",
+                    "category": "a_nav_primary"
+                },{
                     "name": "navItemDropdownCategory",
                     "category": "a_nav_primary"
                 }

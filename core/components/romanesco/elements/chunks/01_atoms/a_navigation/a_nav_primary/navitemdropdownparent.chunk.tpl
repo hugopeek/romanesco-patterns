@@ -1,10 +1,10 @@
-[[+wrapper:contains=`menu content`:then=`
-<li class="ui simple dropdown item [[+alias]]">
-    <a class="title" [[+attributes]]>
+[[+wrapper:isnot=``:then=`
+<li class="ui simple [[+wrapper:contains=`rel="category"`:then=`three level`:else=`two level`]] dropdown item [[+alias]]">
+    <a class="title" href="[[+link]]" [[+attributes]]>
         [[+menutitle]]
         <i class="dropdown icon"></i>
     </a>
-    <ul class="row menu content">
+    <ul class="menu content row">
         [[+wrapper]]
     </ul>
 </li>
