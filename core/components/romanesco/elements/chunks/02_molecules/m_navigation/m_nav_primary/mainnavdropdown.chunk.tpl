@@ -1,5 +1,5 @@
-<nav id="menu" class="ui large [[++navbar_sticky:is=`1`:then=`sticky`]] menu" role="navigation">
-    <div class="ui container" style="padding-left: 0;">
+<nav id="menu" class="ui large secondary [[++navbar_sticky:is=`1`:then=`sticky`]] menu">
+    <div class="ui container">
         <div class="item branding">
             [[[[If? &subject=`[[$logoTheme]]` &operator=`isnull` &then=`$logo` &else=`$logoTheme`]]]]
         </div>
@@ -7,11 +7,10 @@
         <ul id="menu-dropdown" class="right menu">
             [[pdoMenu?
                 &startId=`0`
-                &level=`3`
+                &level=`[[++navbar_level:default=`1`]]`
                 &resources=`[[++navbar_resources]]`
                 &tplOuter=`navWrapper`
                 &tpl=`navItemDropdownParent`
-                &tplParentRowActive=`navItemDropdownParentActive`
                 &tplCategoryFolder=`navItemDropdownCategory`
                 &tplInner=`navWrapper`
                 &tplInnerRow=`navItemDropdown`

@@ -1,4 +1,4 @@
-<li class="item column [[*id:eq=`[[+id]]`:then=`active`]]"">
+<li class="item column [[*id:eq=`[[+id]]`:then=`active`]]">
     <a class="title" href="[[+link]]" [[+attributes]]>
         [[+menutitle]]
         <i class="dropdown icon"></i>

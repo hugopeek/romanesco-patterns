@@ -23,7 +23,12 @@
         &then=`$masthead`
     ]]]]
 
-    [[[[If? &subject=`[[$mainNavTheme]]` &operator=`isnull` &then=`$mainNavDropdown` &else=`$mainNavTheme`]]]]
+    [[[[If?
+        &subject=`[[$mainNavTheme]]`
+        &operator=`isnull`
+        &then=`$mainNav[[++navbar_level:gte=`2`:then=`Dropdown`]]`
+        &else=`$mainNavTheme`
+    ]]]]
 
     [[[[If?
         &subject=`[[+hero]]`
