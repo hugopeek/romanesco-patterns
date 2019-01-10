@@ -1,8 +1,8 @@
 [[Switch:toPlaceholder=`status_priority_[[+idx]]`?
-    &get=`[[+status_indicator]]`
-    &c1=`not-done` &do1=`4`
+    &get=`[[+status_progress]]`
+    &c1=`to-do` &do1=`4`
     &c2=`in-progress` &do2=`2`
-    &c3=`almost-done` &do3=`1`
+    &c3=`review` &do3=`1`
     &c4=`done` &do4=`5`
     &c5=`successful` &do5=`6`
     &c6=`problematic` &do6=`3`
@@ -10,10 +10,29 @@
     &default=`0`
 ]]
 
+[[migxLoopCollection?
+    &packageName=`romanescobackyard`
+    &classname=`rmNoteImprovement`
+    &where=`{"resource_id":"[[+id]]"}`
+    &tpl=`tagItemTooltip`
+    &toPlaceholder=`status_improvements_[[+idx]]`
+]]
+[[migxLoopCollection?
+    &packageName=`romanescobackyard`
+    &classname=`rmNoteIssue`
+    &where=`{"resource_id":"[[+id]]"}`
+    &tpl=`tagItemTooltip`
+    &toPlaceholder=`status_issues_[[+idx]]`
+]]
+
 <tr class="[[+status_priority_[[+idx]]:gte=`5`:and:lte=`6`:then=`positive`]][[+status_priority_[[+idx]]:eq=`3`:or:eq=`7`:then=`negative`]][[+status_priority_[[+idx]]:eq=`1`:then=`warning`]][[+published:eq=`0`:then=` disabled`]]">
     <td class="indicator">
         <svg class="icon" viewBox="0 0 100 100">
-            <use xlink:href="[[~[[*id]]? &scheme=`full`]]#status-[[+status_indicator]]"></use>
+            [[+status_progress:eq=`done`:then=`
+            <use xlink:href="[[~[[*id]]? &scheme=`full`]]#status-[[+status_health:replace=`stable==done`]]"></use>
+            `:else=`
+            <use xlink:href="[[~[[*id]]? &scheme=`full`]]#status-[[+status_progress]]"></use>
+            `]]
         </svg>
         <span class="hidden priority">
             [[+status_priority_[[+idx]]]]
@@ -28,19 +47,19 @@
         <a class="ui empty floating [[+longtitle:eq=``:then=`red`:else=`green`]] circular label with tooltip onclick" title="Longtitle" data-title="Longtitle" data-content="[[+longtitle:empty=`This field is still empty.`]]" data-variation="basic"></a>
     </td>
     <td class="ui blue labels">
-        [[+status_improvements:parseTags]]
+        [[+status_improvements_[[+idx]]]]
     </td>
-    <td class="[[!+modx.user.username:eq=`[[+status_assigned_user]]`:then=`warning`:else=``]]">
-        [[+status_assigned_user]]
+    <td class="ui red labels [[+status_issues_[[+idx]]:notempty=`negative`]]">
+        [[+status_issues_[[+idx]]]]
     </td>
-    <td class="ui red labels [[+status_help:notempty=`negative`]]">
-        [[+status_help:parseTags]]
+    <td class="[[!+modx.user.username:eq=`[[+content_owner:userinfo=`username`]]`:then=`info`:else=``]]">
+        [[+content_owner:userinfo=`username`]]
     </td>
-    [[!getImageList:empty=`<td></td>`?
-        &docid=`[[+id]]`
-        &tvname=`status_notes`
-        &tpl=`statusGridColumnNotes`
-        &limit=`1`
-    ]]
+    <td class="">
+        <span class="hidden sort element">
+            [[+planning_date_completed]]
+        </span>
+        [[+planning_date_completed:strtotime:date=`[[++romanesco.date_format_long]]`]]
+    </td>
 </tr>
 [[+wrapper]]

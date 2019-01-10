@@ -12,6 +12,9 @@
                     "name": "tagItemIcon",
                     "category": "a_taxonomy"
                 },{
+                    "name": "tagItemTooltip",
+                    "category": "a_taxonomy"
+                },{
                     "name": "tagItemCount",
                     "category": "a_taxonomy"
                 },{
