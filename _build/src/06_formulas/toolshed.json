@@ -22,6 +22,10 @@
                     "name": "migxSaveRelated",
                     "description": "After save hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, watch your back with those!",
                     "category": "f_toolshed"
+                },{
+                    "name": "renderInputOption",
+                    "description": "Fetch option name from the romanesco_options table (when used as output modifier). You can also get other available fields with a regular snippet call and tpl chunk.",
+                    "category": "f_toolshed"
                 }
             ],
 
