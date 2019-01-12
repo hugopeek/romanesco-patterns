@@ -9,6 +9,15 @@
                     "name": "statusGridRow",
                     "category": "m_hub"
                 },{
+                    "name": "kanbanGridRow",
+                    "category": "m_hub"
+                },{
+                    "name": "kanbanGridColumn",
+                    "category": "m_hub"
+                },{
+                    "name": "kanbanGridCard",
+                    "category": "m_hub"
+                },{
                     "name": "includedPatternsRow",
                     "category": "m_hub"
                 },{

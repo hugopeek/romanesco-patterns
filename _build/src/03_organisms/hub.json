@@ -9,6 +9,9 @@
                     "name": "statusGridOuter",
                     "category": "o_hub"
                 },{
+                    "name": "kanbanGridOuter",
+                    "category": "o_hub"
+                },{
                     "name": "includedPatternsOuter",
                     "category": "o_hub"
                 },{
