@@ -1,14 +1,24 @@
 [[Switch:toPlaceholder=`status_priority_[[+idx]]`?
-    &get=`[[+status_progress]]`
-    &c1=`to-do` &do1=`4`
-    &c2=`in-progress` &do2=`2`
-    &c3=`review` &do3=`1`
-    &c4=`done` &do4=`5`
-    &c5=`successful` &do5=`6`
-    &c6=`problematic` &do6=`3`
-    &c7=`expired` &do7=`7`
+    &get=`[[+status_progress:eq=`done`:then=`[[+status_health]]`:else=`[[+status_progress]]`]]`
+    &c1=`to-do`         &do1=`4`
+    &c2=`in-progress`   &do2=`2`
+    &c3=`review`        &do3=`1`
+    &c4=`stable`        &do4=`5`
+    &c5=`successful`    &do5=`6`
+    &c6=`problematic`   &do6=`3`
+    &c7=`expired`       &do7=`7`
     &default=`0`
 ]]
+[[Switch:toPlaceholder=`status_class_[[+idx]]`?
+    &get=`[[+status_progress:eq=`done`:then=`[[+status_health]]`:else=`[[+status_progress]]`]]`
+    &c1=`stable`        &do1=`positive`
+    &c2=`successful`    &do2=`positive`
+    &c3=`problematic`   &do3=`negative`
+    &c4=`expired`       &do4=`warning`
+    &default=``
+]]
+
+[[SeoTabIndexation:toPlaceholder=`status_indexation_[[+idx]]`? &resource=`[[+id]]`]]
 
 [[migxLoopCollection?
     &packageName=`romanescobackyard`
@@ -25,7 +35,7 @@
     &toPlaceholder=`status_issues_[[+idx]]`
 ]]
 
-<tr class="[[+status_priority_[[+idx]]:gte=`5`:and:lte=`6`:then=`positive`]][[+status_priority_[[+idx]]:eq=`3`:or:eq=`7`:then=`negative`]][[+status_priority_[[+idx]]:eq=`1`:then=`warning`]][[+published:eq=`0`:then=` disabled`]]">
+<tr class="[[+status_class_[[+idx]]]][[+published:eq=`0`:then=` disabled`]]">
     <td class="indicator">
         <svg class="icon" viewBox="0 0 100 100">
             [[+status_progress:eq=`done`:then=`
@@ -52,13 +62,21 @@
     <td class="ui red labels [[+status_issues_[[+idx]]:notempty=`negative`]]">
         [[+status_issues_[[+idx]]]]
     </td>
-    <td class="[[!+modx.user.username:eq=`[[+content_owner:userinfo=`username`]]`:then=`info`:else=``]]">
-        [[+content_owner:userinfo=`username`]]
+    [[+status_indexation_[[+idx]]:notempty=`
+    <td class="indexation">
+        [[+status_indexation_[[+idx]]:contains=`noindex`:or:contains=`nofollow`:then=`<i class="attention icon"></i>`]]
+        [[+status_indexation_[[+idx]]]]
     </td>
-    <td class="">
-        <span class="hidden sort element">
-            [[+planning_date_completed]]
-        </span>
+    `]]
+    <td class="owner">
+        [[!+modx.user.username:eq=`[[+content_owner:userinfo=`username`]]`:then=`
+        [[+content_owner:userinfo=`username`:before=`<strong>`:after=`</strong>`]]
+        `:else=`
+        [[+content_owner:userinfo=`username`]]
+        `]]
+    </td>
+    <td class="due date">
+        <span class="hidden sort">[[+planning_date_completed]]</span>
         [[+planning_date_completed:strtotime:date=`[[++romanesco.date_format_long]]`]]
     </td>
 </tr>

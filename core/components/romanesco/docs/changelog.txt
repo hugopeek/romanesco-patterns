@@ -7,9 +7,10 @@ New features:
 - Add main navigation with dropdown submenus
 - Add template with Table of Contents menu
 - Add template for Downloads
-- Add front-end layouts for content purpose elements
+- Add Kanban layout for Content Purpose elements
 
 Fixes and improvements:
+- Update status grid to incorporate new / altered TV values
 - Add optional anti-spam hook to forms
 - Add option to select background for rich text segments too
 

@@ -26,6 +26,12 @@
                 },{
                     "name": "statusGridColumnNotes",
                     "category": "a_hub"
+                },{
+                    "name": "statusGridIndicatorSVG",
+                    "category": "a_hub"
+                },{
+                    "name": "statusGridLegendIndicator",
+                    "category": "a_hub"
                 }
             ],
             "categories": [

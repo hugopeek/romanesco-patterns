@@ -39,11 +39,12 @@ $wlt = $modx->addPackage('romanescobackyard',$corePath . 'model/');
 $value = $modx->getOption('value', $scriptProperties, $input);
 $match = $modx->getOption('match', $scriptProperties, $options);
 $key = $modx->getOption('key', $scriptProperties, '');
+$select = $modx->getOption('select', $scriptProperties, 'name');
 $tpl = $modx->getOption('tpl', $scriptProperties, '');
 $outputSeparator = $modx->getOption('outputSeparator', $scriptProperties, '');
 
 if (!function_exists('getInputOption')) {
-    function getInputOption($value,$match,$key,$tpl){
+    function getInputOption($value,$match,$key,$select,$tpl){
         global $modx;
 
         $inputOption = $modx->getObject('rmOption', array(
@@ -66,7 +67,7 @@ if (!function_exists('getInputOption')) {
         if ($tpl) {
             $output = $modx->getChunk($tpl, $outputFields);
         } else {
-            $output = $inputOption->get('name');
+            $output = $inputOption->get($select);
         }
 
         return $output;
@@ -84,7 +85,7 @@ if ($input) {
     $query->where(array(
         $match => $value,
     ));
-    $query->select('name');
+    $query->select($select);
 
     return $modx->getValue($query->prepare());
 }
@@ -94,11 +95,11 @@ else if (strpos($value,',')) {
     $values = explode(',',$value);
 
     foreach ($values as $value) {
-        $output[] = getInputOption($value,$match,$key,$tpl);
+        $output[] = getInputOption($value,$match,$key,$select,$tpl);
     }
     return implode($outputSeparator,$output);
 }
 
 else {
-    return getInputOption($value,$match,$key,$tpl);
+    return getInputOption($value,$match,$key,$select,$tpl);
 }

@@ -71,6 +71,10 @@
                     "description": "Standalone version of a snippet that comes with MIGX. Generates subfolders in media sources. Keeps your folder structure tidy when adding lots of images in lots of resources (e.g. galleries).",
                     "category": "f_resources"
                 },{
+                    "name": "SeoTabIndexation",
+                    "description": "If SeoTab (StercSEO) is installed, this snippet displays the indexation setting for given resource.",
+                    "category": "f_resources"
+                },{
                     "name": "jsonGetValue",
                     "description": "Get the value of a specific key from a JSON string.",
                     "category": "f_json"
