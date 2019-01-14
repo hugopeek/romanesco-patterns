@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="sixteen wide column">
+    <div class="sixteen wide priority column">
         <h4 class="ui disabled header">
             [[+name]]
         </h4>
