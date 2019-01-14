@@ -18,6 +18,12 @@
                     "name": "kanbanGridCard",
                     "category": "m_hub"
                 },{
+                    "name": "kanbanGridStepsWrapper",
+                    "category": "m_hub"
+                },{
+                    "name": "kanbanGridStepsRow",
+                    "category": "m_hub"
+                },{
                     "name": "includedPatternsRow",
                     "category": "m_hub"
                 },{

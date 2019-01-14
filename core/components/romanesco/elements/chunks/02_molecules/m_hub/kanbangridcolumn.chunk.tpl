@@ -1,21 +1,8 @@
 <div class="column [[+alias]]">
-    [[If?
-        &subject=`[[+alias]]`
-        &operator=`is`
-        &operand=`[[*status_progress]]`
-        &then=`
-            [[!pdoResources?
-                &parents=`0`
-                &tvFilters=`content_priority==[[+priority]]`
-                &tvPrefix=``
-                &tpl=`kanbanGridCard`
-            ]]`
-        &else=`
-            [[!pdoResources?
-                &parents=`0`
-                &tvFilters=`status_progress==[[+alias]],content_priority==[[+priority]]`
-                &tvPrefix=``
-                &tpl=`kanbanGridCard`
-            ]]`
+    [[getResources?
+        &parents=`0`
+        &tvFilters=`status_progress==[[+alias]],content_priority==[[+priority]]`
+        &tvPrefix=``
+        &tpl=`kanbanGridCard`
     ]]
 </div>

@@ -3,13 +3,13 @@
         &packageName=`romanescobackyard`
         &classname=`rmOption`
         &where=`{"key":"status_progress"}`
-        &tpl=`statusGridIndicatorSVG`
+        &tpl=`statusIndicatorSVGSymbol`
     ]]
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
         &classname=`rmOption`
         &where=`{"key":"status_health"}`
-        &tpl=`statusGridIndicatorSVG`
+        &tpl=`statusIndicatorSVGSymbol`
     ]]
 </svg>
 
@@ -21,10 +21,10 @@
         </h1>
     </div>
     <div class="seven wide right aligned bottom aligned column">
+        <a class="ui legend icon button" title="Show legend">
+            <i class="info icon"></i>
+        </a>
         <div class="ui basic icon buttons">
-            <a class="ui legend button" title="Show legend">
-                <i class="info icon"></i>
-            </a>
             <a href="[[~[[*id]]]]/kanban" class="ui button" title="Kanban view">
                 <i class="trello icon"></i>
             </a>
@@ -81,7 +81,7 @@
                         &classname=`rmOption`
                         &where=`{"key":"status_progress"}`
                         &sortConfig=`[{"sortby":"position","sortdir":"ASC"}]`
-                        &tpl=`statusGridLegendIndicator`
+                        &tpl=`statusIndicatorLegendTR`
                     ]]
                     </tbody>
                 </table>
@@ -95,7 +95,7 @@
                         &classname=`rmOption`
                         &where=`{"key":"status_health"}`
                         &sortConfig=`[{"sortby":"position","sortdir":"ASC"}]`
-                        &tpl=`statusGridLegendIndicator`
+                        &tpl=`statusIndicatorLegendTR`
                     ]]
                     </tbody>
                 </table>

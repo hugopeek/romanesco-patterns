@@ -27,10 +27,10 @@
                     "name": "statusGridColumnNotes",
                     "category": "a_hub"
                 },{
-                    "name": "statusGridIndicatorSVG",
+                    "name": "statusIndicatorSVGSymbol",
                     "category": "a_hub"
                 },{
-                    "name": "statusGridLegendIndicator",
+                    "name": "statusIndicatorLegendTR",
                     "category": "a_hub"
                 }
             ],
