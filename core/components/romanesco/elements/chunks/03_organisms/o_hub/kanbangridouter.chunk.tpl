@@ -22,10 +22,10 @@
     </div>
     <div class="seven wide right aligned bottom aligned column">
         <div class="ui basic icon buttons">
-            <a href="[[~[[++site_start]]]]status" class="ui button" title="Status grid">
+            <a href="[[~[[++site_start]]]]status/" class="ui button" title="Status grid">
                 <i class="list icon"></i>
             </a>
-            <a href="[[~[[++site_start]]]]backstop" class="ui button" title="Visual regression tests">
+            <a href="[[~[[++site_start]]]]backstop/" class="ui button" title="Visual regression tests">
                 <i class="eye icon"></i>
             </a>
         </div>

@@ -1458,12 +1458,31 @@
                     ]
                 },
                 {
+                    "caption": "Priority",
+                    "name": "content_priority",
+                    "description": "Zoom out a little and ask yourself: do we really need this page? And do we need it now? If it turns out to be neither urgent nor important, consider deleting it again.",
+                    "type": "option",
+                    "category": "Purpose",
+                    "sortOrder": 2,
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPriority",
+                    "inputProperties": {
+                        "columns": "1"
+                    },
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                    ]
+                },
+                {
                     "caption": "Brief",
                     "name": "content_brief",
                     "description": "Try to turn the content purpose into a short summary. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.",
                     "type": "redactor",
                     "category": "Purpose",
-                    "sortOrder": 2,
+                    "sortOrder": 5,
                     "inputProperties": {
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
@@ -1480,7 +1499,7 @@
                     "description": "Give an overview of the main page structure. Like a table of contents, but feel free to add ideas in between.",
                     "type": "redactor",
                     "category": "Purpose",
-                    "sortOrder": 3,
+                    "sortOrder": 6,
                     "inputProperties": {
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
@@ -1526,25 +1545,6 @@
                     "type": "text",
                     "category": "Purpose",
                     "sortOrder": 20,
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
-                    ]
-                },
-                {
-                    "caption": "Priority",
-                    "name": "content_priority",
-                    "description": "Zoom out a little and ask yourself: do we really need this page? And do we need it now? If it turns out to be neither urgent nor important, consider deleting it again.",
-                    "type": "option",
-                    "category": "Purpose",
-                    "sortOrder": 30,
-                    "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPriority",
-                    "inputProperties": {
-                        "columns": "1"
-                    },
-                    "outputProperties": {
-                        "delimiter": ","
-                    },
-                    "display": "delim",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
@@ -1652,11 +1652,14 @@
                 },
                 {
                     "caption": "Due date",
-                    "name": "planning_date_completed",
+                    "name": "planning_date_due",
                     "description": "",
                     "type": "date",
                     "category": "Status",
                     "sortOrder": 20,
+                    "inputProperties": {
+                        "hideTime": "true"
+                    },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]

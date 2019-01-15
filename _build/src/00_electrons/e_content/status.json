@@ -77,11 +77,14 @@
                 },
                 {
                     "caption": "Due date",
-                    "name": "planning_date_completed",
+                    "name": "planning_date_due",
                     "description": "",
                     "type": "date",
                     "category": "Status",
                     "sortOrder": 20,
+                    "inputProperties": {
+                        "hideTime":"true"
+                    },
                     "templates": [
                         "@@templates_all"
                     ]
