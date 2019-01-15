@@ -46,6 +46,19 @@ $elements = array_diff($elements,$propertyNames);
 //print_r($propertyNames);
 //print_r($elements);
 
+//// Look for missing pages too
+//$dirs = glob($backyardPath, GLOB_ONLYDIR);
+//
+//foreach ($dirs as $dir) {
+//    $files[] = glob($dir . "/*.html");
+//    $files[] = glob($dir . "/*/*.html");
+//    $files[] = glob($dir . "/*/*/*.html");
+//    $files[] = glob($dir . "/*/*/*/*.html");
+//    $files[] = glob($dir . "/*/*/*/*/*.html");
+//}
+//
+//print_r(array_filter($files));
+
 // Reformat to match their references in HTML
 $elementsHTML = array();
 foreach ($elements as $element) {
