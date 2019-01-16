@@ -61,7 +61,7 @@ if (is_array($themeOverride)) {
     foreach ($themeOverride as $key => $value) {
         $modx->toPlaceholder($key, $value, $prefix);
     }
-    return; // No need to continue
+    //return;
 }
 
 switch($input) {
@@ -131,3 +131,5 @@ $modx->toPlaceholder('box_type', $box_type, $prefix);
 $modx->toPlaceholder('row_type', $row_type, $prefix);
 $modx->toPlaceholder('column_type', $column_type, $prefix);
 $modx->toPlaceholder('grid_settings', $grid_settings, $prefix);
+
+return '';
