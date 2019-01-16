@@ -34,3 +34,5 @@ if ($cta == 0) {
 
 //$modx->toPlaceholder('container_type', $container_type, $prefix);
 //$modx->toPlaceholder('prefix', $prefix);
+
+return '';

@@ -9,8 +9,8 @@ $user = $modx->getObject('modUser', $userId);
 if ($user) {
     $profile = $user->getOne('Profile');
 } else {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[setUserPlaceholders] User not found in MODX');
-    return;
+    $modx->log(modX::LOG_LEVEL_WARN, '[setUserPlaceholders] User not found in MODX');
+    return '';
 }
 
 // Get extended fields of this user
@@ -20,3 +20,5 @@ if ($profile) {
 } else {
     $modx->log(modX::LOG_LEVEL_ERROR, '[setUserPlaceholders] Could not find profile for user: ' . $user->get('username'));
 }
+
+return '';

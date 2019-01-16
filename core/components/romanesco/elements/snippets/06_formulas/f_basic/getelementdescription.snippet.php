@@ -83,4 +83,5 @@ if ($modxObject) {
     return $description;
 } else {
     $modx->log(modX::LOG_LEVEL_ERROR, '[displayElementDescription] ' . $elementName . ' could not be processed');
+    return '';
 }

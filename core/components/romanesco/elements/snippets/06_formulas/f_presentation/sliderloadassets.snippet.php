@@ -19,3 +19,5 @@ $modx->regClientCSS($assetsPathVendor . '/slick-lightbox/slick-lightbox.css');
 $modx->regClientScript($assetsPathVendor . '/slick-carousel/slick.min.js');
 $modx->regClientScript($assetsPathVendor . '/slick-lightbox/slick-lightbox.min.js');
 $modx->regClientScript($assetsPathJS . '/slider.js');
+
+return '';

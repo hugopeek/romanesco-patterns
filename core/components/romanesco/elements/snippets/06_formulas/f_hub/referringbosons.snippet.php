@@ -102,4 +102,6 @@ if ($result) {
     //} else {
     //    return $output;
     //}
+} else {
+    return '';
 }

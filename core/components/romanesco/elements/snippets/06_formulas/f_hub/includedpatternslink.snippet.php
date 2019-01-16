@@ -55,6 +55,7 @@ $link = $modx->getValue($query->prepare());
 if ($placeholder) {
     $modx->toPlaceholder('pl', $prefix);
     $modx->toPlaceholder($placeholder, $link, $prefix);
+    return '';
 } else {
     return $link;
 }

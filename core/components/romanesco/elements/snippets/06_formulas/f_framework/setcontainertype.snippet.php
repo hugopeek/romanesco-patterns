@@ -17,3 +17,5 @@ if ($parent === $pubparent) {
 
 $modx->toPlaceholder('container_type', $container_type, $prefix);
 $modx->toPlaceholder('prefix', $prefix);
+
+return '';

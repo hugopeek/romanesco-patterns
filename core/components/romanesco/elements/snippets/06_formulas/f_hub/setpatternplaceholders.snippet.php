@@ -74,3 +74,5 @@ if ($cbLayout) {
         $modx->log(modX::LOG_LEVEL_WARN, '[setPatternPlaceholders] ' . $cbLayout . ' could not be processed');
     }
 }
+
+return '';

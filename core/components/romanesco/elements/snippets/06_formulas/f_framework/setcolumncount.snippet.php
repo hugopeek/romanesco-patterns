@@ -7,3 +7,5 @@
  
 $total = $modx->getOption('total', $scriptProperties, '');
 $modx->setPlaceholder('column_count', $total);
+
+return '';
