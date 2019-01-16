@@ -459,7 +459,7 @@
                     "parent": "02_molecules"
                 },
                 {
-                    "name": "m_user",
+                    "name": "m_users",
                     "parent": "02_molecules"
                 },
                 {
@@ -2981,19 +2981,19 @@
                 },
                 {
                     "name": "loginForm",
-                    "category": "m_user"
+                    "category": "m_users"
                 },
                 {
                     "name": "loginFormCompact",
-                    "category": "m_user"
+                    "category": "m_users"
                 },
                 {
                     "name": "logoutForm",
-                    "category": "m_user"
+                    "category": "m_users"
                 },
                 {
                     "name": "logoutFormCompact",
-                    "category": "m_user"
+                    "category": "m_users"
                 },
                 {
                     "name": "fbLayoutFieldset",
