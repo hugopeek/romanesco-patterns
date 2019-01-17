@@ -3831,7 +3831,7 @@
             ],
             "snippets": [
                 {
-                    "name": "tableOfContents",
+                    "name": "TableOfContents",
                     "description": "",
                     "category": "f_content"
                 },
