@@ -25,10 +25,10 @@
             <i class="info icon"></i>
         </a>
         <div class="ui basic icon buttons">
-            <a href="[[~[[*id]]]]kanban/" class="ui button" title="Kanban view">
+            <a href="[[~[[*id]]]]/kanban/" class="ui button" title="Kanban view">
                 <i class="trello icon"></i>
             </a>
-            <a href="[[~[[*id]]]]backstop/" class="ui button" title="Visual regression tests">
+            <a href="[[~[[*id]]]]/backstop/" class="ui button" title="Visual regression tests">
                 <i class="eye icon"></i>
             </a>
         </div>
