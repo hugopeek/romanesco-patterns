@@ -32,6 +32,10 @@
                 },{
                     "name": "statusIndicatorLegendTR",
                     "category": "a_hub"
+                },{
+                    "name": "configSettingsRowTR",
+                    "description": "Table row for configuration settings table.",
+                    "category": "a_hub"
                 }
             ],
             "categories": [

@@ -32,6 +32,10 @@
                 },{
                     "name": "includedContentBlocksRow",
                     "category": "m_hub"
+                },{
+                    "name": "configSettingsRow",
+                    "description": "Display a group of settings, as defined in the Configurations extra.",
+                    "category": "m_hub"
                 }
             ],
 

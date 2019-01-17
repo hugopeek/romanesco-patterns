@@ -2413,6 +2413,11 @@
                     "category": "a_hub"
                 },
                 {
+                    "name": "configSettingsRowTR",
+                    "description": "Table row for configuration settings table.",
+                    "category": "a_hub"
+                },
+                {
                     "name": "imgOverviewPersonLink",
                     "category": "a_images"
                 },
@@ -2780,6 +2785,11 @@
                 },
                 {
                     "name": "includedContentBlocksRow",
+                    "category": "m_hub"
+                },
+                {
+                    "name": "configSettingsRow",
+                    "description": "Display a group of settings, as defined in the Configurations extra.",
                     "category": "m_hub"
                 },
                 {
