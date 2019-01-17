@@ -3,7 +3,7 @@
 <div class="ui two column middle aligned equal width grid">
     <div class="column">
         [[$headingBasicAnchor?
-            &level=`h2`
+            &level=`h3`
             &value=`[[+pattern_name]]<span class="ui mini [[+pattern_status]] empty circular label" title="[[+status_title]]"></span>`
             &alignment=`middle aligned`
         ]]
