@@ -102,7 +102,7 @@ switch($input) {
         $grid_settings = "";
         break;
     case stripos($input,'Compact') !== false:
-        $box_type = "middle aligned list";
+        $box_type = "tiny middle aligned list";
         $row_type = "";
         $column_type = "item";
         $grid_settings = "";
