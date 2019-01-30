@@ -1,0 +1,40 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "Time",
+                    "description": "Return current timestamp.",
+                    "category": "f_basic"
+                },{
+                    "name": "getContextSetting",
+                    "description": "Retrieve a specific setting from a context of choice. Useful if you want to \"borrow\" a setting from another context, e.g. the correct site_url for assets only available in that context.",
+                    "category": "f_basic"
+                },{
+                    "name": "getElementDescription",
+                    "description": "Retrieve the description of an element. Used in the front-end library to prevent having to enter the same information twice. This paragraph is also loaded with getElementDescription!",
+                    "category": "f_basic"
+                },{
+                    "name": "firstChildID",
+                    "description": "The name says it all: retrieve the first child ID of a given ID.",
+                    "category": "f_basic"
+                },{
+                    "name": "getRawTVValue",
+                    "description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you need the unprocessed value instead, e.g. when using @inherit.",
+                    "category": "f_basic"
+                },{
+                    "name": "getTmplvarID",
+                    "description": "Get the ID of a TV, in case you only know its name. Created for the front-end library, to help with listing included TVs.",
+                    "category": "f_basic"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "f_basic",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

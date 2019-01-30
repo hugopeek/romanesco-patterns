@@ -1,5 +1,18 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.14.1
+Released on ...
+
+New features:
+-
+
+Fixes and improvements:
+- Rearrange snippet folders and import a few new ones from projects
+- Fix Overview headings displayed as regular links being too large
+- Fix Registration template not validating password correctly
+- Exclude resources with unchecked "Use alias in URI" from breadcrumbs
+
+
 ## Romanesco Patterns 0.14.0
 Released on January 18, 2019
 

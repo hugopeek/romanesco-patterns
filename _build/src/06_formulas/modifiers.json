@@ -1,0 +1,47 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "stripAsAlias",
+                    "description": "Turn input into lowercase-hyphen-separated-alias-format and strip unwanted special characters. Useful for creating anchor links based on headings, for example.",
+                    "category": "f_modifiers"
+                },{
+                    "name": "stripWords",
+                    "description": "Opposed to the native MODX stripString modifier (which only allows you to strip a single value), stripWords lets you enter multiple (comma separated) values.",
+                    "category": "f_modifiers"
+                },{
+                    "name": "splitString",
+                    "description": "Divide string into multiple sections, based on a delimiter. Regular snippet call outputs sections to placeholders. If used as output modifier, specify the number of the part you want to get.",
+                    "category": "f_modifiers"
+                },{
+                    "name": "clipString",
+                    "description": "Trim the edges of a string. The given value represents the number of characters that will be clipped. If the value is negative, they will be clipped from the end of the string.",
+                    "category": "f_modifiers"
+                },{
+                    "name": "parseTags",
+                    "description": "Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)",
+                    "category": "f_modifiers"
+                },{
+                    "name": "textToNumber",
+                    "description": "Turn a written number into an actual numeric value. In other words: turn \"three\" into \"3\". Can come in handy if you want to use the Semantic UI column width classes for other purposes.",
+                    "category": "f_modifiers"
+                },{
+                    "name": "filterLine",
+                    "description": "Search the input for lines containing a specific string. And then return those lines.",
+                    "category": "f_modifiers"
+                },{
+                    "name": "stripForJS",
+                    "description": "Prepare the input for being used in Javascript. This means escaping certain characters to make sure the surrounding HTML doesn't break.",
+                    "category": "f_modifiers"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "f_modifiers",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

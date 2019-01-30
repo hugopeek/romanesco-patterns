@@ -1,0 +1,39 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "getResourceLevel",
+                    "description": "Show the level of a given resource based on the number of parent IDs. Useful for example if you only want to show a breadcrumb trail on pages that are two or three levels deep.",
+                    "category": "f_resources"
+                },{
+                    "name": "getChildCount",
+                    "description": "Return the amount of child pages a resource has. Now you can make one of those shiny little badges inside a menu button, telling the user upfront how much treasure is inside.",
+                    "category": "f_resources"
+                },{
+                    "name": "getCrosslinks",
+                    "description": "Return the IDs of resources that link to current resource through a given TV. Did that make sense? For example: you can show things like relevant tags or reviews in blog posts and vice versa.",
+                    "category": "f_resources"
+                },{
+                    "name": "resourceTVInputOptions",
+                    "description": "Generate input option values that can be used in TVs, for creating resource selectors.",
+                    "category": "f_resources"
+                },{
+                    "name": "resourceMediaPath",
+                    "description": "Standalone version of a snippet that comes with MIGX. Generates subfolders in media sources. Keeps your folder structure tidy when adding lots of images in lots of resources (e.g. galleries).",
+                    "category": "f_resources"
+                },{
+                    "name": "SeoTabIndexation",
+                    "description": "If SeoTab (StercSEO) is installed, this snippet displays the indexation setting for given resource.",
+                    "category": "f_resources"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "f_resources",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

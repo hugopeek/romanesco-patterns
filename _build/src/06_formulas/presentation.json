@@ -1,0 +1,39 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "sliderLoadAssets",
+                    "description": "Load CSS and JS dependencies for Slick slider.",
+                    "category": "f_presentation"
+                },{
+                    "name": "statusGridLoadAssets",
+                    "description": "Load JS dependencies for status grid.",
+                    "category": "f_presentation"
+                },{
+                    "name": "tabsGenerateNav",
+                    "description": "Generate the tab buttons based on data-heading attribute in the tabs themselves. It basically links every tab button to the correct tab content.",
+                    "category": "f_presentation"
+                },{
+                    "name": "iconInputOptions",
+                    "description": "Generate input options with all Semantic UI icon classes.",
+                    "category": "f_presentation"
+                },{
+                    "name": "responsiveImgSrcset",
+                    "description": "Generate a number of srcset properties, for use inside an img tag.",
+                    "category": "f_presentation"
+                },{
+                    "name": "getImageDimensions",
+                    "description": "Retrieve width and height from physical image files. Auto detects SVGs.",
+                    "category": "f_presentation"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "f_presentation",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

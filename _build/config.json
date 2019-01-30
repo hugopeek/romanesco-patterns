@@ -539,6 +539,10 @@
                     "parent": "04_templates"
                 },
                 {
+                    "name": "f_basic",
+                    "parent": "06_formulas"
+                },
+                {
                     "name": "f_content",
                     "parent": "06_formulas"
                 },
@@ -559,23 +563,11 @@
                     "parent": "f_formblocks"
                 },
                 {
+                    "name": "f_framework",
+                    "parent": "06_formulas"
+                },
+                {
                     "name": "f_hub",
-                    "parent": "06_formulas"
-                },
-                {
-                    "name": "f_basic",
-                    "parent": "06_formulas"
-                },
-                {
-                    "name": "f_modifiers",
-                    "parent": "06_formulas"
-                },
-                {
-                    "name": "f_resources",
-                    "parent": "06_formulas"
-                },
-                {
-                    "name": "f_templatevars",
                     "parent": "06_formulas"
                 },
                 {
@@ -583,11 +575,7 @@
                     "parent": "06_formulas"
                 },
                 {
-                    "name": "f_framework",
-                    "parent": "06_formulas"
-                },
-                {
-                    "name": "f_logic",
+                    "name": "f_modifiers",
                     "parent": "06_formulas"
                 },
                 {
@@ -595,11 +583,15 @@
                     "parent": "06_formulas"
                 },
                 {
-                    "name": "f_users",
+                    "name": "f_resources",
                     "parent": "06_formulas"
                 },
                 {
                     "name": "f_toolshed",
+                    "parent": "06_formulas"
+                },
+                {
+                    "name": "f_users",
                     "parent": "06_formulas"
                 },
                 {
@@ -3831,6 +3823,36 @@
             ],
             "snippets": [
                 {
+                    "name": "Time",
+                    "description": "Return current timestamp.",
+                    "category": "f_basic"
+                },
+                {
+                    "name": "getContextSetting",
+                    "description": "Retrieve a specific setting from a context of choice. Useful if you want to \"borrow\" a setting from another context, e.g. the correct site_url for assets only available in that context.",
+                    "category": "f_basic"
+                },
+                {
+                    "name": "getElementDescription",
+                    "description": "Retrieve the description of an element. Used in the front-end library to prevent having to enter the same information twice. This paragraph is also loaded with getElementDescription!",
+                    "category": "f_basic"
+                },
+                {
+                    "name": "firstChildID",
+                    "description": "The name says it all: retrieve the first child ID of a given ID.",
+                    "category": "f_basic"
+                },
+                {
+                    "name": "getRawTVValue",
+                    "description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you need the unprocessed value instead, e.g. when using @inherit.",
+                    "category": "f_basic"
+                },
+                {
+                    "name": "getTmplvarID",
+                    "description": "Get the ID of a TV, in case you only know its name. Created for the front-end library, to help with listing included TVs.",
+                    "category": "f_basic"
+                },
+                {
                     "name": "TableOfContents",
                     "description": "",
                     "category": "f_content"
@@ -3891,6 +3913,21 @@
                     "category": "f_fb_hooks"
                 },
                 {
+                    "name": "setBoxType",
+                    "description": "Output the necessary class names for Overview patterns, based on their template. It was created because the chunks where getting a bit swamped by output modifiers trying to do the same thing.",
+                    "category": "f_framework"
+                },
+                {
+                    "name": "modifiedIf",
+                    "description": "Customized version of the If snippet, which also accepts 'contains' and 'containsnot' operators.",
+                    "category": "f_framework"
+                },
+                {
+                    "name": "FibonacciSequence",
+                    "description": "Generate a sequence of Fibonacci numbers. In a Fibonacci sequence, every number after the first two is the sum of the two preceding ones.",
+                    "category": "f_framework"
+                },
+                {
                     "name": "includedChunks",
                     "category": "f_hub"
                 },
@@ -3927,24 +3964,24 @@
                     "category": "f_hub"
                 },
                 {
-                    "name": "Time",
-                    "description": "Return current timestamp.",
-                    "category": "f_basic"
+                    "name": "jsonGetValue",
+                    "description": "Get the value of a specific key from a JSON string.",
+                    "category": "f_json"
                 },
                 {
-                    "name": "getContextSetting",
-                    "description": "Retrieve a specific setting from a context of choice. Useful if you want to \"borrow\" a setting from another context, e.g. the correct site_url for assets only available in that context.",
-                    "category": "f_basic"
+                    "name": "jsonToHTML",
+                    "description": "Turn a JSON object into an HTML table. For documentation purposes.",
+                    "category": "f_json"
                 },
                 {
-                    "name": "getElementDescription",
-                    "description": "Retrieve the description of an element. Used in the front-end library to prevent having to enter the same information twice. This paragraph is also loaded with getElementDescription!",
-                    "category": "f_basic"
+                    "name": "jsonImportInputOptions",
+                    "description": "Generate input options from a JSON file. These options are written directly into their database table inside the Backyard package.",
+                    "category": "f_json"
                 },
                 {
-                    "name": "firstChildID",
-                    "description": "The name says it all: retrieve the first child ID of a given ID.",
-                    "category": "f_basic"
+                    "name": "tvToJSON",
+                    "description": "Output the properties of given TV to a JSON object. The output could be used by jsonToHTML to generate an HTML table.",
+                    "category": "f_json"
                 },
                 {
                     "name": "stripAsAlias",
@@ -3987,6 +4024,36 @@
                     "category": "f_modifiers"
                 },
                 {
+                    "name": "sliderLoadAssets",
+                    "description": "Load CSS and JS dependencies for Slick slider.",
+                    "category": "f_presentation"
+                },
+                {
+                    "name": "statusGridLoadAssets",
+                    "description": "Load JS dependencies for status grid.",
+                    "category": "f_presentation"
+                },
+                {
+                    "name": "tabsGenerateNav",
+                    "description": "Generate the tab buttons based on data-heading attribute in the tabs themselves. It basically links every tab button to the correct tab content.",
+                    "category": "f_presentation"
+                },
+                {
+                    "name": "iconInputOptions",
+                    "description": "Generate input options with all Semantic UI icon classes.",
+                    "category": "f_presentation"
+                },
+                {
+                    "name": "responsiveImgSrcset",
+                    "description": "Generate a number of srcset properties, for use inside an img tag.",
+                    "category": "f_presentation"
+                },
+                {
+                    "name": "getImageDimensions",
+                    "description": "Retrieve width and height from physical image files. Auto detects SVGs.",
+                    "category": "f_presentation"
+                },
+                {
                     "name": "getResourceLevel",
                     "description": "Show the level of a given resource based on the number of parent IDs. Useful for example if you only want to show a breadcrumb trail on pages that are two or three levels deep.",
                     "category": "f_resources"
@@ -4017,86 +4084,6 @@
                     "category": "f_resources"
                 },
                 {
-                    "name": "jsonGetValue",
-                    "description": "Get the value of a specific key from a JSON string.",
-                    "category": "f_json"
-                },
-                {
-                    "name": "jsonToHTML",
-                    "description": "Turn a JSON object into an HTML table. For documentation purposes.",
-                    "category": "f_json"
-                },
-                {
-                    "name": "jsonImportInputOptions",
-                    "description": "Generate input options from a JSON file. These options are written directly into their database table inside the Backyard package.",
-                    "category": "f_json"
-                },
-                {
-                    "name": "tvToJSON",
-                    "description": "Output the properties of given TV to a JSON object. The output could be used by jsonToHTML to generate an HTML table.",
-                    "category": "f_json"
-                },
-                {
-                    "name": "setBoxType",
-                    "description": "Output the necessary class names for Overview patterns, based on their template. It was created because the chunks where getting a bit swamped by output modifiers trying to do the same thing.",
-                    "category": "f_framework"
-                },
-                {
-                    "name": "setUserPlaceholders",
-                    "description": "Make any extended fields that are attached to a MODX user available as placeholder.",
-                    "category": "f_framework"
-                },
-                {
-                    "name": "iconInputOptions",
-                    "description": "Generate input options with all Semantic UI icon classes.",
-                    "category": "f_framework"
-                },
-                {
-                    "name": "responsiveImgSrcset",
-                    "description": "Generate a number of srcset properties, for use inside an img tag.",
-                    "category": "f_framework"
-                },
-                {
-                    "name": "modifiedIf",
-                    "description": "Customized version of the If snippet, which also accepts 'contains' and 'containsnot' operators.",
-                    "category": "f_logic"
-                },
-                {
-                    "name": "sliderLoadAssets",
-                    "description": "Load CSS and JS dependencies for Slick slider.",
-                    "category": "f_presentation"
-                },
-                {
-                    "name": "statusGridLoadAssets",
-                    "description": "Load JS dependencies for status grid.",
-                    "category": "f_presentation"
-                },
-                {
-                    "name": "tabsGenerateNav",
-                    "description": "Generate the tab buttons based on data-heading attribute in the tabs themselves. It basically links every tab button to the correct tab content.",
-                    "category": "f_presentation"
-                },
-                {
-                    "name": "getImageDimensions",
-                    "description": "Retrieve width and height from physical image files. Auto detects SVGs.",
-                    "category": "f_presentation"
-                },
-                {
-                    "name": "getRawTVValue",
-                    "description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you need the unprocessed value instead, e.g. when using @inherit.",
-                    "category": "f_templatevars"
-                },
-                {
-                    "name": "getTmplvarID",
-                    "description": "Get the ID of a TV, in case you only know its name. Created for the front-end library, to help with listing included TVs.",
-                    "category": "f_templatevars"
-                },
-                {
-                    "name": "checkPermissions",
-                    "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
-                    "category": "f_users"
-                },
-                {
                     "name": "migxSaveOption",
                     "description": "After save hook for MIGXdb. Gets and sets the group (parent) ID inside a nested configuration. Also generates an alias if none is present and increments the sort order.",
                     "category": "f_toolshed"
@@ -4125,6 +4112,21 @@
                     "name": "renderInputOption",
                     "description": "Fetch option name from the romanesco_options table (when used as output modifier). You can also get other available fields with a regular snippet call and tpl chunk.",
                     "category": "f_toolshed"
+                },
+                {
+                    "name": "setUserPlaceholders",
+                    "description": "Make any extended fields that are attached to a MODX user available as placeholder.",
+                    "category": "f_users"
+                },
+                {
+                    "name": "checkPermissions",
+                    "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
+                    "category": "f_users"
+                },
+                {
+                    "name": "renderUserName",
+                    "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections.",
+                    "category": "f_users"
                 }
             ],
             "plugins": [
@@ -4207,14 +4209,6 @@
                     "events": [
                         "ClientConfig_ConfigChange"
                     ]
-                }
-            ],
-            "systemSettings": [
-                {
-                    "key": "activation_resource_id",
-                    "namespace": "formblocks",
-                    "type": "textfield",
-                    "area": "FormBlocks - Registration"
                 }
             ]
         },
@@ -4414,6 +4408,12 @@
                 "key": "footer_container_id",
                 "type": "textfield",
                 "area": "Pages"
+            },
+            {
+                "key": "activation_resource_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Registration"
             },
             {
                 "key": "container_id",

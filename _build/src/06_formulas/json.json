@@ -1,0 +1,31 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "jsonGetValue",
+                    "description": "Get the value of a specific key from a JSON string.",
+                    "category": "f_json"
+                },{
+                    "name": "jsonToHTML",
+                    "description": "Turn a JSON object into an HTML table. For documentation purposes.",
+                    "category": "f_json"
+                },{
+                    "name": "jsonImportInputOptions",
+                    "description": "Generate input options from a JSON file. These options are written directly into their database table inside the Backyard package.",
+                    "category": "f_json"
+                },{
+                    "name": "tvToJSON",
+                    "description": "Output the properties of given TV to a JSON object. The output could be used by jsonToHTML to generate an HTML table.",
+                    "category": "f_json"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "f_json",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

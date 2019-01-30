@@ -80,15 +80,16 @@
                     "defaultValue": "0",
                     "templates": ["fbRegister"]
                 }
-            ],
-            "systemSettings": [
-                {
-                    "key": "activation_resource_id",
-                    "namespace": "formblocks",
-                    "type": "textfield",
-                    "area": "FormBlocks - Registration"
-                }
             ]
-        }
+        },
+
+        "systemSettings": [
+            {
+                "key": "activation_resource_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Registration"
+            }
+        ]
     }
 }
