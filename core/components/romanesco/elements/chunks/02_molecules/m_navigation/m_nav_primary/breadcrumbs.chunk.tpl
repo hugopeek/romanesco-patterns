@@ -5,5 +5,6 @@
         &tpl=`breadcrumbRow`
         &tplCurrent=`breadcrumbCurrent`
         &outputSeparator=``
+        &where=`[{"alias_visible:!=":"0"}]`
     ]]
 </nav>
