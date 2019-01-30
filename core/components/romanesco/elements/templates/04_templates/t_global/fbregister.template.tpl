@@ -2,20 +2,20 @@
 
 [[!Register?
     &preHooks=`[[*fb_prehooks:notempty=`[[*fb_prehooks]]`]]`
-    &postHooks=`[[++formblocks.save_form:eq=`1`:then=`FormItSaveForm,`]][[*fb_hooks:notempty=`[[*fb_hooks]]`]]`
+    &postHooks=`[[*fb_hooks:notempty=`[[*fb_hooks]]`]]`
 
     &activation=`[[*fb_activation_toggle:default=`1`]]`
     &activationttl=`[[*fb_activation_ttl:default=`180`]]`
-    &activationEmailTpl=`[[*fb_email_content:empty=`[[%formblocks.registration.email_content]]`]]`
+    &activationEmailTpl=`[[*fb_activation_email:empty=`[[%formblocks.registration.email_content]]`]]`
     &activationEmailTplType=`inline`
     &activationEmailSubject=`[[*fb_email_subject:empty=`[[%formblocks.registration.email_subject]]`]]`
 
-    &emailField=`[[+fb[[*id]]-email]]`
+    &emailField=`fb[[*id]]-email`
     &usernameField=`fb[[*id]]-[[*fb_username_field:default=`username`:fbStripAsAlias:stripString=`fb[[*id]]-`]]`
     &usergroups=`[[*fb_usergroups]]`
-    &usergroupsField=`fb[[*id]]-[[*fb_usergroups_field:fbStripAsAlias:stripString=`fb[[*id]]-`]]`
-    &useExtended=`[[*fb_extended_toggle:default=`0`]]`
+    [[*fb_usergroups_field:isnot=``:then=`&usergroupsField=`fb[[*id]]-[[*fb_usergroups_field:fbStripAsAlias:stripString=`fb[[*id]]-`]]``]]
     [[*fb_password_field:isnot=``:then=`&passwordField=`[[*fb_password_field]]``:else=`&generatePassword=`1``]]
+    &useExtended=`[[*fb_extended_toggle:default=`0`]]`
 
     &customValidators=``
     &validate=`
@@ -24,6 +24,7 @@
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[$fbValidateCustomFields:notempty=`[[$fbValidateCustomFields]]`]]
         workemail:blank`
+    &validatePassword=`0`
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[+title]]`
@@ -40,6 +41,7 @@
         [[%formblocks.registration.validation_error_heading]]
     </div>
     <p>[[%formblocks.registration.validation_error_message]]</p>
+    <p>[[!+fb[[*id]].validation_error_message]]</p>
 </div>
 `]]
 
