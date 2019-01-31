@@ -2548,6 +2548,11 @@
                     "category": "a_select"
                 },
                 {
+                    "name": "tvSelectFibonacci",
+                    "description": "Pick a number from the Fibonacci sequence. Useful for example when implementing an Agile / Scrum kind of point system.",
+                    "category": "a_select"
+                },
+                {
                     "name": "tagItemBasic",
                     "category": "a_taxonomy"
                 },
