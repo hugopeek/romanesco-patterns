@@ -1,11 +1,4 @@
 [[!renderResources?
     &parents=`-1`
     &resources=`[[+form_id]]`
-    &current_id=`[[+current_id]]`
-    &current_pagetitle=`[[+current_pagetitle]]`
-    &current_menutitle=`[[+current_menutitle]]`
-    &form_size=`[[+form_size]]`
-    &form_layout=`[[+form_layout]]`
-    &segment_type=`[[+segment_type]]`
-    &padding=`[[+padding]]`
 ]]
