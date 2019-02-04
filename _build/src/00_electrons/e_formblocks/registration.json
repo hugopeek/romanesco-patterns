@@ -9,7 +9,7 @@
                     "category": "Registration",
                     "sortOrder": "1",
                     "type": "option",
-                    "inputOptionValues": "After email confirmation==1||Immediately==0",
+                    "inputOptionValues": "After email confirmation==1||Immediately (Beware of spam!)==0",
                     "defaultValue": "1",
                     "templates": ["fbRegister"]
                 },{
@@ -81,15 +81,6 @@
                     "templates": ["fbRegister"]
                 }
             ]
-        },
-
-        "systemSettings": [
-            {
-                "key": "activation_resource_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - Registration"
-            }
-        ]
+        }
     }
 }

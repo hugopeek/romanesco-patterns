@@ -1731,7 +1731,7 @@
                     "category": "Registration",
                     "sortOrder": "1",
                     "type": "option",
-                    "inputOptionValues": "After email confirmation==1||Immediately==0",
+                    "inputOptionValues": "After email confirmation==1||Immediately (Beware of spam!)==0",
                     "defaultValue": "1",
                     "templates": [
                         "fbRegister"
@@ -2302,6 +2302,11 @@
                     "category": "a_formblocks"
                 },
                 {
+                    "name": "fbMathQuestionProperties",
+                    "description": "These properties are added to the FormIt call if a Math Question CB is present in the form.",
+                    "category": "a_formblocks"
+                },
+                {
                     "name": "fbStripWordsLabel",
                     "description": "",
                     "category": "a_formblocks"
@@ -2710,6 +2715,10 @@
                 },
                 {
                     "name": "fbInputHidden",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbMathQuestion",
                     "category": "m_fb_inputs"
                 },
                 {
@@ -4415,12 +4424,6 @@
                 "area": "Pages"
             },
             {
-                "key": "activation_resource_id",
-                "namespace": "formblocks",
-                "type": "textfield",
-                "area": "FormBlocks - Registration"
-            },
-            {
                 "key": "container_id",
                 "namespace": "formblocks",
                 "type": "textfield",
@@ -4439,6 +4442,12 @@
                 "type": "textfield",
                 "area": "FormBlocks - Settings",
                 "value": ""
+            },
+            {
+                "key": "activation_resource_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Registration"
             },
             {
                 "key": "cb_input_textfield_id",
@@ -4484,6 +4493,12 @@
             },
             {
                 "key": "cb_input_file_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },
+            {
+                "key": "cb_math_question_id",
                 "namespace": "formblocks",
                 "type": "textfield",
                 "area": "FormBlocks - CB fields"

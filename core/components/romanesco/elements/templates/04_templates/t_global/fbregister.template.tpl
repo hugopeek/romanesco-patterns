@@ -1,8 +1,16 @@
 [[*pagetitle:fbStripAsAlias:toPlaceholder=`title`]]
 
-[[!Register?
+[[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`math_question`?
+    &field=`[[++formblocks.cb_math_question_id:empty=`-1`]]`
+]]
+
+[[!FormIt?
     &preHooks=`[[*fb_prehooks:notempty=`[[*fb_prehooks]]`]]`
-    &postHooks=`[[*fb_hooks:notempty=`[[*fb_hooks]]`]]`
+    &placeholderPrefix=`fb[[*id]].`
+]]
+[[!Register?
+    &preHooks=`[[*fb_hooks:notempty=`[[*fb_hooks]],`]][[+math_question:isnot=`0`:then=`math,`]]fbEmptyHook`
+    &postHooks=`[[*fb_posthooks:notempty=`[[*fb_posthooks]]`]]`
 
     &activation=`[[*fb_activation_toggle:default=`1`]]`
     &activationttl=`[[*fb_activation_ttl:default=`180`]]`
@@ -14,17 +22,24 @@
     &usernameField=`fb[[*id]]-[[*fb_username_field:default=`username`:fbStripAsAlias:stripString=`fb[[*id]]-`]]`
     &usergroups=`[[*fb_usergroups]]`
     [[*fb_usergroups_field:isnot=``:then=`&usergroupsField=`fb[[*id]]-[[*fb_usergroups_field:fbStripAsAlias:stripString=`fb[[*id]]-`]]``]]
-    [[*fb_password_field:isnot=``:then=`&passwordField=`[[*fb_password_field]]``:else=`&generatePassword=`1``]]
+    [[*fb_password_field:isnot=``:then=`&passwordField=`fb[[*id]]-[[*fb_password_field:fbStripAsAlias:stripString=`fb[[*id]]-`]]``:else=`&generatePassword=`1``]]
     &useExtended=`[[*fb_extended_toggle:default=`0`]]`
 
-    &customValidators=``
+    [[!cbGetFieldContent?
+        &field=`[[++formblocks.cb_math_question_id:empty=`-1`]]`
+        &tpl=`fbMathQuestionProperties`
+    ]]
+
+    &customValidators=`[[$fbCustomValidators]]`
     &validate=`
         [[!fbValidateProcessJSON? &json=`[[!fbEmailGetJSON? &formID=`[[*id]]`]]`]]
         [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
-        [[$fbValidateCustomFields:notempty=`[[$fbValidateCustomFields]]`]]
-        workemail:blank`
-    &validatePassword=`0`
+        [[+math_question:isnot=`0`:then=`fb[[*id]]-math:required,`]]
+        [[$fbValidateCustomFields]],
+        website:blank`
+    &validatePassword=`[[*fb_password_field:isnot=``:then=`1`:else=`0`]]`
+
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[+title]]`
@@ -46,7 +61,8 @@
 `]]
 
 <form id="form-[[+title]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] registration form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
-    <input type="text" name="workemail" class="hidden" value="">
+    <label for="website" class="hidden">If you're human, keep this field blank!</label>
+    <input type="text" name="website" class="hidden" value="">
 
     <div class="ui [[+segment_type]]">
         [[*content]]

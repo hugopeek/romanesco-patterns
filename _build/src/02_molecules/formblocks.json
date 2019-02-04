@@ -24,6 +24,9 @@
                     "name": "fbInputHidden",
                     "category": "m_fb_inputs"
                 },{
+                    "name": "fbMathQuestion",
+                    "category": "m_fb_inputs"
+                },{
                     "name": "fbAcceptTerms",
                     "category": "m_fb_inputs"
                 },{
