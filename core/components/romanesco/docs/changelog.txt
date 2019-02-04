@@ -4,7 +4,8 @@
 Released on ...
 
 New features:
--
+- Add TV input option for selecting Fibonacci numbers
+- Add math question anti-spam option to forms
 
 Fixes and improvements:
 - Rearrange snippet folders and import a few new ones from projects
