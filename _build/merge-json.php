@@ -26,7 +26,7 @@ foreach ($sources as $index => $source) {
     if ($validateSource) {
         echo $validateSource . "\n";
         echo "Source: $source \n";
-        echo "Validation failed.";
+        echo "Validation failed. \n";
         return false;
     }
 
@@ -60,10 +60,12 @@ if ($validateOutput) {
     echo $validateOutput . "\n";
     echo "Validation of merged JSON failed.";
     return false;
+} else {
+    echo "Config file is valid JSON. \n";
 }
 
 // Write the config file
 file_put_contents("config.json", $output);
-echo 'Done.';
+echo "Config file successfully built. \n";
 
 return;
