@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.14.2
+Released on ...
+
+Fixes and improvements:
+- Prevent MIGXdb fields with default value of NULL from being set to 0
+
 ## Romanesco Patterns 0.14.1
 Released on February 10, 2019
 
