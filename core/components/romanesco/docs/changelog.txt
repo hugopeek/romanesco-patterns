@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Prevent MIGXdb fields with default value of NULL from being set to 0
+- Fix binary download types (such as PDFs) not having content
 
 ## Romanesco Patterns 0.14.1
 Released on February 10, 2019
