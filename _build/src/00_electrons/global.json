@@ -10,7 +10,7 @@
                     "category": "Global - Backgrounds",
                     "sortOrder": "1",
                     "inputProperties": {
-                        "configs": "global_background_images"
+                        "configs": "global_background_images:romanescobackyard"
                     },
                     "templates": [
                         "GlobalBackgrounds"
