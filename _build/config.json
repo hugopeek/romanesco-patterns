@@ -142,18 +142,6 @@
                     "parent": "e_global"
                 },
                 {
-                    "name": "e_hub",
-                    "parent": "00_electrons"
-                },
-                {
-                    "name": "Pattern Library",
-                    "parent": "e_hub"
-                },
-                {
-                    "name": "Project Hub",
-                    "parent": "e_hub"
-                },
-                {
                     "name": "e_information",
                     "parent": "00_electrons"
                 },
@@ -899,20 +887,6 @@
                     ]
                 },
                 {
-                    "caption": "Project timeline",
-                    "name": "project_hub_timeline",
-                    "description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
-                    "type": "migxdb",
-                    "category": "Timeline",
-                    "sortOrder": 1,
-                    "inputProperties": {
-                        "configs": "project_hub_timeline:romanescobackyard"
-                    },
-                    "templates": [
-                        "ProjectDashboard"
-                    ]
-                },
-                {
                     "caption": "Toolbar visibility",
                     "name": "toolbar_visibility",
                     "description": "Do you want to display a toolbar on this page? The default toolbar contains breadcrumbs and search functionality. This setting is inherited on every child page.",
@@ -1654,6 +1628,20 @@
                     },
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","TeamMember","Team - Member","Team","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                    ]
+                },
+                {
+                    "caption": "Project timeline",
+                    "name": "project_hub_timeline",
+                    "description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
+                    "type": "migxdb",
+                    "category": "Timeline",
+                    "sortOrder": 1,
+                    "inputProperties": {
+                        "configs": "project_hub_timeline:romanescobackyard"
+                    },
+                    "templates": [
+                        "ProjectDashboard"
                     ]
                 },
                 {
