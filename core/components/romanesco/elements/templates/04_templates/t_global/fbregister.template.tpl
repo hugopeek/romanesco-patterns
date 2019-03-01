@@ -20,6 +20,7 @@
 
     &emailField=`fb[[*id]]-email`
     &usernameField=`fb[[*id]]-[[*fb_username_field:default=`username`:fbStripAsAlias:stripString=`fb[[*id]]-`]]`
+    &fullnameField=`fb[[*id]]-[[*fb_fullname_field:default=`your-name`:fbStripAsAlias:stripString=`fb[[*id]]-`]]`
     &usergroups=`[[*fb_usergroups]]`
     [[*fb_usergroups_field:isnot=``:then=`&usergroupsField=`fb[[*id]]-[[*fb_usergroups_field:fbStripAsAlias:stripString=`fb[[*id]]-`]]``]]
     [[*fb_password_field:isnot=``:then=`&passwordField=`fb[[*id]]-[[*fb_password_field:fbStripAsAlias:stripString=`fb[[*id]]-`]]``:else=`&generatePassword=`1``]]
