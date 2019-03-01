@@ -89,6 +89,7 @@
         <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
             [[[[++formblocks.antispam:contains=`recaptchav2`:then=`!recaptchav2_render`]]]]
             [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
+            <div class="ui error message"></div>
             <input class="[[+form_size]] primary ui button" type="submit" name="submit-[[+title]]" value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
         </div>
         `]]

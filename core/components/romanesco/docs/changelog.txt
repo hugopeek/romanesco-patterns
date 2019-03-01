@@ -8,6 +8,7 @@ Fixes and improvements:
 - Fix binary download types (such as PDFs) not having content
 - Fix Global Backgrounds TV not loading its MIGX config from file
 - Add fullname parameter to Registration template
+- Add empty error message div to forms (for SUI front-end validation)
 
 ## Romanesco Patterns 0.14.1
 Released on February 10, 2019
