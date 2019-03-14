@@ -28,6 +28,7 @@
         &show_subtitle=`[[+show_subtitle]]`
         &show_introtext=`[[+show_introtext]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
+        &img_type=`[[+img_type]]`
         &de_emphasize=`[[+de_emphasize]]`
     ]]
 </div>

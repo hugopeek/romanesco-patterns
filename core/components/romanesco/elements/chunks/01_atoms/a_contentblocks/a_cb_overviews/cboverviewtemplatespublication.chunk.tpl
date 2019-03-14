@@ -1,4 +1,4 @@
 Article traditional=overviewRowArticleBasic
-Article image (panoramic)=overviewRowArticleImageBasic
+Article image=overviewRowArticleImageBasic
 Article compact=overviewRowArticleCompact
 Article quote=overviewRowArticleQuote
