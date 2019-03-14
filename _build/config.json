@@ -2665,6 +2665,10 @@
                     "category": "m_data"
                 },
                 {
+                    "name": "googleGtag",
+                    "category": "m_data"
+                },
+                {
                     "name": "structuredDataSite",
                     "category": "m_data"
                 },
