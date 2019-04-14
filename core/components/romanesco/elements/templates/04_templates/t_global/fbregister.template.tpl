@@ -38,7 +38,7 @@
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[+math_question:isnot=`0`:then=`fb[[*id]]-math:math,`]]
         [[$fbValidateCustomFields]],
-        website:blank`
+        siteurl:blank`
     &validatePassword=`[[*fb_password_field:isnot=``:then=`1`:else=`0`]]`
 
     &errTpl=`<span class="help error">[[+error]]</span>`
@@ -62,11 +62,14 @@
 `]]
 
 <form id="form-[[+title]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] registration form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
-    <label for="website" class="hidden">If you're human, keep this field blank!</label>
-    <input type="text" name="website" class="hidden" value="">
-
     <div class="ui [[+segment_type]]">
+
         [[*content]]
+
+        <div class="ui hidden field segment">
+            <label for="siteurl">[[%formblocks.form.honeypot_field]]</label>
+            <input type="text" name="siteurl" value="">
+        </div>
 
         [[*content:containsnot=`type="submit"`:then=`
         <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
