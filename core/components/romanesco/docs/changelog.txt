@@ -15,6 +15,9 @@ Fixes and improvements:
 - Add fullname parameter to Registration template
 - Point to correct math validator in Registration template
 - Add empty error message div to forms (for SUI front-end validation)
+- Allow recipient email TV to be empty in forms (i.e. when using a custom hook)
+- Fix inheritance of form label layout settings
+- Add label to honeypot fields
 
 ## Romanesco Patterns 0.14.1
 Released on February 10, 2019

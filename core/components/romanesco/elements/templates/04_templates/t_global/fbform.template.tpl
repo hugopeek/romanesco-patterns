@@ -21,13 +21,13 @@
         [[+math_question:isnot=`0`:then=`math,`]]
         [[++formblocks.save_form:eq=`1`:then=`FormItSaveForm,`]]
         [[*fb_hooks:notempty=`[[*fb_hooks]],`]]
-        email,
+        [[*fb_email_to:notempty=`email,`]]
         [[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]]
         redirect
     `
 
     &emailTpl=`[[*fb_email_template:empty=`fbEmail`]]`
-    &emailTo=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to:empty=`[[++client_email:empty=`[[++emailsender]]`]]`]]`]]`
+    &emailTo=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to]]`]]`
     &emailCC=`[[*fb_email_cc]]`
     &emailBCC=`[[*fb_email_bcc]]`
     &emailFrom=`[[*fb_email_from:empty=`[[++emailsender]]`]]`
