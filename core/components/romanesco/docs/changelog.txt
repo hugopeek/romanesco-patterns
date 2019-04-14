@@ -11,6 +11,7 @@ Fixes and improvements:
 - Fix not being able to set image type in Publication and Portfolio overviews
 - Fix binary download types (such as PDFs) not having content
 - Fix Global Backgrounds TV not loading its MIGX config from file
+- Use nvm-exec to run Gulp from PHP (prevents gulp not found errors)
 - Add fullname parameter to Registration template
 - Point to correct math validator in Registration template
 - Add empty error message div to forms (for SUI front-end validation)

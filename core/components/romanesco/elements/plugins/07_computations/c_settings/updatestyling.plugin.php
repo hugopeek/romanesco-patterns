@@ -101,7 +101,8 @@ switch($eventName) {
 
             // Run gulp process to generate new CSS
             exec(
-                'gulp build-css' .
+                'NODE_VERSION=8 "$HOME/.nvm/nvm-exec"' .
+                ' gulp build-css' .
                 ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js' .
                 ' > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log' .
                 ' 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &',
@@ -114,7 +115,8 @@ switch($eventName) {
                 $logoBadgePath = $modx->getOption('base_path') . $savedSettingsTheme['logo_badge_path'];
 
                 exec(
-                    'gulp generate-favicon' .
+                    'NODE_VERSION=8 "$HOME/.nvm/nvm-exec"' .
+                    ' gulp generate-favicon' .
                     ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/generate-favicons.js' .
                     ' --name ' . escapeshellarg($modx->getOption('site_name')) .
                     ' --img ' . escapeshellarg($logoBadgePath) .
