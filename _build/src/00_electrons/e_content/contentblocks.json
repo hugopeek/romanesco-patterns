@@ -6,6 +6,11 @@
                 "type": "textfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""
+            },{
+                "key": "cb_field_map_id",
+                "type": "textfield",
+                "area": "ContentBlocks - Settings",
+                "value": ""
             }
         ]
     }

@@ -704,7 +704,7 @@
                 {
                     "caption": "Email address recipient",
                     "name": "fb_email_to",
-                    "description": "Submitted forms will be sent to this address. If this field is empty, the form will be sent to the default email address of the website (which can be found under Extras > Configuration).",
+                    "description": "Submitted forms will be sent to this address. If you leave this field empty, no emails will be sent. This may be what you want when using a custom hook for processing the form.",
                     "category": "Settings - Email",
                     "sortOrder": "1",
                     "type": "email",
@@ -787,7 +787,8 @@
                     "sortOrder": "92",
                     "type": "text",
                     "templates": [
-                        "fbForm"
+                        "fbForm",
+                        "fbRegister"
                     ]
                 },
                 {
@@ -800,7 +801,8 @@
                     "inputOptionValues": "Vertical==vertical||Horizontal==horizontal||Inline==inline",
                     "defaultValue": "horizontal",
                     "templates": [
-                        "fbForm"
+                        "fbForm",
+                        "fbRegister"
                     ]
                 },
                 {
@@ -4417,6 +4419,12 @@
             },
             {
                 "key": "cb_field_code_id",
+                "type": "textfield",
+                "area": "ContentBlocks - Settings",
+                "value": ""
+            },
+            {
+                "key": "cb_field_map_id",
                 "type": "textfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""
