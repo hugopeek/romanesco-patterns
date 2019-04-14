@@ -79,11 +79,14 @@
 `]]
 
 <form id="form-[[+title]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
-    <label for="workemail" class="hidden">If you're human, keep this field blank!</label>
-    <input type="text" name="workemail" class="hidden" value="">
-
     <div class="ui [[+segment_type]]">
+
         [[*content]]
+
+        <div class="ui hidden field segment">
+            <label for="workemail">[[%formblocks.form.honeypot_field]]</label>
+            <input type="text" name="workemail" value="">
+        </div>
 
         [[*content:containsnot=`type="submit"`:then=`
         <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
