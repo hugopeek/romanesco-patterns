@@ -1170,10 +1170,12 @@ if ($object->xpdo) {
   'fb_submit_button' => 
   array (
     0 => 'fbForm',
+    1 => 'fbRegister',
   ),
   'fb_form_layout' => 
   array (
     0 => 'fbForm',
+    1 => 'fbRegister',
   ),
   'fb_prehooks' => 
   array (
@@ -1239,6 +1241,10 @@ if ($object->xpdo) {
     0 => 'fbRegister',
   ),
   'fb_username_field' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_fullname_field' => 
   array (
     0 => 'fbRegister',
   ),
