@@ -18,6 +18,7 @@ Fixes and improvements:
 - Allow recipient email TV to be empty in forms (i.e. when using a custom hook)
 - Fix inheritance of form label layout settings
 - Add label to honeypot fields
+- Only load Youtube videos after play button is clicked
 
 ## Romanesco Patterns 0.14.1
 Released on February 10, 2019
