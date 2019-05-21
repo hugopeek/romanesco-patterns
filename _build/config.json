@@ -4329,6 +4329,18 @@
                 "value": "0"
             },
             {
+                "key": "disqus_div_id",
+                "type": "textfield",
+                "area": "Feedback",
+                "value": "disqus_thread"
+            },
+            {
+                "key": "commento_div_id",
+                "type": "textfield",
+                "area": "Feedback",
+                "value": "commento"
+            },
+            {
                 "key": "global_backgrounds_id",
                 "type": "textfield",
                 "area": "Pages"

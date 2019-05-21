@@ -14,6 +14,6 @@
 [[+load_syntax_highlighting:eq=`1`:then=`
 <script src="[[++romanesco.custom_vendor_path]]/prism/prism.min.js"></script>
 `]]
-[[[[*comments_toggle:eq=`1`:then=`$commentScript[[++romanesco.comment_platform]]`]]]]
+[[[[*comments_toggle:eq=`1`:then=`$commentScript[[++comment_platform]]`]]]]
 <script src="[[++romanesco.custom_js_path]]/site.js"></script>
 [[++footer_additional]]

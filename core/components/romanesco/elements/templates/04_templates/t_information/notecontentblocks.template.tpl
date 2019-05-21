@@ -42,7 +42,7 @@
             <h2 class="ui big header">[[%romanesco.article.comments]]</h2>
             <div class="ui relaxed grid container">
                 <div class="sixteen wide mobile twelve wide computer column">
-                    <div id="[[++romanesco.comment_platform_id]]"></div>
+                    <div id="[[++romanesco.[[++comment_platform:lcase]]_div_id]]"></div>
                 </div>
             </div>
         </section>
