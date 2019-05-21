@@ -2,10 +2,6 @@
 <script>window.jQuery || document.write('<script src="[[++romanesco.custom_vendor_path]]/jquery/jquery.min.js"><\/script>')</script>
 <script src="[[++romanesco.semantic_dist_path]]/semantic.min.js"></script>
 <script src="[[++romanesco.custom_vendor_path]]/onmediaquery/onmediaquery.min.js"></script>
-[[cbHasFields?
-    &field=`[[++romanesco.cb_field_code_id]]`
-    &then=`<script src="[[++romanesco.custom_vendor_path]]/prism/prism.min.js"></script>`
-]]
 [[[[cbHasFields?
     &field=`84`
     &then=`sliderLoadAssets`
@@ -15,5 +11,9 @@
 <script src="[[++romanesco.custom_vendor_path]]/tablesort/tablesort.min.js"></script>
 <script src="[[++romanesco.custom_js_path]]/hub.js"></script>
 `]]
+[[+load_syntax_highlighting:eq=`1`:then=`
+<script src="[[++romanesco.custom_vendor_path]]/prism/prism.min.js"></script>
+`]]
+[[[[*comments_toggle:eq=`1`:then=`$commentScript[[++romanesco.comment_platform]]`]]]]
 <script src="[[++romanesco.custom_js_path]]/site.js"></script>
 [[++footer_additional]]
