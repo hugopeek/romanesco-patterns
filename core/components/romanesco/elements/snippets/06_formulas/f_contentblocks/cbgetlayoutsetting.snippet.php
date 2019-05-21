@@ -1,6 +1,10 @@
 <?php
 /**
+ * cbGetLayoutSetting snippet
  *
+ * Retrieve setting from requested layout.
+ *
+ * @todo: A recent CB update added options to make settings available inside the layout. Does that make this snippet obsolete?
  */
  
 $layoutID = $modx->getOption('layout', $scriptProperties, '');

@@ -1,5 +1,19 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.14.3
+Released on ...
+
+New features:
+- Add Commento as commenting option
+
+Fixes and improvements:
+- Rename and refactor Knowledge Base into Notes
+- Tickets integration is now deprecated
+- Improve sorting in Overviews (reverse sort direction, alphabetic sort order)
+- Only load certain assets (CSS/JS) when they are needed
+- Fix issue with rogue 0 output from getImageDimensions breaking SUI build
+
+
 ## Romanesco Patterns 0.14.2
 Released on April 15, 2019
 
@@ -19,6 +33,7 @@ Fixes and improvements:
 - Fix inheritance of form label layout settings
 - Add label to honeypot fields
 - Only load Youtube videos after play button is clicked
+
 
 ## Romanesco Patterns 0.14.1
 Released on February 10, 2019
