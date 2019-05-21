@@ -89,7 +89,7 @@
                 [[*comments_toggle:eq=`1`:then=`
                 <section id="comments" class="ui vertical stripe segment white">
                     <h2 class="ui big header">[[%romanesco.article.comments]]</h2>
-                    [[$articleCommentsDisqus]]
+                    <div id="[[++romanesco.comment_platform_id]]"></div>
                 </section>
                 `]]
 

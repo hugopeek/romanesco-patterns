@@ -4,15 +4,25 @@
             "chunks": [
                 {
                     "name": "commentWrapper",
+                    "description": "DEPRECATED. Part of Tickets commenting extra.",
                     "category": "m_feedback"
                 },{
                     "name": "commentRowBasic",
+                    "description": "DEPRECATED. Part of Tickets commenting extra.",
                     "category": "m_feedback"
                 },{
                     "name": "commentRowGuest",
+                    "description": "DEPRECATED. Part of Tickets commenting extra.",
                     "category": "m_feedback"
                 },{
                     "name": "commentForm",
+                    "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "category": "m_feedback"
+                },{
+                    "name": "commentScriptDisqus",
+                    "category": "m_feedback"
+                },{
+                    "name": "commentScriptCommento",
                     "category": "m_feedback"
                 }
             ],
