@@ -58,7 +58,8 @@ else {
     return '';
 }
 
-$modx->toPlaceholder($phWidth, round($width, 0), $prefix);
-$modx->toPlaceholder($phHeight, round($height, 0), $prefix);
+// Only output values if they exist
+if ($width) $modx->toPlaceholder($phWidth, round($width, 0), $prefix);
+if ($height) $modx->toPlaceholder($phHeight, round($height, 0), $prefix);
 
 return '';
