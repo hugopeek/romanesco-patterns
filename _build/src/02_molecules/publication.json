@@ -5,9 +5,6 @@
                 {
                     "name": "articleAuthorBio",
                     "category": "m_publication"
-                },{
-                    "name": "articleCommentsDisqus",
-                    "category": "m_publication"
                 }
             ],
 

@@ -15,8 +15,8 @@ $query->where(array(
 $query->select('templatename');
 $templateName = $modx->getValue($query->prepare());
 
-// Abort if resource template is not a ToC template
-if (strpos($templateName, 'ToC') == false) {
+// Abort if resource template is not a ToC or Note template
+if (strpos($templateName, 'Note') === false && strpos($templateName, 'ToC') === false) {
     return true;
 }
 
@@ -85,6 +85,7 @@ switch ($modx->event->name) {
         $toc = array_filter($toc);
 
         // Create menu
+        $output = array();
         $idx = 0;
         foreach ($toc as $index => $item) {
             $output[] = $modx->getChunk($tpl, array(
