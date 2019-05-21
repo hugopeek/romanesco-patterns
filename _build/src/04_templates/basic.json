@@ -1,0 +1,37 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "BasicOverview",
+                    "category": "t_basic"
+                },{
+                    "name": "BasicDetail",
+                    "category": "t_basic"
+                },{
+                    "name": "BasicDetailToC",
+                    "category": "t_basic"
+                },{
+                    "name": "HeaderVertical",
+                    "category": "t_basic"
+                },{
+                    "name": "HeaderVerticalToC",
+                    "category": "t_basic"
+                },{
+                    "name": "Home",
+                    "icon": "icon-home",
+                    "category": "t_basic"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_basic",
+                    "parent": "04_templates"
+                },{
+                    "name": "t_disabled",
+                    "parent": "04_templates"
+                }
+            ]
+        }
+    }
+}

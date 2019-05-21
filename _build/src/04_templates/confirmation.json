@@ -1,0 +1,23 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "Testimonial",
+                    "icon": "icon-comment-o",
+                    "category": "t_confirmation"
+                },{
+                    "name": "PortfolioProject",
+                    "icon": "icon-briefcase",
+                    "category": "t_confirmation"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_confirmation",
+                    "parent": "04_templates"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "GlobalBackgrounds",
+                    "icon": "icon-image",
+                    "category": "t_global"
+                },{
+                    "name": "GlobalCTA",
+                    "icon": "icon-bullhorn",
+                    "category": "t_global"
+                },{
+                    "name": "fbForm",
+                    "icon": "icon-check-square-o",
+                    "category": "t_global"
+                },{
+                    "name": "fbRegister",
+                    "icon": "icon-user-plus",
+                    "category": "t_global"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_global",
+                    "parent": "04_templates"
+                }
+            ]
+        }
+    }
+}

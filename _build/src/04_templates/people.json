@@ -1,0 +1,23 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "Client",
+                    "icon": "icon-building",
+                    "category": "t_people"
+                },{
+                    "name": "TeamMember",
+                    "icon": "icon-user",
+                    "category": "t_people"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_people",
+                    "parent": "04_templates"
+                }
+            ]
+        }
+    }
+}

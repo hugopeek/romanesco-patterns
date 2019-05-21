@@ -1,0 +1,19 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "ProjectDashboard",
+                    "icon": "icon-line-chart",
+                    "category": "t_hub"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_hub",
+                    "parent": "04_templates"
+                }
+            ]
+        }
+    }
+}

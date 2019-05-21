@@ -1,0 +1,44 @@
+{
+    "package": {
+        "elements": {
+            "templates": [
+                {
+                    "name": "kbSection",
+                    "description": "DEPRECATED. Knowledge base is implemented now as Notes (without Tickets integration).",
+                    "icon": "icon-book",
+                    "category": "t_disabled"
+                },{
+                    "name": "kbArticleMarkdown",
+                    "description": "DEPRECATED. Knowledge base is implemented now as Notes (without Tickets integration).",
+                    "icon": "icon-bookmark-o",
+                    "category": "t_disabled"
+                },{
+                    "name": "Notes",
+                    "icon": "icon-sticky-note",
+                    "category": "t_information"
+                },{
+                    "name": "NoteContentBlocks",
+                    "description": "",
+                    "icon": "icon-th-large",
+                    "category": "t_information"
+                },{
+                    "name": "NoteRichText",
+                    "description": "",
+                    "icon": "icon-file-text-o",
+                    "category": "t_information"
+                },{
+                    "name": "NoteMarkdown",
+                    "description": "",
+                    "icon": "icon-file-code-o",
+                    "category": "t_information"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "t_information",
+                    "parent": "04_templates"
+                }
+            ]
+        }
+    }
+}
