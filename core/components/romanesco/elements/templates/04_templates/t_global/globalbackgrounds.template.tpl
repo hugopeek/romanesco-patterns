@@ -64,12 +64,14 @@
     padding-top: 65%;
 }
 
-[[pdoResources?
-    &parents=`[[++romanesco.portfolio_container_id]]`
-    &limit=`0`
-    &tpl=`globalBackgroundImgOverviewCSS`
-    &includeTVs=`overview_img_pano,overview_img_wide`
-]]
+[[[[++romanesco.portfolio_container_id:notempty=`
+    pdoResources?
+        &parents=`[[++romanesco.portfolio_container_id]]`
+        &limit=`0`
+        &tpl=`globalBackgroundImgOverviewCSS`
+        &includeTVs=`overview_img_pano,overview_img_wide`
+    `
+]]]]
 
 
 /* Load backgrounds for all tiled Team overviews */
@@ -79,9 +81,13 @@
     padding-top: 100%;
 }
 
-[[-pdoResources?
-    &parents=`[[++romanesco.team_container_id]]`
-    &limit=`0`
-    &tpl=`globalBackgroundImgPersonCSS`
-    &includeTVs=`person_image,person_image_loose`
-]]
+[[[[++romanesco.team_container_id:notempty=`
+    pdoResources?
+        &parents=`[[++romanesco.team_container_id]]`
+        &limit=`0`
+        &tpl=`globalBackgroundImgPersonCSS`
+        &includeTVs=`person_image,person_image_loose`
+    `
+]]]]
+
+[[$globalBackgroundsTheme]]
