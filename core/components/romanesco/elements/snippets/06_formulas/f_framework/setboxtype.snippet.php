@@ -17,7 +17,6 @@
  *
  * Example setBoxTypeTheme snippet:
  *
- * <?php
  * switch($input) {
  *     case stripos($input,'Card') !== false:
  *         $box_type = "cards";
@@ -57,11 +56,12 @@ $themeOverride = $modx->runSnippet('setBoxTypeTheme', (array(
     'input' => $input,
 )));
 
+// themeOverride only returns an array when there is a match
 if (is_array($themeOverride)) {
     foreach ($themeOverride as $key => $value) {
         $modx->toPlaceholder($key, $value, $prefix);
     }
-    //return;
+    return;
 }
 
 switch($input) {

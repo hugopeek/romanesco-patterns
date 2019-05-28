@@ -13,6 +13,7 @@ Fixes and improvements:
 - Only load certain assets (CSS/JS) when they are needed
 - Fix issue with rogue 0 output from getImageDimensions breaking SUI build
 - Allow theme additions to global backgrounds
+- Return after a setBoxType override was found
 
 
 ## Romanesco Patterns 0.14.2
