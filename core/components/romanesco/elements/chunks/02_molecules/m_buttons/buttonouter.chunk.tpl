@@ -1,3 +1,4 @@
+[[+new_line:eq=`1`:then=`<br>`]]
 [[modifiedIf?
     &subject=`[[+icon_class:empty=``]]`
     &operator=`isnot`
