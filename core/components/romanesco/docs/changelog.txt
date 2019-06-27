@@ -11,7 +11,12 @@ Fixes and improvements:
 - Tickets integration is now deprecated
 - Improve sorting in Overviews (reverse sort direction, alphabetic sort order)
 - Only load certain assets (CSS/JS) when they are needed
+- Add basic icon chunk
+- Add tertiary button style (Fomantic UI feature)
+- Add option to place button on new line
 - Fix issue with rogue 0 output from getImageDimensions breaking SUI build
+- Fix quirk where TVs couldn't be rendered in layouts anymore
+- Prevent leaking of data from srcset placeholder in overview images
 - Allow theme additions to global backgrounds
 - Return after a setBoxType override was found
 
