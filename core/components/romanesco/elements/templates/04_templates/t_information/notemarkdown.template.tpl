@@ -29,7 +29,7 @@
             <article class="sixteen wide mobile twelve wide computer column">
                 <div class="ui vertical stripe segment white">
                     <div class="container">
-                        [[Markdown? &input=`[[*content:replace=``==&#96;`]]`]]
+                        [[*content:Markdown]]
                     </div>
                 </div>
             </article>
