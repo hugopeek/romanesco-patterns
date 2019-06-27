@@ -5,6 +5,7 @@
     &src=`[[+source.src]]`
     &crop=`[[+crop.options]]`
     &width=`[[+width]]`
+    &prefix=`[[+unique_idx]].`
     &toPlaceholder=`srcset`
 ]]
 
