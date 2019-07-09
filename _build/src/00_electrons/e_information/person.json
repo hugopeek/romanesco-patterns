@@ -10,7 +10,7 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "inputProperties": {
-                        "targetWidth": "400",
+                        "targetWidth": "300",
                         "targetRatio": "1.0",
                         "allowAltTag": "true"
                     },
@@ -30,7 +30,7 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "inputProperties": {
-                        "targetWidth": "400",
+                        "targetWidth": "300",
                         "targetRatio": "1.0",
                         "allowAltTag": "true"
                     },

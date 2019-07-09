@@ -11,11 +11,11 @@
  * @license: MIT
  */
 
+$breakpoints = $modx->getOption('breakpoints', $scriptProperties, '');
 $src = $modx->getOption('src', $scriptProperties, '');
 $crop = $modx->getOption('crop', $scriptProperties, '');
 $width = $modx->getOption('width', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'imgResponsiveRowSrcset');
-$prefix = $modx->getOption('prefix', $scriptProperties, '');
 $placeholder = $modx->getOption('toPlaceholder', $scriptProperties, '');
 
 // Output filters are also processed when the input is empty, so check for that.
@@ -33,7 +33,7 @@ foreach ($breakpoints as $key => $value) {
 }
 
 if ($placeholder) {
-    $modx->toPlaceholder($placeholder, implode(",\n", $output), $prefix);
+    $modx->toPlaceholder($placeholder, implode(",\n", $output));
     return '';
 } else {
     return implode(",\n", $output);

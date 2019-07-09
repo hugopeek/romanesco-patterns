@@ -3,7 +3,7 @@
         [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
             &tvname=`overview_img_landscape`
             &docid=`[[+id]]`
-            &options=``
+            &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
             &type=`tpl`
             &tpl=`cbOverviewRowImg`
         ]]
