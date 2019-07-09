@@ -5,6 +5,7 @@ Released on ...
 
 New features:
 - Add Commento as commenting option
+- Add Free variant to Overview images
 
 Fixes and improvements:
 - Rename and refactor Knowledge Base into Notes
@@ -19,6 +20,9 @@ Fixes and improvements:
 - Prevent leaking of data from srcset placeholder in overview images
 - Allow theme additions to global backgrounds
 - Return after a setBoxType override was found
+- Lower minimum width for all image TVs
+- Apply img_quality configuration setting to all images
+- Small caching optimizations in Overview templates
 
 
 ## Romanesco Patterns 0.14.2
