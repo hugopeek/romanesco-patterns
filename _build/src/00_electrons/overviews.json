@@ -108,8 +108,8 @@
                         "@@templates_portfolio"
                     ]
                 },{
-                    "caption": "Image (Original)",
-                    "name": "overview_img_original",
+                    "caption": "Image (Free)",
+                    "name": "overview_img_free",
                     "description": "This image doesn't have a fixed aspect ratio or any minimum dimensions. Use it as you see fit. Cropping is optional. NB! Be aware that images will probably have different sizes in overviews!",
                     "type": "imageplus",
                     "category": "Overview - Image",
@@ -140,7 +140,7 @@
                 },{
                     "caption": "Icon (Font)",
                     "name": "overview_icon_font",
-                    "description": "Select an icon of the icon font that's being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.",
+                    "description": "Select an icon of the icon font that's being used in this project. Check the style guide for available classes, or use the autocomplete search as you type.",
                     "type": "listbox",
                     "inputOptionValues": "@CHUNK iconTVInputOptions",
                     "category": "Overview - Icon",
@@ -172,7 +172,7 @@
                     "category": "Overview - Settings",
                     "sortOrder": "10",
                     "type": "listbox",
-                    "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano||Original (?:?)==original",
+                    "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano||Free (?:?)==free",
                     "defaultValue": "landscape",
                     "templates": [
                         "@@templates_basic",
