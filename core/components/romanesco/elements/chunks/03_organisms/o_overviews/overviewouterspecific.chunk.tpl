@@ -1,6 +1,6 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
 
-<div class="ui [[+cols]] [[+[[+prefix]].grid_settings]] [[+padding]] nested overview [[+[[+prefix]].box_type]]">
+<div class="ui [[+cols]] [[+[[+prefix]].grid_settings]] [[+alignment]] [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[!getCache?
         &element=`getResources`
         &cacheKey=`overviews`

@@ -12,6 +12,7 @@ Fixes and improvements:
 - Tickets integration is now deprecated
 - Improve sorting in Overviews (reverse sort direction, alphabetic sort order)
 - Only load certain assets (CSS/JS) when they are needed
+- Add alignment option to all Overview CBs
 - Make overviewRowImageBasic template more basic
 - Add basic icon chunk
 - Add tertiary button style (Fomantic UI feature)
