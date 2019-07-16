@@ -38,10 +38,12 @@
         &column_type=`[[+[[+prefix]].column_type]]`
         &title_field=`[[+title_field]]`
         &title_hierarchy=`[[+title_hierarchy]]`
-        &classes=`[[+alignment]] [[+title_hierarchy:is=`span`:then=`tiny`]]`
+        &classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`
         &show_subtitle=`[[+show_subtitle]]`
-        &show_introtext=`[[+show_introtext]]`
+        &show_rating=`[[+show_rating]]`
         &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
+        &text_size=`[[+text_size]]`
+        &alignment=`[[+alignment]]`
         &de_emphasize=`[[+de_emphasize]]`
     ]]
 </div>

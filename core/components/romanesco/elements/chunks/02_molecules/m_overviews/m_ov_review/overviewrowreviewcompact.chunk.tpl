@@ -2,11 +2,21 @@
     <p class="quote" property="itemReviewed" typeof="Organization">
         <span property="review">[[+longtitle]]</span>
     </p>
-    [[$infoRatingStars]]
+    [[[[If?
+        &subject=`[[+show_rating]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`!$infoRatingStars`
+    ]]]]
 </div>
 
 <div class="ui basic segment">
     [[$imgOverviewPersonAvatar]]
     [[$infoNamePerson]]
-    <span class="meta"><em>[[+organization_name]]</em></span>
+    [[[[If?
+        &subject=`[[+show_subtitle]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`<span class="meta"><em>[[+organization_name]]</em></span>`
+    ]]]]
 </div>
