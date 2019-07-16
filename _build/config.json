@@ -928,7 +928,8 @@
                     "inputProperties": {
                         "targetWidth": "500",
                         "targetRatio": "1.33",
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "",
@@ -950,7 +951,8 @@
                     "inputProperties": {
                         "targetWidth": "200",
                         "targetRatio": "0.75",
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "",
@@ -972,7 +974,8 @@
                     "inputProperties": {
                         "targetWidth": "300",
                         "targetRatio": "1.0",
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "",
@@ -994,7 +997,8 @@
                     "inputProperties": {
                         "targetWidth": "500",
                         "targetRatio": "1.77",
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "",
@@ -1016,7 +1020,8 @@
                     "inputProperties": {
                         "targetWidth": "800",
                         "targetRatio": "2.35",
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "",
@@ -1036,7 +1041,8 @@
                     "category": "Overview - Image",
                     "sortOrder": "99",
                     "inputProperties": {
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "",
@@ -1049,29 +1055,41 @@
                     ]
                 },
                 {
-                    "caption": "Icon (SVG)",
-                    "name": "overview_icon_svg",
-                    "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
-                    "type": "file",
-                    "category": "Overview - Icon",
-                    "sortOrder": "10",
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)",
-                        "Download"
-                    ]
-                },
-                {
                     "caption": "Icon (Font)",
                     "name": "overview_icon_font",
                     "description": "Select an icon of the icon font that's being used in this project. Check the style guide for available classes, or use the autocomplete search as you type.",
                     "type": "listbox",
                     "inputOptionValues": "@CHUNK iconTVInputOptions",
                     "category": "Overview - Icon",
-                    "sortOrder": "11",
+                    "sortOrder": "10",
                     "inputProperties": {
                         "typeAhead": "true",
                         "typeAheadDelay": "400"
                     },
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)",
+                        "Download"
+                    ]
+                },
+                {
+                    "caption": "Icon (SVG)",
+                    "name": "overview_icon_svg",
+                    "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
+                    "type": "file",
+                    "category": "Overview - Icon",
+                    "sortOrder": "20",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)",
+                        "Download"
+                    ]
+                },
+                {
+                    "caption": "Icon credit (SVG)",
+                    "name": "overview_icon_svg_credit",
+                    "description": "Mention the designer of this icon here, so they are credited appropriately on the site. You need to do this if you're using icons published under a CC license, for example from Noun Project.",
+                    "type": "text",
+                    "category": "Overview - Icon",
+                    "sortOrder": "21",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)",
                         "Download"
@@ -2129,7 +2147,8 @@
                     "inputProperties": {
                         "targetWidth": "300",
                         "targetRatio": "1.0",
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
@@ -2150,7 +2169,8 @@
                     "inputProperties": {
                         "targetWidth": "300",
                         "targetRatio": "1.0",
-                        "allowAltTag": "true"
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
                     },
                     "outputProperties": {
                         "phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",

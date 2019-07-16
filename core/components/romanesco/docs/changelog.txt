@@ -6,6 +6,7 @@ Released on ...
 New features:
 - Add Commento as commenting option
 - Add Free variant to Overview images
+- Allow credits to be added to an image or icon
 
 Fixes and improvements:
 - Rename and refactor Knowledge Base into Notes
