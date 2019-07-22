@@ -8,5 +8,17 @@
         </button>
     </div>
 
+    [[[[++navbar_level:lte=`1`:then=`
+        pdoMenu?
+            &parents=`0`
+            &level=`3`
+            &tplOuter=`navWrapper`
+            &tpl=`navItemWrapper`
+            &tplParentRow=`navItemParent`
+            &tplParentRowActive=`navItemParentActive`
+            &tplInnerRow=`navItem`
+        `
+    ]]]]
+
     [[$offCanvasNavItemsTheme]]
 </nav>

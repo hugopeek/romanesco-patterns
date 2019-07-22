@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.14.4
+Released on ...
+
+Fixes and improvements:
+- Load full off-canvas navigation if main menu is not a dropdown menu
+
 ## Romanesco Patterns 0.14.3
 Released on July 16, 2019
 
