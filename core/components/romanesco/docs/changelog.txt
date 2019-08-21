@@ -4,6 +4,12 @@
 Released on ...
 
 Fixes and improvements:
+- Remove http:// in Youtube embed placeholder URL
+- Update resourceTVInputOptions to respect possible context settings
+- Fix broken avatar image in compact article overviews
+- Fix incorrect path in CSS to global backgrounds SVG
+- Correctly retrieve (possible) context setting for FormBlocks container ID
+- Correctly retrieve (possible) context setting for CB and TV options
 - Load full off-canvas navigation if main menu is not a dropdown menu
 
 ## Romanesco Patterns 0.14.3
