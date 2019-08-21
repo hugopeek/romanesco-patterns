@@ -1,7 +1,12 @@
 [[!setUserPlaceholders? &userId=`[[+author_id]]`]]
 
 <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
-    <img src="[[ImagePlus:empty=`[[++overview_icon_fallback]]`? &tvname=`person_image` &docid=`[[+team_member_id]]` &type=`thumb` &options=`w=150&h=150&q=[[++img_quality]]&zc=1`]]" alt="[[+longtitle:empty=`[[+pagetitle]]`]]">
+    [[ImagePlus:empty=`[[++overview_icon_fallback]]`?
+        &tvname=`person_image`
+        &docid=`[[+team_member_id]]`
+        &type=`thumb`
+        &options=`w=150&h=150&q=[[++img_quality]]&zc=1`
+    ]]
 </a>
 
 <div class="content">
