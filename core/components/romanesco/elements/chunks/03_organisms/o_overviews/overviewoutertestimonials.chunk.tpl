@@ -15,7 +15,7 @@
     &default=`DESC`
 ]]
 
-<div class="ui [[+cols]] [[+[[+prefix]].grid_settings]] [[+padding]] nested overview [[+[[+prefix]].box_type]]">
+<div class="ui [[+cols]] [[+[[+prefix]].grid_settings]] [[+responsive:replace=`,== `]] [[+padding]] nested overview [[+[[+prefix]].box_type]]">
     [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?
         &element=`getResources`
         &cacheKey=`testimonials`

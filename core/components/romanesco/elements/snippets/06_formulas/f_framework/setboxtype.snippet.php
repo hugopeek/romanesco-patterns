@@ -69,13 +69,13 @@ switch($input) {
         $box_type = "link cards";
         $row_type = "link";
         $column_type = "card";
-        $grid_settings = "stackable doubling";
+        $grid_settings = "";
         break;
     case stripos($input,'Card') !== false:
         $box_type = "cards";
         $row_type = "";
         $column_type = "card";
-        $grid_settings = "stackable doubling";
+        $grid_settings = "";
         break;
     case stripos($input,'Segment') !== false:
         $box_type = "segments";
@@ -87,13 +87,13 @@ switch($input) {
         $box_type = "grid";
         $row_type = "";
         $column_type = "ui dimmable column [[+alias]] background";
-        $grid_settings = "column stackable doubling";
+        $grid_settings = "column";
         break;
     case stripos($input,'PersonTile') !== false:
         $box_type = "grid";
         $row_type = "";
         $column_type = "ui column [[+alias]] background";
-        $grid_settings = "column stackable doubling";
+        $grid_settings = "column";
         break;
     case stripos($input,'Item') !== false:
         $box_type = "items";
@@ -111,19 +111,19 @@ switch($input) {
         $box_type = "centered grid";
         $row_type = "";
         $column_type = "center aligned column";
-        $grid_settings = "column stackable doubling";
+        $grid_settings = "column";
         break;
     case stripos($input,'Logo') !== false:
         $box_type = "centered middle aligned grid";
         $row_type = "";
         $column_type = "center aligned column logo";
-        $grid_settings = "column doubling";
+        $grid_settings = "column";
         break;
     default:
         $box_type = "grid";
         $row_type = "";
         $column_type = "column";
-        $grid_settings = "column stackable doubling";
+        $grid_settings = "column";
         break;
 }
 

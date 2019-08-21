@@ -3,6 +3,9 @@
 ## Romanesco Patterns 0.14.4
 Released on ...
 
+New features:
+- Add responsive options to main layouts and overviews
+
 Fixes and improvements:
 - Remove http:// in Youtube embed placeholder URL
 - Update resourceTVInputOptions to respect possible context settings
