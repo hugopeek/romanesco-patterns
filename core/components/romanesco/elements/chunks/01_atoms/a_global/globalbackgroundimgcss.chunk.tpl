@@ -1,4 +1,4 @@
-[[+background_svg:notempty=`, url("/uploads/img/svg/[[+background_svg]]")`:toPlaceholder=`background_img_secondary`]]
+[[+background_svg:notempty=`, url("/uploads/img/background/[[+background_svg]]")`:toPlaceholder=`background_img_secondary`]]
 
 .background.[[+background_title:stripAsAlias]]:before {
     background-image:
