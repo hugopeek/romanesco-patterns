@@ -15,12 +15,14 @@ switch ($modx->event->name) {
 
     case 'OnManagerPageAfterRender':
         // Mute rogue output lines from certain packages
-        $removeLineImagePlus = $modx->getOption('core_path') . 'components/imageplus/elements/tv/output/';
-        $removeLineColorPicker = $modx->getOption('core_path') . 'components/colorpicker/elements/tv/output/';
+        $removeLines = array(
+            $modx->getOption('core_path') . 'components/imageplus/elements/tv/output/',
+            $modx->getOption('core_path') . 'components/colorpicker/elements/tv/output/',
+            $modx->getOption('core_path') . 'components/redactor/elements/tvs/output/',
+        );
 
         $managerContent = $modx->controller->content;
-        $managerContent = str_replace($removeLineImagePlus, '', $managerContent);
-        $managerContent = str_replace($removeLineColorPicker, '', $managerContent);
+        $managerContent = str_replace($removeLines, '', $managerContent);
 
         // Remove underscore prefix in TV category tabs (so custom categories can have same name as core categories)
         $managerContent = str_replace('class="x-tab" title="_', 'class="x-tab" title="', $managerContent);
