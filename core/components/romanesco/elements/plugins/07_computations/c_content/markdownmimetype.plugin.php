@@ -6,13 +6,24 @@
  * Markdown resource. Set the MIME type back to HTML when viewing the resource
  * in the browser, to prevent the page from being downloaded as file.
  *
+ * In addition, HtmlPageDom is used to fix image URLs and prevent them from
+ * overflowing their container.
+ *
  * For rendering Markdown as HTML, install the Markdown extra from modstore.pro:
  * https://modstore.pro/packages/content/markdown
  *
- * Escape backticks in your template like this:
+ * Process markdown in your template like this:
  *
- * [[Markdown? &input=`[[*content:replace=``==&#96;`]]`]]
+ * [[*content:Markdown]]
  */
+
+$corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
+
+if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
+    require $corePath . 'vendor/autoload.php';
+}
+
+use \Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
     // Set content type to Markdown when resource has a markdown template
@@ -53,6 +64,23 @@ switch ($modx->event->name) {
         if ($markdown) {
             $resource->ContentType->set('mime_type', $header->html);
         }
+
+        // Process output with HtmlPageDom
+        $output = &$resource->_output;
+        $dom = new HtmlPageCrawler($output);
+
+        // Fix image URLs and display size
+        $dom->filter('img')
+            ->each(function (HtmlPageCrawler $image) {
+                $src = $image->getAttribute('src');
+                $image
+                    ->setAttribute('src', 'notes/' . $src)
+                    ->addClass('ui image')
+                ;
+            })
+        ;
+
+        $output = $dom->saveHTML();
 
         break;
 }
