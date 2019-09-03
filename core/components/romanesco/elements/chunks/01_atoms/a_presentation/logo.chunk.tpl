@@ -1,1 +1,1 @@
-<a class="brand logo" href="[[~[[++site_start]]]]" title="[[%romanesco.menu.logo_title]]">[[++site_name]]</a>
+<a class="brand logo [[+classes]]" href="[[~[[++site_start]]]]" title="[[%romanesco.menu.logo_title]]">[[++site_name]]</a>

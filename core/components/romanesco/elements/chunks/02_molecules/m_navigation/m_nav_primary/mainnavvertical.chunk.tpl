@@ -1,6 +1,6 @@
 <nav id="menu-vertical" class="ui large inverted secondary vertical accordion menu" role="navigation">
     <div class="item branding">
-        [[$logo]]
+        [[$logo? &classes=`inverted`]]
     </div>
 
     [[!pdoMenu?
