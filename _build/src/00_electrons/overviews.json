@@ -11,7 +11,7 @@
                     "sortOrder": "1",
                     "inputProperties": {
                         "targetWidth": "500",
-                        "targetRatio": "1.33",
+                        "targetHeight": "375",
                         "allowAltTag": "true",
                         "allowCredits": "true"
                     },
@@ -32,8 +32,8 @@
                     "category": "Overview - Image",
                     "sortOrder": "2",
                     "inputProperties": {
-                        "targetWidth": "200",
-                        "targetRatio": "0.75",
+                        "targetWidth": "300",
+                        "targetHeight": "400",
                         "allowAltTag": "true",
                         "allowCredits": "true"
                     },
@@ -55,7 +55,7 @@
                     "sortOrder": "3",
                     "inputProperties": {
                         "targetWidth": "300",
-                        "targetRatio": "1.0",
+                        "targetHeight": "300",
                         "allowAltTag": "true",
                         "allowCredits": "true"
                     },
@@ -76,8 +76,8 @@
                     "category": "Overview - Image",
                     "sortOrder": "5",
                     "inputProperties": {
-                        "targetWidth": "500",
-                        "targetRatio": "1.77",
+                        "targetWidth": "800",
+                        "targetHeight": "450",
                         "allowAltTag": "true",
                         "allowCredits": "true"
                     },
@@ -98,8 +98,8 @@
                     "category": "Overview - Image",
                     "sortOrder": "6",
                     "inputProperties": {
-                        "targetWidth": "800",
-                        "targetRatio": "2.35",
+                        "targetWidth": "1300",
+                        "targetRatio": "2.33",
                         "allowAltTag": "true",
                         "allowCredits": "true"
                     },

@@ -7,6 +7,7 @@ New features:
 - Add responsive options to main layouts and overviews
 
 Fixes and improvements:
+- Define exact aspect ratio for Overview images
 - Add inverted class to logo in vertical menu
 - Fix image URLs and display size in Markdown output
 - Mute rogue path output in manager for Redactor too
