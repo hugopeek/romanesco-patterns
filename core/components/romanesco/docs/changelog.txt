@@ -7,6 +7,7 @@ New features:
 - Add responsive options to main layouts and overviews
 
 Fixes and improvements:
+- Fix incorrect syntax in Google webfonts requests
 - Define exact aspect ratio for Overview images
 - Add inverted class to logo in vertical menu
 - Fix image URLs and display size in Markdown output
