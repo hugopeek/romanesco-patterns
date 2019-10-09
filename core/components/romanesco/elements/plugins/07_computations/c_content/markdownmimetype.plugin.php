@@ -63,6 +63,8 @@ switch ($modx->event->name) {
         // Switch back to HTML
         if ($markdown) {
             $resource->ContentType->set('mime_type', $header->html);
+        } else {
+            break;
         }
 
         // Process output with HtmlPageDom
