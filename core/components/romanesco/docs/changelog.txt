@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.14.4
-Released on ...
+Released on October 10, 2019
 
 New features:
 - Integrate visual regression tests (with BackstopJS)
