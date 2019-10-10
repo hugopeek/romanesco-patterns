@@ -17,19 +17,23 @@
         }
     ],
     "scenarios": [
-        [[getSelections?
-            [[+selection_id:notempty=`&selections=`[[+selection_id]]``]]
-            &tpl=`@INLINE [[- Important! Keep the space on the left here..]]
+        [[pdoResources?
+            &parents=`0`
+            &resources=`[[+resources]]`
+            &limit=`0`
+            &tpl=`@INLINE
             {
                 "label": "[[+pagetitle]] ([[+id]])",
-                "url": "[[++site_url]][[+uri]]",
+                "url": "[[+site_url:empty=`[[++site_url]]`]][[+uri]]",
                 "referenceUrl": "[[+reference_url:empty=`[[++romanesco.backstop_reference_url]]`]][[+uri]]",
                 "delay": 1,
                 "hideSelectors": [
+                    [[+hide_selectors:append=`,`]]
                     ".publication .meta",
                     ".ui.active.embed"
                 ],
                 "removeSelectors": [
+                    [[+remove_selectors:append=`,`]]
                     "#menu .item.highlight .basic.button",
                     "#author-about",
                     "#disqus_thread",
@@ -38,11 +42,13 @@
                 "hoverSelector": "",
                 "clickSelector": "",
                 "postInteractionWait": 1,
-                "selectors": [],
+                "selectors": [
+                    [[+selectors]]
+                ],
                 "selectorExpansion": true,
                 "expect": 0,
                 "misMatchThreshold" : 0.1,
-                "requireSameDimensions": true
+                "requireSameDimensions": false
             }`
             &outputSeparator=`,`
         ]]
@@ -59,6 +65,7 @@
     "engineOptions": {
         "args": ["--no-sandbox"]
     },
+    "puppeteerOffscreenCaptureFix": [[+fix_offscreen_capture:default=`true`]],
     "asyncCaptureLimit": 3,
     "asyncCompareLimit": 30,
     "debug": false,
