@@ -18,6 +18,10 @@
                 "type": "combo-boolean",
                 "area": "Users",
                 "value": "0"
+            },{
+                "key": "backstop_reference_url",
+                "type": "textfield",
+                "area": "Site"
             }
         ]
     }

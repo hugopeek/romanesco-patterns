@@ -17,6 +17,9 @@
                 },{
                     "name": "referringPatternsOuter",
                     "category": "o_hub"
+                },{
+                    "name": "regressionTestConfig",
+                    "category": "o_hub"
                 }
             ],
 
