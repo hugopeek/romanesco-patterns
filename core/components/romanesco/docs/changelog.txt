@@ -5,6 +5,7 @@ Released on ...
 
 New features:
 - Add responsive options to main layouts and overviews
+- Add snippet for creating static HTML file of resource
 
 Fixes and improvements:
 - Fix incorrect syntax in Google webfonts requests
