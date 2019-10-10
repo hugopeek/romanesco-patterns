@@ -1,5 +1,6 @@
+[[*alias:replace=`-==_`:toPlaceholder=`backstop_id`]]
 {
-    "id": "backstop_default",
+    "id": "[[+backstop_id]]",
     "viewports": [
         {
             "label": "phone",
@@ -47,11 +48,11 @@
         ]]
     ],
     "paths": {
-        "bitmaps_reference": "_backstop/bitmaps_reference",
-        "bitmaps_test": "_backstop/bitmaps_test",
-        "engine_scripts": "_backstop/engine_scripts",
-        "html_report": "_backstop/html_report",
-        "ci_report": "_backstop/ci_report"
+        "bitmaps_reference": "_backstop/[[+backstop_id]]/bitmaps_reference",
+        "bitmaps_test": "_backstop/[[+backstop_id]]/bitmaps_test",
+        "engine_scripts": "_backstop/[[+backstop_id]]/engine_scripts",
+        "html_report": "_backstop/[[+backstop_id]]/html_report",
+        "ci_report": "_backstop/[[+backstop_id]]/ci_report"
     },
     "report": ["browser"],
     "engine": "puppeteer",
