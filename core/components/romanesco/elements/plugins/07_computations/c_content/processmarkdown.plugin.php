@@ -1,13 +1,13 @@
 <?php
 /**
- * MarkdownMimeType
+ * ProcessMarkdown
  *
  * Retain original Markdown markup by setting the proper MIME type for a
  * Markdown resource. Set the MIME type back to HTML when viewing the resource
  * in the browser, to prevent the page from being downloaded as file.
  *
- * In addition, HtmlPageDom is used to fix image URLs and prevent them from
- * overflowing their container.
+ * In addition, HtmlPageDom is used to optimize the output in order to receive
+ * the correct styling from Semantic UI.
  *
  * For rendering Markdown as HTML, install the Markdown extra from modstore.pro:
  * https://modstore.pro/packages/content/markdown
@@ -51,6 +51,10 @@ switch ($modx->event->name) {
     case 'OnWebPagePrerender':
         $resource = &$modx->resource;
 
+        if ($resource->get('content_type') !== 11) {
+            break;
+        }
+
         // Header content types
         $header = (object) array(
             'markdown'  => 'text/x-markdown',
@@ -63,15 +67,13 @@ switch ($modx->event->name) {
         // Switch back to HTML
         if ($markdown) {
             $resource->ContentType->set('mime_type', $header->html);
-        } else {
-            break;
         }
 
         // Process output with HtmlPageDom
         $output = &$resource->_output;
         $dom = new HtmlPageCrawler($output);
 
-        // Fix image URLs and display size
+        // Fix image URLs and prevent them from overflowing their container
         $dom->filter('img')
             ->each(function (HtmlPageCrawler $image) {
                 $src = $image->getAttribute('src');
@@ -81,6 +83,18 @@ switch ($modx->event->name) {
                 ;
             })
         ;
+
+        // Turn the tables... into ui tables
+        $dom->filter('table')->addClass('ui compact table');
+
+        // Add language class to code blocks that do not specify a language
+        $dom->filter('pre')->addClass('language-html');
+        $dom->filter('code')->addClass('language-html');
+
+        // And a few other things
+        $dom->filter('hr')->replaceWith('<div class="ui divider"></div>');
+        $dom->filter('ul')->addClass('ui list');
+        $dom->filter('ol')->addClass('ui list');
 
         $output = $dom->saveHTML();
 

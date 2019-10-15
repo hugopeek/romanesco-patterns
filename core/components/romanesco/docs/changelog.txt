@@ -1,5 +1,13 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.14.6
+Released on ...
+
+Fixes and improvements:
+- Rename MarkdownMimeType plugin to ProcessMarkdown
+- Add language class to Markdown code blocks that do not specify a language
+- Turn Markdown tables into Semantic UI tables
+
 ## Romanesco Patterns 0.14.5
 Released on October 12, 2019
 

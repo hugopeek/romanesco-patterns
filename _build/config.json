@@ -4241,7 +4241,7 @@
             ],
             "plugins": [
                 {
-                    "name": "MarkdownMimeType",
+                    "name": "ProcessMarkdown",
                     "category": "c_content",
                     "events": [
                         "OnBeforeDocFormSave",
