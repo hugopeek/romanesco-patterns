@@ -84,6 +84,19 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Remove .md extension from links
+        $dom->filter('a')
+            ->each(function (HtmlPageCrawler $link) {
+                $href = $link->getAttribute('href');
+                $link->setAttribute('href', str_replace('.md','',$href));
+
+                // Turn into button if desired
+                if (strpos($link,'Continue to:') !== false) {
+                    $link->addClass('ui big primary button');
+                }
+            })
+        ;
+
         // Turn the tables... into ui tables
         $dom->filter('table')->addClass('ui compact table');
 
@@ -93,8 +106,8 @@ switch ($modx->event->name) {
 
         // And a few other things
         $dom->filter('hr')->replaceWith('<div class="ui divider"></div>');
-        $dom->filter('ul')->addClass('ui list');
-        $dom->filter('ol')->addClass('ui list');
+        //$dom->filter('ul')->addClass('ui list');
+        //$dom->filter('ol')->addClass('ui list');
 
         $output = $dom->saveHTML();
 
