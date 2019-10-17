@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Limit reverse column order to mobile
+- Rename InjectInvertedClasses plugin to ManipulateDOM
 - Rename MarkdownMimeType plugin to ProcessMarkdown
 - Remove .md extension from Markdown links and turn them into button if desired
 - Add language class to Markdown code blocks that do not specify a language

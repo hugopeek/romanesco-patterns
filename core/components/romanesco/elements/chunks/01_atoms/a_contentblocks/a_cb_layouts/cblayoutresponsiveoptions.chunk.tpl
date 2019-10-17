@@ -1,5 +1,5 @@
 Stack columns on top of each other on mobile=stackable
 Start stacking on tablet breakpoint already=on tablet
-Reverse columns on mobile / tablet=reversed mobile reversed
+Reverse column order on mobile=mobile reversed
 Double number of columns on each breakpoint=doubling
 Do nothing (check if no other option was set!)=static
