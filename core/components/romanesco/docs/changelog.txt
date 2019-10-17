@@ -7,6 +7,7 @@ Fixes and improvements:
 - Limit reverse column order to mobile
 - Rename InjectInvertedClasses plugin to ManipulateDOM
 - Rename MarkdownMimeType plugin to ProcessMarkdown
+- Remove rows from grids that have a reversed column order on mobile
 - Remove .md extension from Markdown links and turn them into button if desired
 - Add language class to Markdown code blocks that do not specify a language
 - Turn Markdown tables into Semantic UI tables
