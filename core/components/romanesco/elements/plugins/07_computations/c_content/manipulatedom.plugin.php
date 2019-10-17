@@ -1,6 +1,11 @@
 <?php
 /**
+ * ManipulateDOM plugin
  *
+ * This plugin utilizes HtmlPageDom, a page crawler that can manipulate DOM
+ * elements for us. Yes, that is exactly what jQuery does. But now we can do
+ * this server side, before the page is rendered out. Much faster and much more
+ * reliable.
  */
 
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
@@ -25,7 +30,7 @@ switch ($modx->event->name) {
         // Feed output to HtmlPageDom
         $dom = new HtmlPageCrawler($output);
 
-        // Do your thing
+        // Inject inverted classes
         $dom->filter('.inverted.segment')
             ->each(function (HtmlPageCrawler $segment) {
 
@@ -93,6 +98,9 @@ switch ($modx->event->name) {
                 }
             })
         ;
+
+        // Remove rows from grids that have a reversed column order on mobile
+        $dom->filter('.reversed.grid > .row')->unwrapInner();
 
         $output = $dom->saveHTML();
 

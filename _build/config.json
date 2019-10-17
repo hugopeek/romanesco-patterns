@@ -4249,7 +4249,7 @@
                     ]
                 },
                 {
-                    "name": "InjectInvertedClasses",
+                    "name": "ManipulateDOM",
                     "category": "c_content",
                     "events": [
                         "OnWebPagePrerender"

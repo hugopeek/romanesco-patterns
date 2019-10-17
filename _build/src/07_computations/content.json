@@ -7,7 +7,7 @@
                     "category": "c_content",
                     "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
                 },{
-                    "name": "InjectInvertedClasses",
+                    "name": "ManipulateDOM",
                     "category": "c_content",
                     "events": ["OnWebPagePrerender"]
                 },{
