@@ -15,12 +15,12 @@
            data-targetState="visible"
            data-content="[[%romanesco.patterns.preview_tooltip]]"
            data-position="top center"></i>
-        <i class="disabled code link icon with visibility toggle and tooltip"
+        <i class="muted code link icon with visibility toggle and tooltip"
            data-target="code-[[+unique_idx]]"
            data-targetState="hidden"
            data-content="[[%romanesco.patterns.code_tooltip]]"
            data-position="top center"></i>
-        <i class="disabled comment outline link icon with tooltip"
+        <i class="muted comment link icon with tooltip"
            data-content="[[%romanesco.patterns.comment_tooltip]]"
            data-position="top center"></i>
 
