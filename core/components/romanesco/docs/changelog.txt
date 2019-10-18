@@ -4,7 +4,9 @@
 Released on ...
 
 Fixes and improvements:
-- Limit reverse column order to mobile
+- Fix memory exhausted issues when rebuilding content with ContentBlocks
+- Fix visibility toggles in front-end pattern library
+- Limit reverse column order setting to mobile only
 - Rename InjectInvertedClasses plugin to ManipulateDOM
 - Rename MarkdownMimeType plugin to ProcessMarkdown
 - Remove rows from grids that have a reversed column order on mobile
