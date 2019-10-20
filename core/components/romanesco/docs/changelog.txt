@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add circular and bordered image options
 - Fix memory exhausted issues when rebuilding content with ContentBlocks
 - Fix visibility toggles in front-end pattern library
 - Limit reverse column order setting to mobile only

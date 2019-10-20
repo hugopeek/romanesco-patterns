@@ -8,5 +8,5 @@
 
     &url=`[[+url]]`
     &alt=`[[+alt]]`
-    &classes=`rounded`
+    &classes=`rounded [[+classes:replace=`,== `]]`
 ]]
