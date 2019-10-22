@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix fallback icon in avatar when an article has no author
 - Add circular and bordered image options
 - Fix memory exhausted issues when rebuilding content with ContentBlocks
 - Fix visibility toggles in front-end pattern library

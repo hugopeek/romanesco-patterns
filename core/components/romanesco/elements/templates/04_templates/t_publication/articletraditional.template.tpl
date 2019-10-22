@@ -38,7 +38,7 @@
 
                         <span class="author">
                             <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
-                                [[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`person_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`tpl`]]
+                                [[ImagePlus:empty=`<img src="[[++overview_icon_fallback]]" alt="Author: [[++site_name]]">`? &tvname=`person_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`tpl`]]
                             </a>
                             [[*author_id:userinfo=`fullname`:empty=`[[++site_name]]`]]
                         </span>
