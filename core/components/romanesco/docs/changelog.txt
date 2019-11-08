@@ -6,6 +6,7 @@ Released on ...
 Fixes and improvements:
 - Add ability to center content when stacked on mobile or tablet
 - Fix fallback icon in avatar when an article has no author
+- Add circular button option
 - Add circular and bordered image options
 - Fix memory exhausted issues when rebuilding content with ContentBlocks
 - Fix visibility toggles in front-end pattern library
