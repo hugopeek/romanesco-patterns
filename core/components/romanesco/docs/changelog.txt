@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add ability to search for multiple instances of key in jsonGetValue
 - Add ability to center content when stacked on mobile or tablet
 - Fix fallback icon in avatar when an article has no author
 - Add circular button option
