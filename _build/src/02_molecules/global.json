@@ -8,6 +8,12 @@
                 },{
                     "name": "footerCopyright",
                     "category": "m_global"
+                },{
+                    "name": "globalBackgroundCSS",
+                    "category": "m_global"
+                },{
+                    "name": "globalBackgroundWrapperCSS",
+                    "category": "m_global"
                 }
             ],
 
