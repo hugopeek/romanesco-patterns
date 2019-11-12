@@ -14,6 +14,9 @@
                 },{
                     "name": "globalBackgroundWrapperCSS",
                     "category": "m_global"
+                },{
+                    "name": "globalBackgroundRowCSS",
+                    "category": "m_global"
                 }
             ],
 

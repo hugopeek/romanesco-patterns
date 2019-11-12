@@ -1,4 +1,4 @@
-[[+gradient:empty=`url('[[+image]]')`]]
-[[+position:empty=`center center`]] / [[+size:empty=`cover`]]
-[[+repeat]]
-[[+attachment]]
+[[cbGetFieldContent?
+    &field=`100034`
+    &resource=`[[+id]]`
+]]

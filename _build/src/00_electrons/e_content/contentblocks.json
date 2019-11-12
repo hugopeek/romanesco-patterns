@@ -11,6 +11,11 @@
                 "type": "textfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""
+            },{
+                "key": "cb_field_background_id",
+                "type": "textfield",
+                "area": "ContentBlocks - Settings",
+                "value": ""
             }
         ]
     }

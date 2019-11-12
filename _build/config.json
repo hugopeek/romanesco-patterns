@@ -2823,6 +2823,10 @@
                     "category": "m_global"
                 },
                 {
+                    "name": "globalBackgroundRowCSS",
+                    "category": "m_global"
+                },
+                {
                     "name": "projectHubRow",
                     "category": "m_hub"
                 },
@@ -4536,6 +4540,12 @@
             },
             {
                 "key": "cb_field_map_id",
+                "type": "textfield",
+                "area": "ContentBlocks - Settings",
+                "value": ""
+            },
+            {
+                "key": "cb_field_background_id",
                 "type": "textfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""

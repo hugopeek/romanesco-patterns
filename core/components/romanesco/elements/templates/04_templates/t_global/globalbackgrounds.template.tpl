@@ -42,7 +42,13 @@
     &tvname=`global_background_img`
     &tpl=`globalBackgroundImgCSS`
 ]]
-
+[[pdoResources?
+    &parents=`[[++romanesco.global_backgrounds_id]]`
+    &limit=`0`
+    &showUnpublished=`1`
+    &tpl=`globalBackgroundCSS`
+    &tvPrefix=``
+]]
 
 /* Load all backgrounds based on an overview image */
 

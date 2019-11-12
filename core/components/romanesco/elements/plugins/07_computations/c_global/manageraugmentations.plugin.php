@@ -6,6 +6,11 @@ switch ($modx->event->name) {
         // Load custom CSS styles
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/contentblocks.css');
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/semantic.css'); # for CB chunk previews
+
+        // Load custom CSS for Global Backgrounds
+        if ($resource->get('parent') == $modx->getOption('romanesco.global_backgrounds_id')) {
+            $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/backgrounds.css');
+        }
         break;
 
     case 'OnManagerPageBeforeRender':
