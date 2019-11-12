@@ -23,6 +23,10 @@
                     "description": "Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)",
                     "category": "f_modifiers"
                 },{
+                    "name": "isNumeric",
+                    "description": "Returns given output if string is numeric.",
+                    "category": "f_modifiers"
+                },{
                     "name": "textToNumber",
                     "description": "Turn a written number into an actual numeric value. In other words: turn \"three\" into \"3\". Can come in handy if you want to use the Semantic UI column width classes for other purposes.",
                     "category": "f_modifiers"
