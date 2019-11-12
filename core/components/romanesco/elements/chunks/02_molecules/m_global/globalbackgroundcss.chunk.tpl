@@ -1,4 +1,4 @@
-url('[[+image]]')
-[[+position:empty=`center center]] / [[+size:empty=`cover`]]
+[[+gradient:empty=`url('[[+image]]')`]]
+[[+position:empty=`center center`]] / [[+size:empty=`cover`]]
 [[+repeat]]
 [[+attachment]]
