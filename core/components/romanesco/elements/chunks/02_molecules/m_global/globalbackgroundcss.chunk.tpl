@@ -1,5 +1,4 @@
-[{
-    "url": "url([[+image]])",
-    "position": "[[+position]]",
-    "width": "[[+width:empty=`cover`]]"
-}]
+url('[[+image]]')
+[[+position:empty=`center center]] / [[+size:empty=`cover`]]
+[[+repeat]]
+[[+attachment]]
