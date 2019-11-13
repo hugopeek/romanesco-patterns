@@ -11,6 +11,10 @@
                     "description": "Turn a JSON object into an HTML table. For documentation purposes.",
                     "category": "f_json"
                 },{
+                    "name": "jsonToCSS",
+                    "description": "Turn a JSON object into CSS formatting. This is intended to turn CB repeater elements into CSS, without having to change the internal templating in ContentBlocks.",
+                    "category": "f_json"
+                },{
                     "name": "jsonImportInputOptions",
                     "description": "Generate input options from a JSON file. These options are written directly into their database table inside the Backyard package.",
                     "category": "f_json"
