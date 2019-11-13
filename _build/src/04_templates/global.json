@@ -7,6 +7,10 @@
                     "icon": "icon-image",
                     "category": "t_global"
                 },{
+                    "name": "GlobalBackground",
+                    "icon": "icon-file-image-o",
+                    "category": "t_global"
+                },{
                     "name": "GlobalCTA",
                     "icon": "icon-bullhorn",
                     "category": "t_global"

@@ -2387,6 +2387,14 @@
                     "category": "a_fb_inputs"
                 },
                 {
+                    "name": "globalBackgroundRowCSS",
+                    "category": "a_global"
+                },
+                {
+                    "name": "globalBackgroundSettingsCSS",
+                    "category": "a_global"
+                },
+                {
                     "name": "globalBackgroundImgCSS",
                     "category": "a_global"
                 },
@@ -2816,14 +2824,6 @@
                 },
                 {
                     "name": "globalBackgroundCSS",
-                    "category": "m_global"
-                },
-                {
-                    "name": "globalBackgroundWrapperCSS",
-                    "category": "m_global"
-                },
-                {
-                    "name": "globalBackgroundRowCSS",
                     "category": "m_global"
                 },
                 {
@@ -3843,6 +3843,11 @@
                     "category": "t_global"
                 },
                 {
+                    "name": "GlobalBackground",
+                    "icon": "icon-file-image-o",
+                    "category": "t_global"
+                },
+                {
                     "name": "GlobalCTA",
                     "icon": "icon-bullhorn",
                     "category": "t_global"
@@ -4088,6 +4093,11 @@
                 {
                     "name": "jsonToHTML",
                     "description": "Turn a JSON object into an HTML table. For documentation purposes.",
+                    "category": "f_json"
+                },
+                {
+                    "name": "jsonToCSS",
+                    "description": "Turn a JSON object into CSS formatting. This is intended to turn CB repeater elements into CSS, without having to change the internal templating in ContentBlocks.",
                     "category": "f_json"
                 },
                 {

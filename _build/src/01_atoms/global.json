@@ -3,6 +3,12 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "globalBackgroundRowCSS",
+                    "category": "a_global"
+                },{
+                    "name": "globalBackgroundSettingsCSS",
+                    "category": "a_global"
+                },{
                     "name": "globalBackgroundImgCSS",
                     "category": "a_global"
                 },{
