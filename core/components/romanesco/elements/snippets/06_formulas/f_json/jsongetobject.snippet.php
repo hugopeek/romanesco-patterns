@@ -1,8 +1,8 @@
 <?php
 /**
- * jsonToCSS
+ * jsonGetObject
  *
- * Turn a JSON object into CSS formatting.
+ * Search a JSON object for specific item and return the entire array.
  *
  * This is initially intended to turn CB repeater elements into CSS, without
  * having to change the internal templating in ContentBlocks.
@@ -14,15 +14,15 @@ $romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romane
 if (!($romanesco instanceof Romanesco)) return;
 
 $json = $modx->getOption('json', $scriptProperties, '');
-$key = $modx->getOption('key', $scriptProperties, '');
+$object = $modx->getOption('object', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, '');
 
 $jsonArray = json_decode($json, true);
 
-// Search array for given key
-$result = $romanesco->recursiveArraySearch($jsonArray,$key);
+// Search array for given object
+$result = $romanesco->recursiveArraySearch($jsonArray,$object);
 
-// Flatten first level, since it's always 1 JSON object
+// Flatten first level, since that's always the full JSON object itself
 $result = $result[0];
 
 // Return result directly if it's no longer an array

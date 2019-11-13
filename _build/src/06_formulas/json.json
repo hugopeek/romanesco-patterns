@@ -7,12 +7,12 @@
                     "description": "Get the value of a specific key from a JSON string.",
                     "category": "f_json"
                 },{
-                    "name": "jsonToHTML",
-                    "description": "Turn a JSON object into an HTML table. For documentation purposes.",
+                    "name": "jsonGetObject",
+                    "description": "Search a JSON object for specific item and return the entire array. This is initially intended to turn CB repeater elements into CSS, without having to change the internal templating in CB.",
                     "category": "f_json"
                 },{
-                    "name": "jsonToCSS",
-                    "description": "Turn a JSON object into CSS formatting. This is intended to turn CB repeater elements into CSS, without having to change the internal templating in ContentBlocks.",
+                    "name": "jsonToHTML",
+                    "description": "Turn a JSON object into an HTML table. For documentation purposes.",
                     "category": "f_json"
                 },{
                     "name": "jsonImportInputOptions",

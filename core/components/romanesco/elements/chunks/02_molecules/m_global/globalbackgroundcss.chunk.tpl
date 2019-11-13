@@ -6,20 +6,20 @@
 
 .background.[[+alias]]:before {
     background:
-        [[!jsonToCSS?
+        [[!jsonGetObject?
             &json=`[[+backgroundJSON]]`
             &tpl=`globalBackgroundRowCSS`
-            &key=`crops`
+            &object=`crops`
         ]]
         !important
     ;
-    [[jsonToCSS?
+    [[jsonGetObject?
         &json=`[[+backgroundJSON]]`
         &tpl=`globalBackgroundSettingsCSS`
-        &key=`settings`
+        &object=`settings`
     ]]
 
 }
 .background.[[+alias]]:after {
-    background: [[jsonToCSS:default=`transparent`? &json=`[[+backgroundJSON]]` &key=`background_color`]] !important;
+    background: [[jsonGetObject:default=`transparent`? &json=`[[+backgroundJSON]]` &object=`background_color`]] !important;
 }
