@@ -4035,8 +4035,13 @@
                     "category": "f_framework"
                 },
                 {
+                    "name": "setBackground",
+                    "description": "Output the necessary class names for the applied Global Background.",
+                    "category": "f_framework"
+                },
+                {
                     "name": "modifiedIf",
-                    "description": "Customized version of the If snippet, which also accepts 'contains' and 'containsnot' operators.",
+                    "description": "Customized If snippet with additional 'contains', 'containsnot' and 'isnumeric' operators, output to placeholder and option to prevent chunks from parsing before If statement is evaluated.",
                     "category": "f_framework"
                 },
                 {
@@ -4133,11 +4138,6 @@
                 {
                     "name": "parseTags",
                     "description": "Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)",
-                    "category": "f_modifiers"
-                },
-                {
-                    "name": "isNumeric",
-                    "description": "Returns given output if string is numeric.",
                     "category": "f_modifiers"
                 },
                 {

@@ -7,6 +7,10 @@
                     "description": "Output the necessary class names for Overview patterns, based on their template. It was created because the chunks where getting a bit swamped by output modifiers trying to do the same thing.",
                     "category": "f_framework"
                 },{
+                    "name": "setBackground",
+                    "description": "Output the necessary class names for the applied Global Background.",
+                    "category": "f_framework"
+                },{
                     "name": "modifiedIf",
                     "description": "Customized If snippet with additional 'contains', 'containsnot' and 'isnumeric' operators, output to placeholder and option to prevent chunks from parsing before If statement is evaluated.",
                     "category": "f_framework"
