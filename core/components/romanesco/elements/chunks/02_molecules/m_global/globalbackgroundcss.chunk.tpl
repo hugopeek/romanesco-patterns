@@ -1,5 +1,5 @@
 [[cbGetFieldContent:toPlaceholder=`backgroundJSON`?
-    &field=`100034`
+    &field=`[[++romanesco.cb_field_background_id]]`
     &resource=`[[+id]]`
     &returnAsJSON=`1`
 ]]

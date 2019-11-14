@@ -9,6 +9,7 @@
  */
 
 $background = $modx->getOption('background', $scriptProperties, $input);
+$cbField = $modx->getOption('romanesco.cb_field_background_id', $scriptProperties, '');
 
 // Numeric value means it's a resource-based background
 if (is_numeric($background)) {
@@ -19,7 +20,7 @@ if (is_numeric($background)) {
     // Get inverted value from CB settings
     $inverted = $modx->runSnippet('cbGetFieldContent',array(
         'resource' => $background,
-        'field' => 100034,
+        'field' => $cbField,
         'fieldSettingFilter' => 'inverted==1',
         'returnAsJSON' => 1,
     ));
