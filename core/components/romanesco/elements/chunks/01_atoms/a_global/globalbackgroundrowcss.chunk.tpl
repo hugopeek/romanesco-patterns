@@ -1,4 +1,5 @@
-[[+image.url]]
-[[+image.crops.small_portrait.url]]
-[[+image.crops.small_landscape.url]]
-[[+position]]
+[[+image.url:prepend=`url(/`:append=`)`:empty=`[[+gradient]]`]]
+[[+position:empty=`center center`]] /
+[[+size:empty=`cover`]]
+[[+repeat]]
+[[+attachment]]

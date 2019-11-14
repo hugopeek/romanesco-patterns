@@ -6,7 +6,7 @@
 
 .background.[[+alias]]:before {
     background:
-        [[!jsonGetObject?
+        [[jsonGetObject?
             &json=`[[+backgroundJSON]]`
             &tpl=`globalBackgroundRowCSS`
             &object=`rows`
