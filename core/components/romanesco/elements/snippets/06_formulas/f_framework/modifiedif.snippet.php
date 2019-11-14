@@ -2,6 +2,8 @@
 /**
  * If
  *
+ * Simple if (conditional) snippet.
+ *
  * Copyright 2009-2010 by Jason Coward <jason@modx.com> and Shaun McCormick
  * <shaun@modx.com>
  *
@@ -20,11 +22,7 @@
  *
  * @package if
  */
-/**
- * Simple if (conditional) snippet
- *
- * @package if
- */
+
 if (!empty($debug)) {
     print_r($scriptProperties);
     if (!empty($die)) die();

@@ -8,7 +8,7 @@
                     "category": "f_framework"
                 },{
                     "name": "modifiedIf",
-                    "description": "Customized version of the If snippet, with additional 'contains', 'containsnot' and 'isnumeric' operators, output to placeholder and ...",
+                    "description": "Customized If snippet with additional 'contains', 'containsnot' and 'isnumeric' operators, output to placeholder and option to prevent chunks from parsing before If statement is evaluated.",
                     "category": "f_framework"
                 },{
                     "name": "FibonacciSequence",
