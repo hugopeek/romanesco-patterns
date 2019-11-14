@@ -16,6 +16,7 @@ if (!($romanesco instanceof Romanesco)) return;
 $json = $modx->getOption('json', $scriptProperties, '');
 $object = $modx->getOption('object', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, '');
+$outputSeparator = $modx->getOption('outputSeparator', $scriptProperties, '');
 
 $jsonArray = json_decode($json, true);
 
@@ -41,7 +42,7 @@ if ($result[0]) {
     foreach ($result as $row) {
         $output[] = $modx->getChunk($tpl, $row);
     }
-    return implode($output);
+    return implode($outputSeparator,$output);
 }
 
 return;

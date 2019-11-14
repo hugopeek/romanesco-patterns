@@ -9,7 +9,8 @@
         [[!jsonGetObject?
             &json=`[[+backgroundJSON]]`
             &tpl=`globalBackgroundRowCSS`
-            &object=`crops`
+            &object=`rows`
+            &outputSeparator=`,`
         ]]
         !important
     ;
