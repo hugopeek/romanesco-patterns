@@ -4,24 +4,22 @@
     &operand=`svg`
     &then=`[[+image.url:prepend=`url(/`:append=`)`]]`
     &else=`
-    [[pthumb:prepend=`url(`:append=`)`?
-        &input=`[[+image.url]]`
-        &options=`w=[[+imgWidth]]
-            &sx=[[+image.crops.[[+imgType]].x]]
-            &sy=[[+image.crops.[[+imgType]].y]]
-            &sw=[[+image.crops.[[+imgType]].width]]
-            &sh=[[+image.crops.[[+imgType]].height]]
-            &q=[[++img_quality]]
-            &scale=[[+imgScale:default=`1`]]
-        `
+    [[If?
+        &subject=`[[+image.crops.[[+imgType]].url]]`
+        &operator=`notempty`
+        &then=`
+        [[pthumb:prepend=`url(`:append=`)`?
+            &input=`[[+image.url]]`
+            &options=`w=[[+imgWidth]]
+                &sx=[[+image.crops.[[+imgType]].x]]
+                &sy=[[+image.crops.[[+imgType]].y]]
+                &sw=[[+image.crops.[[+imgType]].width]]
+                &sh=[[+image.crops.[[+imgType]].height]]
+                &q=[[++img_quality]]
+                &scale=[[+imgScale:default=`1`]]
+            `
+        ]]`
     ]]`
-]]
-
-[[-If:empty=`[[+gradient]]`?
-    &subject=`[[+image.crops.mobile.url]]`
-    &operator=`notempty`
-    &then=`[[+image.crops.mobile.url:prepend=`url(`:append=`)`]]`
-    &else=`[[+image.crops.desktop.url:prepend=`url(`:append=`)`]]`
 ]]
 [[+position:empty=`center center`]] /
 [[+size:empty=`cover`]]
