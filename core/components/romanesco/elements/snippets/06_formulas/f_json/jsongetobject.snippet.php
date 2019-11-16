@@ -19,6 +19,7 @@ $tpl = $modx->getOption('tpl', $scriptProperties, '');
 $outputSeparator = $modx->getOption('outputSeparator', $scriptProperties, '');
 
 $jsonArray = json_decode($json, true);
+$output = array();
 
 // Search array for given object
 $result = $romanesco->recursiveArraySearch($jsonArray,$object);
@@ -38,11 +39,37 @@ if (!$result[0]) {
 
 // Loop over multidimensional arrays
 if ($result[0]) {
-    $output = array();
     foreach ($result as $row) {
         $output[] = $modx->getChunk($tpl, $row);
     }
     return implode($outputSeparator,$output);
 }
 
-return;
+return '';
+
+// @todo: Investigate approach below, where recursiveArraySearch can find multiple instances using 'yield' instead of 'return'.
+//foreach ($romanesco->recursiveArraySearch($jsonArray,$object) as $result) {
+//    // Flatten first level, since that's always the full JSON object itself
+//    $result = $result[0];
+//
+//    // Return result directly if it's no longer an array
+//    if (!is_array($result)) {
+//        $output[] = $result;
+//    }
+//
+//    // Flat arrays can be forwarded directly to the tpl chunk
+//    if (!$result[0]) {
+//        $output[] = $modx->getChunk($tpl, $result);
+//    }
+//
+//    // Loop over multidimensional arrays
+//    if ($result[0]) {
+//        $rows = array();
+//        foreach ($result as $row) {
+//            $rows[] = $modx->getChunk($tpl, $row);
+//        }
+//        $output[] = implode($outputSeparator,$rows);
+//    }
+//}
+//
+//return implode(',',$output);

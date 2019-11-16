@@ -4,7 +4,19 @@
             "chunks": [
                 {
                     "name": "globalBackgroundRowCSS",
-                    "category": "a_global"
+                    "category": "a_global",
+                    "properties": [
+                        {
+                            "name": "imgSize",
+                            "value": ""
+                        },{
+                            "name": "imgType",
+                            "value": ""
+                        },{
+                            "name": "imgScale",
+                            "value": ""
+                        }
+                    ]
                 },{
                     "name": "globalBackgroundSettingsCSS",
                     "category": "a_global"
