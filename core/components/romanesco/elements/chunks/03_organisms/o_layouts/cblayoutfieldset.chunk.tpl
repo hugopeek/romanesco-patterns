@@ -8,7 +8,7 @@
 ]]
 [[+force_segment:eq=`1`:then=`segment`:else=`[[+segment_parent]]`:toPlaceholder=`segment`]]
 
-<fieldset [[stripAsAlias:prepend=`id="`:append=`"`? &input=`[[+title]]`]] class="ui [[+padding]] [[+segment]] [[+background]]">
+<fieldset [[stripAsAlias:prepend=`id="fb[[*id]]-`:append=`"`? &input=`[[+title]]`]] class="ui [[+padding]] [[+segment]] [[+background]]">
     [[+legend:notempty=`<legend class="ui [[+form_size]] header">[[+legend]]</legend>`]]
     [[*fb_form_layout:is=`inline`:then=`<span class="equal width fields">`]]
     [[+main]]
