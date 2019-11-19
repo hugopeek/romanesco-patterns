@@ -1,14 +1,18 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.14.6
-Released on ...
+Released on November 19, 2019
 
-Fixes and improvements:
-- Add ability to search for multiple instances of key in jsonGetValue
+New features:
+- Add jsonGetObject snippet for templating JSON output with chunks
 - Add ability to center content when stacked on mobile or tablet
-- Fix fallback icon in avatar when an article has no author
 - Add circular button option
 - Add circular and bordered image options
+
+Fixes and improvements:
+- Refactor Global Backgrounds component
+- Add ability to search for multiple instances of key in jsonGetValue
+- Fix fallback icon in avatar when an article has no author
 - Fix memory exhausted issues when rebuilding content with ContentBlocks
 - Fix visibility toggles in front-end pattern library
 - Limit reverse column order setting to mobile only
