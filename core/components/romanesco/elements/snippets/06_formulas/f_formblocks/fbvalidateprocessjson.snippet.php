@@ -5,6 +5,7 @@
  * A snippet for FormBlocks that generates the correct strings for the FormIt &validate property.
  *
  * @author Hugo Peek
+ * @var $scriptProperties
  */
 
 $input = $modx->getOption('json', $scriptProperties);
@@ -41,7 +42,7 @@ if (!function_exists('stripResults')) {
     function stripResults($row) {
         $row = strip_tags($row); // strip HTML
         $row = strtolower($row); // convert to lowercase
-        $row = preg_replace('/[^\A-Za-z0-9 _-]/', '', $row); // strip non-alphanumeric characters
+        $row = preg_replace('/[^A-Za-z0-9 _-]/', '', $row); // strip non-alphanumeric characters
         $row = preg_replace('/\s+/', '-', $row); // convert white-space to dash
         $row = preg_replace('/-+/', '-', $row);  // convert multiple dashes to one
         $row = trim($row, '-'); // trim excess

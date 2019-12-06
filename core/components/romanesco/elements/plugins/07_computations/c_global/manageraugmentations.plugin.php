@@ -16,6 +16,10 @@ switch ($modx->event->name) {
     case 'OnManagerPageBeforeRender':
         // Load CSS for manager on different event
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css');
+
+        // Load JS and additional dependencies
+        $controller->addHtml('<script src="/assets/semantic/dist/themes/romanesco/assets/vendor/arrive/arrive.min.js"></script>');
+        $controller->addHtml('<script src="/assets/components/romanescobackyard/js/manager.js"></script>');
         break;
 
     case 'OnManagerPageAfterRender':

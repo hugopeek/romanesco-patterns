@@ -48,7 +48,7 @@ switch ($modx->event->name) {
                     if (!isset($anchor)) {
                         $text = strip_tags($text); // strip HTML
                         $text = strtolower($text); // convert to lowercase
-                        $text = preg_replace('/[^\.A-Za-z0-9 _-]/', '', $text); // strip non-alphanumeric characters
+                        $text = preg_replace('/[^.A-Za-z0-9 _-]/', '', $text); // strip non-alphanumeric characters
                         $text = preg_replace('/\s+/', '-', $text); // convert white-space to dash
                         $text = preg_replace('/-+/', '-', $text);  // convert multiple dashes to one
                         $text = trim($text, '-'); // trim excess

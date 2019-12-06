@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.14.7
+Released on ...
+
+Fixes and improvements:
+- Fix illegal regex sequences
+
 ## Romanesco Patterns 0.14.6
 Released on November 19, 2019
 
