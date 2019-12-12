@@ -9,7 +9,7 @@
  */
 
 $input = $modx->getOption('json', $scriptProperties);
-$array = $modx->fromJSON($input);
+$fields = $modx->fromJSON($input);
 $id = $modx->resource->get('id');
 $prefix = !empty($prefix) ? $prefix: 'fb' . $id . '-';
 $emailField = $modx->getOption('emailField', $scriptProperties);
@@ -17,53 +17,36 @@ $emailField = $modx->getOption('emailField', $scriptProperties);
 //$jsonString = $modx->getOption('json', $scriptProperties);
 //$array = json_decode($jsonString, true);
 
-// Function to search for required fields in JSON array
-if (!function_exists('search')) {
-    function search($array, $key, $value) {
-        $results = array();
-
-        if (is_array($array)) {
-            if (isset($array[$key]) && $array[$key] == $value) {
-                $results[] = $array;
-            }
-            foreach ($array as $subarray) {
-                $results = array_merge($results, search($subarray, $key, $value));
-            }
-        }
-
-        return $results;
-    }
-}
-
 // Function to strip required field names correctly
-// @todo: Replace this part with modx->runSnippet('fbStripAsAlias');
 if (!function_exists('stripResults')) {
-
-    function stripResults($row) {
-        $row = strip_tags($row); // strip HTML
-        $row = strtolower($row); // convert to lowercase
-        $row = preg_replace('/[^A-Za-z0-9 _-]/', '', $row); // strip non-alphanumeric characters
-        $row = preg_replace('/\s+/', '-', $row); // convert white-space to dash
-        $row = preg_replace('/-+/', '-', $row);  // convert multiple dashes to one
-        $row = trim($row, '-'); // trim excess
-
-        return $row;
+    function stripResults($input) {
+        global $modx;
+        return $modx->runSnippet('fbStripAsAlias', array('input' => $input));
     }
 }
 
 // Go through JSON array and collect all required fields
-$results = search($array, 'field_required', '1');
+//$fields = search($array, 'field_required', '1');
+$output = array();
 
-// Create new array from all required results
-$names = array();
-
-// Generate FormIt validation string for each result
-foreach ($results as $result) {
-    if ($result['field_name'] == $emailField) {
-        $names[] = $emailField . ":email:required,"; // Untested...
-    } else {
-        $names[] = $prefix . stripResults($result['field_name']) . ":required,";
+foreach ($fields as $field) {
+    if ($field['settings']['field_required'] != 1) {
+        continue;
     }
+
+    // Special treatment for date fields
+    if ($field['field'] == 100042) {
+        $output[] = $prefix . stripResults($field['settings']['field_name']) . "-start:isDate:required,";
+        $output[] = $prefix . stripResults($field['settings']['field_name']) . "-end:isDate:required,";
+        continue;
+    }
+    if ($field['field'] == 100041) {
+        $output[] = $prefix . stripResults($field['settings']['field_name']) . ":isDate:required,";
+        continue;
+    }
+
+    // All remaining fields
+    $output[] = $prefix . stripResults($field['settings']['field_name']) . ":required,";
 }
 
-return implode('', $names);
+return implode('', $output);

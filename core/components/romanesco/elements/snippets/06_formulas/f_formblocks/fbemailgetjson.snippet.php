@@ -19,10 +19,3 @@ $rawData = $resource->getProperty('linear', 'contentblocks');
 $json = $modx->toJSON($rawData);
 
 return $json;
-
-//$sql = 'SELECT `properties` FROM `'.$modx->getOption(xPDO::OPT_TABLE_PREFIX).'site_content` WHERE `id` = '.$resourceID.'';
-//$result = $modx->query($sql);
-
-//$rawData = $result->fetch(PDO::FETCH_ASSOC);
-
-//return implode('', $rawData);
