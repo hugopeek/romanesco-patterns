@@ -24,6 +24,12 @@
                     "name": "fbInputHidden",
                     "category": "m_fb_inputs"
                 },{
+                    "name": "fbInputDate",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputDateRange",
+                    "category": "m_fb_inputs"
+                },{
                     "name": "fbMathQuestion",
                     "category": "m_fb_inputs"
                 },{
