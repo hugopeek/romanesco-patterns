@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Load home breadcrumb with tpl chunk
+- Fix structured data errors in breadcrumbs
 - Fix illegal regex sequences
 
 ## Romanesco Patterns 0.14.6

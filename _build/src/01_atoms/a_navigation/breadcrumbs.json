@@ -9,6 +9,9 @@
                     "name": "breadcrumbRow",
                     "category": "a_nav_breadcrumbs"
                 },{
+                    "name": "breadcrumbHome",
+                    "category": "a_nav_breadcrumbs"
+                },{
                     "name": "breadcrumbCurrent",
                     "category": "a_nav_breadcrumbs"
                 }
