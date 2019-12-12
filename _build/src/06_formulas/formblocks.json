@@ -15,6 +15,9 @@
                     "name": "fbSimplxWidgeteer",
                     "category": "f_formblocks"
                 },{
+                    "name": "fbFormReport",
+                    "category": "f_formblocks"
+                },{
                     "name": "fbValidateProcessJSON",
                     "category": "f_formblocks"
                 },{
