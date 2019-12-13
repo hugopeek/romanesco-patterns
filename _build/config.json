@@ -798,16 +798,12 @@
                 {
                     "caption": "Layout type",
                     "name": "fb_form_layout",
-                    "description": "Vertical means the labels are always above the input fields, Horizontal means the labels are next to the fields, Inline means everything is on 1 row (so only for very small forms).",
+                    "description": "DEPRECATED. This setting has moved to the CB field that loads the form.",
                     "category": "Settings - General",
                     "sortOrder": "5",
                     "type": "listbox",
                     "inputOptionValues": "Vertical==vertical||Horizontal==horizontal||Inline==inline",
-                    "defaultValue": "horizontal",
-                    "templates": [
-                        "fbForm",
-                        "fbRegister"
-                    ]
+                    "defaultValue": "horizontal"
                 },
                 {
                     "caption": "Custom pre-hook(s)",
@@ -3384,6 +3380,7 @@
                 },
                 {
                     "name": "cbFormLabelPosition",
+                    "description": "If label position is explicitly defined in the form resource CB input, then that setting is ALWAYS applied. If set to 'inherit', then the setting from the main Form CB field is respected.",
                     "category": "a_cb_formblocks"
                 },
                 {
