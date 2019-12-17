@@ -3,7 +3,12 @@
 ## Romanesco Patterns 0.14.7
 Released on ...
 
+New features:
+- Add Date and Date Range fields to FormBlocks
+
 Fixes and improvements:
+- Optimize FormBlocks validation processing
+- Improve inheritance of FormBlocks label position settings
 - Load home breadcrumb with tpl chunk
 - Fix structured data errors in breadcrumbs
 - Fix illegal regex sequences
