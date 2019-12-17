@@ -10,15 +10,7 @@ switch($elementType) {
         $modxObject = "modTemplateVar";
         break;
     case stripos($elementType, 'atom') !== false:
-        $dbTable = "site_htmlsnippets";
-        $dbNameField = "name";
-        $modxObject = "modChunk";
-        break;
     case stripos($elementType, 'molecule') !== false:
-        $dbTable = "site_htmlsnippets";
-        $dbNameField = "name";
-        $modxObject = "modChunk";
-        break;
     case stripos($elementType,'organism') !== false:
         $dbTable = "site_htmlsnippets";
         $dbNameField = "name";
