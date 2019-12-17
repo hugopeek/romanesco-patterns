@@ -50,6 +50,9 @@
                 },{
                     "name": "fbEmailRow_xx_email",
                     "category": "m_fb_email"
+                },{
+                    "name": "fbEmailRow_xx_daterange",
+                    "category": "m_fb_email"
                 }
             ],
 
