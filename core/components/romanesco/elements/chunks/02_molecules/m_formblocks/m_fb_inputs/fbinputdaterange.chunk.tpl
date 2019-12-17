@@ -1,7 +1,7 @@
 [[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 
 <div id="[[+name]]" class="[[+field_cols]] [[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] equal width date range fields">
-    <div class="field [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[!If? &subject=`[[+fb[[*id]].error.fb[[*id]]-range-start]]` &operator=`notempty` &then=`error`]]">
+    <div class="field [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]-start]]` &operator=`notempty` &then=`error`]]">
         <label for="[[+name]]-start">[[+label_start]]</label>
         <div class="ui calendar date range start">
             <div class="ui input left icon">

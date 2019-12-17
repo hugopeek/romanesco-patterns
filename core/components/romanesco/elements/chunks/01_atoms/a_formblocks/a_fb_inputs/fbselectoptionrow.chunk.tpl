@@ -1,4 +1,4 @@
-[[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
+[[+field_name:fbResetNonAlpha:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 [[+field_option:fbResetNonAlpha:toPlaceholder=`option`]]
 
 <div class="ui [[+collapse_target:isnot=``:then=`collapsible`]] [[+checkbox_type:empty=`[[+field_type]]`]] checkbox field">
