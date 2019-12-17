@@ -1484,8 +1484,6 @@ if ($object->xpdo) {
   ),
   'fb_form_layout' => 
   array (
-    0 => 'fbForm',
-    1 => 'fbRegister',
   ),
   'fb_prehooks' => 
   array (
