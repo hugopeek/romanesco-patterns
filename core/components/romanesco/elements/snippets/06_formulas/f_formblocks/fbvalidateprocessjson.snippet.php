@@ -35,12 +35,12 @@ foreach ($fields as $field) {
     }
 
     // Special treatment for date fields
-    if ($field['field'] == 100042) {
+    if ($field['field'] == $modx->getOption('formblocks.cb_input_date_range_id', $scriptProperties)) {
         $output[] = $prefix . stripResults($field['settings']['field_name']) . "-start:isDate:required,";
         $output[] = $prefix . stripResults($field['settings']['field_name']) . "-end:isDate:required,";
         continue;
     }
-    if ($field['field'] == 100041) {
+    if ($field['field'] == $modx->getOption('formblocks.cb_input_date_id', $scriptProperties)) {
         $output[] = $prefix . stripResults($field['settings']['field_name']) . ":isDate:required,";
         continue;
     }
