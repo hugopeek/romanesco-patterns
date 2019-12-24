@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Reference global backgrounds by template ID for loading custom CSS
 - Add system settings for Mapbox username and style_id
 
 ## Romanesco Patterns 0.14.7

@@ -8,7 +8,7 @@ switch ($modx->event->name) {
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/semantic.css'); # for CB chunk previews
 
         // Load custom CSS for Global Backgrounds
-        if ($resource->get('parent') == $modx->getOption('romanesco.global_backgrounds_id')) {
+        if ($resource->get('template') == 27) {
             $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/backgrounds.css');
         }
         break;
