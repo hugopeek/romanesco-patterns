@@ -3866,11 +3866,13 @@
                 },
                 {
                     "name": "GlobalBackgrounds",
+                    "description": "These backgrounds can be applied to page headers, CB layouts (under their Settings wheel) and possibly to other elements too.",
                     "icon": "icon-image",
                     "category": "t_global"
                 },
                 {
                     "name": "GlobalBackground",
+                    "description": "Each background is a separate resource, in which you can add multiple layers with the Background Elements CB. Output of this template is for preview only. The CSS is generated separately.",
                     "icon": "icon-file-image-o",
                     "category": "t_global"
                 },
@@ -4484,7 +4486,17 @@
                 "area": "Site"
             },
             {
+                "key": "mapbox_username",
+                "type": "textfield",
+                "area": "Map"
+            },
+            {
                 "key": "mapbox_access_token",
+                "type": "textfield",
+                "area": "Map"
+            },
+            {
+                "key": "mapbox_style_id",
                 "type": "textfield",
                 "area": "Map"
             },

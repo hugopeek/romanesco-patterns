@@ -2,7 +2,15 @@
     "package": {
         "systemSettings": [
             {
+                "key": "mapbox_username",
+                "type": "textfield",
+                "area": "Map"
+            },{
                 "key": "mapbox_access_token",
+                "type": "textfield",
+                "area": "Map"
+            },{
+                "key": "mapbox_style_id",
                 "type": "textfield",
                 "area": "Map"
             }

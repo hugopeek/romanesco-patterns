@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns ...
+Released on ...
+
+Fixes and improvements:
+- Add system settings for Mapbox username and style_id
+
 ## Romanesco Patterns 0.14.7
 Released on December 17, 2019
 
