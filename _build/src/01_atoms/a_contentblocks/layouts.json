@@ -19,6 +19,7 @@
                     "category": "a_cb_layouts"
                 },{
                     "name": "cbGlobalBackgroundRowImg",
+                    "description": "DEPRECATED.",
                     "category": "a_cb_layouts"
                 },{
                     "name": "cbLayoutTemplatesPattern",

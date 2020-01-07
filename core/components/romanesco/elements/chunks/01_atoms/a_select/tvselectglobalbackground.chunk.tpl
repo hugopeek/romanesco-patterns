@@ -8,7 +8,7 @@ Primary color (Dark)==inverted primary-color||
 Secondary color (Light)==secondary-color||
 Secondary color (Dark)==inverted secondary-color||
 Transparent==transparent||
-
+-----==0||
 [[getResources:append=`||`?
     &parents=`[[getContextSetting:empty=`[[++romanesco.global_backgrounds_id]]`? &context=`[[*context_key]]` &setting=`romanesco.global_backgrounds_id`]]`
     &limit=`0`
@@ -30,6 +30,7 @@ Transparent==transparent||
     &showHidden=`1`
     &showUnpublished=`1`
     &where=`{"template:=":"27"}`
+    &tvFilters=`background_availability==%[[+availability]]%`
     &sortBy=`menuindex`
     &sortDir=`ASC`
 ]]
