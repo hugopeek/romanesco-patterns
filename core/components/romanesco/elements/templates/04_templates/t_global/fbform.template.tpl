@@ -1,5 +1,3 @@
-[[*pagetitle:fbStripAsAlias:toPlaceholder=`title`]]
-
 [[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`upload_multiple`?
     &field=`[[++formblocks.cb_input_file_id:empty=`-1`]]`
     &fieldSettingFilter=`upload_limit!=1`
@@ -64,7 +62,7 @@
         workemail:blank`
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
-    &submitVar=`submit-[[+title]]`
+    &submitVar=`submit-[[*alias]]`
     &redirectTo=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`
 ]]
 
@@ -78,7 +76,7 @@
 </div>
 `]]
 
-<form id="form-[[+title]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
     <div class="ui [[+segment_type]]">
 
         [[*content]]
@@ -93,7 +91,7 @@
             [[[[++formblocks.antispam:contains=`recaptchav2`:then=`!recaptchav2_render`]]]]
             [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
             <div class="ui error message"></div>
-            <input class="[[+form_size]] primary ui button" type="submit" name="submit-[[+title]]" value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
+            <input class="[[+form_size]] primary ui button" type="submit" name="submit-[[*alias]]" value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
         </div>
         `]]
     </div>
