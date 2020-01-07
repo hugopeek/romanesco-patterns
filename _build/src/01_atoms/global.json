@@ -21,19 +21,27 @@
                     "name": "globalBackgroundSettingsCSS",
                     "category": "a_global"
                 },{
+                    "name": "globalBackgroundTVOptions",
+                    "category": "a_global"
+                },{
                     "name": "globalBackgroundImgCSS",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgOverviewCSS",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgPersonCSS",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgTVOptions",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgTVOptionsRow",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },{
                     "name": "iconTVInputOptions",

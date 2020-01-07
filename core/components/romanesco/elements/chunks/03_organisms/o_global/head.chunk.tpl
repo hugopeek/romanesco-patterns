@@ -1,5 +1,5 @@
 <head>
-    <title>[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]</title>
+    <title>[[++romanesco.title_format]]</title>
 
     <meta charset="[[++modx_charset]]">
     <meta name="description" content="[[*description]]">
@@ -14,7 +14,13 @@
     <script>document.documentElement.className = 'js';</script>
 
     <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
-    <link href="[[getContextSetting? &context=`web` &setting=`site_url`]]assets/css/backgrounds.css" rel="stylesheet">
+    [[If?
+        &subject=`[[++romanesco.custom_css_per_context]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`<link href="assets/css/[[*context_key:replace=`web==site`]].css" rel="stylesheet">`
+        &else=`<link href="assets/css/site.css" rel="stylesheet">`
+    ]]
 
     [[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]
     [[~[[*id]]:contains=`status`:or:contains=`hub`:then=`1`:toPlaceholder=`load_assets_hub`]]

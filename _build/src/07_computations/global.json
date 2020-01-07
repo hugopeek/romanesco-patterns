@@ -14,6 +14,10 @@
                     "name": "ClearCustomCache",
                     "category": "c_global",
                     "events": [""]
+                },{
+                    "name": "GenerateStaticCSS",
+                    "category": "c_global",
+                    "events": ["OnDocFormSave"]
                 }
             ],
 
