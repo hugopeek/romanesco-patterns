@@ -15,6 +15,19 @@
                     "templates": [
                         "GlobalBackgrounds"
                     ]
+                },
+                {
+                    "caption": "Availability",
+                    "name": "background_availability",
+                    "description": "Where would you like to use this background?",
+                    "type": "checkbox",
+                    "category": "Background",
+                    "sortOrder": "10",
+                    "inputOptionValues": "In page headers==header||In ContentBlocks layouts==content||In footer CTAs==footer-cta||In page footers==footer",
+                    "defaultValue": "header||content||footer-cta||footer",
+                    "templates": [
+                        "GlobalBackground"
+                    ]
                 }
             ],
 
@@ -24,6 +37,9 @@
                     "parent": "00_electrons"
                 },{
                     "name": "Global - Backgrounds",
+                    "parent": "e_global"
+                },{
+                    "name": "Background",
                     "parent": "e_global"
                 }
             ]

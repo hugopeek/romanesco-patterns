@@ -43,7 +43,7 @@
                     "type": "listbox",
                     "category": "Header",
                     "sortOrder": "10",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "inputOptionValues": "@CHUNK tvSelectGlobalBackground@AvailableHeader",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_all"
@@ -67,7 +67,7 @@
                     "category": "Header",
                     "sortOrder": "20",
                     "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvSelectHeaderCTA",
+                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableHeader",
                     "templates": [
                         "@@templates_all"
                     ]

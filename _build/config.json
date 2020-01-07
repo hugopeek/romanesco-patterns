@@ -142,6 +142,10 @@
                     "parent": "e_global"
                 },
                 {
+                    "name": "Background",
+                    "parent": "e_global"
+                },
+                {
                     "name": "e_information",
                     "parent": "00_electrons"
                 },
@@ -889,6 +893,19 @@
                     ]
                 },
                 {
+                    "caption": "Availability",
+                    "name": "background_availability",
+                    "description": "Where would you like to use this background?",
+                    "type": "checkbox",
+                    "category": "Background",
+                    "sortOrder": "10",
+                    "inputOptionValues": "In page headers==header||In ContentBlocks layouts==content||In footer CTAs==footer-cta||In page footers==footer",
+                    "defaultValue": "header||content||footer-cta||footer",
+                    "templates": [
+                        "GlobalBackground"
+                    ]
+                },
+                {
                     "caption": "Toolbar visibility",
                     "name": "toolbar_visibility",
                     "description": "Do you want to display a toolbar on this page? The default toolbar contains breadcrumbs and search functionality. This setting is inherited on every child page.",
@@ -1252,7 +1269,7 @@
                     "type": "listbox",
                     "category": "Footer",
                     "sortOrder": "10",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "inputOptionValues": "@CHUNK tvSelectGlobalBackground@AvailableFooter",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteContentBlocks","Note - ContentBlocks","NoteRichText","Note - Rich Text","NoteMarkdown","Note - Markdown","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1266,7 +1283,7 @@
                     "category": "Footer",
                     "sortOrder": "20",
                     "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvSelectFooterCTA",
+                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableFooter",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteContentBlocks","Note - ContentBlocks","NoteRichText","Note - Rich Text","NoteMarkdown","Note - Markdown","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
@@ -1278,7 +1295,7 @@
                     "type": "listbox",
                     "category": "Footer",
                     "sortOrder": "21",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "inputOptionValues": "@CHUNK tvSelectGlobalBackground@AvailableFooterCTA",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteContentBlocks","Note - ContentBlocks","NoteRichText","Note - Rich Text","NoteMarkdown","Note - Markdown","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1345,7 +1362,7 @@
                     "type": "listbox",
                     "category": "Header",
                     "sortOrder": "10",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "inputOptionValues": "@CHUNK tvSelectGlobalBackground@AvailableHeader",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteContentBlocks","Note - ContentBlocks","NoteRichText","Note - Rich Text","NoteMarkdown","Note - Markdown","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1371,7 +1388,7 @@
                     "category": "Header",
                     "sortOrder": "20",
                     "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvSelectHeaderCTA",
+                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableHeader",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteContentBlocks","Note - ContentBlocks","NoteRichText","Note - Rich Text","NoteMarkdown","Note - Markdown","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
@@ -2406,22 +2423,27 @@
                 },
                 {
                     "name": "globalBackgroundImgCSS",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },
                 {
                     "name": "globalBackgroundImgOverviewCSS",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },
                 {
                     "name": "globalBackgroundImgPersonCSS",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },
                 {
                     "name": "globalBackgroundImgTVOptions",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },
                 {
                     "name": "globalBackgroundImgTVOptionsRow",
+                    "description": "DEPRECATED.",
                     "category": "a_global"
                 },
                 {
@@ -2536,13 +2558,25 @@
                     "category": "a_search"
                 },
                 {
-                    "name": "tvSelectHeaderCTA",
-                    "description": "Get available CTAs for the header and turn them into input options for use in a selection TV.",
+                    "name": "tvSelectCTA",
+                    "description": "Get available CTAs and turn them into input options for use in a selection TV.",
+                    "properties": [
+                        {
+                            "name": "availability",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_select"
                 },
                 {
-                    "name": "tvSelectFooterCTA",
-                    "description": "Get available CTAs for the footer and turn them into input options for use in a selection TV.",
+                    "name": "tvSelectGlobalBackground",
+                    "description": "Get available backgrounds and turn them into input options for use in a selection TV.",
+                    "properties": [
+                        {
+                            "name": "availability",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_select"
                 },
                 {
@@ -3128,6 +3162,10 @@
                 },
                 {
                     "name": "footer",
+                    "category": "o_global"
+                },
+                {
+                    "name": "css",
                     "category": "o_global"
                 },
                 {
@@ -4367,6 +4405,13 @@
                     ]
                 },
                 {
+                    "name": "GenerateStaticCSS",
+                    "category": "c_global",
+                    "events": [
+                        "OnDocFormSave"
+                    ]
+                },
+                {
                     "name": "setResourceIDs",
                     "description": "Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.",
                     "category": "c_settings",
@@ -4430,6 +4475,18 @@
                 "type": "textfield",
                 "area": "Date and Time",
                 "value": "%A %e %B, %Y"
+            },
+            {
+                "key": "title_format",
+                "type": "textfield",
+                "area": "Head",
+                "value": "[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]"
+            },
+            {
+                "key": "custom_css_per_context",
+                "type": "combo-boolean",
+                "area": "Settings",
+                "value": "0"
             },
             {
                 "key": "dev_mode",

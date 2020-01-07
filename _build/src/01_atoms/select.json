@@ -3,12 +3,24 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "tvSelectHeaderCTA",
-                    "description": "Get available CTAs for the header and turn them into input options for use in a selection TV.",
+                    "name": "tvSelectCTA",
+                    "description": "Get available CTAs and turn them into input options for use in a selection TV.",
+                    "properties": [
+                        {
+                            "name": "availability",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_select"
                 },{
-                    "name": "tvSelectFooterCTA",
-                    "description": "Get available CTAs for the footer and turn them into input options for use in a selection TV.",
+                    "name": "tvSelectGlobalBackground",
+                    "description": "Get available backgrounds and turn them into input options for use in a selection TV.",
+                    "properties": [
+                        {
+                            "name": "availability",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_select"
                 },{
                     "name": "tvSelectFooter",

@@ -4,7 +4,11 @@
 Released on ...
 
 Fixes and improvements:
-- Reference global backgrounds by template ID for loading custom CSS
+- Use alias to specify ID in form template
+- Use system setting to specify title format in head
+- Manage background availability inside selectors
+- Generate static CSS file with Global Backgrounds (per context if needed)
+- Reference Global Backgrounds by template ID when loading custom CSS
 - Add system settings for Mapbox username and style_id
 
 ## Romanesco Patterns 0.14.7

@@ -33,7 +33,7 @@
                     "type": "listbox",
                     "category": "Footer",
                     "sortOrder": "10",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "inputOptionValues": "@CHUNK tvSelectGlobalBackground@AvailableFooter",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_all"
@@ -46,7 +46,7 @@
                     "category": "Footer",
                     "sortOrder": "20",
                     "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvSelectFooterCTA",
+                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableFooter",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -57,7 +57,7 @@
                     "type": "listbox",
                     "category": "Footer",
                     "sortOrder": "21",
-                    "inputOptionValues": "@CHUNK globalBackgroundImgTVOptions",
+                    "inputOptionValues": "@CHUNK tvSelectGlobalBackground@AvailableFooterCTA",
                     "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_all"

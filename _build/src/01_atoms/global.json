@@ -21,9 +21,6 @@
                     "name": "globalBackgroundSettingsCSS",
                     "category": "a_global"
                 },{
-                    "name": "globalBackgroundTVOptions",
-                    "category": "a_global"
-                },{
                     "name": "globalBackgroundImgCSS",
                     "description": "DEPRECATED.",
                     "category": "a_global"
