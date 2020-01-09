@@ -3,7 +3,12 @@
 ## Romanesco Patterns ...
 Released on ...
 
+New features:
+- Add lazy loading to Image CB and image overviews
+- Add round and removeDuplicateLines snippets
+
 Fixes and improvements:
+- Generate responsive content images with srcset and sizes
 - Use alias to specify ID in form template
 - Use system setting to specify title format in head
 - Manage background availability inside selectors
