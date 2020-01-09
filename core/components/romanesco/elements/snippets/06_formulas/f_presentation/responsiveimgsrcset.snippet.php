@@ -5,10 +5,9 @@
  * Generates a number of srcset properties, for use inside an <img> tag.
  *
  * The dimensions for each srcset image are defined inside the
- * responsive_img_breakpoints configuration setting.
+ * img_breakpoints configuration setting.
  *
  * @author: Hugo Peek
- * @license: MIT
  */
 
 $breakpoints = $modx->getOption('breakpoints', $scriptProperties, '');
