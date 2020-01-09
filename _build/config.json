@@ -3451,6 +3451,7 @@
                 },
                 {
                     "name": "cbGlobalBackgroundRowImg",
+                    "description": "DEPRECATED.",
                     "category": "a_cb_layouts"
                 },
                 {
@@ -4217,8 +4218,18 @@
                     "category": "f_modifiers"
                 },
                 {
+                    "name": "round",
+                    "description": "Round a decimal value to a whole number or with a specified amount of decimals. Usage: [[+value:round=`2`]] returns the value with 2 decimals, [[+value:round]] returns a whole number.",
+                    "category": "f_modifiers"
+                },
+                {
                     "name": "filterLine",
                     "description": "Search the input for lines containing a specific string. And then return those lines.",
+                    "category": "f_modifiers"
+                },
+                {
+                    "name": "removeDuplicateLines",
+                    "description": "Scan input for duplicate lines and remove them from the output.",
                     "category": "f_modifiers"
                 },
                 {
