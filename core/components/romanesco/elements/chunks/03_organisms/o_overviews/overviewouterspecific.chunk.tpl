@@ -29,5 +29,6 @@
         &de_emphasize=`[[+de_emphasize]]`
         &img_type=`[[+img_type]]`
         &icon_type=`[[+icon_type]]`
+        &lazy_load=`[[+lazy_load]]`
     ]]
 </div>

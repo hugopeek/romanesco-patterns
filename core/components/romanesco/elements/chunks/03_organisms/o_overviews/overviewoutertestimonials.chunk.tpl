@@ -45,6 +45,7 @@
         &text_size=`[[+text_size]]`
         &alignment=`[[+alignment]]`
         &de_emphasize=`[[+de_emphasize]]`
+        &lazy_load=`[[+lazy_load]]`
     ]]
 </div>
 
