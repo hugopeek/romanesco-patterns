@@ -24,7 +24,7 @@
         &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++romanesco.client_container_id]]`]]`
         &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
         &depth=`99`
-        &limit=`[[+limit]]`
+        &limit=`[[+limit:default=`0`]]`
         &tpl=`overviewRowOrganization[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
@@ -35,7 +35,11 @@
 
         &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`
         &cols=`[[+cols:textToNumber]]`
+        &box_type=`[[+[[+prefix]].box_type]]`
+        &row_type=`[[+[[+prefix]].row_type]]`
         &column_type=`[[+[[+prefix]].column_type]]`
+        &prefix=`[[+prefix]]`
+        &unique_idx=`[[+unique_idx]]`
         &title_field=`[[+title_field]]`
         &title_hierarchy=`[[+title_hierarchy]]`
         &classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`

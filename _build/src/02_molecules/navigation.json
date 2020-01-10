@@ -9,6 +9,9 @@
                     "name": "m_nav_primary",
                     "parent": "m_navigation"
                 },{
+                    "name": "m_nav_pagination",
+                    "parent": "m_navigation"
+                },{
                     "name": "m_nav_tabs",
                     "parent": "m_navigation"
                 },{

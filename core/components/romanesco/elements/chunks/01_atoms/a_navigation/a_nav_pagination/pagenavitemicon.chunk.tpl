@@ -1,0 +1,1 @@
+<a class="[[+target]] icon item" href="[[+href]]"><i class="[[+icon_class]] icon"></i></a>

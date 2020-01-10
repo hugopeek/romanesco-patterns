@@ -1,0 +1,1 @@
+<span class="[[+target]] item"><i class="[[+icon_class]] icon"></i></span>

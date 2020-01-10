@@ -3,7 +3,43 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "paginationFluid",
+                    "name": "pageNavWrapper",
+                    "category": "a_nav_pagination"
+                },{
+                    "name": "pageNavItem",
+                    "category": "a_nav_pagination"
+                },{
+                    "name": "pageNavItemActive",
+                    "category": "a_nav_pagination"
+                },{
+                    "name": "pageNavItemDisabled",
+                    "category": "a_nav_pagination"
+                },{
+                    "name": "pageNavItemIcon",
+                    "category": "a_nav_pagination",
+                    "properties": [
+                        {
+                            "name": "target",
+                            "value": ""
+                        },{
+                            "name": "icon_class",
+                            "value": ""
+                        }
+                    ]
+                },{
+                    "name": "pageNavItemIconDisabled",
+                    "category": "a_nav_pagination",
+                    "properties": [
+                        {
+                            "name": "target",
+                            "value": "disabled"
+                        },{
+                            "name": "icon_class",
+                            "value": ""
+                        }
+                    ]
+                },{
+                    "name": "pageNavItemLoadMore",
                     "category": "a_nav_pagination"
                 }
             ]
