@@ -41,6 +41,9 @@
                 },{
                     "name": "cbSettingContainerType",
                     "category": "a_cb_settings"
+                },{
+                    "name": "cbSettingPaginationType",
+                    "category": "a_cb_settings"
                 }
             ]
         }

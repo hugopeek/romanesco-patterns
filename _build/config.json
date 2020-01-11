@@ -3579,6 +3579,10 @@
                     "category": "a_cb_settings"
                 },
                 {
+                    "name": "cbSettingPaginationType",
+                    "category": "a_cb_settings"
+                },
+                {
                     "name": "breadcrumbOuter",
                     "category": "a_nav_breadcrumbs"
                 },
@@ -3625,20 +3629,6 @@
                     ]
                 },
                 {
-                    "name": "pageNavItemIcon",
-                    "category": "a_nav_pagination",
-                    "properties": [
-                        {
-                            "name": "target",
-                            "value": ""
-                        },
-                        {
-                            "name": "icon_class",
-                            "value": ""
-                        }
-                    ]
-                },
-                {
                     "name": "pageNavItemIconDisabled",
                     "category": "a_nav_pagination",
                     "properties": [
@@ -3651,6 +3641,10 @@
                             "value": ""
                         }
                     ]
+                },
+                {
+                    "name": "pageNavItemLoadMore",
+                    "category": "a_nav_pagination"
                 },
                 {
                     "name": "navWrapper",
