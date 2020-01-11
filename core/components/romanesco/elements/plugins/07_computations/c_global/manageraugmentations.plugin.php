@@ -1,25 +1,28 @@
 <?php
 $modx->controller->addLexiconTopic('romanescobackyard:manager');
 
+$versionCSS = $modx->getOption('romanesco.assets_version_css');
+$versionJS = $modx->getOption('romanesco.assets_version_js');
+
 switch ($modx->event->name) {
     case 'OnDocFormRender':
         // Load custom CSS styles
-        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/contentblocks.css');
-        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/semantic.css'); # for CB chunk previews
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/contentblocks.css?v=' . $versionCSS);
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/semantic.css?v=' . $versionCSS); # for CB chunk previews
 
         // Load custom CSS for Global Backgrounds
         if ($resource->get('template') == 27) {
-            $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/backgrounds.css');
+            $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/backgrounds.css?v=' . $versionCSS);
         }
         break;
 
     case 'OnManagerPageBeforeRender':
         // Load CSS for manager on different event
-        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css');
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css?v=' . $versionCSS);
 
         // Load JS and additional dependencies
         $controller->addHtml('<script src="/assets/semantic/dist/themes/romanesco/assets/vendor/arrive/arrive.min.js"></script>');
-        $controller->addHtml('<script src="/assets/components/romanescobackyard/js/manager.js"></script>');
+        $controller->addHtml('<script src="/assets/components/romanescobackyard/js/manager.js?v=' . $versionJS . '"></script>');
         break;
 
     case 'OnManagerPageAfterRender':
