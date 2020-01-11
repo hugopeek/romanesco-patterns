@@ -1,3 +1,3 @@
 <div class="[[+column_type]]">
-    [[$[[+row_tpl]]? &unique_idx=`[[+idx]][[+unique_idx]]`]]
+    [[$[[+row_tpl]]? &unique_idx=`[[+idx]][[+page]][[+unique_idx]]`]]
 </div>
