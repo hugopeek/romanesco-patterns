@@ -110,6 +110,15 @@ switch($eventName) {
                 $return_css
             );
 
+            // Bump CSS version number to force refresh
+            $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
+            if ($versionCSS) {
+                $versionCSS->set('value', $versionCSS->get('value') + 0.01);
+                $versionCSS->save();
+            } else {
+                $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find romanesco.assets_version_css setting');
+            }
+
             // Update favicon if a new logo image was provided
             if (array_key_exists('logo_badge_path', $updatedSettings)) {
                 $logoBadgePath = $modx->getOption('base_path') . $savedSettingsTheme['logo_badge_path'];

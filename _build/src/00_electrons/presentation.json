@@ -5,6 +5,16 @@
                 "key": "favicon_version",
                 "type": "textfield",
                 "area": "Presentation"
+            },{
+                "key": "assets_version_css",
+                "type": "textfield",
+                "area": "Presentation",
+                "value": "2.0"
+            },{
+                "key": "assets_version_js",
+                "type": "textfield",
+                "area": "Presentation",
+                "value": "2.0"
             }
         ]
     }

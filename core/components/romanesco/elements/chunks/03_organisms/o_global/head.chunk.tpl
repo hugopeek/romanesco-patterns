@@ -13,13 +13,13 @@
 
     <script>document.documentElement.className = 'js';</script>
 
-    <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
+    <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">
     [[If?
         &subject=`[[++romanesco.custom_css_per_context]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<link href="assets/css/[[*context_key:replace=`web==site`]].css" rel="stylesheet">`
-        &else=`<link href="assets/css/site.css" rel="stylesheet">`
+        &then=`<link href="assets/css/[[*context_key:replace=`web==site`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">`
+        &else=`<link href="assets/css/site.css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">`
     ]]
 
     [[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]

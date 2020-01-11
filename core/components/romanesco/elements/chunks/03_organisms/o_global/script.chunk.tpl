@@ -16,5 +16,5 @@
 <script src="[[++romanesco.custom_vendor_path]]/prism/prism.min.js"></script>
 `]]
 [[[[*comments_toggle:eq=`1`:then=`$commentScript[[++comment_platform]]`]]]]
-<script src="[[++romanesco.custom_js_path]]/site.js"></script>
+<script src="[[++romanesco.custom_js_path]]/site.js?v=[[++romanesco.assets_version_js]]"></script>
 [[++footer_additional]]
