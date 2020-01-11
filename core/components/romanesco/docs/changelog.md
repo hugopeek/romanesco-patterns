@@ -8,6 +8,7 @@ New features:
 - Add lazy loading to Image CB and image overviews
 
 Fixes and improvements:
+- Optimize caching of chunks in Overview templates
 - Generate responsive content images with srcset and sizes
 - Add round and removeDuplicateLines snippets
 - Use alias to specify ID in form template

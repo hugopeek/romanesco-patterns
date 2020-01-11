@@ -1,3 +1,3 @@
 <article class="[[+column_type]] publication">
-    [[!$[[+row_tpl]]]]
+    [[$[[+row_tpl]]? &unique_idx=`[[+idx]][[+unique_idx]]`]]
 </article>

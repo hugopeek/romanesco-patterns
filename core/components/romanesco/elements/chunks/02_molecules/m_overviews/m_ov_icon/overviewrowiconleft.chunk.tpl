@@ -21,11 +21,11 @@
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`!$introtextSingleParagraph`
+    &then=`$introtextSingleParagraph? &uid=`[[+unique_idx]]``
 ]]]]
 [[[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`!$buttonHrefOverview`
+    &then=`$buttonHrefOverview? &uid=`[[+unique_idx]]``
 ]]]]

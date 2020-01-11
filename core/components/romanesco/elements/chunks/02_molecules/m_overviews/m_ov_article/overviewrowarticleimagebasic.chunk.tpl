@@ -10,4 +10,4 @@
     </a>
 </figure>
 
-[[!$overviewRowArticleBasic]]
+[[$overviewRowArticleBasic? &uid=`[[+unique_idx]]`]]

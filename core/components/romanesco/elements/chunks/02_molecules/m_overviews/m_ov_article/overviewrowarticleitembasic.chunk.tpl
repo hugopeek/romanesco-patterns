@@ -24,7 +24,7 @@
             &subject=`[[+show_introtext]]`
             &operator=`EQ`
             &operand=`1`
-            &then=`<div class="description">[[!$introtextSingleParagraph:ellipsis=`140`]]</div>`
+            &then=`<div class="description">[[$introtextSingleParagraph:ellipsis=`140`? &uid=`[[+unique_idx]]`]]</div>`
         ]]
     </div>
 </article>

@@ -1,5 +1,5 @@
 <div class="column">
-    [[!$imgOverviewPersonLink? &classes=`circular`]]
+    [[$imgOverviewPersonLink? &classes=`circular` &uid=`[[+unique_idx]]`]]
 </div>
 
 <div class="[[+cols]] wide floated column">
@@ -8,13 +8,13 @@
         <div class="sub header">[[+person_jobtitle]]</div>
     </h2>
     <p>
-        [[!$socialConnectButtonsPerson]]
+        [[$socialConnectButtonsPerson? &uid=`[[+unique_idx]]`]]
     </p>
     [[+introtext]]
     [[If?
         &subject=`[[+link_text]]`
         &operator=`isnot`
         &operand=`0`
-        &then=`<p>[[!$buttonHrefOverview]]</p>`
+        &then=`<p>[[$buttonHrefOverview? &uid=`[[+unique_idx]]`]]</p>`
     ]]
 </div>

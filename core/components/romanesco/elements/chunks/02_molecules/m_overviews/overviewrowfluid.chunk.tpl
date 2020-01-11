@@ -16,7 +16,7 @@
 <section class="ui vertical [[+background]] [[+img_snap:eq=`1`:then=`snapped`]] [[+img_inflate:eq=`1`:then=`inflated`]] stripe segment">
     <div class="ui container">
         <div class="ui stackable equal width middle aligned very relaxed [[+interchange]] grid">
-            [[!$[[+row_tpl]]]]
+            [[$[[+row_tpl]]? &unique_idx=`[[+idx]][[+unique_idx]]`]]
         </div>
     </div>
 </section>

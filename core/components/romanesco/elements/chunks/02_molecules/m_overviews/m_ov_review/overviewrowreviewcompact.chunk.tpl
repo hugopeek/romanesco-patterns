@@ -6,7 +6,7 @@
         &subject=`[[+show_rating]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`!$infoRatingStars`
+        &then=`$infoRatingStars? &uid=`[[+unique_idx]]``
     ]]]]
 </div>
 

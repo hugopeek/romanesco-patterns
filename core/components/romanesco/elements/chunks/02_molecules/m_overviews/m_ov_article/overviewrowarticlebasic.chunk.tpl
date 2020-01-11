@@ -1,6 +1,6 @@
 [[!setUserPlaceholders? &userId=`[[+author_id]]`]]
 
-[[!$headingHierarchyLink]]
+[[$headingHierarchyLink? &uid=`[[+unique_idx]]`]]
 
 <p class="meta">
     <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
@@ -19,7 +19,7 @@
     </span>
     <span class="views">
         <i class="eye icon"></i>
-        [[!$getHitCount:empty=`0`]]
+        [[$getHitCount:empty=`0`? &uid=`[[+unique_idx]]`]]
     </span>
     [[-+comments_toggle:eq=`1`:then=`
     <span class="comments">
@@ -37,12 +37,12 @@
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`!$introtextSingleParagraph`
+    &then=`$introtextSingleParagraph? &uid=`[[+unique_idx]]``
 ]]]]
 
 [[[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`!$buttonHrefOverview`
+    &then=`$buttonHrefOverview? &uid=`[[+unique_idx]]``
 ]]]]

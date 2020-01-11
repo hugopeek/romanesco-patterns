@@ -1,4 +1,4 @@
-[[!$imgOverviewPersonAvatarLink]]
+[[$imgOverviewPersonAvatarLink? &uid=`[[+unique_idx]]`]]
 
 <div class="content">
     <a href="[[~[[+id]]]]" class="header">[[+person_firstname:empty=`[[+pagetitle]]`]]</a>

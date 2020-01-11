@@ -1,1 +1,1 @@
-<span class="[[+target]] item"><i class="[[+icon_class]] icon"></i></span>
+<span class="disabled [[+target]] item"><i class="fitted [[+icon_class]] icon"></i></span>

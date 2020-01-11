@@ -6,14 +6,14 @@
                     &subject=`[[+show_subtitle]]`
                     &operator=`EQ`
                     &operand=`1`
-                    &then=`!$headingHierarchySubtitle? &classes=`inverted``
-                    &else=`!$headingHierarchy? &classes=`inverted``
+                    &then=`$headingHierarchySubtitle? &classes=`inverted` &uid=`[[+unique_idx]]``
+                    &else=`$headingHierarchy? &classes=`inverted` &uid=`[[+unique_idx]]``
                 ]]]]
                 [[[[If?
                     &subject=`[[+link_text]]`
                     &operator=`isnot`
                     &operand=`0`
-                    &then=`!$buttonHrefOverview`
+                    &then=`$buttonHrefOverview? &uid=`[[+unique_idx]]``
                 ]]]]
             </div>
         </div>

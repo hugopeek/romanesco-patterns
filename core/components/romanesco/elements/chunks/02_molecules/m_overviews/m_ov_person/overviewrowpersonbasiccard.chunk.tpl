@@ -1,4 +1,4 @@
-[[!$imgOverviewPersonLink]]
+[[$imgOverviewPersonLink? &uid=`[[+unique_idx]]`]]
 
 <div class="center aligned content">
     <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>
@@ -13,15 +13,15 @@
         &subject=`[[+show_introtext]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`!$introtextDescription`
+        &then=`$introtextDescription? &uid=`[[+unique_idx]]``
     ]]]]
 
-    [[!$socialConnectButtonsPerson? &button_type=`basic`]]
+    [[$socialConnectButtonsPerson? &button_type=`basic` &uid=`[[+unique_idx]]`]]
 </div>
 
 [[[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`!$buttonHrefOverview? &classes=`bottom attached``
+    &then=`$buttonHrefOverview? &classes=`bottom attached` &uid=`[[+unique_idx]]``
 ]]]]

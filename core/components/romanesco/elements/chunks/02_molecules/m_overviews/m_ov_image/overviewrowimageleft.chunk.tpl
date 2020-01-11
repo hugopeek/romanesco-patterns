@@ -12,6 +12,6 @@
     </figure>
 
     <div class="eleven wide [[If? &subject=`[[+show_introtext]]` &operator=`EQ` &operand=`0` &then=`middle aligned`]] column">
-        [[!$overviewRowBasic]]
+        [[$overviewRowBasic? &uid=`[[+unique_idx]]`]]
     </div>
 </div>

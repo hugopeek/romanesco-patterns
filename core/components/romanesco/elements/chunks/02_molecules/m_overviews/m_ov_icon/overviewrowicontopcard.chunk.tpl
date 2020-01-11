@@ -23,11 +23,11 @@
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`<div class="content">[[!$introtextDescription]]</div>`
+    &then=`<div class="content">[[$introtextDescription? &uid=`[[+unique_idx]]`]]</div>`
 ]]
 [[[[If?
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`!$buttonHrefOverview? &classes=`bottom attached``
+    &then=`$buttonHrefOverview? &classes=`bottom attached` &uid=`[[+unique_idx]]``
 ]]]]
