@@ -1,6 +1,6 @@
 /* Global additions to Semantic UI styles, based on site content and settings */
 
-@import url("/[[++romanesco.custom_css_path]]/backgrounds.css");
+@import url("[[++site_url]][[++romanesco.custom_css_path]]/backgrounds.css");
 
 
 /* Load all backgrounds set under Global Content */
