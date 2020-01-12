@@ -62,5 +62,29 @@ switch ($modx->event->name) {
             $modx->log(modX::LOG_LEVEL_ERROR, "Error caching output from Resource {$modx->resource->get('id')} to static file {$staticFile}", '', __FUNCTION__, __FILE__, __LINE__);
         }
 
+        // Minify CSS
+        if ($modx->getObject('cgSetting', array('key' => 'minify_css_js'))->get('value') == 1) {
+            exec(
+                'NODE_VERSION=12 "$HOME/.nvm/nvm-exec"' .
+                ' gulp build-custom' .
+                ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js' .
+                ' 2>&1 &',
+                $output,
+                $return_css
+            );
+        }
+
+        // Bump CSS version number to force refresh
+        $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
+        if ($versionCSS) {
+            $versionCSS->set('value', $versionCSS->get('value') + 0.01);
+            $versionCSS->save();
+        } else {
+            $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find romanesco.assets_version_css setting');
+        }
+
+        // Clear cache
+        $modx->cacheManager->refresh();
+
         break;
 }
