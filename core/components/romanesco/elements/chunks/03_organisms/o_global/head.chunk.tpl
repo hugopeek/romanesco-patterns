@@ -18,8 +18,8 @@
         &subject=`[[++romanesco.custom_css_per_context]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<link href="assets/css/[[*context_key:replace=`web==site`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">`
-        &else=`<link href="assets/css/site.css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">`
+        &then=`<link href="assets/css/[[*context_key:replace=`web==site`]][[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">`
+        &else=`<link href="assets/css/site[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">`
     ]]
 
     [[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]
