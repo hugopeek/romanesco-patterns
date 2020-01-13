@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add template for creating presentations
 - Add pagination with AJAX support
 - Add lazy loading to Image CB and image overviews
 

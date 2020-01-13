@@ -515,10 +515,6 @@
                     "parent": "04_templates"
                 },
                 {
-                    "name": "t_confirmation",
-                    "parent": "04_templates"
-                },
-                {
                     "name": "t_global",
                     "parent": "04_templates"
                 },
@@ -532,6 +528,10 @@
                 },
                 {
                     "name": "t_people",
+                    "parent": "04_templates"
+                },
+                {
+                    "name": "t_presentation",
                     "parent": "04_templates"
                 },
                 {
@@ -3950,16 +3950,6 @@
                     "category": "t_basic"
                 },
                 {
-                    "name": "Testimonial",
-                    "icon": "icon-comment-o",
-                    "category": "t_confirmation"
-                },
-                {
-                    "name": "PortfolioProject",
-                    "icon": "icon-briefcase",
-                    "category": "t_confirmation"
-                },
-                {
                     "name": "GlobalBackgrounds",
                     "description": "These backgrounds can be applied to page headers, CB layouts (under their Settings wheel) and possibly to other elements too.",
                     "icon": "icon-image",
@@ -4035,6 +4025,21 @@
                     "name": "TeamMember",
                     "icon": "icon-user",
                     "category": "t_people"
+                },
+                {
+                    "name": "Testimonial",
+                    "icon": "icon-comment-o",
+                    "category": "t_people"
+                },
+                {
+                    "name": "PortfolioProject",
+                    "icon": "icon-briefcase",
+                    "category": "t_presentation"
+                },
+                {
+                    "name": "Presentation",
+                    "icon": "icon-tv",
+                    "category": "t_presentation"
                 },
                 {
                     "name": "Publications",

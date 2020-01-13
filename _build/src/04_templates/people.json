@@ -10,6 +10,10 @@
                     "name": "TeamMember",
                     "icon": "icon-user",
                     "category": "t_people"
+                },{
+                    "name": "Testimonial",
+                    "icon": "icon-comment-o",
+                    "category": "t_people"
                 }
             ],
             "categories": [
