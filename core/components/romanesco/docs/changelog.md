@@ -1,14 +1,16 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco Patterns ...
+## Romanesco Patterns 0.15.0
 Released on ...
 
 New features:
+- Add layout for creating sliders with content elements
 - Add template for creating presentations
 - Add pagination with AJAX support
 - Add lazy loading to Image CB and image overviews
 
 Fixes and improvements:
+- Rename slider classes to avoid collisions with new FUI slider module
 - Convert new lines to line breaks in Quotes
 - Add suffix with version number to main CSS and JS assets
 - Optimize caching of chunks in Overview templates

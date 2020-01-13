@@ -1,5 +1,5 @@
 [[+display_type:eq=`slider`:then=`
-<div class="[[+box_type:contains=`card`:then=`cards`]] slider [[+lightbox:eq=`1`:then=`with lightbox`]] [[+caption:eq=`1`:then=`with caption`]]"
+<div class="[[+box_type:contains=`card`:then=`cards`]] slider-basic [[+lightbox:eq=`1`:then=`with lightbox`]] [[+caption:eq=`1`:then=`with caption`]]"
      data-slick='{
         "slidesToShow": [[+cols:textToNumber]],
         "centerMode": [[+center_mode:eq=`1`:then=`true`:else=`false`]],

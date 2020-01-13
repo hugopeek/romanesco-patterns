@@ -12,7 +12,7 @@
 
 <div class="pusher">
     <main id="main" role="main">
-        <article id="content" class="slider">
+        <article id="content" class="slider-basic fullscreen">
             [[*content]]
         </article>
     </main>
