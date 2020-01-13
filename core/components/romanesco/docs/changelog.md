@@ -9,6 +9,7 @@ New features:
 - Add lazy loading to Image CB and image overviews
 
 Fixes and improvements:
+- Convert new lines to line breaks in Quotes
 - Add suffix with version number to main CSS and JS assets
 - Optimize caching of chunks in Overview templates
 - Generate responsive content images with srcset and sizes
