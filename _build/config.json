@@ -3245,6 +3245,10 @@
                     "category": "o_layouts"
                 },
                 {
+                    "name": "cbLayoutSlider",
+                    "category": "o_layouts"
+                },
+                {
                     "name": "mapLocation",
                     "category": "o_map"
                 },
@@ -3464,6 +3468,10 @@
                 },
                 {
                     "name": "cbLayoutStatusPattern",
+                    "category": "a_cb_layouts"
+                },
+                {
+                    "name": "cbLayoutSliderType",
                     "category": "a_cb_layouts"
                 },
                 {

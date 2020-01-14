@@ -26,6 +26,9 @@
                 },{
                     "name": "cbLayoutBackyard",
                     "category": "o_layouts"
+                },{
+                    "name": "cbLayoutSlider",
+                    "category": "o_layouts"
                 }
             ],
 

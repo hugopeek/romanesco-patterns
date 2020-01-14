@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.15.0
-Released on ...
+Released on January 14, 2020
 
 New features:
 - Add layout for creating sliders with content elements
