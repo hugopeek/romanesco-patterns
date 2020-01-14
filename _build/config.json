@@ -206,6 +206,14 @@
                     "rank": 12
                 },
                 {
+                    "name": "e_presentation",
+                    "parent": "00_electrons"
+                },
+                {
+                    "name": "Slider - Settings",
+                    "parent": "e_presentation"
+                },
+                {
                     "name": "e_social",
                     "parent": "00_electrons"
                 },
@@ -1138,6 +1146,18 @@
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)",
                         "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download",
                         "PortfolioProject","Portfolio - Project"
+                    ]
+                },
+                {
+                    "caption": "Behaviour",
+                    "name": "slider_behaviour",
+                    "category": "Slider - Settings",
+                    "sortOrder": "30",
+                    "type": "checkbox",
+                    "inputOptionValues": "Infinite loop sliding==infinite||Show previous / next arrows==arrows||Show dot indicators==dots||Fade instead of slide==fade||Autoplay==autoplay",
+                    "defaultValue": "infinite,arrows,dots",
+                    "templates": [
+                        "Presentation"
                     ]
                 },
                 {
@@ -3472,6 +3492,10 @@
                 },
                 {
                     "name": "cbLayoutSliderType",
+                    "category": "a_cb_layouts"
+                },
+                {
+                    "name": "cbLayoutSliderBehaviour",
                     "category": "a_cb_layouts"
                 },
                 {

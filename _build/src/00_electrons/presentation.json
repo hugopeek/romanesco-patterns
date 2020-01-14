@@ -1,5 +1,31 @@
 {
     "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Behaviour",
+                    "name": "slider_behaviour",
+                    "category": "Slider - Settings",
+                    "sortOrder": "30",
+                    "type": "checkbox",
+                    "inputOptionValues": "Infinite loop sliding==infinite||Show previous / next arrows==arrows||Show dot indicators==dots||Fade instead of slide==fade||Autoplay==autoplay",
+                    "defaultValue": "arrows,dots",
+                    "templates": [
+                        "Presentation"
+                    ]
+                }
+            ],
+            "categories": [
+                {
+                    "name": "e_presentation",
+                    "parent": "00_electrons"
+                },{
+                    "name": "Slider - Settings",
+                    "parent": "e_presentation"
+                }
+            ]
+        },
+
         "systemSettings": [
             {
                 "key": "favicon_version",

@@ -12,6 +12,7 @@
  */
 
 $input = $modx->getOption('input', $scriptProperties, $input);
+$output = '';
 
 $numbers = array(
     '1' => 'one',

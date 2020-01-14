@@ -30,6 +30,9 @@
                 },{
                     "name": "cbLayoutSliderType",
                     "category": "a_cb_layouts"
+                },{
+                    "name": "cbLayoutSliderBehaviour",
+                    "category": "a_cb_layouts"
                 }
             ]
         }
