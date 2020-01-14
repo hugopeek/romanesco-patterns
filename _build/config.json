@@ -3,7 +3,7 @@
     "lowCaseName": "romanesco",
     "description": "Romanesco is an engineering toolkit that combines the atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
-    "version": "0.14.7",
+    "version": "0.15.0",
     "package": {
         "elements": {
             "categories": [
@@ -1155,7 +1155,7 @@
                     "sortOrder": "30",
                     "type": "checkbox",
                     "inputOptionValues": "Infinite loop sliding==infinite||Show previous / next arrows==arrows||Show dot indicators==dots||Fade instead of slide==fade||Autoplay==autoplay",
-                    "defaultValue": "infinite,arrows,dots",
+                    "defaultValue": "arrows,dots",
                     "templates": [
                         "Presentation"
                     ]

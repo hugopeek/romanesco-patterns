@@ -1576,6 +1576,10 @@ if ($object->xpdo) {
   array (
     0 => 'GlobalBackgrounds',
   ),
+  'background_availability' => 
+  array (
+    0 => 'GlobalBackground',
+  ),
   'author_id' => 
   array (
     0 => 'ArticleTraditional',
@@ -2120,6 +2124,10 @@ if ($object->xpdo) {
     20 => 'Download',
     21 => 'PortfolioProject',
     22 => 'Portfolio - Project',
+  ),
+  'slider_behaviour' => 
+  array (
+    0 => 'Presentation',
   ),
   'social_twitter' => 
   array (
