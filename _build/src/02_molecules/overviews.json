@@ -3,6 +3,12 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "overviewWrapper",
+                    "category": "m_overviews"
+                },{
+                    "name": "overviewWrapperPagination",
+                    "category": "m_overviews"
+                },{
                     "name": "overviewRow",
                     "category": "m_overviews"
                 },{

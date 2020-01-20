@@ -3004,6 +3004,14 @@
                     "category": "m_layouts"
                 },
                 {
+                    "name": "overviewWrapper",
+                    "category": "m_overviews"
+                },
+                {
+                    "name": "overviewWrapperPagination",
+                    "category": "m_overviews"
+                },
+                {
                     "name": "overviewRow",
                     "category": "m_overviews"
                 },
