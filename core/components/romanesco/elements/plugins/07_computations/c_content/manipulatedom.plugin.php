@@ -92,7 +92,10 @@ switch ($modx->event->name) {
                     $segment
                         ->filter($exception)
                         ->each(function(HtmlPageCrawler $node) {
-                            $node->filter('.inverted')->removeClass('inverted');
+                            $node
+                                ->filter('.inverted')
+                                ->removeClass('inverted')
+                            ;
                         })
                     ;
                 }
@@ -101,6 +104,20 @@ switch ($modx->event->name) {
 
         // Remove rows from grids that have a reversed column order on mobile
         $dom->filter('.reversed.grid > .row')->unwrapInner();
+
+        // Apply Swiper classes to appropriate slide elements
+        $dom->filter('.swiper-container')
+            ->each(function (HtmlPageCrawler $slider) {
+                $slider
+                    ->filter('.nested.overview')
+                    ->addClass('swiper-wrapper')
+                ;
+                $slider
+                    ->filter('.swiper-wrapper > *')
+                    ->addClass('swiper-slide')
+                ;
+            })
+        ;
 
         $output = $dom->saveHTML();
 
