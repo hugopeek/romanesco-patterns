@@ -1,5 +1,12 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.15.1
+Released on ...
+
+Fixes and improvements:
+- Replace Slick slider with Swiper
+- Move Overview pagination wrapper to chunk tpl
+
 ## Romanesco Patterns 0.15.0
 Released on January 14, 2020
 

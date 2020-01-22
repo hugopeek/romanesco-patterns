@@ -8,6 +8,9 @@
                 },{
                     "name": "logo",
                     "category": "a_presentation"
+                },{
+                    "name": "sliderInitJS",
+                    "category": "a_presentation"
                 }
             ],
 

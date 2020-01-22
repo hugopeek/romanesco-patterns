@@ -11,4 +11,20 @@
     [[+main]]
 </div>
 
-[[sliderLoadAssets]]
+
+<div class="swiper-container [[+fullscreen:eq=`1`:then=`fullscreen`]]">
+    [[If?
+        &subject=`[[+slider_type]]`
+        &operator=`is`
+        &operand=`overview`
+        &then=`[[+main]]`
+        &else=`<div class="swiper-wrapper">[[+main]]</div>`
+    ]]
+
+    <button class="swiper-button-next"></button>
+    <button class="swiper-button-prev"></button>
+</div>
+
+[[sliderLoadAssets?
+    &behaviour=`[[+behaviour]]`
+]]

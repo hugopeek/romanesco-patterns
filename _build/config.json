@@ -2566,6 +2566,10 @@
                     "category": "a_presentation"
                 },
                 {
+                    "name": "sliderInitJS",
+                    "category": "a_presentation"
+                },
+                {
                     "name": "searchButton",
                     "category": "a_search"
                 },

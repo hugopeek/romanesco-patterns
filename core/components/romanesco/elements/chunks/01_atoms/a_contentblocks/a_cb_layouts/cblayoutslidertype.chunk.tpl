@@ -1,3 +1,2 @@
-Child items (like Layouts or Images)=basic
+First level of nested elements=regular
 Overview items=overview
-Overview on desktop, Slider on mobile=overview-combo

@@ -1,5 +1,5 @@
-Infinite loop sliding=infinite
+Infinite loop=loop
 Show previous / next arrows=arrows
-Show dot indicators=dots
-Fade instead of slide=fade
-Display partial prev/next slides=center
+Free scrolling=free
+Center mode=center
+Autoplay=autoplay

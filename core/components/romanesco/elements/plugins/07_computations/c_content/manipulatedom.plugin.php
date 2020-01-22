@@ -114,7 +114,23 @@ switch ($modx->event->name) {
                 ;
                 $slider
                     ->filter('.swiper-wrapper > *')
-                    ->addClass('swiper-slide')
+                    ->each(function (HtmlPageCrawler $slide) {
+                        if ($slide->hasClass('card')) {
+                            $slide
+                                ->addClass('ui fluid')
+                                ->wrap('<div class="swiper-slide"></div>')
+                            ;
+                        }
+                        elseif ($slide->hasClass('image')) {
+                            $slide
+                                ->removeClass('content')
+                                ->addClass('swiper-slide')
+                            ;
+                        }
+                        else {
+                            $slide->addClass('swiper-slide');
+                        }
+                    })
                 ;
             })
         ;
