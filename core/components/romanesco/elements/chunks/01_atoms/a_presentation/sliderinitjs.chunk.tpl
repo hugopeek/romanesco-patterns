@@ -1,9 +1,11 @@
 <script>
 var [[+var]] = new Swiper ('#[[+id]].swiper-container', {
+    init: [[+init]],
     slidesPerView: [[+cols]],
     slidesPerGroup: [[+slides_to_scroll]],
     loop: [[+loop]],
     effect: '[[+transition]]',
+    autoHeight: true,
     spaceBetween: [[+spacing]],
     centeredSlides: [[+center]],
     freeMode: [[+free]],
@@ -18,5 +20,6 @@ var [[+var]] = new Swiper ('#[[+id]].swiper-container', {
     },
     [[+breakpoints]]
     [[+effects]]
-})
+});
+[[+init_lightbox]]
 </script>

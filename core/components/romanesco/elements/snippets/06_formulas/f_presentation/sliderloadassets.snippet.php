@@ -6,20 +6,25 @@
  */
 
 $id = $modx->getOption('swiperID', $scriptProperties, 'swiper-0');
-$cols = $modx->getOption('columns', $scriptProperties, 1);
+$init = $modx->getOption('init', $scriptProperties, 'true');
+$columns = $modx->getOption('columns', $scriptProperties, 1);
 $scroll = $modx->getOption('slidesToScroll', $scriptProperties, 1);
 $direction = $modx->getOption('direction', $scriptProperties, 'horizontal');
 $spacing = $modx->getOption('spacing', $scriptProperties, 'none');
 $behaviour = $modx->getOption('behaviour', $scriptProperties, '');
 $transition = $modx->getOption('transition', $scriptProperties, 'slide');
-$lazyload = $modx->getOption('lazyLoad', $scriptProperties, false);
-$pagination = $modx->getOption('pagination', $scriptProperties, false);
+$lazyload = $modx->getOption('lazyLoad', $scriptProperties, 0);
+$pagination = $modx->getOption('pagination', $scriptProperties, 'none');
 $responsive = $modx->getOption('responsive', $scriptProperties, 0);
+$lightbox = $modx->getOption('lightbox', $scriptProperties, 0);
 $tpl = $modx->getOption('tpl', $scriptProperties, 'sliderInitJS');
 
 // Convert option values to JS settings
 // Keep in mind that 'true' / 'false' needs to be a string here
 // -----------------------------------------------------------------------------
+
+// Set variable name
+$var = str_replace('-','',$id);
 
 // Convert semantic padding to numeric value
 switch ($spacing) {
@@ -74,22 +79,39 @@ if ($responsive) {
     $breakpoints = "
     breakpoints: {
         '@0.75': {
-            slidesPerView: " . round($cols / 2) . ",
+            slidesPerView: " . round($columns / 2) . ",
             spaceBetween: " . $spacing / 2 . ",
         },
         '@1.00': {
-            slidesPerView: " . round($cols * 0.75) . ",
+            slidesPerView: " . round($columns * 0.75) . ",
             spaceBetween: $spacing,
         },
         '@1.50': {
-            slidesPerView: $cols,
+            slidesPerView: $columns,
             spaceBetween: " . $spacing * 1.5 . ",
         },
     },
     ";
 
     // This feature is mobile-first, so set columns for smallest screens
-    $cols = round($cols / 4);
+    $cols = round($columns / 4);
+}
+
+// Init lightbox modals with Swiper inside
+if ($init == 'false' && $lightbox == 1) {
+    $initLightbox = "
+    $('.ui.lightbox.image').click(function () {
+        var uid = $(this).data('unique-idx');
+        var idx = $(this).data('idx');
+        var modalID = '#gallery-' + uid;
+
+        $(modalID).modal('show');
+
+        $var.init();
+        $var.update();
+        $var.slideTo(idx, 0, false);
+    });
+    ";
 }
 
 // Load assets in head and footer
@@ -115,9 +137,10 @@ $modx->regClientCSS($assetsPathCSS . '/swiper' . $minify . '.css');
 $modx->regClientScript('/' . $assetsPathVendor . '/swiper/swiper.min.js');
 $modx->regClientScript('/' . $assetsPathJS . '/swiper' . $minify . '.js');
 $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
-    'var' => str_replace('-','',$id),
+    'var' => $var,
     'id' => $id,
-    'cols' => $cols,
+    'init' => $init,
+    'cols' => $columns,
     'slides_to_scroll' => $scroll,
     'direction' => $direction,
     'spacing' => $spacing,
@@ -125,10 +148,11 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'center' => $center ?? 'false',
     'free' => $free ?? 'false',
     'transition' => $transition,
-    'pagination' => $pagination,
+    'pagination' => $pagination ?? '',
     'clickable' => $clickable,
     'breakpoints' => $breakpoints ?? '',
     'effects' => $effects[$transition] ?? '',
+    'init_lightbox' => $initLightbox ?? '',
 )));
 
 return '';
