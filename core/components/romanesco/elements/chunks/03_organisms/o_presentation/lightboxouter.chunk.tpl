@@ -1,4 +1,4 @@
-<div id="lightbox-[[+uid]]" class="ui fullscreen modal">
+<div id="lightbox-[[+uid]]" class="ui basic fullscreen modal">
     <div id="swiper-[[+uid]]" class="swiper-container">
         <div class="swiper-wrapper">
             [[+output]]

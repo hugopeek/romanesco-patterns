@@ -3,7 +3,7 @@
          src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`]]"
          alt="[[+title]]"
          data-lightbox-img="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width:mpy=`1.5`]]&q=[[++img_quality]]&zc=1`]]"
-         data-caption="[[+caption]]"
+         data-caption="[[+title]]"
          data-idx="[[+idx]]"
     >
 </figure>

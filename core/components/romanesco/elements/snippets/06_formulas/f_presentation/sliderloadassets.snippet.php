@@ -95,7 +95,7 @@ if ($responsive) {
     ";
 
     // This feature is mobile-first, so set columns for smallest screens
-    $cols = round($columns / 4);
+    $columns = round($columns / 4);
 }
 
 // Init lightbox modals with Swiper inside

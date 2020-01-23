@@ -25,6 +25,11 @@
                     "category": "a_cb_fields"
                 },{
                     "name": "cbGalleryDisplayType",
+                    "description": "DEPRECATED.",
+                    "category": "a_cb_fields"
+                },{
+                    "name": "cbGalleryColumnType",
+                    "description": "Defines the class names for individual gallery items. In ContentBlocks, this is presented to the user as Caption type because this setting mostly affects how captions are being displayed",
                     "category": "a_cb_fields"
                 },{
                     "name": "cbCardContentType",
