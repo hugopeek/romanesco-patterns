@@ -18,7 +18,7 @@
 </div>
 
 [[sliderLoadAssets?
-    &swiperID=`swiper-[[+unique_idx]]`
+    &uid=`[[+unique_idx]]`
     &columns=`[[textToNumber? &input=`[[+cols]]`]]`
     &slidesToScroll=`[[+slides_to_scroll]]`
     &direction=`[[+direction]]`

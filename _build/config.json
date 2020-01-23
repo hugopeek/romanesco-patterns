@@ -3325,6 +3325,10 @@
                     "category": "o_presentation"
                 },
                 {
+                    "name": "lightboxOuter",
+                    "category": "o_presentation"
+                },
+                {
                     "name": "accordionOuter",
                     "category": "o_presentation"
                 },

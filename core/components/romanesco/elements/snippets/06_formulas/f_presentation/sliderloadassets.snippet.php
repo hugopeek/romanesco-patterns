@@ -5,7 +5,7 @@
  * Loads dependencies for the Swiper carousel (https://swiperjs.com/).
  */
 
-$id = $modx->getOption('swiperID', $scriptProperties, 'swiper-0');
+$uid = $modx->getOption('uid', $scriptProperties, 0);
 $init = $modx->getOption('init', $scriptProperties, 'true');
 $columns = $modx->getOption('columns', $scriptProperties, 1);
 $scroll = $modx->getOption('slidesToScroll', $scriptProperties, 1);
@@ -23,8 +23,9 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'sliderInitJS');
 // Keep in mind that 'true' / 'false' needs to be a string here
 // -----------------------------------------------------------------------------
 
-// Set variable name
-$var = str_replace('-','',$id);
+// Set element ID and variable name
+$id = 'swiper-' . $uid;
+$var = 'swiper' . $uid;
 
 // Convert semantic padding to numeric value
 switch ($spacing) {
@@ -101,10 +102,9 @@ if ($responsive) {
 if ($lightbox == 1) {
     $init = 'false';
     $initLightbox = "
-    $('.ui.lightbox.image').click(function () {
-        var uid = $(this).data('unique-idx');
+    $('#gallery-$uid .ui.lightbox.image').click(function () {
         var idx = $(this).data('idx');
-        var modalID = '#gallery-' + uid;
+        var modalID = '#lightbox-$uid';
 
         $(modalID).modal('show');
 
