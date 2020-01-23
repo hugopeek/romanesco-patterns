@@ -1,8 +1,8 @@
 <div id="swiper-[[+unique_idx]]" class="swiper-container [[+fullscreen:eq=`1`:then=`fullscreen`]]">
     [[If?
         &subject=`[[+slider_type]]`
-        &operator=`is`
-        &operand=`overview`
+        &operator=`inarray`
+        &operand=`overview,gallery`
         &then=`[[+main]]`
         &else=`<div class="swiper-wrapper">[[+main]]</div>`
     ]]
@@ -19,7 +19,7 @@
 
 [[sliderLoadAssets?
     &swiperID=`swiper-[[+unique_idx]]`
-    &columns=`[[textToNumber? &input=`[[+slider_cols]]`]]`
+    &columns=`[[textToNumber? &input=`[[+cols]]`]]`
     &slidesToScroll=`[[+slides_to_scroll]]`
     &direction=`[[+direction]]`
     &spacing=`[[+spacing]]`
