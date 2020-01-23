@@ -98,7 +98,8 @@ if ($responsive) {
 }
 
 // Init lightbox modals with Swiper inside
-if ($init == 'false' && $lightbox == 1) {
+if ($lightbox == 1) {
+    $init = 'false';
     $initLightbox = "
     $('.ui.lightbox.image').click(function () {
         var uid = $(this).data('unique-idx');

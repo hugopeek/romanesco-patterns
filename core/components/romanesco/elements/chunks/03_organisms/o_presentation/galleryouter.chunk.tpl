@@ -18,7 +18,6 @@
 
 [[sliderLoadAssets?
     &swiperID=`swiper-[[+unique_idx]]`
-    &init=`false`
     &behaviour=`loop,arrows`
     &lazyload=`0`
     &pagination=`bullets`
