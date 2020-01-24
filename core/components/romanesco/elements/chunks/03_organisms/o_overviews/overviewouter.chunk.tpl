@@ -39,6 +39,9 @@
     &column_type=`[[+[[+prefix]].column_type]]`
     &grid_settings=`[[+[[+prefix]].grid_settings]]`
     &cols=`[[+cols]]`
+    &padding=`[[+padding]]`
+    &alignment=`[[+alignment]]`
+    &responsive=`[[+responsive]]`
     &prefix=`[[+prefix]]`
     &unique_idx=`[[+unique_idx]]`
     &title_field=`[[+title_field]]`
