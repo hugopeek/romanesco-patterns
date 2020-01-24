@@ -11,6 +11,9 @@
                 },{
                     "name": "sliderInitJS",
                     "category": "a_presentation"
+                },{
+                    "name": "sliderMobileInitJS",
+                    "category": "a_presentation"
                 }
             ],
 

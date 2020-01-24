@@ -16,6 +16,7 @@ $transition = $modx->getOption('transition', $scriptProperties, 'slide');
 $lazyload = $modx->getOption('lazyLoad', $scriptProperties, 0);
 $pagination = $modx->getOption('pagination', $scriptProperties, 'none');
 $responsive = $modx->getOption('responsive', $scriptProperties, 0);
+$mobile = $modx->getOption('mobileOnly', $scriptProperties, 0);
 $lightbox = $modx->getOption('lightbox', $scriptProperties, 0);
 $tpl = $modx->getOption('tpl', $scriptProperties, 'sliderInitJS');
 
@@ -108,11 +109,17 @@ if ($lightbox == 1) {
 
         $(modalID).modal('show');
 
-        $var.init();
         $var.update();
+        $var.init();
         $var.slideTo(idx, 0, false);
     });
     ";
+}
+
+// Use different tpl chunk for mobile only JS
+if ($mobile) {
+    $init = 'false';
+    $tpl = 'sliderMobileInitJS';
 }
 
 // Load assets in head and footer

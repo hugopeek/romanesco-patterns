@@ -1,10 +1,10 @@
-<div id="swiper-[[+unique_idx]]" class="swiper-container [[+fullscreen:eq=`1`:then=`fullscreen`]]">
+<div id="swiper-[[+unique_idx]]" class="swiper-container[[+mobile_only:eq=`1`:then=`-mobile`]] [[+fullscreen:eq=`1`:then=`fullscreen`]]">
     [[If?
         &subject=`[[+slider_type]]`
         &operator=`inarray`
         &operand=`overview,gallery`
         &then=`[[+main]]`
-        &else=`<div class="swiper-wrapper">[[+main]]</div>`
+        &else=`<div class="swiper-wrapper[[+mobile_only:eq=`1`:then=`-mobile`]]">[[+main]]</div>`
     ]]
 
     [[+pagination:isnot=`false`:then=`
@@ -28,4 +28,5 @@
     &lazyload=`[[+lazyload]]`
     &pagination=`[[+pagination]]`
     &responsive=`[[+responsive]]`
+    &mobileOnly=`[[+mobile_only]]`
 ]]

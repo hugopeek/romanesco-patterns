@@ -110,6 +110,8 @@ switch ($modx->event->name) {
             ->each(function (HtmlPageCrawler $slider) {
                 $slider
                     ->filter('.nested.overview')
+                    ->removeClass('stackable')
+                    ->removeClass('doubling')
                     ->addClass('swiper-wrapper')
                 ;
                 $slider
