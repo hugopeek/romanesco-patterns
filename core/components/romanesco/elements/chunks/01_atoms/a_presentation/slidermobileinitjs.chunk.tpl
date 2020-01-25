@@ -1,34 +1,45 @@
 <script>
-    // Save original
-    let container[[+var]] = $('#[[+id]].swiper-container-mobile');
-    const original[[+var]] = container[[+var]].clone(true);
+    function swiperPrepare(container) {
+        // Prepare for Swiper usage
+        container.addClass('swiper-container');
+        container
+            .find('.nested.overview')
+            .addClass('swiper-wrapper')
+            .removeClass('stackable')
+            .removeClass('doubling')
+        ;
+        container
+            .find('.gallery')
+            .addClass('swiper-wrapper')
+            .removeClass('stackable')
+            .removeClass('doubling')
+        ;
+        container
+            .find('.swiper-wrapper-mobile')
+            .addClass('swiper-wrapper')
+        ;
+        container
+            .find('.swiper-wrapper > *')
+            .addClass('swiper-slide')
+        ;
+    }
 
-    // Prepare for Swiper usage
-    container[[+var]].addClass('swiper-container');
-    container[[+var]]
-    .find('.nested.overview')
-        .addClass('swiper-wrapper')
-        .removeClass('stackable')
-        .removeClass('doubling')
-    ;
-    container[[+var]]
-    .find('.gallery')
-        .addClass('swiper-wrapper')
-        .removeClass('stackable')
-        .removeClass('doubling')
-    ;
-    container[[+var]]
-    .find('.swiper-wrapper-mobile')
-        .addClass('swiper-wrapper')
-    ;
-    container[[+var]]
-    .find('.swiper-wrapper > *')
-        .addClass('swiper-slide')
-    ;
+    // Save original container
+    //let original[[+var]] = $('#[[+id]].swiper-container-mobile').clone(true);
 
-    // Initialize Swiper
+    // Clone original container
+    let container[[+var]] = $('#[[+id]].swiper-container-mobile').clone(true);
+
+    //container[[+var]].appendTo('#[[+id]]');
+
+    // Prepare clone
+    swiperPrepare(container[[+var]])
+
+    //console.log(container[[+var]]);
+
+    // Apply Swiper to clone
     let [[+var]] = new Swiper ('#[[+id]].swiper-container', {
-        init: [[+init]],
+        init: 'true',
         slidesPerView: [[+cols]],
         slidesPerGroup: [[+slides_to_scroll]],
         spaceBetween: [[+spacing]],
@@ -50,9 +61,9 @@
         [[+effects]]
     });
 
-    function addClasses() {
+    var my[[+var]] = document.querySelector('#[[+id]].swiper-container').swiper;
 
-    }
+    console.log(my[[+var]]);
 
     // media query event handler
     // if (matchMedia) {
@@ -78,14 +89,24 @@
         {
             context: 'mobile',
             match: function() {
-                //addClasses();
+                
 
-                [[+var]].init();
+                //[[+var]].init();
+                $('#[[+id]].swiper-container-mobile').replaceWith('<div id="hoi">hoi</div>');
+
+                $('#doei').replaceWith('<div id="hoi">hoi</div>');
             },
             unmatch: function() {
-                [[+var]].destroy();
+                // [[+var]].on('beforeDestroy', function() {
+                //     console.log('about to destroy');
+                //     $('#[[+id]].swiper-container-mobile').replaceWith('hoi');
+                // });
 
-                $('#[[+id]].swiper-container-mobile').replaceWith(original[[+var]]);
+                //console.log(original[[+var]]);
+
+                $('#hoi').replaceWith('<div id="doei">doei</div>');
+
+                //[[+var]].destroy();
             }
         }
     );
