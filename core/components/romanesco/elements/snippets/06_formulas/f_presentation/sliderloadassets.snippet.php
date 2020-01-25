@@ -118,7 +118,7 @@ if ($lightbox == 1) {
 
 // Use different tpl chunk for mobile only JS
 if ($mobile) {
-    $init = 'false';
+    $init = 'true';
     $tpl = 'sliderMobileInitJS';
 }
 
