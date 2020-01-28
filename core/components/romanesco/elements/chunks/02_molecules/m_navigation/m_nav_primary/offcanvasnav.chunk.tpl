@@ -3,8 +3,8 @@
         <a href="[[~[[++site_start]]]]" class="ui image brand badge">
             [[%romanesco.menu.brand]]
         </a>
-        <button class="ui tiny compact circular basic inverted right floated close icon button" title="[[%romanesco.menu.close_title]]">
-            <i class="close icon"></i>
+        <button class="ui basic inverted close icon button" title="[[%romanesco.menu.close_title]]">
+            <i class="large close icon"></i>
         </button>
     </div>
 
