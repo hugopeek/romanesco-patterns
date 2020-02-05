@@ -11,7 +11,12 @@
 $background = $modx->getOption('background', $scriptProperties, $input);
 $cbField = $modx->getOption('romanesco.cb_field_background_id', $scriptProperties, '');
 
-// Numeric value means it's a resource-based background
+// Convert system default value
+if ($background == 'default') {
+    $background = $modx->getObject('cgSetting', array('key' => 'layout_background_default'))->get('value');
+}
+
+// Numeric value means it's a resource-based global background
 if (is_numeric($background)) {
     $query = $modx->newQuery('modResource', $background);
     $query->select('alias');
@@ -32,8 +37,7 @@ if (is_numeric($background)) {
         $inverted = '';
     }
 
-    return $alias . $inverted . ' background';
+    $background = $alias . $inverted . ' background';
 }
 
-// For backwards compatibility, return the old classes by default
 return $background;

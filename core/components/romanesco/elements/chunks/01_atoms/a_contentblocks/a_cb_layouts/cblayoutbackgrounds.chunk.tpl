@@ -1,3 +1,5 @@
+[[*id:notempty=`System default ([[++layout_background_default:ucfirst:replace=`-== `]])=default`]]
+
 White=white
 Light=secondary
 Grey=inverted secondary
