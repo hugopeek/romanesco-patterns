@@ -30,6 +30,11 @@ switch ($modx->event->name) {
         // Feed output to HtmlPageDom
         $dom = new HtmlPageCrawler($output);
 
+        // Add non-white class to body if custom background is set
+        if ($modx->getObject('cgSetting', array('key' => 'theme_page_background_color'))->get('value') !== 'ffffff') {
+            $dom->filter('body')->addClass('non-white');
+        }
+
         // Inject inverted classes
         $dom->filter('.inverted.segment')
             ->each(function (HtmlPageCrawler $segment) {

@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.15.2
+Released on ...
+
+Fixes and improvements:
+- Add non-white class to body if custom background is set
+
 ## Romanesco Patterns 0.15.1
 Released on January 29, 2020
 
