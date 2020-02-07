@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix lazy loading of images in slider
 - Add system default setting for CB layout backgrounds
 - Add non-white class to body if custom background is set
 

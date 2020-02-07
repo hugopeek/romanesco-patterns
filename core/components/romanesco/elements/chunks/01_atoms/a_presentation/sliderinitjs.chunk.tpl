@@ -23,4 +23,9 @@ var [[+var]] = new Swiper ('#[[+id]].swiper-container', {
     [[+effects]]
 });
 [[+init_lightbox]]
+
+// Update lazy load with each new slide
+[[+var]].on('slideChange', function () {
+    lazyLoadInstance.update();
+});
 </script>

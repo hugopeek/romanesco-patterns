@@ -64,6 +64,11 @@
                 
                 // Initialize Swiper
                 create[[+var]]($('#[[+id]].swiper-container-mobile'));
+
+                // Update lazy load with each new slide
+                [[+var]].on('slideChange', function () {
+                    lazyLoadInstance.update();
+                });
             },
             unmatch: function() {
 

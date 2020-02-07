@@ -13,7 +13,6 @@ $direction = $modx->getOption('direction', $scriptProperties, 'horizontal');
 $spacing = $modx->getOption('spacing', $scriptProperties, 'none');
 $behaviour = $modx->getOption('behaviour', $scriptProperties, '');
 $transition = $modx->getOption('transition', $scriptProperties, 'slide');
-$lazyload = $modx->getOption('lazyLoad', $scriptProperties, 0);
 $pagination = $modx->getOption('pagination', $scriptProperties, 'none');
 $responsive = $modx->getOption('responsive', $scriptProperties, 0);
 $mobile = $modx->getOption('mobileOnly', $scriptProperties, 0);
