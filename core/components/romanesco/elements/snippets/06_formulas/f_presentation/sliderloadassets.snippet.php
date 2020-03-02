@@ -11,6 +11,7 @@ $columns = $modx->getOption('columns', $scriptProperties, 1);
 $scroll = $modx->getOption('slidesToScroll', $scriptProperties, 1);
 $direction = $modx->getOption('direction', $scriptProperties, 'horizontal');
 $spacing = $modx->getOption('spacing', $scriptProperties, 'none');
+$overflow = $modx->getOption('watchOverflow', $scriptProperties, 'true');
 $behaviour = $modx->getOption('behaviour', $scriptProperties, '');
 $transition = $modx->getOption('transition', $scriptProperties, 'slide');
 $pagination = $modx->getOption('pagination', $scriptProperties, 'none');
@@ -151,7 +152,7 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'slides_to_scroll' => $scroll,
     'direction' => $direction,
     'spacing' => $spacing,
-    'overflow' => $watchOverflow ?? 'true',
+    'overflow' => $overflow ?? 'true',
     'loop' => $loop ?? 'false',
     'free' => $free ?? 'false',
     'center' => $center ?? 'false',
