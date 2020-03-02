@@ -151,6 +151,7 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'slides_to_scroll' => $scroll,
     'direction' => $direction,
     'spacing' => $spacing,
+    'overflow' => $watchOverflow ?? 'true',
     'loop' => $loop ?? 'false',
     'free' => $free ?? 'false',
     'center' => $center ?? 'false',
