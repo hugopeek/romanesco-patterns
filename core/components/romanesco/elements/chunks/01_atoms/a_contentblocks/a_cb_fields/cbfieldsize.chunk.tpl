@@ -1,7 +1,7 @@
 Mini=mini
 Tiny=tiny
 Small=small
-Medium=
+Medium=medium
 Large=large
 Big=big
 Huge=huge
