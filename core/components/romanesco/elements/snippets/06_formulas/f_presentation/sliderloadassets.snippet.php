@@ -158,6 +158,7 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'center' => $center ?? 'false',
     'auto_height' => $autoHeight ?? 'false',
     'autoplay' => $autoplay ?? 'false',
+    'keyboard' => $keyboard ?? 'false',
     'transition' => $transition,
     'pagination' => $pagination ?? '',
     'clickable' => $clickable,

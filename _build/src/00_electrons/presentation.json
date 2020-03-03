@@ -8,8 +8,8 @@
                     "category": "Slider - Settings",
                     "sortOrder": "30",
                     "type": "checkbox",
-                    "inputOptionValues": "Infinite loop==loop||Show previous / next arrows==arrows||Free scrolling==free||Autoplay==autoplay",
-                    "defaultValue": "arrows",
+                    "inputOptionValues": "Infinite loop==loop||Show previous / next arrows==arrows||Keyboard control==keyboard||Free scrolling==free||Autoplay==autoplay",
+                    "defaultValue": "arrows,keyboard",
                     "outputProperties": {
                         "delimiter": ","
                     },

@@ -10,6 +10,7 @@
         centeredSlides: [[+center]],
         autoHeight: [[+auto_height]],
         autoplay: [[+autoplay]],
+        keyboard: [[+keyboard]],
         effect: '[[+transition]]',
         navigation: {
             nextEl: '#[[+id]] .swiper-button-next',

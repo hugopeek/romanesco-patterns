@@ -39,8 +39,6 @@
     &behaviour=`[[*slider_behaviour]]`
     &transition=`[[*slider_transition]]`
     &pagination=`[[*slider_pagination]]`
-    &responsive=`0`
-    &mobileOnly=`0`
 ]]
 
 </body>
