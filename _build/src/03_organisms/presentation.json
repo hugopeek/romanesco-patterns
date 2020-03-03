@@ -4,6 +4,7 @@
             "chunks": [
                 {
                     "name": "sliderOuter",
+                    "description": "DEPRECATED. Slider now uses Swiper.js and this chunk doesn't seem to be used anywhere..",
                     "category": "o_presentation"
                 },{
                     "name": "galleryOuter",
