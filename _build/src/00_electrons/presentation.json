@@ -8,8 +8,34 @@
                     "category": "Slider - Settings",
                     "sortOrder": "30",
                     "type": "checkbox",
-                    "inputOptionValues": "Infinite loop sliding==infinite||Show previous / next arrows==arrows||Show dot indicators==dots||Fade instead of slide==fade||Autoplay==autoplay",
-                    "defaultValue": "arrows,dots",
+                    "inputOptionValues": "Infinite loop==loop||Show previous / next arrows==arrows||Free scrolling==free||Autoplay==autoplay",
+                    "defaultValue": "arrows",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "templates": [
+                        "Presentation"
+                    ]
+                },{
+                    "caption": "Transition",
+                    "name": "slider_transition",
+                    "category": "Slider - Settings",
+                    "sortOrder": "31",
+                    "type": "listbox",
+                    "inputOptionValues": "Slide==slide||Fade==fade||3D cube==cube||3D coverflow==coverflow||3D flip==flip",
+                    "defaultValue": "slide",
+                    "templates": [
+                        "Presentation"
+                    ]
+                },{
+                    "caption": "Pagination",
+                    "name": "slider_pagination",
+                    "category": "Slider - Settings",
+                    "sortOrder": "32",
+                    "type": "listbox",
+                    "inputOptionValues": "None==none||Bullets==bullets||Fraction==fraction||Progress bar==progressbar",
+                    "defaultValue": "bullets",
                     "templates": [
                         "Presentation"
                     ]
