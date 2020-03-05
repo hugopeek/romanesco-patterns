@@ -1,9 +1,14 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.15.2
-Released on ...
+Released on March 3, 2020
 
 Fixes and improvements:
+- Add keyboard control to slider
+- Switch to Swiper in Presentation template
+- Use medium class instead of empty value for field sizes
+- Don't initialize slider if there aren't enough slides
+- Fix calculation of max thumb height in lazy load placeholders
 - Fix lazy loading of images in slider
 - Add system default setting for CB layout backgrounds
 - Add non-white class to body if custom background is set

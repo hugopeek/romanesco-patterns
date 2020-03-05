@@ -2129,6 +2129,14 @@ if ($object->xpdo) {
   array (
     0 => 'Presentation',
   ),
+  'slider_transition' => 
+  array (
+    0 => 'Presentation',
+  ),
+  'slider_pagination' => 
+  array (
+    0 => 'Presentation',
+  ),
   'social_twitter' => 
   array (
     0 => 'TeamMember',
