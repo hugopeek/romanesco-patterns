@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.15.3
+Released on March 10, 2020
+
+Fixes and improvements:
+- Prevent fatal error in jsonGetObject when JSON input is not present or invalid
+
 ## Romanesco Patterns 0.15.2
 Released on March 3, 2020
 
