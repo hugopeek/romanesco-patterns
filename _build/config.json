@@ -4567,7 +4567,10 @@
                     "name": "GenerateStaticCSS",
                     "category": "c_global",
                     "events": [
-                        "OnDocFormSave"
+                        {
+                            "event": "OnDocFormSave",
+                            "priority": 10
+                        }
                     ]
                 },
                 {

@@ -17,7 +17,12 @@
                 },{
                     "name": "GenerateStaticCSS",
                     "category": "c_global",
-                    "events": ["OnDocFormSave"]
+                    "events": [
+                        {
+                            "event": "OnDocFormSave",
+                            "priority": 10
+                        }
+                    ]
                 }
             ],
 

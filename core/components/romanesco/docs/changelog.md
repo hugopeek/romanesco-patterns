@@ -4,6 +4,7 @@
 Released on March 10, 2020
 
 Fixes and improvements:
+- Set higher event priority for generateStaticCSS plugin
 - Prevent fatal error in jsonGetObject when JSON input is not present or invalid
 
 ## Romanesco Patterns 0.15.2
