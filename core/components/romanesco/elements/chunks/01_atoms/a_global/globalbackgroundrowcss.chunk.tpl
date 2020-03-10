@@ -19,6 +19,14 @@
                 &scale=[[+imgScale:default=`1`]]
             `
         ]]`
+        &else=`
+        [[pthumb:prepend=`url(`:append=`)`?
+            &input=`[[+image.url]]`
+            &options=`w=[[+imgWidth]]
+                &q=[[++img_quality]]
+                &scale=[[+imgScale:default=`1`]]
+            `
+        ]]`
     ]]`
 ]]
 [[+position:empty=`center center`]] /
