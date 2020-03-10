@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.15.4
+Released on ...
+
+Fixes and improvements:
+- Fix timeline in project hub by referencing the correct classname
+
 ## Romanesco Patterns 0.15.3
 Released on March 10, 2020
 
