@@ -29,7 +29,7 @@
     &else=`[[+header_background:empty=`[[++header_background_default]]`]]`
 ]]
 
-<div id="hero" class="ui vertical stripe segment [[+header_background_class]]">
+<div id="hero" class="ui vertical stripe segment [[setBackground? &background=`[[+header_background_class]]`]]">
     [[[[[[If?
         &subject=`[[getRawTVValue? &tv=`header_cta`]]`
         &operator=`EQ`
