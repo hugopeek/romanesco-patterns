@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Make header backgrounds context sensitive in generated CSS
+- Regenerate static CSS when changing a header background
 - Fix timeline in project hub by referencing the correct classname
 
 ## Romanesco Patterns 0.15.3

@@ -5,6 +5,7 @@
 
 /* Load all backgrounds set under Global Content */
 
+[[- OLD ]]
 [[getImageList?
     &docid=`[[++romanesco.global_backgrounds_id]]`
     &tvname=`global_background_img`
@@ -36,6 +37,7 @@
 /* Load all backgrounds based on an overview image */
 
 [[pdoResources?
+    [[+context:notempty=`&context=`[[+context]]``]]
     &parents=`0`
     &limit=`0`
     &showUnpublished=`1`
