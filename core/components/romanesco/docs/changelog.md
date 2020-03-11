@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Improve layout and visibility of sharing widget in articleTraditional sidebar
 - Make header backgrounds context sensitive in generated CSS
 - Regenerate static CSS when changing a header background
 - Fix timeline in project hub by referencing the correct classname
