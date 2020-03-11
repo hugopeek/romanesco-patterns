@@ -110,14 +110,19 @@
             </article>
 
             <aside id="sidebar" class="sixteen wide mobile five wide computer column">
-                <section class="ui equal width middle aligned large screen only grid">
-                    <div class="column">
-                        <h3 class="ui tiny header">
-                            [[%romanesco.article.share_this]]
-                        </h3>
-                    </div>
-                    <div class="right aligned column">
-                        [[!$socialShareButtons? &button_type=`basic`]]
+                <section class="ui vertical stripe segment white tablet or lower hidden">
+                    <div class="ui container">
+                        <div class="ui equal width middle aligned grid">
+                            <div class="compact column">
+                                <h3 class="ui tiny header">
+                                    <span class="large screen and widescreen only">[[%romanesco.article.share_this]]</span>
+                                    <span class="computer only">[[%romanesco.article.share_this_short]]</span>
+                                </h3>
+                            </div>
+                            <div class="right aligned column">
+                                [[$socialShareButtons? &button_type=`basic`]]
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -211,10 +216,10 @@
     </main>
 
     [[[[If?
-    &subject=`[[$footerTheme]]`
-    &operator=`isnull`
-    &then=`$footer`
-    &else=`$footerTheme`
+        &subject=`[[$footerTheme]]`
+        &operator=`isnull`
+        &then=`$footer`
+        &else=`$footerTheme`
     ]]]]
 </div>
 
