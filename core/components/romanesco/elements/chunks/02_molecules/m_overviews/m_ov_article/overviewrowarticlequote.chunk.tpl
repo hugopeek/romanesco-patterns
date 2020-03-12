@@ -1,4 +1,4 @@
-[[!setUserPlaceholders? &userId=`[[+author_id]]`]]
+[[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
 
 <div class="ui padded down pointing segment secondary">
     <[[+title_hierarchy]]>

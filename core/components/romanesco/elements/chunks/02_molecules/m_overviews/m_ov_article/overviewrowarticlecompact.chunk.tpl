@@ -1,4 +1,4 @@
-[[!setUserPlaceholders? &userId=`[[+author_id]]`]]
+[[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
 
 <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
     [[ImagePlus:empty=`<img src="[[++overview_icon_fallback]]" alt="Author: [[++site_name]]">`?

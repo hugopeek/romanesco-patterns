@@ -1,4 +1,4 @@
-[[!setUserPlaceholders? &userId=`[[+author_id]]`]]
+[[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
 
 [[$headingHierarchyLink? &uid=`[[+unique_idx]]`]]
 

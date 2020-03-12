@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
-[[!setUserPlaceholders? &userId=`[[*author_id]]`]]
+[[setUserPlaceholders? &userId=`[[*author_id]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
 [[[[If?
