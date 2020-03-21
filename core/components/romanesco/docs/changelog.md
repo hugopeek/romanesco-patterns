@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add field template for input options to form dropdowns and options
 - Add multiple select option to form dropdowns
 - Add option to center align buttons individually
 - Call setUserPlaceholders cached in article overviews

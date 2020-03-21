@@ -18,10 +18,10 @@
            name="[[+name_updated]][[+checkbox_array]]"
            id="[[+name_updated]]-[[+idx]]"
            value="[[+pagetitle:fbStripNonAlpha]]"
-           tabindex="0"
+           tabindex="[[+idx]]"
            data-group="[[+collapse_target:isnot=``:then=`[[+name_updated]]`:default=`no-group`]]"
            data-target="[[+collapse_target:default=`no-target`]]"
-           data-toggle="collapse"
+           data-state="[[+collapse_default]]"
            [[!+fb[[*id]].[[+name_updated]]:FormItIsChecked=`[[+pagetitle:fbStripNonAlpha]]`]]
            [[!#get.id:stripTags:eq=`[[+id]]`:then=`checked`]]>
     <label>[[+pagetitle]]</label>

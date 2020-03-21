@@ -14,15 +14,14 @@
 
 <div class="ui [[+checkbox_variant]] checkbox field">
     <input type="[[+field_type]]"
-           name="[[+alias]][[+checkbox_array]]"
-           id="[[+alias]]-[[+idx]]"
-           class="hidden"
-           value="[[+alias]]"
+           name="[[+field_name]][[+checkbox_array]]"
+           id="[[+field_name]]-[[+idx]]"
+           value="[[+name:fbStripNonAlpha]]"
            tabindex="[[+idx]]"
-           data-group="[[+collapse_target:isnot=``:then=`[[+alias]]`:default=`no-group`]]"
+           data-group="[[+collapse_target:isnot=``:then=`[[+field_name]]`:default=`no-group`]]"
            data-target="[[+collapse_target:default=`no-target`]]"
            data-state="[[+collapse_default]]"
-           [[!+fb[[*id]].[[+alias]]:FormItIsChecked=`[[+alias]]`]]
-           [[!#get.id:stripTags:eq=`[[+id]]`:then=`checked`]]>
-    <label>[[+tag]]</label>
+           [[!+fb[[*id]].[[+field_name]]:FormItIsChecked=`[[+name:fbStripNonAlpha]]`]]
+    >
+    <label>[[+name]]</label>
 </div>
