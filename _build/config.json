@@ -672,6 +672,10 @@
                     "name": "Person - Presentation",
                     "parent": "e_info_person",
                     "rank": 131
+                },
+                {
+                    "name": "a_sel_rows",
+                    "parent": "a_select"
                 }
             ],
             "tvs": [
@@ -2700,18 +2704,27 @@
                     "category": "a_select"
                 },
                 {
-                    "name": "tvSelectInputOptionRow",
-                    "description": "Basic row template for rendering input options inside the TV.",
-                    "category": "a_select"
-                },
-                {
-                    "name": "tvSelectInputOptionRowDesc",
-                    "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
-                    "category": "a_select"
-                },
-                {
                     "name": "tvSelectFibonacci",
                     "description": "Pick a number from the Fibonacci sequence. Useful for example when implementing an Agile / Scrum kind of point system.",
+                    "category": "a_select"
+                },
+                {
+                    "name": "tvSelectCountry",
+                    "description": "Generate a list of countries to choose from. It can display prioritized countries in a separate group at the top of the list.",
+                    "properties": [
+                        {
+                            "name": "title",
+                            "value": "Select country"
+                        },
+                        {
+                            "name": "prioritized",
+                            "value": ""
+                        },
+                        {
+                            "name": "useIsoCode",
+                            "value": "1"
+                        }
+                    ],
                     "category": "a_select"
                 },
                 {
@@ -3796,6 +3809,26 @@
                 {
                     "name": "tocNavItem",
                     "category": "a_nav_toc"
+                },
+                {
+                    "name": "tvSelectInputOptionRow",
+                    "description": "Basic row template for rendering input options inside the TV.",
+                    "category": "a_sel_rows"
+                },
+                {
+                    "name": "tvSelectInputOptionRowDesc",
+                    "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
+                    "category": "a_sel_rows"
+                },
+                {
+                    "name": "tvSelectCountryOptGroup",
+                    "description": "Display prioritized countries in a separate group at the top of the dropdown.",
+                    "category": "a_sel_rows"
+                },
+                {
+                    "name": "tvSelectCountryRow",
+                    "description": "Basic row template to display country names inside the dropdown.",
+                    "category": "a_sel_rows"
                 },
                 {
                     "name": "paginationFluid",

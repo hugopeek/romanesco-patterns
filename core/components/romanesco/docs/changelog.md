@@ -3,6 +3,9 @@
 ## Romanesco Patterns 0.15.4
 Released on ...
 
+New features:
+- Add TV input option for selecting a country (or countries)
+
 Fixes and improvements:
 - Add field template for input options to form dropdowns and options
 - Add multiple select option to form dropdowns
@@ -335,20 +338,20 @@ Fixes and improvements:
 Released on July 25, 2017
 
 New features:
-- [ContentBlocks] Add CB field for displaying map with marker
-- [FormBlocks] Add snippets for creating repeating input fields
+- Add CB field for displaying map with marker
+- Add snippets for creating repeating input fields to FormBlocks
 
 Fixes and improvements:
 - Add ability to use an SVG as global background
 - Replace popup class with tooltip to avoid collisions [#82]
-- [FormBlocks] Add ability to use alternate option value in HTML
-- [FormBlocks] Add ability to choose help text position (above or below input)
-- [FormBlocks] Add ability to force fieldset to always display as segment
+- Add ability to use alternate option value in form HTML
+- Add ability to choose help text position in form (above or below input)
+- Add ability to force fieldset to always display as segment in forms
 - Add numeric operator to modifiedIf
 - Add outputAsTpl option to modifiedIf (for using then/else value as chunk)
 - Fix null result not actually returning false in getContextSetting [#83]
 - Fix TV output options being reset to default on GPM build [#80]
-- [FormBlocks] Prevent form submission failing when cb_input_file_id is empty
+- Prevent form submission failing when cb_input_file_id is empty
 - Configure grid settings for all Overviews with setBoxType snippet [#79]
 - Add id to HTML tag with context_key
 - Add inner container to all segments inside ArticleTraditional template
@@ -359,7 +362,7 @@ Released on April 30, 2017
 
 New features:
 - Add CB layout + field for wrapping content in Semantic UI segments
-- [FormBlocks] Add multiple file upload field
+- Add multiple file upload field to FormBlocks
 
 Fixes and improvements:
 - Responsive images through srcset and sizes attributes
@@ -374,11 +377,11 @@ Fixes and improvements:
 - Add fallbacks to placeholders inside some patterns
 - Correct field types and descriptions of some information electrons
 - Start adding descriptions to all elements
-- [FormBlocks] Add ability to set dynamic redirect ID
-- [FormBlocks] Add row template for auto-generated select options
-- [FormBlocks] Combine Select Dropdown and Select Options fields
-- [FormBlocks] Fix Other and Collapsible fields
-- [FormBlocks] Use fieldset / legend markup again in HTML
+- Add ability to set dynamic redirect ID in form
+- Add row template for auto-generated select options to FormBlocks
+- Combine Select Dropdown and Select Options form fields
+- Fix Other and Collapsible fields in forms
+- Use fieldset / legend markup again in form HTML
 
 
 ## Romanesco Patterns 0.10.6
@@ -402,7 +405,7 @@ New features:
 - Add firstChildID snippet for fetching... the first child ID
 
 Fixes and improvements:
-- Refactor Button CB to incorporate icon buttons [BC]
+- Refactor Button CB to incorporate icon buttons [BC-BREAK]
 - Fix first key not being rendered by jsonToHTML snippet
 - Include extension when searching for matching pattern URIs
 - Rename / re-purpose ProjectHub template to ProjectDashboard
@@ -463,10 +466,10 @@ New features:
 - Add alignment setting to heading chunk
 
 Fixes and improvements:
-- Split PatternLab package into Romanesco Patterns and Backyard [BC]
-- Change prefix of FormBlocks system settings [BC]
-- Change / fix all paths related to old PatternLab package [BC]
-- Name changes to improve overall logic [BC]
+- Split PatternLab package into Romanesco Patterns and Backyard [BC-BREAK]
+- Change prefix of FormBlocks system settings [BC-BREAK]
+- Change / fix all paths related to old PatternLab package [BC-BREAK]
+- Name changes to improve overall logic [BC-BREAK]
 - Fix nested layout grids in detail templates receiving incorrect margins
 - Fix TV names in Person and Article overviews
 - Fix caching of nested chunks in Testimonial overviews
@@ -497,7 +500,7 @@ New features:
 - Add templates for Clients and Portfolio
 
 Fixes and improvements:
-- Refactor overview elements for better reusability [BREAKING CHANGES]
+- Refactor overview elements for better reusability [BC-BREAK]
 - Load FormBlocks fieldset layout with chunk
 - Display syntax highlighted code snippets with Prism.js
 - Fix layout backgrounds not working on subdomains

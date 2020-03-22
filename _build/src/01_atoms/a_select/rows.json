@@ -1,0 +1,31 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "tvSelectInputOptionRow",
+                    "description": "Basic row template for rendering input options inside the TV.",
+                    "category": "a_sel_rows"
+                },{
+                    "name": "tvSelectInputOptionRowDesc",
+                    "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
+                    "category": "a_sel_rows"
+                },{
+                    "name": "tvSelectCountryOptGroup",
+                    "description": "Display prioritized countries in a separate group at the top of the dropdown.",
+                    "category": "a_sel_rows"
+                },{
+                    "name": "tvSelectCountryRow",
+                    "description": "Basic row template to display country names inside the dropdown.",
+                    "category": "a_sel_rows"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_sel_rows",
+                    "parent": "a_select"
+                }
+            ]
+        }
+    }
+}
