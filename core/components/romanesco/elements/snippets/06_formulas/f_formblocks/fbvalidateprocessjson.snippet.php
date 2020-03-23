@@ -8,15 +8,6 @@
  * @var $scriptProperties
  */
 
-$input = $modx->getOption('json', $scriptProperties);
-$fields = $modx->fromJSON($input);
-$id = $modx->resource->get('id');
-$prefix = !empty($prefix) ? $prefix: 'fb' . $id . '-';
-$emailField = $modx->getOption('emailField', $scriptProperties);
-
-//$jsonString = $modx->getOption('json', $scriptProperties);
-//$array = json_decode($jsonString, true);
-
 // Function to strip required field names correctly
 if (!function_exists('stripResults')) {
     function stripResults($input) {
@@ -25,11 +16,23 @@ if (!function_exists('stripResults')) {
     }
 }
 
-// Go through JSON array and collect all required fields
-//$fields = search($array, 'field_required', '1');
+$formID = $modx->getOption('formID', $scriptProperties,'');
+
+if ($formID) {
+    $resource = $modx->getObject('modResource', $formID);
+} else {
+    $resource = $modx->resource;
+    $formID = $resource->get('id');
+}
+
+if (!is_object($resource) || !($resource instanceof modResource)) return '';
+
+$prefix = $modx->getOption('prefix', $scriptProperties,'fb' . $formID . '-');
+$cbData = $resource->getProperty('linear', 'contentblocks');
 $output = array();
 
-foreach ($fields as $field) {
+// Go through CB data and collect all required fields
+foreach ($cbData as $field) {
     if ($field['settings']['field_required'] != 1) {
         continue;
     }
