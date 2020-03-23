@@ -7,6 +7,9 @@ New features:
 - Add TV input option for selecting a country (or countries)
 
 Fixes and improvements:
+- Make sure spam submissions will also fail on 2nd attempt in forms
+- Switch to fbFormReport for generating email messages
+- Grab required form fields directly from CB properties array for validation
 - Add field template for input options to form dropdowns and options
 - Add multiple select option to form dropdowns
 - Add option to center align buttons individually

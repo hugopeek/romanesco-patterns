@@ -4,6 +4,7 @@
             "snippets": [
                 {
                     "name": "fbEmailGetJSON",
+                    "description": "DEPRECATED. Form data is now directly taken from CB properties field in fbValidateProcessJSON.",
                     "category": "f_formblocks"
                 },{
                     "name": "fbGetForms",
@@ -13,12 +14,15 @@
                     "category": "f_formblocks"
                 },{
                     "name": "fbSimplxWidgeteer",
+                    "description": "DEPRECATED. Form report is now generated with fbFormReport.",
                     "category": "f_formblocks"
                 },{
                     "name": "fbFormReport",
+                    "description": "Generates a report from submitted field values. Primarily for emails, but you can also use this snippet to template other kinds of functionality (confirmation pages, multi page forms..).",
                     "category": "f_formblocks"
                 },{
                     "name": "fbValidateProcessJSON",
+                    "description": "Generates the correct strings for the FormIt &validate property.",
                     "category": "f_formblocks"
                 },{
                     "name": "fbInputRepeater",
