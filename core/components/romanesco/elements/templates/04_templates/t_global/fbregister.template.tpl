@@ -68,7 +68,7 @@
 
         <div class="ui hidden field segment">
             <label for="siteurl">[[%formblocks.form.honeypot_field]]</label>
-            <input type="text" name="siteurl" value="">
+            <input type="text" name="siteurl" value="[[!+fb[[*id]].siteurl]]">
         </div>
 
         [[*content:containsnot=`type="submit"`:then=`

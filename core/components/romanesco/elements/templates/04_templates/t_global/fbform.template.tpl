@@ -83,7 +83,7 @@
 
         <div class="ui hidden field segment">
             <label for="workemail">[[%formblocks.form.honeypot_field]]</label>
-            <input type="text" name="workemail" value="">
+            <input type="text" name="workemail" value="[[!+fb[[*id]].workemail]]">
         </div>
 
         [[*content:containsnot=`type="submit"`:then=`
