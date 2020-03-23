@@ -1,15 +1,16 @@
 <?php
 /**
- * fbFormReport snippet
+ * fbFormReport Snippet
  *
- * Generates a report email for FormBlocks forms.
+ * Generates a report from submitted field values. Primarily used in email
+ * responders of course, but you can also use this snippet to template other
+ * kinds of functionality (confirmation pages, multi page forms..).
  *
  * @author Jsewill
- * @version 0.1
+ * @version 1.0
  *
- * &tplPrefix   Template chunk name prefix
- * &id          Resource ID of the resource where the form is being used
- *
+ * &tplPrefix: Template chunk name prefix
+ * &id: Resource ID of the resource where the form is being used
  */
 
 function getFields(&$modx, $data, $prefix) {
@@ -37,9 +38,8 @@ $tplPrefix = $modx->getOption('tplPrefix', $scriptProperties, 'fbEmailRow_');
 $id = $modx->getOption('id', $scriptProperties, $modx->resource->get('id'));
 $resource = $modx->getObject('modResource', $id);
 
-$cbdata = json_decode($resource->getProperty('content', 'contentblocks'), true);
-$cbsettings = $modx->getIterator('modSystemSetting', array('namespace'=>'romanesco', 'key:LIKE'=>'formblocks.cb_%'));
+$cbData = json_decode($resource->getProperty('content', 'contentblocks'), true);
 
-$output .= getFields($modx, $cbdata, $tplPrefix);
+$output .= getFields($modx, $cbData, $tplPrefix);
 
 return $output;

@@ -2,6 +2,8 @@
 /**
  * fbSimplxWidgeteer
  *
+ * DEPRECATED. Form report is now generated with fbFormReport.
+ *
  * A slightly modified version of the SIMPLX Widgeteer snippet, by Lars Wallin.
  * Used by FormBlocks for handling the templating of the emailTpl.
  *

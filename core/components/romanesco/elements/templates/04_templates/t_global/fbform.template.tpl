@@ -54,7 +54,7 @@
 
     &customValidators=`[[$fbCustomValidators]]`
     &validate=`
-        [[!fbValidateProcessJSON? &json=`[[!fbEmailGetJSON? &formID=`[[*id]]`]]`]]
+        [[!fbValidateProcessJSON? &formID=`[[*id]]`]]
         [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[+math_question:isnot=`0`:then=`fb[[*id]]-math:required,`]]
