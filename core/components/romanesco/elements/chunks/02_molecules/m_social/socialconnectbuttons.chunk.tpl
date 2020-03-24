@@ -16,11 +16,6 @@
         &then=`$buttonSocialConnectFacebook? &classes=`[[+button_type]]``
     ]]]]
     [[[[If?
-        &subject=`[[++social_googleplus]]`
-        &operator=`notempty`
-        &then=`$buttonSocialConnectGoogleplus? &classes=`[[+button_type]]``
-    ]]]]
-    [[[[If?
         &subject=`[[++social_instagram]]`
         &operator=`notempty`
         &then=`$buttonSocialConnectInstagram? &classes=`[[+button_type]]``
@@ -34,6 +29,11 @@
         &subject=`[[++social_youtube]]`
         &operator=`notempty`
         &then=`$buttonSocialConnectYoutube? &classes=`[[+button_type]]``
+    ]]]]
+    [[[[If?
+        &subject=`[[++social_whatsapp]]`
+        &operator=`notempty`
+        &then=`$buttonSocialConnectWhatsapp? &classes=`[[+button_type]]``
     ]]]]
     [[[[If?
         &subject=`[[++social_github]]`

@@ -1263,12 +1263,23 @@
                     ]
                 },
                 {
-                    "caption": "Google+ profile",
-                    "name": "social_googleplus",
-                    "description": "Please fill in the complete URL (including http(s)://).",
-                    "type": "text",
+                    "caption": "WhatsApp number",
+                    "name": "social_whatsapp",
+                    "description": "A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Needs to be formatted as number, without any leading zeros.",
+                    "type": "number",
                     "category": "Social",
                     "sortOrder": "11",
+                    "templates": [
+                        "TeamMember","Team - Member","Team"
+                    ]
+                },
+                {
+                    "caption": "WhatsApp message",
+                    "name": "social_whatsapp_text",
+                    "description": "Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.",
+                    "type": "textarea",
+                    "category": "Social",
+                    "sortOrder": "12",
                     "templates": [
                         "TeamMember","Team - Member","Team"
                     ]
@@ -3432,6 +3443,10 @@
                 },
                 {
                     "name": "buttonSocialConnectTwitter",
+                    "category": "a_btn_social"
+                },
+                {
+                    "name": "buttonSocialConnectWhatsapp",
                     "category": "a_btn_social"
                 },
                 {

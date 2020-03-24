@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add social connect button for WhatsApp
 - Add social share button for sharing URLs via email
 - Add steps navigation to show the completion status of an activity
 - Add TV input option for selecting a country (or countries)

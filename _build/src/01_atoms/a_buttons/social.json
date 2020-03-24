@@ -18,6 +18,9 @@
                     "name": "buttonSocialConnectTwitter",
                     "category": "a_btn_social"
                 },{
+                    "name": "buttonSocialConnectWhatsapp",
+                    "category": "a_btn_social"
+                },{
                     "name": "buttonSocialConnectYoutube",
                     "category": "a_btn_social"
                 },{

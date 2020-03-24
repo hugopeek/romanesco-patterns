@@ -17,11 +17,6 @@
         &then=`$buttonSocialConnectFacebook? &classes=`[[+button_type]]` &title=`[[%romanesco.social.connect_facebook_person]]` &account=`[[+social_facebook]]``
     ]]]]
     [[[[If?
-        &subject=`[[+social_googleplus]]`
-        &operator=`notempty`
-        &then=`$buttonSocialConnectGoogleplus? &classes=`[[+button_type]]` &title=`[[%romanesco.social.connect_googleplus_person]]` &account=`[[+social_googleplus]]``
-    ]]]]
-    [[[[If?
         &subject=`[[+social_instagram]]`
         &operator=`notempty`
         &then=`$buttonSocialConnectInstagram? &classes=`[[+button_type]]` &title=`[[%romanesco.social.connect_instagram_person]]` &account=`[[+social_instagram]]``
@@ -35,6 +30,11 @@
         &subject=`[[+social_youtube]]`
         &operator=`notempty`
         &then=`$buttonSocialConnectYoutube? &classes=`[[+button_type]]` &title=`[[%romanesco.social.connect_youtube_person]]` &account=`[[+social_youtube]]``
+    ]]]]
+    [[[[If?
+        &subject=`[[+social_whatsapp]]`
+        &operator=`notempty`
+        &then=`$buttonSocialConnectWhatsapp? &classes=`[[+button_type]]` &title=`[[%romanesco.social.connect_whatsapp_person]]` &account=`[[+social_whatsapp]]` &text=`[[+social_whatsapp_text]]``
     ]]]]
     [[[[If?
         &subject=`[[+social_github]]`
