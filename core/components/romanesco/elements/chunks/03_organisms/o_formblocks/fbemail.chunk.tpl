@@ -4,4 +4,4 @@
 
 <br/><br/><br/>
 
---- End of message ---
+[[%formblocks.email.footer]]
