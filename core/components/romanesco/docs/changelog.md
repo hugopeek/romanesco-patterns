@@ -1,9 +1,10 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco Patterns 0.15.4
+## Romanesco Patterns 0.16.0
 Released on ...
 
 New features:
+- Add steps navigation to show the completion status of an activity
 - Add TV input option for selecting a country (or countries)
 
 Fixes and improvements:

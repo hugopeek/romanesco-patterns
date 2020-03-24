@@ -315,6 +315,10 @@
                     "parent": "a_navigation"
                 },
                 {
+                    "name": "a_nav_steps",
+                    "parent": "a_navigation"
+                },
+                {
                     "name": "a_nav_toc",
                     "parent": "a_navigation"
                 },
@@ -3797,6 +3801,14 @@
                 {
                     "name": "navItemDropdownCategory",
                     "category": "a_nav_primary"
+                },
+                {
+                    "name": "stepsNavItem",
+                    "category": "a_nav_steps"
+                },
+                {
+                    "name": "stepsNavItemLink",
+                    "category": "a_nav_steps"
                 },
                 {
                     "name": "tabsNavItem",

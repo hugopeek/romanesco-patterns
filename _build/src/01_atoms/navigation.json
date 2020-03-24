@@ -21,6 +21,9 @@
                     "name": "a_nav_tabs",
                     "parent": "a_navigation"
                 },{
+                    "name": "a_nav_steps",
+                    "parent": "a_navigation"
+                },{
                     "name": "a_nav_toc",
                     "parent": "a_navigation"
                 }
