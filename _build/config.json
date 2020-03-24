@@ -3419,10 +3419,6 @@
                     "category": "a_btn_social"
                 },
                 {
-                    "name": "buttonSocialConnectGoogleplus",
-                    "category": "a_btn_social"
-                },
-                {
                     "name": "buttonSocialConnectInstagram",
                     "category": "a_btn_social"
                 },
@@ -3447,11 +3443,11 @@
                     "category": "a_btn_social"
                 },
                 {
-                    "name": "buttonSocialShareFacebook",
+                    "name": "buttonSocialShareEmail",
                     "category": "a_btn_social"
                 },
                 {
-                    "name": "buttonSocialShareGoogleplus",
+                    "name": "buttonSocialShareFacebook",
                     "category": "a_btn_social"
                 },
                 {
