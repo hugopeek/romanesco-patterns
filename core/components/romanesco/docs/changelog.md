@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.0
-Released on ...
+Released on March 24, 2020
 
 New features:
 - Add steps navigation to show the completion status of an activity
