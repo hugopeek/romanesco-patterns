@@ -1,4 +1,4 @@
-[[+field_name:stripString=`?`:toPlaceholder=`label`]]
+[[+field_name:stripString=`?`:stripWords=`[[$fbStripWordsLabel]]`:toPlaceholder=`label`]]
 [[+fb[[*id]]-[[+field_name:fbStripAsAlias]]:nl2br:empty=``:toPlaceholder=`value`]]
 
 <strong>[[+label]]:</strong><br/>
