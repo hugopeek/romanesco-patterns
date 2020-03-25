@@ -108,7 +108,7 @@
                 },{
                     "caption": "Dynamic recipient address",
                     "name": "fb_email_to_dynamic",
-                    "description": "Optional. Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+                    "description": "Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
                     "category": "Settings - Advanced",
                     "sortOrder": "10",
                     "type": "textarea",
@@ -116,7 +116,7 @@
                 },{
                     "caption": "Dynamic redirect page",
                     "name": "fb_redirect_dynamic",
-                    "description": "Optional. Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.",
+                    "description": "Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.",
                     "category": "Settings - Advanced",
                     "sortOrder": "11",
                     "type": "text",
@@ -125,20 +125,32 @@
                         "fbRegister"
                     ]
                 },{
+                    "caption": "Store submitted data",
+                    "name": "fb_store_data",
+                    "description": "Store data in a session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.",
+                    "type": "option",
+                    "category": "Settings - Advanced",
+                    "sortOrder": "12",
+                    "inputOptionValues": "No==0||Yes==1",
+                    "defaultValue": "0",
+                    "templates": ["fbForm"]
+                },{
                     "caption": "Email template",
                     "name": "fb_email_template",
-                    "description": "Optional. Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.",
+                    "description": "Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.",
                     "category": "Settings - Advanced",
                     "sortOrder": "20",
                     "type": "text",
+                    "defaultValue": "fbEmail",
                     "templates": ["fbForm"]
                 },{
-                    "caption": "Email template rows",
-                    "name": "fb_email_template_rows",
-                    "description": "Optional. Chunk containing the customized HTML for the template rows. This will be used to display each field in your email. Use [[+label]] and [[+value]] placeholders to show the content.",
+                    "caption": "Email template row prefix",
+                    "name": "fb_email_tpl_prefix",
+                    "description": "Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.",
                     "category": "Settings - Advanced",
                     "sortOrder": "21",
                     "type": "text",
+                    "defaultValue": "fbEmailRow_",
                     "templates": ["fbForm"]
                 }
             ],
