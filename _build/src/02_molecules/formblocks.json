@@ -4,54 +4,71 @@
             "chunks": [
                 {
                     "name": "fbInputTextfield",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbInputTextarea",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbInputEmail",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbSelectDropdown",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbSelectOption",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbInputFile",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbInputHidden",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbInputDate",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbInputDateRange",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbMathQuestion",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbAcceptTerms",
+                    "description": "",
                     "category": "m_fb_inputs"
                 },{
                     "name": "fbEmailRow",
+                    "description": "Default template for displaying the submitted value of a form field in an email message.",
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailRow_settings",
+                    "description": "DEPRECATED.",
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailRow_xx",
+                    "description": "Default email row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
                     "category": "m_fb_email"
                 },{
-                    "name": "fbEmailRow_xx_terms",
+                    "name": "fbEmailRowTerms",
+                    "description": "Specific email row for Terms and Conditions checkbox. It is currently empty, as the form cannot be submitted without agreeing to the terms.",
                     "category": "m_fb_email"
                 },{
-                    "name": "fbEmailRow_xx_email",
+                    "name": "fbEmailRowEmail",
+                    "description": "Specific email row for Email field." ,
                     "category": "m_fb_email"
                 },{
-                    "name": "fbEmailRow_xx_daterange",
+                    "name": "fbEmailRowDateRange",
+                    "description": "Specfic email row for date range selectors.",
                     "category": "m_fb_email"
                 }
             ],
