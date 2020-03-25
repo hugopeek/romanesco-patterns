@@ -1,9 +1,10 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.0
-Released on ...
+Released on March 25, 2020
 
 New features:
+- Add ability to create multi page forms
 - Add social connect button for WhatsApp
 - Add social share button for sharing URLs via email
 - Add steps navigation to show the completion status of an activity

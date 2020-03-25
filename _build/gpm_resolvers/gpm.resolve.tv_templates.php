@@ -2173,7 +2173,13 @@ if ($object->xpdo) {
     1 => 'Team - Member',
     2 => 'Team',
   ),
-  'social_googleplus' => 
+  'social_whatsapp' => 
+  array (
+    0 => 'TeamMember',
+    1 => 'Team - Member',
+    2 => 'Team',
+  ),
+  'social_whatsapp_text' => 
   array (
     0 => 'TeamMember',
     1 => 'Team - Member',

@@ -3,7 +3,7 @@
     "lowCaseName": "romanesco",
     "description": "Romanesco is an engineering toolkit that combines the atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
-    "version": "0.15.3",
+    "version": "0.16.0",
     "package": {
         "elements": {
             "categories": [
@@ -5025,5 +5025,10 @@
                 "area": "FormBlocks - CB fields"
             }
         ]
+    },
+    "build": {
+        "readme": "docs/readme.md",
+        "license": "docs/license.md",
+        "changelog": "docs/changelog.md"
     }
 }
