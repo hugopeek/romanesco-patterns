@@ -13,23 +13,26 @@
  * &id: Resource ID of the resource where the form is being used
  */
 
-function getFields(&$modx, $data, $prefix) {
-    $result = '';
+if (!function_exists('getFields')) {
+    function getFields(&$modx, $data, $prefix, $id) {
+        $result = '';
 
-    foreach($data as $key => $value) {
-        if(!is_array($value)) {
-            continue;
+        foreach($data as $key => $value) {
+            if(!is_array($value)) {
+                continue;
+            }
+
+            if(isset($value['field'])) {
+                $value['settings']['id'] = $id;
+                $result .= $modx->getChunk($prefix.$value['field'], $value['settings']);
+                continue;
+            }
+
+            $result .= getFields($modx, $value, $prefix, $id);
         }
 
-        if(isset($value['field'])) {
-            $result .= $modx->getChunk($prefix.$value['field'], $value['settings']);
-            continue;
-        }
-
-        $result .= getFields($modx, $value, $prefix);
+        return $result;
     }
-
-    return $result;
 }
 
 $output = '';
@@ -40,6 +43,6 @@ $resource = $modx->getObject('modResource', $id);
 
 $cbData = json_decode($resource->getProperty('content', 'contentblocks'), true);
 
-$output .= getFields($modx, $cbData, $tplPrefix);
+$output .= getFields($modx, $cbData, $tplPrefix, $id);
 
 return $output;

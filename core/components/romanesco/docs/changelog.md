@@ -11,6 +11,7 @@ New features:
 - Add TV input option for selecting a country (or countries)
 
 Fixes and improvements:
+- Add TV to control save form option per form
 - Remove Google+ elements
 - Make sure spam submissions will also fail on 2nd attempt in forms
 - Switch to fbFormReport for generating email messages

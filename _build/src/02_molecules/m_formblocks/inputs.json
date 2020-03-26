@@ -1,0 +1,53 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "fbInputTextfield",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputTextarea",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputEmail",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbSelectDropdown",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbSelectOption",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputFile",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputHidden",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputDate",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbInputDateRange",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbMathQuestion",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },{
+                    "name": "fbAcceptTerms",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                }
+            ]
+        }
+    }
+}

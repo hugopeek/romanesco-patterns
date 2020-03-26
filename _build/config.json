@@ -367,11 +367,15 @@
                     "parent": "02_molecules"
                 },
                 {
+                    "name": "m_fb_inputs",
+                    "parent": "m_formblocks"
+                },
+                {
                     "name": "m_fb_email",
                     "parent": "m_formblocks"
                 },
                 {
-                    "name": "m_fb_inputs",
+                    "name": "m_fb_store",
                     "parent": "m_formblocks"
                 },
                 {
@@ -796,24 +800,38 @@
                     ]
                 },
                 {
-                    "caption": "Redirect page",
-                    "name": "fb_redirect_id",
-                    "description": "Enter the ID of the page, or drag the page from the menu tree to this input field.",
+                    "caption": "Submit button text",
+                    "name": "fb_submit_button",
+                    "description": "Defaults to Send.",
                     "category": "Settings - General",
                     "sortOrder": "90",
-                    "type": "number",
+                    "type": "text",
                     "templates": [
                         "fbForm",
                         "fbRegister"
                     ]
                 },
                 {
-                    "caption": "Text in submit button",
-                    "name": "fb_submit_button",
-                    "description": "Defaults to Send.",
+                    "caption": "Save form data",
+                    "name": "fb_save_form",
+                    "description": "Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.",
+                    "category": "Settings - General",
+                    "sortOrder": "91",
+                    "type": "listbox",
+                    "inputOptionValues": "System default==default||Yes==1||No==0",
+                    "defaultValue": "default",
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
+                },
+                {
+                    "caption": "Redirect page",
+                    "name": "fb_redirect_id",
+                    "description": "Enter the ID of the page, or drag the page from the menu tree to this input field.",
                     "category": "Settings - General",
                     "sortOrder": "92",
-                    "type": "text",
+                    "type": "number",
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -2906,91 +2924,6 @@
                     "category": "m_feedback"
                 },
                 {
-                    "name": "fbInputTextfield",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbInputTextarea",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbInputEmail",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbSelectDropdown",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbSelectOption",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbInputFile",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbInputHidden",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbInputDate",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbInputDateRange",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbMathQuestion",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbAcceptTerms",
-                    "description": "",
-                    "category": "m_fb_inputs"
-                },
-                {
-                    "name": "fbEmailRow",
-                    "description": "Default template for displaying the submitted value of a form field in an email message.",
-                    "category": "m_fb_email"
-                },
-                {
-                    "name": "fbEmailRow_settings",
-                    "description": "DEPRECATED.",
-                    "category": "m_fb_email"
-                },
-                {
-                    "name": "fbEmailRow_xx",
-                    "description": "Default email row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
-                    "category": "m_fb_email"
-                },
-                {
-                    "name": "fbEmailRowTerms",
-                    "description": "Specific email row for Terms and Conditions checkbox. It is currently empty, as the form cannot be submitted without agreeing to the terms.",
-                    "category": "m_fb_email"
-                },
-                {
-                    "name": "fbEmailRowEmail",
-                    "description": "Specific email row for Email field.",
-                    "category": "m_fb_email"
-                },
-                {
-                    "name": "fbEmailRowDateRange",
-                    "description": "Specfic email row for date range selectors.",
-                    "category": "m_fb_email"
-                },
-                {
                     "name": "themeVariables",
                     "category": "m_global"
                 },
@@ -3884,6 +3817,116 @@
                     "name": "tvSelectCountryRow",
                     "description": "Basic row template to display country names inside the dropdown.",
                     "category": "a_sel_rows"
+                },
+                {
+                    "name": "fbEmailRow",
+                    "description": "Default template for displaying the submitted value of a form field in an email message.",
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbEmailRow_settings",
+                    "description": "DEPRECATED.",
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbEmailRow_xx",
+                    "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbEmailRowTerms",
+                    "description": "Specific email row for Terms and Conditions checkbox. It is currently empty, as the form cannot be submitted without agreeing to the terms.",
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbEmailRowEmail",
+                    "description": "Specific email row for Email field.",
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbEmailRowDateRange",
+                    "description": "Specfic email row for date range selectors.",
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbInputTextfield",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbInputTextarea",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbInputEmail",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbSelectDropdown",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbSelectOption",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbInputFile",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbInputHidden",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbInputDate",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbInputDateRange",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbMathQuestion",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbAcceptTerms",
+                    "description": "",
+                    "category": "m_fb_inputs"
+                },
+                {
+                    "name": "fbStoreRow",
+                    "description": "Default template for displaying the submitted value of a form field through FormItRetriever.",
+                    "category": "m_fb_store"
+                },
+                {
+                    "name": "fbStoreRow_xx",
+                    "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
+                    "category": "m_fb_store"
+                },
+                {
+                    "name": "fbStoreRowTerms",
+                    "description": "Specific data row for Terms and Conditions checkbox.",
+                    "category": "m_fb_store"
+                },
+                {
+                    "name": "fbStoreRowEmail",
+                    "description": "Specific data row for Email field.",
+                    "category": "m_fb_store"
+                },
+                {
+                    "name": "fbStoreRowDateRange",
+                    "description": "Specfic data row for date range selectors.",
+                    "category": "m_fb_store"
                 },
                 {
                     "name": "paginationFluid",
