@@ -5,6 +5,14 @@
 [[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`math_question`?
     &field=`[[++formblocks.cb_math_question_id:empty=`-1`]]`
 ]]
+[[modifiedIf?
+    &subject=`[[*fb_save_form]]`
+    &operator=`EQ`
+    &operand=`default`
+    &then=`[[++formblocks.save_form]]`
+    &else=`[[*fb_save_form]]`
+    &toPlaceholder=`save_form`
+]]
 
 [[!FormIt?
     &preHooks=`
@@ -17,7 +25,7 @@
         [[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]]
         [[++formblocks.antispam:notempty=`[[++formblocks.antispam]],`]]
         [[+math_question:isnot=`0`:then=`math,`]]
-        [[++formblocks.save_form:eq=`1`:then=`FormItSaveForm,`]]
+        [[+save_form:eq=`1`:then=`FormItSaveForm,`]]
         [[*fb_hooks:notempty=`[[*fb_hooks]],`]]
         [[*fb_email_to:notempty=`email,`]]
         [[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]]

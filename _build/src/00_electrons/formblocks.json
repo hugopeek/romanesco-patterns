@@ -53,23 +53,36 @@
                         "fbRegister"
                     ]
                 },{
-                    "caption": "Redirect page",
-                    "name": "fb_redirect_id",
-                    "description": "Enter the ID of the page, or drag the page from the menu tree to this input field.",
+                    "caption": "Submit button text",
+                    "name": "fb_submit_button",
+                    "description": "Defaults to Send.",
                     "category": "Settings - General",
                     "sortOrder": "90",
-                    "type": "number",
+                    "type": "text",
                     "templates": [
                         "fbForm",
                         "fbRegister"
                     ]
                 },{
-                    "caption": "Text in submit button",
-                    "name": "fb_submit_button",
-                    "description": "Defaults to Send.",
+                    "caption": "Save form data",
+                    "name": "fb_save_form",
+                    "description": "Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.",
+                    "category": "Settings - General",
+                    "sortOrder": "91",
+                    "type": "listbox",
+                    "inputOptionValues": "System default==default||Yes==1||No==0",
+                    "defaultValue": "default",
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
+                },{
+                    "caption": "Redirect page",
+                    "name": "fb_redirect_id",
+                    "description": "Enter the ID of the page, or drag the page from the menu tree to this input field.",
                     "category": "Settings - General",
                     "sortOrder": "92",
-                    "type": "text",
+                    "type": "number",
                     "templates": [
                         "fbForm",
                         "fbRegister"
