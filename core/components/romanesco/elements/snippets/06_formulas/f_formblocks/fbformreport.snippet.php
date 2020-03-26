@@ -9,8 +9,9 @@
  * @author Jsewill
  * @version 1.0
  *
- * &tplPrefix: Template chunk name prefix
- * &id: Resource ID of the resource where the form is being used
+ * &tplPrefix: Template chunk name prefix.
+ * &formID: Resource ID of the form. Can be a comma-separated list also, for
+ *  processing multi-page forms.
  */
 
 if (!function_exists('getFields')) {
@@ -37,12 +38,22 @@ if (!function_exists('getFields')) {
 
 $output = '';
 
+$formID = $modx->getOption('formID', $scriptProperties, $modx->resource->get('id'));
 $tplPrefix = $modx->getOption('tplPrefix', $scriptProperties, 'fbEmailRow_');
-$id = $modx->getOption('id', $scriptProperties, $modx->resource->get('id'));
-$resource = $modx->getObject('modResource', $id);
+$tplSectionHeader = $modx->getOption('tplSectionHeader', $scriptProperties, 'fbEmailSectionHeader');
 
-$cbData = json_decode($resource->getProperty('content', 'contentblocks'), true);
+$forms = explode(',',$formID);
 
-$output .= getFields($modx, $cbData, $tplPrefix, $id);
+foreach ($forms as $form) {
+    $resource = $modx->getObject('modResource', $form);
+    $cbData = json_decode($resource->getProperty('content', 'contentblocks'), true);
+
+    // Only add header if there are multiple forms
+    if ($forms[1]) {
+        $output .= $modx->getChunk($tplSectionHeader, array("title" => $resource->get('pagetitle')));
+    }
+
+    $output .= getFields($modx, $cbData, $tplPrefix, $id);
+}
 
 return $output;

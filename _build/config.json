@@ -3848,6 +3848,11 @@
                     "category": "m_fb_email"
                 },
                 {
+                    "name": "fbEmailSectionHeader",
+                    "description": "Display pagetitle above each section in multi-page form emails.",
+                    "category": "m_fb_email"
+                },
+                {
                     "name": "fbInputTextfield",
                     "description": "",
                     "category": "m_fb_inputs"
