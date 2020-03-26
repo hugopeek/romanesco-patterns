@@ -40,20 +40,20 @@ $output = '';
 
 $formID = $modx->getOption('formID', $scriptProperties, $modx->resource->get('id'));
 $tplPrefix = $modx->getOption('tplPrefix', $scriptProperties, 'fbEmailRow_');
-$tplSectionHeader = $modx->getOption('tplSectionHeader', $scriptProperties, 'fbEmailSectionHeader');
+$tplSectionHeader = $modx->getOption('tplSectionHeader', $scriptProperties, '');
 
 $forms = explode(',',$formID);
 
-foreach ($forms as $form) {
-    $resource = $modx->getObject('modResource', $form);
+foreach ($forms as $formID) {
+    $resource = $modx->getObject('modResource', $formID);
     $cbData = json_decode($resource->getProperty('content', 'contentblocks'), true);
 
-    // Only add header if there are multiple forms
-    if ($forms[1]) {
+    // Only add header if there are multiple forms and a tpl chunk present
+    if ($forms[1] && $tplSectionHeader) {
         $output .= $modx->getChunk($tplSectionHeader, array("title" => $resource->get('pagetitle')));
     }
 
-    $output .= getFields($modx, $cbData, $tplPrefix, $id);
+    $output .= getFields($modx, $cbData, $tplPrefix, $formID);
 }
 
 return $output;

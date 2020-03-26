@@ -7,4 +7,5 @@
     &form_layout=`[[+form_layout]]`
     &segment_type=`[[+segment_type]]`
     &padding=`[[+padding]]`
+    &previous_steps=`[[+previous_steps]]`
 ]]
