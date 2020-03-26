@@ -9,7 +9,9 @@
                     "category": "Settings - Email",
                     "sortOrder": "1",
                     "type": "email",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 },{
                     "caption": "Email CC address",
                     "name": "fb_email_cc",
@@ -17,7 +19,9 @@
                     "category": "Settings - Email",
                     "sortOrder": "2",
                     "type": "email",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 },{
                     "caption": "Email BCC address",
                     "name": "fb_email_bcc",
@@ -25,7 +29,9 @@
                     "category": "Settings - Email",
                     "sortOrder": "3",
                     "type": "email",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 },{
                     "caption": "Email FROM address",
                     "name": "fb_email_from",
@@ -33,7 +39,9 @@
                     "category": "Settings - Email",
                     "sortOrder": "5",
                     "type": "email",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 },{
                     "caption": "Email FROM name",
                     "name": "fb_email_from_name",
@@ -41,7 +49,9 @@
                     "category": "Settings - Email",
                     "sortOrder": "6",
                     "type": "text",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 },{
                     "caption": "Email subject",
                     "name": "fb_email_subject",
@@ -73,8 +83,7 @@
                     "inputOptionValues": "System default==default||Yes==1||No==0",
                     "defaultValue": "default",
                     "templates": [
-                        "fbForm",
-                        "fbRegister"
+                        "fbForm"
                     ]
                 },{
                     "caption": "Redirect page",
@@ -146,7 +155,9 @@
                     "sortOrder": "12",
                     "inputOptionValues": "No==0||Yes==1",
                     "defaultValue": "0",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 },{
                     "caption": "Email template",
                     "name": "fb_email_template",
@@ -155,7 +166,9 @@
                     "sortOrder": "20",
                     "type": "text",
                     "defaultValue": "fbEmail",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 },{
                     "caption": "Email template row prefix",
                     "name": "fb_email_tpl_prefix",
@@ -164,7 +177,9 @@
                     "sortOrder": "21",
                     "type": "text",
                     "defaultValue": "fbEmailRow_",
-                    "templates": ["fbForm"]
+                    "templates": [
+                        "fbForm"
+                    ]
                 }
             ],
 
