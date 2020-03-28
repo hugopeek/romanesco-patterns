@@ -37,4 +37,7 @@ foreach ($output as $value) {
     $modx->toPlaceholder($idx, trim($value), $prefix);
 }
 
+// Also return placeholder with last idx
+$modx->toPlaceholder('last', $idx, $prefix);
+
 return '';

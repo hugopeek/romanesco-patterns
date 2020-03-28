@@ -11,6 +11,7 @@ New features:
 - Add TV input option for selecting a country (or countries)
 
 Fixes and improvements:
+- Add ability to identify the last placeholder of splitString output
 - Add TV to control save form option per form
 - Remove Google+ elements
 - Make sure spam submissions will also fail on 2nd attempt in forms
