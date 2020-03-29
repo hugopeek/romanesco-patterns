@@ -135,13 +135,12 @@ if ($modx->getObject('cgSetting', array('key' => 'minify_css_js'))->get('value')
 $assetsPathCSS = $modx->getOption('romanesco.custom_css_path', $scriptProperties, '');
 $assetsPathJS = $modx->getOption('romanesco.custom_js_path', $scriptProperties, '');
 $assetsPathVendor = $modx->getOption('romanesco.custom_vendor_path', $scriptProperties, '');
+$assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProperties, '');
 
 // Head
-//$modx->regClientCSS($assetsPathCSS . '/slider' . $minify . '.css');
 $modx->regClientCSS($assetsPathCSS . '/swiper' . $minify . '.css');
 
 // Footer
-//$modx->regClientScript($assetsPathJS . '/slider' . $minify . '.js');
 $modx->regClientScript('/' . $assetsPathVendor . '/swiper/swiper.min.js');
 $modx->regClientScript('/' . $assetsPathJS . '/swiper' . $minify . '.js');
 $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
@@ -166,5 +165,11 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'effects' => $effects[$transition] ?? '',
     'init_lightbox' => $initLightbox ?? '',
 )));
+
+// Load modal assets if lightbox is active
+if ($lightbox == 1) {
+    $modx->regClientCSS($assetsPathDist . '/components/modal.min.css');
+    $modx->regClientScript('/' . $assetsPathDist . '/components/modal.min.js');
+}
 
 return '';

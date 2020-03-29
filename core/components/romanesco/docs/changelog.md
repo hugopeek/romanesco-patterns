@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.0
-Released on March 25, 2020
+Released on March 29, 2020
 
 New features:
 - Add ability to create multi page forms
@@ -11,6 +11,7 @@ New features:
 - Add TV input option for selecting a country (or countries)
 
 Fixes and improvements:
+- Load CSS/JS assets for modal and form components only if used on page
 - Add ability to identify the last placeholder of splitString output
 - Add TV to control save form option per form
 - Remove Google+ elements
