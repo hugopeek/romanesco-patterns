@@ -1472,12 +1472,16 @@ if ($object->xpdo) {
   array (
     0 => 'fbRegister',
   ),
-  'fb_redirect_id' => 
+  'fb_submit_button' => 
   array (
     0 => 'fbForm',
     1 => 'fbRegister',
   ),
-  'fb_submit_button' => 
+  'fb_save_form' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_redirect_id' => 
   array (
     0 => 'fbForm',
     1 => 'fbRegister',
@@ -1504,11 +1508,15 @@ if ($object->xpdo) {
     0 => 'fbForm',
     1 => 'fbRegister',
   ),
+  'fb_store_data' => 
+  array (
+    0 => 'fbForm',
+  ),
   'fb_email_template' => 
   array (
     0 => 'fbForm',
   ),
-  'fb_email_template_rows' => 
+  'fb_email_tpl_prefix' => 
   array (
     0 => 'fbForm',
   ),
