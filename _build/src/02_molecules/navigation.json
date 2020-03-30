@@ -15,6 +15,9 @@
                     "name": "m_nav_tabs",
                     "parent": "m_navigation"
                 },{
+                    "name": "m_nav_steps",
+                    "parent": "m_navigation"
+                },{
                     "name": "m_nav_toc",
                     "parent": "m_navigation"
                 }

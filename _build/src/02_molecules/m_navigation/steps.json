@@ -1,0 +1,15 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "stepsNavOuter",
+                    "category": "m_nav_steps"
+                },{
+                    "name": "stepsNavWrapper",
+                    "category": "m_nav_steps"
+                }
+            ]
+        }
+    }
+}

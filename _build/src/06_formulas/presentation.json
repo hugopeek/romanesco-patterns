@@ -4,11 +4,15 @@
             "snippets": [
                 {
                     "name": "sliderLoadAssets",
-                    "description": "Load CSS and JS dependencies for Slick slider.",
+                    "description": "Load CSS and JS dependencies for Swiper slider. It also initializes a Swiper instance for each slider, with it's own parameters. This means you can use multiple sliders on one page.",
+                    "category": "f_presentation"
+                },{
+                    "name": "stepsLoadAssets",
+                    "description": "Load CSS styles for Steps component. This is not included in semantic.css by default, to keep its file size down.",
                     "category": "f_presentation"
                 },{
                     "name": "statusGridLoadAssets",
-                    "description": "Load JS dependencies for status grid.",
+                    "description": "Load CSS and JS dependencies for status grid.",
                     "category": "f_presentation"
                 },{
                     "name": "tabsGenerateNav",
