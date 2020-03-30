@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.0
-Released on March 29, 2020
+Released on March 30, 2020
 
 New features:
 - Add ability to create multi page forms
