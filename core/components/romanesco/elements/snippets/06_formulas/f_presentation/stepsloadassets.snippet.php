@@ -1,7 +1,6 @@
 <?php
 /**
- * statusGridLoadAssets
- *
+ * stepsLoadAssets
  */
 
 $assetsPathCSS = $modx->getOption('romanesco.custom_css_path', $scriptProperties, '');
@@ -11,10 +10,5 @@ $assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProper
 
 // Header
 $modx->regClientCSS($assetsPathDist . '/components/step.min.css');
-$modx->regClientCSS($assetsPathDist . '/components/modal.min.css');
-
-// Footer
-$modx->regClientScript($assetsPathDist . '/components/modal.min.js');
-$modx->regClientScript($assetsPathVendor . '/tablesort/tablesort.js');
 
 return '';

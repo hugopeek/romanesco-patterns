@@ -11,7 +11,7 @@ New features:
 - Add TV input option for selecting a country (or countries)
 
 Fixes and improvements:
-- Load CSS/JS assets for modal and form components only if used on page
+- Load CSS/JS assets for modal, step and form components only if used on page
 - Add ability to identify the last placeholder of splitString output
 - Add TV to control save form option per form
 - Remove Google+ elements
