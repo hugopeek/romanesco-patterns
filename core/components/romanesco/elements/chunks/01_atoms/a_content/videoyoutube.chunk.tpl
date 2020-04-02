@@ -1,4 +1,4 @@
-<div class="ui embed"
+<div class="ui video embed"
      data-source="youtube"
      data-id="[[+video]]"
      data-icon="video play"

@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.16.1
+Released on ...
+
+Fixes and improvements:
+- Add class to video embed, to initialize them separately from other embeds
+
 ## Romanesco Patterns 0.16.0
 Released on March 30, 2020
 
