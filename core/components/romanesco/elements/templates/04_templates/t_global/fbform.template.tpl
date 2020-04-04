@@ -13,6 +13,13 @@
     &else=`[[*fb_save_form]]`
     &toPlaceholder=`save_form`
 ]]
+[[modifiedIf?
+    &subject=`[[+previous_steps]][[+next_step]]`
+    &operator=`notempty`
+    &then=`1`
+    &else=`0`
+    &toPlaceholder=`multiple_steps`
+]]
 
 [[!FormIt?
     &preHooks=`
@@ -71,9 +78,13 @@
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[*alias]]`
-    &redirectTo=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`
+    &redirectTo=`[[+next_step:empty=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`]]`
+
+    [[+multiple_steps:eq=`1`:then=`
     &store=`[[*fb_store_data:default=`0`]]`
+    &storeTime=`[[*fb_store_time:default=`300`]]`
     &storeLocation=`session`
+    `]]
 ]]
 
 [[!+fb[[*id]].validation_error_message:notempty=`
@@ -86,7 +97,7 @@
 </div>
 `]]
 
-<form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
     <div class="ui [[+segment_type]]">
 
         [[*content]]
@@ -101,7 +112,7 @@
             [[[[++formblocks.antispam:contains=`recaptchav2`:then=`!recaptchav2_render`]]]]
             [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
             <div class="ui error message"></div>
-            <input class="[[+form_size]] primary ui button" type="submit" name="submit-[[*alias]]" value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
+            [[$fbSubmitButton[[+multiple-steps:eq=`1`:then=`s`]]]]
         </div>
         `]]
     </div>

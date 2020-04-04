@@ -1,6 +1,13 @@
 {
     "package": {
         "elements": {
+            "chunks": [
+                {
+                    "name": "fbSubmitButtons",
+                    "description": "Previous and next buttons, for multi page forms.",
+                    "category": "m_formblocks"
+                }
+            ],
             "categories": [
                 {
                     "name": "m_formblocks",

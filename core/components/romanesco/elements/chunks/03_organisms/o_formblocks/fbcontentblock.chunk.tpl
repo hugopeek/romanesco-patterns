@@ -1,3 +1,29 @@
+[[[[If?
+    &subject=`[[+previous_steps]]`
+    &operator=`notempty`
+    &then=`splitString? &input=`[[+previous_steps]]` &delimiter=`,` &prefix=`prev_steps``
+]]]]
+[[[[If?
+    &subject=`[[+prev_steps.last]]`
+    &operator=`notempty`
+    &then=`
+        cbGetFieldContent:toPlaceholder=`prev_step_form_id`?
+            &resource=`[[+prev_steps.last]]`
+            &field=`22`
+            &tpl=`fbFormID`
+        `
+]]]]
+[[[[If?
+    &subject=`[[+next_step]]`
+    &operator=`notempty`
+    &then=`
+        cbGetFieldContent:toPlaceholder=`next_step_form_id`?
+            &resource=`[[+next_step]]`
+            &field=`22`
+            &tpl=`fbFormID`
+        `
+]]]]
+
 [[!$fbRenderFormWrapper?
     &form_id=`[[+form_id]]`
     &current_id=`[[*id]]`
@@ -7,5 +33,11 @@
     &form_layout=`[[+form_layout]]`
     &segment_type=`[[+segment_type]]`
     &padding=`[[+padding]]`
+
     &previous_steps=`[[+previous_steps]]`
+    &first_step=`[[+prev_steps.first]]`
+    &prev_step=`[[+prev_steps.last]]`
+    &next_step=`[[+next_step]]`
+    &prev_step_form_id=`[[+prev_step_form_id]]`
+    &next_step_form_id=`[[+next_step_form_id]]`
 ]]

@@ -7,6 +7,14 @@
                     "description": "",
                     "category": "a_formblocks"
                 },{
+                    "name": "fbFormID",
+                    "description": "Return raw value of form_id placeholder from a CB form. Used by cbGetFieldContent to find out which form is selected on a specific resource.",
+                    "category": "a_formblocks"
+                },{
+                    "name": "fbSubmitButton",
+                    "description": "",
+                    "category": "a_formblocks"
+                },{
                     "name": "fbAutoresponder",
                     "description": "",
                     "category": "a_formblocks"

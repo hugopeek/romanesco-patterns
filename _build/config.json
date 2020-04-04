@@ -903,9 +903,21 @@
                     "description": "Store data in a session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.",
                     "type": "option",
                     "category": "Settings - Advanced",
-                    "sortOrder": "12",
+                    "sortOrder": "15",
                     "inputOptionValues": "No==0||Yes==1",
                     "defaultValue": "0",
+                    "templates": [
+                        "fbForm"
+                    ]
+                },
+                {
+                    "caption": "Store time",
+                    "name": "fb_store_time",
+                    "description": "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes.",
+                    "type": "number",
+                    "category": "Settings - Advanced",
+                    "sortOrder": "16",
+                    "defaultValue": "300",
                     "templates": [
                         "fbForm"
                     ]
@@ -2457,6 +2469,16 @@
                     "category": "a_formblocks"
                 },
                 {
+                    "name": "fbFormID",
+                    "description": "Return raw value of form_id placeholder from a CB form. Used by cbGetFieldContent to find out which form is selected on a specific resource.",
+                    "category": "a_formblocks"
+                },
+                {
+                    "name": "fbSubmitButton",
+                    "description": "",
+                    "category": "a_formblocks"
+                },
+                {
                     "name": "fbAutoresponder",
                     "description": "",
                     "category": "a_formblocks"
@@ -2925,6 +2947,11 @@
                 {
                     "name": "commentScriptCommento",
                     "category": "m_feedback"
+                },
+                {
+                    "name": "fbSubmitButtons",
+                    "description": "Previous and next buttons, for multi page forms.",
+                    "category": "m_formblocks"
                 },
                 {
                     "name": "themeVariables",
