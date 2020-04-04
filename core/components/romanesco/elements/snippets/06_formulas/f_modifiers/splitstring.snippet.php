@@ -35,9 +35,15 @@ if ($options) {
 foreach ($output as $value) {
     $idx++;
     $modx->toPlaceholder($idx, trim($value), $prefix);
+
+    // Additional first and last placeholders
+    if ($idx == 1) {
+        $modx->toPlaceholder('first', trim($value), $prefix);
+    }
+    $modx->toPlaceholder('last', trim($value), $prefix);
 }
 
-// Also return placeholder with last idx
-$modx->toPlaceholder('last', $idx, $prefix);
+// Return placeholder with total idx
+$modx->toPlaceholder('total', $idx, $prefix);
 
 return '';
