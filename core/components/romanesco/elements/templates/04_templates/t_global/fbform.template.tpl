@@ -14,10 +14,10 @@
     &toPlaceholder=`save_form`
 ]]
 [[modifiedIf?
-    &subject=`[[+previous_steps]][[+next_step]]`
-    &operator=`notempty`
-    &then=`1`
-    &else=`0`
+    &subject=`[[+previous_steps]]`
+    &operator=`empty`
+    &then=`[[+last_step:eq=`1`:then=`0`:else=`1`]]`
+    &else=`1`
     &toPlaceholder=`multiple_steps`
 ]]
 
@@ -80,11 +80,9 @@
     &submitVar=`submit-[[*alias]]`
     &redirectTo=`[[+next_step:empty=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`]]`
 
-    [[+multiple_steps:eq=`1`:then=`
     &store=`[[*fb_store_data:default=`0`]]`
     &storeTime=`[[*fb_store_time:default=`300`]]`
     &storeLocation=`session`
-    `]]
 ]]
 
 [[!+fb[[*id]].validation_error_message:notempty=`
