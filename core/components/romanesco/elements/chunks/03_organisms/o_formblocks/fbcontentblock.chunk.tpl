@@ -17,7 +17,7 @@
 
     &previous_steps=`[[+previous_steps]]`
     &first_step=`[[+prev_steps.first:empty=`[[*id]]`]]`
-    &prev_step=`[[+prev_steps.last]]`
+    &prev_step=`[[+prev_steps.last:empty=``]]`
     &next_step=`[[+next_step]]`
     &prev_step_form_id=`[[+prev_step_form_id]]`
     &next_step_form_id=`[[+next_step_form_id]]`
