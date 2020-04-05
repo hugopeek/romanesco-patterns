@@ -1,4 +1,9 @@
 <?php
+$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
+
+if (!($romanesco instanceof Romanesco)) return;
+
 $input = $modx->getOption('json', $scriptProperties, $input);
 $key = $modx->getOption('key', $scriptProperties, $options);
 $tpl = $modx->getOption('tpl', $scriptProperties, '');
@@ -8,6 +13,9 @@ $toPlaceholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
 // @todo: test if input is valid JSON, otherwise NULL is returned
 $input = utf8_encode($input);
 $array = json_decode($input, true);
+
+// Flatten first level, since that's always the full JSON object itself
+$array = $array[0];
 
 // Single result from flat array
 if ($array[$key]) {
@@ -20,19 +28,17 @@ if ($array[$key]) {
     }
 };
 
-// Multiple keys from multidimensional array
-if (is_array($array[0])) {
-    foreach ($array as $item) {
-        $output[] = $item[0][$key];
-
-        if ($tpl) {
-            $output[] = $modx->getChunk($tpl, array(
-                'content' => $output
-            ));
-        }
+// Single key from multidimensional array
+if (is_array($array)) {
+    $output = $romanesco->recursiveArraySearch($array, $key);
+    
+    if ($tpl) {
+        $output = $modx->getChunk($tpl, array(
+            'content' => $output
+        ));
     }
 
-    $output = implode(',',$output);
+    $output = implode($output);
 }
 
 // Output either to placeholder, or directly
