@@ -112,7 +112,7 @@
             [[[[++formblocks.antispam:contains=`recaptchav2`:then=`!recaptchav2_render`]]]]
             [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
             <div class="ui error message"></div>
-            [[$fbSubmitButton[[+multiple-steps:eq=`1`:then=`s`]]]]
+            [[$fbSubmitButton[[+multiple_steps:eq=`1`:then=`s`]]]]
         </div>
         `]]
     </div>
