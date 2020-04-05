@@ -2949,8 +2949,13 @@
                     "category": "m_feedback"
                 },
                 {
+                    "name": "fbPrepareSteps",
+                    "description": "Prepare the necessary placeholders for each step of a multi-page form. These placeholders will be forwarded to fbForm.",
+                    "category": "m_formblocks"
+                },
+                {
                     "name": "fbSubmitButtons",
-                    "description": "Previous and next buttons, for multi page forms.",
+                    "description": "Previous and next buttons for multi-page forms.",
                     "category": "m_formblocks"
                 },
                 {
