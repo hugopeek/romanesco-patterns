@@ -1,22 +1,19 @@
 <div class="ui equal width grid">
     <div class="middle aligned row">
         <div class="column">
-            <a href="[[~[[+prev_step]]]]" class="ui tertiary icon button" title="Go back to forest details">
+            <a href="[[~[[+prev_step]]]]" class="ui tertiary icon button" title="Go back to [[#[[+prev_step]].pagetitle]]">
                 <i class="chevron left icon"></i>
-                Forest details
+                [[#[[+prev_step]].pagetitle]]
             </a>
         </div>
         <div class="column">
-            <button class="ui large secondary right floated right labeled icon button" type="submit" name="submit-[[*alias]]" title="Continue to contact details">
-                Contact
-                <i class="chevron right icon"></i>
-            </button>
-            <button class="ui [[+form_size]] secondary right floated right labeled icon button"
+            <button class="ui [[+form_size]] [[+button_type]] right floated right labeled icon button"
                     type="submit"
                     name="submit-[[*alias]]"
-                    title="Continue to contact details">
+                    title="Continue to [[#[[+next_step]].pagetitle]]"
+            >
                 <i class="chevron right icon"></i>
-                Forest details
+                [[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]] - [[+last_step]]
             </button>
         </div>
     </div>
