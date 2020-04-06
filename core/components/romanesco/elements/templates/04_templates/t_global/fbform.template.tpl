@@ -106,7 +106,7 @@
         </div>
 
         [[*content:containsnot=`type="submit"`:then=`
-        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
+        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]] submit">
             [[[[++formblocks.antispam:contains=`recaptchav2`:then=`!recaptchav2_render`]]]]
             [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
             <div class="ui error message"></div>

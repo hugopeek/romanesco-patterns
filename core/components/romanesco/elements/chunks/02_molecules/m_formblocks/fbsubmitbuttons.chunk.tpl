@@ -22,8 +22,8 @@
     `]]
     <div class="right aligned column">
         [[+last_step:isnot=`1`:then=`
-        <div class="ui icon input">
-            <input class="ui [[+form_size]] [[+button_type]] button"
+        <div class="ui [[+button_size:empty=`[[+form_size]]`]] icon input">
+            <input class="[[+button_size:empty=`[[+form_size]]`]] [[+button_type]] [[+button_alignment]] ui button"
                    type="submit"
                    name="submit-[[*alias]]"
                    value="[[+next_title]]"
@@ -31,7 +31,7 @@
             <i class="chevron right icon"></i>
         </div>
         `:else=`
-        <input class="ui [[+form_size]] [[+button_type]] button"
+        <input class="[[+button_size:empty=`[[+form_size]]`]] [[+button_type]] [[+button_alignment]] ui button"
                type="submit"
                name="submit-[[*alias]]"
                value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
