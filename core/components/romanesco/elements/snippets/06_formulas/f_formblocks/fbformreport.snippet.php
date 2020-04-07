@@ -38,10 +38,11 @@ if (!function_exists('getFields')) {
 
 $output = '';
 
-$formID = $modx->getOption('formID', $scriptProperties, $modx->resource->get('id'));
+$formID = $modx->getOption('formID', $scriptProperties, '');
 $tplPrefix = $modx->getOption('tplPrefix', $scriptProperties, 'fbEmailRow_');
 $tplSectionHeader = $modx->getOption('tplSectionHeader', $scriptProperties, '');
 
+if (!$formID) return '';
 $forms = explode(',',$formID);
 
 foreach ($forms as $formID) {
