@@ -1,7 +1,7 @@
 [[%formblocks.email.introtext]]<br/><br/>
 
 [[!fbFormReport?
-    &formID=`[[*id]][[+previous_forms:prepend=`,`]]`
+    &formID=`[[*id]][[+prev_forms:prepend=`,`]]`
     &tplPrefix=`[[*fb_email_tpl_prefix]]`
     &tplSectionHeader=`fbEmailSectionHeader`
 ]]

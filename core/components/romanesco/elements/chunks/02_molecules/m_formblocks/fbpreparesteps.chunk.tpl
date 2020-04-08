@@ -1,40 +1,49 @@
-[[- Split previous steps into separate placeholders ]]
+[[- Split steps into placeholders ]]
 [[[[If?
-    &subject=`[[+previous_steps]]`
+    &subject=`[[+multiple_steps]]`
     &operator=`notempty`
-    &then=`splitString? &input=`[[+previous_steps]]` &delimiter=`,` &prefix=`prev_steps``
+    &then=`splitString? &input=`,[[+multiple_steps]],` &delimiter=`,[[*id]],` &prefix=`section``
+]]]]
+[[[[If?
+    &subject=`[[+section.1]]`
+    &operator=`notempty`
+    &then=`splitString? &input=`[[+section.1]]` &delimiter=`,` &prefix=`prev_steps``
+]]]]
+[[[[If?
+    &subject=`[[+section.2]]`
+    &operator=`notempty`
+    &then=`splitString? &input=`[[+section.2]]` &delimiter=`,` &prefix=`next_steps``
+]]]]
+[[[[If?
+    &subject=`[[+multiple_steps]]`
+    &operator=`notempty`
+    &then=`splitString? &input=`[[+multiple_steps]]` &delimiter=`,` &prefix=`step``
 ]]]]
 
 [[- Find out which form is used in previous / next steps ]]
 [[[[If?
-    &subject=`[[+previous_steps]]`
+    &subject=`[[+section.1]]`
     &operator=`notempty`
     &then=`pdoResources?
         &parents=`-1`
-        &resources=`[[+previous_steps]]`
+        &resources=`[[+section.1]]`
         &tpl=`fbGetFormID`
         &showHidden=`1`
         &limit=`0`
         &outputSeparator=`,`
-        &toPlaceholder=`previous_forms`
+        &toPlaceholder=`prev_forms`
     `
 ]]]]
 [[[[If?
-    &subject=`[[+next_step]]`
+    &subject=`[[+section.2]]`
     &operator=`notempty`
-    &then=`$fbGetFormID:toPlaceholder=`next_form`? &id=`[[+next_step]]``
+    &then=`pdoResources?
+        &parents=`-1`
+        &resources=`[[+section.2]]`
+        &tpl=`fbGetFormID`
+        &showHidden=`1`
+        &limit=`0`
+        &outputSeparator=`,`
+        &toPlaceholder=`next_forms`
+    `
 ]]]]
-
-[[- Find out if current page is the last step ]]
-[[cbGetFieldContent:toPlaceholder=`next_step_json`?
-    &resource=`[[+next_step]]`
-    &field=`22`
-    &returnAsJSON=`1`
-]]
-[[modifiedIf:toPlaceholder=`is_last_step`?
-    &subject=`,[[jsonGetValue? &input=`[[+next_step_json]]` &key=`previous_steps`]],`
-    &operator=`contains`
-    &operand=`,[[*id]],`
-    &then=`0`
-    &else=`1`
-]]

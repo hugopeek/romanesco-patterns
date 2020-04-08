@@ -13,19 +13,12 @@
     &else=`[[*fb_save_form]]`
     &toPlaceholder=`save_form`
 ]]
-[[modifiedIf?
-    &subject=`[[+previous_steps]]`
-    &operator=`empty`
-    &then=`[[+is_last_step:eq=`1`:then=`0`:else=`1`]]`
-    &else=`1`
-    &toPlaceholder=`multiple_steps`
-]]
 
 [[[[+multiple_steps:notempty=`
     !FormItRetriever?
         &placeholderPrefix=``
         &storeLocation=`session`
-        &redirectToOnNotFound=`[[+first_step]]`
+        &redirectToOnNotFound=`[[+first_step:isnot=`[[+current_id]]`:then=`[[+first_step]]`:else=``]]`
     `
 ]]]]
 [[[[+multiple_steps:notempty=`
@@ -93,7 +86,7 @@
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[*alias]]`
-    &redirectTo=`[[+next_step:empty=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`]]`
+    &redirectTo=`[[+redirect_id:empty=`[[+next_step:empty=`[[*fb_redirect_dynamic:empty=`[[*fb_redirect_id]]`]]`]]`]]`
 
     &store=`[[*fb_store_data:default=`0`]]`
     &storeTime=`[[*fb_store_time:default=`300`]]`
@@ -112,7 +105,7 @@
 
 <form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
 
-    [[[[+multiple_steps:notempty=`!fbFormReport? &formID=`[[*id]][[+previous_forms:prepend=`,`]][[+next_forms:prepend=`,`]]` &tplPrefix=`fbStoreRow_``]]]]
+    [[[[+multiple_steps:notempty=`!fbFormReport? &formID=`[[*id]][[+prev_forms:prepend=`,`]][[+next_forms:prepend=`,`]]` &tplPrefix=`fbStoreRow_``]]]]
 
     <div class="ui [[+segment_type]]">
 
@@ -129,7 +122,7 @@
             [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
             <div class="ui error message"></div>
 
-            [[$fbSubmitButton[[+multiple_steps:eq=`1`:then=`s`]]]]
+            [[$fbSubmitButton[[+multiple_steps:notempty=`s`]]]]
         </div>
         `]]
     </div>

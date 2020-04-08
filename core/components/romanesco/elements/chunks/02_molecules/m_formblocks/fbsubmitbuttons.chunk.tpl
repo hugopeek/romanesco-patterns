@@ -21,7 +21,7 @@
     </div>
     `]]
     <div class="right aligned column">
-        [[+last_step:isnot=`1`:then=`
+        [[+last_step:isnot=`[[+current_id]]`:then=`
         <div class="ui [[+button_size:empty=`[[+form_size]]`]] input icon submit">
             <input class="[[+button_size:empty=`[[+form_size]]`]] [[+button_type]] [[+button_alignment]] ui button"
                    type="submit"
