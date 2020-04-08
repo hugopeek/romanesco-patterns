@@ -1,1 +1,1 @@
-[[!$fbEmailRow]]
+[[!$fbStoreRow]]

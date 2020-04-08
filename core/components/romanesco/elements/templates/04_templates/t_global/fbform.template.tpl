@@ -16,9 +16,15 @@
 [[modifiedIf?
     &subject=`[[+previous_steps]]`
     &operator=`empty`
-    &then=`[[+last_step:eq=`1`:then=`0`:else=`1`]]`
+    &then=`[[+is_last_step:eq=`1`:then=`0`:else=`1`]]`
     &else=`1`
     &toPlaceholder=`multiple_steps`
+]]
+
+[[!FormItRetriever?
+    &placeholderPrefix=``
+    &storeLocation=`session`
+    &redirectToOnNotFound=`[[+first_step]]`
 ]]
 
 [[!FormIt?
@@ -97,6 +103,7 @@
 
 <form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
     <div class="ui [[+segment_type]]">
+        [[!fbFormReport? &formID=`[[+previous_forms]]` &tplPrefix=`fbStoreRow_`]]
 
         [[*content]]
 

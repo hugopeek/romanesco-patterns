@@ -7,8 +7,12 @@
                     "description": "",
                     "category": "a_formblocks"
                 },{
+                    "name": "fbGetFormID",
+                    "description": "Run the cbGetFieldContent snippet to find out which form is selected on a specific resource.",
+                    "category": "a_formblocks"
+                },{
                     "name": "fbFormID",
-                    "description": "Return raw value of form_id placeholder from a CB form. Used by cbGetFieldContent to find out which form is selected on a specific resource.",
+                    "description": "Return raw value of form_id placeholder from a CB form. Used as tpl by cbGetFieldContent in fbGetFormID.",
                     "category": "a_formblocks"
                 },{
                     "name": "fbSubmitButton",
