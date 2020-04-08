@@ -21,11 +21,18 @@
     &toPlaceholder=`multiple_steps`
 ]]
 
-[[[[+previous_steps:notempty=`
+[[[[+multiple_steps:notempty=`
     !FormItRetriever?
         &placeholderPrefix=``
         &storeLocation=`session`
         &redirectToOnNotFound=`[[+first_step]]`
+    `
+]]]]
+[[[[+multiple_steps:notempty=`
+    !FormItRetriever?
+        &placeholderPrefix=`fb[[*id]].`
+        &storeLocation=`session`
+        &redirectToOnNotFound=``
     `
 ]]]]
 
@@ -104,8 +111,10 @@
 `]]
 
 <form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
+
+    [[[[+multiple_steps:notempty=`!fbFormReport? &formID=`[[*id]][[+previous_forms:prepend=`,`]][[+next_forms:prepend=`,`]]` &tplPrefix=`fbStoreRow_``]]]]
+
     <div class="ui [[+segment_type]]">
-        [[[[+previous_forms:notempty=`!fbFormReport? &formID=`[[+previous_forms]]` &tplPrefix=`fbStoreRow_``]]]]
 
         [[*content]]
 
@@ -119,6 +128,7 @@
             [[[[++formblocks.antispam:contains=`recaptchav2`:then=`!recaptchav2_render`]]]]
             [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
             <div class="ui error message"></div>
+
             [[$fbSubmitButton[[+multiple_steps:eq=`1`:then=`s`]]]]
         </div>
         `]]
