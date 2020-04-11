@@ -35,6 +35,13 @@ switch ($modx->event->name) {
             $dom->filter('body')->addClass('non-white');
         }
 
+        // Add header class to content headers without class name
+        $dom->filter('h1:not(.ui.header)')->addClass('ui header');
+        $dom->filter('h2:not(.ui.header)')->addClass('ui header');
+        $dom->filter('h3:not(.ui.header)')->addClass('ui header');
+        $dom->filter('h4:not(.ui.header)')->addClass('ui header');
+        $dom->filter('h5:not(.ui.header)')->addClass('ui header');
+
         // Inject inverted classes
         $dom->filter('.inverted.segment')
             ->each(function (HtmlPageCrawler $segment) {
