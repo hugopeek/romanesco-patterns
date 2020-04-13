@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Improve layout of publication templates
+- Add button templates for creating neighbor menu
 - Add class to content headers without class name
 - Conditionally load assets for registration forms
 - Remove form class from search field

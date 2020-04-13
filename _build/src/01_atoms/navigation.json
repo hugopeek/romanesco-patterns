@@ -18,6 +18,9 @@
                     "name": "a_nav_pagination",
                     "parent": "a_navigation"
                 },{
+                    "name": "a_nav_neighbors",
+                    "parent": "a_navigation"
+                },{
                     "name": "a_nav_tabs",
                     "parent": "a_navigation"
                 },{

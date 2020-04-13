@@ -1,0 +1,15 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "neighborNavItemPrev",
+                    "category": "a_nav_neighbors"
+                },{
+                    "name": "neighborNavItemNext",
+                    "category": "a_nav_neighbors"
+                }
+            ]
+        }
+    }
+}

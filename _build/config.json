@@ -311,6 +311,10 @@
                     "parent": "a_navigation"
                 },
                 {
+                    "name": "a_nav_neighbors",
+                    "parent": "a_navigation"
+                },
+                {
                     "name": "a_nav_tabs",
                     "parent": "a_navigation"
                 },
@@ -3717,6 +3721,14 @@
                 {
                     "name": "breadcrumbCurrent",
                     "category": "a_nav_breadcrumbs"
+                },
+                {
+                    "name": "neighborNavItemPrev",
+                    "category": "a_nav_neighbors"
+                },
+                {
+                    "name": "neighborNavItemNext",
+                    "category": "a_nav_neighbors"
                 },
                 {
                     "name": "pageNavWrapper",
