@@ -43,7 +43,7 @@
                 <div class="ui tightened container">
                     <div class="ui bottom aligned equal width grid">
                         <div class="compact column">
-                            <a href="[[~[[*parent]]]]" class="big basic ui button" title="[[%romanesco.article.back_to_overview_title]]">
+                            <a href="[[~[[*parent]]]]" class="big basic ui back button" title="[[%romanesco.article.back_to_overview_title]]">
                                 <i class="left arrow icon"></i>
                                 <span class="mobile hidden">[[%romanesco.article.back_to_overview]]</span>
                             </a>
@@ -64,6 +64,17 @@
             </section>
             `]]
         </article>
+
+        <nav id="menu-neighbors" class="ui large fluid two item menu">
+            [[pdoNeighbors?
+                &loop=`0`
+                &tplPrev=`neighborNavItemPrev`
+                &tplNext=`neighborNavItemNext`
+                &tplWrapper=`@INLINE [[+prev]][[+next]]`
+                &sortby=`publishedon`
+                &sortdir=`asc`
+            ]]
+        </nav>
 
         <aside id="further-reading" class="ui vertical stripe segment white">
             <div class="ui tightened container">
