@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Prevent background from appearing if responsive crop is not defined
 - Improve layout of publication templates
 - Add button templates for creating neighbor menu
 - Add class to content headers without class name
