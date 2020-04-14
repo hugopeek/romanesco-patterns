@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Inherit comment toggle and article author TV values
 - Prevent background from appearing if responsive crop is not defined
 - Improve layout of publication templates
 - Add button templates for creating neighbor menu

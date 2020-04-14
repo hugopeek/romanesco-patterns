@@ -996,11 +996,24 @@
                     "description": "Give all headings on this page (H1-H6) an ID (if they don't have one already). This allows you (or the ToC menu) to link directly to that heading. This setting is inherited on child pages.",
                     "type": "listbox",
                     "category": "Navigation",
-                    "sortOrder": "1",
+                    "sortOrder": "10",
                     "defaultValue": "@INHERIT 0",
                     "inputOptionValues": "On==1||Off==0",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteContentBlocks","Note - ContentBlocks","NoteRichText","Note - Rich Text","NoteMarkdown","Note - Markdown","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                    ]
+                },
+                {
+                    "caption": "Neighbors menu",
+                    "name": "neighbors_visibility",
+                    "description": "Do you want to display a set of buttons below the content that link to the previous and next article? This setting is inherited on child pages.",
+                    "type": "listbox",
+                    "category": "Navigation",
+                    "sortOrder": "20",
+                    "defaultValue": "@INHERIT 1",
+                    "inputOptionValues": "On==1||Off==0",
+                    "templates": [
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download"
                     ]
                 },
                 {
@@ -2010,36 +2023,27 @@
                 {
                     "caption": "Author",
                     "name": "author_id",
-                    "description": "Select the author of this article. He or she must be a MODX user.",
+                    "description": "Select the author of this article. He or she must be a MODX user. This value is inherited on child pages.",
                     "type": "listbox",
                     "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
                     "category": "About",
                     "sortOrder": "1",
+                    "defaultValue": "@INHERIT",
                     "templates": [
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes",
-                        "Download"
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download"
                     ]
                 },
                 {
                     "caption": "Comments",
                     "name": "comments_toggle",
-                    "description": "Enable or disable comments.",
+                    "description": "Enable or disable comments. This value is inherited on child pages.",
                     "type": "option",
                     "inputOptionValues": "Active==1||Disabled==0",
                     "category": "Comments",
                     "sortOrder": "1",
+                    "defaultValue": "@INHERIT",
                     "templates": [
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download"
                     ]
                 },
                 {

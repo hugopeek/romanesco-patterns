@@ -5,35 +5,26 @@
                 {
                     "caption": "Author",
                     "name": "author_id",
-                    "description": "Select the author of this article. He or she must be a MODX user.",
+                    "description": "Select the author of this article. He or she must be a MODX user. This value is inherited on child pages.",
                     "type": "listbox",
                     "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
                     "category": "About",
                     "sortOrder": "1",
+                    "defaultValue": "@INHERIT",
                     "templates": [
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes",
-                        "Download"
+                        "@@templates_publication"
                     ]
                 },{
                     "caption": "Comments",
                     "name": "comments_toggle",
-                    "description": "Enable or disable comments.",
+                    "description": "Enable or disable comments. This value is inherited on child pages.",
                     "type": "option",
                     "inputOptionValues": "Active==1||Disabled==0",
                     "category": "Comments",
                     "sortOrder": "1",
+                    "defaultValue": "@INHERIT",
                     "templates": [
-                        "ArticleTraditional",
-                        "ArticleReadability",
-                        "ArticleSidenotes",
-                        "Article - Traditional",
-                        "Article - Readability",
-                        "Article - Sidenotes"
+                        "@@templates_publication"
                     ]
                 }
             ],
