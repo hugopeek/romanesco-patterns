@@ -65,6 +65,7 @@
             `]]
         </article>
 
+        [[*neighbors_visibility:eq=`1`:then=`
         <nav id="menu-neighbors" class="ui large fluid two item menu">
             [[pdoNeighbors?
                 &loop=`0`
@@ -75,6 +76,7 @@
                 &sortdir=`asc`
             ]]
         </nav>
+        `]]
 
         <aside id="further-reading" class="ui vertical stripe segment white">
             <div class="ui tightened container">
