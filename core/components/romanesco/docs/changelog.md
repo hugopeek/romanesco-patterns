@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.1
-Released on ...
+Released on April 14, 2020
 
 Fixes and improvements:
 - Inherit comment toggle and article author TV values

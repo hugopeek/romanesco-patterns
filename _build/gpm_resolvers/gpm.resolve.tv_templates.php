@@ -1512,6 +1512,10 @@ if ($object->xpdo) {
   array (
     0 => 'fbForm',
   ),
+  'fb_store_time' => 
+  array (
+    0 => 'fbForm',
+  ),
   'fb_email_template' => 
   array (
     0 => 'fbForm',
@@ -1590,22 +1594,27 @@ if ($object->xpdo) {
   ),
   'author_id' => 
   array (
-    0 => 'ArticleTraditional',
-    1 => 'ArticleReadability',
-    2 => 'ArticleSidenotes',
-    3 => 'Article - Traditional',
-    4 => 'Article - Readability',
-    5 => 'Article - Sidenotes',
-    6 => 'Download',
+    0 => 'Publications',
+    1 => 'ArticleTraditional',
+    2 => 'ArticleReadability',
+    3 => 'ArticleSidenotes',
+    4 => 'Publications - Overview',
+    5 => 'Article - Traditional',
+    6 => 'Article - Readability',
+    7 => 'Article - Sidenotes',
+    8 => 'Download',
   ),
   'comments_toggle' => 
   array (
-    0 => 'ArticleTraditional',
-    1 => 'ArticleReadability',
-    2 => 'ArticleSidenotes',
-    3 => 'Article - Traditional',
-    4 => 'Article - Readability',
-    5 => 'Article - Sidenotes',
+    0 => 'Publications',
+    1 => 'ArticleTraditional',
+    2 => 'ArticleReadability',
+    3 => 'ArticleSidenotes',
+    4 => 'Publications - Overview',
+    5 => 'Article - Traditional',
+    6 => 'Article - Readability',
+    7 => 'Article - Sidenotes',
+    8 => 'Download',
   ),
   'contact_email' => 
   array (
@@ -1876,6 +1885,18 @@ if ($object->xpdo) {
     39 => 'Portfolio - Project',
     40 => 'Testimonial',
     41 => 'Review',
+  ),
+  'neighbors_visibility' => 
+  array (
+    0 => 'Publications',
+    1 => 'ArticleTraditional',
+    2 => 'ArticleReadability',
+    3 => 'ArticleSidenotes',
+    4 => 'Publications - Overview',
+    5 => 'Article - Traditional',
+    6 => 'Article - Readability',
+    7 => 'Article - Sidenotes',
+    8 => 'Download',
   ),
   'overview_img_landscape' => 
   array (
