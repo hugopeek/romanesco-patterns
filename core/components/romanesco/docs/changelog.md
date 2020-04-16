@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.16.2
+Released on ...
+
+Fixes and improvements:
+- Don't let ToC menu include headings outside of content area
+
 ## Romanesco Patterns 0.16.1
 Released on April 14, 2020
 

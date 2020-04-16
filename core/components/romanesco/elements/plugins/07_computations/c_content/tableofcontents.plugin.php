@@ -1,6 +1,8 @@
 <?php
 /**
+ * TableOfContents plugin
  *
+ * Generate a menu with internal links to all headings in the content.
  */
 
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
@@ -39,7 +41,8 @@ switch ($modx->event->name) {
 
         // Generate anchors if requested
         if ($modx->resource->getTVValue('auto_anchors')) {
-            $dom->filter('h1,h2,h3,h4,h5,h6')
+            $dom->filter('#content')
+                ->filter('h1,h2,h3,h4,h5,h6')
                 ->each(function (HtmlPageCrawler $node) {
                     $text = $node->getInnerHtml();
                     $anchor = $node->getAttribute('id');
@@ -64,6 +67,7 @@ switch ($modx->event->name) {
 
         // Get all headings on the page
         $toc = $dom
+            ->filter('#content')
             ->filter('h1,h2,h3,h4,h5,h6')
             ->each(function (HtmlPageCrawler $node) {
                 $text = $node->getInnerHtml();
