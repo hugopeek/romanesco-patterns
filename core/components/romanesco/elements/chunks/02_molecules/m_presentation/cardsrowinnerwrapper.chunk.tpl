@@ -11,7 +11,7 @@
     &link=`[[+link]]`
     &image=`[[+image]]`
     &heading=`[[+heading]]`
-    &heading_level=`[[+heading_level]]`
+    &level=`[[+level]]`
     &subtitle=`[[+subtitle]]`
     &content=`[[+content]]`
     &button_text=`[[+button_text]]`

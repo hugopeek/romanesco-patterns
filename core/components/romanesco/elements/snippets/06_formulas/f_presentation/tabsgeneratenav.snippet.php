@@ -35,9 +35,9 @@ foreach($divs as $div) {
     if ($div->hasAttribute('data-tab')) {
         $tabs[$div->getAttribute('data-tab')] = array(
             'heading' => $div->getAttribute('data-heading'),
-            'level' => $div->getAttribute('data-heading-level'),
-            'subtitle' => $div->getAttribute('data-heading-subtitle'),
-            'icon' => $div->getAttribute('data-heading-icon')
+            'level' => $div->getAttribute('data-level'),
+            'subtitle' => $div->getAttribute('data-subtitle'),
+            'icon' => $div->getAttribute('data-icon')
         );
     }
 }

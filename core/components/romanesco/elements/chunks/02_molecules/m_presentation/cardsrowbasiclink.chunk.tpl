@@ -6,7 +6,7 @@
 <div class="content">
     [[+heading:notempty=`
     <div class="header">
-        <[[+heading_level]]>[[+heading]]</[[+heading_level]]>
+        <[[+level]]>[[+heading]]</[[+level]]>
     </div>
     `]]
     [[+subtitle:notempty=`
