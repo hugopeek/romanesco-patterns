@@ -1,7 +1,7 @@
-<div class="title">
+<[[+level:replace=`span==div`]] class="title">
     <i class="dropdown icon"></i>
     [[+heading]]
-</div>
+</[[+level:replace=`span==div`]]>
 <div class="content">
     [[+content]]
 </div>
