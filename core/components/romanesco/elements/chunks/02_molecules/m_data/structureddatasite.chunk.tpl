@@ -1,20 +1,14 @@
 <script type="application/ld+json">
     {
-        "@context" : "http://schema.org",
-        "@type" : "Organization",
-        "name" : "[[++site_name]]",
-        "url" : "[[++site_url]]",
-        "logo" : "[[++site_url:clipString=`-1`]][[++logo_path]]",
-        "contactPoint" : [{
-            "@type" : "ContactPoint",
-            "telephone" : "[[++client_phone]]",
-            "contactType" : "customer service"
-        }]
-    },
-    {
-        "@context" : "http://schema.org",
-        "@type" : "WebSite",
-        "name" : "[[++site_name]]",
-        "url" : "[[++site_url]]"
+        "@context" : "https://schema.org",
+        "@graph" : [
+            [[[[++client_type:eq=`organization`:then=`$organizationData`]]]]
+            [[[[cbHasFields? &field=`[[++romanesco.cb_field_faq_id]]` &then=`$faqDataWrapper`]]]]
+            {
+                "@type" : "WebPage",
+                "name" : "[[++site_name]]",
+                "url" : "[[++site_url]]"
+            }
+        ]
     }
 </script>
