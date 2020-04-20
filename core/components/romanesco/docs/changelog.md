@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Switch to JSON-LD for structured breadcrumbs data
 - Improve structured data JSON-LD snippet in head
 - Reorganize data elements folder structure
 - Use uniform placeholders in Accordions, Cards and Tabs

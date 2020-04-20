@@ -3,6 +3,12 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "breadcrumbDataRow",
+                    "category": "a_dat_rows"
+                },{
+                    "name": "breadcrumbDataCurrent",
+                    "category": "a_dat_rows"
+                },{
                     "name": "faqDataRow",
                     "category": "a_dat_rows"
                 }

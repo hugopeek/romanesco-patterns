@@ -1,3 +1,3 @@
-<nav id="breadcrumbs" class="ui breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+<nav id="breadcrumbs" class="ui breadcrumb">
     [[+crumbs]]
 </nav>

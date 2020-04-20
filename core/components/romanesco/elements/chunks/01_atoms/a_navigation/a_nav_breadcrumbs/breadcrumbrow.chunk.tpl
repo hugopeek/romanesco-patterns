@@ -1,7 +1,4 @@
-<span property="itemListElement" typeof="ListItem">
-    <a class="section" property="item" typeof="WebPage" href="[[++site_url]][[+link]]">
-        <span property="name">[[+menutitle:empty=`[[+pagetitle]]`]]</span>
-    </a>
-    <meta property="position" content="[[+idx]]">
-</span>
+<a class="section" href="[[++site_url]][[+link]]">
+    [[+menutitle:empty=`[[+pagetitle]]`]]
+</a>
 <i class="right angle icon divider"></i>

@@ -2468,6 +2468,10 @@
                     "category": "a_data"
                 },
                 {
+                    "name": "breadcrumbDataWrapper",
+                    "category": "a_data"
+                },
+                {
                     "name": "faqDataWrapper",
                     "category": "a_data"
                 },
@@ -3737,6 +3741,14 @@
                 {
                     "name": "rawRows",
                     "category": "a_dat_placeholders"
+                },
+                {
+                    "name": "breadcrumbDataRow",
+                    "category": "a_dat_rows"
+                },
+                {
+                    "name": "breadcrumbDataCurrent",
+                    "category": "a_dat_rows"
                 },
                 {
                     "name": "faqDataRow",

@@ -1,0 +1,6 @@
+{
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        [[+crumbs]]
+    ]
+},

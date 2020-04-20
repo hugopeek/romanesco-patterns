@@ -6,6 +6,9 @@
                     "name": "organizationData",
                     "category": "a_data"
                 },{
+                    "name": "breadcrumbDataWrapper",
+                    "category": "a_data"
+                },{
                     "name": "faqDataWrapper",
                     "category": "a_data"
                 }
