@@ -6,6 +6,9 @@
                     "name": "infoReviewSegment",
                     "category": "m_information"
                 },{
+                    "name": "faqRowBasic",
+                    "category": "m_information"
+                },{
                     "name": "kbArticleFormPreview",
                     "category": "m_information"
                 },{

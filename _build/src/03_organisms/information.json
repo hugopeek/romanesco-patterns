@@ -3,6 +3,9 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "faqOuter",
+                    "category": "o_information"
+                },{
                     "name": "kbArticleFormCreate",
                     "category": "o_information"
                 },{

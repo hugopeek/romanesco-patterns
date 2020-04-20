@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Add heading level to accordions
+- Add elements for displaying FAQs with structured markup
 - Don't let ToC menu include headings outside of content area
 
 ## Romanesco Patterns 0.16.1
