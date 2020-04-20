@@ -3,7 +3,7 @@
     "lowCaseName": "romanesco",
     "description": "Romanesco is an engineering toolkit that combines the atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
-    "version": "0.16.1",
+    "version": "0.16.2",
     "package": {
         "elements": {
             "categories": [
@@ -3667,6 +3667,10 @@
                     "category": "a_cb_select"
                 },
                 {
+                    "name": "cbSettingAspectRatio",
+                    "category": "a_cb_settings"
+                },
+                {
                     "name": "cbSettingButtonSize",
                     "category": "a_cb_settings"
                 },
@@ -4666,6 +4670,11 @@
                 {
                     "name": "getImageDimensions",
                     "description": "Retrieve width and height from physical image files. Auto detects SVGs.",
+                    "category": "f_presentation"
+                },
+                {
+                    "name": "getYoutubeThumb",
+                    "description": "Retrieve the largest existing thumbnail image available. You can choose between JPG and webP extension. Can be used as output modifier as well.",
                     "category": "f_presentation"
                 },
                 {
