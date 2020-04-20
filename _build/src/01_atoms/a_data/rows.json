@@ -1,0 +1,12 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "faqDataRow",
+                    "category": "a_dat_rows"
+                }
+            ]
+        }
+    }
+}

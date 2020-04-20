@@ -1,0 +1,24 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "hitCount",
+                    "category": "a_dat_placeholders"
+                },{
+                    "name": "rawName",
+                    "category": "a_dat_placeholders"
+                },{
+                    "name": "rawID",
+                    "category": "a_dat_placeholders"
+                },{
+                    "name": "rawValue",
+                    "category": "a_dat_placeholders"
+                },{
+                    "name": "rawRows",
+                    "category": "a_dat_placeholders"
+                }
+            ]
+        }
+    }
+}

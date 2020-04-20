@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Reorganize data elements folder structure
+- Use uniform placeholders in Accordions, Cards and Tabs
 - Add heading level to accordions
 - Add elements for displaying FAQs with structured markup
 - Don't let ToC menu include headings outside of content area

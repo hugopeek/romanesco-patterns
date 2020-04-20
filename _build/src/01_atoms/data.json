@@ -3,16 +3,10 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "hitCount",
+                    "name": "organizationData",
                     "category": "a_data"
                 },{
-                    "name": "rawName",
-                    "category": "a_data"
-                },{
-                    "name": "rawID",
-                    "category": "a_data"
-                },{
-                    "name": "rawValue",
+                    "name": "faqDataWrapper",
                     "category": "a_data"
                 }
             ],
@@ -20,6 +14,12 @@
                 {
                     "name": "a_data",
                     "parent": "01_atoms"
+                },{
+                    "name": "a_dat_placeholders",
+                    "parent": "a_data"
+                },{
+                    "name": "a_dat_rows",
+                    "parent": "a_data"
                 }
             ]
         }
