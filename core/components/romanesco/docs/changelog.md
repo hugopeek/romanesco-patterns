@@ -1,15 +1,20 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.2
-Released on ...
+Released on April 20, 2020
+
+New features:
+- Add elements for displaying FAQs with structured markup
 
 Fixes and improvements:
+- Add option to embed Youtube video directly
+- Add option to manually correct aspect ratio of Youtube embed
+- Ensure highest resolution thumbnail is fetched for Youtube embed placeholder
 - Switch to JSON-LD for structured breadcrumbs data
 - Improve structured data JSON-LD snippet in head
 - Reorganize data elements folder structure
 - Use uniform placeholders in Accordions, Cards and Tabs
 - Add heading level to accordions
-- Add elements for displaying FAQs with structured markup
 - Don't let ToC menu include headings outside of content area
 
 ## Romanesco Patterns 0.16.1
