@@ -3,6 +3,9 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "cbSettingAspectRatio",
+                    "category": "a_cb_settings"
+                },{
                     "name": "cbSettingButtonSize",
                     "category": "a_cb_settings"
                 },{
