@@ -8,7 +8,7 @@
     &else=`$headTheme`
 ]]]]
 
-<body id="home">
+<body id="home" class="overview">
 
 <div class="pusher">
     [[$headerBasic?
