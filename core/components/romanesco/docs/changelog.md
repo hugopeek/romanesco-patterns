@@ -1,5 +1,10 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.16.3
+Released on ...
+
+- Load custom form assets through fbLoadAssets (if present)
+
 ## Romanesco Patterns 0.16.2
 Released on April 20, 2020
 

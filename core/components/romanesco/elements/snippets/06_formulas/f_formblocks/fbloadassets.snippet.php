@@ -20,4 +20,12 @@ if ($uploadFile) {
     $modx->regClientScript($assetsPathJS . '/fileupload.js');
 }
 
+// Load custom assets, if present
+if (is_file('assets/js/formblocks.js')) {
+    $modx->regClientScript('assets/js/formblocks.js');
+}
+if (is_file('assets/js/form-validation.js')) {
+    $modx->regClientScript('assets/js/form-validation.js');
+}
+
 return '';
