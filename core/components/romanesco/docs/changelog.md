@@ -3,6 +3,8 @@
 ## Romanesco Patterns 0.16.3
 Released on ...
 
+Fixes and improvements:
+- Add rawAlias placeholder chunk
 - Load custom form assets through fbLoadAssets (if present)
 
 ## Romanesco Patterns 0.16.2

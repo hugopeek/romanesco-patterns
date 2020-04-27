@@ -12,6 +12,9 @@
                     "name": "rawID",
                     "category": "a_dat_placeholders"
                 },{
+                    "name": "rawAlias",
+                    "category": "a_dat_placeholders"
+                },{
                     "name": "rawValue",
                     "category": "a_dat_placeholders"
                 },{
