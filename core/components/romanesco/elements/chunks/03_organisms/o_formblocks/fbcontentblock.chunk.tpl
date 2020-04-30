@@ -1,5 +1,5 @@
 [[[[If?
-    &subject=`[[+previous_steps]][[+next_step]]`
+    &subject=`[[+multiple_steps]]`
     &operator=`notempty`
     &then=`$fbPrepareSteps`
 ]]]]
