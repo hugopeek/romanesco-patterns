@@ -10,6 +10,7 @@
            data-group="[[+collapse_target:isnot=``:then=`[[+name]]`:default=`no-group`]]"
            data-target="[[+collapse_target:default=`no-target`]]"
            data-state="[[+collapse_default]]"
-           [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+field_value:empty=`[[+option]]`]]`]]>
+           [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+field_value:empty=`[[+option]]`]]`]]
+           [[!+fb[[*id]].[[+name]]:contains=`[[+field_value:empty=`[[+option]]`]]`:then=`checked`]]>
     <label>[[+option]]</label>
 </div>
