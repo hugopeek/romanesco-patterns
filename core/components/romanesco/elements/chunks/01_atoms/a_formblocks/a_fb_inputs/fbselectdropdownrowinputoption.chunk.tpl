@@ -5,5 +5,5 @@
         [[!+fb[[*id]].[[+field_alias]]:FormItIsSelected=`[[+value_[[+idx]]]]`]]
         [[!+fb[[*id]].[[+field_alias]]:contains=`[[+value_[[+idx]]]]`:then=`selected`]]
     >
-    [[+value_[[+idx]]]]
+    [[+name]]
 </option>
