@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add row templates for autogerated form fields based on input options
 - Fix faulty multi-step placeholder in form CB
 - Add rawAlias placeholder chunk
 - Load custom form assets through fbLoadAssets (if present)

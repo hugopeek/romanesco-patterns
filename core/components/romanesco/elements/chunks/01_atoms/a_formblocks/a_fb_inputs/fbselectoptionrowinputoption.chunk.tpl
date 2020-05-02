@@ -1,3 +1,4 @@
+[[!fbStripAsAlias:fbPrefixOutput:toPlaceholder=`field_alias`? &input=`[[+field_name]]`]]
 [[!If:toPlaceholder=`checkbox_array`?
     &subject=`[[+field_type]]`
     &operator=`EQ`
@@ -14,14 +15,15 @@
 
 <div class="ui [[+checkbox_variant]] checkbox field">
     <input type="[[+field_type]]"
-           name="[[+field_name]][[+checkbox_array]]"
-           id="[[+field_name]]-[[+idx]]"
+           name="[[+field_alias]][[+checkbox_array]]"
+           id="[[+field_alias]]-[[+idx]]"
            value="[[+name:fbStripNonAlpha]]"
            tabindex="[[+idx]]"
-           data-group="[[+collapse_target:isnot=``:then=`[[+field_name]]`:default=`no-group`]]"
+           data-group="[[+collapse_target:isnot=``:then=`[[+field_alias]]`:default=`no-group`]]"
            data-target="[[+collapse_target:default=`no-target`]]"
            data-state="[[+collapse_default]]"
-           [[!+fb[[*id]].[[+field_name]]:FormItIsChecked=`[[+name:fbStripNonAlpha]]`]]
+           [[!+fb[[*id]].[[+field_alias]]:FormItIsChecked=`[[+name:fbStripNonAlpha]]`]]
+           [[!+fb[[*id]].[[+field_alias]]:contains=`[[+name]]`:then=`checked`]]
     >
     <label>[[+name]]</label>
 </div>

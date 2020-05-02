@@ -35,12 +35,8 @@
                     "description": "",
                     "category": "a_formblocks"
                 },{
-                    "name": "fbSelectDropdownRow",
-                    "description": "",
-                    "category": "a_fb_inputs"
-                },{
                     "name": "fbSelectOptionRow",
-                    "description": "",
+                    "description": "The default row template for checkbox and radio options.",
                     "category": "a_fb_inputs"
                 },{
                     "name": "fbSelectOptionRowResource",
@@ -49,6 +45,18 @@
                 },{
                     "name": "fbSelectOptionRowTag",
                     "description": "A row template for options that let you select a tag. Initially designed to work with the Tagger extra, but should work with any tag system that outputs [[+tag]] and [[+alias]] placeholders.",
+                    "category": "a_fb_inputs"
+                },{
+                    "name": "fbSelectOptionRowInputOption",
+                    "description": "A row template for using the input options found under Manage > Tool shed.",
+                    "category": "a_fb_inputs"
+                },{
+                    "name": "fbSelectDropdownRow",
+                    "description": "The default row template for dropdown select options.",
+                    "category": "a_fb_inputs"
+                },{
+                    "name": "fbSelectDropdownRowInputOption",
+                    "description": "A row template for using the input options found under Manage > Tool shed.",
                     "category": "a_fb_inputs"
                 },{
                     "name": "fbInputFileSingle",
