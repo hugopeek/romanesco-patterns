@@ -60,4 +60,4 @@ foreach ($forms as $formID) {
     $output[] = $result;
 }
 
-return implode(array_reverse($output));
+return implode($output);
