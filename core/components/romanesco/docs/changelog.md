@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add returnFirstHit snippet
 - Break comma separated lists into rows in form emails
 - Fix submission of 'other' values in all forms
 - Look for menu title first when adding multi-step form headings

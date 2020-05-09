@@ -19,6 +19,10 @@
                     "description": "The name says it all: retrieve the first child ID of a given ID.",
                     "category": "f_basic"
                 },{
+                    "name": "returnFirstHit",
+                    "description": "Feed it a bunch of properties and it spits out the first one that's not empty. Property names are irrelevant. Sort order is all that matters.",
+                    "category": "f_basic"
+                },{
                     "name": "getRawTVValue",
                     "description": "Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you need the unprocessed value instead, e.g. when using @inherit.",
                     "category": "f_basic"
