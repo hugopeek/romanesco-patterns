@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Update Jquery to v3.5.1
 - Fix static downloads not having any content
 - Write theme.variables output directly to file
 - Make UpdateStyling plugin work with context-aware Configuration settings
