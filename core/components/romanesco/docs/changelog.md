@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix static downloads not having any content
 - Write theme.variables output directly to file
 - Make UpdateStyling plugin work with context-aware Configuration settings
 - Fix form redirectTo placeholder not always returning correct value
