@@ -18,6 +18,13 @@
  * It also generates favicon images if a logo badge is provided. This relies on
  * a few Gulp dependencies (see package.json) and the Real Favicon service:
  * https://realfavicongenerator.net/favicon/gulp
+ *
+ * Update May 15, 2020:
+ * This plugin is now able to process context-aware configuration settings.
+ *
+ * Update May 20, 2020:
+ * The plugin no longer relies on an assets/css/theme.variables resource to be
+ * present in MODX. The settings are directly written to a static file now.
  */
 
 // Check if exec function is available on the server
@@ -34,9 +41,7 @@ switch($eventName) {
         $path .= 'model/clientconfig/';
         $clientConfig = $modx->getService('clientconfig','ClientConfig', $path);
         $imgMediaSource = $modx->getObject('sources.modMediaSource', 15);
-
-        // Get current configuration settings (before save)
-        $currentSettings = $clientConfig->getSettings();
+        $output = array();
 
         // Get saved values
         $savedSettings = (!empty($_POST['values'])) ? $_POST['values'] : '[]';
@@ -44,6 +49,14 @@ switch($eventName) {
         if (!is_array($savedSettings)) {
             $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] No values array available');
             break;
+        }
+
+        // Get current configuration settings (before save) for active context
+        $currentContext = $savedSettings['context'];
+        $currentSettings = $clientConfig->getSettings($currentContext);
+        if ($clientConfig instanceof ClientConfig) {
+            $cacheOptions = array(xPDO::OPT_CACHE_KEY => 'system_settings');
+            $settings = $modx->getCacheManager()->get('clientconfig', $cacheOptions);
         }
 
         // Continue with theme related settings only
@@ -81,8 +94,6 @@ switch($eventName) {
         $updatedSettings = array_diff($savedSettingsTheme, $currentSettingsTheme);
         $deletedSettings = array_diff($currentSettingsTheme, $savedSettingsTheme);
 
-        $output = array();
-
         // Regenerate styling elements if theme settings were updated or deleted
         if ($updatedSettings || $deletedSettings) {
             // Clear cache, to ensure build process uses the latest values
@@ -100,12 +111,21 @@ switch($eventName) {
             );
 
             // Run gulp process to generate new CSS
+            if ($currentContext) {
+                $distPath = $modx->getObject('modContextSetting', array(
+                    'context_key' => $currentContext,
+                    'key' => 'romanesco.semantic_dist_path'
+                ));
+                $buildCommand = 'gulp build-context --key ' . $currentContext . ' --dist ' . $modx->getOption('base_path') . $distPath->get('value');
+            }
+            else {
+                $buildCommand = 'gulp build-css';
+            }
             exec(
-                'NODE_VERSION=8 "$HOME/.nvm/nvm-exec"' .
-                ' gulp build-css' .
+                '"$HOME/.nvm/nvm-exec" ' . $buildCommand .
                 ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js' .
-                ' > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log' .
-                ' 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &',
+                ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log' .
+                ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &',
                 $output,
                 $return_css
             );
@@ -124,15 +144,15 @@ switch($eventName) {
                 $logoBadgePath = $modx->getOption('base_path') . $savedSettingsTheme['logo_badge_path'];
 
                 exec(
-                    'NODE_VERSION=8 "$HOME/.nvm/nvm-exec"' .
+                    '"$HOME/.nvm/nvm-exec"' .
                     ' gulp generate-favicon' .
                     ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/generate-favicons.js' .
                     ' --name ' . escapeshellarg($modx->getOption('site_name')) .
                     ' --img ' . escapeshellarg($logoBadgePath) .
                     ' --primary ' . escapeshellarg($savedSettingsTheme['theme_color_primary']) .
                     ' --secondary ' . escapeshellarg($savedSettingsTheme['theme_color_secondary']) .
-                    ' > ' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log' .
-                    ' 2>' .escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log &',
+                    ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log' .
+                    ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log &',
                     $output,
                     $return_favicon
                 );
