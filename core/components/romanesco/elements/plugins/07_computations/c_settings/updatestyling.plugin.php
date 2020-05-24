@@ -149,7 +149,7 @@ switch($eventName) {
             }
             exec(
                 '"$HOME/.nvm/nvm-exec" ' . $buildCommand .
-                ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js' .
+                ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/generate-multicontext-css.js' .
                 ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log' .
                 ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &',
                 $output,
