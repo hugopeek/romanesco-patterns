@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Write theme.variables output directly to file
+- Make UpdateStyling plugin work with context-aware Configuration settings
 - Fix form redirectTo placeholder not always returning correct value
 - Add returnFirstHit snippet
 - Break comma separated lists into rows in form emails
