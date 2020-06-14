@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Load CB image settings with chunks
 - Add caption and credits to Image CB
 - Point to separate gulpfile when generating CSS per context
 - Update Jquery to v3.5.1

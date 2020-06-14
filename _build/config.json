@@ -3521,6 +3521,10 @@
                     "category": "a_cb_fields"
                 },
                 {
+                    "name": "cbFieldPosition",
+                    "category": "a_cb_fields"
+                },
+                {
                     "name": "cbFieldSize",
                     "category": "a_cb_fields"
                 },
@@ -3538,6 +3542,14 @@
                 },
                 {
                     "name": "cbFieldMessageType",
+                    "category": "a_cb_fields"
+                },
+                {
+                    "name": "cbImageSize",
+                    "category": "a_cb_fields"
+                },
+                {
+                    "name": "cbImageOptions",
                     "category": "a_cb_fields"
                 },
                 {
