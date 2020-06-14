@@ -57,4 +57,9 @@
          width="[[++max_thumb_width]]"
          height="[[+max_thumb_height]]"
          alt="[[+alt:htmlent]]">
+    [[If?
+        &subject=`[[+credits]][[+caption]]`
+        &operator=`notempty`
+        &then=`<figcaption>[[+caption]][[+credits:stripTags=`<a>,<em>,<strong>`:prepend=`<span class="credits meta">&copy; `:append=`</span>`]]</figcaption>`
+    ]]
 </figure>
