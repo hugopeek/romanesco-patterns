@@ -14,13 +14,12 @@
     &else=`[[*header_subtitle]]`
     &toPlaceholder=`header_subtitle`
 ]]
-[[modifiedIf?
+[[If:toPlaceholder=`header_background`?
     &subject=`[[getRawTVValue? &tv=`header_background`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
     &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_background`:then=`*header_background`:else=``]]]]`
     &else=`[[*header_background]]`
-    &toPlaceholder=`header_background`
 ]]
 [[modifiedIf?
     &subject=`[[*header_background_img]]`
