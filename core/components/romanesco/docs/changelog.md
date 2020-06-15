@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add scrolldir.js for displaying menu on mobile when scrolling up
 - Add ability to override headerTitles chunk
 - Load CB image settings with chunks
 - Add caption and credits to Image CB
