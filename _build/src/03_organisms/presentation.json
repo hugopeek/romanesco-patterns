@@ -3,6 +3,10 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "hero",
+                    "description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor some control over the output.",
+                    "category": "o_presentation"
+                },{
                     "name": "sliderOuter",
                     "description": "DEPRECATED. Slider now uses Swiper.js and this chunk doesn't seem to be used anywhere..",
                     "category": "o_presentation"

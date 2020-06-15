@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add ability to override headerTitles chunk
 - Load CB image settings with chunks
 - Add caption and credits to Image CB
 - Point to separate gulpfile when generating CSS per context

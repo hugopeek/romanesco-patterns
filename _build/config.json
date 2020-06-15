@@ -3143,11 +3143,6 @@
                     "category": "m_overviews"
                 },
                 {
-                    "name": "hero",
-                    "description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor some control over the output.",
-                    "category": "m_presentation"
-                },
-                {
                     "name": "heroTitles",
                     "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
                     "category": "m_presentation"
@@ -3410,6 +3405,11 @@
                 {
                     "name": "overviewOuterPortfolio",
                     "category": "o_overviews"
+                },
+                {
+                    "name": "hero",
+                    "description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor some control over the output.",
+                    "category": "o_presentation"
                 },
                 {
                     "name": "sliderOuter",
