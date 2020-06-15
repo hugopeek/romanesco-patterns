@@ -1,13 +1,14 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.3
-Released on ...
+Released on June 15, 2020
 
 Fixes and improvements:
 - Add scrolldir.js for displaying menu on mobile when scrolling up
 - Add ability to override headerTitles chunk
 - Load CB image settings with chunks
 - Add caption and credits to Image CB
+- Add positioning and sizing options to Image CB
 - Point to separate gulpfile when generating CSS per context
 - Update Jquery to v3.5.1
 - Fix static downloads not having any content
