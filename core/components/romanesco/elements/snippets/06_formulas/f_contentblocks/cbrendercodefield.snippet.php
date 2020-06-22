@@ -29,8 +29,6 @@ switch($renderTag) {
         $output = $valueRaw;
         break;
     case $renderTag == 'ignore':
-        $output = $valueRaw;
-        break;
     default:
         $output = $valueRaw;
         break;
