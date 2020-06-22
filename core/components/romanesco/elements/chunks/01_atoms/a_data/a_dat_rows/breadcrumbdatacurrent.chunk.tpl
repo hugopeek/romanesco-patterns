@@ -1,5 +1,5 @@
 {
     "@type": "ListItem",
     "position": [[+idx]],
-    "name": "[[+menutitle:empty=`[[+pagetitle]]`]]"
+    "name": [[stripForJSON? &input=`[[+menutitle:empty=`[[+pagetitle]]`]]`]]
 }

@@ -1,8 +1,8 @@
 {
     "@type": "Question",
-    "name": "[[+heading]]",
+    "name": [[stripForJSON:stripTags? &input=`[[+heading]]`]],
     "acceptedAnswer": {
         "@type": "Answer",
-        "text": "[[+content]]"
+        "text": [[stripForJSON? &input=`[[+content]]`]]
     }
 },

@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.16.4
+Released on ...
+
+Fixes and improvements:
+- Correctly escape double quote and backslash characters in JSON-LD output
+
 ## Romanesco Patterns 0.16.3
 Released on June 15, 2020
 

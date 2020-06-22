@@ -22,6 +22,10 @@
                     "name": "tvToJSON",
                     "description": "Output the properties of given TV to a JSON object. The output could be used by jsonToHTML to generate an HTML table.",
                     "category": "f_json"
+                },{
+                    "name": "stripForJSON",
+                    "description": "Prepare the input for being used in JSON. This means escaping backslashes and double quotes.",
+                    "category": "f_json"
                 }
             ],
             "categories": [
