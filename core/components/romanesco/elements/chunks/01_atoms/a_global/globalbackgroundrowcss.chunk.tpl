@@ -3,7 +3,7 @@
     &operand=`empty`
     &then=`
     [[pthumb:prepend=`url(`:append=`)`?
-        &input=`[[+image.url]]`
+        &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
             &q=[[++img_quality]]
             &scale=[[+imgScale:default=`1`]]
@@ -11,29 +11,29 @@
     ]]`
     &else=``
 ]]
+[[If:toPlaceholder=`img_src`?
+    &subject=`[[+image.crops.[[+imgType]].url]]`
+    &operator=`notempty`
+    &then=`
+    [[pthumb:prepend=`url(`:append=`)`?
+        &input=`[[+image.url:prepend=`/`]]`
+        &options=`w=[[+imgWidth]]
+            &sx=[[+image.crops.[[+imgType]].x:lt=`0`:then=`0`]]
+            &sy=[[+image.crops.[[+imgType]].y:lt=`0`:then=`0`]]
+            &sw=[[+image.crops.[[+imgType]].width]]
+            &sh=[[+image.crops.[[+imgType]].height]]
+            &q=[[++img_quality]]
+            &scale=[[+imgScale:default=`1`]]
+        `
+    ]]`
+    &else=`[[+img_uncropped]]`
+]]
 [[If:empty=`[[+gradient]]`?
     &subject=`[[+image.extension]]`
     &operator=`is`
     &operand=`svg`
     &then=`[[+image.url:prepend=`url(/`:append=`)`]]`
-    &else=`
-    [[If?
-        &subject=`[[+image.crops.[[+imgType]].url]]`
-        &operator=`notempty`
-        &then=`
-        [[pthumb:prepend=`url(`:append=`)`?
-            &input=`[[+image.url]]`
-            &options=`w=[[+imgWidth]]
-                &sx=[[+image.crops.[[+imgType]].x]]
-                &sy=[[+image.crops.[[+imgType]].y]]
-                &sw=[[+image.crops.[[+imgType]].width]]
-                &sh=[[+image.crops.[[+imgType]].height]]
-                &q=[[++img_quality]]
-                &scale=[[+imgScale:default=`1`]]
-            `
-        ]]`
-        &else=`[[+img_uncropped]]`
-    ]]`
+    &else=`[[+img_src]]`
 ]]
 [[+position:empty=`center center`]] /
 [[+size:empty=`cover`]]
