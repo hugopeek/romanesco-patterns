@@ -4895,19 +4895,19 @@
                 "value": "assets/semantic/dist"
             },
             {
-                "key": "custom_css_path",
+                "key": "semantic_css_path",
                 "type": "textfield",
                 "area": "Paths",
                 "value": "assets/semantic/dist/themes/romanesco/assets/css"
             },
             {
-                "key": "custom_js_path",
+                "key": "semantic_js_path",
                 "type": "textfield",
                 "area": "Paths",
                 "value": "assets/semantic/dist/themes/romanesco/assets/js"
             },
             {
-                "key": "custom_vendor_path",
+                "key": "semantic_vendor_path",
                 "type": "textfield",
                 "area": "Paths",
                 "value": "assets/semantic/dist/themes/romanesco/assets/vendor"

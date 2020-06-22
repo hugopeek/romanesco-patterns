@@ -34,7 +34,7 @@
 
     [[+load_assets_map:eq=`1`:then=`<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>`]]
     [[+load_assets_hub:eq=`1`:then=`<link href="[[++romanesco.semantic_dist_path]]/components/modal.css" rel="stylesheet">`]]
-    [[+load_syntax_highlighting:eq=`1`:then=`<link href="[[++romanesco.custom_vendor_path]]/prism/prism.min.css" rel="stylesheet">`]]
+    [[+load_syntax_highlighting:eq=`1`:then=`<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min.css" rel="stylesheet">`]]
 
     [[++head_additional]]
 

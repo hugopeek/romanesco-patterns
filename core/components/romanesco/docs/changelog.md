@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Rename Semantic assets paths in system settings
 - Correctly escape double quote and backslash characters in JSON-LD output
 
 ## Romanesco Patterns 0.16.3

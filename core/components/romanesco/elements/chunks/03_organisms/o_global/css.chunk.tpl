@@ -1,11 +1,11 @@
 /* Global additions to Semantic UI styles, based on site content and settings */
 
-@import url("[[++site_url]][[++romanesco.custom_css_path]]/backgrounds.css");
+@import url("/[[++romanesco.semantic_css_path]]/backgrounds.css");
 
 
 /* Load all backgrounds set under Global Content */
 
-[[- OLD ]]
+[[- DEPRECATED MIGX TV BACKGROUNDS ]]
 [[getImageList?
     &docid=`[[++romanesco.global_backgrounds_id]]`
     &tvname=`global_background_img`
