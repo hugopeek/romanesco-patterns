@@ -48,42 +48,71 @@ switch ($modx->event->name) {
             $cssChunk = 'css';
         }
 
-        // Each container represents a context
-        foreach ($bgContainers as $container) {
-            $context = $container->get('alias');
-
-            // Generate CSS for each context
-            $css = $modx->getChunk($cssChunk, array(
-                'context' => $context,
-            ));
-
-            if ($context) {
-                $staticFile = $modx->getOption('base_path') . 'assets/css/' . $context . '.css';
-
-                if (!$modx->cacheManager->writeFile($staticFile, $css)) {
-                    $modx->log(modX::LOG_LEVEL_ERROR, "Error caching output from Resource {$modx->resource->get('id')} to static file {$staticFile}", '', __FUNCTION__, __FILE__, __LINE__);
-                }
-            }
+        // Get default CSS path
+        $cssPathDefault = $modx->getObject('modSystemSetting', array('key' => 'romanesco.custom_css_path'));
+        if ($cssPathDefault) {
+            $cssPath = $modx->getOption('base_path') . $cssPathDefault->get('value');
+        } else {
+            $cssPath = $modx->getOption('base_path') . 'assets/css';
         }
 
-        // Also generate a default CSS file
-        $staticFile = $modx->getOption('base_path') . 'assets/css/site.css';
+        // Generate default CSS file
         $css = $modx->getChunk($cssChunk);
+        $staticFile = $cssPath . '/site.css';
 
         if (!$modx->cacheManager->writeFile($staticFile, $css)) {
             $modx->log(modX::LOG_LEVEL_ERROR, "Error caching output from Resource {$modx->resource->get('id')} to static file {$staticFile}", '', __FUNCTION__, __FILE__, __LINE__);
         }
 
+        // Start collecting CSS paths for minification down the road
+        $minifyCSS[] = $cssPath;
+
+        // Each container represents a context
+        foreach ($bgContainers as $container) {
+            $context = $container->get('alias');
+
+            // Generate CSS for this context
+            $css = $modx->getChunk($cssChunk, array(
+                'context' => $context,
+            ));
+
+            // Look for custom path in context settings
+            $cssPathContext = $modx->getObject('modContextSetting', array(
+                'context_key' => $context,
+                'key' => 'romanesco.custom_css_path'
+            ));
+            if ($cssPathContext) {
+                $cssPath = $cssPathContext->get('value');
+            } else {
+                $cssPath = $cssPath . '/' . $context;
+            }
+
+            // Generate static file
+            if ($context) {
+                $staticFile = $cssPath . '/site.css';
+
+                if (!$modx->cacheManager->writeFile($staticFile, $css)) {
+                    $modx->log(modX::LOG_LEVEL_ERROR, "Error caching output from Resource {$modx->resource->get('id')} to static file {$staticFile}", '', __FUNCTION__, __FILE__, __LINE__);
+                }
+            }
+
+            // Sign up for minification
+            $minifyCSS[] = $cssPath;
+        }
+
         // Minify CSS
         if ($modx->getObject('cgSetting', array('key' => 'minify_css_js'))->get('value') == 1) {
-            exec(
-                'NODE_VERSION=12 "$HOME/.nvm/nvm-exec"' .
-                ' gulp build-custom' .
-                ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'semantic/gulpfile.js' .
-                ' 2>&1 &',
-                $output,
-                $return_css
-            );
+            $modx->log(modX::LOG_LEVEL_ERROR, print_r($minifyCSS,1));
+            foreach ($minifyCSS as $path) {
+                exec(
+                    '"$HOME/.nvm/nvm-exec"' .
+                    ' gulp minify-css --path ' . $path .
+                    ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/minify-css.js' .
+                    ' 2>&1 &',
+                    $output,
+                    $return_css
+                );
+            }
         }
 
         // Bump CSS version number to force refresh

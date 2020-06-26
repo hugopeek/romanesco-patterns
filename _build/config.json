@@ -4913,6 +4913,12 @@
                 "value": "assets/semantic/dist/themes/romanesco/assets/vendor"
             },
             {
+                "key": "custom_css_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/css"
+            },
+            {
                 "key": "date_format_short",
                 "type": "textfield",
                 "area": "Date and Time",
@@ -4941,12 +4947,6 @@
                 "type": "textfield",
                 "area": "Head",
                 "value": "[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]"
-            },
-            {
-                "key": "custom_css_per_context",
-                "type": "combo-boolean",
-                "area": "Settings",
-                "value": "0"
             },
             {
                 "key": "dev_mode",
