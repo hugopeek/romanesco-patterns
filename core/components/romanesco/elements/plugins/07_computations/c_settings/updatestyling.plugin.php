@@ -150,8 +150,8 @@ switch($eventName) {
             exec(
                 '"$HOME/.nvm/nvm-exec" ' . $buildCommand .
                 ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/generate-multicontext-css.js' .
-                ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log' .
-                ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/romanesco.log &',
+                ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/css.log' .
+                ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/css-error.log &',
                 $output,
                 $return_css
             );
@@ -178,7 +178,7 @@ switch($eventName) {
                     ' --primary ' . escapeshellarg($savedSettingsTheme['theme_color_primary']) .
                     ' --secondary ' . escapeshellarg($savedSettingsTheme['theme_color_secondary']) .
                     ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log' .
-                    ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log &',
+                    ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon-error.log &',
                     $output,
                     $return_favicon
                 );

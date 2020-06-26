@@ -102,13 +102,13 @@ switch ($modx->event->name) {
 
         // Minify CSS
         if ($modx->getObject('cgSetting', array('key' => 'minify_css_js'))->get('value') == 1) {
-            $modx->log(modX::LOG_LEVEL_ERROR, print_r($minifyCSS,1));
             foreach ($minifyCSS as $path) {
                 exec(
                     '"$HOME/.nvm/nvm-exec"' .
                     ' gulp minify-css --path ' . $path .
                     ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/minify-css.js' .
-                    ' 2>&1 &',
+                    ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/minify.log' .
+                    ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/minify-error.log &',
                     $output,
                     $return_css
                 );
