@@ -1,15 +1,15 @@
 [[+wrapper:isnot=``:then=`
-<div class="item [[+active]]">
+<li class="item [[+active]]">
     <div class="title [[+classnames]]">
-        <a href="[[+link]]" title="[[+pagetitle]]" [[+attributes]]>
+        <a href="[[+link]]" [[+attributes]]>
             [[+menutitle]]
         </a>
         <button class="ui tiny icon button"><i class="dropdown icon"></i></button>
     </div>
-    <div class="content [[+active]]">
+    <ul class="content [[+active]]">
         [[+wrapper]]
-    </div>
-</div>
+    </ul>
+</li>
 `:else=`
 [[$navItemAccordion]]
 `]]

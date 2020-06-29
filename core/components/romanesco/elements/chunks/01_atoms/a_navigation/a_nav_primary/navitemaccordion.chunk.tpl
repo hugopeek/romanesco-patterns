@@ -1,3 +1,7 @@
-<a class="item [[*id:eq=`[[+id]]`:then=`active`]]" href="[[+link]]" title="[[+pagetitle]]" [[+attributes]]>
-    [[+menutitle]]
-</a>
+<li class="item [[+classnames]]">
+    <div class="title">
+        <a href="[[+link]]" [[+attributes]]>
+            [[+menutitle]]
+        </a>
+    </div>
+</li>

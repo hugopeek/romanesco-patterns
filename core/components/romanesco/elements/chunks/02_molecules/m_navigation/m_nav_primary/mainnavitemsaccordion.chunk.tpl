@@ -1,4 +1,4 @@
-<div id="menu-accordion">
+<ul id="menu-accordion">
     [[!pdoMenu?
         &startId=`0`
         &level=`[[++navbar_level:default=`2`]]`
@@ -10,10 +10,10 @@
         &tpl=`navItemAccordionParent`
         &tplParentRow=`navItemAccordionParent`
         &tplParentRowActive=`navItemAccordionParent@Active`
-        &tplInnerRow=`navItem`
+        &tplInnerRow=`navItemAccordion`
 
         &checkPermissions=`list`
         &cache=`1`
         &cache_key=`[[!+modx.user.id:memberof=`[[++romanesco.member_groups_frontend]]`:then=`nav_[[*context_key]]_member`:else=`nav_[[*context_key]]_anonymous`]]`
     ]]
-</div>
+</ul>
