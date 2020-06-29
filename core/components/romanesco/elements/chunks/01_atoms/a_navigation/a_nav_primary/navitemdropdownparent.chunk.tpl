@@ -11,7 +11,7 @@
     </ul>
 </li>
 `:else=`
-<li class="item">
+<li class="link item">
     <a class="title [[+classnames]]" href="[[+link]]">
         [[+menutitle]]
     </a>
