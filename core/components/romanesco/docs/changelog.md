@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Refactor main accordion menu
 - Add ability to change custom CSS path (per context, if needed)
 - Create absolute path for CSS backgrounds that won't be thumbnailed
 - Fix CSS background not being thumbnailed due to negative crop margins

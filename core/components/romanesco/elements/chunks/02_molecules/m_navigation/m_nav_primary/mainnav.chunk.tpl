@@ -3,16 +3,14 @@
         <div class="item branding">
             [[[[If? &subject=`[[$logoTheme]]` &operator=`isnull` &then=`$logo` &else=`$logoTheme`]]]]
         </div>
-        
-        <div class="right menu">
-            [[pdoMenu?
-                &startId=`0`
-                &level=`1`
-                &resources=`[[++navbar_resources]]`
-                &tplOuter=`navWrapper`
-                &tpl=`navItem`
-            ]]
-        </div>
+
+        [[[[If?
+            &subject=`[[++navbar_level]]`
+            &operator=`lte`
+            &operand=`1`
+            &then=`$mainNavItems`
+            &else=`$mainNavItemsDropdown`
+        ]]]]
 
         [[$mainNavItemsTheme]]
 

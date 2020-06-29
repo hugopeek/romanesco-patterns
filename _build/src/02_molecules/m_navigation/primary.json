@@ -12,10 +12,13 @@
                     "name": "mainNavVertical",
                     "category": "m_nav_primary"
                 },{
-                    "name": "mainNavDropdown",
+                    "name": "mainNavItems",
                     "category": "m_nav_primary"
                 },{
-                    "name": "subNav",
+                    "name": "mainNavItemsDropdown",
+                    "category": "m_nav_primary"
+                },{
+                    "name": "mainNavItemsAccordion",
                     "category": "m_nav_primary"
                 },{
                     "name": "subNavHorizontal",

@@ -26,7 +26,7 @@
     [[[[If?
         &subject=`[[$mainNavTheme]]`
         &operator=`isnull`
-        &then=`$mainNav[[++navbar_level:gte=`2`:then=`Dropdown`]]`
+        &then=`$mainNav`
         &else=`$mainNavTheme`
     ]]]]
 

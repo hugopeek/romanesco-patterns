@@ -6,7 +6,12 @@
         &then=`$masthead`
     ]]]]
 
-    [[[[If? &subject=`[[$mainNavVerticalTheme]]` &operator=`isnull` &then=`$mainNavVertical` &else=`$mainNavVerticalTheme`]]]]
+    [[[[If?
+        &subject=`[[$mainNavVerticalTheme]]`
+        &operator=`isnull`
+        &then=`$mainNavVertical`
+        &else=`$mainNavVerticalTheme`
+    ]]]]
 
     [[[[If?
         &subject=`[[+hero]]`

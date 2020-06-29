@@ -9,20 +9,23 @@
                     "name": "navItem",
                     "category": "a_nav_primary"
                 },{
-                    "name": "navItemWrapper",
-                    "category": "a_nav_primary"
-                },{
                     "name": "navItemInner",
                     "category": "a_nav_primary"
                 },{
                     "name": "navItemInnerWrapper",
                     "category": "a_nav_primary"
                 },{
-                    "name": "navItemParent",
+                    "name": "navItemAccordion",
                     "category": "a_nav_primary"
                 },{
-                    "name": "navItemParentActive",
-                    "category": "a_nav_primary"
+                    "name": "navItemAccordionParent",
+                    "category": "a_nav_primary",
+                    "properties": [
+                        {
+                            "name": "active",
+                            "value": ""
+                        }
+                    ]
                 },{
                     "name": "navItemIcon",
                     "category": "a_nav_primary"
@@ -34,9 +37,6 @@
                     "category": "a_nav_primary"
                 },{
                     "name": "navItemDropdownParent",
-                    "category": "a_nav_primary"
-                },{
-                    "name": "navItemDropdownParentActive",
                     "category": "a_nav_primary"
                 },{
                     "name": "navItemDropdownCategory",

@@ -1,20 +1,15 @@
 <nav id="menu-vertical" class="ui large inverted secondary vertical accordion menu" role="navigation">
     <div class="item branding">
-        [[$logo? &classes=`inverted`]]
+        [[$[[If? &subject=`[[$logoTheme]]` &operator=`isnull` &then=`logo` &else=`logoTheme`]]? &classes=`inverted`]]
     </div>
 
-    [[!pdoMenu?
-        &parents=`0`
-        &level=`3`
-        &tplOuter=`navWrapper`
-        &tpl=`navItemWrapper`
-        &tplParentRow=`navItemParent`
-        &tplParentRowActive=`navItemParentActive`
-        &tplInnerRow=`navItem`
-        &checkPermissions=`list`
-        &cache=`1`
-        &cache_key=`[[!+modx.user.id:memberof=`[[++romanesco.member_groups_frontend]]`:then=`nav_member`:else=`nav_anonymous`]]`
-    ]]
+    [[[[If?
+        &subject=`[[++navbar_level]]`
+        &operator=`lte`
+        &operand=`1`
+        &then=`$mainNavItems`
+        &else=`$mainNavItemsAccordion`
+    ]]]]
 
     [[$mainNavItemsTheme]]
 

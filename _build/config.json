@@ -3275,10 +3275,6 @@
                     "category": "o_global"
                 },
                 {
-                    "name": "header",
-                    "category": "o_global"
-                },
-                {
                     "name": "script",
                     "category": "o_global"
                 },
@@ -3865,10 +3861,6 @@
                     "category": "a_nav_primary"
                 },
                 {
-                    "name": "navItemWrapper",
-                    "category": "a_nav_primary"
-                },
-                {
                     "name": "navItemInner",
                     "category": "a_nav_primary"
                 },
@@ -3877,12 +3869,18 @@
                     "category": "a_nav_primary"
                 },
                 {
-                    "name": "navItemParent",
+                    "name": "navItemAccordion",
                     "category": "a_nav_primary"
                 },
                 {
-                    "name": "navItemParentActive",
-                    "category": "a_nav_primary"
+                    "name": "navItemAccordionParent",
+                    "category": "a_nav_primary",
+                    "properties": [
+                        {
+                            "name": "active",
+                            "value": ""
+                        }
+                    ]
                 },
                 {
                     "name": "navItemIcon",
@@ -3898,10 +3896,6 @@
                 },
                 {
                     "name": "navItemDropdownParent",
-                    "category": "a_nav_primary"
-                },
-                {
-                    "name": "navItemDropdownParentActive",
                     "category": "a_nav_primary"
                 },
                 {
@@ -4080,11 +4074,15 @@
                     "category": "m_nav_primary"
                 },
                 {
-                    "name": "mainNavDropdown",
+                    "name": "mainNavItems",
                     "category": "m_nav_primary"
                 },
                 {
-                    "name": "subNav",
+                    "name": "mainNavItemsDropdown",
+                    "category": "m_nav_primary"
+                },
+                {
+                    "name": "mainNavItemsAccordion",
                     "category": "m_nav_primary"
                 },
                 {
