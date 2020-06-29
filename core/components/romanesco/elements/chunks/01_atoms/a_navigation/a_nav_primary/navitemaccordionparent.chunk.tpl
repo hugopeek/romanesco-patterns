@@ -1,6 +1,6 @@
 [[+wrapper:isnot=``:then=`
-<li class="item [[+active]]">
-    <div class="title [[+classnames]]">
+<li class="link item [[+classnames]]">
+    <div class="title [[+active]]">
         <a href="[[+link]]" [[+attributes]]>
             [[+menutitle]]
         </a>

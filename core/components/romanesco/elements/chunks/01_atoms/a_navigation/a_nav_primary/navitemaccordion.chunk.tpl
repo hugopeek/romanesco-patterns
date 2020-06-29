@@ -1,4 +1,4 @@
-<li class="item [[+classnames]]">
+<li class="link item [[+classnames]]">
     <div class="title">
         <a href="[[+link]]" [[+attributes]]>
             [[+menutitle]]

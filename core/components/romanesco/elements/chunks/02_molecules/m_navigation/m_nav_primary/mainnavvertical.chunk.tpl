@@ -1,4 +1,4 @@
-<nav id="menu-vertical" class="ui large inverted secondary vertical accordion menu" role="navigation">
+<nav id="menu-vertical" class="ui large secondary vertical accordion menu" role="navigation">
     <div class="item branding">
         [[$[[If? &subject=`[[$logoTheme]]` &operator=`isnull` &then=`logo` &else=`logoTheme`]]? &classes=`inverted`]]
     </div>
