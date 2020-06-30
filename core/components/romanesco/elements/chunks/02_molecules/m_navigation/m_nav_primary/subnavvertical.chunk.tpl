@@ -10,7 +10,7 @@
         &parents=`[[UltimateParent]]`
         &level=`2`
         &tplOuter=`navWrapper`
-        &tpl=`navItemWrapper`
+        &tpl=`navItem`
         &tplParentRowActive=`navItemInnerWrapper`
         &tplInnerRow=`navItemInner`
         &hideSubMenus=`1`
