@@ -1,7 +1,7 @@
 <ul id="menu-accordion">
     [[!pdoMenu?
         &startId=`0`
-        &level=`[[++navbar_level:default=`2`]]`
+        &level=`[[+level:empty=`[[++navbar_level]]`]]`
         &levelClass=`level-`
         &selfClass=`current`
         &resources=`[[++navbar_resources]]`
