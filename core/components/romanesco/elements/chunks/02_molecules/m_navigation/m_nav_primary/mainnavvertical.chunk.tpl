@@ -1,4 +1,4 @@
-<nav id="menu-vertical" class="ui large secondary vertical [[++navbar_level:lte=`1`:then=`inverted`:else=`accordion`]] menu" role="navigation">
+<nav id="menu-vertical" class="ui [[++navbar_size:default=`large`]] secondary vertical [[++navbar_level:lte=`1`:then=`inverted`:else=`accordion`]] menu" role="navigation">
     <div class="item branding">
         [[$[[If? &subject=`[[$logoTheme]]` &operator=`isnull` &then=`logo` &else=`logoTheme`]]? &classes=`inverted`]]
     </div>
