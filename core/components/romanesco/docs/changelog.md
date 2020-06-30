@@ -7,7 +7,6 @@ Fixes and improvements:
 - Refactor main accordion menu
 - Add ability to change custom CSS path (per context, if needed)
 - Create absolute path for CSS backgrounds that won't be thumbnailed
-- Fix CSS background not being thumbnailed due to negative crop margins
 - Rename Semantic assets paths in system settings
 - Correctly escape double quote and backslash characters in JSON-LD output
 

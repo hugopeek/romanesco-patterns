@@ -18,8 +18,8 @@
     [[pthumb:prepend=`url(`:append=`)`?
         &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
-            &sx=[[+image.crops.[[+imgType]].x:lt=`0`:then=`0`]]
-            &sy=[[+image.crops.[[+imgType]].y:lt=`0`:then=`0`]]
+            &sx=[[+image.crops.[[+imgType]].x]]
+            &sy=[[+image.crops.[[+imgType]].y]]
             &sw=[[+image.crops.[[+imgType]].width]]
             &sh=[[+image.crops.[[+imgType]].height]]
             &q=[[++img_quality]]
