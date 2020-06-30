@@ -8,7 +8,7 @@
             &subject=`[[++navbar_level]]`
             &operator=`lte`
             &operand=`1`
-            &then=`$mainNavItems`
+            &then=`$mainNavItems? &classes=`right menu``
             &else=`$mainNavItemsDropdown`
         ]]]]
 
