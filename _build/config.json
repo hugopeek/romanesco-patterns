@@ -5172,6 +5172,13 @@
                 "value": ""
             },
             {
+                "key": "formsource",
+                "namespace": "formblocks",
+                "type": "combo-boolean",
+                "area": "FormBlocks - Settings",
+                "value": "0"
+            },
+            {
                 "key": "activation_resource_id",
                 "namespace": "formblocks",
                 "type": "textfield",

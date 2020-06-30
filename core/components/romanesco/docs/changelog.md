@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Refactor main accordion menu
+- Add option to activate FormSource in FormBlocks reports
 - Add ability to change custom CSS path (per context, if needed)
 - Create absolute path for CSS backgrounds that won't be thumbnailed
 - Rename Semantic assets paths in system settings
