@@ -5,6 +5,8 @@ Released on ...
 
 Fixes and improvements:
 - Refactor main accordion menu
+- Fix broken favicon file names and colors
+- Add setting for custom favicon path
 - Add option to activate FormSource in FormBlocks reports
 - Add ability to change custom CSS path (per context, if needed)
 - Create absolute path for CSS backgrounds that won't be thumbnailed

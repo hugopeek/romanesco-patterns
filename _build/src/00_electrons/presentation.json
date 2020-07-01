@@ -54,6 +54,11 @@
 
         "systemSettings": [
             {
+                "key": "favicon_path",
+                "type": "textfield",
+                "area": "Presentation",
+                "value": "assets/favicons"
+            },{
                 "key": "favicon_version",
                 "type": "textfield",
                 "area": "Presentation"
