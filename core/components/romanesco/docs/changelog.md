@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 0.16.4
-Released on ...
+Released on July 1, 2020
 
 Fixes and improvements:
 - Refactor main accordion menu
