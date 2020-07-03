@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 0.16.5
+Released on ...
+
+Fixes and improvements:
+- Fix path to custom context CSS in GenerateStaticCSS
+
 ## Romanesco Patterns 0.16.4
 Released on July 1, 2020
 

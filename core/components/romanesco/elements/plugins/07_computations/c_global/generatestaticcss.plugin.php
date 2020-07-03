@@ -82,9 +82,9 @@ switch ($modx->event->name) {
                 'key' => 'romanesco.custom_css_path'
             ));
             if ($cssPathContext) {
-                $cssPath = $cssPathContext->get('value');
+                $cssPath = $modx->getOption('base_path') . $cssPathContext->get('value');
             } else {
-                $cssPath = $cssPath . '/' . $context;
+                $cssPath = $modx->getOption('base_path') . $cssPath . '/' . $context;
             }
 
             // Generate static file
