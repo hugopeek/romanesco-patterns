@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Make Gallery images responsive and (optionally) lazy loading
 - Add link rel options to Button and Image CBs
 - Fix path to custom context CSS in GenerateStaticCSS
 

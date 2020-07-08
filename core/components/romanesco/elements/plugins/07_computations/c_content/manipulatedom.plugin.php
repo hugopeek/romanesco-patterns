@@ -163,7 +163,7 @@ switch ($modx->event->name) {
                     // Grab images sources from data attributes
                     $images =
                         $gallery
-                            ->filter('img.lightbox')
+                            ->filter('.lightbox > img')
                             ->each(function (HtmlPageCrawler $img) {
                                 global $modx;
                                 return $modx->getChunk('galleryRowImageLightbox', array(

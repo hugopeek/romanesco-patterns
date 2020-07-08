@@ -2673,6 +2673,11 @@
                     "category": "a_images"
                 },
                 {
+                    "name": "imgResponsiveScale",
+                    "description": "A switch statement that selects the right viewport width for the img sizes attribute, based on the layout and column type of the container.",
+                    "category": "a_images"
+                },
+                {
                     "name": "imgOpenGraphRow",
                     "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
                     "category": "a_images"
