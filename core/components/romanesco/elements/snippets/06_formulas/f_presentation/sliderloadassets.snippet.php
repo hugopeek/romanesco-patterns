@@ -106,9 +106,19 @@ if ($lightbox == 1) {
     $('#gallery-$uid .ui.lightbox.image').click(function () {
         var idx = $(this).data('idx');
         var modalID = '#lightbox-$uid';
+        var lazyLoadLightbox = new LazyLoad({
+            elements_selector: modalID + ' .lazy'
+        });
 
-        $(modalID).modal('show');
-
+        $(modalID)
+            .modal({
+                onShow: function() {
+                    lazyLoadLightbox.loadAll();
+                    lazyLoadInstance.update();
+                }
+            })
+            .modal('show')
+        ;
         $var.update();
         $var.init();
         $var.slideTo(idx, 0, false);

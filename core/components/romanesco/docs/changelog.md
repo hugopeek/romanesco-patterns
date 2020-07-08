@@ -4,7 +4,7 @@
 Released on ...
 
 Fixes and improvements:
-- Turn lightbox into fullscreen modal
+- Turn lightbox into fullscreen modal and lazy load images
 - Make Gallery images responsive
 - Add option to lazy load Gallery images
 - Add link rel options to Button and Image CBs
