@@ -28,5 +28,5 @@
              height="[[+height]]"
              alt="[[+alt:htmlent]]"
         />
-    </figure>[[+idx]]
+    </figure>
 </div>

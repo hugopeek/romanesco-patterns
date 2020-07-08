@@ -4,7 +4,9 @@
 Released on ...
 
 Fixes and improvements:
-- Make Gallery images responsive and (optionally) lazy loading
+- Turn lightbox into fullscreen modal
+- Make Gallery images responsive
+- Add option to lazy load Gallery images
 - Add link rel options to Button and Image CBs
 - Fix path to custom context CSS in GenerateStaticCSS
 
