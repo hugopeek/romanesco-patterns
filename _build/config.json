@@ -3725,6 +3725,10 @@
                     "category": "a_cb_settings"
                 },
                 {
+                    "name": "cbSettingLinkRel",
+                    "category": "a_cb_settings"
+                },
+                {
                     "name": "cbSettingPadding",
                     "category": "a_cb_settings"
                 },

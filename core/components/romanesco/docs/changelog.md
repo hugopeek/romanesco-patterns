@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add link rel options to Button and Image CBs
 - Fix path to custom context CSS in GenerateStaticCSS
 
 ## Romanesco Patterns 0.16.4

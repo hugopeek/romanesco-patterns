@@ -1,4 +1,4 @@
-<a href="[[+link]]">
+<a href="[[+link]]" [[+link_rel:replace=`,== `:prepend=`rel="`:append=`"`]] [[+attributes]]>
     [[$imageOuter?
         &url=`[[+url]]`
         &size=`[[+size]]`
