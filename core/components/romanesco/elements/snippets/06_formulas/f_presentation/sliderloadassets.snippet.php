@@ -112,7 +112,7 @@ if ($lightbox == 1) {
 
         $(modalID)
             .modal({
-                onShow: function() {
+                onVisible: function() {
                     lazyLoadLightbox.loadAll();
                     lazyLoadInstance.update();
                 }

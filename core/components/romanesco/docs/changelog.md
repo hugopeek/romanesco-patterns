@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add ability to place slider controls outside of container
 - Turn lightbox into fullscreen modal and lazy load images
 - Make Gallery images responsive
 - Add option to lazy load Gallery images

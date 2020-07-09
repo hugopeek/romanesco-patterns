@@ -13,11 +13,11 @@
         keyboard: [[+keyboard]],
         effect: '[[+transition]]',
         navigation: {
-            nextEl: '#[[+id]] .swiper-button-next',
-            prevEl: '#[[+id]] .swiper-button-prev',
+            nextEl: '.[[+id]].swiper-button-next',
+            prevEl: '.[[+id]].swiper-button-prev',
         },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.[[+id]].swiper-pagination',
             type: '[[+pagination]]',
             clickable: [[+clickable]],
         },

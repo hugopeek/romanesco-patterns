@@ -39,6 +39,17 @@
                     "templates": [
                         "Presentation"
                     ]
+                },{
+                    "caption": "Invert navigation colors",
+                    "name": "slider_inverted",
+                    "category": "Slider - Settings",
+                    "sortOrder": "33",
+                    "type": "option",
+                    "inputOptionValues": "No==0||Yes==1",
+                    "defaultValue": "0",
+                    "templates": [
+                        "Presentation"
+                    ]
                 }
             ],
             "categories": [
