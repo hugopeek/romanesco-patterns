@@ -1,5 +1,8 @@
 [[+lazy_load:eq=`1`:then=`data-`:else=``:toPlaceholder=`lazy`]]
-[[$imgResponsiveScale:toPlaceholder=`scale`]]
+[[$imgResponsiveScale:toPlaceholder=`scale`?
+    &layout_id=`[[+layout_id]]`
+    &layout_column=`[[+layout_column]]`
+]]
 [[responsiveImgSrcset?
     &breakpoints=`[[++img_breakpoints]]`
     &quality=`[[++img_quality]]`
