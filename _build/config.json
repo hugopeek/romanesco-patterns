@@ -2456,6 +2456,10 @@
                     "category": "a_content"
                 },
                 {
+                    "name": "imageGallery",
+                    "category": "a_content"
+                },
+                {
                     "name": "imageSVG",
                     "category": "a_content"
                 },

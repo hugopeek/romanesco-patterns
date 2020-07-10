@@ -6,7 +6,7 @@ Released on ...
 Fixes and improvements:
 - Add ability to place slider controls outside of container
 - Turn lightbox into fullscreen modal and lazy load images
-- Make Gallery images responsive
+- Make Gallery images sizes responsive
 - Add option to lazy load Gallery images
 - Add link rel options to Button and Image CBs
 - Fix path to custom context CSS in GenerateStaticCSS
