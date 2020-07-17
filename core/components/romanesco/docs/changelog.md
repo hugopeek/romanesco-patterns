@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix path to default context CSS in GenerateStaticCSS
 - Add ability to place slider controls outside of container
 - Turn lightbox into fullscreen modal and lazy load images
 - Make Gallery images sizes responsive

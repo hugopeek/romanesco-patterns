@@ -49,23 +49,23 @@ switch ($modx->event->name) {
         }
 
         // Get default CSS path
-        $cssPathDefault = $modx->getObject('modSystemSetting', array('key' => 'romanesco.custom_css_path'));
-        if ($cssPathDefault) {
-            $cssPath = $modx->getOption('base_path') . $cssPathDefault->get('value');
+        $cssPathSystem = $modx->getObject('modSystemSetting', array('key' => 'romanesco.custom_css_path'));
+        if ($cssPathSystem) {
+            $cssPathDefault = $modx->getOption('base_path') . $cssPathSystem->get('value');
         } else {
-            $cssPath = $modx->getOption('base_path') . 'assets/css';
+            $cssPathDefault = $modx->getOption('base_path') . 'assets/css';
         }
 
         // Generate default CSS file
         $css = $modx->getChunk($cssChunk);
-        $staticFile = $cssPath . '/site.css';
+        $staticFile = $cssPathDefault . '/site.css';
 
         if (!$modx->cacheManager->writeFile($staticFile, $css)) {
             $modx->log(modX::LOG_LEVEL_ERROR, "Error caching output from Resource {$modx->resource->get('id')} to static file {$staticFile}", '', __FUNCTION__, __FILE__, __LINE__);
         }
 
         // Start collecting CSS paths for minification down the road
-        $minifyCSS[] = $cssPath;
+        $minifyCSS[] = $cssPathDefault;
 
         // Each container represents a context
         foreach ($bgContainers as $container) {
@@ -84,7 +84,7 @@ switch ($modx->event->name) {
             if ($cssPathContext) {
                 $cssPath = $modx->getOption('base_path') . $cssPathContext->get('value');
             } else {
-                $cssPath = $modx->getOption('base_path') . $cssPath . '/' . $context;
+                $cssPath = $cssPathDefault . '/' . $context;
             }
 
             // Generate static file
