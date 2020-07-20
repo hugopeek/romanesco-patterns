@@ -7,7 +7,7 @@
 
 [[sliderLoadAssets?
     &uid=`[[+unique_idx]]`
-    &behaviour=`loop,arrows`
+    &behaviour=`loop,arrows,keyboard`
     &lazyload=`0`
     &pagination=`bullets`
     &lightbox=`[[+lightbox]]`
