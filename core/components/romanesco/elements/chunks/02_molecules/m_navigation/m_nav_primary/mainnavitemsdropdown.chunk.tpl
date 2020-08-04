@@ -1,4 +1,4 @@
-<ul id="menu-dropdown" class="right menu">
+<ul id="menu-dropdown" class="[[+classes]]">
     [[pdoMenu?
         &startId=`0`
         &level=`[[++navbar_level:default=`2`]]`

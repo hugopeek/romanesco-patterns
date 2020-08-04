@@ -9,7 +9,7 @@
             &operator=`lte`
             &operand=`1`
             &then=`$mainNavItems? &classes=`right menu``
-            &else=`$mainNavItemsDropdown`
+            &else=`$mainNavItemsDropdown? &classes=`right menu``
         ]]]]
 
         [[$mainNavItemsTheme]]
