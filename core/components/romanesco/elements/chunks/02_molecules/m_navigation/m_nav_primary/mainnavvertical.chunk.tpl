@@ -16,7 +16,7 @@
     <div class="item toc">
         <button class="ui right labeled inverted basic icon button">
             <i class="sidebar icon"></i>
-            <span>Menu</span>
+            <span>[[%romanesco.menu.toc]]</span>
         </button>
     </div>
 </nav>

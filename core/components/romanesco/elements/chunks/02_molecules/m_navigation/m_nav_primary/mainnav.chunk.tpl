@@ -17,7 +17,7 @@
         <div class="item toc">
             <button class="ui right labeled icon button">
                 <i class="sidebar icon"></i>
-                <span>Menu</span>
+                <span>[[%romanesco.menu.toc]]</span>
             </button>
         </div>
     </div>

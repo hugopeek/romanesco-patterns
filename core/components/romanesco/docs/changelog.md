@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Replace hardcoded Menu text in main nav with lexicon key
 - Don't add header class to content headers if they already have one
 - Add classes with placeholder in main accordion navigation
 - Fix background in article template introduction segment
