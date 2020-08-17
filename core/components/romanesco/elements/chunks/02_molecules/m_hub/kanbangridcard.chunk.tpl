@@ -4,10 +4,10 @@
             [[+menutitle:empty=`[[+pagetitle]]`]]
         </a>
         <div class="meta">
-            [[+planning_date_completed:notempty=`
+            [[+planning_date_due:notempty=`
             <span class="date">
                 <i class="small calendar alternate outline icon"></i>
-                [[+planning_date_completed:strtotime:date=`[[++romanesco.date_format_short]]`]]
+                [[+planning_date_due:strtotime:date=`[[++romanesco.date_format_short]]`]]
             </span>
             `]]
         </div>

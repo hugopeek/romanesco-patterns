@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix placeholder for due date in status grid
 - Accept overview fallback images for each image type
 - Don't transform input to lowercase in removeDuplicateLines snippet
 - Don't add header class to content headers if they already have one

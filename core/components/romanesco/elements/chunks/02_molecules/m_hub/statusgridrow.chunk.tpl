@@ -76,8 +76,8 @@
         `]]
     </td>
     <td class="due date">
-        <span class="hidden sort">[[+planning_date_completed]]</span>
-        [[+planning_date_completed:strtotime:date=`[[++romanesco.date_format_long]]`]]
+        <span class="hidden sort">[[+planning_date_due]]</span>
+        [[+planning_date_due:strtotime:date=`[[++romanesco.date_format_long]]`]]
     </td>
 </tr>
 [[+wrapper]]
