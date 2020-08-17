@@ -4,9 +4,10 @@
 Released on ...
 
 Fixes and improvements:
+- Accept overview fallback images for each image type
 - Don't transform input to lowercase in removeDuplicateLines snippet
-- Replace hardcoded Menu text in main nav with lexicon key
 - Don't add header class to content headers if they already have one
+- Replace hardcoded Menu text in main nav with lexicon key
 - Add classes with placeholder in main accordion navigation
 - Fix background in article template introduction segment
 - Fix path to default context CSS in GenerateStaticCSS
