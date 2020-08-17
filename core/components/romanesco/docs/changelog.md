@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Don't add header class to content headers if they already have one
 - Add classes with placeholder in main accordion navigation
 - Fix background in article template introduction segment
 - Fix path to default context CSS in GenerateStaticCSS
