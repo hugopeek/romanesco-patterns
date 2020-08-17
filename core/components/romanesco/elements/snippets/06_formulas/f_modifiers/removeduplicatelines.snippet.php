@@ -8,7 +8,7 @@ if ($file) {
 }
 
 // Create an array of all lines inside the input
-$lines = explode("\n", strtolower($lines));
+$lines = explode("\n", $lines);
 $i = 0;
 
 // Check if the lines array contains duplicates
