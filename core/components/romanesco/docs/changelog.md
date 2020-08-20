@@ -7,6 +7,7 @@ New features:
 - Add ability to generate critical CSS for each resource
 
 Fixes and improvements:
+- Prevent empty logo path in Configuration from triggering a CSS rebuild
 - Fix placeholder for due date in status grid
 - Accept overview fallback images for each image type
 - Don't transform input to lowercase in removeDuplicateLines snippet
