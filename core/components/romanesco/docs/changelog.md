@@ -3,6 +3,9 @@
 ## Romanesco Patterns 0.16.5
 Released on ...
 
+New features:
+- Add ability to generate critical CSS for each resource
+
 Fixes and improvements:
 - Fix placeholder for due date in status grid
 - Accept overview fallback images for each image type

@@ -13,8 +13,20 @@
 
     <script>document.documentElement.className = 'js';</script>
 
-    <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">
-    <link href="[[++romanesco.custom_css_path]]/site[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">
+    [[If?
+        &subject=`[[++generate_critical_css]]`
+        &operator=`eq`
+        &operand=`1`
+        &then=`
+        <link href="[[++romanesco.custom_css_path]]/critical/[[*alias]].css" rel="stylesheet">
+        <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet" media="print" onload="this.media='all'">
+        <link href="[[++romanesco.custom_css_path]]/site[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet" media="print" onload="this.media='all'">
+        `
+        &else=`
+        <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">
+        <link href="[[++romanesco.custom_css_path]]/site[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">
+        `
+    ]]
 
     [[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]
     [[~[[*id]]:contains=`status`:or:contains=`hub`:then=`1`:toPlaceholder=`load_assets_hub`]]

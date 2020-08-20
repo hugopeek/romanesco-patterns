@@ -4895,6 +4895,16 @@
                     ]
                 },
                 {
+                    "name": "GenerateCriticalCSS",
+                    "category": "c_global",
+                    "events": [
+                        {
+                            "event": "OnDocFormSave",
+                            "priority": 11
+                        }
+                    ]
+                },
+                {
                     "name": "setResourceIDs",
                     "description": "Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.",
                     "category": "c_settings",
