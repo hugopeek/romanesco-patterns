@@ -32,7 +32,7 @@ switch ($modx->event->name) {
         ));
 
         $buildCommand = 'gulp critical --src ' . $modx->makeUrl($resource->get('id'),'','','full') . ' --dist ' . $cssPathDefault . '/critical/'. rtrim($resource->get('uri'),'/') . '.css';
-        $modx->log(modX::LOG_LEVEL_ERROR, $buildCommand);
+
         exec(
             '"$HOME/.nvm/nvm-exec" ' . $buildCommand .
             ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/generate-critical-css.js' .
@@ -42,12 +42,14 @@ switch ($modx->event->name) {
             $return_css
         );
 
-        $modx->log(modX::LOG_LEVEL_ERROR, "Successfully generated critical CSS for resource: {$resource->get('alias')} ({$resource->get('id')})");
-
         break;
 
     case 'OnWebPagePrerender':
-        if (!empty($_SERVER['HTTP_HTTPS'])) {
-            header("Link: <{$resource->get('uri')}>; as=style; rel=preload;",false);
+        if ($_SERVER['HTTPS'] === 'on') {
+            $uri = ltrim($modx->resource->get('uri'),'/');
+            $uri = rtrim($modx->resource->get('uri'),'/');
+            header("Link: </assets/css/critical/{$uri}.css>; as=style; rel=preload;, </assets/img/logo-romanesco.svg>; as=image; rel=preload; nopush, </assets/semantic/dist/themes/default/assets/fonts/icons.woff2>; as=font; rel=preload; crossorigin; nopush");
         }
+
+        break;
 }
