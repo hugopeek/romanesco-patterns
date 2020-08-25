@@ -1,0 +1,23 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "generateStaticFile",
+                    "description": "Create a physical HTML file of a resource in the designated location. This is a utility snippet. Place it in the content somewhere and visit that page in the browser to generate the file.",
+                    "category": "f_utility"
+                },{
+                    "name": "generateCriticalCSS",
+                    "description": "Utility snippet to determine which CSS styles are used above the fold and write them to a custom CSS file. This needs NPM and the critical package to be installed.",
+                    "category": "f_utility"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "f_utility",
+                    "parent": "06_formulas"
+                }
+            ]
+        }
+    }
+}

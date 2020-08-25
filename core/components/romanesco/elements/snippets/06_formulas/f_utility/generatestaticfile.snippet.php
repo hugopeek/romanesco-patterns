@@ -9,6 +9,11 @@
  *
  * NB! Won't work if the snippet is on the page you want to export!
  *
+ * @var modX $modx
+ * @var $scriptProperties array
+ *
+ * @package romanesco
+ *
  * @todo: convert to plugin, support multiple files, add ability to change site_url.
  */
 
@@ -30,4 +35,4 @@ if ($file) {
     file_put_contents($file, $content);
 }
 
-return;
+return 'Done.';

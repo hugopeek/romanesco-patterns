@@ -18,10 +18,6 @@
                     "name": "FibonacciSequence",
                     "description": "Generate a sequence of Fibonacci numbers. In a Fibonacci sequence, every number after the first two is the sum of the two preceding ones.",
                     "category": "f_framework"
-                },{
-                    "name": "generateStaticFile",
-                    "description": "Create a physical HTML file of a resource in the designated location. This is a utility snippet. Place it in the content somewhere and visit that page in the browser to generate the file.",
-                    "category": "f_framework"
                 }
             ],
             "categories": [
