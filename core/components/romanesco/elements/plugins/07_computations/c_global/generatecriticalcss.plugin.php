@@ -2,6 +2,10 @@
 /**
  * GenerateCriticalCSS
  *
+ * Determine which CSS styles are used above the fold and write them to a custom
+ * CSS file. This needs NPM and the critical package to be installed.
+ *
+ * https://github.com/addyosmani/critical
  *
  * @var modX $modx
  * @var modResource $resource
@@ -12,35 +16,16 @@
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
+        $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+        $romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
+
+        if (!($romanesco instanceof Romanesco)) return;
 
 //        if ($resource->getTVValue('header_background_img')) {
 //            break;
 //        }
 
-        // Get default CSS path
-        $cssPathSystem = $modx->getObject('modSystemSetting', array('key' => 'romanesco.custom_css_path'));
-        if ($cssPathSystem) {
-            $cssPathDefault = $modx->getOption('base_path') . $cssPathSystem->get('value');
-        } else {
-            $cssPathDefault = $modx->getOption('base_path') . 'assets/css';
-        }
-
-        // Get context CSS path
-        $cssPathContext = $modx->getObject('modContextSetting', array(
-            'context_key' => $resource->get('context_key'),
-            'key' => 'romanesco.custom_css_path'
-        ));
-
-        $buildCommand = 'gulp critical --src ' . $modx->makeUrl($resource->get('id'),'','','full') . ' --dist ' . $cssPathDefault . '/critical/'. rtrim($resource->get('uri'),'/') . '.css';
-
-        exec(
-            '"$HOME/.nvm/nvm-exec" ' . $buildCommand .
-            ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/generate-critical-css.js' .
-            ' >> ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/css-critical.log' .
-            ' 2>>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/css-error.log &',
-            $output,
-            $return_css
-        );
+        $romanesco->generateCriticalCSS($resource);
 
         break;
 
