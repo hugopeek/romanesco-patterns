@@ -15,6 +15,17 @@
  * Process markdown in your template like this:
  *
  * [[*content:Markdown]]
+ *
+ * /**
+ * fbLexiconWeb
+ *
+ * Load FormBlocks lexicon in web context.
+ *
+ * @var modX $modx
+ * @var modResource $resource
+ * @var $scriptProperties array
+ *
+ * @package romanesco
  */
 
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
@@ -47,7 +58,7 @@ switch ($modx->event->name) {
         break;
 
     // Use HTML mime type when viewed as a web page
-    // Inspired by: https://github.com/GoldCoastMedia/modx-xhtml-mime-switch
+    // Based on: https://github.com/GoldCoastMedia/modx-xhtml-mime-switch
     case 'OnWebPagePrerender':
         $resource = &$modx->resource;
 
@@ -97,7 +108,7 @@ switch ($modx->event->name) {
             })
         ;
 
-        // Turn the tables... into ui tables
+        // Turn tables into Semantic tables
         $dom->filter('table')->addClass('ui compact table');
 
         // Add language class to code blocks that do not specify a language

@@ -3,6 +3,11 @@
  * TableOfContents plugin
  *
  * Generate a menu with internal links to all headings in the content.
+ *
+ * @var modX $modx
+ * @var $scriptProperties array
+ *
+ * @package romanesco
  */
 
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');

@@ -3,6 +3,11 @@
  * setResourceGroup
  *
  * Add resource to a specific group, based on certain conditions or variables.
+ *
+ * @var modX $modx
+ * @var modResource $resource
+ *
+ * @package romanesco
  */
 
 switch ($modx->event->name) {

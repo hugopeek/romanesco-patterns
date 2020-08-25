@@ -8,6 +8,10 @@
  *
  * It's deactivated by default, because the Backyard package includes a resolver
  * that does the same thing.
+ *
+ * @var modX $modx
+ *
+ * @package romanesco
  */
 
 $eventName = $modx->event->name;
@@ -80,8 +84,6 @@ switch($eventName) {
                 } else {
                     $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find context setting with key: ' . $contextSetting);
                 }
-
-                return;
             }
         }
 

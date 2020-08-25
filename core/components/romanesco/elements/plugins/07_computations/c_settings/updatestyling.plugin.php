@@ -27,6 +27,8 @@
  * present in MODX. The settings are directly written to a static file now.
  *
  * @var modX $modx
+ *
+ * @package romanesco
  */
 
 // Check if exec function is available on the server

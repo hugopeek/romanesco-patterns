@@ -1,4 +1,16 @@
 <?php
+/**
+ * ManagerAugmentations
+ *
+ * Small tweaks to the MODX backend, to enhance the Romanesco experience.
+ *
+ * @var modX $modx
+ * @var modResource $resource
+ * @var modManagerController $controller
+ *
+ * @package romanesco
+ */
+
 $modx->controller->addLexiconTopic('romanescobackyard:manager');
 
 $versionCSS = $modx->getOption('romanesco.assets_version_css');
