@@ -14,10 +14,15 @@
  * @package romanesco
  */
 
+// Abort if critical CSS generation is not enabled under Configuration settings
+if ($modx->getObject('cgSetting', array('key' => 'generate_critical_css'))->get('value') != 1) {
+    return true;
+}
+
 switch ($modx->event->name) {
     case 'OnDocFormSave':
-        $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-        $romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
+        $rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+        $romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
 
         if (!($romanesco instanceof Romanesco)) return;
 

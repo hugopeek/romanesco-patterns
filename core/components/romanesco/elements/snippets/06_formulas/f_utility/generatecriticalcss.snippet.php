@@ -16,13 +16,14 @@
  * @package romanesco
  */
 
-$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
+$rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+$romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
 
 if (!($romanesco instanceof Romanesco)) return;
 
 $resourceID = $modx->getOption('id', $scriptProperties, '');
+$resource = $modx->getObject('modResource',$resourceID);
 
-$romanesco->generateCriticalCSS($modx->getObject('modResource',$resourceID));
+$romanesco->generateCriticalCSS($resource);
 
-return 'Done.';
+return "Critical CSS generated for <strong>{$resource->get('uri')}</strong> ($resourceID)";
