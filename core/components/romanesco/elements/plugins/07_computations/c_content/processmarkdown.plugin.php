@@ -22,10 +22,10 @@
  * @package romanesco
  */
 
-$corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
+$pdCorePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
 
 if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
-    require $corePath . 'vendor/autoload.php';
+    require $pdCorePath . 'vendor/autoload.php';
 }
 
 use \Wa72\HtmlPageDom\HtmlPageCrawler;
@@ -36,7 +36,8 @@ switch ($modx->event->name) {
         /**
          * @var modResource $resource
          */
-        $template = $modx->getObject('modTemplate', array('id'=>$resource->get('template')));
+
+        $template = $modx->getObject('modTemplate', array('id' => $resource->get('template')));
 
         if (!is_object($template)) {
             break;
@@ -74,7 +75,7 @@ switch ($modx->event->name) {
 
         // Switch back to HTML
         if ($markdown) {
-            $resource->get('contentType')->set('mime_type', $header->html);
+            $resource->ContentType->set('mime_type', $header->html);
         }
 
         // Process output with HtmlPageDom
