@@ -5,8 +5,7 @@
  * Generate a menu with internal links to all headings in the content.
  *
  * @var modX $modx
- * @var $scriptProperties array
- *
+ * @var array $scriptProperties
  * @package romanesco
  */
 

@@ -16,14 +16,8 @@
  *
  * [[*content:Markdown]]
  *
- * /**
- * fbLexiconWeb
- *
- * Load FormBlocks lexicon in web context.
- *
  * @var modX $modx
- * @var modResource $resource
- * @var $scriptProperties array
+ * @var array $scriptProperties
  *
  * @package romanesco
  */
@@ -39,6 +33,9 @@ use \Wa72\HtmlPageDom\HtmlPageCrawler;
 switch ($modx->event->name) {
     // Set content type to Markdown when resource has a markdown template
     case 'OnBeforeDocFormSave':
+        /**
+         * @var modResource $resource
+         */
         $template = $modx->getObject('modTemplate', array('id'=>$resource->get('template')));
 
         if (!is_object($template)) {

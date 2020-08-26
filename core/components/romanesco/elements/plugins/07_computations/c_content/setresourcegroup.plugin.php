@@ -5,13 +5,15 @@
  * Add resource to a specific group, based on certain conditions or variables.
  *
  * @var modX $modx
- * @var modResource $resource
- *
  * @package romanesco
  */
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
+        /**
+         * @var modResource $resource
+         */
+
         $resourceGroup = $modx->getObject('modResourceGroup',1);
 
         if (!is_object($resourceGroup)) {

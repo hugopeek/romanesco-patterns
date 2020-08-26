@@ -8,8 +8,7 @@
  * https://github.com/addyosmani/critical
  *
  * @var modX $modx
- * @var modResource $resource
- * @var $scriptProperties array
+ * @var array $scriptProperties
  *
  * @package romanesco
  */
@@ -32,10 +31,10 @@ $distPath = $modx->getOption('romanesco.semantic_dist_path');
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
-        $rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-        $romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
-
-        if (!($romanesco instanceof Romanesco)) return;
+        /**
+         * @var modResource $resource
+         * @var int $id
+         */
 
         $romanesco->generateCriticalCSS($id, $resource->get('uri'), $cssPath);
 

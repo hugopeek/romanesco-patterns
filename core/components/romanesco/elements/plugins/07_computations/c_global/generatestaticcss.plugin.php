@@ -17,8 +17,7 @@
  * users will need to save the resource twice to see their changes reflected.
  *
  * @var modX $modx
- * @var modResource $resource
- * @var $scriptProperties array
+ * @var array $scriptProperties
  *
  * @package romanesco
  */

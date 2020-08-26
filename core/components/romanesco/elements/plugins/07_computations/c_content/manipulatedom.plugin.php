@@ -5,9 +5,8 @@
  * This plugin utilizes HtmlPageDom, a page crawler that can manipulate DOM
  * elements for us. Yes, that is exactly what jQuery does... But now we can do
  * it server side, before the page is rendered. Much faster and more reliable.
-
- * @var modX $modx
  *
+ * @var modX $modx
  * @package romanesco
  */
 
