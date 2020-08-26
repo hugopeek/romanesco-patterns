@@ -24,6 +24,8 @@ if (!($romanesco instanceof Romanesco)) return;
 $resourceID = $modx->getOption('id', $scriptProperties, '');
 $resource = $modx->getObject('modResource',$resourceID);
 
-$romanesco->generateCriticalCSS($resource);
+if (!($resource instanceof modResource)) return;
+
+$romanesco->generateCriticalCSS($resourceID, $resource->get('uri'), $romanesco->getCssPath($resource->get('context_key')));
 
 return "Critical CSS generated for <strong>{$resource->get('uri')}</strong> ($resourceID)";
