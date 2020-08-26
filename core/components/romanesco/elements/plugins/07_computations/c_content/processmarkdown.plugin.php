@@ -70,11 +70,11 @@ switch ($modx->event->name) {
         );
 
         // Get the document type
-        $markdown = ($resource->get('contentType') === $header->markdown) ? true : false;
+        $markdown = $resource->get('contentType') === $header->markdown;
 
         // Switch back to HTML
         if ($markdown) {
-            $resource->ContentType->set('mime_type', $header->html);
+            $resource->get('contentType')->set('mime_type', $header->html);
         }
 
         // Process output with HtmlPageDom
