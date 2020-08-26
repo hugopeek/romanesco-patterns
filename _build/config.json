@@ -4910,6 +4910,9 @@
                         {
                             "event": "OnDocFormSave",
                             "priority": 11
+                        },
+                        {
+                            "event": "OnWebPagePrerender"
                         }
                     ]
                 },
