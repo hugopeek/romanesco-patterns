@@ -26,6 +26,7 @@ if (!($romanesco instanceof Romanesco)) {
     return true;
 }
 
+$basePath = $modx->getOption('base_path');
 $cssPath = $romanesco->getCssPath($modx->resource->get('context_key'));
 $distPath = $modx->getOption('romanesco.semantic_dist_path');
 
@@ -42,18 +43,20 @@ switch ($modx->event->name) {
 
     case 'OnWebPagePrerender':
         if ($_SERVER['HTTPS'] === 'on') {
-            $cssPath = rtrim($cssPath,'/');
             $uri = ltrim($modx->resource->get('uri'),'/');
             $uri = rtrim($modx->resource->get('uri'),'/');
-            $logo = $modx->getObject('cgSetting', array('key' => 'logo_path'))->get('value');
+            $cssFile = rtrim($cssPath,'/') . "/critical/$uri.css";
+            $logo = $modx->getObject('cgSetting', array('key' => 'logo_path'));
 
-            // Create array with header
+            // Create array with objects for the header
             $linkObjects = array();
-            $linkObjects[] = "</$cssPath/critical/$uri.css>; as=style; rel=preload;";
-            $linkObjects[] = "</$distPath/themes/default/assets/fonts/icons.woff2>; as=font; rel=preload; crossorigin; nopush";
-            if ($logo) {
-                $linkObjects[] = "</assets/img/$logo>; as=image; rel=preload; nopush";
+            if (file_exists("$basePath$cssFile")) {
+                $linkObjects[] = "</$cssFile>; as=style; rel=preload;";
             }
+            if ($logo) {
+                $linkObjects[] = "</assets/img/{$logo->get('value')}>; as=image; rel=preload; nopush";
+            }
+            $linkObjects[] = "</$distPath/themes/default/assets/fonts/icons.woff2>; as=font; rel=preload; crossorigin; nopush";
 
             // Set PHP header
             header('Link: ' . implode(',',$linkObjects));
