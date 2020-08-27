@@ -2166,6 +2166,10 @@ if ($object->xpdo) {
   array (
     0 => 'Presentation',
   ),
+  'slider_inverted' => 
+  array (
+    0 => 'Presentation',
+  ),
   'social_twitter' => 
   array (
     0 => 'TeamMember',
