@@ -13,22 +13,41 @@
  * @package romanesco
  */
 
-// Abort if critical CSS generation is not enabled under Configuration settings
-if ($modx->getObject('cgSetting', array('key' => 'generate_critical_css'))->get('value') != 1) {
-    return true;
+$context = $modx->resource->get('context_key');
+$cgSetting = $modx->getObject('cgSetting', array('key' => 'generate_critical_css'));
+
+// Check if critical CSS generation is enabled under Configuration settings
+if (is_object($cgSetting) && $modx->getOption('clientconfig.context_aware') == true) {
+    $cgContextValue = $modx->getObject('cgContextValue', array('setting' => 79, 'context' => $context));
+
+    if (is_object($cgContextValue)) {
+        $critical = $cgContextValue->get('value');
+    } else {
+        $critical = $cgSetting->get('value');
+    }
 }
+elseif (is_object($cgSetting)) {
+    $critical = $cgSetting->get('value');
+}
+else {
+    $modx->log(modX::LOG_LEVEL_ERROR, 'Context setting generate_critical_css not found!');
+    return;
+}
+
+// Abort if critical is not enabled for current context
+if (!$critical) return;
+
 
 $rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
 $romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
-
-if (!($romanesco instanceof Romanesco)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, 'Class not found!');
-    return true;
-}
-
 $basePath = $modx->getOption('base_path');
 $cssPath = $romanesco->getCssPath($modx->resource->get('context_key'));
 $distPath = $modx->getOption('romanesco.semantic_dist_path');
+
+if (!($romanesco instanceof Romanesco)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, 'Romanesco class not found!');
+    return;
+}
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
@@ -48,7 +67,7 @@ switch ($modx->event->name) {
             $cssFile = rtrim($cssPath,'/') . "/critical/$uri.css";
             $logo = $modx->getObject('cgSetting', array('key' => 'logo_path'));
 
-            // Create array with objects for the header
+            // Create array of objects for the header
             $linkObjects = array();
             if (file_exists("$basePath$cssFile")) {
                 $linkObjects[] = "</$cssFile>; as=style; rel=preload;";

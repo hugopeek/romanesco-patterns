@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Handle context aware configuration settings in critical CSS plugin
 - Disable deprecated global backgrounds using MIGX TV
 
 ## Romanesco Patterns 1.0.0-beta1
