@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta2
+Released on ...
+
+Fixes and improvements:
+- Disable deprecated global backgrounds using MIGX TV
+
 ## Romanesco Patterns 1.0.0-beta1
 Released on August 27, 2020
 

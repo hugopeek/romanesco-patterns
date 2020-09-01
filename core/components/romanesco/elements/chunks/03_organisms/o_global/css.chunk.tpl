@@ -6,7 +6,7 @@
 /* Load all backgrounds set under Global Content */
 
 [[- DEPRECATED MIGX TV BACKGROUNDS ]]
-[[getImageList?
+[[-getImageList?
     &docid=`[[++romanesco.global_backgrounds_id]]`
     &tvname=`global_background_img`
     &tpl=`globalBackgroundImgCSS`
