@@ -41,7 +41,7 @@ if (!$critical) return;
 $rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
 $romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
 $basePath = $modx->getOption('base_path');
-$cssPath = $romanesco->getCssPath($modx->resource->get('context_key'));
+$cssPath = $modx->getOption('romanesco.custom_css_path');
 $distPath = $modx->getOption('romanesco.semantic_dist_path');
 
 if (!($romanesco instanceof Romanesco)) {
