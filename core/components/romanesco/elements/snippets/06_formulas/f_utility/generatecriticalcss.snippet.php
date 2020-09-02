@@ -26,6 +26,11 @@ $resource = $modx->getObject('modResource',$resourceID);
 
 if (!($resource instanceof modResource)) return;
 
-$romanesco->generateCriticalCSS($resourceID, $resource->get('uri'), $romanesco->getCssPath($resource->get('context_key')), false);
+$romanesco->generateCriticalCSS(array(
+    'id' => $resourceID,
+    'uri' => $resource->get('uri'),
+    'cssPath' => $romanesco->getCssPath($resource->get('context_key')),
+    'distPath' => $modx->getOption('romanesco.semantic_dist_path'),
+));
 
 return "Critical CSS generated for <strong>{$resource->get('uri')}</strong> ($resourceID)";

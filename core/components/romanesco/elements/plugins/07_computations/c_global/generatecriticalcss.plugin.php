@@ -56,7 +56,12 @@ switch ($modx->event->name) {
          * @var int $id
          */
 
-        $romanesco->generateCriticalCSS($id, $resource->get('uri'), $cssPath);
+        $romanesco->generateCriticalCSS(array(
+            'id' => $id,
+            'uri' => $resource->get('uri'),
+            'cssPath' => $cssPath,
+            'distPath' => $distPath,
+        ));
 
         break;
 
