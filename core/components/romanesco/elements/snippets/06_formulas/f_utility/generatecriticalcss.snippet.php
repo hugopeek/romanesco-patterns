@@ -30,8 +30,8 @@ if (!($resource instanceof modResource)) return;
 $romanesco->generateCriticalCSS(array(
     'id' => $resourceID,
     'uri' => $resource->get('uri'),
-    'cssPath' => $romanesco->getCustomSetting('romanesco.custom_css_path', $resource->get('context_key')),
-    'distPath' => $romanesco->getCustomSetting('romanesco.semantic_dist_path', $resource->get('context_key')),
+    'cssPath' => $romanesco->getContextSetting('romanesco.custom_css_path', $resource->get('context_key')),
+    'distPath' => $romanesco->getContextSetting('romanesco.semantic_dist_path', $resource->get('context_key')),
     'parallel' => $parallel,
 ));
 
