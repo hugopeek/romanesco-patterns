@@ -13,41 +13,21 @@
  * @package romanesco
  */
 
-$context = $modx->resource->get('context_key');
-$cgSetting = $modx->getObject('cgSetting', array('key' => 'generate_critical_css'));
+$rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+$romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
 
-// Check if critical CSS generation is enabled under Configuration settings
-if (is_object($cgSetting) && $modx->getOption('clientconfig.context_aware') == true) {
-    $cgContextValue = $modx->getObject('cgContextValue', array('setting' => 79, 'context' => $context));
-
-    if (is_object($cgContextValue)) {
-        $critical = $cgContextValue->get('value');
-    } else {
-        $critical = $cgSetting->get('value');
-    }
-}
-elseif (is_object($cgSetting)) {
-    $critical = $cgSetting->get('value');
-}
-else {
-    $modx->log(modX::LOG_LEVEL_ERROR, 'Context setting generate_critical_css not found!');
+if (!($romanesco instanceof Romanesco)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
     return;
 }
 
-// Abort if critical is not enabled for current context
-if (!$critical) return;
-
-
-$rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
 $basePath = $modx->getOption('base_path');
 $cssPath = $modx->getOption('romanesco.custom_css_path');
 $distPath = $modx->getOption('romanesco.semantic_dist_path');
+$context = $modx->resource->get('context_key');
 
-if (!($romanesco instanceof Romanesco)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, 'Romanesco class not found!');
-    return;
-}
+// Abort if critical is not enabled for current context
+if (!$romanesco->getConfigSetting('generate_critical_css', $context)) return;
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
@@ -70,7 +50,7 @@ switch ($modx->event->name) {
             $uri = ltrim($modx->resource->get('uri'),'/');
             $uri = rtrim($modx->resource->get('uri'),'/');
             $cssFile = rtrim($cssPath,'/') . "/critical/$uri.css";
-            $logo = $modx->getObject('cgSetting', array('key' => 'logo_path'));
+            $logo = $romanesco->getConfigSetting('logo_path', $context);
 
             // Create array of objects for the header
             $linkObjects = array();
@@ -78,7 +58,7 @@ switch ($modx->event->name) {
                 $linkObjects[] = "</$cssFile>; as=style; rel=preload;";
             }
             if ($logo) {
-                $linkObjects[] = "</assets/img/{$logo->get('value')}>; as=image; rel=preload; nopush";
+                $linkObjects[] = "</assets/img/{$logo}>; as=image; rel=preload; nopush";
             }
             $linkObjects[] = "</$distPath/themes/default/assets/fonts/icons.woff2>; as=font; rel=preload; crossorigin; nopush";
 
