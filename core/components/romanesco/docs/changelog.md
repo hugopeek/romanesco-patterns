@@ -4,7 +4,7 @@
 Released on ...
 
 Fixes and improvements:
-- Allow templates to provide their own critical CSS file
+- Allow templates to override the critical CSS file of the page
 - Add option to generate critical CSS in sequence instead of parallel
 - Handle context aware configuration settings in critical CSS plugin
 - Disable deprecated global backgrounds using MIGX TV
