@@ -15,6 +15,8 @@
     &default=`DESC`
 ]]
 
+[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`[[%romanesco.cb_preview.overview_note]]`]]
+
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
     &cacheKey=`overviews`
@@ -22,7 +24,7 @@
 
     &parents=`[[+parent]]`
     &depth=`[[+depth:default=`0`]]`
-    &limit=`[[+limit:default=`0`]]`
+    &limit=`[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &offset=`[[+offset:default=`0`]]`
     &tpl=`overviewRow[[+[[+prefix]].row_type]]`
     &tplWrapper=`overviewWrapper[[+pagination:eq=`1`:then=`Pagination`]]`
