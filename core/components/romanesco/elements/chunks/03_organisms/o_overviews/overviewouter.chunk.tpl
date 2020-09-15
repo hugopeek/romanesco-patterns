@@ -15,7 +15,7 @@
     &default=`DESC`
 ]]
 
-[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`[[%romanesco.cb_preview.overview_note]]`]]
+[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`<div class="ui info message">[[%romanesco.cb_preview.overview_note? &topic=`manager` &namespace=`romanescobackyard`]]</div>`]]
 
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
