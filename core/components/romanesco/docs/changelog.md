@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Accept additional responsive image scales
 - Allow templates to override the critical CSS file of the page
 - Add option to generate critical CSS in sequence instead of parallel
 - Handle context aware configuration settings in critical CSS plugin

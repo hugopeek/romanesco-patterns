@@ -33,5 +33,7 @@
 
     &c29=`24_main`      &do29=`100`
 
+    [[$imgResponsiveScaleTheme]]
+
     &default=`1`
 ]]
