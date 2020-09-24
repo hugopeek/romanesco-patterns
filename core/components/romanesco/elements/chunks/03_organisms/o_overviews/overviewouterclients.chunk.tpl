@@ -39,7 +39,7 @@
     &row_type=`[[+[[+prefix]].row_type]]`
     &column_type=`[[+[[+prefix]].column_type]]`
     &grid_settings=`[[+[[+prefix]].grid_settings]]`
-    &cols=`[[+cols]]`
+    &cols=`[[+cols:textToNumber]]`
     &padding=`[[+padding]]`
     &alignment=`[[+alignment]]`
     &responsive=`[[+responsive]]`
