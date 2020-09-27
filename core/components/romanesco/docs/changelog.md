@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Don't use minified SUI / project assets if Configuration setting is off
 - Fix cols placeholder in overviews
 - Limit overview grids to 2 rows in manager previews
 - Accept additional responsive image scales
