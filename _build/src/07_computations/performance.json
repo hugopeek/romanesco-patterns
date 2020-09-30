@@ -1,0 +1,36 @@
+{
+    "package": {
+        "elements": {
+            "plugins": [
+                {
+                    "name": "GenerateStaticCSS",
+                    "category": "c_performance",
+                    "events": [
+                        {
+                            "event": "OnDocFormSave",
+                            "priority": 10
+                        }
+                    ]
+                },{
+                    "name": "GenerateCriticalCSS",
+                    "category": "c_performance",
+                    "events": [
+                        {
+                            "event": "OnDocFormSave",
+                            "priority": 11
+                        },{
+                            "event": "OnWebPagePrerender"
+                        }
+                    ]
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "c_performance",
+                    "parent": "07_computations"
+                }
+            ]
+        }
+    }
+}

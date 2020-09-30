@@ -14,27 +14,6 @@
                     "name": "ClearCustomCache",
                     "category": "c_global",
                     "events": [""]
-                },{
-                    "name": "GenerateStaticCSS",
-                    "category": "c_global",
-                    "events": [
-                        {
-                            "event": "OnDocFormSave",
-                            "priority": 10
-                        }
-                    ]
-                },{
-                    "name": "GenerateCriticalCSS",
-                    "category": "c_global",
-                    "events": [
-                        {
-                            "event": "OnDocFormSave",
-                            "priority": 11
-                        },
-                        {
-                            "event": "OnWebPagePrerender"
-                        }
-                    ]
                 }
             ],
 
