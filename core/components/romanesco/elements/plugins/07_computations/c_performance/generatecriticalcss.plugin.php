@@ -27,7 +27,7 @@ $distPath = $modx->getOption('romanesco.semantic_dist_path');
 $context = $modx->resource->get('context_key');
 
 // Abort if critical is not enabled for current context
-//if (!$romanesco->getConfigSetting('critical_css', $context)) return;
+if (!$romanesco->getConfigSetting('critical_css', $context)) return;
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
