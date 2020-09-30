@@ -27,7 +27,7 @@ $distPath = $modx->getOption('romanesco.semantic_dist_path');
 $context = $modx->resource->get('context_key');
 
 // Abort if critical is not enabled for current context
-if (!$romanesco->getConfigSetting('generate_critical_css', $context)) return;
+//if (!$romanesco->getConfigSetting('critical_css', $context)) return;
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
@@ -36,9 +36,35 @@ switch ($modx->event->name) {
          * @var int $id
          */
 
+        $globalTemplates = [8,9,10,11,19,27];
+        $excludedTemplates = explode(',', $romanesco->getConfigSetting('critical_exclude_templates', $context));
+        $excludedTemplates = array_merge($globalTemplates, $excludedTemplates);
+        $sharedTemplates = explode(',', $romanesco->getConfigSetting('critical_shared_templates', $context));
+
+        $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] excluded templates: ' . print_r($excludedTemplates, 1));
+
+        $template = $modx->getObject('modTemplate', array('id' => $resource->get('template')));
+        $uri = ltrim($resource->get('uri'),'/');
+        $uri = rtrim($uri,'/');
+        $criticalPath = rtrim($cssPath,'/') . '/critical/';
+
+        // Empty and excluded templates
+        if (in_array($resource->get('template'), $excludedTemplates) || !is_object($template)) {
+            break;
+        }
+
+        // Templates with shared CSS
+        if (in_array($resource->get('template'), $sharedTemplates)) {
+            $uri = strtolower($template->get('templatename'));
+            $uri = str_replace(' ', '', $uri);
+        }
+
+        // Store full path to css file in a TV
+        $resource->setTVValue('critical_css_uri', $criticalPath . $uri . '.css');
+
         $romanesco->generateCriticalCSS(array(
             'id' => $id,
-            'uri' => $resource->get('uri'),
+            'uri' => $uri,
             'cssPath' => $cssPath,
             'distPath' => $distPath,
         ));
@@ -47,20 +73,18 @@ switch ($modx->event->name) {
 
     case 'OnWebPagePrerender':
         if ($_SERVER['HTTPS'] === 'on') {
-            $uri = ltrim($modx->resource->get('uri'),'/');
-            $uri = rtrim($modx->resource->get('uri'),'/');
-            $cssFile = rtrim($cssPath,'/') . "/critical/$uri.css";
+            $cssFile = $modx->resource->getTVValue('critical_css_uri');
             $logo = $romanesco->getConfigSetting('logo_path', $context);
 
             // Create array of objects for the header
             $linkObjects = array();
-            if (file_exists("$basePath$cssFile")) {
-                $linkObjects[] = "</$cssFile>; as=style; rel=preload;";
+            if (file_exists($basePath . $cssFile)) {
+                $linkObjects[] = "</{$cssFile}>; as=style; rel=preload;";
             }
             if ($logo) {
                 $linkObjects[] = "</assets/img/{$logo}>; as=image; rel=preload; nopush";
             }
-            $linkObjects[] = "</$distPath/themes/default/assets/fonts/icons.woff2>; as=font; rel=preload; crossorigin; nopush";
+            $linkObjects[] = "</{$distPath}/themes/default/assets/fonts/icons.woff2>; as=font; rel=preload; crossorigin; nopush";
 
             // Set PHP header
             header('Link: ' . implode(',',$linkObjects));

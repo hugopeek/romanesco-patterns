@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Store full path to critical CSS file in a hidden TV
 - Don't use minified SUI / project assets if Configuration setting is off
 - Fix cols placeholder in overviews
 - Limit overview grids to 2 rows in manager previews
