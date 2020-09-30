@@ -1,5 +1,7 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
 
+[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`<div class="ui info message">[[%romanesco.cb_preview.overview_note? &topic=`manager` &namespace=`romanescobackyard`]]</div>`]]
+
 [[!getCache?
     &element=`getResources`
     &cacheKey=`overviews`
@@ -7,7 +9,7 @@
 
     &parents=`-1`
     &resources=`[[+resources]]`
-    &limit=`[[+limit:default=`0`]]`
+    &limit=`[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &tpl=`overviewRow[[+[[+prefix]].row_type]]`
     &tplWrapper=`overviewWrapper`
     &includeTVs=`1`
