@@ -14,9 +14,9 @@
     <script>document.documentElement.className = 'js';</script>
 
     [[If?
-        &subject=`[[++critical_css]]`
+        &subject=`[[++critical_css]]_[[*critical_css_uri:notempty=`1`]]`
         &operator=`eq`
-        &operand=`1`
+        &operand=`1_1`
         &then=`
         <link href="[[*critical_css_uri]]" rel="stylesheet">
         <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet" media="print" onload="this.media='all'">

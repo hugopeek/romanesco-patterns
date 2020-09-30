@@ -41,8 +41,6 @@ switch ($modx->event->name) {
         $excludedTemplates = array_merge($globalTemplates, $excludedTemplates);
         $sharedTemplates = explode(',', $romanesco->getConfigSetting('critical_shared_templates', $context));
 
-        $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] excluded templates: ' . print_r($excludedTemplates, 1));
-
         $template = $modx->getObject('modTemplate', array('id' => $resource->get('template')));
         $uri = ltrim($resource->get('uri'),'/');
         $uri = rtrim($uri,'/');
@@ -50,6 +48,7 @@ switch ($modx->event->name) {
 
         // Empty and excluded templates
         if (in_array($resource->get('template'), $excludedTemplates) || !is_object($template)) {
+            $resource->setTVValue('critical_css_uri', '');
             break;
         }
 
@@ -78,7 +77,7 @@ switch ($modx->event->name) {
 
             // Create array of objects for the header
             $linkObjects = array();
-            if (file_exists($basePath . $cssFile)) {
+            if ($cssFile && file_exists($basePath . $cssFile)) {
                 $linkObjects[] = "</{$cssFile}>; as=style; rel=preload;";
             }
             if ($logo) {
