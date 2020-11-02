@@ -27,7 +27,7 @@
 
         <div id="content" class="ui relaxed grid container">
             <article class="sixteen wide mobile twelve wide computer column">
-                <div class="ui vertical stripe segment white">
+                <div class="ui vertical stripe segment transparent">
                     <div class="container">
                         [[*content]]
                     </div>

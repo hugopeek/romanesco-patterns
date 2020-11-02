@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Make background in note templates transparent
 - Fix leaking placeholders in global backgrounds CSS
 - Fall back gracefully when critical CSS file not found
 - Store full path to critical CSS file in a hidden TV
