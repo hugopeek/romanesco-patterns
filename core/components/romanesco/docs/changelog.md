@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix leaking placeholders in global backgrounds CSS
 - Fall back gracefully when critical CSS file not found
 - Store full path to critical CSS file in a hidden TV
 - Don't use minified SUI / project assets if Configuration setting is off
