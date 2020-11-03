@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta2
-Released on ...
+Released on November 3, 2020
 
 Fixes and improvements:
 - Remove head tag from head chunk [BREAKING CHANGE]
