@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" class="no-js" lang="[[++cultureKey]]">
 
-[[[[If?
-    &subject=`[[$headTheme]]`
-    &operator=`isnull`
-    &then=`$head`
-    &else=`$headTheme`
-]]]]
+<head>
+    [[[[If?
+        &subject=`[[$headTheme]]`
+        &operator=`isnull`
+        &then=`$head`
+        &else=`$headTheme`
+    ]]]]
+</head>
 
 <body id="[[*alias]]" class="detail toc">
 

@@ -13,8 +13,8 @@
  * @package romanesco
  */
 
-$rmCorePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$romanesco = $modx->getService('romanesco','Romanesco',$rmCorePath . 'model/romanescobackyard/',array('core_path' => $rmCorePath));
+$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
 
 if (!($romanesco instanceof Romanesco)) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');

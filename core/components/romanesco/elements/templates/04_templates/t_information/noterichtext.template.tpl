@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
-[[[[If?
-    &subject=`[[$headTheme]]`
-    &operator=`isnull`
-    &then=`$head`
-    &else=`$headTheme`
-]]]]
+<head>
+    [[[[If?
+        &subject=`[[$headTheme]]`
+        &operator=`isnull`
+        &then=`$head`
+        &else=`$headTheme`
+    ]]]]
+</head>
 
 <body id="[[*alias]]" class="header-vertical note toc">
 

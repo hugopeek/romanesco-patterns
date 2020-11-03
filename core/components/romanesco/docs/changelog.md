@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Remove head tag from head chunk [BREAKING CHANGE]
 - Use Matomo by inserting full tracking code directly
 - Make background in note templates transparent
 - Fix leaking placeholders in global backgrounds CSS

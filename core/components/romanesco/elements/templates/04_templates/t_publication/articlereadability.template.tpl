@@ -4,12 +4,14 @@
 [[setUserPlaceholders? &userId=`[[*author_id]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
-[[[[If?
-    &subject=`[[$headTheme]]`
-    &operator=`isnull`
-    &then=`$head`
-    &else=`$headTheme`
-]]]]
+<head>
+    [[[[If?
+        &subject=`[[$headTheme]]`
+        &operator=`isnull`
+        &then=`$head`
+        &else=`$headTheme`
+    ]]]]
+</head>
 
 <body id="[[*alias]]" class="publication readability">
 
