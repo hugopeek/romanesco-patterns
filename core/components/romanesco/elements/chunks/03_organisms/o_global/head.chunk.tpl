@@ -46,16 +46,13 @@
 
     [[[[++romanesco.favicon_version:notempty=`$favicons`]]]]
 
-    [[[[If?
-        &subject=`[[getContextSetting:default=`[[++google_analytics_ua]]`? &context=`[[*context_key]]` &setting=`google_analytics_ua`]]`
-        &operator=`notempty`
-        &then=`$googleAnalytics`
-    ]]]]
-    [[[[If?
-        &subject=`[[getContextSetting:default=`[[++matomo_analytics_url]]`? &context=`[[*context_key]]` &setting=`matomo_analytics_url`]]`
-        &operator=`notempty`
-        &then=`$matomoAnalytics`
-    ]]]]
+[[[[If?
+    &subject=`[[getContextSetting:default=`[[++google_analytics_ua]]`? &context=`[[*context_key]]` &setting=`google_analytics_ua`]]`
+    &operator=`notempty`
+    &then=`$googleAnalytics`
+]]]]
+
+[[++matomo_tracking_code]]
 
     [[[[If?
         &subject=`[[++romanesco.private_backyard]]`
