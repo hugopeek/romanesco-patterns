@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta3
+Released on ...
+
+Fixes and improvements:
+- Correct depth and offset placeholders in overviews
+
 ## Romanesco Patterns 1.0.0-beta2
 Released on November 3, 2020
 

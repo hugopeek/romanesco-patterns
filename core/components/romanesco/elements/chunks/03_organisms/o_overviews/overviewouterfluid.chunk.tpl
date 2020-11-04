@@ -5,8 +5,9 @@
 
     &parents=`[[+parent]]`
     &depth=`[[+depth]]`
-    &limit=`[[+limit]]`
-    &tpl=`overviewRowFluid`
+    &limit=`[[+limit:default=`0`]]`
+    &offset=`[[+offset:default=`0`]]`
+    &tpl=`[[If? &subject=`[[$overviewRowFluidTheme]]` &operator=`isnull` &then=`overviewRowFluid` &else=`overviewRowFluidTheme`]]`
     &includeTVs=`1`
     &processTVs=`1`
     &tvPrefix=``
@@ -14,7 +15,7 @@
     &sortby=`[[+sortby]]`
     &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
 
-    &row_tpl=`[[+row_tpl]]`
+    &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`
     &background_even=`[[+background_even]]`
     &background_odd=`[[+background_odd]]`
     &cols=`[[+cols]]`
