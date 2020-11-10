@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Generate critical CSS with correct multi-context Configuration settings
 - Correct depth and offset placeholders in overviews
 
 ## Romanesco Patterns 1.0.0-beta2

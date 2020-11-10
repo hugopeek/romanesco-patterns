@@ -22,12 +22,13 @@ if (!($romanesco instanceof Romanesco)) {
 }
 
 $basePath = $modx->getOption('base_path');
-$cssPath = $modx->getOption('romanesco.custom_css_path');
-$distPath = $modx->getOption('romanesco.semantic_dist_path');
 $context = $modx->resource->get('context_key');
 
 // Abort if critical is not enabled for current context
 if (!$romanesco->getConfigSetting('critical_css', $context)) return;
+
+$cssPath = $romanesco->getContextSetting('romanesco.custom_css_path', $context);
+$distPath = $romanesco->getContextSetting('romanesco.semantic_dist_path', $context);
 
 switch ($modx->event->name) {
     case 'OnDocFormSave':
