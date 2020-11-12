@@ -27,6 +27,22 @@ $resource = $modx->getObject('modResource',$resourceID);
 
 if (!($resource instanceof modResource)) return;
 
+// Run update processor to generate the critical_css_uri TV value
+// NB: processor won't run without pagetitle and context_key!
+$resourceFields = array(
+    'id' => $resourceID,
+    'pagetitle' => $resource->get('pagetitle'),
+    'context_key' => $resource->get('context_key')
+);
+
+$response = $modx->runProcessor('resource/update', $resourceFields);
+
+if ($response->isError()) {
+    $error = 'Failed to update resource: ' . $resource->get('pagetitle') . '. Errors: ' . implode(', ', $response->getAllErrors());
+    $modx->log(MODX::LOG_LEVEL_ERROR, $error, __METHOD__, __LINE__);
+    return $error;
+}
+
 $romanesco->generateCriticalCSS(array(
     'id' => $resourceID,
     'uri' => $resource->get('uri'),

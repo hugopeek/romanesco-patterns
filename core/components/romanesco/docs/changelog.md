@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Save resource in critical CSS snippet, to generate TV value with file path
 - Generate critical CSS with correct multi-context Configuration settings
 - Correct depth and offset placeholders in overviews
 
