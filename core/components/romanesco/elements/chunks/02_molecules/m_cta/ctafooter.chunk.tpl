@@ -7,8 +7,8 @@
     &toPlaceholder=`footer_cta_background`
 ]]
 
-<footer id="final-call" class="ui vertical stripe segment [[+footer_cta_background]] cta">
+<aside id="final-call" class="ui vertical stripe segment [[+footer_cta_background]] cta">
     <div class="ui center aligned container">
         [[#[[*footer_cta:empty=`0`]].content]]
     </div>
-</footer>
+</aside>
