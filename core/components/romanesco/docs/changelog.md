@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Load SUI form component asynchronous if critical CSS is enabled
 - Fix issue where processor sometimes used stale alias in critical CSS snippet
 - Save resource in critical CSS snippet, to generate TV value with file path
 - Generate critical CSS with correct multi-context Configuration settings
