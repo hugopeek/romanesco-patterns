@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add raw placeholder chunks for tag and label
 - Change HTML tag of footer CTA from footer to aside
 - Load SUI form component asynchronous if critical CSS is enabled
 - Fix issue where processor sometimes used stale alias in critical CSS snippet

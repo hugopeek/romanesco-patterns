@@ -3817,6 +3817,14 @@
                     "category": "a_dat_placeholders"
                 },
                 {
+                    "name": "rawLabel",
+                    "category": "a_dat_placeholders"
+                },
+                {
+                    "name": "rawTag",
+                    "category": "a_dat_placeholders"
+                },
+                {
                     "name": "rawRows",
                     "category": "a_dat_placeholders"
                 },
