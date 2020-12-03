@@ -34,7 +34,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -47,7 +47,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -60,7 +60,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -73,7 +73,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

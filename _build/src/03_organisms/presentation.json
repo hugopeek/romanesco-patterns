@@ -5,25 +5,93 @@
                 {
                     "name": "hero",
                     "description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor some control over the output.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_presentation"
                 },{
                     "name": "sliderOuter",
                     "description": "DEPRECATED. Slider now uses Swiper.js and this chunk doesn't seem to be used anywhere..",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_presentation"
                 },{
                     "name": "galleryOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_presentation"
                 },{
                     "name": "lightboxOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_presentation"
                 },{
                     "name": "accordionOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_presentation"
                 },{
                     "name": "tabsOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_presentation"
                 },{
                     "name": "cardsOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_presentation"
                 }
             ],

@@ -4,6 +4,16 @@
             "chunks": [
                 {
                     "name": "twitterFeedOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_social"
                 }
             ],

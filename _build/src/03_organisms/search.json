@@ -4,6 +4,16 @@
             "chunks": [
                 {
                     "name": "searchResultOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "o_search"
                 }
             ],
