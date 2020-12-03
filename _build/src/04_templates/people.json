@@ -5,14 +5,41 @@
                 {
                     "name": "Client",
                     "icon": "icon-building",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_people"
                 },{
                     "name": "TeamMember",
                     "icon": "icon-user",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_people"
                 },{
                     "name": "Testimonial",
                     "icon": "icon-comment-o",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_people"
                 }
             ],

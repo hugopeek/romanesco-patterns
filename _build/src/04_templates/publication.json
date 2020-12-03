@@ -5,22 +5,67 @@
                 {
                     "name": "Publications",
                     "icon": "icon-newspaper-o",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_publication"
                 },{
                     "name": "ArticleTraditional",
                     "icon": "icon-pencil",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_publication"
                 },{
                     "name": "ArticleReadability",
                     "icon": "icon-pencil",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_publication"
                 },{
                     "name": "ArticleSidenotes",
                     "icon": "icon-pencil",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_disabled"
                 },{
                     "name": "Download",
                     "icon": "icon-download",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_publication"
                 }
             ],

@@ -5,10 +5,28 @@
                 {
                     "name": "PortfolioProject",
                     "icon": "icon-briefcase",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_presentation"
                 },{
                     "name": "Presentation",
                     "icon": "icon-tv",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_presentation"
                 }
             ],

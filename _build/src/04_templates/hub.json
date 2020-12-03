@@ -5,6 +5,15 @@
                 {
                     "name": "ProjectDashboard",
                     "icon": "icon-line-chart",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "t_hub"
                 }
             ],
