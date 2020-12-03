@@ -24,9 +24,6 @@
                     "name": "tagItemCountLinkHighlight",
                     "category": "a_taxonomy"
                 },{
-                    "name": "tagItemRaw",
-                    "category": "a_taxonomy"
-                },{
                     "name": "tagItemFlag",
                     "category": "a_taxonomy"
                 }

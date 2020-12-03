@@ -2,7 +2,7 @@
     &groups=`2`
     &resources=`[[*id]]`
     &target=`[[*parent]]`
-    &rowTpl=`tagItemRaw`
+    &rowTpl=`rawTag`
 ]]
 <a class="ui [[+active_state]] label" href="[[+uri]]">
     [[+tag]]
