@@ -4,6 +4,16 @@
             "chunks": [
                 {
                     "name": "tocNavVertical",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_toc"
                 }
             ]

@@ -5,30 +5,93 @@
                 {
                     "name": "fbEmailRow",
                     "description": "Default template for displaying the submitted value of a form field in an email message.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailRow_settings",
                     "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailRow_xx",
                     "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailRowTerms",
                     "description": "Specific email row for Terms and Conditions checkbox. It is currently empty, as the form cannot be submitted without agreeing to the terms.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailRowEmail",
                     "description": "Specific email row for Email field." ,
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailRowDateRange",
                     "description": "Specfic email row for date range selectors.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },{
                     "name": "fbEmailSectionHeader",
                     "description": "Display pagetitle above each section in multi-page form emails.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 }
             ]

@@ -4,27 +4,107 @@
             "chunks": [
                 {
                     "name": "overviewRowImageBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageTop",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageTopCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageTopLinkCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageLeft",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageLeftCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },{
                     "name": "overviewRowImageFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 }
             ]

@@ -4,12 +4,42 @@
             "chunks": [
                 {
                     "name": "overviewRowProjectBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_project"
                 },{
                     "name": "overviewRowProjectTile",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_project"
                 },{
                     "name": "overviewRowProjectFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_project"
                 }
             ]

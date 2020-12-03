@@ -4,37 +4,146 @@
             "chunks": [
                 {
                     "name": "projectHubRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "statusGridRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "kanbanGridRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "kanbanGridColumn",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "kanbanGridCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "kanbanGridStepsWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "kanbanGridStepsRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "includedPatternsRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "includedPagesRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "includedContentBlocksRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },{
                     "name": "configSettingsRow",
                     "description": "Display a group of settings, as defined in the Configurations extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 }
             ],

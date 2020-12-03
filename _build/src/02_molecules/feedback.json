@@ -5,24 +5,80 @@
                 {
                     "name": "commentWrapper",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },{
                     "name": "commentRowBasic",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },{
                     "name": "commentRowGuest",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },{
                     "name": "commentForm",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },{
                     "name": "commentScriptDisqus",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },{
                     "name": "commentScriptCommento",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 }
             ],

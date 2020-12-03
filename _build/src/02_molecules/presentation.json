@@ -5,30 +5,93 @@
                 {
                     "name": "heroTitles",
                     "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "heroVertical",
                     "description": "This hero unit is adapted for use in vertical scenarios, meaning there are no grid classes present. The content is stacked as link items instead.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "galleryRowImage",
                     "description": "Basic image pattern, for use in gallery or slider. It can contain a lightbox link, which opens an enlargement of the image in a full-screen overlay window.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "galleryRowImageCaption",
                     "description": "This pattern adds a caption to the image. You can choose to either show the caption in the lightbox enlargement only, or also as a subtitle in the image grid (or slide).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "galleryRowImageLightbox",
                     "description": "This pattern evaluates if you should be able to open the image in a lightbox. If so, the required classes and properties are added to the default image.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "accordionRowBasic",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "tabsRowBasic",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "flexibleRowInnerWrapper",

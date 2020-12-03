@@ -4,9 +4,29 @@
             "chunks": [
                 {
                     "name": "overviewRowOrganizationBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_organization"
                 },{
                     "name": "overviewRowOrganizationLogo",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_organization"
                 }
             ]

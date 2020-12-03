@@ -3953,316 +3953,1127 @@
                 },
                 {
                     "name": "buttonOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_buttons"
                 },
                 {
                     "name": "headingBasicSubtitle",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "headingBasicAnchor",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "headingHierarchySubtitle",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "headingHierarchySubtitleLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "headerIconFont",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "headerIconSVG",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "imageOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "imageBasicLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "dividerHeading",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "richTextMessage",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "codeSnippet",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_content"
                 },
                 {
                     "name": "ctaContentBlock",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_cta"
                 },
                 {
                     "name": "ctaHeader",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_cta"
                 },
                 {
                     "name": "ctaFooter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_cta"
                 },
                 {
                     "name": "ctaHeaderVertical",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_cta"
                 },
                 {
                     "name": "getHitCount",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_data"
                 },
                 {
                     "name": "googleAnalytics",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_data"
                 },
                 {
                     "name": "googleGtag",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_data"
                 },
                 {
                     "name": "structuredDataSite",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_data"
                 },
                 {
                     "name": "openGraphMeta",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_data"
                 },
                 {
                     "name": "commentWrapper",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },
                 {
                     "name": "commentRowBasic",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },
                 {
                     "name": "commentRowGuest",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },
                 {
                     "name": "commentForm",
                     "description": "DEPRECATED. Part of Tickets commenting extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },
                 {
                     "name": "commentScriptDisqus",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },
                 {
                     "name": "commentScriptCommento",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_feedback"
                 },
                 {
                     "name": "fbPrepareSteps",
                     "description": "Prepare the necessary placeholders for each step of a multi-page form. These placeholders will be forwarded to fbForm.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_formblocks"
                 },
                 {
                     "name": "fbSubmitButtons",
                     "description": "Previous and next buttons for multi-page forms.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_formblocks"
                 },
                 {
                     "name": "themeVariables",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_global"
                 },
                 {
                     "name": "footerCopyright",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_global"
                 },
                 {
                     "name": "globalBackgroundCSS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_global"
                 },
                 {
                     "name": "projectHubRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "statusGridRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "kanbanGridRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "kanbanGridColumn",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "kanbanGridCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "kanbanGridStepsWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "kanbanGridStepsRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "includedPatternsRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "includedPagesRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "includedContentBlocksRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "configSettingsRow",
                     "description": "Display a group of settings, as defined in the Configurations extra.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_hub"
                 },
                 {
                     "name": "infoReviewSegment",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_information"
                 },
                 {
                     "name": "faqRowBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_information"
                 },
                 {
                     "name": "kbArticleFormPreview",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_information"
                 },
                 {
                     "name": "kbArticleFormFiles",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_information"
                 },
                 {
                     "name": "kbArticleFormFile",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_information"
                 },
                 {
                     "name": "kbArticleFormImage",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_information"
                 },
                 {
                     "name": "cbLayoutSingleColumnNested",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "cbLayoutTwoColumnsNested",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "cbLayoutThreeColumnsNested",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "cbLayoutFourColumnsNested",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "cbLayoutContentSidebarNested",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "cbLayoutSidebarContentNested",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "cbLayoutPatternPreview",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "cbLayoutCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_layouts"
                 },
                 {
                     "name": "overviewWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewWrapperPagination",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowList",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowArticle",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowPerson",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowReview",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowOrganization",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "overviewRowProject",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_overviews"
                 },
                 {
                     "name": "heroTitles",
                     "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },
                 {
                     "name": "heroVertical",
                     "description": "This hero unit is adapted for use in vertical scenarios, meaning there are no grid classes present. The content is stacked as link items instead.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },
                 {
                     "name": "galleryRowImage",
                     "description": "Basic image pattern, for use in gallery or slider. It can contain a lightbox link, which opens an enlargement of the image in a full-screen overlay window.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },
                 {
                     "name": "galleryRowImageCaption",
                     "description": "This pattern adds a caption to the image. You can choose to either show the caption in the lightbox enlargement only, or also as a subtitle in the image grid (or slide).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },
                 {
                     "name": "galleryRowImageLightbox",
                     "description": "This pattern evaluates if you should be able to open the image in a lightbox. If so, the required classes and properties are added to the default image.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },
                 {
                     "name": "accordionRowBasic",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },
                 {
                     "name": "tabsRowBasic",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },
                 {
@@ -4292,58 +5103,212 @@
                 },
                 {
                     "name": "articleAuthorBio",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_publication"
                 },
                 {
                     "name": "searchField",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_search"
                 },
                 {
                     "name": "searchFieldFullscreen",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_search"
                 },
                 {
                     "name": "searchResultContainer",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_search"
                 },
                 {
                     "name": "searchResultRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_search"
                 },
                 {
                     "name": "socialConnectButtons",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_social"
                 },
                 {
                     "name": "socialConnectButtonsPerson",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_social"
                 },
                 {
                     "name": "socialShareButtons",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_social"
                 },
                 {
                     "name": "twitterFeedRowBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_social"
                 },
                 {
                     "name": "twitterFeedRowCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_social"
                 },
                 {
                     "name": "loginForm",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_users"
                 },
                 {
                     "name": "loginFormCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_users"
                 },
                 {
                     "name": "logoutForm",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_users"
                 },
                 {
                     "name": "logoutFormCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_users"
                 },
                 {
@@ -6307,340 +7272,1186 @@
                 {
                     "name": "fbEmailRow",
                     "description": "Default template for displaying the submitted value of a form field in an email message.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },
                 {
                     "name": "fbEmailRow_settings",
                     "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },
                 {
                     "name": "fbEmailRow_xx",
                     "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },
                 {
                     "name": "fbEmailRowTerms",
                     "description": "Specific email row for Terms and Conditions checkbox. It is currently empty, as the form cannot be submitted without agreeing to the terms.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },
                 {
                     "name": "fbEmailRowEmail",
                     "description": "Specific email row for Email field.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },
                 {
                     "name": "fbEmailRowDateRange",
                     "description": "Specfic email row for date range selectors.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },
                 {
                     "name": "fbEmailSectionHeader",
                     "description": "Display pagetitle above each section in multi-page form emails.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_email"
                 },
                 {
                     "name": "fbInputTextfield",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbInputTextarea",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbInputEmail",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbSelectDropdown",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbSelectOption",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbInputFile",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbInputHidden",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbInputDate",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbInputDateRange",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbMathQuestion",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbAcceptTerms",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_inputs"
                 },
                 {
                     "name": "fbStoreRow",
                     "description": "Default template for displaying the submitted value of a form field through FormItRetriever.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },
                 {
                     "name": "fbStoreRow_xx",
                     "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },
                 {
                     "name": "fbStoreRowTerms",
                     "description": "Specific data row for Terms and Conditions checkbox.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },
                 {
                     "name": "fbStoreRowEmail",
                     "description": "Specific data row for Email field.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },
                 {
                     "name": "fbStoreRowDateRange",
                     "description": "Specfic data row for date range selectors.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },
                 {
                     "name": "paginationFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_pagination"
                 },
                 {
                     "name": "breadcrumbs",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "mainNav",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "mainNavVertical",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "mainNavItems",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "mainNavItemsDropdown",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "mainNavItemsAccordion",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "subNavHorizontal",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "subNavVertical",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "offCanvasNav",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_primary"
                 },
                 {
                     "name": "stepsNavOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_steps"
                 },
                 {
                     "name": "stepsNavWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_steps"
                 },
                 {
                     "name": "tabsNavTop",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_tabs"
                 },
                 {
                     "name": "tabsNavRight",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_tabs"
                 },
                 {
                     "name": "tabsNavBottom",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_tabs"
                 },
                 {
                     "name": "tabsNavLeft",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_tabs"
                 },
                 {
                     "name": "tocNavVertical",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_nav_toc"
                 },
                 {
                     "name": "overviewRowArticleBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_article"
                 },
                 {
                     "name": "overviewRowArticleImageBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_article"
                 },
                 {
                     "name": "overviewRowArticleItemBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_article"
                 },
                 {
                     "name": "overviewRowArticleCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_article"
                 },
                 {
                     "name": "overviewRowArticleFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_article"
                 },
                 {
                     "name": "overviewRowArticleQuote",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_article"
                 },
                 {
                     "name": "overviewRowBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_basic"
                 },
                 {
                     "name": "overviewRowBasicCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_basic"
                 },
                 {
                     "name": "overviewRowBasicLinkCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_basic"
                 },
                 {
                     "name": "overviewRowBasicCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_basic"
                 },
                 {
                     "name": "overviewRowIconTop",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_icon"
                 },
                 {
                     "name": "overviewRowIconTopCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_icon"
                 },
                 {
                     "name": "overviewRowIconTopLinkCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_icon"
                 },
                 {
                     "name": "overviewRowIconLeft",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_icon"
                 },
                 {
                     "name": "overviewRowIconCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_icon"
                 },
                 {
                     "name": "overviewRowImageBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "overviewRowImageTop",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "overviewRowImageTopCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "overviewRowImageTopLinkCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "overviewRowImageLeft",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "overviewRowImageLeftCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "overviewRowImageCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "overviewRowImageFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_image"
                 },
                 {
                     "name": "kbOverviewRowBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_information"
                 },
                 {
                     "name": "kbOverviewRowBasicCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_information"
                 },
                 {
                     "name": "overviewRowOrganizationBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_organization"
                 },
                 {
                     "name": "overviewRowOrganizationLogo",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_organization"
                 },
                 {
                     "name": "overviewRowPersonBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_person"
                 },
                 {
                     "name": "overviewRowPersonBasicCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_person"
                 },
                 {
                     "name": "overviewRowPersonTile",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_person"
                 },
                 {
                     "name": "overviewRowPersonCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_person"
                 },
                 {
                     "name": "overviewRowPersonFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_person"
                 },
                 {
                     "name": "overviewRowProjectBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_project"
                 },
                 {
                     "name": "overviewRowProjectTile",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_project"
                 },
                 {
                     "name": "overviewRowProjectFluid",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_project"
                 },
                 {
                     "name": "overviewRowReviewBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_review"
                 },
                 {
                     "name": "overviewRowReviewWide",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_review"
                 },
                 {
                     "name": "overviewRowReviewLogo",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_review"
                 },
                 {
                     "name": "overviewRowReviewCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_ov_review"
                 }
             ],

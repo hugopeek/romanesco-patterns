@@ -5,22 +5,67 @@
                 {
                     "name": "fbStoreRow",
                     "description": "Default template for displaying the submitted value of a form field through FormItRetriever.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },{
                     "name": "fbStoreRow_xx",
                     "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },{
                     "name": "fbStoreRowTerms",
                     "description": "Specific data row for Terms and Conditions checkbox.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },{
                     "name": "fbStoreRowEmail",
                     "description": "Specific data row for Email field." ,
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 },{
                     "name": "fbStoreRowDateRange",
                     "description": "Specfic data row for date range selectors.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_fb_store"
                 }
             ]

@@ -4,6 +4,16 @@
             "chunks": [
                 {
                     "name": "articleAuthorBio",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_publication"
                 }
             ],
