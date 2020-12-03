@@ -4,19 +4,59 @@
             "chunks": [
                 {
                     "name": "pageNavWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_pagination"
                 },{
                     "name": "pageNavItem",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_pagination"
                 },{
                     "name": "pageNavItemActive",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_pagination"
                 },{
                     "name": "pageNavItemDisabled",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_pagination"
                 },{
                     "name": "pageNavItemIcon",
-                    "category": "a_nav_pagination",
+                    "description": "",
                     "properties": [
                         {
                             "name": "target",
@@ -24,11 +64,18 @@
                         },{
                             "name": "icon_class",
                             "value": ""
+                        },{
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
                         }
-                    ]
+                    ],
+                    "category": "a_nav_pagination"
                 },{
                     "name": "pageNavItemIconDisabled",
-                    "category": "a_nav_pagination",
+                    "description": "",
                     "properties": [
                         {
                             "name": "target",
@@ -36,10 +83,27 @@
                         },{
                             "name": "icon_class",
                             "value": ""
+                        },{
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
                         }
-                    ]
+                    ],
+                    "category": "a_nav_pagination"
                 },{
                     "name": "pageNavItemLoadMore",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_pagination"
                 }
             ]

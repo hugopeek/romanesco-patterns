@@ -5,18 +5,54 @@
                 {
                     "name": "tvSelectInputOptionRow",
                     "description": "Basic row template for rendering input options inside the TV.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_sel_rows"
                 },{
                     "name": "tvSelectInputOptionRowDesc",
                     "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_sel_rows"
                 },{
                     "name": "tvSelectCountryOptGroup",
                     "description": "Display prioritized countries in a separate group at the top of the dropdown.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_sel_rows"
                 },{
                     "name": "tvSelectCountryRow",
                     "description": "Basic row template to display country names inside the dropdown.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_sel_rows"
                 }
             ],

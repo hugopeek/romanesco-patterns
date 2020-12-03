@@ -4,9 +4,29 @@
             "chunks": [
                 {
                     "name": "neighborNavItemPrev",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_neighbors"
                 },{
                     "name": "neighborNavItemNext",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_neighbors"
                 }
             ]

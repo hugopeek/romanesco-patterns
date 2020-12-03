@@ -4,9 +4,29 @@
             "chunks": [
                 {
                     "name": "tabsNavItem",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_tabs"
                 },{
                     "name": "tabsNavItemIcon",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_nav_tabs"
                 }
             ]

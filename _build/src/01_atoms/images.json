@@ -4,24 +4,81 @@
             "chunks": [
                 {
                     "name": "imgOverviewPersonLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_images"
                 },{
                     "name": "imgOverviewPersonAvatar",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_images"
                 },{
                     "name": "imgOverviewPersonAvatarLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_images"
                 },{
                     "name": "imgResponsiveRowSrcset",
                     "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_images"
                 },{
                     "name": "imgResponsiveScale",
                     "description": "A switch statement that selects the right viewport width for the img sizes attribute, based on the layout and column type of the container.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_images"
                 },{
                     "name": "imgOpenGraphRow",
                     "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_images"
                 }
             ],

@@ -4,7 +4,7 @@
             "chunks": [
                 {
                     "name": "globalBackgroundRowCSS",
-                    "category": "a_global",
+                    "description": "",
                     "properties": [
                         {
                             "name": "imgWidth",
@@ -15,36 +15,118 @@
                         },{
                             "name": "imgScale",
                             "value": ""
+                        },{
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
                         }
-                    ]
+                    ],
+                    "category": "a_global"
                 },{
                     "name": "globalBackgroundSettingsCSS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgCSS",
                     "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgOverviewCSS",
                     "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgPersonCSS",
                     "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgTVOptions",
                     "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 },{
                     "name": "globalBackgroundImgTVOptionsRow",
                     "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 },{
                     "name": "iconTVInputOptions",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 },{
                     "name": "themeScaleRatios",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "a_global"
                 }
             ],
