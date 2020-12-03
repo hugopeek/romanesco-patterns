@@ -1,6 +1,20 @@
 <?php
+/**
+ * getElementDescription
+ *
+ * Retrieve the description of common database objects.
+ *
+ * You can retrieve another field or property value by specifying either the
+ * 'field' or 'property' parameter.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ */
+
 $elementType = $modx->getOption('type', $scriptProperties, '');
 $elementName = $modx->getOption('name', $scriptProperties, '');
+$fieldName = $modx->getOption('field', $scriptProperties, 'description');
+$property = $modx->getOption('property', $scriptProperties, '');
 
 // Set correct database table information based on the element type
 switch($elementType) {
@@ -64,16 +78,27 @@ if (stripos($dbTable, 'contentblocks')) {
     $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.'model/contentblocks/');
 }
 
-// Prepare db query and retrieve description
+// User can opt to select another field or a property value instead
+if ($property) {
+    $fieldName = 'properties';
+}
+
+// Prepare db query and retrieve value
 if ($modxObject) {
     $query = $modx->newQuery($modxObject, array(
         $dbNameField => $elementName
     ));
-    $query->select('description');
-    $description = $modx->getValue($query->prepare());
+    $query->select($fieldName);
+    $output = $modx->getValue($query->prepare());
 
-    return $description;
+    // Properties need to be unserialized first
+    if ($property) {
+        $properties = unserialize($output, ['allowed_classes' => false]);
+        $output = $properties[$property]['value'];
+    }
+
+    return $output;
 } else {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[displayElementDescription] ' . $elementName . ' could not be processed');
+    $modx->log(modX::LOG_LEVEL_ERROR, '[getElementDescription] ' . $elementName . ' could not be processed');
     return '';
 }
