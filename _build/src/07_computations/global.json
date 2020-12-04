@@ -4,14 +4,35 @@
             "plugins": [
                 {
                     "name": "ManagerAugmentations",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_global",
                     "events": ["OnDocFormRender","OnManagerPageBeforeRender","OnManagerPageAfterRender"]
                 },{
                     "name": "LexiconWeb",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_global",
                     "events": ["OnHandleRequest"]
                 },{
                     "name": "ClearCustomCache",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_global",
                     "events": [""]
                 }

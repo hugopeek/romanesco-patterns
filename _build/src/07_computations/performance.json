@@ -4,6 +4,13 @@
             "plugins": [
                 {
                     "name": "GenerateStaticCSS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_performance",
                     "events": [
                         {
@@ -13,6 +20,13 @@
                     ]
                 },{
                     "name": "GenerateCriticalCSS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_performance",
                     "events": [
                         {

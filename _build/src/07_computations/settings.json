@@ -5,11 +5,23 @@
                 {
                     "name": "setResourceIDs",
                     "description": "Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_settings",
                     "events": []
                 },{
                     "name": "UpdateStyling",
                     "description": "Fires when theme settings are changed under Configuration. It updates Semantic UI theme.variables and triggers a new SUI build in the background. Requires NPM and EXEC function on the server.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_settings",
                     "events": ["ClientConfig_ConfigChange"]
                 }

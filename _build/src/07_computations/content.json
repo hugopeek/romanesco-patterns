@@ -4,18 +4,46 @@
             "plugins": [
                 {
                     "name": "ProcessMarkdown",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_content",
                     "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
                 },{
                     "name": "ManipulateDOM",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_content",
                     "events": ["OnWebPagePrerender"]
                 },{
                     "name": "TableOfContents",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_content",
                     "events": ["OnWebPagePrerender"]
                 },{
                     "name": "setResourceGroup",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_content",
                     "events": ["OnDocFormSave"]
                 }

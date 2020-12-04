@@ -4,10 +4,24 @@
             "plugins": [
                 {
                     "name": "fbLexiconMgr",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_formblocks",
                     "events": ["OnDocFormRender"]
                 },{
                     "name": "fbLexiconWeb",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "c_formblocks",
                     "events": ["OnHandleRequest"]
                 }
