@@ -4,30 +4,120 @@
             "snippets": [
                 {
                     "name": "includedChunks",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "includedSnippets",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "includedTVs",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "assignedTVs",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "referringBosons",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "includedBosons",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "includedPatternsLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "setPatternType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 },{
                     "name": "setPatternPlaceholders",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_hub"
                 }
             ],

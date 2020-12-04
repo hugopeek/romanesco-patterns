@@ -5,10 +5,28 @@
                 {
                     "name": "generateStaticFile",
                     "description": "Create a physical HTML file of a resource in the designated location. This is a utility snippet. Place it in the content somewhere and visit that page in the browser to generate the file.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_performance"
                 },{
                     "name": "generateCriticalCSS",
                     "description": "Utility snippet to determine which CSS styles are used above the fold and write them to a custom CSS file. This needs NPM and the critical package to be installed.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_performance"
                 }
             ],

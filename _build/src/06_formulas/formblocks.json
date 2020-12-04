@@ -5,43 +5,158 @@
                 {
                     "name": "fbEmailGetJSON",
                     "description": "DEPRECATED. Form data is now directly taken from CB properties field in fbValidateProcessJSON.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_formblocks"
                 },{
                     "name": "fbGetForms",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_formblocks"
                 },{
                     "name": "fbLoadAssets",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_formblocks"
                 },{
                     "name": "fbSimplxWidgeteer",
                     "description": "DEPRECATED. Form report is now generated with fbFormReport.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_formblocks"
                 },{
                     "name": "fbFormReport",
                     "description": "Generates a report from submitted field values. Primarily for emails, but you can also use this snippet to template other kinds of functionality (confirmation pages, multi page forms..).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_formblocks"
                 },{
                     "name": "fbValidateProcessJSON",
                     "description": "Generates the correct strings for the FormIt &validate property.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_formblocks"
                 },{
                     "name": "fbInputRepeater",
                     "description": "Parse the HTML output of repeating form fields and remember the submitted values of each field, in case the page is reloaded.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_formblocks"
                 },{
                     "name": "fbPrefixOutput",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_fb_modifiers"
                 },{
                     "name": "fbResetNonAlpha",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_fb_modifiers"
                 },{
                     "name": "fbStripAsAlias",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_fb_modifiers"
                 },{
                     "name": "fbStripNonAlpha",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_fb_modifiers"
                 },{
                     "name": "fbEmptyHook",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_fb_hooks"
                 }
             ],

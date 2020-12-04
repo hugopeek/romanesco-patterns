@@ -5,14 +5,41 @@
                 {
                     "name": "setUserPlaceholders",
                     "description": "Make any extended fields that are attached to a MODX user available as placeholder.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_users"
                 },{
                     "name": "checkPermissions",
                     "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_users"
                 },{
                     "name": "renderUserName",
                     "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_users"
                 }
             ],

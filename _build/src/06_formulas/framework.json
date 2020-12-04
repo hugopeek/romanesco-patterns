@@ -5,18 +5,54 @@
                 {
                     "name": "setBoxType",
                     "description": "Output the necessary class names for Overview patterns, based on their template. It was created because the chunks where getting a bit swamped by output modifiers trying to do the same thing.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_framework"
                 },{
                     "name": "setBackground",
                     "description": "Output the necessary class names for the applied Global Background.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_framework"
                 },{
                     "name": "modifiedIf",
                     "description": "Customized If snippet with additional 'contains', 'containsnot' and 'isnumeric' operators, output to placeholder and option to prevent chunks from parsing before If statement is evaluated.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_framework"
                 },{
                     "name": "FibonacciSequence",
                     "description": "Generate a sequence of Fibonacci numbers. In a Fibonacci sequence, every number after the first two is the sum of the two preceding ones.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_framework"
                 }
             ],

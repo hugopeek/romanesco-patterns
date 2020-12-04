@@ -5,6 +5,15 @@
                 {
                     "name": "TableOfContents",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_content"
                 }
             ],

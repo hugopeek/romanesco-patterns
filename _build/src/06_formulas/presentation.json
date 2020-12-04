@@ -5,34 +5,106 @@
                 {
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Swiper slider. It also initializes a Swiper instance for each slider, with it's own parameters. This means you can use multiple sliders on one page.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 },{
                     "name": "stepsLoadAssets",
                     "description": "Load CSS styles for Steps component. This is not included in semantic.css by default, to keep its file size down.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 },{
                     "name": "statusGridLoadAssets",
                     "description": "Load CSS and JS dependencies for status grid.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 },{
                     "name": "tabsGenerateNav",
                     "description": "Generate the tab buttons based on data-heading attribute in the tabs themselves. It basically links every tab button to the correct tab content.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 },{
                     "name": "iconInputOptions",
                     "description": "Generate input options with all Semantic UI icon classes.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 },{
                     "name": "responsiveImgSrcset",
                     "description": "Generate a number of srcset properties, for use inside an img tag.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 },{
                     "name": "getImageDimensions",
                     "description": "Retrieve width and height from physical image files. Auto detects SVGs.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 },{
                     "name": "getYoutubeThumb",
                     "description": "Retrieve the largest existing thumbnail image available. You can choose between JPG and webP extension. Can be used as output modifier as well.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
                     "category": "f_presentation"
                 }
             ],
