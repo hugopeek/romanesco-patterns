@@ -8,9 +8,15 @@
                     "description": "Select the author of this article. He or she must be a MODX user. This value is inherited on child pages.",
                     "type": "listbox",
                     "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
+                    "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "About",
                     "sortOrder": "1",
-                    "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_publication"
                     ]
@@ -20,9 +26,15 @@
                     "description": "Enable or disable comments. This value is inherited on child pages.",
                     "type": "option",
                     "inputOptionValues": "Active==1||Disabled==0",
+                    "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Comments",
                     "sortOrder": "1",
-                    "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_publication"
                     ]

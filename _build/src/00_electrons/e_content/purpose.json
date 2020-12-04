@@ -7,8 +7,6 @@
                     "name": "content_purpose",
                     "description": "Select the primary function(s) of this content. You can focus on just 1 topic, or create a chain of topics to use as blueprint for your storyline.",
                     "type": "listbox-multiple",
-                    "category": "Purpose",
-                    "sortOrder": 1,
                     "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPurpose",
                     "inputProperties": {
                         "typeAhead": "false",
@@ -19,6 +17,14 @@
                         "delimiter": ","
                     },
                     "display": "delim",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Purpose",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -28,8 +34,6 @@
                     "name": "content_priority",
                     "description": "Zoom out a little and ask yourself: do we really need this page? And do we need it now? If it turns out to be neither urgent nor important, consider deleting it again.",
                     "type": "option",
-                    "category": "Purpose",
-                    "sortOrder": 2,
                     "inputOptionValues": "@CHUNK tvSelectInputOption@ContentPriority",
                     "inputProperties": {
                         "columns": "1"
@@ -38,6 +42,14 @@
                         "delimiter": ","
                     },
                     "display": "delim",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Purpose",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -47,14 +59,20 @@
                     "name": "content_brief",
                     "description": "Try to turn the content purpose into a short summary. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.",
                     "type": "redactor",
-                    "category": "Purpose",
-                    "sortOrder": 5,
                     "inputProperties": {
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
                         "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
                         "minHeight": 130
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Purpose",
+                    "sortOrder": 5,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -64,14 +82,20 @@
                     "name": "content_outline",
                     "description": "Give an overview of the main page structure. Like a table of contents, but feel free to add ideas in between.",
                     "type": "redactor",
-                    "category": "Purpose",
-                    "sortOrder": 6,
                     "inputProperties": {
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
                         "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule",
                         "minHeight": 210
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Purpose",
+                    "sortOrder": 6,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -81,14 +105,20 @@
                     "name": "content_result",
                     "description": "Describe the desired effect of this page. How did it help the visitor? And what good will that do for you?",
                     "type": "redactor",
-                    "category": "Purpose",
-                    "sortOrder": 10,
                     "inputProperties": {
                         "advAttrib": "1",
                         "buttonFullScreen": "1",
                         "buttons": "formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link",
                         "minHeight": 130
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Purpose",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -98,6 +128,12 @@
                     "name": "content_cta",
                     "description": "What kind of action do you want the visitor to take after viewing this content? View related content, get in touch, subscribe to your newsletter, buy your product, donate to your cause...",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Purpose",
                     "sortOrder": 11,
                     "templates": [
@@ -109,6 +145,12 @@
                     "name": "content_tone",
                     "description": "Decide what writing style to adopt for this page. Formal, fun, pragmatic, provocative...",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Purpose",
                     "sortOrder": 20,
                     "templates": [
@@ -120,11 +162,17 @@
                     "name": "content_repurpose_src",
                     "description": "On which existing sources will this content be based? If the source is already pointing to this page as destination, it will show up automatically.",
                     "type": "migxdb",
-                    "category": "Purpose",
-                    "sortOrder": 50,
                     "inputProperties": {
                         "configs": "content_repurpose_src:romanescobackyard"
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Purpose",
+                    "sortOrder": 50,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -134,11 +182,17 @@
                     "name": "content_repurpose_dest",
                     "description": "Can you think of ways to reuse this content in other places or scenarios? If the destination doesn't exist yet, just enter Title and Description as an idea.",
                     "type": "migxdb",
-                    "category": "Purpose",
-                    "sortOrder": 51,
                     "inputProperties": {
                         "configs": "content_repurpose_dest:romanescobackyard"
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Purpose",
+                    "sortOrder": 51,
                     "templates": [
                         "@@templates_all"
                     ]

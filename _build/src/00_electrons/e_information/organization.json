@@ -7,6 +7,12 @@
                     "name": "organization_logo_svg",
                     "description": "You'll likely get the best (sharpest) results when uploading an SVG. Try to keep the aspect ratio around 16:9 for best results.",
                     "type": "file",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Org. - Presentation",
                     "sortOrder": "1",
                     "templates": [
@@ -17,8 +23,6 @@
                     "name": "organization_logo_img",
                     "description": "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px.",
                     "type": "imageplus",
-                    "category": "Org. - Presentation",
-                    "sortOrder": "2",
                     "inputProperties": {
                         "targetWidth": "300",
                         "targetRatio": "1.77",
@@ -28,6 +32,14 @@
                         "phpThumbParams": "w=[[++max_thumb_width:empty=`400`]]&zc=1",
                         "outputChunk": "cbOverviewRowImg"
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Org. - Presentation",
+                    "sortOrder": "2",
                     "templates": [
                         "@@templates_client"
                     ]
@@ -36,6 +48,12 @@
                     "name": "organization_name",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Org. - Information",
                     "sortOrder": "1",
                     "templates": [
@@ -46,9 +64,15 @@
                     "name": "organization_sector",
                     "description": "What type of organization is this?",
                     "type": "listbox",
+                    "inputOptionValues": "--- Select a sector ---==||Public (government)==public||Private business==private||Non-profit organization==community",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Org. - Information",
                     "sortOrder": "5",
-                    "inputOptionValues": "--- Select a sector ---==||Public (government)==public||Private business==private||Non-profit organization==community",
                     "templates": [
                         "@@templates_client"
                     ]
@@ -57,6 +81,12 @@
                     "name": "organization_industry",
                     "description": "In what field is this organization active?",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Org. - Information",
                     "sortOrder": "6",
                     "templates": [
@@ -67,6 +97,12 @@
                     "name": "organization_size",
                     "description": "How many employees does this organization have?",
                     "type": "number",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Org. - Information",
                     "sortOrder": "10",
                     "templates": [
@@ -77,6 +113,12 @@
                     "name": "organization_url",
                     "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Org. - Information",
                     "sortOrder": "20",
                     "templates": [

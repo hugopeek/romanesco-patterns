@@ -6,86 +6,146 @@
                     "caption": "Activation",
                     "name": "fb_activation_toggle",
                     "description": "Whether or not new users need to activate their account via email. IMPORTANT! For the activation process to know which address to use, the Input (Email) field needs to be present in the form.",
-                    "category": "Registration",
-                    "sortOrder": "1",
                     "type": "option",
                     "inputOptionValues": "After email confirmation==1||Immediately (Beware of spam!)==0",
                     "defaultValue": "1",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Registration",
+                    "sortOrder": "1",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation page",
                     "name": "fb_activation_resource_id",
                     "description": "Page containing the ConfirmRegister snippet for email activation. Enter page ID or drag the page from the menu tree to this input field. Defaults to the activation_resource_id system setting.",
+                    "type": "number",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Registration",
                     "sortOrder": "2",
-                    "type": "number",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation TTL",
                     "name": "fb_activation_ttl",
                     "description": "Number of minutes until the activation email expires. Defaults to 3 hours.",
-                    "category": "Registration",
-                    "sortOrder": "5",
                     "type": "number",
                     "defaultValue": "180",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Registration",
+                    "sortOrder": "5",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation email",
                     "name": "fb_activation_email",
                     "description": "The content of the activation email. Make sure it contains the [[+confirmUrl]] placeholder for the confirmation link!",
+                    "type": "richtext",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Email",
                     "sortOrder": "20",
-                    "type": "richtext",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Username field",
                     "name": "fb_username_field",
                     "description": "Name of the form field that will receive the username. You can use the label name of the CB field here, or the input name in the HTML. Tip: consider using the email address here..",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Registration",
                     "sortOrder": "10",
-                    "type": "text",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Fullname field",
                     "name": "fb_fullname_field",
                     "description": "Name of the form field that will receive the full name of the user. Handy when using email address as username. You can use the label name of the CB field here, or the input name in the HTML.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Registration",
                     "sortOrder": "11",
-                    "type": "text",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Password field",
                     "name": "fb_password_field",
                     "description": "Name of the form field that will receive a password. If empty, a password will be generated instead. You can use the label name of the CB field here, or the input name in the HTML.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Registration",
                     "sortOrder": "12",
-                    "type": "text",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "User groups",
                     "name": "fb_usergroups",
                     "description": "Optional. A comma-separated list of user group names or IDs to add the newly-registered user to.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Registration",
                     "sortOrder": "20",
-                    "type": "text",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "User groups field",
                     "name": "fb_usergroups_field",
                     "description": "Optional. The name of the form field that decides which user groups the new user will belong to. You can use the label name of the ContentBlock field here, or the name in the HTML.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Registration",
                     "sortOrder": "21",
-                    "type": "text",
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Extended user fields",
                     "name": "fb_extended_toggle",
                     "description": "If switched on, any extra fields in the form are added to the extended field in the user profile.",
-                    "category": "Registration",
-                    "sortOrder": "30",
                     "type": "option",
                     "inputOptionValues": "No==0||Yes==1",
                     "defaultValue": "0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Registration",
+                    "sortOrder": "30",
                     "templates": ["fbRegister"]
                 }
             ]

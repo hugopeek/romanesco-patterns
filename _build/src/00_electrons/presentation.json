@@ -5,8 +5,7 @@
                 {
                     "caption": "Behaviour",
                     "name": "slider_behaviour",
-                    "category": "Slider - Settings",
-                    "sortOrder": "30",
+                    "description": "",
                     "type": "checkbox",
                     "inputOptionValues": "Infinite loop==loop||Show previous / next arrows==arrows||Keyboard control==keyboard||Free scrolling==free||Autoplay==autoplay",
                     "defaultValue": "arrows,keyboard",
@@ -14,39 +13,68 @@
                         "delimiter": ","
                     },
                     "display": "delim",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Slider - Settings",
+                    "sortOrder": "30",
                     "templates": [
                         "Presentation"
                     ]
                 },{
                     "caption": "Transition",
                     "name": "slider_transition",
-                    "category": "Slider - Settings",
-                    "sortOrder": "31",
+                    "description": "",
                     "type": "listbox",
                     "inputOptionValues": "Slide==slide||Fade==fade||3D cube==cube||3D coverflow==coverflow||3D flip==flip",
                     "defaultValue": "slide",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Slider - Settings",
+                    "sortOrder": "31",
                     "templates": [
                         "Presentation"
                     ]
                 },{
                     "caption": "Pagination",
                     "name": "slider_pagination",
-                    "category": "Slider - Settings",
-                    "sortOrder": "32",
+                    "description": "",
                     "type": "listbox",
                     "inputOptionValues": "None==none||Bullets==bullets||Fraction==fraction||Progress bar==progressbar",
                     "defaultValue": "bullets",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Slider - Settings",
+                    "sortOrder": "32",
                     "templates": [
                         "Presentation"
                     ]
                 },{
                     "caption": "Invert navigation colors",
                     "name": "slider_inverted",
-                    "category": "Slider - Settings",
-                    "sortOrder": "33",
+                    "description": "",
                     "type": "option",
                     "inputOptionValues": "No==0||Yes==1",
                     "defaultValue": "0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Slider - Settings",
+                    "sortOrder": "33",
                     "templates": [
                         "Presentation"
                     ]

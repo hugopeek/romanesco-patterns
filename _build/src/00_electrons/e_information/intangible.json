@@ -7,9 +7,15 @@
                     "name": "rating_value",
                     "description": "How did the user value this product or service?",
                     "type": "option",
+                    "inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Rating",
                     "sortOrder": "1",
-                    "inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
                     "templates": [
                         "@@templates_testimonial"
                     ]
@@ -18,6 +24,12 @@
                     "name": "contact_email",
                     "description": "",
                     "type": "email",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Contact",
                     "sortOrder": "1",
                     "templates": [
@@ -28,6 +40,12 @@
                     "name": "contact_phone",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Contact",
                     "sortOrder": "2",
                     "templates": [
@@ -38,6 +56,12 @@
                     "name": "contact_mobile",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Contact",
                     "sortOrder": "3",
                     "templates": [
@@ -48,6 +72,12 @@
                     "name": "address_street_name",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Address",
                     "sortOrder": "2",
                     "templates": [
@@ -58,6 +88,12 @@
                     "name": "address_house_number",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Address",
                     "sortOrder": "3",
                     "templates": [
@@ -68,6 +104,12 @@
                     "name": "address_postal_code",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Address",
                     "sortOrder": "4",
                     "templates": [
@@ -78,6 +120,12 @@
                     "name": "address_locality",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Address",
                     "sortOrder": "10",
                     "templates": [
@@ -88,6 +136,12 @@
                     "name": "address_region",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Address",
                     "sortOrder": "11",
                     "templates": [
@@ -98,6 +152,12 @@
                     "name": "address_country",
                     "description": "",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Address",
                     "sortOrder": "12",
                     "templates": [
@@ -108,6 +168,12 @@
                     "name": "date_start",
                     "description": "",
                     "type": "date",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Date",
                     "sortOrder": "1",
                     "templates": [
@@ -118,6 +184,12 @@
                     "name": "date_end",
                     "description": "",
                     "type": "date",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Date",
                     "sortOrder": "2",
                     "templates": [
@@ -128,6 +200,12 @@
                     "name": "date_published",
                     "description": "",
                     "type": "date",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Date",
                     "sortOrder": "3",
                     "templates": [

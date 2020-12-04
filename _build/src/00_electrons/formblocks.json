@@ -6,9 +6,15 @@
                     "caption": "Email address recipient",
                     "name": "fb_email_to",
                     "description": "Submitted forms will be sent to this address. If you leave this field empty, no emails will be sent. This may be what you want when using a custom hook for processing the form.",
+                    "type": "email",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Email",
                     "sortOrder": "1",
-                    "type": "email",
                     "templates": [
                         "fbForm"
                     ]
@@ -16,9 +22,15 @@
                     "caption": "Email CC address",
                     "name": "fb_email_cc",
                     "description": "Optional.",
+                    "type": "email",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Email",
                     "sortOrder": "2",
-                    "type": "email",
                     "templates": [
                         "fbForm"
                     ]
@@ -26,9 +38,15 @@
                     "caption": "Email BCC address",
                     "name": "fb_email_bcc",
                     "description": "Optional.",
+                    "type": "email",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Email",
                     "sortOrder": "3",
-                    "type": "email",
                     "templates": [
                         "fbForm"
                     ]
@@ -36,9 +54,15 @@
                     "caption": "Email FROM address",
                     "name": "fb_email_from",
                     "description": "Optional. Defaults to emailsender system setting.",
+                    "type": "email",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Email",
                     "sortOrder": "5",
-                    "type": "email",
                     "templates": [
                         "fbForm"
                     ]
@@ -46,18 +70,31 @@
                     "caption": "Email FROM name",
                     "name": "fb_email_from_name",
                     "description": "Optional. Defaults to site_name system setting.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Email",
                     "sortOrder": "6",
-                    "type": "text",
                     "templates": [
                         "fbForm"
                     ]
                 },{
                     "caption": "Email subject",
                     "name": "fb_email_subject",
+                    "description": "",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Email",
                     "sortOrder": "10",
-                    "type": "text",
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -66,9 +103,15 @@
                     "caption": "Submit button text",
                     "name": "fb_submit_button",
                     "description": "Defaults to Send.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - General",
                     "sortOrder": "90",
-                    "type": "text",
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -77,9 +120,15 @@
                     "caption": "Save form data",
                     "name": "fb_save_form",
                     "description": "Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.",
+                    "type": "listbox",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - General",
                     "sortOrder": "91",
-                    "type": "listbox",
                     "inputOptionValues": "System default==default||Yes==1||No==0",
                     "defaultValue": "default",
                     "templates": [
@@ -89,9 +138,15 @@
                     "caption": "Redirect page",
                     "name": "fb_redirect_id",
                     "description": "Enter the ID of the page, or drag the page from the menu tree to this input field.",
+                    "type": "number",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - General",
                     "sortOrder": "92",
-                    "type": "number",
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -100,18 +155,30 @@
                     "caption": "Layout type",
                     "name": "fb_form_layout",
                     "description": "DEPRECATED. This setting has moved to the CB field that loads the form.",
+                    "type": "listbox",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        }
+                    ],
                     "category": "Settings - General",
                     "sortOrder": "5",
-                    "type": "listbox",
                     "inputOptionValues": "Vertical==vertical||Horizontal==horizontal||Inline==inline",
                     "defaultValue": "horizontal"
                 },{
                     "caption": "Custom pre-hook(s)",
                     "name": "fb_prehooks",
                     "description": "A snippet name (or comma separated list of snippet names), containing the hook(s). These hooks are executed before the form is initialised.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Advanced",
                     "sortOrder": "1",
-                    "type": "text",
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -120,9 +187,15 @@
                     "caption": "Custom hook(s)",
                     "name": "fb_hooks",
                     "description": "A snippet name (or comma separated list of snippet names), containing the hook(s). These hooks are executed after the form is submitted, but before any emails are sent.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Advanced",
                     "sortOrder": "2",
-                    "type": "text",
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -131,9 +204,15 @@
                     "caption": "Dynamic recipient address",
                     "name": "fb_email_to_dynamic",
                     "description": "Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+                    "type": "textarea",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Advanced",
                     "sortOrder": "10",
-                    "type": "textarea",
                     "templates": [
                         "fbForm"
                     ]
@@ -141,9 +220,15 @@
                     "caption": "Dynamic redirect page",
                     "name": "fb_redirect_dynamic",
                     "description": "Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Advanced",
                     "sortOrder": "11",
-                    "type": "text",
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -153,10 +238,16 @@
                     "name": "fb_store_data",
                     "description": "Store data in a session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.",
                     "type": "option",
-                    "category": "Settings - Advanced",
-                    "sortOrder": "15",
                     "inputOptionValues": "No==0||Yes==1",
                     "defaultValue": "0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Settings - Advanced",
+                    "sortOrder": "15",
                     "templates": [
                         "fbForm"
                     ]
@@ -165,9 +256,15 @@
                     "name": "fb_store_time",
                     "description": "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes.",
                     "type": "number",
+                    "defaultValue": "300",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Settings - Advanced",
                     "sortOrder": "16",
-                    "defaultValue": "300",
                     "templates": [
                         "fbForm"
                     ]
@@ -175,10 +272,16 @@
                     "caption": "Email template",
                     "name": "fb_email_template",
                     "description": "Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.",
-                    "category": "Settings - Advanced",
-                    "sortOrder": "20",
                     "type": "text",
                     "defaultValue": "fbEmail",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Settings - Advanced",
+                    "sortOrder": "20",
                     "templates": [
                         "fbForm"
                     ]
@@ -186,10 +289,16 @@
                     "caption": "Email template row prefix",
                     "name": "fb_email_tpl_prefix",
                     "description": "Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.",
-                    "category": "Settings - Advanced",
-                    "sortOrder": "21",
                     "type": "text",
                     "defaultValue": "fbEmailRow_",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Settings - Advanced",
+                    "sortOrder": "21",
                     "templates": [
                         "fbForm"
                     ]

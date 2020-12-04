@@ -8,6 +8,12 @@
                     "description": "Connect a person to this item. This list is populated with all the persons that are listed on your Team page.",
                     "type": "listbox",
                     "inputOptionValues": "@CHUNK tvSelectTeam",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Connections",
                     "sortOrder": "1",
                     "templates": [
@@ -19,6 +25,12 @@
                     "description": "Connect the related organization(s). If this list is empty, you need to create an Organizations container first and register its ID under System Settings.",
                     "type": "listbox-multiple",
                     "inputOptionValues": "@CHUNK tvSelectClient",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Connections",
                     "sortOrder": "2",
                     "templates": [
@@ -31,6 +43,12 @@
                     "description": "Team members that worked on this item. You can only select persons listed on your Team page, so if you want to add external contributors: add them to the team page first (can be unpublished).",
                     "type": "listbox-multiple",
                     "inputOptionValues": "@CHUNK tvSelectTeam",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Connections",
                     "sortOrder": "3",
                     "templates": [
@@ -42,6 +60,12 @@
                     "description": "Connect a MODX user to this item. Only active users will be shown.",
                     "type": "listbox",
                     "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Connections",
                     "sortOrder": "10"
                 }

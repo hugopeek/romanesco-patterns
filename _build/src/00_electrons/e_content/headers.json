@@ -7,10 +7,16 @@
                     "name": "header_visibility",
                     "description": "If you turn this off, the page starts with the content area but the navigation bar will still be visible. Inherited by default, but you can change this with the Inheritance setting below.",
                     "type": "listbox",
-                    "category": "Header",
-                    "sortOrder": "1",
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "On==1||Off==0||System default==default",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Header",
+                    "sortOrder": "1",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -19,9 +25,15 @@
                     "name": "header_title",
                     "description": "Title below the navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.",
                     "type": "text",
+                    "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Header",
                     "sortOrder": "5",
-                    "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -30,9 +42,15 @@
                     "name": "header_subtitle",
                     "description": "This will be displayed under the main title. Will also be inherited on child pages by default.",
                     "type": "textarea",
+                    "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Header",
                     "sortOrder": "6",
-                    "defaultValue": "@INHERIT",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -41,10 +59,16 @@
                     "name": "header_background",
                     "description": "Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.",
                     "type": "listbox",
-                    "category": "Header",
-                    "sortOrder": "10",
                     "inputOptionValues": "@CHUNK tvSelectGlobalBackground@AvailableHeader",
                     "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Header",
+                    "sortOrder": "10",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -53,9 +77,15 @@
                     "name": "header_background_img",
                     "description": "Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.",
                     "type": "option",
+                    "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Header",
                     "sortOrder": "11",
-                    "inputOptionValues": "Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -64,10 +94,16 @@
                     "name": "header_cta",
                     "description": "Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.",
                     "type": "listbox",
+                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableHeader",
+                    "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Header",
                     "sortOrder": "20",
-                    "defaultValue": "@INHERIT",
-                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableHeader",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -76,14 +112,20 @@
                     "name": "header_inheritance",
                     "description": "Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
                     "type": "checkbox",
-                    "category": "Header",
-                    "sortOrder": "99",
                     "defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
                     "inputOptionValues": "Inherit visibility==inherit_visibility||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
                     "outputProperties": {
                         "delimiter": ","
                     },
                     "display": "delim",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Header",
+                    "sortOrder": "99",
                     "templates": [
                         "@@templates_all"
                     ]

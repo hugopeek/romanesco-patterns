@@ -6,51 +6,87 @@
                     "caption": "Autoresponder",
                     "name": "fb_autoresponder_toggle",
                     "description": "IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.",
-                    "category": "Autoresponder",
-                    "sortOrder": "1",
                     "type": "option",
                     "inputOptionValues": "On==1||Off==0",
                     "defaultValue": "0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Autoresponder",
+                    "sortOrder": "1",
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponder FROM address",
                     "name": "fb_autoresponder_from",
                     "description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like mail@yourdomain.com. Defaults to emailsender system setting.",
+                    "type": "email",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Autoresponder",
                     "sortOrder": "2",
-                    "type": "email",
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponder FROM name",
                     "name": "fb_autoresponder_from_name",
                     "description": "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Autoresponder",
                     "sortOrder": "3",
-                    "type": "text",
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponder REPLY TO address",
                     "name": "fb_autoresponder_reply_to",
                     "description": "Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.",
+                    "type": "email",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Autoresponder",
                     "sortOrder": "4",
-                    "type": "email",
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponse subject",
                     "name": "fb_autoresponder_subject",
                     "description": "",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Autoresponder",
                     "sortOrder": "10",
-                    "type": "text",
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponse message",
                     "name": "fb_autoresponder_message",
                     "description": "The content of the email that will be sent. You can use placeholders here from the form fields with the following syntax: [[+fb123-field-name]]. So with ID prefix and hyphenated field name.",
+                    "type": "richtext",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Autoresponder",
                     "sortOrder": "11",
-                    "type": "richtext",
                     "templates": ["fbForm"]
                 }
             ]

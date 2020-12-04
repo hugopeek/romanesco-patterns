@@ -7,8 +7,6 @@
                     "name": "overview_img_landscape",
                     "description": "This is the default overview image, in a regular 4:3 aspect ratio.",
                     "type": "imageplus",
-                    "category": "Overview - Image",
-                    "sortOrder": "1",
                     "inputProperties": {
                         "targetWidth": "500",
                         "targetHeight": "375",
@@ -19,6 +17,14 @@
                         "phpThumbParams": "",
                         "outputChunk": ""
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Overview - Image",
+                    "sortOrder": "1",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -29,8 +35,6 @@
                     "name": "overview_img_portrait",
                     "description": "This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.",
                     "type": "imageplus",
-                    "category": "Overview - Image",
-                    "sortOrder": "2",
                     "inputProperties": {
                         "targetWidth": "300",
                         "targetHeight": "400",
@@ -41,6 +45,14 @@
                         "phpThumbParams": "",
                         "outputChunk": ""
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Overview - Image",
+                    "sortOrder": "2",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -51,8 +63,6 @@
                     "name": "overview_img_square",
                     "description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
                     "type": "imageplus",
-                    "category": "Overview - Image",
-                    "sortOrder": "3",
                     "inputProperties": {
                         "targetWidth": "300",
                         "targetHeight": "300",
@@ -63,6 +73,14 @@
                         "phpThumbParams": "",
                         "outputChunk": ""
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Overview - Image",
+                    "sortOrder": "3",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -73,8 +91,6 @@
                     "name": "overview_img_wide",
                     "description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
                     "type": "imageplus",
-                    "category": "Overview - Image",
-                    "sortOrder": "5",
                     "inputProperties": {
                         "targetWidth": "800",
                         "targetHeight": "450",
@@ -85,6 +101,14 @@
                         "phpThumbParams": "",
                         "outputChunk": ""
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Overview - Image",
+                    "sortOrder": "5",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -95,8 +119,6 @@
                     "name": "overview_img_pano",
                     "description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
                     "type": "imageplus",
-                    "category": "Overview - Image",
-                    "sortOrder": "6",
                     "inputProperties": {
                         "targetWidth": "1300",
                         "targetRatio": "2.33",
@@ -107,6 +129,14 @@
                         "phpThumbParams": "",
                         "outputChunk": ""
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Overview - Image",
+                    "sortOrder": "6",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -117,8 +147,6 @@
                     "name": "overview_img_free",
                     "description": "This image doesn't have a fixed aspect ratio or any minimum dimensions. Use it as you see fit. Cropping is optional. NB! Be aware that images will probably have different sizes in overviews!",
                     "type": "imageplus",
-                    "category": "Overview - Image",
-                    "sortOrder": "99",
                     "inputProperties": {
                         "allowAltTag": "true",
                         "allowCredits": "true"
@@ -127,6 +155,14 @@
                         "phpThumbParams": "",
                         "outputChunk": ""
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Overview - Image",
+                    "sortOrder": "99",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -138,12 +174,18 @@
                     "description": "Select an icon of the icon font that's being used in this project. Check the style guide for available classes, or use the autocomplete search as you type.",
                     "type": "listbox",
                     "inputOptionValues": "@CHUNK iconTVInputOptions",
-                    "category": "Overview - Icon",
-                    "sortOrder": "10",
                     "inputProperties": {
                         "typeAhead": "true",
                         "typeAheadDelay": "400"
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Overview - Icon",
+                    "sortOrder": "10",
                     "templates": [
                         "@@templates_basic",
                         "Download"
@@ -153,6 +195,12 @@
                     "name": "overview_icon_svg",
                     "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
                     "type": "file",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Overview - Icon",
                     "sortOrder": "20",
                     "templates": [
@@ -164,6 +212,12 @@
                     "name": "overview_icon_svg_credit",
                     "description": "Mention the designer of this icon here, so they are credited appropriately on the site. You need to do this if you're using icons published under a CC license, for example from Noun Project.",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Overview - Icon",
                     "sortOrder": "21",
                     "templates": [
@@ -175,6 +229,12 @@
                     "name": "overview_link_text",
                     "description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
@@ -186,11 +246,17 @@
                     "caption": "Image priority",
                     "name": "overview_img_priority",
                     "description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
-                    "category": "Overview - Settings",
-                    "sortOrder": "10",
                     "type": "listbox",
                     "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano||Free (?:?)==free",
                     "defaultValue": "landscape",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "unknown"
+                        }
+                    ],
+                    "category": "Overview - Settings",
+                    "sortOrder": "10",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",

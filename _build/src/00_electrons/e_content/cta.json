@@ -7,9 +7,15 @@
                     "name": "cta_availability",
                     "description": "Where would you like to be able to place this CTA?",
                     "type": "checkbox",
+                    "inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "CTA - Settings",
                     "sortOrder": "1",
-                    "inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
                     "templates": [
                         "GlobalCTA"
                     ]

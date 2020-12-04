@@ -5,12 +5,19 @@
                 {
                     "caption": "Related content",
                     "name": "links_related",
+                    "description": "",
                     "type": "migxdb",
-                    "category": "Links",
-                    "sortOrder": 1,
                     "inputProperties": {
                         "configs": "content_related_src:romanescobackyard"
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Links",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -18,9 +25,8 @@
                 {
                     "caption": "Attachments",
                     "name": "links_attachment",
+                    "description": "",
                     "type": "superboxselect",
-                    "category": "Links",
-                    "sortOrder": 10,
                     "inputProperties": {
                         "selectType": "resources",
                         "allowBlank": "1",
@@ -29,6 +35,14 @@
                         "where": "[{\"class_key:=\":\"modStaticResource\"},{\"context_key:!=\":\"hub\"}]",
                         "pageSize": "20"
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Links",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -36,9 +50,8 @@
                 {
                     "caption": "External links",
                     "name": "links_external",
+                    "description": "",
                     "type": "superboxselect",
-                    "category": "Links",
-                    "sortOrder": 11,
                     "inputProperties": {
                         "selectType": "resources",
                         "allowBlank": "1",
@@ -47,6 +60,14 @@
                         "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
                         "pageSize": "20"
                     },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "Links",
+                    "sortOrder": 11,
                     "templates": [
                         "@@templates_all"
                     ]

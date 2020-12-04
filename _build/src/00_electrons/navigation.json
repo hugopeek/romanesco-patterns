@@ -7,10 +7,16 @@
                     "name": "toolbar_visibility",
                     "description": "Do you want to display a toolbar on this page? The default toolbar contains breadcrumbs and search functionality. This setting is inherited on every child page.",
                     "type": "listbox",
+                    "inputOptionValues": "On==1||Off==0||System default==default",
+                    "defaultValue": "@INHERIT default",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Navigation",
                     "sortOrder": "1",
-                    "defaultValue": "@INHERIT default",
-                    "inputOptionValues": "On==1||Off==0||System default==default",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -19,10 +25,16 @@
                     "name": "auto_anchors",
                     "description": "Give all headings on this page (H1-H6) an ID (if they don't have one already). This allows you (or the ToC menu) to link directly to that heading. This setting is inherited on child pages.",
                     "type": "listbox",
+                    "inputOptionValues": "On==1||Off==0",
+                    "defaultValue": "@INHERIT 0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Navigation",
                     "sortOrder": "10",
-                    "defaultValue": "@INHERIT 0",
-                    "inputOptionValues": "On==1||Off==0",
                     "templates": [
                         "@@templates_all"
                     ]
@@ -31,10 +43,16 @@
                     "name": "neighbors_visibility",
                     "description": "Do you want to display a set of buttons below the content that link to the previous and next article? This setting is inherited on child pages.",
                     "type": "listbox",
+                    "inputOptionValues": "On==1||Off==0",
+                    "defaultValue": "@INHERIT 1",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Navigation",
                     "sortOrder": "20",
-                    "defaultValue": "@INHERIT 1",
-                    "inputOptionValues": "On==1||Off==0",
                     "templates": [
                         "@@templates_publication"
                     ]

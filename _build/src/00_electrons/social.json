@@ -7,6 +7,12 @@
                     "name": "social_twitter",
                     "description": "Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "1",
                     "templates": [
@@ -17,6 +23,12 @@
                     "name": "social_linkedin",
                     "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "2",
                     "templates": [
@@ -27,6 +39,12 @@
                     "name": "social_facebook",
                     "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "3",
                     "templates": [
@@ -37,6 +55,12 @@
                     "name": "social_instagram",
                     "description": "Only fill in the account name (the part after https://instagram.com/).",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "4",
                     "templates": [
@@ -47,6 +71,12 @@
                     "name": "social_pinterest",
                     "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "5",
                     "templates": [
@@ -57,6 +87,12 @@
                     "name": "social_youtube",
                     "description": "Please fill in the complete URL (including http(s)://).",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "10",
                     "templates": [
@@ -67,6 +103,12 @@
                     "name": "social_whatsapp",
                     "description": "A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Needs to be formatted as number, without any leading zeros.",
                     "type": "number",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "11",
                     "templates": [
@@ -77,6 +119,12 @@
                     "name": "social_whatsapp_text",
                     "description": "Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.",
                     "type": "textarea",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "12",
                     "templates": [
@@ -87,6 +135,12 @@
                     "name": "social_github",
                     "description": "Only fill in the account name (the part after https://github.com/).",
                     "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
                     "category": "Social",
                     "sortOrder": "20",
                     "templates": [
