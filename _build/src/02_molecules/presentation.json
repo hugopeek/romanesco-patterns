@@ -96,22 +96,67 @@
                 },{
                     "name": "flexibleRowInnerWrapper",
                     "description": "The content inside a flexible Accordion or Tab CB is entered as a nested layout, meaning it's wrapped in columns. To properly display these columns in a grid, an additional wrapper is needed.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "cardsRowBasic",
                     "description": "A template for the Cards CB repeater. It uses the common pattern of an image, header, subtitle and link button.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "cardsRowBasicLink",
                     "description": "Similar to cardsRowBasic, but lets the parent decide if the card should be a link or not. In other words: it contains NO links itself. Can be (ab)used to create cards without any link at all.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "cardsRowInnerWrapper",
                     "description": "The correct card template is selected inside this wrapper. This is to avoid duplicate HTML and to keep the CB field flexible, logical and easy to use.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 },{
                     "name": "cardsRowFlexible",
                     "description": "Template for Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
                     "category": "m_presentation"
                 }
             ],
