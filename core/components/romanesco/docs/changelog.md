@@ -3,6 +3,10 @@
 ## Romanesco Patterns 1.0.0-beta3
 Released on ...
 
+New features:
+- Load patterns dynamically in front-end library
+- Add preview and status properties to all elements
+
 Fixes and improvements:
 - Modify getElementDescription snippet to get other fields or property values
 - Add raw placeholder chunks for tag and label

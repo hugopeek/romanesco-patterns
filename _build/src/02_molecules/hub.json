@@ -94,6 +94,32 @@
                     ],
                     "category": "m_hub"
                 },{
+                    "name": "patternCategoryParent",
+                    "description": "Display all patterns inside a given category. The first level of nested categories is also included.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },{
+                    "name": "patternCategoryRow",
+                    "description": "Row template for each pattern inside the parent category. Contains basic information, source code and a list of connected patterns. Status and preview code can be included via properties.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },{
                     "name": "includedPatternsRow",
                     "description": "",
                     "properties": [
