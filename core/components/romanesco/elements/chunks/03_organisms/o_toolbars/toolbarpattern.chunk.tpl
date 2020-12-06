@@ -8,11 +8,13 @@
     </div>
 
     <div class="compact column">
+        [[+elementType:isnot=`ElectronTV`:and:isnot=`Computation`:then=`
         <i class="unhide link icon with visibility toggle and tooltip"
            data-target="#preview-[[+pattern_name:lcase]]"
            data-targetState="visible"
            data-content="[[%romanesco.patterns.preview_tooltip]]"
            data-position="top center"></i>
+        `]]
         <i class="muted code link icon with visibility toggle and tooltip"
            data-target="#code-[[+pattern_name:lcase]]"
            data-targetState="hidden"
@@ -23,5 +25,3 @@
            data-position="top center"></i>
     </div>
 </div>
-
-[[$dividerBasic]]
