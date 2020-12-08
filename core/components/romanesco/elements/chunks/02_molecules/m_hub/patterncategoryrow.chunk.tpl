@@ -11,7 +11,7 @@
     <div class="ui stackable doubling equal width grid">
         [[+elementType:isnot=`ElectronTV`:and:isnot=`Computation`:then=`
         <div id="preview-[[+name:lcase:empty=`[[+templatename:stripAsAlias]]`]]" class="six wide column preview element">
-            [[getElementDescription:empty=`[[%romanesco.patterns.preview_not_available]]`?
+            [[getElementDescription:empty=`<em class="meta">[[%romanesco.patterns.preview_not_available]].</em>`?
                 &type=`[[+elementType]]`
                 &name=`[[+name]][[+templatename]]`
                 &property=`elementPreview`

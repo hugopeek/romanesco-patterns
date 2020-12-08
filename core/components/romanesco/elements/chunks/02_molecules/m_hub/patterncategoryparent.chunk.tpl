@@ -13,9 +13,6 @@
     &c7=`Template`          &do7=`modTemplate`
     &c8=`Formula`           &do8=`modSnippet`
     &c9=`Computation`       &do9=`modPlugin`
-    &c10=`BosonField`       &do10=`cbField`
-    &c11=`BosonLayout`      &do11=`cbLayout`
-    &c12=`BosonTemplate`    &do12=`cbTemplate`
     &default=`0`
 ]]
 [[pdoResources?

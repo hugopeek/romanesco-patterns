@@ -28,6 +28,8 @@ if ($cbField) {
 
         // Above option doesn't work somehow, so just output raw json to placeholder
         $modx->toPlaceholder('settings_json', $field->get('settings'), $prefix);
+        $modx->toPlaceholder('properties_json', $field->get('properties'), $prefix);
+        $modx->toPlaceholder('availability_json', $field->get('availability'), $prefix);
 
         // Set placeholder with wrapper template, if present inside properties field
         $properties = $field->get('properties');

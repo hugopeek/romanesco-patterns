@@ -68,6 +68,19 @@
                     ],
                     "category": "a_hub"
                 },{
+                    "name": "patternBosonInnerRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_hub"
+                },{
                     "name": "statusNotesGetUser",
                     "description": "",
                     "properties": [

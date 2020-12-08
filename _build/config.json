@@ -4083,6 +4083,21 @@
                     "category": "a_hub"
                 },
                 {
+                    "name": "patternBosonInnerRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_hub"
+                },
+                {
                     "name": "statusNotesGetUser",
                     "description": "",
                     "properties": [
@@ -5348,6 +5363,36 @@
                 {
                     "name": "patternCategoryRow",
                     "description": "Row template for each pattern inside the parent category. Contains basic information, source code and a list of connected patterns. Status and preview code can be included via properties.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },
+                {
+                    "name": "patternCategoryBosonParent",
+                    "description": "Display all ContentBlocks elements inside a given category.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },
+                {
+                    "name": "patternCategoryBosonRow",
+                    "description": "Row template for each CB element. Displays basic information and included patterns. Status is retrieved from the description and a preview can't be included in this automated representation.",
                     "properties": [
                         {
                             "name": "elementStatus",

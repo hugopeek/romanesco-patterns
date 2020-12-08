@@ -120,6 +120,32 @@
                     ],
                     "category": "m_hub"
                 },{
+                    "name": "patternCategoryBosonParent",
+                    "description": "Display all ContentBlocks elements inside a given category.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },{
+                    "name": "patternCategoryBosonRow",
+                    "description": "Row template for each CB element. Displays basic information and included patterns. Status is retrieved from the description and a preview can't be included in this automated representation.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },{
                     "name": "includedPatternsRow",
                     "description": "",
                     "properties": [
