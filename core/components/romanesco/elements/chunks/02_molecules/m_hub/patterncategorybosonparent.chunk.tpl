@@ -1,7 +1,3 @@
-<[[+level]] [[+level:eq=`h2`:then=`id="[[+name]]"`]] class="ui primary header">
-    [[+name]]
-</[[+level]]>
-
 [[Switch:toPlaceholder=`element_class`?
     &get=`[[+type]]`
     &c1=`BosonField`       &do1=`cbField`
@@ -18,4 +14,15 @@
     &tpl=`patternCategoryBosonRow`
     &elementType=`[[+type]]`
     &includeContent=`1`
+    &toPlaceholder=`cb_cat_[[+id]]`
 ]]
+
+[[+cb_cat_[[+id]]:notempty=`
+<[[+level]] [[+level:eq=`h2`:then=`id="[[+name]]"`]] class="ui primary header">
+    [[+name]]
+</[[+level]]>
+
+[[+description:prepend=`<p class="lead">`:append=`</p>`]]
+
+[[+cb_cat_[[+id]]]]
+`]]

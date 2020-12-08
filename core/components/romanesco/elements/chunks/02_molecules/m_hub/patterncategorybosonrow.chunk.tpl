@@ -17,11 +17,13 @@
         </div>
 
         <div class="compact column">
+            [[+elementType:is=`BosonField`:then=`
             <i class="muted info circle link icon with visibility toggle and tooltip"
                data-target="#info-[[+name:stripAsAlias]]"
                data-targetState="hidden"
                data-content="[[%romanesco.patterns.preview_tooltip]]"
                data-position="top center"></i>
+            `]]
             <i class="muted code link icon with visibility toggle and tooltip"
                data-target="#code-[[+name:stripAsAlias]]"
                data-targetState="hidden"
@@ -41,9 +43,12 @@
 
     [[$dividerBasic? &divider_hidden=`1`]]
 
-    [[setPatternPlaceholders? &cbField=`[[+name]]` &prefix=`cf_[[+name:stripAsAlias]]`]]
+    [[[[+elementType:is=`BosonField`:then=`setPatternPlaceholders? &cbField=`[[+name]]` &prefix=`cf_[[+id]]`]]]]
+    [[[[+elementType:is=`BosonLayout`:then=`setPatternPlaceholders? &cbLayout=`[[+name]]` &prefix=`cl_[[+id]]`]]]]
 
     <div class="ui stackable doubling equal width grid">
+
+        [[+elementType:is=`BosonField`:then=`
         <div id="info-[[+name:stripAsAlias]]" class="five wide column hidden preview element">
             <table class="ui compact basic table">
                 <tr>
@@ -80,12 +85,17 @@
                 </tr>
                 `]]
             </table>
-
-
         </div>
+        `]]
 
         <div id="code-[[+name:stripAsAlias]]" class="column hidden code element">
+            [[+elementType:is=`BosonLayout`:then=`
+            <pre class="language-html"><code>[[$displayRawTemplate? &uid=`[[+name]]`]]</code></pre>
+            [[jsonToHTML:nl2br? &json=`[[+[[+cl]].settings_json]]`]]
+            `]]
+            [[+elementType:is=`BosonField`:then=`
             [[jsonToHTML:nl2br? &json=`[[+[[+cf]].settings_json]]`]]
+            `]]
         </div>
     </div>
 
