@@ -11,23 +11,24 @@ $jsonArray = json_decode($json, true);
 //$filterArray = explode(',', $filterKeys);
 
 if (!function_exists('jsonToHTML')) {
-    function jsonToHTML($array = array()) {
+    function jsonToHTML($array = array(), $tdClass = 'top level') {
         $output = '<table class="ui compact very basic table"><tbody>';
 
-        // @todo: For some strange reason, the function won't accept filterArray to be anything other that what's below
         $filterKeys = array("templates","process_tags","field_is_exposed");
 
         foreach ($array as $key => $value) {
+            if ($value == 'icon_class') break;
+
             // Exclude unwanted keys and keys with an empty value from result
-            // @todo: When not set to 'true', the first item in the array will always be excluded
+            // When not set to 'true', the first item in the array will always be excluded
             if (in_array($key, $filterKeys, true) == false && $value != false) {
                 $output .= "<tr class='top aligned'>";
-                $output .= "<td style='width:0;'><strong>$key</strong></td>";
+                $output .= "<td class='$tdClass'><strong>$key</strong></td>";
                 $output .= "<td>";
                 if (is_array($value)) {
-                    $output .= jsonToHTML($value);
+                    $output .= jsonToHTML($value, 'five wide');
                 } else {
-                    $output .= nl2br("$value");
+                    $output .= $value;
                 }
                 $output .= "</td></tr>";
             }
