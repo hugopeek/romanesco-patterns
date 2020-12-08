@@ -4,11 +4,11 @@
             "plugins": [
                 {
                     "name": "GenerateStaticCSS",
-                    "description": "",
+                    "description": "Creates static CSS files for each context, with their own global backgrounds. If you want a context to have its own set of backgrounds, you need to add a child page under Global Backgrounds.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
                     "category": "c_performance",
@@ -20,11 +20,11 @@
                     ]
                 },{
                     "name": "GenerateCriticalCSS",
-                    "description": "",
+                    "description": "Determine which CSS styles are used above the fold and write them to a custom CSS file. This needs NPM and the critical package to be installed.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
                     "category": "c_performance",

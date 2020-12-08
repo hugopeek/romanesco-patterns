@@ -4,7 +4,7 @@
             "plugins": [
                 {
                     "name": "ManagerAugmentations",
-                    "description": "",
+                    "description": "Small tweaks to the MODX backend, to enhance the Romanesco experience.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -15,7 +15,7 @@
                     "events": ["OnDocFormRender","OnManagerPageBeforeRender","OnManagerPageAfterRender"]
                 },{
                     "name": "LexiconWeb",
-                    "description": "",
+                    "description": "Load default lexicon in web context.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -26,11 +26,11 @@
                     "events": ["OnHandleRequest"]
                 },{
                     "name": "ClearCustomCache",
-                    "description": "",
+                    "description": "Only clears cache partitions of navigation groups, to make sure save actions are immediately reflected on frontend. In the future, other partitions should be cleared on certain triggers too.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "experimental"
                         }
                     ],
                     "category": "c_global",

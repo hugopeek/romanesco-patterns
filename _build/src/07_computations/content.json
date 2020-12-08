@@ -4,7 +4,7 @@
             "plugins": [
                 {
                     "name": "ProcessMarkdown",
-                    "description": "",
+                    "description": "Ensure correct Markdown rendering by setting the proper MIME type. Set the MIME type back to HTML when viewing the resource in the browser, to prevent the page from being downloaded as file.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -15,7 +15,7 @@
                     "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
                 },{
                     "name": "ManipulateDOM",
-                    "description": "",
+                    "description": "Manipulate DOM elements with HtmlPageDom. Yes, that's exactly what jQuery does... But now we can do it server side, before the page is rendered. Much faster and more reliable.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -26,7 +26,7 @@
                     "events": ["OnWebPagePrerender"]
                 },{
                     "name": "TableOfContents",
-                    "description": "",
+                    "description": "Generate a menu with internal links to all headings in the content. The headers need to have an anchor, which can be automatically attached by switching on the auto_anchors TV.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -37,7 +37,7 @@
                     "events": ["OnWebPagePrerender"]
                 },{
                     "name": "setResourceGroup",
-                    "description": "",
+                    "description": "Add resource to a specific group, based on certain conditions or variables.",
                     "properties": [
                         {
                             "name": "elementStatus",

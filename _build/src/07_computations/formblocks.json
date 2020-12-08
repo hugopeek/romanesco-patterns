@@ -4,7 +4,7 @@
             "plugins": [
                 {
                     "name": "fbLexiconMgr",
-                    "description": "",
+                    "description": "Load FormBlocks lexicon in MODX manager.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -15,7 +15,7 @@
                     "events": ["OnDocFormRender"]
                 },{
                     "name": "fbLexiconWeb",
-                    "description": "",
+                    "description": "Load FormBlocks lexicon in web context.",
                     "properties": [
                         {
                             "name": "elementStatus",

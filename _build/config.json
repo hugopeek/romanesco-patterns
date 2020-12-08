@@ -11501,7 +11501,7 @@
             "plugins": [
                 {
                     "name": "ProcessMarkdown",
-                    "description": "",
+                    "description": "Ensure correct Markdown rendering by setting the proper MIME type. Set the MIME type back to HTML when viewing the resource in the browser, to prevent the page from being downloaded as file.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11516,7 +11516,7 @@
                 },
                 {
                     "name": "ManipulateDOM",
-                    "description": "",
+                    "description": "Manipulate DOM elements with HtmlPageDom. Yes, that's exactly what jQuery does... But now we can do it server side, before the page is rendered. Much faster and more reliable.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11530,7 +11530,7 @@
                 },
                 {
                     "name": "TableOfContents",
-                    "description": "",
+                    "description": "Generate a menu with internal links to all headings in the content. The headers need to have an anchor, which can be automatically attached by switching on the auto_anchors TV.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11544,7 +11544,7 @@
                 },
                 {
                     "name": "setResourceGroup",
-                    "description": "",
+                    "description": "Add resource to a specific group, based on certain conditions or variables.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11558,7 +11558,7 @@
                 },
                 {
                     "name": "fbLexiconMgr",
-                    "description": "",
+                    "description": "Load FormBlocks lexicon in MODX manager.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11572,7 +11572,7 @@
                 },
                 {
                     "name": "fbLexiconWeb",
-                    "description": "",
+                    "description": "Load FormBlocks lexicon in web context.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11586,7 +11586,7 @@
                 },
                 {
                     "name": "ManagerAugmentations",
-                    "description": "",
+                    "description": "Small tweaks to the MODX backend, to enhance the Romanesco experience.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11602,7 +11602,7 @@
                 },
                 {
                     "name": "LexiconWeb",
-                    "description": "",
+                    "description": "Load default lexicon in web context.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11616,11 +11616,11 @@
                 },
                 {
                     "name": "ClearCustomCache",
-                    "description": "",
+                    "description": "Only clears cache partitions of navigation groups, to make sure save actions are immediately reflected on frontend. In the future, other partitions should be cleared on certain triggers too.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "experimental"
                         }
                     ],
                     "category": "c_global",
@@ -11630,11 +11630,11 @@
                 },
                 {
                     "name": "GenerateStaticCSS",
-                    "description": "",
+                    "description": "Creates static CSS files for each context, with their own global backgrounds. If you want a context to have its own set of backgrounds, you need to add a child page under Global Backgrounds.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
                     "category": "c_performance",
@@ -11647,11 +11647,11 @@
                 },
                 {
                     "name": "GenerateCriticalCSS",
-                    "description": "",
+                    "description": "Determine which CSS styles are used above the fold and write them to a custom CSS file. This needs NPM and the critical package to be installed.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
                     "category": "c_performance",
