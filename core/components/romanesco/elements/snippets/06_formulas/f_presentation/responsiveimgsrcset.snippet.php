@@ -1,4 +1,5 @@
 <?php
+
 /**
  * responsiveImgSrcset
  *
@@ -14,6 +15,7 @@ $breakpoints = $modx->getOption('breakpoints', $scriptProperties, '');
 $src = $modx->getOption('src', $scriptProperties, '');
 $crop = $modx->getOption('crop', $scriptProperties, '');
 $width = $modx->getOption('width', $scriptProperties, '');
+$quality = $modx->getOption('quality', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'imgResponsiveRowSrcset');
 $placeholder = $modx->getOption('toPlaceholder', $scriptProperties, '');
 
@@ -28,6 +30,7 @@ foreach ($breakpoints as $key => $value) {
         'crop' => $crop,
         'width' => $width,
         'breakpoint' => $value,
+        'quality' => $quality
     ));
 }
 
