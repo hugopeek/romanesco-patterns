@@ -32,16 +32,14 @@ if ($cbField) {
         $modx->toPlaceholder('availability_json', $field->get('availability'), $prefix);
 
         // Set placeholder with wrapper template, if present inside properties field
-        $properties = $field->get('properties');
-        if (strpos($properties, 'wrapper_template') !== false) {
-            // Get the wrapper_template value from its JSON container
-            $wrapperTemplate = $modx->runSnippet('jsonGetValue', array(
-                'json' => $properties,
-                'key' => 'wrapper_template',
-                'tpl' => 'displayRawTemplate'
+        $properties = json_decode($field->get('properties'), true);
+        $wrapperTemplate = $properties['wrapper_template'];
+        if ($wrapperTemplate) {
+            $output = $modx->getChunk('displayRawTemplate', array(
+                'template' => $wrapperTemplate,
             ));
+            $modx->toPlaceholder('wrapper_template', $output, $prefix);
         }
-        $modx->toPlaceholder('wrapper_template', $wrapperTemplate, $prefix);
 
         // Set separate placeholder with prefix, for easier retrieval of the other placeholders
         // Usage example: [[+[[+cb]].placeholder]]

@@ -18,6 +18,7 @@ if (!function_exists('jsonToHTML')) {
 
         foreach ($array as $key => $value) {
             if ($value == 'icon_class') break;
+            if ($value == 'divider_icon_class') break;
 
             // Exclude unwanted keys and keys with an empty value from result
             // When not set to 'true', the first item in the array will always be excluded

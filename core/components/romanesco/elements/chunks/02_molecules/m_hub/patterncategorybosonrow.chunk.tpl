@@ -52,12 +52,12 @@
         <div id="info-[[+name:stripAsAlias]]" class="five wide column hidden preview element">
             <table class="ui compact basic table">
                 <tr>
-                    <td class="six wide">Type:</td>
+                    <td class="six wide"><strong>Type:</strong></td>
                     <td>[[+input]]</td>
                 </tr>
                 [[+input:is=`chunk`:then=`
                 <tr>
-                    <td class="six wide">Chunk:</td>
+                    <td class="six wide"><strong>Chunk:</strong></td>
                     <td>
                         [[pdoResources?
                             &class=`modChunk`
@@ -89,13 +89,10 @@
         `]]
 
         <div id="code-[[+name:stripAsAlias]]" class="column hidden code element">
-            [[+elementType:is=`BosonLayout`:then=`
             <pre class="language-html"><code>[[$displayRawTemplate? &uid=`[[+name]]`]]</code></pre>
-            [[jsonToHTML:nl2br? &json=`[[+[[+cl]].settings_json]]`]]
-            `]]
-            [[+elementType:is=`BosonField`:then=`
-            [[jsonToHTML:nl2br? &json=`[[+[[+cf]].settings_json]]`]]
-            `]]
+            [[+[[+cf]].wrapper_template:notempty=`<pre class="language-html"><code>[[+[[+cf]].wrapper_template]]</code></pre>`]]
+            [[+elementType:is=`BosonLayout`:then=`[[jsonToHTML:nl2br? &json=`[[+[[+cl]].settings_json]]`]]`]]
+            [[+elementType:is=`BosonField`:then=`[[jsonToHTML:nl2br? &json=`[[+[[+cf]].settings_json]]`]]`]]
         </div>
     </div>
 
