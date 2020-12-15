@@ -1,8 +1,9 @@
 <?php
-$resource = $modx->getObject('modResource', $input);
+$id = $modx->getOption('id', $scriptProperties, $input);
+$resource = $modx->getObject('modResource', $id);
 
 if (is_object($resource)) {
-    return $resource->get('pagetitle') . " ($input)";
+    return $resource->get('pagetitle') . " ($id)";
 }
 
 return;

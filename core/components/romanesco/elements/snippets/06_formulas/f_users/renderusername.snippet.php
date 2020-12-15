@@ -1,7 +1,7 @@
 <?php
 // Get a specific user
-$input = $modx->getOption('input', $scriptProperties, '');
-$user = $modx->getObject('modUser', $input);
+$id = $modx->getOption('id', $scriptProperties, $input);
+$user = $modx->getObject('modUser', $id);
 
 // Get user profile and fail gracefully if user doesn't exist
 if ($user) {

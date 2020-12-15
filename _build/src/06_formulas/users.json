@@ -30,7 +30,7 @@
                     "category": "f_users"
                 },{
                     "name": "renderUserName",
-                    "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections.",
+                    "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
                     "properties": [
                         {
                             "name": "elementStatus",

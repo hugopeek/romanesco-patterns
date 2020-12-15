@@ -11293,7 +11293,37 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "incoherent"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_resources"
+                },
+                {
+                    "name": "renderResourceName",
+                    "description": "Takes an ID as input and returns the pagetitle. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_resources"
+                },
+                {
+                    "name": "renderContentType",
+                    "description": "Takes an ID as input and returns the content type. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementExample",
@@ -11308,7 +11338,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "unknown"
                         },
                         {
                             "name": "elementExample",
@@ -11323,7 +11353,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "conflicting"
                         },
                         {
                             "name": "elementExample",
@@ -11484,7 +11514,7 @@
                 },
                 {
                     "name": "renderUserName",
-                    "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections.",
+                    "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
                     "properties": [
                         {
                             "name": "elementStatus",

@@ -34,7 +34,33 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "incoherent"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_resources"
+                },{
+                    "name": "renderResourceName",
+                    "description": "Takes an ID as input and returns the pagetitle. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_resources"
+                },{
+                    "name": "renderContentType",
+                    "description": "Takes an ID as input and returns the content type. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementExample",
                             "value": ""
@@ -47,7 +73,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "unknown"
                         },{
                             "name": "elementExample",
                             "value": ""
@@ -60,7 +86,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "conflicting"
                         },{
                             "name": "elementExample",
                             "value": ""
