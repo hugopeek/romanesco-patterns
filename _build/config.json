@@ -307,6 +307,10 @@
                     "parent": "01_atoms"
                 },
                 {
+                    "name": "a_map",
+                    "parent": "01_atoms"
+                },
+                {
                     "name": "a_navigation",
                     "description": "",
                     "properties": [
@@ -4321,6 +4325,21 @@
                         }
                     ],
                     "category": "a_information"
+                },
+                {
+                    "name": "mapLoadAssets",
+                    "description": "Load the necessary CSS and JS assets for displaying a Leaflet map. This is added to the HEAD of the page (if load_assets_map is set to 1), so maps can be initialized from content area.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_map"
                 },
                 {
                     "name": "favicons",
