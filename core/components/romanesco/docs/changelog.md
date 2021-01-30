@@ -8,6 +8,7 @@ New features:
 - Add preview and status properties to all elements
 
 Fixes and improvements:
+- Add ability to turn Cards CB into a slider
 - Fix quality placeholder not being forwarded to responsive images srcsets
 - Modify getElementDescription snippet to get other fields or property values
 - Add raw placeholder chunks for tag and label

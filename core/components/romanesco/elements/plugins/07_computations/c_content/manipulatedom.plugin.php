@@ -44,7 +44,7 @@ switch ($modx->event->name) {
         $dom->filter('h4:not(.header)')->addClass('ui header');
         $dom->filter('h5:not(.header)')->addClass('ui header');
 
-        // Inject inverted classes
+        // Inject inverted classes to elements inside inverted segments
         $dom->filter('.inverted.segment')
             ->each(function (HtmlPageCrawler $segment) {
 
@@ -130,6 +130,10 @@ switch ($modx->event->name) {
                 ;
                 $slider
                     ->filter('.gallery')
+                    ->addClass('swiper-wrapper')
+                ;
+                $slider
+                    ->filter('.cards')
                     ->addClass('swiper-wrapper')
                 ;
                 $slider

@@ -2,7 +2,7 @@
     [[If?
         &subject=`[[+slider_type]]`
         &operator=`inarray`
-        &operand=`overview,gallery`
+        &operand=`overview,gallery,cards`
         &then=`[[+main]]`
         &else=`<div class="swiper-wrapper[[+mobile_only:eq=`1`:then=`-mobile`]]">[[+main]]</div>`
     ]]
