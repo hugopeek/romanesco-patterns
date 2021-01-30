@@ -10,6 +10,7 @@
  */
 
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
+$enabledTemplates = explode(',', $modx->getOption('romanesco.toc_enabled_templates', null, '0'));
 $template = $modx->resource->get('template');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'tocNavItem');
 

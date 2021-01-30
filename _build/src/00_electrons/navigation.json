@@ -69,6 +69,14 @@
                     "rank": 30
                 }
             ]
-        }
+        },
+        "systemSettings": [
+            {
+                "key": "toc_enabled_templates",
+                "type": "textfield",
+                "area": "Navigation",
+                "value": "21,22"
+            }
+        ]
     }
 }

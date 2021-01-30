@@ -11873,6 +11873,12 @@
                 "area": "Map"
             },
             {
+                "key": "toc_enabled_templates",
+                "type": "textfield",
+                "area": "Navigation",
+                "value": "21,22"
+            },
+            {
                 "key": "publication_container_id",
                 "type": "textfield",
                 "area": "Pages"

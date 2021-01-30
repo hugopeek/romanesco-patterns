@@ -8,6 +8,7 @@ New features:
 - Add preview and status properties to all elements
 
 Fixes and improvements:
+- Add system setting for defining templates with ToC [WIP]
 - Load Leaflet map assets via chunk
 - Add ability to turn Cards CB into a slider
 - Fix quality placeholder not being forwarded to responsive images srcsets
