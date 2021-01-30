@@ -9,6 +9,7 @@ New features:
 
 Fixes and improvements:
 - Don't show hidden forms in FormBlocks form selector
+- Fix behaviour and styling glitches in FormBlocks checkbox / radio fields
 - Fix footer CTA backgrounds referenced by ID
 - Make sure unique_idx placeholder in overviews is really unique
 - Add system setting for defining templates with ToC [WIP]

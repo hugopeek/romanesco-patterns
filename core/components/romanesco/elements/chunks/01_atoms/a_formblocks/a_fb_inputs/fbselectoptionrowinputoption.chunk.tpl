@@ -14,17 +14,19 @@
     &else=`[[+field_type]]`
 ]]
 
-<div class="ui [[+checkbox_variant]] checkbox field">
-    <input type="[[+field_type]]"
-           name="[[+field_alias]][[+checkbox_array]]"
-           id="[[+field_alias]]-[[+idx]]"
-           value="[[+value_[[+idx]]]]"
-           tabindex="[[+idx]]"
-           data-group="[[+collapse_target:isnot=``:then=`[[+field_alias]]`:default=`no-group`]]"
-           data-target="[[+collapse_target:default=`no-target`]]"
-           data-state="[[+collapse_default]]"
-           [[!+fb[[*id]].[[+field_alias]]:FormItIsChecked=`[[+value_[[+idx]]]]`]]
-           [[!+fb[[*id]].[[+field_alias]]:contains=`[[+value_[[+idx]]]]`:then=`checked`]]
-    >
-    <label>[[+name]]</label>
+<div class="field">
+    <div class="ui [[+checkbox_variant]] checkbox">
+        <input type="[[+field_type]]"
+               name="[[+field_alias]][[+checkbox_array]]"
+               id="[[+field_alias]]-[[+idx]]"
+               value="[[+value_[[+idx]]]]"
+               tabindex="[[+idx]]"
+               data-group="[[+collapse_target:isnot=``:then=`[[+field_alias]]`:default=`no-group`]]"
+               data-target="[[+collapse_target:default=`no-target`]]"
+               data-state="[[+collapse_default]]"
+               [[!+fb[[*id]].[[+field_alias]]:FormItIsChecked=`[[+value_[[+idx]]]]`]]
+               [[!+fb[[*id]].[[+field_alias]]:contains=`[[+value_[[+idx]]]]`:then=`checked`]]
+        >
+        <label>[[+name]]</label>
+    </div>
 </div>
