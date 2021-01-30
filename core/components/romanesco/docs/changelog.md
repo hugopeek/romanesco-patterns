@@ -8,6 +8,7 @@ New features:
 - Add preview and status properties to all elements
 
 Fixes and improvements:
+- Don't show hidden forms in FormBlocks form selector
 - Fix footer CTA backgrounds referenced by ID
 - Make sure unique_idx placeholder in overviews is really unique
 - Add system setting for defining templates with ToC [WIP]
