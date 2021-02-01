@@ -8,6 +8,7 @@ New features:
 - Add preview and status properties to all elements
 
 Fixes and improvements:
+- Add overview image template for ImagePlus with fixed dimensions
 - Don't show hidden forms, CTAs, backgrounds and footers in CB selectors
 - Fix behaviour and styling glitches in FormBlocks checkbox / radio fields
 - Fix footer CTA backgrounds referenced by ID

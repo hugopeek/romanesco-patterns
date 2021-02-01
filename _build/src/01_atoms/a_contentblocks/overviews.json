@@ -4,7 +4,7 @@
             "chunks": [
                 {
                     "name": "cbOverviewRowImg",
-                    "description": "",
+                    "description": "Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -16,8 +16,21 @@
                     ],
                     "category": "a_cb_overviews"
                 },{
+                    "name": "cbOverviewRowImgFixed",
+                    "description": "Alternative ImagePlus tpl for overview images, with fixed height and width. Sometimes you don't want to generate responsive images, for example when it's only a small avatar image.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_overviews"
+                },{
                     "name": "cbOverviewRowImgFallback",
-                    "description": "",
+                    "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
                     "properties": [
                         {
                             "name": "elementStatus",

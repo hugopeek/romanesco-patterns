@@ -1288,6 +1288,25 @@
                     ]
                 },
                 {
+                    "caption": "Scroll back to top after using pagination",
+                    "name": "pagination_scroll_top",
+                    "description": "This is enabled by default, to prevent ending up in empty space if the content of the next page is shorter. Disable this if you're using multiple paginated overviews on the same page.",
+                    "type": "listbox",
+                    "inputOptionValues": "On==1||Off==0",
+                    "defaultValue": "@INHERIT 1",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "Navigation",
+                    "sortOrder": "15",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","HeaderVertical","HeaderVerticalToC","Header - Vertical","Header - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteContentBlocks","Note - ContentBlocks","NoteRichText","Note - Rich Text","NoteMarkdown","Note - Markdown","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                    ]
+                },
+                {
                     "caption": "Neighbors menu",
                     "name": "neighbors_visibility",
                     "description": "Do you want to display a set of buttons below the content that link to the previous and next article? This setting is inherited on child pages.",
@@ -7601,7 +7620,7 @@
                 },
                 {
                     "name": "cbOverviewRowImg",
-                    "description": "",
+                    "description": "Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -7615,8 +7634,23 @@
                     "category": "a_cb_overviews"
                 },
                 {
+                    "name": "cbOverviewRowImgFixed",
+                    "description": "Alternative ImagePlus tpl for overview images, with fixed height and width. Sometimes you don't want to generate responsive images, for example when it's only a small avatar image.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_overviews"
+                },
+                {
                     "name": "cbOverviewRowImgFallback",
-                    "description": "",
+                    "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
                     "properties": [
                         {
                             "name": "elementStatus",
