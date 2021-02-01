@@ -64,7 +64,7 @@
     &ajaxElemPagination=`#[[+prefix]] .pagination`
     &ajaxElemLink=`#[[+prefix]] .pagination a`
     &ajaxElemMore=`#[[+prefix]] .more`
-    &scrollTop=`[[*pagination_scroll_top:default=`1`]]`
+    &scrollTop=`[[*pagination_scroll_top]]`
 
     &tplPageWrapper=`pageNavWrapper`
     &tplPage=`pageNavItem`
