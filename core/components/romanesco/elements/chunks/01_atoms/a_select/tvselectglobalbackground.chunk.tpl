@@ -14,7 +14,7 @@ Transparent==transparent||
     &limit=`0`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
-    &showHidden=`1`
+    &showHidden=`0`
     &showUnpublished=`1`
     &where=`[{"template:=":"27"},{"uri:LIKE":"%/[[*context_key]]/%"}]`
     &tvFilters=`background_availability==%[[+availability]]%`
@@ -27,7 +27,7 @@ Transparent==transparent||
     &depth=`0`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
-    &showHidden=`1`
+    &showHidden=`0`
     &showUnpublished=`1`
     &where=`{"template:=":"27"}`
     &tvFilters=`background_availability==%[[+availability]]%`

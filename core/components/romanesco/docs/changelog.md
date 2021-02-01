@@ -8,7 +8,7 @@ New features:
 - Add preview and status properties to all elements
 
 Fixes and improvements:
-- Don't show hidden forms in FormBlocks form selector
+- Don't show hidden forms, CTAs, backgrounds and footers in CB selectors
 - Fix behaviour and styling glitches in FormBlocks checkbox / radio fields
 - Fix footer CTA backgrounds referenced by ID
 - Make sure unique_idx placeholder in overviews is really unique
