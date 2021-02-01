@@ -32,7 +32,7 @@
     <main id="main" role="main">
         <article id="content">
 
-            <header class="ui vertical stripe segment [[setBackground? &background=`[[*header_background:empty=`[[++layout_background_default]]`]]`]] introduction">
+            <header class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]] introduction">
                 <div class="ui text container">
                     <h1 class="ui header">[[*pagetitle]]</h1>
                     <p class="meta date"><em>[[*publishedon:strtotime:date=`%e %B %Y`]]</em></p>
@@ -41,7 +41,7 @@
 
             [[*content]]
 
-            <footer class="ui vertical stripe segment white">
+            <footer class="ui vertical stripe segment grey inverted">
                 <div class="ui tightened container">
                     <div class="ui bottom aligned equal width grid">
                         <div class="compact column">
@@ -58,7 +58,7 @@
             </footer>
 
             [[*comments_toggle:eq=`1`:then=`
-            <section id="comments" class="ui vertical stripe segment">
+            <section id="comments" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
                 <div class="ui text container">
                     <h2 class="ui header">[[%romanesco.article.comments]]</h2>
                     <div id="[[++romanesco.[[++comment_platform:lcase]]_div_id]]"></div>
@@ -80,13 +80,14 @@
         </nav>
         `]]
 
-        <aside id="further-reading" class="ui vertical stripe segment white">
+        [[-
+        <aside id="further-reading" class="ui vertical stripe segment grey inverted">
             <div class="ui tightened container">
                 <div class="ui stackable very relaxed two column grid">
                     <div class="eight wide column">
                         <div class="ui disabled mini header">[[%romanesco.article.latest]]</div>
                         <div class="ui divided items">
-                            [[getResources?
+                            [[-getResources?
                                 &parents=`[[++romanesco.publication_container_id]]`
                                 &tpl=`overviewRowArticleItemBasic`
                                 &limit=`3`
@@ -107,9 +108,9 @@
                     <div class="eight wide column">
                         <div class="ui disabled mini header">[[%romanesco.article.most_viewed]]</div>
                         <div class="ui divided items">
-                            [[getResources?
+                            [[-getResources?
                                 &parents=`-1`
-                                &resources=`[[Hits? &parents=`[[++romanesco.publication_container_id]]` &limit=`5` &outputSeparator=`,`]]`
+                                &resources=`[[-Hits? &parents=`[[++romanesco.publication_container_id]]` &limit=`5` &outputSeparator=`,`]]`
                                 &tpl=`overviewRowArticleItemBasic`
                                 &limit=`3`
                                 &includeTVs=`1`
@@ -125,11 +126,11 @@
                                 &show_introtext=`0`
                             ]]
                         </div>
-
                     </div>
                 </div>
             </div>
         </aside>
+        ]]
     </main>
 
     [[[[If?

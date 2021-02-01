@@ -1,5 +1,5 @@
-<span vocab="http://schema.org/" typeof="Person">
-    <meta property="name" content="[[+pagetitle]]">
+<span class="buttons social connect" vocab="http://schema.org/" typeof="Person">
+    <meta property="name" content="[[+person_firstname]] [[+person_lastname]]">
     <meta property="jobTitle" content="[[+person_jobtitle]]">
     [[[[If?
         &subject=`[[+social_twitter]]`
