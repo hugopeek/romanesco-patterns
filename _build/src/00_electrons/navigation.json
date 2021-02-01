@@ -39,6 +39,24 @@
                         "@@templates_all"
                     ]
                 },{
+                    "caption": "Scroll back to top after using pagination",
+                    "name": "pagination_scroll_top",
+                    "description": "This is enabled by default, to prevent ending up in empty space if the content of the next page is shorter. Disable this if you're using multiple paginated overviews on the same page.",
+                    "type": "listbox",
+                    "inputOptionValues": "On==1||Off==0",
+                    "defaultValue": "@INHERIT 1",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "Navigation",
+                    "sortOrder": "15",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
                     "caption": "Neighbors menu",
                     "name": "neighbors_visibility",
                     "description": "Do you want to display a set of buttons below the content that link to the previous and next article? This setting is inherited on child pages.",

@@ -8,6 +8,7 @@ New features:
 - Add preview and status properties to all elements
 
 Fixes and improvements:
+- Scroll back to top after using pagination in overviews (can be disabled)
 - Only display avatar image in publication elements if author page exists
 - Add overview image template for ImagePlus with fixed dimensions
 - Don't show hidden forms, CTAs, backgrounds and footers in CB selectors
