@@ -2,7 +2,7 @@
 
 <div class="column">
     <a class="ui rounded image" href="[[~[[+id]]]]">
-        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
+        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &img_type=`landscape`]]`?
             &tvname=`overview_img_landscape`
             &docid=`[[+id]]`
             &options=``
@@ -16,11 +16,23 @@
         <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
     </h2>
     <p>
-        <a href="[[~[[+id]]]]" class="ui avatar image">
-            [[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`person_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&q=[[++img_quality]]&zc=1` &type=`tpl`]]
-        </a>
+        [[[[If?
+            &subject=`[[+team_member_id]]`
+            &operator=`notempty`
+            &then=`$imgOverviewPersonAvatarLink? &id=`[[+team_member_id]]``
+        ]]]]
         <span class="meta">
-            <em>[[%romanesco.article.written_by]] <a href="[[~[[+team_member_id]]]]">[[+author_id:userinfo=`fullname`:empty=`[[++site_name]]`]]</a> [[%romanesco.article.written_on]] [[+publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]</em>
+            <em>
+                [[%romanesco.article.written_by]]
+                [[If?
+                    &subject=`[[+author_id]]`
+                    &operator=`notempty`
+                    &then=`<a href="[[~[[+team_member_id:empty=`[[++error_page]]`]]]]">[[+author_id:userinfo=`fullname`:empty=`[[++site_name]]`]]</a>`
+                    &else=`[[+createdby:userinfo=`fullname`:empty=`[[++site_name]]`]]`
+                ]]
+                [[%romanesco.article.written_on]]
+                [[+publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
+            </em>
         </span>
     </p>
     <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
