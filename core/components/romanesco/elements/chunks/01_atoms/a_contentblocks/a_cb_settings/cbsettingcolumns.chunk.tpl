@@ -6,3 +6,4 @@
 6 columns=six
 7 columns=seven
 8 columns=eight
+Adjust to content width=compact
