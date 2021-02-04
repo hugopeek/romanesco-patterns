@@ -12,9 +12,12 @@
  *     &4=`[[*fb_redirect_id]]`
  *     &default=`Nothing there!`
  * ]]
+ *
+ * @var array $scriptProperties
  */
 
-foreach ($scriptProperties as $property) {
-    if ($property) return $property;
+foreach ($scriptProperties as $key => $value) {
+    if ($key == 'elementExample' || $key == 'elementStatus') continue; // skip snippet properties
+    if ($value) return $value;
 }
 return '';
