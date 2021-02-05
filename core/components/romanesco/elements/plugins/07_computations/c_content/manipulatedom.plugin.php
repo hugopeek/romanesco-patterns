@@ -68,6 +68,7 @@ switch ($modx->event->name) {
                     '.card',
                     '.tabbed.menu',
                     '.accordion:not(.inverted)',
+                    '.popup:not(.inverted)',
                     '.message',
                     '.leaflet-container',
                 );

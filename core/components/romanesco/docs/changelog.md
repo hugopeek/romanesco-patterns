@@ -8,6 +8,8 @@ New features:
 - Add preview and status properties to all elements
 
 Fixes and improvements:
+- Center copyright footer content on mobile
+- Add small credits badge with information popup to copyright footer
 - Skip own element properties in returnFirstHit snippet
 - Add option to adjust column size to content width in CB settings
 - Scroll back to top after using pagination in overviews (can be disabled)
@@ -15,7 +17,7 @@ Fixes and improvements:
 - Add overview image template for ImagePlus with fixed dimensions
 - Don't show hidden forms, CTAs, backgrounds and footers in CB selectors
 - Fix behaviour and styling glitches in FormBlocks checkbox / radio fields
-- Fix footer CTA backgrounds referenced by ID
+- Fix footer and footer CTA backgrounds referenced by ID
 - Make sure unique_idx placeholder in overviews is actually unique
 - Add system setting for defining templates with ToC [WIP]
 - Load Leaflet map assets via chunk

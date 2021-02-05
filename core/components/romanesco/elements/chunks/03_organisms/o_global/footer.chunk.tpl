@@ -38,7 +38,7 @@
 ]]]]]]
 
 [[+footer_visibility:eq=`1`:then=`
-<footer id="footer" class="ui vertical segment [[+footer_background]]">
+<footer id="footer" class="ui vertical segment [[setBackground? &background=`[[+footer_background]]`]]">
     [[#[[+footer_type]].content]]
 
     [[[[If?
