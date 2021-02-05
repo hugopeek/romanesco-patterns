@@ -41,6 +41,12 @@
 <footer id="footer" class="ui vertical segment [[setBackground? &background=`[[+footer_background]]`]]">
     [[#[[+footer_type]].content]]
 
+    [[If?
+        &subject=`[[+footer_type]]`
+        &operator=`notempty`
+        &then=`<div class="ui container divider"></div>`
+    ]]
+
     [[[[If?
         &subject=`[[$footerCopyrightTheme]]`
         &operator=`isnull`
