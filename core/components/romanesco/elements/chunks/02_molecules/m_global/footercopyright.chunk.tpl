@@ -19,7 +19,7 @@
 
         [[++qredits_visibility:eq=`1`:then=`
         <div id="qredits" class="compact column">
-            <a class="ui mini image with tooltip onclick" data-position="top center">
+            <a class="ui mini image with tooltip onclick" data-position="top left">
                 [[svgSanitize?
                     &file=`assets/semantic/dist/themes/romanesco/assets/icons/romanesco-badge.svg`
                     &title=`[[%romanesco.footer.qredits_title]]`
