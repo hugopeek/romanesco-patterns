@@ -38,8 +38,13 @@
 ]]
 
 [[[[+load_assets_map:eq=`1`:then=`$mapLoadAssets`]]]]
-[[+load_assets_hub:eq=`1`:then=`<link href="[[++romanesco.semantic_dist_path]]/components/modal.css" rel="stylesheet">`]]
-[[+load_syntax_highlighting:eq=`1`:then=`<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min.css" rel="stylesheet">`]]
+[[+load_assets_hub:eq=`1`:then=`
+<link href="[[++romanesco.semantic_dist_path]]/components/modal.css" rel="stylesheet">
+<link href="[[++romanesco.semantic_dist_path]]/components/step.css" rel="stylesheet">
+`]]
+[[+load_syntax_highlighting:eq=`1`:then=`
+<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min.css" rel="stylesheet">
+`]]
 
 [[++head_additional]]
 
