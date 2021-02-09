@@ -39,9 +39,9 @@
 
 [[+footer_visibility:eq=`1`:then=`
 <footer id="footer" class="ui vertical segment [[setBackground? &background=`[[+footer_background]]`]]">
-    [[renderResources?
-        &parents=`-1`
-        &resources=`[[+footer_type]]`
+    [[pdoField?
+        &id=`[[+footer_type]]`
+        &field=`content`
     ]]
 
     [[[[If?
