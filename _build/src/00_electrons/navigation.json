@@ -93,7 +93,7 @@
                 "key": "toc_enabled_templates",
                 "type": "textfield",
                 "area": "Navigation",
-                "value": "21,22"
+                "value": "21,22,24,25,26"
             }
         ]
     }

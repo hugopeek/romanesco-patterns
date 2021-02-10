@@ -11326,7 +11326,7 @@
                     "category": "f_presentation"
                 },
                 {
-                    "name": "getVimeoThumb",
+                    "name": "getVimeoData",
                     "description": "Retrieve the largest existing thumbnail image available. You can choose between JPG and webP extension. Can be used as output modifier as well.",
                     "properties": [
                         {
@@ -11940,7 +11940,7 @@
                 "key": "toc_enabled_templates",
                 "type": "textfield",
                 "area": "Navigation",
-                "value": "21,22"
+                "value": "21,22,24,25,26"
             },
             {
                 "key": "publication_container_id",
