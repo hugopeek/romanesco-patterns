@@ -106,6 +106,19 @@
                         }
                     ],
                     "category": "f_presentation"
+                },{
+                    "name": "getVimeoData",
+                    "description": "Retrieve the largest existing thumbnail image available. You can choose between JPG and webP extension. Can be used as output modifier as well.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_presentation"
                 }
             ],
             "categories": [

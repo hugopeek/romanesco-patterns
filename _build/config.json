@@ -3599,6 +3599,21 @@
                     "category": "a_content"
                 },
                 {
+                    "name": "videoVimeo",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_content"
+                },
+                {
                     "name": "organizationData",
                     "description": "",
                     "properties": [
@@ -11302,6 +11317,21 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_presentation"
+                },
+                {
+                    "name": "getVimeoThumb",
+                    "description": "Retrieve the largest existing thumbnail image available. You can choose between JPG and webP extension. Can be used as output modifier as well.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementExample",

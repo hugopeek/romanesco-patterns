@@ -171,6 +171,19 @@
                         }
                     ],
                     "category": "a_content"
+                },{
+                    "name": "videoVimeo",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_content"
                 }
             ],
 

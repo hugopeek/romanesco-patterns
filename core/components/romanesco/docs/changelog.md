@@ -5,6 +5,7 @@ Released on ...
 
 New features:
 - Load patterns dynamically in front-end library
+- Add elements for displaying Vimeo embeds
 - Add preview and status properties to all elements
 
 Fixes and improvements:
@@ -19,7 +20,7 @@ Fixes and improvements:
 - Fix behaviour and styling glitches in FormBlocks checkbox / radio fields
 - Fix footer and footer CTA backgrounds referenced by ID
 - Make sure unique_idx placeholder in overviews is actually unique
-- Add system setting for defining templates with ToC [WIP]
+- Add system setting for defining templates with ToC
 - Load Leaflet map assets via chunk
 - Add ability to turn Cards CB into a slider
 - Fix quality placeholder not being forwarded to responsive images srcsets
