@@ -39,10 +39,14 @@
 
 [[+footer_visibility:eq=`1`:then=`
 <footer id="footer" class="ui vertical segment [[setBackground? &background=`[[+footer_background]]`]]">
-    [[pdoField?
-        &id=`[[+footer_type]]`
-        &field=`content`
-    ]]
+    [[[[If?
+        &subject=`[[+footer_type]]`
+        &operator=`notempty`
+        &then=`pdoField?
+            &id=`[[+footer_type]]`
+            &field=`content`
+        `
+    ]]]]
 
     [[[[If?
         &subject=`[[$footerCopyrightTheme]]`
