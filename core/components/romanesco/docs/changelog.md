@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta3
-Released on ...
+Released on February 20, 2021
 
 New features:
 - Load patterns dynamically in front-end library
