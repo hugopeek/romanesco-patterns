@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta4
+Released on ...
+
+Fixes and improvements:
+- Prevent errors in log when cta_id placeholder is empty in CB field
+
 ## Romanesco Patterns 1.0.0-beta3
 Released on February 20, 2021
 
