@@ -5,7 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Don't display globally excluded resources in Overviews either
-- Prevent errors in log when cta_id placeholder is empty in CB field
+- Prevent bad link tag errors from CTAs that don't have a link
 
 ## Romanesco Patterns 1.0.0-beta3
 Released on February 20, 2021
