@@ -74,10 +74,10 @@
                 [[*content]]
 
                 [[[[If?
-                    &subject=`[[+team_member_id:empty=`440`]]`
+                    &subject=`[[+team_member_id:empty=`0`]]`
                     &operator=`notempty`
                     &then=`getResources?
-                        &resources=`[[+team_member_id:empty=`440`]]`
+                        &resources=`[[+team_member_id:empty=`0`]]`
                         &tpl=`[[If? &subject=`[[$articleAuthorBioTheme]]` &operator=`isnull` &then=`articleAuthorBio` &else=`articleAuthorBioTheme`]]`
                         &includeTVs=`1`
                         &tvPrefix=``
