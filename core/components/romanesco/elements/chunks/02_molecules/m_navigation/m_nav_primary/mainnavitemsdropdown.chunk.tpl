@@ -4,7 +4,7 @@
         &level=`[[++navbar_level:default=`2`]]`
         &levelClass=`level-`
         &selfClass=`current`
-        &resources=`[[++navbar_resources]]`
+        &resources=`[[+excluded_resources]]`
         &tplOuter=`navWrapper`
         &tpl=`navItemDropdownParent`
         &tplCategoryFolder=`navItemDropdownCategory`

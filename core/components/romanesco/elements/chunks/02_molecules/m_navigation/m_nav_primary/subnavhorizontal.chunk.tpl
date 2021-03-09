@@ -2,6 +2,7 @@
     <div class="ui container">
         [[pdoMenu?
             &parents=`[[UltimateParent]]`
+            &resources=`[[+excluded_resources]]`
             &level=`1`
             &tplOuter=`navWrapper`
             &tpl=`navItem`

@@ -48,6 +48,13 @@
 
 [[++head_additional]]
 
+[[- SET PLACEHOLDER WITH GLOBALLY EXCLUDED RESOURCES ]]
+[[beforeEach?
+    &input=`[[++navbar_exclude_resources]]`
+    &before=`-`
+    &toPlaceholder=`excluded_resources`
+]]
+
 [[[[++romanesco.favicon_version:notempty=`$favicons`]]]]
 
 [[[[If?

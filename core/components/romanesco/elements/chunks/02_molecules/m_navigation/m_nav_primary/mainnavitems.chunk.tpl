@@ -3,7 +3,7 @@
         &startId=`0`
         &level=`1`
         &levelClass=`level-`
-        &resources=`[[++navbar_resources]]`
+        &resources=`[[+excluded_resources]]`
         &tplOuter=`navWrapper`
         &tpl=`navItem`
     ]]

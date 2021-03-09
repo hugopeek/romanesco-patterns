@@ -11161,6 +11161,21 @@
                     "category": "f_modifiers"
                 },
                 {
+                    "name": "beforeEach",
+                    "description": "Grab a comma-separated list and prefix all items with given value.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_modifiers"
+                },
+                {
                     "name": "stripForJS",
                     "description": "Prepare the input for being used in Javascript. This means escaping certain characters to make sure the surrounding HTML doesn't break.",
                     "properties": [

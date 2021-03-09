@@ -4,7 +4,7 @@
         &level=`[[+level:empty=`[[++navbar_level]]`]]`
         &levelClass=`level-`
         &selfClass=`current`
-        &resources=`[[++navbar_resources]]`
+        &resources=`[[+excluded_resources]]`
 
         &tplOuter=`navWrapper`
         &tpl=`navItemAccordionParent`

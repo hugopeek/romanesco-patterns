@@ -4,6 +4,7 @@
     [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
     &parents=`[[+parent]]`
+    &resources=`[[+excluded_resources]]`
     &depth=`[[+depth]]`
     &limit=`[[+limit:default=`0`]]`
     &offset=`[[+offset:default=`0`]]`

@@ -23,6 +23,7 @@
     [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
     &parents=`[[+parent]]`
+    &resources=`[[+excluded_resources]]`
     &depth=`[[+depth]]`
     &limit=`[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &offset=`[[+offset:default=`0`]]`

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Don't display globally excluded resources in Overviews either
 - Prevent errors in log when cta_id placeholder is empty in CB field
 
 ## Romanesco Patterns 1.0.0-beta3

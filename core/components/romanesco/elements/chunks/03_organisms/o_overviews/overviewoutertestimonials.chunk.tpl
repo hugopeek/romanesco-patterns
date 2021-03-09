@@ -23,7 +23,7 @@
     [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
     &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++romanesco.testimonial_container_id]]`]]`
-    &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
+    &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`[[+excluded_resources:empty=`null`]]`]]`
     &limit=`[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &offset=`[[+offset:default=`0`]]`
     &tpl=`overviewRowReview[[+[[+prefix]].row_type]]`
