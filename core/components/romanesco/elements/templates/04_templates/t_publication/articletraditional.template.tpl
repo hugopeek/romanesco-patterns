@@ -170,6 +170,7 @@
                             <div class="ui divided items">
                                 [[getResources?
                                     &parents=`[[++romanesco.publication_container_id]]`
+                                    &resources=`[[+excluded_resources]]`
                                     &tpl=`overviewRowArticleItemBasic`
                                     &includeTVs=`1`
                                     &processTVs=`1`

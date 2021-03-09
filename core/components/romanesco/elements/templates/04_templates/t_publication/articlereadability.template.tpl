@@ -89,6 +89,7 @@
                         <div class="ui divided items">
                             [[-getResources?
                                 &parents=`[[++romanesco.publication_container_id]]`
+                                &resources=`[[+excluded_resources]]`
                                 &tpl=`overviewRowArticleItemBasic`
                                 &limit=`3`
                                 &includeTVs=`1`

@@ -8,6 +8,7 @@
             <nav id="menu-footer" class="ui horizontal list">
                 [[pdoMenu?
                     &parents=`[[++common_pages_id:empty=`[[++romanesco.common_pages_id:empty=`0`]]`]]`
+                    &resources=`[[+excluded_resources]]`
                     &level=`1`
                     &tplOuter=`navWrapper`
                     &tpl=`navItem`
