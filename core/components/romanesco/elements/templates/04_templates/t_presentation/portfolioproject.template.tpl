@@ -12,6 +12,8 @@
 
 <body id="[[*alias]]" class="overview portfolio">
 
+[[$offCanvasNav]]
+
 <div class="pusher">
     [[$headerBasic?
         &masthead=`0`
@@ -40,7 +42,6 @@
     ]]]]
 </div>
 
-[[$offCanvasNav]]
 [[$script]]
 
 </body>

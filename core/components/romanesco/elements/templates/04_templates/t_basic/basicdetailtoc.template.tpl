@@ -12,6 +12,8 @@
 
 <body id="[[*alias]]" class="detail toc">
 
+[[$offCanvasNav]]
+
 <div class="pusher">
     [[$headerBasic?
         &masthead=`0`
@@ -48,7 +50,6 @@
     ]]]]
 </div>
 
-[[$offCanvasNav]]
 [[$script]]
 
 </body>

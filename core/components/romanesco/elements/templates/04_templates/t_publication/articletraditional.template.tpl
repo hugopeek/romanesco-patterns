@@ -15,6 +15,8 @@
 
 <body id="[[*alias]]" class="publication detail">
 
+[[$offCanvasNav]]
+
 <div class="pusher">
     [[$headerBasic?
         &masthead=`0`
@@ -225,7 +227,6 @@
     ]]]]
 </div>
 
-[[$offCanvasNav]]
 [[$script]]
 
 </body>

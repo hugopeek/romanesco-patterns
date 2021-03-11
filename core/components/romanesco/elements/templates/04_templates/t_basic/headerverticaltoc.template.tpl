@@ -12,6 +12,8 @@
 
 <body id="[[*alias]]" class="header-vertical toc">
 
+[[$offCanvasNav]]
+
 <div class="pusher">
     [[$headerVertical?
         &masthead=`0`
@@ -48,7 +50,6 @@
     </main>
 </div>
 
-[[$offCanvasNav]]
 [[$script]]
 
 </body>
