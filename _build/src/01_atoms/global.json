@@ -64,46 +64,20 @@
                     ],
                     "category": "a_global"
                 },{
-                    "name": "globalBackgroundImgPersonCSS",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },{
-                    "name": "globalBackgroundImgTVOptions",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },{
-                    "name": "globalBackgroundImgTVOptionsRow",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },{
                     "name": "iconTVInputOptions",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_global"
+                },{
+                    "name": "themeScaleRatios",
                     "description": "",
                     "properties": [
                         {
