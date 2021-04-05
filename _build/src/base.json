@@ -43,6 +43,11 @@
                 "area": "Paths",
                 "value": "assets/semantic/dist/themes/romanesco/assets/js"
             },{
+                "key": "semantic_font_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/fonts"
+            },{
                 "key": "semantic_vendor_path",
                 "type": "textfield",
                 "area": "Paths",

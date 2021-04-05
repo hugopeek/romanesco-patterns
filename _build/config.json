@@ -3899,6 +3899,21 @@
                     "category": "a_fb_inputs"
                 },
                 {
+                    "name": "headPreloadLinks",
+                    "description": "Preload resources that the page will need first. This ensures they are available before the main rendering process, making them less likely to block the page's render, improving performance.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_global"
+                },
+                {
                     "name": "globalBackgroundRowCSS",
                     "description": "",
                     "properties": [
@@ -3971,51 +3986,6 @@
                     "category": "a_global"
                 },
                 {
-                    "name": "globalBackgroundImgPersonCSS",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },
-                {
-                    "name": "globalBackgroundImgTVOptions",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },
-                {
-                    "name": "globalBackgroundImgTVOptionsRow",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },
-                {
                     "name": "iconTVInputOptions",
                     "description": "",
                     "properties": [
@@ -4037,6 +4007,21 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_global"
+                },
+                {
+                    "name": "cacheBusterPlaceholders",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementPreview",
@@ -11162,7 +11147,7 @@
                 },
                 {
                     "name": "beforeEach",
-                    "description": "Grab a comma-separated list and prefix all items with given value.",
+                    "description": "Grab a comma-separated list and prefix all items with given value. Optionally, the separator can be changed and output can be forwarded to a placeholder.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11839,6 +11824,12 @@
                 "type": "textfield",
                 "area": "Paths",
                 "value": "assets/semantic/dist/themes/romanesco/assets/js"
+            },
+            {
+                "key": "semantic_font_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/fonts"
             },
             {
                 "key": "semantic_vendor_path",

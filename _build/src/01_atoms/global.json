@@ -3,6 +3,19 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "headPreloadLinks",
+                    "description": "Preload resources that the page will need first. This ensures they are available before the main rendering process, making them less likely to block the page's render, improving performance.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_global"
+                },{
                     "name": "globalBackgroundRowCSS",
                     "description": "",
                     "properties": [
@@ -90,12 +103,12 @@
                     ],
                     "category": "a_global"
                 },{
-                    "name": "themeScaleRatios",
+                    "name": "cacheBusterPlaceholders",
                     "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

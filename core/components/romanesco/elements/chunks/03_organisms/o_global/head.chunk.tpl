@@ -1,3 +1,4 @@
+[[++minify_css_js:eq=`1`:then=`.min`:toPlaceholder=`minify`]]
 <title>[[++romanesco.title_format]]</title>
 
 <meta charset="[[++modx_charset]]">
@@ -12,18 +13,31 @@
 
 <script>document.documentElement.className = 'js';</script>
 
+[[[[If?
+    &subject=`[[++cache_buster]]`
+    &operator=`notempty`
+    &then=`$cacheBusterPlaceholders`
+]]]]
+
+[[[[If?
+    &subject=`[[$headPreloadLinksTheme]]`
+    &operator=`isnull`
+    &then=`$headPreloadLinks`
+    &else=`$headPreloadLinksTheme`
+]]]]
+
 [[If?
     &subject=`[[++critical_css]]_[[*critical_css_uri:notempty=`1`]]`
     &operator=`eq`
     &operand=`1_1`
     &then=`
     <link href="[[*critical_css_uri]]" rel="stylesheet">
-    <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="[[++romanesco.custom_css_path]]/site[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
     `
     &else=`
-    <link href="[[++romanesco.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">
-    <link href="[[++romanesco.custom_css_path]]/site[[++minify_css_js:eq=`1`:then=`.min`]].css?v=[[++romanesco.assets_version_css]]" rel="stylesheet">
+    <link href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" rel="stylesheet">
+    <link href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" rel="stylesheet">
     `
 ]]
 
@@ -39,11 +53,11 @@
 
 [[[[+load_assets_map:eq=`1`:then=`$mapLoadAssets`]]]]
 [[+load_assets_hub:eq=`1`:then=`
-<link href="[[++romanesco.semantic_dist_path]]/components/modal.css" rel="stylesheet">
-<link href="[[++romanesco.semantic_dist_path]]/components/step.css" rel="stylesheet">
+<link href="[[++romanesco.semantic_dist_path]]/components/modal[[+cache_buster_css]].css" rel="stylesheet">
+<link href="[[++romanesco.semantic_dist_path]]/components/step[[+cache_buster_css]].css" rel="stylesheet">
 `]]
 [[+load_syntax_highlighting:eq=`1`:then=`
-<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min.css" rel="stylesheet">
+<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min[[+cache_buster_css]].css" rel="stylesheet">
 `]]
 
 [[++head_additional]]

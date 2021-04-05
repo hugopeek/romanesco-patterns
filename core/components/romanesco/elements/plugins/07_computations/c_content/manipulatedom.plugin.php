@@ -223,6 +223,47 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Cache busting
+//        if ($modx->getObject('cgSetting', array('key' => 'cache_buster'))->get('value') == 1) {
+//            $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
+//            $versionJS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_js'));
+//
+//            if ($versionCSS) {
+//                $dom->filter('head link')
+//                    ->each(function (HtmlPageCrawler $link) {
+//                        $linkHref = $link->getAttribute('href');
+//
+//                        // Exclude external resources
+//                        if (strpos($linkHref, 'http') !== false) return;
+//
+//                        // Add version number to path
+//                        if ($linkHref) {
+//                            $link->setAttribute('href', str_replace('.css', $versionCSS->get('value') . '.123.css', $linkHref));
+//                        }
+//                    })
+//                ;
+//            }
+//
+//
+//
+//            if ($versionJS) {
+//                $cacheBusterJS = '.' . str_replace('.','', $versionJS->get('value'));
+//            }
+//            $dom->filter('script')
+//                ->each(function (HtmlPageCrawler $script) {
+//                    $scriptSrc = $script->getAttribute('src');
+//
+//                    // Exclude external resources
+//                    if (strpos($scriptSrc, 'http') !== false) return;
+//
+//                    // Add version number to path
+//                    if ($scriptSrc) {
+//                        $script->setAttribute('src', str_replace('.js', '.123.js', $scriptSrc));
+//                    }
+//                })
+//            ;
+//        }
+
         // Save manipulated DOM
         $output = $dom->saveHTML();
 

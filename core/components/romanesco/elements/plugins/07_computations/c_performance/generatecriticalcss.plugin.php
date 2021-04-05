@@ -5,6 +5,8 @@
  * Determine which CSS styles are used above the fold and write them to a custom
  * CSS file. This needs NPM and the critical package to be installed.
  *
+ * This plugin also serves the
+ *
  * https://github.com/addyosmani/critical
  *
  * @var modX $modx
@@ -74,17 +76,12 @@ switch ($modx->event->name) {
     case 'OnWebPagePrerender':
         if ($_SERVER['HTTPS'] === 'on') {
             $cssFile = $modx->resource->getTVValue('critical_css_uri');
-            $logo = $romanesco->getConfigSetting('logo_path', $context);
 
             // Create array of objects for the header
             $linkObjects = array();
             if ($cssFile && file_exists($basePath . $cssFile)) {
                 $linkObjects[] = "</{$cssFile}>; as=style; rel=preload;";
             }
-            if ($logo) {
-                $linkObjects[] = "</assets/img/{$logo}>; as=image; rel=preload; nopush";
-            }
-            $linkObjects[] = "</{$distPath}/themes/default/assets/fonts/icons.woff2>; as=font; rel=preload; crossorigin; nopush";
 
             // Set PHP header
             header('Link: ' . implode(',',$linkObjects));
