@@ -228,47 +228,6 @@ switch ($modx->event->name) {
             })
         ;
 
-        // Cache busting
-        try {
-            if ($modx->getObject('cgSetting', array('key' => 'cache_buster'))->get('value') == 1) {
-                $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
-                $versionJS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_js'));
-
-                if ($versionCSS) {
-                    $dom->filter('head link')
-                        ->each(function (HtmlPageCrawler $link, $versionCSS) {
-                            $linkHref = $link->getAttribute('href');
-
-                            // Exclude links without href and external resources
-                            if (!$linkHref || strpos($linkHref, 'http') !== false) return;
-
-                            // Add version number to path
-                            $version = '.' . str_replace('.','', $versionCSS->get('value'));
-                            $link->setAttribute('href', str_replace('.css', $version . '.css', $linkHref));
-                        })
-                    ;
-                }
-
-                if ($versionJS) {
-                    $dom->filter('script')
-                        ->each(function (HtmlPageCrawler $script, $versionJS) {
-                            $scriptSrc = $script->getAttribute('src');
-
-                            // Exclude inline and external scripts
-                            if (!$scriptSrc || strpos($scriptSrc, 'http') !== false) return;
-
-                            // Add version number to path
-                            $version = '.' . str_replace('.','', $versionJS->get('value'));
-                            $script->setAttribute('src', str_replace('.js', $version . '.js', $scriptSrc));
-                        })
-                    ;
-                }
-            }
-        }
-        catch (Error $e) {
-            $modx->log(modX::LOG_LEVEL_ERROR, $e);
-        }
-
         // Save manipulated DOM
         $output = $dom->saveHTML();
 
