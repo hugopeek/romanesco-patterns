@@ -33,8 +33,13 @@ switch ($modx->event->name) {
         $dom = new HtmlPageCrawler($output);
 
         // Add non-white class to body if custom background is set
-        if ($modx->getObject('cgSetting', array('key' => 'theme_page_background_color'))->get('value') !== 'ffffff') {
-            $dom->filter('body')->addClass('non-white');
+        try {
+            if ($modx->getObject('cgSetting', array('key' => 'theme_page_background_color'))->get('value') !== 'ffffff') {
+                $dom->filter('body')->addClass('non-white');
+            }
+        }
+        catch (Error $e) {
+            $modx->log(modX::LOG_LEVEL_ERROR, $e);
         }
 
         // Add header class to content headers without class name
@@ -224,45 +229,45 @@ switch ($modx->event->name) {
         ;
 
         // Cache busting
-//        if ($modx->getObject('cgSetting', array('key' => 'cache_buster'))->get('value') == 1) {
-//            $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
-//            $versionJS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_js'));
-//
-//            if ($versionCSS) {
-//                $dom->filter('head link')
-//                    ->each(function (HtmlPageCrawler $link) {
-//                        $linkHref = $link->getAttribute('href');
-//
-//                        // Exclude external resources
-//                        if (strpos($linkHref, 'http') !== false) return;
-//
-//                        // Add version number to path
-//                        if ($linkHref) {
-//                            $link->setAttribute('href', str_replace('.css', $versionCSS->get('value') . '.123.css', $linkHref));
-//                        }
-//                    })
-//                ;
-//            }
-//
-//
-//
-//            if ($versionJS) {
-//                $cacheBusterJS = '.' . str_replace('.','', $versionJS->get('value'));
-//            }
-//            $dom->filter('script')
-//                ->each(function (HtmlPageCrawler $script) {
-//                    $scriptSrc = $script->getAttribute('src');
-//
-//                    // Exclude external resources
-//                    if (strpos($scriptSrc, 'http') !== false) return;
-//
-//                    // Add version number to path
-//                    if ($scriptSrc) {
-//                        $script->setAttribute('src', str_replace('.js', '.123.js', $scriptSrc));
-//                    }
-//                })
-//            ;
-//        }
+        try {
+            if ($modx->getObject('cgSetting', array('key' => 'cache_buster'))->get('value') == 1) {
+                $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
+                $versionJS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_js'));
+
+                if ($versionCSS) {
+                    $dom->filter('head link')
+                        ->each(function (HtmlPageCrawler $link, $versionCSS) {
+                            $linkHref = $link->getAttribute('href');
+
+                            // Exclude links without href and external resources
+                            if (!$linkHref || strpos($linkHref, 'http') !== false) return;
+
+                            // Add version number to path
+                            $version = '.' . str_replace('.','', $versionCSS->get('value'));
+                            $link->setAttribute('href', str_replace('.css', $version . '.css', $linkHref));
+                        })
+                    ;
+                }
+
+                if ($versionJS) {
+                    $dom->filter('script')
+                        ->each(function (HtmlPageCrawler $script, $versionJS) {
+                            $scriptSrc = $script->getAttribute('src');
+
+                            // Exclude inline and external scripts
+                            if (!$scriptSrc || strpos($scriptSrc, 'http') !== false) return;
+
+                            // Add version number to path
+                            $version = '.' . str_replace('.','', $versionJS->get('value'));
+                            $script->setAttribute('src', str_replace('.js', $version . '.js', $scriptSrc));
+                        })
+                    ;
+                }
+            }
+        }
+        catch (Error $e) {
+            $modx->log(modX::LOG_LEVEL_ERROR, $e);
+        }
 
         // Save manipulated DOM
         $output = $dom->saveHTML();
