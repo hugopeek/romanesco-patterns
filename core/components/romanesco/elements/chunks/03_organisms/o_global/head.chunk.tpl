@@ -15,7 +15,8 @@
 
 [[[[If?
     &subject=`[[++cache_buster]]`
-    &operator=`notempty`
+    &operator=`eq`
+    &operand=`1`
     &then=`$cacheBusterPlaceholders`
 ]]]]
 
