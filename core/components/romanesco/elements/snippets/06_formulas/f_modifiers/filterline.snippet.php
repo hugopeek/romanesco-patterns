@@ -1,4 +1,16 @@
 <?php
+/**
+ * filterLine
+ *
+ * Search input for lines containing a specific string. And then return those
+ * lines.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties;
+ * @var string $input;
+ * @var string $options;
+ */
+
 $lines = $modx->getOption('input', $scriptProperties, $input);
 $file = $modx->getOption('file', $scriptProperties, '');
 $search = $modx->getOption('searchString', $scriptProperties, $options);

@@ -14,6 +14,11 @@
  * as output modifier. It messes up the cache and prevents the alternative from
  * working properly. To fix: remove all modifiers, replace with full snippet
  * call and clear cache (from top menu, NOT by saving resource).
+ *
+ * @var modX $modx
+ * @var array $scriptProperties;
+ * @var string $input;
+ * @var string $options;
  */
 
 $input = $modx->getOption('input', $scriptProperties, $input);
