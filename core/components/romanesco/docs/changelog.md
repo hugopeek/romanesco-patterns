@@ -4,11 +4,12 @@
 Released on ...
 
 New features:
+- Implement cache buster for static assets
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Remove YAML front matter from Markdown notes
 - Accept semantic version numbers for generated styling assets
-- Implement cache buster for static assets
 - Move off-canvas navigation above content wrapper to prevent redraw in JS
 - Add warning not to edit site.css directly
 - Don't display globally excluded resources in Overviews either
