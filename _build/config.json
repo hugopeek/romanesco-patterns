@@ -11146,7 +11146,7 @@
                     "category": "f_modifiers"
                 },
                 {
-                    "name": "replaceRegexPattern",
+                    "name": "replaceRegex",
                     "description": "Find patterns with regex and replace them. By default, it removes all matches. If you want to replace each match with something else, you have to use a regular snippet call.",
                     "properties": [
                         {

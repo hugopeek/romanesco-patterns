@@ -1,6 +1,6 @@
 <?php
 /**
- * replaceRegexPattern
+ * replaceRegex
  *
  * Find patterns with regex and replace them.
  *
