@@ -17,7 +17,7 @@
                     "category": "f_modifiers"
                 },{
                     "name": "stripWords",
-                    "description": "Opposed to the native MODX stripString modifier (which only allows you to strip a single value), stripWords lets you enter multiple (comma separated) values.",
+                    "description": "As opposed to the native MODX stripString modifier (which only allows you to strip a single value), stripWords lets you enter multiple (comma separated) values.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -120,6 +120,19 @@
                     ],
                     "category": "f_modifiers"
                 },{
+                    "name": "replaceRegexPattern",
+                    "description": "Find patterns with regex and replace them. By default, it removes all matches. If you want to replace each match with something else, you have to use a regular snippet call.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_modifiers"
+                },{
                     "name": "beforeEach",
                     "description": "Grab a comma-separated list and prefix all items with given value. Optionally, the separator can be changed and output can be forwarded to a placeholder.",
                     "properties": [
@@ -134,7 +147,7 @@
                     "category": "f_modifiers"
                 },{
                     "name": "stripForJS",
-                    "description": "Prepare the input for being used in Javascript. This means escaping certain characters to make sure the surrounding HTML doesn't break.",
+                    "description": "Prepare the input for use in Javascript. This means escaping certain characters to make sure the surrounding HTML doesn't break.",
                     "properties": [
                         {
                             "name": "elementStatus",

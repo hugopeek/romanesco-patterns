@@ -3,6 +3,9 @@
 ## Romanesco Patterns 1.0.0-beta4
 Released on ...
 
+New features:
+- Add output modifier for replacing regex pattern
+
 Fixes and improvements:
 - Accept semantic version numbers for generated styling assets
 - Implement cache buster for static assets
