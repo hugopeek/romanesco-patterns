@@ -33,7 +33,7 @@
             <article class="sixteen wide mobile twelve wide computer column">
                 <div class="ui vertical stripe segment transparent">
                     <div class="container">
-                        [[*content:Markdown]]
+                        [[*content:replaceRegex=`^---[\s\S]+?---[\s]+`:Markdown]]
                     </div>
                 </div>
             </article>
