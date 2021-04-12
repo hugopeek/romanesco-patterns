@@ -3,8 +3,8 @@
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`$headingHierarchySubtitle? &uid=`[[+unique_idx]]``
-        &else=`$headingHierarchy? &uid=`[[+unique_idx]]``
+        &then=`$headingOverviewSubtitle? &uid=`[[+unique_idx]]``
+        &else=`$headingOverview? &uid=`[[+unique_idx]]``
     ]]]]
 </div>
 

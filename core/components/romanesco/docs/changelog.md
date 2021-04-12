@@ -8,6 +8,7 @@ New features:
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Rename all headingHierarchy chunks to headingOverview [BREAKING CHANGE]
 - Remove YAML front matter from Markdown notes
 - Accept semantic version numbers for generated styling assets
 - Move off-canvas navigation above content wrapper to prevent redraw in JS

@@ -5,8 +5,8 @@
                 &subject=`[[+show_subtitle]]`
                 &operator=`EQ`
                 &operand=`1`
-                &then=`[[$headingHierarchySubtitle? &classes=`inverted` &uid=`[[+unique_idx]]`]]`
-                &else=`[[$headingHierarchy? &classes=`inverted` &uid=`[[+unique_idx]]`]]`
+                &then=`[[$headingOverviewSubtitle? &classes=`inverted` &uid=`[[+unique_idx]]`]]`
+                &else=`[[$headingOverview? &classes=`inverted` &uid=`[[+unique_idx]]`]]`
             ]]
             [[If?
                 &subject=`[[+link_text]]`

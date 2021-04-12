@@ -1,6 +1,6 @@
 [[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
 
-[[$headingHierarchyLink? &uid=`[[+unique_idx]]`]]
+[[$headingOverviewLink? &uid=`[[+unique_idx]]`]]
 
 <p class="meta">
     <span class="author">

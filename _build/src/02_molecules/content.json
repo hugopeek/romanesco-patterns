@@ -29,7 +29,7 @@
                     ],
                     "category": "m_content"
                 },{
-                    "name": "headingHierarchySubtitle",
+                    "name": "headingOverviewSubtitle",
                     "description": "",
                     "properties": [
                         {
@@ -42,7 +42,7 @@
                     ],
                     "category": "m_content"
                 },{
-                    "name": "headingHierarchySubtitleLink",
+                    "name": "headingOverviewSubtitleLink",
                     "description": "",
                     "properties": [
                         {

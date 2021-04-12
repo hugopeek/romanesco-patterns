@@ -3419,7 +3419,7 @@
                     "category": "a_content"
                 },
                 {
-                    "name": "headingHierarchy",
+                    "name": "headingOverview",
                     "description": "",
                     "properties": [
                         {
@@ -3428,13 +3428,13 @@
                         },
                         {
                             "name": "elementPreview",
-                            "value": "[[$headingHierarchy?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
+                            "value": "[[$headingOverview?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
                         }
                     ],
                     "category": "a_content"
                 },
                 {
-                    "name": "headingHierarchyLink",
+                    "name": "headingOverviewLink",
                     "description": "",
                     "properties": [
                         {
@@ -4844,7 +4844,7 @@
                     "category": "m_content"
                 },
                 {
-                    "name": "headingHierarchySubtitle",
+                    "name": "headingOverviewSubtitle",
                     "description": "",
                     "properties": [
                         {
@@ -4859,7 +4859,7 @@
                     "category": "m_content"
                 },
                 {
-                    "name": "headingHierarchySubtitleLink",
+                    "name": "headingOverviewSubtitleLink",
                     "description": "",
                     "properties": [
                         {

@@ -16,7 +16,7 @@
                     ],
                     "category": "a_content"
                 },{
-                    "name": "headingHierarchy",
+                    "name": "headingOverview",
                     "description": "",
                     "properties": [
                         {
@@ -24,12 +24,12 @@
                             "value": "solid"
                         },{
                             "name": "elementPreview",
-                            "value": "[[$headingHierarchy?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
+                            "value": "[[$headingOverview?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
                         }
                     ],
                     "category": "a_content"
                 },{
-                    "name": "headingHierarchyLink",
+                    "name": "headingOverviewLink",
                     "description": "",
                     "properties": [
                         {

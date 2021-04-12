@@ -2,6 +2,6 @@
     &subject=`[[+show_subtitle]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`$headingHierarchySubtitleLink? &uid=`[[+unique_idx]]``
-    &else=`$headingHierarchyLink? &uid=`[[+unique_idx]]``
+    &then=`$headingOverviewSubtitleLink? &uid=`[[+unique_idx]]``
+    &else=`$headingOverviewLink? &uid=`[[+unique_idx]]``
 ]]]]
