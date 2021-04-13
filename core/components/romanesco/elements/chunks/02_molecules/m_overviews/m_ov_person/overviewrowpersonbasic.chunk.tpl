@@ -6,7 +6,7 @@
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<p class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</p>`
+        &then=`<span class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</span>`
     ]]
 </[[+title_hierarchy]]>
 

@@ -6,15 +6,15 @@
         &then=`<img class="ui faded image" src="[[+overview_icon_svg:empty=`[[++overview_icon_fallback]]`]]" alt="[[+pagetitle]]">`
         &else=`<i class="circular [[+overview_icon_font:empty=`question`]]"></i>`
     ]]
-    <div class="content">
+    <span class="content">
         <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
         [[If?
             &subject=`[[+show_subtitle]]`
             &operator=`EQ`
             &operand=`1`
-            &then=`<div class="sub header">[[+longtitle:empty=`[[+pagetitle]]`]]</div>`
+            &then=`<span class="sub header">[[+longtitle:empty=`[[+pagetitle]]`]]</span>`
         ]]
-    </div>
+    </span>
 </[[+title_hierarchy]]>
 
 [[[[If?

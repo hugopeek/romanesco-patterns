@@ -5,7 +5,7 @@
 <div class="[[+cols]] wide floated column">
     <h2 class="ui header">
         <a href="[[~[[+id]]]]">[[+person_firstname]]</a>
-        <div class="sub header">[[+person_jobtitle]]</div>
+        <span class="sub header">[[+person_jobtitle]]</span>
     </h2>
     <p>
         [[$socialConnectButtonsPerson? &uid=`[[+unique_idx]]`]]

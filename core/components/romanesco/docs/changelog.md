@@ -8,6 +8,8 @@ New features:
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Remove nested block level elements from heading tags
+- Move most common subtitles out of heading tags
 - Rename all headingHierarchy chunks to headingOverview [BREAKING CHANGE]
 - Remove YAML front matter from Markdown notes
 - Accept semantic version numbers for generated styling assets

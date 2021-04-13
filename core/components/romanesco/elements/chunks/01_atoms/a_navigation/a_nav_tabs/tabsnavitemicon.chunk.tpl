@@ -4,9 +4,9 @@
      aria-selected="false">
     <[[+level]] class="ui [[+icon_position:is=`top`:then=`icon`]] [[+level:is=`span`:then=`tiny`]] header">
         <img class="ui image" src="[[+icon]]">
-        <div class="content">
+        <span class="content">
             [[+heading]]
             [[+subtitle:notempty=`<span class="sub header">[[+subtitle]]</span>`]]
-        </div>
+        </span>
     </[[+level]]>
 </div>
