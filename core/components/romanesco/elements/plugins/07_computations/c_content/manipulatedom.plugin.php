@@ -22,7 +22,7 @@ switch ($modx->event->name) {
     case 'OnWebPagePrerender':
 
         // Check if content type is text/html
-        if ($modx->resource->get('content_type') !== 1) {
+        if (!in_array($modx->resource->get('content_type'), [1,11])) {
             break;
         }
 
@@ -59,6 +59,7 @@ switch ($modx->event->name) {
                     '.grid',
                     'a:not(.button)',
                     '.button:not(.primary):not(.secondary)',
+                    '.subtitle',
                     '.lead',
                     '.list',
                     '.quote',

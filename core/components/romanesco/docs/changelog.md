@@ -8,6 +8,7 @@ New features:
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Also manipulate DOM of Markdown resources
 - Remove nested block level elements from heading tags
 - Move most common subtitles out of heading tags
 - Rename all headingHierarchy chunks to headingOverview [BREAKING CHANGE]
