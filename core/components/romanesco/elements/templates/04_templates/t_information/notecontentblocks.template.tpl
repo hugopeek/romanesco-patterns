@@ -29,8 +29,8 @@
             &else=`$toolbarKnowledgeBaseTheme`
         ]]]]
 
-        <div id="content" class="ui relaxed grid container">
-            <article class="sixteen wide mobile twelve wide computer column">
+        <div class="ui relaxed grid container">
+            <article id="content" class="sixteen wide mobile twelve wide computer column">
                 [[*content]]
             </article>
 
