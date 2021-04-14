@@ -2,5 +2,5 @@
     <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
 </[[+title_hierarchy]]>
 <p class="subtitle">
-    [[+longtitle:empty=`[[+pagetitle]]`]]
+    [[+overview_subtitle:empty=`[[+longtitle:empty=`[[+pagetitle]]`]]`]]
 </p>

@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add TV for overriding subtitle in Overviews
 - Implement cache buster for static assets
 - Add output modifier for replacing regex pattern
 

@@ -12,7 +12,7 @@
             &subject=`[[+show_subtitle]]`
             &operator=`EQ`
             &operand=`1`
-            &then=`<span class="sub header">[[+longtitle:empty=`[[+pagetitle]]`]]</span>`
+            &then=`<span class="sub header">[[+overview_subtitle:empty=`[[+longtitle:empty=`[[+pagetitle]]`]]`]]</span>`
         ]]
     </span>
 </[[+title_hierarchy]]>

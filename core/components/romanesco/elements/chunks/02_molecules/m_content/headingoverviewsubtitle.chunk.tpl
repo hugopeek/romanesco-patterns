@@ -2,5 +2,5 @@
     [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
 </[[+title_hierarchy]]>
 <p class="subtitle">
-    [[+longtitle:empty=`[[+pagetitle]]`]]
+    [[+overview_subtitle:empty=`[[+longtitle:empty=`[[+pagetitle]]`]]`]]
 </p>

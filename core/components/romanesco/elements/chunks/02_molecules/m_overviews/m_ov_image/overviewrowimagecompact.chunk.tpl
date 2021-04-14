@@ -14,6 +14,6 @@
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<div class="description">[[+longtitle:empty=`[[+pagetitle]]`]]</div>`
+        &then=`<div class="description">[[+overview_subtitle:empty=`[[+longtitle:empty=`[[+pagetitle]]`]]`]]</div>`
     ]]
 </div>

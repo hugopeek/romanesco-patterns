@@ -225,6 +225,22 @@
                         "Download"
                     ]
                 },{
+                    "caption": "Subtitle",
+                    "name": "overview_subtitle",
+                    "description": "When filled in, this value will override the default subtitle (if subtitle is enabled in the Overview CB settings).",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "Overview - Settings",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_basic"
+                    ]
+                },{
                     "caption": "Link / button text",
                     "name": "overview_link_text",
                     "description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!",
@@ -236,7 +252,7 @@
                         }
                     ],
                     "category": "Overview - Settings",
-                    "sortOrder": "1",
+                    "sortOrder": "2",
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
