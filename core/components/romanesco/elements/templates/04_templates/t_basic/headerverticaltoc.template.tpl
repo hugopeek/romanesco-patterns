@@ -2,11 +2,12 @@
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
 <head>
-    [[[[If?
-        &subject=`[[$headTheme]]`
-        &operator=`isnull`
-        &then=`$head`
-        &else=`$headTheme`
+    [[[[modifiedIf?
+        &subject=`headTheme`
+        &operator=`iselement`
+        &operand=`chunk`
+        &then=`$headTheme`
+        &else=`$head`
     ]]]]
 </head>
 
@@ -22,11 +23,12 @@
     ]]
 
     <main id="main">
-        [[[[If?
-            &subject=`[[$toolbarBasicTheme]]`
-            &operator=`isnull`
-            &then=`$toolbarBasic`
-            &else=`$toolbarBasicTheme`
+        [[[[modifiedIf?
+            &subject=`toolbarBasicTheme`
+            &operator=`iselement`
+            &operand=`chunk`
+            &then=`$toolbarBasicTheme`
+            &else=`$toolbarBasic`
         ]]]]
 
         <div class="ui relaxed grid container">

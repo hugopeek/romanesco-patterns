@@ -9,6 +9,7 @@ New features:
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Don't render theme chunks before checking if they exist
 - Add iselement condition to modifiedIf
 - Also manipulate DOM of Markdown resources
 - Remove nested block level elements from heading tags
