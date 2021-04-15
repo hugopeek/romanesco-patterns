@@ -40,11 +40,12 @@
         </div>
     </main>
 
-    [[[[If?
-        &subject=`[[$footerTheme]]`
-        &operator=`isnull`
-        &then=`$footer`
-        &else=`$footerTheme`
+    [[[[modifiedIf?
+        &subject=`footerTheme`
+        &operator=`iselement`
+        &operand=`chunk`
+        &then=`$footerTheme`
+        &else=`$footer`
     ]]]]
 </div>
 

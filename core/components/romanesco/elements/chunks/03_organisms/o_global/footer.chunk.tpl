@@ -37,7 +37,7 @@
     &else=`*footer_cta:notempty=`$ctaFooter``
 ]]]]]]
 
-[[+footer_visibility:eq=`1`:then=`
+[[If? &subject=`[[+footer_visibility]]` &operator=`notempty` &then=`
 <footer id="footer" class="ui vertical segment [[setBackground? &background=`[[+footer_background]]`]]">
     [[[[If?
         &subject=`[[+footer_type]]`
@@ -48,11 +48,12 @@
         `
     ]]]]
 
-    [[[[If?
-        &subject=`[[$footerCopyrightTheme]]`
-        &operator=`isnull`
-        &then=`$footerCopyright`
-        &else=`$footerCopyrightTheme`
+    [[[[modifiedIf?
+        &subject=`footerCopyrightTheme`
+        &operator=`iselement`
+        &operand=`chunk`
+        &then=`$footerCopyrightTheme`
+        &else=`$footerCopyright`
     ]]]]
 </footer>
 `]]
