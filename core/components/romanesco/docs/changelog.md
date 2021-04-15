@@ -9,6 +9,7 @@ New features:
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Add iselement condition to modifiedIf
 - Also manipulate DOM of Markdown resources
 - Remove nested block level elements from heading tags
 - Move most common subtitles out of heading tags
