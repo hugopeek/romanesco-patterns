@@ -1,16 +1,17 @@
 <header id="header" class="masthead inverted primary-color">
-    [[[[If?
-        &subject=`[[+masthead]]`
-        &operator=`EQ`
-        &operand=`1`
+    [[[[modifiedIf?
+        &subject=`masthead`
+        &operator=`iselement`
+        &operand=`chunk`
         &then=`$masthead`
     ]]]]
 
-    [[[[If?
-        &subject=`[[$mainNavVerticalTheme]]`
-        &operator=`isnull`
-        &then=`$mainNavVertical`
-        &else=`$mainNavVerticalTheme`
+    [[[[modifiedIf?
+        &subject=`mainNavVerticalTheme`
+        &operator=`iselement`
+        &operand=`chunk`
+        &then=`$mainNavVerticalTheme`
+        &else=`$mainNavVertical`
     ]]]]
 
     [[[[If?

@@ -15,19 +15,20 @@
     &toPlaceholder=`hero`
 ]]
 
-<header id="header" class="masthead [[+hero:eq=`0`:then=`without hero`]] [[++navbar_sticky:eq=`0`:then=`non-stick`]]">
-    [[[[If?
-        &subject=`[[+masthead]]`
-        &operator=`EQ`
-        &operand=`1`
+<header id="header" class="[[+hero:eq=`0`:then=`without hero`]] [[++navbar_sticky:eq=`0`:then=`non-stick`]]">
+    [[[[modifiedIf?
+        &subject=`masthead`
+        &operator=`iselement`
+        &operand=`chunk`
         &then=`$masthead`
     ]]]]
 
-    [[[[If?
-        &subject=`[[$mainNavTheme]]`
-        &operator=`isnull`
-        &then=`$mainNav`
-        &else=`$mainNavTheme`
+    [[[[modifiedIf?
+        &subject=`mainNavTheme`
+        &operator=`iselement`
+        &operand=`chunk`
+        &then=`$mainNavTheme`
+        &else=`$mainNav`
     ]]]]
 
     [[[[If?
