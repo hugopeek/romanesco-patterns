@@ -1,4 +1,3 @@
-[[++minify_css_js:eq=`1`:then=`.min`:toPlaceholder=`minify`]]
 <title>[[++romanesco.title_format]]</title>
 
 <meta charset="[[++modx_charset]]">
@@ -13,6 +12,7 @@
 
 <script>document.documentElement.className = 'js';</script>
 
+[[++minify_css_js:eq=`1`:then=`.min`:toPlaceholder=`minify`]]
 [[[[If?
     &subject=`[[++cache_buster]]`
     &operator=`eq`
@@ -32,7 +32,7 @@
     &operator=`eq`
     &operand=`1_1`
     &then=`
-    <link href="[[*critical_css_uri]]" rel="stylesheet">
+    <link href="[[*critical_css_uri:replace=`.css==[[+cache_buster_css]].css`]]" rel="stylesheet">
     <link href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
     `
