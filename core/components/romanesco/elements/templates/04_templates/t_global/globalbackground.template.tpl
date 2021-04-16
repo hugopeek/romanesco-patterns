@@ -14,11 +14,7 @@
 <body id="[[*alias]]" class="overview">
 
 <div class="pusher">
-    [[$headerBasic?
-        &masthead=`0`
-        &hero=`1`
-        &search=`0`
-    ]]
+    [[$headerBasic]]
 
     [[[[modifiedIf?
         &subject=`toolbarBasicTheme`
