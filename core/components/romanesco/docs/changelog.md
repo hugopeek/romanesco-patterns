@@ -10,6 +10,7 @@ New features:
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Allow theme override for structured organization data
 - Don't render theme chunks before checking if they exist
 - Add iselement condition to modifiedIf
 - Also manipulate DOM of Markdown resources
