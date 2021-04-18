@@ -127,15 +127,16 @@
                     </div>
                 </section>
 
+                [[-
                 <section class="ui vertical stripe segment [[++layout_background_default]]">
                     <div class="ui container">
-                        [[$dividerHeading?
+                        [[-$dividerHeading?
                             &divider_section=`section`
                             &divider_icon_class=`tags icon`
                             &divider_icon_circular=`1`
                         ]]
                         <div class="ui labels">
-                            [[!TaggerGetTags?
+                            [[-!TaggerGetTags?
                                 &groups=`2`
                                 &target=`[[*parent]]`
                                 &rowTpl=`tagItemCountLinkHighlight`
@@ -143,8 +144,9 @@
                         </div>
                     </div>
                 </section>
+                ]]
 
-                <section class="ui vertical stripe segment [[++layout_background_default]]">
+                <section class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
                     <div class="ui container">
                         <h3>[[%romanesco.article.read_another]]</h3>
 
