@@ -52,6 +52,7 @@ switch ($modx->event->name) {
         $sharedTemplates = explode(',', $romanesco->getConfigSetting('critical_shared_templates', $context));
 
         $template = $modx->getObject('modTemplate', array('id' => $resource->get('template')));
+        $url = $modx->makeUrl($id,'','','full');
         $uri = ltrim($resource->get('uri'),'/');
         $uri = rtrim($uri,'/');
         $criticalPath = rtrim($cssPath,'/') . '/critical/';
@@ -110,10 +111,23 @@ switch ($modx->event->name) {
             }
         }
 
+        // Check if task is not already scheduled
+        $pendingTasks = $modx->getCollection('sTaskRun', array(
+            'task' => $task->get('id'),
+            'status' => 0,
+            'executedon' => NULL,
+        ));
+        foreach ($pendingTasks as $pendingTask) {
+            $data = $pendingTask->get('data');
+            if ($data['id'] == $id && $data['url'] == $url) {
+                return true;
+            }
+        }
+
         // Schedule a new run
         $task->schedule('+1 minutes', array(
             'id' => $id,
-            'url' => $modx->makeUrl($id,'','','full'),
+            'url' => $url,
         ));
 
         break;
