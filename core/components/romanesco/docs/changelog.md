@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add ability to schedule critical CSS generation
 - Look for masthead chunk in header
 - Add TV for overriding subtitle in Overviews
 - Implement cache buster for static assets

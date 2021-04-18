@@ -5,9 +5,16 @@
  * Determine which CSS styles are used above the fold and write them to a custom
  * CSS file. This needs NPM and the critical package to be installed.
  *
- * This plugin also serves the
+ * Because generating these stylesheets is very resource intensive, it is
+ * inadvisable to run this in parallel (which is what would happen if you
+ * trigger a save action on a batch of resources).
+ *
+ * To prevent performance issues, you should also install the Scheduler extra.
+ * The plugin will then add each task to the Scheduler work queue, so they can
+ * be executed serially (or in small batches).
  *
  * https://github.com/addyosmani/critical
+ * https://github.com/modmore/Scheduler
  *
  * @var modX $modx
  * @var array $scriptProperties
@@ -64,11 +71,48 @@ switch ($modx->event->name) {
         // Store full path to css file in a TV
         $resource->setTVValue('critical_css_uri', $criticalPath . $uri . '.css');
 
-        $romanesco->generateCriticalCSS(array(
-            'id' => $id,
-            'uri' => $uri,
-            'cssPath' => $cssPath,
-            'distPath' => $distPath,
+        // Use Scheduler for adding task to queue (if available)
+        /** @var Scheduler $scheduler */
+        $schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
+        $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
+
+        if (!($scheduler instanceof Scheduler)) {
+            $modx->log(modX::LOG_LEVEL_ERROR, '[GenerateCriticalCSS] Scheduler not found. Generating CSS directly.');
+
+            // NB: this will run in parallel mode, meaning the save action
+            //  doesn't need to wait for the gulp task to finish.
+            //  If multiple resources are saved in rapid succession, this will
+            //  severely degrade performance and eventually cause 500 errors!
+            $romanesco->generateCriticalCSS(array(
+                'id' => $id,
+                'uri' => $uri,
+                'cssPath' => $cssPath,
+                'distPath' => $distPath,
+            ));
+
+            break;
+        }
+
+        $task = $scheduler->getTask('romanesco', 'GenerateCriticalCSS');
+
+        // Create task first if it doesn't exist
+        if (!($task instanceof sTask)) {
+            $task = $modx->newObject('sSnippetTask');
+            $task->fromArray(array(
+                'class_key' => 'sSnippetTask',
+                'content' => 'generateCriticalCSS',
+                'namespace' => 'romanesco',
+                'reference' => 'GenerateCriticalCSS',
+                'description' => 'Extract above-the-fold styling into custom CSS file.'
+            ));
+            if (!$task->save()) {
+                return 'Error saving GenerateCriticalCSS task';
+            }
+        }
+
+        // Schedule a new run
+        $task->schedule('+1 minutes', array(
+            'id' => $id
         ));
 
         break;
