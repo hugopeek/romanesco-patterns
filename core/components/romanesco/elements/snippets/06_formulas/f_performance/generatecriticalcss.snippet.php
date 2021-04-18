@@ -39,6 +39,7 @@ $romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romane
 if (!($romanesco instanceof Romanesco)) return;
 
 $resourceID = $modx->getOption('id', $scriptProperties, '');
+$resourceURL = $modx->getOption('url', $scriptProperties, '');
 $resource = $modx->getObject('modResource', $resourceID);
 $parallel = $modx->getOption('parallel', $scriptProperties, 0);
 
@@ -48,6 +49,7 @@ if (!($resource instanceof modResource)) return;
 if (is_object($task)) {
     $romanesco->generateCriticalCSS(array(
         'id' => $resourceID,
+        'url' => $resourceURL,
         'uri' => $resource->get('uri'),
         'cssPath' => $romanesco->getContextSetting('romanesco.custom_css_path', $resource->get('context_key')),
         'distPath' => $romanesco->getContextSetting('romanesco.semantic_dist_path', $resource->get('context_key')),

@@ -112,7 +112,8 @@ switch ($modx->event->name) {
 
         // Schedule a new run
         $task->schedule('+1 minutes', array(
-            'id' => $id
+            'id' => $id,
+            'url' => $modx->makeUrl($id,'','','full'),
         ));
 
         break;
