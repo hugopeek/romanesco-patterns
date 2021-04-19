@@ -11,6 +11,7 @@ New features:
 - Add output modifier for replacing regex pattern
 
 Fixes and improvements:
+- Preload critical CSS file from HTML (disable HTTP/2 server push)
 - Allow theme override for structured organization data
 - Don't render theme chunks before checking if they exist
 - Add iselement condition to modifiedIf

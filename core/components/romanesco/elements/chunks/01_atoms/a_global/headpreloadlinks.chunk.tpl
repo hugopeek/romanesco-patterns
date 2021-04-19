@@ -1,3 +1,6 @@
+[[+load_critical_css:notempty=`
+<link href="[[*critical_css_uri:replace=`.css==[[+cache_buster_css]].css`]]" rel="preload" as="style">
+`]]
 [[splitString? &input=`[[++theme_font_page]]` &prefix=`font_page`]]
 [[splitString? &input=`[[++theme_font_header]]` &prefix=`font_header`]]
 [[+font_page.1:notempty=`
@@ -11,5 +14,5 @@
 <link rel="preload" href="/[[++romanesco.semantic_font_path]]/outline-icons.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/[[++romanesco.semantic_font_path]]/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
 [[++logo_path:notempty=`
-<link rel="preload" href="[[++logo_path]]" as="image">
+<link rel="preload" href="[[++logo_path]]" as="image" [[++logo_path:contains=`.svg`:then=`type="image/svg+xml"`]]>
 `]]

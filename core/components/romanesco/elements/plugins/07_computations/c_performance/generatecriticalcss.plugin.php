@@ -132,19 +132,19 @@ switch ($modx->event->name) {
 
         break;
 
-    case 'OnWebPagePrerender':
-        if ($_SERVER['HTTPS'] === 'on') {
-            $cssFile = $modx->resource->getTVValue('critical_css_uri');
-
-            // Create array of objects for the header
-            $linkObjects = array();
-            if ($cssFile && file_exists($basePath . $cssFile)) {
-                $linkObjects[] = "</{$cssFile}>; as=style; rel=preload;";
-            }
-
-            // Set PHP header
-            header('Link: ' . implode(',',$linkObjects));
-        }
-
-        break;
+//    case 'OnWebPagePrerender':
+//        if ($_SERVER['HTTPS'] === 'on') {
+//            $cssFile = $modx->resource->getTVValue('critical_css_uri');
+//
+//            // Create array of objects for the header
+//            $linkObjects = array();
+//            if ($cssFile && file_exists($basePath . $cssFile)) {
+//                $linkObjects[] = "</{$cssFile}>; as=style; rel=preload;";
+//            }
+//
+//            // Set PHP header
+//            header('Link: ' . implode(',',$linkObjects));
+//        }
+//
+//        break;
 }
