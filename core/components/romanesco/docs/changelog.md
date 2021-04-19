@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta4
-Released on ...
+Released on April 19, 2021
 
 New features:
 - Add ability to schedule critical CSS generation

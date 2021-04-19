@@ -2147,6 +2147,21 @@ if ($object->xpdo) {
     11 => 'Header - Vertical (ToC)',
     12 => 'Download',
   ),
+  'overview_subtitle' => 
+  array (
+    0 => 'Home',
+    1 => 'Homepage',
+    2 => 'BasicOverview',
+    3 => 'Basic - Overview',
+    4 => 'BasicDetail',
+    5 => 'BasicDetailToC',
+    6 => 'Basic - Detail',
+    7 => 'Basic - Detail (ToC)',
+    8 => 'HeaderVertical',
+    9 => 'HeaderVerticalToC',
+    10 => 'Header - Vertical',
+    11 => 'Header - Vertical (ToC)',
+  ),
   'overview_link_text' => 
   array (
     0 => 'Home',
