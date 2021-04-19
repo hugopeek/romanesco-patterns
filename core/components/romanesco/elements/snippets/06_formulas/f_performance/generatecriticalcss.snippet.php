@@ -78,4 +78,4 @@ if ($response->isError()) {
     return $error;
 }
 
-return "Critical CSS generated for <strong>{$resource->get('uri')}</strong> ($resourceID)";
+return "Critical CSS will be generated for <strong>{$resource->get('uri')}</strong> ($resourceID)";
