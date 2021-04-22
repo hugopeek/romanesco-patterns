@@ -16,7 +16,7 @@
 
 [[[[+multiple_steps:notempty=`
     !FormItRetriever?
-        &placeholderPrefix=`fb[[*id]].`
+        &placeholderPrefix=``
         &storeLocation=`session`
         &redirectToOnNotFound=`[[+first_step:isnot=`[[+current_id]]`:then=`[[+first_step]]`:else=``]]`
     `
