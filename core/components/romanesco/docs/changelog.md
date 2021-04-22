@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta5
+Released on ...
+
+Fixes and improvements:
+- Let MODX clear overview cache if custom cache is disabled
+
 ## Romanesco Patterns 1.0.0-beta4
 Released on April 19, 2021
 

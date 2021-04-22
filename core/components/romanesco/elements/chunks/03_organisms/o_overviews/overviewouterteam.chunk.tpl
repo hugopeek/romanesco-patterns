@@ -19,8 +19,7 @@
 
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
-    &cacheKey=`team`
-    [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
+    [[++custom_cache:eq=`1`:then=`&cacheKey=`team``]]
 
     &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++romanesco.team_container_id]]`]]`
     &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`[[+excluded_resources:empty=`null`]]`]]`
