@@ -16,18 +16,12 @@
 
 [[[[+multiple_steps:notempty=`
     !FormItRetriever?
-        &placeholderPrefix=``
+        &placeholderPrefix=`fb[[*id]].`
         &storeLocation=`session`
         &redirectToOnNotFound=`[[+first_step:isnot=`[[+current_id]]`:then=`[[+first_step]]`:else=``]]`
     `
 ]]]]
-[[[[+multiple_steps:notempty=`
-    !FormItRetriever?
-        &placeholderPrefix=`fb[[*id]].`
-        &storeLocation=`session`
-        &redirectToOnNotFound=``
-    `
-]]]]
+
 [[returnFirstHit:toPlaceholder=`redirect_to`?
     &1=`[[+redirect_id]]`
     &2=`[[+next_step]]`

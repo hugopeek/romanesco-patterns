@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Let MODX clear overview cache if custom cache is disabled
+- Merge duplicate FormItRetriever calls in fbForm template
 
 ## Romanesco Patterns 1.0.0-beta4
 Released on April 19, 2021
