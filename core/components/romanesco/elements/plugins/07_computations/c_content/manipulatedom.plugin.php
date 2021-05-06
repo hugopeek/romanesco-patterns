@@ -207,7 +207,7 @@ switch ($modx->event->name) {
 
         // Add lightbox to HTML
         $dom->filter('#footer')
-            ->append(implode($lightbox))
+            ->after(implode($lightbox))
         ;
 
         // Disable steps following an active step
