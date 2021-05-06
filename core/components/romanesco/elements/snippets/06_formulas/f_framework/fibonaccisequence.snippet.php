@@ -21,15 +21,15 @@
  * ]]
  *
  * Without any parameters, the script will output a comma delimited sequence of
- * 10 numbers.
+ * 8 numbers. The duplicate 1 at position 2 and 3 is automatically removed.
  *
  * [[FibonacciSequence]]
- * will output: 0,1,1,2,3,5,8,13,21,34
+ * will output: 0,1,2,3,5,8,13,21
  *
- * @original http://www.hashbangcode.com/blog/get-fibonacci-numbers-using-php
+ * @link http://www.hashbangcode.com/blog/get-fibonacci-numbers-using-php
  */
 
-$limit = $modx->getOption('limit', $scriptProperties, 10);
+$limit = $modx->getOption('limit', $scriptProperties, 8);
 $start = $modx->getOption('start', $scriptProperties, 0);
 $position = $modx->getOption('position', $scriptProperties, '');
 $delimiter = $modx->getOption('delimiter', $scriptProperties, ',');
@@ -38,6 +38,7 @@ if ($start > 0) {
     $second = $start * 2;
 } else {
     $second = 1;
+    $limit++; // The third 1 is removed later, so limit needs +1 to be accurate
 }
 
 $sequence = array();
@@ -67,6 +68,7 @@ if (!function_exists('fibonacciSequence')) {
 }
 
 $output = fibonacciSequence($limit, $start, $second, $position);
+$output = array_unique($output); // Remove duplicate 1
 
 if ($position) {
     return $output;

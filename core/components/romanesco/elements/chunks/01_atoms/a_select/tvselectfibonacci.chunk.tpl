@@ -1,5 +1,5 @@
 [[FibonacciSequence?
-    &limit=`12`
-    &start=`0`
-    &delimiter=`||`
+    &limit=`[[+limit]]`
+    &start=`[[+start]]`
+    &delimiter=`[[+delimiter]]`
 ]]

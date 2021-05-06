@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Make Fibonacci sequence generator more flexible
 - Let MODX clear overview cache if custom cache is disabled
 - Merge duplicate FormItRetriever calls in fbForm template
 
