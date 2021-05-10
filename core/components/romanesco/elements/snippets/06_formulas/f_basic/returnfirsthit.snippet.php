@@ -16,8 +16,11 @@
  * @var array $scriptProperties
  */
 
+// Avoid hitting snippet properties
+unset($scriptProperties['elementExample']);
+unset($scriptProperties['elementStatus']);
+
 foreach ($scriptProperties as $key => $value) {
-    if ($key == 'elementExample' || $key == 'elementStatus') continue; // skip snippet properties
     if ($value) return $value;
 }
 return '';

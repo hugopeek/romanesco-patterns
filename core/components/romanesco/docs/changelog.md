@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix returnFirstHit snippet skipping over hits
 - Add gallery lightbox after the footer (and not inside)
 - Make Fibonacci sequence generator more flexible
 - Let MODX clear overview cache if custom cache is disabled
