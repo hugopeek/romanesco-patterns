@@ -21,7 +21,7 @@
             },{
                 "key": "backstop_reference_url",
                 "type": "textfield",
-                "area": "Site"
+                "area": "Development"
             }
         ]
     }

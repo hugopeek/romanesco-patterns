@@ -11918,9 +11918,19 @@
                 "value": "[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]"
             },
             {
+                "key": "htpasswd_user",
+                "type": "textfield",
+                "area": "Development"
+            },
+            {
+                "key": "htpasswd_pass",
+                "type": "text-password",
+                "area": "Development"
+            },
+            {
                 "key": "dev_mode",
                 "type": "combo-boolean",
-                "area": "Settings",
+                "area": "Development",
                 "value": "0"
             },
             {
@@ -11969,7 +11979,7 @@
             {
                 "key": "backstop_reference_url",
                 "type": "textfield",
-                "area": "Site"
+                "area": "Development"
             },
             {
                 "key": "mapbox_username",

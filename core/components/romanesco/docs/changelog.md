@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add option to generate critical CSS for pages behind htpasswd wall
 - Fix returnFirstHit snippet skipping over hits
 - Add gallery lightbox after the footer (and not inside)
 - Make Fibonacci sequence generator more flexible
