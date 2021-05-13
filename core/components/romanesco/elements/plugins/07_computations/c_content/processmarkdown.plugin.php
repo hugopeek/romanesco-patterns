@@ -111,7 +111,20 @@ switch ($modx->event->name) {
 
         // Add language class to code blocks that do not specify a language
         $dom->filter('pre')->addClass('language-html');
-        $dom->filter('code')->addClass('language-html');
+        $dom->filter('code')
+            ->addClass('language-html')
+            ->each(function (HtmlPageCrawler $code) {
+
+                // Code snippets in markdown files are rendered by MODX.
+                // To prevent this, you can add a space to all outer tags in
+                //  your markdown file. So [[snippet]] becomes [ [snippet] ].
+                // Annoying, but the easiest way around it.
+                // At least we can revert it here again:
+                $output = str_replace('[ [','[[',$code);
+                $output = str_replace('] ]',']]',$output);
+                $code->replaceWith($output);
+            })
+        ;
 
         // And a few other things
         $dom->filter('hr')->replaceWith('<div class="ui divider"></div>');
