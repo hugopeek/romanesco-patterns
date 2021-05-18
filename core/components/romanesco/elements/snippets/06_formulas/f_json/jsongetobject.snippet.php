@@ -70,7 +70,9 @@ if (!$result[0]) {
 
 // Loop over multidimensional arrays
 if ($result[0]) {
+    $idx = 1;
     foreach ($result as $row) {
+        $row['idx'] = $idx++;
         $output[] = $modx->getChunk($tpl, $row);
     }
     return implode($outputSeparator,$output);

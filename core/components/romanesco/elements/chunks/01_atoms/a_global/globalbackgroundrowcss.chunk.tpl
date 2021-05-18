@@ -1,4 +1,4 @@
-[[If:toPlaceholder=`bg[[+id]].img_uncropped`?
+[[If:toPlaceholder=`bg[[+id]][[+idx]][[+imgScale]].img_uncropped`?
     &subject=`[[+image.crops.mobile.url:empty=``]][[+image.crops.tablet.url:empty=``]][[+image.crops.desktop.url:empty=``]]`
     &operand=`empty`
     &then=`
@@ -11,7 +11,7 @@
     ]]`
     &else=``
 ]]
-[[If:toPlaceholder=`bg[[+id]].img_src`?
+[[If:toPlaceholder=`bg[[+id]][[+idx]][[+imgScale]].img_src`?
     &subject=`[[+image.crops.[[+imgType]].url]]`
     &operator=`notempty`
     &then=`
@@ -26,14 +26,14 @@
             &scale=[[+imgScale:default=`1`]]
         `
     ]]`
-&else=`[[+bg[[+id]].img_uncropped]]`
+    &else=`[[+bg[[+id]][[+idx]][[+imgScale]].img_uncropped]]`
 ]]
 [[If:empty=`[[+gradient]]`?
     &subject=`[[+image.extension]]`
     &operator=`is`
     &operand=`svg`
     &then=`[[+image.url:prepend=`url(/`:append=`)`]]`
-    &else=`[[+bg[[+id]].img_src]]`
+    &else=`[[+bg[[+id]][[+idx]][[+imgScale]].img_src]]`
 ]]
 [[+position:empty=`center center`]] /
 [[+size:empty=`cover`]]

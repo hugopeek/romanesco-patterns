@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Make sure placeholder prefixes are unique when generating background CSS
 - Add option to generate critical CSS for pages behind htpasswd wall
 - Fix returnFirstHit snippet skipping over hits
 - Add gallery lightbox after the footer (and not inside)
