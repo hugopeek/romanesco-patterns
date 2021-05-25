@@ -11,7 +11,6 @@ Fixes and improvements:
 - Add gallery lightbox after the footer (and not inside)
 - Make Fibonacci sequence generator more flexible
 - Let MODX clear overview cache if custom cache is disabled
-- Merge duplicate FormItRetriever calls in fbForm template
 
 ## Romanesco Patterns 1.0.0-beta4
 Released on April 19, 2021
