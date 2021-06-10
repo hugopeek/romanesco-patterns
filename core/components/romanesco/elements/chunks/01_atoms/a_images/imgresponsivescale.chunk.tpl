@@ -35,5 +35,5 @@
 
     [[$imgResponsiveScaleTheme]]
 
-    &default=`1`
+    &default=`51`
 ]]

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Set default responsive image scaling value to 51
 - Fix email not being sent when using dynamic emailTo (and empty regular field)
 - Make sure placeholder prefixes are unique when generating background CSS
 - Properly display MODX outer tags from Markdown files (if they've been split)
