@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta5
-Released on ...
+Released on June 10, 2021
 
 Fixes and improvements:
 - Set default responsive image scaling value to 51
