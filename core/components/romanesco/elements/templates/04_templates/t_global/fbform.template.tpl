@@ -49,7 +49,7 @@
         [[+math_question:isnot=`0`:then=`math,`]]
         [[+save_form:eq=`1`:then=`FormItSaveForm,`]]
         [[*fb_hooks:notempty=`[[*fb_hooks]],`]]
-        [[*fb_email_to:notempty=`email,`]]
+        [[If? &subject=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to]]`]]` &operator=`notempty` &then=`email,`]]
         [[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]]
         [[++formblocks.formsource:eq=`1`:then=`formsource_reset,`]]
         redirect

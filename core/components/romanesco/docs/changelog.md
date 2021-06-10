@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix email not being sent when using dynamic emailTo (and empty regular field)
 - Make sure placeholder prefixes are unique when generating background CSS
 - Properly display MODX outer tags from Markdown files (if they've been split)
 - Add option to generate critical CSS for pages behind htpasswd wall
