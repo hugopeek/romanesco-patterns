@@ -1,10 +1,10 @@
 <a class="ui avatar image" href="[[~[[+id]]]]">
-    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?
+    [[ImagePlus:empty=`[[$imgOverviewFallback? &mpy=`1`]]`?
         &tvname=`overview_img_[[+img_type:empty=`square`]]`
         &docid=`[[+id]]`
         &options=`w=150&q=[[++img_quality]]&zc=1`
         &type=`tpl`
-        &tpl=`cbOverviewRowImg`
+        &tpl=`imgOverview`
     ]]
 </a>
 

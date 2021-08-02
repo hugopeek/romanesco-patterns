@@ -1,10 +1,10 @@
 <figure class="ui rounded image">
-    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
+    [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
         &tvname=`overview_img_[[+img_type:empty=`wide`]]`
         &docid=`[[+id]]`
         &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
         &type=`tpl`
-        &tpl=`cbOverviewRowImg`
+        &tpl=`imgOverview`
     ]]
 </figure>
 

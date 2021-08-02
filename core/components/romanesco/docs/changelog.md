@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Rename cbOverviewRowImg chunks to imgOverview [BREAKING CHANGE]
 - Fix critical CSS not being shared between templates (if configured)
 - Set pagetitle as fallback for overview image ALT text
 

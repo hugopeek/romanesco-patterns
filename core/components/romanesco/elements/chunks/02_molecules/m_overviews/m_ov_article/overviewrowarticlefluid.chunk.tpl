@@ -2,12 +2,12 @@
 
 <div class="column">
     <a class="ui rounded image" href="[[~[[+id]]]]">
-        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &img_type=`landscape`]]`?
+        [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`landscape`]]`?
             &tvname=`overview_img_landscape`
             &docid=`[[+id]]`
             &options=``
             &type=`tpl`
-            &tpl=`cbOverviewRowImg`
+            &tpl=`imgOverview`
         ]]
     </a>
 </div>

@@ -4,12 +4,12 @@
             <div class="ui two column equal width grid">
                 <div class="compact column">
                     <a class="ui small image" href="[[~[[+id]]]]">
-                        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &img_type=`square`]]`?
+                        [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`square`]]`?
                             &tvname=`person_image`
                             &docid=`[[+id]]`
                             &options=`w=400&h=400&q=[[++img_quality]]&zc=1`
                             &type=`tpl`
-                            &tpl=`cbOverviewRowImgFixed`
+                            &tpl=`imgOverviewFixed`
                         ]]
                     </a>
                     <p>[[$socialConnectButtonsPerson? &button_type=`basic`]]</p>
