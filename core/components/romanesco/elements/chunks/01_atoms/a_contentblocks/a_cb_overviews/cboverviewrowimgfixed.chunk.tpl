@@ -6,5 +6,5 @@
      `]]
      width="[[+width]]"
      height="[[+height]]"
-     alt="[[+alt:htmlent]]"
+     alt="[[+alt:empty=`[[+pagetitle]]`:htmlent]]"
 />

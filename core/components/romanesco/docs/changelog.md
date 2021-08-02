@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta6
+Released on ...
+
+Fixes and improvements:
+- Set pagetitle as fallback for overview image ALT text
+
 ## Romanesco Patterns 1.0.0-beta5
 Released on June 10, 2021
 
