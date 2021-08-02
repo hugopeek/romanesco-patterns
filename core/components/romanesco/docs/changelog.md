@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix critical CSS not being shared between templates (if configured)
 - Set pagetitle as fallback for overview image ALT text
 
 ## Romanesco Patterns 1.0.0-beta5

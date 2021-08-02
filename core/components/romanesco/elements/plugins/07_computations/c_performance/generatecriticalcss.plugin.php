@@ -128,6 +128,7 @@ switch ($modx->event->name) {
         $task->schedule('+1 minutes', array(
             'id' => $id,
             'url' => $url,
+            'uri' => $uri,
         ));
 
         break;
