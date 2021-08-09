@@ -7,6 +7,7 @@ New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
+- Add option to show pages with hidden alias in breadcrumbs
 - Rename cbOverviewRowImg chunks to imgOverview [BREAKING CHANGE]
 - Fix critical CSS not being shared between templates (if configured)
 - Set pagetitle as fallback for overview image ALT text

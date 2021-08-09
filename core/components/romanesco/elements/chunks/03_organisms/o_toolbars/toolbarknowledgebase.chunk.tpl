@@ -10,7 +10,7 @@
 [[+toolbar_visibility:eq=`1`:then=`
 <div id="toolbar" class="ui large stackable attached menu">
     <div class="item">
-        [[$breadcrumbs]]
+        [[$breadcrumbs? &alias_visibility=`1`]]
     </div>
     <div class="right menu">
         <div class="search item">

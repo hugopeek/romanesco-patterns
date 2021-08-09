@@ -5,5 +5,5 @@
     &tplHome=`breadcrumbHome`
     &tplCurrent=`breadcrumbCurrent`
     &outputSeparator=``
-    &where=`[{"alias_visible:!=":"0"}]`
+    [[+alias_visibility:isnot=`1`:then=`&where=`[{"alias_visible:!=":"0"}]``]]
 ]]
