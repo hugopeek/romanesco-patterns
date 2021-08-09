@@ -34,7 +34,7 @@
             [[*content:notempty=`
             <div class="ui vertical stripe segment white">
                 <div class="ui container">
-                    [[*content]]
+                    [[$content]]
                 </div>
             </div>
             `]]

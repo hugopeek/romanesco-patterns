@@ -16,6 +16,19 @@
                     ],
                     "category": "o_global"
                 },{
+                    "name": "content",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_global"
+                },{
                     "name": "script",
                     "description": "",
                     "properties": [

@@ -32,11 +32,7 @@
 
         <div class="ui relaxed grid container">
             <article id="content" class="sixteen wide mobile twelve wide computer column">
-                <div class="ui vertical stripe segment transparent">
-                    <div class="container">
-                        [[*content:replaceRegex=`^---[\s\S]+?---[\s]+`:Markdown]]
-                    </div>
-                </div>
+                [[$content]]
             </article>
 
             <aside id="sidebar" class="four wide computer column tablet or lower hidden">

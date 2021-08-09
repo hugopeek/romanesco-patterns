@@ -48,7 +48,7 @@
                 <p class="meta date"><em>[[*publishedon:strtotime:date=`%e %B %Y`]]</em></p>
             </div>
 
-            [[*content]]
+            [[$content]]
 
         </article>
 

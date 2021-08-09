@@ -32,7 +32,7 @@
 
         <div class="ui relaxed grid container">
             <article id="content" class="sixteen wide mobile twelve wide computer column">
-                [[*content]]
+                [[$content]]
             </article>
 
             <aside id="sidebar" class="four wide computer column tablet or lower hidden">

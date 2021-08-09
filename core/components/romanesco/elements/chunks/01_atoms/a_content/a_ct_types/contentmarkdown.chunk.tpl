@@ -1,0 +1,1 @@
+[[*content:replaceRegex=`^---[\s\S]+?---[\s]+`:Markdown]]

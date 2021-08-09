@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "contentMarkdownWrapper",
+                    "description": "Render Markdown content as HTML, inside a single column container.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ct_types"
+                }
+            ]
+        }
+    }
+}

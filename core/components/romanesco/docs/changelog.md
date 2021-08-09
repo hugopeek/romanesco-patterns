@@ -3,6 +3,9 @@
 ## Romanesco Patterns 1.0.0-beta6
 Released on ...
 
+New features:
+- Use Markdown content with any template
+
 Fixes and improvements:
 - Rename cbOverviewRowImg chunks to imgOverview [BREAKING CHANGE]
 - Fix critical CSS not being shared between templates (if configured)

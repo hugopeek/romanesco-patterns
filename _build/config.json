@@ -243,6 +243,10 @@
                     "parent": "01_atoms"
                 },
                 {
+                    "name": "a_ct_types",
+                    "parent": "a_content"
+                },
+                {
                     "name": "a_contentblocks",
                     "parent": "01_atoms"
                 },
@@ -468,6 +472,10 @@
                 {
                     "name": "m_content",
                     "parent": "02_molecules"
+                },
+                {
+                    "name": "m_ct_types",
+                    "parent": "m_content"
                 },
                 {
                     "name": "Content",
@@ -6403,6 +6411,21 @@
                     "category": "o_global"
                 },
                 {
+                    "name": "content",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_global"
+                },
+                {
                     "name": "script",
                     "description": "",
                     "properties": [
@@ -7271,6 +7294,21 @@
                         }
                     ],
                     "category": "a_btn_social"
+                },
+                {
+                    "name": "contentMarkdown",
+                    "description": "Render Markdown content as HTML.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_ct_types"
                 },
                 {
                     "name": "cbFieldAlignment",
@@ -8806,6 +8844,21 @@
                         }
                     ],
                     "category": "a_sel_rows"
+                },
+                {
+                    "name": "contentMarkdownWrapper",
+                    "description": "Render Markdown content as HTML, inside a single column container.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ct_types"
                 },
                 {
                     "name": "fbEmailRow",

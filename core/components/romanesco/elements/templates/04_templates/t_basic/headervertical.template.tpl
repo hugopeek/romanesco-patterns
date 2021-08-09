@@ -16,11 +16,7 @@
 [[$offCanvasNav]]
 
 <div class="pusher">
-    [[$headerVertical?
-        &masthead=`0`
-        &hero=`0`
-        &search=`0`
-    ]]
+    [[$headerVertical]]
 
     <main id="main">
         [[[[modifiedIf?
@@ -32,7 +28,7 @@
         ]]]]
 
         <article id="content">
-            [[*content]]
+            [[$content]]
         </article>
 
         [[[[modifiedIf?

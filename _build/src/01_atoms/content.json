@@ -191,6 +191,9 @@
                 {
                     "name": "a_content",
                     "parent": "01_atoms"
+                },{
+                    "name": "a_ct_types",
+                    "parent": "a_content"
                 }
             ]
         }

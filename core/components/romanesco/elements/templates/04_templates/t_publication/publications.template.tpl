@@ -28,7 +28,7 @@
 
     <main id="main" role="main">
         <article id="content">
-            [[*content]]
+            [[$content]]
         </article>
     </main>
 

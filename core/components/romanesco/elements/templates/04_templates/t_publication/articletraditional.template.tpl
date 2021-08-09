@@ -71,7 +71,7 @@
                     </div>
                 </header>
 
-                [[*content]]
+                [[$content]]
 
                 [[[[If?
                     &subject=`[[+team_member_id:empty=`0`]]`

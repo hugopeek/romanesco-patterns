@@ -39,7 +39,7 @@
                 </div>
             </header>
 
-            [[*content]]
+            [[$content? &container_type=`text`]]
 
             <footer class="ui vertical stripe segment grey inverted">
                 <div class="ui tightened container">

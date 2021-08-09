@@ -31,7 +31,7 @@
         ]]]]
 
         <article id="content">
-            [[*content]]
+            [[$content]]
         </article>
 
         [[[[modifiedIf?

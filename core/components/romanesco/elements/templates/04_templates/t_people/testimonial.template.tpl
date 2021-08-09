@@ -29,7 +29,7 @@
     <main id="main" role="main">
         <div class="ui relaxed grid container">
             <article id="content" class="sixteen wide twelve wide computer column">
-                [[*content]]
+                [[$content]]
             </article>
 
             <aside id="sidebar" class="four wide column computer only">
