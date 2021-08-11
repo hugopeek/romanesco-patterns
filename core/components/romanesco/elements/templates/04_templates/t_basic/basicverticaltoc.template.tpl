@@ -11,7 +11,7 @@
     ]]]]
 </head>
 
-<body id="[[*alias]]" class="header-vertical toc">
+<body id="[[*alias]]" class="vertical toc">
 
 [[$offCanvasNav]]
 

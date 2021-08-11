@@ -42,7 +42,7 @@
                     ],
                     "category": "t_basic"
                 },{
-                    "name": "HeaderVertical",
+                    "name": "BasicVertical",
                     "description": "",
                     "properties": [
                         {
@@ -55,7 +55,7 @@
                     ],
                     "category": "t_basic"
                 },{
-                    "name": "HeaderVerticalToC",
+                    "name": "BasicVerticalToC",
                     "description": "",
                     "properties": [
                         {
