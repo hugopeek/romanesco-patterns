@@ -11,28 +11,29 @@
     ]]]]
 </head>
 
-<body id="[[*alias]]" class="header-vertical note toc">
+<body id="[[*alias]]" class="vertical note toc">
 
 [[$offCanvasNav]]
 
 <div class="pusher">
-    [[$headerVertical?
-        &masthead=`0`
-        &hero=`0`
-        &search=`0`
-    ]]
+    [[$headerVertical]]
 
     <main id="main">
-        [[[[If?
-            &subject=`[[$toolbarKnowledgeBaseTheme]]`
-            &operator=`isnull`
-            &then=`$toolbarKnowledgeBase? &search_form_size=`large` &search_field_classes=`transparent``
-            &else=`$toolbarKnowledgeBaseTheme`
+        [[[[modifiedIf?
+            &subject=`toolbarNoteTheme`
+            &operator=`iselement`
+            &operand=`chunk`
+            &then=`$toolbarNoteTheme`
+            &else=`$toolbarNote? &search_form_size=`large` &search_field_classes=`transparent``
         ]]]]
 
         <div class="ui relaxed grid container">
             <article id="content" class="sixteen wide mobile twelve wide computer column">
-                [[$content]]
+                <div class="ui vertical stripe segment transparent">
+                    <div class="container">
+                        [[*content]]
+                    </div>
+                </div>
             </article>
 
             <aside id="sidebar" class="four wide computer column tablet or lower hidden">
