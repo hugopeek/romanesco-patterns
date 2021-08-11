@@ -11,7 +11,7 @@
     ]]]]
 </head>
 
-<body id="[[*alias]]" class="header-vertical">
+<body id="[[*alias]]" class="vertical">
 
 [[$offCanvasNav]]
 
@@ -24,10 +24,10 @@
 
     <main id="main">
         [[[[If?
-            &subject=`[[$toolbarKnowledgeBaseTheme]]`
+            &subject=`[[$toolbarNoteTheme]]`
             &operator=`isnull`
-            &then=`$toolbarKnowledgeBase? &search_form_size=`large` &search_field_classes=`transparent``
-            &else=`$toolbarKnowledgeBaseTheme`
+            &then=`$toolbarNote? &search_form_size=`large` &search_field_classes=`transparent``
+            &else=`$toolbarNoteTheme`
         ]]]]
 
         <article id="content">

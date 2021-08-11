@@ -7,6 +7,7 @@ New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
+- Rename toolbarKnowledgeBase to toolbarNote
 - Rename HeaderVertical templates to BasicVertical
 - Merge NoteMarkdown and NoteContentBlocks templates
 - Add option to show pages with hidden alias in breadcrumbs

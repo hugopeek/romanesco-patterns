@@ -8,8 +8,8 @@
 ]]
 
 [[+toolbar_visibility:eq=`1`:then=`
-<div id="toolbar" class="ui large stackable attached menu">
-    <div class="item">
+<div id="toolbar" class="ui large attached menu">
+    <div class="item mobile hidden">
         [[$breadcrumbs? &alias_visibility=`1`]]
     </div>
     <div class="right menu">
