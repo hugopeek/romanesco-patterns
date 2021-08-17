@@ -27,9 +27,9 @@
              data-lightbox-img="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width:mpy=`1.5`]]&q=[[++img_quality]]&zc=1`]]"
              data-caption="[[+title]]"
              `]]
-             width="[[+width]]"
-             height="[[+height]]"
-             alt="[[+alt:htmlent]]"
+             [[+width:notempty=`width="[[+width]]"`]]
+             [[+height:notempty=`height="[[+height]]"`]]
+             alt="[[+alt:empty=`[[+title]]`:htmlent]]"
         />
     </figure>
 </div>
