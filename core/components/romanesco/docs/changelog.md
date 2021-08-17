@@ -7,6 +7,7 @@ New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
+- Fix scenario where mobile-only slider would not return to original state
 - Fix issues with slides not receiving correct width when initialized 
 - Rename toolbarKnowledgeBase to toolbarNote
 - Rename HeaderVertical templates to BasicVertical

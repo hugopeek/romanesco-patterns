@@ -23,7 +23,7 @@
             .addClass('swiper-slide')
         ;
 
-        let [[+var]] = new Swiper ('#[[+id]].swiper-container', {
+        return new Swiper ('#[[+id]].swiper-container', {
             init: [[+init]],
             slidesPerView: [[+cols]],
             slidesPerGroup: [[+slides_to_scroll]],
@@ -49,21 +49,20 @@
 
     // Clone original container
     // Life saving SO question: https://stackoverflow.com/questions/921290/
-    let original[[+var]] = document.querySelector('#[[+id]]').cloneNode( true );
-    let cloned[[+var]] = document.querySelector('#[[+id]]').cloneNode( true );
-        cloned[[+var]].setAttribute( 'id', '[[+id]]-clone' );
-
+    let mobile[[+var]] = document.querySelector('#[[+id]]').cloneNode( true );
+    let desktop[[+var]] = document.querySelector('#[[+id]]').cloneNode( true );
+        desktop[[+var]].setAttribute('id','[[+id]]-original');
 
     MQ.addQuery(
         {
-            context: 'mobile',
+            context: ['mobile'],
             match: function() {
 
                 // Make sure the original container is in place
-                $('#[[+id]]-clone').replaceWith(original[[+var]]);
-                
+                $('#[[+id]]-original').replaceWith(mobile[[+var]]);
+
                 // Initialize Swiper
-                create[[+var]]($('#[[+id]].swiper-container-mobile'));
+                let [[+var]] = create[[+var]]($('#[[+id]].swiper-container-mobile'));
 
                 // Update lazy load with each new slide
                 [[+var]].on('slideChange', function () {
@@ -73,7 +72,7 @@
             unmatch: function() {
 
                 // Revert to default layout with cloned container
-                $('#[[+id]].swiper-container-mobile').replaceWith(cloned[[+var]]);
+                $('#[[+id]].swiper-container-mobile').replaceWith(desktop[[+var]]);
             }
         }
     );
