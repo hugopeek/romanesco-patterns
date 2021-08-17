@@ -38,7 +38,7 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'sliderInitJS');
 
 // Set element ID and variable name
 $id = 'swiper-' . $uid;
-$var = 'swiper' . $uid;
+$var = 'Swiper' . $uid;
 
 // Convert semantic padding to numeric value
 switch ($spacing) {
@@ -131,7 +131,6 @@ if ($lightbox == 1) {
             })
             .modal('show')
         ;
-        $var.update();
         $var.init();
         $var.slideTo(idx, 0, false);
     });
@@ -167,8 +166,7 @@ $cacheBusterJS = $romanesco->getCacheBustingString('JS');
 $modx->regClientCSS($assetsPathCSS . '/swiper' . $minify . $cacheBusterCSS . '.css');
 
 // Footer
-$modx->regClientScript('/' . $assetsPathVendor . '/swiper/swiper.min' . $cacheBusterJS . '.js');
-$modx->regClientScript('/' . $assetsPathJS . '/swiper' . $minify . $cacheBusterJS . '.js');
+$modx->regClientScript('/' . $assetsPathVendor . '/swiper/swiper-bundle.min' . $cacheBusterJS . '.js');
 $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'var' => $var,
     'id' => $id,
