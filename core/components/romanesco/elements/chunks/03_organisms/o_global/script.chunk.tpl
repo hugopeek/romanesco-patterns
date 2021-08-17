@@ -1,4 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="[[++romanesco.semantic_vendor_path]]/jquery/jquery.min[[+cache_buster_js]].js"><\/script>')</script>
 <script src="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_js]].js"></script>
 <script src="[[++romanesco.semantic_vendor_path]]/onmediaquery/onmediaquery.min[[+cache_buster_js]].js"></script>

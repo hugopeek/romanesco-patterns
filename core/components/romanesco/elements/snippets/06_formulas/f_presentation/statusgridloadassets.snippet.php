@@ -30,6 +30,6 @@ $modx->regClientCSS($assetsPathDist . '/components/modal.min' . $cacheBusterCSS 
 
 // Footer
 $modx->regClientScript($assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js');
-$modx->regClientScript($assetsPathVendor . '/tablesort/tablesort' . $cacheBusterJS . '.js');
+$modx->regClientScript($assetsPathVendor . '/tablesort/tablesort.min' . $cacheBusterJS . '.js');
 
 return '';
