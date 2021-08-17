@@ -7,6 +7,7 @@ New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
+- Fix issues with slides not receiving correct width when initialized 
 - Rename toolbarKnowledgeBase to toolbarNote
 - Rename HeaderVertical templates to BasicVertical
 - Merge NoteMarkdown and NoteContentBlocks templates

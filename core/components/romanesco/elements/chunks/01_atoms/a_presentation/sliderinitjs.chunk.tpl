@@ -1,6 +1,7 @@
 <script>
     var [[+var]] = new Swiper ('#[[+id]].swiper-container', {
         init: [[+init]],
+        resizeObserver: true,
         slidesPerView: [[+cols]],
         slidesPerGroup: [[+slides_to_scroll]],
         spaceBetween: [[+spacing]],
