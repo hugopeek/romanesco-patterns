@@ -7,6 +7,7 @@ New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
+- Add cbLayoutCTA chunk (not referenced directly)
 - Make sure width or height is not 0 in fixed overview and gallery images
 - Fix scenario where mobile-only slider would not return to original state
 - Fix issues with slides not receiving correct width when initialized 

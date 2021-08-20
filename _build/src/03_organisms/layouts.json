@@ -119,6 +119,19 @@
                         }
                     ],
                     "category": "o_layouts"
+                },{
+                    "name": "cbLayoutCTA",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_layouts"
                 }
             ],
 
