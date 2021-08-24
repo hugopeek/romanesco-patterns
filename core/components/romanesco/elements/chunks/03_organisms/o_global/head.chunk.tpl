@@ -20,6 +20,12 @@
     &then=`1`
     &toPlaceholder=`load_critical_css`
 ]]
+[[modifiedIf?
+    &subject=`[[++theme_font_page]][[++theme_font_header]]`
+    &operator=`notempty`
+    &then=`[[++theme_font_header]][[++theme_font_page:prepend=`[[++theme_font_header:notempty=`&family=`]]`]]`
+    &toPlaceholder=`load_google_fonts`
+]]
 [[[[If?
     &subject=`[[++cache_buster]]`
     &operator=`eq`
@@ -41,6 +47,10 @@
 `:else=`
 <link href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" rel="stylesheet">
 <link href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" rel="stylesheet">
+`]]
+
+[[+load_google_fonts:notempty=`
+<link href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" rel="stylesheet">
 `]]
 
 [[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]
