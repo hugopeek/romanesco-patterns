@@ -7,6 +7,7 @@ New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
+- Add class to empty grid columns
 - Load conditional CSS assets asynchronously
 - Load Google fonts with direct link and v2 syntax [BREAKING CHANGE]
 - Add cbLayoutCTA chunk (not referenced directly)
