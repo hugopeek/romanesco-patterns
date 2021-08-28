@@ -65,11 +65,11 @@
 
 [[[[+load_assets_map:eq=`1`:then=`$mapLoadAssets`]]]]
 [[+load_assets_hub:eq=`1`:then=`
-<link href="[[++romanesco.semantic_dist_path]]/components/modal[[+cache_buster_css]].css" rel="stylesheet">
-<link href="[[++romanesco.semantic_dist_path]]/components/step[[+cache_buster_css]].css" rel="stylesheet">
+<link href="[[++romanesco.semantic_dist_path]]/components/modal[[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="[[++romanesco.semantic_dist_path]]/components/step[[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
 `]]
 [[+load_syntax_highlighting:eq=`1`:then=`
-<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min[[+cache_buster_css]].css" rel="stylesheet">
+<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min[[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
 `]]
 
 [[++head_additional]]
