@@ -98,7 +98,7 @@
                 &table=`modx_site_content`
                 &tpl=`includedPagesRow`
                 &limit=`0`
-                &where=`{ "properties:LIKE":"%$[[+pattern_name]]%", "id:NOT LIKE":"[[*id]]" }`
+                &where=`{ "properties:LIKE":"%$[[+pattern_name]]%", "id:NOT LIKE":"[[*id]]", "published:=":"1" }`
                 &toPlaceholder=`referring_pages`
             `
     ]]]]
