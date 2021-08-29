@@ -29,7 +29,9 @@
                data-targetState="hidden"
                data-content="[[%romanesco.patterns.code_tooltip]]"
                data-position="top center"></i>
-            <i class="muted random link icon with tooltip"
+            <i class="muted random link icon with visibility toggle and tooltip"
+               data-target="#connections-[[+name:stripAsAlias]]"
+               data-targetState="hidden"
                data-content="[[%romanesco.patterns.connections_tooltip]]"
                data-position="top center"></i>
         </div>
@@ -94,6 +96,30 @@
             [[+elementType:is=`BosonLayout`:then=`[[jsonToHTML:nl2br? &json=`[[+[[+cl]].settings_json]]`]]`]]
             [[+elementType:is=`BosonField`:then=`[[jsonToHTML:nl2br? &json=`[[+[[+cf]].settings_json]]`]]`]]
         </div>
+    </div>
+
+    <div id="connections-[[+name:stripAsAlias]]" class="hidden connections element">
+        <div class="ui divider"></div>
+
+        <div class="ui stackable equal width vertically divided grid">
+            <div class="column">
+                <h4 class="ui disabled header">Included patterns</h4>
+                [[$includedPatternsOuter?
+                    &pattern_template=`patternLayout[[+elementType]]`
+                    &pattern_name=`[[+name:stripAsAlias]]`
+                    &layout_column=`col[[+idx]].1`
+                ]]
+            </div>
+            <div class="column">
+                <h4 class="ui disabled header">Referring patterns</h4>
+                [[$referringPatternsOuter?
+                    &pattern_template=`patternLayout[[+elementType]]`
+                    &pattern_name=`[[+name:stripAsAlias]]`
+                    &layout_column=`col[[+idx]].2`
+                ]]
+            </div>
+        </div>
+
     </div>
 
 </div>

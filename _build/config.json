@@ -1229,7 +1229,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         }
                     ],
                     "category": "Global - Backgrounds",

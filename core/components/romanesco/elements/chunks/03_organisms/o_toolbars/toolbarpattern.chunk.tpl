@@ -20,7 +20,9 @@
            data-targetState="hidden"
            data-content="[[%romanesco.patterns.code_tooltip]]"
            data-position="top center"></i>
-        <i class="muted random link icon with tooltip"
+        <i class="muted random link icon with visibility toggle and tooltip"
+           data-target="#connections-[[+pattern_name:lcase]]"
+           data-targetState="hidden"
            data-content="[[%romanesco.patterns.connections_tooltip]]"
            data-position="top center"></i>
     </div>

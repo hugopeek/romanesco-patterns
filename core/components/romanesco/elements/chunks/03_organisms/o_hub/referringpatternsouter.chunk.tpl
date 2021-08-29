@@ -1,13 +1,11 @@
 <div class="ui list">
-    [[-/**
-        * This should really be a snippet, but my PHP skills were not sufficient at the time.
-        *
-        * What all these snippet calls do, is query the database tables of each element type
-        * and look for signs of the given pattern name.
-        *
-        * All Rowboat calls are nested into their parent If call using the mosquito technique.
-        * This ensures that no database queries are being performed unless the If criteria are met.
-        */
+    [[- This should really be a snippet, but my PHP skills were not sufficient at the time.
+
+        What all these snippet calls do, is query the database tables of each element type
+        and look for signs of the given pattern name.
+
+        All Rowboat calls are nested into their parent If call using the mosquito technique.
+        This ensures that no database queries are being performed unless the If criteria are met.
     ]]
 
     [[[[If?
@@ -49,7 +47,7 @@
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
             Rowboat?
                 &table=`modx_site_htmlsnippets`
@@ -64,7 +62,7 @@
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
             Rowboat?
                 &table=`modx_site_snippets`
@@ -79,7 +77,7 @@
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
             Rowboat?
                 &table=`modx_site_templates`
@@ -149,8 +147,8 @@
             `
     ]]]]
 
-    [[- // The If statements generating the raw_pages placeholder could be replaced
-        // by placing the where clause directly in the pdoMenu call.
+    [[- The If statements generating the raw_pages placeholder could be replaced
+        by placing the where clause directly in the pdoMenu call.
     ]]
 
     [[[[If?
@@ -172,7 +170,7 @@
     [[[[If?
         &subject=`[[+pattern_template]]`
         &operator=`inarray`
-        &operand=`patternLayoutElectronTV,patternLayoutElectronSystemSetting,patternLayoutElectronConfiguration,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
+        &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
             referringBosons:toPlaceholder=`referring_bosons`?
                 &pattern=`[[+pattern_name:empty=``]]`
@@ -180,24 +178,26 @@
             `
     ]]]]
 
-    [[- // Initially, every referring element query was controlled by a checkbox in CB.
-        // This proved to be very had to maintain, so instead it's just the assigned templates that's
-        // being handled this way now.
-        //
-        // So if the Assigned Templates setting is not checked in CB, we can display the other elements (if set).
+    [[- Initially, every referring element query was controlled by a checkbox in CB.
+        This proved to be very hard to maintain, so instead it's just the assigned
+        templates that's being handled this way now.
+
+        So if the Assigned Templates setting is not checked in CB, we can display
+        the other elements (if set).
     ]]
 
-    [[If?
-        &subject=`[[+[[+layout_column]]_assigned_templates]]`
-        &operator=`notempty`
+    [[If:empty=`<div class="muted item"><em>[[%romanesco.patterns.not_found]]</em></div>`?
+        &subject=`assignedTemplates`
+        &operator=`inarray`
+        &operand=`[[+pattern_list]]`
         &then=`[[+[[+layout_column]]_assigned_templates]]`
         &else=`
-            [[+referring_tvs]]
-            [[+referring_chunks]]
-            [[+referring_snippets]]
-            [[+referring_templates]]
-            [[+referring_pages]]
-            [[+referring_bosons]]
+            [[+referring_tvs:empty=``]]
+            [[+referring_chunks:empty=``]]
+            [[+referring_snippets:empty=``]]
+            [[+referring_templates:empty=``]]
+            [[+referring_pages:empty=``]]
+            [[+referring_bosons:empty=``]]
         `
     ]]
 </div>
