@@ -50,7 +50,7 @@
 `]]
 
 [[+load_google_fonts:notempty=`
-<link href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 `]]
 
 [[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]
