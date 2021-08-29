@@ -1,4 +1,14 @@
 <?php
+/**
+ * @var modX $modx
+ * @var array $scriptProperties;
+ * @var string $input;
+ * @var string $options;
+ */
+
+$input = $modx->getOption('input', $scriptProperties, $input);
+$length = $modx->getOption('length', $scriptProperties, $options);
+
 switch($input) {
     case stripos($input,'electrons') !== false:
         $type = "Electron";
@@ -42,7 +52,8 @@ switch($input) {
         break;
 }
 
-//$modx->toPlaceholder('type', $type);
-//$modx->toPlaceholder('type_s', $type_s);
+if ($length == 'word') {
+    return $type;
+}
 
 return $type_s;

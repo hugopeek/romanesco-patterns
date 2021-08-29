@@ -25,7 +25,7 @@
                 &tpl=`assignedTemplatesRow`
                 &limit=`0`
                 &where=`{ "tmplvarid":"[[+tmplvarid]]" }`
-                &toPlaceholder=`[[+layout_column]]_assigned_templates`
+                &toPlaceholder=`[[+prefix]].assigned_templates`
             `
     ]]]]
 
@@ -190,7 +190,7 @@
         &subject=`assignedTemplates`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`[[+[[+layout_column]]_assigned_templates]]`
+        &then=`[[+[[+prefix]].assigned_templates]]`
         &else=`
             [[+referring_tvs:empty=``]]
             [[+referring_chunks:empty=``]]

@@ -81,16 +81,18 @@
         &subject=`assignedTVs`
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
-        &then=`assignedTVs:toPlaceholder=`[[+layout_column]]_tv_list`? &template=`[[+pattern_name:empty=``]]``
+        &then=`assignedTVs:toPlaceholder=`[[+prefix]].tv_list`? &template=`[[+pattern_name:empty=``]]``
     ]]]]
-    [[If?
-        &subject=`[[+[[+layout_column]]_tv_list]]`
-        &operator=`empty`
-        &then=`
+
+    [[If:empty=`<div class="muted item"><em>[[%romanesco.patterns.not_found]]</em></div>`?
+        &subject=`assignedTVs`
+        &operator=`inarray`
+        &operand=`[[+pattern_list]]`
+        &then=`[[+[[+prefix]].tv_list]]`
+        &else=`
             [[includedTVs? &input=`[[+raw_element]]`]]
             [[includedChunks? &input=`[[+raw_element]]` &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]
             [[includedSnippets? &input=`[[+raw_element]]`]]
         `
-        &else=`[[+[[+layout_column]]_tv_list]]`
     ]]
 </div>

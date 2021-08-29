@@ -1,6 +1,6 @@
-[[+name:lcase:empty=`[[+templatename:stripAsAlias]]`:toPlaceholder=`pl[[+idx]].pattern_name`]]
+[[+name:lcase:empty=`[[+templatename:stripAsAlias]]`:toPlaceholder=`pl[[+id]].pattern_name`]]
 
-<div id="[[+pl[[+idx]].pattern_name]]" class="ui pattern segment">
+<div id="[[+pl[[+id]].pattern_name]]" class="ui pattern segment">
     [[$toolbarPattern?
         &pattern_name=`[[+name]][[+templatename]]`
         &pattern_status=`[[getElementDescription? &type=`[[+elementType]]` &name=`[[+name:empty=`[[+templatename]]`]]` &property=`elementStatus`]]`
@@ -12,7 +12,7 @@
 
     <div class="ui stackable equal width grid">
         [[+elementType:isnot=`ElectronTV`:and:isnot=`Computation`:then=`
-        <div id="preview-[[+pl[[+idx]].pattern_name]]" class="six wide column preview element">
+        <div id="preview-[[+pl[[+id]].pattern_name]]" class="six wide column preview element">
             [[getElementDescription:empty=`<em class="meta">[[%romanesco.patterns.preview_not_available]].</em>`?
                 &type=`[[+elementType]]`
                 &name=`[[+name]][[+templatename]]`
@@ -21,7 +21,7 @@
         </div>
         `]]
 
-        <div id="code-[[+pl[[+idx]].pattern_name]]" class="column hidden code element">
+        <div id="code-[[+pl[[+id]].pattern_name]]" class="column hidden code element">
             [[+elementType:is=`Template`:then=`
             <pre class="language-html"><code>[[$displayRawTemplate? &uid=`[[+templatename]]`]]</code></pre>
             `]]
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <div id="connections-[[+pl[[+idx]].pattern_name]]" class="hidden connections element">
+    <div id="connections-[[+pl[[+id]].pattern_name]]" class="hidden connections element">
         [[$dividerBasic]]
 
         <div class="ui stackable equal width divided grid">
@@ -57,28 +57,41 @@
                             $referringPatternsOuter?
                                 &pattern_list=`assignedTemplates`
                                 &pattern_template=`patternLayout[[+elementType]]`
-                                &pattern_name=`[[+pl[[+idx]].pattern_name]]`
-                                &layout_column=`col[[+idx]].1`
+                                &pattern_name=`[[+pl[[+id]].pattern_name]]`
+                                &prefix=`pl[[+id]]`
                             `
                         &else=`
                             $includedPatternsOuter?
                                 &pattern_list=`includedPatterns`
                                 &pattern_template=`patternLayout[[+elementType]]`
-                                &pattern_name=`[[+pl[[+idx]].pattern_name]]`
-                                &layout_column=`col[[+idx]].1`
+                                &pattern_name=`[[+pl[[+id]].pattern_name]]`
+                                &prefix=`pl[[+id]]`
                             `
                     ]]]]
                 </div>
                 <div class="column">
                     <h4 class="ui disabled header">
-                        [[%romanesco.patterns.referring_patterns]]
+                        [[%romanesco.patterns.[[+elementType:is=`Template`:then=`assigned_tvs`:else=`referring_patterns`]]]]
                     </h4>
-                    [[$referringPatternsOuter?
-                        &pattern_list=`referringPatterns`
-                        &pattern_template=`patternLayout[[+elementType]]`
-                        &pattern_name=`[[+pl[[+idx]].pattern_name]]`
-                        &layout_column=`col[[+idx]].2`
-                    ]]
+                    [[[[If?
+                        &subject=`[[+elementType]]`
+                        &operator=`is`
+                        &operand=`Template`
+                        &then=`
+                            $includedPatternsOuter?
+                                &pattern_list=`assignedTVs`
+                                &pattern_template=`patternLayout[[+elementType]]`
+                                &pattern_name=`[[+pl[[+id]].pattern_name]]`
+                                &prefix=`pl[[+id]]`
+                            `
+                        &else=`
+                            $referringPatternsOuter?
+                                &pattern_list=`referringPatterns`
+                                &pattern_template=`patternLayout[[+elementType]]`
+                                &pattern_name=`[[+pl[[+id]].pattern_name]]`
+                                &prefix=`pl[[+id]]`
+                            `
+                    ]]]]
                 </div>
             </div>
         </div>
