@@ -1,6 +1,6 @@
 [[includedPatternsLink:toPlaceholder=`pl_[[+id]]_[[+idx]].link`?
     &input=`[[+category]]`
-    &pattern=`[[+name]]`
+    &pattern=`[[+templatename]]`
     &prefix=`pl_[[+id]]_[[+idx]]`
 ]]
 
@@ -10,14 +10,14 @@
     &then=`
         <a class="item" href="[[+pl_[[+id]]_[[+idx]].link]]">
             <span class="ui circular label">[[+pl_[[+id]]_[[+idx]].link:setPatternType]]</span>
-            [[+name]]
+            [[+templatename]]
             [[+assigned:eq=`1`:then=`<span class="ui right floated tiny blue label">Assigned</span>`]]
         </a>
     `
     &else=`
         <div class="disabled item">
             <i class="small circular modx icon"></i>
-            [[+name]]
+            [[+templatename]]
         </div>
     `
     &uid=`[[+id]]_[[+idx]]`

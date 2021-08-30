@@ -40,7 +40,7 @@
                 &sortBy=`name`
                 &limit=`0`
                 &where=`{ "elements:LIKE":"%[[+pattern_name]]%" }`
-                &toPlaceholder=`referring_tvs`
+                &toPlaceholder=`[[+prefix]].referring_tvs`
             `
     ]]]]
 
@@ -52,10 +52,10 @@
             Rowboat?
                 &table=`modx_site_htmlsnippets`
                 &tpl=`includedPatternsRow`
-                &sortBy=`name`
+                &sortBy=`static_file`
                 &limit=`0`
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
-                &toPlaceholder=`referring_chunks`
+                &toPlaceholder=`[[+prefix]].referring_chunks`
             `
     ]]]]
 
@@ -70,7 +70,7 @@
                 &sortBy=`name`
                 &limit=`0`
                 &where=`{ "snippet:LIKE":"%[[+pattern_name]]%" }`
-                &toPlaceholder=`referring_snippets`
+                &toPlaceholder=`[[+prefix]].referring_snippets`
             `
     ]]]]
 
@@ -81,11 +81,11 @@
         &then=`
             Rowboat?
                 &table=`modx_site_templates`
-                &tpl=`includedPatternsRow`
+                &tpl=`includedPatternsRowTemplate`
                 &sortBy=`templatename`
                 &limit=`0`
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
-                &toPlaceholder=`referring_templates`
+                &toPlaceholder=`[[+prefix]].referring_templates`
             `
     ]]]]
 
@@ -99,7 +99,7 @@
                 &tpl=`includedPagesRow`
                 &limit=`0`
                 &where=`{ "properties:LIKE":"%$[[+pattern_name]]%", "id:NOT LIKE":"[[*id]]", "published:=":"1" }`
-                &toPlaceholder=`referring_pages`
+                &toPlaceholder=`[[+prefix]].referring_pages`
             `
     ]]]]
 
@@ -113,7 +113,7 @@
                 &tpl=`includedPagesRow`
                 &limit=`0`
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
-                &toPlaceholder=`referring_pages`
+                &toPlaceholder=`[[+prefix]].referring_pages`
             `
     ]]]]
 
@@ -128,7 +128,7 @@
                 &limit=`0`
                 &where=`{ "properties:LIKE":"%field__:[[+[[+cf]].id]]___settings%" }`
                 &outputSeparator=`,`
-                &toPlaceholder=`raw_pages`
+                &toPlaceholder=`[[+prefix]].raw_pages`
             `
     ]]]]
 
@@ -143,7 +143,7 @@
                 &limit=`0`
                 &where=`{ "properties:LIKE":"%layout__:[[+[[+cl]].id]]___content%" }`
                 &outputSeparator=`,`
-                &toPlaceholder=`raw_pages`
+                &toPlaceholder=`[[+prefix]].raw_pages`
             `
     ]]]]
 
@@ -158,12 +158,12 @@
             pdoMenu?
                 &parents=`0`
                 &context=`web,hub`
-                &resources=`[[+raw_pages]]`
+                &resources=`[[+[[+prefix]].raw_pages]]`
                 &showHidden=`1`
                 &showUnpublished=`1`
                 &tplOuter=`@INLINE [[+wrapper]]`
                 &tpl=`includedPagesRow`
-                &toPlaceholder=`referring_pages`
+                &toPlaceholder=`[[+prefix]].referring_pages`
             `
     ]]]]
 
@@ -172,7 +172,7 @@
         &operator=`inarray`
         &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
-            referringBosons:toPlaceholder=`referring_bosons`?
+            referringBosons:toPlaceholder=`[[+prefix]].referring_bosons`?
                 &pattern=`[[+pattern_name:empty=``]]`
                 &type=`[[+pattern_template]]`
             `
@@ -192,12 +192,12 @@
         &operand=`[[+pattern_list]]`
         &then=`[[+[[+prefix]].assigned_templates]]`
         &else=`
-            [[+referring_tvs:empty=``]]
-            [[+referring_chunks:empty=``]]
-            [[+referring_snippets:empty=``]]
-            [[+referring_templates:empty=``]]
-            [[+referring_pages:empty=``]]
-            [[+referring_bosons:empty=``]]
+            [[+[[+prefix]].referring_tvs:empty=``]]
+            [[+[[+prefix]].referring_chunks:empty=``]]
+            [[+[[+prefix]].referring_snippets:empty=``]]
+            [[+[[+prefix]].referring_templates:empty=``]]
+            [[+[[+prefix]].referring_pages:empty=``]]
+            [[+[[+prefix]].referring_bosons:empty=``]]
         `
     ]]
 </div>

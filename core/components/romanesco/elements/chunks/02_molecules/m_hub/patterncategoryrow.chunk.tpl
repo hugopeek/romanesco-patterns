@@ -67,6 +67,7 @@
                                 &pattern_name=`[[+pl[[+id]].pattern_name]]`
                                 &prefix=`pl[[+id]]`
                             `
+                        &uid=`[[+id]]_[[+idx]]`
                     ]]]]
                 </div>
                 <div class="column">
@@ -91,6 +92,7 @@
                                 &pattern_name=`[[+pl[[+id]].pattern_name]]`
                                 &prefix=`pl[[+id]]`
                             `
+                        &uid=`[[+id]]_[[+idx]]`
                     ]]]]
                 </div>
             </div>

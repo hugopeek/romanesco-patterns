@@ -1,5 +1,6 @@
 <?php
 $categoryID = $modx->getOption('input', $scriptProperties, '');
+$pattern = $modx->getOption('pattern', $scriptProperties, '');
 $placeholder = $modx->getOption('toPlaceholder', $scriptProperties, '');
 $prefix = $modx->getOption('prefix', $scriptProperties, '');
 
@@ -11,6 +12,9 @@ $category = $modx->getObject('modCategory', array(
 ));
 
 if (!is_object($category)) return;
+
+$modx->toPlaceholder('category', $categoryID, $prefix);
+$modx->toPlaceholder('pattern', $pattern, $prefix);
 
 // Grab only the last part of the category name
 $categoryName = preg_match('([^_]+$)', $category->get('category'), $matchCategory);
@@ -36,7 +40,8 @@ $query = $modx->newQuery('modCategory', array(
     'id' => $parent->get('parent')
 ));
 $query->select('category');
-$parentParentName = preg_match('([^_]+$)', $modx->getValue($query->prepare()), $matchParentParent);
+$parentParent = $modx->getValue($query->prepare());
+$parentParentName = preg_match('([^_]+$)', $parentParent, $matchParentParent);
 
 // Collect matches
 $matchCategory = strtolower($matchCategory[0]);
@@ -59,6 +64,15 @@ $query->where(array(
 ));
 $query->select('uri');
 $link = $modx->getValue($query->prepare());
+
+//$modx->toPlaceholder('category', $category->get('category'), $prefix);
+//$modx->toPlaceholder('parent', $parent->get('category'), $prefix);
+//$modx->toPlaceholder('parent2', $parentParent, $prefix);
+
+// Add anchor already, if pattern name is defined
+if ($pattern) {
+    $link = $link . '#' . strtolower($pattern);
+}
 
 // Output to placeholder if one is set
 if ($placeholder) {

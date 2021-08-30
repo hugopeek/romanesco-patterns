@@ -7,7 +7,7 @@
             &table=`modx_site_htmlsnippets`
             &tpl=`displayRawElement`
             &where=`{"name":"[[+pattern_name]]"}`
-            &toPlaceholder=`raw_element`
+            &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
 
@@ -20,7 +20,7 @@
             &table=`modx_site_templates`
             &tpl=`displayRawTemplate`
             &where=`{"templatename":"[[+pattern_name]]"}`
-            &toPlaceholder=`raw_element`
+            &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
 
@@ -33,7 +33,7 @@
             &table=`modx_site_snippets`
             &tpl=`displayRawElement`
             &where=`{"name":"[[+pattern_name]]"}`
-            &toPlaceholder=`raw_element`
+            &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
 
@@ -46,7 +46,7 @@
             &table=`modx_site_plugins`
             &tpl=`displayRawPlugin`
             &where=`{"name":"[[+pattern_name]]"}`
-            &toPlaceholder=`raw_element`
+            &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
 
@@ -59,7 +59,7 @@
             &table=`modx_contentblocks_field`
             &tpl=`displayRawContentBlock`
             &where=`{"name":"[[+pattern_name]]","parent":"0"}`
-            &toPlaceholder=`raw_element`
+            &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
 
@@ -72,7 +72,7 @@
             &table=`modx_contentblocks_layout`
             &tpl=`displayRawContentBlock`
             &where=`{"name":"[[+pattern_name]]"}`
-            &toPlaceholder=`raw_element`
+            &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
 
@@ -90,9 +90,9 @@
         &operand=`[[+pattern_list]]`
         &then=`[[+[[+prefix]].tv_list]]`
         &else=`
-            [[includedTVs? &input=`[[+raw_element]]`]]
-            [[includedChunks? &input=`[[+raw_element]]` &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]
-            [[includedSnippets? &input=`[[+raw_element]]`]]
+            [[includedTVs? &input=`[[+[[+prefix]].raw_element]]`]]
+            [[includedChunks? &input=`[[+[[+prefix]].raw_element]]` &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]
+            [[includedSnippets? &input=`[[+[[+prefix]].raw_element]]`]]
         `
     ]]
 </div>

@@ -1,5 +1,6 @@
 [[Rowboat?
     &table=`modx_site_templates`
-    &tpl=`includedPatternsRow`
+    &tpl=`includedPatternsRowTemplate`
     &where=`{ "id":"[[+templateid]]" }`
+    &uid=`[[+id]]_[[+idx]]`
 ]]
