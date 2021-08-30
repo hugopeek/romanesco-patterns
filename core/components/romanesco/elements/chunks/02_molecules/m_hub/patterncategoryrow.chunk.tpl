@@ -14,8 +14,8 @@
         [[+elementType:isnot=`ElectronTV`:and:isnot=`Computation`:then=`
         <div id="preview-[[+pl[[+id]].pattern_name]]" class="six wide column preview element">
             [[getElementDescription:empty=`<em class="meta">[[%romanesco.patterns.preview_not_available]].</em>`?
-                &type=`[[+elementType]]`
-                &name=`[[+name]][[+templatename]]`
+                &type=`[[+elementType:lcase]]`
+                &name=`[[+name:empty=`[[+templatename]]`]]`
                 &property=`elementPreview`
             ]]
         </div>
