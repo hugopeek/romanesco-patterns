@@ -1,5 +1,13 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta7
+Released on ...
+
+New features:
+
+Fixes and improvements:
+- Add lazy load setting to 2 Column Overview layout
+
 ## Romanesco Patterns 1.0.0-beta6
 Released on August 30, 2021
 
