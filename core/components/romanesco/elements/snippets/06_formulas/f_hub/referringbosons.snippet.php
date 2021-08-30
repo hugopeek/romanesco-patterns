@@ -66,7 +66,7 @@ if ($result) {
         $output[] = $modx->getChunk($tpl, array(
             'name' => $layout->get('name'),
             'link' => $layoutURI,
-            'label_classes' => 'teal'
+            'label_classes' => 'purple'
         ));
     }
 
