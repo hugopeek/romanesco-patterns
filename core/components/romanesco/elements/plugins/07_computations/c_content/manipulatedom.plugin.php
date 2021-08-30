@@ -238,6 +238,29 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Fix ID conflicts in project hub
+        $dom->filter('#hub .pattern.segment#content')->setAttribute('id','content-global');
+        $dom->filter('#hub .pattern.segment#css')->setAttribute('id','css-global');
+        $dom->filter('#hub .pattern.segment#footer')->setAttribute('id','footer-global');
+        $dom->filter('#hub .pattern.segment#head')->setAttribute('id','head-global');
+        $dom->filter('#hub .pattern.segment#script')->setAttribute('id','script-global');
+
+        // Change links to fixed IDs
+        $dom->filter('#hub .pattern.segment .list a.item')
+            ->each(function (HtmlPageCrawler $link) {
+                $href = $link->getAttribute('href');
+                switch ($href) {
+                    case ($href == 'patterns/organisms#content'):
+                    case ($href == 'patterns/organisms#css'):
+                    case ($href == 'patterns/organisms#footer'):
+                    case ($href == 'patterns/organisms#head'):
+                    case ($href == 'patterns/organisms#script'):
+                        $link->setAttribute('href', $href . '-global');
+                        break;
+                }
+            })
+        ;
+
         // Save manipulated DOM
         $output = $dom->saveHTML();
 
