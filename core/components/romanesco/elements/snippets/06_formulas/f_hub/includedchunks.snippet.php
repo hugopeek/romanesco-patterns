@@ -38,6 +38,7 @@
  */
 
 $string = $modx->getOption('input', $scriptProperties, '');
+$patternID = $modx->getOption('id', $scriptProperties, '');
 $patternName = $modx->getOption('name', $scriptProperties, '');
 $patternType = $modx->getOption('type', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
@@ -91,13 +92,13 @@ if (preg_match_all($regex, $string, $matches)) {
 }
 
 // If this pattern is a CB field with input type Chunk, then let's find that chunk
-if (stripos($patternType, 'bosonfield')) {
+if (stripos($patternType, 'bosonfield') && $patternID) {
     $cbCorePath = $modx->getOption('contentblocks.core_path', null, $modx->getOption('core_path').'components/contentblocks/');
     $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.'model/contentblocks/');
 
     // First, let's check if this field contains a chunk ID
     $result = $modx->getObject('cbField', array(
-        'name' => $patternName,
+        'id' => $patternID,
         'properties:LIKE' => '%"chunk":"%'
     ));
 
@@ -114,18 +115,21 @@ if (stripos($patternType, 'bosonfield')) {
 
         $idx++;
 
-        $output[] = $modx->getChunk($tpl, array(
-            'name' => $chunk->get('name'),
-            'category' => $chunk->get('category'),
-            'assigned' => 1,
-            'idx' => $idx
-        ));
+        if ($chunk) {
+            $output[] = $modx->getChunk($tpl, array(
+                'name' => $chunk->get('name'),
+                'category' => $chunk->get('category'),
+                'label_classes' => 'blue',
+                'assigned' => 1,
+                'idx' => $idx
+            ));
+        }
     }
 
     // No? Then maybe it's a chunk selector
     if (!$result) {
         $result = $modx->getObject('cbField', array(
-            'name' => $patternName,
+            'id' => $patternID,
             'properties:LIKE' => '%"available_chunks":"%'
         ));
 
@@ -149,6 +153,7 @@ if (stripos($patternType, 'bosonfield')) {
                 $output[] = $modx->getChunk($tpl, array(
                     'name' => $name,
                     'category' => $category,
+                    'label_classes' => 'blue',
                     'assigned' => 1,
                     'idx' => $idx
                 ));

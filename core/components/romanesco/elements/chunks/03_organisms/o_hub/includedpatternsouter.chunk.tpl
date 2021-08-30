@@ -58,7 +58,7 @@
         Rowboat?
             &table=`modx_contentblocks_field`
             &tpl=`displayRawContentBlock`
-            &where=`{"name":"[[+pattern_name]]","parent":"0"}`
+            &where=`{"id":"[[+pattern_id]]","parent":"0"}`
             &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
@@ -71,7 +71,7 @@
         Rowboat?
             &table=`modx_contentblocks_layout`
             &tpl=`displayRawContentBlock`
-            &where=`{"name":"[[+pattern_name]]"}`
+            &where=`{"id":"[[+pattern_id]]"}`
             &toPlaceholder=`[[+prefix]].raw_element`
         `
 ]]]]
@@ -91,7 +91,7 @@
         &then=`[[+[[+prefix]].tv_list]]`
         &else=`
             [[includedTVs? &input=`[[+[[+prefix]].raw_element]]`]]
-            [[includedChunks? &input=`[[+[[+prefix]].raw_element]]` &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]
+            [[includedChunks? &input=`[[+[[+prefix]].raw_element]]` &name=`[[+pattern_name]]` &id=`[[+pattern_id]]` &type=`[[+pattern_template]]`]]
             [[includedSnippets? &input=`[[+[[+prefix]].raw_element]]`]]
         `
     ]]

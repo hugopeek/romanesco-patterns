@@ -10102,7 +10102,7 @@
                         },
                         {
                             "name": "elementPreview",
-                            "value": ""
+                            "value": "<div class=\"ui segment\">\n    <div class=\"ui one column center aligned grid wireframe\">\n        <div class=\"column\">\n            <p class=\"ui secondary segment\">Header</p>\n        </div>\n        <div class=\"column\">\n            <p class=\"ui secondary segment\" style=\"line-height: 0 !important;\">Toolbar</p>\n        </div>\n        <div class=\"column\">\n            <div class=\"ui two column equal width nested grid\">\n                <div class=\"column\">\n                    <p class=\"ui secondary segment\" style=\"line-height: 5em !important;\">Content</p>\n                </div>\n                <div class=\"seven wide column\">\n                    <p class=\"ui secondary segment\" style=\"line-height: 5em !important;\">Sub</p>\n                </div>\n            </div>\n        </div>\n        <div class=\"column\">\n            <p class=\"ui secondary segment\" style=\"line-height: 2em !important;\">Footer</p>\n        </div>\n    </div>\n</div>"
                         }
                     ],
                     "category": "t_basic"
@@ -10132,7 +10132,7 @@
                         },
                         {
                             "name": "elementPreview",
-                            "value": ""
+                            "value": "<div class=\"ui segment\">\n    <div class=\"ui one column center aligned grid wireframe\">\n        <div class=\"column\">\n            <div class=\"ui two column equal width nested grid\">\n                <div class=\"seven wide stretched column\">\n                    <p class=\"ui secondary segment\" style=\"line-height: 5em !important;\">Header</p>\n                </div>\n                <div class=\"column\">\n                    <p class=\"ui secondary segment\" style=\"line-height: 0 !important;\">Toolbar</p>\n                    <p class=\"ui secondary segment\" style=\"line-height: 5em !important;\">Content</p>\n                    <p class=\"ui secondary segment\" style=\"line-height: 2em !important;\">Footer</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
                         }
                     ],
                     "category": "t_basic"
@@ -10163,7 +10163,7 @@
                         },
                         {
                             "name": "elementPreview",
-                            "value": ""
+                            "value": "<div class=\"ui segment\">\n    <div class=\"ui one column center aligned grid wireframe\">\n        <div class=\"column\">\n            <p class=\"ui secondary segment\">Header</p>\n        </div>\n        <div class=\"column\">\n            <p class=\"ui secondary segment\" style=\"line-height: 5em !important;\">Content</p>\n        </div>\n        <div class=\"column\">\n            <p class=\"ui secondary segment\" style=\"line-height: 2em !important;\">Footer</p>\n        </div>\n    </div>\n</div>"
                         }
                     ],
                     "category": "t_basic"

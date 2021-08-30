@@ -9,9 +9,9 @@
     &operator=`notempty`
     &then=`
         <a class="item" href="[[+pl_[[+id]]_[[+idx]].link]]">
-            <span class="ui circular label">[[+pl_[[+id]]_[[+idx]].link:setPatternType]]</span>
+            <span class="ui circular [[+label_classes]] label">[[+pl_[[+id]]_[[+idx]].link:setPatternType]]</span>
             [[+name]]
-            [[+assigned:eq=`1`:then=`<span class="ui right floated tiny blue label">Assigned</span>`]]
+            [[+assigned:eq=`1`:then=`<span class="ui right floated tiny label">[[%romanesco.patterns.assigned_chunk]]</span>`]]
         </a>
     `
     &else=`

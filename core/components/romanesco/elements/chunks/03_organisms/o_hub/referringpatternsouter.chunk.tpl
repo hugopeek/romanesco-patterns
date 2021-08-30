@@ -126,7 +126,7 @@
                 &table=`modx_site_content`
                 &tpl=`rawID`
                 &limit=`0`
-                &where=`{ "properties:LIKE":"%field__:[[+[[+cf]].id]]___settings%" }`
+                &where=`{ "properties:LIKE":"%field__:[[+pattern_id]]___settings%" }`
                 &outputSeparator=`,`
                 &toPlaceholder=`[[+prefix]].raw_pages`
             `
@@ -141,7 +141,7 @@
                 &table=`modx_site_content`
                 &tpl=`rawID`
                 &limit=`0`
-                &where=`{ "properties:LIKE":"%layout__:[[+[[+cl]].id]]___content%" }`
+                &where=`{ "properties:LIKE":"%layout__:[[+pattern_id]]___content%" }`
                 &outputSeparator=`,`
                 &toPlaceholder=`[[+prefix]].raw_pages`
             `
@@ -152,12 +152,12 @@
     ]]
 
     [[[[If?
-        &subject=`[[+raw_pages]]`
+        &subject=`[[+[[+prefix]].raw_pages]]`
         &operator=`notempty`
         &then=`
             pdoMenu?
                 &parents=`0`
-                &context=`web,hub`
+                &context=`web,hub,global`
                 &resources=`[[+[[+prefix]].raw_pages]]`
                 &showHidden=`1`
                 &showUnpublished=`1`
