@@ -1,13 +1,13 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta6
-Released on ...
+Released on August 30, 2021
 
 New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
-- Fix connected patterns lists in front-end library
+- Fix lists with connected patterns in front-end library
 - Add class to empty grid columns
 - Load conditional CSS assets and Google fonts asynchronously
 - Load Google fonts with direct link and v2 syntax [BREAKING CHANGE]
