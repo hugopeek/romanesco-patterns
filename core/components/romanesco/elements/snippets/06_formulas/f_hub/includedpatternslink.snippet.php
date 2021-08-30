@@ -13,9 +13,6 @@ $category = $modx->getObject('modCategory', array(
 
 if (!is_object($category)) return;
 
-$modx->toPlaceholder('category', $categoryID, $prefix);
-$modx->toPlaceholder('pattern', $pattern, $prefix);
-
 // Grab only the last part of the category name
 $categoryName = preg_match('([^_]+$)', $category->get('category'), $matchCategory);
 

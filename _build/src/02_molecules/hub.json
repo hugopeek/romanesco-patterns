@@ -147,11 +147,24 @@
                     "category": "m_hub"
                 },{
                     "name": "includedPatternsRow",
-                    "description": "",
+                    "description": "Default template for showing a list item with a link (if it has one) to the connected pattern. It also displays the pattern type (Atom, Molecule, Organism...) in a small badge.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },{
+                    "name": "includedTemplatesRow",
+                    "description": "Templates can also use the default format inside includedPatternsRow, but referencing that directly causes issues with leaking [[+name]] and [[+templatename]] placeholders.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

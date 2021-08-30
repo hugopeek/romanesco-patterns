@@ -81,7 +81,7 @@
         &then=`
             Rowboat?
                 &table=`modx_site_templates`
-                &tpl=`includedPatternsRowTemplate`
+                &tpl=`includedTemplatesRow`
                 &sortBy=`templatename`
                 &limit=`0`
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`

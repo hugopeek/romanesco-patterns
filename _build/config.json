@@ -5527,11 +5527,26 @@
                 },
                 {
                     "name": "includedPatternsRow",
-                    "description": "",
+                    "description": "Default template for showing a list item with a link (if it has one) to the connected pattern. It also displays the pattern type (Atom, Molecule, Organism...) in a small badge.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub"
+                },
+                {
+                    "name": "includedTemplatesRow",
+                    "description": "Templates can also use the default format inside includedPatternsRow, but referencing that directly causes issues with leaking [[+name]] and [[+templatename]] placeholders.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementPreview",
@@ -10072,7 +10087,7 @@
                         },
                         {
                             "name": "elementPreview",
-                            "value": ""
+                            "value": "<div class=\"ui segment\">\n    <div class=\"ui one column center aligned grid wireframe\">\n        <div class=\"column\">\n            <p class=\"ui secondary segment\">Header</p>\n        </div>\n        <div class=\"column\">\n            <p class=\"ui secondary segment\" style=\"line-height: 0 !important;\">Toolbar</p>\n        </div>\n        <div class=\"column\">\n            <p class=\"ui secondary segment\" style=\"line-height: 5em !important;\">Content</p>\n        </div>\n        <div class=\"column\">\n            <p class=\"ui secondary segment\" style=\"line-height: 2em !important;\">Footer</p>\n        </div>\n    </div>\n</div>"
                         }
                     ],
                     "category": "t_basic"

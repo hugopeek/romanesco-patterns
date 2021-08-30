@@ -7,6 +7,7 @@ New features:
 - Use Markdown content with any template
 
 Fixes and improvements:
+- Fix connected patterns lists in front-end library
 - Add class to empty grid columns
 - Load conditional CSS assets and Google fonts asynchronously
 - Load Google fonts with direct link and v2 syntax [BREAKING CHANGE]
