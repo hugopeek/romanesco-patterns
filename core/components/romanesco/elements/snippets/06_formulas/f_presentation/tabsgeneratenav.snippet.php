@@ -42,11 +42,11 @@ foreach($divs as $div) {
     }
 }
 
-$tabheaders = '';
+$tabHeaders = '';
 
 $idx = 1;
 foreach($tabs as $tab) {
-    if ($tab['icon'] > 0) {
+    if ($tab['icon']) {
         $tpl = $tplIcon;
     }
 
@@ -58,7 +58,7 @@ foreach($tabs as $tab) {
         'icon' => $tab['icon'],
     );
 
-    $tabheaders .= $modx->getChunk($tpl, $properties);
+    $tabHeaders .= $modx->getChunk($tpl, $properties);
     $idx++;
 }
 
@@ -68,7 +68,7 @@ $modx->toPlaceholder('tabs_total', $idx - 1);
 // Output either to placeholder, or directly
 if ($placeholder) {
     $modx->toPlaceholder('pl', $prefix);
-    $modx->toPlaceholder($placeholder, $tabheaders, $prefix);
+    $modx->toPlaceholder($placeholder, $tabHeaders, $prefix);
     return '';
 }
-return $tabheaders;
+return $tabHeaders;

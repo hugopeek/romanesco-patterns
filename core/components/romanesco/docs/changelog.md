@@ -6,6 +6,9 @@ Released on ...
 New features:
 
 Fixes and improvements:
+- Fix icon buttons in generated tab navigation
+- Only preload backgrounds.css if critical CSS is enabled
+- Add missing ID to FormBlocks dropdown select and math question fields
 - Add lazy load setting to Overview Fluid layout
 
 ## Romanesco Patterns 1.0.0-beta6
