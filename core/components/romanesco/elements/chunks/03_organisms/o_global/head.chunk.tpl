@@ -87,9 +87,8 @@
     &subject=`[[getContextSetting:default=`[[++google_analytics_ua]]`? &context=`[[*context_key]]` &setting=`google_analytics_ua`]]`
     &operator=`notempty`
     &then=`$googleAnalytics`
+    &else=`++alternative_tracking_code`
 ]]]]
-
-[[++matomo_tracking_code]]
 
 [[[[If?
     &subject=`[[++romanesco.private_backyard]]`

@@ -7,6 +7,8 @@ New features:
 - Add post hook for pThumb to optimize the image and generate a WebP version
 
 Fixes and improvements:
+- Only load alternative_tracking_code if Google Analytics is empty
+- Rename matomo_tracking_code to alternative_tracking_code
 - Fix icon buttons in generated tab navigation
 - Only preload backgrounds.css if critical CSS is enabled
 - Add missing ID to FormBlocks dropdown select and math question fields
