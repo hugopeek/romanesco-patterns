@@ -11317,6 +11317,21 @@
                     "category": "f_performance"
                 },
                 {
+                    "name": "imgOptimizeThumb",
+                    "description": "Post hook for pThumb, that runs after the thumbnail is generated. It uses the Squoosh library from Google to create a WebP version of the image and optimize the original.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_performance"
+                },
+                {
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Swiper slider. It also initializes a Swiper instance for each slider, with it's own parameters. This means you can use multiple sliders on one page.",
                     "properties": [

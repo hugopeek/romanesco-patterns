@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add post hook for pThumb to optimize the image and generate a WebP version
 
 Fixes and improvements:
 - Fix icon buttons in generated tab navigation
