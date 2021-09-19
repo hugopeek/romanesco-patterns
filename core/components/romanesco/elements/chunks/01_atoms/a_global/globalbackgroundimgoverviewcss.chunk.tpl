@@ -1,5 +1,5 @@
 .background.[[+alias]]:before {
-    background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=800&q=[[++img_quality]]` &type=`thumb`]]") !important;
+    background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=800&q=[[++romanesco.img_quality]]` &type=`thumb`]]") !important;
     opacity: 1;
 }
 
@@ -10,7 +10,7 @@
 @media
     (min-width: 800px) {
     .background.[[+alias]]:before {
-        background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=1600&q=[[++img_quality]]` &type=`thumb`]]") !important;
+        background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=1600&q=[[++romanesco.img_quality]]` &type=`thumb`]]") !important;
     }
 }
 
@@ -19,14 +19,14 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
     .background.[[+alias]]:before {
-        background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=1200&q=[[++img_quality]]` &type=`thumb`]]") !important;
+        background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=1200&q=[[++romanesco.img_quality]]` &type=`thumb`]]") !important;
     }
 }
 @media
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 800px),
     (min-resolution: 192dpi) and (min-width: 800px) {
     .background.[[+alias]]:before {
-        background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]` &type=`thumb`]]") !important;
+        background-image: url("[[ImagePlus? &value=`[[+overview_img_pano:empty=`[[+overview_img_wide]]`]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]` &type=`thumb`]]") !important;
     }
 }
 `]]

@@ -1,6 +1,6 @@
 [[+image:notempty=`
 <div class="image">
-    <img src="[[pthumb? &input=`[[+image]]` &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`]]" alt="[[+heading]]">
+    <img src="[[pthumb? &input=`[[+image]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]" alt="[[+heading]]">
 </div>
 `]]
 <div class="content">

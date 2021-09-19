@@ -2,8 +2,8 @@
 [[+lazy_load:eq=`1`:then=`data-`:else=``:toPlaceholder=`lazy`]]
 [[++max_thumb_width:div=`[[+crop.width]]`:replace=`,==.`:mpy=`[[+crop.height]]`:round:toPlaceholder=`max_thumb_height`]]
 [[responsiveImgSrcset?
-    &breakpoints=`[[++img_breakpoints]]`
-    &quality=`[[++img_quality]]`
+    &breakpoints=`[[++romanesco.img_breakpoints]]`
+    &quality=`[[++romanesco.img_quality]]`
     &src=`[[+source.src]]`
     &crop=`[[+crop.options]]`
     &width=`[[+width]]`

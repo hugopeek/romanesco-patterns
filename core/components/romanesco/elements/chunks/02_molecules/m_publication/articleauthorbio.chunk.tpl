@@ -7,7 +7,7 @@
                         [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`square`]]`?
                             &tvname=`person_image`
                             &docid=`[[+id]]`
-                            &options=`w=400&h=400&q=[[++img_quality]]&zc=1`
+                            &options=`w=400&h=400&q=[[++romanesco.img_quality]]&zc=1`
                             &type=`tpl`
                             &tpl=`imgOverviewFixed`
                         ]]

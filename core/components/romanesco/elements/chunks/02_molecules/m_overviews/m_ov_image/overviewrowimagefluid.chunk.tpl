@@ -3,7 +3,7 @@
         [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
             &tvname=`overview_img_landscape`
             &docid=`[[+id]]`
-            &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
+            &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`
             &type=`tpl`
             &tpl=`imgOverview`
         ]]

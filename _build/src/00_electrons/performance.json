@@ -29,6 +29,25 @@
                     "parent": "e_performance"
                 }
             ]
-        }
+        },
+
+        "systemSettings": [
+            {
+                "key": "img_breakpoints",
+                "type": "textfield",
+                "area": "Performance",
+                "value": "360,800,960,1024,1152,1200,1280,1366,1440,1600"
+            },{
+                "key": "img_quality",
+                "type": "textfield",
+                "area": "Performance",
+                "value": "[[++img_quality]]"
+            },{
+                "key": "post_hook",
+                "namespace": "pthumb",
+                "type": "textfield",
+                "area": "Performance"
+            }
+        ]
     }
 }

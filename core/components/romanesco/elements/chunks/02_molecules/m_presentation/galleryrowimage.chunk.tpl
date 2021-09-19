@@ -4,8 +4,8 @@
     &layout_column=`[[+layout_column]]`
 ]]
 [[responsiveImgSrcset?
-    &breakpoints=`[[++img_breakpoints]]`
-    &quality=`[[++img_quality]]`
+    &breakpoints=`[[++romanesco.img_breakpoints]]`
+    &quality=`[[++romanesco.img_quality]]`
     &src=`[[+url]]`
     &width=`[[+width]]`
     &toPlaceholder=`[[+prefix]].srcset`
@@ -24,7 +24,7 @@
              class="lazy"
              `]]
              [[+lightbox:eq=`1`:then=`
-             data-lightbox-img="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width:mpy=`1.5`]]&q=[[++img_quality]]&zc=1`]]"
+             data-lightbox-img="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width:mpy=`1.5`]]&q=[[++romanesco.img_quality]]&zc=1`]]"
              data-caption="[[+title]]"
              `]]
              [[+width:notempty=`width="[[+width]]"`]]

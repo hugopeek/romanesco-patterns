@@ -5,7 +5,7 @@
     [[pthumb:prepend=`url(`:append=`)`?
         &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
-            &q=[[++img_quality]]
+            &q=[[++romanesco.img_quality]]
             &scale=[[+imgScale:default=`1`]]
         `
     ]]`
@@ -22,7 +22,7 @@
             &sy=[[+image.crops.[[+imgType]].y]]
             &sw=[[+image.crops.[[+imgType]].width]]
             &sh=[[+image.crops.[[+imgType]].height]]
-            &q=[[++img_quality]]
+            &q=[[++romanesco.img_quality]]
             &scale=[[+imgScale:default=`1`]]
         `
     ]]`

@@ -7,7 +7,7 @@
         &tvname=`overview_img_wide`
         &type=`tpl`
         &tpl=`imgOpenGraphRow`
-        &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
+        &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`
     `
 ]]]]
 [[[[*overview_img_pano:notempty=`
@@ -15,7 +15,7 @@
         &tvname=`overview_img_pano`
         &type=`tpl`
         &tpl=`imgOpenGraphRow`
-        &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
+        &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`
     `
 ]]]]
 [[[[*overview_img_landscape:notempty=`
@@ -23,7 +23,7 @@
         &tvname=`overview_img_landscape`
         &type=`tpl`
         &tpl=`imgOpenGraphRow`
-        &options=`w=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
+        &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`
     `
 ]]]]
 [[[[*overview_img_square:notempty=`
@@ -31,7 +31,7 @@
         &tvname=`overview_img_square`
         &type=`tpl`
         &tpl=`imgOpenGraphRow`
-        &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
+        &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`
     `
 ]]]]
 [[[[*overview_img_landscape:notempty=`
@@ -39,6 +39,6 @@
         &tvname=`overview_img_landscape`
         &type=`tpl`
         &tpl=`imgOpenGraphRow`
-        &options=`h=[[++max_thumb_width]]&q=[[++img_quality]]&zc=1`
+        &options=`h=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`
     `
 ]]]]
