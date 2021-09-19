@@ -42,6 +42,7 @@ if (!($romanesco instanceof Romanesco)) {
 
 // Get image path from task properties or pThumb properties
 $imgPath = $modx->getOption('img_path', $scriptProperties, $scriptProperties['file']);
+$imgType = pathinfo($imgPath, PATHINFO_EXTENSION);
 $outputDir = dirname($imgPath);
 
 // Look for context key
@@ -102,16 +103,30 @@ $configJPG = json_encode([
     "chroma_quality" => 75
 ]);
 
+$configPNG = json_encode([
+    "level" => 2,
+    "interlace" => false
+]);
+
 // Use Scheduler for adding task to queue (if available)
 /** @var Scheduler $scheduler */
 $schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
 $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
 
+// Use different compression engine for JPG and PNG
+if (strtolower($imgType) == 'png') {
+    $squooshOptions = ' --oxipng ' . escapeshellarg($configPNG);
+} else {
+    $squooshOptions = ' --mozjpeg ' . escapeshellarg($configJPG);
+}
+
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
 if (!($scheduler instanceof Scheduler) || is_object($task)) {
+    $output = array();
+
     exec('"$HOME"/.nvm/nvm-exec squoosh-cli' .
+        $squooshOptions .
         ' --webp ' . escapeshellarg($configWebP) .
-        ' --mozjpeg ' . escapeshellarg($configJPG) .
         ' --output-dir ' . escapeshellarg($outputDir) . ' ' . escapeshellarg($imgPath) .
         ' 2>&1',
         $output,
