@@ -1,3 +1,3 @@
 <a class="item [[+classnames]]" href="[[+link]]" [[+attributes]]>
-    [[+menutitle]]
+    <span class="meta"></span>[[+menutitle]]
 </a>

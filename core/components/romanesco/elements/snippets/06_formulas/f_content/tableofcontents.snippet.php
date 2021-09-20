@@ -48,6 +48,7 @@ $toc = $dom
 // Remove empty headings from array (why are they there?)
 $toc = array_filter($toc);
 
+$output = array();
 $idx = 0;
 
 foreach ($toc as $index => $item) {
