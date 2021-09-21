@@ -1,4 +1,4 @@
-<header id="header" class="masthead inverted primary-color">
+<header id="header" class="[[++navbar_sticky:eq=`1`:then=`ui sticky`]] inverted primary-color">
     [[[[modifiedIf?
         &subject=`masthead`
         &operator=`iselement`
