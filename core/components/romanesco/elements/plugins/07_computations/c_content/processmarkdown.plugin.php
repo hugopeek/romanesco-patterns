@@ -126,10 +126,14 @@ switch ($modx->event->name) {
             })
         ;
 
-        // And a few other things
+        // Prettier HR
         $dom->filter('hr')->replaceWith('<div class="ui divider"></div>');
-        //$dom->filter('ul')->addClass('ui list');
-        //$dom->filter('ol')->addClass('ui list');
+
+        // Add SUI list class, but only to first level
+        $dom->filter('#markdown ul > li > ul')->addClass('nested');
+        $dom->filter('#markdown ul:not(.nested)')->addClass('ui list');
+        $dom->filter('#markdown ol > li > ol')->addClass('nested');
+        $dom->filter('#markdown ol:not(.nested)')->addClass('ui list');
 
         $output = $dom->saveHTML();
 
