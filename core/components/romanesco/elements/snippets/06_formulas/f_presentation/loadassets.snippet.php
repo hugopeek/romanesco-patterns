@@ -81,7 +81,8 @@ switch ($component) {
             $modx->getOption('romanesco.leaflet_css_url', $scriptProperties, '') .
             '" integrity="' . $modx->getOption('romanesco.leaflet_css_integrity', $scriptProperties, '') .
             '" crossorigin="" ' . $async . '>');
-        $modx->regClientStartupHTMLBlock('<script defer src="' .
+        // JS is added to the HEAD of the page (without defer), so maps can be initialized from content area.
+        $modx->regClientStartupHTMLBlock('<script src="' .
             $modx->getOption('romanesco.leaflet_js_url', $scriptProperties, '') .
             '" integrity="' . $modx->getOption('romanesco.leaflet_js_integrity', $scriptProperties, '') .
             '" crossorigin=""></script>');
