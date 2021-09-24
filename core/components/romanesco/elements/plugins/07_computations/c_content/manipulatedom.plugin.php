@@ -135,6 +135,11 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Transform regular tables into SUI tables
+        $dom->filter('table:not(.ui.table)')
+            ->addClass('ui table')
+        ;
+
         // Apply Swiper classes to appropriate slide elements
         $dom->filter('.swiper-container')
             ->each(function (HtmlPageCrawler $slider) {
