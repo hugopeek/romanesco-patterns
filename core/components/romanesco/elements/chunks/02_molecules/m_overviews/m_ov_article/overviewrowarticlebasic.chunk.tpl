@@ -32,7 +32,7 @@
     `]]
 </p>
 
-<p class="ui tag labels">
+<p class="ui labels">
     [[!TaggerGetTags? &resources=`[[+id]]` &rowTpl=`tagItemBasic`]]
 </p>
 
