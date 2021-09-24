@@ -162,11 +162,17 @@ $assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProper
 $cacheBusterCSS = $romanesco->getCacheBustingString('CSS');
 $cacheBusterJS = $romanesco->getCacheBustingString('JS');
 
+// Load component asynchronously if critical CSS is enabled
+$async = '';
+if ($romanesco->getConfigSetting('critical_css', $modx->resource->get('context_key'))) {
+    $async = ' media="print" onload="this.media=\'all\'"';
+}
+
 // Head
-$modx->regClientCSS($assetsPathCSS . '/swiper' . $minify . $cacheBusterCSS . '.css');
+$modx->regClientStartupHTMLBlock('<link href="' . $assetsPathCSS . '/swiper' . $minify . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
 
 // Footer
-$modx->regClientScript('/' . $assetsPathVendor . '/swiper/swiper-bundle.min' . $cacheBusterJS . '.js');
+$modx->regClientScript($assetsPathVendor . '/swiper/swiper-bundle.min' . $cacheBusterJS . '.js');
 $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'var' => $var,
     'id' => $id,
@@ -192,8 +198,10 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
 
 // Load modal assets if lightbox is active
 if ($lightbox == 1) {
-    $modx->regClientCSS($assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css');
-    $modx->regClientScript('/' . $assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js');
+    $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
+    $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
+    $modx->regClientScript($assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js');
+    $modx->regClientScript($assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js');
 }
 
 return '';

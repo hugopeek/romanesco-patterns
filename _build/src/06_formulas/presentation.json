@@ -3,6 +3,19 @@
         "elements": {
             "snippets": [
                 {
+                    "name": "loadAssets",
+                    "description": "Load CSS and JS for a specific component. Some assets are included in semantic.css by default, to keep its file size down.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_presentation"
+                },{
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Swiper slider. It also initializes a Swiper instance for each slider, with it's own parameters. This means you can use multiple sliders on one page.",
                     "properties": [
@@ -21,7 +34,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },{
                             "name": "elementExample",
                             "value": ""
@@ -34,7 +47,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },{
                             "name": "elementExample",
                             "value": ""

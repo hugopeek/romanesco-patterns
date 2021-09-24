@@ -54,23 +54,17 @@
 `]]
 
 [[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]
-[[~[[*id]]:contains=`status`:or:contains=`hub`:then=`1`:toPlaceholder=`load_assets_hub`]]
-[[cbHasFields:toPlaceholder=`load_assets_map`? &field=`[[++romanesco.cb_field_map_id]]` &then=`1`]]
-[[modifiedIf?
+[[[[If?
+    &subject=`[[cbHasFields? &field=`[[++romanesco.cb_field_map_id]]` &then=`1`]]`
+    &operator=`notempty`
+    &then=`loadAssets? &component=`map``
+]]]]
+[[[[If?
     &subject=`[[cbHasFields? &field=`[[++romanesco.cb_field_code_id]]` &then=`1`]][[*context_key:is=`hub`:or:is=`notes`:then=`1`]][[*uri:contains=`notes/`:then=`1`]][[*content_type:is=`11`:then=`1`]]`
     &operator=`notempty`
-    &then=`1`
-    &toPlaceholder=`load_syntax_highlighting`
-]]
-
-[[[[+load_assets_map:eq=`1`:then=`$mapLoadAssets`]]]]
-[[+load_assets_hub:eq=`1`:then=`
-<link href="[[++romanesco.semantic_dist_path]]/components/modal[[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
-<link href="[[++romanesco.semantic_dist_path]]/components/step[[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
-`]]
-[[+load_syntax_highlighting:eq=`1`:then=`
-<link href="[[++romanesco.semantic_vendor_path]]/prism/prism.min[[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
-`]]
+    &then=`loadAssets? &component=`syntax-highlighting``
+]]]]
+[[[[*context_key:is=`hub`:then=`loadAssets? &component=`hub``]]]]
 
 [[++head_additional]]
 

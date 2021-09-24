@@ -11332,6 +11332,21 @@
                     "category": "f_performance"
                 },
                 {
+                    "name": "loadAssets",
+                    "description": "Load CSS and JS for a specific component. Some assets are included in semantic.css by default, to keep its file size down.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_presentation"
+                },
+                {
                     "name": "sliderLoadAssets",
                     "description": "Load CSS and JS dependencies for Swiper slider. It also initializes a Swiper instance for each slider, with it's own parameters. This means you can use multiple sliders on one page.",
                     "properties": [
@@ -11352,7 +11367,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementExample",
@@ -11367,7 +11382,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementExample",
@@ -12064,12 +12079,41 @@
                 "area": "Development"
             },
             {
+                "key": "leaflet_css_url",
+                "value": "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css",
+                "type": "textfield",
+                "area": "Map"
+            },
+            {
+                "key": "leaflet_css_integrity",
+                "value": "sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==",
+                "type": "textfield",
+                "area": "Map"
+            },
+            {
+                "key": "leaflet_js_url",
+                "value": "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js",
+                "type": "textfield",
+                "area": "Map"
+            },
+            {
+                "key": "leaflet_js_integrity",
+                "value": "sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==",
+                "type": "textfield",
+                "area": "Map"
+            },
+            {
                 "key": "mapbox_username",
                 "type": "textfield",
                 "area": "Map"
             },
             {
                 "key": "mapbox_access_token",
+                "type": "textfield",
+                "area": "Map"
+            },
+            {
+                "key": "mapbox_style_id",
                 "type": "textfield",
                 "area": "Map"
             },

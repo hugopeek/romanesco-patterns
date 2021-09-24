@@ -13,4 +13,4 @@
     &setTotal=`1`
 ]]
 
-[[stepsLoadAssets]]
+[[loadAssets? &component=`steps`]]

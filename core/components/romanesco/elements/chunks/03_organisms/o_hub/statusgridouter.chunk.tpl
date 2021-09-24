@@ -103,3 +103,5 @@
         </div>
     </div>
 </div>
+
+[[loadAssets? &component=`status-grid`]]

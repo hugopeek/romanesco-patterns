@@ -26,3 +26,5 @@
         &tpl=`imgOverview`
     ]]
 </figure>
+
+[[loadAssets? &component=`dimmer`]]

@@ -1,1 +1,1 @@
-<span class="label label-info tag">[[+item]]</span>
+<span class="label label-info">[[+item]]</span>
