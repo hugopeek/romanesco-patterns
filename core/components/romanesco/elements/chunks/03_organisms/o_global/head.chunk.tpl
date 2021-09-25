@@ -53,7 +53,16 @@
 <link href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 `]]
 
-[[- SET CONDITIONS FOR LOADING ADDITIONAL ASSETS ]]
+[[- LOAD JS ASSETS WITH DEFER, SO DOWNLOADING WILL COMMENCE EARLY WITHOUT BLOCKING RENDERING ]]
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script defer src="[[++romanesco.semantic_vendor_path]]/jquery/jquery.min[[+cache_buster_js]].js"><\/script>')</script>
+<script defer src="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_js]].js"></script>
+<script defer src="[[++romanesco.semantic_js_path]]/onmediaquery[[+minify]][[+cache_buster_js]].js"></script>
+<script defer src="[[++romanesco.semantic_vendor_path]]/vanilla-lazyload/lazyload.min[[+cache_buster_js]].js"></script>
+<script defer src="[[++romanesco.semantic_vendor_path]]/scrolldir/scrolldir.auto.min[[+cache_buster_js]].js"></script>
+<script defer src="[[++romanesco.semantic_js_path]]/site[[+minify]][[+cache_buster_js]].js"></script>
+
+[[- LOAD ADDITIONAL ASSETS, BASED ON CERTAIN CONDITIONS ]]
 [[[[If?
     &subject=`[[cbHasFields? &field=`[[++romanesco.cb_field_map_id]]` &then=`1`]]`
     &operator=`notempty`
@@ -64,7 +73,12 @@
     &operator=`notempty`
     &then=`loadAssets? &component=`syntax-highlighting``
 ]]]]
-[[[[*context_key:is=`hub`:then=`loadAssets? &component=`hub``]]]]
+[[[[If?
+    &subject=`[[*context_key]]`
+    &operator=`is`
+    &operand=`hub`
+    &then=`loadAssets? &component=`hub``
+]]]]
 
 [[++head_additional]]
 

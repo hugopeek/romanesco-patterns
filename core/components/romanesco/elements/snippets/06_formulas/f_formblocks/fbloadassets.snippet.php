@@ -34,28 +34,28 @@ if (!$romanesco->getConfigSetting('critical_css', $modx->resource->get('context_
     $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="assets/semantic/dist/components/calendar.min' . $cacheBusterCSS . '.css" type="text/css" media="print" onload="this.media=\'all\'">');
 }
 
-// Load FormBlocks JS in footer
-$modx->regClientScript($assetsPathDist . '/components/form.min' . $cacheBusterJS . '.js');
-$modx->regClientScript($assetsPathDist . '/components/calendar.min' . $cacheBusterJS . '.js');
-$modx->regClientScript($assetsPathJS . '/formblocks.min' . $cacheBusterJS . '.js');
+// Load FormBlocks JS
+$modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathDist . '/components/form.min' . $cacheBusterJS . '.js"></script>');
+$modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathDist . '/components/calendar.min' . $cacheBusterJS . '.js"></script>');
+$modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathJS . '/formblocks.min' . $cacheBusterJS . '.js"></script>');
 
 // Load additional assets for file upload field, if present
 if ($uploadFile) {
-    $modx->regClientScript($assetsPathVendor . '/arrive/arrive.min' . $cacheBusterJS . '.js');
-    $modx->regClientScript($assetsPathJS . '/fileupload.min' . $cacheBusterJS . '.js');
+    $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathVendor . '/arrive/arrive.min' . $cacheBusterJS . '.js"></script>');
+    $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathJS . '/fileupload.min' . $cacheBusterJS . '.js"></script>');
 }
 
 // Load custom assets, if present
 // @todo: make this more dynamic
 if (is_file('assets/js/formblocks.min.js')) {
-    $modx->regClientScript('assets/js/formblocks.min' . $cacheBusterJS . '.js');
+    $modx->regClientStartupHTMLBlock('<script defer src="assets/js/formblocks.min' . $cacheBusterJS . '.js"></script>');
 } elseif (is_file('assets/js/formblocks.js')) {
-    $modx->regClientScript('assets/js/formblocks' . $cacheBusterJS . '.js');
+    $modx->regClientStartupHTMLBlock('<script defer src="assets/js/formblocks' . $cacheBusterJS . '.js"></script>');
 }
 if (is_file('assets/js/form-validation.min.js')) {
-    $modx->regClientScript('assets/js/form-validation.min' . $cacheBusterJS . '.js');
+    $modx->regClientStartupHTMLBlock('<script defer src="assets/js/form-validation.min' . $cacheBusterJS . '.js"></script>');
 } elseif (is_file('assets/js/form-validation.js')) {
-    $modx->regClientScript('assets/js/form-validation' . $cacheBusterJS . '.js');
+    $modx->regClientStartupHTMLBlock('<script defer src="assets/js/form-validation' . $cacheBusterJS . '.js"></script>');
 }
 
 return '';

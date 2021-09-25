@@ -53,14 +53,14 @@ switch ($component) {
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/step.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
-        $modx->regClientScript($assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js');
-        $modx->regClientScript($assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js');
-        $modx->regClientScript($assetsPathVendor . '/tablesort/tablesort.min' . $cacheBusterJS . '.js');
-        $modx->regClientScript($assetsPathJS . '/hub' . $minify . $cacheBusterJS . '.js');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js"></script>');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathVendor . '/tablesort/tablesort.min' . $cacheBusterJS . '.js"></script>');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathJS . '/hub' . $minify . $cacheBusterJS . '.js"></script>');
     break;
     case 'table':
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/table.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
-        $modx->regClientScript($assetsPathVendor . '/tablesort/tablesort.min' . $cacheBusterJS . '.js');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathVendor . '/tablesort/tablesort.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'step':
     case 'steps':
@@ -68,13 +68,12 @@ switch ($component) {
         break;
     case 'dimmer':
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
-        $modx->regClientScript($assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js');
-        $modx->regClientScript($assetsPathJS . '/dimmer'. $minify . $cacheBusterJS . '.js');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathJS . '/dimmer'. $minify . $cacheBusterJS . '.js"></script>');
         break;
-    case 'syntax highlighting':
     case 'syntax-highlighting':
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathVendor . '/prism/prism.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
-        $modx->regClientScript($assetsPathVendor . '/prism/prism.min' . $cacheBusterJS . '.js');
+        $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathVendor . '/prism/prism.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'map':
         $modx->regClientStartupHTMLBlock('<link href="' .

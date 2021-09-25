@@ -172,7 +172,7 @@ if ($romanesco->getConfigSetting('critical_css', $modx->resource->get('context_k
 $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathCSS . '/swiper' . $minify . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
 
 // Footer
-$modx->regClientScript($assetsPathVendor . '/swiper/swiper-bundle.min' . $cacheBusterJS . '.js');
+$modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathVendor . '/swiper/swiper-bundle.min' . $cacheBusterJS . '.js"></script>');
 $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'var' => $var,
     'id' => $id,
@@ -200,8 +200,8 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
 if ($lightbox == 1) {
     $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
     $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
-    $modx->regClientScript($assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js');
-    $modx->regClientScript($assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js');
+    $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
+    $modx->regClientStartupHTMLBlock('<script defer src="' . $assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js"></script>');
 }
 
 return '';

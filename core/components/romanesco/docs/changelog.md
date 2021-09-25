@@ -7,7 +7,9 @@ New features:
 - Add post hook for pThumb to optimize the image and generate a WebP version
 
 Fixes and improvements:
+- Load external JS from head with defer
 - Load all conditional assets through a single snippet
+- Don't use tag label variant anymore (excluded from semantic.css)
 - Add SUI list class to ul and ol tags in Markdown (only at first level)
 - Remove conditionals for empty logo paths (to clear media source path)
 - Add theme variables for inverted logo paths
