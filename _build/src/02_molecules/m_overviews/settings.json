@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "paginationFluid",
-                    "description": "",
+                    "name": "overviewSettings",
+                    "description": "Generic parameters for the getResources call.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,33 +14,33 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_nav_pagination"
+                    "category": "m_ov_settings"
                 },{
-                    "name": "paginationStartupJS",
-                    "description": "",
+                    "name": "overviewSettingsPagination",
+                    "description": "Pagination parameters for the pdoPage call. Only loaded when pagination is active.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "experimental"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "m_nav_pagination"
+                    "category": "m_ov_settings"
                 },{
-                    "name": "paginationInitJS",
-                    "description": "",
+                    "name": "overviewSettingsPrepare",
+                    "description": "A couple of placeholders need to be set, before the settings are evaluated in the snippet call.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "experimental"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "m_nav_pagination"
+                    "category": "m_ov_settings"
                 }
             ]
         }

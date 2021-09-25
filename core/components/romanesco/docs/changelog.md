@@ -7,6 +7,7 @@ New features:
 - Add post hook for pThumb to optimize the image and generate a WebP version
 
 Fixes and improvements:
+- Move shared overview settings to separate molecules
 - Fix regClient scripts not being parsed in Markdown pages on first load
 - Load external JS from head with defer
 - Load all conditional assets through a single snippet

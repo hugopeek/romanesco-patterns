@@ -179,6 +179,9 @@
                 },{
                     "name": "m_ov_information",
                     "parent": "m_overviews"
+                },{
+                    "name": "m_ov_settings",
+                    "parent": "m_overviews"
                 }
             ]
         }

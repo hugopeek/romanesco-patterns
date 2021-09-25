@@ -586,6 +586,10 @@
                     "parent": "m_overviews"
                 },
                 {
+                    "name": "m_ov_settings",
+                    "parent": "m_overviews"
+                },
+                {
                     "name": "m_presentation",
                     "parent": "02_molecules"
                 },
@@ -9232,6 +9236,36 @@
                     "category": "m_nav_pagination"
                 },
                 {
+                    "name": "paginationStartupJS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_pagination"
+                },
+                {
+                    "name": "paginationInitJS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_pagination"
+                },
+                {
                     "name": "breadcrumbs",
                     "description": "",
                     "properties": [
@@ -10055,6 +10089,51 @@
                         }
                     ],
                     "category": "m_ov_review"
+                },
+                {
+                    "name": "overviewSettings",
+                    "description": "Generic parameters for the getResources call.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_settings"
+                },
+                {
+                    "name": "overviewSettingsPagination",
+                    "description": "Pagination parameters for the pdoPage call. Only loaded when pagination is active.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_settings"
+                },
+                {
+                    "name": "overviewSettingsPrepare",
+                    "description": "A couple of placeholders need to be set, before the settings are evaluated in the snippet call.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_settings"
                 }
             ],
             "templates": [
