@@ -57,29 +57,26 @@ switch ($modx->event->name) {
 
     // Use HTML mime type when viewed as a web page
     // Based on: https://github.com/GoldCoastMedia/modx-xhtml-mime-switch
-    case 'OnWebPagePrerender':
+    case 'OnLoadWebDocument':
         $resource = &$modx->resource;
 
+        // Make sure its Markdown
         if ($resource->get('content_type') !== 11) {
             break;
         }
 
-        // Header content types
-        $header = (object) array(
-            'markdown'  => 'text/x-markdown',
-            'html' => 'text/html',
-        );
-
-        // Get the document type
-        $markdown = $resource->get('contentType') === $header->markdown;
-
         // Switch back to HTML
-        if ($markdown) {
-            $resource->ContentType->set('mime_type', $header->html);
+        $resource->ContentType->set('mime_type', 'text/html');
+        break;
+
+    // Process output with HtmlPageDom
+    case 'OnWebPagePrerender':
+        // Make sure its Markdown
+        if ($modx->resource->get('content_type') !== 11) {
+            break;
         }
 
-        // Process output with HtmlPageDom
-        $output = &$resource->_output;
+        $output = &$modx->resource->_output;
         $dom = new HtmlPageCrawler($output);
 
         // Fix image URLs and prevent them from overflowing their container

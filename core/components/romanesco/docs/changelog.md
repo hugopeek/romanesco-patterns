@@ -7,6 +7,7 @@ New features:
 - Add post hook for pThumb to optimize the image and generate a WebP version
 
 Fixes and improvements:
+- Fix regClient scripts not being parsed in Markdown pages on first load
 - Load external JS from head with defer
 - Load all conditional assets through a single snippet
 - Don't use tag label variant anymore (excluded from semantic.css)
