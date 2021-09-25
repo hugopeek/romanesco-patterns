@@ -17,6 +17,10 @@ Fixes and improvements:
 - Add theme variables for inverted logo paths
 - Only load alternative_tracking_code if Google Analytics is empty
 - Rename matomo_tracking_code to alternative_tracking_code
+- Move Leaflet asset paths and integrity hashes to system settings
+- Move img_breakpoints to system settings
+- Add pThumb post-hook to system settings (customization in pThumb core)
+- Add img_quality as system setting too (baseline for optional post-processing)
 - Fix icon buttons in generated tab navigation
 - Only preload backgrounds.css if critical CSS is enabled
 - Add missing ID to FormBlocks dropdown select and math question fields
