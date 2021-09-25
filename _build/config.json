@@ -11825,6 +11825,7 @@
                     "category": "c_content",
                     "events": [
                         "OnBeforeDocFormSave",
+                        "OnLoadWebDocument",
                         "OnWebPagePrerender"
                     ]
                 },

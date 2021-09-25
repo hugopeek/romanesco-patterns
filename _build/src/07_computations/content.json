@@ -12,7 +12,7 @@
                         }
                     ],
                     "category": "c_content",
-                    "events": ["OnBeforeDocFormSave","OnWebPagePrerender"]
+                    "events": ["OnBeforeDocFormSave","OnLoadWebDocument","OnWebPagePrerender"]
                 },{
                     "name": "ManipulateDOM",
                     "description": "Manipulate DOM elements with HtmlPageDom. Yes, that's exactly what jQuery does... But now we can do it server side, before the page is rendered. Much faster and more reliable.",
