@@ -84,14 +84,14 @@ switch ($modx->event->name) {
             ->each(function (HtmlPageCrawler $image) {
                 $src = $image->getAttribute('src');
                 $image
-                    ->setAttribute('src', 'notes/' . $src)
-                    ->addClass('ui image')
+                    ->setAttribute('src', 'uploads/notes/' . $src)
+                    ->addClass('ui rounded image')
                 ;
             })
         ;
 
         // Remove .md extension from links
-        $dom->filter('a')
+        $dom->filter('#markdown a')
             ->each(function (HtmlPageCrawler $link) {
                 $href = $link->getAttribute('href');
                 $link->setAttribute('href', str_replace('.md','',$href));
@@ -104,7 +104,7 @@ switch ($modx->event->name) {
         ;
 
         // Turn tables into Semantic tables
-        $dom->filter('table')->addClass('ui compact table');
+        $dom->filter('#markdown table')->addClass('ui compact table');
 
         // Add language class to code blocks that do not specify a language
         $dom->filter('pre')->addClass('language-html');
@@ -124,7 +124,7 @@ switch ($modx->event->name) {
         ;
 
         // Prettier HR
-        $dom->filter('hr')->replaceWith('<div class="ui divider"></div>');
+        $dom->filter('#markdown hr')->replaceWith('<div class="ui divider"></div>');
 
         // Add SUI list class, but only to first level
         $dom->filter('#markdown ul > li > ul')->addClass('nested');
