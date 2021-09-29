@@ -9492,7 +9492,37 @@
                 },
                 {
                     "name": "tocNavVertical",
-                    "description": "",
+                    "description": "Table of Contents in a vertical menu, on the right side of the content. Used in all ToC templates. Can be instructed to stick to the viewport when scrolling through the main article.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_toc"
+                },
+                {
+                    "name": "tocNavContent",
+                    "description": "This Table of Contents menu can be placed anywhere inside the content area with a ContentBlock (but will probably end up on top).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_toc"
+                },
+                {
+                    "name": "tocNavDropdown",
+                    "description": "Wrap all ToC items in a dropdown menu, for more compact display (like on mobile / tablet).",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -12182,12 +12212,6 @@
                 "key": "mapbox_style_id",
                 "type": "textfield",
                 "area": "Map"
-            },
-            {
-                "key": "toc_enabled_templates",
-                "type": "textfield",
-                "area": "Navigation",
-                "value": "21,22,24,25,26"
             },
             {
                 "key": "publication_container_id",

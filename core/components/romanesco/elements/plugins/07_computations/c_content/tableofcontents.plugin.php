@@ -10,12 +10,11 @@
  */
 
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
-$enabledTemplates = explode(',', $modx->getOption('romanesco.toc_enabled_templates', null, '0'));
-$template = $modx->resource->get('template');
-$tpl = $modx->getOption('tpl', $scriptProperties, 'tocNavItem');
+$tpl = $modx->getPlaceholder('toc.tpl') ?? 'tocNavItem';
+$target = $modx->getPlaceholder('toc.target');
 
-// Abort if resource template is not a ToC-enabled template
-if (!in_array($template, $enabledTemplates)) {
+// Abort if ToC target is not set
+if (!$target) {
     return true;
 }
 
@@ -58,8 +57,8 @@ switch ($modx->event->name) {
                     }
 
                     return false;
-                }
-            );
+                })
+            ;
         }
 
         // Get all headings on the page
@@ -80,7 +79,8 @@ switch ($modx->event->name) {
                 }
 
                 return false;
-            });
+            })
+        ;
 
         // Remove empty headings from array (why are they there?)
         $toc = array_filter($toc);
@@ -98,7 +98,7 @@ switch ($modx->event->name) {
         }
 
         // Append menu to HTML container
-        $dom->filter('#submenu.toc')->append(implode($output));
+        $dom->filter($target)->append(implode($output));
         $content = $dom->saveHTML();
 
         break;

@@ -66,6 +66,7 @@ switch ($modx->event->name) {
                     '.divider:not(.hidden)',
                     '.basic.form',
                     '.accordion:not(.styled)',
+                    '.text.menu',
                 );
 
                 // Revert inverted styling inside these nested elements

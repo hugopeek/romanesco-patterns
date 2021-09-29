@@ -1,65 +1,26 @@
 <?php
 /**
+ * tableOfContents snippet
  *
+ * Not to be confused with the ToC plugin. The plugin takes care of generating
+ * the menu items, because this needs to be done during the rendering process.
+ *
+ * This snippet only sets a few placeholders for the plugin to pick up.
+ *
+ * The target attribute is required. Without it, no ToC menu is created.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @package romanesco
  */
 
-$corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
-$tpl = $modx->getOption('tpl', $scriptProperties, 'tocNavItem');
+$tpl = $modx->getOption('tpl', $scriptProperties, '');
+$target = $modx->getOption('target', $scriptProperties, '');
 
-if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
-    require $corePath . 'vendor/autoload.php';
+if ($target) {
+    $modx->setPlaceholder('toc.target', $target);
+} else {
+    return '';
 }
 
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
-
-
-// Check if content type is text/html
-//if ($modx->resource->get('content_type') !== 1) {
-//    return '';
-//}
-
-// Get processed output of resource
-$content = $modx->resource->_content;
-$resourceURI = $modx->resource->get('uri');
-
-// Feed output to HtmlPageDom
-$dom = new HtmlPageCrawler($content);
-
-// Get all headings on the page
-$toc = $dom
-    ->filter('h1,h2,h3,h4,h5,h6')
-    ->each(function(HtmlPageCrawler $node){
-        $text = $node->getInnerHtml();
-        $anchor = $node->getAttribute('id');
-        $level = $node->nodeName();
-
-        if (isset($anchor)) {
-            return array(
-                "text" => $text,
-                "anchor" => $anchor,
-                "level" => $level,
-            );
-        }
-
-        return '';
-    })
-;
-
-// Remove empty headings from array (why are they there?)
-$toc = array_filter($toc);
-
-$output = array();
-$idx = 0;
-
-foreach ($toc as $index => $item) {
-    $output[] = $modx->getChunk($tpl, array(
-        'link' => $resourceURI . '#' . $item['anchor'],
-        'menutitle' => $item['text'],
-        'classnames' => $item['level'],
-        'idx' => $idx++,
-    ));
-}
-
-//$toc->html();
-
-return implode($output);
+if ($tpl) $modx->setPlaceholder('toc.tpl', $tpl);
