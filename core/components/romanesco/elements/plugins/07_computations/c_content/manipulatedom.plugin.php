@@ -125,7 +125,7 @@ switch ($modx->event->name) {
         ;
 
         // Remove rows from grids that have a reversed column order on mobile
-        $dom->filter('.ui.reversed.grid > .row')->unwrapInner();
+        //$dom->filter('.ui.reversed.grid > .row')->unwrapInner();
 
         // Add class to empty grid columns
         $dom->filter('.ui.grid .column')

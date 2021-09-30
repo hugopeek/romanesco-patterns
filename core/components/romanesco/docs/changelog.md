@@ -8,6 +8,7 @@ New features:
 - Add ContentBlock with Table of Contents menu
 
 Fixes and improvements:
+- Don't remove rows in mobile reversed grids (breaks multi-row nested layouts)
 - Use placeholder to detect ToC instead of toc_enabled_templates system setting
 - Show ToC submenu in dropdown on tablet and mobile
 - Move shared overview settings to separate molecules
