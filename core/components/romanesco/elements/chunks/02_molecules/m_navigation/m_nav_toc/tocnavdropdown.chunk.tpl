@@ -1,5 +1,5 @@
-<div class="ui [[+size:default=`large`]] very long fluid selection dropdown">
+<div class="ui [[+size]] very long fluid selection dropdown">
     <i class="dropdown icon"></i>
-    <div class="default text">[[%romanesco.toc.dropdown_title]]</div>
+    <div class="default text">[[%romanesco.toc.menu_title]]</div>
     <nav class="toc menu">[[- Menu items are moved here on mobile]]</nav>
 </div>
