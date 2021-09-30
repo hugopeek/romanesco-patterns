@@ -9,7 +9,8 @@ New features:
 
 Fixes and improvements:
 - Don't remove rows in mobile reversed grids (breaks multi-row nested layouts)
-- Also hide designated mobile elements if parent grid is stackable on tablet
+- Fix responsive content image sizes in stackable on tablet grids
+- If grids are stackable on tablet, also hide designated mobile elements
 - Use placeholder to detect ToC instead of toc_enabled_templates system setting
 - Show ToC submenu in dropdown on tablet and mobile
 - Move shared overview settings to separate molecules

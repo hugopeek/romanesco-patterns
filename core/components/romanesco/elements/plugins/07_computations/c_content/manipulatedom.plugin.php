@@ -134,6 +134,29 @@ switch ($modx->event->name) {
             ->addClass('tablet or lower hidden')
         ;
 
+        // If grids are stackable on tablet, some responsive image sizes might be incorrect
+        $dom->filter('.ui[class*="stackable on tablet"].grid .column > .ui.content.image > img')
+            ->each(function(HtmlPageCrawler $img) {
+                $dataSizes = $img->getAttribute('data-sizes');
+                $sizes = $dataSizes ?? $img->getAttribute('sizes');
+
+                if (!$sizes) return;
+
+                // If lazy load is enabled, sizes are stored in data-sizes
+                $attribute = 'sizes';
+                if ($dataSizes) $attribute = 'data-sizes';
+
+                // Set tablet breakpoint to 100vw, because stacked means full width
+                $stackedSizes = preg_replace(
+                    '/\(min-width: 768px\).+/',
+                    '(min-width: 768px) 100vw,',
+                    $sizes
+                );
+
+                $img->setAttribute($attribute, $stackedSizes);
+            })
+        ;
+
         // Add class to empty grid columns
         $dom->filter('.ui.grid .column')
             ->each(function(HtmlPageCrawler $column) {

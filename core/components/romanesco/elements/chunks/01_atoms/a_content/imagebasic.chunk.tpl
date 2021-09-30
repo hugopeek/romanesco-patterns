@@ -15,7 +15,7 @@
     <img [[+lazy]]srcset="[[+srcset]]"
          [[+lazy]]sizes="(min-width: 1300px) [[+scale]]vw,
                          (min-width: 992px) [[+scale]]vw,
-                         (min-width: 768px) 100vw,
+                         (min-width: 768px) [[+scale]]vw,
                          (min-width: 360px) 100vw,
                          100vw"
          [[+lazy]]src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]"
