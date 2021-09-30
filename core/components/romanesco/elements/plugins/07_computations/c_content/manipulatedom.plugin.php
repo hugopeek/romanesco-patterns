@@ -127,6 +127,13 @@ switch ($modx->event->name) {
         // Remove rows from grids that have a reversed column order on mobile
         //$dom->filter('.ui.reversed.grid > .row')->unwrapInner();
 
+        // If grids are stackable on tablet, also hide designated mobile elements
+        $dom->filter('.ui[class*="stackable on tablet"].grid [class*="mobile hidden"]')
+            ->removeClass('mobile')
+            ->removeClass('hidden')
+            ->addClass('tablet or lower hidden')
+        ;
+
         // Add class to empty grid columns
         $dom->filter('.ui.grid .column')
             ->each(function(HtmlPageCrawler $column) {
