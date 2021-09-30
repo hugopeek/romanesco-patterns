@@ -1,6 +1,6 @@
-<div id="dropdown-toc" class="ui vertical stripe segment hidden element">
+<div id="dropdown-toc" class="ui vertical stripe segment mobile only tablet only">
     <div class="ui container">
-        [[$tocNavDropdown]]
+        [[$tocNavDropdown? &size=`large`]]
     </div>
 </div>
 
