@@ -1,5 +1,5 @@
 [[+toc_type:contains=`dropdown`:then=`
-<div id="dropdown-toc" class="[[+toc_type:contains=`list`:then=`hidden element`]]">
+<div id="dropdown-toc" class="[[+toc_type:contains=`list`:then=`mobile only`]]">
     [[$tocNavDropdown]]
 </div>
 `]]
