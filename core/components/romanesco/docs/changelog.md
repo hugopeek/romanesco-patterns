@@ -9,7 +9,7 @@ New features:
 
 Fixes and improvements:
 - Fix responsive content image sizes in stackable on tablet grids
-- If grids are stackable on tablet, also hide designated mobile elements
+- If grids are stackable on tablet, also show/hide designated mobile elements
 - Use placeholder to detect ToC instead of toc_enabled_templates system setting
 - Show ToC submenu in dropdown on tablet and mobile
 - Move shared overview settings to separate molecules
