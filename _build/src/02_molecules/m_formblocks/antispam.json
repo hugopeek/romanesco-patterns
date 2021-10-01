@@ -1,0 +1,35 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "recaptchaOnSubmitV2",
+                    "description": "Custom tpl chunk for the recaptchav2 extra. This only loads the Recaptcha checkbox after the form becomes active, so it doesn't block rendering of the HTML.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
+                },{
+                    "name": "recaptchaOnSubmitV3",
+                    "description": "Custom tpl chunk for the recaptchav2 extra, which also supports Recaptcha V3 now. This verifies the Recaptcha token with the Google API after the submit button is clicked.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
+                }
+            ]
+        }
+    }
+}

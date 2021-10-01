@@ -45,7 +45,7 @@
     &hooks=`
         spam,
         [[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]]
-        [[++formblocks.antispam:notempty=`[[++formblocks.antispam]],`]]
+        [[++formblocks.antispam_hooks:notempty=`[[++formblocks.antispam_hooks]],`]]
         [[+math_question:isnot=`0`:then=`math,`]]
         [[+save_form:eq=`1`:then=`FormItSaveForm,`]]
         [[*fb_hooks:notempty=`[[*fb_hooks]],`]]
@@ -90,7 +90,7 @@
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[+math_question:isnot=`0`:then=`fb[[*id]]-math:required,`]]
         [[$fbValidateCustomFields]],
-        workemail:blank`
+        fb[[*id]]-[[++formblocks.honeypot_field]]:blank`
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[*alias]]`
@@ -120,19 +120,25 @@
 
         [[*content]]
 
-        <div class="ui hidden field segment">
-            <label for="workemail">[[%formblocks.form.honeypot_field]]</label>
-            <input type="text" name="workemail" value="[[!+fb[[*id]].workemail]]">
-        </div>
-
+        [[- CUSTOM SUBMIT BUTTON
+            If for some reason you need to add your own submit button to a form,
+            you can do so in the form resource itself.
+            Please keep in mind that the elements below will not be parsed if a
+            submit button is found in the content area.
+        ]]
         [[*content:containsnot=`type="submit"`:then=`
-        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]] submit">
-            [[[[++formblocks.antispam:contains=`recaptchav2`:then=`!recaptchav2_render`]]]]
-            [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
+        <fieldset class="ui [[+padding]] [[+segment_type:isnot=`none`:then=`segment`]] submit">
+            [[[[modifiedIf?
+                &subject=`fbAntiSpamTheme`
+                &operator=`iselement`
+                &operand=`chunk`
+                &then=`$fbAntiSpamTheme`
+                &else=`$fbAntiSpam`
+            ]]]]
             <div class="ui error message"></div>
 
             [[$fbSubmitButton[[+multiple_steps:notempty=`s`]]]]
-        </div>
+        </fieldset>
         `]]
     </div>
 </form>

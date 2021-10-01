@@ -506,6 +506,10 @@
                     "parent": "m_formblocks"
                 },
                 {
+                    "name": "m_fb_antispam",
+                    "parent": "m_formblocks"
+                },
+                {
                     "name": "m_global",
                     "parent": "02_molecules"
                 },
@@ -5301,6 +5305,21 @@
                     "category": "m_formblocks"
                 },
                 {
+                    "name": "fbAntiSpam",
+                    "description": "Optionally adds a couple of antispam fields to the form: honeypot, Recaptcha v2 or Recaptcha v3.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_formblocks"
+                },
+                {
                     "name": "themeVariables",
                     "description": "",
                     "properties": [
@@ -8876,6 +8895,36 @@
                     "category": "m_ct_types"
                 },
                 {
+                    "name": "recaptchaOnSubmitV2",
+                    "description": "Custom tpl chunk for the recaptchav2 extra. This only loads the Recaptcha checkbox after the form becomes active, so it doesn't block rendering of the HTML.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
+                },
+                {
+                    "name": "recaptchaOnSubmitV3",
+                    "description": "Custom tpl chunk for the recaptchav2 extra, which also supports Recaptcha V3 now. This verifies the Recaptcha token with the Google API after the submit button is clicked.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
+                },
+                {
                     "name": "fbEmailRow",
                     "description": "Default template for displaying the submitted value of a form field in an email message.",
                     "properties": [
@@ -12387,7 +12436,14 @@
                 "value": "1"
             },
             {
-                "key": "antispam",
+                "key": "honeypot_field",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Settings",
+                "value": "email-alt"
+            },
+            {
+                "key": "antispam_hooks",
                 "namespace": "formblocks",
                 "type": "textfield",
                 "area": "FormBlocks - Settings",

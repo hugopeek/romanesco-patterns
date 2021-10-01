@@ -277,6 +277,33 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Make sure AjaxUpload scripts are run after jQuery is loaded
+        $dom->filter('script')
+            ->each(function (HtmlPageCrawler $script) {
+                $src = $script->getAttribute('src');
+                $code = $script->getInnerHtml();
+
+                // Defer loading of AjaxUpload JS file
+                if (strpos($src,'ajaxupload') !== false) {
+                    $script->setAttribute('defer','');
+                }
+
+                // Wait for DOMContentLoaded event instead of using document.ready
+                if (strpos($code,'$(document).ready') !== false) {
+                    $code = str_replace('/* <![CDATA[ */', '', $code);
+                    $code = str_replace('/* ]]> */', '', $code);
+
+                    $script->setInnerHtml(
+                        str_replace(
+                            '$(document).ready(function ()',
+                            'window.addEventListener(\'DOMContentLoaded\', function()',
+                            $code
+                        )
+                    );
+                }
+            })
+        ;
+
         // Fix ID conflicts in project hub
         $dom->filter('#hub .pattern.segment#content')->setAttribute('id','content-global');
         $dom->filter('#hub .pattern.segment#css')->setAttribute('id','css-global');

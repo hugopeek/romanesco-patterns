@@ -4,10 +4,16 @@
 Released on ...
 
 New features:
-- Add post hook for pThumb to optimize the image and generate a WebP version
+- Add option to use Recaptcha v3 in forms
 - Add ContentBlock with Table of Contents menu
+- Add post hook for pThumb to optimize the image and generate a WebP version
 
 Fixes and improvements:
+- Make sure AjaxUpload scripts are run after jQuery is loaded
+- Add missing upload_limit and max_file_size CB settings in AjaxUpload snippet
+- Rename formblocks.antispam setting to formblocks.antispam_hooks
+- Wait with loading Recaptcha v2 until form becomes active
+- Move honeypot and recaptcha elements to separate (overridable) chunk
 - Fix responsive content image sizes in stackable on tablet grids
 - If grids are stackable on tablet, also show/hide designated mobile elements
 - Use placeholder to detect ToC instead of toc_enabled_templates system setting

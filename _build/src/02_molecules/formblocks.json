@@ -28,6 +28,19 @@
                         }
                     ],
                     "category": "m_formblocks"
+                },{
+                    "name": "fbAntiSpam",
+                    "description": "Optionally adds a couple of antispam fields to the form: honeypot, Recaptcha v2 or Recaptcha v3.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_formblocks"
                 }
             ],
             "categories": [
@@ -42,6 +55,9 @@
                     "parent": "m_formblocks"
                 },{
                     "name": "m_fb_store",
+                    "parent": "m_formblocks"
+                },{
+                    "name": "m_fb_antispam",
                     "parent": "m_formblocks"
                 }
             ]

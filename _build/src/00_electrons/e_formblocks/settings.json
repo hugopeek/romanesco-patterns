@@ -13,7 +13,13 @@
                 "area": "FormBlocks - Settings",
                 "value": "1"
             },{
-                "key": "antispam",
+                "key": "honeypot_field",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Settings",
+                "value": "email-alt"
+            },{
+                "key": "antispam_hooks",
                 "namespace": "formblocks",
                 "type": "textfield",
                 "area": "FormBlocks - Settings",
