@@ -29,6 +29,10 @@
         &tpl=`fbMathQuestionProperties`
     ]]
 
+    [[++formblocks.antispam_hooks:contains=`recaptchav3`:then=`
+    &recaptchav3.action_key=`form_[[*id]]`
+    `]]
+
     &customValidators=`[[$fbCustomValidators]]`
     &validate=`
         [[!fbValidateProcessJSON? &formID=`[[*id]]`]]

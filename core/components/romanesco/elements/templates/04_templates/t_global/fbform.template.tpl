@@ -74,6 +74,10 @@
         &tpl=`fbMathQuestionProperties`
     ]]
 
+    [[++formblocks.antispam_hooks:contains=`recaptchav3`:then=`
+    &recaptchav3.action_key=`form_[[*id]]`
+    `]]
+
     [[*fb_autoresponder_toggle:eq=`1`:then=`
     &fiarTpl=`fbAutoresponder`
     &fiarToField=`fb[[*id]]-email`
