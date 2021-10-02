@@ -89,8 +89,8 @@
         [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[+math_question:isnot=`0`:then=`fb[[*id]]-math:required,`]]
-        [[$fbValidateCustomFields]],
-        fb[[*id]]-[[++formblocks.honeypot_field]]:blank`
+        [[$fbValidateCustomFields]][[++formblocks.honeypot_field:notempty=`,
+        fb[[*id]]-[[++formblocks.honeypot_field]]:blank`]]`
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
     &submitVar=`submit-[[*alias]]`
