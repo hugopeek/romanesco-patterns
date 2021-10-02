@@ -1,5 +1,3 @@
-[[*pagetitle:fbStripAsAlias:toPlaceholder=`title`]]
-
 [[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`math_question`?
     &field=`[[++formblocks.cb_math_question_id:empty=`-1`]]`
 ]]
@@ -61,19 +59,23 @@
 </div>
 `]]
 
-<form id="form-[[+title]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] registration form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] registration form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
     <div class="ui [[+segment_type]]">
 
         [[*content]]
 
-        <div class="ui hidden field segment">
-            <label for="siteurl">[[%formblocks.form.honeypot_field]]</label>
-            <input type="text" name="siteurl" value="[[!+fb[[*id]].siteurl]]">
-        </div>
-
         [[*content:containsnot=`type="submit"`:then=`
-        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
-            <input class="[[+form_size]] primary ui button" type="submit" name="submit-[[+title]]" value="[[*fb_submit_button:default=`[[%formblocks.form.submit_button]]`]]">
+        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]] submit">
+            [[[[modifiedIf?
+                &subject=`fbAntiSpamTheme`
+                &operator=`iselement`
+                &operand=`chunk`
+                &then=`$fbAntiSpamTheme`
+                &else=`$fbAntiSpam`
+            ]]]]
+            <div class="ui error message"></div>
+
+            [[$fbSubmitButton]]
         </div>
         `]]
     </div>
