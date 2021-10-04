@@ -1,4 +1,6 @@
-[[$overviewSettingsPrepare]]
+[[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
+
+[[$overviewSettingsPrepare? &uid=`[[+prefix]]`]]
 
 [[!getCache?
     &element=`getResources`
@@ -16,5 +18,5 @@
     &sortby=`FIELD(modResource.id, [[+resources]])`
     &sortdir=`ASC`
 
-    [[$overviewSettings]]
+    [[$overviewSettings? &uid=`[[+prefix]]`]]
 ]]

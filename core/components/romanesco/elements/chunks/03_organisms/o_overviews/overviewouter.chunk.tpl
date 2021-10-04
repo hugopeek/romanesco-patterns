@@ -1,4 +1,6 @@
-[[$overviewSettingsPrepare]]
+[[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
+
+[[$overviewSettingsPrepare? &uid=`[[+prefix]]`]]
 
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
@@ -18,6 +20,6 @@
     &sortby=`[[+sortby]]`
     &sortdir=`[[+[[+prefix]].sortdir]]`
 
-    [[$overviewSettings]]
-    [[+pagination:eq=`1`:then=`[[$overviewSettingsPagination]]`]]
+    [[$overviewSettings? &uid=`[[+prefix]]`]]
+    [[[[+pagination:eq=`1`:then=`$overviewSettingsPagination? &uid=`[[+prefix]]``]]]]
 ]]

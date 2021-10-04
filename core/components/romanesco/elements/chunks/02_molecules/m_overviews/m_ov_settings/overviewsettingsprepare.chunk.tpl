@@ -1,4 +1,3 @@
-[[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
 [[Switch:toPlaceholder=`[[+prefix]].sortdir`?
     &get=`[[+sortby]]_[[+sortdir]]`
     &c1=`menuindex_0`     &do1=`ASC`
