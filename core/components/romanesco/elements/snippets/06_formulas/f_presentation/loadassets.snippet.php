@@ -66,6 +66,12 @@ switch ($component) {
     case 'steps':
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/step.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
         break;
+    case 'modal':
+        $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
+        $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
+        $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
+        $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js"></script>');
+        break;
     case 'dimmer':
         $modx->regClientStartupHTMLBlock('<link href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css" rel="stylesheet" type="text/css"' . $async . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
