@@ -20,7 +20,8 @@
     &then=`
         !recaptchav3_render?
             &tpl=`recaptchaOnSubmitV3`
-            &action_key=`form_[[*id]]`
+            &token_key=`token-[[*id]]`
+            &action_key=`fb[[*id]]`
         `
 ]]]]
 [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]

@@ -75,7 +75,8 @@
     ]]
 
     [[++formblocks.antispam_hooks:contains=`recaptchav3`:then=`
-    &recaptchav3.action_key=`form_[[*id]]`
+    &recaptchav3.action_key=`fb[[*id]]`
+    &recaptchav3.token_key=`token-[[*id]]`
     `]]
 
     [[*fb_autoresponder_toggle:eq=`1`:then=`

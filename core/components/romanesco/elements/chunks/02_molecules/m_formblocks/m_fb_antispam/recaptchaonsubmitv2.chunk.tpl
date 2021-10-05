@@ -1,5 +1,6 @@
+<div className="g-recaptcha" data-sitekey="[[+site_key]]"></div>
 <script>
-    (function() {
+    window.addEventListener('DOMContentLoaded', function () {
         if (window.grcLoaderAdded) {
             return;
         }
@@ -20,7 +21,7 @@
             return;
         }
 
-        var loadGrcOnInteraction = function(ev) {
+        var loadGrcOnInteraction = function (ev) {
             // Remove the event listeners; no longer need them after being called once
             this.removeEventListener('focus', loadGrcOnInteraction);
             this.removeEventListener('input', loadGrcOnInteraction);
@@ -38,10 +39,10 @@
         }
 
         // Listen to a few different events. Focus would be ideal, but that doesn't trigger on custom selects. input/change are fallbacks.
-        availableInputs.forEach(function(input) {
+        availableInputs.forEach(function (input) {
             input.addEventListener('focus', loadGrcOnInteraction);
             input.addEventListener('input', loadGrcOnInteraction);
             input.addEventListener('change', loadGrcOnInteraction);
         });
-    })();
+    });
 </script>
