@@ -144,9 +144,11 @@ switch ($component) {
             '" integrity="' . $modx->getOption('romanesco.leaflet_js_integrity', $scriptProperties, '') .
             '" crossorigin=""></script>');
     case 'custom':
-        function is_json($string) {
-            json_decode($string);
-            return json_last_error() === JSON_ERROR_NONE;
+        if (!function_exists('is_json')) {
+            function is_json($string) {
+                json_decode($string);
+                return json_last_error() === JSON_ERROR_NONE;
+            }
         }
         if ($customCSS) {
             if (is_json($customCSS)) {
