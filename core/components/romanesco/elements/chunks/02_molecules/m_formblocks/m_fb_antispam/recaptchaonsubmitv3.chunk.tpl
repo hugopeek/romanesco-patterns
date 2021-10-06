@@ -4,6 +4,10 @@
     <input type="hidden" name="submit-[[*alias]]" value="1">
 </div>
 
+<p class="recaptcha notice">
+    <small>[[%formblocks.form.recaptchav3_legal_notice]]</small>
+</p>
+
 <script>
     window.addEventListener('DOMContentLoaded', function() {
 
