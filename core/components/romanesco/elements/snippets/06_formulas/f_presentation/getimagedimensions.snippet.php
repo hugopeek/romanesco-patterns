@@ -6,8 +6,8 @@
  */
 
 $imgPath = $modx->getOption('image', $scriptProperties, '');
-$imgFile = end(explode('/', $imgPath));
-$imgType = end(explode('.', $imgFile));
+$imgFile = pathinfo($imgPath, PATHINFO_FILENAME);
+$imgType = pathinfo($imgPath, PATHINFO_EXTENSION);
 
 $phWidth = $modx->getOption('phWidth', $scriptProperties, 'img_width');
 $phHeight = $modx->getOption('phHeight', $scriptProperties, 'img_height');
@@ -34,11 +34,11 @@ if (strtolower($imgType) == 'svg') {
     // Fall back on width and height attributes if viewbox is empty
     else {
         $width = (string) $attributes->width;
-        $width = preg_filter('/[a-zA-Z]+/', '', $width);
+        $width = preg_replace('/[a-zA-Z]+/', '', $width);
         $width = round($width, 2);
 
         $height = (string) $attributes->height;
-        $height = preg_filter('/[a-zA-Z]+/', '', $height);
+        $height = preg_replace('/[a-zA-Z]+/', '', $height);
         $height = round($height, 2);
     }
 }
@@ -59,7 +59,7 @@ else {
 }
 
 // Only output values if they exist
-if ($width) $modx->toPlaceholder($phWidth, round($width, 0), $prefix);
-if ($height) $modx->toPlaceholder($phHeight, round($height, 0), $prefix);
+if ($width) $modx->toPlaceholder($phWidth, round($width), $prefix);
+if ($height) $modx->toPlaceholder($phHeight, round($height), $prefix);
 
 return '';

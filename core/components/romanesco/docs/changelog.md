@@ -9,6 +9,7 @@ New features:
 - Add post hook for pThumb to optimize the image and generate a WebP version
 
 Fixes and improvements:
+- Fix scenario where getImageDimensions would not return width and height
 - Make sure AjaxUpload scripts are run after jQuery is loaded
 - Add missing upload_limit and max_file_size CB settings in AjaxUpload snippet
 - Rename formblocks.antispam setting to formblocks.antispam_hooks
