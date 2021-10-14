@@ -2,7 +2,7 @@
 /**
  * imgOptimizeThumb
  *
- * Post hook for pThumb, that runs after the thumbnail is generated.
+ * Output modifier for pThumb, to further optimize the generated thumbnail.
  *
  * It uses the Squoosh library from Google to create a WebP version of the image
  * and optimize the original. You need to install the Squoosh CLI package on
@@ -23,12 +23,11 @@
  * This guide perfectly explains this little trick:
  * https://alexey.detr.us/en/posts/2018/2018-08-20-webp-nginx-with-fallback/
  *
- * IMPORTANT NOTE: the post hook is not a standard feature of pThumb yet, so
- * you'll need to overwrite the core class yourself. A PR is in the making.
- *
  * @var modX $modx
  * @var array $scriptProperties
  * @var object $task
+ * @var string $input
+ * @var string $options
  */
 
 $basePath = $modx->getOption('base_path', $scriptProperties, '');
@@ -40,10 +39,11 @@ if (!($romanesco instanceof Romanesco)) {
     return;
 }
 
-// Get image path from task properties or pThumb properties
-$imgPath = $modx->getOption('img_path', $scriptProperties, $scriptProperties['file']);
-$imgType = pathinfo($imgPath, PATHINFO_EXTENSION);
-$outputDir = dirname($imgPath);
+// Get image path from task properties, pThumb properties or input
+$imgPath = $modx->getOption('img_path', $scriptProperties, $input);
+$imgPathFull = str_replace('//','/', MODX_BASE_PATH . $imgPath);
+$imgType = pathinfo($imgPathFull, PATHINFO_EXTENSION);
+$outputDir = dirname($imgPathFull);
 
 // Look for context key
 $context = $modx->getOption('context', $scriptProperties, '');
@@ -51,8 +51,12 @@ if (!$context) {
     $context = $modx->resource->get('context_key');
 }
 
-// Get image quality setting for corresponding context
-$imgQuality = (int) $romanesco->getConfigSetting('img_quality', $context) ?? 65;
+// Get image quality from task properties, output modifier option or corresponding context setting
+$imgQuality = $scriptProperties['img_quality'] ?? $options;
+if (!$imgQuality) {
+    $imgQuality = $romanesco->getConfigSetting('img_quality', $context);
+}
+$imgQuality = (int) $imgQuality;
 
 $configWebP = json_encode([
     "quality" => $imgQuality,
@@ -127,14 +131,14 @@ if (!($scheduler instanceof Scheduler) || is_object($task)) {
     exec('"$HOME"/.nvm/nvm-exec squoosh-cli' .
         $squooshOptions .
         ' --webp ' . escapeshellarg($configWebP) .
-        ' --output-dir ' . escapeshellarg($outputDir) . ' ' . escapeshellarg($imgPath) .
+        ' --output-dir ' . escapeshellarg($outputDir) . ' ' . escapeshellarg($imgPathFull) .
         ' 2>&1',
         $output,
         $return_img
     );
 
     // Write output to file and error log
-    $logFile = escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/img.log';
+    $logFile = MODX_CORE_PATH . 'cache/logs/img.log';
     $date = new DateTime();
     $output = implode("\n",$output) . "\n";
 
@@ -170,15 +174,16 @@ $pendingTasks = $modx->getCollection('sTaskRun', array(
 ));
 foreach ($pendingTasks as $pendingTask) {
     $data = $pendingTask->get('data');
-    if ($data['img_path'] == $imgPath) {
-        return true;
+    if ($data['img_path'] == $imgPath && $data['img_quality'] == $imgQuality) {
+        return;
     }
 }
 
 // Schedule a new run
 $task->schedule('+1 minutes', array(
     'img_path' => $imgPath,
+    'img_quality' => $imgQuality,
     'context' => $context,
 ));
 
-return;
+return $imgPath;
