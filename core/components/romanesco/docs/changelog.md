@@ -6,7 +6,7 @@ Released on ...
 New features:
 - Add option to use Recaptcha v3 in forms
 - Add ContentBlock with Table of Contents menu
-- Add post hook for pThumb to optimize the image and generate a WebP version
+- Add output modifier for pThumb to optimize image and generate WebP version
 
 Fixes and improvements:
 - Fix scenario where getImageDimensions would not return width and height
