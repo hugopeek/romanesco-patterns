@@ -85,14 +85,22 @@ switch($eventName) {
         // Remove leading '/' slash from path values
         // This somehow gets added by MODX, resulting in these keys being incorrectly flagged as changed
         $currentSettingsTheme['logo_path'] = ltrim($currentSettingsTheme['logo_path'],'/');
+        $currentSettingsTheme['logo_inverted_path'] = ltrim($currentSettingsTheme['logo_inverted_path'],'/');
         $currentSettingsTheme['logo_badge_path'] = ltrim($currentSettingsTheme['logo_badge_path'],'/');
+        $currentSettingsTheme['logo_badge_inverted_path'] = ltrim($currentSettingsTheme['logo_badge_inverted_path'],'/');
 
         // Add media source to saved paths
         if ($savedSettingsTheme['logo_path']) {
             $savedSettingsTheme['logo_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_path']);
         }
+        if ($savedSettingsTheme['logo_inverted_path']) {
+            $savedSettingsTheme['logo_inverted_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_inverted_path']);
+        }
         if ($savedSettingsTheme['logo_badge_path']) {
             $savedSettingsTheme['logo_badge_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_badge_path']);
+        }
+        if ($savedSettingsTheme['logo_badge_inverted_path']) {
+            $savedSettingsTheme['logo_badge_inverted_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_badge_inverted_path']);
         }
 
         // Compare saved settings to current settings

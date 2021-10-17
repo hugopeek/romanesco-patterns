@@ -9,6 +9,7 @@ New features:
 - Add output modifier for pThumb to optimize image and generate WebP version
 
 Fixes and improvements:
+- Make sure inverted path configuration settings don't trigger CSS rebuild
 - Fix scenario where getImageDimensions would not return width and height
 - Make sure AjaxUpload scripts are run after jQuery is loaded
 - Add missing upload_limit and max_file_size CB settings in AjaxUpload snippet
