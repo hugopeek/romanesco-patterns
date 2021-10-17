@@ -42,11 +42,6 @@
                 "type": "textfield",
                 "area": "Performance",
                 "value": "[[++img_quality]]"
-            },{
-                "key": "post_hook",
-                "namespace": "pthumb",
-                "type": "textfield",
-                "area": "Performance"
             }
         ]
     }

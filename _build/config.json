@@ -12300,12 +12300,6 @@
                 "value": "[[++img_quality]]"
             },
             {
-                "key": "post_hook",
-                "namespace": "pthumb",
-                "type": "textfield",
-                "area": "Performance"
-            },
-            {
                 "key": "favicon_path",
                 "type": "textfield",
                 "area": "Presentation",
