@@ -51,6 +51,12 @@ if (!$context) {
     $context = $modx->resource->get('context_key');
 }
 
+// Abort if optimization is disabled for this context
+if (!$romanesco->getConfigSetting('img_optimize', $context)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Optimize disabled');
+    return $imgPath;
+}
+
 // Get image quality from task properties, output modifier option or corresponding context setting
 $imgQuality = $scriptProperties['img_quality'] ?? $options;
 if (!$imgQuality) {
