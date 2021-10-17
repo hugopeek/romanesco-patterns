@@ -42,6 +42,7 @@ if (!($romanesco instanceof Romanesco)) {
 // Get image path from task properties, pThumb properties or input
 $imgPath = $modx->getOption('img_path', $scriptProperties, $input);
 $imgPathFull = str_replace('//','/', MODX_BASE_PATH . $imgPath);
+$imgName = pathinfo($imgPathFull, PATHINFO_FILENAME);
 $imgType = pathinfo($imgPathFull, PATHINFO_EXTENSION);
 $outputDir = dirname($imgPathFull);
 
@@ -53,7 +54,11 @@ if (!$context) {
 
 // Abort if optimization is disabled for this context
 if (!$romanesco->getConfigSetting('img_optimize', $context)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Optimize disabled');
+    return $imgPath;
+}
+
+// Also abort if WebP version is already created
+if (file_exists($outputDir . '/' . $imgName . '.webp')) {
     return $imgPath;
 }
 
