@@ -54,6 +54,9 @@
                     "name": "m_fb_email",
                     "parent": "m_formblocks"
                 },{
+                    "name": "m_fb_validation",
+                    "parent": "m_formblocks"
+                },{
                     "name": "m_fb_store",
                     "parent": "m_formblocks"
                 },{

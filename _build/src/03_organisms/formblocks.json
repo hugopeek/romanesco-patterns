@@ -41,6 +41,19 @@
                         }
                     ],
                     "category": "o_formblocks"
+                },{
+                    "name": "fbValidation",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_formblocks"
                 }
             ],
 
