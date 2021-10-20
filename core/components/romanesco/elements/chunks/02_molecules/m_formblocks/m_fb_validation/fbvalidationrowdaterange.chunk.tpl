@@ -1,7 +1,15 @@
-<strong>[[+field_name]]:</strong><br/>
-
-<i>[[+label_start]]:</i><br/>
-[[+fb[[+id]]-[[+field_name:fbStripAsAlias]]-start:empty=``]]<br/><br/>
-
-<i>[[+label_end]]</i><br/>
-[[+fb[[+id]]-[[+field_name:fbStripAsAlias]]-end:empty=``]]<br/><br/>
+[[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
+[[+field_name:fbStripAsAlias:replace=`-==`]]start: {
+    identifier: '[[+name]]-start',
+    rules: [{
+        type   : 'empty',
+        prompt : '[[!$fbValidationPrompt:stripForJS? &type=`date_start`]]'
+    }]
+},
+[[+field_name:fbStripAsAlias:replace=`-==`]]end: {
+    identifier: '[[+name]]-end',
+    rules: [{
+        type   : 'empty',
+        prompt : '[[!$fbValidationPrompt:stripForJS? &type=`date_end`]]'
+    }]
+},

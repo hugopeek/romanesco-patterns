@@ -1,17 +1,16 @@
-[[!fbFormReport?
-    &formID=`[[*id]]`
-    &tplPrefix=`fbValidationRow`
-]]
 <script>
-    $('#form-[[*alias]]')
-        .form({
-            on: 'blur',
-            fields: {
-                [[!fbFormReport?
-                    &formID=`[[*id]]`
-                    &tplPrefix=`fbValidationRow`
-                ]]
-            }
-        })
-    ;
+    window.addEventListener('DOMContentLoaded', function() {
+        $('.ui.form#form-[[*alias]]')
+            .form({
+                on: 'submit',
+                fields: {
+                    [[!fbFormReport:strip?
+                        &formID=`[[*id]]`
+                        &tplPrefix=`fbValidationRow_`
+                        &requiredOnly=`1`
+                    ]]
+                }
+            })
+        ;
+    });
 </script>

@@ -55,6 +55,19 @@
                     ],
                     "category": "m_fb_validation"
                 },{
+                    "name": "fbValidationRowMath",
+                    "description": "Specific validation row for Math question field." ,
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_validation"
+                },{
                     "name": "fbValidationRowDateRange",
                     "description": "Specific validation row for date range selectors.",
                     "properties": [

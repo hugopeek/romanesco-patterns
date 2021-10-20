@@ -149,3 +149,7 @@
 </form>
 
 [[fbLoadAssets? &uploadFile=`[[+upload_multiple]]`]]
+[[loadAssets?
+    &component=`custom`
+    &inlineJS=`[[$fbValidation]]`
+]]
