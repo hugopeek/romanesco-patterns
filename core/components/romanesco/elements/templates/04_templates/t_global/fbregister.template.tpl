@@ -85,4 +85,4 @@
     </div>
 </form>
 
-[[fbLoadAssets]]
+[[!fbLoadAssets? &frontendValidation=`1`]]
