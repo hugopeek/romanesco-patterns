@@ -148,8 +148,4 @@
     </div>
 </form>
 
-[[fbLoadAssets? &uploadFile=`[[+upload_multiple]]`]]
-[[loadAssets?
-    &component=`custom`
-    &inlineJS=`[[$fbValidation]]`
-]]
+[[!fbLoadAssets? &uploadFile=`[[+upload_multiple]]`]]

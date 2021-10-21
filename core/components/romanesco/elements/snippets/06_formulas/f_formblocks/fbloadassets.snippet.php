@@ -20,6 +20,7 @@ $assetsPathJS = $modx->getOption('romanesco.semantic_js_path', $scriptProperties
 $assetsPathVendor = $modx->getOption('romanesco.semantic_vendor_path', $scriptProperties, '');
 $assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProperties, '');
 $uploadFile = $modx->getOption('uploadFile', $scriptProperties, 0);
+$validationTpl = $modx->getOption('validationTpl', $scriptProperties, 'fbValidation');
 
 // Load strings to insert in asset paths when cache busting is enabled
 $cacheBusterCSS = $romanesco->getCacheBustingString('CSS');
@@ -43,6 +44,11 @@ $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/formblocks.m
 if ($uploadFile) {
     $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/arrive/arrive.min' . $cacheBusterJS . '.js"></script>');
     $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/fileupload.min' . $cacheBusterJS . '.js"></script>');
+}
+
+// Load front-end validation, if enabled
+if ($modx->getOption('formblocks.frontend_validation', $scriptProperties, '')) {
+    $modx->regClientHTMLBlock($modx->getChunk($validationTpl));
 }
 
 // Load custom assets, if present

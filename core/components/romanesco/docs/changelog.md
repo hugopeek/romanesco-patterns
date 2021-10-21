@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add front-end validation to FormBlocks
 - Add option to use Recaptcha v3 in forms
 - Add ContentBlock with Table of Contents menu
 - Add output modifier for pThumb to optimize image and generate WebP version

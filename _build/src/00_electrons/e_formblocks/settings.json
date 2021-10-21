@@ -25,6 +25,12 @@
                 "area": "FormBlocks - Settings",
                 "value": ""
             },{
+                "key": "frontend_validation",
+                "namespace": "formblocks",
+                "type": "combo-boolean",
+                "area": "FormBlocks - Settings",
+                "value": "1"
+            },{
                 "key": "formsource",
                 "namespace": "formblocks",
                 "type": "combo-boolean",
