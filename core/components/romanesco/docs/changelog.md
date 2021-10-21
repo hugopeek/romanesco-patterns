@@ -1,5 +1,13 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta8
+Released on ...
+
+Fixes and improvements:
+- Explicitly enable frontend validation in FormBlocks forms
+- Abort optimization if image type is SVG
+- Fix image optimization in srcset rows
+
 ## Romanesco Patterns 1.0.0-beta7
 Released on October 21, 2021
 
