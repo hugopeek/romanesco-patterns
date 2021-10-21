@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta7
-Released on ...
+Released on October 21, 2021
 
 New features:
 - Add front-end validation to FormBlocks
