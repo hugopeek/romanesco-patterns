@@ -57,7 +57,12 @@ if (!$romanesco->getConfigSetting('img_optimize', $context)) {
     return $imgPath;
 }
 
-// Also abort if WebP version is already created
+// Also abort if file format is not supported
+if ($imgType == 'svg') {
+    return $imgPath;
+}
+
+// And if WebP version is already created
 if (file_exists($outputDir . '/' . $imgName . '.webp')) {
     return $imgPath;
 }
