@@ -79,6 +79,12 @@
     &then=`loadAssets? &component=`hub``
 ]]]]
 
+[[[[modifiedIf?
+    &subject=`headAdditional`
+    &operator=`iselement`
+    &operand=`chunk`
+    &then=`$headAdditional`
+]]]]
 [[++head_additional]]
 
 [[- SET PLACEHOLDER WITH GLOBALLY EXCLUDED RESOURCES ]]

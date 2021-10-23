@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Load headAdditional and footerAdditional chunks directly, if present
 - Place rel element at front of external CSS links
 - Defer loading of Leaflet JS
 - Add missing rel stylesheet element to Leaflet CSS link
