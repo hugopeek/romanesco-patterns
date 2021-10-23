@@ -41,16 +41,16 @@
 ]]]]
 
 [[+load_critical_css:eq=`1`:then=`
-<link href="[[*critical_css_uri:replace=`.css==[[+cache_buster_css]].css`]]" rel="stylesheet">
-<link href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
-<link href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="[[*critical_css_uri:replace=`.css==[[+cache_buster_css]].css`]]">
+<link rel="stylesheet" href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" media="print" onload="this.media='all'">
 `:else=`
-<link href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" rel="stylesheet">
-<link href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" rel="stylesheet">
+<link rel="stylesheet" href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css">
+<link rel="stylesheet" href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css">
 `]]
 
 [[+load_google_fonts:notempty=`
-<link href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" media="print" onload="this.media='all'">
 `]]
 
 [[- LOAD JS ASSETS WITH DEFER, SO DOWNLOADING WILL START EARLY WITHOUT BLOCKING RENDERING ]]

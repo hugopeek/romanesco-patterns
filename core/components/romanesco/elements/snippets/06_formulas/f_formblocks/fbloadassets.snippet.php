@@ -27,16 +27,17 @@ $validationTpl = $modx->getOption('validationTpl', $scriptProperties, 'fbValidat
 $cacheBusterCSS = $romanesco->getCacheBustingString('CSS');
 $cacheBusterJS = $romanesco->getCacheBustingString('JS');
 
-// Load Semantic UI form component separately (and async if critical CSS is enabled)
-if (!$romanesco->getConfigSetting('critical_css', $modx->resource->get('context_key'))) {
-    $modx->regClientCSS($assetsPathDist . '/components/form.min' . $cacheBusterCSS . '.css');
-    $modx->regClientCSS($assetsPathDist . '/components/calendar.min' . $cacheBusterCSS . '.css');
-} else {
-    $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="assets/semantic/dist/components/form.min' . $cacheBusterCSS . '.css" type="text/css" media="print" onload="this.media=\'all\'">');
-    $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="assets/semantic/dist/components/calendar.min' . $cacheBusterCSS . '.css" type="text/css" media="print" onload="this.media=\'all\'">');
+// Load component asynchronously if critical CSS is enabled
+$async = '';
+if ($romanesco->getConfigSetting('critical_css', $modx->resource->get('context_key'))) {
+    $async = ' media="print" onload="this.media=\'all\'"';
 }
 
-// Load FormBlocks JS
+// Load CSS
+$modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="assets/semantic/dist/components/form.min' . $cacheBusterCSS . '.css"' . $async . '>');
+$modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="assets/semantic/dist/components/calendar.min' . $cacheBusterCSS . '.css"' . $async . '>');
+
+// Load JS
 $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/form.min' . $cacheBusterJS . '.js"></script>');
 $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/calendar.min' . $cacheBusterJS . '.js"></script>');
 $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/formblocks.min' . $cacheBusterJS . '.js"></script>');
