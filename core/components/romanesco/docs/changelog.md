@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Defer loading of Leaflet JS
+- Add missing rel stylesheet element to Leaflet CSS link
 - Explicitly enable frontend validation in FormBlocks forms
 - Abort optimization if image type is SVG
 - Fix image optimization in srcset rows

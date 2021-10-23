@@ -134,15 +134,16 @@ switch ($component) {
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/prism/prism.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'map':
-        $modx->regClientStartupHTMLBlock('<link href="' .
-            $modx->getOption('romanesco.leaflet_css_url', $scriptProperties, '') .
+        $modx->regClientStartupHTMLBlock(
+            '<link rel="stylesheet" href="' . $modx->getOption('romanesco.leaflet_css_url', $scriptProperties, '') .
             '" integrity="' . $modx->getOption('romanesco.leaflet_css_integrity', $scriptProperties, '') .
-            '" crossorigin="" ' . $async . '>');
-        // JS is added to the HEAD of the page (without defer), so maps can be initialized from content area.
-        $modx->regClientStartupHTMLBlock('<script src="' .
-            $modx->getOption('romanesco.leaflet_js_url', $scriptProperties, '') .
+            '" crossorigin="">'
+        );
+        $modx->regClientStartupHTMLBlock(
+            '<script defer src="' . $modx->getOption('romanesco.leaflet_js_url', $scriptProperties, '') .
             '" integrity="' . $modx->getOption('romanesco.leaflet_js_integrity', $scriptProperties, '') .
-            '" crossorigin=""></script>');
+            '" crossorigin=""></script>'
+        );
     case 'custom':
         if (!function_exists('is_json')) {
             function is_json($string) {
