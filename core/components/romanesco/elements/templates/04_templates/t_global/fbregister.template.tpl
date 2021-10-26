@@ -69,7 +69,7 @@
         [[*content]]
 
         [[*content:containsnot=`type="submit"`:then=`
-        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]] submit">
+        <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
             [[[[modifiedIf?
                 &subject=`fbAntiSpamTheme`
                 &operator=`iselement`

@@ -132,7 +132,7 @@
             submit button is found in the content area.
         ]]
         [[*content:containsnot=`type="submit"`:then=`
-        <fieldset class="ui [[+padding]] [[+segment_type:isnot=`none`:then=`segment`]] submit">
+        <fieldset class="ui [[+padding]] [[+segment_type:isnot=`none`:then=`segment`]]">
             [[[[modifiedIf?
                 &subject=`fbAntiSpamTheme`
                 &operator=`iselement`

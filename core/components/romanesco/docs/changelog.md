@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Remove submit class from submit button container in forms
 - Make front-end form validation compatible with Recaptcha v3
 - Load headAdditional and footerAdditional chunks directly, if present
 - Place rel element at front of external CSS links
