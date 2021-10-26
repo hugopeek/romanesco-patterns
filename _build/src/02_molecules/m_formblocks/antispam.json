@@ -8,7 +8,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "experimental"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -21,7 +21,20 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "experimental"
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
+                },{
+                    "name": "recaptchaOnSuccessV3",
+                    "description": "The regular JS is not compatible with frontend validation, because they are both triggered on submit. Instead, it's executed inside the onSuccess callback when frontend validation is active.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

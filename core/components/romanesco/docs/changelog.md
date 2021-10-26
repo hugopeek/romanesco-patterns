@@ -4,11 +4,12 @@
 Released on ...
 
 Fixes and improvements:
+- Make front-end form validation compatible with Recaptcha v3
 - Load headAdditional and footerAdditional chunks directly, if present
 - Place rel element at front of external CSS links
 - Defer loading of Leaflet JS
 - Add missing rel stylesheet element to Leaflet CSS link
-- Explicitly enable frontend validation in FormBlocks forms
+- Explicitly enable front-end validation in FormBlocks forms
 - Abort optimization if image type is SVG
 - Fix image optimization in srcset rows
 
