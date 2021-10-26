@@ -4,8 +4,8 @@
     <input type="hidden" name="submit-[[*alias]]" value="1">
 </div>
 
-<p class="recaptcha notice">
-    <small>[[%formblocks.form.recaptchav3_legal_notice]]</small>
+<p class="recaptcha help">
+    [[%formblocks.form.recaptchav3_legal_notice]]
 </p>
 
 [[++formblocks.frontend_validation:isnot=`1`:then=`

@@ -1,4 +1,4 @@
-<div className="g-recaptcha" data-sitekey="[[+site_key]]"></div>
+<div class="g-recaptcha" data-sitekey="[[+site_key]]"></div>
 <script>
     window.addEventListener('DOMContentLoaded', function () {
         if (window.grcLoaderAdded) {
