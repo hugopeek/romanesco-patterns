@@ -16,4 +16,6 @@
 
 if ($input == '') return '';
 if (!$options) $options = 0;
+$input = str_replace(',', '.', $input); // Darn you Europeans
+
 return round($input,$options);
