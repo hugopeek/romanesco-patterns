@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Always round max height pixel values up to next whole number
+- Make sure decimal separator is a '.' when rounding numbers
 - Calculate correct thumb height in Open Graph image metadata
 - Limit Open Graph metadata to 1 image
 - Remove submit class from submit button container in forms
@@ -682,7 +684,7 @@ New features:
 - Add firstChildID snippet for fetching... the first child ID
 
 Fixes and improvements:
-- Refactor Button CB to incorporate icon buttons [BC-BREAK]
+- Refactor Button CB to incorporate icon buttons [BC]
 - Fix first key not being rendered by jsonToHTML snippet
 - Include extension when searching for matching pattern URIs
 - Rename / re-purpose ProjectHub template to ProjectDashboard
@@ -730,7 +732,7 @@ Released on November 6, 2016
 Fixes and improvements:
 - Remove remaining TV prefixes from overview tpls
 - Change prefixes in main Atomic category names
-- Move Status TV's to separate tab
+- Move Status TVs to separate tab
 
 
 ## Romanesco Patterns 0.10.0
@@ -743,10 +745,10 @@ New features:
 - Add alignment setting to heading chunk
 
 Fixes and improvements:
-- Split PatternLab package into Romanesco Patterns and Backyard [BC-BREAK]
-- Change prefix of FormBlocks system settings [BC-BREAK]
-- Change / fix all paths related to old PatternLab package [BC-BREAK]
-- Name changes to improve overall logic [BC-BREAK]
+- Split PatternLab package into Romanesco Patterns and Backyard [BC]
+- Change prefix of FormBlocks system settings [BC]
+- Change / fix all paths related to old PatternLab package [BC]
+- Name changes to improve overall logic [BC]
 - Fix nested layout grids in detail templates receiving incorrect margins
 - Fix TV names in Person and Article overviews
 - Fix caching of nested chunks in Testimonial overviews
@@ -777,7 +779,7 @@ New features:
 - Add templates for Clients and Portfolio
 
 Fixes and improvements:
-- Refactor overview elements for better reusability [BC-BREAK]
+- Refactor overview elements for better reusability [BC]
 - Load FormBlocks fieldset layout with chunk
 - Display syntax highlighted code snippets with Prism.js
 - Fix layout backgrounds not working on subdomains

@@ -1,6 +1,6 @@
 [[+img_scale:default=`100`:toPlaceholder=`scale`]]
 [[+lazy_load:eq=`1`:then=`data-`:else=``:toPlaceholder=`lazy`]]
-[[++max_thumb_width:div=`[[+crop.width]]`:replace=`,==.`:mpy=`[[+crop.height]]`:round:toPlaceholder=`max_thumb_height`]]
+[[++max_thumb_width:div=`[[+crop.width]]`:replace=`,==.`:mpy=`[[+crop.height]]`:round=`up`:toPlaceholder=`max_thumb_height`]]
 [[responsiveImgSrcset?
     &breakpoints=`[[++romanesco.img_breakpoints]]`
     &quality=`[[++romanesco.img_quality]]`

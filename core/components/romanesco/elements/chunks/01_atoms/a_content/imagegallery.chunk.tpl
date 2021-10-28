@@ -1,5 +1,5 @@
 [[+lazy_load:eq=`1`:then=`data-`:else=``:toPlaceholder=`lazy`]]
-[[++max_thumb_width:div=`[[+crops.default.width:empty=`[[+width]]`]]`:replace=`,==.`:mpy=`[[+crops.default.height:empty=`[[+height]]`]]`:round:toPlaceholder=`max_thumb_height`]]
+[[++max_thumb_width:div=`[[+crops.default.width:empty=`[[+width]]`]]`:replace=`,==.`:mpy=`[[+crops.default.height:empty=`[[+height]]`]]`:round=`up`:toPlaceholder=`max_thumb_height`]]
 [[$imgResponsiveScale:toPlaceholder=`scale`?
     &layout_id=`[[+layout_id]]`
     &layout_column=`[[+layout_column]]`
