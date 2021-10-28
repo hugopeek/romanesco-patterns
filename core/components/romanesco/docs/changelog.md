@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Calculate correct thumb height in Open Graph image metadata
+- Limit Open Graph metadata to 1 image
 - Remove submit class from submit button container in forms
 - Make front-end form validation compatible with Recaptcha v3
 - Load headAdditional and footerAdditional chunks directly, if present
