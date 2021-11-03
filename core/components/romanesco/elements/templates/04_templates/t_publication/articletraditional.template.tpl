@@ -150,7 +150,7 @@
                     <div class="ui container">
                         <h3>[[%romanesco.article.read_another]]</h3>
 
-                        <div class="ui top attached tabular menu">
+                        <div class="ui two item top attached tabular menu">
                             <a class="item active"
                                data-tab="segment-publication-1"
                                role="tab"
