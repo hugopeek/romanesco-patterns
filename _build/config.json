@@ -12015,6 +12015,21 @@
                     "category": "f_users"
                 },
                 {
+                    "name": "isEditor",
+                    "description": "Check if user is logged in to the manager.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_users"
+                },
+                {
                     "name": "renderUserName",
                     "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
                     "properties": [

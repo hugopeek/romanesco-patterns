@@ -3,6 +3,9 @@
 ## Romanesco Patterns 1.0.0-beta8
 Released on ...
 
+New features:
+- Add isEditor snippet to check if user is logged in to manager
+
 Fixes and improvements:
 - Always round max height pixel values up to next whole number
 - Make sure decimal separator is a '.' when rounding numbers
