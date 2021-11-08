@@ -12,6 +12,11 @@
                 "area": "Feedback",
                 "value": "commento"
             },{
+                "key": "manager_feedback",
+                "type": "combo-boolean",
+                "area": "Feedback",
+                "value": "1"
+            },{
                 "key": "ybug_project_id",
                 "type": "textfield",
                 "area": "Feedback",

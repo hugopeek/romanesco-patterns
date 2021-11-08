@@ -12352,6 +12352,12 @@
                 "value": "commento"
             },
             {
+                "key": "manager_feedback",
+                "type": "combo-boolean",
+                "area": "Feedback",
+                "value": "1"
+            },
+            {
                 "key": "ybug_project_id",
                 "type": "textfield",
                 "area": "Feedback",
@@ -12424,11 +12430,6 @@
             },
             {
                 "key": "mapbox_access_token",
-                "type": "textfield",
-                "area": "Map"
-            },
-            {
-                "key": "mapbox_style_id",
                 "type": "textfield",
                 "area": "Map"
             },

@@ -42,11 +42,19 @@ switch ($modx->event->name) {
         $controller->addHtml('<script src="/assets/components/romanescobackyard/js/manager.js?v=' . $versionJS . '"></script>');
 
         // Load Ybug widget for collecting manager feedback
-        $controller->addHtml($modx->getChunk('feedbackWidgetJS', [
-            'project_id' => $modx->getOption('romanesco.ybug_project_id'),
-            'username' => $modx->user->get('username'),
-            'email' => $modx->user->getOne('Profile')->get('email'),
-        ]));
+        if ($modx->getOption('romanesco.manager_feedback') == 1) {
+            if ($modx->user->hasSessionContext('mgr')) {
+                $userName = $modx->user->get('username');
+                $userEmail = $modx->user->getOne('Profile')->get('email');
+            }
+            $controller->addHtml($modx->getChunk('feedbackWidgetJS', [
+                'project_id' => $modx->getOption('romanesco.ybug_project_id'),
+                'username' => $userName ?? '',
+                'email' => $userEmail ?? '',
+                'button_text' => $modx->lexicon('romanesco.feedback.button_text'),
+                'position' => 'bottom-right',
+            ]));
+        }
         break;
 
     case 'OnManagerPageAfterRender':
