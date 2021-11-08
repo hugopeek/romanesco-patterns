@@ -11,6 +11,11 @@
                 "type": "textfield",
                 "area": "Feedback",
                 "value": "commento"
+            },{
+                "key": "ybug_project_id",
+                "type": "textfield",
+                "area": "Feedback",
+                "value": "6fzdmzwx1bdk2nfcq4cb"
             }
         ]
     }

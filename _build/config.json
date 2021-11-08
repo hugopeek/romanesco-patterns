@@ -5294,6 +5294,21 @@
                     "category": "m_feedback"
                 },
                 {
+                    "name": "feedbackWidgetJS",
+                    "description": "Collect feedback directly from client browser, including screenshot + annotations. Feedback will be sent to Ybug. If you want to use it for the frontend also, please use a different Ybug ID.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_feedback"
+                },
+                {
                     "name": "fbPrepareSteps",
                     "description": "Prepare the necessary placeholders for each step of a multi-page form. These placeholders will be forwarded to fbForm.",
                     "properties": [
@@ -12335,6 +12350,12 @@
                 "type": "textfield",
                 "area": "Feedback",
                 "value": "commento"
+            },
+            {
+                "key": "ybug_project_id",
+                "type": "textfield",
+                "area": "Feedback",
+                "value": "6fzdmzwx1bdk2nfcq4cb"
             },
             {
                 "key": "global_backgrounds_id",

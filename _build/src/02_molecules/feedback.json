@@ -80,6 +80,19 @@
                         }
                     ],
                     "category": "m_feedback"
+                },{
+                    "name": "feedbackWidgetJS",
+                    "description": "Collect feedback directly from client browser, including screenshot + annotations. Feedback will be sent to Ybug. If you want to use it for the frontend also, please use a different Ybug ID.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_feedback"
                 }
             ],
 

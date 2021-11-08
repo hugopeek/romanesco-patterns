@@ -40,6 +40,13 @@ switch ($modx->event->name) {
         $controller->addHtml('<script src="/assets/components/romanescobackyard/js/jquery.min.js"></script>');
         $controller->addHtml('<script src="/assets/semantic/dist/themes/romanesco/assets/vendor/arrive/arrive.min.js"></script>');
         $controller->addHtml('<script src="/assets/components/romanescobackyard/js/manager.js?v=' . $versionJS . '"></script>');
+
+        // Load Ybug widget for collecting manager feedback
+        $controller->addHtml($modx->getChunk('feedbackWidgetJS', [
+            'project_id' => $modx->getOption('romanesco.ybug_project_id'),
+            'username' => $modx->user->get('username'),
+            'email' => $modx->user->getOne('Profile')->get('email'),
+        ]));
         break;
 
     case 'OnManagerPageAfterRender':

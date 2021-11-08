@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add widget to collect feedback from client browser (currently using Ybug)
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
