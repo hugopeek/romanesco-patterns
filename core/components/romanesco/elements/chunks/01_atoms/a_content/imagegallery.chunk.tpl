@@ -17,7 +17,7 @@
                      (min-width: 768px) 100vw,
                      (min-width: 360px) 100vw,
                      100vw"
-     [[+lazy]]src="[[pthumb:imgOptimizeThumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]"
+     [[+lazy]]src="[[pthumb:imgOptimizeThumb? &input=`[[+crops.default.url:empty=`[[+url]]`]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]"
      [[+lazy:notempty=`
      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 [[++max_thumb_width]] [[+max_thumb_height]]'%3E%3C/svg%3E"
      class="lazy"

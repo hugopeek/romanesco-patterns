@@ -4,10 +4,12 @@
 Released on ...
 
 New features:
+- Add ability to crop content images
 - Add widget to collect feedback from client browser (currently using Ybug)
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Improve structure of content image patterns
 - Always round max height pixel values up to next whole number
 - Make sure decimal separator is a '.' when rounding numbers
 - Calculate correct thumb height in Open Graph image metadata
