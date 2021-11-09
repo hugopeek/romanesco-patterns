@@ -94,6 +94,19 @@
                     ],
                     "category": "m_content"
                 },{
+                    "name": "imageOuterGallery",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_content"
+                },{
                     "name": "imageBasicLink",
                     "description": "",
                     "properties": [

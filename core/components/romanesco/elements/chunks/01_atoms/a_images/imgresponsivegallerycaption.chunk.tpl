@@ -12,11 +12,11 @@
     &toPlaceholder=`srcset`
 ]]
 <img [[+lazy]]srcset="[[+srcset]]"
-     [[+lazy]]sizes="(min-width: 1300px) [[+scale]]vw / [[+cols:textToNumber]],
-                     (min-width: 992px) [[+scale]]vw / [[+cols:textToNumber]],
-                     (min-width: 768px) 100vw,
-                     (min-width: 360px) 100vw,
-                     100vw"
+     [[+lazy]]sizes="(min-width: 1300px) calc([[+scale]]vw / [[+cols:textToNumber]]),
+                     (min-width: 992px) calc([[+scale]]vw / [[+cols:textToNumber]]),
+                     (min-width: 768px) [[+cols:textToNumber:gt=`2`:then=`calc(([[+scale]]vw - 2em) / 2)`:else=`[[+scale]]vw`]],
+                     (min-width: 360px) [[+scale]]vw,
+                     [[+scale]]vw"
      [[+lazy]]src="[[pthumb:imgOptimizeThumb? &input=`[[+crops.default.url:empty=`[[+url]]`]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]"
      [[+lazy:notempty=`
      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 [[++max_thumb_width]] [[+max_thumb_height]]'%3E%3C/svg%3E"

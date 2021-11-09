@@ -1,7 +1,8 @@
 [[++formblocks.honeypot_field:notempty=`
+[[++formblocks.honeypot_field:fbPrefixOutput:toPlaceholder=`honeypot_name`]]
 <div class="sweetened field">
-    <label for="fb[[*id]]-[[++formblocks.honeypot_field]]">[[%formblocks.form.honeypot_field]]</label>
-    <input type="text" name="fb[[*id]]-[[++formblocks.honeypot_field]]" value="[[!+fb[[*id]].fb[[*id]]-[[++formblocks.honeypot_field]]]]">
+    <label for="[[+honeypot_name]]">[[%formblocks.form.honeypot_field]]</label>
+    <input type="text" name="[[+honeypot_name]]" id="[[+honeypot_name]]" value="[[!+fb[[*id]].[[+honeypot_name]]]]">
 </div>
 `]]
 [[[[modifiedIf?

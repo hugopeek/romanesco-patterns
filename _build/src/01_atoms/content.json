@@ -94,19 +94,6 @@
                     ],
                     "category": "a_content"
                 },{
-                    "name": "imageGallery",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
                     "name": "imageSVG",
                     "description": "",
                     "properties": [

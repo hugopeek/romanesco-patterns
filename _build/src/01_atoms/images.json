@@ -94,6 +94,32 @@
                     ],
                     "category": "a_images"
                 },{
+                    "name": "imgResponsiveGallery",
+                    "description": "A responsive image element, specialized for the Gallery block.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_images"
+                },{
+                    "name": "imgResponsiveGalleryCaption",
+                    "description": "A responsive image element, specialized for the Gallery with Caption block.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_images"
+                },{
                     "name": "imgResponsiveRowSrcset",
                     "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
                     "properties": [

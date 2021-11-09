@@ -9,7 +9,8 @@ New features:
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
-- Improve structure of content image patterns
+- Don't load SVG images with srcset and sizes in galleries
+- Improve structure of content and gallery image patterns
 - Always round max height pixel values up to next whole number
 - Make sure decimal separator is a '.' when rounding numbers
 - Calculate correct thumb height in Open Graph image metadata
