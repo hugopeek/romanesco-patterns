@@ -9,9 +9,10 @@ New features:
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Optimize distribution of breakpoint values for responsive image srcsets
 - Apply responsive image sizing to Cards CB
 - Don't load SVG images with srcset and sizes in galleries
-- Improve accuracy of responsive image sizes for stackable and doubling grids 
+- Improve accuracy of responsive image sizes for stackable and doubling grids
 - Improve structure of content and gallery image patterns
 - Always round max height pixel values up to next whole number
 - Make sure decimal separator is a '.' when rounding numbers
