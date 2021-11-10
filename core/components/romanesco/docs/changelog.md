@@ -4,11 +4,12 @@
 Released on ...
 
 New features:
-- Add ability to crop content images
+- Add ability to crop regular content images
 - Add widget to collect feedback from client browser (currently using Ybug)
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Apply responsive image sizing to Cards CB
 - Don't load SVG images with srcset and sizes in galleries
 - Improve accuracy of responsive image sizes for stackable and doubling grids 
 - Improve structure of content and gallery image patterns

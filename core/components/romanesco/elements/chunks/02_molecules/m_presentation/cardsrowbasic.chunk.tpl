@@ -1,6 +1,6 @@
 [[+image:notempty=`
 <a href="[[+link]]" class="image">
-    <img src="[[pthumb:imgOptimizeThumb? &input=`[[+image]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]" alt="[[+heading]]">
+    [[+image]]
 </a>
 `]]
 <div class="content">

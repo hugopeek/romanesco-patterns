@@ -1,7 +1,7 @@
 [[+image:notempty=`
-<div class="image">
-    <img src="[[pthumb:imgOptimizeThumb? &input=`[[+image]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]" alt="[[+heading]]">
-</div>
+<figure class="image">
+    [[+image]]
+</figure>
 `]]
 <div class="content">
     [[+heading:notempty=`

@@ -141,13 +141,16 @@ switch ($modx->event->name) {
         $dom->filter('.ui.stackable.grid, .ui.doubling.grid, .ui.stackable.cards')
             ->each(function(HtmlPageCrawler $grid) {
                 $targetImg = '.row > .column > .ui.image > img, .column > .ui.image > img';
+                if ($grid->matches('.cards')) {
+                    $targetImg = '.card > .image > img';
+                }
 
                 // Tag images in stackable on tablet and two column doubling grids
                 if ($grid->matches('[class*="stackable on tablet"]') || $grid->matches('[class*="two column"].doubling')) {
                     $grid->children($targetImg)->addClass('tablet-expand-full');
                 }
                 // Do the same for doubling grids with more than two columns
-                else if ($grid->matches('.doubling:not([class*="two column"])')) {
+                else if ($grid->matches('.doubling:not([class*="two column"]):not([class*="equal width"])')) {
                     $grid->children($targetImg)->addClass('tablet-expand-half');
 
                     if ($grid->matches('.doubling:not(.stackable)')) {
