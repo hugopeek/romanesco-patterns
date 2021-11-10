@@ -10,6 +10,7 @@ New features:
 
 Fixes and improvements:
 - Don't load SVG images with srcset and sizes in galleries
+- Improve accuracy of responsive image sizes for stackable and doubling grids 
 - Improve structure of content and gallery image patterns
 - Always round max height pixel values up to next whole number
 - Make sure decimal separator is a '.' when rounding numbers

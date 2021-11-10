@@ -3,6 +3,7 @@
 [[$imgResponsiveScale:toPlaceholder=`scale`?
     &layout_id=`[[+layout_id]]`
     &layout_column=`[[+layout_column]]`
+    &uid=`[[+unique_idx]]`
 ]]
 [[responsiveImgSrcset?
     &breakpoints=`[[++romanesco.img_breakpoints]]`
@@ -15,8 +16,8 @@
      [[+lazy]]sizes="(min-width: 1300px) [[+scale]]vw,
                      (min-width: 992px) [[+scale]]vw,
                      (min-width: 768px) [[+scale]]vw,
-                     (min-width: 360px) 100vw,
-                     100vw"
+                     (min-width: 360px) [[+scale]]vw,
+                     (max-width: 359px) [[+scale]]vw"
      [[+lazy]]src="[[pthumb:imgOptimizeThumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]"
      [[+lazy:notempty=`
      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 [[++max_thumb_width]] [[+max_thumb_height]]'%3E%3C/svg%3E"

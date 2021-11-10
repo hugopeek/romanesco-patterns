@@ -137,26 +137,55 @@ switch ($modx->event->name) {
             ->addClass('tablet only')
         ;
 
-        // If grids are stackable on tablet, some responsive image sizes might be incorrect
-        $dom->filter('.ui[class*="stackable on tablet"].grid .column > .ui.content.image > img')
-            ->each(function(HtmlPageCrawler $img) {
-                $dataSizes = $img->getAttribute('data-sizes');
-                $sizes = $dataSizes ?? $img->getAttribute('sizes');
+        // Responsive image sizes might be incorrect in responsive grids
+        $dom->filter('.ui.stackable.grid, .ui.doubling.grid, .ui.stackable.cards')
+            ->each(function(HtmlPageCrawler $grid) {
+                $targetImg = '.row > .column > .ui.image > img, .column > .ui.image > img';
 
-                if (!$sizes) return;
+                // Tag images in stackable on tablet and two column doubling grids
+                if ($grid->matches('[class*="stackable on tablet"]') || $grid->matches('[class*="two column"].doubling')) {
+                    $grid->children($targetImg)->addClass('tablet-expand-full');
+                }
+                // Do the same for doubling grids with more than two columns
+                else if ($grid->matches('.doubling:not([class*="two column"])')) {
+                    $grid->children($targetImg)->addClass('tablet-expand-half');
 
-                // If lazy load is enabled, sizes are stored in data-sizes
-                $attribute = 'sizes';
-                if ($dataSizes) $attribute = 'data-sizes';
+                    if ($grid->matches('.doubling:not(.stackable)')) {
+                        $grid->children($targetImg)->addClass('mobile-expand-half');
+                    }
+                }
 
-                // Set tablet breakpoint to 100vw, because stacked means full width
-                $stackedSizes = preg_replace(
-                    '/\(min-width: 768px\).+/',
-                    '(min-width: 768px) 100vw,',
-                    $sizes
-                );
+                // Only target direct descendants
+                $grid->children($targetImg)
+                    ->each(function(HtmlPageCrawler $img) {
+                        $dataSizes = $img->getAttribute('data-sizes');
+                        $sizes = $dataSizes ?? $img->getAttribute('sizes');
 
-                $img->setAttribute($attribute, $stackedSizes);
+                        if (!$sizes) return;
+
+                        // If lazy load is enabled, sizes are stored in data-sizes
+                        $attribute = 'sizes';
+                        if ($dataSizes) $attribute = 'data-sizes';
+
+                        // Set mobile breakpoints to 100vw, because stacked means full width
+                        $stackedSizes = preg_replace('/\(min-width: 360px\).+/','(min-width: 360px) 100vw,', $sizes);
+                        $stackedSizes = preg_replace('/\(max-width: 359px\).+/','(max-width: 359px) 100vw,', $stackedSizes);
+
+                        // Set optional sizes, if indicated
+                        if ($img->matches('.tablet-expand-full')) {
+                            $stackedSizes = preg_replace('/\(min-width: 768px\).+/','(min-width: 768px) 100vw,', $stackedSizes);
+                        }
+                        if ($img->matches('.tablet-expand-half')) {
+                            $stackedSizes = preg_replace('/\(min-width: 768px\).+/','(min-width: 768px) 50vw,', $stackedSizes);
+                        }
+                        if ($img->matches('.mobile-expand-half')) {
+                            $stackedSizes = preg_replace('/\(min-width: 360px\).+/','(min-width: 360px) 50vw,', $stackedSizes);
+                            $stackedSizes = preg_replace('/\(max-width: 359px\).+/','(max-width: 359px) 50vw,', $stackedSizes);
+                        }
+
+                        $img->setAttribute($attribute, $stackedSizes);
+                    })
+                ;
             })
         ;
 

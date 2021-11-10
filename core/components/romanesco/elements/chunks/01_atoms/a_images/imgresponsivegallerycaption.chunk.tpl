@@ -3,6 +3,7 @@
 [[$imgResponsiveScale:toPlaceholder=`scale`?
     &layout_id=`[[+layout_id]]`
     &layout_column=`[[+layout_column]]`
+    &uid=`[[+unique_idx]]`
 ]]
 [[responsiveImgSrcset?
     &breakpoints=`[[++romanesco.img_breakpoints]]`
@@ -15,8 +16,8 @@
      [[+lazy]]sizes="(min-width: 1300px) calc([[+scale]]vw / [[+cols:textToNumber]]),
                      (min-width: 992px) calc([[+scale]]vw / [[+cols:textToNumber]]),
                      (min-width: 768px) [[+cols:textToNumber:gt=`2`:then=`calc(([[+scale]]vw - 2em) / 2)`:else=`[[+scale]]vw`]],
-                     (min-width: 360px) [[+scale]]vw,
-                     [[+scale]]vw"
+                     (min-width: 360px) [[+cols:textToNumber:gt=`2`:then=`calc(([[+scale]]vw - 2em) / 2)`:else=`[[+scale]]vw`]],
+                     (max-width: 359px) calc([[+scale]]vw / [[+cols:textToNumber]])"
      [[+lazy]]src="[[pthumb:imgOptimizeThumb? &input=`[[+crops.default.url:empty=`[[+url]]`]]` &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`]]"
      [[+lazy:notempty=`
      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 [[++max_thumb_width]] [[+max_thumb_height]]'%3E%3C/svg%3E"

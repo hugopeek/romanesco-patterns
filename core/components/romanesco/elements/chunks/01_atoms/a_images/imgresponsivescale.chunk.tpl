@@ -33,7 +33,7 @@
 
     &c29=`24_main`      &do29=`100`
 
-    [[$imgResponsiveScaleTheme]]
+    [[$imgResponsiveScaleTheme? &uid=`[[+unique_idx]]`]]
 
     &default=`51`
 ]]
