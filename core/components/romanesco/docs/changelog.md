@@ -9,6 +9,7 @@ New features:
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Rename incorrect cols field to content_width in 2 column fluid overview [BC]
 - Add quality override setting for global background image
 - Optimize distribution of breakpoint values for responsive image srcsets
 - Apply responsive image sizing to Cards CB

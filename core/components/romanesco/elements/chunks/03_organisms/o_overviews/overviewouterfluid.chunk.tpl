@@ -18,7 +18,7 @@
     &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`
     &background_even=`[[+background_even]]`
     &background_odd=`[[+background_odd]]`
-    &cols=`[[+cols]]`
+    &content_width=`[[+content_width]]`
     &cols_interchange=`[[+cols_interchange]]`
 
     &title_field=`[[+title_field]]`
