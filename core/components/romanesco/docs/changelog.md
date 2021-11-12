@@ -9,6 +9,7 @@ New features:
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Add quality override setting for global background image
 - Optimize distribution of breakpoint values for responsive image srcsets
 - Apply responsive image sizing to Cards CB
 - Don't load SVG images with srcset and sizes in galleries

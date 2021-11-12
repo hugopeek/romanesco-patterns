@@ -2,7 +2,7 @@
     &subject=`[[+image.crops.mobile.url:empty=``]][[+image.crops.tablet.url:empty=``]][[+image.crops.desktop.url:empty=``]]`
     &operand=`empty`
     &then=`
-    [[pthumb:imgOptimizeThumb:prepend=`url(`:append=`)`?
+    [[pthumb:imgOptimizeThumb=`[[+quality]]`:prepend=`url(`:append=`)`?
         &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
             &q=[[++romanesco.img_quality]]
@@ -15,7 +15,7 @@
     &subject=`[[+image.crops.[[+imgType]].url]]`
     &operator=`notempty`
     &then=`
-    [[pthumb:imgOptimizeThumb:prepend=`url(`:append=`)`?
+    [[pthumb:imgOptimizeThumb=`[[+quality]]`:prepend=`url(`:append=`)`?
         &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
             &sx=[[+image.crops.[[+imgType]].x]]
