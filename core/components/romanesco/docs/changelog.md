@@ -9,6 +9,7 @@ New features:
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Fix issue where slider would break if slides are separate Image CBs
 - Prevent content in Presentation template from being turned into a slider
 - Add relevant settings from regular overview CBs to 2 column fluid overview
 - Rename incorrect cols field to content_width in 2 column fluid overview [BC]

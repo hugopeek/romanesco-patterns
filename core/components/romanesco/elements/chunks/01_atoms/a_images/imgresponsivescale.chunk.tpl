@@ -33,7 +33,12 @@
 
     &c29=`24_main`      &do29=`100`
 
-    [[$imgResponsiveScaleTheme? &uid=`[[+unique_idx]]`]]
+    [[[[modifiedIf?
+        &subject=`imgResponsiveScaleTheme`
+        &operator=`iselement`
+        &operand=`chunk`
+        &then=`$imgResponsiveScaleTheme? &uid=`[[+unique_idx]]``
+    ]]]]
 
     &default=`51`
 ]]
