@@ -210,21 +210,21 @@ switch ($modx->event->name) {
         $dom->filter('.swiper-container')
             ->each(function (HtmlPageCrawler $slider) {
                 $slider
-                    ->filter('.nested.overview')
+                    ->children('.nested.overview')
                     ->removeClass('stackable')
                     ->removeClass('doubling')
                     ->addClass('swiper-wrapper')
                 ;
                 $slider
-                    ->filter('.gallery')
+                    ->children('.gallery')
                     ->addClass('swiper-wrapper')
                 ;
                 $slider
-                    ->filter('.cards')
+                    ->children('.cards')
                     ->addClass('swiper-wrapper')
                 ;
                 $slider
-                    ->filter('.swiper-wrapper > *')
+                    ->children('.swiper-wrapper > *')
                     ->each(function (HtmlPageCrawler $slide) {
                         if ($slide->hasClass('card')) {
                             $slide
