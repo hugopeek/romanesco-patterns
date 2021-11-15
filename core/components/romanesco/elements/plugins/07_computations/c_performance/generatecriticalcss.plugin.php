@@ -55,6 +55,7 @@ switch ($modx->event->name) {
         $url = $modx->makeUrl($id,'','','full');
         $uri = ltrim($resource->get('uri'),'/');
         $uri = rtrim($uri,'/');
+        $uri = str_replace('.html','',$uri);
         $criticalPath = rtrim($cssPath,'/') . '/critical/';
 
         // Empty and excluded templates
