@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta8
-Released on ...
+Released on November 15, 2021
 
 New features:
 - Add ability to crop regular content images
