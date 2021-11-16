@@ -46,7 +46,7 @@ switch ($modx->event->name) {
          * @var int $id
          */
 
-        $globalTemplates = [8,9,10,11,19,27];
+        $globalTemplates = [8,9,10,11,19,20,27];
         $excludedTemplates = explode(',', $romanesco->getConfigSetting('critical_excluded_templates', $context));
         $excludedTemplates = array_merge($globalTemplates, $excludedTemplates);
         $sharedTemplates = explode(',', $romanesco->getConfigSetting('critical_shared_templates', $context));
