@@ -4722,7 +4722,7 @@
                         },
                         {
                             "name": "sortBy",
-                            "value": "position"
+                            "value": "pos"
                         },
                         {
                             "name": "sortDir",
