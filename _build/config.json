@@ -2170,6 +2170,26 @@
                     ]
                 },
                 {
+                    "caption": "External links",
+                    "name": "links_external",
+                    "description": "",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "links_external:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "Links",
+                    "sortOrder": 10,
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                    ]
+                },
+                {
                     "caption": "Attachments",
                     "name": "links_attachment",
                     "description": "",
@@ -2189,32 +2209,7 @@
                         }
                     ],
                     "category": "Links",
-                    "sortOrder": 10,
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
-                    ]
-                },
-                {
-                    "caption": "External links",
-                    "name": "links_external",
-                    "description": "",
-                    "type": "superboxselect",
-                    "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "Links",
-                    "sortOrder": 11,
+                    "sortOrder": 20,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
@@ -11941,7 +11936,7 @@
                 },
                 {
                     "name": "migxSaveOption",
-                    "description": "After save hook for MIGXdb. Gets and sets the group (parent) ID inside a nested configuration. Also generates an alias if none is present and increments the sort order.",
+                    "description": "Aftersave hook for MIGXdb. Gets and sets the group (parent) ID inside a nested configuration. Also generates an alias if none is present and increments the sort order.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11956,7 +11951,7 @@
                 },
                 {
                     "name": "migxSaveOptionGroup",
-                    "description": "After save hook for MIGXdb. Updates existing keys in child options if you change this setting in Group. Also increments the sort order.",
+                    "description": "Aftersave hook for MIGXdb. Updates existing keys in child options if you change this setting in Group. Also increments the sort order.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11971,7 +11966,7 @@
                 },
                 {
                     "name": "migxSaveRepurposeSrc",
-                    "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose destination.",
+                    "description": "Aftersave hook for MIGXdb. Sets current resource ID as re-purpose destination.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -11986,7 +11981,7 @@
                 },
                 {
                     "name": "migxSaveRepurposeDest",
-                    "description": "After save hook for MIGXdb. Sets current resource ID as re-purpose source.",
+                    "description": "Aftersave hook for MIGXdb. Sets current resource ID as re-purpose source.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -12001,11 +11996,26 @@
                 },
                 {
                     "name": "migxSaveRelated",
-                    "description": "After save hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, watch your back with those!",
+                    "description": "Aftersave hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, watch your back with those!",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_toolshed"
+                },
+                {
+                    "name": "migxSaveExternalLink",
+                    "description": "Aftersave hook for MIGXdb. Increments the link number per resource, so you don't have to fiddle with that manually (as long as you enter the links in the correct order).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementExample",

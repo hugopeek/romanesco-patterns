@@ -9,6 +9,7 @@ New features:
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Turn external links TV into MIGXdb grid [BC]
 - Don't generate critical CSS for Downloads
 - Fix issue where slider would break if slides are separate Image CBs
 - Prevent content in Presentation template from being turned into a slider

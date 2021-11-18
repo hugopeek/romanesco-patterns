@@ -23,6 +23,26 @@
                     ]
                 },
                 {
+                    "caption": "External links",
+                    "name": "links_external",
+                    "description": "",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "links_external:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "Links",
+                    "sortOrder": 10,
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },
+                {
                     "caption": "Attachments",
                     "name": "links_attachment",
                     "description": "",
@@ -42,32 +62,7 @@
                         }
                     ],
                     "category": "Links",
-                    "sortOrder": 10,
-                    "templates": [
-                        "@@templates_all"
-                    ]
-                },
-                {
-                    "caption": "External links",
-                    "name": "links_external",
-                    "description": "",
-                    "type": "superboxselect",
-                    "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"class_key:=\":\"modWebLink\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "Links",
-                    "sortOrder": 11,
+                    "sortOrder": 20,
                     "templates": [
                         "@@templates_all"
                     ]
