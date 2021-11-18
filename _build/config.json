@@ -312,137 +312,38 @@
                 },
                 {
                     "name": "a_navigation",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
                     "parent": "01_atoms"
                 },
                 {
                     "name": "a_nav_primary",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
                     "parent": "a_navigation"
                 },
                 {
                     "name": "a_nav_breadcrumbs",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "parent": "a_navigation"
-                },
-                {
-                    "name": "a_nav_offcanvas",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
                     "parent": "a_navigation"
                 },
                 {
                     "name": "a_nav_pagination",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
                     "parent": "a_navigation"
                 },
                 {
                     "name": "a_nav_neighbors",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
                     "parent": "a_navigation"
                 },
                 {
                     "name": "a_nav_tabs",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
                     "parent": "a_navigation"
                 },
                 {
                     "name": "a_nav_steps",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
                     "parent": "a_navigation"
                 },
                 {
                     "name": "a_nav_toc",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
+                    "parent": "a_navigation"
+                },
+                {
+                    "name": "a_nav_content",
                     "parent": "a_navigation"
                 },
                 {
@@ -8533,6 +8434,21 @@
                     "category": "a_nav_breadcrumbs"
                 },
                 {
+                    "name": "contentNavItem",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_nav_content"
+                },
+                {
                     "name": "neighborNavItemPrev",
                     "description": "",
                     "properties": [
@@ -12172,6 +12088,20 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        }
+                    ],
+                    "category": "c_content",
+                    "events": [
+                        "OnWebPagePrerender"
+                    ]
+                },
+                {
+                    "name": "AutomaticReferences",
+                    "description": "Turn references to an external link (the ones you can create under TVs > Links) into an actual link. Links are referenced by their number value and must be enclosed in square brackets: [12].",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         }
                     ],
                     "category": "c_content",

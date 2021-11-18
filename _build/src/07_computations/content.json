@@ -36,6 +36,17 @@
                     "category": "c_content",
                     "events": ["OnWebPagePrerender"]
                 },{
+                    "name": "AutomaticReferences",
+                    "description": "Turn references to an external link (the ones you can create under TVs > Links) into an actual link. Links are referenced by their number value and must be enclosed in square brackets: [12].",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "c_content",
+                    "events": ["OnWebPagePrerender"]
+                },{
                     "name": "setResourceGroup",
                     "description": "Add resource to a specific group, based on certain conditions or variables.",
                     "properties": [
