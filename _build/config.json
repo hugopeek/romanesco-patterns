@@ -1304,6 +1304,25 @@
                     ]
                 },
                 {
+                    "caption": "Automatic reference links",
+                    "name": "auto_references",
+                    "description": "Turn references to an external link (the ones you created under TVs > Links) into an actual link. Links are referenced by their number value and must be enclosed in square brackets: [12].",
+                    "type": "listbox",
+                    "inputOptionValues": "On==1||Off==0",
+                    "defaultValue": "@INHERIT 0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        }
+                    ],
+                    "category": "Navigation",
+                    "sortOrder": "11",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                    ]
+                },
+                {
                     "caption": "Scroll back to top after using pagination",
                     "name": "pagination_scroll_top",
                     "description": "This is enabled by default, to prevent ending up in empty space if the content of the next page is shorter. Disable this if you're using multiple paginated overviews on the same page.",

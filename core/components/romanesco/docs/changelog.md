@@ -1,9 +1,10 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta8
-Released on November 15, 2021
+Released on November 18, 2021
 
 New features:
+- Add option to automatically link to external references in content
 - Add ability to crop regular content images
 - Add widget to collect feedback from client browser (currently using Ybug)
 - Add isEditor snippet to check if user is logged in to manager

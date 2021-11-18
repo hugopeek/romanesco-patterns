@@ -39,6 +39,24 @@
                         "@@templates_all"
                     ]
                 },{
+                    "caption": "Automatic reference links",
+                    "name": "auto_references",
+                    "description": "Turn references to an external link (the ones you created under TVs > Links) into an actual link. Links are referenced by their number value and must be enclosed in square brackets: [12].",
+                    "type": "listbox",
+                    "inputOptionValues": "On==1||Off==0",
+                    "defaultValue": "@INHERIT 0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        }
+                    ],
+                    "category": "Navigation",
+                    "sortOrder": "11",
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
                     "caption": "Scroll back to top after using pagination",
                     "name": "pagination_scroll_top",
                     "description": "This is enabled by default, to prevent ending up in empty space if the content of the next page is shorter. Disable this if you're using multiple paginated overviews on the same page.",
