@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta8
-Released on November 18, 2021
+Released on November 19, 2021
 
 New features:
 - Add option to automatically link to external references in content
@@ -10,6 +10,7 @@ New features:
 - Add isEditor snippet to check if user is logged in to manager
 
 Fixes and improvements:
+- Add box shadow to Markdown images
 - Turn external links TV into MIGXdb grid [BC]
 - Don't generate critical CSS for Downloads
 - Fix issue where slider would break if slides are separate Image CBs

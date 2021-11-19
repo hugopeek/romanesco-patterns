@@ -85,7 +85,7 @@ switch ($modx->event->name) {
                 $src = $image->getAttribute('src');
                 $image
                     ->setAttribute('src', 'uploads/notes/' . $src)
-                    ->addClass('ui rounded image')
+                    ->addClass('ui rounded raised image')
                 ;
             })
         ;
