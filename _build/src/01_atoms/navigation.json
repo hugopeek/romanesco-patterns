@@ -27,7 +27,7 @@
                     "name": "a_nav_toc",
                     "parent": "a_navigation"
                 },{
-                    "name": "a_nav_content",
+                    "name": "a_nav_external",
                     "parent": "a_navigation"
                 }
             ]

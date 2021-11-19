@@ -343,7 +343,7 @@
                     "parent": "a_navigation"
                 },
                 {
-                    "name": "a_nav_content",
+                    "name": "a_nav_external",
                     "parent": "a_navigation"
                 },
                 {
@@ -452,6 +452,10 @@
                 },
                 {
                     "name": "m_nav_toc",
+                    "parent": "m_navigation"
+                },
+                {
+                    "name": "m_nav_external",
                     "parent": "m_navigation"
                 },
                 {
@@ -8434,7 +8438,7 @@
                     "category": "a_nav_breadcrumbs"
                 },
                 {
-                    "name": "contentNavItem",
+                    "name": "externalNavItemList",
                     "description": "",
                     "properties": [
                         {
@@ -8446,7 +8450,52 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_nav_content"
+                    "category": "a_nav_external"
+                },
+                {
+                    "name": "externalNavItemInline",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_nav_external"
+                },
+                {
+                    "name": "externalNavItemLabel",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_nav_external"
+                },
+                {
+                    "name": "externalNavItemTooltip",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_nav_external"
                 },
                 {
                     "name": "neighborNavItemPrev",
@@ -9397,6 +9446,21 @@
                         }
                     ],
                     "category": "m_fb_validation"
+                },
+                {
+                    "name": "externalNavList",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_external"
                 },
                 {
                     "name": "paginationFluid",

@@ -12,7 +12,7 @@
  */
 
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
-$tpl = $modx->getOption('tpl', $scriptProperties, 'contentNavItem');
+$tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
 
 // Load HtmlPageDom
 if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
@@ -38,16 +38,10 @@ switch ($modx->event->name) {
 
             if (!is_object($linkObject)) break;
 
+            // Prepare array with link tags
             $links = [];
             foreach ($linkObject as $link) {
-                $linkID = $link->get('number');
-                $links[$linkID] = $modx->getChunk($tpl, [
-                    'classes' => 'external item',
-                    'link' => $link->get('url'),
-                    'title' => $link->get('title'),
-                    'attributes' => 'target="_blank"',
-                    'link_text' => "[$linkID]",
-                ]);
+                $links[$link->get('number')] = $modx->getChunk($tpl, $link->toArray());
             }
 
             // Feed output to HtmlPageDom
@@ -58,7 +52,6 @@ switch ($modx->event->name) {
                 ->filter('p,li')
                 ->each(function (HtmlPageCrawler $node) use ($links) {
                     $text = $node->getInnerHtml();
-                    global $modx;
 
                     // Only accept numeric values inside square brackets
                     preg_match_all('/\[[0-9]+\]/', $text, $matches);
@@ -77,9 +70,9 @@ switch ($modx->event->name) {
                     return true;
                 })
             ;
-        }
 
-        $content = $dom->saveHTML();
+            $content = $dom->saveHTML();
+        }
 
         break;
 }

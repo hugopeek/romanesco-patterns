@@ -1,1 +1,0 @@
-<a class="[[+classes]]" href="[[+link]]" title="[[+title]]" [[+attributes]]>[[+link_text]]</a>

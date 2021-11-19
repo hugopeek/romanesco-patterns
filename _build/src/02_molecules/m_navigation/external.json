@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "contentNavItem",
+                    "name": "externalNavList",
                     "description": "",
                     "properties": [
                         {
@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_nav_content"
+                    "category": "m_nav_external"
                 }
             ]
         }
