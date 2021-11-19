@@ -1291,7 +1291,7 @@ if ($object->xpdo) {
     38 => 'Testimonial',
     39 => 'Review',
   ),
-  'links_attachment' => 
+  'links_external' => 
   array (
     0 => 'Home',
     1 => 'Homepage',
@@ -1334,7 +1334,7 @@ if ($object->xpdo) {
     38 => 'Testimonial',
     39 => 'Review',
   ),
-  'links_external' => 
+  'links_attachment' => 
   array (
     0 => 'Home',
     1 => 'Homepage',
@@ -1778,6 +1778,49 @@ if ($object->xpdo) {
     39 => 'Review',
   ),
   'auto_anchors' => 
+  array (
+    0 => 'Home',
+    1 => 'Homepage',
+    2 => 'BasicOverview',
+    3 => 'Basic - Overview',
+    4 => 'BasicDetail',
+    5 => 'BasicDetailToC',
+    6 => 'Basic - Detail',
+    7 => 'Basic - Detail (ToC)',
+    8 => 'BasicVertical',
+    9 => 'BasicVerticalToC',
+    10 => 'Basic - Vertical',
+    11 => 'Basic - Vertical (ToC)',
+    12 => 'Publications',
+    13 => 'Publications - Overview',
+    14 => 'Blog',
+    15 => 'News',
+    16 => 'ArticleTraditional',
+    17 => 'Article - Traditional',
+    18 => 'ArticleReadability',
+    19 => 'Article - Readability',
+    20 => 'ArticleSidenotes',
+    21 => 'Article - Sidenotes',
+    22 => 'Notes',
+    23 => 'Notes - Overview',
+    24 => 'NoteVertical',
+    25 => 'Note - Vertical',
+    26 => 'NoteVerticalRTE',
+    27 => 'Note - Vertical (RTE)',
+    28 => 'TeamMember',
+    29 => 'Team - Member',
+    30 => 'Team',
+    31 => 'Person',
+    32 => 'User',
+    33 => 'Client',
+    34 => 'Organization',
+    35 => 'Relation',
+    36 => 'PortfolioProject',
+    37 => 'Portfolio - Project',
+    38 => 'Testimonial',
+    39 => 'Review',
+  ),
+  'auto_references' => 
   array (
     0 => 'Home',
     1 => 'Homepage',
