@@ -8,6 +8,6 @@
 
     &url=`[[+crops.default.url:empty=`[[+url]]`]]`
     &width=`[[+crops.default.width:empty=`[[+width]]`]]`
-    &width=`[[+crops.default.height:empty=`[[+height]]`]]`
+    &height=`[[+crops.default.height:empty=`[[+height]]`]]`
     &classes=`rounded [[+classes:replace=`,== `:empty=`[[+img_size]] [[+options]] [[+position]]`]]`
 ]]

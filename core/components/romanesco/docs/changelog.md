@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta9
+Released on ...
+
+Fixes and improvements:
+- Fix uid for imgResponsive chunks inside Image CBs
+
 ## Romanesco Patterns 1.0.0-beta8
 Released on November 19, 2021
 

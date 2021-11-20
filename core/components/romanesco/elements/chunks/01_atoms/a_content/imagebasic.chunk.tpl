@@ -1,5 +1,5 @@
 <figure class="ui [[+classes]] content image">
-    [[$imgResponsive? &uid=`[[+unique_idx]]`]]
+    [[$imgResponsive? &uid=`[[+url]]`]]
     [[If?
         &subject=`[[+credits]][[+caption]]`
         &operator=`notempty`

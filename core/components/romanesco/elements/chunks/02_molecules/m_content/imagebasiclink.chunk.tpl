@@ -1,5 +1,5 @@
 <a href="[[+link]]" class="ui [[+classes]] content image" [[+link_rel:replace=`,== `:prepend=`rel="`:append=`"`]] [[+attributes]]>
-    [[$imgResponsive? &uid=`[[+unique_idx]]`]]
+    [[$imgResponsive? &uid=`[[+url]]`]]
     [[If?
         &subject=`[[+credits]][[+caption]]`
         &operator=`notempty`
