@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix Romanesco class not being loaded when creating automatic references
 - Fix uid for imgResponsive chunks inside Image CBs
 
 ## Romanesco Patterns 1.0.0-beta8

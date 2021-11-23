@@ -14,7 +14,6 @@
 $corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
 
-// Load HtmlPageDom
 if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
     require $corePath . 'vendor/autoload.php';
 }
@@ -29,6 +28,12 @@ switch ($modx->event->name) {
 
         // Generate links if requested
         if ($modx->resource->getTVValue('auto_references')) {
+            $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+            $romanesco = $modx->getService('romanesco','Romanesco', $corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
+            if (!($romanesco instanceof Romanesco)) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
+                return;
+            }
 
             // Get external links for this resource
             $linkObject = $modx->getIterator('rmExternalLink', [

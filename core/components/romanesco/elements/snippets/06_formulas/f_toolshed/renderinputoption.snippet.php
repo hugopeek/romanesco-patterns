@@ -34,7 +34,7 @@
  * [[+position]]
  */
 $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$wlt = $modx->addPackage('romanescobackyard',$corePath . 'model/');
+$backyard = $modx->addPackage('romanescobackyard',$corePath . 'model/');
 
 $value = $modx->getOption('value', $scriptProperties, $input);
 $match = $modx->getOption('match', $scriptProperties, $options);

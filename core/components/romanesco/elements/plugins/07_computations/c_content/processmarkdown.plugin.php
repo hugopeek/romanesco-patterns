@@ -22,10 +22,10 @@
  * @package romanesco
  */
 
-$pdCorePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
+$corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
 
 if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
-    require $pdCorePath . 'vendor/autoload.php';
+    require $corePath . 'vendor/autoload.php';
 }
 
 use \Wa72\HtmlPageDom\HtmlPageCrawler;
