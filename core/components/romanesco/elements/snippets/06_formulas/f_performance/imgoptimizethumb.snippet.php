@@ -30,7 +30,6 @@
  * @var string $options
  */
 
-$basePath = $modx->getOption('base_path', $scriptProperties, '');
 $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
 $romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
 
@@ -45,6 +44,12 @@ $imgPathFull = str_replace('//','/', MODX_BASE_PATH . $imgPath);
 $imgName = pathinfo($imgPathFull, PATHINFO_FILENAME);
 $imgType = pathinfo($imgPathFull, PATHINFO_EXTENSION);
 $outputDir = dirname($imgPathFull);
+
+// Check if file exists
+if (!file_exists($imgPathFull)) {
+    $modx->log(modX::LOG_LEVEL_WARN, '[imgOptimizeThumb] Image not found: ' . $imgPathFull);
+    return $imgPath;
+}
 
 // Look for context key
 $context = $modx->getOption('context', $scriptProperties, '');
