@@ -32,7 +32,7 @@ switch ($modx->event->name) {
             $romanesco = $modx->getService('romanesco','Romanesco', $corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
             if (!($romanesco instanceof Romanesco)) {
                 $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
-                return;
+                break;
             }
 
             // Get external links for this resource
