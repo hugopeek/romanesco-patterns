@@ -2,10 +2,12 @@
 /**
  * clipString
  *
- * Trim the edges of a string.
+ * Trim a certain amount of characters from the edges of a string.
  *
  * If a negative value is used, this number of characters will be clipped from
  * the end. Otherwise, they are clipped from the start of the string.
+ *
+ * If no value is given, whitespace is trimmed from the edges.
  *
  * Usage examples:
  *
@@ -30,10 +32,15 @@
  */
 
 $input = $modx->getOption('input', $scriptProperties, $input);
-$clip = $modx->getOption('clip', $scriptProperties, $options);
+$clip = (int) $modx->getOption('clip', $scriptProperties, $options);
 
 // Output filters are also processed when the input is empty, so check for that
 if ($input == '') { return ''; }
+
+// Only trim whitespace if clip is not defined
+if (!$clip) {
+    return trim($input);
+}
 
 // Decide whether to clip the start or end of the string
 if ($clip < 0) {

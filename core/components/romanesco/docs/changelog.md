@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Trim whitespace from edges if using clipString without value
 - Fix Romanesco class not being loaded when creating automatic references
 - Fix uid for imgResponsive chunks inside Image CBs
 
