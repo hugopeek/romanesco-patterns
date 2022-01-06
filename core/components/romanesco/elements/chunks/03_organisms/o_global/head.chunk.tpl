@@ -55,6 +55,7 @@
 
 [[- LOAD JS ASSETS WITH DEFER, SO DOWNLOADING WILL START EARLY WITHOUT BLOCKING RENDERING ]]
 <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer src="[[++romanesco.semantic_js_path]]/jquery-offline.min[[+cache_buster_js:notempty=`.360`]].js"></script>
 <script defer src="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_js]].js"></script>
 <script defer src="[[++romanesco.semantic_js_path]]/onmediaquery[[+minify]][[+cache_buster_js]].js"></script>
 <script defer src="[[++romanesco.semantic_vendor_path]]/vanilla-lazyload/lazyload.min[[+cache_buster_js]].js"></script>
