@@ -8,7 +8,7 @@
 ]]
 
 <aside id="final-call" class="ui vertical stripe segment [[setBackground? &background=`[[+footer_cta_background]]`]] cta">
-    <div class="ui center aligned container">
+    <div class="ui center aligned main container">
         [[#[[*footer_cta:empty=`0`]].content]]
     </div>
 </aside>

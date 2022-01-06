@@ -2,8 +2,8 @@
     <div class="ui [[+container_type]] container">
         <div class="ui [[+responsive:replace=`,== `]] [[+padding]] [[+alignment]] [[+divider]] equal width grid">
             <div class="row">
-                <div class="[[+sidebar_width]] wide column">[[+sidebar]]</div>
-                <div class="column">[[+main]]</div>
+                <div class="[[+sidebar_width]] wide sidebar column">[[+sidebar]]</div>
+                <div class="main column">[[+main]]</div>
             </div>
         </div>
     </div>
