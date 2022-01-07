@@ -1,4 +1,5 @@
-Standard width=
 Full width (fluid)=fluid
+Standard width=
 Slightly narrower=tightened
-Optimal readability=text
+Improved readability (normal text)=conventional text
+Optimal readability (large text)=text
