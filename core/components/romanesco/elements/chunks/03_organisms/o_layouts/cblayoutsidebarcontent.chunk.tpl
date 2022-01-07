@@ -3,7 +3,7 @@
         <div class="ui [[+responsive:replace=`,== `]] [[+padding]] [[+alignment]] [[+divider]] equal width grid">
             <div class="row">
                 <div class="[[+sidebar_width]] wide sidebar column">[[+sidebar]]</div>
-                <div class="main column">[[+main]]</div>
+                <div class="[[+title_inflate]] main column">[[+main]]</div>
             </div>
         </div>
     </div>

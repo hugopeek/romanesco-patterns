@@ -2,7 +2,7 @@
     <div class="ui [[+container_type]] container">
         <div class="ui [[+responsive:replace=`,== `]] [[+padding]] [[+alignment]] [[+divider]] equal width grid">
             <div class="row">
-                <div class="main column">[[+main]]</div>
+                <div class="[[+title_inflate]] main column">[[+main]]</div>
                 <div class="[[+sidebar_width]] wide sidebar column">[[+sidebar]]</div>
             </div>
         </div>

@@ -39,6 +39,7 @@
 
     &title_field=`[[+title_field]]`
     &title_hierarchy=`[[+title_hierarchy]]`
+    &title_inflate=`[[+title_inflate]]`
     &show_subtitle=`[[+show_subtitle]]`
     &show_introtext=`[[+show_introtext]]`
     &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`

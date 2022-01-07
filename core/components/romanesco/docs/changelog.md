@@ -4,8 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Add controls for inflated titles in main layout columns and CTAs
 - Load jQuery from local source when offline
-- Add classes to main and sidebar columns in layouts and CTAs
 - Trim whitespace from edges if using clipString without value
 - Fix Romanesco class not being loaded when creating automatic references
 - Fix uid for imgResponsive chunks inside Image CBs

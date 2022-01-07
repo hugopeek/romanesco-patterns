@@ -1,4 +1,4 @@
-<div class="column">
+<div class="sidebar column">
     <a class="ui rounded image" href="[[~[[+id]]]]">
         [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
             &tvname=`overview_img_[[+img_type:empty=`landscape`]]`
@@ -10,6 +10,6 @@
         ]]
     </a>
 </div>
-<div class="[[+content_width]] wide column">
+<div class="[[+content_width]] wide [[+title_inflate]] main column">
     [[$overviewRowBasic? &uid=`[[+unique_idx]]`]]
 </div>
