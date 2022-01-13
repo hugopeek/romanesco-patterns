@@ -12,6 +12,7 @@
                 <input type="text" name="[[+name]]-start" id="[[+name]]-start" value="[[!+fb[[*id]].[[+name]]-start]]" placeholder="[[+placeholder_start]]">
             </div>
         </div>
+        [[+fb[[*id]].error.[[+name]]-start]]
     </div>
     <div class="field [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]-end]]` &operator=`notempty` &then=`error`]]">
         <label for="[[+name]]-end">[[+label_end]]</label>
@@ -21,6 +22,7 @@
                 <input type="text" name="[[+name]]-end" id="[[+name]]-end" value="[[!+fb[[*id]].[[+name]]-end]]" placeholder="[[+placeholder_end]]">
             </div>
         </div>
+        [[+fb[[*id]].error.[[+name]]-end]]
     </div>
 </div>
 

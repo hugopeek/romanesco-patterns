@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add error messages to date range fields 
 - Add improved readability layout width (with normal text size)
 - Add controls for inflated titles in main layout columns and CTAs
 - Load jQuery from local source when offline
