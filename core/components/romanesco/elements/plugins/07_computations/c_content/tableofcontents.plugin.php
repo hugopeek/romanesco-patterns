@@ -70,6 +70,9 @@ switch ($modx->event->name) {
                 $anchor = $node->getAttribute('id');
                 $level = $node->nodeName();
 
+                // Remove nested troublemakers
+                $text = strip_tags($text);
+
                 if (isset($anchor)) {
                     return array(
                         "text" => $text,
