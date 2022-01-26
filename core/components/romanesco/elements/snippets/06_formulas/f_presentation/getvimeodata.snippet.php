@@ -8,16 +8,16 @@
  * always the same, depending on the Vimeo privacy settings.
  */
 
-$videoURL = $modx->getOption('videoURL', $scriptProperties, $input);
-$imgSize = $modx->getOption('imgSize', $scriptProperties, $options);
+$videoURL = $modx->getOption('videoURL', $scriptProperties, '');
+$imgSize = $modx->getOption('imgSize', $scriptProperties, '720');
 $imgType = $modx->getOption('imgType', $scriptProperties, 'webp');
 $prefix = $modx->getOption('prefix', $scriptProperties, '');
 
-$cacheKey = 'video';
+$cacheKey = parse_url($videoURL, PHP_URL_PATH);
 $cacheManager = $modx->getCacheManager();
 $cacheLifetime = (int)$modx->getOption('cacheLifetime', $scriptProperties, 7 * 24 * 60 * 60, true);
 $cacheOptions = [
-    xPDO::OPT_CACHE_KEY => $cacheKey,
+    xPDO::OPT_CACHE_KEY => 'video/vimeo',
 ];
 $fromCache = true;
 $data = $cacheManager->get($cacheKey, $cacheOptions);
@@ -28,7 +28,7 @@ if ($modx->getOption('pthumb.use_ptcache', null, true) ) {
 } else {
     $cachePath = $modx->getOption('phpthumbof.cache_path', null, "assets/components/phpthumbof/cache", true);
 }
-$cachePath = rtrim($cachePath, '/') . '/' . $cacheKey . '/';
+$cachePath = rtrim($cachePath, '/') . '/video/vimeo/';
 $cachePathFull = MODX_BASE_PATH . $cachePath;
 
 // Invalidate cache if URL changed
@@ -79,15 +79,17 @@ if (!is_array($data)) {
 
     // Write image file to assets cache folder
     $thumbFile = file_get_contents($thumbURL);
-    $thumbFileName = 'vimeo-' . $videoID . '.' . $imgSize . '.' . $imgType;
+    $thumbFileName = $videoID . '.' . $imgSize . '.' . $imgType;
     $thumbPath = $cachePath . $thumbFileName;
 
     if (!@is_dir($cachePathFull)) {
-        if (!@mkdir($cachePathFull, 0755)) {
-            $this->modx->log(xPDO::LOG_LEVEL_ERROR, '[getVideoData] Could not create the cache path.', '', 'Romanesco');
+        if (!@mkdir($cachePathFull, 0755, 1)) {
+            $modx->log(xPDO::LOG_LEVEL_ERROR, '[getVimeoData] Could not create cache path.', '', 'Romanesco');
         }
     }
-    file_put_contents(MODX_BASE_PATH . $thumbPath, $thumbFile);
+    if (!@file_put_contents(MODX_BASE_PATH . $thumbPath, $thumbFile)) {
+        $modx->log(xPDO::LOG_LEVEL_ERROR, '[getVimeoData] Could not create thumbnail file @ ' . $thumbPath, '', 'Romanesco');
+    }
 
     // Create array of data to be cached
     $data = [
@@ -109,6 +111,6 @@ if (!is_array($data)) {
 $modx->toPlaceholder('vimeoID', $data['response']['video_id'], $prefix);
 $modx->toPlaceholder('vimeoThumb', $data['thumbPath'], $prefix);
 
-//return '<p>From cache: ' . ($fromCache ? 'Yes' : 'No');
+//return '<p>From cache: ' . ($fromCache ? 'Yes' : 'No') . '</p>';
 
 return '';
