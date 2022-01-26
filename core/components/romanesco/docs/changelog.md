@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Shorten timeout and add caching for Vimeo thumbnail requests
 - Remove nested troublemakers from headings in ToC menu
 - Add error messages to date range fields 
 - Add improved readability layout width (with normal text size)
