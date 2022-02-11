@@ -1,4 +1,4 @@
-[[+field_name:fbResetNonAlpha:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
+[[+field_name_html:empty=`[[+field_name]]`:fbResetNonAlpha:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 [[+field_option:fbResetNonAlpha:toPlaceholder=`option`]]
 
 <div class="field">

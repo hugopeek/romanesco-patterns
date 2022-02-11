@@ -1,4 +1,4 @@
-[[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
+[[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 [[+field_helptext:notempty=`<span class="help">[[+field_helptext]]</span>`:toPlaceholder=`help`]]
 [[!+fb[[*id]].[[+name]]:contains=`[[+option_other_value]]`:then=`checked`:toPlaceholder=`check_other`]]
 

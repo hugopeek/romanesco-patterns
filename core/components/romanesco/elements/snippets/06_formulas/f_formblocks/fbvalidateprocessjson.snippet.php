@@ -5,7 +5,8 @@
  * A snippet for FormBlocks that generates the correct strings for the FormIt &validate property.
  *
  * @author Hugo Peek
- * @var $scriptProperties
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 // Function to strip required field names correctly
@@ -37,19 +38,21 @@ foreach ($cbData as $field) {
         continue;
     }
 
+    $fieldName = $field['settings']['field_name_html'] ?? $field['settings']['field_name'];
+
     // Special treatment for date fields
     if ($field['field'] == $modx->getOption('formblocks.cb_input_date_range_id', $scriptProperties)) {
-        $output[] = $prefix . stripResults($field['settings']['field_name']) . "-start:isDate:required,";
-        $output[] = $prefix . stripResults($field['settings']['field_name']) . "-end:isDate:required,";
+        $output[] = $prefix . stripResults($fieldName) . "-start:isDate:required,";
+        $output[] = $prefix . stripResults($fieldName) . "-end:isDate:required,";
         continue;
     }
     if ($field['field'] == $modx->getOption('formblocks.cb_input_date_id', $scriptProperties)) {
-        $output[] = $prefix . stripResults($field['settings']['field_name']) . ":isDate:required,";
+        $output[] = $prefix . stripResults($fieldName) . ":isDate:required,";
         continue;
     }
 
     // All remaining fields
-    $output[] = $prefix . stripResults($field['settings']['field_name']) . ":required,";
+    $output[] = $prefix . stripResults($fieldName) . ":required,";
 }
 
 return implode('', $output);

@@ -1,4 +1,4 @@
-[[+field_name:fbStripAsAlias:replace=`-==`]]: {
+[[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:replace=`-==`]]: {
     identifier: 'fb[[*id]]-email',
     rules: [{
         type   : 'email',

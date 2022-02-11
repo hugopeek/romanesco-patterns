@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add option to FormBlocks fields to override the name attribute in HTML
 - Add caching and optimize requests for Youtube and Vimeo thumbnails
 - Remove nested troublemakers from headings in ToC menu
 - Add error messages to date range fields 

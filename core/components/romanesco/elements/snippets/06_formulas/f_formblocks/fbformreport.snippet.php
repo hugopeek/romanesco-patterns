@@ -37,7 +37,6 @@ if (!function_exists('getFields')) {
                 // Only return required fields if specified
                 if ($reqOnly) {
 
-
                     // Some fields are always required
                     switch ($value['field']) {
                         case $modx->getOption('formblocks.cb_input_email_id'):
@@ -55,7 +54,6 @@ if (!function_exists('getFields')) {
                     }
 
                     //$modx->log(modX::LOG_LEVEL_ERROR, print_r($value['settings'],1));
-
 
                     if ($value['settings']['field_required'] != 1) {
                         continue;
