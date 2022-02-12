@@ -9,14 +9,6 @@
  * @var array $scriptProperties
  */
 
-// Function to strip required field names correctly
-if (!function_exists('stripResults')) {
-    function stripResults($input) {
-        global $modx;
-        return $modx->runSnippet('fbStripAsAlias', array('input' => $input));
-    }
-}
-
 $formID = $modx->getOption('formID', $scriptProperties,'');
 
 if ($formID) {
@@ -38,21 +30,26 @@ foreach ($cbData as $field) {
         continue;
     }
 
-    $fieldName = $field['settings']['field_name_html'] ?? $field['settings']['field_name'];
+    // Get field name and format as alias
+    $fieldName = $field['settings']['field_name_html'];
+    if (!$fieldName) {
+        $fieldName = $field['settings']['field_name'];
+    }
+    $fieldName = $modx->runSnippet('fbStripAsAlias', array('input' => $fieldName));
 
     // Special treatment for date fields
     if ($field['field'] == $modx->getOption('formblocks.cb_input_date_range_id', $scriptProperties)) {
-        $output[] = $prefix . stripResults($fieldName) . "-start:isDate:required,";
-        $output[] = $prefix . stripResults($fieldName) . "-end:isDate:required,";
+        $output[] = $prefix . $fieldName . "-start:isDate:required,";
+        $output[] = $prefix . $fieldName . "-end:isDate:required,";
         continue;
     }
     if ($field['field'] == $modx->getOption('formblocks.cb_input_date_id', $scriptProperties)) {
-        $output[] = $prefix . stripResults($fieldName) . ":isDate:required,";
+        $output[] = $prefix . $fieldName . ":isDate:required,";
         continue;
     }
 
     // All remaining fields
-    $output[] = $prefix . stripResults($fieldName) . ":required,";
+    $output[] = $prefix . $fieldName . ":required,";
 }
 
 return implode('', $output);
