@@ -168,6 +168,9 @@
                         },{
                             "name": "elementPreview",
                             "value": ""
+                        },{
+                            "name": "valueType",
+                            "value": "name"
                         }
                     ],
                     "category": "a_fb_inputs"
@@ -194,6 +197,9 @@
                         },{
                             "name": "elementPreview",
                             "value": ""
+                        },{
+                            "name": "valueType",
+                            "value": "name"
                         }
                     ],
                     "category": "a_fb_inputs"

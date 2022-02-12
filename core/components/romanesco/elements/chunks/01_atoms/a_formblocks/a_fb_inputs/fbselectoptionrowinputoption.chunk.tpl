@@ -1,5 +1,5 @@
 [[!fbStripAsAlias:fbPrefixOutput:toPlaceholder=`field_alias`? &input=`[[+field_name_html:empty=`[[+field_name]]`]]`]]
-[[!fbStripNonAlpha:toPlaceholder=`value_[[+idx]]`? &input=`[[+name]]`]]
+[[!fbStripNonAlpha:toPlaceholder=`value_[[+idx]]`? &input=`[[+[[+valueType:empty=`name`]]]]`]]
 [[!If:toPlaceholder=`checkbox_array`?
     &subject=`[[+field_type]]`
     &operator=`EQ`
