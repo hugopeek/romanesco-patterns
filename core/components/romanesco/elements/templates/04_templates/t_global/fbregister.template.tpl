@@ -39,7 +39,12 @@
         [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[+math_question:isnot=`0`:then=`fb[[*id]]-math:math,`]]
-        [[$fbValidateCustomFields]][[++formblocks.honeypot_field:notempty=`,
+        [[[[modifiedIf?
+            &subject=`fbValidateCustomFields`
+            &operator=`iselement`
+            &operand=`chunk`
+            &then=`$fbValidateCustomFields`
+        ]]]][[++formblocks.honeypot_field:notempty=`,
         fb[[*id]]-[[++formblocks.honeypot_field]]:blank`]]`
     &validatePassword=`[[*fb_password_field:isnot=``:then=`1`:else=`0`]]`
 
