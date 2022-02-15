@@ -50,7 +50,7 @@
 
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
-    &submitVar=`submit-[[+title]]`
+    &submitVar=`fb[[*id]]-submit`
     &successMsg=`[[%formblocks.registration.success_message]]`
 
     &activationResourceId=`[[*fb_activation_resource_id:empty=`[[++formblocks.activation_resource_id]]`]]`

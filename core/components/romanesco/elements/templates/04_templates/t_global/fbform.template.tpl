@@ -104,7 +104,7 @@
         fb[[*id]]-[[++formblocks.honeypot_field]]:blank`]]`
     &errTpl=`<span class="help error">[[+error]]</span>`
     &placeholderPrefix=`fb[[*id]].`
-    &submitVar=`submit-[[*alias]]`
+    &submitVar=`fb[[*id]]-submit`
     &redirectTo=`[[+redirect_to]]`
 
     &store=`[[*fb_store_data:default=`0`]]`

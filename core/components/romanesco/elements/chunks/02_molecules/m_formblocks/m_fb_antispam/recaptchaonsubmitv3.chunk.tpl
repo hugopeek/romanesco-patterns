@@ -1,7 +1,7 @@
 <div id="rc-root-[[+action_key]]-[[+form_id]]">
     <input type="hidden" name="[[+token_key]]">
     <input type="hidden" name="[[+action_key]]" value="[[+form_id]]">
-    <input type="hidden" name="submit-[[*alias]]" value="1">
+    <input type="hidden" name="fb[[*id]]-submit" value="1">
 </div>
 
 <p class="recaptcha help">
