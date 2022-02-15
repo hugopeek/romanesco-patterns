@@ -169,7 +169,7 @@
                 },{
                     "caption": "Custom pre-hook(s)",
                     "name": "fb_prehooks",
-                    "description": "A snippet name (or comma separated list of snippet names), containing the hook(s). These hooks are executed before the form is initialised.",
+                    "description": "A snippet name (or comma separated list of names), containing the hook(s). They are executed before the form is initialised. Useful for pre-loading values.",
                     "type": "text",
                     "properties": [
                         {
@@ -184,9 +184,25 @@
                         "fbRegister"
                     ]
                 },{
+                    "caption": "Custom render hook(s)",
+                    "name": "fb_renderhooks",
+                    "description": "A snippet name (or comma separated list of names), containing the hook(s). They are executed when the form loads and all pre-hooks are finished. Useful for fetching session data.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "Settings - Advanced",
+                    "sortOrder": "2",
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
                     "caption": "Custom hook(s)",
                     "name": "fb_hooks",
-                    "description": "A snippet name (or comma separated list of snippet names), containing the hook(s). These hooks are executed after the form is submitted, but before any emails are sent.",
+                    "description": "A snippet name (or comma separated list of names), containing the hook(s). They are executed after the form is submitted, but before any emails are sent. Useful for writing to the database.",
                     "type": "text",
                     "properties": [
                         {
@@ -195,7 +211,7 @@
                         }
                     ],
                     "category": "Settings - Advanced",
-                    "sortOrder": "2",
+                    "sortOrder": "3",
                     "templates": [
                         "fbForm",
                         "fbRegister"

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add ability to define custom render hooks in FormBlocks forms 
 - Add ability to choose different value type when using Input Options in forms
 - Add option to FormBlocks fields to override the name attribute in HTML
 - Add caching and optimize requests for Youtube and Vimeo thumbnails

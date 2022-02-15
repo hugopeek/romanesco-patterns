@@ -42,6 +42,7 @@
         [[*fb_prehooks:notempty=`[[*fb_prehooks]],`]]
         fbEmptyHook
     `
+    &renderHooks=`[[*fb_renderhooks]]`
     &hooks=`
         spam,
         [[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]]
