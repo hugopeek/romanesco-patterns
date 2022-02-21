@@ -9,9 +9,10 @@
     &quality=`[[++romanesco.img_quality]]`
     &src=`[[+url]]`
     &width=`[[+width]]`
-    &toPlaceholder=`[[+prefix]].srcset`
+    &uid=`[[+unique_idx]]`
+    &toPlaceholder=`srcset`
 ]]
-<img [[+lazy]]srcset="[[+[[+prefix]].srcset]]"
+<img [[+lazy]]srcset="[[+srcset]]"
      [[+lazy]]sizes="(min-width: 1300px) calc([[+scale]]vw / [[+cols]]),
                      (min-width: 992px) calc([[+scale]]vw / [[+cols]]),
                      (min-width: 768px) [[+cols:gt=`2`:then=`calc(([[+scale]]vw - 2em) / 2)`:else=`[[+scale]]vw`]],

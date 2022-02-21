@@ -8,6 +8,9 @@
  * img_breakpoints configuration setting.
  *
  * @author: Hugo Peek
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $breakpoints = $modx->getOption('breakpoints', $scriptProperties, '');
@@ -16,11 +19,14 @@ $crop = $modx->getOption('crop', $scriptProperties, '');
 $width = $modx->getOption('width', $scriptProperties, '');
 $quality = $modx->getOption('quality', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'imgResponsiveRowSrcset');
+$prefix = $modx->getOption('prefix', $scriptProperties, '');
 $placeholder = $modx->getOption('toPlaceholder', $scriptProperties, '');
 
 // Output filters are also processed when the input is empty, so check for that.
 if ($breakpoints == '') { return ''; }
+
 $breakpoints = explode(',', $breakpoints);
+$output = array();
 
 // Process each breakpoint individually
 foreach ($breakpoints as $key => $value) {
@@ -33,9 +39,11 @@ foreach ($breakpoints as $key => $value) {
     ));
 }
 
+$output = implode(",\n", $output);
+
 if ($placeholder) {
-    $modx->toPlaceholder($placeholder, implode(",\n", $output));
+    $modx->toPlaceholder($placeholder, $output, $prefix);
     return '';
 } else {
-    return implode(",\n", $output);
+    return $output;
 }

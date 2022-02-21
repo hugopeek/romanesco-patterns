@@ -10,6 +10,7 @@
     &quality=`[[++romanesco.img_quality]]`
     &src=`[[+url]]`
     &width=`[[++max_thumb_width]]`
+    &uid=`[[+unique_idx]]`
     &toPlaceholder=`srcset`
 ]]
 <img [[+lazy]]srcset="[[+srcset]]"
