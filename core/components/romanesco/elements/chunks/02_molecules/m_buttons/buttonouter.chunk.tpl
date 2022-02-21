@@ -1,12 +1,12 @@
 [[+new_line:eq=`1`:then=`<br>`]]
 [[modifiedIf?
     &subject=`[[+icon_class:empty=``]]`
-    &operator=`isnot`
-    &operand=``
+    &operator=`notempty`
     &then=`buttonHrefIcon`
     &else=`buttonHrefBasic`
-    &outputAsTpl=`1`
-
+    &toPlaceholder=`button_tpl`
+]]
+[[$[[+button_tpl]]?
     &link=`[[+link]]`
     &button_text=`[[+button_text]]`
     &classes=`[[+button_size]] [[+button_type]] [[+button_options:replace=`,== `]] [[+icon_options:replace=`,== `]] [[+icon_class:notempty=`icon`]]`
@@ -17,4 +17,7 @@
         [[+link_rel:replace=`,== `:prepend=`rel="`:append=`"`]]
         [[+attributes]]
     `
+    &layout_id=`[[+layout_id]]`
+    &layout_column=`[[+layout_column]]`
+    &uid=`[[+unique_idx]]`
 ]]

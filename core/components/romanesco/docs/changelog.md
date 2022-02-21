@@ -5,7 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Fix empty srcset values when using the same image more than once on a page
-- Load content images and card rows with chunk (instead of outputAsTpl)
+- Load buttons, content images and card rows with chunk (instead of outputAsTpl)
 - Don't load image tag if Gallery or Cards image is empty
 - Add ability to define custom render hooks in FormBlocks forms 
 - Add ability to choose different value type when using Input Options in forms

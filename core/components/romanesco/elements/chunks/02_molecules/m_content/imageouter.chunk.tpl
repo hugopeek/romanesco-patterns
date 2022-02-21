@@ -4,10 +4,9 @@
     &operand=`svg`
     &then=`imageSVG`
     &else=`imageBasic[[+link:notempty=`Link`]]`
-    &toPlaceholder=`img_type`
+    &toPlaceholder=`img_tpl`
 ]]
-
-[[$[[+img_type]]?
+[[$[[+img_tpl]]?
     &url=`[[+crops.default.url:empty=`[[+url]]`]]`
     &width=`[[+crops.default.width:empty=`[[+width]]`]]`
     &height=`[[+crops.default.height:empty=`[[+height]]`]]`
