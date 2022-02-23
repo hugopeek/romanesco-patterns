@@ -31,6 +31,7 @@ switch ($modx->event->name) {
         // Get processed output of resource
         $content = &$modx->resource->_output;
         $resourceURI = $modx->resource->get('uri');
+        $headings = $modx->resource->getTVValue('toc_headings');
 
         // Feed output to HtmlPageDom
         $dom = new HtmlPageCrawler($content);
@@ -61,10 +62,10 @@ switch ($modx->event->name) {
             ;
         }
 
-        // Get all headings on the page
+        // Get allowed headings on the page
         $toc = $dom
             ->filter('#content')
-            ->filter('h1,h2,h3,h4,h5,h6')
+            ->filter(strtolower($headings))
             ->each(function (HtmlPageCrawler $node) {
                 $text = $node->getInnerHtml();
                 $anchor = $node->getAttribute('id');

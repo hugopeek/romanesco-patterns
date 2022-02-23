@@ -1226,6 +1226,29 @@
                     ]
                 },
                 {
+                    "caption": "Included headings in ToC",
+                    "name": "toc_headings",
+                    "description": "Select which hierarchy levels are allowed in the ToC menu (if present). This setting is inherited on child pages.",
+                    "type": "checkbox",
+                    "inputOptionValues": "H1||H2||H3||H4||H5||H6",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "defaultValue": "@INHERIT H1||H2||H3",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "Navigation",
+                    "sortOrder": "11",
+                    "templates": [
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                    ]
+                },
+                {
                     "caption": "Automatic reference links",
                     "name": "auto_references",
                     "description": "Turn references to an external link (the ones you created under TVs > Links) into an actual link. Links are referenced by their number value and must be enclosed in square brackets: [12].",
@@ -1239,7 +1262,7 @@
                         }
                     ],
                     "category": "Navigation",
-                    "sortOrder": "11",
+                    "sortOrder": "12",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
