@@ -1235,7 +1235,7 @@
                         "delimiter": ","
                     },
                     "display": "delim",
-                    "defaultValue": "@INHERIT H1||H2||H3",
+                    "defaultValue": "@INHERIT H1||H2||H3||H4",
                     "properties": [
                         {
                             "name": "elementStatus",
