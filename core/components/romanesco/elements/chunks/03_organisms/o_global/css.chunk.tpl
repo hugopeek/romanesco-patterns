@@ -63,9 +63,10 @@
 
 /* Additional styles */
 
-[[[[If?
-    &subject=`[[$globalBackgroundsTheme]]`
-    &operator=`isnull`
-    &then=``
-    &else=`$globalBackgroundsTheme`
+[[[[modifiedIf?
+    &subject=`globalBackgroundsTheme`
+    &operator=`iselement`
+    &operand=`chunk`
+    &then=`$globalBackgroundsTheme`
+    &else=``
 ]]]]

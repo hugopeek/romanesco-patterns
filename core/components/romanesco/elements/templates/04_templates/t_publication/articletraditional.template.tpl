@@ -78,7 +78,7 @@
                     &operator=`notempty`
                     &then=`getResources?
                         &resources=`[[+team_member_id:empty=`0`]]`
-                        &tpl=`[[If? &subject=`[[$articleAuthorBioTheme]]` &operator=`isnull` &then=`articleAuthorBio` &else=`articleAuthorBioTheme`]]`
+                        &tpl=`[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`articleAuthorBioTheme` &else=`articleAuthorBio`]]`
                         &includeTVs=`1`
                         &tvPrefix=``
                     `

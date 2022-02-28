@@ -11,9 +11,10 @@
 [[+startPage:eq=`[[!+page]]`:then=`
 <div id="[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`ov_[[Time]]` &else=`[[+prefix]]`]]" class="pagination-wrapper">
     [[$overviewWrapper? &uid=`[[+idx]][[+page]][[+unique_idx]]`]]
-    [[[[If?
-        &subject=`[[$paginationFluidTheme]]`
-        &operator=`isnull`
+    [[[[modifiedIf?
+        &subject=`paginationFluidTheme`
+        &operator=`iselement`
+        &operand=`chunk`
         &then=`$paginationFluid? &prefix=`[[+prefix]]``
         &else=`$paginationFluidTheme? &prefix=`[[+prefix]]``
     ]]]]

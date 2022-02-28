@@ -22,7 +22,7 @@
     &depth=`[[+depth]]`
     &limit=`[[+limit:default=`0`]]`
     &offset=`[[+offset:default=`0`]]`
-    &tpl=`[[If? &subject=`[[$overviewRowFluidTheme]]` &operator=`isnull` &then=`overviewRowFluid` &else=`overviewRowFluidTheme`]]`
+    &tpl=`[[modifiedIf? &subject=`overviewRowFluidTheme` &operator=`iselement` &operand=`chunk` &then=`overviewRowFluidTheme` &else=`overviewRowFluid`]]`
     &includeTVs=`1`
     &processTVs=`1`
     &tvPrefix=``
@@ -30,7 +30,7 @@
     &sortby=`[[+sortby]]`
     &sortdir=`[[+[[+unique_idx]].sortdir]]`
 
-    &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`
+    &row_tpl=`[[modifiedIf? &subject=`[[+row_tpl]]Theme` &operator=`iselement` &operand=`chunk` &then=`[[+row_tpl]]Theme` &else=`[[+row_tpl]]`]]`
     &background_even=`[[+background_even]]`
     &background_odd=`[[+background_odd]]`
     &content_width=`[[+content_width]]`

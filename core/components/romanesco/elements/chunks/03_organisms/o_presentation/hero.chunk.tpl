@@ -29,10 +29,11 @@
     &toPlaceholder=`header_background_class`
 ]]
 [[modifiedIf?
-    &subject=`[[$heroTitlesTheme]]`
-    &operator=`isnull`
-    &then=`heroTitles`
-    &else=`heroTitlesTheme`
+    &subject=`heroTitlesTheme`
+    &operator=`iselement`
+    &operand=`chunk`
+    &then=`heroTitlesTheme`
+    &else=`heroTitles`
     &toPlaceholder=`hero_tpl`
 ]]
 

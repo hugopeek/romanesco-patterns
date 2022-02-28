@@ -1,7 +1,13 @@
 <nav id="menu" class="ui [[++navbar_size:default=`large`]] secondary [[++navbar_sticky:is=`1`:then=`sticky`]] menu">
     <div class="ui container">
         <div class="item branding">
-            [[[[If? &subject=`[[$logoTheme]]` &operator=`isnull` &then=`$logo` &else=`$logoTheme`]]]]
+            [[[[modifiedIf?
+                &subject=`logoTheme`
+                &operator=`iselement`
+                &operand=`chunk`
+                &then=`$logoTheme`
+                &else=`$logo`
+            ]]]]
         </div>
 
         [[[[If?
