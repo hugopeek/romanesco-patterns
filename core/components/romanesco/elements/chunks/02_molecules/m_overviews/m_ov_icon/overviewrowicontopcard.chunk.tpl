@@ -1,5 +1,5 @@
 <div class="content">
-    <[[+title_hierarchy]] class="ui centered icon header">
+    <[[+title_hierarchy]] class="ui [[+title_classes]] centered icon header">
         [[If?
             &subject=`[[+icon_type]]`
             &operator=`EQ`

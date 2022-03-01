@@ -1,7 +1,7 @@
 [[-$imgOverviewPersonLink? &uid=`[[+unique_idx]]`]]
 
 <div class="ui overlay">
-    <[[+title_hierarchy]] class="ui inverted header">
+    <[[+title_hierarchy]] class="ui [[+title_classes]] inverted header">
         [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
         [[If?
             &subject=`[[+show_subtitle]]`

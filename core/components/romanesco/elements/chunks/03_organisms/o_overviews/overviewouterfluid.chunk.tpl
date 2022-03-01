@@ -39,6 +39,7 @@
 
     &title_field=`[[+title_field]]`
     &title_hierarchy=`[[+title_hierarchy]]`
+    &title_classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`
     &title_inflate=`[[+title_inflate]]`
     &show_subtitle=`[[+show_subtitle]]`
     &show_introtext=`[[+show_introtext]]`

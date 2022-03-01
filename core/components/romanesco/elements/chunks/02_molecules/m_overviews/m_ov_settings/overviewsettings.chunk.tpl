@@ -1,4 +1,4 @@
-&row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`
+&row_tpl=`[[modifiedIf? &subject=`[[+row_tpl]]Theme` &operator=`iselement` &operand=`chunk` &then=`[[+row_tpl]]Theme` &else=`[[+row_tpl]]`]]`
 &box_type=`[[+[[+prefix]].box_type]]`
 &row_type=`[[+[[+prefix]].row_type]]`
 &column_type=`[[+[[+prefix]].column_type]]`
@@ -11,7 +11,7 @@
 &unique_idx=`[[+layout_title:stripAsAlias:append=`_`]][[+layout_id]]_[[+unique_idx]]`
 &title_field=`[[+title_field]]`
 &title_hierarchy=`[[+title_hierarchy]]`
-&classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`
+&title_classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`
 &show_subtitle=`[[+show_subtitle]]`
 &show_introtext=`[[+show_introtext]]`
 &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`

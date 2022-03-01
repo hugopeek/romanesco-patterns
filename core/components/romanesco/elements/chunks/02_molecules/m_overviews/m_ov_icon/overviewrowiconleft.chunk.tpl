@@ -1,4 +1,4 @@
-<[[+title_hierarchy]] class="ui horizontal header">
+<[[+title_hierarchy]] class="ui [[+title_classes]] horizontal header">
     [[If?
         &subject=`[[+icon_type]]`
         &operator=`EQ`
