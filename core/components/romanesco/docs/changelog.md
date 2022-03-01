@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Update patterns and structure in specific overviewRowFluid templates
 - Prevent Overview classes placeholders from leaking their values
 - Replace remaining If isnull comparisons with iselement
 - Add TV to select which heading levels are included in the ToC menu

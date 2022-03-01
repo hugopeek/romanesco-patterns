@@ -1,4 +1,4 @@
-<div class="column">
+<div class="sidebar column">
     <a class="ui rounded image" href="[[~[[+id]]]]">
         [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
             &tvname=`overview_img_landscape`
@@ -9,10 +9,20 @@
         ]]
     </a>
 </div>
-<div class="[[+cols]] wide floated column">
-    <h2 class="ui header">
+<div class="[[+content_width]] wide [[+title_inflate]] main column">
+    <[[+title_hierarchy]] class="ui [[+title_classes]] header">
         <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
-    </h2>
-    <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
-    <p><a href="[[~[[+id]]]]" class="ui primary button">[[+link_text]]</a></p>
+    </[[+title_hierarchy]]>
+    [[[[If?
+        &subject=`[[+show_introtext]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`$introtextDescription? &uid=`[[+unique_idx]]``
+    ]]]]
+    [[If?
+        &subject=`[[+link_text]]`
+        &operator=`isnot`
+        &operand=`0`
+        &then=`<p>[[$buttonHrefOverview? &uid=`[[+unique_idx]]`]]</p>`
+    ]]
 </div>

@@ -1,16 +1,21 @@
-<div class="column">
+<div class="sidebar column">
     [[$imgOverviewPersonLink? &classes=`circular` &uid=`[[+unique_idx]]`]]
 </div>
 
-<div class="[[+cols]] wide floated column">
-    <h2 class="ui header">
+<div class="[[+content_width]] wide [[+title_inflate]] main column">
+    <[[+title_hierarchy]] class="ui [[+title_classes]] header">
         <a href="[[~[[+id]]]]">[[+person_firstname]]</a>
         <span class="sub header">[[+person_jobtitle]]</span>
-    </h2>
+    </[[+title_hierarchy]]>
     <p>
         [[$socialConnectButtonsPerson? &uid=`[[+unique_idx]]`]]
     </p>
-    [[+introtext]]
+    [[[[If?
+        &subject=`[[+show_introtext]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`$introtextDescription? &uid=`[[+unique_idx]]``
+    ]]]]
     [[If?
         &subject=`[[+link_text]]`
         &operator=`isnot`

@@ -1,6 +1,6 @@
 [[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
 
-<div class="column">
+<div class="sidebar column">
     <a class="ui rounded image" href="[[~[[+id]]]]">
         [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`landscape`]]`?
             &tvname=`overview_img_landscape`
@@ -11,10 +11,8 @@
         ]]
     </a>
 </div>
-<div class="[[+cols]] wide middle aligned column">
-    <h2 class="ui header">
-        <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
-    </h2>
+<div class="[[+content_width]] wide [[+title_inflate]] main column">
+    [[$headingOverviewLink? &uid=`[[+unique_idx]]`]]
     <p>
         [[[[If?
             &subject=`[[+team_member_id]]`
@@ -35,6 +33,16 @@
             </em>
         </span>
     </p>
-    <p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
-    <p><a href="[[~[[+id]]]]" class="ui primary button">[[+link_text]]</a></p>
+    [[[[If?
+        &subject=`[[+show_introtext]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`$introtextDescription? &uid=`[[+unique_idx]]``
+    ]]]]
+    [[If?
+        &subject=`[[+link_text]]`
+        &operator=`isnot`
+        &operand=`0`
+        &then=`<p>[[$buttonHrefOverview? &uid=`[[+unique_idx]]`]]</p>`
+    ]]
 </div>
