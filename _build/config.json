@@ -6867,7 +6867,7 @@
                 },
                 {
                     "name": "cbLayoutCTA",
-                    "description": "NB: not referenced directly! The Call To Action layout is simply a wrapper to help you create a small CTA format in ContentBlocks. Created CTAs can be referenced across the entire website by the corresponding CTA ContentBlock, or by TVs.",
+                    "description": "NB: not referenced directly! This layout is a wrapper to help you create a small, reusable CTA pattern with ContentBlocks. CTAs can be referenced throughout your project with CB or with TVs.",
                     "properties": [
                         {
                             "name": "elementStatus",
