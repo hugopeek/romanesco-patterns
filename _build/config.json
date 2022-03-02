@@ -5861,6 +5861,21 @@
                     "category": "m_layouts"
                 },
                 {
+                    "name": "cbLayoutSegment",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_layouts"
+                },
+                {
                     "name": "overviewWrapper",
                     "description": "",
                     "properties": [
@@ -6417,7 +6432,7 @@
                 },
                 {
                     "name": "fbLayoutFieldset",
-                    "description": "",
+                    "description": "NB: not referenced directly! Only available in forms. With fieldsets, you can section your forms in different blocks, each with its own header.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6717,7 +6732,7 @@
                 },
                 {
                     "name": "cbLayoutSingleColumn",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6732,7 +6747,7 @@
                 },
                 {
                     "name": "cbLayoutTwoColumns",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6747,7 +6762,7 @@
                 },
                 {
                     "name": "cbLayoutThreeColumns",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6762,7 +6777,7 @@
                 },
                 {
                     "name": "cbLayoutFourColumns",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6777,7 +6792,7 @@
                 },
                 {
                     "name": "cbLayoutContentSidebar",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6792,7 +6807,7 @@
                 },
                 {
                     "name": "cbLayoutSidebarContent",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6807,7 +6822,7 @@
                 },
                 {
                     "name": "cbLayoutPattern",
-                    "description": "",
+                    "description": "NB: not referenced directly! A customized section for displaying Romanesco patterns in the front-end library.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6822,7 +6837,7 @@
                 },
                 {
                     "name": "cbLayoutBackyard",
-                    "description": "",
+                    "description": "NB: not referenced directly! A customized section for showcasing Romanesco patterns in the front-end library.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6837,7 +6852,7 @@
                 },
                 {
                     "name": "cbLayoutSlider",
-                    "description": "",
+                    "description": "NB: not referenced directly! This layout creates a slider with child elements. Can also process Overview items as slides.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6852,7 +6867,22 @@
                 },
                 {
                     "name": "cbLayoutCTA",
-                    "description": "",
+                    "description": "NB: not referenced directly! The Call To Action layout is simply a wrapper to help you create a small CTA format in ContentBlocks. Created CTAs can be referenced across the entire website by the corresponding CTA ContentBlock, or by TVs.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_layouts"
+                },
+                {
+                    "name": "cbLayoutBackground",
+                    "description": "A wrapper for the Global Background field. This layout enables you to preview the background in the browser.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6912,7 +6942,7 @@
                 },
                 {
                     "name": "overviewOuterFluid",
-                    "description": "",
+                    "description": "Displays child pages just like the regular Overview blocks, but in full-width layout sections.",
                     "properties": [
                         {
                             "name": "elementStatus",

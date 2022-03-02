@@ -4,7 +4,7 @@
             "chunks": [
                 {
                     "name": "cbLayoutSingleColumn",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -17,7 +17,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutTwoColumns",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -30,7 +30,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutThreeColumns",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -43,7 +43,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutFourColumns",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -56,7 +56,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutContentSidebar",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -69,7 +69,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutSidebarContent",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -82,7 +82,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutPattern",
-                    "description": "",
+                    "description": "NB: not referenced directly! A customized section for displaying Romanesco patterns in the front-end library.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -95,7 +95,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutBackyard",
-                    "description": "",
+                    "description": "NB: not referenced directly! A customized section for showcasing Romanesco patterns in the front-end library.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -108,7 +108,7 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutSlider",
-                    "description": "",
+                    "description": "NB: not referenced directly! This layout creates a slider with child elements. Can also process Overview items as slides.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -121,7 +121,20 @@
                     "category": "o_layouts"
                 },{
                     "name": "cbLayoutCTA",
-                    "description": "",
+                    "description": "NB: not referenced directly! The Call To Action layout is simply a wrapper to help you create a small CTA format in ContentBlocks. Created CTAs can be referenced across the entire website by the corresponding CTA ContentBlock, or by TVs.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_layouts"
+                },{
+                    "name": "cbLayoutBackground",
+                    "description": "A wrapper for the Global Background field. This layout enables you to preview the background in the browser.",
                     "properties": [
                         {
                             "name": "elementStatus",

@@ -1,4 +1,4 @@
-<div class="ui vertical stripe pattern segment [[+background]]">
+<div class="ui vertical stripe pattern segment [[+background:setBackground]]">
     <div class="ui [[+container_type]] [[+alignment]] container">
         [[[[If?
             &subject=`[[+pattern_template]]`

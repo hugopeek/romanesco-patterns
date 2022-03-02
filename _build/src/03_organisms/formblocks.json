@@ -4,7 +4,7 @@
             "chunks": [
                 {
                     "name": "fbLayoutFieldset",
-                    "description": "",
+                    "description": "NB: not referenced directly! Only available in forms. With fieldsets, you can section your forms in different blocks, each with its own header.",
                     "properties": [
                         {
                             "name": "elementStatus",

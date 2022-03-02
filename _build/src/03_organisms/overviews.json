@@ -30,7 +30,7 @@
                     "category": "o_overviews"
                 },{
                     "name": "overviewOuterFluid",
-                    "description": "",
+                    "description": "Displays child pages just like the regular Overview blocks, but in full-width layout sections.",
                     "properties": [
                         {
                             "name": "elementStatus",
