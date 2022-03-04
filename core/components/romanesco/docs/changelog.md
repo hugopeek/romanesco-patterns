@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add option to hide advanced CB features in manager
 - Add missing setBackground modifier to rich text segment and several layouts
 - Update patterns and structure in specific overviewRowFluid templates
 - Prevent Overview classes placeholders from leaking their values

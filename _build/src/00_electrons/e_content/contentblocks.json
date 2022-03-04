@@ -21,6 +21,11 @@
                 "type": "textfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""
+            },{
+                "key": "cb_hide_advanced_features",
+                "type": "combo-boolean",
+                "area": "ContentBlocks - Settings",
+                "value": "0"
             }
         ]
     }

@@ -12729,6 +12729,12 @@
                 "value": ""
             },
             {
+                "key": "cb_hide_advanced_features",
+                "type": "combo-boolean",
+                "area": "ContentBlocks - Settings",
+                "value": "0"
+            },
+            {
                 "key": "cta_container_id",
                 "type": "textfield",
                 "area": "Pages"

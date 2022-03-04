@@ -10,8 +10,6 @@
  * @package romanesco
  */
 
-$modx->controller->addLexiconTopic('romanescobackyard:manager');
-
 $versionCSS = $modx->getOption('romanesco.assets_version_css');
 $versionJS = $modx->getOption('romanesco.assets_version_js');
 
@@ -33,6 +31,8 @@ switch ($modx->event->name) {
         break;
 
     case 'OnManagerPageBeforeRender':
+        $modx->controller->addLexiconTopic('romanescobackyard:manager');
+
         // Load CSS for manager on different event
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css?v=' . $versionCSS);
 
@@ -40,6 +40,11 @@ switch ($modx->event->name) {
         $controller->addHtml('<script src="/assets/components/romanescobackyard/js/jquery.min.js"></script>');
         $controller->addHtml('<script src="/assets/semantic/dist/themes/romanesco/assets/vendor/arrive/arrive.min.js"></script>');
         $controller->addHtml('<script src="/assets/components/romanescobackyard/js/manager.js?v=' . $versionJS . '"></script>');
+
+        // Hide advanced ContentBlocks features
+        if ($modx->getOption('romanesco.cb_hide_advanced_features') == 1) {
+            $controller->addHtml('<script src="/assets/components/romanescobackyard/js/hide-advanced-features.js?v=' . $versionJS . '"></script>');
+        }
 
         // Load Ybug widget for collecting manager feedback
         if ($modx->getOption('romanesco.manager_feedback') == 1) {
