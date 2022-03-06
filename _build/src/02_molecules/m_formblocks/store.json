@@ -56,11 +56,24 @@
                     "category": "m_fb_store"
                 },{
                     "name": "fbStoreRowDateRange",
-                    "description": "Specfic data row for date range selectors.",
+                    "description": "Specific data row for date range selectors.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_store"
+                },{
+                    "name": "fbStoreRowStep",
+                    "description": "A hidden field for multi-step forms, to indicate that this step is completed.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

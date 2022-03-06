@@ -1,4 +1,4 @@
-<div class="[[+classnames]] step">
+<div class="[[+classnames]] [[!+step-[[+id]]]] step">
     [[+overview_icon_font:notempty=`<i class="[[+overview_icon_font]]"></i>`]]
     <div class="content">
         <div class="title">[[+menutitle]]</div>

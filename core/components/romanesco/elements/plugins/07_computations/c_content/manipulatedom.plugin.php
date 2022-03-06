@@ -308,6 +308,8 @@ switch ($modx->event->name) {
                 ;
             })
         ;
+        // Completed steps can't be disabled
+        $dom->filter('.ui.steps .completed.step')->removeClass('disabled');
 
         // Make sure AjaxUpload scripts are run after jQuery is loaded
         $dom->filter('script')

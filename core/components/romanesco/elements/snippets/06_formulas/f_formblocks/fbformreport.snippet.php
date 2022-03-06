@@ -20,7 +20,11 @@
 $formID = $modx->getOption('formID', $scriptProperties, '');
 $tplPrefix = $modx->getOption('tplPrefix', $scriptProperties, 'fbEmailRow_');
 $tplSectionHeader = $modx->getOption('tplSectionHeader', $scriptProperties, '');
+$tplStepCompleted = $modx->getOption('tplStepCompleted', $scriptProperties, 'fbStoreRowStep');
+$allSteps = $modx->getOption('allSteps', $scriptProperties, '');
+$allForms = $modx->getOption('allForms', $scriptProperties, '');
 $reqOnly = $modx->getOption('requiredOnly', $scriptProperties, '');
+$outputReverse = $modx->getOption('outputReverse', $scriptProperties, 0);
 
 if (!function_exists('getFields')) {
     function getFields(&$modx, $data, $prefix, $id, $reqOnly) {
@@ -73,7 +77,20 @@ if (!function_exists('getFields')) {
 
 if (!$formID) return '';
 $forms = explode(',',$formID);
-$output = array();
+$output = [];
+
+// Match form IDs to resource IDs
+$allFormSteps = [];
+if ($allSteps && $allForms) {
+    $allSteps = explode(',',$allSteps);
+    $allForms = explode(',',$allForms);
+    $allFormSteps = array_combine(array_filter($allForms), array_filter($allSteps));
+}
+
+// Reverse output to display multi-step forms in consecutive order
+if ($outputReverse) {
+    $forms = array_reverse($forms);
+}
 
 foreach ($forms as $formID) {
     $resource = $modx->getObject('modResource', $formID);
@@ -83,10 +100,13 @@ foreach ($forms as $formID) {
     // Only add header if there are multiple forms and a tpl chunk present
     if ($forms[1] && $tplSectionHeader) {
         $title = $resource->get('menutitle') ? $resource->get('menutitle') : $resource->get('pagetitle');
-        $result .= $modx->getChunk($tplSectionHeader, array("title" => $title));
+        $result .= $modx->getChunk($tplSectionHeader, ['title' => $title]);
     }
 
-    //$modx->log(modX::LOG_LEVEL_ERROR, print_r($cbData,1));
+    // Add hidden field to indicate this step is completed
+    if ($allFormSteps) {
+        $result .= $modx->getChunk($tplStepCompleted, ['id' => $allFormSteps[$formID]]);
+    }
 
     $result .= getFields($modx, $cbData, $tplPrefix, $formID, $reqOnly);
 

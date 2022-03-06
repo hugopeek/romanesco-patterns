@@ -3,19 +3,6 @@
         "elements": {
             "snippets": [
                 {
-                    "name": "fbEmailGetJSON",
-                    "description": "DEPRECATED. Form data is now directly taken from CB properties field in fbValidateProcessJSON.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_formblocks"
-                },{
                     "name": "fbGetForms",
                     "description": "",
                     "properties": [
@@ -35,19 +22,6 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
-                        },{
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_formblocks"
-                },{
-                    "name": "fbSimplxWidgeteer",
-                    "description": "DEPRECATED. Form report is now generated with fbFormReport.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
                         },{
                             "name": "elementExample",
                             "value": ""
@@ -146,8 +120,21 @@
                     ],
                     "category": "f_fb_modifiers"
                 },{
+                    "name": "fbSetStoredValues",
+                    "description": "Populate field values with available data stored in the user session. Enabled by default when using multi-page forms.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_fb_hooks"
+                },{
                     "name": "fbEmptyHook",
-                    "description": "",
+                    "description": "Dummy hook to trick FormIt into not throwing errors saying there are no hooks, and to make the comma separation between hooks a little easier.",
                     "properties": [
                         {
                             "name": "elementStatus",

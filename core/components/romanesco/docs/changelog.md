@@ -4,6 +4,8 @@
 Released on ...
 
 Fixes and improvements:
+- Don't disable completed steps when backtracking in multi-step forms
+- Fix frontend validation not working in multi-step forms
 - Add option to hide advanced CB features in manager
 - Add missing setBackground modifier to rich text segment and several layouts
 - Update patterns and structure in specific overviewRowFluid templates
