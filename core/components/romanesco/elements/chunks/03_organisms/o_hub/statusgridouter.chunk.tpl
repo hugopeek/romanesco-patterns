@@ -80,7 +80,7 @@
                         &packageName=`romanescobackyard`
                         &classname=`rmOption`
                         &where=`{"key":"status_progress"}`
-                        &sortConfig=`[{"sortby":"position","sortdir":"ASC"}]`
+                        &sortConfig=`[{"sortby":"pos","sortdir":"ASC"}]`
                         &tpl=`statusIndicatorLegendTR`
                     ]]
                     </tbody>
@@ -94,7 +94,7 @@
                         &packageName=`romanescobackyard`
                         &classname=`rmOption`
                         &where=`{"key":"status_health"}`
-                        &sortConfig=`[{"sortby":"position","sortdir":"ASC"}]`
+                        &sortConfig=`[{"sortby":"pos","sortdir":"ASC"}]`
                         &tpl=`statusIndicatorLegendTR`
                     ]]
                     </tbody>
