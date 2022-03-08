@@ -11,12 +11,12 @@
     &toPlaceholder=`next_title`
 ]]
 
-<div class="ui equal width middle aligned grid">
+<div class="ui very compact equal width middle aligned grid">
     [[+prev_step:isnot=``:then=`
-    <div class="column">
-        <a href="[[~[[+prev_step]]]]" class="ui tertiary icon button" title="Go back to [[+prev_title]]">
+    <div class="compact column">
+        <a href="[[~[[+prev_step]]]]" class="ui tertiary icon back button" title="Go back to [[+prev_title]]">
             <i class="chevron left icon"></i>
-            [[+prev_title]]
+            <span>[[+prev_title]]</span>
         </a>
     </div>
     `]]
