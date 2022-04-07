@@ -127,48 +127,10 @@ switch($eventName) {
                 break;
             }
 
-            // Terminate any existing gulp processes first
-            $killCommand = "ps aux | grep '[g]ulp build-' | awk '{print $2}'";
-            exec(
-                'kill $(' . $killCommand . ') 2> /dev/null',
-                $output,
-                $return_kill
-            );
-
-            // Construct build command
-            if ($currentContext) {
-                $distPath = $modx->getObject('modContextSetting', array(
-                    'context_key' => $currentContext,
-                    'key' => 'romanesco.semantic_dist_path'
-                ));
-                $buildCommand = 'gulp build-context --key ' . $currentContext . ' --dist ' . $modx->getOption('base_path') . $distPath->get('value');
-            }
-            else {
-                $buildCommand = 'gulp build-css';
-            }
-
-            // Run gulp process to generate new CSS
-            exec(
-                '"$HOME/.nvm/nvm-exec" ' . $buildCommand .
-                ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/generate-multicontext-css.js' .
-                ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/css.log' .
-                ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/css-error.log &',
-                $output,
-                $return_css
-            );
-
-            // Bump CSS version number to force refresh
-            $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
-            if ($versionCSS) {
-                // Only update minor version number (1.0.1<--)
-                $versionArray = explode('.', $versionCSS->get('value'));
-                $versionMinor = array_pop($versionArray);
-                $versionArray[] = $versionMinor + 1;
-
-                $versionCSS->set('value', implode('.', $versionArray));
-                $versionCSS->save();
-            } else {
-                $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find romanesco.assets_version_css setting');
+            // Generate custom CSS for this context
+            if (!$romanesco->generateCustomCSS($currentContext, 1)) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Could not generate custom CSS!');
+                break;
             }
 
             // Update favicon if a new logo image was provided
