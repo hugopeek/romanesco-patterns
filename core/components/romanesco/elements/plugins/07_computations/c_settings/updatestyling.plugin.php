@@ -40,9 +40,8 @@ $eventName = $modx->event->name;
 
 switch($eventName) {
     case 'ClientConfig_ConfigChange':
-        $path = $modx->getOption('clientconfig.core_path', null, $modx->getOption('core_path') . 'components/clientconfig/');
-        $path .= 'model/clientconfig/';
-        $clientConfig = $modx->getService('clientconfig','ClientConfig', $path);
+        $corePath = $modx->getOption('clientconfig.core_path', null, $modx->getOption('core_path') . 'components/clientconfig/');
+        $clientConfig = $modx->getService('clientconfig','ClientConfig', $corePath . 'model/clientconfig/', array('core_path' => $corePath));
         $imgMediaSource = $modx->getObject('sources.modMediaSource', 15);
         $output = array();
 
@@ -109,37 +108,24 @@ switch($eventName) {
 
         // Regenerate styling elements if theme settings were updated or deleted
         if ($updatedSettings || $deletedSettings) {
-
-            // Set theme.variables path for current context
-            $themesFolder = $modx->getOption('base_path') . 'assets/semantic/src/themes/';
-            if ($currentContext) {
-                $themeVariablesPath = $themesFolder . $currentContext . '/globals/theme.variables';
-            } else {
-                $themeVariablesPath = $themesFolder . 'project/globals/theme.variables';
+            $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+            $romanesco = $modx->getService('romanesco','Romanesco', $corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
+            if (!($romanesco instanceof Romanesco)) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
+                break;
             }
 
             // Clear cache, to ensure build process uses the latest values
             $modx->getCacheManager()->delete('clientconfig',array(xPDO::OPT_CACHE_KEY => 'system_settings'));
 
             // Grab variables after cache rebuild
-            $newSettings = $clientConfig->getSettings($currentContext);
+            $latestSettings = $clientConfig->getSettings($currentContext);
 
-            // NB: for some reason, using getChunk directly here doesn't work (when using settings array as content)
-            $themeVariables = $modx->getObject('modChunk', array('name'=>'themeVariables'));
-            $themeVariables->setCacheable(false);
-
-            // Write to theme.variables
-            $pathInfo = pathinfo($themeVariablesPath);
-            $path = $pathInfo['dirname'];
-
-            if (!file_exists($path)) {
-                mkdir($path, 0755, true);
+            // Generate theme.variables file
+            if (!$romanesco->generateThemeVariables($latestSettings, $currentContext)) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Could not generate theme.variables!');
+                break;
             }
-
-            file_put_contents(
-                $themeVariablesPath,
-                $themeVariables->process($newSettings, $themeVariables)
-            );
 
             // Terminate any existing gulp processes first
             $killCommand = "ps aux | grep '[g]ulp build-' | awk '{print $2}'";
