@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Invert secondary menu inside segments with inverted background
+- Load frontend lexicon OnHandleRequest
 - Load FormBlocks forms only in specific context if placed in subfolder
 - Collapse or expand target container when reloading Show/Hide option
 - Don't disable completed steps when backtracking in multi-step forms

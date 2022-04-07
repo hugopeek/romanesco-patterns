@@ -8,4 +8,6 @@
  * @package romanesco
  */
 
-$modx->lexicon->load('romanescobackyard:default');
+if ($modx->event->name == 'OnHandleRequest') {
+    $modx->lexicon->load('romanescobackyard:default');
+}
