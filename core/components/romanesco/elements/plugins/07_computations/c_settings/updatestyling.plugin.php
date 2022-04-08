@@ -103,11 +103,10 @@ switch($eventName) {
         }
 
         // Compare saved settings to current settings
-        $updatedSettings = array_diff($savedSettingsTheme, $currentSettingsTheme);
-        $deletedSettings = array_diff($currentSettingsTheme, $savedSettingsTheme);
+        $updatedSettings = array_diff_assoc($savedSettingsTheme, $currentSettingsTheme);
 
         // Regenerate styling elements if theme settings were updated or deleted
-        if ($updatedSettings || $deletedSettings) {
+        if ($updatedSettings) {
             $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
             $romanesco = $modx->getService('romanesco','Romanesco', $corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
             if (!($romanesco instanceof Romanesco)) {
@@ -123,46 +122,26 @@ switch($eventName) {
 
             // Generate theme.variables file
             if (!$romanesco->generateThemeVariables($latestSettings, $currentContext)) {
-                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Could not generate theme.variables!');
+                $modx->log(modX::LOG_LEVEL_ERROR, "[Romanesco] Could not generate theme.variables for context $currentContext");
                 break;
             }
 
             // Generate custom CSS for this context
             if (!$romanesco->generateCustomCSS($currentContext, 1)) {
-                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Could not generate custom CSS!');
+                $modx->log(modX::LOG_LEVEL_ERROR, "[Romanesco] Could not generate custom CSS for context $currentContext");
                 break;
             }
 
-            // Update favicon if a new logo image was provided
-            if (array_key_exists('logo_badge_path', $updatedSettings)) {
-                $logoBadgePath = $modx->getOption('base_path') . $savedSettingsTheme['logo_badge_path'];
-
-                exec(
-                    '"$HOME/.nvm/nvm-exec"' .
-                    ' gulp generate-favicon' .
-                    ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/generate-favicons.js' .
-                    ' --name ' . escapeshellarg($modx->getOption('site_name')) .
-                    ' --img ' . escapeshellarg($logoBadgePath) .
-                    ' --primary ' . escapeshellarg($savedSettingsTheme['theme_color_primary']) .
-                    ' --secondary ' . escapeshellarg($savedSettingsTheme['theme_color_secondary']) .
-                    ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon.log' .
-                    ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/favicon-error.log &',
-                    $output,
-                    $return_favicon
-                );
-
-                // Bump favicon version number to force refresh
-                $version = $modx->getObject('modSystemSetting', array('key' => 'romanesco.favicon_version'));
-                if ($version) {
-                    $version->set('value', $version->get('value') + 0.1);
-                    $version->save();
-                } else {
-                    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find favicon_version setting');
+            // Generate favicon if a new logo image was provided
+            if ($updatedSettings['logo_badge_path']) {
+                if (!$romanesco->generateFavicons($latestSettings)) {
+                    $modx->log(modX::LOG_LEVEL_ERROR, "[Romanesco] Could not generate favicon for context $currentContext");
+                    break;
                 }
             }
 
-            // Prevent favicons from being loaded if badge image was removed
-            if (array_key_exists('logo_badge_path', $deletedSettings)) {
+            // Prevent favicons from being loaded if badge image is not present at this point
+            if (!$latestSettings['logo_badge_path']) {
                 $version = $modx->getObject('modSystemSetting', array('key' => 'romanesco.favicon_version'));
                 if ($version) {
                     $version->set('value', '');
