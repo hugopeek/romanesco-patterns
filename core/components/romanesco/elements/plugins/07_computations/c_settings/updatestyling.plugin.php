@@ -127,7 +127,7 @@ switch($eventName) {
             }
 
             // Generate custom CSS for this context
-            if (!$romanesco->generateCustomCSS($currentContext, 1)) {
+            if (!$romanesco->generateCustomCSS($currentContext, 1, 1)) {
                 $modx->log(modX::LOG_LEVEL_ERROR, "[Romanesco] Could not generate custom CSS for context $currentContext");
                 break;
             }
