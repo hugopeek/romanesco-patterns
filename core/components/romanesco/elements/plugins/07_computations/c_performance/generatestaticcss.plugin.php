@@ -27,6 +27,7 @@ switch ($modx->event->name) {
         $exit = '';
 
         // Exit if resource template is not GlobalBackground(s)
+        /** @var modResource $resource */
         $templateID = $resource->get('template');
         if ($templateID != 27 && $templateID != 8) {
             $exit = 1;
@@ -76,12 +77,12 @@ switch ($modx->event->name) {
         foreach ($bgContainers as $container) {
             $context = $container->get('alias');
 
-            // Generate CSS for this context
+            // Prepare CSS for this context
             $css = $modx->getChunk($cssChunk, array(
                 'context' => $context,
             ));
 
-            // Look for custom path in context settings
+            // Find correct file path for this context
             $cssPathContext = $modx->getObject('modContextSetting', array(
                 'context_key' => $context,
                 'key' => 'romanesco.custom_css_path'
@@ -106,24 +107,28 @@ switch ($modx->event->name) {
         }
 
         // Minify CSS
-        if ($modx->getObject('cgSetting', array('key' => 'minify_css_js'))->get('value') == 1) {
-            foreach ($minifyCSS as $path) {
-                exec(
-                    '"$HOME/.nvm/nvm-exec"' .
-                    ' gulp minify-css --path ' . $path .
-                    ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/minify-css.js' .
-                    ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/minify.log' .
-                    ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/minify-error.log &',
-                    $output,
-                    $return_css
-                );
-            }
+        foreach ($minifyCSS as $path) {
+            exec(
+                '"$HOME/.nvm/nvm-exec"' .
+                ' gulp minify-css --path ' . $path .
+                ' --gulpfile ' . escapeshellcmd($modx->getOption('assets_path')) . 'components/romanescobackyard/js/gulp/minify-css.js' .
+                ' > ' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/minify.log' .
+                ' 2>' . escapeshellcmd($modx->getOption('core_path')) . 'cache/logs/minify-error.log &',
+                $output,
+                $return_css
+            );
         }
 
         // Bump CSS version number to force refresh
         $versionCSS = $modx->getObject('modSystemSetting', array('key' => 'romanesco.assets_version_css'));
-        if ($versionCSS) {
-            $versionCSS->set('value', $versionCSS->get('value') + 0.01);
+        if ($versionCSS)
+        {
+            // Only update minor version number (1.0.1<--)
+            $versionArray = explode('.', $versionCSS->get('value'));
+            $versionMinor = array_pop($versionArray);
+            $versionArray[] = $versionMinor + 1;
+
+            $versionCSS->set('value', implode('.', $versionArray));
             $versionCSS->save();
         } else {
             $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find romanesco.assets_version_css setting');

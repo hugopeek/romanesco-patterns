@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Minify custom CSS regardless of configuration setting
 - Invert secondary menu inside segments with inverted background
 - Load frontend lexicon OnHandleRequest
 - Load FormBlocks forms only in specific context if placed in subfolder
