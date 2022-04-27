@@ -48,10 +48,10 @@
                     "name": "a_data",
                     "parent": "01_atoms"
                 },{
-                    "name": "a_dat_placeholders",
+                    "name": "a_dat_placeholder",
                     "parent": "a_data"
                 },{
-                    "name": "a_dat_rows",
+                    "name": "a_dat_row",
                     "parent": "a_data"
                 }
             ]

@@ -16,7 +16,7 @@
                             "value": "deprecated"
                         }
                     ],
-                    "category": "Global - Backgrounds",
+                    "category": "_Global - Backgrounds",
                     "sortOrder": "1",
                     "templates": [
                         "GlobalBackgrounds"
@@ -35,7 +35,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Background",
+                    "category": "_Background",
                     "sortOrder": "10",
                     "templates": [
                         "GlobalBackground"
@@ -48,10 +48,10 @@
                     "name": "e_global",
                     "parent": "00_electrons"
                 },{
-                    "name": "Global - Backgrounds",
+                    "name": "_Global - Backgrounds",
                     "parent": "e_global"
                 },{
-                    "name": "Background",
+                    "name": "_Background",
                     "parent": "e_global"
                 }
             ]

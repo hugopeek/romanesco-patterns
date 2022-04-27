@@ -14,12 +14,12 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_buttons"
+                    "category": "m_button"
                 }
             ],
             "categories": [
                 {
-                    "name": "m_buttons",
+                    "name": "m_button",
                     "parent": "02_molecules"
                 }
             ]

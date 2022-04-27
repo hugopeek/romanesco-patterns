@@ -179,7 +179,7 @@
                     "name": "a_content",
                     "parent": "01_atoms"
                 },{
-                    "name": "a_ct_types",
+                    "name": "a_ct_type",
                     "parent": "a_content"
                 }
             ]

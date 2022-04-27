@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "toolbarBasic",
+                    "name": "buttonHrefBasic",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_toolbars"
+                    "category": "a_button"
                 },{
-                    "name": "toolbarPattern",
+                    "name": "buttonHrefIcon",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_toolbars"
+                    "category": "a_button"
                 },{
-                    "name": "toolbarPatternElectron",
+                    "name": "buttonHrefOverview",
                     "description": "",
                     "properties": [
                         {
@@ -40,27 +40,16 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_toolbars"
-                },{
-                    "name": "toolbarNote",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "o_toolbars"
+                    "category": "a_button"
                 }
             ],
-
             "categories": [
                 {
-                    "name": "o_toolbars",
-                    "parent": "03_organisms"
+                    "name": "a_button",
+                    "parent": "01_atoms"
+                },{
+                    "name": "a_btn_social",
+                    "parent": "a_button"
                 }
             ]
         }

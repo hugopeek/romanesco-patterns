@@ -23,7 +23,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 1,
                     "templates": [
                         "@@templates_all"
@@ -48,7 +48,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 2,
                     "templates": [
                         "@@templates_all"
@@ -71,7 +71,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 5,
                     "templates": [
                         "@@templates_all"
@@ -94,7 +94,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 6,
                     "templates": [
                         "@@templates_all"
@@ -117,7 +117,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 10,
                     "templates": [
                         "@@templates_all"
@@ -134,7 +134,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 11,
                     "templates": [
                         "@@templates_all"
@@ -151,7 +151,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 20,
                     "templates": [
                         "@@templates_all"
@@ -171,7 +171,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 50,
                     "templates": [
                         "@@templates_all"
@@ -191,7 +191,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 51,
                     "templates": [
                         "@@templates_all"

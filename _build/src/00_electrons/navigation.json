@@ -15,7 +15,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_all"
@@ -33,7 +33,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "10",
                     "templates": [
                         "@@templates_all"
@@ -55,7 +55,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "11",
                     "templates": [
                         "@@templates_all"
@@ -73,7 +73,7 @@
                             "value": "experimental"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "12",
                     "templates": [
                         "@@templates_all"
@@ -91,7 +91,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "15",
                     "templates": [
                         "@@templates_all"
@@ -109,7 +109,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "20",
                     "templates": [
                         "@@templates_publication"
@@ -122,7 +122,7 @@
                     "name": "e_navigation",
                     "parent": "00_electrons"
                 },{
-                    "name": "Navigation",
+                    "name": "_Navigation",
                     "parent": "e_navigation",
                     "rank": 30
                 }

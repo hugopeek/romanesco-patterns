@@ -15,7 +15,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 1,
                     "templates": [
                         "@@templates_all"
@@ -34,7 +34,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 2,
                     "templates": [
                         "@@templates_all"
@@ -54,7 +54,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 3,
                     "templates": [
                         "@@templates_all"
@@ -74,7 +74,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 4,
                     "templates": [
                         "@@templates_all"
@@ -99,7 +99,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 10,
                     "templates": [
                         "@@templates_all"
@@ -119,7 +119,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 20,
                     "templates": [
                         "@@templates_all"

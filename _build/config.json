@@ -29,12 +29,12 @@
                     "name": "07_computations"
                 },
                 {
-                    "name": "e_connections",
+                    "name": "e_connection",
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Connections",
-                    "parent": "e_connections",
+                    "name": "_Connection",
+                    "parent": "e_connection",
                     "rank": 40
                 },
                 {
@@ -42,21 +42,21 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "e_headers",
+                    "name": "e_header",
                     "parent": "e_content"
                 },
                 {
-                    "name": "Header",
-                    "parent": "e_headers",
+                    "name": "_Header",
+                    "parent": "e_header",
                     "rank": 1
                 },
                 {
-                    "name": "e_footers",
+                    "name": "e_footer",
                     "parent": "e_content"
                 },
                 {
-                    "name": "Footer",
-                    "parent": "e_footers",
+                    "name": "_Footer",
+                    "parent": "e_footer",
                     "rank": 99
                 },
                 {
@@ -68,7 +68,7 @@
                     "parent": "e_content"
                 },
                 {
-                    "name": "CTA - Settings",
+                    "name": "_CTA - Settings",
                     "parent": "e_cta"
                 },
                 {
@@ -76,7 +76,7 @@
                     "parent": "e_content"
                 },
                 {
-                    "name": "Purpose",
+                    "name": "_Purpose",
                     "parent": "e_purpose"
                 },
                 {
@@ -84,7 +84,7 @@
                     "parent": "e_content"
                 },
                 {
-                    "name": "Status",
+                    "name": "_Status",
                     "parent": "e_status"
                 },
                 {
@@ -92,7 +92,7 @@
                     "parent": "e_content"
                 },
                 {
-                    "name": "Links",
+                    "name": "_Links",
                     "parent": "e_links",
                     "rank": 100
                 },
@@ -101,7 +101,7 @@
                     "parent": "e_content"
                 },
                 {
-                    "name": "Timeline",
+                    "name": "_Timeline",
                     "parent": "e_timeline"
                 },
                 {
@@ -109,27 +109,27 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Settings - Email",
+                    "name": "_Settings - Email",
                     "parent": "e_formblocks",
                     "rank": 1
                 },
                 {
-                    "name": "Settings - General",
+                    "name": "_Settings - General",
                     "parent": "e_formblocks",
                     "rank": 2
                 },
                 {
-                    "name": "Settings - Advanced",
+                    "name": "_Settings - Advanced",
                     "parent": "e_formblocks",
                     "rank": 3
                 },
                 {
-                    "name": "Autoresponder",
+                    "name": "_Autoresponder",
                     "parent": "e_formblocks",
                     "rank": 10
                 },
                 {
-                    "name": "Registration",
+                    "name": "_Registration",
                     "parent": "e_formblocks",
                     "rank": 20
                 },
@@ -138,11 +138,11 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Global - Backgrounds",
+                    "name": "_Global - Backgrounds",
                     "parent": "e_global"
                 },
                 {
-                    "name": "Background",
+                    "name": "_Background",
                     "parent": "e_global"
                 },
                 {
@@ -182,27 +182,27 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Navigation",
+                    "name": "_Navigation",
                     "parent": "e_navigation",
                     "rank": 30
                 },
                 {
-                    "name": "e_overviews",
+                    "name": "e_overview",
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Overview - Image",
-                    "parent": "e_overviews",
+                    "name": "_Overview - Image",
+                    "parent": "e_overview",
                     "rank": 10
                 },
                 {
-                    "name": "Overview - Icon",
-                    "parent": "e_overviews",
+                    "name": "_Overview - Icon",
+                    "parent": "e_overview",
                     "rank": 11
                 },
                 {
-                    "name": "Overview - Settings",
-                    "parent": "e_overviews",
+                    "name": "_Overview - Settings",
+                    "parent": "e_overview",
                     "rank": 12
                 },
                 {
@@ -210,7 +210,7 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Performance",
+                    "name": "_Performance",
                     "parent": "e_performance"
                 },
                 {
@@ -218,7 +218,7 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Slider - Settings",
+                    "name": "_Slider - Settings",
                     "parent": "e_presentation"
                 },
                 {
@@ -226,24 +226,24 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "Social",
+                    "name": "_Social",
                     "parent": "e_social",
                     "rank": 50
                 },
                 {
-                    "name": "a_buttons",
+                    "name": "a_button",
                     "parent": "01_atoms"
                 },
                 {
                     "name": "a_btn_social",
-                    "parent": "a_buttons"
+                    "parent": "a_button"
                 },
                 {
                     "name": "a_content",
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_ct_types",
+                    "name": "a_ct_type",
                     "parent": "a_content"
                 },
                 {
@@ -251,15 +251,15 @@
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_cb_layouts",
+                    "name": "a_cb_layout",
                     "parent": "a_contentblocks"
                 },
                 {
-                    "name": "a_cb_fields",
+                    "name": "a_cb_field",
                     "parent": "a_contentblocks"
                 },
                 {
-                    "name": "a_cb_settings",
+                    "name": "a_cb_setting",
                     "parent": "a_contentblocks"
                 },
                 {
@@ -267,7 +267,7 @@
                     "parent": "a_contentblocks"
                 },
                 {
-                    "name": "a_cb_overviews",
+                    "name": "a_cb_overview",
                     "parent": "a_contentblocks"
                 },
                 {
@@ -279,11 +279,11 @@
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_dat_placeholders",
+                    "name": "a_dat_placeholder",
                     "parent": "a_data"
                 },
                 {
-                    "name": "a_dat_rows",
+                    "name": "a_dat_row",
                     "parent": "a_data"
                 },
                 {
@@ -291,7 +291,7 @@
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_fb_inputs",
+                    "name": "a_fb_input",
                     "parent": "a_formblocks"
                 },
                 {
@@ -303,7 +303,7 @@
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_images",
+                    "name": "a_image",
                     "parent": "01_atoms"
                 },
                 {
@@ -359,11 +359,11 @@
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_taxonomy",
+                    "name": "a_tag",
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "m_buttons",
+                    "name": "m_button",
                     "parent": "02_molecules"
                 },
                 {
@@ -371,7 +371,7 @@
                     "parent": "02_molecules"
                 },
                 {
-                    "name": "m_ct_types",
+                    "name": "m_ct_type",
                     "parent": "m_content"
                 },
                 {
@@ -395,7 +395,7 @@
                     "parent": "02_molecules"
                 },
                 {
-                    "name": "m_fb_inputs",
+                    "name": "m_fb_input",
                     "parent": "m_formblocks"
                 },
                 {
@@ -427,7 +427,7 @@
                     "parent": "02_molecules"
                 },
                 {
-                    "name": "m_layouts",
+                    "name": "m_layout",
                     "parent": "02_molecules"
                 },
                 {
@@ -459,48 +459,48 @@
                     "parent": "m_navigation"
                 },
                 {
-                    "name": "m_overviews",
+                    "name": "m_overview",
                     "parent": "02_molecules"
                 },
                 {
                     "name": "m_ov_basic",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_image",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_icon",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_article",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_person",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_organization",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_review",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_project",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_information",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_ov_settings",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },
                 {
                     "name": "m_presentation",
@@ -519,7 +519,7 @@
                     "parent": "02_molecules"
                 },
                 {
-                    "name": "m_users",
+                    "name": "m_user",
                     "parent": "02_molecules"
                 },
                 {
@@ -531,7 +531,7 @@
                     "parent": "03_organisms"
                 },
                 {
-                    "name": "o_headers",
+                    "name": "o_header",
                     "parent": "03_organisms"
                 },
                 {
@@ -543,7 +543,7 @@
                     "parent": "03_organisms"
                 },
                 {
-                    "name": "o_layouts",
+                    "name": "o_layout",
                     "parent": "03_organisms"
                 },
                 {
@@ -551,7 +551,7 @@
                     "parent": "03_organisms"
                 },
                 {
-                    "name": "o_overviews",
+                    "name": "o_overview",
                     "parent": "03_organisms"
                 },
                 {
@@ -567,7 +567,7 @@
                     "parent": "03_organisms"
                 },
                 {
-                    "name": "o_toolbars",
+                    "name": "o_toolbar",
                     "parent": "03_organisms"
                 },
                 {
@@ -619,11 +619,11 @@
                     "parent": "06_formulas"
                 },
                 {
-                    "name": "f_fb_modifiers",
+                    "name": "f_fb_modifier",
                     "parent": "f_formblocks"
                 },
                 {
-                    "name": "f_fb_hooks",
+                    "name": "f_fb_hook",
                     "parent": "f_formblocks"
                 },
                 {
@@ -639,7 +639,7 @@
                     "parent": "06_formulas"
                 },
                 {
-                    "name": "f_modifiers",
+                    "name": "f_modifier",
                     "parent": "06_formulas"
                 },
                 {
@@ -651,7 +651,7 @@
                     "parent": "06_formulas"
                 },
                 {
-                    "name": "f_resources",
+                    "name": "f_resource",
                     "parent": "06_formulas"
                 },
                 {
@@ -659,8 +659,12 @@
                     "parent": "06_formulas"
                 },
                 {
-                    "name": "f_users",
+                    "name": "f_user",
                     "parent": "06_formulas"
+                },
+                {
+                    "name": "c_configuration",
+                    "parent": "07_computations"
                 },
                 {
                     "name": "c_content",
@@ -676,10 +680,6 @@
                 },
                 {
                     "name": "c_performance",
-                    "parent": "07_computations"
-                },
-                {
-                    "name": "c_settings",
                     "parent": "07_computations"
                 },
                 {
@@ -738,7 +738,7 @@
                     "rank": 131
                 },
                 {
-                    "name": "a_sel_rows",
+                    "name": "a_sel_row",
                     "parent": "a_select"
                 }
             ],
@@ -755,7 +755,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "1",
                     "templates": [
                         "PortfolioProject","Portfolio - Project"
@@ -773,7 +773,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "2",
                     "templates": [
                         "PortfolioProject","Portfolio - Project",
@@ -792,7 +792,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "3",
                     "templates": [
                         "PortfolioProject","Portfolio - Project"
@@ -810,7 +810,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "10"
                 },
                 {
@@ -824,7 +824,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "1",
                     "templates": [
                         "fbForm"
@@ -841,7 +841,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "2",
                     "templates": [
                         "fbForm"
@@ -858,7 +858,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "3",
                     "templates": [
                         "fbForm"
@@ -875,7 +875,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "5",
                     "templates": [
                         "fbForm"
@@ -892,7 +892,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "6",
                     "templates": [
                         "fbForm"
@@ -909,7 +909,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "10",
                     "templates": [
                         "fbForm",
@@ -927,7 +927,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "90",
                     "templates": [
                         "fbForm",
@@ -945,7 +945,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "91",
                     "inputOptionValues": "System default==default||Yes==1||No==0",
                     "defaultValue": "default",
@@ -964,7 +964,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "92",
                     "templates": [
                         "fbForm",
@@ -982,7 +982,7 @@
                             "value": "deprecated"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "5",
                     "inputOptionValues": "Vertical==vertical||Horizontal==horizontal||Inline==inline",
                     "defaultValue": "horizontal"
@@ -998,7 +998,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "1",
                     "templates": [
                         "fbForm",
@@ -1016,7 +1016,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "2",
                     "templates": [
                         "fbForm"
@@ -1033,7 +1033,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "3",
                     "templates": [
                         "fbForm",
@@ -1051,7 +1051,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "10",
                     "templates": [
                         "fbForm"
@@ -1068,7 +1068,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "11",
                     "templates": [
                         "fbForm",
@@ -1088,7 +1088,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "15",
                     "templates": [
                         "fbForm"
@@ -1106,7 +1106,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "16",
                     "templates": [
                         "fbForm"
@@ -1124,7 +1124,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "20",
                     "templates": [
                         "fbForm"
@@ -1142,7 +1142,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "21",
                     "templates": [
                         "fbForm"
@@ -1162,7 +1162,7 @@
                             "value": "deprecated"
                         }
                     ],
-                    "category": "Global - Backgrounds",
+                    "category": "_Global - Backgrounds",
                     "sortOrder": "1",
                     "templates": [
                         "GlobalBackgrounds"
@@ -1181,7 +1181,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Background",
+                    "category": "_Background",
                     "sortOrder": "10",
                     "templates": [
                         "GlobalBackground"
@@ -1200,7 +1200,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "1",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1219,7 +1219,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "10",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1242,7 +1242,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "11",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1261,7 +1261,7 @@
                             "value": "experimental"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "12",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1280,7 +1280,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "15",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1299,7 +1299,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Navigation",
+                    "category": "_Navigation",
                     "sortOrder": "20",
                     "templates": [
                         "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Publications - Overview","Article - Traditional","Article - Readability","Article - Sidenotes","Download"
@@ -1326,7 +1326,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "1",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1355,7 +1355,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "2",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1384,7 +1384,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "3",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1413,7 +1413,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "5",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1442,7 +1442,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "6",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1469,7 +1469,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "99",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1493,7 +1493,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Icon",
+                    "category": "_Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1511,7 +1511,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Icon",
+                    "category": "_Overview - Icon",
                     "sortOrder": "20",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1529,7 +1529,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Icon",
+                    "category": "_Overview - Icon",
                     "sortOrder": "21",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1547,7 +1547,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Overview - Settings",
+                    "category": "_Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)"
@@ -1564,7 +1564,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Settings",
+                    "category": "_Overview - Settings",
                     "sortOrder": "2",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1585,7 +1585,7 @@
                             "value": "unknown"
                         }
                     ],
-                    "category": "Overview - Settings",
+                    "category": "_Overview - Settings",
                     "sortOrder": "10",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
@@ -1604,7 +1604,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Performance",
+                    "category": "_Performance",
                     "sortOrder": "99",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1627,7 +1627,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "30",
                     "templates": [
                         "Presentation"
@@ -1646,7 +1646,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "31",
                     "templates": [
                         "Presentation"
@@ -1665,7 +1665,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "32",
                     "templates": [
                         "Presentation"
@@ -1684,7 +1684,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "33",
                     "templates": [
                         "Presentation"
@@ -1701,7 +1701,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "1",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1718,7 +1718,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "2",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1735,7 +1735,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "3",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1752,7 +1752,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "4",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1769,7 +1769,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "5",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1786,7 +1786,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "10",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1803,7 +1803,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "11",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1820,7 +1820,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "12",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1837,7 +1837,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "20",
                     "templates": [
                         "TeamMember","Team - Member","Team"
@@ -1855,7 +1855,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "CTA - Settings",
+                    "category": "_CTA - Settings",
                     "sortOrder": "1",
                     "templates": [
                         "GlobalCTA"
@@ -1874,7 +1874,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Footer",
+                    "category": "_Footer",
                     "sortOrder": "1",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1893,7 +1893,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Footer",
+                    "category": "_Footer",
                     "sortOrder": "2",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1912,7 +1912,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Footer",
+                    "category": "_Footer",
                     "sortOrder": "10",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1931,7 +1931,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Footer",
+                    "category": "_Footer",
                     "sortOrder": "20",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1950,7 +1950,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Footer",
+                    "category": "_Footer",
                     "sortOrder": "21",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1973,7 +1973,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Footer",
+                    "category": "_Footer",
                     "sortOrder": "99",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -1992,7 +1992,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "1",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2010,7 +2010,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "5",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2028,7 +2028,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "6",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2047,7 +2047,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "10",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2065,7 +2065,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "11",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2084,7 +2084,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "20",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2107,7 +2107,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "99",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2127,7 +2127,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Links",
+                    "category": "_Links",
                     "sortOrder": 1,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2147,7 +2147,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Links",
+                    "category": "_Links",
                     "sortOrder": 10,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2172,7 +2172,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Links",
+                    "category": "_Links",
                     "sortOrder": 20,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2199,7 +2199,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 1,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2224,7 +2224,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 2,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2247,7 +2247,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 5,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2270,7 +2270,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 6,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2293,7 +2293,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 10,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2310,7 +2310,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 11,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2327,7 +2327,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 20,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2347,7 +2347,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 50,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2367,7 +2367,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Purpose",
+                    "category": "_Purpose",
                     "sortOrder": 51,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2386,7 +2386,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 1,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2405,7 +2405,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 2,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2425,7 +2425,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 3,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2445,7 +2445,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 4,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2470,7 +2470,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 10,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2490,7 +2490,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Status",
+                    "category": "_Status",
                     "sortOrder": 20,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
@@ -2510,14 +2510,14 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Timeline",
+                    "category": "_Timeline",
                     "sortOrder": 1,
                     "templates": [
                         "ProjectDashboard"
                     ]
                 },
                 {
-                    "caption": "Autoresponder",
+                    "caption": "_Autoresponder",
                     "name": "fb_autoresponder_toggle",
                     "description": "IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.",
                     "type": "option",
@@ -2529,14 +2529,14 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "1",
                     "templates": [
                         "fbForm"
                     ]
                 },
                 {
-                    "caption": "Autoresponder FROM address",
+                    "caption": "_Autoresponder FROM address",
                     "name": "fb_autoresponder_from",
                     "description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like mail@yourdomain.com. Defaults to emailsender system setting.",
                     "type": "email",
@@ -2546,14 +2546,14 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "2",
                     "templates": [
                         "fbForm"
                     ]
                 },
                 {
-                    "caption": "Autoresponder FROM name",
+                    "caption": "_Autoresponder FROM name",
                     "name": "fb_autoresponder_from_name",
                     "description": "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting.",
                     "type": "text",
@@ -2563,14 +2563,14 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "3",
                     "templates": [
                         "fbForm"
                     ]
                 },
                 {
-                    "caption": "Autoresponder REPLY TO address",
+                    "caption": "_Autoresponder REPLY TO address",
                     "name": "fb_autoresponder_reply_to",
                     "description": "Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.",
                     "type": "email",
@@ -2580,7 +2580,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "4",
                     "templates": [
                         "fbForm"
@@ -2597,7 +2597,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "10",
                     "templates": [
                         "fbForm"
@@ -2614,7 +2614,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "11",
                     "templates": [
                         "fbForm"
@@ -2633,7 +2633,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "1",
                     "templates": [
                         "fbRegister"
@@ -2650,7 +2650,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "2",
                     "templates": [
                         "fbRegister"
@@ -2668,7 +2668,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "5",
                     "templates": [
                         "fbRegister"
@@ -2685,7 +2685,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "20",
                     "templates": [
                         "fbRegister"
@@ -2702,7 +2702,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "10",
                     "templates": [
                         "fbRegister"
@@ -2719,7 +2719,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "11",
                     "templates": [
                         "fbRegister"
@@ -2736,7 +2736,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "12",
                     "templates": [
                         "fbRegister"
@@ -2753,7 +2753,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "20",
                     "templates": [
                         "fbRegister"
@@ -2770,7 +2770,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "21",
                     "templates": [
                         "fbRegister"
@@ -2789,7 +2789,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "30",
                     "templates": [
                         "fbRegister"
@@ -3363,7 +3363,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_buttons"
+                    "category": "a_button"
                 },
                 {
                     "name": "buttonHrefIcon",
@@ -3378,7 +3378,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_buttons"
+                    "category": "a_button"
                 },
                 {
                     "name": "buttonHrefOverview",
@@ -3393,7 +3393,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_buttons"
+                    "category": "a_button"
                 },
                 {
                     "name": "headingBasic",
@@ -3783,7 +3783,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "fbSelectOptionRowResource",
@@ -3798,7 +3798,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "fbSelectOptionRowTag",
@@ -3813,7 +3813,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "fbSelectOptionRowInputOption",
@@ -3832,7 +3832,7 @@
                             "value": "name"
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "fbSelectDropdownRow",
@@ -3847,7 +3847,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "fbSelectDropdownRowInputOption",
@@ -3866,7 +3866,7 @@
                             "value": "name"
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "fbInputFileSingle",
@@ -3881,7 +3881,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "fbInputFileMultiple",
@@ -3896,7 +3896,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },
                 {
                     "name": "headPreloadLinks",
@@ -4223,7 +4223,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgOverviewFixed",
@@ -4238,7 +4238,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgOverviewFallback",
@@ -4253,7 +4253,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgOverviewPersonLink",
@@ -4268,7 +4268,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgOverviewPersonAvatar",
@@ -4283,7 +4283,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgOverviewPersonAvatarLink",
@@ -4298,7 +4298,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgResponsive",
@@ -4313,7 +4313,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgResponsiveGallery",
@@ -4328,7 +4328,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgResponsiveGalleryCaption",
@@ -4343,7 +4343,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgResponsiveRowSrcset",
@@ -4358,7 +4358,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgResponsiveScale",
@@ -4373,7 +4373,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "imgOpenGraphRow",
@@ -4388,7 +4388,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_image"
                 },
                 {
                     "name": "infoNamePerson",
@@ -4778,7 +4778,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "tagItemBasicLink",
@@ -4793,7 +4793,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "tagItemIcon",
@@ -4808,7 +4808,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "tagItemTooltip",
@@ -4823,7 +4823,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "tagItemCount",
@@ -4838,7 +4838,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "tagItemCountLink",
@@ -4853,7 +4853,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "tagItemCountLinkHighlight",
@@ -4868,7 +4868,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "tagItemFlag",
@@ -4883,7 +4883,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_tag"
                 },
                 {
                     "name": "buttonOuter",
@@ -4898,7 +4898,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_buttons"
+                    "category": "m_button"
                 },
                 {
                     "name": "headingBasicSubtitle",
@@ -5753,7 +5753,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutTwoColumnsNested",
@@ -5768,7 +5768,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutThreeColumnsNested",
@@ -5783,7 +5783,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutFourColumnsNested",
@@ -5798,7 +5798,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutContentSidebarNested",
@@ -5813,7 +5813,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutSidebarContentNested",
@@ -5828,7 +5828,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutPatternPreview",
@@ -5843,7 +5843,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutCard",
@@ -5858,7 +5858,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "cbLayoutSegment",
@@ -5873,7 +5873,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "m_layout"
                 },
                 {
                     "name": "overviewWrapper",
@@ -5888,7 +5888,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewWrapperPagination",
@@ -5903,7 +5903,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRow",
@@ -5918,7 +5918,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowLink",
@@ -5933,7 +5933,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowList",
@@ -5948,7 +5948,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowFluid",
@@ -5963,7 +5963,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowArticle",
@@ -5978,7 +5978,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowPerson",
@@ -5993,7 +5993,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowReview",
@@ -6008,7 +6008,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowOrganization",
@@ -6023,7 +6023,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "overviewRowProject",
@@ -6038,7 +6038,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },
                 {
                     "name": "heroTitles",
@@ -6383,7 +6383,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "m_user"
                 },
                 {
                     "name": "loginFormCompact",
@@ -6398,7 +6398,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "m_user"
                 },
                 {
                     "name": "logoutForm",
@@ -6413,7 +6413,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "m_user"
                 },
                 {
                     "name": "logoutFormCompact",
@@ -6428,7 +6428,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "m_user"
                 },
                 {
                     "name": "fbLayoutFieldset",
@@ -6578,7 +6578,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_headers"
+                    "category": "o_header"
                 },
                 {
                     "name": "headerVertical",
@@ -6593,7 +6593,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_headers"
+                    "category": "o_header"
                 },
                 {
                     "name": "projectHubOuter",
@@ -6743,7 +6743,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutTwoColumns",
@@ -6758,7 +6758,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutThreeColumns",
@@ -6773,7 +6773,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutFourColumns",
@@ -6788,7 +6788,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutContentSidebar",
@@ -6803,7 +6803,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutSidebarContent",
@@ -6818,7 +6818,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutPattern",
@@ -6833,7 +6833,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutBackyard",
@@ -6848,7 +6848,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutSlider",
@@ -6863,7 +6863,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutCTA",
@@ -6878,7 +6878,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "cbLayoutBackground",
@@ -6893,7 +6893,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "o_layout"
                 },
                 {
                     "name": "mapLocation",
@@ -6923,7 +6923,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "overviewOuterSpecific",
@@ -6938,7 +6938,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "overviewOuterFluid",
@@ -6953,7 +6953,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "overviewOuterPublication",
@@ -6968,7 +6968,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "overviewOuterTeam",
@@ -6983,7 +6983,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "overviewOuterTestimonials",
@@ -6998,7 +6998,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "overviewOuterClients",
@@ -7013,7 +7013,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "overviewOuterPortfolio",
@@ -7028,7 +7028,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "o_overview"
                 },
                 {
                     "name": "hero",
@@ -7178,7 +7178,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_toolbars"
+                    "category": "o_toolbar"
                 },
                 {
                     "name": "toolbarPattern",
@@ -7193,7 +7193,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_toolbars"
+                    "category": "o_toolbar"
                 },
                 {
                     "name": "toolbarPatternElectron",
@@ -7208,7 +7208,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_toolbars"
+                    "category": "o_toolbar"
                 },
                 {
                     "name": "toolbarNote",
@@ -7223,7 +7223,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_toolbars"
+                    "category": "o_toolbar"
                 },
                 {
                     "name": "buttonSocialConnectFacebook",
@@ -7433,7 +7433,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_ct_types"
+                    "category": "a_ct_type"
                 },
                 {
                     "name": "cbFieldAlignment",
@@ -7448,7 +7448,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFieldPadding",
@@ -7463,7 +7463,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFieldPosition",
@@ -7478,7 +7478,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFieldSize",
@@ -7493,7 +7493,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFieldSegmentType",
@@ -7508,7 +7508,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFieldAccordionType",
@@ -7523,7 +7523,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFieldTabType",
@@ -7538,7 +7538,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFieldMessageType",
@@ -7553,7 +7553,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbImageSize",
@@ -7568,7 +7568,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbImageOptions",
@@ -7583,7 +7583,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbGalleryDisplayType",
@@ -7598,7 +7598,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbGalleryColumnType",
@@ -7613,7 +7613,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbCardContentType",
@@ -7628,7 +7628,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbTwitterTemplates",
@@ -7643,7 +7643,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbTwitterTimelineType",
@@ -7658,7 +7658,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },
                 {
                     "name": "cbFormSegmentType",
@@ -7718,7 +7718,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbLayoutBackgrounds",
@@ -7733,7 +7733,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbLayoutDivider",
@@ -7748,7 +7748,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbLayoutResponsiveOptions",
@@ -7763,7 +7763,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbGlobalBackgrounds",
@@ -7778,7 +7778,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbGlobalBackgroundRowImg",
@@ -7793,7 +7793,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbLayoutTemplatesPattern",
@@ -7808,7 +7808,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbLayoutStatusPattern",
@@ -7823,7 +7823,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbLayoutSliderType",
@@ -7838,7 +7838,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbLayoutSliderBehaviour",
@@ -7853,7 +7853,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_cb_layout"
                 },
                 {
                     "name": "cbOverviewTemplates",
@@ -7868,7 +7868,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbOverviewTemplatesFluid",
@@ -7883,7 +7883,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbOverviewTemplatesPublication",
@@ -7898,7 +7898,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbOverviewTemplatesTeam",
@@ -7913,7 +7913,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbOverviewTemplatesTestimonial",
@@ -7928,7 +7928,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbOverviewTemplatesClient",
@@ -7943,7 +7943,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbOverviewTemplatesPortfolio",
@@ -7958,7 +7958,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbOverviewTitleHierarchy",
@@ -7973,7 +7973,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_overviews"
+                    "category": "a_cb_overview"
                 },
                 {
                     "name": "cbSelectCTA",
@@ -8063,7 +8063,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingButtonSize",
@@ -8078,7 +8078,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingButtonType",
@@ -8093,7 +8093,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingButtonOptions",
@@ -8108,7 +8108,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingColumns",
@@ -8123,7 +8123,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingColumnsExtra",
@@ -8138,7 +8138,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingIconClass",
@@ -8153,7 +8153,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingIconType",
@@ -8168,7 +8168,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingIconOptions",
@@ -8183,7 +8183,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingImageType",
@@ -8198,7 +8198,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingLinkRel",
@@ -8213,7 +8213,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingPadding",
@@ -8228,7 +8228,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingPosition",
@@ -8243,7 +8243,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingSortBy",
@@ -8258,7 +8258,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingContainerType",
@@ -8273,7 +8273,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "cbSettingPaginationType",
@@ -8288,7 +8288,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "a_cb_setting"
                 },
                 {
                     "name": "hitCount",
@@ -8303,7 +8303,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "rawName",
@@ -8318,7 +8318,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "rawID",
@@ -8333,7 +8333,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "rawAlias",
@@ -8348,7 +8348,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "rawValue",
@@ -8363,7 +8363,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "rawLabel",
@@ -8378,7 +8378,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "rawTag",
@@ -8393,7 +8393,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "rawRows",
@@ -8408,7 +8408,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "a_dat_placeholder"
                 },
                 {
                     "name": "breadcrumbDataRow",
@@ -8423,7 +8423,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_rows"
+                    "category": "a_dat_row"
                 },
                 {
                     "name": "breadcrumbDataCurrent",
@@ -8438,7 +8438,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_rows"
+                    "category": "a_dat_row"
                 },
                 {
                     "name": "faqDataRow",
@@ -8453,7 +8453,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_rows"
+                    "category": "a_dat_row"
                 },
                 {
                     "name": "breadcrumbOuter",
@@ -8983,7 +8983,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "a_sel_row"
                 },
                 {
                     "name": "tvSelectInputOptionRowDesc",
@@ -8998,7 +8998,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "a_sel_row"
                 },
                 {
                     "name": "tvSelectCountryOptGroup",
@@ -9013,7 +9013,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "a_sel_row"
                 },
                 {
                     "name": "tvSelectCountryRow",
@@ -9028,7 +9028,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "a_sel_row"
                 },
                 {
                     "name": "contentMarkdownWrapper",
@@ -9043,7 +9043,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_ct_types"
+                    "category": "m_ct_type"
                 },
                 {
                     "name": "recaptchaOnSubmitV2",
@@ -9208,7 +9208,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbInputTextarea",
@@ -9223,7 +9223,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbInputEmail",
@@ -9238,7 +9238,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbSelectDropdown",
@@ -9253,7 +9253,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbSelectOption",
@@ -9268,7 +9268,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbInputFile",
@@ -9283,7 +9283,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbInputHidden",
@@ -9298,7 +9298,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbInputDate",
@@ -9313,7 +9313,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbInputDateRange",
@@ -9328,7 +9328,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbMathQuestion",
@@ -9343,7 +9343,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbAcceptTerms",
@@ -9358,7 +9358,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_fb_input"
                 },
                 {
                     "name": "fbStoreRow",
@@ -11154,7 +11154,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },
                 {
                     "name": "fbResetNonAlpha",
@@ -11169,7 +11169,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },
                 {
                     "name": "fbStripAsAlias",
@@ -11184,7 +11184,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },
                 {
                     "name": "fbStripNonAlpha",
@@ -11199,7 +11199,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },
                 {
                     "name": "fbSetStoredValues",
@@ -11214,7 +11214,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_hooks"
+                    "category": "f_fb_hook"
                 },
                 {
                     "name": "fbEmptyHook",
@@ -11229,7 +11229,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_hooks"
+                    "category": "f_fb_hook"
                 },
                 {
                     "name": "setBoxType",
@@ -11529,7 +11529,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "stripWords",
@@ -11544,7 +11544,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "splitString",
@@ -11559,7 +11559,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "clipString",
@@ -11574,7 +11574,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "parseTags",
@@ -11589,7 +11589,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "textToNumber",
@@ -11604,7 +11604,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "round",
@@ -11619,7 +11619,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "filterLine",
@@ -11634,7 +11634,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "removeDuplicateLines",
@@ -11649,7 +11649,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "replaceRegex",
@@ -11664,7 +11664,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "beforeEach",
@@ -11679,7 +11679,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "stripForJS",
@@ -11694,7 +11694,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },
                 {
                     "name": "generateStaticFile",
@@ -11904,7 +11904,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "getChildCount",
@@ -11919,7 +11919,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "getCrosslinks",
@@ -11934,7 +11934,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "renderResourceName",
@@ -11949,7 +11949,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "renderContentType",
@@ -11964,7 +11964,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "resourceTVInputOptions",
@@ -11979,7 +11979,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "resourceMediaPath",
@@ -11994,7 +11994,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "SeoTabIndexation",
@@ -12009,7 +12009,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },
                 {
                     "name": "migxSaveOption",
@@ -12144,7 +12144,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "f_user"
                 },
                 {
                     "name": "checkPermissions",
@@ -12159,7 +12159,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "f_user"
                 },
                 {
                     "name": "isEditor",
@@ -12174,7 +12174,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "f_user"
                 },
                 {
                     "name": "renderUserName",
@@ -12189,10 +12189,36 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "f_user"
                 }
             ],
             "plugins": [
+                {
+                    "name": "setResourceIDs",
+                    "description": "Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "c_configuration",
+                    "events": []
+                },
+                {
+                    "name": "UpdateStyling",
+                    "description": "Fires when theme settings are changed under Configuration. It updates Semantic UI theme.variables and triggers a new SUI build in the background. Requires NPM and EXEC function on the server.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "c_configuration",
+                    "events": [
+                        "ClientConfig_ConfigChange"
+                    ]
+                },
                 {
                     "name": "ProcessMarkdown",
                     "description": "Ensure correct Markdown rendering by setting the proper MIME type. Set the MIME type back to HTML when viewing the resource in the browser, to prevent the page from being downloaded as file.",
@@ -12373,32 +12399,6 @@
                             "event": "OnWebPagePrerender"
                         }
                     ]
-                },
-                {
-                    "name": "setResourceIDs",
-                    "description": "Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "c_settings",
-                    "events": []
-                },
-                {
-                    "name": "UpdateStyling",
-                    "description": "Fires when theme settings are changed under Configuration. It updates Semantic UI theme.variables and triggers a new SUI build in the background. Requires NPM and EXEC function on the server.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "c_settings",
-                    "events": [
-                        "ClientConfig_ConfigChange"
-                    ]
                 }
             ]
         },
@@ -12547,25 +12547,25 @@
             },
             {
                 "key": "leaflet_css_url",
-                "value": "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css",
+                "value": "https://unpkg.com/leaflet@1.8.0/dist/leaflet.css",
                 "type": "textfield",
                 "area": "Map"
             },
             {
                 "key": "leaflet_css_integrity",
-                "value": "sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==",
+                "value": "sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==",
                 "type": "textfield",
                 "area": "Map"
             },
             {
                 "key": "leaflet_js_url",
-                "value": "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js",
+                "value": "https://unpkg.com/leaflet@1.8.0/dist/leaflet.js",
                 "type": "textfield",
                 "area": "Map"
             },
             {
                 "key": "leaflet_js_integrity",
-                "value": "sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==",
+                "value": "sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==",
                 "type": "textfield",
                 "area": "Map"
             },
@@ -12630,19 +12630,20 @@
             {
                 "key": "favicon_version",
                 "type": "textfield",
-                "area": "Presentation"
+                "area": "Presentation",
+                "value": "1.0"
             },
             {
                 "key": "assets_version_css",
                 "type": "textfield",
                 "area": "Presentation",
-                "value": "2.0"
+                "value": "2.0.0"
             },
             {
                 "key": "assets_version_js",
                 "type": "textfield",
                 "area": "Presentation",
-                "value": "2.0"
+                "value": "2.0.0"
             },
             {
                 "key": "search_add_to_menu",

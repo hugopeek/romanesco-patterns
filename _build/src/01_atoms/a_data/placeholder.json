@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbLayoutSingleColumnNested",
+                    "name": "hitCount",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "a_dat_placeholder"
                 },{
-                    "name": "cbLayoutTwoColumnsNested",
+                    "name": "rawName",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "a_dat_placeholder"
                 },{
-                    "name": "cbLayoutThreeColumnsNested",
+                    "name": "rawID",
                     "description": "",
                     "properties": [
                         {
@@ -40,9 +40,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "a_dat_placeholder"
                 },{
-                    "name": "cbLayoutFourColumnsNested",
+                    "name": "rawAlias",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "a_dat_placeholder"
                 },{
-                    "name": "cbLayoutContentSidebarNested",
+                    "name": "rawValue",
                     "description": "",
                     "properties": [
                         {
@@ -66,9 +66,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "a_dat_placeholder"
                 },{
-                    "name": "cbLayoutSidebarContentNested",
+                    "name": "rawLabel",
                     "description": "",
                     "properties": [
                         {
@@ -79,9 +79,22 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
+                    "category": "a_dat_placeholder"
                 },{
-                    "name": "cbLayoutPatternPreview",
+                    "name": "rawTag",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "incoherent"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_dat_placeholder"
+                },{
+                    "name": "rawRows",
                     "description": "",
                     "properties": [
                         {
@@ -92,40 +105,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_layouts"
-                },{
-                    "name": "cbLayoutCard",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_layouts"
-                },{
-                    "name": "cbLayoutSegment",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_layouts"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "m_layouts",
-                    "parent": "02_molecules"
+                    "category": "a_dat_placeholder"
                 }
             ]
         }

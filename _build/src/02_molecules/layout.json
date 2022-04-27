@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "fbInputTextfield",
+                    "name": "cbLayoutSingleColumnNested",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbInputTextarea",
+                    "name": "cbLayoutTwoColumnsNested",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbInputEmail",
+                    "name": "cbLayoutThreeColumnsNested",
                     "description": "",
                     "properties": [
                         {
@@ -40,9 +40,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbSelectDropdown",
+                    "name": "cbLayoutFourColumnsNested",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbSelectOption",
+                    "name": "cbLayoutContentSidebarNested",
                     "description": "",
                     "properties": [
                         {
@@ -66,9 +66,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbInputFile",
+                    "name": "cbLayoutSidebarContentNested",
                     "description": "",
                     "properties": [
                         {
@@ -79,9 +79,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbInputHidden",
+                    "name": "cbLayoutPatternPreview",
                     "description": "",
                     "properties": [
                         {
@@ -92,9 +92,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbInputDate",
+                    "name": "cbLayoutCard",
                     "description": "",
                     "properties": [
                         {
@@ -105,46 +105,27 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
                 },{
-                    "name": "fbInputDateRange",
+                    "name": "cbLayoutSegment",
                     "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "m_fb_inputs"
-                },{
-                    "name": "fbMathQuestion",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_fb_inputs"
-                },{
-                    "name": "fbAcceptTerms",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_fb_inputs"
+                    "category": "m_layout"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "m_layout",
+                    "parent": "02_molecules"
                 }
             ]
         }

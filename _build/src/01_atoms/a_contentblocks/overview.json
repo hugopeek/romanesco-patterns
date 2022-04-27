@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "tagItemBasic",
+                    "name": "cbOverviewTemplates",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_cb_overview"
                 },{
-                    "name": "tagItemBasicLink",
+                    "name": "cbOverviewTemplatesFluid",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_cb_overview"
                 },{
-                    "name": "tagItemIcon",
+                    "name": "cbOverviewTemplatesPublication",
                     "description": "",
                     "properties": [
                         {
@@ -40,9 +40,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_cb_overview"
                 },{
-                    "name": "tagItemTooltip",
+                    "name": "cbOverviewTemplatesTeam",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_cb_overview"
                 },{
-                    "name": "tagItemCount",
+                    "name": "cbOverviewTemplatesTestimonial",
                     "description": "",
                     "properties": [
                         {
@@ -66,9 +66,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_cb_overview"
                 },{
-                    "name": "tagItemCountLink",
+                    "name": "cbOverviewTemplatesClient",
                     "description": "",
                     "properties": [
                         {
@@ -79,9 +79,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_cb_overview"
                 },{
-                    "name": "tagItemCountLinkHighlight",
+                    "name": "cbOverviewTemplatesPortfolio",
                     "description": "",
                     "properties": [
                         {
@@ -92,9 +92,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
+                    "category": "a_cb_overview"
                 },{
-                    "name": "tagItemFlag",
+                    "name": "cbOverviewTitleHierarchy",
                     "description": "",
                     "properties": [
                         {
@@ -105,13 +105,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_taxonomy"
-                }
-            ],
-            "categories": [
-                {
-                    "name": "a_taxonomy",
-                    "parent": "01_atoms"
+                    "category": "a_cb_overview"
                 }
             ]
         }

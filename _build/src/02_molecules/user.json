@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "buttonHrefBasic",
+                    "name": "loginForm",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_buttons"
+                    "category": "m_user"
                 },{
-                    "name": "buttonHrefIcon",
+                    "name": "loginFormCompact",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_buttons"
+                    "category": "m_user"
                 },{
-                    "name": "buttonHrefOverview",
+                    "name": "logoutForm",
                     "description": "",
                     "properties": [
                         {
@@ -40,16 +40,27 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_buttons"
+                    "category": "m_user"
+                },{
+                    "name": "logoutFormCompact",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_user"
                 }
             ],
+
             "categories": [
                 {
-                    "name": "a_buttons",
-                    "parent": "01_atoms"
-                },{
-                    "name": "a_btn_social",
-                    "parent": "a_buttons"
+                    "name": "m_user",
+                    "parent": "02_molecules"
                 }
             ]
         }

@@ -6,19 +6,19 @@
                     "name": "a_contentblocks",
                     "parent": "01_atoms"
                 },{
-                    "name": "a_cb_layouts",
+                    "name": "a_cb_layout",
                     "parent": "a_contentblocks"
                 },{
-                    "name": "a_cb_fields",
+                    "name": "a_cb_field",
                     "parent": "a_contentblocks"
                 },{
-                    "name": "a_cb_settings",
+                    "name": "a_cb_setting",
                     "parent": "a_contentblocks"
                 },{
                     "name": "a_cb_select",
                     "parent": "a_contentblocks"
                 },{
-                    "name": "a_cb_overviews",
+                    "name": "a_cb_overview",
                     "parent": "a_contentblocks"
                 },{
                     "name": "a_cb_formblocks",

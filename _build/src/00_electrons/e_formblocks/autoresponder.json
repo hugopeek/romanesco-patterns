@@ -3,7 +3,7 @@
         "elements": {
             "tvs": [
                 {
-                    "caption": "Autoresponder",
+                    "caption": "_Autoresponder",
                     "name": "fb_autoresponder_toggle",
                     "description": "IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.",
                     "type": "option",
@@ -15,11 +15,11 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "1",
                     "templates": ["fbForm"]
                 },{
-                    "caption": "Autoresponder FROM address",
+                    "caption": "_Autoresponder FROM address",
                     "name": "fb_autoresponder_from",
                     "description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like mail@yourdomain.com. Defaults to emailsender system setting.",
                     "type": "email",
@@ -29,11 +29,11 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "2",
                     "templates": ["fbForm"]
                 },{
-                    "caption": "Autoresponder FROM name",
+                    "caption": "_Autoresponder FROM name",
                     "name": "fb_autoresponder_from_name",
                     "description": "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting.",
                     "type": "text",
@@ -43,11 +43,11 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "3",
                     "templates": ["fbForm"]
                 },{
-                    "caption": "Autoresponder REPLY TO address",
+                    "caption": "_Autoresponder REPLY TO address",
                     "name": "fb_autoresponder_reply_to",
                     "description": "Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.",
                     "type": "email",
@@ -57,7 +57,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "4",
                     "templates": ["fbForm"]
                 },{
@@ -71,7 +71,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "10",
                     "templates": ["fbForm"]
                 },{
@@ -85,7 +85,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Autoresponder",
+                    "category": "_Autoresponder",
                     "sortOrder": "11",
                     "templates": ["fbForm"]
                 }

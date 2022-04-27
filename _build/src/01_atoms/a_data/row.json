@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_rows"
+                    "category": "a_dat_row"
                 },{
                     "name": "breadcrumbDataCurrent",
                     "description": "",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_rows"
+                    "category": "a_dat_row"
                 },{
                     "name": "faqDataRow",
                     "description": "",
@@ -40,7 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_rows"
+                    "category": "a_dat_row"
                 }
             ]
         }

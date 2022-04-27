@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbLayoutAlignment",
+                    "name": "tagItemBasic",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
                 },{
-                    "name": "cbLayoutBackgrounds",
+                    "name": "tagItemBasicLink",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
                 },{
-                    "name": "cbLayoutDivider",
+                    "name": "tagItemIcon",
                     "description": "",
                     "properties": [
                         {
@@ -40,9 +40,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
                 },{
-                    "name": "cbLayoutResponsiveOptions",
+                    "name": "tagItemTooltip",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
                 },{
-                    "name": "cbGlobalBackgrounds",
+                    "name": "tagItemCount",
                     "description": "",
                     "properties": [
                         {
@@ -66,22 +66,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
                 },{
-                    "name": "cbGlobalBackgroundRowImg",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_layouts"
-                },{
-                    "name": "cbLayoutTemplatesPattern",
+                    "name": "tagItemCountLink",
                     "description": "",
                     "properties": [
                         {
@@ -92,9 +79,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
                 },{
-                    "name": "cbLayoutStatusPattern",
+                    "name": "tagItemCountLinkHighlight",
                     "description": "",
                     "properties": [
                         {
@@ -105,9 +92,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
                 },{
-                    "name": "cbLayoutSliderType",
+                    "name": "tagItemFlag",
                     "description": "",
                     "properties": [
                         {
@@ -118,20 +105,13 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_layouts"
-                },{
-                    "name": "cbLayoutSliderBehaviour",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_layouts"
+                    "category": "a_tag"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "a_tag",
+                    "parent": "01_atoms"
                 }
             ]
         }

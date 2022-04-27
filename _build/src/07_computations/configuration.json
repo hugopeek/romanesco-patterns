@@ -11,7 +11,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "c_settings",
+                    "category": "c_configuration",
                     "events": []
                 },{
                     "name": "UpdateStyling",
@@ -22,14 +22,14 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "c_settings",
+                    "category": "c_configuration",
                     "events": ["ClientConfig_ConfigChange"]
                 }
             ],
 
             "categories": [
                 {
-                    "name": "c_settings",
+                    "name": "c_configuration",
                     "parent": "07_computations"
                 }
             ]

@@ -48,7 +48,7 @@
                     "name": "m_formblocks",
                     "parent": "02_molecules"
                 },{
-                    "name": "m_fb_inputs",
+                    "name": "m_fb_input",
                     "parent": "m_formblocks"
                 },{
                     "name": "m_fb_email",

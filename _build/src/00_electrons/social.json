@@ -13,7 +13,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_team"
@@ -29,7 +29,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "2",
                     "templates": [
                         "@@templates_team"
@@ -45,7 +45,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "3",
                     "templates": [
                         "@@templates_team"
@@ -61,7 +61,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "4",
                     "templates": [
                         "@@templates_team"
@@ -77,7 +77,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "5",
                     "templates": [
                         "@@templates_team"
@@ -93,7 +93,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "10",
                     "templates": [
                         "@@templates_team"
@@ -109,7 +109,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "11",
                     "templates": [
                         "@@templates_team"
@@ -125,7 +125,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "12",
                     "templates": [
                         "@@templates_team"
@@ -141,7 +141,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Social",
+                    "category": "_Social",
                     "sortOrder": "20",
                     "templates": [
                         "@@templates_team"
@@ -154,7 +154,7 @@
                     "name": "e_social",
                     "parent": "00_electrons"
                 },{
-                    "name": "Social",
+                    "name": "_Social",
                     "parent": "e_social",
                     "rank": 50
                 }

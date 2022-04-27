@@ -23,7 +23,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_basic",
@@ -51,7 +51,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "2",
                     "templates": [
                         "@@templates_basic",
@@ -79,7 +79,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "3",
                     "templates": [
                         "@@templates_basic",
@@ -107,7 +107,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "5",
                     "templates": [
                         "@@templates_basic",
@@ -135,7 +135,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "6",
                     "templates": [
                         "@@templates_basic",
@@ -161,7 +161,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Image",
+                    "category": "_Overview - Image",
                     "sortOrder": "99",
                     "templates": [
                         "@@templates_basic",
@@ -184,7 +184,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Icon",
+                    "category": "_Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
                         "@@templates_basic",
@@ -201,7 +201,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Icon",
+                    "category": "_Overview - Icon",
                     "sortOrder": "20",
                     "templates": [
                         "@@templates_basic",
@@ -218,7 +218,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Icon",
+                    "category": "_Overview - Icon",
                     "sortOrder": "21",
                     "templates": [
                         "@@templates_basic",
@@ -235,7 +235,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Overview - Settings",
+                    "category": "_Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_basic"
@@ -251,7 +251,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Overview - Settings",
+                    "category": "_Overview - Settings",
                     "sortOrder": "2",
                     "templates": [
                         "@@templates_basic",
@@ -271,7 +271,7 @@
                             "value": "unknown"
                         }
                     ],
-                    "category": "Overview - Settings",
+                    "category": "_Overview - Settings",
                     "sortOrder": "10",
                     "templates": [
                         "@@templates_basic",
@@ -283,19 +283,19 @@
 
             "categories": [
                 {
-                    "name": "e_overviews",
+                    "name": "e_overview",
                     "parent": "00_electrons"
                 },{
-                    "name": "Overview - Image",
-                    "parent": "e_overviews",
+                    "name": "_Overview - Image",
+                    "parent": "e_overview",
                     "rank": 10
                 },{
-                    "name": "Overview - Icon",
-                    "parent": "e_overviews",
+                    "name": "_Overview - Icon",
+                    "parent": "e_overview",
                     "rank": 11
                 },{
-                    "name": "Overview - Settings",
-                    "parent": "e_overviews",
+                    "name": "_Overview - Settings",
+                    "parent": "e_overview",
                     "rank": 12
                 }
             ]

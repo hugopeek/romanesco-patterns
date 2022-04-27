@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "contentMarkdownWrapper",
-                    "description": "Render Markdown content as HTML, inside a single column container.",
+                    "name": "contentMarkdown",
+                    "description": "Render Markdown content as HTML.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_ct_types"
+                    "category": "a_ct_type"
                 }
             ]
         }

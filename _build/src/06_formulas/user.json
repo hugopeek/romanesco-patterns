@@ -1,65 +1,65 @@
 {
     "package": {
         "elements": {
-            "chunks": [
+            "snippets": [
                 {
-                    "name": "tvSelectInputOptionRow",
-                    "description": "Basic row template for rendering input options inside the TV.",
+                    "name": "setUserPlaceholders",
+                    "description": "Make any extended fields that are attached to a MODX user available as placeholder.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         },{
-                            "name": "elementPreview",
+                            "name": "elementExample",
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "f_user"
                 },{
-                    "name": "tvSelectInputOptionRowDesc",
-                    "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
+                    "name": "checkPermissions",
+                    "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         },{
-                            "name": "elementPreview",
+                            "name": "elementExample",
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "f_user"
                 },{
-                    "name": "tvSelectCountryOptGroup",
-                    "description": "Display prioritized countries in a separate group at the top of the dropdown.",
+                    "name": "isEditor",
+                    "description": "Check if user is logged in to the manager.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         },{
-                            "name": "elementPreview",
+                            "name": "elementExample",
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "f_user"
                 },{
-                    "name": "tvSelectCountryRow",
-                    "description": "Basic row template to display country names inside the dropdown.",
+                    "name": "renderUserName",
+                    "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         },{
-                            "name": "elementPreview",
+                            "name": "elementExample",
                             "value": ""
                         }
                     ],
-                    "category": "a_sel_rows"
+                    "category": "f_user"
                 }
             ],
             "categories": [
                 {
-                    "name": "a_sel_rows",
-                    "parent": "a_select"
+                    "name": "f_user",
+                    "parent": "06_formulas"
                 }
             ]
         }

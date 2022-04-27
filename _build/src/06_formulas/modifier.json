@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "stripWords",
                     "description": "As opposed to the native MODX stripString modifier (which only allows you to strip a single value), stripWords lets you enter multiple (comma separated) values.",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "splitString",
                     "description": "Divide string into multiple sections, based on a delimiter. Regular snippet call outputs sections to placeholders. If used as output modifier, specify the number of the part you want to get.",
@@ -40,7 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "clipString",
                     "description": "Trim the edges of a string. The given value represents the number of characters that will be clipped. If the value is negative, they will be clipped from the end of the string.",
@@ -53,7 +53,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "parseTags",
                     "description": "Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)",
@@ -66,7 +66,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "textToNumber",
                     "description": "Turn a written number into an actual numeric value. In other words: turn \"three\" into \"3\". Can come in handy if you want to use the Semantic UI column width classes for other purposes.",
@@ -79,7 +79,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "round",
                     "description": "Round a decimal value to a whole number or with a specified amount of decimals. Usage: [[+value:round=`2`]] returns the value with 2 decimals, [[+value:round]] returns a whole number.",
@@ -92,7 +92,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "filterLine",
                     "description": "Search the input for lines containing a specific string. And then return those lines.",
@@ -105,7 +105,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "removeDuplicateLines",
                     "description": "Scan input for duplicate lines and remove them from the output.",
@@ -118,7 +118,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "replaceRegex",
                     "description": "Find patterns with regex and replace them. By default, it removes all matches. If you want to replace each match with something else, you have to use a regular snippet call.",
@@ -131,7 +131,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "beforeEach",
                     "description": "Grab a comma-separated list and prefix all items with given value. Optionally, the separator can be changed and output can be forwarded to a placeholder.",
@@ -144,7 +144,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 },{
                     "name": "stripForJS",
                     "description": "Prepare the input for use in Javascript. This means escaping certain characters to make sure the surrounding HTML doesn't break.",
@@ -157,12 +157,12 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_modifiers"
+                    "category": "f_modifier"
                 }
             ],
             "categories": [
                 {
-                    "name": "f_modifiers",
+                    "name": "f_modifier",
                     "parent": "06_formulas"
                 }
             ]

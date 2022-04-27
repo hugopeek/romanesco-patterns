@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbSettingAspectRatio",
-                    "description": "",
+                    "name": "cbLayoutSingleColumn",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,10 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingButtonSize",
-                    "description": "",
+                    "name": "cbLayoutTwoColumns",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -27,10 +27,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingButtonType",
-                    "description": "",
+                    "name": "cbLayoutThreeColumns",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -40,10 +40,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingButtonOptions",
-                    "description": "",
+                    "name": "cbLayoutFourColumns",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -53,10 +53,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingColumns",
-                    "description": "",
+                    "name": "cbLayoutContentSidebar",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -66,10 +66,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingColumnsExtra",
-                    "description": "",
+                    "name": "cbLayoutSidebarContent",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -79,10 +79,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingIconClass",
-                    "description": "",
+                    "name": "cbLayoutPattern",
+                    "description": "NB: not referenced directly! A customized section for displaying Romanesco patterns in the front-end library.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -92,10 +92,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingIconType",
-                    "description": "",
+                    "name": "cbLayoutBackyard",
+                    "description": "NB: not referenced directly! A customized section for showcasing Romanesco patterns in the front-end library.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -105,10 +105,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingIconOptions",
-                    "description": "",
+                    "name": "cbLayoutSlider",
+                    "description": "NB: not referenced directly! This layout creates a slider with child elements. Can also process Overview items as slides.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -118,10 +118,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingImageType",
-                    "description": "",
+                    "name": "cbLayoutCTA",
+                    "description": "NB: not referenced directly! This layout is a wrapper to help you create a small, reusable CTA pattern with ContentBlocks. CTAs can be referenced throughout your project with CB or with TVs.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -131,10 +131,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
                 },{
-                    "name": "cbSettingLinkRel",
-                    "description": "",
+                    "name": "cbLayoutBackground",
+                    "description": "A wrapper for the Global Background field. This layout enables you to preview the background in the browser.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -144,72 +144,14 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingPadding",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingPosition",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingSortBy",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingContainerType",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_settings"
-                },{
-                    "name": "cbSettingPaginationType",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_settings"
+                    "category": "o_layout"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_layout",
+                    "parent": "03_organisms"
                 }
             ]
         }

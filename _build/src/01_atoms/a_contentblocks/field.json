@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbFieldPadding",
                     "description": "",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbFieldPosition",
                     "description": "",
@@ -40,7 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbFieldSize",
                     "description": "",
@@ -53,7 +53,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbFieldSegmentType",
                     "description": "",
@@ -66,7 +66,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbFieldAccordionType",
                     "description": "",
@@ -79,7 +79,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbFieldTabType",
                     "description": "",
@@ -92,7 +92,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbFieldMessageType",
                     "description": "",
@@ -105,7 +105,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbImageSize",
                     "description": "",
@@ -118,7 +118,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbImageOptions",
                     "description": "",
@@ -131,7 +131,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbGalleryDisplayType",
                     "description": "DEPRECATED.",
@@ -144,7 +144,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbGalleryColumnType",
                     "description": "Defines the class names for individual gallery items. In ContentBlocks, this is presented to the user as Caption type because this setting mostly affects how captions are being displayed",
@@ -157,7 +157,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbCardContentType",
                     "description": "",
@@ -170,7 +170,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbTwitterTemplates",
                     "description": "",
@@ -183,7 +183,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 },{
                     "name": "cbTwitterTimelineType",
                     "description": "",
@@ -196,7 +196,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cb_fields"
+                    "category": "a_cb_field"
                 }
             ]
         }

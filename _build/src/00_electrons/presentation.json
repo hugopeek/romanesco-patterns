@@ -19,7 +19,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "30",
                     "templates": [
                         "Presentation"
@@ -37,7 +37,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "31",
                     "templates": [
                         "Presentation"
@@ -55,7 +55,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "32",
                     "templates": [
                         "Presentation"
@@ -73,7 +73,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Slider - Settings",
+                    "category": "_Slider - Settings",
                     "sortOrder": "33",
                     "templates": [
                         "Presentation"
@@ -85,7 +85,7 @@
                     "name": "e_presentation",
                     "parent": "00_electrons"
                 },{
-                    "name": "Slider - Settings",
+                    "name": "_Slider - Settings",
                     "parent": "e_presentation"
                 }
             ]
@@ -100,17 +100,18 @@
             },{
                 "key": "favicon_version",
                 "type": "textfield",
-                "area": "Presentation"
+                "area": "Presentation",
+                "value": "1.0"
             },{
                 "key": "assets_version_css",
                 "type": "textfield",
                 "area": "Presentation",
-                "value": "2.0"
+                "value": "2.0.0"
             },{
                 "key": "assets_version_js",
                 "type": "textfield",
                 "area": "Presentation",
-                "value": "2.0"
+                "value": "2.0.0"
             }
         ]
     }

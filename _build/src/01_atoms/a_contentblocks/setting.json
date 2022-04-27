@@ -3,46 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "imgOverview",
-                    "description": "Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_images"
-                },{
-                    "name": "imgOverviewFixed",
-                    "description": "Alternative ImagePlus tpl for overview images, with fixed height and width. Sometimes you don't want to generate all the responsive variants, for example when it's only a small avatar image.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_images"
-                },{
-                    "name": "imgOverviewFallback",
-                    "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_images"
-                },{
-                    "name": "imgOverviewPersonLink",
+                    "name": "cbSettingAspectRatio",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_cb_setting"
                 },{
-                    "name": "imgOverviewPersonAvatar",
+                    "name": "cbSettingButtonSize",
                     "description": "",
                     "properties": [
                         {
@@ -66,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_cb_setting"
                 },{
-                    "name": "imgOverviewPersonAvatarLink",
+                    "name": "cbSettingButtonType",
                     "description": "",
                     "properties": [
                         {
@@ -79,49 +40,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_cb_setting"
                 },{
-                    "name": "imgResponsive",
-                    "description": "The core of most ContentBlocks images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Can also be cropped and lazy loaded.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_images"
-                },{
-                    "name": "imgResponsiveGallery",
-                    "description": "A responsive image element, specialized for the Gallery block.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_images"
-                },{
-                    "name": "imgResponsiveGalleryCaption",
-                    "description": "A responsive image element, specialized for the Gallery with Caption block.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_images"
-                },{
-                    "name": "imgResponsiveRowSrcset",
-                    "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
+                    "name": "cbSettingButtonOptions",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -131,10 +53,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_cb_setting"
                 },{
-                    "name": "imgResponsiveScale",
-                    "description": "A switch statement that selects the right viewport width for the img sizes attribute, based on the layout and column type of the container.",
+                    "name": "cbSettingColumns",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -144,10 +66,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
+                    "category": "a_cb_setting"
                 },{
-                    "name": "imgOpenGraphRow",
-                    "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
+                    "name": "cbSettingColumnsExtra",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -157,14 +79,137 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_images"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_images",
-                    "parent": "01_atoms"
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingIconClass",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingIconType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingIconOptions",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingImageType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingLinkRel",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingPadding",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingPosition",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingSortBy",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingContainerType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },{
+                    "name": "cbSettingPaginationType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
                 }
             ]
         }

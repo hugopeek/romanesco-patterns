@@ -13,7 +13,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "1",
                     "templates": [
                         "fbForm"
@@ -29,7 +29,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "2",
                     "templates": [
                         "fbForm"
@@ -45,7 +45,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "3",
                     "templates": [
                         "fbForm"
@@ -61,7 +61,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "5",
                     "templates": [
                         "fbForm"
@@ -77,7 +77,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "6",
                     "templates": [
                         "fbForm"
@@ -93,7 +93,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "10",
                     "templates": [
                         "fbForm",
@@ -110,7 +110,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "90",
                     "templates": [
                         "fbForm",
@@ -127,7 +127,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "91",
                     "inputOptionValues": "System default==default||Yes==1||No==0",
                     "defaultValue": "default",
@@ -145,7 +145,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "92",
                     "templates": [
                         "fbForm",
@@ -162,7 +162,7 @@
                             "value": "deprecated"
                         }
                     ],
-                    "category": "Settings - General",
+                    "category": "_Settings - General",
                     "sortOrder": "5",
                     "inputOptionValues": "Vertical==vertical||Horizontal==horizontal||Inline==inline",
                     "defaultValue": "horizontal"
@@ -177,7 +177,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "1",
                     "templates": [
                         "fbForm",
@@ -194,7 +194,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "2",
                     "templates": [
                         "fbForm"
@@ -210,7 +210,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "3",
                     "templates": [
                         "fbForm",
@@ -227,7 +227,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "10",
                     "templates": [
                         "fbForm"
@@ -243,7 +243,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "11",
                     "templates": [
                         "fbForm",
@@ -262,7 +262,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "15",
                     "templates": [
                         "fbForm"
@@ -279,7 +279,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "16",
                     "templates": [
                         "fbForm"
@@ -296,7 +296,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "20",
                     "templates": [
                         "fbForm"
@@ -313,7 +313,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Advanced",
+                    "category": "_Settings - Advanced",
                     "sortOrder": "21",
                     "templates": [
                         "fbForm"
@@ -326,23 +326,23 @@
                     "name": "e_formblocks",
                     "parent": "00_electrons"
                 },{
-                    "name": "Settings - Email",
+                    "name": "_Settings - Email",
                     "parent": "e_formblocks",
                     "rank": 1
                 },{
-                    "name": "Settings - General",
+                    "name": "_Settings - General",
                     "parent": "e_formblocks",
                     "rank": 2
                 },{
-                    "name": "Settings - Advanced",
+                    "name": "_Settings - Advanced",
                     "parent": "e_formblocks",
                     "rank": 3
                 },{
-                    "name": "Autoresponder",
+                    "name": "_Autoresponder",
                     "parent": "e_formblocks",
                     "rank": 10
                 },{
-                    "name": "Registration",
+                    "name": "_Registration",
                     "parent": "e_formblocks",
                     "rank": 20
                 }

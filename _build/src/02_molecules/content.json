@@ -166,7 +166,7 @@
                     "name": "m_content",
                     "parent": "02_molecules"
                 },{
-                    "name": "m_ct_types",
+                    "name": "m_ct_type",
                     "parent": "m_content"
                 },{
                     "name": "Content",

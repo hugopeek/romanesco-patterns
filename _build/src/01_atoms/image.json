@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "cbLayoutSingleColumn",
-                    "description": "NB: not referenced directly!",
+                    "name": "imgOverview",
+                    "description": "Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,23 +14,23 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutTwoColumns",
-                    "description": "NB: not referenced directly!",
+                    "name": "imgOverviewFixed",
+                    "description": "Alternative ImagePlus tpl for overview images, with fixed height and width. Sometimes you don't want to generate all the responsive variants, for example when it's only a small avatar image.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutThreeColumns",
-                    "description": "NB: not referenced directly!",
+                    "name": "imgOverviewFallback",
+                    "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -40,10 +40,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutFourColumns",
-                    "description": "NB: not referenced directly!",
+                    "name": "imgOverviewPersonLink",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -53,10 +53,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutContentSidebar",
-                    "description": "NB: not referenced directly!",
+                    "name": "imgOverviewPersonAvatar",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -66,10 +66,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutSidebarContent",
-                    "description": "NB: not referenced directly!",
+                    "name": "imgOverviewPersonAvatarLink",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -79,49 +79,49 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutPattern",
-                    "description": "NB: not referenced directly! A customized section for displaying Romanesco patterns in the front-end library.",
+                    "name": "imgResponsive",
+                    "description": "The core of most ContentBlocks images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Can also be cropped and lazy loaded.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutBackyard",
-                    "description": "NB: not referenced directly! A customized section for showcasing Romanesco patterns in the front-end library.",
+                    "name": "imgResponsiveGallery",
+                    "description": "A responsive image element, specialized for the Gallery block.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutSlider",
-                    "description": "NB: not referenced directly! This layout creates a slider with child elements. Can also process Overview items as slides.",
+                    "name": "imgResponsiveGalleryCaption",
+                    "description": "A responsive image element, specialized for the Gallery with Caption block.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutCTA",
-                    "description": "NB: not referenced directly! This layout is a wrapper to help you create a small, reusable CTA pattern with ContentBlocks. CTAs can be referenced throughout your project with CB or with TVs.",
+                    "name": "imgResponsiveRowSrcset",
+                    "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -131,10 +131,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
                 },{
-                    "name": "cbLayoutBackground",
-                    "description": "A wrapper for the Global Background field. This layout enables you to preview the background in the browser.",
+                    "name": "imgResponsiveScale",
+                    "description": "A switch statement that selects the right viewport width for the img sizes attribute, based on the layout and column type of the container.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -144,14 +144,27 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_layouts"
+                    "category": "a_image"
+                },{
+                    "name": "imgOpenGraphRow",
+                    "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_image"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "o_layouts",
-                    "parent": "03_organisms"
+                    "name": "a_image",
+                    "parent": "01_atoms"
                 }
             ]
         }

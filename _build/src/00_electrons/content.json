@@ -6,18 +6,18 @@
                     "name": "e_content",
                     "parent": "00_electrons"
                 },{
-                    "name": "e_headers",
+                    "name": "e_header",
                     "parent": "e_content"
                 },{
-                    "name": "Header",
-                    "parent": "e_headers",
+                    "name": "_Header",
+                    "parent": "e_header",
                     "rank": 1
                 },{
-                    "name": "e_footers",
+                    "name": "e_footer",
                     "parent": "e_content"
                 },{
-                    "name": "Footer",
-                    "parent": "e_footers",
+                    "name": "_Footer",
+                    "parent": "e_footer",
                     "rank": 99
                 },{
                     "name": "e_contentblocks",
@@ -26,32 +26,32 @@
                     "name": "e_cta",
                     "parent": "e_content"
                 },{
-                    "name": "CTA - Settings",
+                    "name": "_CTA - Settings",
                     "parent": "e_cta"
                 },{
                     "name": "e_purpose",
                     "parent": "e_content"
                 },{
-                    "name": "Purpose",
+                    "name": "_Purpose",
                     "parent": "e_purpose"
                 },{
                     "name": "e_status",
                     "parent": "e_content"
                 },{
-                    "name": "Status",
+                    "name": "_Status",
                     "parent": "e_status"
                 },{
                     "name": "e_links",
                     "parent": "e_content"
                 },{
-                    "name": "Links",
+                    "name": "_Links",
                     "parent": "e_links",
                     "rank": 100
                 },{
                     "name": "e_timeline",
                     "parent": "e_content"
                 },{
-                    "name": "Timeline",
+                    "name": "_Timeline",
                     "parent": "e_timeline"
                 }
             ]

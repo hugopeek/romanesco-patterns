@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },{
                     "name": "getChildCount",
                     "description": "Return the amount of child pages a resource has. Now you can make one of those shiny little badges inside a menu button, telling the user upfront how much treasure is inside.",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },{
                     "name": "getCrosslinks",
                     "description": "Return the IDs of resources that link to current resource through a given TV. Did that make sense? For example: you can show things like relevant tags or reviews in blog posts and vice versa.",
@@ -40,7 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },{
                     "name": "renderResourceName",
                     "description": "Takes an ID as input and returns the pagetitle. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
@@ -53,7 +53,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },{
                     "name": "renderContentType",
                     "description": "Takes an ID as input and returns the content type. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
@@ -66,7 +66,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },{
                     "name": "resourceTVInputOptions",
                     "description": "Generate input option values that can be used in TVs, for creating resource selectors.",
@@ -79,7 +79,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },{
                     "name": "resourceMediaPath",
                     "description": "Standalone version of a snippet that comes with MIGX. Generates subfolders in media sources. Keeps your folder structure tidy when adding lots of images in lots of resources (e.g. galleries).",
@@ -92,7 +92,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 },{
                     "name": "SeoTabIndexation",
                     "description": "If SeoTab (StercSEO) is installed, this snippet displays the indexation setting for given resource.",
@@ -105,12 +105,12 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_resources"
+                    "category": "f_resource"
                 }
             ],
             "categories": [
                 {
-                    "name": "f_resources",
+                    "name": "f_resource",
                     "parent": "06_formulas"
                 }
             ]

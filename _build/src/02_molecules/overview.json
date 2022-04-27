@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewWrapperPagination",
                     "description": "",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRow",
                     "description": "",
@@ -40,7 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowLink",
                     "description": "",
@@ -53,7 +53,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowList",
                     "description": "",
@@ -66,7 +66,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowFluid",
                     "description": "",
@@ -79,7 +79,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowArticle",
                     "description": "",
@@ -92,7 +92,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowPerson",
                     "description": "",
@@ -105,7 +105,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowReview",
                     "description": "",
@@ -118,7 +118,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowOrganization",
                     "description": "",
@@ -131,7 +131,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 },{
                     "name": "overviewRowProject",
                     "description": "",
@@ -144,44 +144,44 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_overviews"
+                    "category": "m_overview"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "m_overviews",
+                    "name": "m_overview",
                     "parent": "02_molecules"
                 },{
                     "name": "m_ov_basic",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_image",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_icon",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_article",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_person",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_organization",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_review",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_project",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_information",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_settings",
-                    "parent": "m_overviews"
+                    "parent": "m_overview"
                 }
             ]
         }

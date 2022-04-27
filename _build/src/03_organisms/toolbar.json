@@ -1,65 +1,66 @@
 {
     "package": {
         "elements": {
-            "snippets": [
+            "chunks": [
                 {
-                    "name": "setUserPlaceholders",
-                    "description": "Make any extended fields that are attached to a MODX user available as placeholder.",
+                    "name": "toolbarBasic",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         },{
-                            "name": "elementExample",
+                            "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "o_toolbar"
                 },{
-                    "name": "checkPermissions",
-                    "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
+                    "name": "toolbarPattern",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         },{
-                            "name": "elementExample",
+                            "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "o_toolbar"
                 },{
-                    "name": "isEditor",
-                    "description": "Check if user is logged in to the manager.",
+                    "name": "toolbarPatternElectron",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         },{
-                            "name": "elementExample",
+                            "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "o_toolbar"
                 },{
-                    "name": "renderUserName",
-                    "description": "Gets user by ID and returns the username. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
+                    "name": "toolbarNote",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
-                            "name": "elementExample",
+                            "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "f_users"
+                    "category": "o_toolbar"
                 }
             ],
+
             "categories": [
                 {
-                    "name": "f_users",
-                    "parent": "06_formulas"
+                    "name": "o_toolbar",
+                    "parent": "03_organisms"
                 }
             ]
         }

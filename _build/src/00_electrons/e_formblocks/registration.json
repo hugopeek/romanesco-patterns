@@ -15,7 +15,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "1",
                     "templates": ["fbRegister"]
                 },{
@@ -29,7 +29,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "2",
                     "templates": ["fbRegister"]
                 },{
@@ -44,7 +44,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "5",
                     "templates": ["fbRegister"]
                 },{
@@ -58,7 +58,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Settings - Email",
+                    "category": "_Settings - Email",
                     "sortOrder": "20",
                     "templates": ["fbRegister"]
                 },{
@@ -72,7 +72,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "10",
                     "templates": ["fbRegister"]
                 },{
@@ -86,7 +86,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "11",
                     "templates": ["fbRegister"]
                 },{
@@ -100,7 +100,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "12",
                     "templates": ["fbRegister"]
                 },{
@@ -114,7 +114,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "20",
                     "templates": ["fbRegister"]
                 },{
@@ -128,7 +128,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "21",
                     "templates": ["fbRegister"]
                 },{
@@ -144,7 +144,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Registration",
+                    "category": "_Registration",
                     "sortOrder": "30",
                     "templates": ["fbRegister"]
                 }

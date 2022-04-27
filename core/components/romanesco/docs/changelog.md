@@ -7,6 +7,7 @@ New features:
 - Add option to show CTA in sidebar
 
 Fixes and improvements:
+- Rename element categories for consistency and prefix TV categories
 - Minify custom CSS regardless of configuration setting
 - Invert secondary menu inside segments with inverted background
 - Load frontend lexicon OnHandleRequest

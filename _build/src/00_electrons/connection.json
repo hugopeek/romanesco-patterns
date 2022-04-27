@@ -14,7 +14,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_portfolio"
@@ -31,7 +31,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "2",
                     "templates": [
                         "@@templates_portfolio",
@@ -49,7 +49,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "3",
                     "templates": [
                         "@@templates_portfolio"
@@ -66,17 +66,17 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Connections",
+                    "category": "_Connection",
                     "sortOrder": "10"
                 }
             ],
             "categories": [
                 {
-                    "name": "e_connections",
+                    "name": "e_connection",
                     "parent": "00_electrons"
                 },{
-                    "name": "Connections",
-                    "parent": "e_connections",
+                    "name": "_Connection",
+                    "parent": "e_connection",
                     "rank": 40
                 }
             ]

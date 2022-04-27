@@ -16,7 +16,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Timeline",
+                    "category": "_Timeline",
                     "sortOrder": 1,
                     "templates": [
                         "ProjectDashboard"

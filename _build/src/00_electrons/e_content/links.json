@@ -16,7 +16,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Links",
+                    "category": "_Links",
                     "sortOrder": 1,
                     "templates": [
                         "@@templates_all"
@@ -36,7 +36,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Links",
+                    "category": "_Links",
                     "sortOrder": 10,
                     "templates": [
                         "@@templates_all"
@@ -61,7 +61,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Links",
+                    "category": "_Links",
                     "sortOrder": 20,
                     "templates": [
                         "@@templates_all"

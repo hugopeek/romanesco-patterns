@@ -131,7 +131,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },{
                     "name": "fbSelectOptionRowResource",
                     "description": "A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.",
@@ -144,7 +144,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },{
                     "name": "fbSelectOptionRowTag",
                     "description": "A row template for options that let you select a tag. Initially designed to work with the Tagger extra, but should work with any tag system that outputs [[+tag]] and [[+alias]] placeholders.",
@@ -157,7 +157,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },{
                     "name": "fbSelectOptionRowInputOption",
                     "description": "A row template for using the input options found under Manage > Tool shed.",
@@ -173,7 +173,7 @@
                             "value": "name"
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },{
                     "name": "fbSelectDropdownRow",
                     "description": "The default row template for dropdown select options.",
@@ -186,7 +186,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },{
                     "name": "fbSelectDropdownRowInputOption",
                     "description": "A row template for using the input options found under Manage > Tool shed.",
@@ -202,7 +202,7 @@
                             "value": "name"
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },{
                     "name": "fbInputFileSingle",
                     "description": "A basic input field for uploading a single file.",
@@ -215,7 +215,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 },{
                     "name": "fbInputFileMultiple",
                     "description": "Use this file input field if you want users to upload more than 1 file. The AjaxUpload extra takes care of frontend functionality and backend processing. Just make sure it's installed!",
@@ -228,7 +228,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_fb_inputs"
+                    "category": "a_fb_input"
                 }
             ],
 
@@ -237,7 +237,7 @@
                     "name": "a_formblocks",
                     "parent": "01_atoms"
                 },{
-                    "name": "a_fb_inputs",
+                    "name": "a_fb_input",
                     "parent": "a_formblocks"
                 }
             ]

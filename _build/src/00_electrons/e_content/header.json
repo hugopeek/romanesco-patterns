@@ -15,7 +15,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "1",
                     "templates": [
                         "@@templates_all"
@@ -32,7 +32,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "5",
                     "templates": [
                         "@@templates_all"
@@ -49,7 +49,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "6",
                     "templates": [
                         "@@templates_all"
@@ -67,7 +67,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "10",
                     "templates": [
                         "@@templates_all"
@@ -84,7 +84,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "11",
                     "templates": [
                         "@@templates_all"
@@ -102,7 +102,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "20",
                     "templates": [
                         "@@templates_all"
@@ -124,7 +124,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Header",
+                    "category": "_Header",
                     "sortOrder": "99",
                     "templates": [
                         "@@templates_all"

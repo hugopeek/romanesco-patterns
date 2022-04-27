@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "loginForm",
-                    "description": "",
+                    "name": "tvSelectInputOptionRow",
+                    "description": "Basic row template for rendering input options inside the TV.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,10 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "a_sel_row"
                 },{
-                    "name": "loginFormCompact",
-                    "description": "",
+                    "name": "tvSelectInputOptionRowDesc",
+                    "description": "Row template with description below the title, for rendering input options inside a listbox-multiple TV.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -27,10 +27,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "a_sel_row"
                 },{
-                    "name": "logoutForm",
-                    "description": "",
+                    "name": "tvSelectCountryOptGroup",
+                    "description": "Display prioritized countries in a separate group at the top of the dropdown.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -40,10 +40,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "a_sel_row"
                 },{
-                    "name": "logoutFormCompact",
-                    "description": "",
+                    "name": "tvSelectCountryRow",
+                    "description": "Basic row template to display country names inside the dropdown.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -53,14 +53,13 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_users"
+                    "category": "a_sel_row"
                 }
             ],
-
             "categories": [
                 {
-                    "name": "m_users",
-                    "parent": "02_molecules"
+                    "name": "a_sel_row",
+                    "parent": "a_select"
                 }
             ]
         }

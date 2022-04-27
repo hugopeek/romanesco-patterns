@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "hitCount",
+                    "name": "overviewOuter",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "o_overview"
                 },{
-                    "name": "rawName",
+                    "name": "overviewOuterSpecific",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,22 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "o_overview"
                 },{
-                    "name": "rawID",
+                    "name": "overviewOuterFluid",
+                    "description": "Displays child pages just like the regular Overview blocks, but in full-width layout sections.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_overview"
+                },{
+                    "name": "overviewOuterPublication",
                     "description": "",
                     "properties": [
                         {
@@ -40,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "o_overview"
                 },{
-                    "name": "rawAlias",
+                    "name": "overviewOuterTeam",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +66,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "o_overview"
                 },{
-                    "name": "rawValue",
+                    "name": "overviewOuterTestimonials",
                     "description": "",
                     "properties": [
                         {
@@ -66,9 +79,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "o_overview"
                 },{
-                    "name": "rawLabel",
+                    "name": "overviewOuterClients",
                     "description": "",
                     "properties": [
                         {
@@ -79,22 +92,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "o_overview"
                 },{
-                    "name": "rawTag",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "incoherent"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_dat_placeholders"
-                },{
-                    "name": "rawRows",
+                    "name": "overviewOuterPortfolio",
                     "description": "",
                     "properties": [
                         {
@@ -105,7 +105,14 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_dat_placeholders"
+                    "category": "o_overview"
+                }
+            ],
+
+            "categories": [
+                {
+                    "name": "o_overview",
+                    "parent": "03_organisms"
                 }
             ]
         }

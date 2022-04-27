@@ -79,7 +79,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },{
                     "name": "fbResetNonAlpha",
                     "description": "",
@@ -92,7 +92,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },{
                     "name": "fbStripAsAlias",
                     "description": "",
@@ -105,7 +105,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },{
                     "name": "fbStripNonAlpha",
                     "description": "",
@@ -118,7 +118,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_modifiers"
+                    "category": "f_fb_modifier"
                 },{
                     "name": "fbSetStoredValues",
                     "description": "Populate field values with available data stored in the user session. Enabled by default when using multi-page forms.",
@@ -131,7 +131,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_hooks"
+                    "category": "f_fb_hook"
                 },{
                     "name": "fbEmptyHook",
                     "description": "Dummy hook to trick FormIt into not throwing errors saying there are no hooks, and to make the comma separation between hooks a little easier.",
@@ -144,7 +144,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_fb_hooks"
+                    "category": "f_fb_hook"
                 }
             ],
 
@@ -153,10 +153,10 @@
                     "name": "f_formblocks",
                     "parent": "06_formulas"
                 },{
-                    "name": "f_fb_modifiers",
+                    "name": "f_fb_modifier",
                     "parent": "f_formblocks"
                 },{
-                    "name": "f_fb_hooks",
+                    "name": "f_fb_hook",
                     "parent": "f_formblocks"
                 }
             ]

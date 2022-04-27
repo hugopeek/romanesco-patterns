@@ -13,7 +13,7 @@
                             "value": "review"
                         }
                     ],
-                    "category": "Performance",
+                    "category": "_Performance",
                     "sortOrder": "99",
                     "templates": [
                         "@@templates_all"
@@ -25,7 +25,7 @@
                     "name": "e_performance",
                     "parent": "00_electrons"
                 },{
-                    "name": "Performance",
+                    "name": "_Performance",
                     "parent": "e_performance"
                 }
             ]

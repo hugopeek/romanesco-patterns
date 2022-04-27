@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "overviewOuter",
+                    "name": "cbLayoutAlignment",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "a_cb_layout"
                 },{
-                    "name": "overviewOuterSpecific",
+                    "name": "cbLayoutBackgrounds",
                     "description": "",
                     "properties": [
                         {
@@ -27,22 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "a_cb_layout"
                 },{
-                    "name": "overviewOuterFluid",
-                    "description": "Displays child pages just like the regular Overview blocks, but in full-width layout sections.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "o_overviews"
-                },{
-                    "name": "overviewOuterPublication",
+                    "name": "cbLayoutDivider",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +40,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "a_cb_layout"
                 },{
-                    "name": "overviewOuterTeam",
+                    "name": "cbLayoutResponsiveOptions",
                     "description": "",
                     "properties": [
                         {
@@ -66,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "a_cb_layout"
                 },{
-                    "name": "overviewOuterTestimonials",
+                    "name": "cbGlobalBackgrounds",
                     "description": "",
                     "properties": [
                         {
@@ -79,9 +66,22 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "a_cb_layout"
                 },{
-                    "name": "overviewOuterClients",
+                    "name": "cbGlobalBackgroundRowImg",
+                    "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_layout"
+                },{
+                    "name": "cbLayoutTemplatesPattern",
                     "description": "",
                     "properties": [
                         {
@@ -92,9 +92,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
+                    "category": "a_cb_layout"
                 },{
-                    "name": "overviewOuterPortfolio",
+                    "name": "cbLayoutStatusPattern",
                     "description": "",
                     "properties": [
                         {
@@ -105,14 +105,33 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_overviews"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "o_overviews",
-                    "parent": "03_organisms"
+                    "category": "a_cb_layout"
+                },{
+                    "name": "cbLayoutSliderType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_layout"
+                },{
+                    "name": "cbLayoutSliderBehaviour",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_layout"
                 }
             ]
         }

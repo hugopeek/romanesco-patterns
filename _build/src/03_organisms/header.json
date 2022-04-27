@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_headers"
+                    "category": "o_header"
                 },{
                     "name": "headerVertical",
                     "description": "",
@@ -27,13 +27,13 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_headers"
+                    "category": "o_header"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "o_headers",
+                    "name": "o_header",
                     "parent": "03_organisms"
                 }
             ]

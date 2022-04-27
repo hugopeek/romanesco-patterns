@@ -14,7 +14,7 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "CTA - Settings",
+                    "category": "_CTA - Settings",
                     "sortOrder": "1",
                     "templates": [
                         "GlobalCTA"
