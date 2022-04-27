@@ -35,7 +35,9 @@
             <aside id="sidebar" class="four wide computer column tablet or lower hidden">
                 [[$subNavVertical?
                     &sticky=`1`
+                    &currentContainer=``
                 ]]
+                [[$ctaSidebar]]
             </aside>
         </div>
     </main>

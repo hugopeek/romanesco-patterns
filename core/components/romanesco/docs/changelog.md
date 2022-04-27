@@ -3,6 +3,9 @@
 ## Romanesco Patterns 1.0.0-beta9
 Released on ...
 
+New features:
+- Add option to show CTA in sidebar
+
 Fixes and improvements:
 - Minify custom CSS regardless of configuration setting
 - Invert secondary menu inside segments with inverted background
