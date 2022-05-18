@@ -188,6 +188,19 @@
                     ],
                     "category": "a_fb_input"
                 },{
+                    "name": "fbSelectDropdownRowResource",
+                    "description": "A row template for dropdown options that link to a resource.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_input"
+                },{
                     "name": "fbSelectDropdownRowInputOption",
                     "description": "A row template for using the input options found under Manage > Tool shed.",
                     "properties": [

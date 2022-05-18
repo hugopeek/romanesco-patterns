@@ -8,6 +8,7 @@ New features:
 - Add reusable buttons for social connections and sharing
 
 Fixes and improvements:
+- Add FormBlocks dropdown row for resources
 - Rename element categories for consistency and prefix TV categories
 - Minify custom CSS regardless of configuration setting
 - Invert secondary menu inside segments with inverted background
