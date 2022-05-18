@@ -41,6 +41,32 @@
                         }
                     ],
                     "category": "a_button"
+                },{
+                    "name": "buttonSocialConnect",
+                    "description": "A reusable icon button for linking to social media channels. This element is accompanied by the romanesco_social_connections table and a CMP, for keeping a customized list of channels.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_button"
+                },{
+                    "name": "buttonSocialShare",
+                    "description": "A reusable icon button for sharing on social media platforms. This element is accompanied by the romanesco_social_sharing table and a CMP, for keeping a customized list of sharing options.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_button"
                 }
             ],
             "categories": [

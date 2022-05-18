@@ -5,6 +5,7 @@ Released on ...
 
 New features:
 - Add option to show CTA in sidebar
+- Add reusable buttons for social connections and sharing
 
 Fixes and improvements:
 - Rename element categories for consistency and prefix TV categories
