@@ -1,5 +1,15 @@
 <?php
-$object = &$modx->getOption('object', $scriptProperties, null);
+/**
+ * migxResetNULL
+ *
+ * After save hook for MIGXdb. Prevents database fields with default value of
+ * NULL from being set to 0 after a save action in MIGX.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ */
+
+$object = $modx->getOption('object', $scriptProperties, null);
 $properties = $modx->getOption('scriptProperties', $scriptProperties, '');
 $configs = $modx->getOption('configs', $properties, '');
 

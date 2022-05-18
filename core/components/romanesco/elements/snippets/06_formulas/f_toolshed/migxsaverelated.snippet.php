@@ -1,5 +1,15 @@
 <?php
-$object = &$modx->getOption('object', $scriptProperties, null);
+/**
+ * migxSaveRelated
+ *
+ * Aftersave hook for MIGXdb. Sets source and target IDs in opposite direction
+ * also, to establish a double cross-link. Yeah, watch your back with those!
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ */
+
+$object = $modx->getOption('object', $scriptProperties);
 $properties = $modx->getOption('scriptProperties', $scriptProperties, array());
 $configs = $modx->getOption('configs', $properties, '');
 

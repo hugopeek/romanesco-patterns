@@ -1,5 +1,15 @@
 <?php
-$object = &$modx->getOption('object', $scriptProperties, null);
+/**
+ * migxSaveOptionGroup
+ *
+ * Aftersave hook for MIGXdb. Updates existing keys in child options if you
+ * change this setting in Group. Also increments the sort order.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ */
+
+$object = $modx->getOption('object', $scriptProperties, null);
 $properties = $modx->getOption('scriptProperties', $scriptProperties, array());
 $configs = $modx->getOption('configs', $properties, '');
 

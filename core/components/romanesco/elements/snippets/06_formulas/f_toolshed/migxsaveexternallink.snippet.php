@@ -1,5 +1,16 @@
 <?php
-$object = &$modx->getOption('object', $scriptProperties, null);
+/**
+ * migxSaveExternalLink
+ *
+ * Aftersave hook for MIGXdb. Increments the link number per resource, so you
+ * don't have to fiddle with that manually (as long as you enter the links in
+ * the correct order).
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ */
+
+$object = $modx->getOption('object', $scriptProperties);
 $properties = $modx->getOption('scriptProperties', $scriptProperties, array());
 $configs = $modx->getOption('configs', $properties, '');
 

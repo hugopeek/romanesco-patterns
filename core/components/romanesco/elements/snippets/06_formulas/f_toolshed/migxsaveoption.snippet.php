@@ -1,5 +1,16 @@
 <?php
-$object = &$modx->getOption('object', $scriptProperties, null);
+/**
+ * migxSaveOption
+ *
+ * Aftersave hook for MIGXdb. Gets and sets the group (parent) ID inside a
+ * nested configuration. Also generates an alias if none is present and
+ * increments the sort order.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ */
+
+$object = $modx->getOption('object', $scriptProperties);
 $properties = $modx->getOption('scriptProperties', $scriptProperties, array());
 $configs = $modx->getOption('configs', $properties, '');
 

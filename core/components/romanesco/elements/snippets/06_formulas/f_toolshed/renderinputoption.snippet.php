@@ -32,7 +32,13 @@
  * [[+parent]]
  * [[+key]]
  * [[+position]]
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
+
 $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
 $backyard = $modx->addPackage('romanescobackyard',$corePath . 'model/');
 
