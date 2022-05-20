@@ -55,8 +55,8 @@
                     ],
                     "category": "f_toolshed"
                 },{
-                    "name": "migxSaveExternalLink",
-                    "description": "Aftersave hook for MIGXdb. Increments the link number per resource, so you don't have to fiddle with that manually (as long as you enter the links in the correct order).",
+                    "name": "migxSaveTaskComment",
+                    "description": "Aftersave hook for MIGXdb. Links the comment to the parent task.",
                     "properties": [
                         {
                             "name": "elementStatus",
