@@ -34,6 +34,7 @@ switch ($modx->event->name) {
         $modx->controller->addLexiconTopic('romanescobackyard:manager');
 
         // Load CSS for manager on different event
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/semantic.css?v=' . $versionCSS); # for CB chunk previews
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css?v=' . $versionCSS);
 
         // Load JS and additional dependencies
