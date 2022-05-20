@@ -41,12 +41,12 @@
                     ]
                 },
                 {
-                    "caption": "Improvements",
-                    "name": "status_improvements",
-                    "description": "How can we make this page better? This is aimed at the content editors team. If you have technical issues, please enter those in 'Help!' below.",
+                    "caption": "Tasks",
+                    "name": "status_tasks",
+                    "description": "How can we make this page better? Or do you have technical issues?",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "status_improvements:romanescobackyard"
+                        "configs": "tasks:romanescobackyard"
                     },
                     "properties": [
                         {
@@ -56,26 +56,6 @@
                     ],
                     "category": "_Status",
                     "sortOrder": 3,
-                    "templates": [
-                        "@@templates_all"
-                    ]
-                },
-                {
-                    "caption": "Help!",
-                    "name": "status_issues",
-                    "description": "What kind of problem(s) are you experiencing? This is aimed at the developers. Please create separate items if you have more than 1 issue and include any relevant info (like error messages).",
-                    "type": "migxdb",
-                    "inputProperties": {
-                        "configs": "status_issues:romanescobackyard"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Status",
-                    "sortOrder": 4,
                     "templates": [
                         "@@templates_all"
                     ]
