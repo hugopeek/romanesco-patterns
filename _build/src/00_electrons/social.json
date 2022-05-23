@@ -3,9 +3,28 @@
         "elements": {
             "tvs": [
                 {
+                    "caption": "Social channels",
+                    "name": "social_connections",
+                    "description": "Maintain a list of social media channels, through which visitors can connect with you.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "social_connections:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        }
+                    ],
+                    "category": "_Social",
+                    "sortOrder": 0,
+                    "templates": [
+                        "@@templates_team"
+                    ]
+                },{
                     "caption": "Twitter account",
                     "name": "social_twitter",
-                    "description": "Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
+                    "description": "DEPRECATED. Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
                     "type": "text",
                     "properties": [
                         {
@@ -21,7 +40,7 @@
                 },{
                     "caption": "LinkedIn profile",
                     "name": "social_linkedin",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -37,7 +56,7 @@
                 },{
                     "caption": "Facebook page",
                     "name": "social_facebook",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -53,7 +72,7 @@
                 },{
                     "caption": "Instagram profile",
                     "name": "social_instagram",
-                    "description": "Only fill in the account name (the part after https://instagram.com/).",
+                    "description": "DEPRECATED. Only fill in the account name (the part after https://instagram.com/).",
                     "type": "text",
                     "properties": [
                         {
@@ -69,7 +88,7 @@
                 },{
                     "caption": "Pinterest board",
                     "name": "social_pinterest",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -85,7 +104,7 @@
                 },{
                     "caption": "Youtube channel",
                     "name": "social_youtube",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -101,7 +120,7 @@
                 },{
                     "caption": "WhatsApp number",
                     "name": "social_whatsapp",
-                    "description": "A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Needs to be formatted as number, without any leading zeros.",
+                    "description": "DEPRECATED. A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Format as number, without any leading zeros.",
                     "type": "number",
                     "properties": [
                         {
@@ -117,7 +136,7 @@
                 },{
                     "caption": "WhatsApp message",
                     "name": "social_whatsapp_text",
-                    "description": "Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.",
+                    "description": "DEPRECATED. Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.",
                     "type": "textarea",
                     "properties": [
                         {
@@ -133,7 +152,7 @@
                 },{
                     "caption": "Github account",
                     "name": "social_github",
-                    "description": "Only fill in the account name (the part after https://github.com/).",
+                    "description": "DEPRECATED. Only fill in the account name (the part after https://github.com/).",
                     "type": "text",
                     "properties": [
                         {
@@ -161,33 +180,6 @@
             ]
         },
 
-        "systemSettings": [
-            {
-                "key": "social_twitter",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },{
-                "key": "twitter_consumer_key",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },{
-                "key": "twitter_consumer_secret",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },{
-                "key": "twitter_access_token",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },{
-                "key": "twitter_access_token_secret",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            }
-        ]
+        "systemSettings": []
     }
 }
