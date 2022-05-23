@@ -107,6 +107,32 @@
                     ],
                     "category": "m_nav_primary"
                 },{
+                    "name": "subNavVerticalLocal",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_primary"
+                },{
+                    "name": "subNavVerticalWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_primary"
+                },{
                     "name": "offCanvasNav",
                     "description": "",
                     "properties": [

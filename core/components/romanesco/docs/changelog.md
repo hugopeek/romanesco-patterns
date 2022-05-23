@@ -5,6 +5,7 @@ Released on ...
 
 New features:
 - Add option to show CTA in sidebar
+- Add local submenu variant (only shows children of current page)
 - Add reusable buttons for social connections and sharing
 
 Fixes and improvements:

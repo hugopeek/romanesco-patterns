@@ -51,6 +51,15 @@
                     "rank": 1
                 },
                 {
+                    "name": "e_sidebar",
+                    "parent": "e_content"
+                },
+                {
+                    "name": "_Sidebar",
+                    "parent": "e_sidebar",
+                    "rank": 31
+                },
+                {
                     "name": "e_footer",
                     "parent": "e_content"
                 },
@@ -1691,9 +1700,29 @@
                     ]
                 },
                 {
+                    "caption": "Social channels",
+                    "name": "social_connections",
+                    "description": "Maintain a list of social media channels, through which visitors can connect with you.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "social_connections:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        }
+                    ],
+                    "category": "_Social",
+                    "sortOrder": 0,
+                    "templates": [
+                        "TeamMember","Team - Member","Team"
+                    ]
+                },
+                {
                     "caption": "Twitter account",
                     "name": "social_twitter",
-                    "description": "Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
+                    "description": "DEPRECATED. Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
                     "type": "text",
                     "properties": [
                         {
@@ -1710,7 +1739,7 @@
                 {
                     "caption": "LinkedIn profile",
                     "name": "social_linkedin",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -1727,7 +1756,7 @@
                 {
                     "caption": "Facebook page",
                     "name": "social_facebook",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -1744,7 +1773,7 @@
                 {
                     "caption": "Instagram profile",
                     "name": "social_instagram",
-                    "description": "Only fill in the account name (the part after https://instagram.com/).",
+                    "description": "DEPRECATED. Only fill in the account name (the part after https://instagram.com/).",
                     "type": "text",
                     "properties": [
                         {
@@ -1761,7 +1790,7 @@
                 {
                     "caption": "Pinterest board",
                     "name": "social_pinterest",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -1778,7 +1807,7 @@
                 {
                     "caption": "Youtube channel",
                     "name": "social_youtube",
-                    "description": "Please fill in the complete URL (including http(s)://).",
+                    "description": "DEPRECATED. Please fill in the complete URL (including http(s)://).",
                     "type": "text",
                     "properties": [
                         {
@@ -1795,7 +1824,7 @@
                 {
                     "caption": "WhatsApp number",
                     "name": "social_whatsapp",
-                    "description": "A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Needs to be formatted as number, without any leading zeros.",
+                    "description": "DEPRECATED. A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Needs to be formatted as number, without any leading zeros.",
                     "type": "number",
                     "properties": [
                         {
@@ -1812,7 +1841,7 @@
                 {
                     "caption": "WhatsApp message",
                     "name": "social_whatsapp_text",
-                    "description": "Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.",
+                    "description": "DEPRECATED. Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.",
                     "type": "textarea",
                     "properties": [
                         {
@@ -1829,7 +1858,7 @@
                 {
                     "caption": "Github account",
                     "name": "social_github",
-                    "description": "Only fill in the account name (the part after https://github.com/).",
+                    "description": "DEPRECATED. Only fill in the account name (the part after https://github.com/).",
                     "type": "text",
                     "properties": [
                         {
@@ -2135,11 +2164,11 @@
                 },
                 {
                     "caption": "External links",
-                    "name": "links_external",
+                    "name": "external_links",
                     "description": "Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "links_external:romanescobackyard"
+                        "configs": "external_links:romanescobackyard"
                     },
                     "properties": [
                         {
@@ -2334,43 +2363,67 @@
                     ]
                 },
                 {
-                    "caption": "Re-purpose (Source)",
-                    "name": "content_repurpose_src",
-                    "description": "On which existing sources will this content be based? If the source is already pointing to this page as destination, it will show up automatically.",
-                    "type": "migxdb",
-                    "inputProperties": {
-                        "configs": "content_repurpose_src:romanescobackyard"
-                    },
+                    "caption": "Sticky sidebar",
+                    "name": "sidebar_sticky",
+                    "description": "",
+                    "type": "listbox",
+                    "defaultValue": "@INHERIT 1",
+                    "inputOptionValues": "Yes==1||No==0",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
-                    "category": "_Purpose",
-                    "sortOrder": 50,
+                    "category": "_Sidebar",
+                    "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                        "BasicDetail",
+                        "Basic - Detail"
                     ]
                 },
                 {
-                    "caption": "Re-purpose (Destination)",
-                    "name": "content_repurpose_dest",
-                    "description": "Can you think of ways to reuse this content in other places or scenarios? If the destination doesn't exist yet, just enter Title and Description as an idea.",
-                    "type": "migxdb",
-                    "inputProperties": {
-                        "configs": "content_repurpose_dest:romanescobackyard"
-                    },
+                    "caption": "Call to action (CTA)",
+                    "name": "sidebar_cta",
+                    "description": "Select a CTA for display in sidebar (under the submenu). CTAs are located in Global Content.",
+                    "type": "listbox",
+                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableSidebar",
+                    "defaultValue": "@INHERIT",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
-                    "category": "_Purpose",
-                    "sortOrder": 51,
+                    "category": "_Sidebar",
+                    "sortOrder": "20",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
+                        "BasicDetail",
+                        "Basic - Detail"
+                    ]
+                },
+                {
+                    "caption": "Inheritance",
+                    "name": "sidebar_inheritance",
+                    "description": "Select which settings should apply on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
+                    "type": "checkbox",
+                    "defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
+                    "inputOptionValues": "Inherit sticky==inherit_sticky||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Sidebar",
+                    "sortOrder": "99",
+                    "templates": [
+                        "BasicDetail",
+                        "Basic - Detail"
                     ]
                 },
                 {
@@ -2412,12 +2465,12 @@
                     ]
                 },
                 {
-                    "caption": "Improvements",
-                    "name": "status_improvements",
-                    "description": "How can we make this page better? This is aimed at the content editors team. If you have technical issues, please enter those in 'Help!' below.",
+                    "caption": "Tasks",
+                    "name": "status_tasks",
+                    "description": "How can we make this page better? Or do you have technical issues?",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "status_improvements:romanescobackyard"
+                        "configs": "tasks:romanescobackyard"
                     },
                     "properties": [
                         {
@@ -2427,26 +2480,6 @@
                     ],
                     "category": "_Status",
                     "sortOrder": 3,
-                    "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
-                    ]
-                },
-                {
-                    "caption": "Help!",
-                    "name": "status_issues",
-                    "description": "What kind of problem(s) are you experiencing? This is aimed at the developers. Please create separate items if you have more than 1 issue and include any relevant info (like error messages).",
-                    "type": "migxdb",
-                    "inputProperties": {
-                        "configs": "status_issues:romanescobackyard"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Status",
-                    "sortOrder": 4,
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","Blog","News","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Team","Person","User","Client","Organization","Relation","PortfolioProject","Portfolio - Project","Testimonial","Review"
                     ]
@@ -2498,11 +2531,11 @@
                 },
                 {
                     "caption": "Project timeline",
-                    "name": "project_hub_timeline",
+                    "name": "project_timeline",
                     "description": "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily.",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "project_hub_timeline:romanescobackyard"
+                        "configs": "project_timeline:romanescobackyard"
                     },
                     "properties": [
                         {
@@ -3396,6 +3429,36 @@
                     "category": "a_button"
                 },
                 {
+                    "name": "buttonSocialConnect",
+                    "description": "A reusable icon button for linking to social media channels. This element is accompanied by the romanesco_social_connections table and a CMP, for keeping a customized list of channels.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_button"
+                },
+                {
+                    "name": "buttonSocialShare",
+                    "description": "A reusable icon button for sharing on social media platforms. This element is accompanied by the romanesco_social_sharing table and a CMP, for keeping a customized list of sharing options.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_button"
+                },
+                {
                     "name": "headingBasic",
                     "description": "",
                     "properties": [
@@ -3837,6 +3900,21 @@
                 {
                     "name": "fbSelectDropdownRow",
                     "description": "The default row template for dropdown select options.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_input"
+                },
+                {
+                    "name": "fbSelectDropdownRowResource",
+                    "description": "A row template for dropdown options that link to a resource.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -5111,7 +5189,7 @@
                     "category": "m_cta"
                 },
                 {
-                    "name": "ctaFooter",
+                    "name": "ctaHeaderVertical",
                     "description": "",
                     "properties": [
                         {
@@ -5126,7 +5204,22 @@
                     "category": "m_cta"
                 },
                 {
-                    "name": "ctaHeaderVertical",
+                    "name": "ctaSidebar",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cta"
+                },
+                {
+                    "name": "ctaFooter",
                     "description": "",
                     "properties": [
                         {
@@ -9721,6 +9814,36 @@
                     "category": "m_nav_primary"
                 },
                 {
+                    "name": "subNavVerticalLocal",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_primary"
+                },
+                {
+                    "name": "subNavVerticalWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_primary"
+                },
+                {
                     "name": "offCanvasNav",
                     "description": "",
                     "properties": [
@@ -12042,38 +12165,8 @@
                     "category": "f_toolshed"
                 },
                 {
-                    "name": "migxSaveRepurposeSrc",
-                    "description": "Aftersave hook for MIGXdb. Sets current resource ID as re-purpose destination.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_toolshed"
-                },
-                {
-                    "name": "migxSaveRepurposeDest",
-                    "description": "Aftersave hook for MIGXdb. Sets current resource ID as re-purpose source.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_toolshed"
-                },
-                {
                     "name": "migxSaveRelated",
-                    "description": "Aftersave hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, watch your back with those!",
+                    "description": "Aftersave hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, better watch your back with those!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -12089,6 +12182,21 @@
                 {
                     "name": "migxSaveExternalLink",
                     "description": "Aftersave hook for MIGXdb. Increments the link number per resource, so you don't have to fiddle with that manually (as long as you enter the links in the correct order).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_toolshed"
+                },
+                {
+                    "name": "migxSaveTaskComment",
+                    "description": "Aftersave hook for MIGXdb. Links the comment to the parent task.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -12662,36 +12770,6 @@
                 "type": "textfield",
                 "area": "Search",
                 "value": "10"
-            },
-            {
-                "key": "social_twitter",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },
-            {
-                "key": "twitter_consumer_key",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },
-            {
-                "key": "twitter_consumer_secret",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },
-            {
-                "key": "twitter_access_token",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
-            },
-            {
-                "key": "twitter_access_token_secret",
-                "type": "textfield",
-                "area": "Social",
-                "value": ""
             },
             {
                 "key": "member_groups_frontend",

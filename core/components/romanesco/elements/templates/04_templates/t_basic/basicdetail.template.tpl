@@ -27,15 +27,20 @@
     ]]]]
 
     <main id="main" role="main">
-        <div class="ui relaxed grid container">
+        <div class="ui relaxed [[++sidebar_position:is=`left`:then=`computer reversed`]] grid container">
             <article id="content" class="sixteen wide mobile twelve wide computer column">
                 [[$content]]
             </article>
 
             <aside id="sidebar" class="four wide computer column tablet or lower hidden">
-                [[$subNavVertical?
-                    &sticky=`1`
-                    &currentContainer=``
+                [[[[If?
+                    &subject=`[[++submenu_locality]]`
+                    &operator=`is`
+                    &operand=`current`
+                    &then=`$subNavVerticalLocal`
+                    &else=`$subNavVertical`
+                ]]?
+                    &sticky=`[[*sidebar_sticky]]`
                 ]]
                 [[$ctaSidebar]]
             </aside>
