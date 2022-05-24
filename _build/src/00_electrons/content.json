@@ -13,6 +13,13 @@
                     "parent": "e_header",
                     "rank": 1
                 },{
+                    "name": "e_sidebar",
+                    "parent": "e_content"
+                },{
+                    "name": "_Sidebar",
+                    "parent": "e_sidebar",
+                    "rank": 31
+                },{
                     "name": "e_footer",
                     "parent": "e_content"
                 },{

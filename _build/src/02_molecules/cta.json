@@ -29,7 +29,7 @@
                     ],
                     "category": "m_cta"
                 },{
-                    "name": "ctaFooter",
+                    "name": "ctaHeaderVertical",
                     "description": "",
                     "properties": [
                         {
@@ -42,7 +42,20 @@
                     ],
                     "category": "m_cta"
                 },{
-                    "name": "ctaHeaderVertical",
+                    "name": "ctaSidebar",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cta"
+                },{
+                    "name": "ctaFooter",
                     "description": "",
                     "properties": [
                         {

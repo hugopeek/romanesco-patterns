@@ -33,16 +33,7 @@
             </article>
 
             <aside id="sidebar" class="four wide computer column tablet or lower hidden">
-                [[[[If?
-                    &subject=`[[++submenu_locality]]`
-                    &operator=`is`
-                    &operand=`current`
-                    &then=`$subNavVerticalLocal`
-                    &else=`$subNavVertical`
-                ]]?
-                    &sticky=`[[*sidebar_sticky]]`
-                ]]
-                [[$ctaSidebar]]
+                [[$sidebar]]
             </aside>
         </div>
     </main>

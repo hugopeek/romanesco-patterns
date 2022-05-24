@@ -1,0 +1,70 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Sticky sidebar",
+                    "name": "sidebar_sticky",
+                    "description": "To avoid a sticky mess, this behaviour will only be applied to the last element inside the sidebar. In most cases, that's the submenu. But if you select a CTA, then that will stick instead.",
+                    "type": "listbox",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "Yes==1||No==0||System default==default",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Sidebar",
+                    "sortOrder": "1",
+                    "templates": [
+                        "BasicDetail",
+                        "Basic - Detail"
+                    ]
+                },{
+                    "caption": "Call to action (CTA)",
+                    "name": "sidebar_cta",
+                    "description": "Select a CTA for display in sidebar (under the submenu). CTAs are located in Global Content.",
+                    "type": "listbox",
+                    "inputOptionValues": "@CHUNK tvSelectCTA@AvailableSidebar",
+                    "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Sidebar",
+                    "sortOrder": "20",
+                    "templates": [
+                        "BasicDetail",
+                        "Basic - Detail"
+                    ]
+                },{
+                    "caption": "Inheritance",
+                    "name": "sidebar_inheritance",
+                    "description": "Select which settings should apply on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
+                    "type": "checkbox",
+                    "defaultValue": "@INHERIT inherit_sticky||inherit_cta",
+                    "inputOptionValues": "Inherit sticky==inherit_sticky||Inherit CTA==inherit_cta",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "display": "delim",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Sidebar",
+                    "sortOrder": "99",
+                    "templates": [
+                        "BasicDetail",
+                        "Basic - Detail"
+                    ]
+                }
+            ]
+        }
+    }
+}

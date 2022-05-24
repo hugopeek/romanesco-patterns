@@ -1,3 +1,4 @@
+<div id="sidebar-cta" class="ui [[+sticky]] cta" property="significantLink">
 [[[[[[If?
     &subject=`[[getRawTVValue? &tv=`sidebar_cta`]]`
     &operator=`EQ`
@@ -12,3 +13,4 @@
             &else=``
         `
 ]]]]]]
+</div>

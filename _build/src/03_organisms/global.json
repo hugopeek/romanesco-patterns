@@ -21,6 +21,19 @@
                     "properties": [
                         {
                             "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_global"
+                },{
+                    "name": "sidebar",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
                             "value": "review"
                         },{
                             "name": "elementPreview",

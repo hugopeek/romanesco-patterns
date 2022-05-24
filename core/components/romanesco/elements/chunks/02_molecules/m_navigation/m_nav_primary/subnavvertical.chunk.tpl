@@ -5,7 +5,7 @@
         &default=`pagetitle`
     ]]
 </a>
-<nav id="submenu" class="ui [[++navbar_size:default=`large`]] [[++submenu_type]] vertical fluid [[+sticky:eq=`1`:then=`sticky`]] menu">
+<nav id="submenu" class="ui [[++navbar_size:default=`large`]] [[++submenu_type]] vertical fluid [[+sticky]] menu">
     [[pdoMenu?
         &parents=`[[UltimateParent]]`
         &resources=`[[+excluded_resources]]`

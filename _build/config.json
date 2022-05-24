@@ -1824,7 +1824,7 @@
                 {
                     "caption": "WhatsApp number",
                     "name": "social_whatsapp",
-                    "description": "DEPRECATED. A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Needs to be formatted as number, without any leading zeros.",
+                    "description": "DEPRECATED. A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Format as number, without any leading zeros.",
                     "type": "number",
                     "properties": [
                         {
@@ -2365,10 +2365,10 @@
                 {
                     "caption": "Sticky sidebar",
                     "name": "sidebar_sticky",
-                    "description": "",
+                    "description": "To avoid a sticky mess, this behaviour will only be applied to the last element inside the sidebar. In most cases, that's the submenu. But if you select a CTA, then that will stick instead.",
                     "type": "listbox",
-                    "defaultValue": "@INHERIT 1",
-                    "inputOptionValues": "Yes==1||No==0",
+                    "defaultValue": "@INHERIT default",
+                    "inputOptionValues": "Yes==1||No==0||System default==default",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -2407,8 +2407,8 @@
                     "name": "sidebar_inheritance",
                     "description": "Select which settings should apply on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!",
                     "type": "checkbox",
-                    "defaultValue": "@INHERIT inherit_visibility||inherit_titles||inherit_background",
-                    "inputOptionValues": "Inherit sticky==inherit_sticky||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta",
+                    "defaultValue": "@INHERIT inherit_sticky||inherit_cta",
+                    "inputOptionValues": "Inherit sticky==inherit_sticky||Inherit CTA==inherit_cta",
                     "outputProperties": {
                         "delimiter": ","
                     },
@@ -6600,6 +6600,21 @@
                 },
                 {
                     "name": "content",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_global"
+                },
+                {
+                    "name": "sidebar",
                     "description": "",
                     "properties": [
                         {
