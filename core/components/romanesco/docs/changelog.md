@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta9
-Released on ...
+Released on May 24, 2022
 
 New features:
 - Add option to show sidebar on mobile
@@ -10,6 +10,7 @@ New features:
 - Add reusable buttons for social connections and sharing
 
 Fixes and improvements:
+- Deprecate social media TVs
 - Add FormBlocks dropdown row for resources
 - Rename element categories for consistency and prefix TV categories
 - Minify custom CSS regardless of configuration setting

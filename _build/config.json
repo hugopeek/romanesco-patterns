@@ -1,9 +1,9 @@
 {
     "name": "Romanesco",
     "lowCaseName": "romanesco",
-    "description": "Romanesco is an engineering toolkit that combines the atomic design philosophy with MODX templating.",
+    "description": "Web engineering toolkit, combining atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
-    "version": "1.0.0-beta8",
+    "version": "1.0.0-beta9",
     "package": {
         "elements": {
             "categories": [
@@ -7339,7 +7339,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7354,7 +7354,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7369,7 +7369,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7384,7 +7384,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7399,7 +7399,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7414,7 +7414,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7429,7 +7429,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7444,7 +7444,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7459,7 +7459,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7474,7 +7474,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7489,7 +7489,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7504,7 +7504,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -7519,7 +7519,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
