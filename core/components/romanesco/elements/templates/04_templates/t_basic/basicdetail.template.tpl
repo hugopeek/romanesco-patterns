@@ -32,7 +32,7 @@
                 [[$content]]
             </article>
 
-            <aside id="sidebar" class="four wide computer column tablet or lower hidden">
+            <aside id="sidebar" class="four wide computer column [[++sidebar_visibility:is=`desktop`:then=`tablet or lower hidden`]]">
                 [[$sidebar]]
             </aside>
         </div>
