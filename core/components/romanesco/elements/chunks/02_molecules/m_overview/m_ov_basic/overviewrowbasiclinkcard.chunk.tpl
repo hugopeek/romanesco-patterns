@@ -1,4 +1,4 @@
-<div class="content">
+<div class="[[+alignment]] content">
     [[[[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
@@ -12,5 +12,5 @@
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`<div class="content description">[[+introtext]]</div>`
+    &then=`<div class="[[+alignment]] content description">[[+introtext]]</div>`
 ]]

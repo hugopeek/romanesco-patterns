@@ -1,4 +1,4 @@
-<div class="content">
+<div class="[[+alignment]] content">
     <[[+title_hierarchy]] class="ui [[+title_classes]] centered icon header">
         [[If?
             &subject=`[[+icon_type]]`
@@ -23,5 +23,5 @@
     &subject=`[[+show_introtext]]`
     &operator=`EQ`
     &operand=`1`
-    &then=`<div class="content">[[$introtextDescription:stripTags=`<p><div>`? &uid=`[[+unique_idx]]`]]</div>`
+    &then=`<div class="[[+alignment]] content">[[$introtextDescription:stripTags=`<p><div>`? &uid=`[[+unique_idx]]`]]</div>`
 ]]

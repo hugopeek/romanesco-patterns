@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta10
+Released on ...
+
+Fixes and improvements:
+- Apply alignment to content element in card overviews
+
 ## Romanesco Patterns 1.0.0-beta9
 Released on May 24, 2022
 

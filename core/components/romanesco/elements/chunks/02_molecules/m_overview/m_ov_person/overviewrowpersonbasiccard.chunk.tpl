@@ -1,6 +1,6 @@
 [[$imgOverviewPersonLink? &uid=`[[+unique_idx]]`]]
 
-<div class="center aligned content">
+<div class="[[+alignment]] content">
     <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>
     [[If?
         &subject=`[[+show_subtitle]]`

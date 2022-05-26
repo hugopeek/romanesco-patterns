@@ -8,7 +8,7 @@
     ]]
 </figure>
 
-<div class="content">
+<div class="[[+alignment]] content">
     [[[[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
