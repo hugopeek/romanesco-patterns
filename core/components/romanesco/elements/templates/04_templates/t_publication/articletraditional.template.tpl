@@ -111,7 +111,7 @@
             </article>
 
             <aside id="sidebar" class="sixteen wide mobile five wide computer column">
-                <section class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]] tablet or lower hidden">
+                <section class="ui vertical stripe segment transparent tablet or lower hidden">
                     <div class="ui container">
                         <div class="ui equal width middle aligned grid">
                             <div class="compact column">
@@ -128,7 +128,7 @@
                 </section>
 
                 [[-
-                <section class="ui vertical stripe segment [[++layout_background_default]]">
+                <section class="ui vertical stripe segment transparent">
                     <div class="ui container">
                         [[-$dividerHeading?
                             &divider_section=`section`
@@ -146,7 +146,7 @@
                 </section>
                 ]]
 
-                <section class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
+                <section class="ui vertical stripe segment transparent">
                     <div class="ui container">
                         <h3>[[%romanesco.article.read_another]]</h3>
 
