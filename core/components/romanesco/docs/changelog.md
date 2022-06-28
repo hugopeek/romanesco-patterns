@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Hide local submenu level up link if parent is hidden in menu
 - Apply alignment to content element in card overviews
 
 ## Romanesco Patterns 1.0.0-beta9

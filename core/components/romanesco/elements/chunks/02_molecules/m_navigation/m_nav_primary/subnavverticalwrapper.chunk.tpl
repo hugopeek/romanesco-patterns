@@ -9,15 +9,18 @@
             ]]
         </div>
     </div>
-    [[*id:isnot=`[[UltimateParent]]`:then=`
-    <div class="compact column">
-        <a class="ui [[++submenu_type:containsnot=`regular`:and:containsnot=`tabular`:then=`very`]] basic icon button"
-           title="[[%romanesco.submenu.level_up]]"
-           href="[[~[[*parent]]]]">
-            <i class="up arrow icon"></i>
-        </a>
-    </div>
-    `]]
+    [[If?
+        &subject=`[[*id:eq=`[[UltimateParent]]`:then=`1`]][[#[[*parent]].hidemenu]]`
+        &operator=`empty`
+        &then=`
+        <div class="compact column">
+            <a class="ui [[++submenu_type:containsnot=`regular`:and:containsnot=`tabular`:then=`very`]] basic icon button"
+               title="[[%romanesco.submenu.level_up]]"
+               href="[[~[[*parent]]]]">
+                <i class="up arrow icon"></i>
+            </a>
+        </div>`
+    ]]
 </div>
 `]]
 
