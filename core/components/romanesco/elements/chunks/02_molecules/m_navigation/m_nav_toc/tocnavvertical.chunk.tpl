@@ -1,6 +1,9 @@
 <div id="dropdown-toc" class="ui vertical stripe segment mobile only tablet only">
     <div class="ui container">
-        [[$tocNavDropdown? &size=`large`]]
+        [[$tocNavDropdown?
+            &toc_size=`[[++navbar_size]]`
+            &toc_options_dropdown=`fluid`
+        ]]
     </div>
 </div>
 

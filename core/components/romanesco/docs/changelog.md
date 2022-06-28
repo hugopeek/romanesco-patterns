@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Use navbar_size setting to define dropdown ToC size
 - Add cases for loading Toast and Flag assets
 - Use custom dist path to fetch Form and Calendar CSS
 - Hide local submenu level up link if parent is hidden in menu
