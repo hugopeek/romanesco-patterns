@@ -34,8 +34,8 @@ if ($romanesco->getConfigSetting('critical_css', $modx->resource->get('context_k
 }
 
 // Load CSS
-$modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="assets/semantic/dist/components/form.min' . $cacheBusterCSS . '.css"' . $async . '>');
-$modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="assets/semantic/dist/components/calendar.min' . $cacheBusterCSS . '.css"' . $async . '>');
+$modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/form.min' . $cacheBusterCSS . '.css"' . $async . '>');
+$modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/calendar.min' . $cacheBusterCSS . '.css"' . $async . '>');
 
 // Load JS
 $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/form.min' . $cacheBusterJS . '.js"></script>');
