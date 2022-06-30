@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Load overview images with chunk (resolves repeating image issue in fluid tpl)
 - Add overviewRowImageBasicOverlay chunk to config
 - Use navbar_size setting to define dropdown ToC size
 - Add cases for loading Toast and Flag assets

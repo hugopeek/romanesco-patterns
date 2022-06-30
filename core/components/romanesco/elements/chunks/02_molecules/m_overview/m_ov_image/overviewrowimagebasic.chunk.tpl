@@ -1,4 +1,4 @@
-<a href="[[~[[+id]]]]" class="ui rounded image">
+<a class="ui rounded image" href="[[~[[+id]]]]">
     [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
         &tvname=`overview_img_[[+img_type:empty=`landscape`]]`
         &docid=`[[+id]]`
