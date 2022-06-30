@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add overviewRowImageBasicOverlay chunk to config
 - Use navbar_size setting to define dropdown ToC size
 - Add cases for loading Toast and Flag assets
 - Use custom dist path to fetch Form and Calendar CSS

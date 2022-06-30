@@ -16,6 +16,19 @@
                     ],
                     "category": "m_ov_image"
                 },{
+                    "name": "overviewRowImageBasicOverlay",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_image"
+                },{
                     "name": "overviewRowImageTop",
                     "description": "",
                     "properties": [
