@@ -41,8 +41,7 @@
         <th>[[%romanesco.status.table_indicator]]</th>
         <th>[[%romanesco.status.table_id]]</th>
         <th>[[%romanesco.status.table_resource]]</th>
-        <th>[[%romanesco.status.table_improvements]]</th>
-        <th>[[%romanesco.status.table_issues]]</th>
+        <th>[[%romanesco.status.table_tasks]]</th>
         [[*id:SeoTabIndexation:isnot=`[[*id]]`:then=`
         <th>[[%romanesco.status.table_indexation]]</th>
         `]]
@@ -56,7 +55,7 @@
         &parents=`0`
         &showHidden=`1`
         &showUnpublished=`1`
-        &includeTVs=`status_progress,status_health,status_improvements,status_issues,content_owner,planning_date_due`
+        &includeTVs=`status_progress,status_health,content_owner,planning_date_due`
         &processTVs=`1`
         &tplOuter=`@INLINE [[+wrapper]]`
         &tpl=`statusGridRow`

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix broken references in status grid and project timeline
 - Load overview images with chunk (resolves repeating image issue in fluid tpl)
 - Add overviewRowImageBasicOverlay chunk to config
 - Use navbar_size setting to define dropdown ToC size
