@@ -9,7 +9,13 @@
  * @package romanesco
  */
 
-$corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
+if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
+    return;
+}
+
+use \Wa72\HtmlPageDom\HtmlPageCrawler;
+
 $tpl = $modx->getPlaceholder('toc.tpl') ?? 'tocNavItem';
 $target = $modx->getPlaceholder('toc.target');
 
@@ -17,13 +23,6 @@ $target = $modx->getPlaceholder('toc.target');
 if (!$target) {
     return true;
 }
-
-// Load HtmlPageDom
-if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
-    require $corePath . 'vendor/autoload.php';
-}
-
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':

@@ -11,14 +11,14 @@
  * @package romanesco
  */
 
-$corePath = $modx->getOption('htmlpagedom.core_path', null, $modx->getOption('core_path') . 'components/htmlpagedom/');
-$tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
-
-if (!class_exists('\Wa72\HtmlPageDom\HtmlPageCrawler')) {
-    require $corePath . 'vendor/autoload.php';
+if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
+    return;
 }
 
 use \Wa72\HtmlPageDom\HtmlPageCrawler;
+
+$tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
 
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':

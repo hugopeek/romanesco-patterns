@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Check for autoloaded HtmlPageDom class in plugins
 - Fix broken references in status grid and project timeline
 - Load overview images with chunk (resolves repeating image issue in fluid tpl)
 - Add overviewRowImageBasicOverlay chunk to config
