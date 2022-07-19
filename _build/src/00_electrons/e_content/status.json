@@ -8,7 +8,7 @@
                     "description": "What is the current development stage of this page?",
                     "type": "option",
                     "inputOptionValues": "@CHUNK tvSelectInputOption@StatusProgress",
-                    "defaultValue": "to-do",
+                    "defaultValue": "todo",
                     "properties": [
                         {
                             "name": "elementStatus",
