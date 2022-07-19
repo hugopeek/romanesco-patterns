@@ -1,6 +1,6 @@
 <script>
     window.addEventListener('DOMContentLoaded', function() {
-        var [[+var]] = new Swiper ('#[[+id]].swiper-container', {
+        var [[+var]] = new Swiper ('#[[+id]].swiper', {
             init: [[+init]],
             resizeObserver: true,
             slidesPerView: [[+cols]],
@@ -8,7 +8,12 @@
             spaceBetween: [[+spacing]],
             watchOverflow: [[+overflow]],
             loop: [[+loop]],
-            freeMode: [[+free]],
+            freeMode: {
+                enabled: [[+free]],
+                minimumVelocity: 0.2,
+                momentum: true,
+                sticky: true
+            },
             centeredSlides: [[+center]],
             autoHeight: [[+auto_height]],
             autoplay: [[+autoplay]],

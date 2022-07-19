@@ -15,7 +15,7 @@
 
 <div class="pusher">
     <main id="main" role="main">
-        <article id="swiper-[[*id]]" class="swiper-container fullscreen">
+        <article id="swiper-[[*id]]" class="swiper fullscreen">
             <div id="content" class="swiper-wrapper">
                 [[*content]]
             </div>

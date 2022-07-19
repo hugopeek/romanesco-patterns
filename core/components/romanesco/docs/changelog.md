@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix slider after updating Swiper to v8
 - Check for autoloaded HtmlPageDom class in plugins
 - Fix broken references in status grid and project timeline
 - Load overview images with chunk (resolves repeating image issue in fluid tpl)

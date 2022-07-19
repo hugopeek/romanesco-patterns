@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "favicons",
+                    "name": "sliderInitJS",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
+                    "category": "m_pr_slider"
                 },{
-                    "name": "logo",
+                    "name": "sliderMobileInitJS",
                     "description": "",
                     "properties": [
                         {
@@ -27,27 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
-                },{
-                    "name": "iconBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_presentation"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_presentation",
-                    "parent": "01_atoms"
+                    "category": "m_pr_slider"
                 }
             ]
         }

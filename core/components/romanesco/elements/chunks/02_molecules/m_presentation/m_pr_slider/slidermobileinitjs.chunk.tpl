@@ -2,7 +2,7 @@
     window.addEventListener('DOMContentLoaded', function() {
         // Prepare container for Swiper usage
         function create[[+var]](container) {
-            container.addClass('swiper-container');
+            container.addClass('swiper');
             container
                 .find('.nested.overview')
                 .addClass('swiper-wrapper')
@@ -24,13 +24,18 @@
                 .addClass('swiper-slide')
             ;
 
-            return new Swiper ('#[[+id]].swiper-container', {
+            return new Swiper ('#[[+id]].swiper', {
                 init: [[+init]],
-                slidesPerView: [[+cols]],
+                slidesPerView: 1,
                 slidesPerGroup: [[+slides_to_scroll]],
                 spaceBetween: [[+spacing]],
                 loop: [[+loop]],
-                freeMode: [[+free]],
+                freeMode: {
+                    enabled: [[+free]],
+                    minimumVelocity: 0.2,
+                    momentum: true,
+                    sticky: true
+                },
                 centeredSlides: [[+center]],
                 autoHeight: [[+auto_height]],
                 autoplay: [[+autoplay]],
@@ -44,6 +49,7 @@
                     type: '[[+pagination]]',
                     clickable: [[+clickable]],
                 },
+                [[+breakpoints]]
                 [[+effects]]
             });
         }
@@ -63,7 +69,7 @@
                     $('#[[+id]]-original').replaceWith(mobile[[+var]]);
 
                     // Initialize Swiper
-                    let [[+var]] = create[[+var]]($('#[[+id]].swiper-container-mobile'));
+                    let [[+var]] = create[[+var]]($('#[[+id]].swiper-mobile'));
 
                     // Update lazy load with each new slide
                     [[+var]].on('slideChange', function () {
@@ -73,7 +79,7 @@
                 unmatch: function() {
 
                     // Revert to default layout with cloned container
-                    $('#[[+id]].swiper-container-mobile').replaceWith(desktop[[+var]]);
+                    $('#[[+id]].swiper-mobile').replaceWith(desktop[[+var]]);
                 }
             }
         );

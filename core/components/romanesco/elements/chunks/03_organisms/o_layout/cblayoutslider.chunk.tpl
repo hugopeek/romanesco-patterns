@@ -1,4 +1,4 @@
-<div id="swiper-[[+unique_idx]]" class="swiper-container[[+mobile_only:eq=`1`:then=`-mobile`]] [[+inverted:eq=`1`:then=`inverted`]] [[+fullscreen:eq=`1`:then=`fullscreen`]]">
+<div id="swiper-[[+unique_idx]]" class="swiper[[+mobile_only:eq=`1`:then=`-mobile`]] [[+inverted:eq=`1`:then=`inverted`]] [[+fullscreen:eq=`1`:then=`fullscreen`]]">
     [[If?
         &subject=`[[+slider_type]]`
         &operator=`inarray`

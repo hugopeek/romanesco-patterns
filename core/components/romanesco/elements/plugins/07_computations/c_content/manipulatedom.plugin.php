@@ -208,7 +208,7 @@ switch ($modx->event->name) {
         ;
 
         // Apply Swiper classes to appropriate slide elements
-        $dom->filter('.swiper-container')
+        $dom->filter('.swiper')
             ->each(function (HtmlPageCrawler $slider) {
                 $slider
                     ->children('.nested.overview')
