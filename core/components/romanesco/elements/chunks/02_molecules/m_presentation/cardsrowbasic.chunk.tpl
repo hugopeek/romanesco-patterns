@@ -19,7 +19,5 @@
     `]]
 </div>
 [[+button_text:notempty=`
-<div class="center aligned extra content">
-    <a href="[[+link]]" class="ui primary button">[[+button_text]]</a>
-</div>
+<a href="[[+link]]" class="ui [[+emphasize:eq=`1`:then=`large primary`]] bottom attached button">[[+button_text]]</a>
 `]]

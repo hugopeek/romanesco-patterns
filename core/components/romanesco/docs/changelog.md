@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Change button to bottom attached in Card CB
 - Fix slider after updating Swiper to v8
 - Check for autoloaded HtmlPageDom class in plugins
 - Fix broken references in status grid and project timeline
