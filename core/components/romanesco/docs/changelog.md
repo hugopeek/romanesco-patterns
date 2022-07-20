@@ -3,7 +3,12 @@
 ## Romanesco Patterns 1.0.0-beta10
 Released on ...
 
+New features:
+- Add ability to submit forms via Ajax [WIP]
+
 Fixes and improvements:
+- Add option to show CB table rows as cards on mobile
+- Add chunks for Table CB templates
 - Change button to bottom attached in Card CB
 - Fix slider after updating Swiper to v8
 - Check for autoloaded HtmlPageDom class in plugins
