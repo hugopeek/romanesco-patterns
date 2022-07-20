@@ -62,6 +62,9 @@
                 },{
                     "name": "m_fb_antispam",
                     "parent": "m_formblocks"
+                },{
+                    "name": "m_fb_ajax",
+                    "parent": "m_formblocks"
                 }
             ]
         }

@@ -54,6 +54,19 @@
                         }
                     ],
                     "category": "o_formblocks"
+                },{
+                    "name": "fbSubmitAjax",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_formblocks"
                 }
             ],
 
