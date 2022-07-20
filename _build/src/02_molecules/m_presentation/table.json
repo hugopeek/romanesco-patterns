@@ -1,0 +1,35 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "tableRowBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_table"
+                },{
+                    "name": "tableColumnBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_table"
+                }
+            ]
+        }
+    }
+}

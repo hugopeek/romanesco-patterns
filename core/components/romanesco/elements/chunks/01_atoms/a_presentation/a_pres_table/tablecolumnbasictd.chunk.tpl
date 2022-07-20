@@ -1,0 +1,1 @@
+<td data-title="[[+head_[[+colIdx]]_1]]">[[+cell]]</td>
