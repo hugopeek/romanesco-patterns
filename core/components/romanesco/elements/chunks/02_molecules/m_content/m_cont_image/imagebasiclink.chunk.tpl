@@ -1,4 +1,4 @@
-<a href="[[+link]]" class="ui [[+classes]] content image" [[+link_rel:replace=`,== `:prepend=`rel="`:append=`"`]] [[+attributes]]>
+<a href="[[+link]]" class="ui [[+classes]] content image" [[+attributes]]>
     [[$imgResponsive? &uid=`[[+url]]`]]
     [[If?
         &subject=`[[+credits]][[+caption]]`

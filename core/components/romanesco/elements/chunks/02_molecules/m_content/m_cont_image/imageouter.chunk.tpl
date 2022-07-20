@@ -11,6 +11,7 @@
     &width=`[[+crops.default.width:empty=`[[+width]]`]]`
     &height=`[[+crops.default.height:empty=`[[+height]]`]]`
     &classes=`rounded [[+classes:replace=`,== `:empty=`[[+img_size]] [[+options]] [[+position]]`]]`
+    &attributes=`[[+link_rel:replace=`,== `:prepend=`rel="`:append=`"`]] [[+new_window:eq=`1`:then=`target="_blank"`]]`
 
     &layout_id=`[[+layout_id]]`
     &layout_column=`[[+layout_column]]`
