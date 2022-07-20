@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "sliderInitJS",
+                    "name": "imageOuter",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,22 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "m_cont_image"
                 },{
-                    "name": "sliderMobileInitJS",
+                    "name": "imageOuterGallery",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_image"
+                },{
+                    "name": "imageBasicLink",
                     "description": "",
                     "properties": [
                         {
@@ -27,7 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "m_cont_image"
                 }
             ]
         }

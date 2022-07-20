@@ -3,7 +3,33 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "favicons",
+                    "name": "headingBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": "[[$headingBasic?\n    &level=`h3`\n    &value=`Always Be Curious`\n]]"
+                        }
+                    ],
+                    "category": "a_cont_heading"
+                },{
+                    "name": "headingOverview",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": "[[$headingOverview?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
+                        }
+                    ],
+                    "category": "a_cont_heading"
+                },{
+                    "name": "headingOverviewLink",
                     "description": "",
                     "properties": [
                         {
@@ -14,43 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
-                },{
-                    "name": "logo",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_presentation"
-                },{
-                    "name": "iconBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_presentation"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_presentation",
-                    "parent": "01_atoms"
-                },{
-                    "name": "a_pres_table",
-                    "parent": "a_presentation"
+                    "category": "a_cont_heading"
                 }
             ]
         }

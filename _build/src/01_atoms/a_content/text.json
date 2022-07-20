@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "favicons",
+                    "name": "introtextDescription",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
+                    "category": "a_cont_text"
                 },{
-                    "name": "logo",
+                    "name": "introtextSingleParagraph",
                     "description": "",
                     "properties": [
                         {
@@ -27,30 +27,33 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
+                    "category": "a_cont_text"
                 },{
-                    "name": "iconBasic",
+                    "name": "richTextSegment",
                     "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_presentation",
-                    "parent": "01_atoms"
+                    "category": "a_cont_text"
                 },{
-                    "name": "a_pres_table",
-                    "parent": "a_presentation"
+                    "name": "quoteBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_text"
                 }
             ]
         }

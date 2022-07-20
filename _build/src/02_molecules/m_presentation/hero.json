@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "sliderInitJS",
-                    "description": "",
+                    "name": "heroTitles",
+                    "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,10 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "m_pres_hero"
                 },{
-                    "name": "sliderMobileInitJS",
-                    "description": "",
+                    "name": "heroVertical",
+                    "description": "This hero unit is adapted for use in vertical scenarios, meaning there are no grid classes present. The content is stacked as link items instead.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "m_pres_hero"
                 }
             ]
         }

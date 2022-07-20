@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "sliderInitJS",
+                    "name": "imageBasic",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "a_cont_image"
                 },{
-                    "name": "sliderMobileInitJS",
+                    "name": "imageSVG",
                     "description": "",
                     "properties": [
                         {
@@ -27,7 +27,20 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "a_cont_image"
+                },{
+                    "name": "iconSVG",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_image"
                 }
             ]
         }

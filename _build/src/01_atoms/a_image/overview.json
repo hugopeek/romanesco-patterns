@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "hero",
-                    "description": "The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor some control over the output.",
+                    "name": "imgOverview",
+                    "description": "Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,22 +14,35 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_presentation"
+                    "category": "a_img_overview"
                 },{
-                    "name": "sliderOuter",
-                    "description": "DEPRECATED. Slider now uses Swiper.js and this chunk doesn't seem to be used anywhere..",
+                    "name": "imgOverviewFixed",
+                    "description": "Alternative ImagePlus tpl for overview images, with fixed height and width. Sometimes you don't want to generate all the responsive variants, for example when it's only a small avatar image.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "deprecated"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "o_presentation"
+                    "category": "a_img_overview"
                 },{
-                    "name": "galleryOuter",
+                    "name": "imgOverviewFallback",
+                    "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },{
+                    "name": "imgOverviewPersonLink",
                     "description": "",
                     "properties": [
                         {
@@ -40,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_presentation"
+                    "category": "a_img_overview"
                 },{
-                    "name": "lightboxOuter",
+                    "name": "imgOverviewPersonAvatar",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +66,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_presentation"
+                    "category": "a_img_overview"
                 },{
-                    "name": "accordionOuter",
+                    "name": "imgOverviewPersonAvatarLink",
                     "description": "",
                     "properties": [
                         {
@@ -66,53 +79,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "o_presentation"
-                },{
-                    "name": "tabsOuter",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "o_presentation"
-                },{
-                    "name": "cardsOuter",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "o_presentation"
-                },{
-                    "name": "tableOuter",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "o_presentation"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "o_presentation",
-                    "parent": "03_organisms"
+                    "category": "a_img_overview"
                 }
             ]
         }

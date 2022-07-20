@@ -3,123 +3,6 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "headingBasicSubtitle",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "headingBasicAnchor",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "headingOverviewSubtitle",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "headingOverviewSubtitleLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "headerIconFont",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "headerIconSVG",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "imageOuter",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "imageOuterGallery",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
-                    "name": "imageBasicLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },{
                     "name": "dividerHeading",
                     "description": "",
                     "properties": [
@@ -166,10 +49,13 @@
                     "name": "m_content",
                     "parent": "02_molecules"
                 },{
-                    "name": "m_ct_type",
+                    "name": "m_cont_type",
                     "parent": "m_content"
                 },{
-                    "name": "Content",
+                    "name": "m_cont_heading",
+                    "parent": "m_content"
+                },{
+                    "name": "m_cont_image",
                     "parent": "m_content"
                 }
             ]

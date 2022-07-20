@@ -1,0 +1,74 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "imgResponsive",
+                    "description": "The core of most ContentBlocks images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Can also be cropped and lazy loaded.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },{
+                    "name": "imgResponsiveGallery",
+                    "description": "A responsive image element, specialized for the Gallery block.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },{
+                    "name": "imgResponsiveGalleryCaption",
+                    "description": "A responsive image element, specialized for the Gallery with Caption block.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },{
+                    "name": "imgResponsiveRowSrcset",
+                    "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },{
+                    "name": "imgResponsiveScale",
+                    "description": "A switch statement that selects the right viewport width for the img sizes attribute, based on the layout and column type of the container.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                }
+            ]
+        }
+    }
+}

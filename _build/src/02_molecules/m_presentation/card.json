@@ -3,21 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "headPreloadLinks",
-                    "description": "Preload resources that the page will need first. This ensures they are available before the main rendering process, making them less likely to block the page's render, improving performance.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },{
-                    "name": "iconTVInputOptions",
-                    "description": "",
+                    "name": "cardsRowBasic",
+                    "description": "A template for the Cards CB repeater. It uses the common pattern of an image, header, subtitle and link button.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -27,10 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_global"
+                    "category": "m_pres_card"
                 },{
-                    "name": "themeScaleRatios",
-                    "description": "",
+                    "name": "cardsRowBasicLink",
+                    "description": "Similar to cardsRowBasic, but lets the parent decide if the card should be a link or not. In other words: it contains NO links itself. Can be (ab)used to create cards without any link at all.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -40,30 +27,33 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_global"
+                    "category": "m_pres_card"
                 },{
-                    "name": "cacheBusterPlaceholders",
-                    "description": "",
+                    "name": "cardsRowInnerWrapper",
+                    "description": "The correct card template is selected inside this wrapper. This is to avoid duplicate HTML and to keep the CB field flexible, logical and easy to use.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_global"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_global",
-                    "parent": "01_atoms"
+                    "category": "m_pres_card"
                 },{
-                    "name": "a_glob_background",
-                    "parent": "a_global"
+                    "name": "cardsRowFlexible",
+                    "description": "Template for Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_card"
                 }
             ]
         }

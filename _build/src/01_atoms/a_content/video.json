@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "sliderInitJS",
+                    "name": "videoYoutube",
                     "description": "",
                     "properties": [
                         {
@@ -14,20 +14,20 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "a_cont_video"
                 },{
-                    "name": "sliderMobileInitJS",
+                    "name": "videoVimeo",
                     "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "m_pres_slider"
+                    "category": "a_cont_video"
                 }
             ]
         }

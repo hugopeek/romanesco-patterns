@@ -3,18 +3,18 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "contentMarkdown",
-                    "description": "Render Markdown content as HTML.",
+                    "name": "dividerBasic",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_cont_type"
+                    "category": "a_cont_layout"
                 }
             ]
         }

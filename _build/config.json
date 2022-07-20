@@ -252,7 +252,27 @@
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_ct_type",
+                    "name": "a_cont_type",
+                    "parent": "a_content"
+                },
+                {
+                    "name": "a_cont_heading",
+                    "parent": "a_content"
+                },
+                {
+                    "name": "a_cont_image",
+                    "parent": "a_content"
+                },
+                {
+                    "name": "a_cont_layout",
+                    "parent": "a_content"
+                },
+                {
+                    "name": "a_cont_text",
+                    "parent": "a_content"
+                },
+                {
+                    "name": "a_cont_video",
                     "parent": "a_content"
                 },
                 {
@@ -308,12 +328,24 @@
                     "parent": "01_atoms"
                 },
                 {
+                    "name": "a_glob_background",
+                    "parent": "a_global"
+                },
+                {
                     "name": "a_hub",
                     "parent": "01_atoms"
                 },
                 {
                     "name": "a_image",
                     "parent": "01_atoms"
+                },
+                {
+                    "name": "a_img_overview",
+                    "parent": "a_image"
+                },
+                {
+                    "name": "a_img_responsive",
+                    "parent": "a_image"
                 },
                 {
                     "name": "a_information",
@@ -360,6 +392,10 @@
                     "parent": "01_atoms"
                 },
                 {
+                    "name": "a_pres_table",
+                    "parent": "a_presentation"
+                },
+                {
                     "name": "a_search",
                     "parent": "01_atoms"
                 },
@@ -380,11 +416,15 @@
                     "parent": "02_molecules"
                 },
                 {
-                    "name": "m_ct_type",
+                    "name": "m_cont_type",
                     "parent": "m_content"
                 },
                 {
-                    "name": "Content",
+                    "name": "m_cont_heading",
+                    "parent": "m_content"
+                },
+                {
+                    "name": "m_cont_image",
                     "parent": "m_content"
                 },
                 {
@@ -421,6 +461,10 @@
                 },
                 {
                     "name": "m_fb_antispam",
+                    "parent": "m_formblocks"
+                },
+                {
+                    "name": "m_fb_ajax",
                     "parent": "m_formblocks"
                 },
                 {
@@ -514,6 +558,26 @@
                 {
                     "name": "m_presentation",
                     "parent": "02_molecules"
+                },
+                {
+                    "name": "m_pres_hero",
+                    "parent": "m_presentation"
+                },
+                {
+                    "name": "m_pres_card",
+                    "parent": "m_presentation"
+                },
+                {
+                    "name": "m_pres_gallery",
+                    "parent": "m_presentation"
+                },
+                {
+                    "name": "m_pres_slider",
+                    "parent": "m_presentation"
+                },
+                {
+                    "name": "m_pres_table",
+                    "parent": "m_presentation"
                 },
                 {
                     "name": "m_publication",
@@ -2432,7 +2496,7 @@
                     "description": "What is the current development stage of this page?",
                     "type": "option",
                     "inputOptionValues": "@CHUNK tvSelectInputOption@StatusProgress",
-                    "defaultValue": "to-do",
+                    "defaultValue": "todo",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -2550,7 +2614,7 @@
                     ]
                 },
                 {
-                    "caption": "_Autoresponder",
+                    "caption": "Autoresponder",
                     "name": "fb_autoresponder_toggle",
                     "description": "IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.",
                     "type": "option",
@@ -2569,7 +2633,7 @@
                     ]
                 },
                 {
-                    "caption": "_Autoresponder FROM address",
+                    "caption": "Autoresponder FROM address",
                     "name": "fb_autoresponder_from",
                     "description": "Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like mail@yourdomain.com. Defaults to emailsender system setting.",
                     "type": "email",
@@ -2586,7 +2650,7 @@
                     ]
                 },
                 {
-                    "caption": "_Autoresponder FROM name",
+                    "caption": "Autoresponder FROM name",
                     "name": "fb_autoresponder_from_name",
                     "description": "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting.",
                     "type": "text",
@@ -2603,7 +2667,7 @@
                     ]
                 },
                 {
-                    "caption": "_Autoresponder REPLY TO address",
+                    "caption": "Autoresponder REPLY TO address",
                     "name": "fb_autoresponder_reply_to",
                     "description": "Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.",
                     "type": "email",
@@ -3459,201 +3523,6 @@
                     "category": "a_button"
                 },
                 {
-                    "name": "headingBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": "[[$headingBasic?\n    &level=`h3`\n    &value=`Always Be Curious`\n]]"
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "headingOverview",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": "[[$headingOverview?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "headingOverviewLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "introtextDescription",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "introtextSingleParagraph",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "richTextSegment",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "imageBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "imageSVG",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "iconSVG",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "dividerBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "quoteBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "videoYoutube",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
-                    "name": "videoVimeo",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },
-                {
                     "name": "organizationData",
                     "description": "",
                     "properties": [
@@ -3992,78 +3861,6 @@
                     "category": "a_global"
                 },
                 {
-                    "name": "globalBackgroundRowCSS",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "imgWidth",
-                            "value": ""
-                        },
-                        {
-                            "name": "imgType",
-                            "value": ""
-                        },
-                        {
-                            "name": "imgScale",
-                            "value": ""
-                        },
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },
-                {
-                    "name": "globalBackgroundSettingsCSS",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },
-                {
-                    "name": "globalBackgroundImgCSS",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },
-                {
-                    "name": "globalBackgroundImgOverviewCSS",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },
-                {
                     "name": "iconTVInputOptions",
                     "description": "",
                     "properties": [
@@ -4289,171 +4086,6 @@
                     "category": "a_hub"
                 },
                 {
-                    "name": "imgOverview",
-                    "description": "Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgOverviewFixed",
-                    "description": "Alternative ImagePlus tpl for overview images, with fixed height and width. Sometimes you don't want to generate all the responsive variants, for example when it's only a small avatar image.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgOverviewFallback",
-                    "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgOverviewPersonLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgOverviewPersonAvatar",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgOverviewPersonAvatarLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgResponsive",
-                    "description": "The core of most ContentBlocks images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Can also be cropped and lazy loaded.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgResponsiveGallery",
-                    "description": "A responsive image element, specialized for the Gallery block.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgResponsiveGalleryCaption",
-                    "description": "A responsive image element, specialized for the Gallery with Caption block.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgResponsiveRowSrcset",
-                    "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
-                    "name": "imgResponsiveScale",
-                    "description": "A switch statement that selects the right viewport width for the img sizes attribute, based on the layout and column type of the container.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_image"
-                },
-                {
                     "name": "imgOpenGraphRow",
                     "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
                     "properties": [
@@ -4544,27 +4176,12 @@
                     "category": "a_presentation"
                 },
                 {
-                    "name": "sliderInitJS",
+                    "name": "iconBasic",
                     "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_presentation"
-                },
-                {
-                    "name": "sliderMobileInitJS",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },
                         {
                             "name": "elementPreview",
@@ -4977,141 +4594,6 @@
                         }
                     ],
                     "category": "m_button"
-                },
-                {
-                    "name": "headingBasicSubtitle",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "headingBasicAnchor",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "headingOverviewSubtitle",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "headingOverviewSubtitleLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "headerIconFont",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "headerIconSVG",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "imageOuter",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "imageOuterGallery",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
-                },
-                {
-                    "name": "imageBasicLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_content"
                 },
                 {
                     "name": "dividerHeading",
@@ -6134,81 +5616,6 @@
                     "category": "m_overview"
                 },
                 {
-                    "name": "heroTitles",
-                    "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "heroVertical",
-                    "description": "This hero unit is adapted for use in vertical scenarios, meaning there are no grid classes present. The content is stacked as link items instead.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "galleryRowImage",
-                    "description": "Basic image pattern, for use in gallery or slider. It can contain a lightbox link, which opens an enlargement of the image in a full-screen overlay window.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "galleryRowImageCaption",
-                    "description": "This pattern adds a caption to the image. You can choose to either show the caption in the lightbox enlargement only, or also as a subtitle in the image grid (or slide).",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "galleryRowImageLightbox",
-                    "description": "This pattern evaluates if you should be able to open the image in a lightbox. If so, the required classes and properties are added to the default image.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
                     "name": "accordionRowBasic",
                     "description": "",
                     "properties": [
@@ -6241,66 +5648,6 @@
                 {
                     "name": "flexibleRowInnerWrapper",
                     "description": "The content inside a flexible Accordion or Tab CB is entered as a nested layout, meaning it's wrapped in columns. To properly display these columns in a grid, an additional wrapper is needed.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "cardsRowBasic",
-                    "description": "A template for the Cards CB repeater. It uses the common pattern of an image, header, subtitle and link button.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "cardsRowBasicLink",
-                    "description": "Similar to cardsRowBasic, but lets the parent decide if the card should be a link or not. In other words: it contains NO links itself. Can be (ab)used to create cards without any link at all.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "cardsRowInnerWrapper",
-                    "description": "The correct card template is selected inside this wrapper. This is to avoid duplicate HTML and to keep the CB field flexible, logical and easy to use.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_presentation"
-                },
-                {
-                    "name": "cardsRowFlexible",
-                    "description": "Template for Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6575,6 +5922,21 @@
                         {
                             "name": "elementStatus",
                             "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_formblocks"
+                },
+                {
+                    "name": "fbSubmitAjax",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
                         },
                         {
                             "name": "elementPreview",
@@ -7244,6 +6606,21 @@
                     "category": "o_presentation"
                 },
                 {
+                    "name": "tableOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "o_presentation"
+                },
+                {
                     "name": "searchResultOuter",
                     "description": "",
                     "properties": [
@@ -7529,6 +6906,171 @@
                     "category": "a_btn_social"
                 },
                 {
+                    "name": "headingBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": "[[$headingBasic?\n    &level=`h3`\n    &value=`Always Be Curious`\n]]"
+                        }
+                    ],
+                    "category": "a_cont_heading"
+                },
+                {
+                    "name": "headingOverview",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": "[[$headingOverview?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
+                        }
+                    ],
+                    "category": "a_cont_heading"
+                },
+                {
+                    "name": "headingOverviewLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_heading"
+                },
+                {
+                    "name": "imageBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_image"
+                },
+                {
+                    "name": "imageSVG",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_image"
+                },
+                {
+                    "name": "iconSVG",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_image"
+                },
+                {
+                    "name": "dividerBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_layout"
+                },
+                {
+                    "name": "introtextDescription",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_text"
+                },
+                {
+                    "name": "introtextSingleParagraph",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_text"
+                },
+                {
+                    "name": "richTextSegment",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_text"
+                },
+                {
+                    "name": "quoteBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_text"
+                },
+                {
                     "name": "contentMarkdown",
                     "description": "Render Markdown content as HTML.",
                     "properties": [
@@ -7541,7 +7083,37 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_ct_type"
+                    "category": "a_cont_type"
+                },
+                {
+                    "name": "videoYoutube",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_video"
+                },
+                {
+                    "name": "videoVimeo",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_video"
                 },
                 {
                     "name": "cbFieldAlignment",
@@ -8564,6 +8136,243 @@
                     "category": "a_dat_row"
                 },
                 {
+                    "name": "globalBackgroundRowCSS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "imgWidth",
+                            "value": ""
+                        },
+                        {
+                            "name": "imgType",
+                            "value": ""
+                        },
+                        {
+                            "name": "imgScale",
+                            "value": ""
+                        },
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_background"
+                },
+                {
+                    "name": "globalBackgroundSettingsCSS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_background"
+                },
+                {
+                    "name": "globalBackgroundImgCSS",
+                    "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_background"
+                },
+                {
+                    "name": "globalBackgroundImgOverviewCSS",
+                    "description": "DEPRECATED.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_background"
+                },
+                {
+                    "name": "imgOverview",
+                    "description": "Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgOverviewFixed",
+                    "description": "Alternative ImagePlus tpl for overview images, with fixed height and width. Sometimes you don't want to generate all the responsive variants, for example when it's only a small avatar image.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgOverviewFallback",
+                    "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgOverviewPersonLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgOverviewPersonAvatar",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgOverviewPersonAvatarLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgResponsive",
+                    "description": "The core of most ContentBlocks images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Can also be cropped and lazy loaded.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },
+                {
+                    "name": "imgResponsiveGallery",
+                    "description": "A responsive image element, specialized for the Gallery block.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },
+                {
+                    "name": "imgResponsiveGalleryCaption",
+                    "description": "A responsive image element, specialized for the Gallery with Caption block.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },
+                {
+                    "name": "imgResponsiveRowSrcset",
+                    "description": "A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },
+                {
+                    "name": "imgResponsiveScale",
+                    "description": "A switch statement that selects the right viewport width for the img sizes attribute, based on the layout and column type of the container.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_responsive"
+                },
+                {
                     "name": "breadcrumbOuter",
                     "description": "",
                     "properties": [
@@ -9079,6 +8888,21 @@
                     "category": "a_nav_toc"
                 },
                 {
+                    "name": "tableColumnBasicTD",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_pres_table"
+                },
+                {
                     "name": "tvSelectInputOptionRow",
                     "description": "Basic row template for rendering input options inside the TV.",
                     "properties": [
@@ -9139,6 +8963,141 @@
                     "category": "a_sel_row"
                 },
                 {
+                    "name": "headingBasicSubtitle",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_heading"
+                },
+                {
+                    "name": "headingBasicAnchor",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_heading"
+                },
+                {
+                    "name": "headingOverviewSubtitle",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_heading"
+                },
+                {
+                    "name": "headingOverviewSubtitleLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_heading"
+                },
+                {
+                    "name": "headingIconFont",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_heading"
+                },
+                {
+                    "name": "headingIconSVG",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_heading"
+                },
+                {
+                    "name": "imageOuter",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_image"
+                },
+                {
+                    "name": "imageOuterGallery",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_image"
+                },
+                {
+                    "name": "imageBasicLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_image"
+                },
+                {
                     "name": "contentMarkdownWrapper",
                     "description": "Render Markdown content as HTML, inside a single column container.",
                     "properties": [
@@ -9151,7 +9110,22 @@
                             "value": ""
                         }
                     ],
-                    "category": "m_ct_type"
+                    "category": "m_cont_type"
+                },
+                {
+                    "name": "fbSubmitAjaxJS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_ajax"
                 },
                 {
                     "name": "recaptchaOnSubmitV2",
@@ -10652,6 +10626,201 @@
                         }
                     ],
                     "category": "m_ov_settings"
+                },
+                {
+                    "name": "cardsRowBasic",
+                    "description": "A template for the Cards CB repeater. It uses the common pattern of an image, header, subtitle and link button.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_card"
+                },
+                {
+                    "name": "cardsRowBasicLink",
+                    "description": "Similar to cardsRowBasic, but lets the parent decide if the card should be a link or not. In other words: it contains NO links itself. Can be (ab)used to create cards without any link at all.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_card"
+                },
+                {
+                    "name": "cardsRowInnerWrapper",
+                    "description": "The correct card template is selected inside this wrapper. This is to avoid duplicate HTML and to keep the CB field flexible, logical and easy to use.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_card"
+                },
+                {
+                    "name": "cardsRowFlexible",
+                    "description": "Template for Cards (Flexible) repeater. Instead of a predefined template based on the available input fields, the editor can use a nested layout to add any CB field as content for the card.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_card"
+                },
+                {
+                    "name": "galleryRowImage",
+                    "description": "Basic image pattern, for use in gallery or slider. It can contain a lightbox link, which opens an enlargement of the image in a full-screen overlay window.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_gallery"
+                },
+                {
+                    "name": "galleryRowImageCaption",
+                    "description": "This pattern adds a caption to the image. You can choose to either show the caption in the lightbox enlargement only, or also as a subtitle in the image grid (or slide).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_gallery"
+                },
+                {
+                    "name": "galleryRowImageLightbox",
+                    "description": "This pattern evaluates if you should be able to open the image in a lightbox. If so, the required classes and properties are added to the default image.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_gallery"
+                },
+                {
+                    "name": "heroTitles",
+                    "description": "A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (like H1/H2).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_hero"
+                },
+                {
+                    "name": "heroVertical",
+                    "description": "This hero unit is adapted for use in vertical scenarios, meaning there are no grid classes present. The content is stacked as link items instead.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_hero"
+                },
+                {
+                    "name": "sliderInitJS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_slider"
+                },
+                {
+                    "name": "sliderMobileInitJS",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_slider"
+                },
+                {
+                    "name": "tableRowBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_table"
+                },
+                {
+                    "name": "tableColumnBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_table"
                 }
             ],
             "templates": [
@@ -10800,6 +10969,21 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "t_global"
+                },
+                {
+                    "name": "fbFormAjax",
+                    "icon": "icon-external-link",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
                         },
                         {
                             "name": "elementPreview",

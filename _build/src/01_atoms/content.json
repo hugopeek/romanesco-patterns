@@ -1,185 +1,27 @@
 {
     "package": {
         "elements": {
-            "chunks": [
-                {
-                    "name": "headingBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": "[[$headingBasic?\n    &level=`h3`\n    &value=`Always Be Curious`\n]]"
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "headingOverview",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": "[[$headingOverview?\n    &title_hierarchy=`h3`\n    &pagetitle=`I don't make much sense`\n]]"
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "headingOverviewLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "introtextDescription",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "introtextSingleParagraph",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "richTextSegment",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "imageBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "imageSVG",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "iconSVG",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "dividerBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "quoteBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "videoYoutube",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                },{
-                    "name": "videoVimeo",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_content"
-                }
-            ],
-
             "categories": [
                 {
                     "name": "a_content",
                     "parent": "01_atoms"
                 },{
-                    "name": "a_ct_type",
+                    "name": "a_cont_type",
+                    "parent": "a_content"
+                },{
+                    "name": "a_cont_heading",
+                    "parent": "a_content"
+                },{
+                    "name": "a_cont_image",
+                    "parent": "a_content"
+                },{
+                    "name": "a_cont_layout",
+                    "parent": "a_content"
+                },{
+                    "name": "a_cont_text",
+                    "parent": "a_content"
+                },{
+                    "name": "a_cont_video",
                     "parent": "a_content"
                 }
             ]

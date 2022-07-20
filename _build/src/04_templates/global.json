@@ -57,6 +57,19 @@
                     ],
                     "category": "t_global"
                 },{
+                    "name": "fbFormAjax",
+                    "icon": "icon-external-link",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "t_global"
+                },{
                     "name": "fbRegister",
                     "icon": "icon-user-plus",
                     "properties": [

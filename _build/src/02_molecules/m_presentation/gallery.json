@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "favicons",
-                    "description": "",
+                    "name": "galleryRowImage",
+                    "description": "Basic image pattern, for use in gallery or slider. It can contain a lightbox link, which opens an enlargement of the image in a full-screen overlay window.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,10 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
+                    "category": "m_pres_gallery"
                 },{
-                    "name": "logo",
-                    "description": "",
+                    "name": "galleryRowImageCaption",
+                    "description": "This pattern adds a caption to the image. You can choose to either show the caption in the lightbox enlargement only, or also as a subtitle in the image grid (or slide).",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -27,30 +27,20 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
+                    "category": "m_pres_gallery"
                 },{
-                    "name": "iconBasic",
-                    "description": "",
+                    "name": "galleryRowImageLightbox",
+                    "description": "This pattern evaluates if you should be able to open the image in a lightbox. If so, the required classes and properties are added to the default image.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_presentation"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_presentation",
-                    "parent": "01_atoms"
-                },{
-                    "name": "a_pres_table",
-                    "parent": "a_presentation"
+                    "category": "m_pres_gallery"
                 }
             ]
         }

@@ -3,20 +3,29 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "headPreloadLinks",
-                    "description": "Preload resources that the page will need first. This ensures they are available before the main rendering process, making them less likely to block the page's render, improving performance.",
+                    "name": "globalBackgroundRowCSS",
+                    "description": "",
                     "properties": [
                         {
+                            "name": "imgWidth",
+                            "value": ""
+                        },{
+                            "name": "imgType",
+                            "value": ""
+                        },{
+                            "name": "imgScale",
+                            "value": ""
+                        },{
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_global"
+                    "category": "a_glob_background"
                 },{
-                    "name": "iconTVInputOptions",
+                    "name": "globalBackgroundSettingsCSS",
                     "description": "",
                     "properties": [
                         {
@@ -27,43 +36,33 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_global"
+                    "category": "a_glob_background"
                 },{
-                    "name": "themeScaleRatios",
-                    "description": "",
+                    "name": "globalBackgroundImgCSS",
+                    "description": "DEPRECATED.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "deprecated"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_global"
+                    "category": "a_glob_background"
                 },{
-                    "name": "cacheBusterPlaceholders",
-                    "description": "",
+                    "name": "globalBackgroundImgOverviewCSS",
+                    "description": "DEPRECATED.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "deprecated"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_global"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_global",
-                    "parent": "01_atoms"
-                },{
-                    "name": "a_glob_background",
-                    "parent": "a_global"
+                    "category": "a_glob_background"
                 }
             ]
         }
