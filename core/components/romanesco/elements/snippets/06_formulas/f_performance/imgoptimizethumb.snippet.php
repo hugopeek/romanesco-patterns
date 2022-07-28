@@ -133,17 +133,17 @@ $configPNG = json_encode([
     "interlace" => false
 ]);
 
-// Use Scheduler for adding task to queue (if available)
-/** @var Scheduler $scheduler */
-$schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
-$scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
-
 // Use different compression engine for JPG and PNG
 if (strtolower($imgType) == 'png') {
     $squooshOptions = ' --oxipng ' . escapeshellarg($configPNG);
 } else {
     $squooshOptions = ' --mozjpeg ' . escapeshellarg($configJPG);
 }
+
+// Use Scheduler for adding task to queue (if available)
+/** @var Scheduler $scheduler */
+$schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
+$scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
 
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
 if (!($scheduler instanceof Scheduler) || is_object($task)) {
