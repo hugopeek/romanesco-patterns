@@ -77,6 +77,9 @@
                         },{
                             "name": "elementPreview",
                             "value": ""
+                        },{
+                            "name": "acceptOverride",
+                            "value": "1"
                         }
                     ],
                     "category": "o_global"

@@ -93,9 +93,39 @@
 
         "systemSettings": [
             {
+                "key": "semantic_dist_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist"
+            },{
+                "key": "semantic_css_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/css"
+            },{
+                "key": "semantic_js_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/js"
+            },{
+                "key": "semantic_font_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/fonts"
+            },{
+                "key": "semantic_vendor_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/vendor"
+            },{
+                "key": "custom_css_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/css"
+            },{
                 "key": "favicon_path",
                 "type": "textfield",
-                "area": "Presentation",
+                "area": "Paths",
                 "value": "assets/favicons"
             },{
                 "key": "favicon_version",

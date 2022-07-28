@@ -59,6 +59,48 @@
 
         "systemSettings": [
             {
+                "key": "title_format",
+                "type": "textfield",
+                "area": "Meta",
+                "value": "[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]"
+            },{
+                "key": "date_format_short",
+                "type": "textfield",
+                "area": "Date and Time",
+                "value": "%d-%m-%Y"
+            },{
+                "key": "date_format_medium",
+                "type": "textfield",
+                "area": "Date and Time",
+                "value": "%e %b %Y"
+            },{
+                "key": "date_format_long",
+                "type": "textfield",
+                "area": "Date and Time",
+                "value": "%e %B %Y"
+            },{
+                "key": "date_format_full",
+                "type": "textfield",
+                "area": "Date and Time",
+                "value": "%A %e %B, %Y"
+            },{
+                "key": "shell_path",
+                "type": "textfield",
+                "area": "Environment"
+            },{
+                "key": "htpasswd_user",
+                "type": "textfield",
+                "area": "Environment"
+            },{
+                "key": "htpasswd_pass",
+                "type": "text-password",
+                "area": "Environment"
+            },{
+                "key": "dev_mode",
+                "type": "combo-boolean",
+                "area": "Environment",
+                "value": "0"
+            },{
                 "key": "global_backgrounds_id",
                 "type": "textfield",
                 "area": "Pages"
