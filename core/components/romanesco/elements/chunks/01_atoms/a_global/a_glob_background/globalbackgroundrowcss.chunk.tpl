@@ -18,8 +18,8 @@
     [[pthumb:imgOptimizeThumb=`[[+quality]]`:prepend=`url(`:append=`)`?
         &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
-            &sx=[[+image.crops.[[+imgType]].x]]
-            &sy=[[+image.crops.[[+imgType]].y]]
+            &sx=[[If? &subject=`[[+image.crops.[[+imgType]].x]]` &operator=`lt` &operand=`0` &then=`0` &else=`[[+image.crops.[[+imgType]].x]]`]]
+            &sy=[[If? &subject=`[[+image.crops.[[+imgType]].y]]` &operator=`lt` &operand=`0` &then=`0` &else=`[[+image.crops.[[+imgType]].y]]`]]
             &sw=[[+image.crops.[[+imgType]].width]]
             &sh=[[+image.crops.[[+imgType]].height]]
             &q=[[++romanesco.img_quality]]
