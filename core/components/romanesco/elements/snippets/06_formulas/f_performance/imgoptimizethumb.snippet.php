@@ -45,8 +45,8 @@ $imgName = pathinfo($imgPathFull, PATHINFO_FILENAME);
 $imgType = pathinfo($imgPathFull, PATHINFO_EXTENSION);
 $outputDir = dirname($imgPathFull);
 
-// Check if file exists
-if (!file_exists($imgPathFull)) {
+// Check if path or file exist
+if (!$imgPath || !file_exists($imgPathFull)) {
     $modx->log(modX::LOG_LEVEL_WARN, '[imgOptimizeThumb] Image not found: ' . $imgPathFull);
     return $imgPath;
 }
@@ -73,7 +73,7 @@ if (file_exists($outputDir . '/' . $imgName . '.webp')) {
 }
 
 // Get image quality from task properties, output modifier option or corresponding context setting
-$imgQuality = $scriptProperties['img_quality'] ?? $options;
+$imgQuality = $scriptProperties['img_quality'] ? : $options;
 if (!$imgQuality) {
     $imgQuality = $romanesco->getConfigSetting('img_quality', $context);
 }

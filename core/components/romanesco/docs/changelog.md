@@ -7,6 +7,7 @@ New features:
 - Add ability to submit forms via Ajax [WIP]
 
 Fixes and improvements:
+- Prevent optimising of images without valid path
 - Validate CSS before saving Global Backgrounds
 - Fix open in new window option in Image with Link CB
 - Add option to show CB table rows as cards on mobile
