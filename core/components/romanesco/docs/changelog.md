@@ -8,6 +8,7 @@ New features:
 - Add template for generating BackstopJS regression test configuration
 
 Fixes and improvements:
+- Fix images being optimized with empty quality setting
 - Fix thumbnail errors when x/y value is negative
 - Prevent optimising of images without valid path
 - Minify CSS via task queue (if Scheduler is installed)
