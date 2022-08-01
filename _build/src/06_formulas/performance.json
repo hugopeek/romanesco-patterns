@@ -34,7 +34,20 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "experimental"
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_performance"
+                },{
+                    "name": "minifyCSS",
+                    "description": "Generate minified version of given CSS file. To avoid increased saving times, execution of the Gulp process will be added to a task queue if Scheduler is installed.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementExample",
                             "value": ""

@@ -8,6 +8,7 @@ New features:
 
 Fixes and improvements:
 - Prevent optimising of images without valid path
+- Minify CSS via task queue (if Scheduler is installed)
 - Validate CSS before saving Global Backgrounds
 - Fix open in new window option in Image with Link CB
 - Add option to show CB table rows as cards on mobile
