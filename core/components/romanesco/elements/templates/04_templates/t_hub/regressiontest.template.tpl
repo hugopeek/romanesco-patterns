@@ -1,10 +1,4 @@
 [[*alias:replace=`-==_`:toPlaceholder=`backstop_id`]]
-[[getSelections:toPlaceholder=`resources`?
-    &selections=`[[*id]]`
-    &tpl=`@INLINE [[+id]]`
-    &outputSeparator=`,`
-    &limit=`0`
-]]
 {
     "id": "[[+backstop_id]]",
     "viewports": [
@@ -25,7 +19,7 @@
     "scenarios": [
         [[pdoResources?
             &parents=`0`
-            &resources=`[[+resources]]`
+            &resources=`[[*content]]`
             &limit=`0`
             &tpl=`@INLINE
             {

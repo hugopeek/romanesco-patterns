@@ -17,6 +17,7 @@
                     "category": "t_hub"
                 },{
                     "name": "RegressionTest",
+                    "description": "Needs to output a comma-separated list of IDs.",
                     "icon": "icon-undo",
                     "properties": [
                         {
