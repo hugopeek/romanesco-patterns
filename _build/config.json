@@ -155,6 +155,14 @@
                     "parent": "e_global"
                 },
                 {
+                    "name": "e_hub",
+                    "parent": "00_electrons"
+                },
+                {
+                    "name": "_Testing",
+                    "parent": "e_hub"
+                },
+                {
                     "name": "e_information",
                     "parent": "00_electrons"
                 },
@@ -1258,6 +1266,23 @@
                     "sortOrder": "10",
                     "templates": [
                         "GlobalBackground"
+                    ]
+                },
+                {
+                    "caption": "Reference URL",
+                    "name": "reference_url",
+                    "description": "Full site URL of the domain to compare with (the live domain for example). If you leave this empty, each page will be tested against an older version of itself.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Testing",
+                    "sortOrder": "1",
+                    "templates": [
+                        "RegressionTest"
                     ]
                 },
                 {
@@ -6031,6 +6056,10 @@
                         {
                             "name": "elementPreview",
                             "value": ""
+                        },
+                        {
+                            "name": "acceptOverride",
+                            "value": "1"
                         }
                     ],
                     "category": "o_global"
@@ -11023,6 +11052,21 @@
                     "category": "t_hub"
                 },
                 {
+                    "name": "RegressionTest",
+                    "icon": "icon-undo",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "t_hub"
+                },
+                {
                     "name": "kbSection",
                     "description": "DEPRECATED. Knowledge base is implemented now as Notes (without Tickets integration).",
                     "icon": "icon-book",
@@ -12069,7 +12113,22 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "experimental"
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_performance"
+                },
+                {
+                    "name": "minifyCSS",
+                    "description": "Generate minified version of given CSS file. To avoid increased saving times, execution of the Gulp process will be added to a task queue if Scheduler is installed.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementExample",
@@ -12697,6 +12756,9 @@
                     "category": "c_performance",
                     "events": [
                         {
+                            "event": "OnBeforeDocFormSave"
+                        },
+                        {
                             "event": "OnDocFormSave",
                             "priority": 10
                         }
@@ -12726,40 +12788,34 @@
         },
         "systemSettings": [
             {
-                "key": "semantic_dist_path",
+                "key": "disqus_div_id",
                 "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist"
+                "area": "Feedback",
+                "value": "disqus_thread"
             },
             {
-                "key": "semantic_css_path",
+                "key": "commento_div_id",
                 "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist/themes/romanesco/assets/css"
+                "area": "Feedback",
+                "value": "commento"
             },
             {
-                "key": "semantic_js_path",
-                "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist/themes/romanesco/assets/js"
+                "key": "manager_feedback",
+                "type": "combo-boolean",
+                "area": "Feedback",
+                "value": "1"
             },
             {
-                "key": "semantic_font_path",
+                "key": "ybug_project_id",
                 "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist/themes/romanesco/assets/fonts"
+                "area": "Feedback",
+                "value": "6fzdmzwx1bdk2nfcq4cb"
             },
             {
-                "key": "semantic_vendor_path",
+                "key": "title_format",
                 "type": "textfield",
-                "area": "Paths",
-                "value": "assets/semantic/dist/themes/romanesco/assets/vendor"
-            },
-            {
-                "key": "custom_css_path",
-                "type": "textfield",
-                "area": "Paths",
-                "value": "assets/css"
+                "area": "Meta",
+                "value": "[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]"
             },
             {
                 "key": "date_format_short",
@@ -12786,50 +12842,25 @@
                 "value": "%A %e %B, %Y"
             },
             {
-                "key": "title_format",
+                "key": "shell_path",
                 "type": "textfield",
-                "area": "Head",
-                "value": "[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]"
+                "area": "Environment"
             },
             {
                 "key": "htpasswd_user",
                 "type": "textfield",
-                "area": "Development"
+                "area": "Environment"
             },
             {
                 "key": "htpasswd_pass",
                 "type": "text-password",
-                "area": "Development"
+                "area": "Environment"
             },
             {
                 "key": "dev_mode",
                 "type": "combo-boolean",
-                "area": "Development",
+                "area": "Environment",
                 "value": "0"
-            },
-            {
-                "key": "disqus_div_id",
-                "type": "textfield",
-                "area": "Feedback",
-                "value": "disqus_thread"
-            },
-            {
-                "key": "commento_div_id",
-                "type": "textfield",
-                "area": "Feedback",
-                "value": "commento"
-            },
-            {
-                "key": "manager_feedback",
-                "type": "combo-boolean",
-                "area": "Feedback",
-                "value": "1"
-            },
-            {
-                "key": "ybug_project_id",
-                "type": "textfield",
-                "area": "Feedback",
-                "value": "6fzdmzwx1bdk2nfcq4cb"
             },
             {
                 "key": "global_backgrounds_id",
@@ -12861,11 +12892,6 @@
                 "type": "combo-boolean",
                 "area": "Users",
                 "value": "0"
-            },
-            {
-                "key": "backstop_reference_url",
-                "type": "textfield",
-                "area": "Development"
             },
             {
                 "key": "leaflet_css_url",
@@ -12944,9 +12970,45 @@
                 "value": "[[++img_quality]]"
             },
             {
+                "key": "semantic_dist_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist"
+            },
+            {
+                "key": "semantic_css_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/css"
+            },
+            {
+                "key": "semantic_js_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/js"
+            },
+            {
+                "key": "semantic_font_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/fonts"
+            },
+            {
+                "key": "semantic_vendor_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/vendor"
+            },
+            {
+                "key": "custom_css_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/css"
+            },
+            {
                 "key": "favicon_path",
                 "type": "textfield",
-                "area": "Presentation",
+                "area": "Paths",
                 "value": "assets/favicons"
             },
             {

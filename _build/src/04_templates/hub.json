@@ -15,6 +15,19 @@
                         }
                     ],
                     "category": "t_hub"
+                },{
+                    "name": "RegressionTest",
+                    "icon": "icon-undo",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "t_hub"
                 }
             ],
             "categories": [
