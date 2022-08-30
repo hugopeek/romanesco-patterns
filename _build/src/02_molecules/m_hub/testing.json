@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "backstopScenarioRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub_testing"
+                }
+            ]
+        }
+    }
+}

@@ -484,6 +484,10 @@
                     "parent": "02_molecules"
                 },
                 {
+                    "name": "m_hub_testing",
+                    "parent": "m_hub"
+                },
+                {
                     "name": "m_information",
                     "parent": "02_molecules"
                 },
@@ -9652,6 +9656,21 @@
                     "category": "m_fb_validation"
                 },
                 {
+                    "name": "backstopScenarioRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_hub_testing"
+                },
+                {
                     "name": "externalNavList",
                     "description": "",
                     "properties": [
@@ -11053,6 +11072,7 @@
                 },
                 {
                     "name": "RegressionTest",
+                    "description": "Needs to output a comma-separated list of IDs.",
                     "icon": "icon-undo",
                     "properties": [
                         {

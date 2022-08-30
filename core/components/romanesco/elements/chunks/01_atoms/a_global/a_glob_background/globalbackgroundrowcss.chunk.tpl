@@ -2,7 +2,7 @@
     &subject=`[[+image.crops.mobile.url:empty=``]][[+image.crops.tablet.url:empty=``]][[+image.crops.desktop.url:empty=``]]`
     &operand=`empty`
     &then=`
-    [[pthumb:imgOptimizeThumb=`[[+quality:empty=`[[++img_quality]]`]]`:prepend=`url(`:append=`)`?
+    [[pthumb:imgOptimizeThumb=`[[+quality]]`:prepend=`url(`:append=`)`?
         &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
             &q=[[++romanesco.img_quality]]
@@ -15,11 +15,11 @@
     &subject=`[[+image.crops.[[+imgType]].url]]`
     &operator=`notempty`
     &then=`
-    [[pthumb:imgOptimizeThumb=`[[+quality:empty=`[[++img_quality]]`]]`:prepend=`url(`:append=`)`?
+    [[pthumb:imgOptimizeThumb=`[[+quality]]`:prepend=`url(`:append=`)`?
         &input=`[[+image.url:prepend=`/`]]`
         &options=`w=[[+imgWidth]]
-            &sx=[[If? &subject=`[[+image.crops.[[+imgType]].x]]` &operator=`lt` &operand=`0` &then=`0` &else=`[[+image.crops.[[+imgType]].x]]`]]
-            &sy=[[If? &subject=`[[+image.crops.[[+imgType]].y]]` &operator=`lt` &operand=`0` &then=`0` &else=`[[+image.crops.[[+imgType]].y]]`]]
+            &sx=[[+image.crops.[[+imgType]].x]]
+            &sy=[[+image.crops.[[+imgType]].y]]
             &sw=[[+image.crops.[[+imgType]].width]]
             &sh=[[+image.crops.[[+imgType]].height]]
             &q=[[++romanesco.img_quality]]

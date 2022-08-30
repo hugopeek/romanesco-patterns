@@ -217,6 +217,9 @@
                 {
                     "name": "m_hub",
                     "parent": "02_molecules"
+                },{
+                    "name": "m_hub_testing",
+                    "parent": "m_hub"
                 }
             ]
         }
