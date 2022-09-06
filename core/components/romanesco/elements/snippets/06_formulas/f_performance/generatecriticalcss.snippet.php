@@ -42,7 +42,6 @@ $resourceID = $modx->getOption('id', $scriptProperties, '');
 $resourceURL = $modx->getOption('url', $scriptProperties, '');
 $resourceURI = $modx->getOption('uri', $scriptProperties, '');
 $resource = $modx->getObject('modResource', $resourceID);
-$parallel = $modx->getOption('parallel', $scriptProperties, 0);
 
 if (!($resource instanceof modResource)) return;
 
@@ -54,10 +53,9 @@ if (is_object($task)) {
         'uri' => $resourceURI ?? $resource->get('uri'),
         'cssPath' => $romanesco->getContextSetting('romanesco.custom_css_path', $resource->get('context_key')),
         'distPath' => $romanesco->getContextSetting('romanesco.semantic_dist_path', $resource->get('context_key')),
-        'parallel' => $parallel,
     ));
 
-    return "Critical CSS generated for <strong>{$resource->get('uri')}</strong> ($resourceID)";
+    return "Critical CSS generated for: {$resource->get('uri')} ($resourceID)";
 }
 
 // Run update processor to generate the critical_css_uri TV value
@@ -79,4 +77,4 @@ if ($response->isError()) {
     return $error;
 }
 
-return "Critical CSS will be generated for <strong>{$resource->get('uri')}</strong> ($resourceID)";
+return "Critical CSS will be generated for: {$resource->get('uri')} ($resourceID)";

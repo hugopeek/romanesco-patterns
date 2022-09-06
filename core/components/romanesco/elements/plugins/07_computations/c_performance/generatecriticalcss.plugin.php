@@ -81,10 +81,7 @@ switch ($modx->event->name) {
         if (!($scheduler instanceof Scheduler)) {
             $modx->log(modX::LOG_LEVEL_ERROR, '[GenerateCriticalCSS] Scheduler not found. Generating CSS directly.');
 
-            // NB: this will run in parallel mode, meaning the save action
-            //  doesn't need to wait for the gulp task to finish.
-            //  If multiple resources are saved in rapid succession, this will
-            //  severely degrade performance and eventually cause 500 errors!
+            // NB: this will delay the save action significantly!
             $romanesco->generateCriticalCSS(array(
                 'id' => $id,
                 'uri' => $uri,

@@ -5,15 +5,9 @@
  * This plugin is activated when certain theme settings are changed in the
  * ClientConfig CMP.
  *
- * It changes some variables used by Semantic UI to generate the CSS and it also
+ * It changes some variables used by Semantic UI to generate the CSS, and it
  * triggers a new SUI build in the background. This requires NPM to be available
- * on the server, as well as the exec function.
- *
- * NB! ENABLING THE EXEC FUNCTION ON YOUR SERVER IS A POTENTIAL SECURITY RISK!
- * Please make sure your server and MODX install are sufficiently hardened
- * before enabling this functionality. You can always update the SUI styling and
- * run the build process manually, so there's no harm done if this plugin can't
- * be activated.
+ * on the server.
  *
  * It also generates favicon images if a logo badge is provided. This relies on
  * a few Gulp dependencies (see package.json) and the Real Favicon service:
@@ -29,12 +23,6 @@
  * @var modX $modx
  * @package romanesco
  */
-
-// Check if exec function is available on the server
-if(@exec('echo EXEC') !== 'EXEC'){
-    $modx->log(modX::LOG_LEVEL_ERROR, '[UpdateStyling] Exec function not available');
-    return false;
-}
 
 $eventName = $modx->event->name;
 
@@ -63,7 +51,8 @@ switch($eventName) {
 
         // Continue with theme related settings only
         if (!function_exists('filterThemeSettings')) {
-            function filterThemeSettings($settings) {
+            function filterThemeSettings($settings): array
+            {
                 return array_filter(
                     $settings,
                     function ($key) {
@@ -127,7 +116,7 @@ switch($eventName) {
             }
 
             // Generate custom CSS for this context
-            if (!$romanesco->generateCustomCSS($currentContext, 1, 1)) {
+            if (!$romanesco->generateCustomCSS($currentContext, 1)) {
                 $modx->log(modX::LOG_LEVEL_ERROR, "[Romanesco] Could not generate custom CSS for context $currentContext");
                 break;
             }
