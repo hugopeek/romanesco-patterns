@@ -135,9 +135,11 @@ $configPNG = json_encode([
 
 // Use different compression engine for JPG and PNG
 if (strtolower($imgType) == 'png') {
-    $squooshOptions = ' --oxipng ' . escapeshellarg($configPNG);
+    $squooshType = '--oxipng';
+    $squooshConfig = $configPNG;
 } else {
-    $squooshOptions = ' --mozjpeg ' . escapeshellarg($configJPG);
+    $squooshOption = '--mozjpeg';
+    $squooshConfig = $configJPG;
 }
 
 // Use Scheduler for adding task to queue (if available)
@@ -147,24 +149,15 @@ $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model
 
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
 if (!($scheduler instanceof Scheduler) || is_object($task)) {
-    $output = array();
+    $cmd = [
+        'squoosh-cli',
+        $squooshOption, escapeshellarg($squooshConfig),
+        '--webp', escapeshellarg($configWebP),
+        '--output-dir', escapeshellarg($outputDir),
+        escapeshellarg($imgPathFull)
+    ];
 
-    exec('"$HOME"/.nvm/nvm-exec squoosh-cli' .
-        $squooshOptions .
-        ' --webp ' . escapeshellarg($configWebP) .
-        ' --output-dir ' . escapeshellarg($outputDir) . ' ' . escapeshellarg($imgPathFull) .
-        ' 2>&1',
-        $output,
-        $return_img
-    );
-
-    // Write output to file and error log
-    $logFile = MODX_CORE_PATH . 'cache/logs/img.log';
-    $date = new DateTime();
-    $output = implode("\n",$output) . "\n";
-
-    file_put_contents($logFile, "[" . $date->format("Y-m-d H:i:s") . "] " . $output, FILE_APPEND);
-    $modx->log(modX::LOG_LEVEL_INFO, "\n" . $output);
+    $romanesco->runCommand($cmd, 'img.log');
 
     return;
 }

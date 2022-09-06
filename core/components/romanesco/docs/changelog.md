@@ -9,6 +9,7 @@ New features:
 
 Fixes and improvements:
 - Remove parallel option from generate CSS commands
+- Execute Squoosh optimization via runCommand (Symfony Process)
 - Fix images being optimized with empty quality setting
 - Fix thumbnail errors when x/y value is negative
 - Prevent optimising of images without valid path
@@ -33,7 +34,7 @@ Fixes and improvements:
 Released on May 24, 2022
 
 New features:
-- Add option to show sidebar on mobile
+- Add option to show sidebar on mobile (below content)
 - Add option to show CTA in sidebar
 - Add local submenu variant (only shows children of current page)
 - Add reusable buttons for social connections and sharing
