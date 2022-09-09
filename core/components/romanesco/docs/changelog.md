@@ -8,6 +8,7 @@ New features:
 - Add template for generating BackstopJS regression test configuration
 
 Fixes and improvements:
+- Exclude empty templates when generating critical CSS
 - Remove parallel option from generate CSS commands
 - Execute Squoosh optimization via runCommand (Symfony Process)
 - Fix images being optimized with empty quality setting
