@@ -1,55 +1,68 @@
-<script>
-    event.preventDefault();
-    var formData = $(this).serialize();
+var formData = $(this).serialize();
 
-    $.ajax({
-        type: "POST",
-        url: "contact",
-        data: formData,
-        dataType: "json",
-        encode: true,
-    }).done(function (data) {
-        // If we receive a success message, show an alert.
-        if (data.success) {
-            console.log(data.success);
+$.ajax({
+    type: 'POST',
+    url: '[[~[[*id]]? &scheme=`full` &mode=`ajax`]]',
+    data: formData,
+    dataType: 'json',
+    encode: true,
+})
+.done(function(data) {
+    // If we receive a success message, show an alert.
+    if (data.success) {
+        // Forge success message
+        //let message = '[[$richTextMessage:stripForJS?
+        //    &size=`[[+form_size]]`
+        //    &message_type=`visible success`
+        //    &heading=`[[%formblocks.form.success_heading]]`
+        //    &content=`[[%formblocks.form.success_message]]`
+        //]]';
 
-            // $('body')
-            //     .toast({
-            //         message: data.message,
-            //         class: 'success',
-            //         showIcon: 'checkmark',
-            //         //displayTime: 0,
-            //         //closeIcon: true
-            //     })
-            // ;
-            $('.ui.form#form-contact-example .dimmer').addClass('active');
+        let message = '<strong>[[%formblocks.form.success_heading]]<\/strong><br>';
+        message += data.message;
 
-            setTimeout(function () {
-                $('.ui.form#form-contact-example > div')
-                    .replaceWith('<div class="ui success message">' + data.message + '<\/div>')
-                ;
-            }, 2000)
+        // Avoid stunning the visitor by delaying the success message and showing a dimmer
+        $('.ui.form#form-[[*alias]] .dimmer').addClass('active');
 
-        } else {
-            console.log(data.errors);
+        setTimeout(function() {
+            //$('.ui.form#form-[[*alias]] > div').replaceWith(message);
 
-            $.each(data.errors, function(key, item) {
-                console.log(item);
+            $('.ui.form#form-[[*alias]] .dimmer').removeClass('active');
+            $('.ui.form#form-[[*alias]]').form('clear');
 
-                $('body')
-                    .toast({
-                        message: key + '<br>' + item,
-                        class: 'error',
-                        showIcon: 'exclamation circle',
-                        //displayTime: 0,
-                        closeIcon: true
-                    })
-                ;
+            $('body')
+                .toast({
+                    message: message,
+                    class: 'success',
+                    //showIcon: 'exclamation circle',
+                    //displayTime: 0,
+                    closeIcon: true
+                })
+            ;
+        }, 2000)
+    }
+    else {
+        console.log(data.errors);
 
-                //$("#" + key).parent('.field').addClass('error');
-            });
+        let message = '<strong>[[%formblocks.form.validation_error_heading]]<\/strong><br>';
+        message += '[[%formblocks.form.validation_error_message]]<br>';
 
+        $.each(data.errors, function(key, item) {
+            //message += key + '<br>';
 
-        }
-    });
-</script>
+            $('#' + key + '.field').addClass('error');
+            $('#' + key + '.grouped.fields').addClass('error');
+            $('#' + key).parents('.field').addClass('error');
+        });
+
+        $('body')
+            .toast({
+                message: message,
+                class: 'error',
+                //showIcon: 'exclamation circle',
+                //displayTime: 0,
+                closeIcon: true
+            })
+        ;
+    }
+});

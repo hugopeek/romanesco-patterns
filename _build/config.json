@@ -13154,6 +13154,13 @@
                 "value": "1"
             },
             {
+                "key": "submit_ajax",
+                "namespace": "formblocks",
+                "type": "combo-boolean",
+                "area": "FormBlocks - Settings",
+                "value": "0"
+            },
+            {
                 "key": "formsource",
                 "namespace": "formblocks",
                 "type": "combo-boolean",

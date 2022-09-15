@@ -38,7 +38,7 @@
         [[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]]
         [[++formblocks.antispam_hooks:append=`,`]]
         [[-+math_question:isnot=`0`:then=`math,`]]
-        [[-+save_form:eq=`1`:then=`FormItSaveForm,`]]
+        [[+save_form:eq=`1`:then=`FormItSaveForm,`]]
         [[*fb_hooks:append=`,`]]
         [[If? &subject=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to]]`]]` &operator=`notempty` &then=`email,`]]
         [[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]]
@@ -99,7 +99,7 @@
     &hookErrorJsonOutputPlaceholder=`hook_error_placeholder`
     &errTpl=`[[+error]]`
 
-    &successMessage=`{"success":true,"message":"Hoi"}`
+    &successMessage=`{"success":true,"message":"[[%formblocks.form.success_message]]"}`
     &successMessagePlaceholder=`fb[[*id]].success_message`
 
 ]][[!+fb[[*id]].validation_error_message]][[!+fb[[*id]].success_message]]

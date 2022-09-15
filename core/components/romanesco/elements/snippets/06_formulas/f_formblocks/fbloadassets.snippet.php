@@ -20,8 +20,10 @@ $assetsPathJS = $modx->getOption('romanesco.semantic_js_path', $scriptProperties
 $assetsPathVendor = $modx->getOption('romanesco.semantic_vendor_path', $scriptProperties, '');
 $assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProperties, '');
 $uploadFile = $modx->getOption('uploadFile', $scriptProperties, 0);
-$validation = $modx->getOption('frontendValidation', $scriptProperties, 0);
+$validation = $modx->getOption('frontendValidation', $scriptProperties, $modx->getOption('formblocks.frontend_validation'));
 $validationTpl = $modx->getOption('validationTpl', $scriptProperties, 'fbValidation');
+$ajax = $modx->getOption('submitAjax', $scriptProperties, $modx->getOption('formblocks.submit_ajax'));
+$ajaxTpl = $modx->getOption('submitAjaxTpl', $scriptProperties, 'fbSubmitAjax');
 
 // Load strings to insert in asset paths when cache busting is enabled
 $cacheBusterCSS = $romanesco->getCacheBustingString('CSS');
@@ -36,6 +38,7 @@ if ($romanesco->getConfigSetting('critical_css', $modx->resource->get('context_k
 // Load CSS
 $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/form.min' . $cacheBusterCSS . '.css"' . $async . '>');
 $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/calendar.min' . $cacheBusterCSS . '.css"' . $async . '>');
+$modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/table.min' . $cacheBusterCSS . '.css"' . $async . '>');
 
 // Load JS
 $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/form.min' . $cacheBusterJS . '.js"></script>');
@@ -48,9 +51,14 @@ if ($uploadFile) {
     $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/fileupload.min' . $cacheBusterJS . '.js"></script>');
 }
 
-// Load front-end validation, if enabled
-if ($validation && $modx->getOption('formblocks.frontend_validation', $scriptProperties, '')) {
+// Load frontend validation, if enabled
+if ($validation) {
     $modx->regClientHTMLBlock($modx->getChunk($validationTpl));
+}
+
+// Submit form via AJAX (only if frontend validation is disabled)
+if (!$validation && $ajax) {
+    $modx->regClientHTMLBlock($modx->getChunk($ajaxTpl));
 }
 
 // Load custom assets, if present

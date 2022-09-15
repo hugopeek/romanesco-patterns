@@ -160,7 +160,17 @@
             [[$fbSubmitButton[[+multiple_steps:notempty=`s`]]]]
         </fieldset>
         `]]
+
+        [[++formblocks.submit_ajax:notempty=`
+        <div class="ui inverted dimmer">
+            <div class="ui text loader">[[%formblocks.form.submit_loading]]</div>
+        </div>
+        `]]
     </div>
 </form>
 
-[[!fbLoadAssets? &uploadFile=`[[+upload_multiple]]` &frontendValidation=`1`]]
+[[!fbLoadAssets?
+    &uploadFile=`[[+upload_multiple]]`
+    &frontendValidation=`[[++formblocks.frontend_validation]]`
+    &submitAjax=`[[++formblocks.submit_ajax]]`
+]]

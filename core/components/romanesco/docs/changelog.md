@@ -4,7 +4,7 @@
 Released on ...
 
 New features:
-- Add ability to submit forms via Ajax [WIP]
+- Add ability to submit forms via Ajax
 - Add template for generating BackstopJS regression test configuration
 
 Fixes and improvements:
