@@ -47,6 +47,10 @@ $.ajax({
         let message = '<strong>[[%formblocks.form.validation_error_heading]]<\/strong><br>';
         message += '[[%formblocks.form.validation_error_message]]<br>';
 
+        // Remove previously set error classes first
+        $('.ui.form#form-[[*alias]] .field.error').removeClass('error');
+        $('.ui.form#form-[[*alias]] .grouped.fields.error').removeClass('error');
+
         $.each(data.errors, function(key, item) {
             //message += key + '<br>';
 
