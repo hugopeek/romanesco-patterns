@@ -36,7 +36,7 @@
     &5=`[[++site_start]]`
 ]]
 
-[[!FormIt?
+[[[[++formblocks.submit_ajax:eq=`1`:then=`-`:else=`!`]]FormIt?
     &preHooks=`
         [[+upload_multiple:eq=`1`:then=`Formit2AjaxUpload,`]]
         [[+multiple_steps:notempty=`fbSetStoredValues,`]]
@@ -161,7 +161,7 @@
         </fieldset>
         `]]
 
-        [[++formblocks.submit_ajax:notempty=`
+        [[++formblocks.submit_ajax:eq=`1`:then=`
         <div class="ui inverted dimmer">
             <div class="ui text loader">[[%formblocks.form.submit_loading]]</div>
         </div>
@@ -169,7 +169,7 @@
     </div>
 </form>
 
-[[!fbLoadAssets?
+[[fbLoadAssets?
     &uploadFile=`[[+upload_multiple]]`
     &frontendValidation=`[[++formblocks.frontend_validation]]`
     &submitAjax=`[[++formblocks.submit_ajax]]`
