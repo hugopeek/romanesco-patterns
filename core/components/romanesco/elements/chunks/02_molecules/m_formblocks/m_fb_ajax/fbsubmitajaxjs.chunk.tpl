@@ -1,3 +1,4 @@
+e.preventDefault();
 var formData = $(this).serialize();
 
 $.ajax({
@@ -70,3 +71,7 @@ $.ajax({
         ;
     }
 });
+
+[[loadAssets? &component=`toast`]]
+[[loadAssets? &component=`loader`]]
+[[loadAssets? &component=`dimmer`]]

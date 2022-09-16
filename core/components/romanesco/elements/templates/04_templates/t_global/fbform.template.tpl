@@ -142,9 +142,9 @@
 
         [[- CUSTOM SUBMIT BUTTON
             If for some reason you need to add your own submit button to a form,
-            you can do so in the form resource itself.
-            Please keep in mind that the elements below will not be parsed if a
-            submit button is found in the content area.
+            you can do so in the form resource itself. Please keep in mind that
+            the elements below will not be parsed if a submit button is found in
+            the content area.
         ]]
         [[*content:containsnot=`type="submit"`:then=`
         <fieldset class="ui [[+padding]] [[+segment_type:isnot=`none`:then=`segment`]]">

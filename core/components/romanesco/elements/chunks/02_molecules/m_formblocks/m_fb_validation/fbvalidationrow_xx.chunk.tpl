@@ -1,1 +1,1 @@
-[[!$fbValidationRow]]
+[[$fbValidationRow? &uid=`[[+uid]]`]]
