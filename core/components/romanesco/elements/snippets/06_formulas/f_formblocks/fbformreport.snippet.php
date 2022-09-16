@@ -27,8 +27,10 @@ $reqOnly = $modx->getOption('requiredOnly', $scriptProperties, '');
 $outputReverse = $modx->getOption('outputReverse', $scriptProperties, 0);
 
 if (!function_exists('getFields')) {
-    function getFields(&$modx, $data, $prefix, $id, $reqOnly) {
-        $result = '';
+    function getFields(&$modx, $data, $prefix, $id, $uid, $reqOnly): array
+    {
+        $result = [];
+        $idx = 0;
 
         foreach($data as $value) {
             if (!is_array($value)) {
@@ -36,7 +38,9 @@ if (!function_exists('getFields')) {
             }
 
             if (isset($value['field'])) {
+                $idx++;
                 $value['settings']['id'] = $id;
+                $value['settings']['uid'] = $uid . '_' . $idx;
 
                 // Only return required fields if specified
                 if ($reqOnly) {
@@ -52,23 +56,25 @@ if (!function_exists('getFields')) {
                             $value['settings']['field_type'] = 'terms';
                             break;
                         case $modx->getOption('formblocks.cb_math_question_id'):
-                            $value['settings']['field_required'] = 1;
-                            $value['settings']['field_type'] = 'math';
+                            // Almost always...
+                            if (!$modx->getOption('formblocks.submit_ajax')) {
+                                $value['settings']['field_required'] = 1;
+                                $value['settings']['field_type'] = 'math';
+                            }
                             break;
                     }
-
-                    //$modx->log(modX::LOG_LEVEL_ERROR, print_r($value['settings'],1));
 
                     if ($value['settings']['field_required'] != 1) {
                         continue;
                     }
                 }
 
-                $result .= $modx->getChunk($prefix.$value['field'], $value['settings']);
+                $result[] = $modx->getChunk($prefix.$value['field'], $value['settings']);
                 continue;
             }
 
-            $result .= getFields($modx, $value, $prefix, $id, $reqOnly);
+            // This iterates over nested fields, so idx becomes parent (layout) idx
+            $result[] = getFields($modx, $value, $prefix, $id, $uid++, $reqOnly);
         }
 
         return $result;
@@ -87,30 +93,42 @@ if ($allSteps && $allForms) {
     $allFormSteps = array_combine(array_filter($allForms), array_filter($allSteps));
 }
 
-// Reverse output to display multi-step forms in consecutive order
+// Reverse output to display multistep forms in consecutive order
 if ($outputReverse) {
     $forms = array_reverse($forms);
 }
 
+// Set UID to help with caching
+// UID format will end up as formID_layoutID_idx
+$uid = $formID . '_0';
+
 foreach ($forms as $formID) {
     $resource = $modx->getObject('modResource', $formID);
     $cbData = json_decode($resource->getProperty('content', 'contentblocks'), true);
-    $result = '';
+    $result = [];
+    $uid++;
 
     // Only add header if there are multiple forms and a tpl chunk present
     if ($forms[1] && $tplSectionHeader) {
         $title = $resource->get('menutitle') ? $resource->get('menutitle') : $resource->get('pagetitle');
-        $result .= $modx->getChunk($tplSectionHeader, ['title' => $title]);
+        $result[] = $modx->getChunk($tplSectionHeader, ['title' => $title]);
     }
 
     // Add hidden field to indicate this step is completed
     if ($allFormSteps) {
-        $result .= $modx->getChunk($tplStepCompleted, ['id' => $allFormSteps[$formID]]);
+        $result[] = $modx->getChunk($tplStepCompleted, ['id' => $allFormSteps[$formID]]);
     }
 
-    $result .= getFields($modx, $cbData, $tplPrefix, $formID, $reqOnly);
+    // Get fields
+    $fields = getFields($modx, $cbData, $tplPrefix, $formID, $uid, $reqOnly);
 
-    $output[] = $result;
+    // Flatten fields array
+    $fields = new RecursiveIteratorIterator(new RecursiveArrayIterator($fields));
+    foreach($fields as $field) {
+        $result[] = $field;
+    }
+
+    $output[] = implode($result);
 }
 
 return implode($output);
