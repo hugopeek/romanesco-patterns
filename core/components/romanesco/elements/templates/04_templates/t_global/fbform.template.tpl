@@ -140,6 +140,13 @@
 
         [[*content]]
 
+        [[- DIM FORM DURING AJAX SUBMISSION ]]
+        [[++formblocks.submit_ajax:eq=`1`:then=`
+        <div class="ui inverted dimmer">
+            <div class="ui text loader">[[%formblocks.form.submit_loading]]</div>
+        </div>
+        `]]
+
         [[- CUSTOM SUBMIT BUTTON
             If for some reason you need to add your own submit button to a form,
             you can do so in the form resource itself. Please keep in mind that
@@ -159,12 +166,6 @@
 
             [[$fbSubmitButton[[+multiple_steps:notempty=`s`]]]]
         </fieldset>
-        `]]
-
-        [[++formblocks.submit_ajax:eq=`1`:then=`
-        <div class="ui inverted dimmer">
-            <div class="ui text loader">[[%formblocks.form.submit_loading]]</div>
-        </div>
         `]]
     </div>
 </form>
