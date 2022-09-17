@@ -54,8 +54,11 @@
 `]]
 
 [[- LOAD JS ASSETS WITH DEFER, SO DOWNLOADING WILL START EARLY WITHOUT BLOCKING RENDERING ]]
-<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script defer src="[[++romanesco.semantic_js_path]]/jquery-offline.min[[+cache_buster_js:notempty=`.360`]].js"></script>
+[[++romanesco.dev_mode:ne=`1`:then=`
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+`:else=`
+<script defer src="[[++romanesco.semantic_vendor_path]]/jquery/jquery.min[[+cache_buster_js:notempty=`.361`]].js"></script>
+`]]
 <script defer src="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_js]].js"></script>
 <script defer src="[[++romanesco.semantic_js_path]]/onmediaquery[[+minify]][[+cache_buster_js]].js"></script>
 <script defer src="[[++romanesco.semantic_vendor_path]]/vanilla-lazyload/lazyload.min[[+cache_buster_js]].js"></script>
@@ -106,7 +109,7 @@
 
 [[[[If?
     &subject=`[[++romanesco.private_backyard]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`1`
     &then=`!checkPermissions? &context=`hub``
 ]]]]

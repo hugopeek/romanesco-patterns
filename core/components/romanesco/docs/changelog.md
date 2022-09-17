@@ -8,6 +8,7 @@ New features:
 - Add template for generating BackstopJS regression test configuration
 
 Fixes and improvements:
+- Disable Jquery fallback and only load from local source in dev mode
 - Cache form validation elements
 - Exclude empty templates when generating critical CSS
 - Remove parallel option from generate CSS commands
