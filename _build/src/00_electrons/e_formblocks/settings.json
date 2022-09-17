@@ -31,7 +31,7 @@
                 "area": "FormBlocks - Settings",
                 "value": "1"
             },{
-                "key": "submit_ajax",
+                "key": "ajax_mode",
                 "namespace": "formblocks",
                 "type": "combo-boolean",
                 "area": "FormBlocks - Settings",

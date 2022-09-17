@@ -22,7 +22,7 @@ $assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProper
 $uploadFile = $modx->getOption('uploadFile', $scriptProperties, 0);
 $validation = $modx->getOption('frontendValidation', $scriptProperties, $modx->getOption('formblocks.frontend_validation'));
 $validationTpl = $modx->getOption('validationTpl', $scriptProperties, 'fbValidation');
-$ajax = $modx->getOption('submitAjax', $scriptProperties, $modx->getOption('formblocks.submit_ajax'));
+$ajax = $modx->getOption('ajaxMode', $scriptProperties, $modx->getOption('formblocks.ajax_mode'));
 $ajaxTpl = $modx->getOption('submitAjaxTpl', $scriptProperties, 'fbSubmitAjax');
 
 // Load strings to insert in asset paths when cache busting is enabled

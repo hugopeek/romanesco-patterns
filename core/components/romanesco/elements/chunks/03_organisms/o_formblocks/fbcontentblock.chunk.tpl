@@ -4,7 +4,7 @@
     &then=`$fbPrepareSteps`
 ]]]]
 
-[[[[++formblocks.submit_ajax:eq=`1`:then=``:else=`!`]]$fbRenderFormWrapper?
+[[[[++formblocks.ajax_mode:eq=`1`:then=``:else=`!`]]$fbRenderFormWrapper?
     &form_id=`[[+form_id]]`
     &current_id=`[[*id]]`
     &current_pagetitle=`[[*pagetitle]]`

@@ -57,7 +57,7 @@ if (!function_exists('getFields')) {
                             break;
                         case $modx->getOption('formblocks.cb_math_question_id'):
                             // Almost always...
-                            if (!$modx->getOption('formblocks.submit_ajax')) {
+                            if (!$modx->getOption('formblocks.ajax_mode')) {
                                 $value['settings']['field_required'] = 1;
                                 $value['settings']['field_type'] = 'math';
                             }

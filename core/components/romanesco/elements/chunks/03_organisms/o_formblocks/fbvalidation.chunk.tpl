@@ -28,7 +28,7 @@
                         and the code below will not be executed.
                     ]]
                     [[[[If?
-                        &subject=`[[++formblocks.submit_ajax]]`
+                        &subject=`[[++formblocks.ajax_mode]]`
                         &operator=`eq`
                         &operand=`1`
                         &then=`$fbSubmitAjaxJS`
