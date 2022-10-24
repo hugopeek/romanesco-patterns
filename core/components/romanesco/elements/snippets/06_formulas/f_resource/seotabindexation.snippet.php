@@ -16,13 +16,11 @@ $seoTab = $modx->getObject('modPlugin', array('name'=>'StercSEO','disabled'=>0))
 //$resource =& $modx->event->params['resource'];
 
 // First, check if SEOTab plugin is installed, and active
-if (!is_object($seoTab)) {
+if (!is_object($seoTab) || !is_object($resource)) {
     return '';
 }
 
-if (is_object($resource)) {
-    $properties = $resource->getProperties('stercseo');
-}
+$properties = $resource->getProperties('stercseo');
 
 if ($properties['index'] == 1) {
     $index = 'index';

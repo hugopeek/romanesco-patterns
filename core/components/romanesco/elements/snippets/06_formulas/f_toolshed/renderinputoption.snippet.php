@@ -82,6 +82,8 @@ if (!function_exists('getInputOption')) {
 
 if ($value == '') { return ''; }
 
+$output = [];
+
 // Find matching ID by default
 if (!$match) { $match = 'id'; }
 

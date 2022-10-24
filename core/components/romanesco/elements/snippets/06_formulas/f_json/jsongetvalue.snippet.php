@@ -13,6 +13,7 @@ $toPlaceholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
 // @todo: test if input is valid JSON, otherwise NULL is returned
 $input = utf8_encode($input);
 $array = json_decode($input, true);
+$output = '';
 
 // Flatten first level, since that's always the full JSON object itself
 $array = $array[0];

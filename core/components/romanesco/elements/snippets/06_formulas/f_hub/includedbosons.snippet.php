@@ -27,7 +27,6 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'includedContentBlocksRow');
 $htmlContentType = $modx->getObject('modContentType', array('name' => 'HTML'));
 
 // Function to turn result into a link to its corresponding resource
-// @todo: This function is also being used in the referringBosons snippet.. Could this somehow be loaded from 1 file?
 if (!function_exists('createLink')) {
     function createLink($catID, $uriExtension) {
         global $modx;
@@ -37,6 +36,7 @@ if (!function_exists('createLink')) {
             'id' => $catID
         ));
 
+        $catName = '';
         if ($category) {
             $catName = strtolower($category->get('name'));
         } else {
@@ -53,9 +53,8 @@ if (!function_exists('createLink')) {
             'AND:uri:LIKE' => '%' . $catName . $uriExtension
         ));
         $query->select('uri');
-        $link = $modx->getValue($query->prepare());
 
-        return $link;
+        return $modx->getValue($query->prepare());
     }
 }
 
@@ -90,6 +89,8 @@ if (is_array($result)) {
 $arrayFilter = explode(',', $filterFields);
 
 // Turn each match into a list item with a link
+$boson = '';
+$output = [];
 foreach ($result as $id) {
     if (!in_array($id, $arrayFilter)) {
         $boson = $modx->getObject('cbField', array(

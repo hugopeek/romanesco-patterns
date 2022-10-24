@@ -134,6 +134,7 @@ $configPNG = json_encode([
 ]);
 
 // Use different compression engine for JPG and PNG
+$squooshOption = '';
 if (strtolower($imgType) == 'png') {
     $squooshType = '--oxipng';
     $squooshConfig = $configPNG;

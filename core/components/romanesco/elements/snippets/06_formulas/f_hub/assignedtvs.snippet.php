@@ -4,6 +4,7 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 
 // Get template as object
 $template = $modx->getObject('modTemplate', array('templatename'=>$templateName));
+$templateID = '';
 
 // Get the ID of the template
 if ($template) {
@@ -15,13 +16,12 @@ if ($template) {
 // Look in the tmplvar_templates table to find attached TVs
 $assignedTVs = $modx->getCollection('modTemplateVarTemplate', array('templateid' => $templateID));
 
+// Create the list
+$tvList = [];
 foreach ($assignedTVs as $tv) {
-    $tmplvarid = $tv->get('tmplvarid');
-    $tvList .= $tmplvarid . ",";
+    $tvList[] = $tv->get('tmplvarid');
 }
-
-// Turn result into array
-$tvList = array_filter(explode(',', $tvList));
+$tvList = array_filter($tvList);
 
 // Sort list
 // @todo: sort array alphabetically

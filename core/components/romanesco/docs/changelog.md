@@ -4,10 +4,11 @@
 Released on ...
 
 New features:
-- Add ability to submit forms via Ajax
+- Add ability to submit forms via Ajax (Experimental)
 - Add template for generating BackstopJS regression test configuration
 
 Fixes and improvements:
+- Define variables that could potentially be empty (for PHP8 compatibility)
 - Disable Jquery fallback and only load from local source in dev mode
 - Cache form validation elements
 - Exclude empty templates when generating critical CSS

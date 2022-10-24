@@ -25,6 +25,7 @@ if ($file) {
 // Create an array of all lines inside the input
 $lines = explode("\n", $lines);
 $i = 0;
+$output = [];
 
 // Check if the line contains the string we're looking for, and print if it does
 foreach ($lines as $line) {
@@ -44,8 +45,8 @@ foreach ($lines as $line) {
     }
 }
 
-if (is_array($output)) {
+if ($output) {
     return implode('<br>', $output);
-} else {
-    return $output;
 }
+
+return '';

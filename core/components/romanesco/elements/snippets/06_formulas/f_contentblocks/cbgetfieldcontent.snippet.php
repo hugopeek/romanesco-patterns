@@ -129,6 +129,7 @@ else {
             $filters = explode(',', $fieldSettingFilter);
             $debug['filters'] = array('original' => $filters);
             foreach($filters as $i => $filter) {
+                $operator = '';
                 foreach($operators as $op => $symbol) {
                     if (strpos($filter, $op, 1) !== false) {
                         $operator = $op;
