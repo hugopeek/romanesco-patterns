@@ -84,7 +84,7 @@
                 "area": "Date and Time",
                 "value": "%A %e %B, %Y"
             },{
-                "key": "shell_path",
+                "key": "env_path",
                 "type": "textfield",
                 "area": "Environment"
             },{

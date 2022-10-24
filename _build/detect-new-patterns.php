@@ -8,7 +8,7 @@
 $jsonArray = json_decode(file_get_contents('config.json'), true);
 
 // Location of Backyard resources
-$backyardPath = '/home/hugo/Localhost/packages/romanesco-backyard/core/components/romanescobackyard/resources/05_pages/hub/patterns';
+$backyardPath = '/var/www/packages/romanesco-backyard/core/components/romanescobackyard/resources/05_pages/hub/patterns';
 
 // Function to look for a key in a multi level array
 if (!function_exists('recursive_array_search')) {
