@@ -144,16 +144,8 @@ switch ($component) {
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/prism/prism.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'map':
-        $modx->regClientStartupHTMLBlock(
-            '<link rel="stylesheet" href="' . $modx->getOption('romanesco.leaflet_css_url', $scriptProperties) .
-            '" integrity="' . $modx->getOption('romanesco.leaflet_css_integrity', $scriptProperties) .
-            '" crossorigin="">'
-        );
-        $modx->regClientStartupHTMLBlock(
-            '<script defer src="' . $modx->getOption('romanesco.leaflet_js_url', $scriptProperties) .
-            '" integrity="' . $modx->getOption('romanesco.leaflet_js_integrity', $scriptProperties) .
-            '" crossorigin=""></script>'
-        );
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathVendor . '/leaflet/leaflet' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/leaflet/leaflet' . $cacheBusterJS . '.js"></script>');
         break;
     case 'custom':
         if (!function_exists('is_json')) {

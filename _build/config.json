@@ -12914,30 +12914,6 @@
                 "value": "0"
             },
             {
-                "key": "leaflet_css_url",
-                "value": "https://unpkg.com/leaflet@1.8.0/dist/leaflet.css",
-                "type": "textfield",
-                "area": "Map"
-            },
-            {
-                "key": "leaflet_css_integrity",
-                "value": "sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==",
-                "type": "textfield",
-                "area": "Map"
-            },
-            {
-                "key": "leaflet_js_url",
-                "value": "https://unpkg.com/leaflet@1.8.0/dist/leaflet.js",
-                "type": "textfield",
-                "area": "Map"
-            },
-            {
-                "key": "leaflet_js_integrity",
-                "value": "sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==",
-                "type": "textfield",
-                "area": "Map"
-            },
-            {
                 "key": "mapbox_username",
                 "type": "textfield",
                 "area": "Map"
