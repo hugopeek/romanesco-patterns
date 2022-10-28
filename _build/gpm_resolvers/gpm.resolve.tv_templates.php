@@ -1420,6 +1420,10 @@ if ($object->xpdo) {
   array (
     0 => 'GlobalBackground',
   ),
+  'reference_url' => 
+  array (
+    0 => 'RegressionTest',
+  ),
   'author_id' => 
   array (
     0 => 'Publications',

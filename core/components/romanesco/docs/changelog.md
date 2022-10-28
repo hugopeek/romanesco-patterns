@@ -1,13 +1,14 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta10
-Released on ...
+Released on October 28, 2022
 
 New features:
 - Add ability to submit forms via Ajax (Experimental)
 - Add template for generating BackstopJS regression test configuration
 
 Fixes and improvements:
+- Load Leaflet assets directly (without CDN)
 - Define variables that could potentially be empty (for PHP8 compatibility)
 - Disable Jquery fallback and only load from local source in dev mode
 - Cache form validation elements
