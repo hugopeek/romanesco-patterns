@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta11
+Released on ...
+
+Fixes and improvements:
+- Only activate mousewheel scrolling on focus in rendered Leaflet map
+
 ## Romanesco Patterns 1.0.0-beta10
 Released on October 28, 2022
 
