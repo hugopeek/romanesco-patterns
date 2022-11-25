@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Include modified Hits snippet, to prevent fatal errors in PHP 8
 - Turn footer type TV into selector, to accommodate larger lists
 - Only activate mousewheel scrolling on focus in rendered Leaflet map
 
@@ -16,7 +17,7 @@ New features:
 
 Fixes and improvements:
 - Load Leaflet assets directly (without CDN)
-- Define variables that could potentially be empty (for PHP8 compatibility)
+- Define variables that could potentially be empty (for PHP 8 compatibility)
 - Disable Jquery fallback and only load from local source in dev mode
 - Cache form validation elements
 - Exclude empty templates when generating critical CSS

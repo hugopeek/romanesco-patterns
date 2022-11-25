@@ -11678,6 +11678,21 @@
                     "category": "f_framework"
                 },
                 {
+                    "name": "Hits",
+                    "description": "Overwrites the default snippet inside the Hits package. Contains a fix for preventing fatal errors in PHP 8.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_framework"
+                },
+                {
                     "name": "FibonacciSequence",
                     "description": "Generate a sequence of Fibonacci numbers. In a Fibonacci sequence, every number after the first two is the sum of the two preceding ones.",
                     "properties": [
