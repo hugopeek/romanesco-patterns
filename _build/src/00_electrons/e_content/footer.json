@@ -24,7 +24,7 @@
                     "caption": "Footer type",
                     "name": "footer_type",
                     "description": "Choose which content to display inside the footer. You can add different footers under Global Content > Footers. A default footer can be defined under Configuration, or as context setting.",
-                    "type": "option",
+                    "type": "listbox",
                     "defaultValue": "@INHERIT default",
                     "inputOptionValues": "@CHUNK tvSelectFooter",
                     "properties": [

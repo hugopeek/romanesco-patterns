@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Turn footer type TV into selector, to accommodate larger lists
 - Only activate mousewheel scrolling on focus in rendered Leaflet map
 
 ## Romanesco Patterns 1.0.0-beta10
