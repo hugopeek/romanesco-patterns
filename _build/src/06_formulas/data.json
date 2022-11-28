@@ -14,7 +14,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_toolshed"
+                    "category": "f_data"
                 },{
                     "name": "migxSaveOptionGroup",
                     "description": "Aftersave hook for MIGXdb. Updates existing keys in child options if you change this setting in Group. Also increments the sort order.",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_toolshed"
+                    "category": "f_data"
                 },{
                     "name": "migxSaveRelated",
                     "description": "Aftersave hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, better watch your back with those!",
@@ -40,7 +40,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_toolshed"
+                    "category": "f_data"
                 },{
                     "name": "migxSaveExternalLink",
                     "description": "Aftersave hook for MIGXdb. Increments the link number per resource, so you don't have to fiddle with that manually (as long as you enter the links in the correct order).",
@@ -53,7 +53,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_toolshed"
+                    "category": "f_data"
                 },{
                     "name": "migxSaveTaskComment",
                     "description": "Aftersave hook for MIGXdb. Links the comment to the parent task.",
@@ -66,7 +66,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_toolshed"
+                    "category": "f_data"
                 },{
                     "name": "migxResetNULL",
                     "description": "After save hook for MIGXdb. Prevents database fields with default value of NULL from being set to 0 after a save action in MIGX.",
@@ -79,7 +79,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_toolshed"
+                    "category": "f_data"
                 },{
                     "name": "renderInputOption",
                     "description": "Fetch option name from the romanesco_options table (when used as output modifier). You can also get other available fields with a regular snippet call and tpl chunk.",
@@ -92,13 +92,13 @@
                             "value": ""
                         }
                     ],
-                    "category": "f_toolshed"
+                    "category": "f_data"
                 }
             ],
 
             "categories": [
                 {
-                    "name": "f_toolshed",
+                    "name": "f_data",
                     "parent": "06_formulas"
                 }
             ]

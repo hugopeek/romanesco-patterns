@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Rename Tool Shed to Project Data
 - Include modified Hits snippet, to prevent fatal errors in PHP 8
 - Turn footer type TV into selector, to accommodate larger lists
 - Only activate mousewheel scrolling on focus in rendered Leaflet map

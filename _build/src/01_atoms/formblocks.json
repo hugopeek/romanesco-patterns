@@ -160,7 +160,7 @@
                     "category": "a_fb_input"
                 },{
                     "name": "fbSelectOptionRowInputOption",
-                    "description": "A row template for using the input options found under Manage > Tool shed.",
+                    "description": "A row template for using the input options found under Manage > Project data.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -202,7 +202,7 @@
                     "category": "a_fb_input"
                 },{
                     "name": "fbSelectDropdownRowInputOption",
-                    "description": "A row template for using the input options found under Manage > Tool shed.",
+                    "description": "A row template for using the input options found under Manage > Project data.",
                     "properties": [
                         {
                             "name": "elementStatus",
