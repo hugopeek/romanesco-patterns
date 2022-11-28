@@ -8,7 +8,7 @@
 &alignment=`[[+alignment]]`
 &responsive=`[[+responsive]]`
 &prefix=`[[+prefix]]`
-&unique_idx=`[[+layout_title:stripAsAlias:append=`_`]][[+layout_id]]_[[+unique_idx]]`
+&unique_idx=`[[+prefix]]`
 &title_field=`[[+title_field]]`
 &title_hierarchy=`[[+title_hierarchy]]`
 &title_classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`

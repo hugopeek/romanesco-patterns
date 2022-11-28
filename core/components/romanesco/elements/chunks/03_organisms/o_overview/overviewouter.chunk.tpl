@@ -1,4 +1,5 @@
-[[setBoxType? &input=`[[+row_tpl]]` &prefix=`ov_[[+layout_id]]_[[+unique_idx]]`]]
+[[+layout_title:stripAsAlias:empty=`ov`:toPlaceholder=`ov_id`]]
+[[setBoxType? &input=`[[+row_tpl]]` &prefix=`[[+ov_id]]_[[+layout_id]]_[[+unique_idx]]`]]
 
 [[$overviewSettingsPrepare? &uid=`[[+prefix]]`]]
 
@@ -9,7 +10,7 @@
     &parents=`[[+parent]]`
     &resources=`[[+excluded_resources]]`
     &depth=`[[+depth]]`
-    &limit=`[[If? &subject=`[[+prefix]]` &operator=`is` &operand=`ov__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
+    &limit=`[[modifiedIf? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &offset=`[[+offset:default=`0`]]`
     &tpl=`overviewRow[[+[[+prefix]].row_type]]`
     &tplWrapper=`overviewWrapper[[+pagination:eq=`1`:then=`Pagination`]]`
