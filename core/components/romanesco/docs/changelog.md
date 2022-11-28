@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Improve clearing of custom cache
 - Include layout ID in overview placeholder prefix
 - Rename Tool Shed to Project Data
 - Include modified Hits snippet, to prevent fatal errors in PHP 8

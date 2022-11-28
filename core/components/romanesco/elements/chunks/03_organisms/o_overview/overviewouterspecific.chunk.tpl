@@ -5,7 +5,7 @@
 
 [[!getCache?
     &element=`getResources`
-    [[++custom_cache:eq=`1`:then=`&cacheKey=`overviews``]]
+    [[++custom_cache:eq=`1`:then=`&cacheKey=`custom/overviews``]]
 
     &parents=`-1`
     &resources=`[[+resources]]`
