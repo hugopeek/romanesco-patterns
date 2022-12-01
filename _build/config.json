@@ -700,6 +700,10 @@
                     "parent": "06_formulas"
                 },
                 {
+                    "name": "f_data",
+                    "parent": "06_formulas"
+                },
+                {
                     "name": "f_formblocks",
                     "parent": "06_formulas"
                 },
@@ -737,10 +741,6 @@
                 },
                 {
                     "name": "f_resource",
-                    "parent": "06_formulas"
-                },
-                {
-                    "name": "f_data",
                     "parent": "06_formulas"
                 },
                 {
@@ -11468,6 +11468,111 @@
                     "category": "f_contentblocks"
                 },
                 {
+                    "name": "migxSaveOption",
+                    "description": "Aftersave hook for MIGXdb. Gets and sets the group (parent) ID inside a nested configuration. Also generates an alias if none is present and increments the sort order.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "migxSaveOptionGroup",
+                    "description": "Aftersave hook for MIGXdb. Updates existing keys in child options if you change this setting in Group. Also increments the sort order.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "migxSaveRelated",
+                    "description": "Aftersave hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, better watch your back with those!",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "migxSaveExternalLink",
+                    "description": "Aftersave hook for MIGXdb. Increments the link number per resource, so you don't have to fiddle with that manually (as long as you enter the links in the correct order).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "migxSaveTaskComment",
+                    "description": "Aftersave hook for MIGXdb. Links the comment to the parent task.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "migxResetNULL",
+                    "description": "After save hook for MIGXdb. Prevents database fields with default value of NULL from being set to 0 after a save action in MIGX.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "renderInputOption",
+                    "description": "Fetch option name from the romanesco_options table (when used as output modifier). You can also get other available fields with a regular snippet call and tpl chunk.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
                     "name": "fbGetForms",
                     "description": "",
                     "properties": [
@@ -12441,111 +12546,6 @@
                         }
                     ],
                     "category": "f_resource"
-                },
-                {
-                    "name": "migxSaveOption",
-                    "description": "Aftersave hook for MIGXdb. Gets and sets the group (parent) ID inside a nested configuration. Also generates an alias if none is present and increments the sort order.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_data"
-                },
-                {
-                    "name": "migxSaveOptionGroup",
-                    "description": "Aftersave hook for MIGXdb. Updates existing keys in child options if you change this setting in Group. Also increments the sort order.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_data"
-                },
-                {
-                    "name": "migxSaveRelated",
-                    "description": "Aftersave hook for MIGXdb. Sets source and target IDs in opposite direction also, to establish a double cross-link. Yeah, better watch your back with those!",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_data"
-                },
-                {
-                    "name": "migxSaveExternalLink",
-                    "description": "Aftersave hook for MIGXdb. Increments the link number per resource, so you don't have to fiddle with that manually (as long as you enter the links in the correct order).",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_data"
-                },
-                {
-                    "name": "migxSaveTaskComment",
-                    "description": "Aftersave hook for MIGXdb. Links the comment to the parent task.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_data"
-                },
-                {
-                    "name": "migxResetNULL",
-                    "description": "After save hook for MIGXdb. Prevents database fields with default value of NULL from being set to 0 after a save action in MIGX.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_data"
-                },
-                {
-                    "name": "renderInputOption",
-                    "description": "Fetch option name from the romanesco_options table (when used as output modifier). You can also get other available fields with a regular snippet call and tpl chunk.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_data"
                 },
                 {
                     "name": "setUserPlaceholders",
