@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix Squoosh failure due to escapeshellarg quotes in command
 - Improve clearing of custom cache
 - Include layout ID in overview placeholder prefix
 - Rename Tool Shed to Project Data

@@ -152,10 +152,10 @@ $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model
 if (!($scheduler instanceof Scheduler) || is_object($task)) {
     $cmd = [
         'squoosh-cli',
-        $squooshOption, escapeshellarg($squooshConfig),
-        '--webp', escapeshellarg($configWebP),
-        '--output-dir', escapeshellarg($outputDir),
-        escapeshellarg($imgPathFull)
+        $squooshOption, $squooshConfig,
+        '--webp', $configWebP,
+        '--output-dir', $outputDir,
+        $imgPathFull
     ];
 
     $romanesco->runCommand($cmd, 'img.log');
