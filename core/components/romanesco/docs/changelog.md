@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix Squoosh command failing with escaped path variable
 - Rename GenerateStaticCSS snippet to GenerateSiteCSS
 - Improve clearing of custom cache
 - Include layout ID in overview placeholder prefix

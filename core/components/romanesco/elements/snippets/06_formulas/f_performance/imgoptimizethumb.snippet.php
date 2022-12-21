@@ -39,7 +39,7 @@ if (!($romanesco instanceof Romanesco)) {
 }
 
 // Get image path from task properties, pThumb properties or input
-$imgPath = $modx->getOption('img_path', $scriptProperties, $input);
+$imgPath = $modx->getOption('img_path', $scriptProperties, $input ?? null);
 $imgPathFull = str_replace('//','/', MODX_BASE_PATH . $imgPath);
 $imgName = pathinfo($imgPathFull, PATHINFO_FILENAME);
 $imgType = pathinfo($imgPathFull, PATHINFO_EXTENSION);
@@ -51,9 +51,9 @@ if (!$imgPath || !file_exists($imgPathFull)) {
     return $imgPath;
 }
 
-// Look for context key
+// Look for resource context key
 $context = $modx->getOption('context', $scriptProperties, '');
-if (!$context) {
+if (is_object($modx->resource) && !$context) {
     $context = $modx->resource->get('context_key');
 }
 
@@ -62,7 +62,7 @@ if (!$romanesco->getConfigSetting('img_optimize', $context)) {
     return $imgPath;
 }
 
-// Also abort if file format is not supported
+// Abort if file format is not supported
 if ($imgType == 'svg') {
     return $imgPath;
 }
@@ -73,7 +73,7 @@ if (file_exists($outputDir . '/' . $imgName . '.webp')) {
 }
 
 // Get image quality from task properties, output modifier option or corresponding context setting
-$imgQuality = $scriptProperties['img_quality'] ? : $options;
+$imgQuality = $modx->getOption('img_quality', $scriptProperties, $options ?? null);
 if (!$imgQuality) {
     $imgQuality = $romanesco->getConfigSetting('img_quality', $context);
 }
@@ -152,10 +152,10 @@ $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model
 if (!($scheduler instanceof Scheduler) || is_object($task)) {
     $cmd = [
         'squoosh-cli',
-        $squooshOption, escapeshellarg($squooshConfig),
-        '--webp', escapeshellarg($configWebP),
-        '--output-dir', escapeshellarg($outputDir),
-        escapeshellarg($imgPathFull)
+        $squooshOption, $squooshConfig,
+        '--webp', $configWebP,
+        '--output-dir', $outputDir,
+        $imgPathFull
     ];
 
     $romanesco->runCommand($cmd, 'img.log');
