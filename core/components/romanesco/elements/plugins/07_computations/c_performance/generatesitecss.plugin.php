@@ -1,8 +1,8 @@
 <?php
 /**
- * generateStaticCSS
+ * GenerateSiteCSS
  *
- * Creates static CSS files for each context, with their own global backgrounds.
+ * Creates site.css file for each context, with their own global backgrounds.
  *
  * If you want a context to have its own set of backgrounds, you need to create
  * a child page under the Global Backgrounds container for it. Make sure the

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Rename GenerateStaticCSS snippet to GenerateSiteCSS
 - Improve clearing of custom cache
 - Include layout ID in overview placeholder prefix
 - Rename Tool Shed to Project Data
