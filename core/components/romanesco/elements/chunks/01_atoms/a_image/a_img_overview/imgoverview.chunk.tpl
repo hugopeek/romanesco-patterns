@@ -22,5 +22,5 @@
      `]]
      width="[[++max_thumb_width]]"
      height="[[+max_thumb_height]]"
-     alt="[[+alt:empty=`[[+pagetitle]]`:htmlent]]"
+     alt="[[+alt:empty=`[[+[[+altField]]]]`:htmlent]]"
 />

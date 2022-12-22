@@ -6,5 +6,5 @@
      `]]
      [[+width:notempty=`width="[[+width]]"`]]
      [[+height:notempty=`height="[[+height]]"`]]
-     alt="[[+alt:empty=`[[+pagetitle]]`:htmlent]]"
+     alt="[[+alt:empty=`[[+[[+altField]]]]`:htmlent]]"
 />

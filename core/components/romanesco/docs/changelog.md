@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add property for changing alt field in imgOverview chunks
 - Fix Squoosh command failing with escaped path variable
 - Rename GenerateStaticCSS snippet to GenerateSiteCSS
 - Improve clearing of custom cache
