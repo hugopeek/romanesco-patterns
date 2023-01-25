@@ -38,6 +38,8 @@ if (!($romanesco instanceof Romanesco)) {
     return;
 }
 
+use Jcupitt\Vips;
+
 // Get image path from task properties, pThumb properties or input
 $imgPath = $modx->getOption('img_path', $scriptProperties, $input ?? null);
 $imgPathFull = str_replace('//','/', MODX_BASE_PATH . $imgPath);
@@ -148,19 +150,35 @@ if (strtolower($imgType) == 'png') {
 $schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
 $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
 
+// load an image, get fields, process, save
+try {
+    $image = Vips\Image::newFromFile($imgPathFull);
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] path: ' . $imgPathFull);
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] width: ' . $image->width);
+}
+catch (Vips\Exception $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] ' . $e->getMessage());
+    return;
+}
+
+$image->webpsave($imgName, ['Q' => $imgQuality]);
+
+try {
+    $image->writeToFile("$outputDir/$imgName.webp");
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] writing to: ' . "$outputDir/$imgName.webp");
+}
+catch (Vips\Exception $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] ' . $e->getMessage());
+    return;
+}
+
+
+
+return;
+
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
 if (!($scheduler instanceof Scheduler) || is_object($task)) {
-    $cmd = [
-        'squoosh-cli',
-        $squooshOption, $squooshConfig,
-        '--webp', $configWebP,
-        '--output-dir', $outputDir,
-        $imgPathFull
-    ];
 
-    $romanesco->runCommand($cmd, 'img.log');
-
-    return;
 }
 
 // From here on, we're scheduling a task
