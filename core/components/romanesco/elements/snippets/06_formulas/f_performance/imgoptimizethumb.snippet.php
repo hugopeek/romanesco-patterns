@@ -38,8 +38,10 @@ if (!($romanesco instanceof Romanesco)) {
     return;
 }
 
+use Jcupitt\Vips;
+
 // Get image path from task properties, pThumb properties or input
-$imgPath = $modx->getOption('img_path', $scriptProperties, $input);
+$imgPath = $modx->getOption('img_path', $scriptProperties, $input ?? null);
 $imgPathFull = str_replace('//','/', MODX_BASE_PATH . $imgPath);
 $imgName = pathinfo($imgPathFull, PATHINFO_FILENAME);
 $imgType = pathinfo($imgPathFull, PATHINFO_EXTENSION);
@@ -51,9 +53,9 @@ if (!$imgPath || !file_exists($imgPathFull)) {
     return $imgPath;
 }
 
-// Look for context key
+// Look for resource context key
 $context = $modx->getOption('context', $scriptProperties, '');
-if (!$context) {
+if (is_object($modx->resource) && !$context) {
     $context = $modx->resource->get('context_key');
 }
 
@@ -62,7 +64,7 @@ if (!$romanesco->getConfigSetting('img_optimize', $context)) {
     return $imgPath;
 }
 
-// Also abort if file format is not supported
+// Abort if file format is not supported
 if ($imgType == 'svg') {
     return $imgPath;
 }
@@ -73,7 +75,7 @@ if (file_exists($outputDir . '/' . $imgName . '.webp')) {
 }
 
 // Get image quality from task properties, output modifier option or corresponding context setting
-$imgQuality = $scriptProperties['img_quality'] ? : $options;
+$imgQuality = $modx->getOption('img_quality', $scriptProperties, $options ?? null);
 if (!$imgQuality) {
     $imgQuality = $romanesco->getConfigSetting('img_quality', $context);
 }
@@ -147,6 +149,32 @@ if (strtolower($imgType) == 'png') {
 /** @var Scheduler $scheduler */
 $schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
 $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
+
+// load an image, get fields, process, save
+try {
+    $image = Vips\Image::newFromFile($imgPathFull);
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] path: ' . $imgPathFull);
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] width: ' . $image->width);
+}
+catch (Vips\Exception $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] ' . $e->getMessage());
+    return;
+}
+
+$image->webpsave($imgName, ['Q' => $imgQuality]);
+
+try {
+    $image->writeToFile("$outputDir/$imgName.webp");
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] writing to: ' . "$outputDir/$imgName.webp");
+}
+catch (Vips\Exception $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] ' . $e->getMessage());
+    return;
+}
+
+
+
+return;
 
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
 if (!($scheduler instanceof Scheduler) || is_object($task)) {

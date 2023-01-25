@@ -8251,6 +8251,10 @@
                         {
                             "name": "elementPreview",
                             "value": ""
+                        },
+                        {
+                            "name": "altField",
+                            "value": "pagetitle"
                         }
                     ],
                     "category": "a_img_overview"
@@ -8261,11 +8265,15 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },
                         {
                             "name": "elementPreview",
                             "value": ""
+                        },
+                        {
+                            "name": "altField",
+                            "value": "pagetitle"
                         }
                     ],
                     "category": "a_img_overview"
@@ -12780,8 +12788,8 @@
                     ]
                 },
                 {
-                    "name": "GenerateStaticCSS",
-                    "description": "Creates static CSS files for each context, with their own global backgrounds. If you want a context to have its own set of backgrounds, you need to add a child page under Global Backgrounds.",
+                    "name": "GenerateSiteCSS",
+                    "description": "Creates site.css file for each context, with their own global backgrounds. If you want a context to have its own set of backgrounds, you need to add a child page under Global Backgrounds.",
                     "properties": [
                         {
                             "name": "elementStatus",

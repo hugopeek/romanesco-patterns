@@ -12,6 +12,9 @@
                         },{
                             "name": "elementPreview",
                             "value": ""
+                        },{
+                            "name": "altField",
+                            "value": "pagetitle"
                         }
                     ],
                     "category": "a_img_overview"
@@ -21,10 +24,13 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
+                        },{
+                            "name": "altField",
+                            "value": "pagetitle"
                         }
                     ],
                     "category": "a_img_overview"
