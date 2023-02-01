@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Replace Squoosh command with libvips
 - Add property for changing alt field in imgOverview chunks
 - Fix Squoosh command failing with escaped path variable
 - Rename GenerateStaticCSS snippet to GenerateSiteCSS

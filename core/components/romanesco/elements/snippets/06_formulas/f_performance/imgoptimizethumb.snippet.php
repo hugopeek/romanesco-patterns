@@ -30,6 +30,8 @@
  * @var string $options
  */
 
+use Jcupitt\Vips;
+
 $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
 $romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
 
@@ -38,13 +40,12 @@ if (!($romanesco instanceof Romanesco)) {
     return;
 }
 
-use Jcupitt\Vips;
-
 // Get image path from task properties, pThumb properties or input
 $imgPath = $modx->getOption('img_path', $scriptProperties, $input ?? null);
 $imgPathFull = str_replace('//','/', MODX_BASE_PATH . $imgPath);
 $imgName = pathinfo($imgPathFull, PATHINFO_FILENAME);
 $imgType = pathinfo($imgPathFull, PATHINFO_EXTENSION);
+$imgType = strtolower($imgType);
 $outputDir = dirname($imgPathFull);
 
 // Check if path or file exist
@@ -81,114 +82,45 @@ if (!$imgQuality) {
 }
 $imgQuality = (int) $imgQuality;
 
-$configWebP = json_encode([
-    "quality" => $imgQuality,
-    "target_size" => 0,
-    "target_PSNR" => 0,
-    "method" => 4,
-    "sns_strength" => 50,
-    "filter_strength" => 60,
-    "filter_sharpness" => 0,
-    "filter_type" => 1,
-    "partitions" => 0,
-    "segments" => 4,
-    "pass" => 1,
-    "show_compressed" => 0,
-    "preprocessing" => 0,
-    "autofilter" => 0,
-    "partition_limit" => 0,
-    "alpha_compression" => 1,
-    "alpha_filtering" => 1,
-    "alpha_quality" => 100,
-    "lossless" => 0,
-    "exact" => 0,
-    "image_hint" => 0,
-    "emulate_jpeg_size" => 0,
-    "thread_level" => 0,
-    "low_memory" => 0,
-    "near_lossless" => 100,
-    "use_delta_palette" => 0,
-    "use_sharp_yuv" => 0
-]);
+$configWebP = [
+    "Q" => $imgQuality,
+];
 
-$configJPG = json_encode([
-    "quality" => $imgQuality,
-    "baseline" => false,
-    "arithmetic" => false,
-    "progressive" => true,
-    "optimize_coding" => true,
-    "smoothing" => 0,
-    "color_space" => 3,
-    "quant_table" => 3,
-    "trellis_multipass" => false,
-    "trellis_opt_zero" => false,
-    "trellis_opt_table" => false,
-    "trellis_loops" => 1,
-    "auto_subsample" => true,
-    "chroma_subsample" => 2,
-    "separate_chroma_quality" => false,
-    "chroma_quality" => 75
-]);
+$configJPG = [
+    "Q" => $imgQuality,
+];
 
-$configPNG = json_encode([
-    "level" => 2,
-    "interlace" => false
-]);
-
-// Use different compression engine for JPG and PNG
-$squooshOption = '';
-if (strtolower($imgType) == 'png') {
-    $squooshType = '--oxipng';
-    $squooshConfig = $configPNG;
-} else {
-    $squooshOption = '--mozjpeg';
-    $squooshConfig = $configJPG;
-}
+$configPNG = [
+    "Q" => $imgQuality,
+];
 
 // Use Scheduler for adding task to queue (if available)
 /** @var Scheduler $scheduler */
 $schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
 $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
 
-// load an image, get fields, process, save
-try {
-    $image = Vips\Image::newFromFile($imgPathFull);
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] path: ' . $imgPathFull);
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] width: ' . $image->width);
-}
-catch (Vips\Exception $e) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] ' . $e->getMessage());
-    return;
-}
-
-$image->webpsave($imgName, ['Q' => $imgQuality]);
-
-try {
-    $image->writeToFile("$outputDir/$imgName.webp");
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] writing to: ' . "$outputDir/$imgName.webp");
-}
-catch (Vips\Exception $e) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] ' . $e->getMessage());
-    return;
-}
-
-
-
-return;
-
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
 if (!($scheduler instanceof Scheduler) || is_object($task)) {
-    $cmd = [
-        'squoosh-cli',
-        $squooshOption, $squooshConfig,
-        '--webp', $configWebP,
-        '--output-dir', $outputDir,
-        $imgPathFull
-    ];
+    try {
+        $image = Vips\Image::newFromFile($imgPathFull);
+    }
+    catch (Vips\Exception $e) {
+        $modx->log(modX::LOG_LEVEL_ERROR, '[Vips] ' . $e->getMessage());
+        return $imgPath;
+    }
 
-    $romanesco->runCommand($cmd, 'img.log');
+    // Create WebP version
+    $image->webpsave($outputDir . '/' . $imgName . '.webp', $configWebP);
 
-    return;
+    // Overwrite original with optimized version
+    if ($imgType == 'png') {
+        $image->pngsave($imgPathFull, $configPNG);
+    }
+    if ($imgType == 'jpg' || $imgType == 'jpeg') {
+        $image->jpegsave($imgPathFull, $configJPG);
+    }
+
+    return $imgPath;
 }
 
 // From here on, we're scheduling a task
