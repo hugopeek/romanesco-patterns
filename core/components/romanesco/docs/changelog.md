@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta11
-Released on ...
+Released on February 2, 2023
 
 Fixes and improvements:
 - Replace Squoosh command with libvips
