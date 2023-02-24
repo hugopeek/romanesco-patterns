@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Forward missing text_size and show_rating setting in Testimonial overviews
 - Add ability to change divider heading level
 - Allow title format override at template level
 
