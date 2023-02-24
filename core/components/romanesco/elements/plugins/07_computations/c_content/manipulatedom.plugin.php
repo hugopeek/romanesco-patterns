@@ -82,23 +82,20 @@ switch ($modx->event->name) {
                 );
 
                 // Prevent elements from having the same color as their parent background
-                if ($segment->hasClass('primary-color')) {
+                if ($segment->hasClass('primary-color') || $segment->hasClass('secondary-color') || $segment->hasClass('secondary')) {
                     $segment
                         ->filter('.primary.button')
-                        ->removeClass('basic')
+                        ->addClass('white inverted')
+                    ;
+                    $segment
+                        ->filter('.secondary.button')
+                        ->removeClass('secondary')
                         ->addClass('inverted')
                     ;
                     $segment
                         ->filter('.bottom.attached.primary.button')
                         ->removeClass('primary')
                         ->addClass('secondary')
-                    ;
-                }
-                if ($segment->hasClass('secondary-color')) {
-                    $segment
-                        ->filter('.secondary.button')
-                        ->removeClass('basic')
-                        ->addClass('inverted')
                     ;
                 }
 
