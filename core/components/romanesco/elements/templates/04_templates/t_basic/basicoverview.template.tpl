@@ -26,7 +26,7 @@
         &else=`$toolbarBasic`
     ]]]]
 
-    <main id="main" role="main">
+    <main id="main">
         <article id="content">
             [[$content]]
         </article>

@@ -29,7 +29,7 @@
         &else=`$toolbarBasic`
     ]]]]
 
-    <main id="main" role="main">
+    <main id="main">
         <article id="content">
 
             <header class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]] introduction">

@@ -29,7 +29,7 @@
         &else=`$toolbarBasic`
     ]]]]
 
-    <main id="main" role="main">
+    <main id="main">
         <div class="ui very relaxed grid container">
             <article id="content" class="sixteen wide mobile eleven wide computer publication column">
 

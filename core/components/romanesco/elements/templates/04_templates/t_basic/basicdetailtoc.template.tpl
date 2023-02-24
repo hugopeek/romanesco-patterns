@@ -26,7 +26,7 @@
         &else=`$toolbarBasic`
     ]]]]
 
-    <main id="main" role="main">
+    <main id="main">
         <div class="ui relaxed computer reversed grid container">
             <aside id="sidebar" class="sixteen wide mobile four wide computer column">
                 [[$tocNavVertical?

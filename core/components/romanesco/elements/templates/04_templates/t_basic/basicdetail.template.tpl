@@ -26,7 +26,7 @@
         &else=`$toolbarBasic`
     ]]]]
 
-    <main id="main" role="main">
+    <main id="main">
         <div class="ui relaxed [[++sidebar_position:is=`left`:then=`computer reversed`]] grid container">
             <article id="content" class="sixteen wide mobile twelve wide computer column">
                 [[$content]]

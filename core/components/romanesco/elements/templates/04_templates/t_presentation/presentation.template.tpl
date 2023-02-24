@@ -14,7 +14,7 @@
 <body id="[[*alias]]" class="presentation">
 
 <div class="pusher">
-    <main id="main" role="main">
+    <main id="main">
         <article id="swiper-[[*id]]" class="swiper fullscreen">
             <div id="content" class="swiper-wrapper">
                 [[*content]]
