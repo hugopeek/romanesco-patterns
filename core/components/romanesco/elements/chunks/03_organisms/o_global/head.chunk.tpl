@@ -1,4 +1,4 @@
-<title>[[++romanesco.title_format]]</title>
+<title>[[+title_format:default=`[[++romanesco.title_format]]`]]</title>
 
 <meta charset="[[++modx_charset]]">
 <meta name="description" content="[[*description]]">
