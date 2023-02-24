@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add ability to change divider heading level
 - Allow title format override at template level
 
 ## Romanesco Patterns 1.0.0-beta11
