@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Prevent Organization logos becoming too big on smaller screens
 - Remove comma after last entry in responsive img sizes attribute
 - Improve primary / secondary button styling on colored backgrounds
 - Forward missing text_size and show_rating setting in Testimonial overviews

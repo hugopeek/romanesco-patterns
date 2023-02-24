@@ -1,4 +1,4 @@
-<figure class="ui image" title="[[%romanesco.clients.logo_title]]">
+<figure class="ui small image">
     [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
         &tvname=`organization_logo_img`
         &docid=`[[+id]]`
