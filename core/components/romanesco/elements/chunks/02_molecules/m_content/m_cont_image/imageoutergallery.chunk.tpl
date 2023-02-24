@@ -3,7 +3,7 @@
     &subject=`[[+extension:lcase]]`
     &operator=`EQ`
     &operand=`svg`
-    &then=`svgSanitize? &file=`[[+url]]` &title=`[[+alt]]``
-    &else=`$imgResponsiveGalleryCaption? &uid=`[[+unique_idx]]_[[+idx]]``
+    &then=`$imageSVG? &url=`[[+url]]` &alt=`[[+alt]]``
+    &else=`$imgResponsiveGalleryCaption? &alt=`[[+alt]]` &uid=`[[+unique_idx]]_[[+idx]]``
 ]]]]
 `]]

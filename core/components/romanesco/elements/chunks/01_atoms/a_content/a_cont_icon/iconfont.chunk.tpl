@@ -1,0 +1,1 @@
+<i class="[[+classes]] [[+icon_class:empty=`question icon`]]"></i>

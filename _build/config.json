@@ -268,6 +268,10 @@
                     "parent": "a_content"
                 },
                 {
+                    "name": "a_cont_icon",
+                    "parent": "a_content"
+                },
+                {
                     "name": "a_cont_image",
                     "parent": "a_content"
                 },
@@ -4115,12 +4119,42 @@
                     "category": "a_hub"
                 },
                 {
+                    "name": "img",
+                    "description": "A plain and simple <img> tag, for situations that require a chunk tpl (inside mosquito conditionals for example). Can be lazy loaded.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_image"
+                },
+                {
                     "name": "imgOpenGraphRow",
                     "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_image"
+                },
+                {
+                    "name": "svg",
+                    "description": "References the SVG file in an <img> tag, or parses it inline as <svg>. This behaviour can be changed under Configuration > Performance. Take note: lazy loaded SVGs are always parsed as <img>.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementPreview",
@@ -6984,8 +7018,38 @@
                     "category": "a_cont_heading"
                 },
                 {
+                    "name": "iconSVG",
+                    "description": "Loads an SVG, either inline or in an <img> tag.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_icon"
+                },
+                {
+                    "name": "iconFont",
+                    "description": "Simple <i> tag with font icon.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_icon"
+                },
+                {
                     "name": "imageBasic",
-                    "description": "",
+                    "description": "Responsive content image with an optional caption.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -7000,22 +7064,7 @@
                 },
                 {
                     "name": "imageSVG",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cont_image"
-                },
-                {
-                    "name": "iconSVG",
-                    "description": "",
+                    "description": "Similar to iconSVG, but this one is used inside Image CBs, when given image is an SVG.",
                     "properties": [
                         {
                             "name": "elementStatus",

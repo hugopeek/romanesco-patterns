@@ -12,6 +12,9 @@
                     "name": "a_cont_heading",
                     "parent": "a_content"
                 },{
+                    "name": "a_cont_icon",
+                    "parent": "a_content"
+                },{
                     "name": "a_cont_image",
                     "parent": "a_content"
                 },{

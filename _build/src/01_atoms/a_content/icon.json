@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "imageBasic",
-                    "description": "Responsive content image with an optional caption.",
+                    "name": "iconSVG",
+                    "description": "Loads an SVG, either inline or in an <img> tag.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,10 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cont_image"
+                    "category": "a_cont_icon"
                 },{
-                    "name": "imageSVG",
-                    "description": "Similar to iconSVG, but this one is used inside Image CBs, when given image is an SVG.",
+                    "name": "iconFont",
+                    "description": "Simple <i> tag with font icon.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -27,7 +27,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_cont_image"
+                    "category": "a_cont_icon"
                 }
             ]
         }

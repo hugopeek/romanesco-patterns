@@ -3,12 +3,40 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "img",
+                    "description": "A plain and simple <img> tag, for situations that require a chunk tpl (inside mosquito conditionals for example). Can be lazy loaded.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_image"
+                },
+                {
                     "name": "imgOpenGraphRow",
                     "description": "Row template for ImagePlus, containing properties for use in Open Graph metadata.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_image"
+                },
+                {
+                    "name": "svg",
+                    "description": "References the SVG file in an <img> tag, or parses it inline as <svg>. This behaviour can be changed under Configuration > Performance. Take note: lazy loaded SVGs are always parsed as <img>.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

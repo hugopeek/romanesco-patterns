@@ -288,6 +288,18 @@ switch ($modx->event->name) {
             ->after(implode($lightbox))
         ;
 
+        // Manipulate images / SVGs
+        $dom->filter('.ui.image, .ui.svg.image > svg, .ui.svg.image > img')
+            ->each(function (HtmlPageCrawler $img) {
+                $width = $img->getAttribute('width');
+                $height = $img->getAttribute('height');
+
+                // Remove empty width & height
+                if (!$width) $img->removeAttr('width');
+                if (!$height) $img->removeAttr('height');
+            })
+        ;
+
         // Disable steps following an active step
         $dom->filter('.ui.consecutive.steps .active.step')
             ->each(function (HtmlPageCrawler $step) {

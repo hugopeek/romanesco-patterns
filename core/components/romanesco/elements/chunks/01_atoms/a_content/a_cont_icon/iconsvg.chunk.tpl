@@ -1,0 +1,1 @@
+[[$svg? &alt=`[[+alt:empty=`[[+pagetitle]]`]]` &uid=`[[+unique_idx]]`]]

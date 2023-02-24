@@ -1,6 +1,3 @@
-<figure class="ui [[+classes]] image">
-    [[svgSanitize?
-        &file=`[[+url]]`
-        &title=`[[+alt]]`
-    ]]
+<figure class="ui [[+classes]] svg image">
+    [[$svg? &classes=`regular` &uid=`[[+unique_idx]]`]]
 </figure>
