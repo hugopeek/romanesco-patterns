@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Remove role="main" from main tags
+- Fix various image alt tags
 - Improve controls for inlining SVGs
 - Prevent Organization logos becoming too big on smaller screens
 - Remove comma after last entry in responsive img sizes attribute
