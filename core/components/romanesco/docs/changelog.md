@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Remove comma after last entry in responsive img sizes attribute
 - Improve primary / secondary button styling on colored backgrounds
 - Forward missing text_size and show_rating setting in Testimonial overviews
 - Add ability to change divider heading level

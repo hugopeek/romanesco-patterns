@@ -170,7 +170,7 @@ switch ($modx->event->name) {
 
                         // Set mobile breakpoints to 100vw, because stacked means full width
                         $stackedSizes = preg_replace('/\(min-width: 360px\).+/','(min-width: 360px) 100vw,', $sizes);
-                        $stackedSizes = preg_replace('/\(max-width: 359px\).+/','(max-width: 359px) 100vw,', $stackedSizes);
+                        $stackedSizes = preg_replace('/\(max-width: 359px\).+/','(max-width: 359px) 100vw', $stackedSizes);
 
                         // Set optional sizes, if indicated
                         if ($img->matches('.tablet-expand-full')) {
@@ -181,7 +181,7 @@ switch ($modx->event->name) {
                         }
                         if ($img->matches('.mobile-expand-half')) {
                             $stackedSizes = preg_replace('/\(min-width: 360px\).+/','(min-width: 360px) 50vw,', $stackedSizes);
-                            $stackedSizes = preg_replace('/\(max-width: 359px\).+/','(max-width: 359px) 50vw,', $stackedSizes);
+                            $stackedSizes = preg_replace('/\(max-width: 359px\).+/','(max-width: 359px) 50vw', $stackedSizes);
                         }
 
                         $img->setAttribute($attribute, $stackedSizes);
