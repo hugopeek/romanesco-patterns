@@ -2,6 +2,6 @@
     identifier: 'fb[[*id]]-email',
     rules: [{
         type   : 'email',
-        prompt : '[[$fbValidationPrompt:stripForJS? &name=`fb[[*id]]-email` &type=`email`]]'
+        prompt : '[[$fbValidationPrompt:stripForJS? &name=`fb[[*id]]-email` &type=`email` &uid=`[[+uid]]`]]'
     }]
 },
