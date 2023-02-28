@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix repeated values in form fieldset IDs
 - Fix repeated values in form validation prompts
 - Fix inverted headings and buttons inside forms with light background
 - Remove role="main" from main tags

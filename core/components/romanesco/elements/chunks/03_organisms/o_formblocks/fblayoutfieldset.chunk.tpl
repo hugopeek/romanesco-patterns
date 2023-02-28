@@ -1,4 +1,10 @@
 [[modifiedIf?
+    &subject=`[[+layout_title]]`
+    &operator=`notempty`
+    &then=`id="fb[[*id]]-[[stripAsAlias? &input=`[[+layout_title]]`]]"`
+    &toPlaceholder=`fieldset_id_[[+unique_idx]]`
+]]
+[[modifiedIf?
     &subject=`[[+segment_type]]`
     &operator=`isnot`
     &operand=`none`
@@ -8,7 +14,7 @@
 ]]
 [[+force_segment:eq=`1`:then=`segment`:else=`[[+segment_parent]]`:toPlaceholder=`segment`]]
 
-<fieldset [[+title:notempty=`id="fb[[*id]]-[[stripAsAlias? &input=`[[+title]]`]]"`]] class="ui [[+padding]] [[+segment]] [[+background:setBackground]]">
+<fieldset [[+fieldset_id_[[+unique_idx]]]] class="ui [[+padding]] [[+segment]] [[+background:setBackground]]">
     [[+legend:notempty=`<legend class="ui [[+form_size]] header">[[+legend]]</legend>`]]
     [[*fb_form_layout:is=`inline`:then=`<span class="equal width fields">`]]
     [[+main]]
