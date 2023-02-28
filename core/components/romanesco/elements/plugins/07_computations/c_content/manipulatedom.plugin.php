@@ -64,20 +64,21 @@ switch ($modx->event->name) {
                     '.list',
                     '.quote',
                     '.divider:not(.hidden)',
-                    '.basic.form',
                     '.accordion:not(.styled)',
                     '.text.menu',
                     '.secondary.menu',
+                    '.basic.form',
                 );
 
                 // Revert inverted styling inside these nested elements
                 $exceptions = array(
                     '.segment:not(.inverted):not(.transparent)',
                     '.card',
-                    '.tabbed.menu',
+                    '.message',
                     '.accordion:not(.inverted)',
                     '.popup:not(.inverted)',
-                    '.message',
+                    '.tabbed.menu',
+                    '.form:not(.basic)',
                     '.leaflet-container',
                 );
 
@@ -115,6 +116,10 @@ switch ($modx->event->name) {
                             $node
                                 ->filter('.inverted')
                                 ->removeClass('inverted')
+                            ;
+                            $node
+                                ->filter('.ui.white.button')
+                                ->removeClass('white')
                             ;
                         })
                     ;

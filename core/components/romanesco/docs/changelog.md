@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix inverted headings and buttons inside forms with light background
 - Remove role="main" from main tags
 - Fix various image alt tags
 - Improve controls for inlining SVGs
