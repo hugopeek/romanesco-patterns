@@ -199,6 +199,11 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Make regular divider headers smaller
+        $dom->filter('span.ui.divider.header')
+            ->addClass('tiny')
+        ;
+
         // Transform regular tables into SUI tables
         $dom->filter('table:not(.ui.table)')
             ->addClass('ui table')
