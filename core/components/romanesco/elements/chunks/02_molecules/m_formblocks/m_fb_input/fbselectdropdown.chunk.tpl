@@ -15,15 +15,14 @@
         <option value="">[[+option_placeholder]]</option>
         [[+rows]]
         [[+show_other:is=`1`:then=`
-        <option value="[[+option_other_value]]"
-             [[!+fb[[*id]].[[+name]]:FormItIsSelected=`[[+option_other_value]]`]]>
+        <option value="[[+option_other_value]]" [[!+fb[[*id]].[[+name]]:FormItIsSelected=`[[+option_other_value]]`]]>
             [[+option_other_value]]
         </option>
         `]]
     </select>
     [[+show_other:is=`1`:then=`
     <div id="[[+name]]-other" class="other [[+check_other:is=``:then=`hidden`]]">
-        <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_other_value]]">
+        <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[%formblocks.field.other_namely]]">
     </div>
     `]]
     [[+fb[[*id]].error.[[+name]]]]

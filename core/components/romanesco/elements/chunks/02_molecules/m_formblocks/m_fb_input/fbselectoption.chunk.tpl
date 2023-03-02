@@ -29,7 +29,7 @@
     </div>
 
     <div id="[[+name]]-other" class="field [[+check_other:is=``:then=`hidden`]]">
-        <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_placeholder]]">
+        <input type="text" name="[[+name]]-other" value="[[!+fb[[*id]].[[+name]]-other]]" placeholder="[[+option_placeholder:empty=`[[%formblocks.field.other_namely]]`]]">
     </div>
     `]]
 
