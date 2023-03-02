@@ -37,7 +37,8 @@ if (!function_exists('getFields')) {
                 continue;
             }
 
-            if (isset($value['field'])) {
+            // Capture all fields, except for nested fieldsets (which contain fields themselves)
+            if (isset($value['field']) && $value['field'] != $modx->getOption('formblocks.cb_nested_fieldset_id')) {
                 $idx++;
                 $value['settings']['id'] = $id;
                 $value['settings']['uid'] = $uid . '_' . $idx;
@@ -73,7 +74,8 @@ if (!function_exists('getFields')) {
                 continue;
             }
 
-            // This iterates over nested fields, so idx becomes parent (layout) idx
+            // This iterates over nested fields until a field is found
+            // Each iteration receives a new parent (layout) idx
             $result[] = getFields($modx, $value, $prefix, $id, $uid++, $reqOnly);
         }
 

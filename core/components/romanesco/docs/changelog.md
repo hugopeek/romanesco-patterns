@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix nested fields not being processed in form report
 - Fix non-alpha characters breaking titles in inline SVGs
 - Fix repeated values in form fieldset IDs
 - Fix repeated values in form validation prompts

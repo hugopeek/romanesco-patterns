@@ -13292,6 +13292,12 @@
                 "namespace": "formblocks",
                 "type": "textfield",
                 "area": "FormBlocks - CB fields"
+            },
+            {
+                "key": "cb_nested_fieldset_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
             }
         ]
     },
