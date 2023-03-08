@@ -4,7 +4,7 @@
     <input type="hidden" name="field_name" value="[[+field_name]]">
     <input type="hidden" name="label_start" value="[[+label_start]]">
     <input type="hidden" name="label_end" value="[[+label_end]]">
-    <div class="field [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]-start]]` &operator=`notempty` &then=`error`]]">
+    <div class="[[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] field [[!If? &subject=`[[+fb[[*id]].error.[[+name]]-start]]` &operator=`notempty` &then=`error`]]">
         <label for="[[+name]]-start">[[+label_start]]</label>
         <div class="ui calendar date range start">
             <div class="ui input left icon">
@@ -14,7 +14,7 @@
         </div>
         [[+fb[[*id]].error.[[+name]]-start]]
     </div>
-    <div class="field [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]-end]]` &operator=`notempty` &then=`error`]]">
+    <div class="[[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] field [[!If? &subject=`[[+fb[[*id]].error.[[+name]]-end]]` &operator=`notempty` &then=`error`]]">
         <label for="[[+name]]-end">[[+label_end]]</label>
         <div class="ui calendar date range end">
             <div class="ui input left icon">
