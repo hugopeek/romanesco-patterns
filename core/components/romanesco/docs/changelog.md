@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add field width option for inline form fields
 - Fix nested fields not being processed in form report
 - Fix non-alpha characters breaking titles in inline SVGs
 - Fix repeated values in form fieldset IDs

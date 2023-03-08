@@ -1,0 +1,15 @@
+1 column=one
+2 columns=two
+3 columns=three
+4 columns=four
+5 columns=five
+6 columns=six
+7 columns=seven
+8 columns=eight
+9 columns=nine
+10 columns=ten
+11 columns=eleven
+12 columns=twelve
+13 columns=thirteen
+14 columns=fourteen
+15 columns=fifteen

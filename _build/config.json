@@ -7903,6 +7903,21 @@
                     "category": "a_cb_setting"
                 },
                 {
+                    "name": "cbSettingColumnsAll",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },
+                {
                     "name": "cbSettingIconClass",
                     "description": "",
                     "properties": [

@@ -310,6 +310,21 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Fix inline form fields
+        $dom->filter('.ui.form .inline.fields > .field')
+            ->removeClass('horizontal')
+            ->removeClass('vertical')
+            ->filter('label')
+            ->each(function(HtmlPageCrawler $label) {
+                if($label->getInnerHtml() === '') {
+                    $label->addClass('hidden');
+                }
+            })
+        ;
+        $dom->filter('.ui.form .inline.fields > .wide.field > .dropdown')
+            ->addClass('fluid')
+        ;
+
         // Disable steps following an active step
         $dom->filter('.ui.consecutive.steps .active.step')
             ->each(function (HtmlPageCrawler $step) {
