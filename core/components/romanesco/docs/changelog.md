@@ -4,7 +4,7 @@
 Released on ...
 
 Fixes and improvements:
-- Use HTML value in email report, if field label is empty
+- Use HTML value in email report if field label is empty
 - Add field width option for inline form fields
 - Fix nested fields not being processed in form report
 - Fix non-alpha characters breaking titles in inline SVGs
