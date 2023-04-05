@@ -42,6 +42,22 @@ switch ($modx->event->name) {
             $modx->log(modX::LOG_LEVEL_ERROR, $e);
         }
 
+        // Read inverted parameter from URL (for testing purposes)
+        $invertLayouts = $_GET['inverted'] ?? 0;
+        if ($invertLayouts) {
+            $dom->filter('.ui.menu')
+                ->addClass('inverted')
+            ;
+            $dom->filter('.vertical.stripe.segment.white')
+                ->removeClass('white')
+                ->addClass('inverted')
+            ;
+            $dom->filter('.vertical.backyard.segment.secondary')
+                ->removeClass('secondary')
+                ->addClass('inverted tertiary')
+            ;
+        }
+
         // Add header class to content headers without class name
         $dom->filter('h1:not(.header)')->addClass('ui header');
         $dom->filter('h2:not(.header)')->addClass('ui header');

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add URL parameter to invert layouts in Backyard
 - Fix image quality overrides being ignored
 - Use HTML value in email report if field label is empty
 - Add field width option for inline form fields
