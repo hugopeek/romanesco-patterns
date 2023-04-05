@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Invert Table and Steps elements inside inverted segments
 - Add URL parameter to invert layouts in Backyard
 - Fix image quality overrides being ignored
 - Use HTML value in email report if field label is empty

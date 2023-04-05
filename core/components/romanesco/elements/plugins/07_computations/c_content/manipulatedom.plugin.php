@@ -84,6 +84,8 @@ switch ($modx->event->name) {
                     '.text.menu',
                     '.secondary.menu',
                     '.basic.form',
+                    '.table',
+                    '.steps',
                 );
 
                 // Revert inverted styling inside these nested elements
