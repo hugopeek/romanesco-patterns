@@ -75,8 +75,8 @@ if (file_exists($outputDir . '/' . $imgName . '.webp')) {
     return $imgPath;
 }
 
-// Get image quality from task properties, output modifier option or corresponding context setting
-$imgQuality = $modx->getOption('img_quality', $scriptProperties, $options ?? null);
+// Get image quality from output modifier option, task properties or corresponding context setting
+$imgQuality = $options ?? $modx->getOption('img_quality', $scriptProperties);
 if (!$imgQuality) {
     $imgQuality = $romanesco->getConfigSetting('img_quality', $context);
 }
