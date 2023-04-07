@@ -54,7 +54,7 @@ switch ($modx->event->name) {
             ;
             $dom->filter('.vertical.backyard.segment.secondary')
                 ->removeClass('secondary')
-                ->addClass('inverted tertiary')
+                ->addClass('inverted black')
             ;
         }
 
