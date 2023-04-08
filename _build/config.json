@@ -3,7 +3,7 @@
     "lowCaseName": "romanesco",
     "description": "Web engineering toolkit, combining atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
-    "version": "1.0.0-beta11",
+    "version": "1.0.0-beta12",
     "package": {
         "elements": {
             "categories": [
@@ -1309,7 +1309,7 @@
                     "category": "_Navigation",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -1328,7 +1328,7 @@
                     "category": "_Navigation",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -1351,7 +1351,7 @@
                     "category": "_Navigation",
                     "sortOrder": "11",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -1370,7 +1370,7 @@
                     "category": "_Navigation",
                     "sortOrder": "12",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -1389,7 +1389,7 @@
                     "category": "_Navigation",
                     "sortOrder": "15",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -1713,7 +1713,7 @@
                     "category": "_Performance",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2003,7 +2003,7 @@
                     "category": "_Footer",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2022,7 +2022,7 @@
                     "category": "_Footer",
                     "sortOrder": "2",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2041,7 +2041,7 @@
                     "category": "_Footer",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2060,7 +2060,7 @@
                     "category": "_Footer",
                     "sortOrder": "20",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2079,7 +2079,7 @@
                     "category": "_Footer",
                     "sortOrder": "21",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2102,7 +2102,7 @@
                     "category": "_Footer",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2121,7 +2121,7 @@
                     "category": "_Header",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2139,7 +2139,7 @@
                     "category": "_Header",
                     "sortOrder": "5",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2157,7 +2157,7 @@
                     "category": "_Header",
                     "sortOrder": "6",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2176,7 +2176,7 @@
                     "category": "_Header",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2194,7 +2194,7 @@
                     "category": "_Header",
                     "sortOrder": "11",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2213,7 +2213,7 @@
                     "category": "_Header",
                     "sortOrder": "20",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2236,7 +2236,7 @@
                     "category": "_Header",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2256,7 +2256,7 @@
                     "category": "_Links",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2276,7 +2276,7 @@
                     "category": "_Links",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2301,7 +2301,7 @@
                     "category": "_Links",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2328,7 +2328,7 @@
                     "category": "_Purpose",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2353,7 +2353,7 @@
                     "category": "_Purpose",
                     "sortOrder": 2,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2376,7 +2376,7 @@
                     "category": "_Purpose",
                     "sortOrder": 5,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2399,7 +2399,7 @@
                     "category": "_Purpose",
                     "sortOrder": 6,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2422,7 +2422,7 @@
                     "category": "_Purpose",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2439,7 +2439,7 @@
                     "category": "_Purpose",
                     "sortOrder": 11,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2456,7 +2456,7 @@
                     "category": "_Purpose",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2539,7 +2539,7 @@
                     "category": "_Status",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2558,7 +2558,7 @@
                     "category": "_Status",
                     "sortOrder": 2,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2578,7 +2578,7 @@
                     "category": "_Status",
                     "sortOrder": 3,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2603,7 +2603,7 @@
                     "category": "_Status",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {
@@ -2623,7 +2623,7 @@
                     "category": "_Status",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
                     ]
                 },
                 {

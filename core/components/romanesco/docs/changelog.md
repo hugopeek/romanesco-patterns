@@ -1,9 +1,10 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta12
-Released on ...
+Released on April 8, 2023
 
 Fixes and improvements:
+- Add Dashboard template to template list
 - Invert Table and Steps elements inside inverted segments
 - Add URL parameter to invert layouts in Backyard
 - Fix image quality overrides being ignored
