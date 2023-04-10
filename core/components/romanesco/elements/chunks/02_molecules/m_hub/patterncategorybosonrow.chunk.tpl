@@ -40,7 +40,7 @@
     [[$dividerBasic]]
 
     <div class="meta">
-        [[+properties.custom_preview:stripTags=`<p>,<ul>,<li>,<strong>`:empty=`<p><em>Description not available.</em></p>`]]
+        <p>[[+description:empty=`[[+content_desc:nl2br:empty=`<em>Description not available.</em>`]]`]]</p>
     </div>
 
     [[$dividerBasic? &divider_hidden=`1`]]

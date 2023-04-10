@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta13
+Released on ...
+
+Fixes and improvements:
+- Fix Boson descriptions in Backyard pattern library
+
 ## Romanesco Patterns 1.0.0-beta12
 Released on April 10, 2023
 
