@@ -1,9 +1,13 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta12
-Released on April 8, 2023
+Released on April 10, 2023
+
+New features:
+- Add setting to hide ContentBlocks fields
 
 Fixes and improvements:
+- Modify hide advanced feature to accept list of CB settings
 - Add Dashboard template to template list
 - Invert Table and Steps elements inside inverted segments
 - Add URL parameter to invert layouts in Backyard

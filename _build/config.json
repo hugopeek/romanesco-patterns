@@ -13167,10 +13167,16 @@
                 "value": ""
             },
             {
-                "key": "cb_hide_advanced_features",
-                "type": "combo-boolean",
+                "key": "cb_hide_settings",
+                "type": "textfield",
                 "area": "ContentBlocks - Settings",
-                "value": "0"
+                "value": ""
+            },
+            {
+                "key": "cb_hide_fields",
+                "type": "textfield",
+                "area": "ContentBlocks - Settings",
+                "value": ""
             },
             {
                 "key": "cta_container_id",
