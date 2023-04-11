@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add more TVs for relevant settings in Backstop template
 - Fix Boson descriptions in Backyard pattern library
 
 ## Romanesco Patterns 1.0.0-beta12

@@ -3,8 +3,132 @@
         "elements": {
             "tvs": [
                 {
+                    "caption": "Viewports",
+                    "name": "backstop_viewports",
+                    "description": "JSON array of screen size objects to test against.",
+                    "type": "ace",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Testing",
+                    "sortOrder": 1,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Engine",
+                    "name": "backstop_engine",
+                    "description": "Choose which rendering engine to use. Puppeteer renders pages in headless Chrome, whereas Playwright also has the option to use Firefox or Webkit. See setting below.",
+                    "type": "listbox",
+                    "inputOptionValues": "Puppeteer==puppeteer||Playwright==playwright",
+                    "defaultValue": "puppeteer",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Testing",
+                    "sortOrder": 10,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Browser",
+                    "name": "backstop_engine_browser",
+                    "description": "Changing this only applies if engine is Playwright.",
+                    "type": "listbox",
+                    "inputOptionValues": "Chromium (Chrome, Edge, Brave)==chromium||Firefox||WebKit (Safari/iOS)",
+                    "defaultValue": "chromium",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Testing",
+                    "sortOrder": 11,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Report",
+                    "name": "backstop_report",
+                    "description": "Choose in what format to return the test results.",
+                    "type": "checkbox",
+                    "inputOptionValues": "HTML (opens in browser)==\"browser\"||JSON==\"json\"||JUnit (for CI)==\"CI\"",
+                    "defaultValue": "\"browser\"",
+                    "outputProperties": {
+                        "delimiter": ","
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Testing",
+                    "sortOrder": 20,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Async capture limit",
+                    "name": "backstop_async_capture_limit",
+                    "description": "The maximum number of capturing screens to run in parallel. This value can be adjusted as needed to increase/decrease the amount of RAM required during a test.",
+                    "type": "number",
+                    "defaultValue": "3",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Testing",
+                    "sortOrder": 30,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Async compare limit",
+                    "name": "backstop_async_compare_limit",
+                    "description": "The maximum number of compare screens to run in parallel. This value can be adjusted as needed to increase/decrease the amount of RAM required during a test.",
+                    "type": "number",
+                    "defaultValue": "30",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Testing",
+                    "sortOrder": 31,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Scenario template",
+                    "name": "backstop_scenario_tpl",
+                    "description": "Chunk containing the JSON config used for each scenario.",
+                    "type": "text",
+                    "defaultValue": "backstopScenarioRow",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 1,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
                     "caption": "Reference URL",
-                    "name": "reference_url",
+                    "name": "backstop_reference_url",
                     "description": "Full site URL of the domain to compare with (the live domain for example). If you leave this empty, each page will be tested against an older version of itself.",
                     "type": "text",
                     "properties": [
@@ -13,8 +137,196 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "_Testing",
-                    "sortOrder": "1",
+                    "category": "_Scenarios",
+                    "sortOrder": 5,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Delay",
+                    "name": "backstop_delay",
+                    "description": "Wait for x milliseconds before starting the test. This gives pages a little breathing space to adjust after page load (things like fonts, DOM manipulation, etc).",
+                    "type": "number",
+                    "defaultValue": "2000",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 10,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Selectors",
+                    "name": "backstop_selectors",
+                    "description": "JSON array of CSS specific selectors to capture. Defaults to the entire document if omitted. Use \"viewport\" to capture the viewport size.",
+                    "type": "ace",
+                    "defaultValue": "[]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 20,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Selector expansion",
+                    "name": "backstop_selector_expansion",
+                    "description": "Enable if you want BackstopJS to find and take screenshots of all matching selectors.",
+                    "type": "listbox",
+                    "inputOptionValues": "On==true||Off==false",
+                    "defaultValue": "false",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 21,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Selector expect",
+                    "name": "backstop_selector_expect",
+                    "description": "Explicitly set the number of results that you expect to find with the selectors. If set to a value greater than 0, the test will fail if the number of results does not match this value.",
+                    "type": "number",
+                    "defaultValue": "0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 22,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Hide selectors",
+                    "name": "backstop_hide_selectors",
+                    "description": "JSON array of CSS selectors. These selectors are hidden from our analysis but retained in the original layout flow.",
+                    "type": "ace",
+                    "defaultValue": "[]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 30,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Remove selectors",
+                    "name": "backstop_remove_selectors",
+                    "description": "JSON array of CSS selectors. These selectors are removed from the DOM before screenshots are taken.",
+                    "type": "ace",
+                    "defaultValue": "[]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 31,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Hover selectors",
+                    "name": "backstop_hover_selectors",
+                    "description": "JSON array of CSS selectors. Simulates multiple sequential hover interactions.",
+                    "type": "ace",
+                    "defaultValue": "[]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 35,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Click selectors",
+                    "name": "backstop_click_selectors",
+                    "description": "JSON array of CSS selectors. Simulates multiple sequential click interactions.",
+                    "type": "ace",
+                    "defaultValue": "[]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 36,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Key press selectors",
+                    "name": "backstop_keypress_selectors",
+                    "description": "JSON array of selector and string values. Simulates multiple sequential keypress interactions.",
+                    "type": "ace",
+                    "defaultValue": "[]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 40,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Post interaction wait",
+                    "name": "backstop_post_interaction_wait",
+                    "description": "Wait for x milliseconds after interacting with hoverSelector or clickSelector. Ideal for use with a click or hover element transition.",
+                    "type": "number",
+                    "defaultValue": "300",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 50,
+                    "templates": [
+                        "RegressionTest"
+                    ]
+                },{
+                    "caption": "Mismatch threshold",
+                    "name": "backstop_mismatch_threshold",
+                    "description": "Percentage of diverging pixels allowed to pass test.",
+                    "type": "number",
+                    "defaultValue": "3",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Scenarios",
+                    "sortOrder": 52,
                     "templates": [
                         "RegressionTest"
                     ]
@@ -26,7 +338,12 @@
                     "parent": "00_electrons"
                 },{
                     "name": "_Testing",
-                    "parent": "e_hub"
+                    "parent": "e_hub",
+                    "rank": 100
+                },{
+                    "name": "_Scenarios",
+                    "parent": "e_hub",
+                    "rank": 200
                 }
             ]
         },
