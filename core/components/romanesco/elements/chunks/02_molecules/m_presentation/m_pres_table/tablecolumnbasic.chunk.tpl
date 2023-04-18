@@ -6,5 +6,5 @@
     <td>[[+cell]]</td>
     `]]
 `:else=`
-    [[$tableColumnBasicTD? &uid=`[[+idx]]_[[+colIdx]]`]]
+    [[$tableColumnBasicTD? &uid=`[[+unique_idx]]_[[+idx]]_[[+colIdx]]`]]
 `]]

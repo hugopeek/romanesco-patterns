@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix leaking table data when placing multiple tables in same layout
 - Avoid double image wrapper in Card CB
 - Add more TVs for relevant settings in Backstop template
 - Fix Boson descriptions in Backyard pattern library
