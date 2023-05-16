@@ -3,6 +3,6 @@
     &classname=`[[+className]]`
     &tpl=`[[+rowTpl]]`
     &outputSeparator=`||`
-    &where=`{"key":"[[+inputOptionKey]]"}`
+    &where=`[{"key":"[[+inputOptionKey]]"},{"deleted:=":0}]`
     &sortConfig=`[{"sortby":"[[+sortBy]]","sortdir":"[[+sortDir]]"}]`
 ]]
