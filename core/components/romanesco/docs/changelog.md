@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Disable FormBlocks antispam features in dev mode
 - Don't show soft deleted input options in select TV
 - Fix leaking table data when placing multiple tables in same layout
 - Avoid double image wrapper in Card CB

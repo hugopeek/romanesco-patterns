@@ -6,7 +6,7 @@
 </div>
 `]]
 [[[[modifiedIf?
-    &subject=`[[++formblocks.antispam_hooks]]`
+    &subject=`[[++romanesco.dev_mode:empty=`[[++formblocks.antispam_hooks]]`]]`
     &operator=`contains`
     &operand=`recaptchav2`
     &then=`
@@ -15,7 +15,7 @@
         `
 ]]]]
 [[[[modifiedIf?
-    &subject=`[[++formblocks.antispam_hooks]]`
+    &subject=`[[++romanesco.dev_mode:empty=`[[++formblocks.antispam_hooks]]`]]`
     &operator=`contains`
     &operand=`recaptchav3`
     &then=`
