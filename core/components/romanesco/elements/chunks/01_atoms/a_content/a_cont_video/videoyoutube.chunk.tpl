@@ -8,5 +8,8 @@
      data-source="youtube"
      data-id="[[+video]]"
      data-icon="[[+button_size:stripString=`medium`]] play circle outline"
-     [[+embed_on_click:is=`1`:then=`data-placeholder="[[+youtubeThumb]]"`]]>
+     [[+embed_on_click:is=`1`:then=`
+     data-placeholder="[[+youtubeThumb]]"
+     data-alt="[[+img_alt:default=`Video thumbnail`]]"
+     `]]>
 </div>

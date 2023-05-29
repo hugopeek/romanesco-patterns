@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add alt tag to video thumbnails
 - Disable FormBlocks antispam features in dev mode
 - Don't show soft deleted input options in select TV
 - Fix leaking table data when placing multiple tables in same layout
