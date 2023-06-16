@@ -11,7 +11,7 @@
  *
  * &tplPrefix: Template chunk name prefix.
  * &formID: Resource ID of the form. Can be a comma-separated list also, for
- *  processing multi-page forms.
+ *  processing multipage forms.
  *
  * @var modX $modx
  * @var array $scriptProperties;
@@ -65,7 +65,7 @@ if (!function_exists('getFields')) {
                             break;
                     }
 
-                    if ($value['settings']['field_required'] != 1) {
+                    if ($value['settings']['field_required'] ?? '' != 1) {
                         continue;
                     }
                 }

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Rename alternative_tracking_code setting and use as primary
 - Add alt tag to video thumbnails
 - Disable FormBlocks antispam features in dev mode
 - Don't show soft deleted input options in select TV
