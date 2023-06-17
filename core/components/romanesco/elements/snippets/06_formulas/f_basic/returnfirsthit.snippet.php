@@ -2,7 +2,7 @@
 /**
  * returnFirstHit snippet
  *
- * Feed it a bunch of properties and it spits out the first one that's not empty.
+ * Feed it a bunch of properties, and it spits out the first one that's not empty.
  * Property names are irrelevant. Sort order is all that matters.
  *
  * [[!returnFirstHit?

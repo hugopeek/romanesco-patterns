@@ -6,9 +6,9 @@
  * characters to make sure the surrounding HTML doesn't break.
  *
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $output = $input;

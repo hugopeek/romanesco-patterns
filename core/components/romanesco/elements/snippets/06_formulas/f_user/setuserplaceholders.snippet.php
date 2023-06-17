@@ -1,5 +1,11 @@
 <?php
-/* setUserPlaceholders snippet */
+/**
+ * setUserPlaceholders
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ */
+
 $userId = $modx->getOption('userId', $scriptProperties, '');
 
 // Get a specific user

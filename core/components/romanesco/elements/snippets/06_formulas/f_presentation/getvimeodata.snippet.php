@@ -6,6 +6,9 @@
  *
  * You need to make this request because video ID and thumbnail ID are not
  * always the same, depending on the Vimeo privacy settings.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $videoURL = $modx->getOption('videoURL', $scriptProperties, '');

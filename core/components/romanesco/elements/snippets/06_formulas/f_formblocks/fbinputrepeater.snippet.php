@@ -20,6 +20,9 @@
  * @link http://www.virtudraft.com/blog/dynamic-fields-in-multiple-pages-for-formit.html
  * @author goldsky <goldsky@virtudraft.com>
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 /**

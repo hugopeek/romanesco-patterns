@@ -5,9 +5,9 @@
  * Scan input for duplicate lines and remove them from the output.
  *
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $lines = $modx->getOption('input', $scriptProperties, $input);

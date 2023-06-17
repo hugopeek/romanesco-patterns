@@ -6,6 +6,9 @@
  *
  * This is initially intended to turn CB repeater elements into CSS, without
  * having to change the internal templating in ContentBlocks.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');

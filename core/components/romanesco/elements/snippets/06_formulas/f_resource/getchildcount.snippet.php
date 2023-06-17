@@ -1,4 +1,12 @@
 <?php
+/**
+ * getChildCount
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $parent
+ */
+
 $count = 0;
 $parent = isset($parent) ? (integer) $parent : 0;
 if ($parent > 0) {

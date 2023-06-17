@@ -8,6 +8,9 @@
  * (with &parents) or via a context or system setting (&key).
  *
  * For use in ContentBlocks settings, add &tplMode=`cb`.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $key = $modx->getOption('key',$scriptProperties,null);

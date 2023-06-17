@@ -1,4 +1,13 @@
 <?php
+/**
+ * fbStripAsAlias
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
+ */
+
 $input = strip_tags($input); // strip HTML
 $input = strtolower($input); // convert to lowercase
 $input = preg_replace('/[^A-Za-z0-9 _-]/', '', $input); // strip non-alphanumeric characters

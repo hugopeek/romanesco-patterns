@@ -1,4 +1,13 @@
 <?php
+/**
+ * jsonToHTML
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
+ */
+
 // @todo: write documentation and use chunks for the HTML templating
 
 $json = $modx->getOption('json', $scriptProperties, '');

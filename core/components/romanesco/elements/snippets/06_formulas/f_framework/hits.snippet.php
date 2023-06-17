@@ -29,9 +29,9 @@
  *
  * @package Hits
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  __          __
 /\ \      __/\ \__          	    come to us for your dirty work
 \ \ \___ /\_\ \ ,_\   ____  		created by:

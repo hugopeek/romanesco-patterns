@@ -27,6 +27,9 @@
  * will output: 0,1,2,3,5,8,13,21
  *
  * @link http://www.hashbangcode.com/blog/get-fibonacci-numbers-using-php
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $limit = $modx->getOption('limit', $scriptProperties, 8);

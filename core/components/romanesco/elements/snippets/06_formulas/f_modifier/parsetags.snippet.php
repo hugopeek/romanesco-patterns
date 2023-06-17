@@ -8,9 +8,9 @@
  * Original by Mark Hamstra (http://www.markhamstra.nl).
  *
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $tpl = $modx->getOption('tpl', $scriptProperties, 'tagItemBasic');

@@ -4,7 +4,6 @@
  *
  * A snippet for FormBlocks that generates the correct strings for the FormIt &validate property.
  *
- * @author Hugo Peek
  * @var modX $modx
  * @var array $scriptProperties
  */

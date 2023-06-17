@@ -6,6 +6,11 @@
  * Each content field contains data attributes with the correct text for each heading.
  *
  * Many thanks to @christianseel for the original idea and code.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $input = $modx->getOption('input', $scriptProperties, $input);

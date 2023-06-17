@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * jsonImportInputOptions
  *
  * Generate input options from a JSON file. These options are written directly
@@ -35,6 +35,8 @@
  * If you need to delete options from the JSON file, just add "deleted":1 to
  * their config, run the script once and then delete them from the file.
  *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');

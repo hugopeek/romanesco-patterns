@@ -7,8 +7,6 @@
  * The dimensions for each srcset image are defined inside the
  * img_breakpoints configuration setting.
  *
- * @author: Hugo Peek
- *
  * @var modX $modx
  * @var array $scriptProperties
  */

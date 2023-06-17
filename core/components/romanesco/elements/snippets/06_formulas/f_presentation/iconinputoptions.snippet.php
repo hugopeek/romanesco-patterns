@@ -1,13 +1,19 @@
 <?php
 /**
  * iconInputOptions
+ *
  * Based on fontAwesomeInputOptions, but modified to be used with Semantic UI.
- * MODX Snippet
+ *
  * @author YJ Tso @sepiariver
  * GPL, no warranties, etc.
  *
- * Usage: execute in TV input options, preferably with @CHUNK binding
- * alternatively install as Content Blocks input (link to repo coming soon)
+ * Usage: execute in TV input options, preferably with @CHUNK binding.
+ * Alternatively install as Content Blocks input (link to repo coming soon).
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 // source file

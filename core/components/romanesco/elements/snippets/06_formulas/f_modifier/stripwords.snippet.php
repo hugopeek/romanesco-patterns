@@ -7,9 +7,9 @@
  * values.
  *
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $words = array_map('trim', explode(',', $options));

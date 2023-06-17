@@ -6,6 +6,10 @@
  * For use in CB layout templates.
  *
  * Backwards compatible with the old, classname-based approach.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
  */
 
 $background = $modx->getOption('background', $scriptProperties, $input);

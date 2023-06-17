@@ -26,9 +26,9 @@
  * (if your_tv is 'https://your_website/', this will return 'your_website')
  *
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $input = $modx->getOption('input', $scriptProperties, $input);

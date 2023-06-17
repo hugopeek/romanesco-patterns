@@ -1,14 +1,15 @@
 <?php
 /**
- * @name resourceMediaPath
- * @description Dynamically calculates the upload path for a given resource
+ * resourceMediaPath
+ *
+ * Dynamically calculates the upload path for a given resource.
  *
  * This Snippet is meant to dynamically calculate your baseBath attribute
- * for custom Media Sources.  This is useful if you wish to shepard uploaded
- * images to a folder dedicated to a given resource.  E.g. page 123 would
+ * for custom Media Sources. This is useful if you wish to shepard uploaded
+ * images to a folder dedicated to a given resource. E.g. page 123 would
  * have its own images that page 456 could not reference.
  *
- * USAGE:
+ * USAGE
  * [[resourceMediaPath? &pathTpl=`assets/businesses/{id}/` &createFolder=`1`]]
  * [[resourceMediaPath? &pathTpl=`assets/test/{breadcrumb}`]]
  * [[resourceMediaPath? &pathTpl=`assets/test/{breadcrumb}` &breadcrumbdepth=`2`]]
@@ -18,8 +19,12 @@
  *		Relative to MODX base_path
  *		Available placeholders: {id}, {pagetitle}, {parent}
  * &docid (optional) integer page id
- * &createFolder (optional) boolean whether or not to create
+ * &createFolder (optional) boolean whether to create folder or not
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
+
 $pathTpl = $modx->getOption('pathTpl', $scriptProperties, '');
 $docid = $modx->getOption('docid', $scriptProperties, '');
 $createfolder = $modx->getOption('createFolder', $scriptProperties, false);
@@ -29,7 +34,7 @@ $path = '';
 $createpath = false;
 
 if (empty($pathTpl)) {
-    $modx->log(MODX_LOG_LEVEL_ERROR, '[resourceMediaPath]: pathTpl not specified.');
+    $modx->log(modX::LOG_LEVEL_ERROR, '[resourceMediaPath]: pathTpl not specified.');
     return;
 }
 
@@ -66,7 +71,7 @@ if (empty($docid)) {
 }
 
 if (empty($docid)) {
-    $modx->log(MODX_LOG_LEVEL_ERROR, '[resourceMediaPath]: docid could not be determined.');
+    $modx->log(modX::LOG_LEVEL_ERROR, '[resourceMediaPath]: docid could not be determined.');
     return;
 }
 
@@ -118,7 +123,7 @@ if ($resource = $modx->getObject('modResource', $docid)) {
 
         $permissions = octdec('0' . (int)($modx->getOption('new_folder_permissions', null, '755', true)));
         if (!@mkdir($fullpath, $permissions, true)) {
-            $modx->log(MODX_LOG_LEVEL_ERROR, sprintf('[resourceMediaPath]: could not create directory %s).', $fullpath));
+            $modx->log(modX::LOG_LEVEL_ERROR, sprintf('[resourceMediaPath]: could not create directory %s).', $fullpath));
         } else {
             chmod($fullpath, $permissions);
         }
@@ -126,6 +131,6 @@ if ($resource = $modx->getObject('modResource', $docid)) {
 
     return $path;
 } else {
-    $modx->log(MODX_LOG_LEVEL_ERROR, sprintf('[resourceMediaPath]: resource not found (page id %s).', $docid));
+    $modx->log(modX::LOG_LEVEL_ERROR, sprintf('[resourceMediaPath]: resource not found (page id %s).', $docid));
     return;
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * fbFormReport Snippet
+ * fbFormReport
  *
  * Generates a report from submitted field values. Primarily used in email
  * responders of course, but you can also use this snippet to template other
@@ -11,10 +11,10 @@
  *
  * &tplPrefix: Template chunk name prefix.
  * &formID: Resource ID of the form. Can be a comma-separated list also, for
- *  processing multipage forms.
+ *  processing multi-page forms.
  *
  * @var modX $modx
- * @var array $scriptProperties;
+ * @var array $scriptProperties
  */
 
 $formID = $modx->getOption('formID', $scriptProperties, '');

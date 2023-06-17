@@ -16,9 +16,9 @@
  * call and clear cache (from top menu, NOT by saving resource).
  *
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $input = $modx->getOption('input', $scriptProperties, $input);

@@ -43,6 +43,8 @@
  * not be processed, so always place input strings that contain the partial value of another string lower on the list!
  *
  * @author Hugo Peek
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $input = $modx->getOption('input', $scriptProperties, '');

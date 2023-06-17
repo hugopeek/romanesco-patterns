@@ -13,6 +13,9 @@
  *
  * As snippet:
  *   [[firstChildID? &id=`[[*id]]`]]
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $id = (isset($input) && !empty($input)) ? $input : false;

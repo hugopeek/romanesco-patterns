@@ -1,4 +1,15 @@
 <?php
+/**
+ * jsonGetValue
+ *
+ * Get the value of a specific key from a JSON string.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
+ */
+
 $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
 $romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
 

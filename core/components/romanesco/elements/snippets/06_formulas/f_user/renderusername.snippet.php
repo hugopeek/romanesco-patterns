@@ -1,4 +1,13 @@
 <?php
+/**
+ * renderUserName
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
+ */
+
 // Get a specific user
 $id = $modx->getOption('id', $scriptProperties, $input);
 $user = $modx->getObject('modUser', $id);

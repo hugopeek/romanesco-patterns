@@ -4,6 +4,9 @@
  *
  * Check if user has access permissions for a certain context and redirect to
  * unauthorized page if that's not the case.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $context = $modx->getOption('context', $scriptProperties, $modx->context->get('key'));

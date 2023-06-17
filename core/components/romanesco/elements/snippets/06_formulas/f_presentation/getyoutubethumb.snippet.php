@@ -3,7 +3,10 @@
  * getYoutubeThumb
  *
  * Retrieve the largest existing thumbnail image available. You can choose
- * between JPG and webP extension.
+ * between JPG and WebP extension.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $videoID = $modx->getOption('videoID', $scriptProperties, '');

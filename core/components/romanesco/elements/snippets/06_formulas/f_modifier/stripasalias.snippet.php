@@ -7,9 +7,9 @@
  * example.
  *
  * @var modX $modx
- * @var array $scriptProperties;
- * @var string $input;
- * @var string $options;
+ * @var array $scriptProperties
+ * @var string $input
+ * @var string $options
  */
 
 $input = strip_tags($input); // strip HTML

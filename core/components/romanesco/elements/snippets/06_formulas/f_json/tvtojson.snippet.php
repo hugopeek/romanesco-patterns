@@ -19,6 +19,8 @@
  *     &optionsDelimiter=`0`
  * ]]
  *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $tvName = $modx->getOption('tv', $scriptProperties, '');

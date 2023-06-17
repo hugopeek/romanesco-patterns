@@ -2,7 +2,10 @@
 /**
  * getImageDimensions
  *
- * Retrieve width and height from physical image files. Auto detects SVGs.
+ * Retrieve width and height from physical image files. Auto-detects SVGs.
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $imgPath = $modx->getOption('image', $scriptProperties, '');
