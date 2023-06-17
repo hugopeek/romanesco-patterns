@@ -3,32 +3,17 @@
  * getContextSetting
  *
  * Useful for retrieving settings from a different context.
- * Used in the Head chunk for always looking for custom css on main domain.
  *
- * @author Bob Ray
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
-$ctx = $modx->getOption('context', $scriptProperties, null);
-$setting = $modx->getOption('setting', $scriptProperties, null);
+$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
+$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
 
-if ($ctx == null) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[getContextSetting] No Context set');
-    return '';
-} elseif ($setting === null) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[getContextSetting] No Setting set');
-    return '';
-} else {
-    $csObj = $modx->getObject('modContextSetting',
-        array(
-            'context_key' => $ctx,
-            'key' => $setting
-        )
-    );
-}
+if (!($romanesco instanceof Romanesco)) return;
 
-if (is_object($csObj)) {
-    return $csObj->get('value');
-} else {
-    $modx->log(modX::LOG_LEVEL_INFO, '[getContextSetting] Context Setting not found');
-    return '';
-}
+$context = $modx->getOption('context', $scriptProperties);
+$setting = $modx->getOption('setting', $scriptProperties);
+
+return $romanesco->getContextSetting($setting, $context);

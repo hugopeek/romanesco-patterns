@@ -7,6 +7,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Rewrite getContextSetting snippet to use function from base class
 - Rename alternative_tracking_code setting and use as primary
 - Add alt tag to video thumbnails
 - Disable FormBlocks antispam features in dev mode
