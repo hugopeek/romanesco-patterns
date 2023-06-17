@@ -11756,6 +11756,21 @@
                     "category": "f_basic"
                 },
                 {
+                    "name": "getConfigSetting",
+                    "description": "Context aware retrieval of a Configuration (ClientConfig) setting.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_basic"
+                },
+                {
                     "name": "getElementDescription",
                     "description": "Retrieve the description of an element. Used in the front-end library to prevent having to enter the same information twice. This paragraph is also loaded with getElementDescription!",
                     "properties": [
@@ -11787,7 +11802,7 @@
                 },
                 {
                     "name": "returnFirstHit",
-                    "description": "Feed it a bunch of properties and it spits out the first one that's not empty. Property names are irrelevant. Sort order is all that matters.",
+                    "description": "Feed it a bunch of properties, and it spits out the first one that's not empty. Property names are irrelevant. Sort order is all that matters.",
                     "properties": [
                         {
                             "name": "elementStatus",

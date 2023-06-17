@@ -3,6 +3,9 @@
 ## Romanesco Patterns 1.0.0-beta13
 Released on ...
 
+New features:
+- Add getConfigSetting snippet
+
 Fixes and improvements:
 - Rename alternative_tracking_code setting and use as primary
 - Add alt tag to video thumbnails
