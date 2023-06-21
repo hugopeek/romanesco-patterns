@@ -7,6 +7,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Forward context placeholder to globalBackgroundsTheme chunk
 - Remove unused / unfinished snippets
 - Rewrite getContextSetting snippet to use function from base class
 - Rename alternative_tracking_code setting and use as primary

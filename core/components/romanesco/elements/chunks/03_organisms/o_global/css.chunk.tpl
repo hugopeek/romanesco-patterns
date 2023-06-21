@@ -67,6 +67,6 @@
     &subject=`globalBackgroundsTheme`
     &operator=`iselement`
     &operand=`chunk`
-    &then=`$globalBackgroundsTheme`
+    &then=`$globalBackgroundsTheme? &context=`[[+context:empty=`web`]]``
     &else=``
 ]]]]
