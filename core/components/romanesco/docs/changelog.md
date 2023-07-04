@@ -7,6 +7,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Sync resourceMediaPath snippet with latest MIGX version
 - Forward context placeholder to globalBackgroundsTheme chunk
 - Remove unused / unfinished snippets
 - Rewrite getContextSetting snippet to use function from base class
