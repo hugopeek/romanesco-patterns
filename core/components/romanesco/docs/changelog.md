@@ -7,6 +7,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Add Semantic classnames to lists inside introtext
 - Display bullets above list items in centered lists
 - More fixes for undefined array key warnings in PHP 8
 - Sync resourceMediaPath snippet with latest MIGX version
