@@ -25,14 +25,14 @@ $output = array();
 
 // Go through CB data and collect all required fields
 foreach ($cbData as $field) {
-    if ($field['settings']['field_required'] != 1) {
+    if ($field['settings']['field_required'] ?? '' != 1) {
         continue;
     }
 
     // Get field name and format as alias
-    $fieldName = $field['settings']['field_name_html'];
+    $fieldName = $field['settings']['field_name_html'] ?? '';
     if (!$fieldName) {
-        $fieldName = $field['settings']['field_name'];
+        $fieldName = $field['settings']['field_name'] ?? '';
     }
     $fieldName = $modx->runSnippet('fbStripAsAlias', array('input' => $fieldName));
 

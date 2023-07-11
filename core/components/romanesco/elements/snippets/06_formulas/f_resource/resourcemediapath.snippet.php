@@ -66,7 +66,7 @@ if (empty($docid)) {
 
         // Read the &id param from an Ajax request
         $parsedUrl = parse_url($_SERVER['HTTP_REFERER']);
-        if ($parsedUrl['query'] ?? '') {
+        if (isset($parsedUrl['query'])) {
             parse_str($parsedUrl['query'], $parsedQuery);
         }
 

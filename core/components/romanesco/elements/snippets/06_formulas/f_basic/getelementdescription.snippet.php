@@ -94,7 +94,7 @@ if ($modxObject) {
     // Properties need to be unserialized first
     if ($property) {
         $properties = unserialize($output, ['allowed_classes' => false]);
-        $output = $properties[$property]['value'];
+        $output = $properties[$property]['value'] ?? '';
     }
 
     return $output;

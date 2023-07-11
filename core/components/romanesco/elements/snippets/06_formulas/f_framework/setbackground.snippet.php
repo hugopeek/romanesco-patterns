@@ -12,7 +12,7 @@
  * @var string $input
  */
 
-$background = $modx->getOption('background', $scriptProperties, $input);
+$background = $modx->getOption('background', $scriptProperties, $input ?? null);
 $cbField = $modx->getOption('romanesco.cb_field_background_id', $scriptProperties, '');
 
 // Convert system default value

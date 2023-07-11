@@ -15,7 +15,7 @@ $properties = $modx->getOption('scriptProperties', $scriptProperties, array());
 $configs = $modx->getOption('configs', $properties, '');
 
 // Set lowest new number available
-if ($properties['object_id'] === 'new') {
+if ($properties['object_id'] === 'new' && isset($properties['resource_id'])) {
 
     // Ask for highest number so far
     $q = $modx->newQuery('rmExternalLink', array('resource_id' => $properties['resource_id']));

@@ -14,7 +14,7 @@ $properties = $modx->getOption('scriptProperties', $scriptProperties, array());
 $configs = $modx->getOption('configs', $properties, '');
 
 // Update key in child options if you change it
-if (is_object($object)) {
+if (is_object($object) && isset($properties['key'])) {
     $children = $modx->getCollection('rmOption', array('group' => $object->get('id')));
 
     foreach ($children as $child) {

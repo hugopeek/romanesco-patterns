@@ -117,7 +117,7 @@ switch ($modx->event->name) {
         ));
         foreach ($pendingTasks as $pendingTask) {
             $data = $pendingTask->get('data');
-            if ($data['id'] == $id && $data['url'] == $url) {
+            if ($data['id'] ?? '' == $id && $data['url'] ?? '' == $url) {
                 return true;
             }
         }

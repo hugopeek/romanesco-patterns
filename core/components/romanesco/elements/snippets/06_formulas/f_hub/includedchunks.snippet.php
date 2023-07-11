@@ -107,7 +107,7 @@ if (stripos($patternType, 'bosonfield') && $patternID) {
         $properties = $result->get('properties');
         $array = json_decode($properties, true);
 
-        $chunkID = $array['chunk'];
+        $chunkID = $array['chunk'] ?? '';
 
         $chunk = $modx->getObject('modChunk', array(
             'id' => $chunkID
@@ -137,7 +137,7 @@ if (stripos($patternType, 'bosonfield') && $patternID) {
             $properties = $result->get('properties');
             $array = json_decode($properties, true);
 
-            $chunks = $array['available_chunks'];
+            $chunks = $array['available_chunks'] ?? '';
             $result = explode(',', $chunks);
 
             foreach ($result as $name) {

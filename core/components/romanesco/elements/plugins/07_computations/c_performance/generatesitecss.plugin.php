@@ -65,7 +65,7 @@ switch ($modx->event->name) {
             $cbData = json_decode($cbData, true);
 
             // It's probably just 1 background field, but let's not assume anything
-            $fields = $cbData[0]['content']['main'];
+            $fields = $cbData[0]['content']['main'] ?? [];
             foreach ($fields as $field) {
                 if ($field['field'] != 109) continue;
                 $i = 0;

@@ -57,7 +57,7 @@ $pendingTasks = $modx->getCollection('sTaskRun', [
 ]);
 foreach ($pendingTasks as $pendingTask) {
     $data = $pendingTask->get('data');
-    if ($data['css_path'] == $cssPath) {
+    if ($data['css_path'] ?? '' == $cssPath) {
         return;
     }
 }

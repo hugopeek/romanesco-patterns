@@ -33,12 +33,12 @@ $cachePath = rtrim($cachePath, '/') . '/video/youtube/';
 $cachePathFull = MODX_BASE_PATH . $cachePath;
 
 // Invalidate cache if ID changed
-if (is_array($data) && array_diff($data['properties'], $scriptProperties)) {
+if (isset($data['properties']) && array_diff($data['properties'], $scriptProperties)) {
     $data = '';
 }
 
 // Invalidate cache if thumbnail can't be found
-if (is_array($data) && !file_exists(MODX_BASE_PATH . $data['thumbPath'])) {
+if (isset($data['thumbPath']) && !file_exists(MODX_BASE_PATH . $data['thumbPath'])) {
     $data = '';
 }
 

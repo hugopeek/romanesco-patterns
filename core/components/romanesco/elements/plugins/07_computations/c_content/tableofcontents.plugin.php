@@ -94,8 +94,8 @@ switch ($modx->event->name) {
         foreach ($toc as $index => $item) {
             $output[] = $modx->getChunk($tpl, array(
                 'link' => $resourceURI . '#' . $item['anchor'],
-                'menutitle' => $item['text'],
-                'classnames' => $item['level'],
+                'menutitle' => $item['text'] ?? '',
+                'classnames' => $item['level'] ?? '',
                 'idx' => $idx++,
             ));
         }

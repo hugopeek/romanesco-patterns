@@ -33,7 +33,7 @@ if ($cbField) {
 
         // Set placeholder with wrapper template, if present inside properties field
         $properties = json_decode($field->get('properties'), true);
-        $wrapperTemplate = $properties['wrapper_template'];
+        $wrapperTemplate = $properties['wrapper_template'] ?? '';
         if ($wrapperTemplate) {
             $output = $modx->getChunk('displayRawTemplate', array(
                 'template' => $wrapperTemplate,

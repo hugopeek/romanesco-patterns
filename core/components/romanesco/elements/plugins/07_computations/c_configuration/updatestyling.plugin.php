@@ -42,7 +42,7 @@ switch($eventName) {
         }
 
         // Get current configuration settings (before save) for active context
-        $currentContext = $savedSettings['context'];
+        $currentContext = $savedSettings['context'] ?? '';
         $currentSettings = $clientConfig->getSettings($currentContext);
         if ($clientConfig instanceof ClientConfig) {
             $cacheOptions = array(xPDO::OPT_CACHE_KEY => 'system_settings');
@@ -72,22 +72,22 @@ switch($eventName) {
 
         // Remove leading '/' slash from path values
         // This somehow gets added by MODX, resulting in these keys being incorrectly flagged as changed
-        $currentSettingsTheme['logo_path'] = ltrim($currentSettingsTheme['logo_path'],'/');
-        $currentSettingsTheme['logo_inverted_path'] = ltrim($currentSettingsTheme['logo_inverted_path'],'/');
-        $currentSettingsTheme['logo_badge_path'] = ltrim($currentSettingsTheme['logo_badge_path'],'/');
-        $currentSettingsTheme['logo_badge_inverted_path'] = ltrim($currentSettingsTheme['logo_badge_inverted_path'],'/');
+        $currentSettingsTheme['logo_path'] = ltrim($currentSettingsTheme['logo_path'],'/') ?? '';
+        $currentSettingsTheme['logo_inverted_path'] = ltrim($currentSettingsTheme['logo_inverted_path'],'/') ?? '';
+        $currentSettingsTheme['logo_badge_path'] = ltrim($currentSettingsTheme['logo_badge_path'],'/') ?? '';
+        $currentSettingsTheme['logo_badge_inverted_path'] = ltrim($currentSettingsTheme['logo_badge_inverted_path'],'/') ?? '';
 
         // Add media source to saved paths
-        if ($savedSettingsTheme['logo_path']) {
+        if (isset($savedSettingsTheme['logo_path'])) {
             $savedSettingsTheme['logo_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_path']);
         }
-        if ($savedSettingsTheme['logo_inverted_path']) {
+        if (isset($savedSettingsTheme['logo_inverted_path'])) {
             $savedSettingsTheme['logo_inverted_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_inverted_path']);
         }
-        if ($savedSettingsTheme['logo_badge_path']) {
+        if (isset($savedSettingsTheme['logo_badge_path'])) {
             $savedSettingsTheme['logo_badge_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_badge_path']);
         }
-        if ($savedSettingsTheme['logo_badge_inverted_path']) {
+        if (isset($savedSettingsTheme['logo_badge_inverted_path'])) {
             $savedSettingsTheme['logo_badge_inverted_path'] = $imgMediaSource->prepareOutputUrl($savedSettingsTheme['logo_badge_inverted_path']);
         }
 
@@ -122,7 +122,7 @@ switch($eventName) {
             }
 
             // Generate favicon if a new logo image was provided
-            if ($updatedSettings['logo_badge_path']) {
+            if (isset($updatedSettings['logo_badge_path'])) {
                 if (!$romanesco->generateFavicons($latestSettings)) {
                     $modx->log(modX::LOG_LEVEL_ERROR, "[Romanesco] Could not generate favicon for context $currentContext");
                     break;
@@ -130,7 +130,7 @@ switch($eventName) {
             }
 
             // Prevent favicons from being loaded if badge image is not present at this point
-            if (!$latestSettings['logo_badge_path']) {
+            if (!isset($latestSettings['logo_badge_path'])) {
                 $version = $modx->getObject('modSystemSetting', array('key' => 'romanesco.favicon_version'));
                 if ($version) {
                     $version->set('value', '');

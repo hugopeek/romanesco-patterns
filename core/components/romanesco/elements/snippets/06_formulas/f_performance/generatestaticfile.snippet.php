@@ -21,7 +21,7 @@ $file = $modx->getOption('file', $scriptProperties, '');
 $resourceID = $modx->getOption('id', $scriptProperties, '');
 
 $pathInfo = pathinfo($file);
-$path = $pathInfo['dirname'];
+$path = $pathInfo['dirname'] ?? '';
 
 if (!file_exists($path)) {
     mkdir($path, 0755, true);

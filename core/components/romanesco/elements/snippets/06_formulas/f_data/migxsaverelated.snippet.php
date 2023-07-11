@@ -24,7 +24,7 @@ $createdby = $object->get('createdby');
 $weight = $object->get('weight');
 
 // Set current resource as source (if no source was set)
-if (!$source) {
+if (!$source && isset($properties['resource_id'])) {
     $object->set('source', $properties['resource_id']);
     $object->save();
 

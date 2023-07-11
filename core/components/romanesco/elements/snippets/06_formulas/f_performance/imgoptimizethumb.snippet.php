@@ -100,7 +100,7 @@ $schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption(
 $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
 
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
-if (!($scheduler instanceof Scheduler) || is_object($task)) {
+if (!($scheduler instanceof Scheduler) || isset($task)) {
     try {
         $image = Vips\Image::newFromFile($imgPathFull);
     }
@@ -149,7 +149,7 @@ $pendingTasks = $modx->getCollection('sTaskRun', array(
 ));
 foreach ($pendingTasks as $pendingTask) {
     $data = $pendingTask->get('data');
-    if ($data['img_path'] == $imgPath && $data['img_quality'] == $imgQuality) {
+    if ($data['img_path'] ?? '' == $imgPath && $data['img_quality'] ?? '' == $imgQuality) {
         return;
     }
 }
