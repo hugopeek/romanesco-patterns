@@ -222,6 +222,14 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Display bullets above list items in centered lists
+        $dom->filter('.ui.center.aligned')
+            ->each(function(HtmlPageCrawler $container) {
+                $container->filter('.ui.list')->addClass('vertical');
+                $container->filter('.aligned:not(.center) .ui.vertical.list')->removeClass('vertical');
+            })
+        ;
+
         // Make regular divider headers smaller
         $dom->filter('span.ui.divider.header')
             ->addClass('tiny')
