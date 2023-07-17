@@ -68,7 +68,7 @@
 </div>
 `]]
 
-<form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] registration form" name="fb[[*id]]" action="[[~[[+current_id]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] registration form" name="fb[[*id]]" action="[[~[[+current_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
     <div class="ui [[+segment_type]]">
 
         [[*content]]
