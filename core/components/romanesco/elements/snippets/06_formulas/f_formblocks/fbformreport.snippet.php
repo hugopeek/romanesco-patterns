@@ -4,7 +4,7 @@
  *
  * Generates a report from submitted field values. Primarily used in email
  * responders of course, but you can also use this snippet to template other
- * kinds of functionality (confirmation pages, multi page forms..).
+ * kinds of functionality (confirmation pages, multi-page forms..).
  *
  * @author Jsewill
  * @version 1.0
@@ -65,7 +65,8 @@ if (!function_exists('getFields')) {
                             break;
                     }
 
-                    if ($value['settings']['field_required'] ?? '' != 1) {
+                    $required = $value['settings']['field_required'] ?? 0;
+                    if ($required != 1) {
                         continue;
                     }
                 }
@@ -111,7 +112,7 @@ foreach ($forms as $formID) {
     $uid++;
 
     // Only add header if there are multiple forms and a tpl chunk present
-    if ($forms[1] && $tplSectionHeader) {
+    if (isset($forms[1]) && $tplSectionHeader) {
         $title = $resource->get('menutitle') ? $resource->get('menutitle') : $resource->get('pagetitle');
         $result[] = $modx->getChunk($tplSectionHeader, ['title' => $title]);
     }

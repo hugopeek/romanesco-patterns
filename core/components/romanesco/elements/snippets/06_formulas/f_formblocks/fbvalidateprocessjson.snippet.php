@@ -25,7 +25,8 @@ $output = array();
 
 // Go through CB data and collect all required fields
 foreach ($cbData as $field) {
-    if ($field['settings']['field_required'] ?? '' != 1) {
+    $required = $field['settings']['field_required'] ?? 0;
+    if ($required != 1) {
         continue;
     }
 
