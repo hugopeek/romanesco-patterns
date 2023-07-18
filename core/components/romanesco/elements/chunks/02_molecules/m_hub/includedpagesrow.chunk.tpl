@@ -1,5 +1,7 @@
-<a class="item" href="[[~[[+id]]]]">
+<div class="item">
     <span class="ui circular label">[[setPatternType? &input=`pages`]]</span>
-    [[+pagetitle]]
-</a>
+    <a href="[[~[[+id]]]]">[[+pagetitle]]</a>
+    ([[+id]])
+    <a href="[[++site_url:stripString=`hub.`]]manager/?a=resource/update&id=[[+id]]" class="ui basic tiny right floated edit label">Edit</a>
+</div>
 [[+wrapper]]
