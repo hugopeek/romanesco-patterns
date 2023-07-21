@@ -68,6 +68,19 @@
                     ],
                     "category": "f_resource"
                 },{
+                    "name": "renderReferringPages",
+                    "description": "Takes an ID as input and returns a list of pages in which this resource is used. Intended as snippet renderer for Collections, to show where Forms, CTAs and Backgrounds are being used.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_resource"
+                },{
                     "name": "resourceTVInputOptions",
                     "description": "Generate input option values that can be used in TVs, for creating resource selectors.",
                     "properties": [
