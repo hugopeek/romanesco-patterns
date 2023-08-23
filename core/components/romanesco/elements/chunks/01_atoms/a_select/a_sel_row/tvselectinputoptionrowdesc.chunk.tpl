@@ -1,1 +1,1 @@
-<b>[[+name]]</b>[[+description:before=`<br>`]]==[[+[[+linkType]]]]
+<strong>[[+name]]</strong>[[+description:before=`<div class="description">`:after=`</div>`]]==[[+[[+linkType]]]]

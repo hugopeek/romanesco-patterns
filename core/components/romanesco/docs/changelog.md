@@ -7,6 +7,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Wrap descriptions in div inside combo box dropdowns
 - Show column with referring pages in Form, CTA and Background grids
 - Show page ID and edit button in lists of included pages
 - Add Semantic classnames to lists inside introtext
