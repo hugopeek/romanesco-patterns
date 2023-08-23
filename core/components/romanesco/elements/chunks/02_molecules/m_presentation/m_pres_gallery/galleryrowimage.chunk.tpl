@@ -4,8 +4,8 @@
             &subject=`[[+extension:lcase]]`
             &operator=`EQ`
             &operand=`svg`
-            &then=`$svg? &classes=`regular` &url=`[[+url]]` &alt=`[[+title]]` &uid=`[[+unique_idx]]``
-            &else=`$imgResponsiveGallery? &alt=`[[+title]]` &uid=`[[+unique_idx]]``
+            &then=`$svg? &classes=`regular` &url=`[[+url]]` &alt=`[[+title:empty=`[[%romanesco.gallery.alt_fallback]]`]]` &uid=`[[+unique_idx]]``
+            &else=`$imgResponsiveGallery? &alt=`[[+title:empty=`[[%romanesco.gallery.alt_fallback]]`]]` &uid=`[[+unique_idx]]``
         ]]]]
     </figure>
 </div>

@@ -8,5 +8,5 @@
      `]]
      width="[[+width]]"
      height="[[+height]]"
-     alt="[[+alt:htmlent]]"
+     alt="[[+alt:empty=`[[%romanesco.img.alt_fallback]]`:htmlent]]"
 >

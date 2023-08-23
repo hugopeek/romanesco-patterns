@@ -29,5 +29,5 @@
      `]]
      [[+width:notempty=`width="[[+width]]"`]]
      [[+height:notempty=`height="[[+height]]"`]]
-     alt="[[+alt:empty=`[[+title]]`:htmlent]]"
+     alt="[[+alt:htmlent]]"
 />

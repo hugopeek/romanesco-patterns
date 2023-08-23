@@ -26,5 +26,5 @@
      `]]
      width="[[++max_thumb_width]]"
      height="[[+max_thumb_height]]"
-     alt="[[+alt:htmlent]]"
+     alt="[[+alt:empty=`[[%romanesco.img.alt_fallback]]`:htmlent]]"
 >

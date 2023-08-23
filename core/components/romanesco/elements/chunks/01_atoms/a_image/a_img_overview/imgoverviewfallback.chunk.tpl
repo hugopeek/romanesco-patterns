@@ -1,1 +1,1 @@
-<img src="[[++overview_img_[[+img_type]]_fallback]]" alt="[[%romanesco.overview.img_fallback]]">
+<img src="[[++overview_img_[[+img_type]]_fallback]]" alt="[[%romanesco.img.not_available]]">

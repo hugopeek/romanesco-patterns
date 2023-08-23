@@ -7,6 +7,8 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Provide fallback text for potentially empty alt tags
+- Fix empty alt tag breaking the gallery
 - Wrap descriptions in div inside combo box dropdowns
 - Show column with referring pages in Form, CTA and Background grids
 - Show page ID and edit button in lists of included pages

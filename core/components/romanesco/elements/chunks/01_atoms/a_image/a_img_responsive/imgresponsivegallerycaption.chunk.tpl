@@ -26,7 +26,7 @@
      `]]
      [[+lightbox:eq=`1`:then=`
      data-lightbox-img="[[pthumb:imgOptimizeThumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width:mpy=`1.5`]]&q=[[++romanesco.img_quality]]&zc=1`]]"
-     data-caption="[[+title]]"
+     data-caption="[[+caption]]"
      `]]
      width="[[++max_thumb_width]]"
      height="[[+max_thumb_height]]"

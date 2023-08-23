@@ -17,7 +17,20 @@
                     "category": "m_cont_image"
                 },{
                     "name": "imageOuterGallery",
-                    "description": "",
+                    "description": "Wrapper for a Gallery with captions image. It accepts regular images and SVGs.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_image"
+                },{
+                    "name": "imageOuterCard",
+                    "description": "Wrapper for a Card CB image. Important note: it needs the imgResponsiveGalleryCaption chunk for proper calculation of the sizes values. Don't ask.",
                     "properties": [
                         {
                             "name": "elementStatus",
