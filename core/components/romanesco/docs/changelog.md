@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Process Markdown content with Sprout
 - Add getConfigSetting snippet
 
 Fixes and improvements:

@@ -1,1 +1,1 @@
-[[*content:replaceRegex=`^---[\s\S]+?---[\s]+`:Markdown]]
+[[*content:sproutProcessMarkdown]]
