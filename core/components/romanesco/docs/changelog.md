@@ -8,6 +8,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Invert basic segments inside inverted layouts
 - Provide fallback text for potentially empty alt tags
 - Fix empty alt tag breaking the gallery
 - Wrap descriptions in div inside combo box dropdowns
