@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add CB for playing a local video file
 - Process Markdown content with Sprout
 - Add getConfigSetting snippet
 

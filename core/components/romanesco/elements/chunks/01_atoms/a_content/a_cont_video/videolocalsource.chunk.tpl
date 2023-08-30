@@ -1,0 +1,1 @@
+<source [[+lazy_load:eq=`1`:then=`data-`]]src="[[+url]]" type="video/[[+extension]]">

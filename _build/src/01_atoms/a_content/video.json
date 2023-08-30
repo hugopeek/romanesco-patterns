@@ -4,7 +4,7 @@
             "chunks": [
                 {
                     "name": "videoYoutube",
-                    "description": "",
+                    "description": "Embed Youtube video. It has the option to load the video after clicking the play button, to avoid heavy downloads on page load. This is enabled by default.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -17,7 +17,33 @@
                     "category": "a_cont_video"
                 },{
                     "name": "videoVimeo",
-                    "description": "",
+                    "description": "Embed Vimeo video. It has the option to load the video after clicking the play button, to avoid heavy downloads on page load. This is enabled by default.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_video"
+                },{
+                    "name": "videoLocal",
+                    "description": "Play a local video file in the browser. Multiple sources can be provided to maximize compatibility. The browser starts trying to play files from the top, until a compatible format is found.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_video"
+                },{
+                    "name": "videoLocalSource",
+                    "description": "Source row for video element. Recommended to stick to .webm or .mp4 files when possible.",
                     "properties": [
                         {
                             "name": "elementStatus",
