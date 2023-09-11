@@ -223,6 +223,39 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Add column class to nested grids
+        //
+        // If a nested grid contains multiple columns, these columns are arranged according to their size,
+        //  combined with the 'equal width' classes on the grid container. This works well in most cases,
+        //  but some grids don't scale down nicely on tablet / computer breakpoints because the parent
+        //  doesn't know how many columns it should count on. This addition sets these classes on the
+        //  parent by counting the number of columns being parsed.
+        //
+        // Only applies to nested grids containing a single row, as different column counts can be applied
+        //  to multiple rows in the same grid.
+        $dom->filter('.ui.nested.equal.width.grid')
+            ->each(function(HtmlPageCrawler $grid) {
+                $firstRow = $grid->filter('.row')->first()->filter('.column');
+                $allRows = $grid->filter('.column');
+
+                // Only operate on grids with a single row
+                if ($firstRow->length == $allRows->length) {
+                    $columns = $firstRow->length;
+                    switch ($columns) {
+                        case 4:
+                            $grid->addClass('four column');
+                            break;
+                        case 3:
+                            $grid->addClass('three column');
+                            break;
+                        case 2:
+                            $grid->addClass('two column');
+                            break;
+                    }
+                }
+            })
+        ;
+
         // Display bullets above list items in centered lists
         $dom->filter('.ui.center.aligned')
             ->each(function(HtmlPageCrawler $container) {

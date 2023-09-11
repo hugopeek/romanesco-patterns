@@ -9,6 +9,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Add column classes to nested grid containers
 - Add option to append anchor to CB button link
 - Add option to fade CB images
 - Invert basic segments inside inverted layouts
