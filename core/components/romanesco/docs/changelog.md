@@ -9,6 +9,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Add option to fade CB images
 - Invert basic segments inside inverted layouts
 - Provide fallback text for potentially empty alt tags
 - Fix empty alt tag breaking the gallery
