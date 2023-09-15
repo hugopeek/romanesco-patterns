@@ -11,13 +11,7 @@
 [[+startPage:eq=`[[!+page]]`:then=`
 <div id="[[If? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`ov_[[Time]]` &else=`[[+prefix]]`]]" class="pagination-wrapper">
     [[$overviewWrapper? &uid=`[[+idx]][[+page]][[+unique_idx]]`]]
-    [[[[modifiedIf?
-        &subject=`paginationFluidTheme`
-        &operator=`iselement`
-        &operand=`chunk`
-        &then=`$paginationFluid? &prefix=`[[+prefix]]``
-        &else=`$paginationFluidTheme? &prefix=`[[+prefix]]``
-    ]]]]
+    [[$paginationFluid? &prefix=`[[+prefix]]`]]
 </div>
 `:else=`
     [[+output]]

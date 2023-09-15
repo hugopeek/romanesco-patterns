@@ -9,6 +9,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Remove theme override for paginationFluid chunk
 - Remove deprecated form_layout TV
 - Use separate chunk for form layout CB options
 - Add inline (equal width) form variant
