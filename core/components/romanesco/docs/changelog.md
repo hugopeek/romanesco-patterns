@@ -9,6 +9,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Remove deprecated form_layout TV
 - Use separate chunk for form layout CB options
 - Add inline (equal width) form variant
 - Add column classes to nested grid containers

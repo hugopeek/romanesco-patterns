@@ -152,21 +152,6 @@
                         "fbRegister"
                     ]
                 },{
-                    "caption": "Layout type",
-                    "name": "fb_form_layout",
-                    "description": "DEPRECATED. This setting has moved to the CB field that loads the form.",
-                    "type": "listbox",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        }
-                    ],
-                    "category": "_Settings - General",
-                    "sortOrder": "5",
-                    "inputOptionValues": "Vertical==vertical||Horizontal==horizontal||Inline==inline",
-                    "defaultValue": "horizontal"
-                },{
                     "caption": "Custom pre-hook(s)",
                     "name": "fb_prehooks",
                     "description": "A snippet name (or comma separated list of names), containing the hook(s). They are executed before the form is initialised. Useful for pre-loading values.",
