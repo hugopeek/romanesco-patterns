@@ -9,6 +9,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Use separate chunk for form layout CB options
 - Add inline (equal width) form variant
 - Add column classes to nested grid containers
 - Add option to append anchor to CB button link
