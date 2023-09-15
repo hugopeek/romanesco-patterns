@@ -123,7 +123,7 @@
 </div>
 `]]
 
-<form id="form-[[*alias]]" class="ui [[+form_size]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[*alias]]" class="ui [[+form_size]] [[+form_layout:eq=`inline`:then=`equal width`]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+current_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
 
     [[- STORE MULTI-PAGE FORM VALUES IN HIDDEN FIELDS ]]
     [[[[+multiple_steps:notempty=`
@@ -154,7 +154,7 @@
             the content area.
         ]]
         [[*content:containsnot=`type="submit"`:then=`
-        <fieldset class="ui [[+padding]] [[+segment_type:isnot=`none`:then=`segment`]]">
+        <fieldset class="ui [[+padding]] [[+segment_type:isnot=`none`:then=`segment`:else=`fieldset`]]">
             [[[[modifiedIf?
                 &subject=`fbAntiSpamTheme`
                 &operator=`iselement`

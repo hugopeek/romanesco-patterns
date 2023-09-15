@@ -225,14 +225,15 @@ switch ($modx->event->name) {
 
         // Add column class to nested grids
         //
-        // If a nested grid contains multiple columns, these columns are arranged according to their size,
-        //  combined with the 'equal width' classes on the grid container. This works well in most cases,
-        //  but some grids don't scale down nicely on tablet / computer breakpoints because the parent
-        //  doesn't know how many columns it should count on. This addition sets these classes on the
-        //  parent by counting the number of columns being parsed.
-        //
-        // Only applies to nested grids containing a single row, as different column counts can be applied
-        //  to multiple rows in the same grid.
+        // If a nested grid contains multiple columns, these columns are
+        //  arranged according to their size, combined with the 'equal width'
+        //  classes on the grid container. This works well in most cases, but
+        //  some grids don't scale down nicely on tablet / computer breakpoints
+        //  because the parent doesn't know how many columns it should count on.
+        // This addition sets these classes on the parent by counting the number
+        //  of columns being parsed.
+        // Only applies to nested grids containing a single row, as different
+        //  column counts can be applied to multiple rows in the same grid.
         $dom->filter('.ui.nested.equal.width.grid')
             ->each(function(HtmlPageCrawler $grid) {
                 $firstRow = $grid->filter('.row')->first()->filter('.column');
@@ -383,6 +384,28 @@ switch ($modx->event->name) {
         ;
         $dom->filter('.ui.form .inline.fields > .wide.field > .dropdown')
             ->addClass('fluid')
+        ;
+
+        // Format inline (equal width) forms
+        // Counter to what you'd expect, the fields in this form shouldn't have
+        //  class inline. So they need to be removed, and the fields need to be
+        //  wrapped in a .fields container.
+        // Special treatment for the submit button: it can be positioned inline
+        //  via CB settings, after which it's inserted after the last form field.
+        $dom->filter('#content form.equal.width')
+            ->each(function (HtmlPageCrawler $form) {
+                $form
+                    ->filter('fieldset:not(:last-child)')
+                    ->wrapInner('<div class="fields"></div>')
+                    ->filter('.field')
+                    ->removeClass('inline')
+                ;
+                $form
+                    ->filter('input[type="submit"].inline')
+                    ->appendTo($form->filter('fieldset .fields')->last())
+                    ->wrap('<div class="compact submit field">')
+                ;
+            })
         ;
 
         // Disable steps following an active step
