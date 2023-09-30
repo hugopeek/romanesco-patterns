@@ -154,7 +154,7 @@
             the content area.
         ]]
         [[*content:containsnot=`type="submit"`:then=`
-        <fieldset class="ui [[+padding]] [[+segment_type:isnot=`none`:then=`segment`:else=`fieldset`]]">
+        <fieldset class="ui [[+padding]] submission [[+segment_type:isnot=`none`:then=`segment`:else=`fieldset`]]">
             [[[[modifiedIf?
                 &subject=`fbAntiSpamTheme`
                 &operator=`iselement`

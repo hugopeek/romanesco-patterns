@@ -403,7 +403,7 @@ switch ($modx->event->name) {
                 $form
                     ->filter('input[type="submit"].inline')
                     ->appendTo($form->filter('fieldset .fields')->last())
-                    ->wrap('<div class="compact submit field">')
+                    ->wrap('<div class="compact submission field">')
                 ;
             })
         ;
