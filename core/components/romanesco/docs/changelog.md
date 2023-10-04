@@ -10,6 +10,7 @@ New features:
 - Add getConfigSetting snippet
 
 Fixes and improvements:
+- Don't manipulate Markdown image paths and links anymore
 - Fix fatal error when attempting to read from empty form session data
 - Remove theme override for paginationFluid chunk
 - Remove deprecated form_layout TV

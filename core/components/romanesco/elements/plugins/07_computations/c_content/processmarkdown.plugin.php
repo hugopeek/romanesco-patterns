@@ -78,25 +78,19 @@ switch ($modx->event->name) {
         $output = &$modx->resource->_output;
         $dom = new HtmlPageCrawler($output);
 
-        // Fix image URLs and prevent them from overflowing their container
         $dom->filter('img')
-            ->each(function (HtmlPageCrawler $image) {
-                $src = $image->getAttribute('src');
-                $image
-                    ->setAttribute('src', 'uploads/notes/' . $src)
-                    ->addClass('ui rounded raised image')
-                ;
+            ->each(function (HtmlPageCrawler $image)
+            {
+                // Prevent images from overflowing their container
+                $image->addClass('ui rounded raised image');
             })
         ;
 
-        // Remove .md extension from links
         $dom->filter('#markdown a')
-            ->each(function (HtmlPageCrawler $link) {
-                $href = $link->getAttribute('href');
-                $link->setAttribute('href', str_replace('.md','',$href));
-
+            ->each(function (HtmlPageCrawler $link)
+            {
                 // Turn into button if desired
-                if (strpos($link,'Continue to:') !== false) {
+                if (str_contains($link, 'Continue to:')) {
                     $link->addClass('ui big primary button');
                 }
             })
@@ -109,8 +103,8 @@ switch ($modx->event->name) {
         $dom->filter('pre')->addClass('language-html');
         $dom->filter('code')
             ->addClass('language-html')
-            ->each(function (HtmlPageCrawler $code) {
-
+            ->each(function (HtmlPageCrawler $code)
+            {
                 // Code snippets in markdown files are rendered by MODX.
                 // To prevent this, you can add a space to all outer tags in
                 //  your markdown file. So [[snippet]] becomes [ [snippet] ].
