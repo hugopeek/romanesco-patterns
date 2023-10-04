@@ -17,13 +17,13 @@
  */
 
 // Erase session data if it's no longer valid
-if (Time() > $_SESSION['formitStore']['valid']) {
+if (isset($_SESSION['formitStore']['valid']) && Time() > $_SESSION['formitStore']['valid']) {
     $_SESSION['formitStore'] = '';
     return true;
 }
 
 // Get and set stored values
-$storedValues = $_SESSION['formitStore']['data'];
+$storedValues = $_SESSION['formitStore']['data'] ?? [];
 $hook->setValues($storedValues);
 
 return true;
