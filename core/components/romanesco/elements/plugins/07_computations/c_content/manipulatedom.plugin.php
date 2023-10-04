@@ -392,7 +392,7 @@ switch ($modx->event->name) {
         //  wrapped in a .fields container.
         // Special treatment for the submit button: it can be positioned inline
         //  via CB settings, after which it's inserted after the last form field.
-        $dom->filter('#content form.equal.width')
+        $dom->filter('form[id*="form-"].equal.width')
             ->each(function (HtmlPageCrawler $form) {
                 $form
                     ->filter('fieldset:not(:last-child)')
