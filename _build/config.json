@@ -3,7 +3,7 @@
     "lowCaseName": "romanesco",
     "description": "Web engineering toolkit, combining atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
-    "version": "1.0.0-beta12",
+    "version": "1.0.0-beta13",
     "package": {
         "elements": {
             "categories": [

@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta13
-Released on ...
+Released on October 8, 2023
 
 New features:
 - Add inline (equal width) form variant

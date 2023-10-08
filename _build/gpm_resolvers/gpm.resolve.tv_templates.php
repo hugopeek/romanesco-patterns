@@ -1197,9 +1197,6 @@ if ($object->xpdo) {
     0 => 'fbForm',
     1 => 'fbRegister',
   ),
-  'fb_form_layout' => 
-  array (
-  ),
   'fb_prehooks' => 
   array (
     0 => 'fbForm',
@@ -1307,7 +1304,79 @@ if ($object->xpdo) {
   array (
     0 => 'GlobalBackground',
   ),
-  'reference_url' => 
+  'backstop_viewports' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_engine' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_engine_browser' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_report' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_async_capture_limit' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_async_compare_limit' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_scenario_tpl' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_reference_url' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_delay' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_selectors' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_selector_expansion' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_selector_expect' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_hide_selectors' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_remove_selectors' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_hover_selectors' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_click_selectors' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_keypress_selectors' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_post_interaction_wait' => 
+  array (
+    0 => 'RegressionTest',
+  ),
+  'backstop_mismatch_threshold' => 
   array (
     0 => 'RegressionTest',
   ),
