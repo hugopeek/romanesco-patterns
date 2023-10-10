@@ -96,8 +96,8 @@ switch ($modx->event->name) {
             })
         ;
 
-        // Turn tables into Semantic tables
-        $dom->filter('#markdown table')->addClass('ui compact table');
+        // Turn tables into Semantic tables (if needed)
+        $dom->filter('#markdown table:not(.ui.table)')->addClass('ui table');
 
         // Add language class to code blocks that do not specify a language
         $dom->filter('pre')->addClass('language-html');
