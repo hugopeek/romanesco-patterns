@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta14
+Released on ...
+
+Fixes and improvements:
+- Only show 1 error message per field with form validation
+
 ## Romanesco Patterns 1.0.0-beta13
 Released on October 8, 2023
 
