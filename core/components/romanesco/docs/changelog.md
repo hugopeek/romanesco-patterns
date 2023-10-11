@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Trim closing period from heading anchors in ToC menu
 - Load assets when displaying Login form
 - Load assets when Markdown content contains a table
 - Only show 1 error message per field with form validation

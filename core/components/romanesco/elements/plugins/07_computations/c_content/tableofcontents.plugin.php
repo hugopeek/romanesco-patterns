@@ -51,6 +51,7 @@ switch ($modx->event->name) {
                         $text = preg_replace('/\s+/', '-', $text); // convert white-space to dash
                         $text = preg_replace('/-+/', '-', $text);  // convert multiple dashes to one
                         $text = trim($text, '-'); // trim excess
+                        $text = rtrim($text, '.'); // trim closing period
 
                         $node->setAttribute('id', $text);
                         return true;
