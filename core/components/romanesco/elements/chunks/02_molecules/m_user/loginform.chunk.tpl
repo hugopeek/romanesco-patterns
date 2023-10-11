@@ -14,3 +14,5 @@
     <input type="hidden" name="service" value="login">
     <button name="login" class="ui [[+form_size]] button" type="submit">[[+actionMsg]]</button>
 </form>
+
+[[!fbLoadAssets]]
