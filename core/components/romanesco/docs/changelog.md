@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Make sure uid placeholder is always unique in filtered overviews
 - Trim closing period from heading anchors in ToC menu
 - Load assets when displaying Login form
 - Load assets when Markdown content contains a table

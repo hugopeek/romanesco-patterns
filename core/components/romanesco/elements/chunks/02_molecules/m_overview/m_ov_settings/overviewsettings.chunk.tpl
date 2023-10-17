@@ -8,7 +8,7 @@
 &alignment=`[[+alignment]]`
 &responsive=`[[+responsive]]`
 &prefix=`[[+prefix]]`
-&unique_idx=`[[+prefix]]`
+&unique_idx=`[[+uid]][[!#GET.q:stripString=`[[*uri]]`:clipString=`-1`:replace=`/==_`]]`
 &title_field=`[[+title_field]]`
 &title_hierarchy=`[[+title_hierarchy]]`
 &title_classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`
