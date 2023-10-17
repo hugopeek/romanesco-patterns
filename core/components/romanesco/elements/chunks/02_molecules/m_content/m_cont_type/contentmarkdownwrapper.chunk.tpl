@@ -3,4 +3,4 @@
         [[$contentMarkdown]]
     </div>
 </div>
-[[[[$contentMarkdown:contains=`<table`:then=`loadAssets? &component=`table``]]]]
+[[[[$contentMarkdown:contains=`</table>`:then=`loadAssets? &component=`table``]]]]
