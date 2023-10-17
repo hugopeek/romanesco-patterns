@@ -33,7 +33,7 @@
 </p>
 
 <p class="ui labels">
-    [[!TaggerGetTags? &resources=`[[+id]]` &rowTpl=`tagItemBasic`]]
+    [[!TaggerGetTags? &resources=`[[+id]]` &groups=`topic` &rowTpl=`tagItemBasicLink`]]
 </p>
 
 [[[[If?
