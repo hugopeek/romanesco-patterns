@@ -33,9 +33,9 @@
         <article id="content">
 
             <header class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]] introduction">
-                <div class="ui text container">
+                <div class="ui main text container">
                     <h1 class="ui header">[[*pagetitle]]</h1>
-                    <p class="meta date"><em>[[*publishedon:strtotime:date=`%e %B %Y`]]</em></p>
+                    <p class="subtitle meta date"><em>[[*publishedon:strtotime:date=`%e %B %Y`]]</em></p>
                 </div>
             </header>
 
