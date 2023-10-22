@@ -125,6 +125,58 @@ switch ($modx->event->name) {
         $dom->filter('#markdown ol > li > ol')->addClass('nested');
         $dom->filter('#markdown ol:not(.nested)')->addClass('ui list');
 
+        // Turn Obsidian callouts into FUI messages
+        $dom->filter('#markdown blockquote')
+            ->each(function (HtmlPageCrawler $quote)
+            {
+                if ($quote->hasClass('callout')) {
+                    $classes = $quote->getAttribute('class');
+                    $class = substr($classes, strpos($classes, ' ') + 1);
+
+                    // Add FUI classes
+                    switch ($class) {
+                        case 'note':
+                        case 'todo':
+                            $class = 'info';
+                            break;
+                        case 'check':
+                        case 'done':
+                            $class = 'success';
+                            break;
+                        case 'caution':
+                        case 'attention':
+                            $class = 'warning';
+                            break;
+                        case 'failure':
+                        case 'fail':
+                        case 'missing':
+                        case 'bug':
+                            $class = 'error';
+                            break;
+                        case 'abstract':
+                        case 'summary':
+                        case 'tldr':
+                        case 'important':
+                            $class = 'primary';
+                            break;
+                        case 'question':
+                        case 'help':
+                        case 'faq':
+                        case 'tip':
+                        case 'hint':
+                        case 'example':
+                            $class = 'secondary';
+                            break;
+                        default:
+                            $class = '';
+                    }
+
+                    // Apply FUI classes
+                    $quote->addClass("ui $class message");
+                };
+            })
+        ;
+
         $output = $dom->saveHTML();
 
         break;

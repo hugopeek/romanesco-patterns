@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Turn Obsidian callouts into FUI messages (in Markdown content)
 - Improve ArticleReadability header styling
 - Only show tags from Topic group in basic article overview tpl
 - Make sure uid placeholder is always unique in filtered overviews
