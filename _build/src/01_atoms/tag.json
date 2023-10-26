@@ -106,6 +106,28 @@
                         }
                     ],
                     "category": "a_tag"
+                },{
+                    "name": "tagWrapper",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "size",
+                            "value": ""
+                        },{
+                            "name": "color",
+                            "value": ""
+                        },{
+                            "name": "type",
+                            "value": "p"
+                        },{
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_tag"
                 }
             ],
             "categories": [
