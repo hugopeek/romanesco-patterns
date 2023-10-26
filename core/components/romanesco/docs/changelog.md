@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add card variants to article overview templates
 - Add message above filtered overviews
 - Turn Obsidian callouts into FUI messages (in Markdown content)
 - Improve ArticleReadability header styling

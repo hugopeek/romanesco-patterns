@@ -16,7 +16,33 @@
                     ],
                     "category": "m_ov_article"
                 },{
+                    "name": "overviewRowArticleBasicCard",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_article"
+                },{
                     "name": "overviewRowArticleImageBasic",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_article"
+                },{
+                    "name": "overviewRowArticleImageTopCard",
                     "description": "",
                     "properties": [
                         {
