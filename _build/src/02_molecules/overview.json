@@ -1,157 +1,16 @@
 {
     "package": {
         "elements": {
-            "chunks": [
-                {
-                    "name": "overviewWrapper",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewWrapperPagination",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRow",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowLink",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowList",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowFluid",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowArticle",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowPerson",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowReview",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowOrganization",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                },{
-                    "name": "overviewRowProject",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_overview"
-                }
-            ],
-
             "categories": [
                 {
                     "name": "m_overview",
                     "parent": "02_molecules"
+                },{
+                    "name": "m_ov_row",
+                    "parent": "m_overview"
+                },{
+                    "name": "m_ov_wrapper",
+                    "parent": "m_overview"
                 },{
                     "name": "m_ov_basic",
                     "parent": "m_overview"
@@ -181,6 +40,9 @@
                     "parent": "m_overview"
                 },{
                     "name": "m_ov_settings",
+                    "parent": "m_overview"
+                },{
+                    "name": "m_ov_filter",
                     "parent": "m_overview"
                 }
             ]
