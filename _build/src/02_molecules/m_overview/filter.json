@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "overviewFilterActiveMessage",
+                    "description": "A segment that shows which filters are currently active, plus the option to reset the overview.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_filter"
+                }
+            ]
+        }
+    }
+}
