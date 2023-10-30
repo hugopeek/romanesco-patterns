@@ -10,9 +10,9 @@
     </a>
 </div>
 <div class="[[+content_width]] wide [[+title_inflate]] main column">
-    <[[+title_hierarchy]] class="ui [[+title_classes]] header">
+    <[[+level]] class="ui [[+title_classes]] header">
         <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
-    </[[+title_hierarchy]]>
+    </[[+level]]>
     [[[[If?
         &subject=`[[+show_introtext]]`
         &operator=`EQ`

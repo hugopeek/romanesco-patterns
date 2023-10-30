@@ -1,9 +1,9 @@
 [[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
 
 <div class="ui padded down pointing segment secondary">
-    <[[+title_hierarchy]]>
+    <[[+level]]>
         <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
-    </[[+title_hierarchy]]>
+    </[[+level]]>
     <p class="quote">[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>
 </div>
 

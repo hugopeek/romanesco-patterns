@@ -1,6 +1,6 @@
 [[$imgOverviewPersonLink? &classes=`circular` &uid=`[[+unique_idx]]`]]
 
-<[[+title_hierarchy]] class="ui [[+title_classes]] header">
+<[[+level]] class="ui [[+title_classes]] header">
     <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
     [[If?
         &subject=`[[+show_subtitle]]`
@@ -8,7 +8,7 @@
         &operand=`1`
         &then=`<span class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</span>`
     ]]
-</[[+title_hierarchy]]>
+</[[+level]]>
 
 [[[[If?
     &subject=`[[+show_introtext]]`

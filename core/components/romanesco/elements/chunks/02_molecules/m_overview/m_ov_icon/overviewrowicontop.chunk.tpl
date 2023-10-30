@@ -1,4 +1,4 @@
-<[[+title_hierarchy]] class="ui [[+title_classes]] icon header">
+<[[+level]] class="ui [[+title_classes]] icon header">
     [[[[If?
         &subject=`[[+icon_type]]`
         &operator=`EQ`
@@ -15,7 +15,7 @@
             &then=`<span class="sub header">[[+overview_subtitle:empty=`[[+longtitle:empty=`[[+pagetitle]]`]]`]]</span>`
         ]]
     </span>
-</[[+title_hierarchy]]>
+</[[+level]]>
 
 [[[[If?
     &subject=`[[+show_introtext]]`

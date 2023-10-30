@@ -10,7 +10,7 @@
 &prefix=`[[+prefix]]`
 &unique_idx=`[[+uid]][[!#GET.q:stripString=`[[*uri]]`:clipString=`-1`:replace=`/==_`]]`
 &title_field=`[[+title_field]]`
-&title_hierarchy=`[[+title_hierarchy]]`
+&level=`[[+title_hierarchy]]`
 &title_classes=`[[+title_hierarchy:is=`span`:then=`tiny`]]`
 &show_subtitle=`[[+show_subtitle]]`
 &show_introtext=`[[+show_introtext]]`

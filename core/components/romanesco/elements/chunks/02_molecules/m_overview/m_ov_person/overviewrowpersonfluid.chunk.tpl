@@ -3,10 +3,10 @@
 </div>
 
 <div class="[[+content_width]] wide [[+title_inflate]] main column">
-    <[[+title_hierarchy]] class="ui [[+title_classes]] header">
+    <[[+level]] class="ui [[+title_classes]] header">
         <a href="[[~[[+id]]]]">[[+person_firstname]]</a>
         <span class="sub header">[[+person_jobtitle]]</span>
-    </[[+title_hierarchy]]>
+    </[[+level]]>
     <p>
         [[$socialConnectButtonsPerson? &uid=`[[+unique_idx]]`]]
     </p>

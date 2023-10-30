@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Forward title_hierarchy CB value to level placeholder [BREAKING CHANGE]
 - Add options to show/hide tags and metadata in basic article overviews
 - Add Card variants to article overview templates
 - Add message above filtered overviews
@@ -189,12 +190,12 @@ New features:
 
 Fixes and improvements:
 - Add box shadow to Markdown images
-- Turn external links TV into MIGXdb grid [BC]
+- Turn external links TV into MIGXdb grid [BREAKING CHANGE]
 - Don't generate critical CSS for Downloads
 - Fix issue where slider would break if slides are separate Image CBs
 - Prevent content in Presentation template from being turned into a slider
 - Add relevant settings from regular overview CBs to 2 column fluid overview
-- Rename incorrect cols field to content_width in 2 column fluid overview [BC]
+- Rename incorrect cols field to content_width in 2 column fluid overview [BREAKING CHANGE]
 - Add quality override setting for global background image
 - Optimize distribution of breakpoint values for responsive image srcsets
 - Apply responsive image sizing to Cards CB
@@ -881,7 +882,7 @@ New features:
 - Add firstChildID snippet for fetching... the first child ID
 
 Fixes and improvements:
-- Refactor Button CB to incorporate icon buttons [BC]
+- Refactor Button CB to incorporate icon buttons [BREAKING CHANGE]
 - Fix first key not being rendered by jsonToHTML snippet
 - Include extension when searching for matching pattern URIs
 - Rename / re-purpose ProjectHub template to ProjectDashboard
@@ -942,10 +943,10 @@ New features:
 - Add alignment setting to heading chunk
 
 Fixes and improvements:
-- Split PatternLab package into Romanesco Patterns and Backyard [BC]
-- Change prefix of FormBlocks system settings [BC]
-- Change / fix all paths related to old PatternLab package [BC]
-- Name changes to improve overall logic [BC]
+- Split PatternLab package into Romanesco Patterns and Backyard [BREAKING CHANGE]
+- Change prefix of FormBlocks system settings [BREAKING CHANGE]
+- Change / fix all paths related to old PatternLab package [BREAKING CHANGE]
+- Name changes to improve overall logic [BREAKING CHANGE]
 - Fix nested layout grids in detail templates receiving incorrect margins
 - Fix TV names in Person and Article overviews
 - Fix caching of nested chunks in Testimonial overviews
@@ -976,7 +977,7 @@ New features:
 - Add templates for Clients and Portfolio
 
 Fixes and improvements:
-- Refactor overview elements for better reusability [BC]
+- Refactor overview elements for better reusability [BREAKING CHANGE]
 - Load FormBlocks fieldset layout with chunk
 - Display syntax highlighted code snippets with Prism.js
 - Fix layout backgrounds not working on subdomains

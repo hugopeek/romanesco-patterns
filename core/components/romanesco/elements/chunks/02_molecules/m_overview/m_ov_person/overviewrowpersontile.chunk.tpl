@@ -1,7 +1,7 @@
 [[-$imgOverviewPersonLink? &uid=`[[+unique_idx]]`]]
 
 <div class="ui overlay">
-    <[[+title_hierarchy]] class="ui [[+title_classes]] inverted header">
+    <[[+level]] class="ui [[+title_classes]] inverted header">
         [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
         [[If?
             &subject=`[[+show_subtitle]]`
@@ -9,7 +9,7 @@
             &operand=`1`
             &then=`<span class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</span>`
         ]]
-    </[[+title_hierarchy]]>
+    </[[+level]]>
 
     [[If?
         &subject=`[[+link_text]]`
