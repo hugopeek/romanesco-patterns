@@ -1,4 +1,4 @@
-<p class="meta">
+<p class="[[+classes]] meta">
     <span class="author">
         [[[[If?
             &subject=`[[+team_member_id]]`

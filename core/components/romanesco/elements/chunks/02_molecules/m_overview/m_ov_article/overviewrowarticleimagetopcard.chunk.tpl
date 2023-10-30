@@ -4,12 +4,23 @@
 
 <div class="[[+alignment]] content">
     [[$headingOverviewLink? &uid=`[[+unique_idx]]`]]
+
     [[[[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`$headingOverviewSubtitleLink? &uid=`[[+unique_idx]]``
-        &else=`$headingOverviewLink? &uid=`[[+unique_idx]]``
+        &then=`$infoArticleMeta? &classes=`subtitle` &uid=`[[+unique_idx]]``
+    ]]]]
+    [[[[If?
+        &subject=`[[+show_tags]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`TaggerGetTags?
+            &resources=`[[+id]]`
+            &groups=`topic`
+            &rowTpl=`tagItemBasicLink`
+            &outTpl=`tagWrapper`
+        `
     ]]]]
     [[[[If?
         &subject=`[[+show_introtext]]`

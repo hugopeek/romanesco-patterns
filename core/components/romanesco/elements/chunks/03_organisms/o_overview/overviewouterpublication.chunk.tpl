@@ -22,6 +22,7 @@
     &sortdir=`[[+[[+prefix]].sortdir]]`
     &where=`[[!TaggerGetResourcesWhere]]`
 
+    &show_tags=`[[+show_tags]]`
     [[$overviewSettings? &uid=`[[+prefix]]`]]
     [[[[+pagination:eq=`1`:then=`$overviewSettingsPagination? &uid=`[[+prefix]]``]]]]
 ]]
