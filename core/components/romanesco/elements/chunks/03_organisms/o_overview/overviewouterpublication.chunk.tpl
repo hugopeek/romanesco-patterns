@@ -2,7 +2,7 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`[[+ov_id]]_[[+layout_id]]_[[+unique_idx]]`]]
 
 [[$overviewSettingsPrepare? &uid=`[[+prefix]]`]]
-[[!$overviewFilterActiveMessage]]
+[[[[+filter:eq=`1`:then=`!$overviewFilterActiveMessage`]]]]
 
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
@@ -20,7 +20,7 @@
     &showHidden=`1`
     &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
     &sortdir=`[[+[[+prefix]].sortdir]]`
-    &where=`[[!TaggerGetResourcesWhere]]`
+    &where=`[[[[+filter:eq=`1`:then=`!TaggerGetResourcesWhere`]]]]`
 
     &show_tags=`[[+show_tags]]`
     [[$overviewSettings? &uid=`[[+prefix]]`]]
