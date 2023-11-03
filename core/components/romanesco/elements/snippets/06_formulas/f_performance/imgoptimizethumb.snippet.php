@@ -149,7 +149,7 @@ $pendingTasks = $modx->getCollection('sTaskRun', array(
 ));
 foreach ($pendingTasks as $pendingTask) {
     $data = $pendingTask->get('data');
-    if ($data['img_path'] ?? '' == $imgPath && $data['img_quality'] ?? '' == $imgQuality) {
+    if (isset($data['img_path']) && $data['img_path'] == $imgPath && isset($data['img_quality']) && $data['img_quality'] == $imgQuality) {
         return;
     }
 }

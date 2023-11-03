@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Replace some ?? operators on array keys with isset
 - Remove redundant H1 in Markdown articles
 - Forward title_hierarchy CB value to level placeholder [BREAKING CHANGE]
 - Add options to show/hide tags and metadata in basic article overviews
