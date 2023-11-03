@@ -177,6 +177,9 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Remove redundant heading in articles
+        $dom->filter('body.publication #markdown h1:first-child')->remove();
+
         $output = $dom->saveHTML();
 
         break;
