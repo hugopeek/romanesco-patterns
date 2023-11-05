@@ -37,6 +37,7 @@ $context = $modx->resource->get('context_key');
 if (!$romanesco->getConfigSetting('critical_css', $context)) return;
 
 $cssPath = $romanesco->getContextSetting('romanesco.custom_css_path', $context);
+$criticalPath = $romanesco->getContextSetting('romanesco.critical_css_path', $context);
 $distPath = $romanesco->getContextSetting('romanesco.semantic_dist_path', $context);
 
 switch ($modx->event->name) {
@@ -56,7 +57,7 @@ switch ($modx->event->name) {
         $uri = ltrim($resource->get('uri'),'/');
         $uri = rtrim($uri,'/');
         $uri = str_replace('.html','',$uri);
-        $criticalPath = rtrim($cssPath,'/') . '/critical/';
+        $criticalPath = rtrim($criticalPath,'/');
 
         // Empty and excluded templates
         if (in_array($resource->get('template'), $excludedTemplates) || !is_object($template)) {
@@ -71,7 +72,7 @@ switch ($modx->event->name) {
         }
 
         // Store full path to css file in a TV
-        $resource->setTVValue('critical_css_uri', $criticalPath . $uri . '.css');
+        $resource->setTVValue('critical_css_uri', "$criticalPath/$uri.css");
 
         // Use Scheduler for adding task to queue (if available)
         /** @var Scheduler $scheduler */
@@ -86,6 +87,7 @@ switch ($modx->event->name) {
                 'id' => $id,
                 'uri' => $uri,
                 'cssPath' => $cssPath,
+                'criticalPath' => $criticalPath,
                 'distPath' => $distPath,
             ));
 

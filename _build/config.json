@@ -13598,6 +13598,12 @@
                 "value": "assets/css"
             },
             {
+                "key": "critical_css_path",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/css/critical"
+            },
+            {
                 "key": "favicon_path",
                 "type": "textfield",
                 "area": "Paths",

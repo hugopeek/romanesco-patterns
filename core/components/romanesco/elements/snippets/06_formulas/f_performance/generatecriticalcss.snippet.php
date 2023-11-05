@@ -47,13 +47,14 @@ if (!($resource instanceof modResource)) return;
 
 // If snippet is run as scheduled task, generate CSS directly
 if (is_object($task)) {
-    $romanesco->generateCriticalCSS(array(
+    $romanesco->generateCriticalCSS([
         'id' => $resourceID,
         'url' => $resourceURL,
         'uri' => $resourceURI ?? $resource->get('uri'),
         'cssPath' => $romanesco->getContextSetting('romanesco.custom_css_path', $resource->get('context_key')),
+        'criticalPath' => $romanesco->getContextSetting('romanesco.critical_css_path', $resource->get('context_key')),
         'distPath' => $romanesco->getContextSetting('romanesco.semantic_dist_path', $resource->get('context_key')),
-    ));
+    ]);
 
     return "Critical CSS generated for: {$resource->get('uri')} ($resourceID)";
 }
@@ -61,12 +62,12 @@ if (is_object($task)) {
 // Run update processor to generate the critical_css_uri TV value
 // NB: processor won't run without pagetitle and context_key!
 // NB: sometimes an old alias is retrieved when alias is not forwarded!!
-$resourceFields = array(
+$resourceFields = [
     'id' => $resourceID,
     'pagetitle' => $resource->get('pagetitle'),
     'alias' => $resource->get('alias'),
     'context_key' => $resource->get('context_key')
-);
+];
 
 // The update processor will trigger the GenerateCriticalCSS plugin
 $response = $modx->runProcessor('resource/update', $resourceFields);

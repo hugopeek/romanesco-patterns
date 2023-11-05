@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Use separate setting for critical CSS path
 - Replace some ?? operators on array keys with isset
 - Remove redundant H1 in Markdown articles
 - Forward title_hierarchy CB value to level placeholder [BREAKING CHANGE]
