@@ -30,6 +30,16 @@
 @pageFont: '[[+font_page.1:replace=`+== `]]', @fontFallback;
 `]]
 
+[[If?
+    &subject=`[[+theme_font_header]][[+theme_font_page]][[+theme_font_fallback:notempty=`1`]]`
+    &operator=`eq`
+    &operand=`1`
+    &then=`
+@headerFont: @fontFallback;
+@pageFont: @fontFallback;
+`
+]]
+
 
 // Base Sizes
 // ---------------------------------------------------------------------
