@@ -4,7 +4,9 @@
 Released on ...
 
 Fixes and improvements:
-- Set fallback font as header and page font if those are empty
+
+- Load additional FUI components conditionally
+- Set fallback font as header and page font (if those settings are empty)
 - Use separate setting for critical CSS path
 - Replace some ?? operators on array keys with isset
 - Remove redundant H1 in Markdown articles

@@ -28,3 +28,16 @@
         </div>
     </div>
 </nav>
+
+[[[[If?
+    &subject=`[[++navbar_level]]`
+    &operator=`eq`
+    &operand=`3`
+    &then=`loadAssets? &component=`popup``
+]]]]
+[[[[If?
+    &subject=`[[++navbar_level]]`
+    &operator=`eq`
+    &operand=`2`
+    &then=`loadAssets? &component=`dropdown-css``
+]]]]

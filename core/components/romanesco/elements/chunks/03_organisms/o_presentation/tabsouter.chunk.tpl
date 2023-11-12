@@ -28,3 +28,5 @@
     &c4=`left` &do4=`[[$tabsNavLeft? &rows=`[[+rows]]`]]`
     &default=`[[$tabsNavTop? &rows=`[[+rows]]`]]`
 ]]
+
+[[loadAssets? &component=`tabs`]]

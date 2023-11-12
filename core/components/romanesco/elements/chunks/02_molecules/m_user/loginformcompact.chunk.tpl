@@ -1,6 +1,6 @@
 [[+errors:notempty=`<div class="ui tiny error message">[[+errors]]</div>`]]
 
-<form id="form-login" class="ui right dropdown item" action="[[~[[*id]]]]" method="post">
+<form id="form-login" class="ui right simple dropdown item" action="[[~[[*id]]]]" method="post">
     [[+actionMsg]]
     <i class="dropdown icon"></i>
 

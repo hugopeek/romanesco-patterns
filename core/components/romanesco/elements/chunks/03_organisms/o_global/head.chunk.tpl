@@ -83,7 +83,7 @@
 [[[[If?
     &subject=`[[cbHasFields? &field=`[[++romanesco.cb_field_code_id]]` &then=`1`]][[*context_key:is=`hub`:or:is=`notes`:then=`1`]][[*uri:contains=`notes/`:then=`1`]][[*content_type:is=`11`:then=`1`]]`
     &operator=`notempty`
-    &then=`loadAssets? &component=`syntax-highlighting``
+    &then=`loadAssets? &component=`code``
 ]]]]
 [[[[If?
     &subject=`[[*context_key]]`

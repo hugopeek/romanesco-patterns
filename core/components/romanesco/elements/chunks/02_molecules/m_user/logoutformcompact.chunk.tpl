@@ -1,6 +1,6 @@
 [[+errors:notempty=`<div class="ui error message">[[+errors]]</div>`]]
 
-<div class="ui right dropdown item">
+<div class="ui right simple dropdown item">
     [[!+modx.user.id:userinfo=`username`]]
     <i class="dropdown icon"></i>
 

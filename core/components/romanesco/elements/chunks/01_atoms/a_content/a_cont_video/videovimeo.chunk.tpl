@@ -13,3 +13,5 @@
      data-alt="[[+img_alt:default=`Video thumbnail`]]"
      `]]>
 </div>
+
+[[loadAssets? &component=`embed`]]

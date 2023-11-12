@@ -229,6 +229,7 @@
 </div>
 
 [[$script]]
+[[loadAssets? &component=`tabs`]]
 
 </body>
 </html>
