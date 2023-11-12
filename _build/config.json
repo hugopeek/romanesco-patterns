@@ -13610,6 +13610,12 @@
                 "value": "assets/favicons"
             },
             {
+                "key": "qredits_img",
+                "type": "textfield",
+                "area": "Paths",
+                "value": "assets/semantic/dist/themes/romanesco/assets/icons/romanesco-badge.svg"
+            },
+            {
                 "key": "favicon_version",
                 "type": "textfield",
                 "area": "Presentation",
