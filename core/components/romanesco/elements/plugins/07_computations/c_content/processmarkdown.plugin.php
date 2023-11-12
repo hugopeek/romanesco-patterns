@@ -78,11 +78,14 @@ switch ($modx->event->name) {
         $output = &$modx->resource->_output;
         $dom = new HtmlPageCrawler($output);
 
-        $dom->filter('img')
+        $dom->filter('#markdown img')
             ->each(function (HtmlPageCrawler $image)
             {
                 // Prevent images from overflowing their container
                 $image->addClass('ui rounded raised image');
+
+                // Apply native lazy load
+                $image->setAttribute('loading','lazy');
             })
         ;
 

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Apply native lazy loading to Markdown images
 - Remove popup from footer qredits
 - Load additional FUI components conditionally
 - Set fallback font as header and page font (if those settings are empty)
