@@ -406,6 +406,7 @@ switch ($modx->event->name) {
                     ->filter('input[type="submit"].inline')
                     ->appendTo($form->filter('fieldset .fields')->last())
                     ->wrap('<div class="compact submission field">')
+                    ->before('<label>')
                 ;
             })
         ;
