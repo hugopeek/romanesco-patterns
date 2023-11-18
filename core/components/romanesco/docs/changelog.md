@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Also scan for TVs when rendering referring pages
 - Apply native lazy loading to Markdown images
 - Remove popup from footer qredits
 - Load additional FUI components conditionally
