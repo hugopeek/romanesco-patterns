@@ -8,6 +8,10 @@
  *
  * Scans content and TVs. Note that for TVs, inherited values are not evaluated.
  *
+ * If you want to limit the list to only include pages from certain contexts,
+ * you may do so by creating the system referring_pages_contexts in the
+ * Romanesco namespace.
+ *
  * @var modX $modx
  * @var array $scriptProperties
  * @var string $input
@@ -15,6 +19,7 @@
  */
 
 $id = $modx->getOption('id', $scriptProperties, $scriptProperties['row']['id'] ?? '');
+$contexts = $modx->getOption('contexts', $scriptProperties, $modx->getOption('romanesco.referring_pages_contexts') ?? '');
 $column = $modx->getOption('column', $scriptProperties);
 
 $where = '';
@@ -65,7 +70,7 @@ if ($tvValues) {
 
 $output = $modx->runSnippet('pdoMenu', (array(
     'parents' => '',
-    'context' => '',
+    'context' => $contexts,
     'limit' => 0,
     'depth' => 0,
     'showHidden' => 1,

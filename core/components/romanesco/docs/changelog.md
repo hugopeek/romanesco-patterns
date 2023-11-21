@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Allow referring pages list to be limited by context
 - Also scan for TVs when rendering referring pages
 - Apply native lazy loading to Markdown images
 - Remove popup from footer qredits
