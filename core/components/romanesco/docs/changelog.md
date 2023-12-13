@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Move site.js script further down the chain
 - Add logic to detect ConsentFriend presence
 - Allow AJAX forms to redirect after submission
 - Forward variables correctly to FormBlocks AJAX calls

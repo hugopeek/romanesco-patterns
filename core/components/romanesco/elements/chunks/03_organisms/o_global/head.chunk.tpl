@@ -74,7 +74,6 @@
 <script defer src="[[++romanesco.semantic_js_path]]/onmediaquery[[+minify]][[+cache_buster_js]].js"></script>
 <script defer src="[[++romanesco.semantic_vendor_path]]/vanilla-lazyload/lazyload.min[[+cache_buster_js]].js"></script>
 <script defer src="[[++romanesco.semantic_vendor_path]]/scrolldir/scrolldir.auto.min[[+cache_buster_js]].js"></script>
-<script defer src="[[++romanesco.semantic_js_path]]/site[[+minify]][[+cache_buster_js]].js"></script>
 
 [[- CONDITIONALLY LOAD ASSETS FOR SPECIFIC COMPONENTS ]]
 [[[[If?
