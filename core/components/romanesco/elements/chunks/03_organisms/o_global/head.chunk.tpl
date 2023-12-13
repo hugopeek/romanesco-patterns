@@ -58,9 +58,11 @@
 <link rel="stylesheet" href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css">
 `]]
 
-[[+load_google_fonts:notempty=`
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" media="print" onload="this.media='all'">
-`]]
+[[modifiedIf?
+    &subject=`[[helloConsentFriend? &service=`googleFonts` &true=`` &false=`[[+load_google_fonts]]`]]`
+    &operator=`notempty`
+    &then=`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" media="print" onload="this.media='all'">`
+]]
 
 [[- LOAD JS ASSETS WITH DEFER, SO DOWNLOADING WILL START EARLY WITHOUT BLOCKING RENDERING ]]
 [[++romanesco.dev_mode:ne=`1`:then=`
@@ -104,13 +106,10 @@
 [[- PLACE REFERENCES TO FAVICONS ]]
 [[[[++romanesco.favicon_version:notempty=`$favicons`]]]]
 
-[[- PLACE ANALYTICS CODE SNIPPET, UNLESS CONSENTFRIEND IS INSTALLED ]]
-[[[[modifiedIf?
-    &subject=`ConsentFriend`
-    &operator=`iselement`
-    &operand=`plugin`
-    &then=``
-    &else=`++analytics_tracking_code`
+[[- PLACE ANALYTICS CODE SNIPPET, UNLESS CONSENTFRIEND IS ACTIVE ]]
+[[[[helloConsentFriend?
+    &true=``
+    &false=`++analytics_tracking_code`
 ]]]]
 
 [[- PLACE STRUCTURED DATA IN JSON-LD FORMAT ]]

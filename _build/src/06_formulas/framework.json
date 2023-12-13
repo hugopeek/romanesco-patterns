@@ -67,6 +67,19 @@
                         }
                     ],
                     "category": "f_framework"
+                },{
+                    "name": "helloConsentFriend",
+                    "description": "Checks whether ConsentFriend is installed, enabled and has given service activated.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_framework"
                 }
             ],
             "categories": [

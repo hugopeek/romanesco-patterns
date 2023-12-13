@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add logic to detect ConsentFriend presence
 - Allow AJAX forms to redirect after submission
 - Forward variables correctly to FormBlocks AJAX calls
 - Load Recaptcha v3 when form scrolls into view
