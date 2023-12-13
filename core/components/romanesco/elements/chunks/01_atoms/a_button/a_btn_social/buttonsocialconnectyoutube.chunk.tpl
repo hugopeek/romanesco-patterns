@@ -3,5 +3,5 @@
    target="_blank"
    href="[[+account:empty=`[[++social_youtube]]`]]"
    property="sameAs">
-    <i class="youtube play icon"></i>
+    <i class="youtube icon"></i>
 </a>
