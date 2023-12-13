@@ -4,8 +4,9 @@
 Released on ...
 
 Fixes and improvements:
+- Allow AJAX forms to redirect after submission
 - Forward variables correctly to FormBlocks AJAX calls
-- Postpone loading of Recaptcha v3 until form scrolls into view
+- Load Recaptcha v3 when form scrolls into view
 - Allow referring pages list to be limited by context
 - Also scan for TVs when rendering referring pages
 - Apply native lazy loading to Markdown images
