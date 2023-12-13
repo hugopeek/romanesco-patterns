@@ -22,8 +22,10 @@ $assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProper
 $uploadFile = $modx->getOption('uploadFile', $scriptProperties, 0);
 $validation = $modx->getOption('frontendValidation', $scriptProperties, $modx->getOption('formblocks.frontend_validation'));
 $validationTpl = $modx->getOption('validationTpl', $scriptProperties, 'fbValidation');
+$antiSpamHooks = $modx->getOption('antiSpamHooks', $scriptProperties, $modx->getOption('formblocks.antispam_hooks'));
 $ajax = $modx->getOption('ajaxMode', $scriptProperties, $modx->getOption('formblocks.ajax_mode'));
 $ajaxTpl = $modx->getOption('submitAjaxTpl', $scriptProperties, 'fbSubmitAjax');
+$recaptchaTpl = $modx->getOption('loadRecaptchaTpl', $scriptProperties, 'recaptchaLoadAssets');
 
 // Load strings to insert in asset paths when cache busting is enabled
 $cacheBusterCSS = $romanesco->getCacheBustingString('CSS');
@@ -55,6 +57,11 @@ $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/formblocks.m
 if ($uploadFile) {
     $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/arrive/arrive.min' . $cacheBusterJS . '.js"></script>');
     $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/fileupload.min' . $cacheBusterJS . '.js"></script>');
+}
+
+// Load assets for Recaptcha v3, if enabled
+if (str_contains($antiSpamHooks, 'recaptchav3')) {
+    $modx->regClientHTMLBlock($modx->getChunk($recaptchaTpl));
 }
 
 // Load frontend validation, if enabled

@@ -41,6 +41,19 @@
                         }
                     ],
                     "category": "m_fb_antispam"
+                },{
+                    "name": "recaptchaLoadAssets",
+                    "description": "Retrieving the recaptcha assets on page load causes a major performance hit. Instead, it is now loaded when a form scrolls into view. Beware: this might affect the returned recaptcha score!",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
                 }
             ]
         }
