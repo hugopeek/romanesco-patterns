@@ -48,5 +48,12 @@ if ($service) {
     $result = (bool)$modx->getValue($query->prepare());
 }
 
-// Bye, friend
-return $result ? $true : $false;
+// Output either to placeholder, or directly
+$output = $result ? $true : $false;
+$toPlaceholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
+if ($toPlaceholder) {
+    $modx->setPlaceholder($toPlaceholder, $output);
+    return '';
+}
+
+return $output;

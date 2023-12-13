@@ -3,10 +3,12 @@
 ## Romanesco Patterns 1.0.0-beta14
 Released on ...
 
+New features:
+- Add logic to detect ConsentFriend presence
+
 Fixes and improvements:
 - Load rating component in Review overviews
 - Move site.js script further down the chain
-- Add logic to detect ConsentFriend presence
 - Allow AJAX forms to redirect after submission
 - Forward variables correctly to FormBlocks AJAX calls
 - Load Recaptcha v3 when form scrolls into view
