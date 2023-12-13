@@ -25,3 +25,5 @@
     [[$overviewSettings? &uid=`[[+prefix]]`]]
     [[[[+pagination:eq=`1`:then=`$overviewSettingsPagination? &uid=`[[+prefix]]``]]]]
 ]]
+
+[[loadAssets? &component=`rating`]]

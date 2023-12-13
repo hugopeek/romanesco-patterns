@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Load rating component in Review overviews
 - Move site.js script further down the chain
 - Add logic to detect ConsentFriend presence
 - Allow AJAX forms to redirect after submission
