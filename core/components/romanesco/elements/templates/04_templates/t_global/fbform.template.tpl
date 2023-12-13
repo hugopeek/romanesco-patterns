@@ -29,11 +29,11 @@
 ]]]]
 
 [[returnFirstHit:toPlaceholder=`redirect_to`?
-    &1=`[[+redirect_id]]`
-    &2=`[[+next_step]]`
-    &3=`[[*fb_redirect_dynamic]]`
-    &4=`[[*fb_redirect_id]]`
-    &5=`[[++site_start]]`
+    &1=`[[+redirect_id:empty=``]]`
+    &2=`[[+next_step:empty=``]]`
+    &3=`[[*fb_redirect_dynamic:empty=``]]`
+    &4=`[[*fb_redirect_id:empty=``]]`
+    &5=`[[++site_start:empty=``]]`
 ]]
 
 [[[[++formblocks.ajax_mode:eq=`1`:then=`-`:else=`!`]]FormIt?

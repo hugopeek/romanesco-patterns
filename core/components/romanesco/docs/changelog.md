@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Forward variables correctly to FormBlocks AJAX calls
 - Postpone loading of Recaptcha v3 until form scrolls into view
 - Allow referring pages list to be limited by context
 - Also scan for TVs when rendering referring pages
