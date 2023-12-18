@@ -38,7 +38,7 @@ $output .= $modx->runSnippet('getResources', (array(
     'tpl' => '@INLINE [[+pagetitle]]=[[+id]]',
     'sortby' => 'menuindex',
     'sortdir' => 'ASC',
-    'where' => '{"template:=":"10"}',
+    'where' => '{"template:IN":[10,19]}',
 )));
 
 return $output;
