@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Fix overview headings in traditional article sidebar
 - Load rating component in Review overviews
 - Move site.js script further down the chain
 - Allow AJAX forms to redirect after submission

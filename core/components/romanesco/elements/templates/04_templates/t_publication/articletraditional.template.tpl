@@ -35,7 +35,7 @@
 
                 <header class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]] introduction">
 
-                    <div class="ui container">
+                    <div class="ui main container">
                         <h1 class="ui header">[[*pagetitle]]</h1>
 
                         <p class="meta">
@@ -86,8 +86,8 @@
 
                 [[*comments_toggle:eq=`1`:then=`
                 <section id="comments" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
-                    <div class="ui container">
-                        <h2 class="ui big header">[[%romanesco.article.comments]]</h2>
+                    <div class="ui main container">
+                        <h2 class="ui header">[[%romanesco.article.comments]]</h2>
                         <div id="[[++romanesco.[[++comment_platform:lcase]]_div_id]]"></div>
                     </div>
                 </section>
@@ -111,7 +111,7 @@
             </article>
 
             <aside id="sidebar" class="sixteen wide mobile five wide computer column">
-                <section class="ui vertical stripe segment transparent tablet or lower hidden">
+                <section class="ui vertical stripe segment [[++layout_background_default]] tablet or lower hidden">
                     <div class="ui container">
                         <div class="ui equal width middle aligned grid">
                             <div class="compact column">
@@ -128,7 +128,7 @@
                 </section>
 
                 [[-
-                <section class="ui vertical stripe segment transparent">
+                <section class="ui vertical stripe segment [[++layout_background_default]]">
                     <div class="ui container">
                         [[-$dividerHeading?
                             &divider_section=`section`
@@ -146,9 +146,9 @@
                 </section>
                 ]]
 
-                <section class="ui vertical stripe segment transparent">
+                <section class="ui vertical stripe segment [[++layout_background_default]]">
                     <div class="ui container">
-                        <h3>[[%romanesco.article.read_another]]</h3>
+                        <h4>[[%romanesco.article.read_another]]</h4>
 
                         <div class="ui two item top attached tabular menu">
                             <a class="item active"
@@ -182,9 +182,11 @@
 
                                     &column_type=`item`
                                     &title_field=`pagetitle`
-                                    &title_hierarchy=`h4`
+                                    &level=`h5`
                                     &meta_elements=`date`
                                     &show_introtext=`0`
+
+                                    &unique_idx=`latest`
                                 ]]
                             </div>
 
@@ -206,9 +208,11 @@
 
                                     &column_type=`item`
                                     &title_field=`pagetitle`
-                                    &title_hierarchy=`h4`
+                                    &level=`h5`
                                     &meta_elements=`views`
                                     &show_introtext=`0`
+
+                                    &unique_idx=`most_viewed`
                                 ]]
                             </div>
                         </div>
@@ -228,8 +232,8 @@
     ]]]]
 </div>
 
-[[$script]]
 [[loadAssets? &component=`tabs`]]
+[[$script]]
 
 </body>
 </html>
