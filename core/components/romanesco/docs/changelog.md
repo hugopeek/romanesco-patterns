@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Add option to inflate titles in 2 column layouts
 - Fix registration forms not being shown in CB selector
 - Fix overview headings in traditional article sidebar
 - Load rating component in Review overviews
