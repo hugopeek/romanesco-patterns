@@ -23,7 +23,12 @@
                         }
                     ],
                     "category": "c_global",
-                    "events": ["OnHandleRequest"]
+                    "events": [
+                        {
+                            "event": "OnHandleRequest",
+                            "priority": 10
+                        }
+                    ]
                 },{
                     "name": "ClearCustomCache",
                     "description": "Only clears cache partitions of navigation groups, to make sure save actions are immediately reflected on frontend. In the future, other partitions should be cleared on certain triggers too.",

@@ -23,7 +23,12 @@
                         }
                     ],
                     "category": "c_formblocks",
-                    "events": ["OnHandleRequest"]
+                    "events": [
+                        {
+                            "event": "OnHandleRequest",
+                            "priority": 10
+                        }
+                    ]
                 }
             ],
 

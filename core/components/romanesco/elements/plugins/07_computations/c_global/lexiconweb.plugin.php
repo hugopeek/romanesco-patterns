@@ -9,5 +9,5 @@
  */
 
 if ($modx->event->name == 'OnHandleRequest') {
-    $modx->lexicon->load('romanescobackyard:default');
+    $modx->lexicon->load($modx->context->getOption('cultureKey') . ':romanescobackyard:default');
 }

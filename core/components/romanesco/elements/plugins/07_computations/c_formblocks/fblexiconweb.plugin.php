@@ -8,4 +8,6 @@
  * @package romanesco
  */
 
-$modx->lexicon->load('romanescobackyard:formblocks');
+if ($modx->event->name == 'OnHandleRequest') {
+    $modx->lexicon->load($modx->context->getOption('cultureKey') . ':romanescobackyard:formblocks');
+}
