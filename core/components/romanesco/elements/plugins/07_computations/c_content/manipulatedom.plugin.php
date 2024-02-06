@@ -58,12 +58,12 @@ switch ($modx->event->name) {
             ;
         }
 
-        // Add header class to content headers without class name
-        $dom->filter('h1:not(.header)')->addClass('ui header');
-        $dom->filter('h2:not(.header)')->addClass('ui header');
-        $dom->filter('h3:not(.header)')->addClass('ui header');
-        $dom->filter('h4:not(.header)')->addClass('ui header');
-        $dom->filter('h5:not(.header)')->addClass('ui header');
+        // Add header classes to HTML headings
+        $dom->filter('h1:not(.header):not(.title)')->addClass('ui header');
+        $dom->filter('h2:not(.header):not(.title)')->addClass('ui header');
+        $dom->filter('h3:not(.header):not(.title)')->addClass('ui header');
+        $dom->filter('h4:not(.header):not(.title)')->addClass('ui header');
+        $dom->filter('h5:not(.header):not(.title)')->addClass('ui header');
 
         // Inject inverted classes to elements inside inverted segments
         $dom->filter('.inverted.segment')
