@@ -265,6 +265,11 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Turn HR into divider
+        $dom->filter('hr')
+            ->addClass('ui divider')
+        ;
+
         // Make regular divider headers smaller
         $dom->filter('span.ui.divider.header')
             ->addClass('tiny')
