@@ -275,6 +275,11 @@ switch ($modx->event->name) {
             ->addClass('tiny')
         ;
 
+        // Place accordion icons right of title
+        $dom->filter('#content .ui.accordion .title > .icon')
+            ->addClass('right')
+        ;
+
         // Transform regular tables into SUI tables
         $dom->filter('table:not(.ui.table)')
             ->addClass('ui table')

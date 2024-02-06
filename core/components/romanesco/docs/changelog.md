@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Place accordion icons right of title
 - Add ability to apply vertical spacing to nested grids
 - Add ability to apply additional padding to accordions
 - Fix default and FormBlocks lexicons in multilingual setups
