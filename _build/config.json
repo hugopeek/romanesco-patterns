@@ -8262,6 +8262,21 @@
                     "category": "a_cb_setting"
                 },
                 {
+                    "name": "cbSettingSpacing",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },
+                {
                     "name": "cbSettingPosition",
                     "description": "",
                     "properties": [

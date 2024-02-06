@@ -1,6 +1,6 @@
-<div class="ui stackable equal width grid">
+<div class="ui nested stackable [[+spacing]] equal width grid">
     <div class="[[+menu_cols]] wide column">
-        <div class="ui vertical fluid reducible [[+menu_type_[[+unique_idx]]_[[+idx]]]] menu" role="tablist">
+        <div class="ui vertical fluid reducible [[+padding]] [[+menu_type_[[+unique_idx]]_[[+idx]]]] menu" role="tablist">
             [[+[[+pl]].tabs_menu]]
         </div>
     </div>

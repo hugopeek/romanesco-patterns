@@ -7,6 +7,8 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Add ability to apply vertical spacing to nested grids
+- Add ability to apply additional padding to accordions
 - Fix default and FormBlocks lexicons in multilingual setups
 - Add option to inflate titles in 2 column layouts
 - Fix registration forms not being shown in CB selector

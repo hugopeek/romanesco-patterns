@@ -1,3 +1,3 @@
-<div class="ui stackable doubling [[+alignment]] [[+divider]] equal width grid">
+<div class="ui stackable [[+alignment]] [[+divider]] equal width grid">
     [[+content]]
 </div>
