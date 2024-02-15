@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Don't get Scheduler service if package is not installed
 - Look for globalCustomCSS theme chunk when generating custom CSS
 - Place accordion icons right of title
 - Add ability to apply vertical spacing to nested grids

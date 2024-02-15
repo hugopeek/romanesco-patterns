@@ -95,9 +95,13 @@ $configPNG = [
 ];
 
 // Use Scheduler for adding task to queue (if available)
-/** @var Scheduler $scheduler */
+    /** @var Scheduler $scheduler */
 $schedulerPath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
-$scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
+if (file_exists($schedulerPath)) {
+    $scheduler = $modx->getService('scheduler', 'Scheduler', $schedulerPath . 'model/scheduler/');
+} else {
+    $modx->log(modX::LOG_LEVEL_INFO, '[imgOptimizeThumb] Scheduler is not installed. Generating images directly.');
+}
 
 // Generate CSS directly if snippet is run as scheduled task, or if Scheduler is not installed
 if (!($scheduler instanceof Scheduler) || isset($task)) {
