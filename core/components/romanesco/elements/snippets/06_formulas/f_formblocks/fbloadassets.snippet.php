@@ -19,6 +19,7 @@ $assetsPathCSS = $modx->getOption('romanesco.semantic_css_path', $scriptProperti
 $assetsPathJS = $modx->getOption('romanesco.semantic_js_path', $scriptProperties, '');
 $assetsPathVendor = $modx->getOption('romanesco.semantic_vendor_path', $scriptProperties, '');
 $assetsPathDist = $modx->getOption('romanesco.semantic_dist_path', $scriptProperties, '');
+$devMode = $modx->getOption('romanesco.dev_mode', $scriptProperties, 0);
 $uploadFile = $modx->getOption('uploadFile', $scriptProperties, 0);
 $validation = $modx->getOption('frontendValidation', $scriptProperties, $modx->getOption('formblocks.frontend_validation'));
 $validationTpl = $modx->getOption('validationTpl', $scriptProperties, 'fbValidation');
@@ -60,7 +61,7 @@ if ($uploadFile) {
 }
 
 // Load assets for Recaptcha v3, if enabled
-if (str_contains($antiSpamHooks, 'recaptchav3')) {
+if (str_contains($antiSpamHooks, 'recaptchav3') && !$devMode) {
     $modx->regClientHTMLBlock($modx->getChunk($recaptchaTpl));
 }
 

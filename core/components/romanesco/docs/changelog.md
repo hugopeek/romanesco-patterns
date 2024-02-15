@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Don't load Recaptcha assets with dev mode enabled
 - Disable submit button while processing form (to prevent multiple submissions)
 - Replace Recaptcha terms and conditions text with icon
 - Don't get Scheduler service if package is not installed
