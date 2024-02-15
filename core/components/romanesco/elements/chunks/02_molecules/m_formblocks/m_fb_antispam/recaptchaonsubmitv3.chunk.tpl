@@ -31,6 +31,9 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
+            // Disable submit button to prevent multiple submissions
+            form.querySelector('input[type="submit"][name="[[+action_key]]-submit"]').classList.add('disabled');
+
             grecaptcha.ready(function() {
                 grecaptcha.execute('[[+site_key]]', {action: '[[+form_id]]'}).then(function(token) {
                     rcr.querySelector('[name="[[+token_key]]"]').value = token;
