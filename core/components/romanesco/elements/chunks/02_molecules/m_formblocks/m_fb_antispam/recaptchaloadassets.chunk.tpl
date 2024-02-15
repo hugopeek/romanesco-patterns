@@ -1,6 +1,6 @@
 <script>
     window.addEventListener('DOMContentLoaded', function() {
-        $('.ui.form').visibility({
+        $('.ui.form:not(.without.recaptcha)').visibility({
             once: true,
             onTopVisible: function () {
                 let script = document.createElement('script');
