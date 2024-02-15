@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Replace Recaptcha terms and conditions text with icon
 - Don't get Scheduler service if package is not installed
 - Look for globalCustomCSS theme chunk when generating custom CSS
 - Place accordion icons right of title

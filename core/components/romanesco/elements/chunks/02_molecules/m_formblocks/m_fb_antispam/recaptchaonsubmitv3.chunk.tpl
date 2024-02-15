@@ -4,9 +4,14 @@
     <input type="hidden" name="fb[[*id]]-submit" value="1">
 </div>
 
-<p class="recaptcha help">
-    [[%formblocks.form.recaptchav3_legal_notice]]
-</p>
+<div class="recaptcha badge">
+    <img class="ui image with tooltip onclick"
+         src="[[++romanesco.semantic_dist_path]]/themes/romanesco/assets/icons/recaptcha.svg"
+         alt="Recaptcha logo"
+         data-html='[[%formblocks.form.recaptchav3_legal_notice]]'
+         data-position='top right'
+    >
+</div>
 
 [[++formblocks.frontend_validation:isnot=`1`:then=`
 <script>
