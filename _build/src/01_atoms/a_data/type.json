@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "breadcrumbDataWrapper",
+                    "name": "organizationData",
                     "description": "",
                     "properties": [
                         {
@@ -14,35 +14,33 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_data"
+                    "category": "a_dat_type"
                 },{
-                    "name": "faqDataWrapper",
+                    "name": "personData",
                     "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_data"
-                }
-            ],
-            "categories": [
-                {
-                    "name": "a_data",
-                    "parent": "01_atoms"
+                    "category": "a_dat_type"
                 },{
-                    "name": "a_dat_placeholder",
-                    "parent": "a_data"
-                },{
-                    "name": "a_dat_row",
-                    "parent": "a_data"
-                },{
-                    "name": "a_dat_type",
-                    "parent": "a_data"
+                    "name": "authorData",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_dat_type"
                 }
             ]
         }

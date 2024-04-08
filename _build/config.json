@@ -334,6 +334,10 @@
                     "parent": "a_data"
                 },
                 {
+                    "name": "a_dat_type",
+                    "parent": "a_data"
+                },
+                {
                     "name": "a_formblocks",
                     "parent": "01_atoms"
                 },
@@ -3886,21 +3890,6 @@
                         }
                     ],
                     "category": "a_button"
-                },
-                {
-                    "name": "organizationData",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_data"
                 },
                 {
                     "name": "breadcrumbDataWrapper",
@@ -8500,6 +8489,51 @@
                         }
                     ],
                     "category": "a_dat_row"
+                },
+                {
+                    "name": "organizationData",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_dat_type"
+                },
+                {
+                    "name": "personData",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_dat_type"
+                },
+                {
+                    "name": "authorData",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_dat_type"
                 },
                 {
                     "name": "globalBackgroundRowCSS",
