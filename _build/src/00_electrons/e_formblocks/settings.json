@@ -43,10 +43,23 @@
                 "area": "FormBlocks - Settings",
                 "value": "0"
             },{
-                "key": "activation_resource_id",
+                "key": "store_attachments",
+                "namespace": "formblocks",
+                "type": "combo-boolean",
+                "area": "FormBlocks - Uploads",
+                "value": "0"
+            },{
+                "key": "attachment_path",
                 "namespace": "formblocks",
                 "type": "textfield",
-                "area": "FormBlocks - Registration"
+                "area": "FormBlocks - Uploads",
+                "value": "../uploads/_forms/"
+            },{
+                "key": "sanitize_filenames",
+                "namespace": "formblocks",
+                "type": "combo-boolean",
+                "area": "FormBlocks - Uploads",
+                "value": "0"
             },{
                 "key": "cb_input_textfield_id",
                 "namespace": "formblocks",

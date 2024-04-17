@@ -52,6 +52,7 @@
         [[+save_form:eq=`1`:then=`FormItSaveForm,`]]
         [[*fb_hooks:append=`,`]]
         [[If? &subject=`[[*fb_email_to_dynamic:empty=`[[*fb_email_to]]`]]` &operator=`notempty` &then=`email,`]]
+        [[*fb_store_attachments:replace=`default==[[++formblocks.store_attachments]]`:isnot=`1`:then=`AjaxUploadRemove,`]]
         [[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]]
         [[++formblocks.formsource:eq=`1`:then=`formsource_reset,`]]
         redirect

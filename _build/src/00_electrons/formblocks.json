@@ -235,9 +235,9 @@
                         "fbRegister"
                     ]
                 },{
-                    "caption": "Store submitted data",
+                    "caption": "Store submitted data temporarily",
                     "name": "fb_store_data",
-                    "description": "Store data in a session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.",
+                    "description": "Store data in session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.",
                     "type": "option",
                     "inputOptionValues": "No==0||Yes==1",
                     "defaultValue": "0",
@@ -253,7 +253,7 @@
                         "fbForm"
                     ]
                 },{
-                    "caption": "Store time",
+                    "caption": "Temporary storage timeout",
                     "name": "fb_store_time",
                     "description": "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes.",
                     "type": "number",
@@ -266,6 +266,41 @@
                     ],
                     "category": "_Settings - Advanced",
                     "sortOrder": "16",
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
+                    "caption": "Store submitted attachments",
+                    "name": "fb_store_attachments",
+                    "description": "Store uploads in designated folder. Make sure this folder is NOT web accessible (unless that is your aim). You may also need to monitor it somehow to comply with GDPR retention policies.",
+                    "type": "option",
+                    "inputOptionValues": "On==1||Off==0||System default==default",
+                    "defaultValue": "default",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": "17",
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
+                    "caption": "Attachment path",
+                    "name": "fb_attachment_path",
+                    "description": "Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting.",
+                    "type": "text",
+                    "defaultValue": "../uploads/_forms/[[*id]]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": "18",
                     "templates": [
                         "fbForm"
                     ]
