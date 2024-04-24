@@ -216,32 +216,6 @@
                         }
                     ],
                     "category": "a_fb_input"
-                },{
-                    "name": "fbInputFileSingle",
-                    "description": "A basic input field for uploading a single file.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },{
-                    "name": "fbInputFileMultiple",
-                    "description": "Use this file input field if you want users to upload more than 1 file. The AjaxUpload extra takes care of frontend functionality and backend processing. Just make sure it's installed!",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
                 }
             ],
 

@@ -81,6 +81,19 @@
                     ],
                     "category": "m_fb_input"
                 },{
+                    "name": "fbInputFileMultiple",
+                    "description": "Use this file input field if you want users to upload more than 1 file. The AjaxUpload extra takes care of frontend functionality and backend processing (so make sure it's installed!).",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_input"
+                },{
                     "name": "fbInputHidden",
                     "description": "",
                     "properties": [

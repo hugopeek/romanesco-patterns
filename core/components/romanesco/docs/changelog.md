@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Remove unused fbInputFileSingle chunk
 - Separate single and multiple file upload form fields
 - Add config options for storing and sanitizing form attachments
 - Don't load Recaptcha assets with dev mode enabled
