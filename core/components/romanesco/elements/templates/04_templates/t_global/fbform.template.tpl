@@ -1,6 +1,12 @@
-[[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`upload_multiple`?
+[[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`upload_single`?
     &field=`[[++formblocks.cb_input_file_id:empty=`-1`]]`
-    &fieldSettingFilter=`upload_limit!=1`
+]]
+[[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`upload_multiple`?
+    &field=`[[++formblocks.cb_input_file_multiple_id:empty=`-1`]]`
+]]
+[[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`upload_multiple_required`?
+    &field=`[[++formblocks.cb_input_file_multiple_id:empty=`-1`]]`
+    &fieldSettingFilter=`field_required==1`
 ]]
 [[cbGetFieldContent:notempty=`1`:default=`0`:toPlaceholder=`math_question`?
     &field=`[[++formblocks.cb_math_question_id:empty=`-1`]]`
@@ -47,6 +53,8 @@
     &hooks=`
         spam,
         [[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]]
+        [[+upload_multiple_required:eq=`1`:then=`AjaxUploadRequired,`]]
+        [[+upload_single:eq=`1`:then=`fbSanitizeUploads,`]]
         [[++romanesco.dev_mode:isnot=`1`:then=`[[++formblocks.antispam_hooks:append=`,`]]`]]
         [[+math_question:isnot=`0`:then=`math,`]]
         [[+save_form:eq=`1`:then=`FormItSaveForm,`]]
@@ -68,8 +76,7 @@
     [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`&emailReplyTo=`[[+fb[[*id]]-email]]``]]
 
     [[cbGetFieldContent?
-        &field=`[[++formblocks.cb_input_file_id:empty=`-1`]]`
-        &fieldSettingFilter=`upload_limit!=1`
+        &field=`[[++formblocks.cb_input_file_multiple_id:empty=`-1`]]`
         &tpl=`fbFileUploadProperties`
     ]]
     [[cbGetFieldContent?

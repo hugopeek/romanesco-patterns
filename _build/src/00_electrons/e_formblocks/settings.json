@@ -101,6 +101,11 @@
                 "type": "textfield",
                 "area": "FormBlocks - CB fields"
             },{
+                "key": "cb_input_file_multiple_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },{
                 "key": "cb_input_date_id",
                 "namespace": "formblocks",
                 "type": "textfield",

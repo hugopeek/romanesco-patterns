@@ -7,6 +7,7 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
+- Separate single and multiple file upload form fields
 - Add config options for storing and sanitizing form attachments
 - Don't load Recaptcha assets with dev mode enabled
 - Disable submit button while processing form (to prevent multiple submissions)
