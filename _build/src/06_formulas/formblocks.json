@@ -133,6 +133,28 @@
                     ],
                     "category": "f_fb_hook"
                 },{
+                    "name": "fbProcessUploads",
+                    "description": "Sanitize filenames, check if file extension is allowed and store file if enabled. For single file uploads. Multiple file uploads will be processed by AjaxUpload.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        },{
+                            "name": "filename_translit",
+                            "value": "iconv_ascii"
+                        },{
+                            "name": "filename_restrict_chars",
+                            "value": "pattern"
+                        },{
+                            "name": "filename_restrict_chars_pattern",
+                            "value": "/[\\0\\x0B\\t\\n\\r\\f\\a,.?!;:()&=+%#<>\"~`@\\?\\[\\]\\{\\}\\|\\^\\'\\\\\\\\]/"
+                        }
+                    ],
+                    "category": "f_fb_hook"
+                },{
                     "name": "fbEmptyHook",
                     "description": "Dummy hook to trick FormIt into not throwing errors saying there are no hooks, and to make the comma separation between hooks a little easier.",
                     "properties": [

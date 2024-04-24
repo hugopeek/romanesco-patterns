@@ -54,7 +54,7 @@
         spam,
         [[+upload_multiple:eq=`1`:then=`AjaxUpload2Formit,AjaxUploadAttachments,`]]
         [[+upload_multiple_required:eq=`1`:then=`AjaxUploadRequired,`]]
-        [[+upload_single:eq=`1`:then=`fbSanitizeUploads,`]]
+        [[+upload_single:eq=`1`:then=`fbProcessUploads,`]]
         [[++romanesco.dev_mode:isnot=`1`:then=`[[++formblocks.antispam_hooks:append=`,`]]`]]
         [[+math_question:isnot=`0`:then=`math,`]]
         [[+save_form:eq=`1`:then=`FormItSaveForm,`]]

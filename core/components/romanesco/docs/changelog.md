@@ -4,12 +4,13 @@
 Released on ...
 
 New features:
+- Add ability to store and sanitize form attachments
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
 - Remove unused fbInputFileSingle chunk
-- Separate single and multiple file upload form fields
-- Add config options for storing and sanitizing form attachments
+- Verify file extension and maximum size of submitted form attachments
+- Separate single and multiple file upload fields
 - Don't load Recaptcha assets with dev mode enabled
 - Disable submit button while processing form (to prevent multiple submissions)
 - Replace Recaptcha terms and conditions text with icon

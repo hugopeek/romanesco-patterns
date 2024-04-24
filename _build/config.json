@@ -12375,8 +12375,8 @@
                     "category": "f_fb_hook"
                 },
                 {
-                    "name": "fbSanitizeUploads",
-                    "description": "Hook for sanitizing filenames of single file uploads. Multiple file uploads are sanitized by AjaxUpload already.",
+                    "name": "fbProcessUploads",
+                    "description": "Sanitize filenames, check if file extension is allowed and store file if enabled. For single file uploads. Multiple file uploads will be processed by AjaxUpload.",
                     "properties": [
                         {
                             "name": "elementStatus",
