@@ -3,7 +3,7 @@
 <div class="[[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] file-upload field [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]] [[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]]">
     <label>[[+field_name:stripWords=`[[$fbStripWordsLabel]]`]]</label>
     [[!AjaxUpload?
-        &uid=`[[+name]]`
+        &uid=`fb[[*id]]-uploads`
         &maxFiles=`[[+upload_limit]]`
         &maxFilesizeMb=`[[+max_file_size]]`
         &allowedExtensions=`[[+allowed_file_types]]`

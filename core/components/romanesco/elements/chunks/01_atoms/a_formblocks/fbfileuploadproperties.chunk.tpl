@@ -1,6 +1,6 @@
-&ajaxuploadFieldname=`[[+name]]`
+&ajaxuploadFieldname=`fb[[*id]]-uploads`
 &ajaxuploadTarget=`[[*fb_attachment_path:empty=`[[++formblocks.attachment_path]]`]]`
-&ajaxuploadUid=`[[+name]]`
+&ajaxuploadUid=`fb[[*id]]-uploads`
 &ajaxuploadSanitizeFilename=`[[++formblocks.sanitize_filenames]]`
 &ajaxuploadAllowOverwrite=`0`
 &ajaxuploadClearQueue=`1`
