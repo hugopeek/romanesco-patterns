@@ -8,8 +8,9 @@ New features:
 - Add logic to detect ConsentFriend presence
 
 Fixes and improvements:
-- Remove unused fbInputFileSingle chunk
+- Replace placeholder-based conditionals with cbHasField statements in fbForm
 - Verify file extension and maximum size of submitted form attachments
+- Remove unused fbInputFileSingle chunk
 - Separate single and multiple file upload fields
 - Don't load Recaptcha assets with dev mode enabled
 - Disable submit button while processing form (to prevent multiple submissions)

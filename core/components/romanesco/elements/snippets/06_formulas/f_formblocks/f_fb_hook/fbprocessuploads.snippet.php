@@ -22,7 +22,7 @@ $prefix = 'fb' . $formID . '-';
 // Storage settings
 $storeAttachments = $modx->resource->getTVValue('fb_store_attachments');
 if ($storeAttachments == 'default') {
-    $storeAttachments = $modx->getOption('formblocks.store_attachments');
+    $storeAttachments = $modx->getOption('formblocks.store_attachments', $scriptProperties);
 }
 $attachmentPath = $modx->resource->getTVValue('fb_attachment_path') ?? $modx->getOption('formblocks.attachment_path');
 $attachmentPath = str_replace('[[*id]]', $formID, $attachmentPath);
