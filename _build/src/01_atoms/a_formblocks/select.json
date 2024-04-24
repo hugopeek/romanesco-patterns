@@ -3,8 +3,8 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "fbRenderFormWrapper",
-                    "description": "",
+                    "name": "fbSelectOptionRow",
+                    "description": "The default row template for checkbox and radio options.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -14,10 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_formblocks"
+                    "category": "a_fb_select"
                 },{
-                    "name": "fbGetFormID",
-                    "description": "Run the cbGetFieldContent snippet to find out which form is selected on a specific resource.",
+                    "name": "fbSelectOptionRowResource",
+                    "description": "A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -27,10 +27,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_formblocks"
+                    "category": "a_fb_select"
                 },{
-                    "name": "fbFormID",
-                    "description": "Return raw value of form_id placeholder from a CB form. Used as tpl by cbGetFieldContent in fbGetFormID.",
+                    "name": "fbSelectOptionRowTag",
+                    "description": "A row template for options that let you select a tag. Initially designed to work with the Tagger extra, but should work with any tag system that outputs [[+tag]] and [[+alias]] placeholders.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -40,10 +40,26 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_formblocks"
+                    "category": "a_fb_select"
                 },{
-                    "name": "fbSubmitButton",
-                    "description": "",
+                    "name": "fbSelectOptionRowInputOption",
+                    "description": "A row template for using the input options found under Manage > Project data.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        },{
+                            "name": "valueType",
+                            "value": "name"
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },{
+                    "name": "fbSelectDropdownRow",
+                    "description": "The default row template for dropdown select options.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -53,10 +69,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_formblocks"
+                    "category": "a_fb_select"
                 },{
-                    "name": "fbAutoresponder",
-                    "description": "",
+                    "name": "fbSelectDropdownRowResource",
+                    "description": "A row template for dropdown options that link to a resource.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -66,10 +82,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_formblocks"
+                    "category": "a_fb_select"
                 },{
-                    "name": "fbFileUploadProperties",
-                    "description": "These AjaxUpload settings need to be included in the FormIt call if a multiple file upload field is being used.",
+                    "name": "fbSelectDropdownRowInputOption",
+                    "description": "A row template for using the input options found under Manage > Project data.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -77,58 +93,12 @@
                         },{
                             "name": "elementPreview",
                             "value": ""
-                        }
-                    ],
-                    "category": "a_formblocks"
-                },{
-                    "name": "fbMathQuestionProperties",
-                    "description": "These properties are added to the FormIt call if a Math Question CB is present in the form.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
                         },{
-                            "name": "elementPreview",
-                            "value": ""
+                            "name": "valueType",
+                            "value": "name"
                         }
                     ],
-                    "category": "a_formblocks"
-                },{
-                    "name": "fbStripWordsLabel",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_formblocks"
-                },{
-                    "name": "fbValidationPrompt",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_formblocks"
-                }
-            ],
-
-            "categories": [
-                {
-                    "name": "a_formblocks",
-                    "parent": "01_atoms"
-                },{
-                    "name": "a_fb_select",
-                    "parent": "a_formblocks"
+                    "category": "a_fb_select"
                 }
             ]
         }

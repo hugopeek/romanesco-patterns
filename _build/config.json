@@ -342,7 +342,7 @@
                     "parent": "01_atoms"
                 },
                 {
-                    "name": "a_fb_input",
+                    "name": "a_fb_select",
                     "parent": "a_formblocks"
                 },
                 {
@@ -4092,149 +4092,6 @@
                         }
                     ],
                     "category": "a_formblocks"
-                },
-                {
-                    "name": "fbSelectOptionRow",
-                    "description": "The default row template for checkbox and radio options.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbSelectOptionRowResource",
-                    "description": "A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbSelectOptionRowTag",
-                    "description": "A row template for options that let you select a tag. Initially designed to work with the Tagger extra, but should work with any tag system that outputs [[+tag]] and [[+alias]] placeholders.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbSelectOptionRowInputOption",
-                    "description": "A row template for using the input options found under Manage > Project data.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        },
-                        {
-                            "name": "valueType",
-                            "value": "name"
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbSelectDropdownRow",
-                    "description": "The default row template for dropdown select options.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbSelectDropdownRowResource",
-                    "description": "A row template for dropdown options that link to a resource.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbSelectDropdownRowInputOption",
-                    "description": "A row template for using the input options found under Manage > Project data.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        },
-                        {
-                            "name": "valueType",
-                            "value": "name"
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbInputFileSingle",
-                    "description": "A basic input field for uploading a single file.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
-                },
-                {
-                    "name": "fbInputFileMultiple",
-                    "description": "Use this file input field if you want users to upload more than 1 file. The AjaxUpload extra takes care of frontend functionality and backend processing. Just make sure it's installed!",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_fb_input"
                 },
                 {
                     "name": "headPreloadLinks",
@@ -8573,6 +8430,119 @@
                     "category": "a_dat_type"
                 },
                 {
+                    "name": "fbSelectOptionRow",
+                    "description": "The default row template for checkbox and radio options.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },
+                {
+                    "name": "fbSelectOptionRowResource",
+                    "description": "A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },
+                {
+                    "name": "fbSelectOptionRowTag",
+                    "description": "A row template for options that let you select a tag. Initially designed to work with the Tagger extra, but should work with any tag system that outputs [[+tag]] and [[+alias]] placeholders.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },
+                {
+                    "name": "fbSelectOptionRowInputOption",
+                    "description": "A row template for using the input options found under Manage > Project data.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        },
+                        {
+                            "name": "valueType",
+                            "value": "name"
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },
+                {
+                    "name": "fbSelectDropdownRow",
+                    "description": "The default row template for dropdown select options.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },
+                {
+                    "name": "fbSelectDropdownRowResource",
+                    "description": "A row template for dropdown options that link to a resource.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },
+                {
+                    "name": "fbSelectDropdownRowInputOption",
+                    "description": "A row template for using the input options found under Manage > Project data.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        },
+                        {
+                            "name": "valueType",
+                            "value": "name"
+                        }
+                    ],
+                    "category": "a_fb_select"
+                },
+                {
                     "name": "globalBackgroundRowCSS",
                     "description": "",
                     "properties": [
@@ -9830,6 +9800,21 @@
                 {
                     "name": "fbInputFile",
                     "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_input"
+                },
+                {
+                    "name": "fbInputFileMultiple",
+                    "description": "Use this file input field if you want users to upload more than 1 file. The AjaxUpload extra takes care of frontend functionality and backend processing (so make sure it's installed!).",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -12390,6 +12375,33 @@
                     "category": "f_fb_hook"
                 },
                 {
+                    "name": "fbSanitizeUploads",
+                    "description": "Hook for sanitizing filenames of single file uploads. Multiple file uploads are sanitized by AjaxUpload already.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        },
+                        {
+                            "name": "filename_translit",
+                            "value": "iconv_ascii"
+                        },
+                        {
+                            "name": "filename_restrict_chars",
+                            "value": "pattern"
+                        },
+                        {
+                            "name": "filename_restrict_chars_pattern",
+                            "value": "/[\\0\\x0B\\t\\n\\r\\f\\a,.?!;:()&=+%#<>\"~`@\\?\\[\\]\\{\\}\\|\\^\\'\\\\\\\\]/"
+                        }
+                    ],
+                    "category": "f_fb_hook"
+                },
+                {
                     "name": "fbEmptyHook",
                     "description": "Dummy hook to trick FormIt into not throwing errors saying there are no hooks, and to make the comma separation between hooks a little easier.",
                     "properties": [
@@ -13950,6 +13962,12 @@
             },
             {
                 "key": "cb_input_file_id",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - CB fields"
+            },
+            {
+                "key": "cb_input_file_multiple_id",
                 "namespace": "formblocks",
                 "type": "textfield",
                 "area": "FormBlocks - CB fields"
