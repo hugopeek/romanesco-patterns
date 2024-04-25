@@ -92,4 +92,8 @@ foreach (json_decode($fields, 1) as $field) {
     }
 }
 
+if ($hook->hasErrors()) {
+    return false;
+}
+
 return true;
