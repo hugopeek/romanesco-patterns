@@ -290,7 +290,7 @@
                 },{
                     "caption": "Attachment path",
                     "name": "fb_attachment_path",
-                    "description": "Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting.",
+                    "description": "Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.",
                     "type": "text",
                     "defaultValue": "../uploads/_forms/[[*id]]",
                     "properties": [

@@ -1229,7 +1229,7 @@
                 {
                     "caption": "Attachment path",
                     "name": "fb_attachment_path",
-                    "description": "Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting.",
+                    "description": "Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.",
                     "type": "text",
                     "defaultValue": "../uploads/_forms/[[*id]]",
                     "properties": [
@@ -9649,7 +9649,7 @@
                 },
                 {
                     "name": "fbEmailRow_xx",
-                    "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see below)",
+                    "description": "Example row, to be copied for each available ContentBlocks form field. The xx should be replaced with the ID of the CB field. Some fields require a different format (see elements below)",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -9694,11 +9694,26 @@
                 },
                 {
                     "name": "fbEmailRowDateRange",
-                    "description": "Specfic email row for date range selectors.",
+                    "description": "Specific email row for date range selectors.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbEmailRowUploads",
+                    "description": "Specific email row for multiple file uploads field.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },
                         {
                             "name": "elementPreview",
@@ -9998,7 +10013,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },
                         {
                             "name": "elementPreview",
@@ -10013,7 +10028,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },
                         {
                             "name": "elementPreview",
@@ -10028,7 +10043,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },
                         {
                             "name": "elementPreview",
@@ -10043,7 +10058,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },
                         {
                             "name": "elementPreview",
@@ -10070,6 +10085,21 @@
                 {
                     "name": "fbValidationRowDateRange",
                     "description": "Specific validation row for date range selectors.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_validation"
+                },
+                {
+                    "name": "fbValidationRowUploads",
+                    "description": "Specific validation row for multiple file uploads field.",
                     "properties": [
                         {
                             "name": "elementStatus",

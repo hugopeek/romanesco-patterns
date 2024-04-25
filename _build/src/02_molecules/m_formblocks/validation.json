@@ -8,7 +8,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -21,7 +21,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -34,7 +34,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -47,7 +47,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
@@ -70,6 +70,19 @@
                 },{
                     "name": "fbValidationRowDateRange",
                     "description": "Specific validation row for date range selectors.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_validation"
+                },{
+                    "name": "fbValidationRowUploads",
+                    "description": "Specific validation row for multiple file uploads field.",
                     "properties": [
                         {
                             "name": "elementStatus",
