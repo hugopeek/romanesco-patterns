@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta14
-Released on ...
+Released on April 25, 2024
 
 New features:
 - Add ability to store and sanitize form attachments

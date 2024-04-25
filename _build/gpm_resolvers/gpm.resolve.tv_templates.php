@@ -1228,6 +1228,14 @@ if ($object->xpdo) {
   array (
     0 => 'fbForm',
   ),
+  'fb_store_attachments' => 
+  array (
+    0 => 'fbForm',
+  ),
+  'fb_attachment_path' => 
+  array (
+    0 => 'fbForm',
+  ),
   'fb_email_template' => 
   array (
     0 => 'fbForm',
