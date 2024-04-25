@@ -61,6 +61,9 @@ foreach (json_decode($fields, 1) as $field) {
     $fileName = $pathinfo['filename'] ?? null;
     $fileExt = $pathinfo['extension'] ?? null;
 
+    // Skip empty non-required fields
+    if (!$fileName) continue;
+
     // Verify
     if (!in_array($fileExt, explode(',',$allowedFileTypes))) {
         $hook->addError($fieldName, $modx->lexicon('formblocks.validation.file_not_allowed', ['ext' => $fileExt, 'allowed' => $allowedFileTypes]));
