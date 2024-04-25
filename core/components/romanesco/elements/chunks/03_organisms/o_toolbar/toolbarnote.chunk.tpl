@@ -29,3 +29,9 @@
     </div>
 </div>
 `]]
+[[[[If?
+    &subject=`[[+toolbar_visibility]]`
+    &operator=`eq`
+    &operand=`1`
+    &then=`loadAssets? &component=`dropdown-css``
+]]]]
