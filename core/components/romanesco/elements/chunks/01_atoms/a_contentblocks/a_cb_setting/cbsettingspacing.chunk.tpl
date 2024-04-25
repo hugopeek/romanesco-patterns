@@ -1,3 +1,3 @@
 None=
-A little=expanded
-A lot=very expanded
+A little=spaced
+A lot=very spaced
