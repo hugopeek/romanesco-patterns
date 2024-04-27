@@ -49,11 +49,13 @@ if (is_numeric($background)) {
     }
 
     // Set placeholder with credits
-    $tpl = $modx->getChunk($creditsTpl, [
-        'classes' => $inverted,
-        'credits' => $credits
-    ]);
-    $modx->setPlaceholder('bg' . $background . '.credits', $tpl);
+    if ($credits) {
+        $tpl = $modx->getChunk($creditsTpl, [
+            'classes' => $inverted,
+            'credits' => $credits
+        ]);
+        $modx->setPlaceholder('bg' . $background . '.credits', $tpl);
+    }
 
     $background = $alias . $inverted . ' background';
 }
