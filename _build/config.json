@@ -8600,6 +8600,21 @@
                     "category": "a_glob_background"
                 },
                 {
+                    "name": "globalBackgroundImgCredits",
+                    "description": "An overlay div to display the image credits on top of the background.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "deprecated"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_background"
+                },
+                {
                     "name": "globalBackgroundImgOverviewCSS",
                     "description": "DEPRECATED.",
                     "properties": [

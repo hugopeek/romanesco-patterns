@@ -1,0 +1,1 @@
+<div class="credits [[+classes]]">[[+credits]]</div>

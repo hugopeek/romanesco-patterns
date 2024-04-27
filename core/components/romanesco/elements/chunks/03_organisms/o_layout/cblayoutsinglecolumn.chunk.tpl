@@ -2,4 +2,5 @@
     <div class="ui [[+container_type]] [[+alignment]] [[+title_inflate]] main container">
         [[+main]]
     </div>
+    [[+bg[[+background]].credits]]
 </div>

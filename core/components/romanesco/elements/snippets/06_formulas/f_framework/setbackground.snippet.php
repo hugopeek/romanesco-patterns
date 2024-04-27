@@ -13,6 +13,7 @@
  */
 
 $background = $modx->getOption('background', $scriptProperties, $input ?? null);
+$creditsTpl = $modx->getOption('creditsTpl', $scriptProperties, 'globalBackgroundImgCredits');
 $cbField = $modx->getOption('romanesco.cb_field_background_id', $scriptProperties, '');
 
 // Convert system default value
@@ -26,20 +27,33 @@ if (is_numeric($background)) {
     $query->select('alias');
     $alias = $modx->getValue($query->prepare());
 
-    // Get inverted value from CB settings
-    $inverted = $modx->runSnippet('cbGetFieldContent',array(
+    // Get settings from CB field
+    $bgSettings = $modx->runSnippet('cbGetFieldContent',array(
         'resource' => $background,
         'field' => $cbField,
-        'fieldSettingFilter' => 'inverted==1',
         'returnAsJSON' => 1,
     ));
+    $bgSettings = json_decode($bgSettings, 1);
 
-    // Default output is []
-    if (strlen($inverted) > 2) {
-        $inverted = ' inverted';
-    } else {
-        $inverted = '';
+    // Get inverted setting
+    $inverted = $bgSettings[0]['settings']['inverted'] ? ' inverted' : '';
+
+    // Process background layers
+    $credits = '';
+    if (is_array($bgSettings[0]['rows'])) {
+        foreach ($bgSettings[0]['rows'] as $settings) {
+            if (isset($settings['credits']['value'])) {
+                $credits .= $settings['credits']['value'];
+            }
+        }
     }
+
+    // Set placeholder with credits
+    $tpl = $modx->getChunk($creditsTpl, [
+        'classes' => $inverted,
+        'credits' => $credits
+    ]);
+    $modx->setPlaceholder('bg' . $background . '.credits', $tpl);
 
     $background = $alias . $inverted . ' background';
 }

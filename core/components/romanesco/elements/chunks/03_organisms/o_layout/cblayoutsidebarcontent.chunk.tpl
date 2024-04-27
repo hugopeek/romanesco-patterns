@@ -7,4 +7,5 @@
             </div>
         </div>
     </div>
+    [[+bg[[+background]].credits]]
 </div>

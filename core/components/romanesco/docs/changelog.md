@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add global background credits overlay
 - Rename expanded grid variant to spaced
 
 ## Romanesco Patterns 1.0.0-beta14
