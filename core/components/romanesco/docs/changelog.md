@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix broken snippet call triggering custom CSS syntax errors
 - Add global background credits overlay
 - Rename expanded grid variant to spaced
 
