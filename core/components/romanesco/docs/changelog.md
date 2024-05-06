@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add post-hook setting to form templates
 - Exclude antispam, math and accept-terms data from extended Registration fields
 - Fix faulty min range setting for math hook in form templates
 - Fix broken snippet call triggering custom CSS syntax errors

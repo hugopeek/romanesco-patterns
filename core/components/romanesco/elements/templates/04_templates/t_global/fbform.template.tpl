@@ -50,6 +50,7 @@
         [[*fb_store_attachments:replace=`default==[[++formblocks.store_attachments]]`:isnot=`1`:then=`AjaxUploadRemove,`]]
         [[*fb_autoresponder_toggle:eq=`1`:then=`FormItAutoResponder,`]]
         [[++formblocks.formsource:eq=`1`:then=`formsource_reset,`]]
+        [[*fb_posthooks:append=`,`]]
         redirect
     `
 

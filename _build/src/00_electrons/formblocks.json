@@ -152,9 +152,9 @@
                         "fbRegister"
                     ]
                 },{
-                    "caption": "Custom pre-hook(s)",
+                    "caption": "Pre-hook(s)",
                     "name": "fb_prehooks",
-                    "description": "A snippet name (or comma separated list of names), containing the hook(s). They are executed before the form is initialised. Useful for pre-loading values.",
+                    "description": "A snippet name (or comma separated list of names). They are run before the form is initialised. Useful for prefilling form fields with existing data.",
                     "type": "text",
                     "properties": [
                         {
@@ -169,9 +169,9 @@
                         "fbRegister"
                     ]
                 },{
-                    "caption": "Custom render hook(s)",
+                    "caption": "Render hook(s)",
                     "name": "fb_renderhooks",
-                    "description": "A snippet name (or comma separated list of names), containing the hook(s). They are executed when the form loads and all pre-hooks are finished. Useful for fetching session data.",
+                    "description": "A snippet name (or comma separated list of names) to execute. They are run when the form loads and all pre-hooks are finished. Useful for fetching session data.",
                     "type": "text",
                     "properties": [
                         {
@@ -185,9 +185,26 @@
                         "fbForm"
                     ]
                 },{
-                    "caption": "Custom hook(s)",
+                    "caption": "Hook(s)",
                     "name": "fb_hooks",
-                    "description": "A snippet name (or comma separated list of names), containing the hook(s). They are executed after the form is submitted, but before any emails are sent. Useful for writing to the database.",
+                    "description": "A snippet name (or comma separated list of names) to execute. They are run after the form is submitted, but before any emails are sent (or user is created). Useful for additional validation.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": "3",
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
+                },{
+                    "caption": "Post-hook(s)",
+                    "name": "fb_posthooks",
+                    "description": "A snippet name (or comma separated list of names) to execute. They are run after the form is fully submitted and all emails are sent. Useful for writing submitted values to the database.",
                     "type": "text",
                     "properties": [
                         {
