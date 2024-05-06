@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Exclude antispam, math and accept-terms data from extended Registration fields
 - Fix faulty min range setting for math hook in form templates
 - Fix broken snippet call triggering custom CSS syntax errors
 - Add global background credits overlay
