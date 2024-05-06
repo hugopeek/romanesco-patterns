@@ -1,5 +1,5 @@
 &mathField=`fb[[*id]]-math`
-&mathMaxRange=`[[+math_min_range]]`
+&mathMinRange=`[[+math_min_range]]`
 &mathMaxRange=`[[+math_max_range]]`
 &mathOp1Field=`fb[[*id]]-op1`
 &mathOp2Field=`fb[[*id]]-op2`
