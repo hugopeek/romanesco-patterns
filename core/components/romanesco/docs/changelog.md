@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add option to use File or Chunk template for activation email
 - Add post-hook setting to form templates
 - Exclude antispam, math and accept-terms data from extended Registration fields
 - Fix faulty min range setting for math hook in form templates

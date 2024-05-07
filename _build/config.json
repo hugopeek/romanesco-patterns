@@ -3196,9 +3196,46 @@
                     ]
                 },
                 {
+                    "caption": "Activation email type",
+                    "name": "fb_activation_email_type",
+                    "description": "",
+                    "type": "option",
+                    "inputOptionValues": "Inline (edit content below)==inline||Chunk (specify chunk name below)==chunk||File (specify file path below)==file",
+                    "defaultValue": "inline",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Settings - Email",
+                    "sortOrder": "10",
+                    "templates": [
+                        "fbRegister"
+                    ]
+                },
+                {
+                    "caption": "Activation email template",
+                    "name": "fb_activation_email_tpl",
+                    "description": "Enter chunk name here if email type is Chunk, or an absolute file path if email type is File (you can use {core_path}, {base_path} or {assets_path} as placeholders here).",
+                    "type": "text",
+                    "defaultValue": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Settings - Email",
+                    "sortOrder": "11",
+                    "templates": [
+                        "fbRegister"
+                    ]
+                },
+                {
                     "caption": "Activation email",
                     "name": "fb_activation_email",
-                    "description": "The content of the activation email. Make sure it contains the [[+confirmUrl]] placeholder for the confirmation link!",
+                    "description": "The content of the activation email, if email type is Inline. Make sure it contains the [[+confirmUrl]] placeholder for the confirmation link!",
                     "type": "richtext",
                     "properties": [
                         {
