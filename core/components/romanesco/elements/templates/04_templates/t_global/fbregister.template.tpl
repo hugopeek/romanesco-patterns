@@ -7,7 +7,7 @@
     &placeholderPrefix=`fb[[*id]].`
 ]]
 [[!Register?
-    &preHooks=`[[*fb_hooks:notempty=`[[*fb_hooks]],`]][[+math_question:isnot=`0`:then=`math,`]]fbEmptyHook`
+    &preHooks=`[[+math_question:isnot=`0`:then=`math,`]][[*fb_hooks:notempty=`[[*fb_hooks]],`]]fbEmptyHook`
     &postHooks=`[[*fb_posthooks:notempty=`[[*fb_posthooks]]`]]`
 
     &activation=`[[*fb_activation_toggle:default=`1`]]`
