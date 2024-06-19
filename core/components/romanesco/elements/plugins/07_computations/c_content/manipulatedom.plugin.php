@@ -338,15 +338,12 @@ switch ($modx->event->name) {
         $lightbox = array();
         $lightbox =
             $dom->filter('.gallery.with.lightbox')
-                ->each(function (HtmlPageCrawler $gallery) {
-                    global $modx;
-
+                ->each(function (HtmlPageCrawler $gallery) use ($modx) {
                     // Grab images sources from data attributes
                     $images =
                         $gallery
                             ->filter('.lightbox > img')
-                            ->each(function (HtmlPageCrawler $img) {
-                                global $modx;
+                            ->each(function (HtmlPageCrawler $img) use ($modx) {
                                 return $modx->getChunk('galleryRowImageLightbox', array(
                                     'src' => $img->attr('data-lightbox-img'),
                                     'caption' => $img->attr('data-caption'),
