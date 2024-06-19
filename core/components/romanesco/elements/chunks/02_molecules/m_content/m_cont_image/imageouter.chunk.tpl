@@ -3,10 +3,10 @@
     &operator=`EQ`
     &operand=`svg`
     &then=`imageSVG`
-    &else=`imageBasic[[+link:notempty=`Link`]]`
-    &toPlaceholder=`img_tpl`
+    &else=`imageBasic[[+link:notempty=`Link`]][[+lightbox:eq=`1`:then=`Lightbox`]]`
+    &toPlaceholder=`[[+unique_idx]].img_tpl`
 ]]
-[[$[[+img_tpl]]?
+[[$[[+[[+unique_idx]].img_tpl]]?
     &url=`[[+crops.default.url:empty=`[[+url]]`]]`
     &width=`[[+crops.default.width:empty=`[[+width]]`]]`
     &height=`[[+crops.default.height:empty=`[[+height]]`]]`
