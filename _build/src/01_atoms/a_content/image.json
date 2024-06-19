@@ -7,8 +7,27 @@
                     "description": "Responsive content image with an optional caption.",
                     "properties": [
                         {
+                            "name": "classes",
+                            "value": ""
+                        },{
                             "name": "elementStatus",
                             "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cont_image"
+                },{
+                    "name": "imageBasicCaption",
+                    "description": "The figcaption element containing the caption and/or image credits.",
+                    "properties": [
+                        {
+                            "name": "classes",
+                            "value": ""
+                        },{
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

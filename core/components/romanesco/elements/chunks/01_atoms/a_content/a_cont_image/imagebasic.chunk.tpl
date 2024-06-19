@@ -1,8 +1,8 @@
-<figure class="ui [[+classes]] content image">
+<figure [[+id:prepend=`id="`:append=`"`]] class="ui [[+classes]] content image">
     [[$imgResponsive? &uid=`[[+url]]`]]
-    [[If?
+    [[[[If?
         &subject=`[[+credits]][[+caption]]`
         &operator=`notempty`
-        &then=`<figcaption>[[+caption]][[+credits:stripTags=`<a>,<em>,<strong>`:prepend=`<span class="credits meta">&copy; `:append=`</span>`]]</figcaption>`
-    ]]
+        &then=`$imageBasicCaption? &uid=`[[+uid]]``
+    ]]]]
 </figure>

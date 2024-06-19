@@ -43,11 +43,24 @@
                     "category": "m_cont_image"
                 },{
                     "name": "imageBasicLink",
-                    "description": "",
+                    "description": "Wraps the image in a link tag.",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_cont_image"
+                },{
+                    "name": "imageBasicLightbox",
+                    "description": "Adds an individual lightbox enlargement to the image.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
                         },{
                             "name": "elementPreview",
                             "value": ""

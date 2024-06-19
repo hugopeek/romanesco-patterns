@@ -3,7 +3,11 @@
 ## Romanesco Patterns 1.0.0-beta15
 Released on ...
 
+New features:
+- Add lightbox option to Image CB
+
 Fixes and improvements:
+- Improve image caption layout and positioning
 - Fix math question frontend validation
 - Validate math question before running pre-hooks in Register template
 - Add option to use File or Chunk template for activation email
