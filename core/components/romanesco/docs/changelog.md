@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix math question frontend validation
 - Validate math question before running pre-hooks in Register template
 - Add option to use File or Chunk template for activation email
 - Add post-hook setting to form templates
