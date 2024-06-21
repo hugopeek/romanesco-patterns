@@ -257,6 +257,17 @@ switch ($modx->event->name) {
             })
         ;
 
+        $dom->filter('.ui.grid')
+            ->each(function(HtmlPageCrawler $grid) {
+                if ($grid->matches('[class*="very relaxed"]')) {
+                    $grid->filter('.ui.lightbox.image > figcaption.grid')->addClass('very');
+                }
+                if ($grid->matches('.relaxed')) {
+                    $grid->filter('.ui.lightbox.image > figcaption.grid')->addClass('relaxed');
+                }
+            })
+        ;
+
         // Display bullets above list items in centered lists
         $dom->filter('.ui.center.aligned')
             ->each(function(HtmlPageCrawler $container) {
@@ -323,14 +334,6 @@ switch ($modx->event->name) {
                         }
                     })
                 ;
-                // Move prev/next buttons out of container
-                // No longer used, but kept here as reference for how to find parent elements
-                //$slider->parents()->each(function (HtmlPageCrawler $parent) {
-                //    if ($parent->hasClass('nested','slider')) {
-                //        $parent->filter('.swiper-button-prev')->appendTo($parent);
-                //        $parent->filter('.swiper-button-next')->appendTo($parent);
-                //    }
-                //});
             })
         ;
 
