@@ -177,6 +177,28 @@
                         }
                     ],
                     "category": "a_select"
+                },{
+                    "name": "tvSelectUserGroup",
+                    "description": "Generate a list of user groups, as defined under Access Control Lists.",
+                    "properties": [
+                        {
+                            "name": "firstOption",
+                            "value": ""
+                        },{
+                            "name": "sortBy",
+                            "value": "rank"
+                        },{
+                            "name": "sortDir",
+                            "value": "ASC"
+                        },{
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_select"
                 }
             ],
             "categories": [
