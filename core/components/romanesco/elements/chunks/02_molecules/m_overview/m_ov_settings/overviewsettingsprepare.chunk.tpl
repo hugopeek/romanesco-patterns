@@ -12,6 +12,4 @@
 
     &default=`DESC`
 ]]
-[[If? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`
-<div class="ui info message">[[%romanesco.cb_preview.overview_note? &topic=`manager` &namespace=`romanescobackyard`]]</div>
-`]]
+[[[[modifiedIf? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`$overviewSettingsPrepareMgr`]]]]

@@ -16,6 +16,19 @@
                     ],
                     "category": "f_user"
                 },{
+                    "name": "setUserAccessLevel",
+                    "description": "Check if logged-in user is a regular member, or has admin privileges. The corresponding member groups are set via the member_groups_frontend and admin_groups_frontend system settings.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_user"
+                },{
                     "name": "checkPermissions",
                     "description": "Check if user is allowed to access the given (or current) context and redirect to unauthorized page if that's not the case.",
                     "properties": [

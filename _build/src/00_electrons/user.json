@@ -5,12 +5,12 @@
                 "key": "member_groups_frontend",
                 "type": "textfield",
                 "area": "Users",
-                "value": "Administrator"
+                "value": "Content Editor"
             },{
-                "key": "member_groups",
-                "type": "combo-boolean",
+                "key": "admin_groups_frontend",
+                "type": "textfield",
                 "area": "Users",
-                "value": "0"
+                "value": "Administrator"
             }
         ]
     }

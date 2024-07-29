@@ -2,6 +2,7 @@
 [[setBoxType? &input=`[[+row_tpl]]` &prefix=`[[+ov_id]]_[[+layout_id]]_[[+unique_idx]]`]]
 
 [[$overviewSettingsPrepare? &uid=`[[+prefix]]`]]
+
 [[[[+filter:eq=`1`:then=`!$overviewFilterActiveMessage`]]]]
 
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?

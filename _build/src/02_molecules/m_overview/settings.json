@@ -41,6 +41,19 @@
                         }
                     ],
                     "category": "m_ov_settings"
+                },{
+                    "name": "overviewSettingsPrepareMgr",
+                    "description": "Some additional preparations for overview previews in manager. Loaded separately, to avoid being evaluated on every page load.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_ov_settings"
                 }
             ]
         }

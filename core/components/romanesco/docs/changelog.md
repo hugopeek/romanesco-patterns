@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Segment custom cache based on user access level
 - Add lightbox option to Image CB
 
 Fixes and improvements:

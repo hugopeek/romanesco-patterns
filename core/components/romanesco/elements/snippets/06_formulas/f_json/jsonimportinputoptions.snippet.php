@@ -10,8 +10,8 @@
  * with user generated input.
  *
  * Normally, this also means that when you change the key or alias of a
- * field, a new item is created. This is not always desirable. Sometimes, fields
- * are referenced by ID so you want to keep these selections intact when making
+ * field, a new item is created. This is not always desirable. Sometimes fields
+ * are referenced by ID, so you want to keep these selections intact when making
  * adjustments to a field.
  *
  * That's why there is a safety net built in. It works like this: if you want to

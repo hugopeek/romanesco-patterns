@@ -121,3 +121,6 @@
     &operand=`1`
     &then=`!checkPermissions? &context=`hub``
 ]]]]
+
+[[- SET HIGHEST ACCESS LEVEL FOR LOGGED-IN USER ]]
+[[!setUserAccessLevel? &toPlaceholder=`user_access_level`]]
