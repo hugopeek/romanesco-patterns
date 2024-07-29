@@ -14,6 +14,6 @@
 
         &checkPermissions=`list`
         &cache=`1`
-        &cache_key=`[[!+modx.user.id:memberof=`[[++romanesco.member_groups_frontend]]`:then=`nav_[[*context_key]]_member`:else=`nav_[[*context_key]]_anonymous`]]`
+        &cache_key=`nav/[[+user_access_level]]/[[*context_key]]/accordion`
     ]]
 </ul>
