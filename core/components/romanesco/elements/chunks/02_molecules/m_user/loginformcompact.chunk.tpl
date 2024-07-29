@@ -19,7 +19,7 @@
         <div class="divider"></div>
 
         <div class="submit item">
-            <i class="sign in icon"></i>
+            <i class="sign-in icon"></i>
             [[+actionMsg]]
         </div>
     </div>

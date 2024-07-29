@@ -13,7 +13,7 @@
         <div class="divider"></div>
 
         <a href="[[+logoutUrl]]" title="[[+actionMsg]]" class="item">
-            <i class="sign out icon"></i>
+            <i class="sign-out icon"></i>
             [[+actionMsg]]
         </a>
     </div>
