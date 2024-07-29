@@ -20,7 +20,7 @@
  */
 
 $input = $modx->getOption('input', $scriptProperties, $input);
-$options = $modx->getOption('options', $scriptProperties, $options);
+$options = $modx->getOption('options', $scriptProperties, $options ?? false);
 $delimiter = $modx->getOption('delimiter', $scriptProperties, '|');
 $prefix = $modx->getOption('prefix', $scriptProperties, 'snippet');
 
