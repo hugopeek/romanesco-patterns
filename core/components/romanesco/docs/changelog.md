@@ -8,6 +8,7 @@ New features:
 - Add lightbox option to Image CB
 
 Fixes and improvements:
+- Add fitted option to segment types (without border or padding)
 - Add TV input options for selecting user group(s)
 - Improve image caption layout and positioning
 - Fix incorrect image tpl being set from placeholder
