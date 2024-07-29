@@ -8,6 +8,7 @@ New features:
 - Add lightbox option to Image CB
 
 Fixes and improvements:
+- Properly load form assets in login forms
 - Add fitted option to segment types (without border or padding)
 - Add TV input options for selecting user group(s)
 - Improve image caption layout and positioning

@@ -8,3 +8,5 @@
         <a href="[[+logoutUrl]]" title="[[+actionMsg]]" class="ui button">[[+actionMsg]]</a>
     </div>
 </div>
+
+[[!fbLoadAssets]]
