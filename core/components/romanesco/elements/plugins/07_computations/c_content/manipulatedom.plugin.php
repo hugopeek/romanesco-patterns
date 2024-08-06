@@ -475,6 +475,7 @@ switch ($modx->event->name) {
         $dom->filter('#hub .pattern.segment#footer')->setAttribute('id','footer-global');
         $dom->filter('#hub .pattern.segment#head')->setAttribute('id','head-global');
         $dom->filter('#hub .pattern.segment#script')->setAttribute('id','script-global');
+        $dom->filter('#hub .pattern.segment#sidebar')->setAttribute('id','sidebar-global');
 
         // Change links to fixed IDs
         $dom->filter('#hub .pattern.segment .list a.item')
@@ -486,6 +487,7 @@ switch ($modx->event->name) {
                     case ($href == 'patterns/organisms#footer'):
                     case ($href == 'patterns/organisms#head'):
                     case ($href == 'patterns/organisms#script'):
+                    case ($href == 'patterns/organisms#sidebar'):
                         $link->setAttribute('href', $href . '-global');
                         break;
                 }
