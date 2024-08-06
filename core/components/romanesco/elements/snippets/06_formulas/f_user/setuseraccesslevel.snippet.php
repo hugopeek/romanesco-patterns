@@ -14,7 +14,7 @@
  * @var array $scriptProperties
  */
 
-$output = 'anonymous';
+$output = $modx->getOption('default', $scriptProperties, 'anonymous');
 
 if ($modx->user->id)
 {
