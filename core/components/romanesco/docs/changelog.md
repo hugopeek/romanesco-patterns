@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta15
-Released on ...
+Released on August 6, 2024
 
 New features:
 - Segment custom cache based on user access level

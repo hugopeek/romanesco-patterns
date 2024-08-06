@@ -1179,6 +1179,14 @@ if ($object->xpdo) {
     0 => 'fbForm',
     1 => 'fbRegister',
   ),
+  'fb_activation_email_type' => 
+  array (
+    0 => 'fbRegister',
+  ),
+  'fb_activation_email_tpl' => 
+  array (
+    0 => 'fbRegister',
+  ),
   'fb_activation_email' => 
   array (
     0 => 'fbRegister',
@@ -1207,6 +1215,11 @@ if ($object->xpdo) {
     0 => 'fbForm',
   ),
   'fb_hooks' => 
+  array (
+    0 => 'fbForm',
+    1 => 'fbRegister',
+  ),
+  'fb_posthooks' => 
   array (
     0 => 'fbForm',
     1 => 'fbRegister',
