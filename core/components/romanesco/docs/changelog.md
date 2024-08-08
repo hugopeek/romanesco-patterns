@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add system setting for turning access level custom caching on/off
 - Improve layout of search result pagination container
 
 ## Romanesco Patterns 1.0.0-beta15

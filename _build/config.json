@@ -13993,6 +13993,12 @@
                 "value": "Administrator"
             },
             {
+                "key": "set_user_access_level",
+                "type": "combo-boolean",
+                "area": "Users",
+                "value": "0"
+            },
+            {
                 "key": "cb_field_code_id",
                 "type": "textfield",
                 "area": "ContentBlocks - Settings",

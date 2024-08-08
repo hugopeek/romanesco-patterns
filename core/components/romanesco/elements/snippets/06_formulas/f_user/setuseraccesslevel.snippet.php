@@ -16,8 +16,10 @@
 
 $output = $modx->getOption('default', $scriptProperties, 'anonymous');
 
-if ($modx->user->id)
-{
+if (!$modx->getOption('romanesco.set_user_access_level', $scriptProperties)) {
+    $output = '';
+}
+elseif ($modx->user->id) {
     // First, check if user is admin
     $adminGroups = $modx->getOption('romanesco.admin_groups_frontend', $scriptProperties);
     $adminGroups = array_filter(array_map('trim',explode(',',$adminGroups)));
@@ -39,7 +41,6 @@ if ($modx->user->id)
     }
 }
 
-// Output either to placeholder, or directly
 $toPlaceholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
 if ($toPlaceholder) {
     $modx->setPlaceholder($toPlaceholder, $output);
