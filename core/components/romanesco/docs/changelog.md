@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix option classes not being set in lightbox-enabled images
 - Add system setting for turning access level custom caching on/off
 - Improve layout of search result pagination container
 

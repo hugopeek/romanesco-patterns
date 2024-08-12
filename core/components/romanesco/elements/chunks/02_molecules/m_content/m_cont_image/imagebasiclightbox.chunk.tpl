@@ -1,6 +1,6 @@
 [[$imageBasic?
     &id=`image-[[+uid]]`
-    &classes=`rounded lightbox`
+    &classes=`[[+classes]] lightbox`
     &uid=`[[+uid]]`
 ]]
 
