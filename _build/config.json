@@ -9769,7 +9769,7 @@
                 },
                 {
                     "name": "fbEmailRow_settings",
-                    "description": "DEPRECATED.",
+                    "description": "DEPRECATED. Relic of old Simplx Widgeteer templating approach.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -9798,8 +9798,8 @@
                     "category": "m_fb_email"
                 },
                 {
-                    "name": "fbEmailRowTerms",
-                    "description": "Specific email row for Terms and Conditions checkbox. It is currently empty, as the form cannot be submitted without agreeing to the terms.",
+                    "name": "fbEmailRowSelect",
+                    "description": "Specific email row for checkbox, radio and dropdown fields. Comma-separated (multiselect) values will be parsed on separate lines, and 'Other' values will be appended if present.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -9815,6 +9815,21 @@
                 {
                     "name": "fbEmailRowEmail",
                     "description": "Specific email row for Email field.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_email"
+                },
+                {
+                    "name": "fbEmailRowTerms",
+                    "description": "Specific email row for Terms and Conditions checkbox. It is empty, as the form cannot be submitted without agreeing to the terms.",
                     "properties": [
                         {
                             "name": "elementStatus",
