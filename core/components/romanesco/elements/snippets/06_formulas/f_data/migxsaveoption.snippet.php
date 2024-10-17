@@ -26,7 +26,9 @@ if (is_object($object)) {
 
 // Generate alias if empty
 if (!$object->get('alias')) {
-    $alias = $modx->runSnippet('stripAsAlias', (array('input' => $object->get('name'))));
+    $alias = $modx->filterPathSegment($object->get('name'), [
+        'friendly_alias_restrict_chars' => 'alphanumeric'
+    ]);
 
     $object->set('alias', $alias);
     $object->save();

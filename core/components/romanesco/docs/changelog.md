@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Replace stripAsAlias steps with filterPathSegment mechanism
 - Fix map not loading if default zoom level was not set
 - Don't replace commas with line breaks in regular form field email output
 - Fix option classes not being set in lightbox-enabled images

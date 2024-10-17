@@ -35,7 +35,9 @@ foreach ($cbData as $field) {
     if (!$fieldName) {
         $fieldName = $field['settings']['field_name'] ?? '';
     }
-    $fieldName = $modx->runSnippet('fbStripAsAlias', array('input' => $fieldName));
+    $fieldName = $modx->filterPathSegment($fieldName, [
+        'friendly_alias_restrict_chars' => 'alphanumeric'
+    ]);
 
     // Special treatment for date fields
     if ($field['field'] == $modx->getOption('formblocks.cb_input_date_range_id', $scriptProperties)) {

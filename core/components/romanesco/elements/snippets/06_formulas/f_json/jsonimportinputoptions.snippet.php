@@ -109,7 +109,9 @@ foreach ($optionsArray['groups'] as $group) {
 
         // Generate alias if none was set
         if (!isset($option['alias'])) {
-            $option['alias'] = $modx->runSnippet('stripAsAlias', array('input' => $option['name']));
+            $option['alias'] = $modx->filterPathSegment($option['name'], [
+                'friendly_alias_restrict_chars' => 'alphanumeric'
+            ]);
         }
 
         // Check if option exists
