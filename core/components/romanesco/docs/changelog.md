@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Make sure Input Option aliases are formatted as such
 - Replace stripAsAlias steps with filterPathSegment mechanism
 - Fix map not loading if default zoom level was not set
 - Don't replace commas with line breaks in regular form field email output

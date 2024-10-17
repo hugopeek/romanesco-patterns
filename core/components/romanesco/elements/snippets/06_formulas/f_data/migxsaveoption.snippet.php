@@ -21,32 +21,30 @@ $parent = $modx->getObject('rmOptionGroup', array('id' => $co_id));
 if (is_object($object)) {
     $object->set('key', $parent->get('key'));
     $object->set('group', $co_id);
-    $object->save();
 }
 
 // Generate alias if empty
 if (!$object->get('alias')) {
-    $alias = $modx->filterPathSegment($object->get('name'), [
-        'friendly_alias_restrict_chars' => 'alphanumeric'
-    ]);
-
-    $object->set('alias', $alias);
-    $object->save();
+    $object->set('alias', $object->get('name'));
 }
+
+// Make sure alias is formatted as such
+$alias = $modx->filterPathSegment($object->get('alias'), [
+    'friendly_alias_restrict_chars' => 'alphanumeric'
+]);
+$object->set('alias', $alias);
 
 // Increment sort order of new items
 if ($properties['object_id'] === 'new') {
-
     // Ask for last position
     $q = $modx->newQuery('rmOption');
     $q->select(array(
         "max(position)",
     ));
     $lastPosition = $modx->getValue($q->prepare());
-
-    // Set and Save
     $object->set('position', ++$lastPosition);
-    $object->save();
 }
+
+$object->save();
 
 return '';
