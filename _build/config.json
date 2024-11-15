@@ -518,6 +518,10 @@
                     "parent": "m_navigation"
                 },
                 {
+                    "name": "m_nav_breadcrumbs",
+                    "parent": "m_navigation"
+                },
+                {
                     "name": "m_nav_pagination",
                     "parent": "m_navigation"
                 },
