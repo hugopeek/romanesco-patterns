@@ -2002,6 +2002,7 @@
                     "sortOrder": "10",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Publications",
                         "Download"
                     ]
                 },
@@ -2020,6 +2021,7 @@
                     "sortOrder": "20",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Publications",
                         "Download"
                     ]
                 },
@@ -2038,6 +2040,7 @@
                     "sortOrder": "21",
                     "templates": [
                         "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Publications",
                         "Download"
                     ]
                 },
@@ -2055,7 +2058,8 @@
                     "category": "_Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)"
+                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Publications"
                     ]
                 },
                 {
@@ -10284,6 +10288,21 @@
                         }
                     ],
                     "category": "m_hub_testing"
+                },
+                {
+                    "name": "breadcrumbs",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_breadcrumbs"
                 },
                 {
                     "name": "externalNavList",

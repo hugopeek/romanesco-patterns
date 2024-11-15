@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Assign Overview Icon TVs to Publications template
 - Move Neighbors navigation to separate chunk
 - Make sure Input Option aliases are formatted as such
 - Replace stripAsAlias steps with filterPathSegment mechanism

@@ -188,6 +188,7 @@
                     "sortOrder": "10",
                     "templates": [
                         "@@templates_basic",
+                        "Publications",
                         "Download"
                     ]
                 },{
@@ -205,6 +206,7 @@
                     "sortOrder": "20",
                     "templates": [
                         "@@templates_basic",
+                        "Publications",
                         "Download"
                     ]
                 },{
@@ -222,6 +224,7 @@
                     "sortOrder": "21",
                     "templates": [
                         "@@templates_basic",
+                        "Publications",
                         "Download"
                     ]
                 },{
@@ -238,7 +241,8 @@
                     "category": "_Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_basic"
+                        "@@templates_basic",
+                        "Publications"
                     ]
                 },{
                     "caption": "Link / button text",
