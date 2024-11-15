@@ -67,18 +67,12 @@
             `]]
         </article>
 
-        [[*neighbors_visibility:eq=`1`:then=`
-        <nav id="menu-neighbors" class="ui large fluid two item menu">
-            [[pdoNeighbors?
-                &loop=`0`
-                &tplPrev=`neighborNavItemPrev`
-                &tplNext=`neighborNavItemNext`
-                &tplWrapper=`@INLINE [[+prev]][[+next]]`
-                &sortby=`publishedon`
-                &sortdir=`asc`
-            ]]
-        </nav>
-        `]]
+        [[[[If?
+            &subject=`[[*neighbors_visibility]]`
+            &operator=`eq`
+            &operand=`1`
+            &then=`$neighborsNav`
+        ]]]]
 
         [[-
         <aside id="further-reading" class="ui vertical stripe segment grey inverted">

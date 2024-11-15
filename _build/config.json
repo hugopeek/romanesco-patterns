@@ -522,6 +522,10 @@
                     "parent": "m_navigation"
                 },
                 {
+                    "name": "m_nav_neighbors",
+                    "parent": "m_navigation"
+                },
+                {
                     "name": "m_nav_tabs",
                     "parent": "m_navigation"
                 },
@@ -10293,6 +10297,21 @@
                     "category": "m_nav_external"
                 },
                 {
+                    "name": "neighborsNav",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_nav_neighbors"
+                },
+                {
                     "name": "paginationFluid",
                     "description": "",
                     "properties": [
@@ -10336,21 +10355,6 @@
                         }
                     ],
                     "category": "m_nav_pagination"
-                },
-                {
-                    "name": "breadcrumbs",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_nav_primary"
                 },
                 {
                     "name": "mainNav",

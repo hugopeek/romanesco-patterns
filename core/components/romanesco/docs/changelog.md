@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Move Neighbors navigation to separate chunk
 - Make sure Input Option aliases are formatted as such
 - Replace stripAsAlias steps with filterPathSegment mechanism
 - Fix map not loading if default zoom level was not set
