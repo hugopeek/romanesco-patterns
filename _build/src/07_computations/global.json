@@ -3,7 +3,7 @@
         "elements": {
             "plugins": [
                 {
-                    "name": "ManagerAugmentations",
+                    "name": "ManagerModifications",
                     "description": "Small tweaks to the MODX backend, to enhance the Romanesco experience.",
                     "properties": [
                         {

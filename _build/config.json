@@ -5400,6 +5400,21 @@
                     "category": "m_global"
                 },
                 {
+                    "name": "mgrHideFeaturesCB",
+                    "description": "Javascript for hiding advanced ContentBlocks features in manager, to simplify common usage. Relies on arrive.js for executing after CB has been initialized.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_global"
+                },
+                {
                     "name": "projectHubRow",
                     "description": "",
                     "properties": [
@@ -13685,7 +13700,7 @@
                     ]
                 },
                 {
-                    "name": "ManagerAugmentations",
+                    "name": "ManagerModifications",
                     "description": "Small tweaks to the MODX backend, to enhance the Romanesco experience.",
                     "properties": [
                         {
