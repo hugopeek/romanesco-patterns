@@ -3,5 +3,5 @@
     &regexPrefix=`i.icon.`
     &classPrefix=` icon`
     &mode=`cb`
-    &excludeClasses=`display,before,loading,hover,opacity,width,border,color,inverted,active,i.icons,i.mini.mini.mini.icons`
+    &excludeClasses=`display,before,loading,hover,opacity,width,border,color,inverted,active,i.icons,i.mini.mini.mini.icons,linkedin-in`
 ]]

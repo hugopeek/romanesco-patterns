@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix listing of deprecated icons in CB icon settings
 - Assign Overview Icon TVs to Publications template
 - Move Neighbors navigation to separate chunk
 - Make sure Input Option aliases are formatted as such

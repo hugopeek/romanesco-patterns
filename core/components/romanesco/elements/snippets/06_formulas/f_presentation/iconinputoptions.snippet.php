@@ -51,12 +51,12 @@ if (!$css) {
 }
 // output
 $output = array();
-$regex = "/" . $regexPrefix . "([\w.]*)/";
+$regex = "/" . $regexPrefix . "([\w.-]*)/";
 if (preg_match_all($regex, $css, $matches)) {
-
     $icons = array_diff($matches[1], $excludeClasses);
+    $icons = array_unique($icons);
+    sort($icons);
     foreach($icons as $icon) {
-
         $label = ($titleCaseLabels) ? ucwords(str_replace('.', ' ', $icon)) : $icon;
         $icon = str_replace('.', ' ', $icon);
         $output[] = $label . $operator . $icon . $outputPrefix;
