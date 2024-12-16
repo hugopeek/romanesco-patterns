@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Move JS for hiding CB features tp separate chunk
 - Fix listing of deprecated icons in CB icon settings
 - Assign Overview Icon TVs to Publications template
 - Move Neighbors navigation to separate chunk
