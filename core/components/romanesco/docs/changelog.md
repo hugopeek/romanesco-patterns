@@ -1,10 +1,10 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-beta16
-Released on ...
+Released on January 3, 2025
 
 Fixes and improvements:
-- Move JS for hiding CB features tp separate chunk
+- Move JS for hiding CB features to separate chunk
 - Fix listing of deprecated icons in CB icon settings
 - Assign Overview Icon TVs to Publications template
 - Move Neighbors navigation to separate chunk

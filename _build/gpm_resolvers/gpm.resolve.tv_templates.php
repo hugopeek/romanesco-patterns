@@ -1956,7 +1956,8 @@ if ($object->xpdo) {
     9 => 'BasicVerticalToC',
     10 => 'Basic - Vertical',
     11 => 'Basic - Vertical (ToC)',
-    12 => 'Download',
+    12 => 'Publications',
+    13 => 'Download',
   ),
   'overview_icon_svg' => 
   array (
@@ -1972,7 +1973,8 @@ if ($object->xpdo) {
     9 => 'BasicVerticalToC',
     10 => 'Basic - Vertical',
     11 => 'Basic - Vertical (ToC)',
-    12 => 'Download',
+    12 => 'Publications',
+    13 => 'Download',
   ),
   'overview_icon_svg_credit' => 
   array (
@@ -1988,7 +1990,8 @@ if ($object->xpdo) {
     9 => 'BasicVerticalToC',
     10 => 'Basic - Vertical',
     11 => 'Basic - Vertical (ToC)',
-    12 => 'Download',
+    12 => 'Publications',
+    13 => 'Download',
   ),
   'overview_subtitle' => 
   array (
@@ -2004,6 +2007,7 @@ if ($object->xpdo) {
     9 => 'BasicVerticalToC',
     10 => 'Basic - Vertical',
     11 => 'Basic - Vertical (ToC)',
+    12 => 'Publications',
   ),
   'overview_link_text' => 
   array (
