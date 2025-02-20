@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-beta17
+Released on ...
+
+Fixes and improvements:
+- Add tightened container type with large text
+
 ## Romanesco Patterns 1.0.0-beta16
 Released on January 3, 2025
 
