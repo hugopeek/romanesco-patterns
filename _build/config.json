@@ -2970,7 +2970,7 @@
                     "description": "How can we make this page better? Or do you have technical issues?",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "tasks:romanescobackyard"
+                        "configs": "tasks_resource:romanescobackyard"
                     },
                     "properties": [
                         {
