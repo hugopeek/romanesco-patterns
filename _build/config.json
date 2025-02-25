@@ -12417,6 +12417,21 @@
                     "category": "f_data"
                 },
                 {
+                    "name": "migxSaveTask",
+                    "description": "Aftersave hook for MIGXdb. Links the task to the parent object.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
                     "name": "migxSaveTaskComment",
                     "description": "Aftersave hook for MIGXdb. Links the comment to the parent task.",
                     "properties": [
