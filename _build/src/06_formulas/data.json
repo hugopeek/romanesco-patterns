@@ -81,6 +81,19 @@
                     ],
                     "category": "f_data"
                 },{
+                    "name": "migxSaveSocialConnect",
+                    "description": "Aftersave hook for MIGXdb. Links the social platform to the parent object.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },{
                     "name": "migxResetNULL",
                     "description": "After save hook for MIGXdb. Prevents database fields with default value of NULL from being set to 0 after a save action in MIGX.",
                     "properties": [

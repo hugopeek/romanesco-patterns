@@ -5,6 +5,7 @@ Released on ...
 
 Fixes and improvements:
 - Allow Tasks to be attached to objects other than resource
+- Allow social connections to be attached to objects other than resource
 - Add tightened container type with large text
 
 ## Romanesco Patterns 1.0.0-beta16

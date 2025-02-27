@@ -3,12 +3,12 @@
         "elements": {
             "tvs": [
                 {
-                    "caption": "Social channels",
+                    "caption": "Social platforms",
                     "name": "social_connections",
-                    "description": "Maintain a list of social media channels, through which visitors can connect with you.",
+                    "description": "Maintain a list of social media platforms through which visitors can connect with you.",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "social_connections:romanescobackyard"
+                        "configs": "social_connect_resource:romanescobackyard"
                     },
                     "properties": [
                         {

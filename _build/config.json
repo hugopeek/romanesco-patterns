@@ -2200,12 +2200,12 @@
                     ]
                 },
                 {
-                    "caption": "Social channels",
+                    "caption": "Social platforms",
                     "name": "social_connections",
-                    "description": "Maintain a list of social media channels, through which visitors can connect with you.",
+                    "description": "Maintain a list of social media platforms through which visitors can connect with you.",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "social_connections:romanescobackyard"
+                        "configs": "social_connect_resource:romanescobackyard"
                     },
                     "properties": [
                         {
@@ -12434,6 +12434,21 @@
                 {
                     "name": "migxSaveTaskComment",
                     "description": "Aftersave hook for MIGXdb. Links the comment to the parent task.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "migxSaveSocialConnect",
+                    "description": "Aftersave hook for MIGXdb. Links the social platform to the parent object.",
                     "properties": [
                         {
                             "name": "elementStatus",
