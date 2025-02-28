@@ -1,0 +1,11 @@
+[[[[If?
+    &subject=`[[!isEditor]]`
+    &operator=`notempty`
+    &then=`$richTextMessage?
+        &heading=`[[+heading]]`
+        &content=`[[+value]]`
+        &message_type=`[[+message_type]]`
+        &size=`[[+size]]`
+        &close=`[[+close]]`
+    `
+]]]]

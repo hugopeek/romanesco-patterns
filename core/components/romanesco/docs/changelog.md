@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Add separate CB field for displaying internal messages
 - Allow Tasks to be attached to objects other than resource
 - Allow social connections to be attached to objects other than resource
 - Add tightened container type with large text

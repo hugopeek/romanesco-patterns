@@ -1,4 +1,4 @@
-Regular=
+Regular=regular
 Positive=positive
 Negative=negative
 Informative=info
