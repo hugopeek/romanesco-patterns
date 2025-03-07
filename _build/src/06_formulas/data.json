@@ -119,6 +119,19 @@
                         }
                     ],
                     "category": "f_data"
+                },{
+                    "name": "renderStructuredData",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
                 }
             ],
 
