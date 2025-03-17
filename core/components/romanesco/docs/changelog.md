@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Update links to generated favicons
 - Insert critical CSS inline in head
 - Add separate CB field for displaying internal messages
 - Allow Tasks to be attached to objects other than resource
