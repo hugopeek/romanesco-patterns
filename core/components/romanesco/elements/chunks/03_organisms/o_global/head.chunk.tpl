@@ -50,7 +50,7 @@
 
 [[- LOAD CSS ASSETS, ASYNCHRONOUS IF CRITICAL CSS IS ENABLED ]]
 [[+load_critical_css:eq=`1`:then=`
-<link rel="stylesheet" href="[[*critical_css_uri:replace=`.css==[[+cache_buster_css]].css`]]">
+<style>[[*critical_css_uri:getFileContent]]</style>
 <link rel="stylesheet" href="[[++romanesco.semantic_dist_path]]/semantic[[+minify]][[+cache_buster_css]].css" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css" media="print" onload="this.media='all'">
 `:else=`
@@ -110,9 +110,6 @@
     &true=``
     &false=`++analytics_tracking_code`
 ]]]]
-
-[[- PLACE STRUCTURED DATA IN JSON-LD FORMAT ]]
-[[$structuredDataSite]]
 
 [[- DENY ACCESS TO HUB CONTEXT, IF MARKED AS PRIVATE ]]
 [[[[If?

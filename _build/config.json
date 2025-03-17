@@ -12327,6 +12327,21 @@
                     "category": "f_basic"
                 },
                 {
+                    "name": "getFileContent",
+                    "description": "Load content of provided file. Only accepts file paths within project directory.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_basic"
+                },
+                {
                     "name": "TableOfContents",
                     "description": "",
                     "properties": [

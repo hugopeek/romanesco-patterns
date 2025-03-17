@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Insert critical CSS inline in head
 - Add separate CB field for displaying internal messages
 - Allow Tasks to be attached to objects other than resource
 - Allow social connections to be attached to objects other than resource
