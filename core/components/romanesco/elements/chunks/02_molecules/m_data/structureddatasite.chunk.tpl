@@ -34,6 +34,4 @@
             }
         ]
     }
-
-    [[-!renderStructuredData]]
 </script>
