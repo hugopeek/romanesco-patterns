@@ -23,7 +23,7 @@
                         }
                     ],
                     "category": "c_configuration",
-                    "events": ["ClientConfig_ConfigChange"]
+                    "events": ["ClientConfig_BeforeCacheUpdate","ClientConfig_ConfigChange"]
                 }
             ],
 

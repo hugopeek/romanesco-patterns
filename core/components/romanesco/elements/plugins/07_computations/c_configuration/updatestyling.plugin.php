@@ -27,7 +27,7 @@
 $eventName = $modx->event->name;
 
 switch($eventName) {
-    case 'ClientConfig_ConfigChange':
+    case 'ClientConfig_BeforeCacheUpdate':
         $corePath = $modx->getOption('clientconfig.core_path', null, $modx->getOption('core_path') . 'components/clientconfig/');
         $clientConfig = $modx->getService('clientconfig','ClientConfig', $corePath . 'model/clientconfig/', array('core_path' => $corePath));
         $imgMediaSource = $modx->getObject('sources.modMediaSource', 15);
@@ -56,7 +56,7 @@ switch($eventName) {
                 return array_filter(
                     $settings,
                     function ($key) {
-                        if (strpos($key, 'theme_') === 0 || strpos($key, 'logo_') === 0) {
+                        if (str_starts_with($key, 'theme_') || str_starts_with($key, 'logo_')) {
                             return $key;
                         }
                         else {
@@ -93,6 +93,7 @@ switch($eventName) {
 
         // Compare saved settings to current settings
         $updatedSettings = array_diff_assoc($savedSettingsTheme, $currentSettingsTheme);
+        $modx->log(modX::LOG_LEVEL_INFO, '[UpdateStyling] ' . print_r($updatedSettings, true));
 
         // Regenerate styling elements if theme settings were updated or deleted
         if ($updatedSettings) {
