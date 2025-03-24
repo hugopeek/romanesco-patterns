@@ -111,6 +111,14 @@
     &false=`++analytics_tracking_code`
 ]]]]
 
+[[- PLACE SCHEMA.ORG STRUCTURED DATA ]]
+[[[[If?
+    &subject=`[[++romanesco.structured_data]]`
+    &operator=`eq`
+    &operand=`1`
+    &then=`$structuredDataSite`
+]]]]
+
 [[- DENY ACCESS TO HUB CONTEXT, IF MARKED AS PRIVATE ]]
 [[[[If?
     &subject=`[[++romanesco.private_backyard]]`

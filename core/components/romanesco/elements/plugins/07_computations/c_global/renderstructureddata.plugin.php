@@ -6,26 +6,27 @@
  *
  * All types are collected in a central @graph object, which is stored in the
  * Romanesco class. Properties can be redefined by creating a plugin on the same
- * event (OnDocFormSave) with a higher priority.
+ * event (OnLoadWebDocument) with a higher priority.
  *
  * The final graph object is stored as JSON inside the resource properties field.
  *
  * @depends https://github.com/spatie/schema-org
  *
  * @var modX $modx
+ * @var array $scriptProperties
  * @package romanesco
  */
 
 use Spatie\SchemaOrg\Schema;
-use Spatie\SchemaOrg\Graph;
 
 switch ($modx->event->name) {
-    case 'OnDocFormSave':
+    case 'OnLoadWebDocument':
         $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path').'components/romanescobackyard/');
         $romanesco = $modx->getService('romanesco','Romanesco', $corePath.'model/romanescobackyard/', array('core_path' => $corePath));
-
-        /** @var array $scriptProperties */
-        $toolbarVisible = $modx->getOption('toolbar_visibility', $scriptProperties, true);
+        if (!($romanesco instanceof Romanesco)) {
+            $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
+            break;
+        }
 
         // System / context
         $siteName = $modx->getOption('site_name', $scriptProperties);
@@ -34,9 +35,10 @@ switch ($modx->event->name) {
         $context = $modx->getOption('context_key', $scriptProperties);
 
         // ClientConfig
-        $clientType = $modx->getOption('client_type', $scriptProperties, $modx->romanesco->getConfigSetting('client_type'));
-        $clientPhone = $modx->getOption('client_phone', $scriptProperties, $modx->romanesco->getConfigSetting('client_phone'));
-        $clientEmail = $modx->getOption('client_email', $scriptProperties, $modx->romanesco->getConfigSetting('client_email'));
+        $clientType = $modx->getOption('client_type', $scriptProperties, $romanesco->getConfigSetting('client_type'));
+        $clientPhone = $modx->getOption('client_phone', $scriptProperties, $romanesco->getConfigSetting('client_phone'));
+        $clientEmail = $modx->getOption('client_email', $scriptProperties, $romanesco->getConfigSetting('client_email'));
+        $logoPath = $modx->getOption('logo_path', $scriptProperties, $romanesco->getConfigSetting('logo_path'));
 
         // Resource
         $pagetitle = $modx->resource->get('pagetitle');
@@ -45,19 +47,47 @@ switch ($modx->event->name) {
         $introtext = $modx->resource->get('introtext');
         $url = $modx->makeUrl($modx->resource->id, null, null, 'full');
 
+        // TVs
+        $headerVisible = $modx->resource->getTVValue('header_visibility');
+        $toolbarVisible = $modx->resource->getTVValue('toolbar_visibility');
+        $authorID = $modx->resource->getTVValue('author_id');
+
         // Use the object initialized within the Romanesco class, to allow overwriting
         $graph = &$romanesco->structuredData;
 
         // Organization
-        $graph
-            ->organization()
-            ->name($siteName)
-            ->url($siteURL)
-            ->contactPoint(Schema::contactPoint()
-                ->telephone($clientPhone)
-                ->email($clientEmail)
-            )
-        ;
+        if ($clientType == 'organization') {
+            $graph
+                ->organization()
+                ->name($siteName)
+                ->url($siteURL)
+                ->contactPoint(Schema::contactPoint()
+                    ->telephone($clientPhone)
+                    ->email($clientEmail)
+                )
+                ->logo(Schema::imageObject()
+                    ->identifier($siteURL . "#logo")
+                    ->url(str_replace("//", "/", $siteURL . $logoPath))
+                    ->caption($siteName)
+                )
+                ->image([
+                    '@id' => $siteURL . "#logo"
+                ])
+            ;
+        }
+
+        // Person
+        if ($clientType == 'person') {
+            $graph
+                ->person()
+                ->name($siteName)
+                ->url($siteURL)
+                ->contactPoint(Schema::contactPoint()
+                    ->telephone($clientPhone)
+                    ->email($clientEmail)
+                )
+            ;
+        }
 
         // Page
         $graph
@@ -94,18 +124,7 @@ switch ($modx->event->name) {
             ;
         }
 
-        //$modx->log(modX::LOG_LEVEL_ERROR, print_r($graph->toArray(), true));
+        $modx->setPlaceholder('structured_data', json_encode($graph,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
-        /** @var modResource $resource */
-        $resource->setProperties(["schema" => $graph],'romanesco');
-        $resource->save();
-        break;
-
-    case 'OnLoadWebDocument':
-        $properties = $modx->resource->getProperties('romanesco');
-
-        if (isset($properties['schema'])) {
-            $modx->regClientStartupHTMLBlock('<script type="application/ld+json">'.json_encode($properties['schema'],JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT).'</script>');
-        }
         break;
 }

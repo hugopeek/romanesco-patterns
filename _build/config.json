@@ -13808,7 +13808,6 @@
                     ],
                     "category": "c_global",
                     "events": [
-                        "OnDocFormSave",
                         "OnLoadWebDocument"
                     ]
                 },
@@ -13898,6 +13897,12 @@
                 "type": "textfield",
                 "area": "Meta",
                 "value": "[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]"
+            },
+            {
+                "key": "structured_data",
+                "type": "combo-boolean",
+                "area": "Meta",
+                "value": "1"
             },
             {
                 "key": "date_format_short",
