@@ -21,6 +21,17 @@ use Spatie\SchemaOrg\Schema;
 
 switch ($modx->event->name) {
     case 'OnLoadWebDocument':
+
+        // Cached DOM already includes structured data
+        $cacheManager = $modx->getCacheManager();
+        $cacheElementKey = '/dom';
+        $cacheOptions = [
+            xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
+        ];
+        if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
+            break;
+        }
+
         $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path').'components/romanescobackyard/');
         $romanesco = $modx->getService('romanesco','Romanesco', $corePath.'model/romanescobackyard/', array('core_path' => $corePath));
         if (!($romanesco instanceof Romanesco)) {

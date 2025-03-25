@@ -27,6 +27,16 @@ if (!$target) {
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
 
+        // Cached DOM already includes ToC
+        $cacheManager = $modx->getCacheManager();
+        $cacheElementKey = '/dom';
+        $cacheOptions = [
+            xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
+        ];
+        if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
+            break;
+        }
+
         // Get processed output of resource
         $content = &$modx->resource->_output;
         $resourceURI = $modx->resource->get('uri');

@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Cache DOM output in plugins (to avoid repeated DOM manipulations)
 - Update links to generated favicons
 - Insert critical CSS inline in head
 - Add separate CB field for displaying internal messages

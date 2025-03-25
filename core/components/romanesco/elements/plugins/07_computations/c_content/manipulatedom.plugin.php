@@ -20,6 +20,19 @@ use \Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
+        //$start= microtime(true);
+
+        $cacheManager = $modx->getCacheManager();
+        $cacheElementKey = '/dom';
+        $cacheOptions = [
+            xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
+        ];
+
+        if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
+            //$modx->log(modX::LOG_LEVEL_ERROR, 'SkippyDOM: ' . microtime(true) - $start);
+            $modx->resource->_output = $cachedOutput;
+            break;
+        }
 
         // Check if content type is text/html
         if (!in_array($modx->resource->get('content_type'), [1,11])) {
@@ -496,6 +509,10 @@ switch ($modx->event->name) {
 
         // Save manipulated DOM
         $output = $dom->saveHTML();
+
+        // Cache DOM output
+        $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
+        //$modx->log(modX::LOG_LEVEL_ERROR, 'DOM manipulated in: ' . microtime(true) - $start);
 
         break;
 }
