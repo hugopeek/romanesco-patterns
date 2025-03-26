@@ -6,6 +6,12 @@
  * elements for us. Yes, that is exactly what jQuery does... But now we can do
  * it server side, before the page is rendered. Much faster and more reliable.
  *
+ * Update March 2025: generated HTML output is now cached under the regular
+ * resource cache. This means it will be cleared also on every save action.
+ * Other plugins utilizing the HtmlPageDOM crawler are relying on this cache
+ * too, so keep an eye on the priority of this plugin to make sure all output
+ * is generated before it is being cached here.
+ *
  * @var modX $modx
  * @var array $scriptProperties
  * @package romanesco
@@ -20,8 +26,12 @@ use \Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
-        //$start= microtime(true);
+        $start = null;
+        if ($debug = $modx->getOption('debug', null, false)) {
+            $start = microtime(true);
+        }
 
+        // Look for cached HTML output first
         $cacheManager = $modx->getCacheManager();
         $cacheElementKey = '/dom';
         $cacheOptions = [
@@ -29,7 +39,9 @@ switch ($modx->event->name) {
         ];
 
         if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
-            //$modx->log(modX::LOG_LEVEL_ERROR, 'SkippyDOM: ' . microtime(true) - $start);
+            if ($debug) {
+                $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM loaded from cache in: ' . microtime(true) - $start);
+            }
             $modx->resource->_output = $cachedOutput;
             break;
         }
@@ -510,9 +522,11 @@ switch ($modx->event->name) {
         // Save manipulated DOM
         $output = $dom->saveHTML();
 
-        // Cache DOM output
+        // Cache HTML output
         $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
-        //$modx->log(modX::LOG_LEVEL_ERROR, 'DOM manipulated in: ' . microtime(true) - $start);
+        if ($debug) {
+            $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM manipulated in: ' . microtime(true) - $start);
+        }
 
         break;
 }

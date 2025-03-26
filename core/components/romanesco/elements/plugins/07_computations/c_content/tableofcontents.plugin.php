@@ -27,7 +27,7 @@ if (!$target) {
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
 
-        // Cached DOM already includes ToC
+        // Cached DOM output already includes ToC
         $cacheManager = $modx->getCacheManager();
         $cacheElementKey = '/dom';
         $cacheOptions = [

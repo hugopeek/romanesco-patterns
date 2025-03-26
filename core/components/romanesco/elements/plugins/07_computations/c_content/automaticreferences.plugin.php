@@ -23,6 +23,16 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
 
+        // Cached DOM output already includes references
+        $cacheManager = $modx->getCacheManager();
+        $cacheElementKey = '/dom';
+        $cacheOptions = [
+            xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
+        ];
+        if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
+            break;
+        }
+
         // Get processed output of resource
         $content = &$modx->resource->_output;
 

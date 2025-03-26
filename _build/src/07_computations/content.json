@@ -23,7 +23,12 @@
                         }
                     ],
                     "category": "c_content",
-                    "events": ["OnWebPagePrerender"]
+                    "events": [
+                        {
+                            "event": "OnWebPagePrerender",
+                            "priority": 30
+                        }
+                    ]
                 },{
                     "name": "TableOfContents",
                     "description": "Generate a menu with internal links to all headings in the content. The headers need to have an anchor, which can be automatically attached by switching on the auto_anchors TV.",

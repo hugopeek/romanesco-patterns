@@ -13688,7 +13688,10 @@
                     ],
                     "category": "c_content",
                     "events": [
-                        "OnWebPagePrerender"
+                        {
+                            "event": "OnWebPagePrerender",
+                            "priority": 30
+                        }
                     ]
                 },
                 {

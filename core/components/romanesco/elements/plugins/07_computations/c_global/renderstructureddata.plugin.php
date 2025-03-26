@@ -22,7 +22,7 @@ use Spatie\SchemaOrg\Schema;
 switch ($modx->event->name) {
     case 'OnLoadWebDocument':
 
-        // Cached DOM already includes structured data
+        // Cached DOM output already includes structured data
         $cacheManager = $modx->getCacheManager();
         $cacheElementKey = '/dom';
         $cacheOptions = [
@@ -135,7 +135,7 @@ switch ($modx->event->name) {
             ;
         }
 
-        $modx->setPlaceholder('structured_data', json_encode($graph,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        $modx->setPlaceholder('structured_data', json_encode($graph, JSON_UNESCAPED_SLASHES));
 
         break;
 }

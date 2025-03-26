@@ -70,8 +70,18 @@ switch ($modx->event->name) {
 
     // Process output with HtmlPageDom
     case 'OnWebPagePrerender':
-        // Make sure its Markdown
+        // Make sure content is Markdown
         if ($modx->resource->get('content_type') !== 11) {
+            break;
+        }
+
+        // Cached DOM output already includes processed Markdown
+        $cacheManager = $modx->getCacheManager();
+        $cacheElementKey = '/dom';
+        $cacheOptions = [
+            xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
+        ];
+        if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
             break;
         }
 
