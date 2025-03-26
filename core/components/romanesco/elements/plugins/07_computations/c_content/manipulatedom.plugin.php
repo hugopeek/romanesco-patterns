@@ -31,7 +31,7 @@ switch ($modx->event->name) {
             $start = microtime(true);
         }
 
-        // Look for cached HTML output first
+        // Look for cached HTML output first (unless user is logged in, or a POST request is made)
         $cacheManager = $modx->getCacheManager();
         $cacheElementKey = '/dom';
         $cacheOptions = [
@@ -39,7 +39,7 @@ switch ($modx->event->name) {
         ];
         $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
-        if ($cachedOutput && !$isLoggedIn) {
+        if ($cachedOutput && !$isLoggedIn && !$_POST) {
             if ($debug) {
                 $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM loaded from cache in: ' . microtime(true) - $start);
             }
@@ -524,7 +524,7 @@ switch ($modx->event->name) {
         $output = $dom->saveHTML();
 
         // Cache HTML output
-        if (!$isLoggedIn) {
+        if (!$isLoggedIn && !$_POST) {
             $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
         }
         if ($debug) {
