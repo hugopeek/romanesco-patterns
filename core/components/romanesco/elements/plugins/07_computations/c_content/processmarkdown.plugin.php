@@ -81,7 +81,9 @@ switch ($modx->event->name) {
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
-        if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
+        $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
+        $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
+        if ($cachedOutput && !$isLoggedIn) {
             break;
         }
 

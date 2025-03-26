@@ -37,8 +37,9 @@ switch ($modx->event->name) {
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
-
-        if ($cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions)) {
+        $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
+        $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
+        if ($cachedOutput && !$isLoggedIn) {
             if ($debug) {
                 $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM loaded from cache in: ' . microtime(true) - $start);
             }
@@ -523,7 +524,9 @@ switch ($modx->event->name) {
         $output = $dom->saveHTML();
 
         // Cache HTML output
-        $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
+        if (!$isLoggedIn) {
+            $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
+        }
         if ($debug) {
             $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM manipulated in: ' . microtime(true) - $start);
         }
