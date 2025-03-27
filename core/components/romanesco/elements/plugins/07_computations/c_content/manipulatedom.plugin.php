@@ -31,20 +31,26 @@ switch ($modx->event->name) {
             $start = microtime(true);
         }
 
-        // Look for cached HTML output first (unless user is logged in, or a POST request is made)
+        // Look for cached HTML output first...
+        $cacheFlag = false;
         $cacheManager = $modx->getCacheManager();
         $cacheElementKey = '/dom';
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
-        $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
+        // Unless user is logged in, or a POST or search request is made.
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
-        if ($cachedOutput && !$isLoggedIn && !$_POST) {
-            if ($debug) {
-                $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM loaded from cache in: ' . microtime(true) - $start);
+        if (!$isLoggedIn && !$_POST && !$_REQUEST['search']) {
+            $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
+            if ($cachedOutput) {
+                if ($debug) {
+                    $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM loaded from cache in: ' . microtime(true) - $start);
+                }
+                $modx->resource->_output = $cachedOutput;
+                break;
+            } else {
+                $cacheFlag = true;
             }
-            $modx->resource->_output = $cachedOutput;
-            break;
         }
 
         // Check if content type is text/html
@@ -524,7 +530,7 @@ switch ($modx->event->name) {
         $output = $dom->saveHTML();
 
         // Cache HTML output
-        if (!$isLoggedIn && !$_POST) {
+        if ($cacheFlag) {
             $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
         }
         if ($debug) {
