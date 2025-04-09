@@ -28,7 +28,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Image (Portrait)",
@@ -56,7 +56,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Image (Square)",
@@ -84,7 +84,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Image (Wide)",
@@ -112,7 +112,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Image (Panorama)",
@@ -140,7 +140,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Image (Free)",
@@ -166,7 +166,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Icon (Font)",
@@ -260,7 +260,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Image priority",
@@ -280,7 +280,7 @@
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 }
             ],

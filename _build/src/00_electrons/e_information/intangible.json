@@ -17,7 +17,7 @@
                     "category": "Rating",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_testimonial"
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Email address",
@@ -33,7 +33,7 @@
                     "category": "Contact",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Phone number",
@@ -49,7 +49,7 @@
                     "category": "Contact",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Mobile number",
@@ -65,7 +65,7 @@
                     "category": "Contact",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Street name",
@@ -81,7 +81,7 @@
                     "category": "Address",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "House number",
@@ -97,7 +97,7 @@
                     "category": "Address",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Postal code",
@@ -113,7 +113,7 @@
                     "category": "Address",
                     "sortOrder": "4",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "City / Town",
@@ -129,7 +129,7 @@
                     "category": "Address",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Region",
@@ -145,7 +145,7 @@
                     "category": "Address",
                     "sortOrder": "11",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Country",
@@ -161,7 +161,7 @@
                     "category": "Address",
                     "sortOrder": "12",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Start date",
@@ -177,7 +177,7 @@
                     "category": "Date",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "End date",
@@ -193,7 +193,7 @@
                     "category": "Date",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Date completed",
@@ -209,7 +209,7 @@
                     "category": "Date",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 }
             ],

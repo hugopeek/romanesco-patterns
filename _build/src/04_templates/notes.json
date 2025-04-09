@@ -42,7 +42,21 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_information"
+                    "category": "t_notes"
+                },{
+                    "name": "NoteRegular",
+                    "description": "",
+                    "icon": "icon-sticky-note-o",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "t_notes"
                 },{
                     "name": "NoteVertical",
                     "description": "",
@@ -56,26 +70,12 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_information"
-                },{
-                    "name": "NoteVerticalRTE",
-                    "description": "",
-                    "icon": "icon-sticky-note-o",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "experimental"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_information"
+                    "category": "t_notes"
                 }
             ],
             "categories": [
                 {
-                    "name": "t_information",
+                    "name": "t_notes",
                     "parent": "04_templates"
                 }
             ]

@@ -17,7 +17,7 @@
                     "category": "_Connection",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "Organization",
@@ -34,8 +34,8 @@
                     "category": "_Connection",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_portfolio",
-                        "@@templates_testimonial"
+                        "@@templates_project",
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Contributors",
@@ -52,7 +52,7 @@
                     "category": "_Connection",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_portfolio"
+                        "@@templates_project"
                     ]
                 },{
                     "caption": "MODX user",

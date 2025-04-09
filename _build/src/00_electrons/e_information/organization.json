@@ -16,7 +16,7 @@
                     "category": "Org. - Presentation",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_client"
+                        "@@templates_organization"
                     ]
                 },{
                     "caption": "Organization logo (Image)",
@@ -41,7 +41,7 @@
                     "category": "Org. - Presentation",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_client"
+                        "@@templates_organization"
                     ]
                 },{
                     "caption": "Organization name",
@@ -57,7 +57,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_client"
+                        "@@templates_organization"
                     ]
                 },{
                     "caption": "Organization sector",
@@ -74,7 +74,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "5",
                     "templates": [
-                        "@@templates_client"
+                        "@@templates_organization"
                     ]
                 },{
                     "caption": "Organization industry",
@@ -90,7 +90,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "6",
                     "templates": [
-                        "@@templates_client"
+                        "@@templates_organization"
                     ]
                 },{
                     "caption": "Organization size",
@@ -106,7 +106,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_client"
+                        "@@templates_organization"
                     ]
                 },{
                     "caption": "Organization website",
@@ -122,7 +122,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "20",
                     "templates": [
-                        "@@templates_client"
+                        "@@templates_organization"
                     ]
                 }
             ],

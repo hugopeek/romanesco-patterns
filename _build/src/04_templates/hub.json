@@ -3,7 +3,7 @@
         "elements": {
             "templates": [
                 {
-                    "name": "ProjectDashboard",
+                    "name": "Dashboard",
                     "icon": "icon-line-chart",
                     "properties": [
                         {

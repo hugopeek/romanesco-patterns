@@ -3,7 +3,7 @@
         "elements": {
             "templates": [
                 {
-                    "name": "PortfolioProject",
+                    "name": "Project",
                     "icon": "icon-briefcase",
                     "properties": [
                         {

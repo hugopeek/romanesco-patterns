@@ -147,10 +147,6 @@
                     "parent": "00_electrons"
                 },
                 {
-                    "name": "_Global - Backgrounds",
-                    "parent": "e_global"
-                },
-                {
                     "name": "_Background",
                     "parent": "e_global"
                 },
@@ -706,7 +702,7 @@
                     "parent": "04_templates"
                 },
                 {
-                    "name": "t_information",
+                    "name": "t_notes",
                     "parent": "04_templates"
                 },
                 {
@@ -881,7 +877,7 @@
                     "category": "_Connection",
                     "sortOrder": "1",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -899,8 +895,8 @@
                     "category": "_Connection",
                     "sortOrder": "2",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project",
-                        "Testimonial","Review"
+                        "Project",
+                        "Review"
                     ]
                 },
                 {
@@ -918,7 +914,7 @@
                     "category": "_Connection",
                     "sortOrder": "3",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -1311,26 +1307,6 @@
                     ]
                 },
                 {
-                    "caption": "Global background images",
-                    "name": "global_background_img",
-                    "description": "DEPRECATED - DO NOT USE ANYMORE! Backgrounds in this grid still work, but use the new resource-based backgrounds instead to ensure proper functionality in the future.",
-                    "type": "migx",
-                    "inputProperties": {
-                        "configs": "global_background_images:romanescobackyard"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        }
-                    ],
-                    "category": "_Global - Backgrounds",
-                    "sortOrder": "1",
-                    "templates": [
-                        "GlobalBackgrounds"
-                    ]
-                },
-                {
                     "caption": "Availability",
                     "name": "background_availability",
                     "description": "Where would you like to use this background?",
@@ -1712,7 +1688,7 @@
                     "category": "_Navigation",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1731,7 +1707,7 @@
                     "category": "_Navigation",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1754,7 +1730,7 @@
                     "category": "_Navigation",
                     "sortOrder": "11",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1773,7 +1749,7 @@
                     "category": "_Navigation",
                     "sortOrder": "12",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1792,7 +1768,7 @@
                     "category": "_Navigation",
                     "sortOrder": "15",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1811,7 +1787,7 @@
                     "category": "_Navigation",
                     "sortOrder": "20",
                     "templates": [
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download"
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download"
                     ]
                 },
                 {
@@ -1838,9 +1814,9 @@
                     "category": "_Overview - Image",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -1867,9 +1843,9 @@
                     "category": "_Overview - Image",
                     "sortOrder": "2",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -1896,9 +1872,9 @@
                     "category": "_Overview - Image",
                     "sortOrder": "3",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -1925,9 +1901,9 @@
                     "category": "_Overview - Image",
                     "sortOrder": "5",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -1954,9 +1930,9 @@
                     "category": "_Overview - Image",
                     "sortOrder": "6",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -1981,9 +1957,9 @@
                     "category": "_Overview - Image",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -2005,7 +1981,7 @@
                     "category": "_Overview - Icon",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications",
                         "Download"
                     ]
@@ -2024,7 +2000,7 @@
                     "category": "_Overview - Icon",
                     "sortOrder": "20",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications",
                         "Download"
                     ]
@@ -2043,7 +2019,7 @@
                     "category": "_Overview - Icon",
                     "sortOrder": "21",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications",
                         "Download"
                     ]
@@ -2062,7 +2038,7 @@
                     "category": "_Overview - Settings",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications"
                     ]
                 },
@@ -2080,9 +2056,9 @@
                     "category": "_Overview - Settings",
                     "sortOrder": "2",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -2101,9 +2077,9 @@
                     "category": "_Overview - Settings",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)",
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download",
-                        "PortfolioProject","Portfolio - Project"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Project"
                     ]
                 },
                 {
@@ -2120,7 +2096,7 @@
                     "category": "_Performance",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2220,7 +2196,7 @@
                     "category": "_Social",
                     "sortOrder": 0,
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2237,7 +2213,7 @@
                     "category": "_Social",
                     "sortOrder": "1",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2254,7 +2230,7 @@
                     "category": "_Social",
                     "sortOrder": "2",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2271,7 +2247,7 @@
                     "category": "_Social",
                     "sortOrder": "3",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2288,7 +2264,7 @@
                     "category": "_Social",
                     "sortOrder": "4",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2305,7 +2281,7 @@
                     "category": "_Social",
                     "sortOrder": "5",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2322,7 +2298,7 @@
                     "category": "_Social",
                     "sortOrder": "10",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2339,7 +2315,7 @@
                     "category": "_Social",
                     "sortOrder": "11",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2356,7 +2332,7 @@
                     "category": "_Social",
                     "sortOrder": "12",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2373,7 +2349,7 @@
                     "category": "_Social",
                     "sortOrder": "20",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -2410,7 +2386,7 @@
                     "category": "_Footer",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2429,7 +2405,7 @@
                     "category": "_Footer",
                     "sortOrder": "2",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2448,7 +2424,7 @@
                     "category": "_Footer",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2467,7 +2443,7 @@
                     "category": "_Footer",
                     "sortOrder": "20",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2486,7 +2462,7 @@
                     "category": "_Footer",
                     "sortOrder": "21",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2509,7 +2485,7 @@
                     "category": "_Footer",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2528,7 +2504,7 @@
                     "category": "_Header",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2546,7 +2522,7 @@
                     "category": "_Header",
                     "sortOrder": "5",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2564,7 +2540,7 @@
                     "category": "_Header",
                     "sortOrder": "6",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2583,7 +2559,7 @@
                     "category": "_Header",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2601,7 +2577,7 @@
                     "category": "_Header",
                     "sortOrder": "11",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2620,7 +2596,7 @@
                     "category": "_Header",
                     "sortOrder": "20",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2643,7 +2619,7 @@
                     "category": "_Header",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2663,7 +2639,7 @@
                     "category": "_Links",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2683,7 +2659,7 @@
                     "category": "_Links",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2708,7 +2684,7 @@
                     "category": "_Links",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2735,7 +2711,7 @@
                     "category": "_Purpose",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2760,7 +2736,7 @@
                     "category": "_Purpose",
                     "sortOrder": 2,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2783,7 +2759,7 @@
                     "category": "_Purpose",
                     "sortOrder": 5,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2806,7 +2782,7 @@
                     "category": "_Purpose",
                     "sortOrder": 6,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2829,7 +2805,7 @@
                     "category": "_Purpose",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2846,7 +2822,7 @@
                     "category": "_Purpose",
                     "sortOrder": 11,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2863,7 +2839,7 @@
                     "category": "_Purpose",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2946,7 +2922,7 @@
                     "category": "_Status",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2965,7 +2941,7 @@
                     "category": "_Status",
                     "sortOrder": 2,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2985,7 +2961,7 @@
                     "category": "_Status",
                     "sortOrder": 3,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -3010,7 +2986,7 @@
                     "category": "_Status",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -3030,7 +3006,7 @@
                     "category": "_Status",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","Homepage","BasicOverview","Basic - Overview","BasicDetail","BasicDetailToC","Basic - Detail","Basic - Detail (ToC)","BasicVertical","BasicVerticalToC","Basic - Vertical","Basic - Vertical (ToC)","Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Notes","Notes - Overview","NoteVertical","Note - Vertical","NoteVerticalRTE","Note - Vertical (RTE)","TeamMember","Team - Member","Client","Organization","PortfolioProject","Portfolio - Project","Testimonial","Review","ProjectDashboard","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -3385,7 +3361,7 @@
                     "category": "About",
                     "sortOrder": "1",
                     "templates": [
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download"
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download"
                     ]
                 },
                 {
@@ -3404,7 +3380,7 @@
                     "category": "Comments",
                     "sortOrder": "1",
                     "templates": [
-                        "Publications","Publications - Overview","ArticleTraditional","Article - Traditional","ArticleReadability","Article - Readability","ArticleSidenotes","Article - Sidenotes","Download"
+                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download"
                     ]
                 },
                 {
@@ -3422,7 +3398,7 @@
                     "category": "Rating",
                     "sortOrder": "1",
                     "templates": [
-                        "Testimonial","Review"
+                        "Review"
                     ]
                 },
                 {
@@ -3439,7 +3415,7 @@
                     "category": "Contact",
                     "sortOrder": "1",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -3456,7 +3432,7 @@
                     "category": "Contact",
                     "sortOrder": "2",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -3473,7 +3449,7 @@
                     "category": "Contact",
                     "sortOrder": "3",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -3490,7 +3466,7 @@
                     "category": "Address",
                     "sortOrder": "2",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3507,7 +3483,7 @@
                     "category": "Address",
                     "sortOrder": "3",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3524,7 +3500,7 @@
                     "category": "Address",
                     "sortOrder": "4",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3541,7 +3517,7 @@
                     "category": "Address",
                     "sortOrder": "10",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3558,7 +3534,7 @@
                     "category": "Address",
                     "sortOrder": "11",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3575,7 +3551,7 @@
                     "category": "Address",
                     "sortOrder": "12",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3592,7 +3568,7 @@
                     "category": "Date",
                     "sortOrder": "1",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3609,7 +3585,7 @@
                     "category": "Date",
                     "sortOrder": "2",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3626,7 +3602,7 @@
                     "category": "Date",
                     "sortOrder": "3",
                     "templates": [
-                        "PortfolioProject","Portfolio - Project"
+                        "Project"
                     ]
                 },
                 {
@@ -3643,7 +3619,7 @@
                     "category": "Org. - Presentation",
                     "sortOrder": "1",
                     "templates": [
-                        "Client","Organization"
+                        "Organization"
                     ]
                 },
                 {
@@ -3669,7 +3645,7 @@
                     "category": "Org. - Presentation",
                     "sortOrder": "2",
                     "templates": [
-                        "Client","Organization"
+                        "Organization"
                     ]
                 },
                 {
@@ -3686,7 +3662,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "1",
                     "templates": [
-                        "Client","Organization"
+                        "Organization"
                     ]
                 },
                 {
@@ -3704,7 +3680,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "5",
                     "templates": [
-                        "Client","Organization"
+                        "Organization"
                     ]
                 },
                 {
@@ -3721,7 +3697,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "6",
                     "templates": [
-                        "Client","Organization"
+                        "Organization"
                     ]
                 },
                 {
@@ -3738,7 +3714,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "10",
                     "templates": [
-                        "Client","Organization"
+                        "Organization"
                     ]
                 },
                 {
@@ -3755,7 +3731,7 @@
                     "category": "Org. - Information",
                     "sortOrder": "20",
                     "templates": [
-                        "Client","Organization"
+                        "Organization"
                     ]
                 },
                 {
@@ -3782,8 +3758,8 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "templates": [
-                        "TeamMember","Team - Member",
-                        "Testimonial","Review"
+                        "Person",
+                        "Review"
                     ]
                 },
                 {
@@ -3810,7 +3786,7 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "templates": [
-                        "TeamMember","Team - Member"
+                        "Person"
                     ]
                 },
                 {
@@ -3827,8 +3803,8 @@
                     "category": "Person - Information",
                     "sortOrder": "1",
                     "templates": [
-                        "TeamMember","Team - Member",
-                        "Testimonial","Review"
+                        "Person",
+                        "Review"
                     ]
                 },
                 {
@@ -3845,8 +3821,8 @@
                     "category": "Person - Information",
                     "sortOrder": "2",
                     "templates": [
-                        "TeamMember","Team - Member",
-                        "Testimonial","Review"
+                        "Person",
+                        "Review"
                     ]
                 },
                 {
@@ -3864,8 +3840,8 @@
                     "category": "Person - Information",
                     "sortOrder": "3",
                     "templates": [
-                        "TeamMember","Team - Member",
-                        "Testimonial","Review"
+                        "Person",
+                        "Review"
                     ]
                 },
                 {
@@ -3882,8 +3858,8 @@
                     "category": "Person - Information",
                     "sortOrder": "4",
                     "templates": [
-                        "TeamMember","Team - Member",
-                        "Testimonial","Review"
+                        "Person",
+                        "Review"
                     ]
                 },
                 {
@@ -3900,8 +3876,8 @@
                     "category": "Person - Information",
                     "sortOrder": "5",
                     "templates": [
-                        "TeamMember","Team - Member",
-                        "Testimonial","Review"
+                        "Person",
+                        "Review"
                     ]
                 },
                 {
@@ -3918,8 +3894,8 @@
                     "category": "Person - Information",
                     "sortOrder": "10",
                     "templates": [
-                        "TeamMember","Team - Member",
-                        "Testimonial","Review"
+                        "Person",
+                        "Review"
                     ]
                 }
             ],
@@ -5207,66 +5183,6 @@
                         }
                     ],
                     "category": "m_data"
-                },
-                {
-                    "name": "commentWrapper",
-                    "description": "DEPRECATED. Part of Tickets commenting extra.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_feedback"
-                },
-                {
-                    "name": "commentRowBasic",
-                    "description": "DEPRECATED. Part of Tickets commenting extra.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_feedback"
-                },
-                {
-                    "name": "commentRowGuest",
-                    "description": "DEPRECATED. Part of Tickets commenting extra.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_feedback"
-                },
-                {
-                    "name": "commentForm",
-                    "description": "DEPRECATED. Part of Tickets commenting extra.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_feedback"
                 },
                 {
                     "name": "commentScriptDisqus",
@@ -7822,21 +7738,6 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_layout"
-                },
-                {
-                    "name": "cbGlobalBackgroundRowImg",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
                         },
                         {
                             "name": "elementPreview",
@@ -11949,7 +11850,7 @@
                     "category": "t_global"
                 },
                 {
-                    "name": "ProjectDashboard",
+                    "name": "Dashboard",
                     "icon": "icon-line-chart",
                     "properties": [
                         {
@@ -11980,38 +11881,6 @@
                     "category": "t_hub"
                 },
                 {
-                    "name": "kbSection",
-                    "description": "DEPRECATED. Knowledge base is implemented now as Notes (without Tickets integration).",
-                    "icon": "icon-book",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_disabled"
-                },
-                {
-                    "name": "kbArticleMarkdown",
-                    "description": "DEPRECATED. Knowledge base is implemented now as Notes (without Tickets integration).",
-                    "icon": "icon-bookmark-o",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_disabled"
-                },
-                {
                     "name": "Notes",
                     "icon": "icon-sticky-note",
                     "properties": [
@@ -12024,7 +11893,23 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_information"
+                    "category": "t_notes"
+                },
+                {
+                    "name": "NoteRegular",
+                    "description": "",
+                    "icon": "icon-sticky-note-o",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "t_notes"
                 },
                 {
                     "name": "NoteVertical",
@@ -12040,26 +11925,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_information"
+                    "category": "t_notes"
                 },
                 {
-                    "name": "NoteVerticalRTE",
-                    "description": "",
-                    "icon": "icon-sticky-note-o",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "experimental"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_information"
-                },
-                {
-                    "name": "Client",
+                    "name": "Organization",
                     "icon": "icon-building",
                     "properties": [
                         {
@@ -12074,7 +11943,7 @@
                     "category": "t_people"
                 },
                 {
-                    "name": "TeamMember",
+                    "name": "Person",
                     "icon": "icon-user",
                     "properties": [
                         {
@@ -12089,7 +11958,7 @@
                     "category": "t_people"
                 },
                 {
-                    "name": "Testimonial",
+                    "name": "Review",
                     "icon": "icon-comment-o",
                     "properties": [
                         {
@@ -12104,7 +11973,7 @@
                     "category": "t_people"
                 },
                 {
-                    "name": "PortfolioProject",
+                    "name": "Project",
                     "icon": "icon-briefcase",
                     "properties": [
                         {
@@ -12177,21 +12046,6 @@
                         }
                     ],
                     "category": "t_publication"
-                },
-                {
-                    "name": "ArticleSidenotes",
-                    "icon": "icon-pencil",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_disabled"
                 },
                 {
                     "name": "Download",
@@ -13174,36 +13028,6 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_presentation"
-                },
-                {
-                    "name": "stepsLoadAssets",
-                    "description": "Load CSS styles for Steps component. This is not included in semantic.css by default, to keep its file size down.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },
-                        {
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_presentation"
-                },
-                {
-                    "name": "statusGridLoadAssets",
-                    "description": "Load CSS and JS dependencies for status grid.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
                         },
                         {
                             "name": "elementExample",

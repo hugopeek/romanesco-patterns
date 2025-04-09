@@ -26,8 +26,8 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "@@templates_people",
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Informal picture",
@@ -53,7 +53,7 @@
                     "category": "Person - Presentation",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "First name",
@@ -69,8 +69,8 @@
                     "category": "Person - Information",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "@@templates_people",
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Last name",
@@ -86,8 +86,8 @@
                     "category": "Person - Information",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "@@templates_people",
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Gender",
@@ -104,8 +104,8 @@
                     "category": "Person - Information",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "@@templates_people",
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Birthdate",
@@ -121,8 +121,8 @@
                     "category": "Person - Information",
                     "sortOrder": "4",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "@@templates_people",
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Job title",
@@ -138,8 +138,8 @@
                     "category": "Person - Information",
                     "sortOrder": "5",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "@@templates_people",
+                        "@@templates_review"
                     ]
                 },{
                     "caption": "Personal website or blog",
@@ -155,8 +155,8 @@
                     "category": "Person - Information",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_team",
-                        "@@templates_testimonial"
+                        "@@templates_people",
+                        "@@templates_review"
                     ]
                 }
             ],

@@ -3,7 +3,7 @@
         "elements": {
             "templates": [
                 {
-                    "name": "Client",
+                    "name": "Organization",
                     "icon": "icon-building",
                     "properties": [
                         {
@@ -16,7 +16,7 @@
                     ],
                     "category": "t_people"
                 },{
-                    "name": "TeamMember",
+                    "name": "Person",
                     "icon": "icon-user",
                     "properties": [
                         {
@@ -29,7 +29,7 @@
                     ],
                     "category": "t_people"
                 },{
-                    "name": "Testimonial",
+                    "name": "Review",
                     "icon": "icon-comment-o",
                     "properties": [
                         {

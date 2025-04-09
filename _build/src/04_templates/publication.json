@@ -42,19 +42,6 @@
                     ],
                     "category": "t_publication"
                 },{
-                    "name": "ArticleSidenotes",
-                    "icon": "icon-pencil",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_disabled"
-                },{
                     "name": "Download",
                     "icon": "icon-download",
                     "properties": [

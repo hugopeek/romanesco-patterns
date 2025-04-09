@@ -19,7 +19,7 @@
                     "category": "_Social",
                     "sortOrder": 0,
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Twitter account",
@@ -35,7 +35,7 @@
                     "category": "_Social",
                     "sortOrder": "1",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "LinkedIn profile",
@@ -51,7 +51,7 @@
                     "category": "_Social",
                     "sortOrder": "2",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Facebook page",
@@ -67,7 +67,7 @@
                     "category": "_Social",
                     "sortOrder": "3",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Instagram profile",
@@ -83,7 +83,7 @@
                     "category": "_Social",
                     "sortOrder": "4",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Pinterest board",
@@ -99,7 +99,7 @@
                     "category": "_Social",
                     "sortOrder": "5",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Youtube channel",
@@ -115,7 +115,7 @@
                     "category": "_Social",
                     "sortOrder": "10",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "WhatsApp number",
@@ -131,7 +131,7 @@
                     "category": "_Social",
                     "sortOrder": "11",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "WhatsApp message",
@@ -147,7 +147,7 @@
                     "category": "_Social",
                     "sortOrder": "12",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 },{
                     "caption": "Github account",
@@ -163,7 +163,7 @@
                     "category": "_Social",
                     "sortOrder": "20",
                     "templates": [
-                        "@@templates_team"
+                        "@@templates_people"
                     ]
                 }
             ],
