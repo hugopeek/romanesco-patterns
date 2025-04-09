@@ -40,7 +40,8 @@ switch ($modx->event->name) {
         ];
         // Unless user is logged in, or a POST or search request is made.
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
-        if (!$isLoggedIn && !$_POST && !$_REQUEST['search']) {
+        $searchQuery = $_REQUEST['search'] ?? false;
+        if (!$isLoggedIn && !$_POST && !$searchQuery) {
             $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
             if ($cachedOutput) {
                 if ($debug) {
