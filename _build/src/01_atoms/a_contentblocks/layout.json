@@ -68,19 +68,6 @@
                     ],
                     "category": "a_cb_layout"
                 },{
-                    "name": "cbGlobalBackgroundRowImg",
-                    "description": "DEPRECATED.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_layout"
-                },{
                     "name": "cbLayoutTemplatesPattern",
                     "description": "",
                     "properties": [

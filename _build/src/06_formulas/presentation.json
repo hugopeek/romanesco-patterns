@@ -29,32 +29,6 @@
                     ],
                     "category": "f_presentation"
                 },{
-                    "name": "stepsLoadAssets",
-                    "description": "Load CSS styles for Steps component. This is not included in semantic.css by default, to keep its file size down.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_presentation"
-                },{
-                    "name": "statusGridLoadAssets",
-                    "description": "Load CSS and JS dependencies for status grid.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementExample",
-                            "value": ""
-                        }
-                    ],
-                    "category": "f_presentation"
-                },{
                     "name": "tabsGenerateNav",
                     "description": "Generate the tab buttons based on data-heading attribute in the tabs themselves. It basically links every tab button to the correct tab content.",
                     "properties": [

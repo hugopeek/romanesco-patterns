@@ -3,26 +3,6 @@
         "elements": {
             "tvs": [
                 {
-                    "caption": "Global background images",
-                    "name": "global_background_img",
-                    "description": "DEPRECATED - DO NOT USE ANYMORE! Backgrounds in this grid still work, but use the new resource-based backgrounds instead to ensure proper functionality in the future.",
-                    "type": "migx",
-                    "inputProperties": {
-                        "configs": "global_background_images:romanescobackyard"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        }
-                    ],
-                    "category": "_Global - Backgrounds",
-                    "sortOrder": "1",
-                    "templates": [
-                        "GlobalBackgrounds"
-                    ]
-                },
-                {
                     "caption": "Availability",
                     "name": "background_availability",
                     "description": "Where would you like to use this background?",
@@ -47,9 +27,6 @@
                 {
                     "name": "e_global",
                     "parent": "00_electrons"
-                },{
-                    "name": "_Global - Backgrounds",
-                    "parent": "e_global"
                 },{
                     "name": "_Background",
                     "parent": "e_global"

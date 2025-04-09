@@ -3,34 +3,6 @@
         "elements": {
             "templates": [
                 {
-                    "name": "kbSection",
-                    "description": "DEPRECATED. Knowledge base is implemented now as Notes (without Tickets integration).",
-                    "icon": "icon-book",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_disabled"
-                },{
-                    "name": "kbArticleMarkdown",
-                    "description": "DEPRECATED. Knowledge base is implemented now as Notes (without Tickets integration).",
-                    "icon": "icon-bookmark-o",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "deprecated"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_disabled"
-                },{
                     "name": "Notes",
                     "icon": "icon-sticky-note",
                     "properties": [
