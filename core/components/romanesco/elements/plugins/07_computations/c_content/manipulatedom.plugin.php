@@ -34,7 +34,7 @@ switch ($modx->event->name) {
         // Look for cached HTML output first...
         $cacheFlag = false;
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
+        $cacheElementKey = '/' . hash('xxh3', $modx->resource->_output);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
