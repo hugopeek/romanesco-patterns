@@ -4,7 +4,7 @@
             "chunks": [
                 {
                     "name": "cbLayoutSingleColumnNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -17,7 +17,7 @@
                     "category": "m_layout"
                 },{
                     "name": "cbLayoutTwoColumnsNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -30,7 +30,7 @@
                     "category": "m_layout"
                 },{
                     "name": "cbLayoutThreeColumnsNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -43,7 +43,7 @@
                     "category": "m_layout"
                 },{
                     "name": "cbLayoutFourColumnsNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -56,7 +56,7 @@
                     "category": "m_layout"
                 },{
                     "name": "cbLayoutContentSidebarNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -69,7 +69,7 @@
                     "category": "m_layout"
                 },{
                     "name": "cbLayoutSidebarContentNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -82,7 +82,7 @@
                     "category": "m_layout"
                 },{
                     "name": "cbLayoutPatternPreview",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",

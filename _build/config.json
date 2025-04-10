@@ -5020,6 +5020,21 @@
                     "category": "m_content"
                 },
                 {
+                    "name": "nestedLayout",
+                    "description": "NB: not referenced directly! The outer grid element for nested layouts. Each layout will be added as a row within this grid.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_content"
+                },
+                {
                     "name": "codeSnippet",
                     "description": "",
                     "properties": [

@@ -1,3 +1,3 @@
-<div class="ui nested one column stackable doubling [[+padding]] [[+alignment]] grid">
+<div class="[[+alignment]] row">
     <div class="column">[[+main]]</div>
 </div>

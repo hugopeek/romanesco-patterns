@@ -9,8 +9,13 @@
             </i>]]
         </div>
 
-        <div id="code-[[+unique_idx]]" class="code column hidden element">
-            [[+code]]
-        </div>
+        [[[[modifiedIf?
+            &subject=`[[+pattern_template]]`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_[[+idx]]_[[+unique_idx]]`
+        ]]]]
+
+        [[+info]]
     </div>
 </div>
