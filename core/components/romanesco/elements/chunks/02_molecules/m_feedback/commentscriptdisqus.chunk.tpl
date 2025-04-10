@@ -11,12 +11,9 @@
         this.page.url = '[[~[[*id]]? &scheme=`full`]]';
         this.page.identifier = '[[*id]]';
     };
-
     (function() {
         var d = document, s = d.createElement('script');
-
         s.src = 'https://[[++disqus_shortname]].disqus.com/embed.js';
-
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

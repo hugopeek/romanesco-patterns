@@ -5635,68 +5635,8 @@
                     "category": "m_information"
                 },
                 {
-                    "name": "kbArticleFormPreview",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_information"
-                },
-                {
-                    "name": "kbArticleFormFiles",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_information"
-                },
-                {
-                    "name": "kbArticleFormFile",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_information"
-                },
-                {
-                    "name": "kbArticleFormImage",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_information"
-                },
-                {
                     "name": "cbLayoutSingleColumnNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -5711,7 +5651,7 @@
                 },
                 {
                     "name": "cbLayoutTwoColumnsNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -5726,7 +5666,7 @@
                 },
                 {
                     "name": "cbLayoutThreeColumnsNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -5741,7 +5681,7 @@
                 },
                 {
                     "name": "cbLayoutFourColumnsNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -5756,7 +5696,7 @@
                 },
                 {
                     "name": "cbLayoutContentSidebarNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -5771,7 +5711,7 @@
                 },
                 {
                     "name": "cbLayoutSidebarContentNested",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -5786,7 +5726,7 @@
                 },
                 {
                     "name": "cbLayoutPatternPreview",
-                    "description": "",
+                    "description": "NB: not referenced directly!",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6380,36 +6320,6 @@
                         {
                             "name": "elementStatus",
                             "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "o_information"
-                },
-                {
-                    "name": "kbArticleFormCreate",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "o_information"
-                },
-                {
-                    "name": "kbArticleFormUpdate",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
                         },
                         {
                             "name": "elementPreview",
@@ -11018,36 +10928,6 @@
                         }
                     ],
                     "category": "m_ov_image"
-                },
-                {
-                    "name": "kbOverviewRowBasic",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_ov_information"
-                },
-                {
-                    "name": "kbOverviewRowBasicCard",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_ov_information"
                 },
                 {
                     "name": "overviewRowOrganizationBasic",
