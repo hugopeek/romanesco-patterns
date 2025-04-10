@@ -3,8 +3,16 @@
 ## Romanesco Patterns 1.0.0-beta17
 Released on ...
 
+New features:
+- Cache manipulated DOM output in plugins
+- Render structured data with plugin
+
 Fixes and improvements:
-- Cache DOM output in plugins (to avoid repeated DOM manipulations)
+- Remove various deprecated patterns
+- Remove assigned TV settings for reserved template aliases
+- Rename several templates
+- Fix broken overviews in MODX 3
+- Fix updating styling when ClientConfig settings are saved
 - Update links to generated favicons
 - Insert critical CSS inline in head
 - Add separate CB field for displaying internal messages

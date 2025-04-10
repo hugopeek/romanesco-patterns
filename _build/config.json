@@ -1688,7 +1688,7 @@
                     "category": "_Navigation",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1707,7 +1707,7 @@
                     "category": "_Navigation",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1730,7 +1730,7 @@
                     "category": "_Navigation",
                     "sortOrder": "11",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1749,7 +1749,7 @@
                     "category": "_Navigation",
                     "sortOrder": "12",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1768,7 +1768,7 @@
                     "category": "_Navigation",
                     "sortOrder": "15",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -1787,7 +1787,7 @@
                     "category": "_Navigation",
                     "sortOrder": "20",
                     "templates": [
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download"
+                        "Publications","ArticleTraditional","ArticleModern","Download"
                     ]
                 },
                 {
@@ -1815,7 +1815,7 @@
                     "sortOrder": "1",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -1844,7 +1844,7 @@
                     "sortOrder": "2",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -1873,7 +1873,7 @@
                     "sortOrder": "3",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -1902,7 +1902,7 @@
                     "sortOrder": "5",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -1931,7 +1931,7 @@
                     "sortOrder": "6",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -1958,7 +1958,7 @@
                     "sortOrder": "99",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -2057,7 +2057,7 @@
                     "sortOrder": "2",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -2078,7 +2078,7 @@
                     "sortOrder": "10",
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
                         "Project"
                     ]
                 },
@@ -2096,7 +2096,7 @@
                     "category": "_Performance",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2386,7 +2386,7 @@
                     "category": "_Footer",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2405,7 +2405,7 @@
                     "category": "_Footer",
                     "sortOrder": "2",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2424,7 +2424,7 @@
                     "category": "_Footer",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2443,7 +2443,7 @@
                     "category": "_Footer",
                     "sortOrder": "20",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2462,7 +2462,7 @@
                     "category": "_Footer",
                     "sortOrder": "21",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2485,7 +2485,7 @@
                     "category": "_Footer",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2504,7 +2504,7 @@
                     "category": "_Header",
                     "sortOrder": "1",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2522,7 +2522,7 @@
                     "category": "_Header",
                     "sortOrder": "5",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2540,7 +2540,7 @@
                     "category": "_Header",
                     "sortOrder": "6",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2559,7 +2559,7 @@
                     "category": "_Header",
                     "sortOrder": "10",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2577,7 +2577,7 @@
                     "category": "_Header",
                     "sortOrder": "11",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2596,7 +2596,7 @@
                     "category": "_Header",
                     "sortOrder": "20",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2619,7 +2619,7 @@
                     "category": "_Header",
                     "sortOrder": "99",
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2639,7 +2639,7 @@
                     "category": "_Links",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2659,7 +2659,7 @@
                     "category": "_Links",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2684,7 +2684,7 @@
                     "category": "_Links",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2711,7 +2711,7 @@
                     "category": "_Purpose",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2736,7 +2736,7 @@
                     "category": "_Purpose",
                     "sortOrder": 2,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2759,7 +2759,7 @@
                     "category": "_Purpose",
                     "sortOrder": 5,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2782,7 +2782,7 @@
                     "category": "_Purpose",
                     "sortOrder": 6,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2805,7 +2805,7 @@
                     "category": "_Purpose",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2822,7 +2822,7 @@
                     "category": "_Purpose",
                     "sortOrder": 11,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2839,7 +2839,7 @@
                     "category": "_Purpose",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2922,7 +2922,7 @@
                     "category": "_Status",
                     "sortOrder": 1,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2941,7 +2941,7 @@
                     "category": "_Status",
                     "sortOrder": 2,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2961,7 +2961,7 @@
                     "category": "_Status",
                     "sortOrder": 3,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -2986,7 +2986,7 @@
                     "category": "_Status",
                     "sortOrder": 10,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -3006,7 +3006,7 @@
                     "category": "_Status",
                     "sortOrder": 20,
                     "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleReadability","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
                 },
                 {
@@ -3361,7 +3361,7 @@
                     "category": "About",
                     "sortOrder": "1",
                     "templates": [
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download"
+                        "Publications","ArticleTraditional","ArticleModern","Download"
                     ]
                 },
                 {
@@ -3380,7 +3380,7 @@
                     "category": "Comments",
                     "sortOrder": "1",
                     "templates": [
-                        "Publications","ArticleTraditional","ArticleReadability","ArticleSidenotes","Download"
+                        "Publications","ArticleTraditional","ArticleModern","Download"
                     ]
                 },
                 {
@@ -11928,7 +11928,7 @@
                     "category": "t_publication"
                 },
                 {
-                    "name": "ArticleReadability",
+                    "name": "ArticleModern",
                     "icon": "icon-pencil",
                     "properties": [
                         {
