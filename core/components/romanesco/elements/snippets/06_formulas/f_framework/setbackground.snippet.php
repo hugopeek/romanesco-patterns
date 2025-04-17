@@ -16,6 +16,9 @@ $background = $modx->getOption('background', $scriptProperties, $input ?? null);
 $creditsTpl = $modx->getOption('creditsTpl', $scriptProperties, 'globalBackgroundImgCredits');
 $cbField = $modx->getOption('romanesco.cb_field_background_id', $scriptProperties, '');
 
+// Skip when empty
+if (!$background) return '';
+
 // Convert system default value
 if ($background == 'default') {
     $background = $modx->getObject('cgSetting', array('key' => 'layout_background_default'))->get('value');
