@@ -48,6 +48,32 @@
                     ],
                     "category": "a_img_overview"
                 },{
+                    "name": "imgOverviewBasicLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },{
+                    "name": "imgOverviewSVGLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },{
                     "name": "imgOverviewPersonLink",
                     "description": "",
                     "properties": [

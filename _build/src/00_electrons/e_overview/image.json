@@ -1,0 +1,211 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Image (Landscape)",
+                    "name": "overview_img_landscape",
+                    "description": "This is the default overview image, in a regular 4:3 aspect ratio.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "500",
+                        "targetHeight": "375",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Image (Portrait)",
+                    "name": "overview_img_portrait",
+                    "description": "This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "300",
+                        "targetHeight": "400",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "2",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Image (Square)",
+                    "name": "overview_img_square",
+                    "description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "300",
+                        "targetHeight": "300",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "3",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Image (Wide)",
+                    "name": "overview_img_wide",
+                    "description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "800",
+                        "targetHeight": "450",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "5",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Image (Panorama)",
+                    "name": "overview_img_pano",
+                    "description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "1300",
+                        "targetRatio": "2.33",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "6",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Image (Free)",
+                    "name": "overview_img_free",
+                    "description": "This image doesn't have a fixed aspect ratio or any minimum dimensions. Use it as you see fit. Cropping is optional. Be aware that mixing aspect ratios will result in different image sizes!",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "10",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Image (SVG)",
+                    "name": "overview_img_svg",
+                    "description": "This SVG graphic can be used as alternative to regular (pixel based) images. For layout consistency, make sure all SVGs in this Overview share the same aspect ratio.",
+                    "type": "image",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "20",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Image credit (SVG)",
+                    "name": "overview_img_svg_credit",
+                    "description": "Mention the designer of this icon here, so they can be credited appropriately. You need to do this if you're using icons published under a CC license, for example from Noun Project.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "21",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                }
+            ]
+        }
+    }
+}

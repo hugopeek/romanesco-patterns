@@ -4,3 +4,4 @@ Square (1:1)=square
 Wide (16:9)=wide
 Panorama (21:9)=pano
 Free (?:?)=free
+SVG=svg

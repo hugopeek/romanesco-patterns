@@ -12,4 +12,17 @@
 
     &default=`DESC`
 ]]
-[[[[modifiedIf? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`$overviewSettingsPrepareMgr`]]]]
+[[[[modifiedIf?
+    &subject=`[[+img_type]]`
+    &operator=`is`
+    &operand=`svg`
+    &then=`imgOverviewSVGLink`
+    &else=`imgOverviewBasicLink`
+    &toPlaceholder=`[[+prefix]].img_tpl`
+]]]]
+[[[[modifiedIf?
+    &subject=`[[+prefix]]`
+    &operator=`contains`
+    &operand=`__`
+    &then=`$overviewSettingsPrepareMgr`
+]]]]

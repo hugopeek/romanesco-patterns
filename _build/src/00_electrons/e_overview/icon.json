@@ -1,0 +1,96 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Icon (SVG)",
+                    "name": "overview_icon_svg",
+                    "description": "The recommended way for adding an icon is as an SVG graphic. This can be pretty much anything, but please make sure the SVG has a square aspect ratio (viewbox).",
+                    "type": "image",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "0",
+                    "templates": [
+                        "@@templates_basic",
+                        "Publications",
+                        "Download"
+                    ]
+                },{
+                    "caption": "Icon credit (SVG)",
+                    "name": "overview_icon_svg_credit",
+                    "description": "Mention the designer of this icon here, so they can be credited appropriately. You need to do this if you're using icons published under a CC license, for example from Noun Project.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_basic",
+                        "Publications",
+                        "Download"
+                    ]
+                },{
+                    "caption": "Icon (Image)",
+                    "name": "overview_icon_img",
+                    "description": "If an SVG icon is not available, you can also use an image file (preferably in PNG format). This image needs to be square.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "300",
+                        "targetHeight": "300",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "5",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                },{
+                    "caption": "Icon (Font)",
+                    "name": "overview_icon_font",
+                    "description": "Select an icon from the projects' icon font list. Check the style guide for available icons, or use the autocomplete search as you type.",
+                    "type": "listbox",
+                    "inputOptionValues": "@CHUNK iconTVInputOptions",
+                    "inputProperties": {
+                        "typeAhead": "true",
+                        "typeAheadDelay": "400"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "10",
+                    "templates": [
+                        "@@templates_basic",
+                        "Publications",
+                        "Download"
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -16,6 +16,7 @@
 &show_introtext=`[[+show_introtext]]`
 &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
 &de_emphasize=`[[+de_emphasize]]`
+&img_tpl=`[[+[[+prefix]].img_tpl]]`
 &img_type=`[[+img_type]]`
 &icon_type=`[[+icon_type]]`
 &lazy_load=`[[+lazy_load]]`

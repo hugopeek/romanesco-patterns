@@ -1,17 +1,4 @@
-[[Switch:toPlaceholder=`[[+unique_idx]].sortdir`?
-    &get=`[[+sortby]]_[[+sortdir]]`
-    &c1=`menuindex_0`     &do1=`ASC`
-    &c2=`publishedon_0`   &do2=`DESC`
-    &c3=`createdon_0`     &do3=`DESC`
-    &c4=`pagetitle_0`     &do4=`ASC`
-
-    &c5=`menuindex_1`     &do5=`DESC`
-    &c6=`publishedon_1`   &do6=`ASC`
-    &c7=`createdon_1`     &do7=`ASC`
-    &c8=`pagetitle_1`     &do8=`DESC`
-
-    &default=`DESC`
-]]
+[[$overviewSettingsPrepare? &prefix=`[[+unique_idx]]`]]
 
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
@@ -44,6 +31,7 @@
     &show_subtitle=`[[+show_subtitle]]`
     &show_introtext=`[[+show_introtext]]`
     &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`
+    &img_tpl=`[[+[[+unique_idx]].img_tpl]]`
     &img_type=`[[+img_type]]`
     &img_snap=`[[+img_snap]]`
     &img_inflate=`[[+img_inflate]]`

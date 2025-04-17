@@ -1,4 +1,5 @@
-[[getResources?
+[[getResources:prepend=`---=
+`?
     &parents=`[[getContextSetting:empty=`[[++romanesco.global_backgrounds_id]]`? &context=`[[*context_key]]` &setting=`romanesco.global_backgrounds_id`]]`
     &limit=`0`
     &tpl=`@INLINE [[+pagetitle]]=[[+id]]`
@@ -11,7 +12,8 @@
     &sortBy=`menuindex`
     &sortDir=`ASC`
 ]]
-[[getResources?
+[[getResources:prepend=`---=
+`?
     &parents=`[[getContextSetting:empty=`[[++romanesco.global_backgrounds_id]]`? &context=`[[*context_key]]` &setting=`romanesco.global_backgrounds_id`]]`
     &limit=`0`
     &depth=`0`

@@ -220,7 +220,7 @@
                     "rank": 11
                 },
                 {
-                    "name": "_Overview - Settings",
+                    "name": "_Overview - Content",
                     "parent": "e_overview",
                     "rank": 12
                 },
@@ -1788,298 +1788,6 @@
                     "sortOrder": "20",
                     "templates": [
                         "Publications","ArticleTraditional","ArticleModern","Download"
-                    ]
-                },
-                {
-                    "caption": "Image (Landscape)",
-                    "name": "overview_img_landscape",
-                    "description": "This is the default overview image, in a regular 4:3 aspect ratio.",
-                    "type": "imageplus",
-                    "inputProperties": {
-                        "targetWidth": "500",
-                        "targetHeight": "375",
-                        "allowAltTag": "true",
-                        "allowCredits": "true"
-                    },
-                    "outputProperties": {
-                        "phpThumbParams": "",
-                        "outputChunk": ""
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Image",
-                    "sortOrder": "1",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
-                    ]
-                },
-                {
-                    "caption": "Image (Portrait)",
-                    "name": "overview_img_portrait",
-                    "description": "This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.",
-                    "type": "imageplus",
-                    "inputProperties": {
-                        "targetWidth": "300",
-                        "targetHeight": "400",
-                        "allowAltTag": "true",
-                        "allowCredits": "true"
-                    },
-                    "outputProperties": {
-                        "phpThumbParams": "",
-                        "outputChunk": ""
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Image",
-                    "sortOrder": "2",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
-                    ]
-                },
-                {
-                    "caption": "Image (Square)",
-                    "name": "overview_img_square",
-                    "description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
-                    "type": "imageplus",
-                    "inputProperties": {
-                        "targetWidth": "300",
-                        "targetHeight": "300",
-                        "allowAltTag": "true",
-                        "allowCredits": "true"
-                    },
-                    "outputProperties": {
-                        "phpThumbParams": "",
-                        "outputChunk": ""
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Image",
-                    "sortOrder": "3",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
-                    ]
-                },
-                {
-                    "caption": "Image (Wide)",
-                    "name": "overview_img_wide",
-                    "description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
-                    "type": "imageplus",
-                    "inputProperties": {
-                        "targetWidth": "800",
-                        "targetHeight": "450",
-                        "allowAltTag": "true",
-                        "allowCredits": "true"
-                    },
-                    "outputProperties": {
-                        "phpThumbParams": "",
-                        "outputChunk": ""
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Image",
-                    "sortOrder": "5",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
-                    ]
-                },
-                {
-                    "caption": "Image (Panorama)",
-                    "name": "overview_img_pano",
-                    "description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
-                    "type": "imageplus",
-                    "inputProperties": {
-                        "targetWidth": "1300",
-                        "targetRatio": "2.33",
-                        "allowAltTag": "true",
-                        "allowCredits": "true"
-                    },
-                    "outputProperties": {
-                        "phpThumbParams": "",
-                        "outputChunk": ""
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Image",
-                    "sortOrder": "6",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
-                    ]
-                },
-                {
-                    "caption": "Image (Free)",
-                    "name": "overview_img_free",
-                    "description": "This image doesn't have a fixed aspect ratio or any minimum dimensions. Use it as you see fit. Cropping is optional. NB! Be aware that images will probably have different sizes in overviews!",
-                    "type": "imageplus",
-                    "inputProperties": {
-                        "allowAltTag": "true",
-                        "allowCredits": "true"
-                    },
-                    "outputProperties": {
-                        "phpThumbParams": "",
-                        "outputChunk": ""
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Image",
-                    "sortOrder": "99",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
-                    ]
-                },
-                {
-                    "caption": "Icon (Font)",
-                    "name": "overview_icon_font",
-                    "description": "Select an icon of the icon font that's being used in this project. Check the style guide for available classes, or use the autocomplete search as you type.",
-                    "type": "listbox",
-                    "inputOptionValues": "@CHUNK iconTVInputOptions",
-                    "inputProperties": {
-                        "typeAhead": "true",
-                        "typeAheadDelay": "400"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Icon",
-                    "sortOrder": "10",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications",
-                        "Download"
-                    ]
-                },
-                {
-                    "caption": "Icon (SVG)",
-                    "name": "overview_icon_svg",
-                    "description": "This can be pretty much anything, but please make sure the SVG has a square aspect ratio.",
-                    "type": "file",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Icon",
-                    "sortOrder": "20",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications",
-                        "Download"
-                    ]
-                },
-                {
-                    "caption": "Icon credit (SVG)",
-                    "name": "overview_icon_svg_credit",
-                    "description": "Mention the designer of this icon here, so they are credited appropriately on the site. You need to do this if you're using icons published under a CC license, for example from Noun Project.",
-                    "type": "text",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Icon",
-                    "sortOrder": "21",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications",
-                        "Download"
-                    ]
-                },
-                {
-                    "caption": "Subtitle",
-                    "name": "overview_subtitle",
-                    "description": "When filled in, this value will override the default subtitle (if subtitle is enabled in the Overview CB settings).",
-                    "type": "text",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        }
-                    ],
-                    "category": "_Overview - Settings",
-                    "sortOrder": "1",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications"
-                    ]
-                },
-                {
-                    "caption": "Link / button text",
-                    "name": "overview_link_text",
-                    "description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!",
-                    "type": "text",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Overview - Settings",
-                    "sortOrder": "2",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
-                    ]
-                },
-                {
-                    "caption": "Image priority",
-                    "name": "overview_img_priority",
-                    "description": "With this setting, you can indicate which image type you prefer if the system has a choice.",
-                    "type": "listbox",
-                    "inputOptionValues": "Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano||Free (?:?)==free",
-                    "defaultValue": "landscape",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "unknown"
-                        }
-                    ],
-                    "category": "_Overview - Settings",
-                    "sortOrder": "10",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
-                        "Publications","ArticleTraditional","ArticleModern","Download",
-                        "Project"
                     ]
                 },
                 {
@@ -3896,6 +3604,344 @@
                     "templates": [
                         "Person",
                         "Review"
+                    ]
+                },
+                {
+                    "caption": "Subtitle",
+                    "name": "overview_subtitle",
+                    "description": "When filled in, this value will override the default subtitle (if subtitle is enabled in the Overview CB settings).",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Content",
+                    "sortOrder": "1",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications"
+                    ]
+                },
+                {
+                    "caption": "Link / button text",
+                    "name": "overview_link_text",
+                    "description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Content",
+                    "sortOrder": "2",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Icon (SVG)",
+                    "name": "overview_icon_svg",
+                    "description": "The recommended way for adding an icon is as an SVG graphic. This can be pretty much anything, but please make sure the SVG has a square aspect ratio (viewbox).",
+                    "type": "image",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "0",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications",
+                        "Download"
+                    ]
+                },
+                {
+                    "caption": "Icon credit (SVG)",
+                    "name": "overview_icon_svg_credit",
+                    "description": "Mention the designer of this icon here, so they can be credited appropriately. You need to do this if you're using icons published under a CC license, for example from Noun Project.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "1",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications",
+                        "Download"
+                    ]
+                },
+                {
+                    "caption": "Icon (Image)",
+                    "name": "overview_icon_img",
+                    "description": "If an SVG icon is not available, you can also use an image file (preferably in PNG format). This image needs to be square.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "300",
+                        "targetHeight": "300",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "5",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Icon (Font)",
+                    "name": "overview_icon_font",
+                    "description": "Select an icon from the projects' icon font list. Check the style guide for available icons, or use the autocomplete search as you type.",
+                    "type": "listbox",
+                    "inputOptionValues": "@CHUNK iconTVInputOptions",
+                    "inputProperties": {
+                        "typeAhead": "true",
+                        "typeAheadDelay": "400"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Icon",
+                    "sortOrder": "10",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications",
+                        "Download"
+                    ]
+                },
+                {
+                    "caption": "Image (Landscape)",
+                    "name": "overview_img_landscape",
+                    "description": "This is the default overview image, in a regular 4:3 aspect ratio.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "500",
+                        "targetHeight": "375",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "1",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Image (Portrait)",
+                    "name": "overview_img_portrait",
+                    "description": "This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "300",
+                        "targetHeight": "400",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "2",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Image (Square)",
+                    "name": "overview_img_square",
+                    "description": "This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "300",
+                        "targetHeight": "300",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "3",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Image (Wide)",
+                    "name": "overview_img_wide",
+                    "description": "This is an image with widescreen proportions, in 16:9 aspect ratio.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "800",
+                        "targetHeight": "450",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "5",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Image (Panorama)",
+                    "name": "overview_img_pano",
+                    "description": "This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "targetWidth": "1300",
+                        "targetRatio": "2.33",
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "6",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Image (Free)",
+                    "name": "overview_img_free",
+                    "description": "This image doesn't have a fixed aspect ratio or any minimum dimensions. Use it as you see fit. Cropping is optional. Be aware that mixing aspect ratios will result in different image sizes!",
+                    "type": "imageplus",
+                    "inputProperties": {
+                        "allowAltTag": "true",
+                        "allowCredits": "true"
+                    },
+                    "outputProperties": {
+                        "phpThumbParams": "",
+                        "outputChunk": ""
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "10",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Image (SVG)",
+                    "name": "overview_img_svg",
+                    "description": "This SVG graphic can be used as alternative to regular (pixel based) images. For layout consistency, make sure all SVGs in this Overview share the same aspect ratio.",
+                    "type": "image",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "20",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
+                    ]
+                },
+                {
+                    "caption": "Image credit (SVG)",
+                    "name": "overview_img_svg_credit",
+                    "description": "Mention the designer of this icon here, so they can be credited appropriately. You need to do this if you're using icons published under a CC license, for example from Noun Project.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Image",
+                    "sortOrder": "21",
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
+                        "Publications","ArticleTraditional","ArticleModern","Download",
+                        "Project"
                     ]
                 }
             ],
@@ -8647,6 +8693,36 @@
                 {
                     "name": "imgOverviewFallback",
                     "description": "In case ImagePlus is not able to generate an image, this fallback image is used. You can define your own fallback images under Configuration settings. There's a setting for each variant.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgOverviewBasicLink",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_img_overview"
+                },
+                {
+                    "name": "imgOverviewSVGLink",
+                    "description": "",
                     "properties": [
                         {
                             "name": "elementStatus",

@@ -1,0 +1,44 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Subtitle",
+                    "name": "overview_subtitle",
+                    "description": "When filled in, this value will override the default subtitle (if subtitle is enabled in the Overview CB settings).",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Overview - Content",
+                    "sortOrder": "1",
+                    "templates": [
+                        "@@templates_basic",
+                        "Publications"
+                    ]
+                },{
+                    "caption": "Link / button text",
+                    "name": "overview_link_text",
+                    "description": "When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Overview - Content",
+                    "sortOrder": "2",
+                    "templates": [
+                        "@@templates_basic",
+                        "@@templates_publication",
+                        "@@templates_project"
+                    ]
+                }
+            ]
+        }
+    }
+}
