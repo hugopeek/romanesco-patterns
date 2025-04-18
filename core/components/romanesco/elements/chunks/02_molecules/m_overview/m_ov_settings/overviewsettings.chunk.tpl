@@ -19,4 +19,5 @@
 &img_tpl=`[[+[[+prefix]].img_tpl]]`
 &img_type=`[[+img_type]]`
 &icon_type=`[[+icon_type]]`
+&icon_classes=`[[+[[+prefix]].icon_classes]]`
 &lazy_load=`[[+lazy_load]]`

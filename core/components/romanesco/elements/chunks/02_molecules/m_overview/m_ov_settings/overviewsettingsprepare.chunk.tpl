@@ -20,6 +20,12 @@
     &else=`imgOverviewBasicLink`
     &toPlaceholder=`[[+prefix]].img_tpl`
 ]]]]
+[[Switch:toPlaceholder=`[[+prefix]].icon_classes`?
+    &get=`[[+icon_type]]`
+    &c1=`svg`   &do1=`ui svg image`
+    &c2=`font`  &do2=`ui icon image`
+    &c3=`img`   &do3=`ui image`
+]]
 [[[[modifiedIf?
     &subject=`[[+prefix]]`
     &operator=`contains`

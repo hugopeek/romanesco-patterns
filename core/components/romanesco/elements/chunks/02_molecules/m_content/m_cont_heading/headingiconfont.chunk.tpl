@@ -1,4 +1,4 @@
-<[[+level]] class="ui [[+alignment]] [[+icon_position]] header">
+<[[+level]] class="ui [[+alignment]] [[+icon_position]] icon header">
     <i class="[[+icon_circular:is=`1`:then=`circular`]] [[+icon_class]]"></i>
     <span class="content">
         [[+value]]

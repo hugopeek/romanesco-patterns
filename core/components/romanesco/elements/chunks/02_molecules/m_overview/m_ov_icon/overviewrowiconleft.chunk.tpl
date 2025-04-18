@@ -1,12 +1,6 @@
-<[[+level]] class="ui [[+title_classes]] horizontal header">
-    <a class="icon" href="[[~[[+id]]]]">
-        [[[[If?
-            &subject=`[[+icon_type]]`
-            &operator=`EQ`
-            &operand=`svg`
-            &then=`$iconSVG? &classes=`ui svg image` &url=`[[+overview_icon_svg:empty=`[[++overview_icon_fallback]]`]]``
-            &else=`$iconFont? &classes=`circular` &icon_class=`[[+overview_icon_font]]``
-        ]]]]
+<[[+level]] class="ui [[+title_classes]] horizontal icon header">
+    <a class="[[+icon_classes]]" href="[[~[[+id]]]]">
+        [[$overviewRowIconBasic? &uid=`[[+unique_idx]]`]]
     </a>
     <span class="content">
         <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>

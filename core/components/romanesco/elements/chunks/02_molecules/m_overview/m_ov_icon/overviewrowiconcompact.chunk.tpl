@@ -1,12 +1,6 @@
-<figure class="ui avatar [[+icon_type]] image">
-    [[[[If?
-        &subject=`[[+icon_type]]`
-        &operator=`EQ`
-        &operand=`svg`
-        &then=`$iconSVG? &classes=`regular` &url=`[[+overview_icon_svg:empty=`[[++overview_icon_fallback]]`]]``
-        &else=`$iconFont? &classes=`circular` &icon_class=`[[+overview_icon_font]]``
-    ]]]]
-</figure>
+<a class="ui avatar [[+icon_type:stripString=`img`]] image">
+    [[$overviewRowIconBasic? &uid=`[[+unique_idx]]`]]
+</a>
 
 <div class="content">
     <a href="[[~[[+id]]]]" class="header">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>

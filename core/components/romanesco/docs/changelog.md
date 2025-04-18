@@ -8,6 +8,7 @@ New features:
 - Render structured data with plugin
 
 Fixes and improvements:
+- Change
 - Add SVG variant to Overview images
 - Add image variant to Overview icons
 - Switch between image and SVG tpl inside overviewRowImageBasic chunk
@@ -16,7 +17,7 @@ Fixes and improvements:
 - Move remaining image settings TVs to Content category
 - Add dividers to Background select lists
 - Make SVG icons the recommended option
-- Also link icon itself inside overview templates (finally!!)
+- Also link icon itself inside Overview templates
 - Remove various deprecated patterns
 - Remove assigned TV settings for reserved template aliases
 - Rename several templates
