@@ -31,6 +31,9 @@ switch ($modx->event->name) {
             $start = microtime(true);
         }
 
+        // Read inverted parameter from URL (for testing purposes)
+        $invertLayouts = $_GET['inverted'] ?? 0;
+
         // Look for cached HTML output first...
         $cacheFlag = false;
         $cacheManager = $modx->getCacheManager();
@@ -41,7 +44,7 @@ switch ($modx->event->name) {
         // Unless user is logged in, or a POST or search request is made.
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
         $searchQuery = $_REQUEST['search'] ?? false;
-        if (!$isLoggedIn && !$_POST && !$searchQuery) {
+        if (!$isLoggedIn && !$_POST && !$searchQuery && !$invertLayouts) {
             $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
             if ($cachedOutput) {
                 if ($debug) {
@@ -75,8 +78,7 @@ switch ($modx->event->name) {
             $modx->log(modX::LOG_LEVEL_ERROR, $e);
         }
 
-        // Read inverted parameter from URL (for testing purposes)
-        $invertLayouts = $_GET['inverted'] ?? 0;
+        // Invert segments (for testing purposes)
         if ($invertLayouts) {
             $dom->filter('.ui.menu')
                 ->addClass('inverted')
