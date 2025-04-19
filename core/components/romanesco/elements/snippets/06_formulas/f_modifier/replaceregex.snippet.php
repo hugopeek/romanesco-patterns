@@ -5,10 +5,12 @@
  * Find patterns with regex and replace them.
  *
  * By default, it removes all matches. If you want to replace each match with
- * something else, you have to use a regular snippet call.
+ * another string, you can use the double == format to define a replacement in
+ * the output modifier, or specify the replace property in the snippet call.
  *
- * @example [[*content:replaceRegex=`^---[\s\S]+?---[\s]+`]]
- * (removes YAML front matter)
+ * Usage:
+ * [[*content:replaceRegex=`&uid=(.+)==&uid=`[[+unique_idx]]``]]
+ * [[*content:replaceRegex=`^---[\s\S]+?---[\s]+`]] (removes YAML front matter)
  *
  * @var modX $modx
  * @var array $scriptProperties
@@ -18,8 +20,16 @@
 
 $input = $modx->getOption('input', $scriptProperties, $input);
 $regex = $modx->getOption('pattern', $scriptProperties, $options);
-$replace = $modx->getOption('replacement', $scriptProperties, '');
-if ($input) {
-    return preg_replace('/' . $regex . '/', $replace, $input);
+$replace = $modx->getOption('replace', $scriptProperties, '');
+
+if (!$input) return '';
+
+if (str_contains($regex, '==')) {
+    $regex = explode('==', $regex);
+    $pattern = $regex[0];
+    $replace = $regex[1];
+} else {
+    $pattern = $regex;
 }
-return '';
+
+return preg_replace('/'.$pattern.'/', $replace, $input);

@@ -8,7 +8,7 @@ New features:
 - Render structured data with plugin
 
 Fixes and improvements:
-- Change
+- Fix Tabs not working inside CTAs
 - Add SVG variant to Overview images
 - Add image variant to Overview icons
 - Switch between image and SVG tpl inside overviewRowImageBasic chunk
