@@ -8,13 +8,14 @@ New features:
 - Render structured data with plugin
 
 Fixes and improvements:
+- Expand available options for accordion styling
 - Fix Tabs not working inside CTAs
 - Add SVG variant to Overview images
 - Add image variant to Overview icons
 - Switch between image and SVG tpl inside overviewRowImageBasic chunk
 - Use non-responsive variant for compact images
 - Remove unused TV for setting image priority
-- Move remaining image settings TVs to Content category
+- Move remaining image setting TVs to Content category
 - Add dividers to Background select lists
 - Make SVG icons the recommended option
 - Also link icon itself inside Overview templates

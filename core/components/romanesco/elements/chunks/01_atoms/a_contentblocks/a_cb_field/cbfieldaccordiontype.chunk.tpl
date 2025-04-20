@@ -1,4 +1,7 @@
-Standard=
-Styled (600px wide)=styled
-Styled (fluid width)=fluid styled
-Inverted=fluid inverted
+Regular=regular
+Styled=styled
+Basic=basic
+Fluid=fluid
+Inverted=inverted
+Compact=compact
+Very compact=very compact
