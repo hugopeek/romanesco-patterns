@@ -2,7 +2,7 @@
     &subject=`[[getRawTVValue? &tv=`footer_visibility`]]`
     &operator=`EQ`
     &operand=`@INHERIT default`
-    &then=`[[[[#[[*parent]].footer_inheritance:contains=`inherit_visibility`:then=`*footer_visibility:replace=`default==[[++footer_visibility_default]]``:else=`++footer_visibility_default`]]]]`
+    &then=`[[#[[*parent]].footer_inheritance:contains=`inherit_visibility`:then=`[[*footer_visibility:replace=`default==[[++footer_visibility_default]]`]]`:else=`[[++footer_visibility_default]]`]]`
     &else=`[[*footer_visibility]]`
     &toPlaceholder=`footer_visibility`
 ]]
@@ -10,7 +10,7 @@
     &subject=`[[getRawTVValue? &tv=`footer_type`]]`
     &operator=`EQ`
     &operand=`@INHERIT default`
-    &then=`[[[[#[[*parent]].footer_inheritance:contains=`inherit_type`:then=`*footer_type:replace=`default==[[++global_footer_id]]``:else=`++global_footer_id`]]]]`
+    &then=`[[#[[*parent]].footer_inheritance:contains=`inherit_type`:then=`[[*footer_type:replace=`default==[[++global_footer_id]]`]]`:else=`[[++global_footer_id]]`]]`
     &else=`[[*footer_type]]`
     &toPlaceholder=`footer_type`
 ]]
@@ -18,7 +18,7 @@
     &subject=`[[getRawTVValue? &tv=`footer_background`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
-    &then=`[[[[#[[*parent]].footer_inheritance:contains=`inherit_background`:then=`*footer_background:empty=`[[++footer_background_default]]``:else=`++footer_background_default`]]]]`
+    &then=`[[#[[*parent]].footer_inheritance:contains=`inherit_background`:then=`[[*footer_background:empty=`[[++footer_background_default]]`]]`:else=`[[++footer_background_default]]`]]`
     &else=`[[*footer_background]]`
     &toPlaceholder=`footer_background`
 ]]
@@ -47,7 +47,6 @@
             &field=`content`
         `
     ]]]]
-
     [[[[modifiedIf?
         &subject=`footerCopyrightTheme`
         &operator=`iselement`

@@ -9,6 +9,7 @@ New features:
 - Render structured data with plugin
 
 Fixes and improvements:
+- Fix nested output filters not rendering properly in MODX 3
 - Expand available options for accordion styling
 - Fix Tabs not working inside CTAs
 - Add SVG variant to Overview images

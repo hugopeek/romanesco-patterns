@@ -2,7 +2,7 @@
     &subject=`[[getRawTVValue? &tv=`footer_cta_background`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
-    &then=`[[[[#[[*parent]].footer_inheritance:contains=`inherit_cta_background`:then=`*footer_cta_background:empty=`[[++cta_background_default]]``:else=`++cta_background_default`]]]]`
+    &then=`[[#[[*parent]].footer_inheritance:contains=`inherit_cta_background`:then=`[[*footer_cta_background:empty=`[[++cta_background_default]]`]]`:else=`[[++cta_background_default]]`]]`
     &else=`[[*footer_cta_background]]`
     &toPlaceholder=`footer_cta_background`
 ]]

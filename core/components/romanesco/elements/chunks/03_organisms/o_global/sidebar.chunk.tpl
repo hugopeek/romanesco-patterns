@@ -1,12 +1,12 @@
 <div class="ui container">
-    [[[[modifiedIf?
+    [[modifiedIf?
         &subject=`[[getRawTVValue? &tv=`sidebar_sticky`]]`
         &operator=`contains`
         &operand=`@INHERIT`
-        &then=`#[[*parent]].sidebar_inheritance:contains=`inherit_sticky`:then=`[[*sidebar_sticky]]`:else=`[[++sidebar_sticky]]``
-        &else=`*sidebar_sticky`
+        &then=`[[#[[*parent]].sidebar_inheritance:contains=`inherit_sticky`:then=`[[*sidebar_sticky]]`:else=`[[++sidebar_sticky]]`]]`
+        &else=`[[*sidebar_sticky]]`
         &toPlaceholder=`sidebar_sticky_tv`
-    ]]]]
+    ]]
     [[modifiedIf?
         &subject=`[[*sidebar_sticky]]`
         &operator=`is`
