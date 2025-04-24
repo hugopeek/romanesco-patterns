@@ -20,13 +20,6 @@
 
 /* Load all backgrounds set under Global Content */
 
-[[- DEPRECATED MIGX TV BACKGROUNDS ]]
-[[-getImageList?
-    &docid=`[[++romanesco.global_backgrounds_id]]`
-    &tvname=`global_background_img`
-    &tpl=`globalBackgroundImgCSS`
-]]
-
 [[pdoResources?
     &parents=`[[++romanesco.global_backgrounds_id]]`
     &limit=`0`
