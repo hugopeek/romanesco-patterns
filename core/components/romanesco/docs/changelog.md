@@ -1,9 +1,10 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco Patterns 1.0.0-beta17
+## Romanesco Patterns 1.0.0-rc1
 Released on ...
 
 New features:
+- MODX 3 compatibility
 - Cache manipulated DOM output in plugins
 - Render structured data with plugin
 
