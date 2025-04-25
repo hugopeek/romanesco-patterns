@@ -45,7 +45,6 @@ switch ($modx->event->name) {
         // Any template with 'Markdown' in its name qualifies
         // Note to self: you need to revert the content type manually if you assign a non-markdown template again
         if (stripos($template->get('templatename'), 'markdown') !== false) {
-            $resource->set('contentType', 'text/x-markdown');
             $resource->set('content_type', '11');
 
             // Also disable any active text editor
