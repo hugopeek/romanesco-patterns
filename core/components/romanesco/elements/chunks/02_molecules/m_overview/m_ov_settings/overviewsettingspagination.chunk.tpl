@@ -1,3 +1,5 @@
+[[$overviewSettings? &uid=`[[+prefix]]`]]
+
 &ajaxMode=`[[+pagination_type]]`
 &ajaxElemWrapper=`#[[+prefix]]`
 &ajaxElemRows=`#[[+prefix]] .overview`
