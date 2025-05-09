@@ -83,6 +83,9 @@ switch ($modx->event->name) {
 
         // Remove underscore prefix in TV category tabs (so custom categories can have same name as core categories)
         $managerContent = str_replace('class="x-tab" title="_', 'class="x-tab" title="', $managerContent);
+        // And while we're at it...
+        $managerContent = str_replace('class="x-tab" title="Person - ', 'class="x-tab" title="', $managerContent);
+        $managerContent = str_replace('class="x-tab" title="Org. - ', 'class="x-tab" title="', $managerContent);
 
         $controller->content = $managerContent;
         break;

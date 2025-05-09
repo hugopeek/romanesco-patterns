@@ -67,7 +67,89 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "10"
+                    "sortOrder": "5"
+                },{
+                    "caption": "Social platforms",
+                    "name": "social_connections",
+                    "description": "Maintain a list of social media platforms through which visitors can connect with you.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "social_connect_resource:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 0,
+                    "templates": [
+                        "@@templates_people"
+                    ]
+                },{
+                    "caption": "Related content",
+                    "name": "links_related",
+                    "description": "This will also create a relation on the linked page. You can (and should!) link to other pages in your content whenever relevant, but this makes it easier to generate lists of related pages.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "content_related_src:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 10,
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "External links",
+                    "name": "external_links",
+                    "description": "Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "external_links:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 20,
+                    "templates": [
+                        "@@templates_all"
+                    ]
+                },{
+                    "caption": "Attachments",
+                    "name": "links_attachment",
+                    "description": "Connect any available static resource(s) to this page. Presently, this is not being shown in any template, so it's up to you to implement it as you see fit.",
+                    "type": "superboxselect",
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "stackItems": "true",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:LIKE\":\"modStaticResource\"},{\"content_type:NOT IN\":[1,4,5,9,10,11]},{\"context_key:NOT IN\":[\"hub\",\"global\"]}]",
+                        "pageSize": "20"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 30,
+                    "templates": [
+                        "@@templates_all"
+                    ]
                 }
             ],
             "categories": [
@@ -80,6 +162,14 @@
                     "rank": 40
                 }
             ]
-        }
+        },
+        "systemSettings": [
+            {
+                "key": "link_exclude_contexts",
+                "type": "textfield",
+                "area": "Connection",
+                "value": "hub,global"
+            }
+        ]
     }
 }

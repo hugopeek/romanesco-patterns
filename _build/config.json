@@ -66,7 +66,7 @@
                 {
                     "name": "_Footer",
                     "parent": "e_footer",
-                    "rank": 99
+                    "rank": 999
                 },
                 {
                     "name": "e_contentblocks",
@@ -930,7 +930,93 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "10"
+                    "sortOrder": "5"
+                },
+                {
+                    "caption": "Social platforms",
+                    "name": "social_connections",
+                    "description": "Maintain a list of social media platforms through which visitors can connect with you.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "social_connect_resource:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 0,
+                    "templates": [
+                        "Person"
+                    ]
+                },
+                {
+                    "caption": "Related content",
+                    "name": "links_related",
+                    "description": "This will also create a relation on the linked page. You can (and should!) link to other pages in your content whenever relevant, but this makes it easier to generate lists of related pages.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "content_related_src:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 10,
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                    ]
+                },
+                {
+                    "caption": "External links",
+                    "name": "external_links",
+                    "description": "Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.",
+                    "type": "migxdb",
+                    "inputProperties": {
+                        "configs": "external_links:romanescobackyard"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 20,
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                    ]
+                },
+                {
+                    "caption": "Attachments",
+                    "name": "links_attachment",
+                    "description": "Connect any available static resource(s) to this page. Presently, this is not being shown in any template, so it's up to you to implement it as you see fit.",
+                    "type": "superboxselect",
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "allowBlank": "1",
+                        "stackItems": "true",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "where": "[{\"class_key:LIKE\":\"modStaticResource\"},{\"content_type:NOT IN\":[1,4,5,9,10,11]},{\"context_key:NOT IN\":[\"hub\",\"global\"]}]",
+                        "pageSize": "20"
+                    },
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Connection",
+                    "sortOrder": 30,
+                    "templates": [
+                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
+                    ]
                 },
                 {
                     "caption": "Email address recipient",
@@ -1888,26 +1974,6 @@
                     ]
                 },
                 {
-                    "caption": "Social platforms",
-                    "name": "social_connections",
-                    "description": "Maintain a list of social media platforms through which visitors can connect with you.",
-                    "type": "migxdb",
-                    "inputProperties": {
-                        "configs": "social_connect_resource:romanescobackyard"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "experimental"
-                        }
-                    ],
-                    "category": "_Social",
-                    "sortOrder": 0,
-                    "templates": [
-                        "Person"
-                    ]
-                },
-                {
                     "caption": "Twitter account",
                     "name": "social_twitter",
                     "description": "DEPRECATED. Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.",
@@ -2326,71 +2392,6 @@
                     ],
                     "category": "_Header",
                     "sortOrder": "99",
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
-                    ]
-                },
-                {
-                    "caption": "Related content",
-                    "name": "links_related",
-                    "description": "This will also create a relation on the linked page. You can (and should!) link to other pages in your content whenever relevant, but this makes it easier to generate lists of related pages.",
-                    "type": "migxdb",
-                    "inputProperties": {
-                        "configs": "content_related_src:romanescobackyard"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Links",
-                    "sortOrder": 1,
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
-                    ]
-                },
-                {
-                    "caption": "External links",
-                    "name": "external_links",
-                    "description": "Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.",
-                    "type": "migxdb",
-                    "inputProperties": {
-                        "configs": "external_links:romanescobackyard"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        }
-                    ],
-                    "category": "_Links",
-                    "sortOrder": 10,
-                    "templates": [
-                        "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
-                    ]
-                },
-                {
-                    "caption": "Attachments",
-                    "name": "links_attachment",
-                    "description": "Connect any available static resource(s) to this page. Presently, this is not being shown in any template, so it's up to you to implement it as you see fit.",
-                    "type": "superboxselect",
-                    "inputProperties": {
-                        "selectType": "resources",
-                        "allowBlank": "1",
-                        "depth": "10",
-                        "limitRelatedContext": "false",
-                        "where": "[{\"class_key:=\":\"modStaticResource\"},{\"context_key:!=\":\"hub\"}]",
-                        "pageSize": "20"
-                    },
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        }
-                    ],
-                    "category": "_Links",
-                    "sortOrder": 20,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -3314,7 +3315,7 @@
                     ]
                 },
                 {
-                    "caption": "Organization logo (SVG)",
+                    "caption": "Logo (SVG)",
                     "name": "organization_logo_svg",
                     "description": "You'll likely get the best (sharpest) results when uploading an SVG. Try to keep the aspect ratio around 16:9 for best results.",
                     "type": "file",
@@ -3331,7 +3332,7 @@
                     ]
                 },
                 {
-                    "caption": "Organization logo (Image)",
+                    "caption": "Logo (Image)",
                     "name": "organization_logo_img",
                     "description": "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px.",
                     "type": "imageplus",
@@ -13681,6 +13682,12 @@
             ]
         },
         "systemSettings": [
+            {
+                "key": "link_exclude_contexts",
+                "type": "textfield",
+                "area": "Connection",
+                "value": "hub,global"
+            },
             {
                 "key": "disqus_div_id",
                 "type": "textfield",

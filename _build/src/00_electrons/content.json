@@ -25,7 +25,7 @@
                 },{
                     "name": "_Footer",
                     "parent": "e_footer",
-                    "rank": 99
+                    "rank": 999
                 },{
                     "name": "e_contentblocks",
                     "parent": "e_content"
