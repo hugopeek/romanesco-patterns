@@ -1985,10 +1985,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "1",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "1"
                 },
                 {
                     "caption": "LinkedIn profile",
@@ -2002,10 +1999,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "2",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "2"
                 },
                 {
                     "caption": "Facebook page",
@@ -2019,10 +2013,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "3",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "3"
                 },
                 {
                     "caption": "Instagram profile",
@@ -2036,10 +2027,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "4",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "4"
                 },
                 {
                     "caption": "Pinterest board",
@@ -2053,10 +2041,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "5",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "5"
                 },
                 {
                     "caption": "Youtube channel",
@@ -2070,10 +2055,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "10",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "10"
                 },
                 {
                     "caption": "WhatsApp number",
@@ -2087,10 +2069,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "11",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "11"
                 },
                 {
                     "caption": "WhatsApp message",
@@ -2104,10 +2083,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "12",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "12"
                 },
                 {
                     "caption": "Github account",
@@ -2121,10 +2097,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "20",
-                    "templates": [
-                        "Person"
-                    ]
+                    "sortOrder": "20"
                 },
                 {
                     "caption": "Availability",

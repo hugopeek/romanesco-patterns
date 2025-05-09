@@ -14,10 +14,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "1",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "1"
                 },{
                     "caption": "LinkedIn profile",
                     "name": "social_linkedin",
@@ -30,10 +27,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "2",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "2"
                 },{
                     "caption": "Facebook page",
                     "name": "social_facebook",
@@ -46,10 +40,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "3",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "3"
                 },{
                     "caption": "Instagram profile",
                     "name": "social_instagram",
@@ -62,10 +53,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "4",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "4"
                 },{
                     "caption": "Pinterest board",
                     "name": "social_pinterest",
@@ -78,10 +66,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "5",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "5"
                 },{
                     "caption": "Youtube channel",
                     "name": "social_youtube",
@@ -94,10 +79,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "10",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "10"
                 },{
                     "caption": "WhatsApp number",
                     "name": "social_whatsapp",
@@ -110,10 +92,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "11",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "11"
                 },{
                     "caption": "WhatsApp message",
                     "name": "social_whatsapp_text",
@@ -126,10 +105,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "12",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "12"
                 },{
                     "caption": "Github account",
                     "name": "social_github",
@@ -142,10 +118,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "20",
-                    "templates": [
-                        "@@templates_people"
-                    ]
+                    "sortOrder": "20"
                 }
             ],
 
