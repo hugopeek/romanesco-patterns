@@ -393,26 +393,28 @@ tvs:
     name: social_connections
     description: 'Maintain a list of social media platforms through which visitors can connect with you.'
     type: migxdb
-    inputProperties:
-      configs: 'social_connect_resource:romanescobackyard'
     properties:
       - name: elementStatus
         value: experimental
     category: _Connection
     sortOrder: 0
+    inputOptions:
+      inputProperties:
+        configs: 'social_connect_resource:romanescobackyard'
     templates:
       - Person
   - caption: 'Related content'
     name: links_related
     description: 'This will also create a relation on the linked page. You can (and should!) link to other pages in your content whenever relevant, but this makes it easier to generate lists of related pages.'
     type: migxdb
-    inputProperties:
-      configs: 'content_related_src:romanescobackyard'
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 10
+    inputOptions:
+      inputProperties:
+        configs: 'content_related_src:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -436,13 +438,14 @@ tvs:
     name: external_links
     description: 'Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.'
     type: migxdb
-    inputProperties:
-      configs: 'external_links:romanescobackyard'
     properties:
       - name: elementStatus
         value: review
     category: _Connection
     sortOrder: 20
+    inputOptions:
+      inputProperties:
+        configs: 'external_links:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -466,19 +469,20 @@ tvs:
     name: links_attachment
     description: "Connect any available static resource(s) to this page. Presently, this is not being shown in any template, so it's up to you to implement it as you see fit."
     type: superboxselect
-    inputProperties:
-      selectType: resources
-      allowBlank: '1'
-      stackItems: 'true'
-      depth: '10'
-      limitRelatedContext: 'false'
-      where: '[{"class_key:LIKE":"modStaticResource"},{"content_type:NOT IN":[1,4,5,9,10,11]},{"context_key:NOT IN":["hub","global"]}]'
-      pageSize: '20'
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 30
+    inputOptions:
+      inputProperties:
+        selectType: resources
+        allowBlank: '1'
+        stackItems: 'true'
+        depth: '10'
+        limitRelatedContext: 'false'
+        where: '[{"class_key:LIKE":"modStaticResource"},{"content_type:NOT IN":[1,4,5,9,10,11]},{"context_key:NOT IN":["hub","global"]}]'
+        pageSize: '20'
     templates:
       - Home
       - BasicOverview
@@ -802,13 +806,14 @@ tvs:
     type: checkbox
     inputOptionValues: 'HTML (opens in browser)=="browser"||JSON=="json"||JUnit (for CI)=="CI"'
     defaultValue: '"browser"'
-    outputProperties:
-      delimiter: ','
     properties:
       - name: elementStatus
         value: review
     category: _Testing
     sortOrder: 20
+    outputOptions:
+      outputProperties:
+        delimiter: ','
     templates:
       - RegressionTest
   - caption: 'Async capture limit'
@@ -1056,15 +1061,16 @@ tvs:
     description: 'Select which hierarchy levels are allowed in the ToC menu (if present). This setting is inherited on child pages.'
     type: checkbox
     inputOptionValues: H1||H2||H3||H4||H5||H6
-    outputProperties:
-      delimiter: ','
-    display: delim
     defaultValue: '@INHERIT H1||H2||H3||H4'
     properties:
       - name: elementStatus
         value: review
     category: _Navigation
     sortOrder: 11
+    outputOptions:
+      outputProperties:
+        delimiter: ','
+    outputType: delim
     templates:
       - Home
       - BasicOverview
@@ -1194,14 +1200,15 @@ tvs:
     type: checkbox
     inputOptionValues: 'Infinite loop==loop||Show previous / next arrows==arrows||Keyboard control==keyboard||Free scrolling==free||Autoplay==autoplay'
     defaultValue: 'arrows,keyboard'
-    outputProperties:
-      delimiter: ','
-    display: delim
     properties:
       - name: elementStatus
         value: solid
     category: '_Slider - Settings'
     sortOrder: 30
+    outputOptions:
+      outputProperties:
+        delimiter: ','
+    outputType: delim
     templates:
       - Presentation
   - caption: Transition
@@ -1492,14 +1499,15 @@ tvs:
     type: checkbox
     defaultValue: '@INHERIT inherit_visibility||inherit_type||inherit_background||inherit_cta||inherit_cta_background'
     inputOptionValues: 'Inherit visibility==inherit_visibility||Inherit type==inherit_type||Inherit background==inherit_background||Inherit CTA==inherit_cta||Inherit CTA background==inherit_cta_background'
-    outputProperties:
-      delimiter: ','
-    display: delim
     properties:
       - name: elementStatus
         value: solid
     category: _Footer
     sortOrder: 99
+    outputOptions:
+      outputProperties:
+        delimiter: ','
+    outputType: delim
     templates:
       - Home
       - BasicOverview
@@ -1702,14 +1710,15 @@ tvs:
     type: checkbox
     defaultValue: '@INHERIT inherit_visibility||inherit_titles||inherit_background'
     inputOptionValues: 'Inherit visibility==inherit_visibility||Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta'
-    outputProperties:
-      delimiter: ','
-    display: delim
     properties:
       - name: elementStatus
         value: solid
     category: _Header
     sortOrder: 99
+    outputOptions:
+      outputProperties:
+        delimiter: ','
+    outputType: delim
     templates:
       - Home
       - BasicOverview
@@ -1734,18 +1743,20 @@ tvs:
     description: 'Select the primary function(s) of this content. You can focus on just 1 topic, or create a chain of topics to use as blueprint for your storyline.'
     type: listbox-multiple
     inputOptionValues: '@CHUNK tvSelectInputOption@ContentPurpose'
-    inputProperties:
-      typeAhead: 'false'
-      typeAheadDelay: '250'
-      stackItems: 'true'
-    outputProperties:
-      delimiter: ','
-    display: delim
     properties:
       - name: elementStatus
         value: solid
     category: _Purpose
     sortOrder: 1
+    inputOptions:
+      inputProperties:
+        typeAhead: 'false'
+        typeAheadDelay: '250'
+        stackItems: 'true'
+    outputOptions:
+      outputProperties:
+        delimiter: ','
+    outputType: delim
     templates:
       - Home
       - BasicOverview
@@ -1770,16 +1781,18 @@ tvs:
     description: 'Zoom out a little and ask yourself: do we really need this page? And do we need it now? If it turns out to be neither urgent nor important, consider deleting it again.'
     type: option
     inputOptionValues: '@CHUNK tvSelectInputOption@ContentPriority'
-    inputProperties:
-      columns: '1'
-    outputProperties:
-      delimiter: ','
-    display: delim
     properties:
       - name: elementStatus
         value: solid
     category: _Purpose
     sortOrder: 2
+    inputOptions:
+      inputProperties:
+        columns: '1'
+    outputOptions:
+      outputProperties:
+        delimiter: ','
+    outputType: delim
     templates:
       - Home
       - BasicOverview
@@ -1803,16 +1816,17 @@ tvs:
     name: content_brief
     description: 'Try to turn the content purpose into a short summary. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.'
     type: redactor
-    inputProperties:
-      advAttrib: '1'
-      buttonFullScreen: '1'
-      buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
-      minHeight: 130
     properties:
       - name: elementStatus
         value: solid
     category: _Purpose
     sortOrder: 5
+    inputOptions:
+      inputProperties:
+        advAttrib: '1'
+        buttonFullScreen: '1'
+        buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
+        minHeight: 130
     templates:
       - Home
       - BasicOverview
@@ -1836,16 +1850,17 @@ tvs:
     name: content_outline
     description: 'Give an overview of the main page structure. Like a table of contents, but feel free to add ideas in between.'
     type: redactor
-    inputProperties:
-      advAttrib: '1'
-      buttonFullScreen: '1'
-      buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
-      minHeight: 210
     properties:
       - name: elementStatus
         value: solid
     category: _Purpose
     sortOrder: 6
+    inputOptions:
+      inputProperties:
+        advAttrib: '1'
+        buttonFullScreen: '1'
+        buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
+        minHeight: 210
     templates:
       - Home
       - BasicOverview
@@ -1869,16 +1884,17 @@ tvs:
     name: content_result
     description: 'Describe the desired effect of this page. How did it help the visitor? And what good will that do for you?'
     type: redactor
-    inputProperties:
-      advAttrib: '1'
-      buttonFullScreen: '1'
-      buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link'
-      minHeight: 130
     properties:
       - name: elementStatus
         value: solid
     category: _Purpose
     sortOrder: 10
+    inputOptions:
+      inputProperties:
+        advAttrib: '1'
+        buttonFullScreen: '1'
+        buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link'
+        minHeight: 130
     templates:
       - Home
       - BasicOverview
@@ -1988,14 +2004,15 @@ tvs:
     type: checkbox
     defaultValue: '@INHERIT inherit_sticky||inherit_cta'
     inputOptionValues: 'Inherit sticky==inherit_sticky||Inherit CTA==inherit_cta'
-    outputProperties:
-      delimiter: ','
-    display: delim
     properties:
       - name: elementStatus
         value: review
     category: _Sidebar
     sortOrder: 99
+    outputOptions:
+      outputProperties:
+        delimiter: ','
+    outputType: delim
     templates:
       - BasicDetail
       - 'Basic - Detail'
@@ -2063,13 +2080,14 @@ tvs:
     name: status_tasks
     description: 'How can we make this page better? Or do you have technical issues?'
     type: migxdb
-    inputProperties:
-      configs: 'tasks_resource:romanescobackyard'
     properties:
       - name: elementStatus
         value: solid
     category: _Status
     sortOrder: 3
+    inputOptions:
+      inputProperties:
+        configs: 'tasks_resource:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -2093,18 +2111,19 @@ tvs:
     name: content_owner
     description: 'Who is responsible for editing and maintaining this page?'
     type: superboxselect
-    inputProperties:
-      selectType: users
-      maxElements: '1'
-      allowBlank: '1'
-      depth: '10'
-      limitRelatedContext: '0'
-      pageSize: '10'
     properties:
       - name: elementStatus
         value: solid
     category: _Status
     sortOrder: 10
+    inputOptions:
+      inputProperties:
+        selectType: users
+        maxElements: '1'
+        allowBlank: '1'
+        depth: '10'
+        limitRelatedContext: '0'
+        pageSize: '10'
     templates:
       - Home
       - BasicOverview
@@ -2128,13 +2147,14 @@ tvs:
     name: planning_date_due
     description: ''
     type: date
-    inputProperties:
-      hideTime: 'true'
     properties:
       - name: elementStatus
         value: solid
     category: _Status
     sortOrder: 20
+    inputOptions:
+      inputProperties:
+        hideTime: 'true'
     templates:
       - Home
       - BasicOverview
@@ -2158,13 +2178,14 @@ tvs:
     name: project_timeline
     description: "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily."
     type: migxdb
-    inputProperties:
-      configs: 'project_timeline:romanescobackyard'
     properties:
       - name: elementStatus
         value: solid
     category: _Timeline
     sortOrder: 1
+    inputOptions:
+      inputProperties:
+        configs: 'project_timeline:romanescobackyard'
     templates:
       - ProjectDashboard
   - caption: Autoresponder
@@ -2566,18 +2587,20 @@ tvs:
     name: organization_logo_img
     description: "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px."
     type: imageplus
-    inputProperties:
-      targetWidth: '300'
-      targetRatio: '1.77'
-      allowAltTag: 'true'
-    outputProperties:
-      phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
-      outputChunk: cbOverviewRowImg
     properties:
       - name: elementStatus
         value: solid
     category: '_Org - Presentation'
     sortOrder: 2
+    inputOptions:
+      inputProperties:
+        targetWidth: '300'
+        targetRatio: '1.77'
+        allowAltTag: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
+        outputChunk: cbOverviewRowImg
     templates:
       - Organization
   - caption: 'Organization name'
@@ -2640,19 +2663,21 @@ tvs:
     name: person_image
     description: 'A portrait image of this person.'
     type: imageplus
-    inputProperties:
-      targetWidth: '300'
-      targetRatio: '1.0'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
-      outputChunk: cbOverviewRowImg
     properties:
       - name: elementStatus
         value: solid
     category: '_Person - Presentation'
     sortOrder: 1
+    inputOptions:
+      inputProperties:
+        targetWidth: '300'
+        targetRatio: '1.0'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
+        outputChunk: cbOverviewRowImg
     templates:
       - Person
       - Review
@@ -2660,19 +2685,21 @@ tvs:
     name: person_image_loose
     description: 'An image of the same person, but with a loose, personal vibe. This can be used in situations where a little more playfulness is suitable.'
     type: imageplus
-    inputProperties:
-      targetWidth: '300'
-      targetRatio: '1.0'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
-      outputChunk: cbOverviewRowImg
     properties:
       - name: elementStatus
         value: solid
     category: '_Person - Presentation'
     sortOrder: 1
+    inputOptions:
+      inputProperties:
+        targetWidth: '300'
+        targetRatio: '1.0'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
+        outputChunk: cbOverviewRowImg
     templates:
       - Person
   - caption: 'First name'
@@ -2826,19 +2853,21 @@ tvs:
     name: overview_icon_img
     description: 'If an SVG icon is not available, you can also use an image file (preferably in PNG format). This image needs to be square.'
     type: imageplus
-    inputProperties:
-      targetWidth: '300'
-      targetHeight: '300'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: ''
-      outputChunk: ''
     properties:
       - name: elementStatus
         value: review
     category: '_Overview - Icon'
     sortOrder: 5
+    inputOptions:
+      inputProperties:
+        targetWidth: '300'
+        targetHeight: '300'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: ''
+        outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2856,14 +2885,15 @@ tvs:
     description: "Select an icon from the projects' icon font list. Check the style guide for available icons, or use the autocomplete search as you type."
     type: listbox
     inputOptionValues: '@CHUNK iconTVInputOptions'
-    inputProperties:
-      typeAhead: 'true'
-      typeAheadDelay: '400'
     properties:
       - name: elementStatus
         value: solid
     category: '_Overview - Icon'
     sortOrder: 10
+    inputOptions:
+      inputProperties:
+        typeAhead: 'true'
+        typeAheadDelay: '400'
     templates:
       - Home
       - BasicOverview
@@ -2877,19 +2907,21 @@ tvs:
     name: overview_img_landscape
     description: 'This is the default overview image, in a regular 4:3 aspect ratio.'
     type: imageplus
-    inputProperties:
-      targetWidth: '500'
-      targetHeight: '375'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: ''
-      outputChunk: ''
     properties:
       - name: elementStatus
         value: solid
     category: '_Overview - Image'
     sortOrder: 1
+    inputOptions:
+      inputProperties:
+        targetWidth: '500'
+        targetHeight: '375'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: ''
+        outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2906,19 +2938,21 @@ tvs:
     name: overview_img_portrait
     description: 'This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.'
     type: imageplus
-    inputProperties:
-      targetWidth: '300'
-      targetHeight: '400'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: ''
-      outputChunk: ''
     properties:
       - name: elementStatus
         value: solid
     category: '_Overview - Image'
     sortOrder: 2
+    inputOptions:
+      inputProperties:
+        targetWidth: '300'
+        targetHeight: '400'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: ''
+        outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2935,19 +2969,21 @@ tvs:
     name: overview_img_square
     description: 'This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.'
     type: imageplus
-    inputProperties:
-      targetWidth: '300'
-      targetHeight: '300'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: ''
-      outputChunk: ''
     properties:
       - name: elementStatus
         value: solid
     category: '_Overview - Image'
     sortOrder: 3
+    inputOptions:
+      inputProperties:
+        targetWidth: '300'
+        targetHeight: '300'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: ''
+        outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2964,19 +3000,21 @@ tvs:
     name: overview_img_wide
     description: 'This is an image with widescreen proportions, in 16:9 aspect ratio.'
     type: imageplus
-    inputProperties:
-      targetWidth: '800'
-      targetHeight: '450'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: ''
-      outputChunk: ''
     properties:
       - name: elementStatus
         value: solid
     category: '_Overview - Image'
     sortOrder: 5
+    inputOptions:
+      inputProperties:
+        targetWidth: '800'
+        targetHeight: '450'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: ''
+        outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2993,19 +3031,21 @@ tvs:
     name: overview_img_pano
     description: 'This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.'
     type: imageplus
-    inputProperties:
-      targetWidth: '1300'
-      targetRatio: '2.33'
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: ''
-      outputChunk: ''
     properties:
       - name: elementStatus
         value: solid
     category: '_Overview - Image'
     sortOrder: 6
+    inputOptions:
+      inputProperties:
+        targetWidth: '1300'
+        targetRatio: '2.33'
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: ''
+        outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -3022,17 +3062,19 @@ tvs:
     name: overview_img_free
     description: "This image doesn't have a fixed aspect ratio or any minimum dimensions. Use it as you see fit. Cropping is optional. Be aware that mixing aspect ratios will result in different image sizes!"
     type: imageplus
-    inputProperties:
-      allowAltTag: 'true'
-      allowCredits: 'true'
-    outputProperties:
-      phpThumbParams: ''
-      outputChunk: ''
     properties:
       - name: elementStatus
         value: solid
     category: '_Overview - Image'
     sortOrder: 10
+    inputOptions:
+      inputProperties:
+        allowAltTag: 'true'
+        allowCredits: 'true'
+    outputOptions:
+      outputProperties:
+        phpThumbParams: ''
+        outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -8231,9 +8273,11 @@ plugins:
     description: 'Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.'
     properties:
       - name: elementStatus
-        value: solid
+        value: review
     category: c_configuration
-    events: {  }
+    events:
+      - OnDocFormSave
+    disabled: true
   - name: UpdateStyling
     description: 'Fires when theme settings are changed under Configuration. It updates Semantic UI theme.variables and triggers a new SUI build in the background. Requires NPM and EXEC function on the server.'
     properties:
@@ -8260,9 +8304,8 @@ plugins:
         value: solid
     category: c_content
     events:
-      -
+      - name: OnWebPagePrerender
         priority: 30
-        name: OnWebPagePrerender
   - name: TableOfContents
     description: 'Generate a menu with internal links to all headings in the content. The headers need to have an anchor, which can be automatically attached by switching on the auto_anchors TV.'
     properties:
@@ -8302,9 +8345,8 @@ plugins:
         value: solid
     category: c_formblocks
     events:
-      -
+      - name: OnHandleRequest
         priority: 10
-        name: OnHandleRequest
   - name: ManagerModifications
     description: 'Small tweaks to the MODX backend, to enhance the Romanesco experience.'
     properties:
@@ -8322,9 +8364,8 @@ plugins:
         value: solid
     category: c_global
     events:
-      -
+      - name: OnHandleRequest
         priority: 10
-        name: OnHandleRequest
   - name: RenderStructuredData
     description: 'Add schema.org JSON-LD data in head.'
     properties:
@@ -8339,8 +8380,6 @@ plugins:
       - name: elementStatus
         value: experimental
     category: c_global
-    events:
-      - ''
   - name: GenerateSiteCSS
     description: 'Creates site.css file for each context, with their own global backgrounds. If you want a context to have its own set of backgrounds, you need to add a child page under Global Backgrounds.'
     properties:
@@ -8349,9 +8388,8 @@ plugins:
     category: c_performance
     events:
       - name: OnBeforeDocFormSave
-      -
+      - name: OnDocFormSave
         priority: 10
-        name: OnDocFormSave
   - name: GenerateCriticalCSS
     description: 'Determine which CSS styles are used above the fold and write them to a custom CSS file. This needs NPM and the critical package to be installed.'
     properties:
@@ -8359,9 +8397,8 @@ plugins:
         value: review
     category: c_performance
     events:
-      -
+      - name: OnDocFormSave
         priority: 11
-        name: OnDocFormSave
       - name: OnWebPagePrerender
 systemSettings:
   - key: link_exclude_contexts

@@ -13675,11 +13675,14 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
                     "category": "c_configuration",
-                    "events": []
+                    "events": [
+                        "OnDocFormSave"
+                    ],
+                    "disabled": true
                 },
                 {
                     "name": "UpdateStyling",
@@ -13858,10 +13861,7 @@
                             "value": "experimental"
                         }
                     ],
-                    "category": "c_global",
-                    "events": [
-                        ""
-                    ]
+                    "category": "c_global"
                 },
                 {
                     "name": "GenerateSiteCSS",

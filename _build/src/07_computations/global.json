@@ -55,8 +55,7 @@
                             "value": "experimental"
                         }
                     ],
-                    "category": "c_global",
-                    "events": [""]
+                    "category": "c_global"
                 }
             ],
 

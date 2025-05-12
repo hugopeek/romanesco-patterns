@@ -45,6 +45,7 @@ foreach ($sources as $index => $source) {
     $baseArray = array_merge_recursive($baseArray,$sourceArray);
 }
 
+// Back to JSON
 $output = json_encode($baseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
 // Fill placeholders with corresponding template names
@@ -67,11 +68,11 @@ if ($validateOutput) {
     echo "Config file is valid JSON. \n";
 }
 
-// Write the config file for MODX 2.x
+// Write config file for MODX 2.x
 file_put_contents("config.json", $output);
 echo "Config file for 2.x successfully built.\n";
 
-// Convert this output for MODX 3.x
+// Back to array, so we can convert this output for MODX 3.x
 $data = json_decode($output, true);
 
 // Move the contents of "package" and "elements" to the root
@@ -88,7 +89,29 @@ foreach ($data['categories'] as &$category) {
     unset($category['parent']);
 }
 
-// Fix plugin events name
+// Adjust TV properties to new format
+foreach ($data['tvs'] as &$tv) {
+    if (array_key_exists('inputProperties', $tv)) {
+        $tv['inputOptions']['inputProperties'] = $tv['inputProperties'];
+        unset($tv['inputProperties']);
+    }
+    if (array_key_exists('outputProperties', $tv)) {
+        $tv['outputOptions']['outputProperties'] = $tv['outputProperties'];
+        unset($tv['outputProperties']);
+    }
+    if (array_key_exists('display', $tv)) {
+        $tv['outputType'] = $tv['display'];
+        unset($tv['display']);
+    }
+    // Move templates to end of array
+    if (array_key_exists('templates', $tv)) {
+        $templateList = $tv['templates'];
+        unset($tv['templates']);
+        $tv['templates'] = $templateList;
+    }
+}
+
+// Change array keys in plugin events
 function changeKeyRecursive(array $array, $oldKey, $newKey): array
 {
     foreach ($array as $key => $value) {
@@ -102,9 +125,9 @@ function changeKeyRecursive(array $array, $oldKey, $newKey): array
     }
     return $array;
 }
-
-$pluginsData = $data['plugins'] ?? [];
-$data['plugins'] = changeKeyRecursive($pluginsData, 'event', 'name');
+$data['plugins'] = changeKeyRecursive($data['plugins'], 'event', 'name');
+$data['plugins'] = changeKeyRecursive($data['plugins'], 'priority', 'flip');
+$data['plugins'] = changeKeyRecursive($data['plugins'], 'flip', 'priority');
 
 // Convert the PHP array to YAML
 $yaml = Yaml::dump($data, 8, 2, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK);
@@ -121,7 +144,7 @@ try {
     return false;
 }
 
-// Output as YAML and JSON
+// Write config file for MODX 3.x
 //file_put_contents("gpm.json", json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 file_put_contents("gpm.yaml", $yaml);
 echo "Config file for 3.x successfully built.\n";

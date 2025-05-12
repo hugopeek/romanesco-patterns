@@ -8,11 +8,12 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
                     "category": "c_configuration",
-                    "events": []
+                    "events": ["OnDocFormSave"],
+                    "disabled": true
                 },{
                     "name": "UpdateStyling",
                     "description": "Fires when theme settings are changed under Configuration. It updates Semantic UI theme.variables and triggers a new SUI build in the background. Requires NPM and EXEC function on the server.",
