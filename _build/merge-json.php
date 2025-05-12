@@ -107,10 +107,22 @@ $pluginsData = $data['plugins'] ?? [];
 $data['plugins'] = changeKeyRecursive($pluginsData, 'event', 'name');
 
 // Convert the PHP array to YAML
-$yaml = Yaml::dump($data, 3, 4, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK);
+$yaml = Yaml::dump($data, 8, 2, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK);
+$yaml = preg_replace('/-\s+name:/', '- name:', $yaml);
+$yaml = preg_replace('/-\s+caption:/', '- caption:', $yaml);
+$yaml = preg_replace('/-\s+key:/', '- key:', $yaml);
+
+// Compare altered Yaml with original array
+try {
+    Yaml::parse($yaml);
+    echo "Config file is valid Yaml.\n";
+} catch (\Exception $e) {
+    echo $e->getMessage();
+    return false;
+}
 
 // Output as YAML and JSON
-file_put_contents("gpm.json", json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+//file_put_contents("gpm.json", json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 file_put_contents("gpm.yaml", $yaml);
 echo "Config file for 3.x successfully built.\n";
 
