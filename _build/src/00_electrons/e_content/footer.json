@@ -16,7 +16,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -34,7 +34,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -52,7 +52,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -70,7 +70,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -88,7 +88,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -110,7 +110,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "99",
+                    "sortOrder": 99,
                     "templates": [
                         "@@templates_all"
                     ]

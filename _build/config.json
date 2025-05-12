@@ -1,6 +1,7 @@
 {
     "name": "Romanesco",
     "lowCaseName": "romanesco",
+    "namespace": "Romanesco",
     "description": "Web engineering toolkit, combining atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
     "version": "1.0.0-beta16",
@@ -8,7 +9,257 @@
         "elements": {
             "categories": [
                 {
-                    "name": "00_electrons"
+                    "name": "00_electrons",
+                    "children": [
+                        {
+                            "name": "e_connection",
+                            "children": [
+                                {
+                                    "name": "_Connection",
+                                    "rank": 99
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_content",
+                            "children": [
+                                {
+                                    "name": "e_header",
+                                    "children": [
+                                        {
+                                            "name": "_Header",
+                                            "rank": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_sidebar",
+                                    "children": [
+                                        {
+                                            "name": "_Sidebar",
+                                            "rank": 31
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_footer",
+                                    "children": [
+                                        {
+                                            "name": "_Footer",
+                                            "rank": 999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_contentblocks"
+                                },
+                                {
+                                    "name": "e_cta",
+                                    "children": [
+                                        {
+                                            "name": "_CTA - Settings"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_status",
+                                    "children": [
+                                        {
+                                            "name": "_Status"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_purpose",
+                                    "children": [
+                                        {
+                                            "name": "_Purpose"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_timeline",
+                                    "children": [
+                                        {
+                                            "name": "_Timeline"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_formblocks",
+                            "children": [
+                                {
+                                    "name": "_Settings - Email",
+                                    "rank": 1
+                                },
+                                {
+                                    "name": "_Settings - General",
+                                    "rank": 2
+                                },
+                                {
+                                    "name": "_Settings - Advanced",
+                                    "rank": 3
+                                },
+                                {
+                                    "name": "_Autoresponder",
+                                    "rank": 10
+                                },
+                                {
+                                    "name": "_Registration",
+                                    "rank": 20
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_hub",
+                            "children": [
+                                {
+                                    "name": "_Testing",
+                                    "rank": 100
+                                },
+                                {
+                                    "name": "_Scenarios",
+                                    "rank": 200
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_information",
+                            "children": [
+                                {
+                                    "name": "e_info_action"
+                                },
+                                {
+                                    "name": "e_info_creativework",
+                                    "children": [
+                                        {
+                                            "name": "_About",
+                                            "rank": 150
+                                        },
+                                        {
+                                            "name": "_Comments",
+                                            "rank": 151
+                                        },
+                                        {
+                                            "name": "_Contributors",
+                                            "rank": 152
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_info_event"
+                                },
+                                {
+                                    "name": "e_info_intangible",
+                                    "children": [
+                                        {
+                                            "name": "_Contact",
+                                            "rank": 100
+                                        },
+                                        {
+                                            "name": "_Address",
+                                            "rank": 101
+                                        },
+                                        {
+                                            "name": "_Date",
+                                            "rank": 102
+                                        },
+                                        {
+                                            "name": "_Rating",
+                                            "rank": 110
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_info_organization",
+                                    "children": [
+                                        {
+                                            "name": "_Org - Information",
+                                            "rank": 140
+                                        },
+                                        {
+                                            "name": "_Org - Presentation",
+                                            "rank": 141
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_info_person",
+                                    "children": [
+                                        {
+                                            "name": "_Person - Information",
+                                            "rank": 130
+                                        },
+                                        {
+                                            "name": "_Person - Presentation",
+                                            "rank": 131
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "e_info_place"
+                                },
+                                {
+                                    "name": "e_info_product"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_navigation",
+                            "children": [
+                                {
+                                    "name": "_Navigation",
+                                    "rank": 30
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_overview",
+                            "children": [
+                                {
+                                    "name": "_Overview - Image",
+                                    "rank": 10
+                                },
+                                {
+                                    "name": "_Overview - Icon",
+                                    "rank": 11
+                                },
+                                {
+                                    "name": "_Overview - Content",
+                                    "rank": 12
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_performance",
+                            "children": [
+                                {
+                                    "name": "_Performance",
+                                    "rank": 99
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_presentation",
+                            "children": [
+                                {
+                                    "name": "_Slider - Settings",
+                                    "rank": 60
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e_social",
+                            "children": [
+                                {
+                                    "name": "_Social",
+                                    "rank": 50
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "01_atoms"
@@ -802,57 +1053,57 @@
                     "parent": "07_computations"
                 },
                 {
-                    "name": "About",
+                    "name": "_About",
                     "parent": "e_info_creativework",
                     "rank": 150
                 },
                 {
-                    "name": "Comments",
+                    "name": "_Comments",
                     "parent": "e_info_creativework",
                     "rank": 151
                 },
                 {
-                    "name": "Participants",
+                    "name": "_Contributors",
                     "parent": "e_info_creativework",
                     "rank": 152
                 },
                 {
-                    "name": "Contact",
+                    "name": "_Contact",
                     "parent": "e_info_intangible",
                     "rank": 100
                 },
                 {
-                    "name": "Address",
+                    "name": "_Address",
                     "parent": "e_info_intangible",
                     "rank": 101
                 },
                 {
-                    "name": "Date",
+                    "name": "_Date",
                     "parent": "e_info_intangible",
                     "rank": 102
                 },
                 {
-                    "name": "Rating",
+                    "name": "_Rating",
                     "parent": "e_info_intangible",
                     "rank": 110
                 },
                 {
-                    "name": "Org. - Information",
+                    "name": "_Org - Information",
                     "parent": "e_info_organization",
                     "rank": 140
                 },
                 {
-                    "name": "Org. - Presentation",
+                    "name": "_Org - Presentation",
                     "parent": "e_info_organization",
                     "rank": 141
                 },
                 {
-                    "name": "Person - Information",
+                    "name": "_Person - Information",
                     "parent": "e_info_person",
                     "rank": 130
                 },
                 {
-                    "name": "Person - Presentation",
+                    "name": "_Person - Presentation",
                     "parent": "e_info_person",
                     "rank": 131
                 },
@@ -875,7 +1126,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "Project"
                     ]
@@ -893,7 +1144,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "Project",
                         "Review"
@@ -912,7 +1163,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "Project"
                     ]
@@ -930,7 +1181,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "5"
+                    "sortOrder": 5
                 },
                 {
                     "caption": "Social platforms",
@@ -1030,7 +1281,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "fbForm"
                     ]
@@ -1047,7 +1298,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "fbForm"
                     ]
@@ -1064,7 +1315,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "fbForm"
                     ]
@@ -1081,7 +1332,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "fbForm"
                     ]
@@ -1098,7 +1349,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "6",
+                    "sortOrder": 6,
                     "templates": [
                         "fbForm"
                     ]
@@ -1115,7 +1366,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -1133,7 +1384,7 @@
                         }
                     ],
                     "category": "_Settings - General",
-                    "sortOrder": "90",
+                    "sortOrder": 90,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -1151,7 +1402,7 @@
                         }
                     ],
                     "category": "_Settings - General",
-                    "sortOrder": "91",
+                    "sortOrder": 91,
                     "inputOptionValues": "System default==default||Yes==1||No==0",
                     "defaultValue": "default",
                     "templates": [
@@ -1170,7 +1421,7 @@
                         }
                     ],
                     "category": "_Settings - General",
-                    "sortOrder": "92",
+                    "sortOrder": 92,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -1188,7 +1439,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -1206,7 +1457,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "fbForm"
                     ]
@@ -1223,7 +1474,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -1241,7 +1492,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -1259,7 +1510,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "fbForm"
                     ]
@@ -1276,7 +1527,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -1296,7 +1547,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "15",
+                    "sortOrder": 15,
                     "templates": [
                         "fbForm"
                     ]
@@ -1314,7 +1565,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "16",
+                    "sortOrder": 16,
                     "templates": [
                         "fbForm"
                     ]
@@ -1333,7 +1584,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "17",
+                    "sortOrder": 17,
                     "templates": [
                         "fbForm"
                     ]
@@ -1351,7 +1602,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "18",
+                    "sortOrder": 18,
                     "templates": [
                         "fbForm"
                     ]
@@ -1369,7 +1620,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "fbForm"
                     ]
@@ -1387,7 +1638,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": [
                         "fbForm"
                     ]
@@ -1406,7 +1657,7 @@
                         }
                     ],
                     "category": "_Background",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "GlobalBackground"
                     ]
@@ -1772,7 +2023,7 @@
                         }
                     ],
                     "category": "_Navigation",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1791,7 +2042,7 @@
                         }
                     ],
                     "category": "_Navigation",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1814,7 +2065,7 @@
                         }
                     ],
                     "category": "_Navigation",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1833,7 +2084,7 @@
                         }
                     ],
                     "category": "_Navigation",
-                    "sortOrder": "12",
+                    "sortOrder": 12,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1852,7 +2103,7 @@
                         }
                     ],
                     "category": "_Navigation",
-                    "sortOrder": "15",
+                    "sortOrder": 15,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1871,7 +2122,7 @@
                         }
                     ],
                     "category": "_Navigation",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "Publications","ArticleTraditional","ArticleModern","Download"
                     ]
@@ -1888,7 +2139,7 @@
                         }
                     ],
                     "category": "_Performance",
-                    "sortOrder": "99",
+                    "sortOrder": 99,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1911,7 +2162,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "30",
+                    "sortOrder": 30,
                     "templates": [
                         "Presentation"
                     ]
@@ -1930,7 +2181,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "31",
+                    "sortOrder": 31,
                     "templates": [
                         "Presentation"
                     ]
@@ -1949,7 +2200,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "32",
+                    "sortOrder": 32,
                     "templates": [
                         "Presentation"
                     ]
@@ -1968,7 +2219,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "33",
+                    "sortOrder": 33,
                     "templates": [
                         "Presentation"
                     ]
@@ -1985,7 +2236,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "1"
+                    "sortOrder": 1
                 },
                 {
                     "caption": "LinkedIn profile",
@@ -1999,7 +2250,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "2"
+                    "sortOrder": 2
                 },
                 {
                     "caption": "Facebook page",
@@ -2013,7 +2264,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "3"
+                    "sortOrder": 3
                 },
                 {
                     "caption": "Instagram profile",
@@ -2027,7 +2278,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "4"
+                    "sortOrder": 4
                 },
                 {
                     "caption": "Pinterest board",
@@ -2041,7 +2292,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "5"
+                    "sortOrder": 5
                 },
                 {
                     "caption": "Youtube channel",
@@ -2055,7 +2306,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "10"
+                    "sortOrder": 10
                 },
                 {
                     "caption": "WhatsApp number",
@@ -2069,7 +2320,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "11"
+                    "sortOrder": 11
                 },
                 {
                     "caption": "WhatsApp message",
@@ -2083,7 +2334,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "12"
+                    "sortOrder": 12
                 },
                 {
                     "caption": "Github account",
@@ -2097,7 +2348,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "20"
+                    "sortOrder": 20
                 },
                 {
                     "caption": "Availability",
@@ -2112,7 +2363,7 @@
                         }
                     ],
                     "category": "_CTA - Settings",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "GlobalCTA"
                     ]
@@ -2131,7 +2382,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2150,7 +2401,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2169,7 +2420,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2188,7 +2439,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2207,7 +2458,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2230,7 +2481,7 @@
                         }
                     ],
                     "category": "_Footer",
-                    "sortOrder": "99",
+                    "sortOrder": 99,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2249,7 +2500,7 @@
                         }
                     ],
                     "category": "_Header",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2267,7 +2518,7 @@
                         }
                     ],
                     "category": "_Header",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2285,7 +2536,7 @@
                         }
                     ],
                     "category": "_Header",
-                    "sortOrder": "6",
+                    "sortOrder": 6,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2304,7 +2555,7 @@
                         }
                     ],
                     "category": "_Header",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2322,7 +2573,7 @@
                         }
                     ],
                     "category": "_Header",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2341,7 +2592,7 @@
                         }
                     ],
                     "category": "_Header",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2364,7 +2615,7 @@
                         }
                     ],
                     "category": "_Header",
-                    "sortOrder": "99",
+                    "sortOrder": 99,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -2538,7 +2789,7 @@
                         }
                     ],
                     "category": "_Sidebar",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "BasicDetail",
                         "Basic - Detail"
@@ -2558,7 +2809,7 @@
                         }
                     ],
                     "category": "_Sidebar",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "BasicDetail",
                         "Basic - Detail"
@@ -2582,7 +2833,7 @@
                         }
                     ],
                     "category": "_Sidebar",
-                    "sortOrder": "99",
+                    "sortOrder": 99,
                     "templates": [
                         "BasicDetail",
                         "Basic - Detail"
@@ -2725,7 +2976,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "fbForm"
                     ]
@@ -2742,7 +2993,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "fbForm"
                     ]
@@ -2759,7 +3010,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "fbForm"
                     ]
@@ -2776,7 +3027,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "4",
+                    "sortOrder": 4,
                     "templates": [
                         "fbForm"
                     ]
@@ -2793,7 +3044,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "fbForm"
                     ]
@@ -2810,7 +3061,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": [
                         "fbForm"
                     ]
@@ -2829,7 +3080,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2846,7 +3097,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2864,7 +3115,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2883,7 +3134,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2901,7 +3152,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2918,7 +3169,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2935,7 +3186,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2952,7 +3203,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2969,7 +3220,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "12",
+                    "sortOrder": 12,
                     "templates": [
                         "fbRegister"
                     ]
@@ -2986,7 +3237,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "fbRegister"
                     ]
@@ -3003,7 +3254,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": [
                         "fbRegister"
                     ]
@@ -3022,7 +3273,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "30",
+                    "sortOrder": 30,
                     "templates": [
                         "fbRegister"
                     ]
@@ -3040,8 +3291,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "About",
-                    "sortOrder": "1",
+                    "category": "_About",
+                    "sortOrder": 1,
                     "templates": [
                         "Publications","ArticleTraditional","ArticleModern","Download"
                     ]
@@ -3059,26 +3310,26 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Comments",
-                    "sortOrder": "1",
+                    "category": "_Comments",
+                    "sortOrder": 1,
                     "templates": [
                         "Publications","ArticleTraditional","ArticleModern","Download"
                     ]
                 },
                 {
-                    "caption": "Rating value",
+                    "caption": "Rating",
                     "name": "rating_value",
                     "description": "How did the user value this product or service?",
                     "type": "option",
-                    "inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@Rating",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         }
                     ],
-                    "category": "Rating",
-                    "sortOrder": "1",
+                    "category": "_Rating",
+                    "sortOrder": 1,
                     "templates": [
                         "Review"
                     ]
@@ -3094,8 +3345,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Contact",
-                    "sortOrder": "1",
+                    "category": "_Contact",
+                    "sortOrder": 1,
                     "templates": [
                         "Person"
                     ]
@@ -3111,8 +3362,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Contact",
-                    "sortOrder": "2",
+                    "category": "_Contact",
+                    "sortOrder": 2,
                     "templates": [
                         "Person"
                     ]
@@ -3128,8 +3379,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Contact",
-                    "sortOrder": "3",
+                    "category": "_Contact",
+                    "sortOrder": 3,
                     "templates": [
                         "Person"
                     ]
@@ -3145,8 +3396,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "2",
+                    "category": "_Address",
+                    "sortOrder": 2,
                     "templates": [
                         "Project"
                     ]
@@ -3162,8 +3413,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "3",
+                    "category": "_Address",
+                    "sortOrder": 3,
                     "templates": [
                         "Project"
                     ]
@@ -3179,8 +3430,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "4",
+                    "category": "_Address",
+                    "sortOrder": 4,
                     "templates": [
                         "Project"
                     ]
@@ -3196,8 +3447,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "10",
+                    "category": "_Address",
+                    "sortOrder": 10,
                     "templates": [
                         "Project"
                     ]
@@ -3213,8 +3464,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "11",
+                    "category": "_Address",
+                    "sortOrder": 11,
                     "templates": [
                         "Project"
                     ]
@@ -3230,8 +3481,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "12",
+                    "category": "_Address",
+                    "sortOrder": 12,
                     "templates": [
                         "Project"
                     ]
@@ -3247,8 +3498,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Date",
-                    "sortOrder": "1",
+                    "category": "_Date",
+                    "sortOrder": 1,
                     "templates": [
                         "Project"
                     ]
@@ -3264,8 +3515,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Date",
-                    "sortOrder": "2",
+                    "category": "_Date",
+                    "sortOrder": 2,
                     "templates": [
                         "Project"
                     ]
@@ -3281,8 +3532,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Date",
-                    "sortOrder": "3",
+                    "category": "_Date",
+                    "sortOrder": 3,
                     "templates": [
                         "Project"
                     ]
@@ -3298,8 +3549,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Presentation",
-                    "sortOrder": "1",
+                    "category": "_Org - Presentation",
+                    "sortOrder": 1,
                     "templates": [
                         "Organization"
                     ]
@@ -3324,8 +3575,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Presentation",
-                    "sortOrder": "2",
+                    "category": "_Org - Presentation",
+                    "sortOrder": 2,
                     "templates": [
                         "Organization"
                     ]
@@ -3341,8 +3592,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "1",
+                    "category": "_Org - Information",
+                    "sortOrder": 1,
                     "templates": [
                         "Organization"
                     ]
@@ -3359,8 +3610,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "5",
+                    "category": "_Org - Information",
+                    "sortOrder": 5,
                     "templates": [
                         "Organization"
                     ]
@@ -3376,8 +3627,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "6",
+                    "category": "_Org - Information",
+                    "sortOrder": 6,
                     "templates": [
                         "Organization"
                     ]
@@ -3393,8 +3644,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "10",
+                    "category": "_Org - Information",
+                    "sortOrder": 10,
                     "templates": [
                         "Organization"
                     ]
@@ -3410,8 +3661,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "20",
+                    "category": "_Org - Information",
+                    "sortOrder": 20,
                     "templates": [
                         "Organization"
                     ]
@@ -3419,7 +3670,7 @@
                 {
                     "caption": "Profile picture",
                     "name": "person_image",
-                    "description": "A headshot of this person.",
+                    "description": "A portrait image of this person.",
                     "type": "imageplus",
                     "inputProperties": {
                         "targetWidth": "300",
@@ -3437,8 +3688,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Presentation",
-                    "sortOrder": "1",
+                    "category": "_Person - Presentation",
+                    "sortOrder": 1,
                     "templates": [
                         "Person",
                         "Review"
@@ -3447,7 +3698,7 @@
                 {
                     "caption": "Informal picture",
                     "name": "person_image_loose",
-                    "description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in areas and situations where a little playfulness is allowed.",
+                    "description": "An image of the same person, but with a loose, personal vibe. This can be used in situations where a little more playfulness is suitable.",
                     "type": "imageplus",
                     "inputProperties": {
                         "targetWidth": "300",
@@ -3465,8 +3716,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Presentation",
-                    "sortOrder": "1",
+                    "category": "_Person - Presentation",
+                    "sortOrder": 1,
                     "templates": [
                         "Person"
                     ]
@@ -3482,8 +3733,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "1",
+                    "category": "_Person - Information",
+                    "sortOrder": 1,
                     "templates": [
                         "Person",
                         "Review"
@@ -3500,8 +3751,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "2",
+                    "category": "_Person - Information",
+                    "sortOrder": 2,
                     "templates": [
                         "Person",
                         "Review"
@@ -3519,8 +3770,8 @@
                     ],
                     "type": "option",
                     "inputOptionValues": "Male==m||Female==f||Other==o",
-                    "category": "Person - Information",
-                    "sortOrder": "3",
+                    "category": "_Person - Information",
+                    "sortOrder": 3,
                     "templates": [
                         "Person",
                         "Review"
@@ -3537,8 +3788,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "4",
+                    "category": "_Person - Information",
+                    "sortOrder": 4,
                     "templates": [
                         "Person",
                         "Review"
@@ -3555,8 +3806,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "5",
+                    "category": "_Person - Information",
+                    "sortOrder": 5,
                     "templates": [
                         "Person",
                         "Review"
@@ -3573,8 +3824,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "10",
+                    "category": "_Person - Information",
+                    "sortOrder": 10,
                     "templates": [
                         "Person",
                         "Review"
@@ -3592,7 +3843,7 @@
                         }
                     ],
                     "category": "_Overview - Content",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications"
@@ -3610,7 +3861,7 @@
                         }
                     ],
                     "category": "_Overview - Content",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3629,7 +3880,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "0",
+                    "sortOrder": 0,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications",
@@ -3648,7 +3899,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications",
@@ -3677,7 +3928,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3701,7 +3952,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications",
@@ -3730,7 +3981,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3759,7 +4010,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3788,7 +4039,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3817,7 +4068,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3846,7 +4097,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "6",
+                    "sortOrder": 6,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3873,7 +4124,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3892,7 +4143,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",
@@ -3911,7 +4162,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC",
                         "Publications","ArticleTraditional","ArticleModern","Download",

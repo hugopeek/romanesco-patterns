@@ -13,8 +13,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Presentation",
-                    "sortOrder": "1",
+                    "category": "_Org - Presentation",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_organization"
                     ]
@@ -38,8 +38,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Presentation",
-                    "sortOrder": "2",
+                    "category": "_Org - Presentation",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_organization"
                     ]
@@ -54,8 +54,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "1",
+                    "category": "_Org - Information",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_organization"
                     ]
@@ -71,8 +71,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "5",
+                    "category": "_Org - Information",
+                    "sortOrder": 5,
                     "templates": [
                         "@@templates_organization"
                     ]
@@ -87,8 +87,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "6",
+                    "category": "_Org - Information",
+                    "sortOrder": 6,
                     "templates": [
                         "@@templates_organization"
                     ]
@@ -103,8 +103,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "10",
+                    "category": "_Org - Information",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_organization"
                     ]
@@ -119,8 +119,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Org. - Information",
-                    "sortOrder": "20",
+                    "category": "_Org - Information",
+                    "sortOrder": 20,
                     "templates": [
                         "@@templates_organization"
                     ]
@@ -129,11 +129,11 @@
 
             "categories": [
                 {
-                    "name": "Org. - Information",
+                    "name": "_Org - Information",
                     "parent": "e_info_organization",
                     "rank": 140
                 },{
-                    "name": "Org. - Presentation",
+                    "name": "_Org - Presentation",
                     "parent": "e_info_organization",
                     "rank": 141
                 }

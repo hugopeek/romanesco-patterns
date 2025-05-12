@@ -14,7 +14,7 @@
                         }
                     ],
                     "category": "_Overview - Content",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_basic",
                         "Publications"
@@ -31,7 +31,7 @@
                         }
                     ],
                     "category": "_Overview - Content",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",

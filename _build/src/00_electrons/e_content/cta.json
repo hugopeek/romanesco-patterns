@@ -15,7 +15,7 @@
                         }
                     ],
                     "category": "_CTA - Settings",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "GlobalCTA"
                     ]

@@ -16,7 +16,7 @@
                         }
                     ],
                     "category": "_Background",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "GlobalBackground"
                     ]

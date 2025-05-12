@@ -14,7 +14,7 @@
                         }
                     ],
                     "category": "_Performance",
-                    "sortOrder": "99",
+                    "sortOrder": 99,
                     "templates": [
                         "@@templates_all"
                     ]

@@ -85,7 +85,7 @@ switch ($modx->event->name) {
         $managerContent = str_replace('class="x-tab" title="_', 'class="x-tab" title="', $managerContent);
         // And while we're at it...
         $managerContent = str_replace('class="x-tab" title="Person - ', 'class="x-tab" title="', $managerContent);
-        $managerContent = str_replace('class="x-tab" title="Org. - ', 'class="x-tab" title="', $managerContent);
+        $managerContent = str_replace('class="x-tab" title="Org - ', 'class="x-tab" title="', $managerContent);
 
         $controller->content = $managerContent;
         break;

@@ -20,7 +20,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "30",
+                    "sortOrder": 30,
                     "templates": [
                         "Presentation"
                     ]
@@ -38,7 +38,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "31",
+                    "sortOrder": 31,
                     "templates": [
                         "Presentation"
                     ]
@@ -56,7 +56,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "32",
+                    "sortOrder": 32,
                     "templates": [
                         "Presentation"
                     ]
@@ -74,7 +74,7 @@
                         }
                     ],
                     "category": "_Slider - Settings",
-                    "sortOrder": "33",
+                    "sortOrder": 33,
                     "templates": [
                         "Presentation"
                     ]

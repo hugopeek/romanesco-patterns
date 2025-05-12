@@ -16,7 +16,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation page",
@@ -30,7 +30,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation TTL",
@@ -45,7 +45,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation email type",
@@ -61,7 +61,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation email template",
@@ -76,7 +76,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Activation email",
@@ -90,7 +90,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Username field",
@@ -104,7 +104,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Fullname field",
@@ -118,7 +118,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Password field",
@@ -132,7 +132,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "12",
+                    "sortOrder": 12,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "User groups",
@@ -146,7 +146,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "User groups field",
@@ -160,7 +160,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": ["fbRegister"]
                 },{
                     "caption": "Extended user fields",
@@ -176,7 +176,7 @@
                         }
                     ],
                     "category": "_Registration",
-                    "sortOrder": "30",
+                    "sortOrder": 30,
                     "templates": ["fbRegister"]
                 }
             ]

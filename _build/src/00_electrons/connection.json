@@ -15,7 +15,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -32,7 +32,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_project",
                         "@@templates_review"
@@ -50,7 +50,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -67,7 +67,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": "5"
+                    "sortOrder": 5
                 },{
                     "caption": "Social platforms",
                     "name": "social_connections",

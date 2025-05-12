@@ -1,6 +1,7 @@
 {
     "name": "Romanesco",
     "lowCaseName": "romanesco",
+    "namespace": "Romanesco",
     "description": "Web engineering toolkit, combining atomic design philosophy with MODX templating.",
     "author": "Hugo Peek",
     "version": "1.0.0-beta16",
@@ -9,7 +10,139 @@
         "elements": {
             "categories": [
                 {
-                    "name": "00_electrons"
+                    "name": "00_electrons",
+                    "children": [
+                        {
+                            "name": "e_connection",
+                            "children": [
+                                {"name": "_Connection", "rank": 99}
+                            ]
+                        },{
+                            "name": "e_content",
+                            "children": [
+                                {
+                                    "name": "e_header",
+                                    "children": [
+                                        {"name": "_Header", "rank": 1}
+                                    ]
+                                },{
+                                    "name": "e_sidebar",
+                                    "children": [
+                                        {"name": "_Sidebar", "rank": 31}
+                                    ]
+                                },{
+                                    "name": "e_footer",
+                                    "children": [
+                                        {"name": "_Footer", "rank": 999}
+                                    ]
+                                },{
+                                    "name": "e_contentblocks"
+                                },{
+                                    "name": "e_cta",
+                                    "children": [
+                                        {"name": "_CTA - Settings"}
+                                    ]
+                                },{
+                                    "name": "e_status",
+                                    "children": [
+                                        {"name": "_Status"}
+                                    ]
+                                },{
+                                    "name": "e_purpose",
+                                    "children": [
+                                        {"name": "_Purpose"}
+                                    ]
+                                },{
+                                    "name": "e_timeline",
+                                    "children": [
+                                        {"name": "_Timeline"}
+                                    ]
+                                }
+                            ]
+                        },{
+                            "name": "e_formblocks",
+                            "children": [
+                                {"name": "_Settings - Email", "rank": 1},
+                                {"name": "_Settings - General", "rank": 2},
+                                {"name": "_Settings - Advanced", "rank": 3},
+                                {"name": "_Autoresponder", "rank": 10},
+                                {"name": "_Registration", "rank": 20}
+                            ]
+                        },{
+                            "name": "e_hub",
+                            "children": [
+                                {"name": "_Testing", "rank": 100},
+                                {"name": "_Scenarios", "rank": 200}
+                            ]
+                        },{
+                            "name": "e_information",
+                            "children": [
+                                {
+                                    "name": "e_info_action"
+                                },{
+                                    "name": "e_info_creativework",
+                                    "children": [
+                                        {"name": "_About", "rank": 150},
+                                        {"name": "_Comments", "rank": 151},
+                                        {"name": "_Contributors", "rank": 152}
+                                    ]
+                                },{
+                                    "name": "e_info_event"
+                                },{
+                                    "name": "e_info_intangible",
+                                    "children": [
+                                        {"name": "_Contact", "rank": 100},
+                                        {"name": "_Address", "rank": 101},
+                                        {"name": "_Date", "rank": 102},
+                                        {"name": "_Rating", "rank": 110}
+                                    ]
+                                },{
+                                    "name": "e_info_organization",
+                                    "children": [
+                                        {"name": "_Org - Information", "rank": 140},
+                                        {"name": "_Org - Presentation", "rank": 141}
+                                    ]
+                                },{
+                                    "name": "e_info_person",
+                                    "children": [
+                                        {"name": "_Person - Information", "rank": 130},
+                                        {"name": "_Person - Presentation", "rank": 131}
+                                    ]
+                                },{
+                                    "name": "e_info_place"
+                                },{
+                                    "name": "e_info_product"
+                                }
+                            ]
+                        },{
+                            "name": "e_navigation",
+                            "children": [
+                                {"name": "_Navigation", "rank": 30}
+                            ]
+                        },{
+                            "name": "e_overview",
+                            "children": [
+                                {"name": "_Overview - Image", "rank": 10},
+                                {"name": "_Overview - Icon", "rank": 11},
+                                {"name": "_Overview - Content", "rank": 12}
+                            ]
+                        },{
+                            "name": "e_performance",
+                            "children": [
+                                {"name": "_Performance", "rank": 99}
+                            ]
+                        },{
+                            "name": "e_presentation",
+                            "children": [
+                                {"name": "_Slider - Settings", "rank": 60}
+                            ]
+                        },{
+                            "name": "e_social",
+                            "children": [
+                                {"name": "_Social", "rank": 50}
+                            ]
+                        }
+                    ]
                 },{
                     "name": "01_atoms"
                 },{

@@ -16,7 +16,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponder FROM address",
@@ -30,7 +30,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponder FROM name",
@@ -44,7 +44,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponder REPLY TO address",
@@ -58,7 +58,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "4",
+                    "sortOrder": 4,
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponse subject",
@@ -72,7 +72,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": ["fbForm"]
                 },{
                     "caption": "Autoresponse message",
@@ -86,7 +86,7 @@
                         }
                     ],
                     "category": "_Autoresponder",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": ["fbForm"]
                 }
             ]

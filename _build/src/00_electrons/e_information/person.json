@@ -5,7 +5,7 @@
                 {
                     "caption": "Profile picture",
                     "name": "person_image",
-                    "description": "A headshot of this person.",
+                    "description": "A portrait image of this person.",
                     "type": "imageplus",
                     "inputProperties": {
                         "targetWidth": "300",
@@ -23,8 +23,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Presentation",
-                    "sortOrder": "1",
+                    "category": "_Person - Presentation",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_people",
                         "@@templates_review"
@@ -32,7 +32,7 @@
                 },{
                     "caption": "Informal picture",
                     "name": "person_image_loose",
-                    "description": "A headshot of the same person, but with a loose, personal twist to it. A big smile, or funny expression... This can be used in areas and situations where a little playfulness is allowed.",
+                    "description": "An image of the same person, but with a loose, personal vibe. This can be used in situations where a little more playfulness is suitable.",
                     "type": "imageplus",
                     "inputProperties": {
                         "targetWidth": "300",
@@ -50,8 +50,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Presentation",
-                    "sortOrder": "1",
+                    "category": "_Person - Presentation",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_people"
                     ]
@@ -66,8 +66,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "1",
+                    "category": "_Person - Information",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_people",
                         "@@templates_review"
@@ -83,8 +83,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "2",
+                    "category": "_Person - Information",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_people",
                         "@@templates_review"
@@ -101,8 +101,8 @@
                     ],
                     "type": "option",
                     "inputOptionValues": "Male==m||Female==f||Other==o",
-                    "category": "Person - Information",
-                    "sortOrder": "3",
+                    "category": "_Person - Information",
+                    "sortOrder": 3,
                     "templates": [
                         "@@templates_people",
                         "@@templates_review"
@@ -118,8 +118,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "4",
+                    "category": "_Person - Information",
+                    "sortOrder": 4,
                     "templates": [
                         "@@templates_people",
                         "@@templates_review"
@@ -135,8 +135,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "5",
+                    "category": "_Person - Information",
+                    "sortOrder": 5,
                     "templates": [
                         "@@templates_people",
                         "@@templates_review"
@@ -152,8 +152,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Person - Information",
-                    "sortOrder": "10",
+                    "category": "_Person - Information",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_people",
                         "@@templates_review"
@@ -163,11 +163,11 @@
 
             "categories": [
                 {
-                    "name": "Person - Information",
+                    "name": "_Person - Information",
                     "parent": "e_info_person",
                     "rank": 130
                 },{
-                    "name": "Person - Presentation",
+                    "name": "_Person - Presentation",
                     "parent": "e_info_person",
                     "rank": 131
                 }

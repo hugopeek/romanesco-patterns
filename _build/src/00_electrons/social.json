@@ -14,7 +14,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "1"
+                    "sortOrder": 1
                 },{
                     "caption": "LinkedIn profile",
                     "name": "social_linkedin",
@@ -27,7 +27,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "2"
+                    "sortOrder": 2
                 },{
                     "caption": "Facebook page",
                     "name": "social_facebook",
@@ -40,7 +40,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "3"
+                    "sortOrder": 3
                 },{
                     "caption": "Instagram profile",
                     "name": "social_instagram",
@@ -53,7 +53,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "4"
+                    "sortOrder": 4
                 },{
                     "caption": "Pinterest board",
                     "name": "social_pinterest",
@@ -66,7 +66,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "5"
+                    "sortOrder": 5
                 },{
                     "caption": "Youtube channel",
                     "name": "social_youtube",
@@ -79,7 +79,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "10"
+                    "sortOrder": 10
                 },{
                     "caption": "WhatsApp number",
                     "name": "social_whatsapp",
@@ -92,7 +92,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "11"
+                    "sortOrder": 11
                 },{
                     "caption": "WhatsApp message",
                     "name": "social_whatsapp_text",
@@ -105,7 +105,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "12"
+                    "sortOrder": 12
                 },{
                     "caption": "Github account",
                     "name": "social_github",
@@ -118,7 +118,7 @@
                         }
                     ],
                     "category": "_Social",
-                    "sortOrder": "20"
+                    "sortOrder": 20
                 }
             ],
 

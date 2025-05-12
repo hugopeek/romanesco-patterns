@@ -16,7 +16,7 @@
                         }
                     ],
                     "category": "_Sidebar",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "BasicDetail",
                         "Basic - Detail"
@@ -35,7 +35,7 @@
                         }
                     ],
                     "category": "_Sidebar",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "BasicDetail",
                         "Basic - Detail"
@@ -58,7 +58,7 @@
                         }
                     ],
                     "category": "_Sidebar",
-                    "sortOrder": "99",
+                    "sortOrder": 99,
                     "templates": [
                         "BasicDetail",
                         "Basic - Detail"

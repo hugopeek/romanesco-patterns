@@ -3,19 +3,19 @@
         "elements": {
             "tvs": [
                 {
-                    "caption": "Rating value",
+                    "caption": "Rating",
                     "name": "rating_value",
                     "description": "How did the user value this product or service?",
                     "type": "option",
-                    "inputOptionValues": "Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5",
+                    "inputOptionValues": "@CHUNK tvSelectInputOption@Rating",
                     "properties": [
                         {
                             "name": "elementStatus",
                             "value": "solid"
                         }
                     ],
-                    "category": "Rating",
-                    "sortOrder": "1",
+                    "category": "_Rating",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_review"
                     ]
@@ -30,8 +30,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Contact",
-                    "sortOrder": "1",
+                    "category": "_Contact",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_people"
                     ]
@@ -46,8 +46,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Contact",
-                    "sortOrder": "2",
+                    "category": "_Contact",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_people"
                     ]
@@ -62,8 +62,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Contact",
-                    "sortOrder": "3",
+                    "category": "_Contact",
+                    "sortOrder": 3,
                     "templates": [
                         "@@templates_people"
                     ]
@@ -78,8 +78,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "2",
+                    "category": "_Address",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -94,8 +94,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "3",
+                    "category": "_Address",
+                    "sortOrder": 3,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -110,8 +110,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "4",
+                    "category": "_Address",
+                    "sortOrder": 4,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -126,8 +126,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "10",
+                    "category": "_Address",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -142,8 +142,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "11",
+                    "category": "_Address",
+                    "sortOrder": 11,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -158,8 +158,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Address",
-                    "sortOrder": "12",
+                    "category": "_Address",
+                    "sortOrder": 12,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -174,8 +174,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Date",
-                    "sortOrder": "1",
+                    "category": "_Date",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -190,8 +190,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Date",
-                    "sortOrder": "2",
+                    "category": "_Date",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -206,8 +206,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Date",
-                    "sortOrder": "3",
+                    "category": "_Date",
+                    "sortOrder": 3,
                     "templates": [
                         "@@templates_project"
                     ]
@@ -216,19 +216,19 @@
 
             "categories": [
                 {
-                    "name": "Contact",
+                    "name": "_Contact",
                     "parent": "e_info_intangible",
                     "rank": 100
                 },{
-                    "name": "Address",
+                    "name": "_Address",
                     "parent": "e_info_intangible",
                     "rank": 101
                 },{
-                    "name": "Date",
+                    "name": "_Date",
                     "parent": "e_info_intangible",
                     "rank": 102
                 },{
-                    "name": "Rating",
+                    "name": "_Rating",
                     "parent": "e_info_intangible",
                     "rank": 110
                 }

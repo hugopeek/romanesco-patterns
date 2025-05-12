@@ -14,7 +14,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "0",
+                    "sortOrder": 0,
                     "templates": [
                         "@@templates_basic",
                         "Publications",
@@ -32,7 +32,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_basic",
                         "Publications",
@@ -60,7 +60,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -83,7 +83,7 @@
                         }
                     ],
                     "category": "_Overview - Icon",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_basic",
                         "Publications",

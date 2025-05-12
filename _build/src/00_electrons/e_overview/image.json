@@ -24,7 +24,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -52,7 +52,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -80,7 +80,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -108,7 +108,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -136,7 +136,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "6",
+                    "sortOrder": 6,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -162,7 +162,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -180,7 +180,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",
@@ -198,7 +198,7 @@
                         }
                     ],
                     "category": "_Overview - Image",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": [
                         "@@templates_basic",
                         "@@templates_publication",

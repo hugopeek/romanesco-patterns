@@ -14,7 +14,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "fbForm"
                     ]
@@ -30,7 +30,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "fbForm"
                     ]
@@ -46,7 +46,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "fbForm"
                     ]
@@ -62,7 +62,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "5",
+                    "sortOrder": 5,
                     "templates": [
                         "fbForm"
                     ]
@@ -78,7 +78,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "6",
+                    "sortOrder": 6,
                     "templates": [
                         "fbForm"
                     ]
@@ -94,7 +94,7 @@
                         }
                     ],
                     "category": "_Settings - Email",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -111,7 +111,7 @@
                         }
                     ],
                     "category": "_Settings - General",
-                    "sortOrder": "90",
+                    "sortOrder": 90,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -128,7 +128,7 @@
                         }
                     ],
                     "category": "_Settings - General",
-                    "sortOrder": "91",
+                    "sortOrder": 91,
                     "inputOptionValues": "System default==default||Yes==1||No==0",
                     "defaultValue": "default",
                     "templates": [
@@ -146,7 +146,7 @@
                         }
                     ],
                     "category": "_Settings - General",
-                    "sortOrder": "92",
+                    "sortOrder": 92,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -163,7 +163,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "1",
+                    "sortOrder": 1,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -180,7 +180,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "2",
+                    "sortOrder": 2,
                     "templates": [
                         "fbForm"
                     ]
@@ -196,7 +196,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -213,7 +213,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "3",
+                    "sortOrder": 3,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -230,7 +230,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "10",
+                    "sortOrder": 10,
                     "templates": [
                         "fbForm"
                     ]
@@ -246,7 +246,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "11",
+                    "sortOrder": 11,
                     "templates": [
                         "fbForm",
                         "fbRegister"
@@ -265,7 +265,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "15",
+                    "sortOrder": 15,
                     "templates": [
                         "fbForm"
                     ]
@@ -282,7 +282,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "16",
+                    "sortOrder": 16,
                     "templates": [
                         "fbForm"
                     ]
@@ -300,7 +300,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "17",
+                    "sortOrder": 17,
                     "templates": [
                         "fbForm"
                     ]
@@ -317,7 +317,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "18",
+                    "sortOrder": 18,
                     "templates": [
                         "fbForm"
                     ]
@@ -334,7 +334,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "20",
+                    "sortOrder": 20,
                     "templates": [
                         "fbForm"
                     ]
@@ -351,7 +351,7 @@
                         }
                     ],
                     "category": "_Settings - Advanced",
-                    "sortOrder": "21",
+                    "sortOrder": 21,
                     "templates": [
                         "fbForm"
                     ]

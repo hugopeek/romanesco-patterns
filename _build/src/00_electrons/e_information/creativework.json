@@ -15,8 +15,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "About",
-                    "sortOrder": "1",
+                    "category": "_About",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_publication"
                     ]
@@ -33,8 +33,8 @@
                             "value": "solid"
                         }
                     ],
-                    "category": "Comments",
-                    "sortOrder": "1",
+                    "category": "_Comments",
+                    "sortOrder": 1,
                     "templates": [
                         "@@templates_publication"
                     ]
@@ -43,15 +43,15 @@
 
             "categories": [
                 {
-                    "name": "About",
+                    "name": "_About",
                     "parent": "e_info_creativework",
                     "rank": 150
                 },{
-                    "name": "Comments",
+                    "name": "_Comments",
                     "parent": "e_info_creativework",
                     "rank": 151
                 },{
-                    "name": "Participants",
+                    "name": "_Contributors",
                     "parent": "e_info_creativework",
                     "rank": 152
                 }
