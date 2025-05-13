@@ -130,6 +130,11 @@ foreach ($data['tvs'] as &$tv) {
     }
 }
 
+// Change paths to docs
+$data['build']['readme'] = 'core/components/romanesco/' . $data['build']['readme'];
+$data['build']['license'] = 'core/components/romanesco/' . $data['build']['license'];
+$data['build']['changelog'] = 'core/components/romanesco/' . $data['build']['changelog'];
+
 // Convert the PHP array to YAML
 $yaml = Yaml::dump($data, 8, 2, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK);
 $yaml = preg_replace('/-\s+name:/', '- name:', $yaml);
