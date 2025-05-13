@@ -14229,13 +14229,14 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "solid"
+                            "value": "review"
                         }
                     ],
                     "category": "c_content",
                     "events": [
                         "OnDocFormSave"
-                    ]
+                    ],
+                    "disabled": true
                 },
                 {
                     "name": "fbLexiconMgr",
