@@ -84,9 +84,13 @@ unset($data['resources']);
 $data = array_merge($data, $elementsData);
 $data['systemSettings'] = $settingsData;
 
-// Remove parent references from categories
-foreach ($data['categories'] as &$category) {
-    unset($category['parent']);
+// Remove 2.x categories with parent references
+$i = 0;
+foreach ($data['categories'] as $category) {
+    if (array_key_exists('parent', $category)) {
+        unset($data['categories'][$i]);
+    }
+    $i++;
 }
 
 // Adjust TV properties to new format
