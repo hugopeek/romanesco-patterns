@@ -144,17 +144,237 @@
                         }
                     ]
                 },{
-                    "name": "01_atoms"
+                    "name": "01_atoms",
+                    "children": [
+                        {
+                            "name": "a_button",
+                            "children": [
+                                {"name": "a_btn_social"}
+                            ]
+                        },{
+                            "name": "a_content",
+                            "children": [
+                                {"name": "a_cont_type"},
+                                {"name": "a_cont_heading"},
+                                {"name": "a_cont_icon"},
+                                {"name": "a_cont_image"},
+                                {"name": "a_cont_layout"},
+                                {"name": "a_cont_text"},
+                                {"name": "a_cont_video"}
+                            ]
+                        },{
+                            "name": "a_contentblocks",
+                            "children": [
+                                {"name": "a_cb_layout"},
+                                {"name": "a_cb_field"},
+                                {"name": "a_cb_setting"},
+                                {"name": "a_cb_select"},
+                                {"name": "a_cb_overview"},
+                                {"name": "a_cb_formblocks"}
+                            ]
+                        },{
+                            "name": "a_data",
+                            "children": [
+                                {"name": "a_dat_placeholder"},
+                                {"name": "a_dat_row"},
+                                {"name": "a_dat_type"}
+                            ]
+                        },{
+                            "name": "a_formblocks",
+                            "children": [
+                                {"name": "a_fb_select"}
+                            ]
+                        },{
+                            "name": "a_global",
+                            "children": [
+                                {"name": "a_glob_background"}
+                            ]
+                        },{
+                            "name": "a_hub"
+                        },{
+                            "name": "a_image",
+                            "children": [
+                                {"name": "a_img_overview"},
+                                {"name": "a_img_responsive"}
+                            ]
+                        },{
+                            "name": "a_information"
+                        },{
+                            "name": "a_navigation",
+                            "children": [
+                                {"name": "a_nav_primary"},
+                                {"name": "a_nav_breadcrumbs"},
+                                {"name": "a_nav_pagination"},
+                                {"name": "a_nav_neighbors"},
+                                {"name": "a_nav_tabs"},
+                                {"name": "a_nav_steps"},
+                                {"name": "a_nav_toc"},
+                                {"name": "a_nav_external"}
+                            ]
+                        },{
+                            "name": "a_presentation",
+                            "children": [
+                                {"name": "a_pres_table"}
+                            ]
+                        },{
+                            "name": "a_search"
+                        },{
+                            "name": "a_select"
+                        },{
+                            "name": "a_tag"
+                        }
+                    ]
                 },{
-                    "name": "02_molecules"
+                    "name": "02_molecules",
+                    "children": [
+                        {
+                            "name": "m_button"
+                        },{
+                            "name": "m_content",
+                            "children": [
+                                {"name": "m_cont_type"},
+                                {"name": "m_cont_heading"},
+                                {"name": "m_cont_image"}
+                            ]
+                        },{
+                            "name": "m_cta"
+                        },{
+                            "name": "m_data"
+                        },{
+                            "name": "m_feedback"
+                        },{
+                            "name": "m_formblocks",
+                            "children": [
+                                {"name": "m_fb_input"},
+                                {"name": "m_fb_email"},
+                                {"name": "m_fb_validation"},
+                                {"name": "m_fb_store"},
+                                {"name": "m_fb_antispam"},
+                                {"name": "m_fb_ajax"}
+                            ]
+                        },{
+                            "name": "m_global"
+                        },{
+                            "name": "m_hub",
+                            "children": [
+                                {"name": "m_hub_testing"}
+                            ]
+                        },{
+                            "name": "m_information"
+                        },{
+                            "name": "m_layout"
+                        },{
+                            "name": "m_navigation",
+                            "children": [
+                                {"name": "m_nav_primary"},
+                                {"name": "m_nav_breadcrumbs"},
+                                {"name": "m_nav_pagination"},
+                                {"name": "m_nav_neighbors"},
+                                {"name": "m_nav_tabs"},
+                                {"name": "m_nav_steps"},
+                                {"name": "m_nav_toc"},
+                                {"name": "m_nav_external"}
+                            ]
+                        },{
+                            "name": "m_overview",
+                            "children": [
+                                {"name": "m_ov_row"},
+                                {"name": "m_ov_wrapper"},
+                                {"name": "m_ov_basic"},
+                                {"name": "m_ov_image"},
+                                {"name": "m_ov_icon"},
+                                {"name": "m_ov_article"},
+                                {"name": "m_ov_person"},
+                                {"name": "m_ov_organization"},
+                                {"name": "m_ov_review"},
+                                {"name": "m_ov_project"},
+                                {"name": "m_ov_settings"},
+                                {"name": "m_ov_filter"}
+                            ]
+                        },{
+                            "name": "m_presentation",
+                            "children": [
+                                {"name": "m_pres_hero"},
+                                {"name": "m_pres_card"},
+                                {"name": "m_pres_gallery"},
+                                {"name": "m_pres_slider"},
+                                {"name": "m_pres_table"}
+                            ]
+                        },{
+                            "name": "m_publication"
+                        },{
+                            "name": "m_search"
+                        },{
+                            "name": "m_social"
+                        },{
+                            "name": "m_user"
+                        }
+                    ]
                 },{
-                    "name": "03_organisms"
+                    "name": "03_organisms",
+                    "children": [
+                        {"name": "o_formblocks"},
+                        {"name": "o_global"},
+                        {"name": "o_header"},
+                        {"name": "o_hub"},
+                        {"name": "o_information"},
+                        {"name": "o_layout"},
+                        {"name": "o_map"},
+                        {"name": "o_overview"},
+                        {"name": "o_presentation"},
+                        {"name": "o_search"},
+                        {"name": "o_social"},
+                        {"name": "o_toolbar"}
+                    ]
                 },{
-                    "name": "04_templates"
+                    "name": "04_templates",
+                    "children": [
+                        {"name": "t_basic"},
+                        {"name": "t_global"},
+                        {"name": "t_hub"},
+                        {"name": "t_notes"},
+                        {"name": "t_people"},
+                        {"name": "t_presentation"},
+                        {"name": "t_publication"},
+                        {"name": "t_disabled"}
+                    ]
                 },{
-                    "name": "06_formulas"
+                    "name": "06_formulas",
+                    "children": [
+                        {"name": "f_basic"},
+                        {"name": "f_content"},
+                        {"name": "f_contentblocks"},
+                        {
+                            "name": "f_data",
+                            "children": [
+                                {"name": "f_dat_migx"}
+                            ]
+                        },
+                        {
+                            "name": "f_formblocks",
+                            "children": [
+                                {"name": "f_fb_modifier"},
+                                {"name": "f_fb_hook"}
+                            ]
+                        },
+                        {"name": "f_framework"},
+                        {"name": "f_hub"},
+                        {"name": "f_json"},
+                        {"name": "f_modifier"},
+                        {"name": "f_performance"},
+                        {"name": "f_presentation"},
+                        {"name": "f_resource"},
+                        {"name": "f_user"}
+                    ]
                 },{
-                    "name": "07_computations"
+                    "name": "07_computations",
+                    "children": [
+                        {"name": "c_configuration"},
+                        {"name": "c_content"},
+                        {"name": "c_formblocks"},
+                        {"name": "c_global"},
+                        {"name": "c_performance"}
+                    ]
                 }
             ]
         }
