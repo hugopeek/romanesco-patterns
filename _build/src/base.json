@@ -69,6 +69,11 @@
                                 {"name": "_Registration", "rank": 20}
                             ]
                         },{
+                            "name": "e_global",
+                            "children": [
+                                {"name": "_Background"}
+                            ]
+                        },{
                             "name": "e_hub",
                             "children": [
                                 {"name": "_Testing", "rank": 100},
@@ -219,7 +224,10 @@
                         },{
                             "name": "a_search"
                         },{
-                            "name": "a_select"
+                            "name": "a_select",
+                            "children": [
+                                {"name": "a_sel_row"}
+                            ]
                         },{
                             "name": "a_tag"
                         }

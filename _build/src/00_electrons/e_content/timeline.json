@@ -19,7 +19,7 @@
                     "category": "_Timeline",
                     "sortOrder": 1,
                     "templates": [
-                        "ProjectDashboard"
+                        "Dashboard"
                     ]
                 }
             ]

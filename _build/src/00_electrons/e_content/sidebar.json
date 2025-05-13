@@ -18,8 +18,7 @@
                     "category": "_Sidebar",
                     "sortOrder": 1,
                     "templates": [
-                        "BasicDetail",
-                        "Basic - Detail"
+                        "BasicDetail"
                     ]
                 },{
                     "caption": "Call to action (CTA)",
@@ -37,8 +36,7 @@
                     "category": "_Sidebar",
                     "sortOrder": 20,
                     "templates": [
-                        "BasicDetail",
-                        "Basic - Detail"
+                        "BasicDetail"
                     ]
                 },{
                     "caption": "Inheritance",
@@ -60,8 +58,7 @@
                     "category": "_Sidebar",
                     "sortOrder": 99,
                     "templates": [
-                        "BasicDetail",
-                        "Basic - Detail"
+                        "BasicDetail"
                     ]
                 }
             ]

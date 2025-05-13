@@ -113,6 +113,14 @@
                             ]
                         },
                         {
+                            "name": "e_global",
+                            "children": [
+                                {
+                                    "name": "_Background"
+                                }
+                            ]
+                        },
+                        {
                             "name": "e_hub",
                             "children": [
                                 {
@@ -409,7 +417,12 @@
                             "name": "a_search"
                         },
                         {
-                            "name": "a_select"
+                            "name": "a_select",
+                            "children": [
+                                {
+                                    "name": "a_sel_row"
+                                }
+                            ]
                         },
                         {
                             "name": "a_tag"
@@ -1130,6 +1143,10 @@
                     "parent": "01_atoms"
                 },
                 {
+                    "name": "a_sel_row",
+                    "parent": "a_select"
+                },
+                {
                     "name": "a_tag",
                     "parent": "01_atoms"
                 },
@@ -1559,10 +1576,6 @@
                     "name": "_Person - Presentation",
                     "parent": "e_info_person",
                     "rank": 131
-                },
-                {
-                    "name": "a_sel_row",
-                    "parent": "a_select"
                 }
             ],
             "tvs": [
@@ -2099,7 +2112,7 @@
                 {
                     "caption": "Availability",
                     "name": "background_availability",
-                    "description": "Where would you like to use this background?",
+                    "description": "Where would you like to be able to use this background?",
                     "type": "checkbox",
                     "inputOptionValues": "In page headers==header||In ContentBlocks layouts==content||In footer CTAs==footer-cta||In page footers==footer",
                     "defaultValue": "header||content||footer-cta||footer",
@@ -2808,7 +2821,7 @@
                     "name": "cta_availability",
                     "description": "Where would you like to be able to place this CTA?",
                     "type": "checkbox",
-                    "inputOptionValues": "In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer",
+                    "inputOptionValues": "Header==header||Sidebar (on detail pages)==sidebar||Content (with ContentBlocks)==content||Footer==footer",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -3244,8 +3257,7 @@
                     "category": "_Sidebar",
                     "sortOrder": 1,
                     "templates": [
-                        "BasicDetail",
-                        "Basic - Detail"
+                        "BasicDetail"
                     ]
                 },
                 {
@@ -3264,8 +3276,7 @@
                     "category": "_Sidebar",
                     "sortOrder": 20,
                     "templates": [
-                        "BasicDetail",
-                        "Basic - Detail"
+                        "BasicDetail"
                     ]
                 },
                 {
@@ -3288,8 +3299,7 @@
                     "category": "_Sidebar",
                     "sortOrder": 99,
                     "templates": [
-                        "BasicDetail",
-                        "Basic - Detail"
+                        "BasicDetail"
                     ]
                 },
                 {
@@ -3412,7 +3422,7 @@
                     "category": "_Timeline",
                     "sortOrder": 1,
                     "templates": [
-                        "ProjectDashboard"
+                        "Dashboard"
                     ]
                 },
                 {

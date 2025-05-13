@@ -93,29 +93,7 @@ foreach ($data['categories'] as $category) {
     $i++;
 }
 
-// Adjust TV properties to new format
-foreach ($data['tvs'] as &$tv) {
-    if (array_key_exists('inputProperties', $tv)) {
-        $tv['inputOptions']['inputProperties'] = $tv['inputProperties'];
-        unset($tv['inputProperties']);
-    }
-    if (array_key_exists('outputProperties', $tv)) {
-        $tv['outputOptions']['outputProperties'] = $tv['outputProperties'];
-        unset($tv['outputProperties']);
-    }
-    if (array_key_exists('display', $tv)) {
-        $tv['outputType'] = $tv['display'];
-        unset($tv['display']);
-    }
-    // Move templates to end of array
-    if (array_key_exists('templates', $tv)) {
-        $templateList = $tv['templates'];
-        unset($tv['templates']);
-        $tv['templates'] = $templateList;
-    }
-}
-
-// Change array keys in plugin events
+// Change renamed array keys
 function changeKeyRecursive(array $array, $oldKey, $newKey): array
 {
     foreach ($array as $key => $value) {
@@ -129,14 +107,32 @@ function changeKeyRecursive(array $array, $oldKey, $newKey): array
     }
     return $array;
 }
+$data['tvs'] = changeKeyRecursive($data['tvs'], 'inputProperties', 'inputOptions');
+$data['tvs'] = changeKeyRecursive($data['tvs'], 'outputProperties', 'outputOptions');
+$data['tvs'] = changeKeyRecursive($data['tvs'], 'display', 'outputType');
 $data['plugins'] = changeKeyRecursive($data['plugins'], 'event', 'name');
 $data['plugins'] = changeKeyRecursive($data['plugins'], 'priority', 'flip');
 $data['plugins'] = changeKeyRecursive($data['plugins'], 'flip', 'priority');
 
+// Rearrange TV properties
+foreach ($data['tvs'] as &$tv) {
+    // Move name to start of array
+    if (array_key_exists('name', $tv)) {
+        $name = ['name' => $tv['name']];
+        unset($tv['name']);
+        $tv = $name + $tv;
+    }
+    // Move templates to end of array
+    if (array_key_exists('templates', $tv)) {
+        $templateList = $tv['templates'];
+        unset($tv['templates']);
+        $tv['templates'] = $templateList;
+    }
+}
+
 // Convert the PHP array to YAML
 $yaml = Yaml::dump($data, 8, 2, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK);
 $yaml = preg_replace('/-\s+name:/', '- name:', $yaml);
-$yaml = preg_replace('/-\s+caption:/', '- caption:', $yaml);
 $yaml = preg_replace('/-\s+key:/', '- key:', $yaml);
 
 // Compare altered Yaml with original array

@@ -51,6 +51,9 @@ categories:
             rank: 10
           - name: _Registration
             rank: 20
+      - name: e_global
+        children:
+          - name: _Background
       - name: e_hub
         children:
           - name: _Testing
@@ -160,6 +163,8 @@ categories:
           - name: a_pres_table
       - name: a_search
       - name: a_select
+        children:
+          - name: a_sel_row
       - name: a_tag
   - name: 02_molecules
     children:
@@ -273,8 +278,8 @@ categories:
       - name: c_global
       - name: c_performance
 tvs:
-  - caption: Person
-    name: person_id
+  - name: person_id
+    caption: Person
     description: 'Connect a person to this item. This list is populated with all the persons that are listed on your Team page.'
     type: listbox
     inputOptionValues: '@CHUNK tvSelectTeam'
@@ -285,8 +290,8 @@ tvs:
     sortOrder: 1
     templates:
       - Project
-  - caption: Organization
-    name: organization_id
+  - name: organization_id
+    caption: Organization
     description: 'Connect the related organization(s). If this list is empty, you need to create an Organizations container first and register its ID under System Settings.'
     type: listbox-multiple
     inputOptionValues: '@CHUNK tvSelectClient'
@@ -298,8 +303,8 @@ tvs:
     templates:
       - Project
       - Review
-  - caption: Contributors
-    name: contributors_id
+  - name: contributors_id
+    caption: Contributors
     description: 'Team members that worked on this item. You can only select persons listed on your Team page, so if you want to add external contributors: add them to the team page first (can be unpublished).'
     type: listbox-multiple
     inputOptionValues: '@CHUNK tvSelectTeam'
@@ -310,8 +315,8 @@ tvs:
     sortOrder: 3
     templates:
       - Project
-  - caption: 'MODX user'
-    name: user_id
+  - name: user_id
+    caption: 'MODX user'
     description: 'Connect a MODX user to this item. Only active users will be shown.'
     type: listbox
     inputOptionValues: "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )"
@@ -320,8 +325,8 @@ tvs:
         value: solid
     category: _Connection
     sortOrder: 5
-  - caption: 'Social platforms'
-    name: social_connections
+  - name: social_connections
+    caption: 'Social platforms'
     description: 'Maintain a list of social media platforms through which visitors can connect with you.'
     type: migxdb
     properties:
@@ -330,12 +335,11 @@ tvs:
     category: _Connection
     sortOrder: 0
     inputOptions:
-      inputProperties:
-        configs: 'social_connect_resource:romanescobackyard'
+      configs: 'social_connect_resource:romanescobackyard'
     templates:
       - Person
-  - caption: 'Related content'
-    name: links_related
+  - name: links_related
+    caption: 'Related content'
     description: 'This will also create a relation on the linked page. You can (and should!) link to other pages in your content whenever relevant, but this makes it easier to generate lists of related pages.'
     type: migxdb
     properties:
@@ -344,8 +348,7 @@ tvs:
     category: _Connection
     sortOrder: 10
     inputOptions:
-      inputProperties:
-        configs: 'content_related_src:romanescobackyard'
+      configs: 'content_related_src:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -365,8 +368,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'External links'
-    name: external_links
+  - name: external_links
+    caption: 'External links'
     description: 'Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.'
     type: migxdb
     properties:
@@ -375,8 +378,7 @@ tvs:
     category: _Connection
     sortOrder: 20
     inputOptions:
-      inputProperties:
-        configs: 'external_links:romanescobackyard'
+      configs: 'external_links:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -396,8 +398,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Attachments
-    name: links_attachment
+  - name: links_attachment
+    caption: Attachments
     description: "Connect any available static resource(s) to this page. Presently, this is not being shown in any template, so it's up to you to implement it as you see fit."
     type: superboxselect
     properties:
@@ -406,14 +408,13 @@ tvs:
     category: _Connection
     sortOrder: 30
     inputOptions:
-      inputProperties:
-        selectType: resources
-        allowBlank: '1'
-        stackItems: 'true'
-        depth: '10'
-        limitRelatedContext: 'false'
-        where: '[{"class_key:LIKE":"modStaticResource"},{"content_type:NOT IN":[1,4,5,9,10,11]},{"context_key:NOT IN":["hub","global"]}]'
-        pageSize: '20'
+      selectType: resources
+      allowBlank: '1'
+      stackItems: 'true'
+      depth: '10'
+      limitRelatedContext: 'false'
+      where: '[{"class_key:LIKE":"modStaticResource"},{"content_type:NOT IN":[1,4,5,9,10,11]},{"context_key:NOT IN":["hub","global"]}]'
+      pageSize: '20'
     templates:
       - Home
       - BasicOverview
@@ -433,8 +434,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Email address recipient'
-    name: fb_email_to
+  - name: fb_email_to
+    caption: 'Email address recipient'
     description: 'Submitted forms will be sent to this address. If you leave this field empty, no emails will be sent. This may be what you want when using a custom hook for processing the form.'
     type: email
     properties:
@@ -444,8 +445,8 @@ tvs:
     sortOrder: 1
     templates:
       - fbForm
-  - caption: 'Email CC address'
-    name: fb_email_cc
+  - name: fb_email_cc
+    caption: 'Email CC address'
     description: Optional.
     type: email
     properties:
@@ -455,8 +456,8 @@ tvs:
     sortOrder: 2
     templates:
       - fbForm
-  - caption: 'Email BCC address'
-    name: fb_email_bcc
+  - name: fb_email_bcc
+    caption: 'Email BCC address'
     description: Optional.
     type: email
     properties:
@@ -466,8 +467,8 @@ tvs:
     sortOrder: 3
     templates:
       - fbForm
-  - caption: 'Email FROM address'
-    name: fb_email_from
+  - name: fb_email_from
+    caption: 'Email FROM address'
     description: 'Optional. Defaults to emailsender system setting.'
     type: email
     properties:
@@ -477,8 +478,8 @@ tvs:
     sortOrder: 5
     templates:
       - fbForm
-  - caption: 'Email FROM name'
-    name: fb_email_from_name
+  - name: fb_email_from_name
+    caption: 'Email FROM name'
     description: 'Optional. Defaults to site_name system setting.'
     type: text
     properties:
@@ -488,8 +489,8 @@ tvs:
     sortOrder: 6
     templates:
       - fbForm
-  - caption: 'Email subject'
-    name: fb_email_subject
+  - name: fb_email_subject
+    caption: 'Email subject'
     description: ''
     type: text
     properties:
@@ -500,8 +501,8 @@ tvs:
     templates:
       - fbForm
       - fbRegister
-  - caption: 'Submit button text'
-    name: fb_submit_button
+  - name: fb_submit_button
+    caption: 'Submit button text'
     description: 'Defaults to Send.'
     type: text
     properties:
@@ -512,8 +513,8 @@ tvs:
     templates:
       - fbForm
       - fbRegister
-  - caption: 'Save form data'
-    name: fb_save_form
+  - name: fb_save_form
+    caption: 'Save form data'
     description: 'Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.'
     type: listbox
     properties:
@@ -525,8 +526,8 @@ tvs:
     defaultValue: default
     templates:
       - fbForm
-  - caption: 'Redirect page'
-    name: fb_redirect_id
+  - name: fb_redirect_id
+    caption: 'Redirect page'
     description: 'Enter the ID of the page, or drag the page from the menu tree to this input field.'
     type: number
     properties:
@@ -537,8 +538,8 @@ tvs:
     templates:
       - fbForm
       - fbRegister
-  - caption: Pre-hook(s)
-    name: fb_prehooks
+  - name: fb_prehooks
+    caption: Pre-hook(s)
     description: 'A snippet name (or comma separated list of names). They are run before the form is initialised. Useful for prefilling form fields with existing data.'
     type: text
     properties:
@@ -549,8 +550,8 @@ tvs:
     templates:
       - fbForm
       - fbRegister
-  - caption: 'Render hook(s)'
-    name: fb_renderhooks
+  - name: fb_renderhooks
+    caption: 'Render hook(s)'
     description: 'A snippet name (or comma separated list of names) to execute. They are run when the form loads and all pre-hooks are finished. Useful for fetching session data.'
     type: text
     properties:
@@ -560,8 +561,8 @@ tvs:
     sortOrder: 2
     templates:
       - fbForm
-  - caption: Hook(s)
-    name: fb_hooks
+  - name: fb_hooks
+    caption: Hook(s)
     description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is submitted, but before any emails are sent (or user is created). Useful for additional validation.'
     type: text
     properties:
@@ -572,8 +573,8 @@ tvs:
     templates:
       - fbForm
       - fbRegister
-  - caption: Post-hook(s)
-    name: fb_posthooks
+  - name: fb_posthooks
+    caption: Post-hook(s)
     description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is fully submitted and all emails are sent. Useful for writing submitted values to the database.'
     type: text
     properties:
@@ -584,8 +585,8 @@ tvs:
     templates:
       - fbForm
       - fbRegister
-  - caption: 'Dynamic recipient address'
-    name: fb_email_to_dynamic
+  - name: fb_email_to_dynamic
+    caption: 'Dynamic recipient address'
     description: 'Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!'
     type: textarea
     properties:
@@ -595,8 +596,8 @@ tvs:
     sortOrder: 10
     templates:
       - fbForm
-  - caption: 'Dynamic redirect page'
-    name: fb_redirect_dynamic
+  - name: fb_redirect_dynamic
+    caption: 'Dynamic redirect page'
     description: 'Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.'
     type: text
     properties:
@@ -607,8 +608,8 @@ tvs:
     templates:
       - fbForm
       - fbRegister
-  - caption: 'Store submitted data temporarily'
-    name: fb_store_data
+  - name: fb_store_data
+    caption: 'Store submitted data temporarily'
     description: 'Store data in session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.'
     type: option
     inputOptionValues: No==0||Yes==1
@@ -620,8 +621,8 @@ tvs:
     sortOrder: 15
     templates:
       - fbForm
-  - caption: 'Temporary storage timeout'
-    name: fb_store_time
+  - name: fb_store_time
+    caption: 'Temporary storage timeout'
     description: "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes."
     type: number
     defaultValue: '300'
@@ -632,8 +633,8 @@ tvs:
     sortOrder: 16
     templates:
       - fbForm
-  - caption: 'Store submitted attachments'
-    name: fb_store_attachments
+  - name: fb_store_attachments
+    caption: 'Store submitted attachments'
     description: 'Store uploads in designated folder. Make sure this folder is NOT web accessible (unless that is your aim). You may also need to monitor it somehow to comply with GDPR retention policies.'
     type: option
     inputOptionValues: 'On==1||Off==0||System default==default'
@@ -645,8 +646,8 @@ tvs:
     sortOrder: 17
     templates:
       - fbForm
-  - caption: 'Attachment path'
-    name: fb_attachment_path
+  - name: fb_attachment_path
+    caption: 'Attachment path'
     description: 'Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.'
     type: text
     defaultValue: '../uploads/_forms/[[*id]]'
@@ -657,8 +658,8 @@ tvs:
     sortOrder: 18
     templates:
       - fbForm
-  - caption: 'Email template'
-    name: fb_email_template
+  - name: fb_email_template
+    caption: 'Email template'
     description: 'Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.'
     type: text
     defaultValue: fbEmail
@@ -669,8 +670,8 @@ tvs:
     sortOrder: 20
     templates:
       - fbForm
-  - caption: 'Email template row prefix'
-    name: fb_email_tpl_prefix
+  - name: fb_email_tpl_prefix
+    caption: 'Email template row prefix'
     description: 'Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.'
     type: text
     defaultValue: fbEmailRow_
@@ -681,9 +682,9 @@ tvs:
     sortOrder: 21
     templates:
       - fbForm
-  - caption: Availability
-    name: background_availability
-    description: 'Where would you like to use this background?'
+  - name: background_availability
+    caption: Availability
+    description: 'Where would you like to be able to use this background?'
     type: checkbox
     inputOptionValues: 'In page headers==header||In ContentBlocks layouts==content||In footer CTAs==footer-cta||In page footers==footer'
     defaultValue: header||content||footer-cta||footer
@@ -694,8 +695,8 @@ tvs:
     sortOrder: 10
     templates:
       - GlobalBackground
-  - caption: Viewports
-    name: backstop_viewports
+  - name: backstop_viewports
+    caption: Viewports
     description: 'JSON array of screen size objects to test against.'
     type: ace
     properties:
@@ -705,8 +706,8 @@ tvs:
     sortOrder: 1
     templates:
       - RegressionTest
-  - caption: Engine
-    name: backstop_engine
+  - name: backstop_engine
+    caption: Engine
     description: 'Choose which rendering engine to use. Puppeteer renders pages in headless Chrome, whereas Playwright also has the option to use Firefox or Webkit. See setting below.'
     type: listbox
     inputOptionValues: Puppeteer==puppeteer||Playwright==playwright
@@ -718,8 +719,8 @@ tvs:
     sortOrder: 10
     templates:
       - RegressionTest
-  - caption: Browser
-    name: backstop_engine_browser
+  - name: backstop_engine_browser
+    caption: Browser
     description: 'Changing this only applies if engine is Playwright.'
     type: listbox
     inputOptionValues: 'Chromium (Chrome, Edge, Brave)==chromium||Firefox||WebKit (Safari/iOS)'
@@ -731,8 +732,8 @@ tvs:
     sortOrder: 11
     templates:
       - RegressionTest
-  - caption: Report
-    name: backstop_report
+  - name: backstop_report
+    caption: Report
     description: 'Choose in what format to return the test results.'
     type: checkbox
     inputOptionValues: 'HTML (opens in browser)=="browser"||JSON=="json"||JUnit (for CI)=="CI"'
@@ -743,12 +744,11 @@ tvs:
     category: _Testing
     sortOrder: 20
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     templates:
       - RegressionTest
-  - caption: 'Async capture limit'
-    name: backstop_async_capture_limit
+  - name: backstop_async_capture_limit
+    caption: 'Async capture limit'
     description: 'The maximum number of capturing screens to run in parallel. This value can be adjusted as needed to increase/decrease the amount of RAM required during a test.'
     type: number
     defaultValue: '3'
@@ -759,8 +759,8 @@ tvs:
     sortOrder: 30
     templates:
       - RegressionTest
-  - caption: 'Async compare limit'
-    name: backstop_async_compare_limit
+  - name: backstop_async_compare_limit
+    caption: 'Async compare limit'
     description: 'The maximum number of compare screens to run in parallel. This value can be adjusted as needed to increase/decrease the amount of RAM required during a test.'
     type: number
     defaultValue: '30'
@@ -771,8 +771,8 @@ tvs:
     sortOrder: 31
     templates:
       - RegressionTest
-  - caption: 'Scenario template'
-    name: backstop_scenario_tpl
+  - name: backstop_scenario_tpl
+    caption: 'Scenario template'
     description: 'Chunk containing the JSON config used for each scenario.'
     type: text
     defaultValue: backstopScenarioRow
@@ -783,8 +783,8 @@ tvs:
     sortOrder: 1
     templates:
       - RegressionTest
-  - caption: 'Reference URL'
-    name: backstop_reference_url
+  - name: backstop_reference_url
+    caption: 'Reference URL'
     description: 'Full site URL of the domain to compare with (the live domain for example). If you leave this empty, each page will be tested against an older version of itself.'
     type: text
     properties:
@@ -794,8 +794,8 @@ tvs:
     sortOrder: 5
     templates:
       - RegressionTest
-  - caption: Delay
-    name: backstop_delay
+  - name: backstop_delay
+    caption: Delay
     description: 'Wait for x milliseconds before starting the test. This gives pages a little breathing space to adjust after page load (things like fonts, DOM manipulation, etc).'
     type: number
     defaultValue: '2000'
@@ -806,8 +806,8 @@ tvs:
     sortOrder: 10
     templates:
       - RegressionTest
-  - caption: Selectors
-    name: backstop_selectors
+  - name: backstop_selectors
+    caption: Selectors
     description: 'JSON array of CSS specific selectors to capture. Defaults to the entire document if omitted. Use "viewport" to capture the viewport size.'
     type: ace
     defaultValue: '[]'
@@ -818,8 +818,8 @@ tvs:
     sortOrder: 20
     templates:
       - RegressionTest
-  - caption: 'Selector expansion'
-    name: backstop_selector_expansion
+  - name: backstop_selector_expansion
+    caption: 'Selector expansion'
     description: 'Enable if you want BackstopJS to find and take screenshots of all matching selectors.'
     type: listbox
     inputOptionValues: On==true||Off==false
@@ -831,8 +831,8 @@ tvs:
     sortOrder: 21
     templates:
       - RegressionTest
-  - caption: 'Selector expect'
-    name: backstop_selector_expect
+  - name: backstop_selector_expect
+    caption: 'Selector expect'
     description: 'Explicitly set the number of results that you expect to find with the selectors. If set to a value greater than 0, the test will fail if the number of results does not match this value.'
     type: number
     defaultValue: '0'
@@ -843,8 +843,8 @@ tvs:
     sortOrder: 22
     templates:
       - RegressionTest
-  - caption: 'Hide selectors'
-    name: backstop_hide_selectors
+  - name: backstop_hide_selectors
+    caption: 'Hide selectors'
     description: 'JSON array of CSS selectors. These selectors are hidden from our analysis but retained in the original layout flow.'
     type: ace
     defaultValue: '[]'
@@ -855,8 +855,8 @@ tvs:
     sortOrder: 30
     templates:
       - RegressionTest
-  - caption: 'Remove selectors'
-    name: backstop_remove_selectors
+  - name: backstop_remove_selectors
+    caption: 'Remove selectors'
     description: 'JSON array of CSS selectors. These selectors are removed from the DOM before screenshots are taken.'
     type: ace
     defaultValue: '[]'
@@ -867,8 +867,8 @@ tvs:
     sortOrder: 31
     templates:
       - RegressionTest
-  - caption: 'Hover selectors'
-    name: backstop_hover_selectors
+  - name: backstop_hover_selectors
+    caption: 'Hover selectors'
     description: 'JSON array of CSS selectors. Simulates multiple sequential hover interactions.'
     type: ace
     defaultValue: '[]'
@@ -879,8 +879,8 @@ tvs:
     sortOrder: 35
     templates:
       - RegressionTest
-  - caption: 'Click selectors'
-    name: backstop_click_selectors
+  - name: backstop_click_selectors
+    caption: 'Click selectors'
     description: 'JSON array of CSS selectors. Simulates multiple sequential click interactions.'
     type: ace
     defaultValue: '[]'
@@ -891,8 +891,8 @@ tvs:
     sortOrder: 36
     templates:
       - RegressionTest
-  - caption: 'Key press selectors'
-    name: backstop_keypress_selectors
+  - name: backstop_keypress_selectors
+    caption: 'Key press selectors'
     description: 'JSON array of selector and string values. Simulates multiple sequential keypress interactions.'
     type: ace
     defaultValue: '[]'
@@ -903,8 +903,8 @@ tvs:
     sortOrder: 40
     templates:
       - RegressionTest
-  - caption: 'Post interaction wait'
-    name: backstop_post_interaction_wait
+  - name: backstop_post_interaction_wait
+    caption: 'Post interaction wait'
     description: 'Wait for x milliseconds after interacting with hoverSelector or clickSelector. Ideal for use with a click or hover element transition.'
     type: number
     defaultValue: '300'
@@ -915,8 +915,8 @@ tvs:
     sortOrder: 50
     templates:
       - RegressionTest
-  - caption: 'Mismatch threshold'
-    name: backstop_mismatch_threshold
+  - name: backstop_mismatch_threshold
+    caption: 'Mismatch threshold'
     description: 'Percentage of diverging pixels allowed to pass test.'
     type: number
     defaultValue: '3'
@@ -927,8 +927,8 @@ tvs:
     sortOrder: 52
     templates:
       - RegressionTest
-  - caption: 'Toolbar visibility'
-    name: toolbar_visibility
+  - name: toolbar_visibility
+    caption: 'Toolbar visibility'
     description: 'Do you want to display a toolbar on this page? The default toolbar contains breadcrumbs and search functionality. This setting is inherited on every child page.'
     type: listbox
     inputOptionValues: 'On==1||Off==0||System default==default'
@@ -957,8 +957,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Automatic anchors'
-    name: auto_anchors
+  - name: auto_anchors
+    caption: 'Automatic anchors'
     description: "Give all headings on this page (H1-H6) an ID (if they don't have one already). This allows you (or the ToC menu) to link directly to that heading. This setting is inherited on child pages."
     type: listbox
     inputOptionValues: On==1||Off==0
@@ -987,8 +987,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Included headings in ToC'
-    name: toc_headings
+  - name: toc_headings
+    caption: 'Included headings in ToC'
     description: 'Select which hierarchy levels are allowed in the ToC menu (if present). This setting is inherited on child pages.'
     type: checkbox
     inputOptionValues: H1||H2||H3||H4||H5||H6
@@ -999,8 +999,7 @@ tvs:
     category: _Navigation
     sortOrder: 11
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     outputType: delim
     templates:
       - Home
@@ -1021,8 +1020,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Automatic reference links'
-    name: auto_references
+  - name: auto_references
+    caption: 'Automatic reference links'
     description: 'Turn references to an external link (the ones you created under TVs > Links) into an actual link. Links are referenced by their number value and must be enclosed in square brackets: [12].'
     type: listbox
     inputOptionValues: On==1||Off==0
@@ -1051,8 +1050,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Scroll back to top after using pagination'
-    name: pagination_scroll_top
+  - name: pagination_scroll_top
+    caption: 'Scroll back to top after using pagination'
     description: "This is enabled by default, to prevent ending up in empty space if the content of the next page is shorter. Disable this if you're using multiple paginated overviews on the same page."
     type: listbox
     inputOptionValues: On==1||Off==0
@@ -1081,8 +1080,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Neighbors menu'
-    name: neighbors_visibility
+  - name: neighbors_visibility
+    caption: 'Neighbors menu'
     description: 'Do you want to display a set of buttons below the content that link to the previous and next article? This setting is inherited on child pages.'
     type: listbox
     inputOptionValues: On==1||Off==0
@@ -1097,8 +1096,8 @@ tvs:
       - ArticleTraditional
       - ArticleModern
       - Download
-  - caption: 'Critical CSS URI'
-    name: critical_css_uri
+  - name: critical_css_uri
+    caption: 'Critical CSS URI'
     description: 'AUTOGENERATED! This path is used when server pushing the critical CSS. By default a unique file is generated for each page, but templates can also share a single CSS file (see Configuration).'
     type: hidden
     properties:
@@ -1125,8 +1124,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Behaviour
-    name: slider_behaviour
+  - name: slider_behaviour
+    caption: Behaviour
     description: ''
     type: checkbox
     inputOptionValues: 'Infinite loop==loop||Show previous / next arrows==arrows||Keyboard control==keyboard||Free scrolling==free||Autoplay==autoplay'
@@ -1137,13 +1136,12 @@ tvs:
     category: '_Slider - Settings'
     sortOrder: 30
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     outputType: delim
     templates:
       - Presentation
-  - caption: Transition
-    name: slider_transition
+  - name: slider_transition
+    caption: Transition
     description: ''
     type: listbox
     inputOptionValues: 'Slide==slide||Fade==fade||3D cube==cube||3D coverflow==coverflow||3D flip==flip'
@@ -1155,8 +1153,8 @@ tvs:
     sortOrder: 31
     templates:
       - Presentation
-  - caption: Pagination
-    name: slider_pagination
+  - name: slider_pagination
+    caption: Pagination
     description: ''
     type: listbox
     inputOptionValues: 'None==none||Bullets==bullets||Fraction==fraction||Progress bar==progressbar'
@@ -1168,8 +1166,8 @@ tvs:
     sortOrder: 32
     templates:
       - Presentation
-  - caption: 'Invert navigation colors'
-    name: slider_inverted
+  - name: slider_inverted
+    caption: 'Invert navigation colors'
     description: ''
     type: option
     inputOptionValues: No==0||Yes==1
@@ -1181,8 +1179,8 @@ tvs:
     sortOrder: 33
     templates:
       - Presentation
-  - caption: 'Twitter account'
-    name: social_twitter
+  - name: social_twitter
+    caption: 'Twitter account'
     description: 'DEPRECATED. Only fill in the account name (the part after https://twitter.com/). This way, this setting can be used by other Twitter functionality throughout the site.'
     type: text
     properties:
@@ -1190,8 +1188,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 1
-  - caption: 'LinkedIn profile'
-    name: social_linkedin
+  - name: social_linkedin
+    caption: 'LinkedIn profile'
     description: 'DEPRECATED. Please fill in the complete URL (including http(s)://).'
     type: text
     properties:
@@ -1199,8 +1197,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 2
-  - caption: 'Facebook page'
-    name: social_facebook
+  - name: social_facebook
+    caption: 'Facebook page'
     description: 'DEPRECATED. Please fill in the complete URL (including http(s)://).'
     type: text
     properties:
@@ -1208,8 +1206,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 3
-  - caption: 'Instagram profile'
-    name: social_instagram
+  - name: social_instagram
+    caption: 'Instagram profile'
     description: 'DEPRECATED. Only fill in the account name (the part after https://instagram.com/).'
     type: text
     properties:
@@ -1217,8 +1215,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 4
-  - caption: 'Pinterest board'
-    name: social_pinterest
+  - name: social_pinterest
+    caption: 'Pinterest board'
     description: 'DEPRECATED. Please fill in the complete URL (including http(s)://).'
     type: text
     properties:
@@ -1226,8 +1224,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 5
-  - caption: 'Youtube channel'
-    name: social_youtube
+  - name: social_youtube
+    caption: 'Youtube channel'
     description: 'DEPRECATED. Please fill in the complete URL (including http(s)://).'
     type: text
     properties:
@@ -1235,8 +1233,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 10
-  - caption: 'WhatsApp number'
-    name: social_whatsapp
+  - name: social_whatsapp
+    caption: 'WhatsApp number'
     description: 'DEPRECATED. A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Format as number, without any leading zeros.'
     type: number
     properties:
@@ -1244,8 +1242,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 11
-  - caption: 'WhatsApp message'
-    name: social_whatsapp_text
+  - name: social_whatsapp_text
+    caption: 'WhatsApp message'
     description: 'DEPRECATED. Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.'
     type: textarea
     properties:
@@ -1253,8 +1251,8 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 12
-  - caption: 'Github account'
-    name: social_github
+  - name: social_github
+    caption: 'Github account'
     description: 'DEPRECATED. Only fill in the account name (the part after https://github.com/).'
     type: text
     properties:
@@ -1262,11 +1260,11 @@ tvs:
         value: solid
     category: _Social
     sortOrder: 20
-  - caption: Availability
-    name: cta_availability
+  - name: cta_availability
+    caption: Availability
     description: 'Where would you like to be able to place this CTA?'
     type: checkbox
-    inputOptionValues: 'In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer'
+    inputOptionValues: 'Header==header||Sidebar (on detail pages)==sidebar||Content (with ContentBlocks)==content||Footer==footer'
     properties:
       - name: elementStatus
         value: solid
@@ -1274,8 +1272,8 @@ tvs:
     sortOrder: 1
     templates:
       - GlobalCTA
-  - caption: 'Footer visibility'
-    name: footer_visibility
+  - name: footer_visibility
+    caption: 'Footer visibility'
     description: 'If you turn this off, the closing footer section will not be displayed. Inherited by default, but you can change this with the Inheritance setting below.'
     type: listbox
     defaultValue: '@INHERIT default'
@@ -1304,8 +1302,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Footer type'
-    name: footer_type
+  - name: footer_type
+    caption: 'Footer type'
     description: 'Choose which content to display inside the footer. You can add different footers under Global Content > Footers. A default footer can be defined under Configuration, or as context setting.'
     type: listbox
     defaultValue: '@INHERIT default'
@@ -1334,8 +1332,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Background
-    name: footer_background
+  - name: footer_background
+    caption: Background
     description: 'Select a background for this footer. You can define these backgrounds under Global Content > Backgrounds. Will also be inherited by default.'
     type: listbox
     inputOptionValues: '@CHUNK tvSelectGlobalBackground@AvailableFooter'
@@ -1364,8 +1362,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Call to action (CTA)'
-    name: footer_cta
+  - name: footer_cta
+    caption: 'Call to action (CTA)'
     description: 'This CTA will be displayed above the footer itself. It will have a different background than the rest of the footer, which you can select below. Inherited by default.'
     type: listbox
     defaultValue: '@INHERIT'
@@ -1394,8 +1392,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'CTA background'
-    name: footer_cta_background
+  - name: footer_cta_background
+    caption: 'CTA background'
     description: 'Select a background for the CTA. To make it stand out, select a background that contrasts nicely with the footer background. Also inherited by default.'
     type: listbox
     inputOptionValues: '@CHUNK tvSelectGlobalBackground@AvailableFooterCTA'
@@ -1424,8 +1422,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Inheritance
-    name: footer_inheritance
+  - name: footer_inheritance
+    caption: Inheritance
     description: 'Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!'
     type: checkbox
     defaultValue: '@INHERIT inherit_visibility||inherit_type||inherit_background||inherit_cta||inherit_cta_background'
@@ -1436,8 +1434,7 @@ tvs:
     category: _Footer
     sortOrder: 99
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     outputType: delim
     templates:
       - Home
@@ -1458,8 +1455,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Header visibility'
-    name: header_visibility
+  - name: header_visibility
+    caption: 'Header visibility'
     description: 'If you turn this off, the page starts with the content area but the navigation bar will still be visible. Inherited by default, but you can change this with the Inheritance setting below.'
     type: listbox
     defaultValue: '@INHERIT default'
@@ -1488,8 +1485,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Main title'
-    name: header_title
+  - name: header_title
+    caption: 'Main title'
     description: 'Title below the navigation bar. The text will automatically be inherited on child pages. You can override this behaviour by entering a new title or by deleting the inherited value.'
     type: text
     defaultValue: '@INHERIT'
@@ -1517,8 +1514,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Subtitle
-    name: header_subtitle
+  - name: header_subtitle
+    caption: Subtitle
     description: 'This will be displayed under the main title. Will also be inherited on child pages by default.'
     type: textarea
     defaultValue: '@INHERIT'
@@ -1546,8 +1543,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Background
-    name: header_background
+  - name: header_background
+    caption: Background
     description: 'Select a background for this header. You can define these backgrounds under Content > Global Content > Backgrounds. Will also be inherited by default.'
     type: listbox
     inputOptionValues: '@CHUNK tvSelectGlobalBackground@AvailableHeader'
@@ -1576,8 +1573,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Background image'
-    name: header_background_img
+  - name: header_background_img
+    caption: 'Background image'
     description: 'Use an Overview image as background. This overrides the regular Background setting above and will NOT be inherited. If you want to repeat an image on child pages, add it as Global Background.'
     type: option
     inputOptionValues: 'Use the Panorama image==background_img_pano||Use the Wide image==background_img_wide'
@@ -1605,8 +1602,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Call to action (CTA)'
-    name: header_cta
+  - name: header_cta
+    caption: 'Call to action (CTA)'
     description: 'Select a CTA for display in header. CTAs are located in Global Content. If a CTA is selected, all Title values will be ignored but Background settings still apply. Not inherited by default.'
     type: listbox
     inputOptionValues: '@CHUNK tvSelectCTA@AvailableHeader'
@@ -1635,8 +1632,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Inheritance
-    name: header_inheritance
+  - name: header_inheritance
+    caption: Inheritance
     description: 'Select which elements to display on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!'
     type: checkbox
     defaultValue: '@INHERIT inherit_visibility||inherit_titles||inherit_background'
@@ -1647,8 +1644,7 @@ tvs:
     category: _Header
     sortOrder: 99
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     outputType: delim
     templates:
       - Home
@@ -1669,8 +1665,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Content purpose'
-    name: content_purpose
+  - name: content_purpose
+    caption: 'Content purpose'
     description: 'Select the primary function(s) of this content. You can focus on just 1 topic, or create a chain of topics to use as blueprint for your storyline.'
     type: listbox-multiple
     inputOptionValues: '@CHUNK tvSelectInputOption@ContentPurpose'
@@ -1680,13 +1676,11 @@ tvs:
     category: _Purpose
     sortOrder: 1
     inputOptions:
-      inputProperties:
-        typeAhead: 'false'
-        typeAheadDelay: '250'
-        stackItems: 'true'
+      typeAhead: 'false'
+      typeAheadDelay: '250'
+      stackItems: 'true'
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     outputType: delim
     templates:
       - Home
@@ -1707,8 +1701,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Priority
-    name: content_priority
+  - name: content_priority
+    caption: Priority
     description: 'Zoom out a little and ask yourself: do we really need this page? And do we need it now? If it turns out to be neither urgent nor important, consider deleting it again.'
     type: option
     inputOptionValues: '@CHUNK tvSelectInputOption@ContentPriority'
@@ -1718,11 +1712,9 @@ tvs:
     category: _Purpose
     sortOrder: 2
     inputOptions:
-      inputProperties:
-        columns: '1'
+      columns: '1'
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     outputType: delim
     templates:
       - Home
@@ -1743,8 +1735,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Brief
-    name: content_brief
+  - name: content_brief
+    caption: Brief
     description: 'Try to turn the content purpose into a short summary. What are the main take-aways? Why are they important? And why should people listen to you? Add links to examples if you want.'
     type: redactor
     properties:
@@ -1753,11 +1745,10 @@ tvs:
     category: _Purpose
     sortOrder: 5
     inputOptions:
-      inputProperties:
-        advAttrib: '1'
-        buttonFullScreen: '1'
-        buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
-        minHeight: 130
+      advAttrib: '1'
+      buttonFullScreen: '1'
+      buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
+      minHeight: 130
     templates:
       - Home
       - BasicOverview
@@ -1777,8 +1768,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Outline
-    name: content_outline
+  - name: content_outline
+    caption: Outline
     description: 'Give an overview of the main page structure. Like a table of contents, but feel free to add ideas in between.'
     type: redactor
     properties:
@@ -1787,11 +1778,10 @@ tvs:
     category: _Purpose
     sortOrder: 6
     inputOptions:
-      inputProperties:
-        advAttrib: '1'
-        buttonFullScreen: '1'
-        buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
-        minHeight: 210
+      advAttrib: '1'
+      buttonFullScreen: '1'
+      buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link,image,file,|,table,horizontalrule'
+      minHeight: 210
     templates:
       - Home
       - BasicOverview
@@ -1811,8 +1801,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Result
-    name: content_result
+  - name: content_result
+    caption: Result
     description: 'Describe the desired effect of this page. How did it help the visitor? And what good will that do for you?'
     type: redactor
     properties:
@@ -1821,11 +1811,10 @@ tvs:
     category: _Purpose
     sortOrder: 10
     inputOptions:
-      inputProperties:
-        advAttrib: '1'
-        buttonFullScreen: '1'
-        buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link'
-        minHeight: 130
+      advAttrib: '1'
+      buttonFullScreen: '1'
+      buttons: 'formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,link'
+      minHeight: 130
     templates:
       - Home
       - BasicOverview
@@ -1845,8 +1834,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Follow-up
-    name: content_cta
+  - name: content_cta
+    caption: Follow-up
     description: 'What kind of action do you want the visitor to take after viewing this content? View related content, get in touch, subscribe to your newsletter, buy your product, donate to your cause...'
     type: text
     properties:
@@ -1873,8 +1862,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Tone of voice'
-    name: content_tone
+  - name: content_tone
+    caption: 'Tone of voice'
     description: 'Decide what writing style to adopt for this page. Formal, fun, pragmatic, provocative...'
     type: text
     properties:
@@ -1901,8 +1890,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Sticky sidebar'
-    name: sidebar_sticky
+  - name: sidebar_sticky
+    caption: 'Sticky sidebar'
     description: "To avoid a sticky mess, this behaviour will only be applied to the last element inside the sidebar. In most cases, that's the submenu. But if you select a CTA, then that will stick instead."
     type: listbox
     defaultValue: '@INHERIT default'
@@ -1914,9 +1903,8 @@ tvs:
     sortOrder: 1
     templates:
       - BasicDetail
-      - 'Basic - Detail'
-  - caption: 'Call to action (CTA)'
-    name: sidebar_cta
+  - name: sidebar_cta
+    caption: 'Call to action (CTA)'
     description: 'Select a CTA for display in sidebar (under the submenu). CTAs are located in Global Content.'
     type: listbox
     inputOptionValues: '@CHUNK tvSelectCTA@AvailableSidebar'
@@ -1928,9 +1916,8 @@ tvs:
     sortOrder: 20
     templates:
       - BasicDetail
-      - 'Basic - Detail'
-  - caption: Inheritance
-    name: sidebar_inheritance
+  - name: sidebar_inheritance
+    caption: Inheritance
     description: 'Select which settings should apply on child pages of this resource too. NB: Turning inheritance OFF for an element returns it to its default value, but that is not reflected in the manager!'
     type: checkbox
     defaultValue: '@INHERIT inherit_sticky||inherit_cta'
@@ -1941,14 +1928,12 @@ tvs:
     category: _Sidebar
     sortOrder: 99
     outputOptions:
-      outputProperties:
-        delimiter: ','
+      delimiter: ','
     outputType: delim
     templates:
       - BasicDetail
-      - 'Basic - Detail'
-  - caption: 'Progress indicator'
-    name: status_progress
+  - name: status_progress
+    caption: 'Progress indicator'
     description: 'What is the current development stage of this page?'
     type: option
     inputOptionValues: '@CHUNK tvSelectInputOption@StatusProgress'
@@ -1977,8 +1962,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Health indicator'
-    name: status_health
+  - name: status_health
+    caption: 'Health indicator'
     description: 'What is the current condition of this page?'
     type: option
     inputOptionValues: '@CHUNK tvSelectInputOption@StatusHealth'
@@ -2007,8 +1992,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: Tasks
-    name: status_tasks
+  - name: status_tasks
+    caption: Tasks
     description: 'How can we make this page better? Or do you have technical issues?'
     type: migxdb
     properties:
@@ -2017,8 +2002,7 @@ tvs:
     category: _Status
     sortOrder: 3
     inputOptions:
-      inputProperties:
-        configs: 'tasks_resource:romanescobackyard'
+      configs: 'tasks_resource:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -2038,8 +2022,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Content owner'
-    name: content_owner
+  - name: content_owner
+    caption: 'Content owner'
     description: 'Who is responsible for editing and maintaining this page?'
     type: superboxselect
     properties:
@@ -2048,13 +2032,12 @@ tvs:
     category: _Status
     sortOrder: 10
     inputOptions:
-      inputProperties:
-        selectType: users
-        maxElements: '1'
-        allowBlank: '1'
-        depth: '10'
-        limitRelatedContext: '0'
-        pageSize: '10'
+      selectType: users
+      maxElements: '1'
+      allowBlank: '1'
+      depth: '10'
+      limitRelatedContext: '0'
+      pageSize: '10'
     templates:
       - Home
       - BasicOverview
@@ -2074,8 +2057,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Due date'
-    name: planning_date_due
+  - name: planning_date_due
+    caption: 'Due date'
     description: ''
     type: date
     properties:
@@ -2084,8 +2067,7 @@ tvs:
     category: _Status
     sortOrder: 20
     inputOptions:
-      inputProperties:
-        hideTime: 'true'
+      hideTime: 'true'
     templates:
       - Home
       - BasicOverview
@@ -2105,8 +2087,8 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - caption: 'Project timeline'
-    name: project_timeline
+  - name: project_timeline
+    caption: 'Project timeline'
     description: "Keep track of the project's progress and see what's coming up next. You can also link to related project files and resources from here, so you can find them back more easily."
     type: migxdb
     properties:
@@ -2115,12 +2097,11 @@ tvs:
     category: _Timeline
     sortOrder: 1
     inputOptions:
-      inputProperties:
-        configs: 'project_timeline:romanescobackyard'
+      configs: 'project_timeline:romanescobackyard'
     templates:
-      - ProjectDashboard
-  - caption: Autoresponder
-    name: fb_autoresponder_toggle
+      - Dashboard
+  - name: fb_autoresponder_toggle
+    caption: Autoresponder
     description: 'IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.'
     type: option
     inputOptionValues: On==1||Off==0
@@ -2132,8 +2113,8 @@ tvs:
     sortOrder: 1
     templates:
       - fbForm
-  - caption: 'Autoresponder FROM address'
-    name: fb_autoresponder_from
+  - name: fb_autoresponder_from
+    caption: 'Autoresponder FROM address'
     description: 'Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like mail@yourdomain.com. Defaults to emailsender system setting.'
     type: email
     properties:
@@ -2143,8 +2124,8 @@ tvs:
     sortOrder: 2
     templates:
       - fbForm
-  - caption: 'Autoresponder FROM name'
-    name: fb_autoresponder_from_name
+  - name: fb_autoresponder_from_name
+    caption: 'Autoresponder FROM name'
     description: "Optional. This is the name that will (probably) be visible in the recipients' inbox. Defaults to site_name system setting."
     type: text
     properties:
@@ -2154,8 +2135,8 @@ tvs:
     sortOrder: 3
     templates:
       - fbForm
-  - caption: 'Autoresponder REPLY TO address'
-    name: fb_autoresponder_reply_to
+  - name: fb_autoresponder_reply_to
+    caption: 'Autoresponder REPLY TO address'
     description: 'Optional. This address will be used when recipient replies to this message directly. Defaults to respectively the client_email and emailsender system setting.'
     type: email
     properties:
@@ -2165,8 +2146,8 @@ tvs:
     sortOrder: 4
     templates:
       - fbForm
-  - caption: 'Autoresponse subject'
-    name: fb_autoresponder_subject
+  - name: fb_autoresponder_subject
+    caption: 'Autoresponse subject'
     description: ''
     type: text
     properties:
@@ -2176,8 +2157,8 @@ tvs:
     sortOrder: 10
     templates:
       - fbForm
-  - caption: 'Autoresponse message'
-    name: fb_autoresponder_message
+  - name: fb_autoresponder_message
+    caption: 'Autoresponse message'
     description: 'The content of the email that will be sent. You can use placeholders here from the form fields with the following syntax: [[+fb123-field-name]]. So with ID prefix and hyphenated field name.'
     type: richtext
     properties:
@@ -2187,8 +2168,8 @@ tvs:
     sortOrder: 11
     templates:
       - fbForm
-  - caption: Activation
-    name: fb_activation_toggle
+  - name: fb_activation_toggle
+    caption: Activation
     description: 'Whether or not new users need to activate their account via email. IMPORTANT! For the activation process to know which address to use, the Input (Email) field needs to be present in the form.'
     type: option
     inputOptionValues: 'After email confirmation==1||Immediately (Beware of spam!)==0'
@@ -2200,8 +2181,8 @@ tvs:
     sortOrder: 1
     templates:
       - fbRegister
-  - caption: 'Activation page'
-    name: fb_activation_resource_id
+  - name: fb_activation_resource_id
+    caption: 'Activation page'
     description: 'Page containing the ConfirmRegister snippet for email activation. Enter page ID or drag the page from the menu tree to this input field. Defaults to the activation_resource_id system setting.'
     type: number
     properties:
@@ -2211,8 +2192,8 @@ tvs:
     sortOrder: 2
     templates:
       - fbRegister
-  - caption: 'Activation TTL'
-    name: fb_activation_ttl
+  - name: fb_activation_ttl
+    caption: 'Activation TTL'
     description: 'Number of minutes until the activation email expires. Defaults to 3 hours.'
     type: number
     defaultValue: '180'
@@ -2223,8 +2204,8 @@ tvs:
     sortOrder: 5
     templates:
       - fbRegister
-  - caption: 'Activation email type'
-    name: fb_activation_email_type
+  - name: fb_activation_email_type
+    caption: 'Activation email type'
     description: ''
     type: option
     inputOptionValues: 'Inline (edit content below)==inline||Chunk (specify chunk name below)==modChunk||File (specify file path below)==file'
@@ -2236,8 +2217,8 @@ tvs:
     sortOrder: 10
     templates:
       - fbRegister
-  - caption: 'Activation email template'
-    name: fb_activation_email_tpl
+  - name: fb_activation_email_tpl
+    caption: 'Activation email template'
     description: 'Enter chunk name here if email type is Chunk, or an absolute file path if email type is File (you can use {core_path}, {base_path} or {assets_path} as placeholders here).'
     type: text
     defaultValue: ''
@@ -2248,8 +2229,8 @@ tvs:
     sortOrder: 11
     templates:
       - fbRegister
-  - caption: 'Activation email'
-    name: fb_activation_email
+  - name: fb_activation_email
+    caption: 'Activation email'
     description: 'The content of the activation email, if email type is Inline. Make sure it contains the [[+confirmUrl]] placeholder for the confirmation link!'
     type: richtext
     properties:
@@ -2259,8 +2240,8 @@ tvs:
     sortOrder: 20
     templates:
       - fbRegister
-  - caption: 'Username field'
-    name: fb_username_field
+  - name: fb_username_field
+    caption: 'Username field'
     description: 'Name of the form field that will receive the username. You can use the label name of the CB field here, or the input name in the HTML. Tip: consider using the email address here..'
     type: text
     properties:
@@ -2270,8 +2251,8 @@ tvs:
     sortOrder: 10
     templates:
       - fbRegister
-  - caption: 'Fullname field'
-    name: fb_fullname_field
+  - name: fb_fullname_field
+    caption: 'Fullname field'
     description: 'Name of the form field that will receive the full name of the user. Handy when using email address as username. You can use the label name of the CB field here, or the input name in the HTML.'
     type: text
     properties:
@@ -2281,8 +2262,8 @@ tvs:
     sortOrder: 11
     templates:
       - fbRegister
-  - caption: 'Password field'
-    name: fb_password_field
+  - name: fb_password_field
+    caption: 'Password field'
     description: 'Name of the form field that will receive a password. If empty, a password will be generated instead. You can use the label name of the CB field here, or the input name in the HTML.'
     type: text
     properties:
@@ -2292,8 +2273,8 @@ tvs:
     sortOrder: 12
     templates:
       - fbRegister
-  - caption: 'User groups'
-    name: fb_usergroups
+  - name: fb_usergroups
+    caption: 'User groups'
     description: 'Optional. A comma-separated list of user group names or IDs to add the newly-registered user to.'
     type: text
     properties:
@@ -2303,8 +2284,8 @@ tvs:
     sortOrder: 20
     templates:
       - fbRegister
-  - caption: 'User groups field'
-    name: fb_usergroups_field
+  - name: fb_usergroups_field
+    caption: 'User groups field'
     description: 'Optional. The name of the form field that decides which user groups the new user will belong to. You can use the label name of the ContentBlock field here, or the name in the HTML.'
     type: text
     properties:
@@ -2314,8 +2295,8 @@ tvs:
     sortOrder: 21
     templates:
       - fbRegister
-  - caption: 'Extended user fields'
-    name: fb_extended_toggle
+  - name: fb_extended_toggle
+    caption: 'Extended user fields'
     description: 'If switched on, any extra fields in the form are added to the extended field in the user profile.'
     type: option
     inputOptionValues: No==0||Yes==1
@@ -2327,8 +2308,8 @@ tvs:
     sortOrder: 30
     templates:
       - fbRegister
-  - caption: Author
-    name: author_id
+  - name: author_id
+    caption: Author
     description: 'Select the author of this article. He or she must be a MODX user. This value is inherited on child pages.'
     type: listbox
     inputOptionValues: "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )"
@@ -2343,8 +2324,8 @@ tvs:
       - ArticleTraditional
       - ArticleModern
       - Download
-  - caption: Comments
-    name: comments_toggle
+  - name: comments_toggle
+    caption: Comments
     description: 'Enable or disable comments. This value is inherited on child pages.'
     type: option
     inputOptionValues: Active==1||Disabled==0
@@ -2359,8 +2340,8 @@ tvs:
       - ArticleTraditional
       - ArticleModern
       - Download
-  - caption: Rating
-    name: rating_value
+  - name: rating_value
+    caption: Rating
     description: 'How did the user value this product or service?'
     type: option
     inputOptionValues: '@CHUNK tvSelectInputOption@Rating'
@@ -2371,8 +2352,8 @@ tvs:
     sortOrder: 1
     templates:
       - Review
-  - caption: 'Email address'
-    name: contact_email
+  - name: contact_email
+    caption: 'Email address'
     description: ''
     type: email
     properties:
@@ -2382,8 +2363,8 @@ tvs:
     sortOrder: 1
     templates:
       - Person
-  - caption: 'Phone number'
-    name: contact_phone
+  - name: contact_phone
+    caption: 'Phone number'
     description: ''
     type: text
     properties:
@@ -2393,8 +2374,8 @@ tvs:
     sortOrder: 2
     templates:
       - Person
-  - caption: 'Mobile number'
-    name: contact_mobile
+  - name: contact_mobile
+    caption: 'Mobile number'
     description: ''
     type: text
     properties:
@@ -2404,8 +2385,8 @@ tvs:
     sortOrder: 3
     templates:
       - Person
-  - caption: 'Street name'
-    name: address_street_name
+  - name: address_street_name
+    caption: 'Street name'
     description: ''
     type: text
     properties:
@@ -2415,8 +2396,8 @@ tvs:
     sortOrder: 2
     templates:
       - Project
-  - caption: 'House number'
-    name: address_house_number
+  - name: address_house_number
+    caption: 'House number'
     description: ''
     type: text
     properties:
@@ -2426,8 +2407,8 @@ tvs:
     sortOrder: 3
     templates:
       - Project
-  - caption: 'Postal code'
-    name: address_postal_code
+  - name: address_postal_code
+    caption: 'Postal code'
     description: ''
     type: text
     properties:
@@ -2437,8 +2418,8 @@ tvs:
     sortOrder: 4
     templates:
       - Project
-  - caption: 'City / Town'
-    name: address_locality
+  - name: address_locality
+    caption: 'City / Town'
     description: ''
     type: text
     properties:
@@ -2448,8 +2429,8 @@ tvs:
     sortOrder: 10
     templates:
       - Project
-  - caption: Region
-    name: address_region
+  - name: address_region
+    caption: Region
     description: ''
     type: text
     properties:
@@ -2459,8 +2440,8 @@ tvs:
     sortOrder: 11
     templates:
       - Project
-  - caption: Country
-    name: address_country
+  - name: address_country
+    caption: Country
     description: ''
     type: text
     properties:
@@ -2470,8 +2451,8 @@ tvs:
     sortOrder: 12
     templates:
       - Project
-  - caption: 'Start date'
-    name: date_start
+  - name: date_start
+    caption: 'Start date'
     description: ''
     type: date
     properties:
@@ -2481,8 +2462,8 @@ tvs:
     sortOrder: 1
     templates:
       - Project
-  - caption: 'End date'
-    name: date_end
+  - name: date_end
+    caption: 'End date'
     description: ''
     type: date
     properties:
@@ -2492,8 +2473,8 @@ tvs:
     sortOrder: 2
     templates:
       - Project
-  - caption: 'Date completed'
-    name: date_published
+  - name: date_published
+    caption: 'Date completed'
     description: ''
     type: date
     properties:
@@ -2503,8 +2484,8 @@ tvs:
     sortOrder: 3
     templates:
       - Project
-  - caption: 'Logo (SVG)'
-    name: organization_logo_svg
+  - name: organization_logo_svg
+    caption: 'Logo (SVG)'
     description: "You'll likely get the best (sharpest) results when uploading an SVG. Try to keep the aspect ratio around 16:9 for best results."
     type: file
     properties:
@@ -2514,8 +2495,8 @@ tvs:
     sortOrder: 1
     templates:
       - Organization
-  - caption: 'Logo (Image)'
-    name: organization_logo_img
+  - name: organization_logo_img
+    caption: 'Logo (Image)'
     description: "If you can't supply an SVG, don't worry. You can upload an image here instead. The minimum width of their logo is 600px, but to keep your website pretty, aim for at least 900px."
     type: imageplus
     properties:
@@ -2524,18 +2505,16 @@ tvs:
     category: '_Org - Presentation'
     sortOrder: 2
     inputOptions:
-      inputProperties:
-        targetWidth: '300'
-        targetRatio: '1.77'
-        allowAltTag: 'true'
+      targetWidth: '300'
+      targetRatio: '1.77'
+      allowAltTag: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
-        outputChunk: cbOverviewRowImg
+      phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
+      outputChunk: cbOverviewRowImg
     templates:
       - Organization
-  - caption: 'Organization name'
-    name: organization_name
+  - name: organization_name
+    caption: 'Organization name'
     description: ''
     type: text
     properties:
@@ -2545,8 +2524,8 @@ tvs:
     sortOrder: 1
     templates:
       - Organization
-  - caption: 'Organization sector'
-    name: organization_sector
+  - name: organization_sector
+    caption: 'Organization sector'
     description: 'What type of organization is this?'
     type: listbox
     inputOptionValues: '--- Select a sector ---==||Public (government)==public||Private business==private||Non-profit organization==community'
@@ -2557,8 +2536,8 @@ tvs:
     sortOrder: 5
     templates:
       - Organization
-  - caption: 'Organization industry'
-    name: organization_industry
+  - name: organization_industry
+    caption: 'Organization industry'
     description: 'In what field is this organization active?'
     type: text
     properties:
@@ -2568,8 +2547,8 @@ tvs:
     sortOrder: 6
     templates:
       - Organization
-  - caption: 'Organization size'
-    name: organization_size
+  - name: organization_size
+    caption: 'Organization size'
     description: 'How many employees does this organization have?'
     type: number
     properties:
@@ -2579,8 +2558,8 @@ tvs:
     sortOrder: 10
     templates:
       - Organization
-  - caption: 'Organization website'
-    name: organization_url
+  - name: organization_url
+    caption: 'Organization website'
     description: 'Please fill in the complete URL (including http(s)://).'
     type: text
     properties:
@@ -2590,8 +2569,8 @@ tvs:
     sortOrder: 20
     templates:
       - Organization
-  - caption: 'Profile picture'
-    name: person_image
+  - name: person_image
+    caption: 'Profile picture'
     description: 'A portrait image of this person.'
     type: imageplus
     properties:
@@ -2600,20 +2579,18 @@ tvs:
     category: '_Person - Presentation'
     sortOrder: 1
     inputOptions:
-      inputProperties:
-        targetWidth: '300'
-        targetRatio: '1.0'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '300'
+      targetRatio: '1.0'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
-        outputChunk: cbOverviewRowImg
+      phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
+      outputChunk: cbOverviewRowImg
     templates:
       - Person
       - Review
-  - caption: 'Informal picture'
-    name: person_image_loose
+  - name: person_image_loose
+    caption: 'Informal picture'
     description: 'An image of the same person, but with a loose, personal vibe. This can be used in situations where a little more playfulness is suitable.'
     type: imageplus
     properties:
@@ -2622,19 +2599,17 @@ tvs:
     category: '_Person - Presentation'
     sortOrder: 1
     inputOptions:
-      inputProperties:
-        targetWidth: '300'
-        targetRatio: '1.0'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '300'
+      targetRatio: '1.0'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
-        outputChunk: cbOverviewRowImg
+      phpThumbParams: 'w=[[++max_thumb_width:empty=`400`]]&zc=1'
+      outputChunk: cbOverviewRowImg
     templates:
       - Person
-  - caption: 'First name'
-    name: person_firstname
+  - name: person_firstname
+    caption: 'First name'
     description: ''
     type: text
     properties:
@@ -2645,8 +2620,8 @@ tvs:
     templates:
       - Person
       - Review
-  - caption: 'Last name'
-    name: person_lastname
+  - name: person_lastname
+    caption: 'Last name'
     description: ''
     type: text
     properties:
@@ -2657,8 +2632,8 @@ tvs:
     templates:
       - Person
       - Review
-  - caption: Gender
-    name: person_gender
+  - name: person_gender
+    caption: Gender
     description: ''
     properties:
       - name: elementStatus
@@ -2670,8 +2645,8 @@ tvs:
     templates:
       - Person
       - Review
-  - caption: Birthdate
-    name: person_birthdate
+  - name: person_birthdate
+    caption: Birthdate
     description: ''
     type: date
     properties:
@@ -2682,8 +2657,8 @@ tvs:
     templates:
       - Person
       - Review
-  - caption: 'Job title'
-    name: person_jobtitle
+  - name: person_jobtitle
+    caption: 'Job title'
     description: ''
     type: text
     properties:
@@ -2694,8 +2669,8 @@ tvs:
     templates:
       - Person
       - Review
-  - caption: 'Personal website or blog'
-    name: person_url
+  - name: person_url
+    caption: 'Personal website or blog'
     description: 'Please fill in the complete URL (including http(s)://).'
     type: text
     properties:
@@ -2706,8 +2681,8 @@ tvs:
     templates:
       - Person
       - Review
-  - caption: Subtitle
-    name: overview_subtitle
+  - name: overview_subtitle
+    caption: Subtitle
     description: 'When filled in, this value will override the default subtitle (if subtitle is enabled in the Overview CB settings).'
     type: text
     properties:
@@ -2723,8 +2698,8 @@ tvs:
       - BasicVertical
       - BasicVerticalToC
       - Publications
-  - caption: 'Link / button text'
-    name: overview_link_text
+  - name: overview_link_text
+    caption: 'Link / button text'
     description: 'When filled in, this value will override the button text defined in the Overview ContentBlock. Keep in mind that if no button text is set in Overview CB, no button will be shown!'
     type: text
     properties:
@@ -2744,8 +2719,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Icon (SVG)'
-    name: overview_icon_svg
+  - name: overview_icon_svg
+    caption: 'Icon (SVG)'
     description: 'The recommended way for adding an icon is as an SVG graphic. This can be pretty much anything, but please make sure the SVG has a square aspect ratio (viewbox).'
     type: image
     properties:
@@ -2762,8 +2737,8 @@ tvs:
       - BasicVerticalToC
       - Publications
       - Download
-  - caption: 'Icon credit (SVG)'
-    name: overview_icon_svg_credit
+  - name: overview_icon_svg_credit
+    caption: 'Icon credit (SVG)'
     description: "Mention the designer of this icon here, so they can be credited appropriately. You need to do this if you're using icons published under a CC license, for example from Noun Project."
     type: text
     properties:
@@ -2780,8 +2755,8 @@ tvs:
       - BasicVerticalToC
       - Publications
       - Download
-  - caption: 'Icon (Image)'
-    name: overview_icon_img
+  - name: overview_icon_img
+    caption: 'Icon (Image)'
     description: 'If an SVG icon is not available, you can also use an image file (preferably in PNG format). This image needs to be square.'
     type: imageplus
     properties:
@@ -2790,15 +2765,13 @@ tvs:
     category: '_Overview - Icon'
     sortOrder: 5
     inputOptions:
-      inputProperties:
-        targetWidth: '300'
-        targetHeight: '300'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '300'
+      targetHeight: '300'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: ''
-        outputChunk: ''
+      phpThumbParams: ''
+      outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2811,8 +2784,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Icon (Font)'
-    name: overview_icon_font
+  - name: overview_icon_font
+    caption: 'Icon (Font)'
     description: "Select an icon from the projects' icon font list. Check the style guide for available icons, or use the autocomplete search as you type."
     type: listbox
     inputOptionValues: '@CHUNK iconTVInputOptions'
@@ -2822,9 +2795,8 @@ tvs:
     category: '_Overview - Icon'
     sortOrder: 10
     inputOptions:
-      inputProperties:
-        typeAhead: 'true'
-        typeAheadDelay: '400'
+      typeAhead: 'true'
+      typeAheadDelay: '400'
     templates:
       - Home
       - BasicOverview
@@ -2834,8 +2806,8 @@ tvs:
       - BasicVerticalToC
       - Publications
       - Download
-  - caption: 'Image (Landscape)'
-    name: overview_img_landscape
+  - name: overview_img_landscape
+    caption: 'Image (Landscape)'
     description: 'This is the default overview image, in a regular 4:3 aspect ratio.'
     type: imageplus
     properties:
@@ -2844,15 +2816,13 @@ tvs:
     category: '_Overview - Image'
     sortOrder: 1
     inputOptions:
-      inputProperties:
-        targetWidth: '500'
-        targetHeight: '375'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '500'
+      targetHeight: '375'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: ''
-        outputChunk: ''
+      phpThumbParams: ''
+      outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2865,8 +2835,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Image (Portrait)'
-    name: overview_img_portrait
+  - name: overview_img_portrait
+    caption: 'Image (Portrait)'
     description: 'This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.'
     type: imageplus
     properties:
@@ -2875,15 +2845,13 @@ tvs:
     category: '_Overview - Image'
     sortOrder: 2
     inputOptions:
-      inputProperties:
-        targetWidth: '300'
-        targetHeight: '400'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '300'
+      targetHeight: '400'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: ''
-        outputChunk: ''
+      phpThumbParams: ''
+      outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2896,8 +2864,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Image (Square)'
-    name: overview_img_square
+  - name: overview_img_square
+    caption: 'Image (Square)'
     description: 'This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.'
     type: imageplus
     properties:
@@ -2906,15 +2874,13 @@ tvs:
     category: '_Overview - Image'
     sortOrder: 3
     inputOptions:
-      inputProperties:
-        targetWidth: '300'
-        targetHeight: '300'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '300'
+      targetHeight: '300'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: ''
-        outputChunk: ''
+      phpThumbParams: ''
+      outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2927,8 +2893,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Image (Wide)'
-    name: overview_img_wide
+  - name: overview_img_wide
+    caption: 'Image (Wide)'
     description: 'This is an image with widescreen proportions, in 16:9 aspect ratio.'
     type: imageplus
     properties:
@@ -2937,15 +2903,13 @@ tvs:
     category: '_Overview - Image'
     sortOrder: 5
     inputOptions:
-      inputProperties:
-        targetWidth: '800'
-        targetHeight: '450'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '800'
+      targetHeight: '450'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: ''
-        outputChunk: ''
+      phpThumbParams: ''
+      outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2958,8 +2922,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Image (Panorama)'
-    name: overview_img_pano
+  - name: overview_img_pano
+    caption: 'Image (Panorama)'
     description: 'This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.'
     type: imageplus
     properties:
@@ -2968,15 +2932,13 @@ tvs:
     category: '_Overview - Image'
     sortOrder: 6
     inputOptions:
-      inputProperties:
-        targetWidth: '1300'
-        targetRatio: '2.33'
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      targetWidth: '1300'
+      targetRatio: '2.33'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: ''
-        outputChunk: ''
+      phpThumbParams: ''
+      outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -2989,8 +2951,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Image (Free)'
-    name: overview_img_free
+  - name: overview_img_free
+    caption: 'Image (Free)'
     description: "This image doesn't have a fixed aspect ratio or any minimum dimensions. Use it as you see fit. Cropping is optional. Be aware that mixing aspect ratios will result in different image sizes!"
     type: imageplus
     properties:
@@ -2999,13 +2961,11 @@ tvs:
     category: '_Overview - Image'
     sortOrder: 10
     inputOptions:
-      inputProperties:
-        allowAltTag: 'true'
-        allowCredits: 'true'
+      allowAltTag: 'true'
+      allowCredits: 'true'
     outputOptions:
-      outputProperties:
-        phpThumbParams: ''
-        outputChunk: ''
+      phpThumbParams: ''
+      outputChunk: ''
     templates:
       - Home
       - BasicOverview
@@ -3018,8 +2978,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Image (SVG)'
-    name: overview_img_svg
+  - name: overview_img_svg
+    caption: 'Image (SVG)'
     description: 'This SVG graphic can be used as alternative to regular (pixel based) images. For layout consistency, make sure all SVGs in this Overview share the same aspect ratio.'
     type: image
     properties:
@@ -3039,8 +2999,8 @@ tvs:
       - ArticleModern
       - Download
       - Project
-  - caption: 'Image credit (SVG)'
-    name: overview_img_svg_credit
+  - name: overview_img_svg_credit
+    caption: 'Image credit (SVG)'
     description: "Mention the designer of this icon here, so they can be credited appropriately. You need to do this if you're using icons published under a CC license, for example from Noun Project."
     type: text
     properties:

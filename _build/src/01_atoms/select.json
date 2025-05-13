@@ -205,6 +205,9 @@
                 {
                     "name": "a_select",
                     "parent": "01_atoms"
+                },{
+                    "name": "a_sel_row",
+                    "parent": "a_select"
                 }
             ]
         }

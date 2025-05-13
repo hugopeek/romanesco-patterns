@@ -5,7 +5,7 @@
                 {
                     "caption": "Availability",
                     "name": "background_availability",
-                    "description": "Where would you like to use this background?",
+                    "description": "Where would you like to be able to use this background?",
                     "type": "checkbox",
                     "inputOptionValues": "In page headers==header||In ContentBlocks layouts==content||In footer CTAs==footer-cta||In page footers==footer",
                     "defaultValue": "header||content||footer-cta||footer",
