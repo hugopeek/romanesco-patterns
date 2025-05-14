@@ -10,11 +10,14 @@
  * @var modX $modx
  * @var array $scriptProperties
  */
+use FractalFarming\Romanesco\Romanesco;
 
-$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
-
-if (!($romanesco instanceof Romanesco)) return;
+/** @var Romanesco $romanesco */
+try {
+    $romanesco = $modx->services->get('romanesco');
+} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
+}
 
 $json = $modx->getOption('json', $scriptProperties, '');
 $object = $modx->getOption('object', $scriptProperties, '');

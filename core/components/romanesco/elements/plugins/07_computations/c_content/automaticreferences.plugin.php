@@ -16,6 +16,7 @@ if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
     return;
 }
 
+use FractalFarming\Romanesco\Romanesco;
 use \Wa72\HtmlPageDom\HtmlPageCrawler;
 
 $tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
@@ -40,11 +41,11 @@ switch ($modx->event->name) {
 
         // Generate links if requested
         if ($modx->resource->getTVValue('auto_references')) {
-            $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-            $romanesco = $modx->getService('romanesco','Romanesco', $corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
-            if (!($romanesco instanceof Romanesco)) {
-                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
-                break;
+            /** @var Romanesco $romanesco */
+            try {
+                $romanesco = $modx->services->get('romanesco');
+            } catch (\Psr\Container\NotFoundExceptionInterface $e) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
             }
 
             // Get external links for this resource

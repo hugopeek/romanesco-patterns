@@ -6,17 +6,17 @@
  * is specified, on a given page.
  *
  * @author Hugo Peek
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
-$cbCorePath = $modx->getOption('contentblocks.core_path', null, $modx->getOption('core_path').'components/contentblocks/');
-$ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.'model/contentblocks/');
+use FractalFarming\Romanesco\Romanesco;
 
-$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
-
-if (!($romanesco instanceof Romanesco)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
-    return;
+/** @var Romanesco $romanesco */
+try {
+    $romanesco = $modx->services->get('romanesco');
+} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
 $resourceID = $modx->getOption('resource', $scriptProperties, $modx->resource->get('id'));

@@ -11,16 +11,17 @@
  * @var Scheduler $scheduler
  *
  */
+use FractalFarming\Romanesco\Romanesco;
 
-$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
+/** @var Romanesco $romanesco */
+try {
+    $romanesco = $modx->services->get('romanesco');
+} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
+}
+
 $corePath = $modx->getOption('scheduler.core_path', null, $modx->getOption('core_path') . 'components/scheduler/');
 $scheduler = $modx->getService('scheduler', 'Scheduler', $corePath . 'model/scheduler/');
-
-if (!($romanesco instanceof Romanesco)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
-    return;
-}
 
 // Get CSS path from task properties, snippet properties or input
 $input = $modx->getOption('input', $scriptProperties, $input) ?? null;
