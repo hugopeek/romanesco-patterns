@@ -62,13 +62,13 @@ foreach ($optionsArray['groups'] as $group) {
     $oldKey = $group['key'];
 
     // Check if group exists
-    $existingGroup = $modx->getObject('rmOptionGroup', array(
+    $existingGroup = $modx->getObject('FractalFarming\Romanesco\Model\rmOptionGroup', array(
         'key' => $group['key']
     ));
 
     // Perform second check on name, to see if user wants to update key for existing group
     if (!is_object($existingGroup)) {
-        $existingGroup = $modx->getObject('rmOptionGroup', array(
+        $existingGroup = $modx->getObject('FractalFarming\Romanesco\Model\rmOptionGroup', array(
             'name' => $group['name']
         ));
 
@@ -90,7 +90,7 @@ foreach ($optionsArray['groups'] as $group) {
     }
     // If group doesn't exist, create it
     else {
-        $newGroup = $modx->newObject('rmOptionGroup', array(
+        $newGroup = $modx->newObject('FractalFarming\Romanesco\Model\rmOptionGroup', array(
             'name' => $group['name'],
             'description' => $group['description'],
             'key' => $group['key'],
@@ -115,14 +115,14 @@ foreach ($optionsArray['groups'] as $group) {
         }
 
         // Check if option exists
-        $existingOption = $modx->getObject('rmOption', array(
+        $existingOption = $modx->getObject('FractalFarming\Romanesco\Model\rmOption', array(
             'alias' => $option['alias'],
             'key' => $oldKey,
         ));
 
         // Perform second check on name, to see if user wants to update alias for existing option
         if (!is_object($existingOption)) {
-            $existingOption = $modx->getObject('rmOption', array(
+            $existingOption = $modx->getObject('FractalFarming\Romanesco\Model\rmOption', array(
                 'name' => $option['name'],
                 'key' => $oldKey,
             ));
@@ -140,7 +140,7 @@ foreach ($optionsArray['groups'] as $group) {
         }
         // Or create new option
         else {
-            $newOption = $modx->newObject('rmOption', array(
+            $newOption = $modx->newObject('FractalFarming\Romanesco\Model\rmOption', array(
                 'name' => $option['name'],
                 'description' => $option['description'],
                 'alias' => $option['alias'],

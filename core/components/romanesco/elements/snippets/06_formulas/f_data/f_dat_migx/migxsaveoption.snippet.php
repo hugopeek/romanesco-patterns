@@ -15,7 +15,7 @@ $properties = $modx->getOption('scriptProperties', $scriptProperties, array());
 $configs = $modx->getOption('configs', $properties, '');
 
 $co_id = $modx->getOption('co_id', $properties, 0);
-$parent = $modx->getObject('rmOptionGroup', array('id' => $co_id));
+$parent = $modx->getObject('FractalFarming\Romanesco\Model\rmOptionGroup', array('id' => $co_id));
 
 // Set key and ID of parent object
 if (is_object($object)) {
@@ -37,7 +37,7 @@ $object->set('alias', $alias);
 // Increment sort order of new items
 if ($properties['object_id'] === 'new') {
     // Ask for last position
-    $q = $modx->newQuery('rmOption');
+    $q = $modx->newQuery('FractalFarming\Romanesco\Model\rmOption');
     $q->select(array(
         "max(position)",
     ));

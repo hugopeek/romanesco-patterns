@@ -39,9 +39,6 @@
  * @var string $options
  */
 
-$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$backyard = $modx->addPackage('romanescobackyard',$corePath . 'model/');
-
 $value = $modx->getOption('value', $scriptProperties, $input);
 $match = $modx->getOption('match', $scriptProperties, $options);
 $key = $modx->getOption('key', $scriptProperties, '');
@@ -53,7 +50,7 @@ if (!function_exists('getInputOption')) {
     function getInputOption($value,$match,$key,$select,$tpl){
         global $modx;
 
-        $inputOption = $modx->getObject('rmOption', array(
+        $inputOption = $modx->getObject('FractalFarming\Romanesco\Model\rmOption', array(
             $match => $value,
             'key' => $key,
         ));
@@ -89,7 +86,7 @@ if (!$match) { $match = 'id'; }
 
 // Don't fetch entire object if it's being used as output modifier
 if ($input) {
-    $query = $modx->newQuery('rmOption');
+    $query = $modx->newQuery('FractalFarming\Romanesco\Model\rmOption');
     $query->where(array(
         $match => $value,
     ));
