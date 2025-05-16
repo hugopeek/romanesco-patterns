@@ -1,6 +1,6 @@
 [[+firstOption:after=`==||`]][[migxLoopCollection?
     &packageName=`romanescobackyard`
-    &classname=`FractalFarming\Romanesco\Model\[[+className]]`
+    &classname=`FractalFarming\Romanesco\[[+className]]`
     &tpl=`[[+rowTpl]]`
     &outputSeparator=`||`
     &where=`[{"key":"[[+inputOptionKey]]"},{"deleted:=":0}]`

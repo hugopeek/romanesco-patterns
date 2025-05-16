@@ -33,12 +33,12 @@ if (!$source && isset($properties['resource_id'])) {
 }
 
 // Check if cross-link exists already
-$existingSrc = $modx->getObject('FractalFarming\Romanesco\Model\rmCrossLink', array('source' => $source, 'destination' => $destination));
-$existingDest = $modx->getObject('FractalFarming\Romanesco\Model\rmCrossLink', array('source' => $destination, 'destination' => $source));
+$existingSrc = $modx->getObject('FractalFarming\Romanesco\rmCrossLink', array('source' => $source, 'destination' => $destination));
+$existingDest = $modx->getObject('FractalFarming\Romanesco\rmCrossLink', array('source' => $destination, 'destination' => $source));
 
 // Create another cross-link in the opposite direction
 if (is_object($existingSrc) && !is_object($existingDest)) {
-    $newSrc = $modx->newObject('FractalFarming\Romanesco\Model\rmCrossLink', array(
+    $newSrc = $modx->newObject('FractalFarming\Romanesco\rmCrossLink', array(
         'crosslink_id' => $objectID,
         'source' => $destination,
         'destination' => $source,

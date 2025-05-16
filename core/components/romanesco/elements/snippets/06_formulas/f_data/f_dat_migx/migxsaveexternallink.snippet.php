@@ -18,7 +18,7 @@ $configs = $modx->getOption('configs', $properties, '');
 if ($properties['object_id'] === 'new' && isset($properties['resource_id'])) {
 
     // Ask for highest number so far
-    $q = $modx->newQuery('FractalFarming\Romanesco\Model\rmExternalLink', array('resource_id' => $properties['resource_id']));
+    $q = $modx->newQuery('FractalFarming\Romanesco\rmExternalLink', array('resource_id' => $properties['resource_id']));
     $q->select(array(
         "max(number)",
     ));
