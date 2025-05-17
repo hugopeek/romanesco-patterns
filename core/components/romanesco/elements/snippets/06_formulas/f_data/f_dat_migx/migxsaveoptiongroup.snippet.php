@@ -15,10 +15,10 @@ $configs = $modx->getOption('configs', $properties, '');
 
 // Update key in child options if you change it
 if (is_object($object) && isset($properties['key'])) {
-    $children = $modx->getCollection('FractalFarming\Romanesco\rmOption', array('group' => $object->get('id')));
+    $children = $modx->getCollection('FractalFarming\Romanesco\Model\rmOption', array('group' => $object->get('id')));
 
     foreach ($children as $child) {
-        $child = $modx->getObject('FractalFarming\Romanesco\rmOption', array('id' => $child->get('id')));
+        $child = $modx->getObject('FractalFarming\Romanesco\Model\rmOption', array('id' => $child->get('id')));
 
         $child->set('key', $properties['key']);
         $child->save();
@@ -29,7 +29,7 @@ if (is_object($object) && isset($properties['key'])) {
 //if ($properties['object_id'] === 'new') {
 //
 //    // Ask for last position
-//    $q = $modx->newQuery('FractalFarming\Romanesco\rmOptionGroup');
+//    $q = $modx->newQuery('FractalFarming\Romanesco\Model\rmOptionGroup');
 //    $q->select(array(
 //        "max(position)",
 //    ));

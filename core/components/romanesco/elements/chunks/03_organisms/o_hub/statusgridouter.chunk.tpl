@@ -1,13 +1,13 @@
 <svg class="hidden">
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
-        &classname=`FractalFarming\Romanesco\rmOption`
+        &classname=`FractalFarming\Romanesco\Model\rmOption`
         &where=`{"key":"status_progress"}`
         &tpl=`statusIndicatorSVGSymbol`
     ]]
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
-        &classname=`FractalFarming\Romanesco\rmOption`
+        &classname=`FractalFarming\Romanesco\Model\rmOption`
         &where=`{"key":"status_health"}`
         &tpl=`statusIndicatorSVGSymbol`
     ]]
@@ -76,7 +76,7 @@
                     <tbody>
                     [[migxLoopCollection?
                         &packageName=`romanescobackyard`
-                        &classname=`FractalFarming\Romanesco\rmOption`
+                        &classname=`FractalFarming\Romanesco\Model\rmOption`
                         &where=`{"key":"status_progress"}`
                         &sortConfig=`[{"sortby":"pos","sortdir":"ASC"}]`
                         &tpl=`statusIndicatorLegendTR`
@@ -90,7 +90,7 @@
                     <tbody>
                     [[migxLoopCollection?
                         &packageName=`romanescobackyard`
-                        &classname=`FractalFarming\Romanesco\rmOption`
+                        &classname=`FractalFarming\Romanesco\Model\rmOption`
                         &where=`{"key":"status_health"}`
                         &sortConfig=`[{"sortby":"pos","sortdir":"ASC"}]`
                         &tpl=`statusIndicatorLegendTR`

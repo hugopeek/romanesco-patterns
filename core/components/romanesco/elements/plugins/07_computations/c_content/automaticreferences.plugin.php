@@ -49,7 +49,7 @@ switch ($modx->event->name) {
             }
 
             // Get external links for this resource
-            $linkObject = $modx->getIterator('FractalFarming\Romanesco\rmExternalLink', [
+            $linkObject = $modx->getIterator('FractalFarming\Romanesco\Model\rmExternalLink', [
                 'resource_id' => $modx->resource->get('id'),
                 'deleted' => 0
             ]);
