@@ -17,12 +17,12 @@
  * @package romanesco
  */
 
-if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
+if (!class_exists(Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
     return;
 }
 
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':

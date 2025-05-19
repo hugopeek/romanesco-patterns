@@ -11,13 +11,8 @@
  * @package romanesco
  */
 
-if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
-    return;
-}
-
 use FractalFarming\Romanesco\Romanesco;
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 $tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
 

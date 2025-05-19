@@ -9,12 +9,7 @@
  * @package romanesco
  */
 
-if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
-    return;
-}
-
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 $tpl = $modx->getPlaceholder('toc.tpl') ?? 'tocNavItem';
 $target = $modx->getPlaceholder('toc.target');
