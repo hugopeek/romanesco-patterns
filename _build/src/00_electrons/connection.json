@@ -93,7 +93,7 @@
                     "description": "This will also create a relation on the linked page. You can (and should!) link to other pages in your content whenever relevant, but this makes it easier to generate lists of related pages.",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "content_related_src:romanescobackyard"
+                        "configs": "links_related_src:romanescobackyard"
                     },
                     "properties": [
                         {
@@ -112,7 +112,7 @@
                     "description": "Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.",
                     "type": "migxdb",
                     "inputProperties": {
-                        "configs": "external_links:romanescobackyard"
+                        "configs": "links_external:romanescobackyard"
                     },
                     "properties": [
                         {
