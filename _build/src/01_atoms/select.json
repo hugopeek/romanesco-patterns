@@ -108,7 +108,7 @@
                             "value": ""
                         },{
                             "name": "className",
-                            "value": "rmOption"
+                            "value": "Option"
                         },{
                             "name": "rowTpl",
                             "value": "tvSelectInputOptionRow"

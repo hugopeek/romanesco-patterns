@@ -1,13 +1,13 @@
 <svg class="hidden">
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
-        &classname=`FractalFarming\Romanesco\Model\rmOption`
+        &classname=`FractalFarming\Romanesco\Model\Option`
         &where=`{"key":"status_progress"}`
         &tpl=`statusIndicatorSVGSymbol`
     ]]
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
-        &classname=`FractalFarming\Romanesco\Model\rmOption`
+        &classname=`FractalFarming\Romanesco\Model\Option`
         &where=`{"key":"status_health"}`
         &tpl=`statusIndicatorSVGSymbol`
     ]]
@@ -36,7 +36,7 @@
 
 [[migxLoopCollection?
     &packageName=`romanescobackyard`
-    &classname=`FractalFarming\Romanesco\Model\rmOption`
+    &classname=`FractalFarming\Romanesco\Model\Option`
     &where=`{"key":"status_progress"}`
     &wrapperTpl=`kanbanGridStepsWrapper`
     &tpl=`kanbanGridStepsRow`
@@ -44,7 +44,7 @@
 <div class="ui stackable equal width celled kanban grid">
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
-        &classname=`FractalFarming\Romanesco\Model\rmOption`
+        &classname=`FractalFarming\Romanesco\Model\Option`
         &where=`{"key":"content_priority"}`
         &tpl=`kanbanGridRow`
     ]]
