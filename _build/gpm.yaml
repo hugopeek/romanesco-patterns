@@ -348,7 +348,7 @@ tvs:
     category: _Connection
     sortOrder: 10
     inputOptions:
-      configs: 'content_related_src:romanescobackyard'
+      configs: 'links_related_src:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -378,7 +378,7 @@ tvs:
     category: _Connection
     sortOrder: 20
     inputOptions:
-      configs: 'external_links:romanescobackyard'
+      configs: 'links_external:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -3455,7 +3455,7 @@ chunks:
       - name: inputOptionKey
         value: ''
       - name: className
-        value: rmOption
+        value: Option
       - name: rowTpl
         value: tvSelectInputOptionRow
       - name: linkType
