@@ -39,19 +39,21 @@
  * @var array $scriptProperties
  */
 
-$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$backyard = $modx->addPackage('romanescobackyard', $corePath . 'model/');
 $json = $modx->getOption('file', $scriptProperties, '');
 
 if (!is_file($json)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[jsonImportInputOptions] input file not found!');
+    $modx->log(modX::LOG_LEVEL_ERROR, '[jsonImportInputOptions] Input file not found!');
     return '';
 }
 $options = file_get_contents($json);
 $optionsArray = json_decode($options, true);
 
+$modx->log(modX::LOG_LEVEL_INFO, 'Importing input options...');
+
 foreach ($optionsArray['groups'] as $group) {
     $groupID = '';
+
+    $modx->log(modX::LOG_LEVEL_INFO, ' - group: ' . $group['name']);
 
     // Prevent NULL on NOT NULL field errors
     if (!isset($group['deleted'])) {
