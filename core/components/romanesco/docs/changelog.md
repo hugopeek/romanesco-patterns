@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-rc1
-Released on ...
+Released on May 22, 2025
 
 New features:
 - MODX 3 compatibility
@@ -9,7 +9,8 @@ New features:
 - Render structured data with plugin
 
 Fixes and improvements:
-- Merge link and social TVs into connection category
+- Merge link and social TVs into Connection category
+- Fix Breadcrumbs and Pagination in MODX 3
 - Fix nested output filters not rendering properly in MODX 3
 - Expand available options for accordion styling
 - Fix Tabs not working inside CTAs
