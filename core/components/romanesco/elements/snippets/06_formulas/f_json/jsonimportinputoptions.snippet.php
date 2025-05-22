@@ -23,15 +23,24 @@
  * So NEVER change name and key/alias in the same update, unless you don't mind
  * new elements being created. Change one > run script > change the other.
  *
+ * And ALWAYS backup first.
+ *
  * Usage:
- * [[jsonImportInputOptions? &json=`/absolute/path/to/file.json`]]
+ * [[jsonImportInputOptions?
+ *     &json=`/absolute/path/to/file.json`
+ *     &updateExisting=`0`
+ * ]]
+ *
+ * Set the updateExisting option to true if you want existing values to be
+ * overwritten by the file contents. The default is false: existing options will
+ * be left alone; only new options will be added.
  *
  * Tip:
  * If you want to populate the options with only the contents of the file, you
  * can set them all to deleted=1 before updating and then back to 0 if present
  * in the json file.
  *
- * Don't do this if you want to mix options with user generated input (obviously).
+ * Don't do this if you want to mix options with user generated input.
  * If you need to delete options from the JSON file, just add "deleted":1 to
  * their config, run the script once and then delete them from the file.
  *
@@ -40,6 +49,7 @@
  */
 
 $json = $modx->getOption('file', $scriptProperties, '');
+$updateExisting = $modx->getOption('updateExisting', $scriptProperties, false);
 
 if (!is_file($json)) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[jsonImportInputOptions] Input file not found!');
@@ -48,12 +58,10 @@ if (!is_file($json)) {
 $options = file_get_contents($json);
 $optionsArray = json_decode($options, true);
 
-$modx->log(modX::LOG_LEVEL_INFO, 'Importing input options...');
+$modx->log(modX::LOG_LEVEL_INFO, 'Importing default set of input options...');
 
 foreach ($optionsArray['groups'] as $group) {
     $groupID = '';
-
-    $modx->log(modX::LOG_LEVEL_INFO, ' - group: ' . $group['name']);
 
     // Prevent NULL on NOT NULL field errors
     if (!isset($group['deleted'])) {
@@ -81,7 +89,8 @@ foreach ($optionsArray['groups'] as $group) {
     }
 
     // Update existing group with new data
-    if (is_object($existingGroup)) {
+    if (is_object($existingGroup) && $updateExisting) {
+        $modx->log(modX::LOG_LEVEL_INFO, ' - updating group: ' . $group['name']);
         $existingGroup->set('name', $group['name']);
         $existingGroup->set('description', $group['description']);
         $existingGroup->set('key', $group['key']);
@@ -91,7 +100,8 @@ foreach ($optionsArray['groups'] as $group) {
         $groupID = $existingGroup->get('id'); // for connecting options
     }
     // If group doesn't exist, create it
-    else {
+    elseif (!is_object($existingGroup)) {
+        $modx->log(modX::LOG_LEVEL_INFO, ' - creating group: ' . $group['name']);
         $newGroup = $modx->newObject('FractalFarming\Romanesco\Model\OptionGroup', array(
             'name' => $group['name'],
             'description' => $group['description'],
@@ -100,6 +110,9 @@ foreach ($optionsArray['groups'] as $group) {
         ));
         $newGroup->save();
         $groupID = $newGroup->get('id'); // for connecting options
+    }
+    else {
+        continue;
     }
 
     // Same drill for the options
@@ -131,7 +144,7 @@ foreach ($optionsArray['groups'] as $group) {
         }
 
         // Update existing option with new data
-        if (is_object($existingOption)) {
+        if (is_object($existingOption) && $updateExisting) {
             $existingOption->set('name', $option['name']);
             $existingOption->set('description', $option['description']);
             $existingOption->set('alias', $option['alias']);
@@ -141,7 +154,7 @@ foreach ($optionsArray['groups'] as $group) {
             $existingOption->save();
         }
         // Or create new option
-        else {
+        elseif (!is_object($existingOption)) {
             $newOption = $modx->newObject('FractalFarming\Romanesco\Model\Option', array(
                 'name' => $option['name'],
                 'description' => $option['description'],
