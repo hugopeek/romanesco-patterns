@@ -2,7 +2,8 @@
     window.addEventListener('DOMContentLoaded', function() {
         $('.ui.form#form-[[*alias]]')
             .form({
-                on: 'submit',
+                on: '[[*fb_frontend_validate_on:replace=`default==[[++formblocks.frontend_validate_on]]`:default=`submit`]]',
+                [[*fb_frontend_validate_on:replace=`default==[[++formblocks.frontend_validate_on]]`:is=`blur`:then=`inline: true,`]]
                 fields: {
                     [[fbFormReport:strip?
                         &formID=`[[*id]]`

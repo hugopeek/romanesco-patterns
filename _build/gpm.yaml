@@ -434,254 +434,6 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - name: fb_email_to
-    caption: 'Email address recipient'
-    description: 'Submitted forms will be sent to this address. If you leave this field empty, no emails will be sent. This may be what you want when using a custom hook for processing the form.'
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 1
-    templates:
-      - fbForm
-  - name: fb_email_cc
-    caption: 'Email CC address'
-    description: Optional.
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 2
-    templates:
-      - fbForm
-  - name: fb_email_bcc
-    caption: 'Email BCC address'
-    description: Optional.
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 3
-    templates:
-      - fbForm
-  - name: fb_email_from
-    caption: 'Email FROM address'
-    description: 'Optional. Defaults to emailsender system setting.'
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 5
-    templates:
-      - fbForm
-  - name: fb_email_from_name
-    caption: 'Email FROM name'
-    description: 'Optional. Defaults to site_name system setting.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 6
-    templates:
-      - fbForm
-  - name: fb_email_subject
-    caption: 'Email subject'
-    description: ''
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 10
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_submit_button
-    caption: 'Submit button text'
-    description: 'Defaults to Send.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - General'
-    sortOrder: 90
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_save_form
-    caption: 'Save form data'
-    description: 'Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.'
-    type: listbox
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - General'
-    sortOrder: 91
-    inputOptionValues: 'System default==default||Yes==1||No==0'
-    defaultValue: default
-    templates:
-      - fbForm
-  - name: fb_redirect_id
-    caption: 'Redirect page'
-    description: 'Enter the ID of the page, or drag the page from the menu tree to this input field.'
-    type: number
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - General'
-    sortOrder: 92
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_prehooks
-    caption: Pre-hook(s)
-    description: 'A snippet name (or comma separated list of names). They are run before the form is initialised. Useful for prefilling form fields with existing data.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 1
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_renderhooks
-    caption: 'Render hook(s)'
-    description: 'A snippet name (or comma separated list of names) to execute. They are run when the form loads and all pre-hooks are finished. Useful for fetching session data.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: review
-    category: '_Settings - Advanced'
-    sortOrder: 2
-    templates:
-      - fbForm
-  - name: fb_hooks
-    caption: Hook(s)
-    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is submitted, but before any emails are sent (or user is created). Useful for additional validation.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 3
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_posthooks
-    caption: Post-hook(s)
-    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is fully submitted and all emails are sent. Useful for writing submitted values to the database.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 3
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_email_to_dynamic
-    caption: 'Dynamic recipient address'
-    description: 'Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!'
-    type: textarea
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 10
-    templates:
-      - fbForm
-  - name: fb_redirect_dynamic
-    caption: 'Dynamic redirect page'
-    description: 'Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 11
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_store_data
-    caption: 'Store submitted data temporarily'
-    description: 'Store data in session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.'
-    type: option
-    inputOptionValues: No==0||Yes==1
-    defaultValue: '0'
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 15
-    templates:
-      - fbForm
-  - name: fb_store_time
-    caption: 'Temporary storage timeout'
-    description: "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes."
-    type: number
-    defaultValue: '300'
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 16
-    templates:
-      - fbForm
-  - name: fb_store_attachments
-    caption: 'Store submitted attachments'
-    description: 'Store uploads in designated folder. Make sure this folder is NOT web accessible (unless that is your aim). You may also need to monitor it somehow to comply with GDPR retention policies.'
-    type: option
-    inputOptionValues: 'On==1||Off==0||System default==default'
-    defaultValue: default
-    properties:
-      - name: elementStatus
-        value: review
-    category: '_Settings - Advanced'
-    sortOrder: 17
-    templates:
-      - fbForm
-  - name: fb_attachment_path
-    caption: 'Attachment path'
-    description: 'Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.'
-    type: text
-    defaultValue: '../uploads/_forms/[[*id]]'
-    properties:
-      - name: elementStatus
-        value: review
-    category: '_Settings - Advanced'
-    sortOrder: 18
-    templates:
-      - fbForm
-  - name: fb_email_template
-    caption: 'Email template'
-    description: 'Name of the chunk containing the (HTML) email template. You can replace the default with your own... Just make sure it contains the fbFormReport snippet call for listing the fields.'
-    type: text
-    defaultValue: fbEmail
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 20
-    templates:
-      - fbForm
-  - name: fb_email_tpl_prefix
-    caption: 'Email template row prefix'
-    description: 'Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.'
-    type: text
-    defaultValue: fbEmailRow_
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 21
-    templates:
-      - fbForm
   - name: background_availability
     caption: Availability
     description: 'Where would you like to be able to use this background?'
@@ -2100,6 +1852,125 @@ tvs:
       configs: 'project_timeline:romanescobackyard'
     templates:
       - Dashboard
+  - name: fb_prehooks
+    caption: Pre-hook(s)
+    description: 'A snippet name (or comma separated list of names). They are run before the form is initialised. Useful for prefilling form fields with existing data.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 1
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_renderhooks
+    caption: 'Render hook(s)'
+    description: 'A snippet name (or comma separated list of names) to execute. They are run when the form loads and all pre-hooks are finished. Useful for fetching session data.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - Advanced'
+    sortOrder: 2
+    templates:
+      - fbForm
+  - name: fb_hooks
+    caption: Hook(s)
+    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is submitted, but before any emails are sent (or user is created). Useful for additional validation.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 3
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_posthooks
+    caption: Post-hook(s)
+    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is fully submitted and all emails are sent. Useful for writing submitted values to the database.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 3
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_email_tpl_prefix
+    caption: 'Email template row prefix'
+    description: 'Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.'
+    type: text
+    defaultValue: fbEmailRow_
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 11
+    templates:
+      - fbForm
+  - name: fb_email_to_dynamic
+    caption: 'Dynamic recipient address'
+    description: 'Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!'
+    type: textarea
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 20
+    templates:
+      - fbForm
+  - name: fb_redirect_dynamic
+    caption: 'Dynamic redirect page'
+    description: 'Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 21
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_store_data
+    caption: 'Store submitted data temporarily'
+    description: 'Store data in session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.'
+    type: option
+    inputOptionValues: No==0||Yes==1
+    defaultValue: '0'
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 30
+    templates:
+      - fbForm
+  - name: fb_store_time
+    caption: 'Temporary storage timeout'
+    description: "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes."
+    type: number
+    defaultValue: '300'
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 31
+    templates:
+      - fbForm
+  - name: fb_attachment_path
+    caption: 'Attachment path'
+    description: 'Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.'
+    type: text
+    defaultValue: '../uploads/_forms/[[*id]]'
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - Advanced'
+    sortOrder: 40
+    templates:
+      - fbForm
   - name: fb_autoresponder_toggle
     caption: Autoresponder
     description: 'IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.'
@@ -2178,6 +2049,161 @@ tvs:
         value: review
     category: _Autoresponder
     sortOrder: 20
+    templates:
+      - fbForm
+  - name: fb_email_to
+    caption: 'Email address recipient'
+    description: 'Submitted forms will be sent to this address. If you leave this field empty, no emails will be sent. This may be what you want when using a custom hook for processing the form.'
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 1
+    templates:
+      - fbForm
+  - name: fb_email_cc
+    caption: 'Email CC address'
+    description: Optional.
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 2
+    templates:
+      - fbForm
+  - name: fb_email_bcc
+    caption: 'Email BCC address'
+    description: Optional.
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 3
+    templates:
+      - fbForm
+  - name: fb_email_from
+    caption: 'Email FROM address'
+    description: 'Optional. Defaults to emailsender system setting.'
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 5
+    templates:
+      - fbForm
+  - name: fb_email_from_name
+    caption: 'Email FROM name'
+    description: 'Optional. Defaults to site_name system setting.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 6
+    templates:
+      - fbForm
+  - name: fb_email_subject
+    caption: 'Email subject'
+    description: ''
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 10
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_email_template
+    caption: 'Email template'
+    description: 'Name of the chunk containing the (HTML) email template. You can replace the default with your own... Just make sure it contains the fbFormReport snippet call for listing the fields.'
+    type: text
+    defaultValue: fbEmail
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 10
+    templates:
+      - fbForm
+  - name: fb_submit_button
+    caption: 'Submit button text'
+    description: 'Defaults to Send.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - General'
+    sortOrder: 10
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_redirect_id
+    caption: 'Redirect page'
+    description: 'Enter the ID of the page, or drag the page from the menu tree to this input field.'
+    type: number
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - General'
+    sortOrder: 20
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_save_form
+    caption: 'Save form data'
+    description: 'Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.'
+    type: listbox
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - General'
+    sortOrder: 30
+    inputOptionValues: 'System default==default||Yes==1||No==0'
+    defaultValue: default
+    templates:
+      - fbForm
+  - name: fb_store_attachments
+    caption: 'Store submitted attachments'
+    description: 'Store uploads in designated folder (defined under Advanced). You may need to monitor and periodically clean up this folder in order to comply with GDPR retention policies.'
+    type: option
+    inputOptionValues: 'On==1||Off==0||System default==default'
+    defaultValue: default
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - General'
+    sortOrder: 31
+    templates:
+      - fbForm
+  - name: fb_frontend_validation
+    caption: 'Frontend validation'
+    description: 'Validate form input in the browser first, before submit. The javascript automatically picks up required settings and some field-specific properties and backend validation is still applied.'
+    type: option
+    inputOptionValues: 'On==1||Off==0||System default==default'
+    defaultValue: default
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - General'
+    sortOrder: 40
+    templates:
+      - fbForm
+  - name: fb_frontend_validate_on
+    caption: 'Frontend validate on'
+    description: 'Validate fields just before the form is submitted, or when the visitor leaves the form field again (on blur).'
+    type: option
+    inputOptionValues: 'Submit==submit||Blur==blur||System default==default'
+    defaultValue: default
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - General'
+    sortOrder: 41
     templates:
       - fbForm
   - name: fb_activation_toggle
@@ -8543,6 +8569,11 @@ systemSettings:
     type: combo-boolean
     area: 'FormBlocks - Settings'
     value: '1'
+  - key: frontend_validate_on
+    namespace: formblocks
+    type: text
+    area: 'FormBlocks - Settings'
+    value: submit
   - key: ajax_mode
     namespace: formblocks
     type: combo-boolean

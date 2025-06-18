@@ -169,6 +169,6 @@
 
 [[fbLoadAssets?
     &uploadFile=`[[cbHasField? &field=`[[++formblocks.cb_input_file_multiple_id]]`]]`
-    &frontendValidation=`[[++formblocks.frontend_validation]]`
+    &frontendValidation=`[[*fb_frontend_validation:replace=`default==[[++formblocks.frontend_validation]]`]]`
     &ajaxMode=`[[++formblocks.ajax_mode]]`
 ]]
