@@ -1,6 +1,19 @@
 [[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 [[+field_helptext:notempty=`<span class="help">[[+field_helptext]]</span>`:toPlaceholder=`help`]]
 [[!+fb[[*id]].[[+name]]:contains=`[[+option_other_value]]`:then=`checked`:toPlaceholder=`check_other`]]
+[[!If:toPlaceholder=`checkbox_array`?
+    &subject=`[[+field_type]]`
+    &operator=`EQ`
+    &operand=`checkbox`
+    &then=`[]`
+    &else=``
+]]
+[[!If:toPlaceholder=`checkbox_variant`?
+    &subject=`[[+checkbox_type]]`
+    &operator=`notempty`
+    &then=`[[+checkbox_type]]`
+    &else=`[[+field_type]]`
+]]
 
 <div id="[[+name]]" class="[[+option_layout:empty=`grouped`]] [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[+field_type]] fields [[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
     <label for="[[+name]]">
@@ -13,9 +26,9 @@
 
     [[+option_other:is=`1`:then=`
     <div class="field">
-        <div class="ui collapsible [[+checkbox_type:empty=`[[+field_type]]`]] checkbox">
+        <div class="ui collapsible [[+checkbox_variant]] checkbox">
             <input type="[[+field_type]]"
-                   name="[[+name]][[+field_type:is=`checkbox`:then=`[]`]]"
+                   name="[[+name]][[+checkbox_array]]"
                    id="[[+name]]-last"
                    class="hidden"
                    value="[[+option_other_value]]"
