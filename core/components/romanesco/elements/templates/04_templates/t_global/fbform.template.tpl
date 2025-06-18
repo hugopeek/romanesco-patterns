@@ -78,7 +78,7 @@
     `]]
 
     [[*fb_autoresponder_toggle:eq=`1`:then=`
-    &fiarTpl=`fbAutoresponder`
+    &fiarTpl=`[[*fb_autoresponder_template:empty=`fbAutoresponder`]]`
     &fiarToField=`fb[[*id]]-email`
     &fiarFrom=`[[*fb_autoresponder_from:empty=`[[++emailsender]]`]]`
     &fiarFromName=`[[*fb_autoresponder_from_name:empty=`[[++site_name]]`]]`

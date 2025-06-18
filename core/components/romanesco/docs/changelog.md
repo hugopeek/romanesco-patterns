@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-rc2
+Released on ...
+
+Fixes and improvements:
+- Add ability to use custom autoresponse email template
+
 ## Romanesco Patterns 1.0.0-rc1
 Released on May 22, 2025
 

@@ -324,7 +324,7 @@
                 },{
                     "caption": "Email template",
                     "name": "fb_email_template",
-                    "description": "Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.",
+                    "description": "Name of the chunk containing the (HTML) email template. You can replace the default with your own... Just make sure it contains the fbFormReport snippet call for listing the fields.",
                     "type": "text",
                     "defaultValue": "fbEmail",
                     "properties": [
