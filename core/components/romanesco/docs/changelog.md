@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Set fiarSender in form autoresponder options
 - Add ability to use custom autoresponse email template
 
 ## Romanesco Patterns 1.0.0-rc1
