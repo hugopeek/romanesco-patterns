@@ -1,5 +1,5 @@
 <figure class="ui small image">
-    [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
+    [[ImagePlus:empty=`[[$imgOverviewFallback? &uid=`[[+uid]]`]]`?
         &tvname=`organization_logo_img`
         &docid=`[[+id]]`
         &options=`w=600&q=[[++romanesco.img_quality]]&zc=1`

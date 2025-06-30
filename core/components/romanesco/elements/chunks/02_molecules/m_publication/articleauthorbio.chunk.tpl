@@ -4,7 +4,7 @@
             <div class="ui two column equal width grid">
                 <div class="compact column">
                     <a class="ui small image" href="[[~[[+id]]]]">
-                        [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`square`]]`?
+                        [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`square` &uid=`[[+uid]]`]]`?
                             &tvname=`person_image`
                             &docid=`[[+id]]`
                             &options=`w=400&h=400&q=[[++romanesco.img_quality]]&zc=1`
