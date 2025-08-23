@@ -281,50 +281,79 @@ tvs:
   - name: person_id
     caption: Person
     description: 'Connect a person to this item. This list is populated with all the persons that are listed on your Team page.'
-    type: listbox
-    inputOptionValues: '@CHUNK tvSelectTeam'
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 1
+    inputOptions:
+      selectType: resources
+      maxElements: '1'
+      stackItems: 'false'
+      allowBlank: 'true'
+      parents: romanesco.team_container_id
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
     templates:
       - Project
   - name: organization_id
     caption: Organization
     description: 'Connect the related organization(s). If this list is empty, you need to create an Organizations container first and register its ID under System Settings.'
-    type: listbox-multiple
-    inputOptionValues: '@CHUNK tvSelectClient'
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 2
+    inputOptions:
+      selectType: resources
+      maxElements: '1'
+      stackItems: 'true'
+      allowBlank: 'true'
+      parents: romanesco.client_container_id
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
     templates:
       - Project
       - Review
   - name: contributors_id
     caption: Contributors
     description: 'Team members that worked on this item. You can only select persons listed on your Team page, so if you want to add external contributors: add them to the team page first (can be unpublished).'
-    type: listbox-multiple
-    inputOptionValues: '@CHUNK tvSelectTeam'
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 3
+    inputOptions:
+      selectType: resources
+      maxElements: '0'
+      stackItems: 'true'
+      allowBlank: 'true'
+      parents: romanesco.team_container_id
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
     templates:
       - Project
   - name: user_id
     caption: 'MODX user'
     description: 'Connect a MODX user to this item. Only active users will be shown.'
-    type: listbox
-    inputOptionValues: "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )"
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 5
+    inputOptions:
+      selectType: users
+      maxElements: '1'
+      allowBlank: 'true'
+      depth: '10'
+      pageSize: '10'
   - name: social_connections
     caption: 'Social platforms'
     description: 'Maintain a list of social media platforms through which visitors can connect with you.'
@@ -409,7 +438,7 @@ tvs:
     sortOrder: 30
     inputOptions:
       selectType: resources
-      allowBlank: '1'
+      allowBlank: 'true'
       stackItems: 'true'
       depth: '10'
       limitRelatedContext: 'false'

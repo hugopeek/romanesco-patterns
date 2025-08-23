@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Use SuperBoxSelect input type for some Connection TVs
 - Fix incorrect fallback images due to cached image chunks
 - Set fiarSender in form autoresponder options
 - Add ability to use custom autoresponse email template
