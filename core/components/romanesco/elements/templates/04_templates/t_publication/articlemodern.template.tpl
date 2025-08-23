@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
-[[setUserPlaceholders? &userId=`[[*author_id]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
 <head>
@@ -35,7 +34,14 @@
             <header class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]] introduction">
                 <div class="ui main text container">
                     <h1 class="ui header">[[*pagetitle]]</h1>
-                    <p class="subtitle meta date"><em>[[*publishedon:strtotime:date=`%e %B %Y`]]</em></p>
+                    <p class="subtitle meta date">
+                        <em>
+                            [[%romanesco.article.written_by]]
+                            <a href="[[~[[*author_id:empty=`[[++error_page]]`]]]]">[[#[[*author_id]].pagetitle:empty=`[[++site_name]]`]]</a>
+                            [[%romanesco.article.written_on]]
+                            [[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
+                        </em>
+                    </p>
                 </div>
             </header>
 

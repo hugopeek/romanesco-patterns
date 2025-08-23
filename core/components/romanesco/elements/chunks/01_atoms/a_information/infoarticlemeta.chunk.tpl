@@ -1,20 +1,11 @@
 <p class="[[+classes]] meta">
     <span class="author">
-        [[[[If?
-            &subject=`[[+team_member_id]]`
-            &operator=`notempty`
-            &then=`$imgOverviewPersonAvatarLink? &id=`[[+team_member_id]]``
-        ]]]]
-        [[If?
-            &subject=`[[+author_id]]`
-            &operator=`notempty`
-            &then=`[[+author_id:userinfo=`fullname`]]`
-            &else=`<i class="user icon"></i> [[+createdby:userinfo=`fullname`:empty=`[[++site_name]]`]]`
-        ]]
+        [[$imgOverviewPersonAvatar? &id=`[[+author_id]]`]]
+        [[#[[+author_id]].pagetitle:empty=`[[++site_name]]`]]
     </span>
     <span class="date">
         <i class="calendar icon"></i>
-        [[+publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
+        [[+publishedon:strtotime:date=`[[++romanesco.date_format_short]]`]]
     </span>
     <span class="views">
         <i class="eye icon"></i>

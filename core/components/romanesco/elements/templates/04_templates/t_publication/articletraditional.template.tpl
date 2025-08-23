@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
-[[setUserPlaceholders? &userId=`[[*author_id]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
 <head>
@@ -40,17 +39,8 @@
 
                         <p class="meta">
                             <span class="author">
-                                [[[[If?
-                                    &subject=`[[+team_member_id]]`
-                                    &operator=`notempty`
-                                    &then=`$imgOverviewPersonAvatarLink? &id=`[[+team_member_id]]``
-                                ]]]]
-                                [[If?
-                                    &subject=`[[*author_id]]`
-                                    &operator=`notempty`
-                                    &then=`[[*author_id:userinfo=`fullname`]]`
-                                    &else=`<i class="user icon"></i> [[*createdby:userinfo=`fullname`:empty=`[[++site_name]]`]]`
-                                ]]
+                                [[$imgOverviewPersonAvatarLink? &id=`[[*author_id]]`]]
+                                [[#[[*author_id]].pagetitle:empty=`[[++site_name]]`]]
                             </span>
                             <span class="date">
                                 <i class="calendar icon"></i>
@@ -74,11 +64,11 @@
                 [[$content]]
 
                 [[[[If?
-                    &subject=`[[+team_member_id:empty=`0`]]`
+                    &subject=`[[*author_id:empty=`0`]]`
                     &operator=`notempty`
                     &then=`getResources?
-                        &resources=`[[+team_member_id:empty=`0`]]`
-                        &tpl=`[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`articleAuthorBioTheme` &else=`articleAuthorBio`]]`
+                        &resources=`[[*author_id:empty=`0`]]`
+                        &tpl=`articleAuthorBio[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`Theme` &else=``]]`
                         &includeTVs=`1`
                         &tvPrefix=``
                     `

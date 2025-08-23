@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Link to authors via their team page ID [BREAKING CHANGE]
 - Use SuperBoxSelect input type for some Connection TVs
 - Fix incorrect fallback images due to cached image chunks
 - Set fiarSender in form autoresponder options

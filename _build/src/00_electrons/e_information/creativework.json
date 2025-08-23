@@ -5,9 +5,18 @@
                 {
                     "caption": "Author",
                     "name": "author_id",
-                    "description": "Select the author of this article. He or she must be a MODX user. This value is inherited on child pages.",
-                    "type": "listbox",
-                    "inputOptionValues": "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )",
+                    "description": "Select the author of this article. He or she must be listed on your Team page (can be unpublished). This value is inherited on child pages.",
+                    "type": "superboxselect",
+                    "inputProperties": {
+                        "selectType": "resources",
+                        "maxElements": "1",
+                        "stackItems": "false",
+                        "allowBlank": "true",
+                        "parents": "romanesco.team_container_id",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "pageSize": "10"
+                    },
                     "defaultValue": "@INHERIT",
                     "properties": [
                         {

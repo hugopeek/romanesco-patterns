@@ -1,4 +1,4 @@
-<figure class="ui avatar image">
+<span class="ui avatar image">
     [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`square` &uid=`[[+uid]]`]]`?
         &tvname=`person_image`
         &docid=`[[+id]]`
@@ -6,4 +6,4 @@
         &type=`tpl`
         &tpl=`imgOverviewFixed`
     ]]
-</figure>
+</span>

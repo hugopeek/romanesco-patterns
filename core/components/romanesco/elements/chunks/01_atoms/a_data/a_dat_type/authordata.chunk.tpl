@@ -1,6 +1,6 @@
 {
     "@type" : "Person",
-    "name" : "[[*author_id:userinfo=`fullname`]]",
-    "jobTitle" : "[[#[[+team_member_id]].person_jobtitle]]",
-    "url" : "[[~[[+team_member_id]]]]"
+    "name" : "[[#[[+author_id]].pagetitle]]",
+    "jobTitle" : "[[#[[+author_id]].person_jobtitle]]",
+    "url" : "[[~[[+author_id]]]]"
 },
