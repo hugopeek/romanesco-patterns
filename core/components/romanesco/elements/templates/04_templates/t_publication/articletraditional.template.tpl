@@ -44,7 +44,7 @@
                             </span>
                             <span class="date">
                                 <i class="calendar icon"></i>
-                                [[*publishedon:strtotime:date=`%e %B %Y`]]
+                                [[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
                             </span>
                             <span class="views">
                                 <i class="eye icon"></i>

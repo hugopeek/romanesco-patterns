@@ -5,9 +5,9 @@
     </span>
     <span class="date">
         <i class="calendar icon"></i>
-        [[+publishedon:strtotime:date=`[[++romanesco.date_format_short]]`]]
+        [[+publishedon:strtotime:date=`[[++romanesco.date_format_medium]]`]]
     </span>
-    <span class="views">
+    <span class="views mobile hidden">
         <i class="eye icon"></i>
         [[$getHitCount:empty=`0`? &uid=`[[+unique_idx]]`]]
     </span>
