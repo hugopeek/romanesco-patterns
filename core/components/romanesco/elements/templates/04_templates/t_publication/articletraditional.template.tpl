@@ -57,6 +57,9 @@
                                     &cacheResults=`0`
                                 ]]
                             </span>
+                            <span class="reading-time">
+                                <i class="outline time icon"></i>
+                            </span>
                         </p>
                     </div>
                 </header>

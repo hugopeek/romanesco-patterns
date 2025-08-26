@@ -14322,6 +14322,20 @@
                     ]
                 },
                 {
+                    "name": "ReadingTime",
+                    "description": "Calculate the time needed to read the full text of an article.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "c_content",
+                    "events": [
+                        "OnWebPagePrerender"
+                    ]
+                },
+                {
                     "name": "setResourceGroup",
                     "description": "Add resource to a specific group, based on certain conditions or variables.",
                     "properties": [

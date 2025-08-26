@@ -17,4 +17,7 @@
         <a href="[[~[[+id]]? &scheme=`full`]]#comments">[[%romanesco.article.comments:lcase]]</a>
     </span>
     `]]
+    <span class="reading-time">
+        <i class="outline time icon"></i>
+    </span>
 </p>

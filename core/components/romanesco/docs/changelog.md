@@ -3,6 +3,9 @@
 ## Romanesco Patterns 1.0.0-rc2
 Released on ...
 
+New features:
+- Add reading time indication to Publications
+
 Fixes and improvements:
 - Link to authors via their team page ID [BREAKING CHANGE]
 - Use SuperBoxSelect input type for some Connection TVs
