@@ -43,12 +43,12 @@
                                 [[#[[*author_id]].pagetitle:empty=`[[++site_name]]`]]
                             </span>
                             <span class="date">
-                                <i class="calendar icon"></i>
+                                <i class="alternate outline calendar icon"></i>
                                 [[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
                             </span>
                             <span class="views">
-                                <i class="eye icon"></i>
-                                [[!Rowboat?
+                                <i class="outline eye icon"></i>
+                                [[Rowboat?
                                     &table=`modx_hits`
                                     &tpl=`hitCount`
                                     &limit=`1`

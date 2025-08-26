@@ -38,8 +38,8 @@ switch ($modx->event->name) {
 
         // Calculate reading time
         $words = str_word_count(strip_tags($article));
-        $wpm = (int)$modx->getOption("romanesco.reading_time_wpm");
-        $min = round($words / ($wpm ?: 180));
+        $wpm = (int)$modx->getOption("romanesco.reading_time_wpm", null, 180);
+        $min = round($words / $wpm);
         $text = ($min <= 1) ? 'minute' : 'minutes';
 
         if ($min < 1) $min = '< 1';

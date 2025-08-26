@@ -35,17 +35,28 @@
                 <div class="ui main text container">
                     <h1 class="ui header">[[*pagetitle]]</h1>
                     <p class="subtitle meta date">
-                        <em>
-                            [[%romanesco.article.written_by]]
-                            <a href="[[~[[*author_id:empty=`[[++error_page]]`]]]]">[[#[[*author_id]].pagetitle:empty=`[[++site_name]]`]]</a>
-                            [[%romanesco.article.written_on]]
-                            [[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
-                        </em>
+                        <span class="written-by">[[%romanesco.article.written_by]]</span>
+                        <span class="author">
+                            <a href="[[~[[*author_id:empty=`[[++error_page]]`]]]]" rel="author">[[#[[*author_id]].pagetitle:empty=`[[++site_name]]`]]</a>
+                        </span>
+                        <span class="written-on">[[%romanesco.article.written_on]]</span>
+                        <span class="date">[[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]</span>
                     </p>
                 </div>
             </header>
 
             [[$content? &container_type=`text`]]
+
+            [[[[If?
+                &subject=`[[*author_id:empty=`0`]]`
+                &operator=`notempty`
+                &then=`getResources?
+                    &resources=`[[*author_id:empty=`0`]]`
+                    &tpl=`articleAuthorBio[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`Theme` &else=``]]`
+                    &includeTVs=`1`
+                    &tvPrefix=``
+                `
+            ]]]]
 
             <footer class="ui vertical stripe segment grey inverted">
                 <div class="ui tightened container">

@@ -9,14 +9,14 @@
             `]]
             [[+meta_elements:contains=`views`:then=`
             <span class="views">
-                [[!Rowboat?
+                [[Rowboat?
                     &table=`modx_hits`
                     &tpl=`hitCount`
                     &limit=`1`
                     &columns=`hit_count`
                     &where=`{"hit_key":"[[+id]]"}`
                     &cacheResults=`0`
-                ]] views
+                ]] [[%romanesco.article.views:lcase]]
             </span>
             `]]
         </div>

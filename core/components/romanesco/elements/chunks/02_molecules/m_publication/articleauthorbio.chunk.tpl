@@ -1,8 +1,8 @@
-<aside id="author-about" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
+<aside id="author-bio" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
     <div class="ui container">
-        <div class="ui segment">
-            <div class="ui two column equal width grid">
-                <div class="compact column">
+        <div class="ui padded segment">
+            <div class="ui two column stretched equal width grid">
+                <div class="compact center aligned column">
                     <a class="ui small image" href="[[~[[+id]]]]">
                         [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`square` &uid=`[[+uid]]`]]`?
                             &tvname=`person_image`
@@ -15,7 +15,7 @@
                     <p>[[$socialConnectButtons? &button_type=`basic`]]</p>
                 </div>
                 <div class="column">
-                    <h2>[[%romanesco.article.about_author]], <a href="[[~[[+id]]]]">[[+menutitle:empty=`[[+pagetitle]]`]]</a></h2>
+                    <h3>[[%romanesco.article.about_author? &author_name=`<a href="[[~[[+id]]]]">[[+menutitle:empty=`[[+pagetitle]]`]]</a>`]]</h3>
                     [[+introtext]]
                 </div>
             </div>

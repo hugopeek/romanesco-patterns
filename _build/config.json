@@ -3859,6 +3859,25 @@
                     ]
                 },
                 {
+                    "caption": "Reading time",
+                    "name": "reading_time",
+                    "description": "Indication of the time needed to read through the full article. This value is set automatically by the ReadingTime plugin. Please don't change it manually!",
+                    "type": "hidden",
+                    "inputOptionValues": "",
+                    "defaultValue": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimenal"
+                        }
+                    ],
+                    "category": "_About",
+                    "sortOrder": 99,
+                    "templates": [
+                        "Publications","ArticleTraditional","ArticleModern","Download"
+                    ]
+                },
+                {
                     "caption": "Comments",
                     "name": "comments_toggle",
                     "description": "Enable or disable comments. This value is inherited on child pages.",
