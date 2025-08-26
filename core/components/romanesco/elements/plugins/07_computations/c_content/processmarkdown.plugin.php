@@ -74,6 +74,9 @@ switch ($modx->event->name) {
             break;
         }
 
+        // Get processed output of resource
+        $content = &$modx->resource->_output;
+
         // Cached DOM output already includes processed Markdown
         $cacheManager = $modx->getCacheManager();
         $cacheElementKey = '/dom';
@@ -83,11 +86,11 @@ switch ($modx->event->name) {
         $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
         if ($cachedOutput && !$isLoggedIn) {
+            $modx->log(modX::LOG_LEVEL_DEBUG, '[Romanesco3x] Loading markdown content from cache');
             break;
         }
 
-        $output = &$modx->resource->_output;
-        $dom = new HtmlPageCrawler($output);
+        $dom = new HtmlPageCrawler($content);
 
         $dom->filter('#markdown img')
             ->each(function (HtmlPageCrawler $image)
@@ -194,7 +197,7 @@ switch ($modx->event->name) {
         // Remove redundant heading in articles
         $dom->filter('body.publication #markdown h1:first-child')->remove();
 
-        $output = $dom->saveHTML();
+        $content = $dom->saveHTML();
 
         break;
 }

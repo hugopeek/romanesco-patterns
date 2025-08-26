@@ -34,10 +34,13 @@ switch ($modx->event->name) {
         // Read inverted parameter from URL (for testing purposes)
         $invertLayouts = $_GET['inverted'] ?? 0;
 
+        // Get processed output of resource
+        $content = &$modx->resource->_output;
+
         // Look for cached HTML output first...
         $cacheFlag = false;
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/' . hash('xxh3', $modx->resource->_output);
+        $cacheElementKey = '/dom'; // . hash('xxh3', $content);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
@@ -50,7 +53,7 @@ switch ($modx->event->name) {
                 if ($debug) {
                     $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM loaded from cache in: ' . microtime(true) - $start);
                 }
-                $modx->resource->_output = $cachedOutput;
+                $content = $cachedOutput;
                 break;
             } else {
                 $cacheFlag = true;
@@ -62,11 +65,8 @@ switch ($modx->event->name) {
             break;
         }
 
-        // Get processed output of resource
-        $output = &$modx->resource->_output;
-
         // Feed output to HtmlPageDom
-        $dom = new HtmlPageCrawler($output);
+        $dom = new HtmlPageCrawler($content);
 
         // Add non-white class to body if custom background is set
         try {
@@ -530,11 +530,11 @@ switch ($modx->event->name) {
         ;
 
         // Save manipulated DOM
-        $output = $dom->saveHTML();
+        $content = $dom->saveHTML();
 
         // Cache HTML output
         if ($cacheFlag) {
-            $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
+            $modx->cacheManager->set($cacheElementKey, $content, 0, $cacheOptions);
         }
         if ($debug) {
             $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM manipulated in: ' . microtime(true) - $start);

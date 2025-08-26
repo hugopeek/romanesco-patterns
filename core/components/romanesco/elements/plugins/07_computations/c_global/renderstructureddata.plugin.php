@@ -23,16 +23,22 @@ use Spatie\SchemaOrg\Schema;
 switch ($modx->event->name) {
     case 'OnLoadWebDocument':
 
+        // Get processed output of resource
+        $content = &$modx->resource->_content;
+
         // Cached DOM output already includes structured data
-        $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
-        $cacheOptions = [
-            xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
-        ];
-        $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
-        $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
-        if ($cachedOutput && !$isLoggedIn) {
-            break;
+        if ($content) {
+            $cacheManager = $modx->getCacheManager();
+            $cacheElementKey = '/dom';
+            $cacheOptions = [
+                xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
+            ];
+            $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
+            $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
+            if ($cachedOutput && !$isLoggedIn) {
+                $modx->log(modX::LOG_LEVEL_DEBUG, '[Romanesco3x] Loading structured data from cache');
+                break;
+            }
         }
 
         /** @var Romanesco $romanesco */
