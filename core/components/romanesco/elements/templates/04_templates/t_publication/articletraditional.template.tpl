@@ -109,8 +109,7 @@
                         <div class="ui equal width middle aligned grid">
                             <div class="compact column">
                                 <h4 class="ui disabled mini header">
-                                    <span class="large screen and widescreen only">[[%romanesco.article.share_this]]</span>
-                                    <span class="computer only">[[%romanesco.article.share_this_short]]</span>
+                                    [[%romanesco.article.share_this]]
                                 </h4>
                             </div>
                             <div class="right aligned column">

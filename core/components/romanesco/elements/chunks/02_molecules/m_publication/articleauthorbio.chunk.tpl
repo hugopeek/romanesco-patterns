@@ -12,7 +12,7 @@
                             &tpl=`imgOverviewFixed`
                         ]]
                     </a>
-                    <p>[[$socialConnectButtonsPerson? &button_type=`basic`]]</p>
+                    <p>[[$socialConnectButtons? &button_type=`basic`]]</p>
                 </div>
                 <div class="column">
                     <h2>[[%romanesco.article.about_author]], <a href="[[~[[+id]]]]">[[+menutitle:empty=`[[+pagetitle]]`]]</a></h2>
