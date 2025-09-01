@@ -46,19 +46,18 @@
                                 <i class="alternate outline calendar icon"></i>
                                 [[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
                             </span>
-                            <span class="views">
-                                <i class="outline eye icon"></i>
-                                [[Rowboat?
-                                    &table=`modx_hits`
-                                    &tpl=`hitCount`
-                                    &limit=`1`
-                                    &columns=`hit_count`
-                                    &where=`{"hit_key":"[[*id]]"}`
-                                    &cacheResults=`0`
-                                ]]
-                            </span>
                             <span class="reading-time">
                                 <i class="outline time icon"></i>
+                                <span class="value">[[*reading_time]]</span>
+                                <span class="label">
+                                    [[[[If?
+                                        &subject=`[[*reading_time]]`
+                                        &operator=`lte`
+                                        &operand=`1`
+                                        &then=`%romanesco.article.reading_time_1`
+                                        &else=`%romanesco.article.reading_time`
+                                    ]]]]
+                                </span>
                             </span>
                         </p>
                     </div>
@@ -106,7 +105,7 @@
             <aside id="sidebar" class="sixteen wide mobile five wide computer column">
                 <section class="ui vertical stripe segment [[++layout_background_default]] tablet or lower hidden">
                     <div class="ui container">
-                        <div class="ui equal width middle aligned grid">
+                        <div class="ui equal width middle aligned very compact grid">
                             <div class="compact column">
                                 <h4 class="ui disabled mini header">
                                     [[%romanesco.article.share_this]]
@@ -201,7 +200,7 @@
                                     &column_type=`item`
                                     &title_field=`pagetitle`
                                     &level=`h5`
-                                    &meta_elements=`views`
+                                    &meta_elements=`date`
                                     &show_introtext=`0`
 
                                     &unique_idx=`most_viewed`

@@ -12,7 +12,19 @@
 use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
+    case 'OnDocFormSave':
+        /** @var modResource $resource */
+
+        // Clear reading time to trigger recalculation
+        $resource->setTVValue('reading_time', '');
+
+        break;
+
     case 'OnWebPagePrerender':
+
+        if ($modx->resource->getTVValue('reading_time')) {
+            break;
+        }
 
         // Get processed output of resource
         $content = &$modx->resource->_output;
@@ -33,23 +45,28 @@ switch ($modx->event->name) {
         // Feed output to HtmlPageDom
         $dom = new HtmlPageCrawler($content);
 
-        // Isolate article
+        // Isolate article content
         $article = $dom->filter('#content');
 
         // Calculate reading time
         $words = str_word_count(strip_tags($article));
-        $wpm = (int)$modx->getOption("romanesco.reading_time_wpm", null, 180);
-        $min = round($words / $wpm);
-        $text = ($min <= 1) ? 'minute' : 'minutes';
+        $wpm = (int)$modx->getOption("romanesco.reading_time_wpm", null, 180); // wpm = words per minute
+        $time = round($words / $wpm);
 
-        if ($min < 1) $min = '< 1';
+        // Set singular or plural label
+        $label = $modx->lexicon('romanesco.article.reading_time');
+        if ($time <= 1) $label = $modx->lexicon('romanesco.article.reading_time_1');
 
-        // Append menu to HTML container
-        $dom->filter('.reading-time')->append("$min $text");
+        // Add to content (empty text to avoid duplicates)
+        $dom->filter('.reading-time .value')->makeEmpty()->append("$time");
+        $dom->filter('.reading-time .label')->makeEmpty()->append("$label");
         $content = $dom->saveHTML();
 
-        break;
+        // Save to TV (make sure it is assigned to the template!)
+        $modx->resource->setTVValue('reading_time', $time);
+        $modx->resource->save();
 
+        break;
 }
 
 return true;

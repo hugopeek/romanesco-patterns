@@ -13,7 +13,7 @@
     ]]]]
 </head>
 
-<body id="[[*alias]]" class="publication readability">
+<body id="[[*alias]]" class="publication modern">
 
 [[$offCanvasNav]]
 
@@ -34,13 +34,11 @@
             <header class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]] introduction">
                 <div class="ui main text container">
                     <h1 class="ui header">[[*pagetitle]]</h1>
-                    <p class="subtitle meta date">
-                        <span class="written-by">[[%romanesco.article.written_by]]</span>
-                        <span class="author">
-                            <a href="[[~[[*author_id:empty=`[[++error_page]]`]]]]" rel="author">[[#[[*author_id]].pagetitle:empty=`[[++site_name]]`]]</a>
-                        </span>
-                        <span class="written-on">[[%romanesco.article.written_on]]</span>
-                        <span class="date">[[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]</span>
+                    <p class="subtitle muted">
+                        [[%romanesco.article.written_by]]
+                        <a href="[[~[[*author_id:empty=`[[++error_page]]`]]]]" rel="author">[[#[[*author_id]].pagetitle:empty=`[[++site_name]]`]]</a>
+                        [[%romanesco.article.written_on]]
+                        [[*publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
                     </p>
                 </div>
             </header>
@@ -134,7 +132,7 @@
                                 &column_type=`item`
                                 &title_field=`pagetitle`
                                 &title_hierarchy=`h4`
-                                &meta_elements=`views`
+                                &meta_elements=`date`
                                 &show_introtext=`0`
                             ]]
                         </div>

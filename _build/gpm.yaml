@@ -3416,14 +3416,6 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_information
-  - name: infoArticleMeta
-    description: ''
-    properties:
-      - name: elementStatus
-        value: review
-      - name: elementPreview
-        value: ''
-    category: a_information
   - name: favicons
     description: ''
     properties:
@@ -4018,6 +4010,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: m_hub
+  - name: infoArticleMeta
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: m_information
   - name: infoReviewSegment
     description: ''
     properties:

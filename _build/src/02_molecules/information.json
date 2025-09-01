@@ -3,6 +3,19 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "infoArticleMeta",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_information"
+                },{
                     "name": "infoReviewSegment",
                     "description": "",
                     "properties": [

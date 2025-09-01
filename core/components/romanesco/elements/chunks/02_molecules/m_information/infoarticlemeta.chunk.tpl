@@ -7,17 +7,16 @@
         <i class="alternate outline calendar icon"></i>
         [[+publishedon:strtotime:date=`[[++romanesco.date_format_medium]]`]]
     </span>
-    <span class="views">
-        <i class="outline eye icon"></i>
-        [[$getHitCount:empty=`0`? &uid=`[[+unique_idx]]`]]
+    [[+reading_time:notempty=`
+    <span class="reading-time">
+        <i class="outline time icon"></i>
+        [[+reading_time]] [[%romanesco.article.reading_time_short:lcase]]
     </span>
+    `]]
     [[+comments_toggle:eq=`1`:then=`
     <span class="comments">
         <i class="outline comments icon"></i>
         <a href="[[~[[+id]]? &scheme=`full`]]#comments">[[%romanesco.article.comments:lcase]]</a>
     </span>
     `]]
-    <span class="reading-time">
-        <i class="outline time icon"></i>
-    </span>
 </p>

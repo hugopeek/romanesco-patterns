@@ -2,21 +2,19 @@
     <div class="content">
         [[$headingOverviewLink? &title_classes=`` &classes=`` &uid=`[[+unique_idx]]_[[+idx]]`]]
         <div class="meta">
-            [[+meta_elements:contains=`date`:then=`
-            <span class="date">
-                [[+publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
+            [[+meta_elements:contains=`author`:then=`
+            <span class="author">
+                [[#[[+author_id]].pagetitle:empty=`[[++site_name]]`]]
             </span>
             `]]
-            [[+meta_elements:contains=`views`:then=`
-            <span class="views">
-                [[Rowboat?
-                    &table=`modx_hits`
-                    &tpl=`hitCount`
-                    &limit=`1`
-                    &columns=`hit_count`
-                    &where=`{"hit_key":"[[+id]]"}`
-                    &cacheResults=`0`
-                ]] [[%romanesco.article.views:lcase]]
+            [[+meta_elements:contains=`date`:then=`
+            <span class="date">
+                [[+publishedon:strtotime:date=`[[++romanesco.date_format_medium]]`]]
+            </span>
+            `]]
+            [[+meta_elements:contains=`reading-time`:then=`
+            <span class="reading-time">
+                [[+reading_time]] [[%romanesco.article.reading_time_short:lcase]]
             </span>
             `]]
         </div>

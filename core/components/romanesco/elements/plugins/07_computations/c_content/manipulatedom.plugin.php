@@ -2,15 +2,15 @@
 /**
  * ManipulateDOM plugin
  *
- * This plugin utilizes HtmlPageDom, a page crawler that can manipulate DOM
- * elements for us. Yes, that is exactly what jQuery does... But now we can do
- * it server side, before the page is rendered. Much faster and more reliable.
+ * This plugin uses HtmlPageDom, a page crawler that can manipulate DOM elements
+ * for us. Yes, that is exactly what jQuery does... But now we can do it server
+ * side, before the page is rendered. Much faster and more reliable.
  *
  * Update March 2025: generated HTML output is now cached under the regular
  * resource cache. This means it will be cleared also on every save action.
- * Other plugins utilizing the HtmlPageDOM crawler are relying on this cache
- * too, so keep an eye on the priority of this plugin to make sure all output
- * is generated before it is being cached here.
+ * Other plugins using the HtmlPageDOM crawler are relying on this cache too,
+ * so keep an eye on the priority of this plugin to make sure all output is
+ * generated before it is being cached here.
  *
  * @var modX $modx
  * @var array $scriptProperties
