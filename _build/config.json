@@ -392,6 +392,9 @@
                                     "name": "a_nav_neighbors"
                                 },
                                 {
+                                    "name": "a_nav_social"
+                                },
+                                {
                                     "name": "a_nav_tabs"
                                 },
                                 {
@@ -1108,6 +1111,10 @@
                 },
                 {
                     "name": "a_nav_neighbors",
+                    "parent": "a_navigation"
+                },
+                {
+                    "name": "a_nav_social",
                     "parent": "a_navigation"
                 },
                 {
@@ -10117,6 +10124,21 @@
                     "category": "a_nav_primary"
                 },
                 {
+                    "name": "socialNavItemDropdown",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_nav_social"
+                },
+                {
                     "name": "stepsNavItem",
                     "description": "",
                     "properties": [
@@ -14537,18 +14559,6 @@
                 "type": "textfield",
                 "area": "Connection",
                 "value": "hub,global"
-            },
-            {
-                "key": "disqus_div_id",
-                "type": "textfield",
-                "area": "Feedback",
-                "value": "disqus_thread"
-            },
-            {
-                "key": "commento_div_id",
-                "type": "textfield",
-                "area": "Feedback",
-                "value": "commento"
             },
             {
                 "key": "manager_feedback",

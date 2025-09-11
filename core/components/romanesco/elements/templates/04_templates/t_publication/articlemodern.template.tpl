@@ -45,23 +45,38 @@
 
             [[$content? &container_type=`text`]]
 
-            <aside id="tags" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
+            <footer class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
                 <div class="ui text container">
                     <div class="ui divider"></div>
-                    <div class="ui big labels">
-                        [[TaggerGetTags?
-                            &groups=`[[*tag_groups]]`
-                            &resources=`[[*id]]`
-                            &target=`[[*parent]]`
-                            &rowTpl=`tagItemBasicLink`
-                        ]]
+                    <div class="ui equal width middle aligned grid">
+                        <div class="column">
+                            <div class="ui big labels">
+                                [[TaggerGetTags?
+                                    &groups=`[[*tag_groups]]`
+                                    &resources=`[[*id]]`
+                                    &target=`[[*parent]]`
+                                    &rowTpl=`tagItemBasicLink`
+                                ]]
+                            </div>
+                        </div>
+                        <div class="compact column">
+                            <div class="ui large basic circular simple top right pointing dropdown icon button">
+                                <i class="alternate share icon"></i>
+                                <nav class="menu social">
+                                    [[migxLoopCollection?
+                                        &packageName=`romanescobackyard`
+                                        &classname=`FractalFarming\Romanesco\Model\SocialShare`
+                                        &where=`{"active":1}`
+                                        &tpl=`socialNavItemDropdown`
+                                    ]]
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </aside>
 
-            [[*author_id:notempty=`
-            <section id="author-bio" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
-                <div class="ui main tightened container">
+                [[*author_id:notempty=`
+                <section id="author-bio" class="ui tightened container">
                     <div class="ui padded segment">
                         [[[[If?
                             &subject=`[[*author_id:empty=`0`]]`
@@ -74,34 +89,17 @@
                             `
                         ]]]]
                     </div>
-                </div>
-            </section>
-            `]]
+                </section>
+                `]]
 
-            <footer class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
-                <div class="ui tightened container">
-                    <div class="ui bottom aligned equal width grid">
-                        <div class="compact column">
-                            <a href="[[~[[*parent]]]]" class="big basic ui back button" title="[[%romanesco.article.back_to_overview_title]]">
-                                <i class="left arrow icon"></i>
-                                <span class="mobile hidden">[[%romanesco.article.back_to_overview]]</span>
-                            </a>
-                        </div>
-                        <div class="right aligned column">
-                            [[$socialShareButtons? &button_type=`big basic`]]
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-            [[*comments_toggle:eq=`1`:then=`
-            <section id="comments" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
-                <div class="ui text container">
+                [[*comments_toggle:eq=`1`:then=`
+                <section id="comments" class="ui text container">
                     <h2 class="ui header">[[%romanesco.article.comments]]</h2>
                     <div id="[[++romanesco.[[++comment_platform:lcase]]_div_id]]"></div>
-                </div>
-            </section>
-            `]]
+                </section>
+                `]]
+            </footer>
+
         </article>
 
         [[[[If?

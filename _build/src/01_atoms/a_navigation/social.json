@@ -1,0 +1,22 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "socialNavItemDropdown",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_nav_social"
+                }
+            ]
+        }
+    }
+}
