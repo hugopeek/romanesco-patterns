@@ -1,1 +1,0 @@
-<script defer src="[[++romanesco.commento_url]]/js/commento.js"></script>

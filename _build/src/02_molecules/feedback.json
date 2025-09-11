@@ -3,32 +3,6 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "commentScriptDisqus",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_feedback"
-                },{
-                    "name": "commentScriptCommento",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "m_feedback"
-                },{
                     "name": "feedbackMessage",
                     "description": "A dedicated text field for displaying messages in content, visible for logged in users only.",
                     "properties": [

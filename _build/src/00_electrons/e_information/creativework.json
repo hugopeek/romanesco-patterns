@@ -30,6 +30,36 @@
                         "@@templates_publication"
                     ]
                 },{
+                    "caption": "Tag cloud",
+                    "name": "tag_groups",
+                    "description": "Choose from which groups you'd like the tags to be displayed in a tag cloud. This value is inherited on child pages.",
+                    "type": "superboxselect",
+                    "inputProperties": {
+                        "selectType": "customtable",
+                        "packageName": "Tagger",
+                        "className": "Tagger\\Model\\TaggerGroup",
+                        "selectedFields": "name",
+                        "fieldTpl": "{name} ({id})",
+                        "maxElements": "0",
+                        "stackItems": "true",
+                        "allowBlank": "true",
+                        "depth": "10",
+                        "limitRelatedContext": "false",
+                        "pageSize": "10"
+                    },
+                    "defaultValue": "@INHERIT",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        }
+                    ],
+                    "category": "_About",
+                    "sortOrder": 10,
+                    "templates": [
+                        "@@templates_publication"
+                    ]
+                },{
                     "caption": "Reading time",
                     "name": "reading_time",
                     "description": "Indication of the time needed to read through the full article. This value is set automatically by the ReadingTime plugin. Please don't change it manually!",

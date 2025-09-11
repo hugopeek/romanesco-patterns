@@ -2399,6 +2399,33 @@ tvs:
       - ArticleTraditional
       - ArticleModern
       - Download
+  - name: tag_groups
+    caption: 'Tag cloud'
+    description: "Choose from which groups you'd like the tags to be displayed in a tag cloud. This value is inherited on child pages."
+    type: superboxselect
+    defaultValue: '@INHERIT'
+    properties:
+      - name: elementStatus
+        value: experimental
+    category: _About
+    sortOrder: 10
+    inputOptions:
+      selectType: customtable
+      packageName: Tagger
+      className: Tagger\Model\TaggerGroup
+      selectedFields: name
+      fieldTpl: '{name} ({id})'
+      maxElements: '0'
+      stackItems: 'true'
+      allowBlank: 'true'
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
+    templates:
+      - Publications
+      - ArticleTraditional
+      - ArticleModern
+      - Download
   - name: reading_time
     caption: 'Reading time'
     description: "Indication of the time needed to read through the full article. This value is set automatically by the ReadingTime plugin. Please don't change it manually!"
@@ -3652,6 +3679,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_tag
+  - name: tagItemCountLinkWeight
+    description: 'A tag item that gets bigger or smaller in size, depending on how many elements are tagged with it.'
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementPreview
+        value: ''
+    category: a_tag
   - name: tagItemFlag
     description: ''
     properties:
@@ -3794,22 +3829,6 @@ chunks:
       - name: elementPreview
         value: ''
     category: m_data
-  - name: commentScriptDisqus
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: m_feedback
-  - name: commentScriptCommento
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: m_feedback
   - name: feedbackMessage
     description: 'A dedicated text field for displaying messages in content, visible for logged in users only.'
     properties:
@@ -7975,6 +7994,14 @@ snippets:
     properties:
       - name: elementStatus
         value: solid
+      - name: elementExample
+        value: ''
+    category: f_modifier
+  - name: calculateWeight
+    description: 'Set size value by comparing input number to a median number.'
+    properties:
+      - name: elementStatus
+        value: experimental
       - name: elementExample
         value: ''
     category: f_modifier

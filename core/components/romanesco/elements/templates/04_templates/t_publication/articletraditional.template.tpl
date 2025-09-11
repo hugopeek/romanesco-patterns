@@ -65,16 +65,24 @@
 
                 [[$content]]
 
-                [[[[If?
-                    &subject=`[[*author_id:empty=`0`]]`
-                    &operator=`notempty`
-                    &then=`getResources?
-                        &resources=`[[*author_id:empty=`0`]]`
-                        &tpl=`articleAuthorBio[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`Theme` &else=``]]`
-                        &includeTVs=`1`
-                        &tvPrefix=``
-                    `
-                ]]]]
+                [[*author_id:notempty=`
+                <section id="author-bio" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
+                    <div class="ui main container">
+                        <div class="ui padded segment">
+                            [[[[If?
+                                &subject=`[[*author_id:empty=`0`]]`
+                                &operator=`notempty`
+                                &then=`getResources?
+                                    &resources=`[[*author_id:empty=`0`]]`
+                                    &tpl=`articleAuthorBio[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`Theme` &else=``]]`
+                                    &includeTVs=`1`
+                                    &tvPrefix=``
+                                `
+                            ]]]]
+                        </div>
+                    </div>
+                </section>
+                `]]
 
                 [[*comments_toggle:eq=`1`:then=`
                 <section id="comments" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
@@ -103,7 +111,7 @@
             </article>
 
             <aside id="sidebar" class="sixteen wide mobile five wide computer column">
-                <section class="ui vertical stripe segment [[++layout_background_default]] tablet or lower hidden">
+                <section class="ui vertical stripe segment transparent tablet or lower hidden">
                     <div class="ui container">
                         <div class="ui equal width middle aligned very compact grid">
                             <div class="compact column">
@@ -118,28 +126,21 @@
                     </div>
                 </section>
 
-                [[-
-                <section class="ui vertical stripe segment [[++layout_background_default]]">
+                <section class="ui vertical stripe segment transparent">
                     <div class="ui container">
-                        [[-$dividerHeading?
-                            &divider_section=`section`
-                            &divider_icon_class=`tags icon`
-                            &divider_icon_circular=`1`
-                        ]]
-                        <div class="ui labels">
-                            [[-!TaggerGetTags?
-                                &groups=`2`
+                        <div class="ui fluffy cloudy labels">
+                            [[TaggerGetTags?
+                                &groups=`[[*tag_groups]]`
                                 &target=`[[*parent]]`
-                                &rowTpl=`tagItemCountLinkHighlight`
+                                &rowTpl=`tagItemCountLinkWeight`
                             ]]
                         </div>
                     </div>
                 </section>
-                ]]
 
-                <section class="ui vertical stripe segment [[++layout_background_default]]">
+                <section class="ui vertical stripe segment transparent">
                     <div class="ui container">
-                        <h4>[[%romanesco.article.read_another]]</h4>
+                        <h4 class="ui disabled header">[[%romanesco.article.read_another]]</h4>
 
                         <div class="ui two item top attached tabular menu">
                             <a class="item active"

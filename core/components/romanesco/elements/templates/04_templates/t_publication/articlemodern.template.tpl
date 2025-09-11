@@ -45,18 +45,40 @@
 
             [[$content? &container_type=`text`]]
 
-            [[[[If?
-                &subject=`[[*author_id:empty=`0`]]`
-                &operator=`notempty`
-                &then=`getResources?
-                    &resources=`[[*author_id:empty=`0`]]`
-                    &tpl=`articleAuthorBio[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`Theme` &else=``]]`
-                    &includeTVs=`1`
-                    &tvPrefix=``
-                `
-            ]]]]
+            <aside id="tags" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
+                <div class="ui text container">
+                    <div class="ui divider"></div>
+                    <div class="ui big labels">
+                        [[TaggerGetTags?
+                            &groups=`[[*tag_groups]]`
+                            &resources=`[[*id]]`
+                            &target=`[[*parent]]`
+                            &rowTpl=`tagItemBasicLink`
+                        ]]
+                    </div>
+                </div>
+            </aside>
 
-            <footer class="ui vertical stripe segment grey inverted">
+            [[*author_id:notempty=`
+            <section id="author-bio" class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
+                <div class="ui main tightened container">
+                    <div class="ui padded segment">
+                        [[[[If?
+                            &subject=`[[*author_id:empty=`0`]]`
+                            &operator=`notempty`
+                            &then=`getResources?
+                                &resources=`[[*author_id:empty=`0`]]`
+                                &tpl=`articleAuthorBio[[modifiedIf? &subject=`articleAuthorBioTheme` &operator=`iselement` &operand=`chunk` &then=`Theme` &else=``]]`
+                                &includeTVs=`1`
+                                &tvPrefix=``
+                            `
+                        ]]]]
+                    </div>
+                </div>
+            </section>
+            `]]
+
+            <footer class="ui vertical stripe segment [[setBackground? &background=`[[++layout_background_default]]`]]">
                 <div class="ui tightened container">
                     <div class="ui bottom aligned equal width grid">
                         <div class="compact column">
@@ -86,17 +108,16 @@
             &subject=`[[*neighbors_visibility]]`
             &operator=`eq`
             &operand=`1`
-            &then=`$neighborsNav`
+            &then=`$neighborsNav? &classes=`stackable``
         ]]]]
 
-        [[-
-        <aside id="further-reading" class="ui vertical stripe segment grey inverted">
+        <aside id="further-reading" class="ui vertical stripe segment secondary">
             <div class="ui tightened container">
                 <div class="ui stackable very relaxed two column grid">
                     <div class="eight wide column">
                         <div class="ui disabled mini header">[[%romanesco.article.latest]]</div>
                         <div class="ui divided items">
-                            [[-getResources?
+                            [[getResources?
                                 &parents=`[[++romanesco.publication_container_id]]`
                                 &resources=`[[+excluded_resources]]`
                                 &tpl=`overviewRowArticleItemBasic`
@@ -109,18 +130,20 @@
 
                                 &column_type=`item`
                                 &title_field=`pagetitle`
-                                &title_hierarchy=`h4`
-                                &meta_elements=`date`
+                                &level=`h4`
+                                &meta_elements=`date,reading-time`
                                 &show_introtext=`0`
+
+                                &unique_idx=`latest_[[*id]]`
                             ]]
                         </div>
                     </div>
                     <div class="eight wide column">
                         <div class="ui disabled mini header">[[%romanesco.article.most_viewed]]</div>
                         <div class="ui divided items">
-                            [[-getResources?
+                            [[getResources?
                                 &parents=`-1`
-                                &resources=`[[-Hits? &parents=`[[++romanesco.publication_container_id]]` &limit=`5` &outputSeparator=`,`]]`
+                                &resources=`[[Hits? &parents=`[[++romanesco.publication_container_id]]` &limit=`5` &outputSeparator=`,`]]`
                                 &tpl=`overviewRowArticleItemBasic`
                                 &limit=`3`
                                 &includeTVs=`1`
@@ -131,16 +154,17 @@
 
                                 &column_type=`item`
                                 &title_field=`pagetitle`
-                                &title_hierarchy=`h4`
-                                &meta_elements=`date`
+                                &level=`h4`
+                                &meta_elements=`date,reading-time`
                                 &show_introtext=`0`
+
+                                &unique_idx=`views_[[*id]]`
                             ]]
                         </div>
                     </div>
                 </div>
             </div>
         </aside>
-        ]]
     </main>
 
     [[[[modifiedIf?
