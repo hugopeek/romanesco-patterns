@@ -6809,6 +6809,21 @@
                     "category": "m_social"
                 },
                 {
+                    "name": "socialShareButtonsDropdown",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_social"
+                },
+                {
                     "name": "twitterFeedRowBasic",
                     "description": "",
                     "properties": [
