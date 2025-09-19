@@ -369,6 +369,10 @@ switch ($modx->event->name) {
                         }
                     })
                 ;
+                if ($slider->hasClass('parallax')) {
+                    $slider->filter('.ui.header')->setAttribute('data-swiper-parallax', '-500');
+                    $slider->filter('.ui.button')->setAttribute('data-swiper-parallax', '-200');
+                }
             })
         ;
 

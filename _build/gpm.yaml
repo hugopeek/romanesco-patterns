@@ -5188,6 +5188,22 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_cb_layout
+  - name: cbLayoutSliderPagination
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_cb_layout
+  - name: cbLayoutSliderTransition
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_cb_layout
   - name: cbOverviewTemplates
     description: ''
     properties:
@@ -7237,6 +7253,14 @@ chunks:
         value: ''
     category: m_pres_slider
   - name: sliderMobileInitJS
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: m_pres_slider
+  - name: sliderNavButtons
     description: ''
     properties:
       - name: elementStatus

@@ -119,6 +119,32 @@
                         }
                     ],
                     "category": "a_cb_layout"
+                },{
+                    "name": "cbLayoutSliderPagination",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_layout"
+                },{
+                    "name": "cbLayoutSliderTransition",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_layout"
                 }
             ]
         }

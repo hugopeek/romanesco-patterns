@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add parallax and creative transition effects to slider
 - Add reading time indication to Publications
 
 Fixes and improvements:
