@@ -79,7 +79,7 @@ switch ($modx->event->name) {
 
         // Cached DOM output already includes processed Markdown
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
+        $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];

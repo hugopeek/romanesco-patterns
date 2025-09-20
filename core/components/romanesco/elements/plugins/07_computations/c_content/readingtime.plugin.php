@@ -31,7 +31,7 @@ switch ($modx->event->name) {
 
         // Cached DOM output already has reading time set
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
+        $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];

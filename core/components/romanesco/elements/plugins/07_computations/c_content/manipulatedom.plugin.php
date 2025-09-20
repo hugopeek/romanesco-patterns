@@ -37,17 +37,20 @@ switch ($modx->event->name) {
         // Get processed output of resource
         $content = &$modx->resource->_output;
 
-        // Look for cached HTML output first...
+        // Look for cached HTML output first
         $cacheFlag = false;
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom'; // . hash('xxh3', $content);
+        $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
-        // Unless user is logged in, or a POST or search request is made.
-        $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
-        $searchQuery = $_REQUEST['search'] ?? false;
-        if (!$isLoggedIn && !$_POST && !$searchQuery && !$invertLayouts) {
+        // Determine if we can use cache
+        $cacheEnabled = !$modx->user->hasSessionContext($modx->context->get('key'))
+            && empty($_POST)
+            && empty($_REQUEST['search'])
+            && empty($invertLayouts)
+        ;
+        if ($cacheEnabled) {
             $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
             if ($cachedOutput) {
                 if ($debug) {

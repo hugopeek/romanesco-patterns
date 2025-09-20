@@ -8,6 +8,7 @@ New features:
 - Add reading time indication to Publications
 
 Fixes and improvements:
+- Use hashed keys to cache content variations
 - Update fullscreen search template
 - Don't display page hit counts anymore
 - Load social buttons from custom database tables
