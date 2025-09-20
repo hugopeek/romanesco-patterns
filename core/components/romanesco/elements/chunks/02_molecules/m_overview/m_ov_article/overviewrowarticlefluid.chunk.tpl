@@ -1,8 +1,6 @@
-[[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
-
 <div class="sidebar column">
     <a class="ui rounded image" href="[[~[[+id]]]]">
-        [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`landscape`]]`?
+        [[ImagePlus:empty=`[[$imgOverviewFallback? &img_type=`landscape` &uid=`[[+uid]]`]]`?
             &tvname=`overview_img_landscape`
             &docid=`[[+id]]`
             &options=``
@@ -14,20 +12,11 @@
 <div class="[[+content_width]] wide [[+title_inflate]] main column">
     [[$headingOverviewLink? &uid=`[[+unique_idx]]`]]
     <p>
-        [[[[If?
-            &subject=`[[+team_member_id]]`
-            &operator=`notempty`
-            &then=`$imgOverviewPersonAvatarLink? &id=`[[+team_member_id]]``
-        ]]]]
         <span class="meta">
+            [[$imgOverviewPersonAvatarLink? &id=`[[+author_id]]`]]
             <em>
                 [[%romanesco.article.written_by]]
-                [[If?
-                    &subject=`[[+author_id]]`
-                    &operator=`notempty`
-                    &then=`<a href="[[~[[+team_member_id:empty=`[[++error_page]]`]]]]">[[+author_id:userinfo=`fullname`:empty=`[[++site_name]]`]]</a>`
-                    &else=`[[+createdby:userinfo=`fullname`:empty=`[[++site_name]]`]]`
-                ]]
+                <a href="[[~[[+author_id:empty=`[[++error_page]]`]]]]">[[#[[+author_id]].pagetitle:empty=`[[++site_name]]`]]</a>
                 [[%romanesco.article.written_on]]
                 [[+publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
             </em>

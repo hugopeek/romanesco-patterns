@@ -1,6 +1,7 @@
 [[+name:lcase:replace=` ==`:toPlaceholder=`channel`]]
-<a class="ui circular [[+button_classes]] icon button [[+channel]]"
-   title="[[+description:empty=`[[%romanesco.social.connect_[[+channel]]_[[++client_type]]]]`]]"
+[[+type:empty=`[[++client_type]]`:toPlaceholder=`entity`]]
+<a class="ui [[+classes]] icon button [[+channel]]"
+   title="[[+title:empty=`[[%romanesco.social.connect_[[+channel]]_[[+entity]]]]`]]"
    target="_blank"
    href="[[+url:empty=`[[++social_[[+channel]]]]`]]"
    property="sameAs">

@@ -1,5 +1,3 @@
-[[setUserPlaceholders? &userId=`[[+author_id]]` &uid=`[[+unique_idx]]`]]
-
 <div class="[[+alignment]] content">
     [[$headingOverviewLink? &uid=`[[+unique_idx]]`]]
 

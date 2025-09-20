@@ -2,27 +2,27 @@
 /**
  * ManipulateDOM plugin
  *
- * This plugin utilizes HtmlPageDom, a page crawler that can manipulate DOM
- * elements for us. Yes, that is exactly what jQuery does... But now we can do
- * it server side, before the page is rendered. Much faster and more reliable.
+ * This plugin uses HtmlPageDom, a page crawler that can manipulate DOM elements
+ * for us. Yes, that is exactly what jQuery does... But now we can do it server
+ * side, before the page is rendered. Much faster and more reliable.
  *
  * Update March 2025: generated HTML output is now cached under the regular
  * resource cache. This means it will be cleared also on every save action.
- * Other plugins utilizing the HtmlPageDOM crawler are relying on this cache
- * too, so keep an eye on the priority of this plugin to make sure all output
- * is generated before it is being cached here.
+ * Other plugins using the HtmlPageDOM crawler are relying on this cache too,
+ * so keep an eye on the priority of this plugin to make sure all output is
+ * generated before it is being cached here.
  *
  * @var modX $modx
  * @var array $scriptProperties
  * @package romanesco
  */
 
-if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
+if (!class_exists(Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
     return;
 }
 
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
@@ -34,23 +34,29 @@ switch ($modx->event->name) {
         // Read inverted parameter from URL (for testing purposes)
         $invertLayouts = $_GET['inverted'] ?? 0;
 
-        // Look for cached HTML output first...
+        // Get processed output of resource
+        $content = &$modx->resource->_output;
+
+        // Look for cached HTML output first
         $cacheFlag = false;
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/' . hash('xxh3', $modx->resource->_output);
+        $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
-        // Unless user is logged in, or a POST or search request is made.
-        $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
-        $searchQuery = $_REQUEST['search'] ?? false;
-        if (!$isLoggedIn && !$_POST && !$searchQuery && !$invertLayouts) {
+        // Determine if we can use cache
+        $cacheEnabled = !$modx->user->hasSessionContext($modx->context->get('key'))
+            && empty($_POST)
+            && empty($_REQUEST['search'])
+            && empty($invertLayouts)
+        ;
+        if ($cacheEnabled) {
             $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
             if ($cachedOutput) {
                 if ($debug) {
                     $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM loaded from cache in: ' . microtime(true) - $start);
                 }
-                $modx->resource->_output = $cachedOutput;
+                $content = $cachedOutput;
                 break;
             } else {
                 $cacheFlag = true;
@@ -62,11 +68,8 @@ switch ($modx->event->name) {
             break;
         }
 
-        // Get processed output of resource
-        $output = &$modx->resource->_output;
-
         // Feed output to HtmlPageDom
-        $dom = new HtmlPageCrawler($output);
+        $dom = new HtmlPageCrawler($content);
 
         // Add non-white class to body if custom background is set
         try {
@@ -369,6 +372,10 @@ switch ($modx->event->name) {
                         }
                     })
                 ;
+                if ($slider->hasClass('parallax')) {
+                    $slider->filter('.ui.header')->setAttribute('data-swiper-parallax', '-500');
+                    $slider->filter('.ui.button')->setAttribute('data-swiper-parallax', '-200');
+                }
             })
         ;
 
@@ -530,11 +537,11 @@ switch ($modx->event->name) {
         ;
 
         // Save manipulated DOM
-        $output = $dom->saveHTML();
+        $content = $dom->saveHTML();
 
         // Cache HTML output
         if ($cacheFlag) {
-            $modx->cacheManager->set($cacheElementKey, $output, 0, $cacheOptions);
+            $modx->cacheManager->set($cacheElementKey, $content, 0, $cacheOptions);
         }
         if ($debug) {
             $modx->log(modX::LOG_LEVEL_ERROR, 'Page DOM manipulated in: ' . microtime(true) - $start);

@@ -1,0 +1,9 @@
+Slide=slide
+Fade=fade
+Cube=cube
+Coverflow=coverflow
+Flip=flip
+Cards=cards
+Photocopy=photocopy
+Escalator=escalator
+Parallax=parallax

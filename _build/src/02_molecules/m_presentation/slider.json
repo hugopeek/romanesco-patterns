@@ -28,6 +28,19 @@
                         }
                     ],
                     "category": "m_pres_slider"
+                },{
+                    "name": "sliderNavButtons",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_pres_slider"
                 }
             ]
         }

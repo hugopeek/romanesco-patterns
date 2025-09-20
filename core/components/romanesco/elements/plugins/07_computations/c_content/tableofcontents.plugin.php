@@ -9,12 +9,7 @@
  * @package romanesco
  */
 
-if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
-    return;
-}
-
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 $tpl = $modx->getPlaceholder('toc.tpl') ?? 'tocNavItem';
 $target = $modx->getPlaceholder('toc.target');
@@ -27,20 +22,22 @@ if (!$target) {
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
 
+        // Get processed output of resource
+        $content = &$modx->resource->_output;
+
         // Cached DOM output already includes ToC
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
+        $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
         $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
         if ($cachedOutput && !$isLoggedIn) {
+            $modx->log(modX::LOG_LEVEL_DEBUG, '[Romanesco3x] Loading ToC from cache');
             break;
         }
 
-        // Get processed output of resource
-        $content = &$modx->resource->_output;
         $resourceURI = $modx->resource->get('uri');
         $headings = $modx->resource->getTVValue('toc_headings');
 

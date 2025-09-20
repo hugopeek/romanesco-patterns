@@ -11,44 +11,41 @@
  * @package romanesco
  */
 
-if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
-    return;
-}
-
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
+use FractalFarming\Romanesco\Romanesco;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 $tpl = $modx->getOption('tpl', $scriptProperties, 'externalNavItemLabel');
 
 switch ($modx->event->name) {
     case 'OnWebPagePrerender':
 
+        // Get processed output of resource
+        $content = &$modx->resource->_output;
+
         // Cached DOM output already includes references
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
+        $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
         $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
         if ($cachedOutput && !$isLoggedIn) {
+            $modx->log(modX::LOG_LEVEL_DEBUG, '[Romanesco3x] Loading references from cache');
             break;
         }
 
-        // Get processed output of resource
-        $content = &$modx->resource->_output;
-
         // Generate links if requested
         if ($modx->resource->getTVValue('auto_references')) {
-            $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-            $romanesco = $modx->getService('romanesco','Romanesco', $corePath . 'model/romanescobackyard/', array('core_path' => $corePath));
-            if (!($romanesco instanceof Romanesco)) {
-                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
-                break;
+            /** @var Romanesco $romanesco */
+            try {
+                $romanesco = $modx->services->get('romanesco');
+            } catch (\Psr\Container\NotFoundExceptionInterface $e) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
             }
 
             // Get external links for this resource
-            $linkObject = $modx->getIterator('rmExternalLink', [
+            $linkObject = $modx->getIterator('FractalFarming\Romanesco\Model\LinkExternal', [
                 'resource_id' => $modx->resource->get('id'),
                 'deleted' => 0
             ]);

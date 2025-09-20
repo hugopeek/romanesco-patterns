@@ -1,4 +1,4 @@
 <a class="right item" href="[[+uri]]" title="[[%romanesco.article.next]]">
-    [[+menutitle]]
+    [[+pagetitle]]
     <i class="muted right arrow icon"></i>
 </a>

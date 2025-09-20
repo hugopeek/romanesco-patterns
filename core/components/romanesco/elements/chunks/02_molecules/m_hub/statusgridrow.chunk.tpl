@@ -22,7 +22,7 @@
 
 [[migxLoopCollection?
     &packageName=`romanescobackyard`
-    &classname=`rmTask`
+    &classname=`FractalFarming\Romanesco\Model\Task`
     &where=`{"resource_id":"[[+id]]"}`
     &tpl=`tagItemTooltip`
     &toPlaceholder=`status_tasks_[[+idx]]`

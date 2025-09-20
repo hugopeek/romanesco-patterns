@@ -1,0 +1,178 @@
+{
+    "package": {
+        "elements": {
+            "tvs": [
+                {
+                    "caption": "Pre-hook(s)",
+                    "name": "fb_prehooks",
+                    "description": "A snippet name (or comma separated list of names). They are run before the form is initialised. Useful for prefilling form fields with existing data.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 1,
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
+                },{
+                    "caption": "Render hook(s)",
+                    "name": "fb_renderhooks",
+                    "description": "A snippet name (or comma separated list of names) to execute. They are run when the form loads and all pre-hooks are finished. Useful for fetching session data.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 2,
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
+                    "caption": "Hook(s)",
+                    "name": "fb_hooks",
+                    "description": "A snippet name (or comma separated list of names) to execute. They are run after the form is submitted, but before any emails are sent (or user is created). Useful for additional validation.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 3,
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
+                },{
+                    "caption": "Post-hook(s)",
+                    "name": "fb_posthooks",
+                    "description": "A snippet name (or comma separated list of names) to execute. They are run after the form is fully submitted and all emails are sent. Useful for writing submitted values to the database.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 3,
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
+                },{
+                    "caption": "Email template row prefix",
+                    "name": "fb_email_tpl_prefix",
+                    "description": "Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.",
+                    "type": "text",
+                    "defaultValue": "fbEmailRow_",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 11,
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
+                    "caption": "Dynamic recipient address",
+                    "name": "fb_email_to_dynamic",
+                    "description": "Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!",
+                    "type": "textarea",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 20,
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
+                    "caption": "Dynamic redirect page",
+                    "name": "fb_redirect_dynamic",
+                    "description": "Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.",
+                    "type": "text",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 21,
+                    "templates": [
+                        "fbForm",
+                        "fbRegister"
+                    ]
+                },{
+                    "caption": "Store submitted data temporarily",
+                    "name": "fb_store_data",
+                    "description": "Store data in session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.",
+                    "type": "option",
+                    "inputOptionValues": "No==0||Yes==1",
+                    "defaultValue": "0",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 30,
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
+                    "caption": "Temporary storage timeout",
+                    "name": "fb_store_time",
+                    "description": "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes.",
+                    "type": "number",
+                    "defaultValue": "300",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 31,
+                    "templates": [
+                        "fbForm"
+                    ]
+                },{
+                    "caption": "Attachment path",
+                    "name": "fb_attachment_path",
+                    "description": "Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.",
+                    "type": "text",
+                    "defaultValue": "../uploads/_forms/[[*id]]",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "_Settings - Advanced",
+                    "sortOrder": 40,
+                    "templates": [
+                        "fbForm"
+                    ]
+                }
+            ]
+        }
+    }
+}

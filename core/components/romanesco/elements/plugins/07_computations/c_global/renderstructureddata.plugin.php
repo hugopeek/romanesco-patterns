@@ -17,28 +17,35 @@
  * @package romanesco
  */
 
+use FractalFarming\Romanesco\Romanesco;
 use Spatie\SchemaOrg\Schema;
 
 switch ($modx->event->name) {
     case 'OnLoadWebDocument':
 
+        // Get processed output of resource
+        $content = &$modx->resource->_content;
+
         // Cached DOM output already includes structured data
-        $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
-        $cacheOptions = [
-            xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
-        ];
-        $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
-        $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
-        if ($cachedOutput && !$isLoggedIn) {
-            break;
+        if ($content) {
+            $cacheManager = $modx->getCacheManager();
+            $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
+            $cacheOptions = [
+                xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
+            ];
+            $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
+            $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
+            if ($cachedOutput && !$isLoggedIn) {
+                $modx->log(modX::LOG_LEVEL_DEBUG, '[Romanesco3x] Loading structured data from cache');
+                break;
+            }
         }
 
-        $corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path').'components/romanescobackyard/');
-        $romanesco = $modx->getService('romanesco','Romanesco', $corePath.'model/romanescobackyard/', array('core_path' => $corePath));
-        if (!($romanesco instanceof Romanesco)) {
-            $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
-            break;
+        /** @var Romanesco $romanesco */
+        try {
+            $romanesco = $modx->services->get('romanesco');
+        } catch (\Psr\Container\NotFoundExceptionInterface $e) {
+            $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
         }
 
         // System / context

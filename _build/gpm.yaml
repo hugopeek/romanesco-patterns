@@ -154,6 +154,7 @@ categories:
           - name: a_nav_breadcrumbs
           - name: a_nav_pagination
           - name: a_nav_neighbors
+          - name: a_nav_social
           - name: a_nav_tabs
           - name: a_nav_steps
           - name: a_nav_toc
@@ -281,50 +282,79 @@ tvs:
   - name: person_id
     caption: Person
     description: 'Connect a person to this item. This list is populated with all the persons that are listed on your Team page.'
-    type: listbox
-    inputOptionValues: '@CHUNK tvSelectTeam'
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 1
+    inputOptions:
+      selectType: resources
+      maxElements: '1'
+      stackItems: 'false'
+      allowBlank: 'true'
+      parents: romanesco.team_container_id
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
     templates:
       - Project
   - name: organization_id
     caption: Organization
     description: 'Connect the related organization(s). If this list is empty, you need to create an Organizations container first and register its ID under System Settings.'
-    type: listbox-multiple
-    inputOptionValues: '@CHUNK tvSelectClient'
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 2
+    inputOptions:
+      selectType: resources
+      maxElements: '1'
+      stackItems: 'true'
+      allowBlank: 'true'
+      parents: romanesco.client_container_id
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
     templates:
       - Project
       - Review
   - name: contributors_id
     caption: Contributors
     description: 'Team members that worked on this item. You can only select persons listed on your Team page, so if you want to add external contributors: add them to the team page first (can be unpublished).'
-    type: listbox-multiple
-    inputOptionValues: '@CHUNK tvSelectTeam'
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 3
+    inputOptions:
+      selectType: resources
+      maxElements: '0'
+      stackItems: 'true'
+      allowBlank: 'true'
+      parents: romanesco.team_container_id
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
     templates:
       - Project
   - name: user_id
     caption: 'MODX user'
     description: 'Connect a MODX user to this item. Only active users will be shown.'
-    type: listbox
-    inputOptionValues: "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )"
+    type: superboxselect
     properties:
       - name: elementStatus
         value: solid
     category: _Connection
     sortOrder: 5
+    inputOptions:
+      selectType: users
+      maxElements: '1'
+      allowBlank: 'true'
+      depth: '10'
+      pageSize: '10'
   - name: social_connections
     caption: 'Social platforms'
     description: 'Maintain a list of social media platforms through which visitors can connect with you.'
@@ -348,7 +378,7 @@ tvs:
     category: _Connection
     sortOrder: 10
     inputOptions:
-      configs: 'content_related_src:romanescobackyard'
+      configs: 'links_related_src:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -378,7 +408,7 @@ tvs:
     category: _Connection
     sortOrder: 20
     inputOptions:
-      configs: 'external_links:romanescobackyard'
+      configs: 'links_external:romanescobackyard'
     templates:
       - Home
       - BasicOverview
@@ -409,7 +439,7 @@ tvs:
     sortOrder: 30
     inputOptions:
       selectType: resources
-      allowBlank: '1'
+      allowBlank: 'true'
       stackItems: 'true'
       depth: '10'
       limitRelatedContext: 'false'
@@ -434,254 +464,6 @@ tvs:
       - Project
       - Presentation
       - Dashboard
-  - name: fb_email_to
-    caption: 'Email address recipient'
-    description: 'Submitted forms will be sent to this address. If you leave this field empty, no emails will be sent. This may be what you want when using a custom hook for processing the form.'
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 1
-    templates:
-      - fbForm
-  - name: fb_email_cc
-    caption: 'Email CC address'
-    description: Optional.
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 2
-    templates:
-      - fbForm
-  - name: fb_email_bcc
-    caption: 'Email BCC address'
-    description: Optional.
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 3
-    templates:
-      - fbForm
-  - name: fb_email_from
-    caption: 'Email FROM address'
-    description: 'Optional. Defaults to emailsender system setting.'
-    type: email
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 5
-    templates:
-      - fbForm
-  - name: fb_email_from_name
-    caption: 'Email FROM name'
-    description: 'Optional. Defaults to site_name system setting.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 6
-    templates:
-      - fbForm
-  - name: fb_email_subject
-    caption: 'Email subject'
-    description: ''
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Email'
-    sortOrder: 10
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_submit_button
-    caption: 'Submit button text'
-    description: 'Defaults to Send.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - General'
-    sortOrder: 90
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_save_form
-    caption: 'Save form data'
-    description: 'Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.'
-    type: listbox
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - General'
-    sortOrder: 91
-    inputOptionValues: 'System default==default||Yes==1||No==0'
-    defaultValue: default
-    templates:
-      - fbForm
-  - name: fb_redirect_id
-    caption: 'Redirect page'
-    description: 'Enter the ID of the page, or drag the page from the menu tree to this input field.'
-    type: number
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - General'
-    sortOrder: 92
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_prehooks
-    caption: Pre-hook(s)
-    description: 'A snippet name (or comma separated list of names). They are run before the form is initialised. Useful for prefilling form fields with existing data.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 1
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_renderhooks
-    caption: 'Render hook(s)'
-    description: 'A snippet name (or comma separated list of names) to execute. They are run when the form loads and all pre-hooks are finished. Useful for fetching session data.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: review
-    category: '_Settings - Advanced'
-    sortOrder: 2
-    templates:
-      - fbForm
-  - name: fb_hooks
-    caption: Hook(s)
-    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is submitted, but before any emails are sent (or user is created). Useful for additional validation.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 3
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_posthooks
-    caption: Post-hook(s)
-    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is fully submitted and all emails are sent. Useful for writing submitted values to the database.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 3
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_email_to_dynamic
-    caption: 'Dynamic recipient address'
-    description: 'Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!'
-    type: textarea
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 10
-    templates:
-      - fbForm
-  - name: fb_redirect_dynamic
-    caption: 'Dynamic redirect page'
-    description: 'Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.'
-    type: text
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 11
-    templates:
-      - fbForm
-      - fbRegister
-  - name: fb_store_data
-    caption: 'Store submitted data temporarily'
-    description: 'Store data in session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.'
-    type: option
-    inputOptionValues: No==0||Yes==1
-    defaultValue: '0'
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 15
-    templates:
-      - fbForm
-  - name: fb_store_time
-    caption: 'Temporary storage timeout'
-    description: "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes."
-    type: number
-    defaultValue: '300'
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 16
-    templates:
-      - fbForm
-  - name: fb_store_attachments
-    caption: 'Store submitted attachments'
-    description: 'Store uploads in designated folder. Make sure this folder is NOT web accessible (unless that is your aim). You may also need to monitor it somehow to comply with GDPR retention policies.'
-    type: option
-    inputOptionValues: 'On==1||Off==0||System default==default'
-    defaultValue: default
-    properties:
-      - name: elementStatus
-        value: review
-    category: '_Settings - Advanced'
-    sortOrder: 17
-    templates:
-      - fbForm
-  - name: fb_attachment_path
-    caption: 'Attachment path'
-    description: 'Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.'
-    type: text
-    defaultValue: '../uploads/_forms/[[*id]]'
-    properties:
-      - name: elementStatus
-        value: review
-    category: '_Settings - Advanced'
-    sortOrder: 18
-    templates:
-      - fbForm
-  - name: fb_email_template
-    caption: 'Email template'
-    description: 'Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.'
-    type: text
-    defaultValue: fbEmail
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 20
-    templates:
-      - fbForm
-  - name: fb_email_tpl_prefix
-    caption: 'Email template row prefix'
-    description: 'Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.'
-    type: text
-    defaultValue: fbEmailRow_
-    properties:
-      - name: elementStatus
-        value: solid
-    category: '_Settings - Advanced'
-    sortOrder: 21
-    templates:
-      - fbForm
   - name: background_availability
     caption: Availability
     description: 'Where would you like to be able to use this background?'
@@ -2100,6 +1882,125 @@ tvs:
       configs: 'project_timeline:romanescobackyard'
     templates:
       - Dashboard
+  - name: fb_prehooks
+    caption: Pre-hook(s)
+    description: 'A snippet name (or comma separated list of names). They are run before the form is initialised. Useful for prefilling form fields with existing data.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 1
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_renderhooks
+    caption: 'Render hook(s)'
+    description: 'A snippet name (or comma separated list of names) to execute. They are run when the form loads and all pre-hooks are finished. Useful for fetching session data.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - Advanced'
+    sortOrder: 2
+    templates:
+      - fbForm
+  - name: fb_hooks
+    caption: Hook(s)
+    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is submitted, but before any emails are sent (or user is created). Useful for additional validation.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 3
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_posthooks
+    caption: Post-hook(s)
+    description: 'A snippet name (or comma separated list of names) to execute. They are run after the form is fully submitted and all emails are sent. Useful for writing submitted values to the database.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 3
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_email_tpl_prefix
+    caption: 'Email template row prefix'
+    description: 'Prefix used by the chunks containing the HTML for the template rows. After this prefix follows an ID (i.e. fbEmailRow_28), connecting that chunk to the correct ContentBlocks field.'
+    type: text
+    defaultValue: fbEmailRow_
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 11
+    templates:
+      - fbForm
+  - name: fb_email_to_dynamic
+    caption: 'Dynamic recipient address'
+    description: 'Place any snippet / FastField call here that outputs a single email address. WARNING: populating this field will override the default recipient address, so test thoroughly!'
+    type: textarea
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 20
+    templates:
+      - fbForm
+  - name: fb_redirect_dynamic
+    caption: 'Dynamic redirect page'
+    description: 'Place any element here that is able to decide where to redirect the user after form submission. If the result is empty, it falls back on the ID provided under general settings.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 21
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_store_data
+    caption: 'Store submitted data temporarily'
+    description: 'Store data in session before redirecting the user to a confirmation / thank you page, or to another form (as part of a multi-page form). Use FormItRetriever to access the data again.'
+    type: option
+    inputOptionValues: No==0||Yes==1
+    defaultValue: '0'
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 30
+    templates:
+      - fbForm
+  - name: fb_store_time
+    caption: 'Temporary storage timeout'
+    description: "If 'store data' is switched on, this specifies the number of seconds to store the submitted form data. Defaults to five minutes."
+    type: number
+    defaultValue: '300'
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Advanced'
+    sortOrder: 31
+    templates:
+      - fbForm
+  - name: fb_attachment_path
+    caption: 'Attachment path'
+    description: 'Stored uploads are saved in this folder. The path needs to be relative to the location of the assets_path setting. Please note that [[*id]] will be parsed, but other placeholders wont.'
+    type: text
+    defaultValue: '../uploads/_forms/[[*id]]'
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - Advanced'
+    sortOrder: 40
+    templates:
+      - fbForm
   - name: fb_autoresponder_toggle
     caption: Autoresponder
     description: 'IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.'
@@ -2159,13 +2060,180 @@ tvs:
       - fbForm
   - name: fb_autoresponder_message
     caption: 'Autoresponse message'
-    description: 'The content of the email that will be sent. You can use placeholders here from the form fields with the following syntax: [[+fb123-field-name]]. So with ID prefix and hyphenated field name.'
+    description: 'The content of the email that will be sent. You can use placeholders here with the following syntax: [[+fb123-field-name]]. If you want to use your own HTML, see the template option below.'
     type: richtext
     properties:
       - name: elementStatus
         value: solid
     category: _Autoresponder
     sortOrder: 11
+    templates:
+      - fbForm
+  - name: fb_autoresponder_template
+    caption: 'Autoresponder template'
+    description: 'Name of the chunk containing the (HTML) email template. The default fbAutoresponder chunk only parses the autoresponse message above.'
+    type: text
+    defaultValue: fbAutoresponder
+    properties:
+      - name: elementStatus
+        value: review
+    category: _Autoresponder
+    sortOrder: 20
+    templates:
+      - fbForm
+  - name: fb_email_to
+    caption: 'Email address recipient'
+    description: 'Submitted forms will be sent to this address. If you leave this field empty, no emails will be sent. This may be what you want when using a custom hook for processing the form.'
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 1
+    templates:
+      - fbForm
+  - name: fb_email_cc
+    caption: 'Email CC address'
+    description: Optional.
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 2
+    templates:
+      - fbForm
+  - name: fb_email_bcc
+    caption: 'Email BCC address'
+    description: Optional.
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 3
+    templates:
+      - fbForm
+  - name: fb_email_from
+    caption: 'Email FROM address'
+    description: 'Optional. Defaults to emailsender system setting.'
+    type: email
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 5
+    templates:
+      - fbForm
+  - name: fb_email_from_name
+    caption: 'Email FROM name'
+    description: 'Optional. Defaults to site_name system setting.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 6
+    templates:
+      - fbForm
+  - name: fb_email_subject
+    caption: 'Email subject'
+    description: ''
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 10
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_email_template
+    caption: 'Email template'
+    description: 'Name of the chunk containing the (HTML) email template. You can replace the default with your own... Just make sure it contains the fbFormReport snippet call for listing the fields.'
+    type: text
+    defaultValue: fbEmail
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - Email'
+    sortOrder: 10
+    templates:
+      - fbForm
+  - name: fb_submit_button
+    caption: 'Submit button text'
+    description: 'Defaults to Send.'
+    type: text
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - General'
+    sortOrder: 10
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_redirect_id
+    caption: 'Redirect page'
+    description: 'Enter the ID of the page, or drag the page from the menu tree to this input field.'
+    type: number
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - General'
+    sortOrder: 20
+    templates:
+      - fbForm
+      - fbRegister
+  - name: fb_save_form
+    caption: 'Save form data'
+    description: 'Save submitted data in the database. You can view this data under Top menu > Extras > FormIt.'
+    type: listbox
+    properties:
+      - name: elementStatus
+        value: solid
+    category: '_Settings - General'
+    sortOrder: 30
+    inputOptionValues: 'System default==default||Yes==1||No==0'
+    defaultValue: default
+    templates:
+      - fbForm
+  - name: fb_store_attachments
+    caption: 'Store submitted attachments'
+    description: 'Store uploads in designated folder (defined under Advanced). You may need to monitor and periodically clean up this folder in order to comply with GDPR retention policies.'
+    type: option
+    inputOptionValues: 'On==1||Off==0||System default==default'
+    defaultValue: default
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - General'
+    sortOrder: 31
+    templates:
+      - fbForm
+  - name: fb_frontend_validation
+    caption: 'Frontend validation'
+    description: 'Validate form input in the browser first, before submit. The javascript automatically picks up required settings and some field-specific properties and backend validation is still applied.'
+    type: option
+    inputOptionValues: 'On==1||Off==0||System default==default'
+    defaultValue: default
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - General'
+    sortOrder: 40
+    templates:
+      - fbForm
+  - name: fb_frontend_validate_on
+    caption: 'Frontend validate on'
+    description: 'Validate fields just before the form is submitted, or when the visitor leaves the form field again (on blur).'
+    type: option
+    inputOptionValues: 'Submit==submit||Blur==blur||System default==default'
+    defaultValue: default
+    properties:
+      - name: elementStatus
+        value: review
+    category: '_Settings - General'
+    sortOrder: 41
     templates:
       - fbForm
   - name: fb_activation_toggle
@@ -2310,15 +2378,66 @@ tvs:
       - fbRegister
   - name: author_id
     caption: Author
-    description: 'Select the author of this article. He or she must be a MODX user. This value is inherited on child pages.'
-    type: listbox
-    inputOptionValues: "@SELECT '' AS username, '' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )"
+    description: 'Select the author of this article. He or she must be listed on your Team page (can be unpublished). This value is inherited on child pages.'
+    type: superboxselect
     defaultValue: '@INHERIT'
     properties:
       - name: elementStatus
         value: solid
     category: _About
     sortOrder: 1
+    inputOptions:
+      selectType: resources
+      maxElements: '1'
+      stackItems: 'false'
+      allowBlank: 'true'
+      parents: romanesco.team_container_id
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
+    templates:
+      - Publications
+      - ArticleTraditional
+      - ArticleModern
+      - Download
+  - name: tag_groups
+    caption: 'Tag cloud'
+    description: "Choose from which groups you'd like the tags to be displayed in a tag cloud. This value is inherited on child pages."
+    type: superboxselect
+    defaultValue: '@INHERIT'
+    properties:
+      - name: elementStatus
+        value: experimental
+    category: _About
+    sortOrder: 10
+    inputOptions:
+      selectType: customtable
+      packageName: Tagger
+      className: Tagger\Model\TaggerGroup
+      selectedFields: name
+      fieldTpl: '{name} ({id})'
+      maxElements: '0'
+      stackItems: 'true'
+      allowBlank: 'true'
+      depth: '10'
+      limitRelatedContext: 'false'
+      pageSize: '10'
+    templates:
+      - Publications
+      - ArticleTraditional
+      - ArticleModern
+      - Download
+  - name: reading_time
+    caption: 'Reading time'
+    description: "Indication of the time needed to read through the full article. This value is set automatically by the ReadingTime plugin. Please don't change it manually!"
+    type: hidden
+    inputOptionValues: ''
+    defaultValue: ''
+    properties:
+      - name: elementStatus
+        value: experimenal
+    category: _About
+    sortOrder: 99
     templates:
       - Publications
       - ArticleTraditional
@@ -3325,14 +3444,6 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_information
-  - name: infoArticleMeta
-    description: ''
-    properties:
-      - name: elementStatus
-        value: review
-      - name: elementPreview
-        value: ''
-    category: a_information
   - name: favicons
     description: ''
     properties:
@@ -3455,7 +3566,7 @@ chunks:
       - name: inputOptionKey
         value: ''
       - name: className
-        value: rmOption
+        value: Option
       - name: rowTpl
         value: tvSelectInputOptionRow
       - name: linkType
@@ -3566,6 +3677,14 @@ chunks:
     properties:
       - name: elementStatus
         value: solid
+      - name: elementPreview
+        value: ''
+    category: a_tag
+  - name: tagItemCountLinkWeight
+    description: 'A tag item that gets bigger or smaller in size, depending on how many elements are tagged with it.'
+    properties:
+      - name: elementStatus
+        value: review
       - name: elementPreview
         value: ''
     category: a_tag
@@ -3711,22 +3830,6 @@ chunks:
       - name: elementPreview
         value: ''
     category: m_data
-  - name: commentScriptDisqus
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: m_feedback
-  - name: commentScriptCommento
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: m_feedback
   - name: feedbackMessage
     description: 'A dedicated text field for displaying messages in content, visible for logged in users only.'
     properties:
@@ -3927,6 +4030,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: m_hub
+  - name: infoArticleMeta
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: m_information
   - name: infoReviewSegment
     description: ''
     properties:
@@ -4100,6 +4211,14 @@ chunks:
     properties:
       - name: elementStatus
         value: solid
+      - name: elementPreview
+        value: ''
+    category: m_social
+  - name: socialShareButtonsDropdown
+    description: ''
+    properties:
+      - name: elementStatus
+        value: review
       - name: elementPreview
         value: ''
     category: m_social
@@ -5069,6 +5188,22 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_cb_layout
+  - name: cbLayoutSliderPagination
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_cb_layout
+  - name: cbLayoutSliderTransition
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_cb_layout
   - name: cbOverviewTemplates
     description: ''
     properties:
@@ -5877,6 +6012,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_nav_primary
+  - name: socialNavItemDropdown
+    description: ''
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementPreview
+        value: ''
+    category: a_nav_social
   - name: stepsNavItem
     description: ''
     properties:
@@ -7117,6 +7260,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: m_pres_slider
+  - name: sliderNavButtons
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: m_pres_slider
   - name: tableRowBasic
     description: ''
     properties:
@@ -7887,6 +8038,14 @@ snippets:
       - name: elementExample
         value: ''
     category: f_modifier
+  - name: calculateWeight
+    description: 'Set size value by comparing input number to a median number.'
+    properties:
+      - name: elementStatus
+        value: experimental
+      - name: elementExample
+        value: ''
+    category: f_modifier
   - name: generateStaticFile
     description: 'Create a physical HTML file of a resource in the designated location. This is a utility snippet. Place it in the content somewhere and visit that page in the browser to generate the file.'
     properties:
@@ -8213,6 +8372,14 @@ plugins:
     category: c_content
     events:
       - OnWebPagePrerender
+  - name: ReadingTime
+    description: 'Calculate the time needed to read the full text of an article.'
+    properties:
+      - name: elementStatus
+        value: review
+    category: c_content
+    events:
+      - OnWebPagePrerender
   - name: setResourceGroup
     description: 'Add resource to a specific group, based on certain conditions or variables.'
     properties:
@@ -8297,14 +8464,6 @@ systemSettings:
     type: textfield
     area: Connection
     value: 'hub,global'
-  - key: disqus_div_id
-    type: textfield
-    area: Feedback
-    value: disqus_thread
-  - key: commento_div_id
-    type: textfield
-    area: Feedback
-    value: commento
   - key: manager_feedback
     type: combo-boolean
     area: Feedback
@@ -8531,6 +8690,11 @@ systemSettings:
     type: combo-boolean
     area: 'FormBlocks - Settings'
     value: '1'
+  - key: frontend_validate_on
+    namespace: formblocks
+    type: text
+    area: 'FormBlocks - Settings'
+    value: submit
   - key: ajax_mode
     namespace: formblocks
     type: combo-boolean

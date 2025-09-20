@@ -1,7 +1,25 @@
 # Changelog for the Romanesco pattern library
 
-## Romanesco Patterns 1.0.0-rc1
+## Romanesco Patterns 1.0.0-rc2
 Released on ...
+
+New features:
+- Add parallax and creative transition effects to slider
+- Add reading time indication to Publications
+
+Fixes and improvements:
+- Use hashed keys to cache content variations
+- Update fullscreen search template
+- Don't display page hit counts anymore
+- Load social buttons from custom database tables
+- Link to authors via their team page ID [BREAKING CHANGE]
+- Use SuperBoxSelect input type for some Connection TVs
+- Fix incorrect fallback images due to cached image chunks
+- Set fiarSender in form autoresponder options
+- Add ability to use custom autoresponse email template
+
+## Romanesco Patterns 1.0.0-rc1
+Released on May 22, 2025
 
 New features:
 - MODX 3 compatibility
@@ -9,7 +27,8 @@ New features:
 - Render structured data with plugin
 
 Fixes and improvements:
-- Merge link and social TVs into connection category
+- Merge link and social TVs into Connection category
+- Fix Breadcrumbs and Pagination in MODX 3
 - Fix nested output filters not rendering properly in MODX 3
 - Expand available options for accordion styling
 - Fix Tabs not working inside CTAs

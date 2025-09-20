@@ -31,6 +31,12 @@
                 "area": "FormBlocks - Settings",
                 "value": "1"
             },{
+                "key": "frontend_validate_on",
+                "namespace": "formblocks",
+                "type": "text",
+                "area": "FormBlocks - Settings",
+                "value": "submit"
+            },{
                 "key": "ajax_mode",
                 "namespace": "formblocks",
                 "type": "combo-boolean",

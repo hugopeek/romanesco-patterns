@@ -211,6 +211,7 @@
                                 {"name": "a_nav_breadcrumbs"},
                                 {"name": "a_nav_pagination"},
                                 {"name": "a_nav_neighbors"},
+                                {"name": "a_nav_social"},
                                 {"name": "a_nav_tabs"},
                                 {"name": "a_nav_steps"},
                                 {"name": "a_nav_toc"},

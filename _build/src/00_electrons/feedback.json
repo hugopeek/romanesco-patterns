@@ -2,16 +2,6 @@
     "package": {
         "systemSettings": [
             {
-                "key": "disqus_div_id",
-                "type": "textfield",
-                "area": "Feedback",
-                "value": "disqus_thread"
-            },{
-                "key": "commento_div_id",
-                "type": "textfield",
-                "area": "Feedback",
-                "value": "commento"
-            },{
                 "key": "manager_feedback",
                 "type": "combo-boolean",
                 "area": "Feedback",

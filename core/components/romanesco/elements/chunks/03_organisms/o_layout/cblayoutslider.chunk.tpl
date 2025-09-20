@@ -1,4 +1,10 @@
-<div id="swiper-[[+unique_idx]]" class="swiper[[+mobile_only:eq=`1`:then=`-mobile`]] [[+inverted:eq=`1`:then=`inverted`]] [[+fullscreen:eq=`1`:then=`fullscreen`]]">
+<div id="swiper-[[+unique_idx]]" class="swiper[[+mobile_only:eq=`1`:then=`-mobile`]] [[+transition]] [[+inverted:eq=`1`:then=`inverted`]] [[+fullscreen:eq=`1`:then=`fullscreen`]]">
+    [[If?
+        &subject=`[[+transition]]`
+        &operator=`eq`
+        &operand=`parallax`
+        &then=`<div class="[[setBackground? &background=`[[+background]]`]]" data-swiper-parallax="-25%"></div>`
+    ]]
     [[If?
         &subject=`[[+slider_type]]`
         &operator=`inarray`
@@ -6,28 +12,30 @@
         &then=`[[+main]]`
         &else=`<div class="swiper-wrapper[[+mobile_only:eq=`1`:then=`-mobile`]]">[[+main]]</div>`
     ]]
-
-    [[+behaviour:containsnot=`navOutside`:then=`
-        [[+pagination:isnot=`none`:then=`
-        <div class="swiper-pagination swiper-[[+unique_idx]]"></div>
-        `]]
-        [[+behaviour:contains=`arrows`:then=`
-        <button class="swiper-button-next swiper-[[+unique_idx]]"></button>
-        <button class="swiper-button-prev swiper-[[+unique_idx]]"></button>
-        `]]
-    `]]
-
+    [[[[modifiedIf?
+        &subject=`[[+behaviour]]`
+        &operator=`containsnot`
+        &operand=`navOutside`
+        &then=`$sliderNavButtons?
+            &position=`inside`
+            &behaviour=`[[+behaviour]]`
+            &pagination=`[[+pagination]]`
+            &uid=`[[+unique_idx]]`
+        `
+    ]]]]
 </div>
 
-[[+behaviour:contains=`navOutside`:then=`
-    [[+pagination:isnot=`none`:then=`
-    <div class="swiper-pagination swiper-[[+unique_idx]] outside"></div>
-    `]]
-    [[+behaviour:contains=`arrows`:then=`
-    <button class="swiper-button-next swiper-[[+unique_idx]] outside"></button>
-    <button class="swiper-button-prev swiper-[[+unique_idx]] outside"></button>
-    `]]
-`]]
+[[[[modifiedIf?
+    &subject=`[[+behaviour]]`
+    &operator=`contains`
+    &operand=`navOutside`
+    &then=`$sliderNavButtons?
+        &position=`outside`
+        &behaviour=`[[+behaviour]]`
+        &pagination=`[[+pagination]]`
+        &uid=`[[+unique_idx]]`
+    `
+]]]]
 
 [[sliderLoadAssets?
     &uid=`[[+unique_idx]]`

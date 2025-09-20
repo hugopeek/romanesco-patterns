@@ -1,7 +1,6 @@
 [[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 [[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:replace=`-==`]]: {
     identifier: '[[+name]]',
-    errorLimit: 1,
     rules: [
         [[+field_type:is=`email`:then=`
         {

@@ -1,5 +1,5 @@
 <a class="ui avatar image" href="[[~[[+id]]]]">
-    [[ImagePlus:empty=`[[$imgOverviewFallback? &mpy=`1`]]`?
+    [[ImagePlus:empty=`[[$imgOverviewFallback? &mpy=`1` &uid=`[[+uid]]`]]`?
         &tvname=`overview_img_square`
         &docid=`[[+id]]`
         &options=`w=150&h=150&q=[[++romanesco.img_quality]]&zc=1`

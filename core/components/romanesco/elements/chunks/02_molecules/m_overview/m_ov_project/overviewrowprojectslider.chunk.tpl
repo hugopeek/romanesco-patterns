@@ -1,6 +1,6 @@
 <figure>
     <a class="ui rounded image" href="[[~[[+id]]]]">
-        [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
+        [[ImagePlus:empty=`[[$imgOverviewFallback? &uid=`[[+uid]]`]]`?
             &tvname=`overview_img_wide`
             &docid=`[[+id]]`
             &options=`w=[[++max_thumb_width]]&q=[[++romanesco.img_quality]]&zc=1`

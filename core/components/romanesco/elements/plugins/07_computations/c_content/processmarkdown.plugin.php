@@ -22,12 +22,12 @@
  * @package romanesco
  */
 
-if (!class_exists(\Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
+if (!class_exists(Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[HtmlPageDom] Class not found!');
     return;
 }
 
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
     // Set content type to Markdown when resource has a markdown template
@@ -74,20 +74,23 @@ switch ($modx->event->name) {
             break;
         }
 
+        // Get processed output of resource
+        $content = &$modx->resource->_output;
+
         // Cached DOM output already includes processed Markdown
         $cacheManager = $modx->getCacheManager();
-        $cacheElementKey = '/dom';
+        $cacheElementKey = '/dom.'. hash('xxh3', $_SERVER['REQUEST_URI']);
         $cacheOptions = [
             xPDO::OPT_CACHE_KEY => 'resource/' . $modx->resource->getCacheKey()
         ];
         $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
         $isLoggedIn = $modx->user->hasSessionContext($modx->context->get('key'));
         if ($cachedOutput && !$isLoggedIn) {
+            $modx->log(modX::LOG_LEVEL_DEBUG, '[Romanesco3x] Loading markdown content from cache');
             break;
         }
 
-        $output = &$modx->resource->_output;
-        $dom = new HtmlPageCrawler($output);
+        $dom = new HtmlPageCrawler($content);
 
         $dom->filter('#markdown img')
             ->each(function (HtmlPageCrawler $image)
@@ -194,7 +197,7 @@ switch ($modx->event->name) {
         // Remove redundant heading in articles
         $dom->filter('body.publication #markdown h1:first-child')->remove();
 
-        $output = $dom->saveHTML();
+        $content = $dom->saveHTML();
 
         break;
 }

@@ -10,11 +10,13 @@
  * @package romanesco
  */
 
-$corePath = $modx->getOption('romanescobackyard.core_path', null, $modx->getOption('core_path') . 'components/romanescobackyard/');
-$romanesco = $modx->getService('romanesco','Romanesco',$corePath . 'model/romanescobackyard/',array('core_path' => $corePath));
-if (!($romanesco instanceof Romanesco)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco] Class not found!');
-    return;
+use FractalFarming\Romanesco\Romanesco;
+/** @var Romanesco $romanesco */
+
+try {
+    $romanesco = $modx->services->get('romanesco');
+} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
 $uid = $modx->getOption('uid', $scriptProperties, 0);
@@ -63,7 +65,7 @@ foreach ($behaviour as $option) {
 $clickable = ($pagination == 'bullets') ? 'true' : 'false';
 
 // Effects
-$effects = array(
+$transitionEffects = array(
     'fade' => '
         fadeEffect: {
             crossFade: true
@@ -76,6 +78,7 @@ $effects = array(
         },
     ',
     'flip' => '
+        grabCursor: true,
         flipEffect: {
             rotate: 30,
             slideShadows: false,
@@ -86,7 +89,39 @@ $effects = array(
             slideShadows: false,
         },
     ',
+    'parallax' => '
+        speed: 600,
+        parallax: true,
+    ',
+    'photocopy' => '
+        creativeEffect: {
+            prev: {
+                shadow: false,
+                translate: ["-20%", 0, -1],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+        },
+    ',
+    'escalator' => '
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+        },
+    ',
 );
+$effects = $transitionEffects[$transition];
+
+// Rename custom (creative) effects
+if (in_array($transition, ['photocopy','escalator'])) {
+    $transition = 'creative';
+}
 
 // Responsive
 if ($responsive) {
@@ -192,7 +227,7 @@ $modx->regClientHTMLBlock($modx->getChunk($tpl, array(
     'pagination' => $pagination ?? '',
     'clickable' => $clickable,
     'breakpoints' => $breakpoints ?? '',
-    'effects' => $effects[$transition] ?? '',
+    'effects' => $effects ?? '',
     'init_lightbox' => $initLightbox ?? '',
 )));
 

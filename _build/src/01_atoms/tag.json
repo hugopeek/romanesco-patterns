@@ -94,6 +94,19 @@
                     ],
                     "category": "a_tag"
                 },{
+                    "name": "tagItemCountLinkWeight",
+                    "description": "A tag item that gets bigger or smaller in size, depending on how many elements are tagged with it.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_tag"
+                },{
                     "name": "tagItemFlag",
                     "description": "",
                     "properties": [

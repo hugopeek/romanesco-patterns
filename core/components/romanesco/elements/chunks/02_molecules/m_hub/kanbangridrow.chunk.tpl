@@ -8,7 +8,7 @@
 <div class="row">
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
-        &classname=`rmOption`
+        &classname=`FractalFarming\Romanesco\Model\Option`
         &where=`{"key":"status_progress"}`
         &tpl=`kanbanGridColumn`
         &addfields=`priority:[[+alias]]`

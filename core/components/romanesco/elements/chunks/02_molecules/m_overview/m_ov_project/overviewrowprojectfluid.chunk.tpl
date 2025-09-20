@@ -1,6 +1,6 @@
 <div class="sidebar column">
     <a class="ui rounded image" href="[[~[[+id]]]]">
-        [[ImagePlus:empty=`[[$imgOverviewFallback]]`?
+        [[ImagePlus:empty=`[[$imgOverviewFallback? &uid=`[[+uid]]`]]`?
             &tvname=`overview_img_landscape`
             &docid=`[[+id]]`
             &options=``

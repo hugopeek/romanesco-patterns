@@ -41,19 +41,6 @@
                         }
                     ],
                     "category": "a_information"
-                },{
-                    "name": "infoArticleMeta",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_information"
                 }
             ],
 
