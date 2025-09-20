@@ -8,6 +8,7 @@ New features:
 - Add reading time indication to Publications
 
 Fixes and improvements:
+- Update fullscreen search template
 - Don't display page hit counts anymore
 - Load social buttons from custom database tables
 - Link to authors via their team page ID [BREAKING CHANGE]
