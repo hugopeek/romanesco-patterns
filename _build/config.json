@@ -1731,7 +1731,7 @@
                 },
                 {
                     "caption": "External links",
-                    "name": "external_links",
+                    "name": "links_external",
                     "description": "Point to external sources, to add some scientific credibility to your content. You can automatically attach these links to content references by activating the setting under Navigation.",
                     "type": "migxdb",
                     "inputProperties": {
