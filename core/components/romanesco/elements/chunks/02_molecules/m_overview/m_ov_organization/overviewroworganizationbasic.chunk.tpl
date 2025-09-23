@@ -16,7 +16,11 @@
 ]]]]
 
 <p>
-    [[$socialConnectButtonsOrganization? &button_type=`basic` &uid=`[[+unique_idx]]`]]
+    [[$socialConnectButtons?
+        &parent_id=`[[+id]]`
+        &button_type=`basic`
+        &uid=`[[+unique_idx]]`
+    ]]
 </p>
 
 [[If?

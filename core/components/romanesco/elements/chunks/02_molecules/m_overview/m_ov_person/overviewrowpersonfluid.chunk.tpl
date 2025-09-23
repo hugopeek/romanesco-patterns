@@ -8,7 +8,11 @@
         <span class="sub header">[[+person_jobtitle]]</span>
     </[[+level]]>
     <p>
-        [[$socialConnectButtonsPerson? &uid=`[[+unique_idx]]`]]
+        [[$socialConnectButtons?
+            &parent_id=`[[+id]]`
+            &button_type=`basic`
+            &uid=`[[+unique_idx]]`
+        ]]
     </p>
     [[[[If?
         &subject=`[[+show_introtext]]`

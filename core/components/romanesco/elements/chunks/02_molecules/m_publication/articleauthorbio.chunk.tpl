@@ -10,7 +10,11 @@
             ]]
         </a>
         <p>
-            [[$socialConnectButtons? &button_type=`basic`]]
+            [[$socialConnectButtons?
+                &parent_id=`[[*author_id]]`
+                &button_size=`small`
+                &button_type=`basic`
+            ]]
         </p>
     </div>
     <div class="column">
