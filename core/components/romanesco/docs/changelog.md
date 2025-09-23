@@ -1,7 +1,7 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-rc2
-Released on ...
+Released on September 23, 2025
 
 New features:
 - Add parallax and creative transition effects to slider

@@ -3,7 +3,7 @@ lowCaseName: romanesco
 namespace: Romanesco
 description: 'Web engineering toolkit, combining atomic design philosophy with MODX templating.'
 author: 'Hugo Peek'
-version: 1.0.0-rc1
+version: 1.0.0-rc2
 build:
   readme: core/components/romanesco/docs/readme.md
   license: core/components/romanesco/docs/license.md
