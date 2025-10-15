@@ -100,7 +100,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 5
+                    "sortOrder": 10
                 },{
                     "caption": "Social platforms",
                     "name": "social_connections",
@@ -116,7 +116,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 0,
+                    "sortOrder": 20,
                     "templates": [
                         "@@templates_people"
                     ]
@@ -135,7 +135,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 10,
+                    "sortOrder": 30,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -154,7 +154,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 20,
+                    "sortOrder": 50,
                     "templates": [
                         "@@templates_all"
                     ]
@@ -179,7 +179,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 30,
+                    "sortOrder": 60,
                     "templates": [
                         "@@templates_all"
                     ]
