@@ -348,7 +348,7 @@ tvs:
       - name: elementStatus
         value: solid
     category: _Connection
-    sortOrder: 5
+    sortOrder: 10
     inputOptions:
       selectType: users
       maxElements: '1'
@@ -363,7 +363,7 @@ tvs:
       - name: elementStatus
         value: experimental
     category: _Connection
-    sortOrder: 0
+    sortOrder: 20
     inputOptions:
       configs: 'social_connect_resource:romanescobackyard'
     templates:
@@ -376,7 +376,7 @@ tvs:
       - name: elementStatus
         value: solid
     category: _Connection
-    sortOrder: 10
+    sortOrder: 30
     inputOptions:
       configs: 'links_related_src:romanescobackyard'
     templates:
@@ -406,7 +406,7 @@ tvs:
       - name: elementStatus
         value: review
     category: _Connection
-    sortOrder: 20
+    sortOrder: 50
     inputOptions:
       configs: 'links_external:romanescobackyard'
     templates:
@@ -436,7 +436,7 @@ tvs:
       - name: elementStatus
         value: solid
     category: _Connection
-    sortOrder: 30
+    sortOrder: 60
     inputOptions:
       selectType: resources
       allowBlank: 'true'
@@ -5381,6 +5381,14 @@ chunks:
         value: ''
     category: a_cb_setting
   - name: cbSettingImageType
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_cb_setting
+  - name: cbSettingImageOptions
     description: ''
     properties:
       - name: elementStatus

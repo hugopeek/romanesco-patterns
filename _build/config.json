@@ -1687,7 +1687,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 5
+                    "sortOrder": 10
                 },
                 {
                     "caption": "Social platforms",
@@ -1704,7 +1704,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 0,
+                    "sortOrder": 20,
                     "templates": [
                         "Person"
                     ]
@@ -1724,7 +1724,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 10,
+                    "sortOrder": 30,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1744,7 +1744,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 20,
+                    "sortOrder": 50,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -1770,7 +1770,7 @@
                         }
                     ],
                     "category": "_Connection",
-                    "sortOrder": 30,
+                    "sortOrder": 60,
                     "templates": [
                         "Home","BasicOverview","BasicDetail","BasicDetailToC","BasicVertical","BasicVerticalToC","Publications","ArticleTraditional","ArticleModern","Notes","NoteRegular","NoteVertical","Person","Organization","Review","Project","Presentation","Dashboard"
                     ]
@@ -8982,6 +8982,21 @@
                 },
                 {
                     "name": "cbSettingImageType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_setting"
+                },
+                {
+                    "name": "cbSettingImageOptions",
                     "description": "",
                     "properties": [
                         {
