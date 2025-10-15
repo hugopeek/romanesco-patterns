@@ -11,4 +11,5 @@
 
 $input = $modx->getOption('input', $scriptProperties, $input);
 if ($input == '') { return ''; }
-return str_replace('\n','',json_encode($input));
+$output = str_replace(['\n', '\r'], '', $input);
+return json_encode($output);
