@@ -9,7 +9,7 @@
  * @var modX $modx
  */
 
-if ($modx->user instanceof modUser) {
+if ($modx->user instanceof MODX\Revolution\modUser) {
     if ($modx->user->hasSessionContext('mgr')) {
         return true;
     }
