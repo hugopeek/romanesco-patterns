@@ -21,6 +21,7 @@ $title = $object->get('title');
 $description = $object->get('description');
 $createdon = $object->get('createdon');
 $createdby = $object->get('createdby');
+$category = $object->get('category');
 $weight = $object->get('weight');
 
 // Set current resource as source (if no source was set)
@@ -46,6 +47,7 @@ if (is_object($existingSrc) && !is_object($existingDest)) {
         'description' => $description,
         'createdon' => $createdon,
         'createdby' => $createdby,
+        'category' => $category,
         'weight' => $weight,
     ));
     $newSrc->save();
