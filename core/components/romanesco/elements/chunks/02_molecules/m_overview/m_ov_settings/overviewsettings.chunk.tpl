@@ -18,6 +18,7 @@
 &de_emphasize=`[[+de_emphasize]]`
 &img_tpl=`[[+[[+prefix]].img_tpl]]`
 &img_type=`[[+img_type]]`
+&img_options=`[[+img_options]]`
 &icon_type=`[[+icon_type]]`
 &icon_classes=`[[+[[+prefix]].icon_classes]]`
 &lazy_load=`[[+lazy_load]]`

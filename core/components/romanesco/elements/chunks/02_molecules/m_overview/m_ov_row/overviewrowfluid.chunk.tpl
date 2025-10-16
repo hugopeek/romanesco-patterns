@@ -12,7 +12,7 @@
     &then=`[[+idx:mod:eq=`0`:then=`computer reversed tablet reversed`]]`
 ]]
 
-<section class="ui vertical [[+background.[[+idx]]]] [[+img_snap:eq=`1`:then=`snapped`]] [[+img_inflate:eq=`1`:then=`inflated`]] stripe segment">
+<section class="ui vertical [[+background.[[+idx]]]] stripe segment">
     <div class="ui container">
         <div class="ui stackable equal width middle aligned [[+padding]] [[+interchange.[[+idx]]]] grid center when stacked">
             [[$[[+row_tpl]]? &unique_idx=`[[+idx]][[+unique_idx]]`]]

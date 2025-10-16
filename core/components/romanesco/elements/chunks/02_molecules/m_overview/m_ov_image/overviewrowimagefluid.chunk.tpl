@@ -1,6 +1,7 @@
 <div class="sidebar column">
     [[$overviewRowImageBasic?
-        &cols=`[[+img_snap:eq=`1`:then=`1`:else=`2`]]`
+        &cols=`[[+img_options:contains=`inflated`:then=`1`:else=`2`]]`
+        &classes=`rounded [[+img_options:replace=`,== `]]`
         &uid=`[[+unique_idx]]`
     ]]
 </div>

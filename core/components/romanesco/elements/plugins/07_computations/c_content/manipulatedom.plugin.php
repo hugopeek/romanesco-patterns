@@ -184,6 +184,13 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Connect snapped and inflated images to parent segment
+        $dom->filter('.ui.snapped.image')
+            ->each(function(HtmlPageCrawler $image) {
+                $image->closest('.ui.vertical.stripe.segment')->addClass('snapping');
+            })
+        ;
+
         // Remove rows from grids that have a reversed column order on mobile
         $dom->filter('.ui.reversed.grid > .row')->unwrapInner();
 

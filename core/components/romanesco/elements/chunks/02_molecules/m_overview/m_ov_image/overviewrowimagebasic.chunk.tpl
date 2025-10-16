@@ -1,1 +1,1 @@
-[[$[[+img_tpl]]? &classes=`rounded` &uid=`[[+uid]]`]]
+[[$[[+img_tpl]]? &classes=`[[+classes:empty=`rounded`]]` &uid=`[[+uid]]`]]
