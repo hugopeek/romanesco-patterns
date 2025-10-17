@@ -1,16 +1,23 @@
 [[+lazy_load:eq=`1`:then=`data-`:else=``:toPlaceholder=`lazy`]]
 [[++max_thumb_width:div=`[[+width]]`:replace=`,==.`:mpy=`[[+height]]`:round=`up`:toPlaceholder=`max_thumb_height`]]
-[[$imgResponsiveScale:toPlaceholder=`scale`?
-    &layout_id=`[[+layout_id]]`
-    &layout_column=`[[+layout_column]]`
-    &uid=`[[+unique_idx]]`
+[[modifiedIf?
+    &subject=`[[+expansion]]`
+    &operator=`contains`
+    &operand=`inflated`
+    &then=`80`
+    &else=`[[$imgResponsiveScale?
+        &layout_id=`[[+layout_id]]`
+        &layout_column=`[[+layout_column]]`
+        &uid=`[[+uid]]`
+    ]]`
+    &toPlaceholder=`scale`
 ]]
 [[responsiveImgSrcset?
     &breakpoints=`[[++romanesco.img_breakpoints]]`
     &quality=`[[++romanesco.img_quality]]`
     &src=`[[+url]]`
     &width=`[[++max_thumb_width]]`
-    &uid=`[[+unique_idx]]`
+    &uid=`[[+uid]]`
     &toPlaceholder=`srcset`
 ]]
 <img [[+lazy]]srcset="[[+srcset]]"
