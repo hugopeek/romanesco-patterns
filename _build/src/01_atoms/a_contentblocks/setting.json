@@ -146,7 +146,7 @@
                     ],
                     "category": "a_cb_setting"
                 },{
-                    "name": "cbSettingImageOptions",
+                    "name": "cbSettingImageEnlarge",
                     "description": "",
                     "properties": [
                         {
