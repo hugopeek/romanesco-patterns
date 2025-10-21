@@ -34,8 +34,6 @@
     &img_tpl=`[[+[[+unique_idx]].img_tpl]]`
     &img_type=`[[+img_type]]`
     &img_options=`[[+img_options]]`
-    &img_snap=`[[+img_snap]]`
-    &img_inflate=`[[+img_inflate]]`
     &lazy_load=`[[+lazy_load]]`
 
     [[[[+pagination:eq=`1`:then=`$overviewSettingsPagination? &uid=`[[+prefix]]``]]]]
