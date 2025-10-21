@@ -146,19 +146,6 @@
                     ],
                     "category": "a_cb_setting"
                 },{
-                    "name": "cbSettingImageEnlarge",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_cb_setting"
-                },{
                     "name": "cbSettingLinkRel",
                     "description": "",
                     "properties": [

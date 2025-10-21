@@ -133,6 +133,19 @@
                     ],
                     "category": "a_cb_field"
                 },{
+                    "name": "cbImageEnlarge",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_field"
+                },{
                     "name": "cbGalleryDisplayType",
                     "description": "DEPRECATED.",
                     "properties": [
