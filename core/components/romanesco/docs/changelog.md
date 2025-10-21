@@ -1,5 +1,20 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-rc3
+Released on ...
+
+New features:
+- Add CB options for expanding (snapped and inflated) images
+
+Fixes and improvements:
+- Increase scale value for inflated responsive image CBs
+- Fix output when multiple classes are applied to image CB
+- Fix feedback message for MODX 3
+- Duplicate category when creating new cross-link
+- Optimize sort order of Connection categories
+- Rename external_links TV to links_external
+- Remove obsolete socialConnectButtonsPerson chunk
+
 ## Romanesco Patterns 1.0.0-rc2
 Released on September 23, 2025
 
