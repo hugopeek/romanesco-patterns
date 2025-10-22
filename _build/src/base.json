@@ -195,7 +195,11 @@
                                 {"name": "a_glob_background"}
                             ]
                         },{
-                            "name": "a_hub"
+                            "name": "a_hub",
+                            "children": [
+                                {"name": "a_hub_status"},
+                                {"name": "a_hub_tasks"}
+                            ]
                         },{
                             "name": "a_image",
                             "children": [

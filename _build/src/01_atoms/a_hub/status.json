@@ -3,7 +3,7 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "displayRawElement",
+                    "name": "statusNotesGetUser",
                     "description": "",
                     "properties": [
                         {
@@ -14,9 +14,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_hub"
+                    "category": "a_hub_status"
                 },{
-                    "name": "displayRawTemplate",
+                    "name": "statusNotesGetDate",
                     "description": "",
                     "properties": [
                         {
@@ -27,9 +27,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_hub"
+                    "category": "a_hub_status"
                 },{
-                    "name": "displayRawPlugin",
+                    "name": "statusGridColumnNotes",
                     "description": "",
                     "properties": [
                         {
@@ -40,9 +40,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_hub"
+                    "category": "a_hub_status"
                 },{
-                    "name": "displayRawContentBlock",
+                    "name": "statusIndicatorSVGSymbol",
                     "description": "",
                     "properties": [
                         {
@@ -53,9 +53,9 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_hub"
+                    "category": "a_hub_status"
                 },{
-                    "name": "assignedTemplatesRow",
+                    "name": "statusIndicatorLegendTR",
                     "description": "",
                     "properties": [
                         {
@@ -66,32 +66,20 @@
                             "value": ""
                         }
                     ],
-                    "category": "a_hub"
+                    "category": "a_hub_status"
                 },{
-                    "name": "patternBosonInnerRow",
-                    "description": "",
+                    "name": "configSettingsRowTR",
+                    "description": "Table row for configuration settings table.",
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "review"
+                            "value": "solid"
                         },{
                             "name": "elementPreview",
                             "value": ""
                         }
                     ],
-                    "category": "a_hub"
-                }
-            ],
-            "categories": [
-                {
-                    "name": "a_hub",
-                    "parent": "01_atoms"
-                },{
-                    "name": "a_hub_status",
-                    "parent": "a_hub"
-                },{
-                    "name": "a_hub_tasks",
-                    "parent": "a_hub"
+                    "category": "a_hub_status"
                 }
             ]
         }

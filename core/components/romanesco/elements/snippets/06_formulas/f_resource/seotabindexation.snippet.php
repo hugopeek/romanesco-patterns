@@ -12,8 +12,9 @@
 
 $resourceID = $modx->getOption('resource', $scriptProperties, $input);
 $resource = $modx->getObject('modResource', $resourceID);
-$seoTab = $modx->getObject('modPlugin', array('name'=>'StercSEO','disabled'=>0));
+$seoTab = $modx->getObject('modPlugin', array('name'=>'SEO Suite','disabled'=>0));
 //$resource =& $modx->event->params['resource'];
+$placeholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
 
 // First, check if SEOTab plugin is installed, and active
 if (!is_object($seoTab) || !is_object($resource)) {
@@ -34,4 +35,9 @@ if ($properties['follow'] == 1) {
     $follow = 'nofollow';
 }
 
-return $index . '/' . $follow;
+$output = $index . '/' . $follow;
+if ($placeholder) {
+    $modx->setPlaceholder($placeholder, $output);
+    return '';
+}
+return $output;

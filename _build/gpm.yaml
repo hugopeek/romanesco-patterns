@@ -143,6 +143,9 @@ categories:
         children:
           - name: a_glob_background
       - name: a_hub
+        children:
+          - name: a_hub_status
+          - name: a_hub_tasks
       - name: a_image
         children:
           - name: a_img_overview
@@ -3348,54 +3351,6 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_hub
-  - name: statusNotesGetUser
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: a_hub
-  - name: statusNotesGetDate
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: a_hub
-  - name: statusGridColumnNotes
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: a_hub
-  - name: statusIndicatorSVGSymbol
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: a_hub
-  - name: statusIndicatorLegendTR
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: a_hub
-  - name: configSettingsRowTR
-    description: 'Table row for configuration settings table.'
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: a_hub
   - name: img
     description: 'A plain and simple <img> tag, for situations that require a chunk tpl (inside mosquito conditionals for example). Can be lazy loaded.'
     properties:
@@ -5036,6 +4991,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_cb_field
+  - name: cbImageEnlarge
+    description: ''
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementPreview
+        value: ''
+    category: a_cb_field
   - name: cbGalleryDisplayType
     description: DEPRECATED.
     properties:
@@ -5388,14 +5351,6 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_cb_setting
-  - name: cbSettingImageEnlarge
-    description: ''
-    properties:
-      - name: elementStatus
-        value: solid
-      - name: elementPreview
-        value: ''
-    category: a_cb_setting
   - name: cbSettingLinkRel
     description: ''
     properties:
@@ -5670,6 +5625,70 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_glob_background
+  - name: statusNotesGetUser
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_hub_status
+  - name: statusNotesGetDate
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_hub_status
+  - name: statusGridColumnNotes
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_hub_status
+  - name: statusIndicatorSVGSymbol
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_hub_status
+  - name: statusIndicatorLegendTR
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_hub_status
+  - name: configSettingsRowTR
+    description: 'Table row for configuration settings table.'
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_hub_status
+  - name: taskItemBasic
+    description: ''
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementPreview
+        value: ''
+    category: a_hub_tasks
+  - name: taskItemTooltip
+    description: ''
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementPreview
+        value: ''
+    category: a_hub_tasks
   - name: imgOverview
     description: 'Default ImagePlus tpl for overview images. It calculates srcset and sizes attributes, for loading the most appropriate thumbnail size in responsive scenarios. Also has lazy loading option.'
     properties:
