@@ -1,4 +1,4 @@
-<div class="[[+alignment]] content">
+<div class="[[+alignment]] content icon">
     <[[+level]] class="ui [[+title_classes]] centered icon header">
         <a class="[[+icon_classes]]" href="[[~[[+id]]]]">
             [[$overviewRowIconBasic? &uid=`[[+unique_idx]]`]]
