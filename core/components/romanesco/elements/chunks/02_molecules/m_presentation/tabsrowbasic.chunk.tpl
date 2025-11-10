@@ -1,9 +1,9 @@
 [[Switch:toPlaceholder=`menu_attachment_[[+unique_idx]]`?
     &get=`[[+menu_position]]`
     &c1=`top` &do1=`bottom attached`
-    &c2=`right` &do2=``
+    &c2=`right` &do2=`[[+tab_type:is=`regular`:then=`seamless left attached`]]`
     &c3=`bottom` &do3=`top attached`
-    &c4=`left` &do4=``
+    &c4=`left` &do4=`[[+tab_type:is=`regular`:then=`seamless right attached`]]`
     &default=`bottom attached`
 ]]
 
