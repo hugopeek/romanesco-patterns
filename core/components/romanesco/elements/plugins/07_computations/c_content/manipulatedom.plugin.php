@@ -49,6 +49,7 @@ switch ($modx->event->name) {
             && empty($_POST)
             && empty($_REQUEST['search'])
             && empty($invertLayouts)
+            && $modx->resource->cacheable
         ;
         if ($cacheEnabled) {
             $cachedOutput = $cacheManager->get($cacheElementKey, $cacheOptions);
