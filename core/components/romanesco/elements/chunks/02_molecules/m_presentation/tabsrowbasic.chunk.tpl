@@ -6,9 +6,22 @@
     &c4=`left` &do4=`[[+tab_type:is=`regular`:then=`seamless right attached`]]`
     &default=`bottom attached`
 ]]
-
 [[+tab_type:contains=`basic`:then=`basic vertical`:else=`[[+menu_attachment_[[+unique_idx]]]]`:toPlaceholder=`tab_segment`]]
 [[+tab_type:contains=`pointing regular`:or:contains=`pointing segments`:then=``:else=`[[+tab_segment]]`:toPlaceholder=`tab_segment`]]
+
+<div class="item [[+idx:eq=`1`:then=`active`]] [[+tab_type:contains=`pointing segments`:then=`ui [[+segment_pointer]] segment`]]"
+     data-tab="segment-[[+unique_idx]]-[[+idx]]"
+     role="tab"
+     aria-selected="false">
+    <[[+level]] class="ui [[+level:is=`span`:then=`tiny`]] header">
+        [[+heading]]
+        [[If?
+            &subject=`[[+subtitle]]`
+            &operator=`notempty`
+            &then=`<span class="sub header">[[+subtitle]]</span>`
+        ]]
+    </[[+level]]>
+</div>
 
 <div class="ui reducible [[+tab_segment]] [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
      data-tab="segment-[[+unique_idx]]-[[+idx]]"

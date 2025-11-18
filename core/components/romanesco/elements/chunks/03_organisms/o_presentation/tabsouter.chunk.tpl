@@ -5,6 +5,7 @@
     &c3=`pointing basic` &do3=`pointing tabbed`
     &c4=`pointing regular` &do4=`pointing tabbed`
     &c5=`pointing segments` &do5=`tabbed secondary`
+    &default=`top attached tabular`
 ]]
 [[Switch:toPlaceholder=`segment_pointer`?
     &get=`[[+menu_position]]`
@@ -16,17 +17,8 @@
 
 [[tabsGenerateNav?
     &input=`[[+rows]]`
-    &prefix=`pl_[[+layout_idx]]_[[+unique_idx]]`
-    &toPlaceholder=`tabs_menu`
-]]
-
-[[Switch?
-    &get=`[[+menu_position]]`
-    &c1=`top` &do1=`[[$tabsNavTop? &rows=`[[+rows]]`]]`
-    &c2=`right` &do2=`[[$tabsNavRight? &rows=`[[+rows]]`]]`
-    &c3=`bottom` &do3=`[[$tabsNavBottom? &rows=`[[+rows]]`]]`
-    &c4=`left` &do4=`[[$tabsNavLeft? &rows=`[[+rows]]`]]`
-    &default=`[[$tabsNavTop? &rows=`[[+rows]]`]]`
+    &tpl=`tabsNav[[+menu_position:ucfirst:default=`Top`]]`
+    &unique_idx=`[[+unique_idx]]_[[+layout_idx:empty=`[[+cta_id]]`]]`
 ]]
 
 [[loadAssets? &component=`tabs`]]
