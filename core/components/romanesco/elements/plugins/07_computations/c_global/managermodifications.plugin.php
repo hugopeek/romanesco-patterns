@@ -23,6 +23,9 @@ switch ($modx->event->name) {
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/contentblocks.css?v=' . $versionCSS);
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/semantic.css?v=' . $versionCSS); # for CB chunk previews
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/step.css?v=' . $versionCSS); # for CB chunk previews
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/form.css?v=' . $versionCSS); # for CB chunk previews
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/popup.css?v=' . $versionCSS); # for CB chunk previews
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/table.css?v=' . $versionCSS); # for CB chunk previews
 
         // Load custom CSS for Global Backgrounds
         if ($resource->get('template') == 27) {
