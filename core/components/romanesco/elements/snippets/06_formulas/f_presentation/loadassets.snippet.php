@@ -163,6 +163,11 @@ switch ($component) {
         $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/rating.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/rating.min' . $cacheBusterJS . '.js"></script>');
         break;
+    case 'search':
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/search.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/api.min' . $cacheBusterJS . '.js"></script>');
+        $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/search.min' . $cacheBusterJS . '.js"></script>');
+        break;
     case 'loader':
         $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/loader.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
         break;
