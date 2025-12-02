@@ -5231,6 +5231,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_cb_select
+  - name: cbSelectPublication
+    description: ''
+    properties:
+      - name: elementStatus
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: a_cb_select
   - name: cbSelectTeam
     description: ''
     properties:
@@ -5239,7 +5247,7 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_cb_select
-  - name: cbSelectClients
+  - name: cbSelectClient
     description: ''
     properties:
       - name: elementStatus
@@ -5247,7 +5255,7 @@ chunks:
       - name: elementPreview
         value: ''
     category: a_cb_select
-  - name: cbSelectTestimonials
+  - name: cbSelectTestimonial
     description: ''
     properties:
       - name: elementStatus
