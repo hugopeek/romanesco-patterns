@@ -1,7 +1,7 @@
 --- Select a CTA ---=
 [[getResources?
-    &parents=`[[getContextSetting:empty=`[[++romanesco.cta_container_id]]`? &context=`[[*context_key]]` &setting=`romanesco.cta_container_id`]]`
-    &tpl=`@INLINE [[+pagetitle]]=[[+id]]`
+    &parents=`[[getContextSetting? &context=`[[*context_key]]` &setting=`romanesco.cta_container_id`]]`
+    &tpl=`@INLINE [[+pagetitle]] ([[+id]])=[[+id]]`
     &limit=`0`
     &showHidden=`0`
     &showUnpublished=`1`
