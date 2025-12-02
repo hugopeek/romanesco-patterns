@@ -18,7 +18,7 @@
                         <div class="ui nested middle aligned equal width toolbar grid">
                             <div class="nine wide column">
                                 <a href="[[++site_url]]manager/?a=resource/update&id=[[*id]]" class="ui tiny basic button">
-                                    Edit in MODX
+                                    [[%romanesco.patterns.edit_tooltip]]
                                 </a>
                             </div>
                             <div class="right aligned column">
@@ -33,7 +33,7 @@
 
                         <div class="ui divider"></div>
 
-                        <h5 class="ui disabled header">ContentBlocks used</h5>
+                        <h5 class="ui disabled header">[[%romanesco.patterns.contentblocks_used]]</h5>
 
                         <div class="ui list">
                             [[+meta]]

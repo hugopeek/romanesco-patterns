@@ -16,7 +16,7 @@
     &activationEmailTplType=`[[*fb_activation_email_type:default=`inline`]]`
     &activationEmailSubject=`[[*fb_email_subject:empty=`[[%formblocks.registration.email_subject]]`]]`
 
-    &emailField=`fb[[*id]]-email` [[- Resist the temptation to make this dynamic. This value will be used to set the (mandatory) user email anyhow.]]
+    &emailField=`fb[[*id]]-email` [[- WARNING. Resist the temptation to make this dynamic. This value will be used to set the (mandatory) user email anyhow.]]
     &usernameField=`[[*fb_username_field:default=`username`:fbStripAsAlias:stripString=`fb[[*id]]-`:prepend=`fb[[*id]]-`]]`
     &fullnameField=`[[*fb_fullname_field:default=`fullname`:fbStripAsAlias:stripString=`fb[[*id]]-`:prepend=`fb[[*id]]-`]]`
     &usergroups=`[[*fb_usergroups]]`

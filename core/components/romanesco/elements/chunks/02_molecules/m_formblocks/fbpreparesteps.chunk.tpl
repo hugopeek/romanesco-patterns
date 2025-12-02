@@ -1,4 +1,4 @@
-[[- Split steps into placeholders ]]
+[[- SPLIT STEPS INTO SEPARATE PLACEHOLDERS ]]
 [[[[If?
     &subject=`[[+multiple_steps]]`
     &operator=`notempty`
@@ -20,7 +20,7 @@
     &then=`splitString? &input=`[[+multiple_steps]]` &delimiter=`,` &prefix=`step``
 ]]]]
 
-[[- Find out which form is used in previous / next steps ]]
+[[- FIND OUT WHICH FORM IS BEING USED IN PREV/NEXT STEPS ]]
 [[[[If?
     &subject=`[[+section.1]]`
     &operator=`notempty`
