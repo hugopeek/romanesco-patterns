@@ -7,6 +7,16 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Add edit button to pattern library elements
+- Fix category navigation not nesting properly for Boson patterns
+- Remove fallback setting for getContextSetting snippet calls
+- Add chunk for selecting Publication in CB
+- Fix Tabs component inside CTAs
+- Only fetch dom cache when resource is cacheable
+- Make sure left/right Tabs menu is attached seamlessly
+- Fix unique_idx in overview image srcset prefix
+- Improvements to status grid table
+- Remove stackable image option
 - Increase scale value for inflated responsive image CBs
 - Fix output when multiple classes are applied to image CB
 - Fix feedback message for MODX 3
