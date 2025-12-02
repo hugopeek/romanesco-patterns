@@ -1,5 +1,5 @@
 [[+firstOption:after=`==||`]][[migxLoopCollection?
-    &classname=`modUserGroup`
+    &classname=`MODX\Revolution\modUserGroup`
     &tpl=`@CODE:[[+name]]==[[+id]]`
     &outputSeparator=`||`
     &sortConfig=`[{"sortby":"[[+sortBy]]","sortdir":"[[+sortDir]]"}]`
