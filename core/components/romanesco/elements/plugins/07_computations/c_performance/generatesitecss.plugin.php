@@ -18,16 +18,18 @@
  *
  * @var modX $modx
  * @var array $scriptProperties
+ * @var Romanesco $romanesco
  *
  * @package romanesco
  */
 
+use MODX\Revolution\modX;
+use Psr\Container\NotFoundExceptionInterface;
 use FractalFarming\Romanesco\Romanesco;
 
-/** @var Romanesco $romanesco */
 try {
     $romanesco = $modx->services->get('romanesco');
-} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+} catch (NotFoundExceptionInterface $e) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
@@ -54,9 +56,6 @@ switch ($modx->event->name) {
 
         // Clear event output to avoid rogue messages popping up again
         $modx->event->_output = '';
-
-        // Init CSS linter
-        $cssLinter = new Linter();
 
         // Validate the CSS gradient field
         if ($templateID == 27)
@@ -94,10 +93,17 @@ switch ($modx->event->name) {
 }";
 
                     // Validate CSS
-                    if ($cssLinter->lintString($css) !== true) {
-                        $errors = implode("\n", $cssLinter->getErrors());
-                        $modx->log(modX::LOG_LEVEL_ERROR, "CSS for background $id is not valid:" . $css . "\n" . $errors);
-                        $modx->event->output("The CSS in layer $i is not valid! Please check the error log for details.<br>");
+                    $cssLinter = new Linter();
+                    $lintResult = $cssLinter->lintString($css);
+                    $errors = [];
+                    foreach ($lintResult as $error) {
+                        $errors[] = $error->__toString();
+                    }
+                    if ($errors) {
+                        $modx->log(modX::LOG_LEVEL_ERROR, "CSS for background $id is not valid:" . $css . "\n" . implode("\n", $errors));
+                        $modx->event->output("The CSS in layer $i is not valid!<br>");
+                        $modx->event->output("Please check the error log for details.");
+                        return true;
                     }
                 }
             }
