@@ -5,7 +5,7 @@
 
 [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
-    [[++custom_cache:eq=`1`:then=`&cacheKey=`custom/overviews/[[+user_access_level]]``:else=``]]
+    &cacheKey=`[[++custom_cache:eq=`1`:then=`custom/overviews/[[+user_access_level]]`:else=``]]`
 
     &parents=`[[+parent]]`
     &resources=`[[+excluded_resources]]`

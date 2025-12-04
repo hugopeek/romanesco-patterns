@@ -7,6 +7,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Fix custom caching in all overviews
 - Fix internal CSS validation
 - Add edit button to pattern library elements
 - Fix category navigation not nesting properly for Boson patterns
