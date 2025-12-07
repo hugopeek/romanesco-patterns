@@ -31,12 +31,15 @@ $placeholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
 
 $dom = new HtmlPageCrawler($input);
 
+// Only include items with reference to a tab
 $tabHeaders = $dom->filter('.item')->each(function(HtmlPageCrawler $node) use ($uid, $modx) {
-    $html = $node->getAttribute('data-tab');
-//    $html = str_replace('[[+unique_idx]]', $uid, $html);
-//    $modx->log(modX::LOG_LEVEL_ERROR, $html);
-    return $node->setAttribute('data-tab', $html);
+    if (!$node->getAttribute('data-tab')) {
+        return '';
+    }
+    return $node;
 });
+
+// Fetch tab content
 $tabSegments = $dom->filter('.tab.segment');
 
 return $modx->getChunk($tpl, [

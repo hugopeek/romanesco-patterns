@@ -7,6 +7,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Verify menu items in tabbed navigation
 - Fix custom caching in all overviews
 - Fix internal CSS validation
 - Add edit button to pattern library elements
