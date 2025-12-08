@@ -13,14 +13,26 @@
  *     &default=`Nothing there!`
  * ]]
  *
+ * @var modX $modx
  * @var array $scriptProperties
  */
 
+$placeholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
+
 // Avoid hitting snippet properties
+unset($scriptProperties['toPlaceholder']);
 unset($scriptProperties['elementExample']);
 unset($scriptProperties['elementStatus']);
 
+$output = '';
 foreach ($scriptProperties as $key => $value) {
-    if ($value) return $value;
+    if ($value) {
+        $output = $value;
+        break;
+    }
 }
-return '';
+if ($placeholder) {
+    $modx->setPlaceholder($placeholder, $output);
+    return '';
+}
+return $output;

@@ -4,7 +4,10 @@
     &then=`$fbPrepareSteps`
 ]]]]
 
-[[[[++formblocks.ajax_mode:eq=`1`:then=``:else=`!`]]$fbRenderFormWrapper?
+[[[[++formblocks.ajax_mode:eq=`1`:then=`renderResources`:else=`!$fbRenderFormWrapper`]]?
+    &parents=`-1`
+    &resources=`[[+form_id]]`
+
     &form_id=`[[+form_id]]`
     &current_id=`[[*id]]`
     &current_pagetitle=`[[*pagetitle]]`
@@ -27,5 +30,6 @@
     &next_step=`[[+next_steps.first:empty=``]]`
     &first_step=`[[+step.first:empty=``]]`
     &last_step=`[[+step.last:empty=``]]`
+
     &redirect_id=`[[+redirect_id:empty=``]]`
 ]]

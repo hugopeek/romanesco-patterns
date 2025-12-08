@@ -7,6 +7,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Improve FormBlocks AJAX processing
 - Verify menu items in tabbed navigation
 - Fix custom caching in all overviews
 - Fix internal CSS validation
