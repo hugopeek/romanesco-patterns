@@ -65,10 +65,11 @@ if (isset($task) && is_object($task)) {
     $romanesco->generateCriticalCSS([
         'id' => $resourceID,
         'url' => $resourceURL,
-        'uri' => $resourceURI ?? $resource->get('uri'),
-        'cssPath' => $romanesco->getContextSetting('romanesco.custom_css_path', $resource->get('context_key')),
-        'criticalPath' => $romanesco->getContextSetting('romanesco.critical_css_path', $resource->get('context_key')),
-        'distPath' => $romanesco->getContextSetting('romanesco.semantic_dist_path', $resource->get('context_key')),
+        'uri' => $uri,
+        'cssPathSemantic' => $romanesco->getContextSetting('romanesco.semantic_css_path', $context),
+        'cssPathCustom' => $romanesco->getContextSetting('romanesco.custom_css_path', $context),
+        'criticalPath' => $romanesco->getContextSetting('romanesco.critical_css_path', $context),
+        'distPath' => $romanesco->getContextSetting('romanesco.semantic_dist_path', $context),
     ]);
 
     return "Critical CSS generated for: $uri ($resourceID)";

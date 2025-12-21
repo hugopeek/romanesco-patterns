@@ -7,6 +7,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Include backgrounds when generating critical CSS
 - Fix critical CSS generation in MODX 3
 - Improve FormBlocks AJAX processing
 - Verify menu items in tabbed navigation
