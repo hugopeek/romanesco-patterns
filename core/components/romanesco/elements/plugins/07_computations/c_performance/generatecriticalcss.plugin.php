@@ -18,19 +18,25 @@
  *
  * @var modX $modx
  * @var array $scriptProperties
+ * @var Romanesco $romanesco
  *
  * @package romanesco
  */
+
+use MODX\Revolution\modX;
+use MODX\Revolution\modResource;
+use Psr\Container\NotFoundExceptionInterface;
 use FractalFarming\Romanesco\Romanesco;
 
-/** @var Romanesco $romanesco */
 try {
     $romanesco = $modx->services->get('romanesco');
-} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+} catch (NotFoundExceptionInterface $e) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
+    return;
 }
 
-$basePath = $modx->getOption('base_path');
+if (!($modx->resource instanceof modResource)) return;
+
 $context = $modx->resource->get('context_key');
 
 // Abort if critical is not enabled for current context
@@ -125,7 +131,7 @@ switch ($modx->event->name) {
         }
 
         // Schedule a new run
-        $task->schedule('+1 minutes', array(
+        $task->schedule('+0 minutes', array(
             'id' => $id,
             'url' => $url,
             'uri' => $uri,
