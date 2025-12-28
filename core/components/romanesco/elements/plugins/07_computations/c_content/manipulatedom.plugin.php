@@ -192,6 +192,9 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Remove unwanted padding from content images inside Card CBs
+        $dom->filter('.ui.cards > .card > .ui.content.image')->removeClass('content');
+
         // Remove rows from grids that have a reversed column order on mobile
         $dom->filter('.ui.reversed.grid > .row')->unwrapInner();
 
