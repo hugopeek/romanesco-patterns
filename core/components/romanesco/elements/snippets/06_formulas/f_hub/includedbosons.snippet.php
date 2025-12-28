@@ -10,14 +10,25 @@
  * @var array $scriptProperties
  */
 
+use MODX\Revolution\modX;
+use MODX\Revolution\modResource;
 use FractalFarming\Romanesco\Romanesco;
+use Psr\Container\NotFoundExceptionInterface;
 
 /** @var Romanesco $romanesco */
 try {
     $romanesco = $modx->services->get('romanesco');
-} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+} catch (NotFoundExceptionInterface $e) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
+    return;
 }
+
+if (!($modx->resource instanceof modResource)) return;
+
+$cbCorePath = $modx->getOption('contentblocks.core_path', null, $modx->getOption('core_path').'components/contentblocks/');
+$ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.'model/contentblocks/');
+
+if (!($ContentBlocks instanceof ContentBlocks)) return;
 
 $resourceID = $modx->getOption('resource', $scriptProperties, $modx->resource->get('id'));
 $layoutIdx = $modx->getOption('layout', $scriptProperties, '');
@@ -27,36 +38,32 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'includedContentBlocksRow');
 $htmlContentType = $modx->getObject('modContentType', array('name' => 'HTML'));
 
 // Function to turn result into a link to its corresponding resource
-if (!function_exists('createLink')) {
-    function createLink($catID, $uriExtension) {
-        global $modx;
+$createLink = function ($catID, $uriExtension) use ($modx) {
+    // Since we have an ID, let's go hunt for the category name
+    $category = $modx->getObject('cbCategory', [
+        'id' => $catID
+    ]);
 
-        // Since we have an ID, let's go hunt for the category name
-        $category = $modx->getObject('cbCategory', array(
-            'id' => $catID
-        ));
-
-        $catName = '';
-        if ($category) {
-            $catName = strtolower($category->get('name'));
-        } else {
-            $modx->log(modX::LOG_LEVEL_WARN, '[includedBosons] Link could not be generated due to missing category ID');
-        }
-
-        // Use bosons as parent name, because we don't know if this is a layout or field
-        $parentName = 'bosons';
-
-        // Get the resource with an alias that matches both category and parent name
-        $query = $modx->newQuery('modResource');
-        $query->where(array(
-            'uri:LIKE' => '%' . $parentName . '%',
-            'AND:uri:LIKE' => '%' . $catName . $uriExtension
-        ));
-        $query->select('uri');
-
-        return $modx->getValue($query->prepare());
+    $catName = '';
+    if ($category) {
+        $catName = strtolower($category->get('name'));
+    } else {
+        $modx->log(modX::LOG_LEVEL_WARN, '[includedBosons] Link could not be generated due to missing category ID');
     }
-}
+
+    // Use bosons as parent name, because we don't know if this is a layout or field
+    $parentName = 'bosons';
+
+    // Get the resource with an alias that matches both category and parent name
+    $query = $modx->newQuery('modResource');
+    $query->where([
+        'uri:LIKE' => '%' . $parentName . '%',
+        'AND:uri:LIKE' => '%' . $catName . $uriExtension
+    ]);
+    $query->select('uri');
+
+    return $modx->getValue($query->prepare());
+};
 
 // Get the properties of the current resource first
 $query = $modx->newQuery('modResource', array(
@@ -99,7 +106,7 @@ foreach ($result as $id) {
     }
     if ($boson) {
         $name = $boson->get('name');
-        $link = createLink($boson->get('category'), $htmlContentType->get('file_extensions'));
+        $link = $createLink($boson->get('category'), $htmlContentType->get('file_extensions'));
 
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
