@@ -36,7 +36,17 @@
     &img_options=`[[+img_options]]`
     &lazy_load=`[[+lazy_load]]`
 
-    [[[[+pagination:eq=`1`:then=`$overviewSettingsPagination? &uid=`[[+prefix]]``]]]]
+    [[[[If?
+        &subject=`[[+pagination]]`
+        &operator=`eq`
+        &operand=`1`
+        &then=`$overviewSettingsPagination? &uid=`[[+prefix]]``
+    ]]]]
 ]]
 
-[[[[+pagination:eq=`1`:then=`$paginationFluid`]]]]
+[[[[If?
+    &subject=`[[+pagination]]`
+    &operator=`eq`
+    &operand=`1`
+    &then=`$paginationFluid? &uid=`[[+prefix]]``
+]]]]

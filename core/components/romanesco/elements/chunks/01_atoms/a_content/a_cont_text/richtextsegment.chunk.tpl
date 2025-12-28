@@ -1,10 +1,13 @@
-[[+segment_type:notempty=`
-<div class="ui [[+padding]] [[+alignment]] [[+segment_type]] [[+background:setBackground]] text segment">
-    [[+content]]
-</div>
-`:empty=`
-    [[+content]]
-`]]
+[[If?
+    &subject=`[[+segment_type]]`
+    &operator=`notempty`
+    &then=`
+    <div class="ui [[+padding]] [[+alignment]] [[+segment_type]] [[+background:setBackground]] text segment">
+        [[+content]]
+    </div>
+    `
+    &else=`[[+content]]`
+]]
 
 [[[[If?
     &subject=`[[+content]]`

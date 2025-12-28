@@ -21,5 +21,11 @@
     &sortby=`[[+sortby]]`
     &sortdir=`[[+[[+prefix]].sortdir]]`
 
-    [[$overviewSettings[[+pagination:eq=`1`:then=`Pagination`]]? &uid=`[[+prefix]]`]]
+    [[$overviewSettings? &uid=`[[+prefix]]`]]
+    [[[[If?
+        &subject=`[[+pagination]]`
+        &operator=`eq`
+        &operand=`1`
+        &then=`$overviewSettingsPagination? &uid=`[[+prefix]]``
+    ]]]]
 ]]

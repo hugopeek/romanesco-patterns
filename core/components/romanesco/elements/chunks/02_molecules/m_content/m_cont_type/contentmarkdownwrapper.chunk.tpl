@@ -3,4 +3,9 @@
         [[$contentMarkdown]]
     </div>
 </div>
-[[[[$contentMarkdown:contains=`</table>`:then=`loadAssets? &component=`table``]]]]
+[[[[If?
+    &subject=`[[$contentMarkdown]]`
+    &operator=`contains`
+    &operand=`</table>`
+    &then=`loadAssets? &component=`table``
+]]]]

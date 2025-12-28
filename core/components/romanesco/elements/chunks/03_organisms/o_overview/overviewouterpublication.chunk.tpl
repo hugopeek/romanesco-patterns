@@ -25,5 +25,10 @@
 
     &show_tags=`[[+show_tags]]`
     [[$overviewSettings? &uid=`[[+prefix]]`]]
-    [[[[+pagination:eq=`1`:then=`$overviewSettingsPagination? &uid=`[[+prefix]]``]]]]
+    [[[[If?
+        &subject=`[[+pagination]]`
+        &operator=`eq`
+        &operand=`1`
+        &then=`$overviewSettingsPagination? &uid=`[[+prefix]]``
+    ]]]]
 ]]
