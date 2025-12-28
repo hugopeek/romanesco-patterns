@@ -1,10 +1,10 @@
-[[modifiedIf?
+[[If?
     &subject=`[[+layout_title]]`
     &operator=`notempty`
     &then=`id="fb[[*id]]-[[stripAsAlias? &input=`[[+layout_title]]`]]"`
     &toPlaceholder=`fieldset_id_[[+unique_idx]]`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`[[+segment_type]]`
     &operator=`isnot`
     &operand=`none`

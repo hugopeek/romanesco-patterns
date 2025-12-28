@@ -1,12 +1,12 @@
 <header id="header" class="[[++navbar_sticky:eq=`1`:then=`ui sticky`]] inverted primary-color">
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`masthead`
         &operator=`iselement`
         &operand=`chunk`
         &then=`$masthead`
     ]]]]
 
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`mainNavVerticalTheme`
         &operator=`iselement`
         &operand=`chunk`

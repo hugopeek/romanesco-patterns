@@ -2,7 +2,7 @@
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
 <head>
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`headTheme`
         &operator=`iselement`
         &operand=`chunk`

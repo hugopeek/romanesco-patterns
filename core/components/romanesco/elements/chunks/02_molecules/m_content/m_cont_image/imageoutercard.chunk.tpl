@@ -1,4 +1,4 @@
-[[[[modifiedIf?
+[[[[If?
     &subject=`[[+extension:lcase]]`
     &operator=`EQ`
     &operand=`svg`

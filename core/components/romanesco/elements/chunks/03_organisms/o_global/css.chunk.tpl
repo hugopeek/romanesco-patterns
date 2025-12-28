@@ -59,14 +59,14 @@
 
 /* Additional styles */
 
-[[[[modifiedIf?
+[[[[If?
     &subject=`globalBackgroundsTheme`
     &operator=`iselement`
     &operand=`chunk`
     &then=`$globalBackgroundsTheme? &context=`[[+context:empty=`web`]]``
     &else=``
 ]]]]
-[[[[modifiedIf?
+[[[[If?
     &subject=`globalCustomCSS`
     &operator=`iselement`
     &operand=`chunk`

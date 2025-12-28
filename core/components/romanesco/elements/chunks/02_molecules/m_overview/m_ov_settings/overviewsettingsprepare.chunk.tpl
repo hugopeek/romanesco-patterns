@@ -1,4 +1,4 @@
-[[Switch:toPlaceholder=`[[+prefix]].sortdir`?
+[[Switch?
     &get=`[[+sortby]]_[[+sortdir]]`
     &c1=`menuindex_0`     &do1=`ASC`
     &c2=`publishedon_0`   &do2=`DESC`
@@ -11,8 +11,9 @@
     &c8=`pagetitle_1`     &do8=`DESC`
 
     &default=`DESC`
+    &toPlaceholder=`[[+prefix]].sortdir`
 ]]
-[[[[modifiedIf?
+[[[[If?
     &subject=`[[+img_type]]`
     &operator=`is`
     &operand=`svg`
@@ -20,13 +21,15 @@
     &else=`imgOverviewBasicLink`
     &toPlaceholder=`[[+prefix]].img_tpl`
 ]]]]
-[[Switch:toPlaceholder=`[[+prefix]].icon_classes`?
+[[Switch?
     &get=`[[+icon_type]]`
     &c1=`svg`   &do1=`ui svg image`
     &c2=`font`  &do2=`ui icon image`
     &c3=`img`   &do3=`ui image`
+    &toPlaceholder=`[[+prefix]].icon_classes`
 ]]
-[[[[modifiedIf?
+
+[[[[If?
     &subject=`[[+prefix]]`
     &operator=`contains`
     &operand=`__`

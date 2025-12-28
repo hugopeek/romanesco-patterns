@@ -1,6 +1,6 @@
 [[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
 [[+field_type:contains=`multiple`:then=`multiple`:toPlaceholder=`multiple`]]
-[[modifiedIf?
+[[If?
     &subject=`[[+multiple]][[+option_other]]`
     &operator=`eq`
     &operand=`1`

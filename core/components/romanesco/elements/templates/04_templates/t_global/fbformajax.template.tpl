@@ -1,7 +1,7 @@
 [[!fbLoadAssets?
     &uploadFile=`[[cbHasField? &field=`[[++formblocks.cb_input_file_multiple_id]]`]]`
     &frontendValidation=`1`
-]][[modifiedIf?
+]][[If?
     &subject=`[[*fb_save_form]]`
     &operator=`EQ`
     &operand=`default`
@@ -81,7 +81,7 @@
         [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_math_question_id]]` &then=`fb[[*id]]-math:required,`]]
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`fbValidateCustomFields`
             &operator=`iselement`
             &operand=`chunk`

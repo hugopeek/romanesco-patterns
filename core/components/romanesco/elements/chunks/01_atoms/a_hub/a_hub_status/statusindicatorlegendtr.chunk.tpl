@@ -1,4 +1,4 @@
-[[Switch:toPlaceholder=`indicator_class_[[+idx]]`?
+[[Switch?
     &get=`[[+alias]]`
     &c1=`todo`          &do1=`orange`
     &c2=`doing`         &do2=`yellow`
@@ -8,6 +8,7 @@
     &c6=`problematic`   &do6=`red`
     &c7=`expired`       &do7=`brown`
     &default=`olive`
+    &toPlaceholder=`indicator_class_[[+idx]]`
 ]]
 <tr class="[[+indicator_class_[[+idx]]]]">
     <td>

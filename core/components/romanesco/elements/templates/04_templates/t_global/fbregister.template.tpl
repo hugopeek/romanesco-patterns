@@ -40,7 +40,7 @@
         [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[+math_question:isnot=`0`:then=`fb[[*id]]-math:math,`]]
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`fbValidateCustomFields`
             &operator=`iselement`
             &operand=`chunk`
@@ -76,7 +76,7 @@
 
         [[*content:containsnot=`type="submit"`:then=`
         <div class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`]]">
-            [[[[modifiedIf?
+            [[[[If?
                 &subject=`fbAntiSpamTheme`
                 &operator=`iselement`
                 &operand=`chunk`

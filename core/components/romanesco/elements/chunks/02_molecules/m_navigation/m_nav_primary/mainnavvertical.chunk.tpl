@@ -1,6 +1,6 @@
 <nav id="menu-vertical" class="ui [[++navbar_size:default=`large`]] secondary vertical [[++navbar_level:lte=`1`:then=`inverted`:else=`accordion`]] menu" role="navigation">
     <div class="item branding">
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`logoTheme`
             &operator=`iselement`
             &operand=`chunk`

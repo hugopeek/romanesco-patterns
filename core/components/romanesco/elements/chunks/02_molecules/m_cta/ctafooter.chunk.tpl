@@ -1,4 +1,4 @@
-[[modifiedIf?
+[[If?
     &subject=`[[getRawTVValue? &tv=`footer_cta_background`]]`
     &operator=`EQ`
     &operand=`@INHERIT`

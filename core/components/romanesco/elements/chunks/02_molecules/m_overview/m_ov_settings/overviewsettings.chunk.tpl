@@ -1,4 +1,4 @@
-&row_tpl=`[[modifiedIf? &subject=`[[+row_tpl]]Theme` &operator=`iselement` &operand=`chunk` &then=`[[+row_tpl]]Theme` &else=`[[+row_tpl]]`]]`
+&row_tpl=`[[If? &subject=`[[+row_tpl]]Theme` &operator=`iselement` &operand=`chunk` &then=`[[+row_tpl]]Theme` &else=`[[+row_tpl]]`]]`
 &box_type=`[[+[[+prefix]].box_type]]`
 &row_type=`[[+[[+prefix]].row_type]]`
 &column_type=`[[+[[+prefix]].column_type]]`

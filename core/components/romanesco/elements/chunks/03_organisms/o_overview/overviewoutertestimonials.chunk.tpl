@@ -9,7 +9,7 @@
 
     &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++romanesco.testimonial_container_id]]`]]`
     &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`[[+excluded_resources:empty=`null`]]`]]`
-    &limit=`[[modifiedIf? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
+    &limit=`[[If? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &offset=`[[+offset:default=`0`]]`
     &tpl=`overviewRowReview[[+[[+prefix]].row_type]]`
     &tplWrapper=`overviewWrapper[[+pagination:eq=`1`:then=`Pagination`]]`

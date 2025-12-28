@@ -1,4 +1,4 @@
-[[modifiedIf?
+[[If?
     &subject=`[[*fb_save_form]]`
     &operator=`EQ`
     &operand=`default`
@@ -93,7 +93,7 @@
         [[cbHasField? &field=`[[++formblocks.cb_input_email_id]]` &then=`fb[[*id]]-email:email:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_accept_terms_id]]` &then=`fb[[*id]]-accept-terms:required,`]]
         [[cbHasField? &field=`[[++formblocks.cb_math_question_id]]` &then=`fb[[*id]]-math:required,`]]
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`fbValidateCustomFields`
             &operator=`iselement`
             &operand=`chunk`
@@ -157,7 +157,7 @@
         ]]
         [[*content:containsnot=`type="submit"`:then=`
         <fieldset class="ui [[+padding]] submission [[+segment_type:isnot=`none`:then=`segment`:else=`fieldset`]]">
-            [[[[modifiedIf?
+            [[[[If?
                 &subject=`fbAntiSpamTheme`
                 &operator=`iselement`
                 &operand=`chunk`

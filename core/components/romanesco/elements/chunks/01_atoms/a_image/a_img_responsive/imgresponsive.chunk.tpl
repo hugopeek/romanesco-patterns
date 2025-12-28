@@ -1,6 +1,6 @@
 [[+lazy_load:eq=`1`:then=`data-`:else=``:toPlaceholder=`lazy`]]
 [[++max_thumb_width:div=`[[+width]]`:replace=`,==.`:mpy=`[[+height]]`:round=`up`:toPlaceholder=`max_thumb_height`]]
-[[modifiedIf?
+[[If?
     &subject=`[[+enlarge]]`
     &operator=`contains`
     &operand=`inflated`

@@ -12,7 +12,7 @@
                     ]]
                 },
                 onSuccess: function(e) {
-                    [[[[modifiedIf?
+                    [[[[If?
                         &subject=`[[++formblocks.antispam_hooks]]`
                         &operator=`contains`
                         &operand=`recaptchav3`

@@ -1,4 +1,4 @@
-[[Switch:toPlaceholder=`menu_type_[[+unique_idx]]_[[+idx]]`?
+[[Switch?
     &get=`[[+tab_type]]`
     &c1=`regular` &do1=`[[+menu_position]] attached tabular`
     &c2=`basic` &do2=`pointing secondary tabular`
@@ -6,13 +6,15 @@
     &c4=`pointing regular` &do4=`pointing tabbed`
     &c5=`pointing segments` &do5=`tabbed secondary`
     &default=`top attached tabular`
+    &toPlaceholder=`menu_type_[[+unique_idx]]_[[+idx]]`
 ]]
-[[Switch:toPlaceholder=`segment_pointer`?
+[[Switch?
     &get=`[[+menu_position]]`
     &c1=`top` &do1=`down pointing`
     &c2=`right` &do2=`left pointing`
     &c3=`bottom` &do3=`up pointing`
     &c4=`left` &do4=`right pointing`
+    &toPlaceholder=`segment_pointer`
 ]]
 
 [[tabsGenerateNav?

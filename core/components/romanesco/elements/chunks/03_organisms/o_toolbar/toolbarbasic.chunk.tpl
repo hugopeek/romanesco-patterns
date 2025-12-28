@@ -1,4 +1,4 @@
-[[modifiedIf?
+[[If?
     &subject=`[[*toolbar_visibility]]`
     &operator=`EQ`
     &operand=`default`

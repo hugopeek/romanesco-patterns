@@ -1,7 +1,7 @@
 <nav id="menu" class="ui [[++navbar_size:default=`large`]] secondary [[++navbar_sticky:is=`1`:then=`sticky`]] menu">
     <div class="ui container">
         <div class="item branding">
-            [[[[modifiedIf?
+            [[[[If?
                 &subject=`logoTheme`
                 &operator=`iselement`
                 &operand=`chunk`

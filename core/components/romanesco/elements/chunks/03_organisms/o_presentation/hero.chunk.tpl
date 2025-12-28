@@ -1,4 +1,4 @@
-[[modifiedIf?
+[[If?
     &subject=`[[getRawTVValue? &tv=`header_title`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
@@ -6,7 +6,7 @@
     &else=`[[*header_title]]`
     &toPlaceholder=`header_title`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`[[getRawTVValue? &tv=`header_subtitle`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
@@ -21,14 +21,14 @@
     &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_background`:then=`*header_background`:else=``]]]]`
     &else=`[[*header_background]]`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`[[*header_background_img]]`
     &operator=`notempty`
     &then=`[[*alias]] background`
     &else=`[[+header_background:empty=`[[++header_background_default]]`]]`
     &toPlaceholder=`header_background_class`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`heroTitlesTheme`
     &operator=`iselement`
     &operand=`chunk`

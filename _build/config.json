@@ -13432,8 +13432,38 @@
                     "category": "f_framework"
                 },
                 {
-                    "name": "modifiedIf",
+                    "name": "If",
                     "description": "Customized If snippet with additional 'contains', 'containsnot' and 'isnumeric' operators, output to placeholder and option to prevent chunks from parsing before If statement is evaluated.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_framework"
+                },
+                {
+                    "name": "Switch",
+                    "description": "Customized Switch snippet, with optional output to placeholder.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_framework"
+                },
+                {
+                    "name": "UltimateParent",
+                    "description": "The classic menu traverser, from our Ultimate Parent Susan Ottwell",
                     "properties": [
                         {
                             "name": "elementStatus",

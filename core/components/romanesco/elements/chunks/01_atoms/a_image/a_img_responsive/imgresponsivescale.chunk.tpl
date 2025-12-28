@@ -33,7 +33,7 @@
 
     &c29=`24_main`      &do29=`100`
 
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`imgResponsiveScaleTheme`
         &operator=`iselement`
         &operand=`chunk`

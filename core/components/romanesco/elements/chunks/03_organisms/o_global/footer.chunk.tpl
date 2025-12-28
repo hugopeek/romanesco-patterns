@@ -1,4 +1,4 @@
-[[modifiedIf?
+[[If?
     &subject=`[[getRawTVValue? &tv=`footer_visibility`]]`
     &operator=`EQ`
     &operand=`@INHERIT default`
@@ -6,7 +6,7 @@
     &else=`[[*footer_visibility]]`
     &toPlaceholder=`footer_visibility`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`[[getRawTVValue? &tv=`footer_type`]]`
     &operator=`EQ`
     &operand=`@INHERIT default`
@@ -14,7 +14,7 @@
     &else=`[[*footer_type]]`
     &toPlaceholder=`footer_type`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`[[getRawTVValue? &tv=`footer_background`]]`
     &operator=`EQ`
     &operand=`@INHERIT`
@@ -47,7 +47,7 @@
             &field=`content`
         `
     ]]]]
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`footerCopyrightTheme`
         &operator=`iselement`
         &operand=`chunk`

@@ -1,9 +1,10 @@
-[[Switch:toPlaceholder=`element_class`?
+[[Switch?
     &get=`[[+type]]`
     &c1=`BosonField`       &do1=`cbField`
     &c2=`BosonLayout`      &do2=`cbLayout`
     &c3=`BosonTemplate`    &do3=`cbTemplate`
     &default=`0`
+    &toPlaceholder=`element_class`
 ]]
 [[pdoResources:prepend=`
     <[[+level]] [[+level:eq=`h2`:then=`id="[[+name]]"`]] class="ui primary header">

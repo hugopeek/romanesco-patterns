@@ -5,7 +5,7 @@
     <input type="text" name="[[+honeypot_name]]" id="[[+honeypot_name]]" value="[[!+fb[[*id]].[[+honeypot_name]]]]">
 </div>
 `]]
-[[[[modifiedIf?
+[[[[If?
     &subject=`[[++romanesco.dev_mode:empty=`[[++formblocks.antispam_hooks]]`]]`
     &operator=`contains`
     &operand=`recaptchav2`
@@ -14,7 +14,7 @@
             &tpl=`recaptchaOnSubmitV2`
         `
 ]]]]
-[[[[modifiedIf?
+[[[[If?
     &subject=`[[++romanesco.dev_mode:empty=`[[++formblocks.antispam_hooks]]`]]`
     &operator=`contains`
     &operand=`recaptchav3`

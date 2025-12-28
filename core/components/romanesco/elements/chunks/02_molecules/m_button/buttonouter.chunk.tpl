@@ -1,5 +1,5 @@
 [[+new_line:eq=`1`:then=`<br>`]]
-[[modifiedIf?
+[[If?
     &subject=`[[+icon_class:empty=``]]`
     &operator=`notempty`
     &then=`buttonHrefIcon`

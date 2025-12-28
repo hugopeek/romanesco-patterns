@@ -1,10 +1,11 @@
-[[Switch:toPlaceholder=`menu_attachment_[[+unique_idx]]`?
+[[Switch?
     &get=`[[+menu_position]]`
     &c1=`top` &do1=`bottom attached`
     &c2=`right` &do2=`[[+tab_type:is=`regular`:then=`seamless left attached`]]`
     &c3=`bottom` &do3=`top attached`
     &c4=`left` &do4=`[[+tab_type:is=`regular`:then=`seamless right attached`]]`
     &default=`bottom attached`
+    &toPlaceholder=`menu_attachment_[[+unique_idx]]`
 ]]
 [[+tab_type:contains=`basic`:then=`basic vertical`:else=`[[+menu_attachment_[[+unique_idx]]]]`:toPlaceholder=`tab_segment`]]
 [[+tab_type:contains=`pointing regular`:or:contains=`pointing segments`:then=``:else=`[[+tab_segment]]`:toPlaceholder=`tab_segment`]]

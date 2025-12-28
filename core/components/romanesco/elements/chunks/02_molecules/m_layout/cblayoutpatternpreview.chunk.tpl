@@ -9,7 +9,7 @@
             </i>]]
         </div>
 
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`[[+pattern_template]]`
             &operator=`containsnot`
             &operand=`Electron`

@@ -12,7 +12,7 @@
         &then=`[[+main]]`
         &else=`<div class="swiper-wrapper[[+mobile_only:eq=`1`:then=`-mobile`]]">[[+main]]</div>`
     ]]
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`[[+behaviour]]`
         &operator=`containsnot`
         &operand=`navOutside`
@@ -25,7 +25,7 @@
     ]]]]
 </div>
 
-[[[[modifiedIf?
+[[[[If?
     &subject=`[[+behaviour]]`
     &operator=`contains`
     &operand=`navOutside`

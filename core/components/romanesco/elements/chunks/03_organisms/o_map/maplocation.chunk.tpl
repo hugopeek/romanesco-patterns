@@ -1,6 +1,6 @@
 <div id="[[+map_id:stripAsAlias:empty=`map-[[+unique_idx]]`]]" class="map"></div>
 
-[[modifiedIf?
+[[If?
     &subject=`[[+marker_address:stripString=`,`:stripString=`.`]]`
     &operator=`numeric`
     &then=`[[+marker_address]]`

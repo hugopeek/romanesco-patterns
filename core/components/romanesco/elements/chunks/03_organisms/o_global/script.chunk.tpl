@@ -3,7 +3,7 @@
     &component=`custom`
     &inlineJS=`<script defer src="[[++romanesco.semantic_js_path]]/site[[+minify:empty=``]][[+cache_buster_js:empty=``]].js"></script>`
 ]]
-[[[[modifiedIf?
+[[[[If?
     &subject=`footerAdditional`
     &operator=`iselement`
     &operand=`chunk`

@@ -1,6 +1,6 @@
 <div class="column">
     <figure class="ui rounded [[+classes]] [[+extension:lcase]] [[+lightbox:eq=`1`:then=`lightbox`]] image" data-idx="[[+idx]]">
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`[[+extension:lcase]]`
             &operator=`EQ`
             &operand=`svg`

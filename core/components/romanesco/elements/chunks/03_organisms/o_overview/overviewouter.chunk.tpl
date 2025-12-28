@@ -10,7 +10,7 @@
     &parents=`[[+parent]]`
     &resources=`[[+excluded_resources]]`
     &depth=`[[+depth]]`
-    &limit=`[[modifiedIf? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
+    &limit=`[[If? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &offset=`[[+offset:default=`0`]]`
     &tpl=`overviewRow[[+[[+prefix]].row_type]]`
     &tplWrapper=`overviewWrapper[[+pagination:eq=`1`:then=`Pagination`]]`

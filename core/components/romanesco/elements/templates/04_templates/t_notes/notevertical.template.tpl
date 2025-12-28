@@ -2,7 +2,7 @@
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
 <head>
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`headTheme`
         &operator=`iselement`
         &operand=`chunk`
@@ -19,7 +19,7 @@
     [[$headerVertical]]
 
     <main id="main">
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`toolbarNoteTheme`
             &operator=`iselement`
             &operand=`chunk`
@@ -50,7 +50,7 @@
         </section>
         `]]
 
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`footerTheme`
             &operator=`iselement`
             &operand=`chunk`

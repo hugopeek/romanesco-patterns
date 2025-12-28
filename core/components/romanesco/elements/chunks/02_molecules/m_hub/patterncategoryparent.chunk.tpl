@@ -2,7 +2,7 @@
     [[+category]]
 </[[+level]]>
 
-[[Switch:toPlaceholder=`element_class`?
+[[Switch?
     &get=`[[+type]]`
     &c1=`ElectronTV`        &do1=`modTemplateVar`
     &c2=`ElectronSS`        &do2=`modSystemSetting`
@@ -14,6 +14,7 @@
     &c8=`Formula`           &do8=`modSnippet`
     &c9=`Computation`       &do9=`modPlugin`
     &default=`0`
+    &toPlaceholder=`element_class`
 ]]
 [[pdoResources?
     &class=`[[+element_class]]`

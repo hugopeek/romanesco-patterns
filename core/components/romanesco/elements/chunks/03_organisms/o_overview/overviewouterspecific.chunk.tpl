@@ -9,7 +9,7 @@
 
     &parents=`-1`
     &resources=`[[+resources]]`
-    &limit=`[[modifiedIf? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
+    &limit=`[[If? &subject=`[[+prefix]]` &operator=`contains` &operand=`__` &then=`[[+cols:textToNumber:mpy=`2`]]` &else=`[[+limit:default=`0`]]`]]`
     &tpl=`overviewRow[[+[[+prefix]].row_type]]`
     &tplWrapper=`overviewWrapper`
     &includeTVs=`1`

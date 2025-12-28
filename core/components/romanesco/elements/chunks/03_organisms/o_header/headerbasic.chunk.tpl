@@ -1,4 +1,4 @@
-[[modifiedIf?
+[[If?
     &subject=`[[*header_visibility]]`
     &operator=`EQ`
     &operand=`default`
@@ -6,7 +6,7 @@
     &else=`[[*header_visibility]]`
     &toPlaceholder=`header_visibility`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`[[getRawTVValue? &tv=`header_visibility`]]`
     &operator=`contains`
     &operand=`@INHERIT`
@@ -16,14 +16,14 @@
 ]]
 
 <header id="header" class="[[+hero:eq=`0`:then=`without hero`]] [[++navbar_sticky:eq=`0`:then=`non-stick`]]">
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`masthead`
         &operator=`iselement`
         &operand=`chunk`
         &then=`$masthead`
     ]]]]
 
-    [[[[modifiedIf?
+    [[[[If?
         &subject=`mainNavTheme`
         &operator=`iselement`
         &operand=`chunk`

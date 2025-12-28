@@ -25,7 +25,7 @@
             &unique_idx=`[[+unique_idx]]`
         ]]
 
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`[[+pattern_template]]`
             &operator=`contains`
             &operand=`Electron`
@@ -44,7 +44,7 @@
                 `
         ]]]]
 
-        [[[[modifiedIf?
+        [[[[If?
             &subject=`[[+pattern_template]]`
             &operator=`containsnot`
             &operand=`Electron`

@@ -14,14 +14,14 @@
 
 [[- SET PLACEHOLDERS FOR CONDITIONAL STATEMENTS FURTHER DOWN THE RESOURCE ]]
 [[++minify_css_js:eq=`1`:then=`.min`:toPlaceholder=`minify`]]
-[[modifiedIf?
+[[If?
     &subject=`[[++critical_css]]_[[*critical_css_uri:notempty=`1`]]`
     &operator=`eq`
     &operand=`1_1`
     &then=`1`
     &toPlaceholder=`load_critical_css`
 ]]
-[[modifiedIf?
+[[If?
     &subject=`[[++theme_font_page]][[++theme_font_header]]`
     &operator=`notempty`
     &then=`[[++theme_font_header]][[++theme_font_page:prepend=`[[++theme_font_header:notempty=`&family=`]]`]]`
@@ -40,7 +40,7 @@
 ]]
 
 [[- PRELOAD ASSETS WITH HIGHEST PRIORITY ]]
-[[[[modifiedIf?
+[[[[If?
     &subject=`headPreloadLinksTheme`
     &operator=`iselement`
     &operand=`chunk`
@@ -58,7 +58,7 @@
 <link rel="stylesheet" href="[[++romanesco.custom_css_path]]/site[[+minify]][[+cache_buster_css]].css">
 `]]
 
-[[modifiedIf?
+[[If?
     &subject=`[[helloConsentFriend? &service=`googleFonts` &true=`` &false=`[[+load_google_fonts]]`]]`
     &operator=`notempty`
     &then=`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" media="print" onload="this.media='all'">`
@@ -94,7 +94,7 @@
 ]]]]
 
 [[- PLACE ADDITIONAL HEAD ELEMENTS ]]
-[[[[modifiedIf?
+[[[[If?
     &subject=`headAdditional`
     &operator=`iselement`
     &operand=`chunk`
