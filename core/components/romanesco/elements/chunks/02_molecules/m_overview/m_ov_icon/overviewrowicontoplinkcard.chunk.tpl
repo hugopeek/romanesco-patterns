@@ -1,6 +1,8 @@
 <div class="[[+alignment]] content icon">
     <[[+level]] class="ui [[+title_classes]] centered icon header">
-        [[$overviewRowIconBasic? &uid=`[[+unique_idx]]`]]
+        <span class="[[+icon_classes]]">
+            [[$overviewRowIconBasic? &uid=`[[+unique_idx]]`]]
+        </span>
         <span class="content">
             [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
             [[If?

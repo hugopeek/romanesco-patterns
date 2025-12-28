@@ -23,9 +23,9 @@
 ]]]]
 [[Switch?
     &get=`[[+icon_type]]`
-    &c1=`svg`   &do1=`ui svg image`
-    &c2=`font`  &do2=`ui icon image`
-    &c3=`img`   &do3=`ui image`
+    &c1=`svg`   &do1=`ui [[+de_emphasize:is=`1`:then=`muted`]] svg image`
+    &c2=`font`  &do2=`ui [[+de_emphasize:is=`1`:then=`muted`]] icon image`
+    &c3=`img`   &do3=`ui [[+de_emphasize:is=`1`:then=`muted`]] image`
     &toPlaceholder=`[[+prefix]].icon_classes`
 ]]
 [[Switch?
