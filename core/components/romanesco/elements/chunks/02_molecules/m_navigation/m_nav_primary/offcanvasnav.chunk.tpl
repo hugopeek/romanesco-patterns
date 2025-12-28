@@ -8,7 +8,12 @@
         </button>
     </div>
 
-    [[[[++navbar_level:lte=`1`:then=`$mainNavItemsAccordion? &level=`3``]]]]
+    [[[[If?
+        &subject=`[[++navbar_level]]`
+        &operator=`lte`
+        &operand=`1`
+        &then=`$mainNavItemsAccordion? &level=`3``
+    ]]]]
 
     [[$offCanvasNavItemsTheme]]
 </nav>

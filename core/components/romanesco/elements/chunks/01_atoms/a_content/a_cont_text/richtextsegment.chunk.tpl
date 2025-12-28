@@ -6,4 +6,9 @@
     [[+content]]
 `]]
 
-[[[[+content:contains=`</table>`:then=`loadAssets? &component=`table``]]]]
+[[[[If?
+    &subject=`[[+content]]`
+    &operator=`contains`
+    &operand=`</table>`
+    &then=`loadAssets? &component=`table``
+]]]]
