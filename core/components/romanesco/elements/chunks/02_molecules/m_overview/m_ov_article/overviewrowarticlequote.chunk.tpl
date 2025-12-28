@@ -19,6 +19,6 @@
         &subject=`[[+link_text]]`
         &operator=`isnot`
         &operand=`0`
-        &then=`$buttonHrefOverview? &classes=`right floated` &uid=`[[+unique_idx]]``
+        &then=`$buttonHrefOverview? &button_classes=`right floated [[+button_classes]]` &uid=`[[+unique_idx]]``
     ]]]]
 </div>

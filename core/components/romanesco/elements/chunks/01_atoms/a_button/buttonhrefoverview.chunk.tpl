@@ -1,3 +1,3 @@
-<a href="[[~[[+id]]]]" class="[[+classes]] [[+de_emphasize:is=`1`:then=`small`:else=`large primary`]] ui button">
+<a href="[[~[[+id]]]]" class="[[+button_classes]] ui button">
     [[+overview_link_text:empty=`[[+link_text]]`]]
 </a>

@@ -15,6 +15,6 @@
         &subject=`[[+link_text]]`
         &operator=`isnot`
         &operand=`0`
-        &then=`<p>[[$buttonHrefOverview? &classes=`basic` &uid=`[[+unique_idx]]`]]</p>`
+        &then=`<p>[[$buttonHrefOverview? &button_classes=`basic [[+button_classes]]` &uid=`[[+unique_idx]]`]]</p>`
     ]]
 </div>

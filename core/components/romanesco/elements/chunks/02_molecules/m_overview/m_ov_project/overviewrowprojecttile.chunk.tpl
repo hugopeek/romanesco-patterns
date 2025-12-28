@@ -12,7 +12,7 @@
                 &subject=`[[+link_text]]`
                 &operator=`isnot`
                 &operand=`0`
-                &then=`[[$buttonHrefOverview? &classes=`basic inverted` &uid=`[[+unique_idx]]`]]`
+                &then=`[[$buttonHrefOverview? &button_classes=`basic [[+button_classes]]` &uid=`[[+unique_idx]]`]]`
             ]]
         </div>
     </div>

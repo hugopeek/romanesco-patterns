@@ -19,5 +19,5 @@
     `]]
 </div>
 [[+button_text:notempty=`
-<a href="[[+link]]" class="ui [[+emphasize:eq=`1`:then=`large primary`]] bottom attached button">[[+button_text]]</a>
+<a href="[[+link]]" class="ui [[+emphasize:eq=`1`:then=`large primary`]] button">[[+button_text]]</a>
 `]]

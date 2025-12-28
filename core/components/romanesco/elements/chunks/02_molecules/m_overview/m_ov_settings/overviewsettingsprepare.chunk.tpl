@@ -28,7 +28,12 @@
     &c3=`img`   &do3=`ui image`
     &toPlaceholder=`[[+prefix]].icon_classes`
 ]]
-
+[[Switch?
+    &get=`[[+de_emphasize]]`
+    &c1=`1` &do1=`small`
+    &default=`large primary`
+    &toPlaceholder=`[[+prefix]].button_classes`
+]]
 [[[[If?
     &subject=`[[+prefix]]`
     &operator=`contains`

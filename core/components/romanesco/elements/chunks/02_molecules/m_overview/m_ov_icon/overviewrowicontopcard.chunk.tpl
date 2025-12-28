@@ -25,5 +25,5 @@
     &subject=`[[+link_text]]`
     &operator=`isnot`
     &operand=`0`
-    &then=`$buttonHrefOverview? &classes=`bottom attached` &uid=`[[+unique_idx]]``
+    &then=`$buttonHrefOverview? &uid=`[[+unique_idx]]``
 ]]]]

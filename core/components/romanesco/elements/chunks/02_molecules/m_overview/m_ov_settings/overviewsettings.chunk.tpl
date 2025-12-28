@@ -21,4 +21,5 @@
 &img_options=`[[+img_options]]`
 &icon_type=`[[+icon_type]]`
 &icon_classes=`[[+[[+prefix]].icon_classes]]`
+&button_classes=`[[+[[+prefix]].button_classes]]`
 &lazy_load=`[[+lazy_load]]`
