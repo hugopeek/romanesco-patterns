@@ -151,7 +151,7 @@ if ($lightbox == 1) {
     $init = 'false';
     $initLightbox = "
     $('#gallery-$uid .ui.lightbox.image').click(function () {
-        var idx = $(this).data('idx');
+        var idx = $(this).data('idx') - 1;
         var modalID = '#lightbox-$uid';
         var lazyLoadLightbox = new LazyLoad({
             elements_selector: modalID + ' .lazy'

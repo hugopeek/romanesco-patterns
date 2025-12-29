@@ -7,6 +7,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Fix gallery lightbox slider opening on the wrong slide
 - Fix includedBosons snippet
 - Optimize button and icon classes in Overviews
 - Replace problematic output modifiers with If statements
