@@ -7,6 +7,10 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Fix includedBosons snippet
+- Optimize button and icon classes in Overviews
+- Replace problematic output modifiers with If statements
+- Absorb If, Switch and UltimateParent snippets
 - Include backgrounds when generating critical CSS
 - Fix critical CSS generation in MODX 3
 - Improve FormBlocks AJAX processing
