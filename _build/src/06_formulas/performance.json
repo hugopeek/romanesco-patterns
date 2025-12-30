@@ -47,6 +47,19 @@
                     "properties": [
                         {
                             "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_performance"
+                },{
+                    "name": "cacheWarmup",
+                    "description": "Visit all URLs in sitemap to warm up the cache.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
                             "value": "review"
                         },{
                             "name": "elementExample",

@@ -13992,6 +13992,21 @@
                     "properties": [
                         {
                             "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_performance"
+                },
+                {
+                    "name": "cacheWarmup",
+                    "description": "Visit all URLs in sitemap to warm up the cache.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
                             "value": "review"
                         },
                         {
@@ -14701,6 +14716,23 @@
                             "event": "OnWebPagePrerender"
                         }
                     ]
+                },
+                {
+                    "name": "CacheWarmup",
+                    "description": "Visit all URLs in sitemap to warm up the cache. This plugin creates a scheduler task to run the cacheWarmup snippet in the background.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "c_performance",
+                    "events": [
+                        {
+                            "event": "OnDocFormSave",
+                            "priority": 12
+                        }
+                    ]
                 }
             ]
         },
@@ -14734,6 +14766,12 @@
                 "type": "combo-boolean",
                 "area": "Meta",
                 "value": "1"
+            },
+            {
+                "key": "sitemap_id",
+                "type": "textfield",
+                "area": "Meta",
+                "value": ""
             },
             {
                 "key": "date_format_short",

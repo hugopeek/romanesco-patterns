@@ -30,13 +30,15 @@
  * @var string $options
  */
 
+use MODX\Revolution\modX;
 use FractalFarming\Romanesco\Romanesco;
+use Psr\Container\NotFoundExceptionInterface;
 use Jcupitt\Vips;
 
 /** @var Romanesco $romanesco */
 try {
     $romanesco = $modx->services->get('romanesco');
-} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+} catch (NotFoundExceptionInterface $e) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
@@ -159,7 +161,7 @@ foreach ($pendingTasks as $pendingTask) {
 }
 
 // Schedule a new run
-$task->schedule('+1 minutes', array(
+$task->schedule('+0 minutes', array(
     'img_path' => $imgPath,
     'img_quality' => $imgQuality,
     'context' => $context,

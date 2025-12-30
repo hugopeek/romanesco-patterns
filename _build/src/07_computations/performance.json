@@ -38,6 +38,22 @@
                             "event": "OnWebPagePrerender"
                         }
                     ]
+                },{
+                    "name": "CacheWarmup",
+                    "description": "Visit all URLs in sitemap to warm up the cache. This plugin creates a scheduler task to run the cacheWarmup snippet in the background.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        }
+                    ],
+                    "category": "c_performance",
+                    "events": [
+                        {
+                            "event": "OnDocFormSave",
+                            "priority": 12
+                        }
+                    ]
                 }
             ],
 

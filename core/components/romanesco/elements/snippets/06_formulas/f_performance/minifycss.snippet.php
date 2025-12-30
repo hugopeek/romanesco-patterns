@@ -11,12 +11,15 @@
  * @var Scheduler $scheduler
  *
  */
+
+use MODX\Revolution\modX;
 use FractalFarming\Romanesco\Romanesco;
+use Psr\Container\NotFoundExceptionInterface;
 
 /** @var Romanesco $romanesco */
 try {
     $romanesco = $modx->services->get('romanesco');
-} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+} catch (NotFoundExceptionInterface $e) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
@@ -65,6 +68,6 @@ foreach ($pendingTasks as $pendingTask) {
 }
 
 // Schedule a new run
-$task->schedule('+1 minutes', [
+$task->schedule('+0 minutes', [
     'css_path' => $cssPath
 ]);

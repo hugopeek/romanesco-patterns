@@ -46,6 +46,11 @@
                 "area": "Meta",
                 "value": "1"
             },{
+                "key": "sitemap_id",
+                "type": "textfield",
+                "area": "Meta",
+                "value": ""
+            },{
                 "key": "date_format_short",
                 "type": "textfield",
                 "area": "Date and Time",
