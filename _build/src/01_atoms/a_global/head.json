@@ -1,0 +1,113 @@
+{
+    "package": {
+        "elements": {
+            "chunks": [
+                {
+                    "name": "cacheBusterPlaceholders",
+                    "description": "Sets placeholders with version number string for CSS, JS and favicon assets.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                },{
+                    "name": "headPreloadLinks",
+                    "description": "Preload resources that the page will need first. This ensures they are available before the main rendering process, making them less likely to block the page's render, improving performance.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                },{
+                    "name": "headLoadCriticalCSS",
+                    "description": "Fetches the generated critical CSS from the file defined in critical_css_uri TV, and parses it inline.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                },{
+                    "name": "headLoadCSS",
+                    "description": "Regular CSS links, for when critical CSS is disabled.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                },{
+                    "name": "headLoadDevJS",
+                    "description": "Loads jQuery from local assets.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                },{
+                    "name": "headLoadProductionJS",
+                    "description": "Loads jQuery from CDN.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                },{
+                    "name": "headLoadJS",
+                    "description": "Loads all local JS dependencies.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                },{
+                    "name": "headLoadGoogleFonts",
+                    "description": "Loads any Google fonts defined under Configuration > Presentation.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_glob_head"
+                }
+            ]
+        }
+    }
+}

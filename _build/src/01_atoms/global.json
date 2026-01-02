@@ -3,19 +3,6 @@
         "elements": {
             "chunks": [
                 {
-                    "name": "headPreloadLinks",
-                    "description": "Preload resources that the page will need first. This ensures they are available before the main rendering process, making them less likely to block the page's render, improving performance.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
-                },{
                     "name": "iconTVInputOptions",
                     "description": "",
                     "properties": [
@@ -41,19 +28,6 @@
                         }
                     ],
                     "category": "a_global"
-                },{
-                    "name": "cacheBusterPlaceholders",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_global"
                 }
             ],
 
@@ -63,6 +37,9 @@
                     "parent": "01_atoms"
                 },{
                     "name": "a_glob_background",
+                    "parent": "a_global"
+                },{
+                    "name": "a_glob_head",
                     "parent": "a_global"
                 }
             ]

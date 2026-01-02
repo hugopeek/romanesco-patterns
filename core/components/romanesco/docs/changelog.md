@@ -8,6 +8,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Optimize preloading of assets in HEAD
 - Fix gallery lightbox slider opening on the wrong slide
 - Fix includedBosons snippet
 - Optimize button and icon classes in Overviews

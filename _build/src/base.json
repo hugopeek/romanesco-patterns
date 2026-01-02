@@ -192,7 +192,8 @@
                         },{
                             "name": "a_global",
                             "children": [
-                                {"name": "a_glob_background"}
+                                {"name": "a_glob_background"},
+                                {"name": "a_glob_head"}
                             ]
                         },{
                             "name": "a_hub",

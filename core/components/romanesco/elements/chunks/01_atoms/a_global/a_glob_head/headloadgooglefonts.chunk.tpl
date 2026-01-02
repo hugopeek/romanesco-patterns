@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=[[+load_google_fonts:replace=` ==+`]]&display=swap" media="print" onload="this.media='all'">
