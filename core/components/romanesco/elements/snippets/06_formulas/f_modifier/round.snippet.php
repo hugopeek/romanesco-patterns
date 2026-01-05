@@ -24,6 +24,7 @@
 
 if ($input == '') return '';
 if (!$options) $options = 0;
+if (!is_numeric($input)) return $input;
 $input = str_replace(',', '.', $input); // Darn you Europeans
 
 if ($options == 'up') return ceil($input);

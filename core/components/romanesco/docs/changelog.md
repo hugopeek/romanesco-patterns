@@ -9,6 +9,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Avoid 500 error when applying round output modifier on invalid number
 - Optimize preloading of assets in HEAD
 - Fix gallery lightbox slider opening on the wrong slide
 - Fix includedBosons snippet
