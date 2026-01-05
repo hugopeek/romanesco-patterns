@@ -4,6 +4,7 @@
 Released on ...
 
 New features:
+- Add formatNumber output modifier
 - Add plugin to warm up cache after save action
 - Add CB options for expanding (snapped and inflated) images
 

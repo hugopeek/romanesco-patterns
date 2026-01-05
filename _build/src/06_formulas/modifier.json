@@ -81,6 +81,19 @@
                     ],
                     "category": "f_modifier"
                 },{
+                    "name": "formatNumber",
+                    "description": "Add decimal and thousands separator to number string. The appropriate separation characters are determined by the locale setting. Non-numeric input is ignored and returned as-is.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_modifier"
+                },{
                     "name": "round",
                     "description": "Round a decimal value to a whole number or with a specified amount of decimals. Usage: [[+value:round=`2`]] returns the value with 2 decimals, [[+value:round]] returns a whole number.",
                     "properties": [
