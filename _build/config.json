@@ -8299,6 +8299,36 @@
                     "category": "a_cb_field"
                 },
                 {
+                    "name": "cbFaqLayoutType",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_field"
+                },
+                {
+                    "name": "cbFaqCategory",
+                    "description": "Not yet implemented.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_field"
+                },
+                {
                     "name": "cbTwitterTemplates",
                     "description": "",
                     "properties": [

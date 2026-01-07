@@ -1,0 +1,10 @@
+None=
+[[migxLoopCollection?
+    &packageName=`romanescobackyard`
+    &classname=`rmOption`
+    &tpl=`@CODE:[[+name]]=[[+id]]`
+    &outputSeparator=`
+    `
+    &where=`{"key":"faq_category"}`
+    &sortConfig=`[{"sortby":"position","sortdir":"ASC"}]`
+]]
