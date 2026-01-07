@@ -64,11 +64,11 @@
 ]]]]
 
 [[- LOAD GOOGLE FONTS ]]
-[[If?
+[[[[If?
     &subject=`[[helloConsentFriend? &service=`googleFonts` &true=`` &false=`[[+load_google_fonts]]`]]`
     &operator=`notempty`
     &then=`$headLoadGoogleFonts`
-]]
+]]]]
 
 [[- LOAD JS ASSETS WITH DEFER, SO DOWNLOADING WILL START EARLY WITHOUT BLOCKING RENDERING ]]
 [[[[If?
