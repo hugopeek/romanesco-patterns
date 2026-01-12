@@ -2,7 +2,7 @@
     &subject=`[[+layout_title]]`
     &operator=`notempty`
     &then=`id="fb[[*id]]-[[stripAsAlias? &input=`[[+layout_title]]`]]"`
-    &toPlaceholder=`fieldset_id_[[+unique_idx]]`
+    &toPlaceholder=`fieldset_[[*id]]_[[+unique_idx]]`
 ]]
 [[If?
     &subject=`[[+segment_type]]`
@@ -10,11 +10,17 @@
     &operand=`none`
     &then=`segment`
     &else=`[[*fb_form_layout:isnot=`inline`:then=`fieldset`]]`
-    &toPlaceholder=`segment_parent`
+    &toPlaceholder=`segment_[[*id]]_[[+unique_idx]]_parent`
 ]]
-[[+force_segment:eq=`1`:then=`segment`:else=`[[+segment_parent]]`:toPlaceholder=`segment`]]
-
-<fieldset [[+fieldset_id_[[+unique_idx]]]] class="ui [[+padding]] [[+segment]] [[+background:setBackground]]">
+[[If?
+    &subject=`[[+force_segment]]`
+    &operator=`eq`
+    &operand=`1`
+    &then=`segment`
+    &else=`[[+segment_[[*id]]_[[+unique_idx]]_parent]]`
+    &toPlaceholder=`segment_[[*id]]_[[+unique_idx]]`
+]]
+<fieldset [[+fieldset_[[*id]]_[[+unique_idx]]]] class="ui [[+padding]] [[+segment_[[*id]]_[[+unique_idx]]]] [[+background:setBackground]]">
     [[+legend:notempty=`<legend class="ui [[+form_size]] header">[[+legend]]</legend>`]]
     [[*fb_form_layout:is=`inline`:then=`<span class="equal width fields">`]]
     [[+main]]
