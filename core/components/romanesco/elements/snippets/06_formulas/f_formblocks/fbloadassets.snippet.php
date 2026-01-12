@@ -8,12 +8,14 @@
  * @package romanesco
  */
 
+use MODX\Revolution\modX;
 use FractalFarming\Romanesco\Romanesco;
+use Psr\Container\NotFoundExceptionInterface;
 
 /** @var Romanesco $romanesco */
 try {
     $romanesco = $modx->services->get('romanesco');
-} catch (\Psr\Container\NotFoundExceptionInterface $e) {
+} catch (NotFoundExceptionInterface $e) {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
@@ -28,7 +30,8 @@ $validationTpl = $modx->getOption('validationTpl', $scriptProperties, 'fbValidat
 $antiSpamHooks = $modx->getOption('antiSpamHooks', $scriptProperties, $modx->getOption('formblocks.antispam_hooks'));
 $ajax = $modx->getOption('ajaxMode', $scriptProperties, $modx->getOption('formblocks.ajax_mode'));
 $ajaxTpl = $modx->getOption('submitAjaxTpl', $scriptProperties, 'fbSubmitAjax');
-$recaptchaTpl = $modx->getOption('loadRecaptchaTpl', $scriptProperties, 'recaptchaLoadAssets');
+$recaptchaTpl = $modx->getOption('recaptchaTpl', $scriptProperties, 'recaptchaLoadAssets');
+$turnstileTpl = $modx->getOption('turnstileTpl', $scriptProperties, 'turnstileLoadAssets');
 
 // Load strings to insert in asset paths when cache busting is enabled
 $cacheBusterCSS = $romanesco->getCacheBustingString('CSS');
@@ -65,6 +68,10 @@ if ($uploadFile) {
 // Load assets for Recaptcha v3, if enabled
 if (str_contains($antiSpamHooks, 'recaptchav3') && !$devMode) {
     $modx->regClientHTMLBlock($modx->getChunk($recaptchaTpl));
+}
+// Load assets for Cloudflare Turnstile, if enabled
+if (str_contains($antiSpamHooks, 'turnstile') && !$devMode) {
+    $modx->regClientHTMLBlock($modx->getChunk($turnstileTpl));
 }
 
 // Load frontend validation, if enabled

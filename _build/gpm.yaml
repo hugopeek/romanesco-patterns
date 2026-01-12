@@ -6328,6 +6328,22 @@ chunks:
       - name: elementPreview
         value: ''
     category: m_fb_antispam
+  - name: turnstileOnSubmit
+    description: 'Load Cloudflare form protection.'
+    properties:
+      - name: elementStatus
+        value: experimental
+      - name: elementPreview
+        value: ''
+    category: m_fb_antispam
+  - name: turnstileLoadAssets
+    description: 'Load external Javascript for Cloudflare form protection.'
+    properties:
+      - name: elementStatus
+        value: experimental
+      - name: elementPreview
+        value: ''
+    category: m_fb_antispam
   - name: fbEmailRow
     description: 'Default template for displaying the submitted value of a form field in an email message.'
     properties:
@@ -8837,6 +8853,11 @@ systemSettings:
     type: combo-boolean
     area: 'FormBlocks - Settings'
     value: '0'
+  - key: turnstile_site_key
+    namespace: formblocks
+    type: textfield
+    area: 'FormBlocks - Settings'
+    value: ''
   - key: formsource
     namespace: formblocks
     type: combo-boolean

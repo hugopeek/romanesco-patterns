@@ -54,6 +54,32 @@
                         }
                     ],
                     "category": "m_fb_antispam"
+                },{
+                    "name": "turnstileOnSubmit",
+                    "description": "Load Cloudflare form protection.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
+                },{
+                    "name": "turnstileLoadAssets",
+                    "description": "Load external Javascript for Cloudflare form protection.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_fb_antispam"
                 }
             ]
         }
