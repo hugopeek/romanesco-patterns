@@ -61,6 +61,12 @@
                 "area": "FormBlocks - Settings",
                 "value": "0"
             },{
+                "key": "manager_sortby",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Settings",
+                "value": "menuindex"
+            },{
                 "key": "store_attachments",
                 "namespace": "formblocks",
                 "type": "combo-boolean",

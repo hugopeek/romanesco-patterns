@@ -14,6 +14,7 @@ $context = $modx->getContext($modx->resource->get('context_key'));
 $contextKey = $context->get('key');
 $contextName = $context->get('name');
 $parentID = $context->getOption('formblocks.container_id') ?? $modx->getOption('formblocks.container_id');
+$sortBy = $modx->getOption('formblocks.manager_sortby', $scriptProperties, 'menuindex');
 
 $output = $modx->runSnippet('getResources', (array(
     'parents' => $parentID,
@@ -22,7 +23,7 @@ $output = $modx->runSnippet('getResources', (array(
     'showHidden' => 0,
     'showUnpublished' => 1,
     'tpl' => '@INLINE ['.$contextName.'] [[+pagetitle]]=[[+id]]',
-    'sortby' => 'menuindex',
+    'sortby' => $sortBy,
     'sortdir' => 'ASC',
     'where' => '[{"template:IN":[10,19]},{"uri:LIKE":"%/'.$contextKey.'/%"}]',
 )));
@@ -36,7 +37,7 @@ $output .= $modx->runSnippet('getResources', (array(
     'showHidden' => 0,
     'showUnpublished' => 1,
     'tpl' => '@INLINE [[+pagetitle]]=[[+id]]',
-    'sortby' => 'menuindex',
+    'sortby' => $sortBy,
     'sortdir' => 'ASC',
     'where' => '{"template:IN":[10,19]}',
 )));
