@@ -13544,6 +13544,21 @@
                     "category": "f_fb_hook"
                 },
                 {
+                    "name": "fbValidateTurnstile",
+                    "description": "Server side validation of Cloudflare Turnstile token.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_fb_hook"
+                },
+                {
                     "name": "fbEmptyHook",
                     "description": "Dummy hook to trick FormIt into not throwing errors saying there are no hooks, and to make the comma separation between hooks a little easier.",
                     "properties": [
@@ -15270,7 +15285,7 @@
             {
                 "key": "frontend_validate_on",
                 "namespace": "formblocks",
-                "type": "text",
+                "type": "textfield",
                 "area": "FormBlocks - Settings",
                 "value": "submit"
             },
@@ -15289,11 +15304,25 @@
                 "value": ""
             },
             {
+                "key": "turnstile_secret_key",
+                "namespace": "formblocks",
+                "type": "text-password",
+                "area": "FormBlocks - Settings",
+                "value": ""
+            },
+            {
                 "key": "formsource",
                 "namespace": "formblocks",
                 "type": "combo-boolean",
                 "area": "FormBlocks - Settings",
                 "value": "0"
+            },
+            {
+                "key": "manager_sortby",
+                "namespace": "formblocks",
+                "type": "textfield",
+                "area": "FormBlocks - Settings",
+                "value": "menuindex"
             },
             {
                 "key": "store_attachments",

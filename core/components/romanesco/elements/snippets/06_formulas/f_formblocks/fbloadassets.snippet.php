@@ -70,7 +70,7 @@ if (str_contains($antiSpamHooks, 'recaptchav3') && !$devMode) {
     $modx->regClientHTMLBlock($modx->getChunk($recaptchaTpl));
 }
 // Load assets for Cloudflare Turnstile, if enabled
-if (str_contains($antiSpamHooks, 'turnstile') && !$devMode) {
+if (str_contains($antiSpamHooks, 'fbValidateTurnstile') && !$devMode) {
     $modx->regClientHTMLBlock($modx->getChunk($turnstileTpl));
 }
 

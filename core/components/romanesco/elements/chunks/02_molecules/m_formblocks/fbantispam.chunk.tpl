@@ -28,8 +28,10 @@
 [[[[If?
     &subject=`[[++romanesco.dev_mode:empty=`[[++formblocks.antispam_hooks]]`]]`
     &operator=`contains`
-    &operand=`turnstile`
+    &operand=`fbValidateTurnstile`
     &then=`$turnstileOnSubmit`
 ]]]]
+
 [[!+fb[[*id]].error.recaptchav2_error:replace=`span==div`]]
 [[!+fb[[*id]].error.recaptchav3_error:replace=`span==div`]]
+[[!+fb[[*id]].error.turnstile:prepend=`<div class="ui visible error message">`:append=`</div>`]]

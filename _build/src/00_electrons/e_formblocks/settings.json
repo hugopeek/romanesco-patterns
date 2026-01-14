@@ -33,7 +33,7 @@
             },{
                 "key": "frontend_validate_on",
                 "namespace": "formblocks",
-                "type": "text",
+                "type": "textfield",
                 "area": "FormBlocks - Settings",
                 "value": "submit"
             },{
@@ -46,6 +46,12 @@
                 "key": "turnstile_site_key",
                 "namespace": "formblocks",
                 "type": "textfield",
+                "area": "FormBlocks - Settings",
+                "value": ""
+            },{
+                "key": "turnstile_secret_key",
+                "namespace": "formblocks",
+                "type": "text-password",
                 "area": "FormBlocks - Settings",
                 "value": ""
             },{

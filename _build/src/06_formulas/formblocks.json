@@ -155,6 +155,19 @@
                     ],
                     "category": "f_fb_hook"
                 },{
+                    "name": "fbValidateTurnstile",
+                    "description": "Server side validation of Cloudflare Turnstile token.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_fb_hook"
+                },{
                     "name": "fbEmptyHook",
                     "description": "Dummy hook to trick FormIt into not throwing errors saying there are no hooks, and to make the comma separation between hooks a little easier.",
                     "properties": [
