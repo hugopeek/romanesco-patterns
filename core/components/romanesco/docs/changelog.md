@@ -4,11 +4,13 @@
 Released on ...
 
 New features:
+- Add Cloudflare Turnstile form protection
 - Add formatNumber output modifier
 - Add plugin to warm up cache after save action
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Fix dynamic FAQ category CB setting
 - Avoid 500 error when applying round output modifier on invalid number
 - Optimize preloading of assets in HEAD
 - Fix gallery lightbox slider opening on the wrong slide

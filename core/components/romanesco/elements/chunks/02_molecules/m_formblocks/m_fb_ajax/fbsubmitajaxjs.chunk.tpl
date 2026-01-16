@@ -1,5 +1,5 @@
 e.preventDefault();
-var formData = $(this).serialize();
+const formData = $(this).serialize();
 
 $.ajax({
     type: 'POST',
@@ -24,8 +24,6 @@ $.ajax({
         $('.ui.form#form-[[*alias]] .dimmer').addClass('active');
 
         setTimeout(function() {
-            //$('.ui.form#form-[[*alias]] > div').replaceWith(message);
-
             $('.ui.form#form-[[*alias]] .dimmer').removeClass('active');
             $('.ui.form#form-[[*alias]]').form('clear');
 
@@ -37,12 +35,17 @@ $.ajax({
                 .toast({
                     message: message,
                     class: 'success',
-                    //showIcon: 'exclamation circle',
-                    //displayTime: 0,
-                    closeIcon: true
+                    showIcon: 'checkmark',
+                    displayTime: 'auto',
+                    minDisplayTime: 3000,
+                    wordsPerMinute: 80,
+                    closeIcon: true,
+                    className: {
+                        icon: 'icon'
+                    }
                 })
             ;
-        }, 2000)
+        }, 1500)
     }
     else {
         console.log(data.errors);
@@ -66,9 +69,12 @@ $.ajax({
             .toast({
                 message: message,
                 class: 'error',
-                //showIcon: 'exclamation circle',
-                //displayTime: 0,
-                closeIcon: true
+                showIcon: 'exclamation circle',
+                displayTime: 0,
+                closeIcon: true,
+                className: {
+                    icon: 'icon'
+                }
             })
         ;
     }
