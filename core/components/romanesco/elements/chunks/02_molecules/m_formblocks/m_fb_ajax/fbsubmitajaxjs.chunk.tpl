@@ -29,6 +29,10 @@ $.ajax({
             $('.ui.form#form-[[*alias]] .dimmer').removeClass('active');
             $('.ui.form#form-[[*alias]]').form('clear');
 
+            if (window.turnstile) {
+                turnstile.reset();
+            }
+
             $('body')
                 .toast({
                     message: message,
