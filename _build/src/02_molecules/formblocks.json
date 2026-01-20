@@ -3,6 +3,19 @@
         "elements": {
             "chunks": [
                 {
+                    "name": "fbRenderFormWrapper",
+                    "description": "Pass-through connector between fbContentBlock and the form resource. There must be a reason why the form is not loaded directly in fbContentBlock, but... don't ask ;) This JustWorX™",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_formblocks"
+                },{
                     "name": "fbPrepareSteps",
                     "description": "Prepare the necessary placeholders for each step of a multi-page form. These placeholders will be forwarded to fbForm.",
                     "properties": [

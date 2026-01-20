@@ -1,5 +1,5 @@
 [[cbGetFieldContent?
     &resource=`[[+id]]`
-    &field=`22`
+    &field=`[[++romanesco.cb_field_form_id]]`
     &tpl=`fbFormID`
 ]]

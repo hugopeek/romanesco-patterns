@@ -1,11 +1,10 @@
 {
     "package": {
         "elements": {
-            "templates": [
+            "chunks": [
                 {
-                    "name": "GlobalBackgrounds",
-                    "description": "These backgrounds can be applied to page headers, CB layouts (under their Settings wheel) and possibly to other elements too.",
-                    "icon": "icon-image",
+                    "name": "fbFormID",
+                    "description": "Return raw value of form_id placeholder from a CB form. Used as tpl by cbGetFieldContent in fbGetFormID.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -15,11 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_form"
                 },{
-                    "name": "GlobalBackground",
-                    "description": "Each background is a separate resource, in which you can add multiple layers with the Background Elements CB. Output of this template is for preview only. The CSS is generated separately.",
-                    "icon": "icon-file-image-o",
+                    "name": "fbFormPreHooks",
+                    "description": "A dynamic list of pre-hooks, to be executed on page load. Part of the FormIt calls in fbForm and fbFormAjax.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -29,10 +27,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_form"
                 },{
-                    "name": "GlobalCTA",
-                    "icon": "icon-bullhorn",
+                    "name": "fbFormHooks",
+                    "description": "A dynamic list of hooks, to be executed after the form passes validation. Part of the FormIt calls in fbForm and fbFormAjax.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -42,10 +40,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_form"
                 },{
-                    "name": "fbForm",
-                    "icon": "icon-check-square-o",
+                    "name": "fbFormValidate",
+                    "description": "A dynamic list of field names marked for backend validation. Part of the FormIt calls in fbForm and fbFormAjax.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -55,23 +53,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_form"
                 },{
-                    "name": "fbFormAjax",
-                    "icon": "icon-external-link",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_global"
-                },{
-                    "name": "fbRegister",
-                    "icon": "icon-user-plus",
+                    "name": "fbFormErrorTpl",
+                    "description": "HTML markup for frontend validation errors.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -81,13 +66,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
-                }
-            ],
-            "categories": [
-                {
-                    "name": "t_global",
-                    "parent": "04_templates"
+                    "category": "a_fb_form"
                 }
             ]
         }

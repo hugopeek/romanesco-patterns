@@ -10,6 +10,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Specify FormIt hooks, properties and validators in chunks
 - Fix dynamic FAQ category CB setting
 - Avoid 500 error when applying round output modifier on invalid number
 - Optimize preloading of assets in HEAD

@@ -1,11 +1,10 @@
 {
     "package": {
         "elements": {
-            "templates": [
+            "chunks": [
                 {
-                    "name": "GlobalBackgrounds",
-                    "description": "These backgrounds can be applied to page headers, CB layouts (under their Settings wheel) and possibly to other elements too.",
-                    "icon": "icon-image",
+                    "name": "fbEmailProperties",
+                    "description": "These properties are always added to the FormIt calls in fbForm and fbFormAjax.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -15,11 +14,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_properties"
                 },{
-                    "name": "GlobalBackground",
-                    "description": "Each background is a separate resource, in which you can add multiple layers with the Background Elements CB. Output of this template is for preview only. The CSS is generated separately.",
-                    "icon": "icon-file-image-o",
+                    "name": "fbAutoresponderProperties",
+                    "description": "These properties are added to the FormIt call if the Autoresponder TV is activated.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -29,10 +27,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_properties"
                 },{
-                    "name": "GlobalCTA",
-                    "icon": "icon-bullhorn",
+                    "name": "fbFileUploadProperties",
+                    "description": "These properties are added to the FormIt call if a multiple file upload field is present in the form.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -42,10 +40,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_properties"
                 },{
-                    "name": "fbForm",
-                    "icon": "icon-check-square-o",
+                    "name": "fbMathQuestionProperties",
+                    "description": "These properties are added to the FormIt call if a Math Question CB is present in the form.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -55,23 +53,10 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
+                    "category": "a_fb_properties"
                 },{
-                    "name": "fbFormAjax",
-                    "icon": "icon-external-link",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        },{
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "t_global"
-                },{
-                    "name": "fbRegister",
-                    "icon": "icon-user-plus",
+                    "name": "fbRecaptchaProperties",
+                    "description": "These properties are added to the FormIt call if Recaptcha v3 is active as antispam hook.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -81,13 +66,7 @@
                             "value": ""
                         }
                     ],
-                    "category": "t_global"
-                }
-            ],
-            "categories": [
-                {
-                    "name": "t_global",
-                    "parent": "04_templates"
+                    "category": "a_fb_properties"
                 }
             ]
         }

@@ -13,9 +13,14 @@
 
         const form = document.querySelector('form[name="fb[[+form_id]]"]');
         const submit = form.querySelector('input[name="fb[[+form_id]]-submit"][type="submit"]');
+        const errorMessage = form.querySelector('.ui.error.message');
 
         if (!form) {
             console.error('Turnstile couldn\'t find its parent form.');
+            return;
+        }
+        if (!submit) {
+            console.debug('Turnstile couldn\'t find the submit button.');
             return;
         }
 
@@ -26,10 +31,14 @@
             submit.classList.remove('disabled');
         }
         window.onTurnstileError[[+form_id]] = function (errorCode) {
-            console.log('Challenge error:', errorCode);
+            //console.log('Challenge error:', errorCode);
+            errorMessage.classList.add('visible');
+            if (!errorMessage.textContent.includes('Turnstile')) {
+                errorMessage.append('Cloudflare Turnstile was unable to generate a validation token.');
+            }
         }
         window.onTurnstileExpired[[+form_id]] = function () {
-            console.log('Token expired');
+            console.log('Cloudflare Turnstile token expired');
             submit.classList.add('disabled');
         }
     });

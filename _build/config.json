@@ -347,6 +347,12 @@
                             "name": "a_formblocks",
                             "children": [
                                 {
+                                    "name": "a_fb_form"
+                                },
+                                {
+                                    "name": "a_fb_properties"
+                                },
+                                {
                                     "name": "a_fb_select"
                                 }
                             ]
@@ -1071,6 +1077,14 @@
                 {
                     "name": "a_formblocks",
                     "parent": "01_atoms"
+                },
+                {
+                    "name": "a_fb_form",
+                    "parent": "a_formblocks"
+                },
+                {
+                    "name": "a_fb_properties",
+                    "parent": "a_formblocks"
                 },
                 {
                     "name": "a_fb_select",
@@ -4918,38 +4932,8 @@
                     "category": "a_data"
                 },
                 {
-                    "name": "fbRenderFormWrapper",
-                    "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_formblocks"
-                },
-                {
                     "name": "fbGetFormID",
                     "description": "Run the cbGetFieldContent snippet to find out which form is selected on a specific resource.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_formblocks"
-                },
-                {
-                    "name": "fbFormID",
-                    "description": "Return raw value of form_id placeholder from a CB form. Used as tpl by cbGetFieldContent in fbGetFormID.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -4980,36 +4964,6 @@
                 {
                     "name": "fbAutoresponder",
                     "description": "",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_formblocks"
-                },
-                {
-                    "name": "fbFileUploadProperties",
-                    "description": "These AjaxUpload settings need to be included in the FormIt call if a multiple file upload field is being used.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "solid"
-                        },
-                        {
-                            "name": "elementPreview",
-                            "value": ""
-                        }
-                    ],
-                    "category": "a_formblocks"
-                },
-                {
-                    "name": "fbMathQuestionProperties",
-                    "description": "These properties are added to the FormIt call if a Math Question CB is present in the form.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -6020,6 +5974,21 @@
                         }
                     ],
                     "category": "m_feedback"
+                },
+                {
+                    "name": "fbRenderFormWrapper",
+                    "description": "Pass-through connector between fbContentBlock and the form resource. There must be a reason why the form is not loaded directly in fbContentBlock, but... don't ask ;) This JustWorX\u2122",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "m_formblocks"
                 },
                 {
                     "name": "fbPrepareSteps",
@@ -9272,6 +9241,156 @@
                         }
                     ],
                     "category": "a_dat_type"
+                },
+                {
+                    "name": "fbFormID",
+                    "description": "Return raw value of form_id placeholder from a CB form. Used as tpl by cbGetFieldContent in fbGetFormID.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_form"
+                },
+                {
+                    "name": "fbFormPreHooks",
+                    "description": "A dynamic list of pre-hooks, to be executed on page load. Part of the FormIt calls in fbForm and fbFormAjax.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_form"
+                },
+                {
+                    "name": "fbFormHooks",
+                    "description": "A dynamic list of hooks, to be executed after the form passes validation. Part of the FormIt calls in fbForm and fbFormAjax.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_form"
+                },
+                {
+                    "name": "fbFormValidate",
+                    "description": "A dynamic list of field names marked for backend validation. Part of the FormIt calls in fbForm and fbFormAjax.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_form"
+                },
+                {
+                    "name": "fbFormErrorTpl",
+                    "description": "HTML markup for frontend validation errors.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_form"
+                },
+                {
+                    "name": "fbEmailProperties",
+                    "description": "These properties are always added to the FormIt calls in fbForm and fbFormAjax.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_properties"
+                },
+                {
+                    "name": "fbAutoresponderProperties",
+                    "description": "These properties are added to the FormIt call if the Autoresponder TV is activated.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_properties"
+                },
+                {
+                    "name": "fbFileUploadProperties",
+                    "description": "These properties are added to the FormIt call if a multiple file upload field is present in the form.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_properties"
+                },
+                {
+                    "name": "fbMathQuestionProperties",
+                    "description": "These properties are added to the FormIt call if a Math Question CB is present in the form.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_properties"
+                },
+                {
+                    "name": "fbRecaptchaProperties",
+                    "description": "These properties are added to the FormIt call if Recaptcha v3 is active as antispam hook.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_properties"
                 },
                 {
                     "name": "fbSelectOptionRow",
@@ -12932,7 +13051,7 @@
                     "properties": [
                         {
                             "name": "elementStatus",
-                            "value": "experimental"
+                            "value": "review"
                         },
                         {
                             "name": "elementPreview",
@@ -15216,6 +15335,12 @@
             },
             {
                 "key": "cb_field_faq_id",
+                "type": "textfield",
+                "area": "ContentBlocks - Settings",
+                "value": ""
+            },
+            {
+                "key": "cb_field_form_id",
                 "type": "textfield",
                 "area": "ContentBlocks - Settings",
                 "value": ""

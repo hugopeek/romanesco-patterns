@@ -187,6 +187,8 @@
                         },{
                             "name": "a_formblocks",
                             "children": [
+                                {"name": "a_fb_form"},
+                                {"name": "a_fb_properties"},
                                 {"name": "a_fb_select"}
                             ]
                         },{
