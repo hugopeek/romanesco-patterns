@@ -42,13 +42,15 @@
  *     ]`
  * ]]
  *
- * You can prevent asynchronous loading of custom CSS with &cssAsync=`0`.
+ * You can prevent asynchronous loading of custom assets with &async=`0`.
  *
  * @var modX $modx
  * @var array $scriptProperties
  *
  * @package romanesco
  */
+
+use MODX\Revolution\modX;
 use FractalFarming\Romanesco\Romanesco;
 /** @var Romanesco $romanesco */
 
@@ -85,28 +87,33 @@ if ($modx->getObject('cgSetting', array('key' => 'minify_css_js'))->get('value')
     $minify = '.min';
 }
 
-// Define conditions for loading CSS asynchronously
-$async = array(
+// Define conditions for loading assets asynchronously
+$asyncCSS = [
     'always' => ' media="print" onload="this.media=\'all\'"',
     'critical' => '',
     'custom' => '',
-);
+];
+$asyncJS = [
+    'always' => ' async',
+    'custom' => '',
+];
 if ($romanesco->getConfigSetting('critical_css', $modx->resource->get('context_key'))) {
-    $async['critical'] = $async['always'];
+    $asyncCSS['critical'] = $asyncCSS['always'];
 }
-if ($modx->getOption('cssAsync', $scriptProperties, 1)) {
-    $async['custom'] = $async['always'];
+if ($modx->getOption('async', $scriptProperties, 1)) {
+    $asyncCSS['custom'] = $asyncCSS['always'];
+    $asyncJS['custom'] = $asyncJS['always'];
 }
 
 switch ($component) {
     case 'hub':
     case 'status grid':
     case 'status-grid':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/table.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/step.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/popup.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/table.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/step.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/popup.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js"></script>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/popup.min' . $cacheBusterJS . '.js"></script>');
@@ -114,75 +121,75 @@ switch ($component) {
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/hub' . $minify . $cacheBusterJS . '.js"></script>');
         break;
     case 'table':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/table.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/table.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/tablesort/tablesort.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'tab':
     case 'tabs':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/tab.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/tab.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/tab.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'step':
     case 'steps':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/step.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/step.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         break;
     case 'dropdown':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dropdown.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dropdown.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dropdown.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'dropdown-css':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dropdown.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dropdown.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         break;
     case 'popup':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/popup.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/popup.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/popup.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'lightbox':
         // Borrow swiper styling and fall through to next case
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathCSS . '/swiper.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathCSS . '/swiper.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
     case 'lightbox':
     case 'modal':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/modal.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/modal.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'dimmer':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/dimmer.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'embed':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/embed.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/embed.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/embed.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'toast':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/toast.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/toast.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/toast.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'rating':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/rating.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/rating.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/rating.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'search':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/search.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/search.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/api.min' . $cacheBusterJS . '.js"></script>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components/search.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'loader':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/loader.min' . $cacheBusterCSS . '.css"' . $async['always'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/loader.min' . $cacheBusterCSS . '.css"' . $asyncCSS['always'] . '>');
         break;
     case 'feed':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/feed.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/feed.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         break;
     case 'flag':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/flag.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathDist . '/components/flag.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         break;
     case 'code':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathVendor . '/prism/prism.min' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathVendor . '/prism/prism.min' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/prism/prism.min' . $cacheBusterJS . '.js"></script>');
         break;
     case 'map':
-        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathVendor . '/leaflet/leaflet' . $cacheBusterCSS . '.css"' . $async['critical'] . '>');
+        $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $assetsPathVendor . '/leaflet/leaflet' . $cacheBusterCSS . '.css"' . $asyncCSS['critical'] . '>');
         $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/leaflet/leaflet' . $cacheBusterJS . '.js"></script>');
         break;
     case 'custom':
@@ -196,20 +203,20 @@ switch ($component) {
             if (is_json($customCSS)) {
                 $customCSS = json_decode($customCSS, true);
                 foreach ($customCSS as $CSS) {
-                    $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $CSS . '"' . $async['custom'] . '>');
+                    $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $CSS . '"' . $asyncCSS['custom'] . '>');
                 }
             } else {
-                $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $customCSS . '"' . $async['custom'] . '>');
+                $modx->regClientStartupHTMLBlock('<link rel="stylesheet" href="' . $customCSS . '"' . $asyncCSS['custom'] . '>');
             }
         }
         if ($customJS) {
             if (is_json($customJS)) {
                 $customJS = json_decode($customJS, true);
                 foreach ($customJS as $JS) {
-                    $modx->regClientHTMLBlock('<script defer src="' . $JS . '"></script>');
+                    $modx->regClientHTMLBlock('<script defer' . $asyncJS['custom'] . ' src="' . $JS . '"></script>');
                 }
             } else {
-                $modx->regClientHTMLBlock('<script defer src="' . $customJS . '"></script>');
+                $modx->regClientHTMLBlock('<script defer' . $asyncJS['custom'] . ' src="' . $customJS . '"></script>');
             }
         }
         if ($customInlineJS) {
