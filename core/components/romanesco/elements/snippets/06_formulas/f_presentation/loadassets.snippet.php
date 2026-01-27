@@ -100,8 +100,10 @@ $asyncJS = [
 if ($romanesco->getConfigSetting('critical_css', $modx->resource->get('context_key'))) {
     $asyncCSS['critical'] = $asyncCSS['always'];
 }
-if ($modx->getOption('async', $scriptProperties, 1)) {
+if ($modx->getOption('asyncCSS', $scriptProperties, 1)) {
     $asyncCSS['custom'] = $asyncCSS['always'];
+}
+if ($modx->getOption('asyncJS', $scriptProperties, 0)) {
     $asyncJS['custom'] = $asyncJS['always'];
 }
 
