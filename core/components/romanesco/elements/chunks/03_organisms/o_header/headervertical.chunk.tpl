@@ -16,14 +16,14 @@
 
     [[[[If?
         &subject=`[[+hero]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$heroVertical`
     ]]]]
 
     [[[[If?
         &subject=`[[++search.add_to_menu]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$searchForm`
     ]]]]

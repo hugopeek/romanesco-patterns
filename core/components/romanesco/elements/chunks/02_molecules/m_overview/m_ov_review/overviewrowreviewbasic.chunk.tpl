@@ -8,13 +8,13 @@
     [[$infoNamePerson? &uid=`[[+unique_idx]]`]]
     [[[[If?
         &subject=`[[+show_subtitle]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$infoNameOrganization? &classes=`sub header` &uid=`[[+unique_idx]]``
     ]]]]
     [[[[If?
         &subject=`[[+show_rating]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$infoRatingStars? &uid=`[[+unique_idx]]``
     ]]]]

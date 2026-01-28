@@ -5,7 +5,7 @@
         [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
         [[If?
             &subject=`[[+show_subtitle]]`
-            &operator=`EQ`
+            &operator=`eq`
             &operand=`1`
             &then=`<span class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</span>`
         ]]

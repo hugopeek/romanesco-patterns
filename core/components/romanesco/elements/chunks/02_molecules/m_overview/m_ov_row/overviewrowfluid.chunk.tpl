@@ -1,6 +1,6 @@
 [[If?
     &subject=`[[+idx:mod]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`0`
     &then=`[[+background_even]]`
     &else=`[[+background_odd]]`
@@ -8,7 +8,7 @@
 ]]
 [[If?
     &subject=`[[+cols_interchange]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`1`
     &then=`[[+idx:mod:eq=`0`:then=`computer reversed tablet reversed`]]`
     &toPlaceholder=`interchange.[[+idx]]`

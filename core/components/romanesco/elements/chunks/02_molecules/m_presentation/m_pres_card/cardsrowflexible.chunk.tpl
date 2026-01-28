@@ -1,6 +1,6 @@
 [[If?
     &subject=`[[+box_type]][[+link:eq=``:then=`break`]]`
-    &operator=`eq`
+    &operator=`is`
     &operand=`link`
     &then=`
     <a href="[[+link]]" class="[[+emphasize:eq=`1`:then=`ui raised`]] [[+box_type]] card">

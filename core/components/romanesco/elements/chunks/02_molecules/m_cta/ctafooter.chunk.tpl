@@ -1,6 +1,6 @@
 [[If?
     &subject=`[[getRawTVValue? &tv=`footer_cta_background`]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`@INHERIT`
     &then=`[[#[[*parent]].footer_inheritance:contains=`inherit_cta_background`:then=`[[*footer_cta_background:empty=`[[++cta_background_default]]`]]`:else=`[[++cta_background_default]]`]]`
     &else=`[[*footer_cta_background]]`

@@ -3,7 +3,7 @@
         [[$overviewRowImageBasic? &uid=`[[+unique_idx]]`]]
     </figure>
 
-    <div class="eleven wide [[If? &subject=`[[+show_introtext]]` &operator=`EQ` &operand=`0` &then=`middle aligned`]] column">
+    <div class="eleven wide [[If? &subject=`[[+show_introtext]]` &operator=`eq` &operand=`0` &then=`middle aligned`]] column">
         [[$overviewRowBasic? &uid=`[[+unique_idx]]`]]
     </div>
 </div>

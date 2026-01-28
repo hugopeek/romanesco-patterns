@@ -119,7 +119,7 @@
 
     [[[[If?
         &subject=`[[+pattern_template]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`patternLayoutBosonField`
         &then=`
             Rowboat?
@@ -134,7 +134,7 @@
 
     [[[[If?
         &subject=`[[+pattern_template]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`patternLayoutBosonLayout`
         &then=`
             Rowboat?

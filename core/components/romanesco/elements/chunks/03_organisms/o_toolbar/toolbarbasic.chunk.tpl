@@ -1,6 +1,6 @@
 [[If?
     &subject=`[[*toolbar_visibility]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`default`
     &then=`[[++toolbar_visibility_default]]`
     &else=`[[*toolbar_visibility]]`

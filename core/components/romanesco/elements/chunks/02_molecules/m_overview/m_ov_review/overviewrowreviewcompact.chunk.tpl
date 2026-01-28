@@ -4,7 +4,7 @@
     </p>
     [[[[If?
         &subject=`[[+show_rating]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$infoRatingStars? &uid=`[[+unique_idx]]``
     ]]]]
@@ -15,7 +15,7 @@
     [[$infoNamePerson]]
     [[[[If?
         &subject=`[[+show_subtitle]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`<span class="meta"><em>[[+organization_name]]</em></span>`
     ]]]]

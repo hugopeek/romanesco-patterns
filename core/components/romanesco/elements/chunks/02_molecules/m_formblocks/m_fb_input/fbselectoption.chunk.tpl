@@ -3,7 +3,7 @@
 [[!+fb[[*id]].[[+name]]:contains=`[[+option_other_value]]`:then=`checked`:toPlaceholder=`check_other`]]
 [[!If:toPlaceholder=`checkbox_array`?
     &subject=`[[+field_type]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`checkbox`
     &then=`[]`
     &else=``
@@ -15,7 +15,7 @@
     &else=`[[+field_type]]`
 ]]
 
-<div id="[[+name]]" class="[[+option_layout:empty=`grouped`]] [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[+field_type]] fields [[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
+<div id="[[+name]]" class="[[+option_layout:empty=`grouped`]] [[+field_layout:is=`inherit`:then=`[[+form_layout]]`:else=`[[+field_layout]]`]] [[+field_type]] fields [[If? &subject=`[[+field_required]]` &operator=`eq` &operand=`1` &then=`required`]] [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
     <label for="[[+name]]">
         [[+field_name]]
     </label>

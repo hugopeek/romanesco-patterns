@@ -3,7 +3,7 @@
 
 [[$overviewSettingsPrepare? &uid=`[[+prefix]]`]]
 
-[[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
+[[![[If? &subject=`[[+pagination]]` &operator=`eq` &operand=`1` &then=`pdoPage` &else=`getCache`]]?
     &element=`getResources`
     &cacheKey=`[[++custom_cache:eq=`1`:then=`custom/overviews/[[+user_access_level]]`:else=``]]`
 

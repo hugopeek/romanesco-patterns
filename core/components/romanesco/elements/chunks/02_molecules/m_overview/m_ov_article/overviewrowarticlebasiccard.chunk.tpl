@@ -3,13 +3,13 @@
 
     [[[[If?
         &subject=`[[+show_subtitle]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$infoArticleMeta? &classes=`subtitle` &uid=`[[+unique_idx]]``
     ]]]]
     [[[[If?
         &subject=`[[+show_tags]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`TaggerGetTags?
             &resources=`[[+id]]`
@@ -20,7 +20,7 @@
     ]]]]
     [[[[If?
         &subject=`[[+show_introtext]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$introtextDescription? &uid=`[[+unique_idx]]``
     ]]]]

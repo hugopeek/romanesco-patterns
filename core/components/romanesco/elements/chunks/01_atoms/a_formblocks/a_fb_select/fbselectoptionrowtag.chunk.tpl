@@ -1,6 +1,6 @@
 [[!If:toPlaceholder=`checkbox_array`?
     &subject=`[[+field_type]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`checkbox`
     &then=`[]`
     &else=``

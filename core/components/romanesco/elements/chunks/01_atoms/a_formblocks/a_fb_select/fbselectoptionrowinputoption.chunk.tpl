@@ -2,7 +2,7 @@
 [[!fbStripNonAlpha:toPlaceholder=`value_[[+idx]]`? &input=`[[+[[+valueType:empty=`name`]]]]`]]
 [[!If:toPlaceholder=`checkbox_array`?
     &subject=`[[+field_type]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`checkbox`
     &then=`[]`
     &else=``

@@ -13,7 +13,7 @@
 
 [[[[If?
     &subject=`[[+pattern_template]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`patternLayoutTemplate`
     &then=`
         Rowboat?
@@ -26,7 +26,7 @@
 
 [[[[If?
     &subject=`[[+pattern_template]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`patternLayoutFormula`
     &then=`
         Rowboat?
@@ -39,7 +39,7 @@
 
 [[[[If?
     &subject=`[[+pattern_template]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`patternLayoutComputation`
     &then=`
         Rowboat?
@@ -52,7 +52,7 @@
 
 [[[[If?
     &subject=`[[+pattern_template]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`patternLayoutBosonField`
     &then=`
         Rowboat?
@@ -65,7 +65,7 @@
 
 [[[[If?
     &subject=`[[+pattern_template]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`patternLayoutBosonLayout`
     &then=`
         Rowboat?

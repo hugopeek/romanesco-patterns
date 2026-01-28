@@ -1,6 +1,6 @@
 [[If?
     &subject=`[[+extension:lcase]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`svg`
     &then=`imageSVG`
     &else=`imageBasic[[+link:notempty=`Link`]][[+lightbox:eq=`1`:then=`Lightbox`]]`

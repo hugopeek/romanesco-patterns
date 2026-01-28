@@ -1,7 +1,7 @@
 <div id="hero" class="ui link items">
     [[[[[[If?
         &subject=`[[getRawTVValue? &tv=`header_cta`]]`
-        &operator=`EQ`
+        &operator=`is`
         &operand=`@INHERIT`
         &then=`#[[*parent]].header_inheritance:contains=`inherit_cta`:then=`$ctaHeaderVertical`:else=```
         &else=`

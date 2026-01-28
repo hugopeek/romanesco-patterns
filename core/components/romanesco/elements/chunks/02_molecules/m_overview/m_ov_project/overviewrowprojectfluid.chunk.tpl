@@ -15,7 +15,7 @@
     </[[+level]]>
     [[[[If?
         &subject=`[[+show_introtext]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$introtextDescription? &uid=`[[+unique_idx]]``
     ]]]]

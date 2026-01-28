@@ -20,7 +20,7 @@
         </div>
         [[If?
             &subject=`[[+show_introtext]]`
-            &operator=`EQ`
+            &operator=`eq`
             &operand=`1`
             &then=`<div class="description">[[$introtextSingleParagraph:ellipsis=`140`? &uid=`[[+unique_idx]]_[[+idx]]`]]</div>`
         ]]

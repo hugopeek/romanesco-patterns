@@ -3,7 +3,7 @@
         <div class="center">
             [[If?
                 &subject=`[[+show_subtitle]]`
-                &operator=`EQ`
+                &operator=`eq`
                 &operand=`1`
                 &then=`[[$headingOverviewSubtitle? &classes=`inverted` &uid=`[[+unique_idx]]`]]`
                 &else=`[[$headingOverview? &classes=`inverted` &uid=`[[+unique_idx]]`]]`

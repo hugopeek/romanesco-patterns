@@ -7,7 +7,7 @@
             <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
             [[If?
                 &subject=`[[+show_subtitle]]`
-                &operator=`EQ`
+                &operator=`eq`
                 &operand=`1`
                 &then=`<span class="sub header">[[+overview_subtitle:empty=`[[+longtitle:empty=`[[+pagetitle]]`]]`]]</span>`
             ]]
@@ -17,7 +17,7 @@
 
 [[If?
     &subject=`[[+show_introtext]]`
-    &operator=`EQ`
+    &operator=`eq`
     &operand=`1`
     &then=`<div class="[[+alignment]] content">[[$introtextDescription? &uid=`[[+unique_idx]]`]]</div>`
 ]]

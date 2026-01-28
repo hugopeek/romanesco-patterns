@@ -1,6 +1,6 @@
 [[If?
     &subject=`[[*header_visibility]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`default`
     &then=`[[++header_visibility_default]]`
     &else=`[[*header_visibility]]`
@@ -33,14 +33,14 @@
 
     [[[[If?
         &subject=`[[+hero]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$hero`
     ]]]]
 
     [[[[If?
         &subject=`[[++search.add_to_menu]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$searchForm`
     ]]]]

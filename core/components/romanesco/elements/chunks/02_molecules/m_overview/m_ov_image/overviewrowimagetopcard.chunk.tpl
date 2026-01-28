@@ -3,14 +3,14 @@
 <div class="[[+alignment]] content">
     [[[[If?
         &subject=`[[+show_subtitle]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$headingOverviewSubtitleLink? &uid=`[[+unique_idx]]``
         &else=`$headingOverviewLink? &uid=`[[+unique_idx]]``
     ]]]]
     [[[[If?
         &subject=`[[+show_introtext]]`
-        &operator=`EQ`
+        &operator=`eq`
         &operand=`1`
         &then=`$introtextDescription? &uid=`[[+unique_idx]]``
     ]]]]

@@ -1,6 +1,6 @@
 [[If?
     &subject=`[[getRawTVValue? &tv=`header_title`]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`@INHERIT`
     &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_titles`:then=`*header_title`]]]]`
     &else=`[[*header_title]]`
@@ -8,7 +8,7 @@
 ]]
 [[If?
     &subject=`[[getRawTVValue? &tv=`header_subtitle`]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`@INHERIT`
     &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_titles`:then=`*header_subtitle`]]]]`
     &else=`[[*header_subtitle]]`
@@ -16,7 +16,7 @@
 ]]
 [[If?
     &subject=`[[getRawTVValue? &tv=`header_background`]]`
-    &operator=`EQ`
+    &operator=`is`
     &operand=`@INHERIT`
     &then=`[[[[#[[*parent]].header_inheritance:contains=`inherit_background`:then=`*header_background`:else=``]]]]`
     &else=`[[*header_background]]`
@@ -41,7 +41,7 @@
 <div id="hero" class="ui vertical stripe segment [[setBackground? &background=`[[+header_background_class]]`]]">
     [[[[[[If?
         &subject=`[[getRawTVValue? &tv=`header_cta`]]`
-        &operator=`EQ`
+        &operator=`is`
         &operand=`@INHERIT`
         &then=`#[[*parent]].header_inheritance:contains=`inherit_cta`:then=`$ctaHeader`:else=`$[[+hero_tpl]]``
         &else=`

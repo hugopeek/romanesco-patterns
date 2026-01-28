@@ -2,13 +2,13 @@
     <div class="ui [[+container_type]] [[+alignment]] container">
         [[[[If?
             &subject=`[[+pattern_template]]`
-            &operator=`EQ`
+            &operator=`eq`
             &operand=`patternLayoutBosonField`
             &then=`setPatternPlaceholders? &cbField=`[[+pattern_name]]` &prefix=`cf_[[+idx]]_[[+unique_idx]]``
         ]]]]
         [[[[If?
             &subject=`[[+pattern_template]]`
-            &operator=`EQ`
+            &operator=`eq`
             &operand=`patternLayoutBosonLayout`
             &then=`setPatternPlaceholders? &cbLayout=`[[+pattern_name]]` &prefix=`cl_[[+idx]]_[[+unique_idx]]``
         ]]]]
