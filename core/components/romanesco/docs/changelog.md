@@ -10,6 +10,9 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Add TV option to disable CTA
+- Fix hero background and CTA inheritance
+- Rename heroTitles to heroBasic (and remove heroTitlesTheme placeholder)
 - Add option to load custom JS assets asynchronously
 - Specify FormIt hooks, properties and validators in chunks
 - Fix dynamic FAQ category CB setting

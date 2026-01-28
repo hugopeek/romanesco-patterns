@@ -9,4 +9,4 @@
     &sortBy=`menuindex`
     &sortDir=`ASC`
     &tvFilters=`cta_availability==%[[+availability]]%`
-]]
+]]||Disable CTA==0
