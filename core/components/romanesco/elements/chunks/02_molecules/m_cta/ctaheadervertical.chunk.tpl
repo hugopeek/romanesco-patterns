@@ -1,1 +1,4 @@
-[[#[[*header_cta:empty=`0`]].content]]
+[[renderResources?
+    &parents=`-1`
+    &resources=`[[*header_cta]]`
+]]

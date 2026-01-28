@@ -3,7 +3,14 @@
         &subject=`[[getRawTVValue? &tv=`header_cta`]]`
         &operator=`is`
         &operand=`@INHERIT`
-        &then=`#[[*parent]].header_inheritance:contains=`inherit_cta`:then=`$ctaHeaderVertical`:else=```
+        &then=`
+            If?
+                &subject=`[[#[[*parent]].header_inheritance]]`
+                &operator=`contains`
+                &operand=`inherit_cta`
+                &then=`$ctaHeaderVertical`
+                &else=``
+            `
         &else=`
             If?
                 &subject=`[[getRawTVValue? &tv=`header_cta`]]`
