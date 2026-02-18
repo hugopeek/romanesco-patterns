@@ -13531,6 +13531,21 @@
                     "category": "f_formblocks"
                 },
                 {
+                    "name": "fbFormSubmissions",
+                    "description": "Generates a table with all submitted data for given form.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_formblocks"
+                },
+                {
                     "name": "fbValidateProcessJSON",
                     "description": "Generates the correct strings for the FormIt &validate property.",
                     "properties": [

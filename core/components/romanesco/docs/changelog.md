@@ -5,6 +5,7 @@ Released on ...
 
 New features:
 - Add Cloudflare Turnstile form protection
+- Add fbFormSubmissions snippet to display submitted values in table
 - Add formatNumber output modifier
 - Add plugin to warm up cache after save action
 - Add CB options for expanding (snapped and inflated) images
