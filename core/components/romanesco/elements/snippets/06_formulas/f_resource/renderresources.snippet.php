@@ -399,6 +399,12 @@ $currentResource = $modx->resource;
 $currentResourceIdentifier = $modx->resourceIdentifier;
 $currentElementCache = $modx->elementCache;
 
+// CUSTOM
+// Output script properties as placeholder
+foreach ($scriptProperties as $scriptProperty => $value) {
+    $modx->setPlaceholder($scriptProperty, $value);
+}
+
 /** @var modResource $resource */
 foreach ($collection as $resourceId => $resource) {
     $odd = ($idx & 1);
@@ -460,6 +466,12 @@ foreach ($collection as $resourceId => $resource) {
 $modx->elementCache = $currentElementCache;
 $modx->resourceIdentifier = $currentResourceIdentifier;
 $modx->resource = $currentResource;
+
+// CUSTOM
+// Unset placeholders, so they don't spill over into the resource
+foreach ($scriptProperties as $scriptProperty => $value) {
+    $modx->unsetPlaceholder($scriptProperty);
+}
 
 /* output */
 $toSeparatePlaceholders = $modx->getOption('toSeparatePlaceholders',$scriptProperties,false);

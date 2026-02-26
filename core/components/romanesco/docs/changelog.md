@@ -11,6 +11,8 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Fix inconsistent rendering of Tabs inside CTAs
+- Include renderResources snippet
 - Add TV option to disable CTA
 - Fix hero background and CTA inheritance
 - Rename heroTitles to heroBasic (and remove heroTitlesTheme placeholder)

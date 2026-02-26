@@ -20,7 +20,7 @@
 [[tabsGenerateNav?
     &input=`[[+rows]]`
     &tpl=`tabsNav[[+menu_position:ucfirst:default=`Top`]]`
-    &unique_idx=`[[+unique_idx]]_[[+layout_idx:empty=`[[+cta_id]]`]]`
+    &uid=`[[+cta_uid:append=`-`]][[+unique_idx:append=`-`]][[+layout_idx]]`
 ]]
 
 [[loadAssets? &component=`tabs`]]

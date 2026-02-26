@@ -2,6 +2,6 @@
     [[renderResources?
         &parents=`-1`
         &resources=`[[+cta_id]]`
-        &unique_idx=`[[+unique_idx]]`
+        &cta_uid=`[[+unique_idx]]`
     ]]
 </div>
