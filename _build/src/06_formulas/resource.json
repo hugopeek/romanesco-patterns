@@ -42,6 +42,19 @@
                     ],
                     "category": "f_resource"
                 },{
+                    "name": "renderResources",
+                    "description": "Customized version of the renderResources snippet. This version forwards snippet call parameters as placeholders, which can be integrated in the rendered output.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_resource"
+                },{
                     "name": "renderResourceName",
                     "description": "Takes an ID as input and returns the pagetitle. Mainly intended as snippet renderer for Collections, but can be used independently or as output modifier too.",
                     "properties": [
