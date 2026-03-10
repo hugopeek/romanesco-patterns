@@ -11,6 +11,7 @@ New features:
 - Add CB options for expanding (snapped and inflated) images
 
 Fixes and improvements:
+- Forward host_id placeholder to CTA
 - Rename current_id placeholders to host_id [BREAKING CHANGE]
 - Remove fbRenderFormWrapper chunk
 - Include renderResources snippet

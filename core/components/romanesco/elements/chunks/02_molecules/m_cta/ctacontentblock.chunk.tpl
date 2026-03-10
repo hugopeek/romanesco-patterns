@@ -3,5 +3,9 @@
         &parents=`-1`
         &resources=`[[+cta_id]]`
         &cta_uid=`[[+unique_idx]]`
+
+        &host_id=`[[*id]]`
+        &host_pagetitle=`[[*pagetitle]]`
+        &host_menutitle=`[[*menutitle]]`
     ]]
 </div>
