@@ -9,9 +9,9 @@
     &resources=`[[+form_id]]`
 
     &form_id=`[[+form_id]]`
-    &current_id=`[[*id]]`
-    &current_pagetitle=`[[*pagetitle]]`
-    &current_menutitle=`[[*menutitle]]`
+    &host_id=`[[*id]]`
+    &host_pagetitle=`[[*pagetitle]]`
+    &host_menutitle=`[[*menutitle]]`
     &form_size=`[[+form_size]]`
     &form_layout=`[[+form_layout]]`
     &segment_type=`[[+segment_type]]`

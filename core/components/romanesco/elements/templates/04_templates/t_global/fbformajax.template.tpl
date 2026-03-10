@@ -12,7 +12,7 @@
     !FormItRetriever?
         &placeholderPrefix=``
         &storeLocation=`session`
-        &redirectToOnNotFound=`[[+first_step:isnot=`[[+current_id]]`:then=`[[+first_step]]`:else=``]]`
+        &redirectToOnNotFound=`[[+first_step:isnot=`[[+host_id]]`:then=`[[+first_step]]`:else=``]]`
     `
 ]]]][[!returnFirstHit?
     &1=`[[+redirect_id:empty=``]]` [[- BUG: this CB placeholder is not available here..]]

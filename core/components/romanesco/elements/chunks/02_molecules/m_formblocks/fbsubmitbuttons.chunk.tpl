@@ -21,8 +21,8 @@
     </div>
     `]]
     <div class="right aligned column">
-        <input type="hidden" name="step-[[+current_id]]" value="completed">
-        [[+last_step:isnot=`[[+current_id]]`:then=`
+        <input type="hidden" name="step-[[+host_id]]" value="completed">
+        [[+last_step:isnot=`[[+host_id]]`:then=`
         <div class="ui [[+button_size:empty=`[[+form_size]]`]] input icon submission">
             <input class="[[+button_size:empty=`[[+form_size]]`]] [[+button_type]] [[+button_alignment]] ui button"
                    type="submit"
