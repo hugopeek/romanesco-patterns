@@ -1,5 +1,11 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-rc4
+Released on ...
+
+Fixes and improvements:
+- Load site CSS in manager for global background previews
+
 ## Romanesco Patterns 1.0.0-rc3
 Released on March 10, 2026
 

@@ -31,6 +31,12 @@ switch ($modx->event->name) {
         if ($resource->get('template') == 27) {
             $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/backgrounds.css?v=' . $versionCSS);
         }
+
+        // Load site CSS for global background previews
+        if (file_exists(MODX_BASE_PATH . 'assets/css/site.css')) {
+            $modx->regClientCss($modx->getOption('base_url') . 'assets/css/site.css?v=' . $versionCSS);
+        }
+
         break;
 
     case 'OnManagerPageBeforeRender':
