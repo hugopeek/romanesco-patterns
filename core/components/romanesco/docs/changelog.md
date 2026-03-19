@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Migrate FormBlocks multiple uploads field to latest AjaxUpload version
 - Load site CSS in manager for global background previews
 
 ## Romanesco Patterns 1.0.0-rc3

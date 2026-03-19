@@ -60,10 +60,10 @@ $modx->regClientHTMLBlock('<script defer src="' . $assetsPathDist . '/components
 $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/formblocks.min' . $cacheBusterJS . '.js"></script>');
 
 // Load additional assets for file upload field, if present
-if ($uploadFile) {
-    $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/arrive/arrive.min' . $cacheBusterJS . '.js"></script>');
-    $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/fileupload.min' . $cacheBusterJS . '.js"></script>');
-}
+//if ($uploadFile) {
+//    $modx->regClientHTMLBlock('<script defer src="' . $assetsPathVendor . '/arrive/arrive.min' . $cacheBusterJS . '.js"></script>');
+//    $modx->regClientHTMLBlock('<script defer src="' . $assetsPathJS . '/fileupload.min' . $cacheBusterJS . '.js"></script>');
+//}
 
 // Load assets for Recaptcha v3, if enabled
 if (str_contains($antiSpamHooks, 'recaptchav3') && !$devMode) {

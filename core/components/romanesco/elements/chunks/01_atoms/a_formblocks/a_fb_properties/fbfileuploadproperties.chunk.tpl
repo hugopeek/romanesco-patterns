@@ -3,4 +3,3 @@
 &ajaxuploadUid=`fb[[*id]]-uploads`
 &ajaxuploadSanitizeFilename=`[[++formblocks.sanitize_filenames]]`
 &ajaxuploadAllowOverwrite=`1`
-&ajaxuploadClearQueue=`1`

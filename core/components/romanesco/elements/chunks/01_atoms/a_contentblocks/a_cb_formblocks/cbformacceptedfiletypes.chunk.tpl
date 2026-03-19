@@ -1,0 +1,15 @@
+JPEG=image/jpeg
+GIF=image/gif
+PNG=image/png
+WebP=image/webp
+AVIF=image/avif
+HEIF=image/heif
+MPEG=video/mpeg
+MP4=video/mp4
+WebM=video/webm
+[[migxLoopCollection?
+    &classname=`MODX\Revolution\modContentType`
+    &tpl=`@CODE:[[+name]]=[[+mime_type]]_[[+id]]`
+    &outputSeparator=`
+`
+]]

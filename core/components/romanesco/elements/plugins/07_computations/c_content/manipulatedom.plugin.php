@@ -507,17 +507,8 @@ switch ($modx->event->name) {
                 }
 
                 // Wait for DOMContentLoaded event instead of using document.ready
-                if (strpos($code,'$(document).ready') !== false) {
-                    $code = str_replace('/* <![CDATA[ */', '', $code);
-                    $code = str_replace('/* ]]> */', '', $code);
-
-                    $script->setInnerHtml(
-                        str_replace(
-                            '$(document).ready(function ()',
-                            'window.addEventListener(\'DOMContentLoaded\', function()',
-                            $code
-                        )
-                    );
+                if (strpos($code,'FilePond') !== false) {
+                    $script->setInnerHtml('window.addEventListener(\'DOMContentLoaded\', function() {' . $code . '});');
                 }
             })
         ;

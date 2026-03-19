@@ -8373,6 +8373,21 @@
                     "category": "a_cb_formblocks"
                 },
                 {
+                    "name": "cbFormAcceptedFileTypes",
+                    "description": "Select accepted form upload file types. Outputs mime types (for AjaxUpload compatibility). Image and video formats are hardcoded, but other formats are pulled from the Content Types list.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_formblocks"
+                },
+                {
                     "name": "cbLayoutAlignment",
                     "description": "",
                     "properties": [
