@@ -42,6 +42,19 @@
                     ],
                     "category": "a_fb_properties"
                 },{
+                    "name": "fbFileUploadFieldUIDs",
+                    "description": "For use as cbGetFieldContent template. Returns the AjaxUpload UIDs of all upload fields on the page.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_properties"
+                },{
                     "name": "fbMathQuestionProperties",
                     "description": "These properties are added to the FormIt call if a Math Question CB is present in the form.",
                     "properties": [

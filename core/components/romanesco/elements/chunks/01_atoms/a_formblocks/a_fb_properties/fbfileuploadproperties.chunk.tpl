@@ -1,5 +1,14 @@
-&ajaxuploadFieldname=`fb[[*id]]-uploads`
+[[cbGetFieldContent:toPlaceholder=`fb[[*id]].upload-uids`?
+    &field=`[[++formblocks.cb_input_file_multiple_id:empty=`-1`]]`
+    &tpl=`fbFileUploadFieldUIDs`
+]]
+[[cbGetFieldContent:toPlaceholder=`fb[[*id]].upload-required-uids`?
+    &field=`[[++formblocks.cb_input_file_multiple_id:empty=`-1`]]`
+    &tpl=`fbFileUploadFieldUIDs`
+    &fieldSettingFilter=`field_required==1`
+]]
 &ajaxuploadTarget=`[[*fb_attachment_path:empty=`[[++formblocks.attachment_path]]`]]`
-&ajaxuploadUid=`fb[[*id]]-uploads`
+&ajaxuploadUid=`[[+fb[[*id]].upload-uids]]`
+&ajaxuploadRequiredUid=`[[+fb[[*id]].upload-required-uids]]`
 &ajaxuploadSanitizeFilename=`[[++formblocks.sanitize_filenames]]`
 &ajaxuploadAllowOverwrite=`1`

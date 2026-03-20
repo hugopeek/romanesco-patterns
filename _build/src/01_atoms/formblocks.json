@@ -67,6 +67,19 @@
                         }
                     ],
                     "category": "a_formblocks"
+                },{
+                    "name": "fbInputFileMultipleRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_formblocks"
                 }
             ],
 

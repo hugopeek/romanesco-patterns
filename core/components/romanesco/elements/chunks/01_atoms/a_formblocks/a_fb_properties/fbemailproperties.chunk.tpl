@@ -16,10 +16,10 @@
     &then=`&spamEmailFields=`[[+fb[[*id]]-email]]``
 ]]
 
-[[cbGetFieldContent?
+[[[[cbHasField?
     &field=`[[++formblocks.cb_input_file_multiple_id:empty=`-1`]]`
-    &tpl=`fbFileUploadProperties`
-]]
+    &then=`$fbFileUploadProperties`
+]]]]
 [[cbGetFieldContent?
     &field=`[[++formblocks.cb_math_question_id:empty=`-1`]]`
     &tpl=`fbMathQuestionProperties`

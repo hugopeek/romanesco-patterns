@@ -5007,6 +5007,21 @@
                     "category": "a_formblocks"
                 },
                 {
+                    "name": "fbInputFileMultipleRow",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_formblocks"
+                },
+                {
                     "name": "iconTVInputOptions",
                     "description": "",
                     "properties": [
@@ -9350,6 +9365,21 @@
                 {
                     "name": "fbFileUploadProperties",
                     "description": "These properties are added to the FormIt call if a multiple file upload field is present in the form.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "solid"
+                        },
+                        {
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_fb_properties"
+                },
+                {
+                    "name": "fbFileUploadFieldUIDs",
+                    "description": "For use as cbGetFieldContent template. Returns the AjaxUpload UIDs of all upload fields on the page.",
                     "properties": [
                         {
                             "name": "elementStatus",
