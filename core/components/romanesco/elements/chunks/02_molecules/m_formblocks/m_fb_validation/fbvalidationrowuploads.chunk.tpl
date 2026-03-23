@@ -1,7 +1,7 @@
 [[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:replace=`-==`]]: {
-    identifier: 'fb[[*id]]-uploads',
+    identifier: 'filepond',
     rules: [{
-        type   : 'empty',
+        type   : 'filepond',
         prompt : '[[$fbValidationPrompt:stripForJS? &name=`fb[[*id]]-uploads` &type=`file` &uid=`[[+uid]]`]]'
     }]
 },

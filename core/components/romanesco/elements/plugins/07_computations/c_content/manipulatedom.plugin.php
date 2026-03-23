@@ -507,7 +507,7 @@ switch ($modx->event->name) {
                 }
 
                 // Wait for DOMContentLoaded event instead of using document.ready
-                if (strpos($code,'FilePond') !== false) {
+                if (strpos($code,'FilePond.create') !== false) {
                     $script->setInnerHtml('window.addEventListener(\'DOMContentLoaded\', function() {' . $code . '});');
                 }
             })
