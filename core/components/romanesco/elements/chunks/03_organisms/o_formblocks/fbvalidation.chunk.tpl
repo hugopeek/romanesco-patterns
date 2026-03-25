@@ -41,12 +41,16 @@
         // Check if a required file upload field exists
         const hasUploadField = $form.find('.file-upload.required').length > 0;
 
+        // Use Arrive to detect if file upload fields were added to DOM and add
+        //  custom validation rule for each field.
         if (hasUploadField) {
             $form.arrive('.file-upload.required input[type="file"]', function() {
-                $(this).attr('data-validate','filepond');
+                const fieldID = $(this).closest('.file-upload.field').attr('id');
+                const ruleName = fieldID.replace('fb[[*id]]-', '').replace(/-/g, '');
+                $(this).attr('data-validate',fieldID);
 
-                $.fn.form.settings.rules.filepond = function(value, element) {
-                    const $wrapper = $('.filepond--root').has('input[data-validate="filepond"]');
+                $.fn.form.settings.rules[ruleName] = function(value, element) {
+                    const $wrapper = $('.filepond--root').has(`input[data-validate="${fieldID}"]`);
                     if ($wrapper.length === 0) {
                         return false;
                     }

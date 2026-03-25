@@ -1,7 +1,9 @@
-[[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:replace=`-==`]]: {
-    identifier: 'filepond',
+[[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
+[[+field_name_html:empty=`[[+field_name]]`:fbStripAsAlias:replace=`-==`:toPlaceholder=`short_name`]]
+[[+short_name]]: {
+    identifier: '[[+name]]',
     rules: [{
-        type   : 'filepond',
-        prompt : '[[$fbValidationPrompt:stripForJS? &name=`fb[[*id]]-uploads` &type=`file` &uid=`[[+uid]]`]]'
+        type   : '[[+short_name]]',
+        prompt : '[[$fbValidationPrompt:stripForJS? &name=`[[+name]]` &type=`files` &uid=`[[+uid]]`]]'
     }]
 },
