@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Fix 'multiple' indicator in FormBlocks dropdown select fields
 - Migrate FormBlocks multiple uploads field to latest AjaxUpload version
 - Load site CSS in manager for global background previews
 
