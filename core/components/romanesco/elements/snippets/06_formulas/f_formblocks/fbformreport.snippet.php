@@ -31,10 +31,16 @@ if (!function_exists('getFields')) {
     {
         $result = [];
         $idx = 0;
+        $idxFile = 0;
 
         foreach($data as $value) {
             if (!is_array($value)) {
                 continue;
+            }
+
+            if (isset($value['field']) && $value['field'] == $modx->getOption('formblocks.cb_input_file_multiple_id')) {
+                $value['settings']['field_type_idx'] = $idxFile;
+                $idxFile++;
             }
 
             // Capture all fields, except for nested fieldsets (which contain fields themselves)

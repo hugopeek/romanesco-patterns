@@ -1,2 +1,2 @@
 <strong>[[+field_name]]:</strong><br>
-[[+fb[[+id]]-uploads:replace=`,==<br>`:empty=``]]<br><br>
+[[+[[+id:md5]][[+field_type_idx]]:replace=`,==<br>`:empty=``]]<br><br>
