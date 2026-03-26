@@ -17,6 +17,7 @@
  * @package romanesco
  */
 
+use MODX\Revolution\modX;
 use FractalFarming\Romanesco\Romanesco;
 use Spatie\SchemaOrg\Schema;
 
@@ -79,6 +80,7 @@ switch ($modx->event->name) {
         if ($clientType == 'organization') {
             $graph
                 ->organization()
+                ->identifier($siteURL . '#organization')
                 ->name($siteName)
                 ->url($siteURL)
                 ->contactPoint(Schema::contactPoint()
@@ -109,12 +111,28 @@ switch ($modx->event->name) {
             ;
         }
 
+        // Site
+        $graph
+            ->webSite()
+            ->identifier($siteURL . "#website")
+            ->name($siteName)
+            ->url($siteURL)
+            ->publisher(Schema::organization()
+                ->identifier($siteURL . '#organization')
+            )
+        ;
+
         // Page
         $graph
             ->webPage()
+            ->identifier($url)
             ->name($longtitle ?: $pagetitle)
             ->description($description ?: strip_tags($introtext))
             ->url($url)
+            ->inLanguage($romanesco->getContextSetting('cultureKey', 'web'))
+            ->isPartOf([
+                '@id' => $siteURL . '#website',
+            ])
         ;
 
         // Breadcrumbs
@@ -139,12 +157,12 @@ switch ($modx->event->name) {
 
             $graph
                 ->breadcrumbList()
-                ->identifier('#breadcrumb')
+                ->identifier($url . '#breadcrumb')
                 ->itemListElement($crumbItems)
             ;
         }
 
-        $modx->setPlaceholder('structured_data', json_encode($graph, JSON_UNESCAPED_SLASHES));
+        //$modx->setPlaceholder('structured_data', json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
 
         break;
 }

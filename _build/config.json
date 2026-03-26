@@ -13516,6 +13516,36 @@
                     "category": "f_data"
                 },
                 {
+                    "name": "renderStructuredData",
+                    "description": "Companion of the RenderStructuredData plugin. This snippet lets you add custom attributes to the global structuredData object.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
+                    "name": "renderFaqData",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },
+                        {
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_data"
+                },
+                {
                     "name": "fbGetForms",
                     "description": "",
                     "properties": [

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html id="[[*context_key]]" lang="[[++cultureKey]]">
 
+[[renderStructuredData]]
+
 <head>
     [[[[If?
         &subject=`headTheme`
