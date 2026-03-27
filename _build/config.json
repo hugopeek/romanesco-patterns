@@ -13517,7 +13517,7 @@
                 },
                 {
                     "name": "renderStructuredData",
-                    "description": "Companion of the RenderStructuredData plugin. This snippet lets you add custom attributes to the global structuredData object.",
+                    "description": "Add schema.org JSON-LD data in head. You can add / overwrite properties from any snippet that references the global structuredData graph, or by creating a renderStructuredDataTheme snippet.",
                     "properties": [
                         {
                             "name": "elementStatus",
@@ -15046,20 +15046,6 @@
                             "event": "OnHandleRequest",
                             "priority": 10
                         }
-                    ]
-                },
-                {
-                    "name": "RenderStructuredData",
-                    "description": "Add schema.org JSON-LD data in head.",
-                    "properties": [
-                        {
-                            "name": "elementStatus",
-                            "value": "review"
-                        }
-                    ],
-                    "category": "c_global",
-                    "events": [
-                        "OnLoadWebDocument"
                     ]
                 },
                 {

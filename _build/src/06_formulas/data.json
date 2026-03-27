@@ -17,7 +17,7 @@
                     "category": "f_data"
                 },{
                     "name": "renderStructuredData",
-                    "description": "Companion of the RenderStructuredData plugin. This snippet lets you add custom attributes to the global structuredData object.",
+                    "description": "Add schema.org JSON-LD data in head. You can add / overwrite properties from any snippet that references the global structuredData graph, or by creating a renderStructuredDataTheme snippet.",
                     "properties": [
                         {
                             "name": "elementStatus",

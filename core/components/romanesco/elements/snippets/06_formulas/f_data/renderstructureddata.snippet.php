@@ -1,5 +1,16 @@
 <?php
 /**
+ * renderStructuredData
+ *
+ * Turn given schema.org properties into a proper JSON-LD array.
+ *
+ * All types are collected in a central $graph object, which is initiated in the
+ * Romanesco class. You can add / overwrite properties from any snippet that
+ * references the graph, or by creating a renderStructuredDataTheme snippet.
+ * This snippet will be run here and receives an array with all available data.
+ *
+ * The final JSON graph object is forwarded to the structured_data placeholder.
+ *
  * @var modX $modx
  * @var array $scriptProperties
  * @package romanesco
@@ -19,6 +30,7 @@ try {
 // Use the object initialized within the Romanesco class, to allow overwriting
 $graph = &$romanesco->structuredData;
 
+// Assorted array of relevant data
 $data = [
     // System / context
     'siteName' => $modx->getOption('site_name', $scriptProperties),
@@ -30,6 +42,12 @@ $data = [
     'clientType' => $modx->getOption('client_type', $scriptProperties, $romanesco->getConfigSetting('client_type')),
     'clientPhone' => $modx->getOption('client_phone', $scriptProperties, $romanesco->getConfigSetting('client_phone')),
     'clientEmail' => $modx->getOption('client_email', $scriptProperties, $romanesco->getConfigSetting('client_email')),
+    'clientAddressStreet' => $modx->getOption('client_address_street', $scriptProperties, $romanesco->getConfigSetting('client_address_street')),
+    'clientAddressLocality' => $modx->getOption('client_address_locality', $scriptProperties, $romanesco->getConfigSetting('client_address_locality')),
+    'clientAddressRegion' => $modx->getOption('client_address_region', $scriptProperties, $romanesco->getConfigSetting('client_address_region')),
+    'clientAddressCountry' => $modx->getOption('client_address_country', $scriptProperties, $romanesco->getConfigSetting('client_address_country')),
+    'clientAddressPostcode' => $modx->getOption('client_address_postcode', $scriptProperties, $romanesco->getConfigSetting('client_address_postcode')),
+    'clientAddressExtended' => $modx->getOption('client_address_extended', $scriptProperties, $romanesco->getConfigSetting('client_address_extended')),
     'logoPath' => $modx->getOption('logo_path', $scriptProperties, $romanesco->getConfigSetting('logo_path')),
 
     // Resource
@@ -55,20 +73,21 @@ if ($data['clientType'] == 'organization') {
         ->telephone($data['clientPhone'])
         ->email($data['clientEmail'])
         ->address(Schema::postalAddress()
-            ->streetAddress('Tuburan Drive 1')
-            ->addressLocality('Tugbok District')
-            ->addressRegion('Davao City')
-            ->addressCountry('PH')
-            ->postalCode('8000')
+            ->streetAddress($data['clientAddressStreet'])
+            ->addressLocality($data['clientAddressLocality'])
+            ->addressRegion($data['clientAddressRegion'])
+            ->addressCountry($data['clientAddressCountry'])
+            ->postalCode($data['clientAddressPostcode'])
         )
         ->logo(Schema::imageObject()
             ->identifier($data['siteURL'] . "#logo")
             ->url(str_replace("//", "/", $data['siteURL'] . $data['logoPath']))
             ->caption($data['siteName'])
         )
-        ->image([
-            '@id' => $data['siteURL'] . "#logo"
-        ])
+        ->image(Schema::imageObject()
+            ->identifier($data['siteURL'] . "#image")
+            
+        )
     ;
 }
 
@@ -134,8 +153,16 @@ if ($data['toolbarVisible']) {
     ;
 }
 
-// Load custom attributes
-$modx->runSnippet('renderStructuredDataTheme', $data);
+// Load custom properties
+$query = $modx->newQuery('modSnippet', [
+    'name' => 'renderStructuredDataTheme'
+]);
+$query->select('id');
+if ($modx->getValue($query->prepare())) {
+    $modx->runSnippet('renderStructuredDataTheme', $data);
+} else {
+    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find renderStructuredDataTheme.');
+}
 
 // Write everything to placeholders
 $modx->setPlaceholder('structured_data', json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));

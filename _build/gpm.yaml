@@ -7855,7 +7855,7 @@ snippets:
         value: ''
     category: f_data
   - name: renderStructuredData
-    description: 'Companion of the RenderStructuredData plugin. This snippet lets you add custom attributes to the global structuredData object.'
+    description: 'Add schema.org JSON-LD data in head. You can add / overwrite properties from any snippet that references the global structuredData graph, or by creating a renderStructuredDataTheme snippet.'
     properties:
       - name: elementStatus
         value: experimental
@@ -8679,14 +8679,6 @@ plugins:
     events:
       - name: OnHandleRequest
         priority: 10
-  - name: RenderStructuredData
-    description: 'Add schema.org JSON-LD data in head.'
-    properties:
-      - name: elementStatus
-        value: review
-    category: c_global
-    events:
-      - OnLoadWebDocument
   - name: ClearCustomCache
     description: 'Only clears cache partitions of navigation groups, to make sure save actions are immediately reflected on frontend. In the future, other partitions should be cleared on certain triggers too.'
     properties:
