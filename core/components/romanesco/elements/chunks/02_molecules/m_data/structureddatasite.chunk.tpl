@@ -1,1 +1,2 @@
+[[renderStructuredData]]
 <script type="application/ld+json">[[+structured_data]]</script>

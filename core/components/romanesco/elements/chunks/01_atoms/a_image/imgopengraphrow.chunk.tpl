@@ -3,3 +3,4 @@
 <meta property="og:image" content="[[++site_url:clipString=`-1`]][[+url:imgOptimizeThumb]]" />
 <meta property="og:image:width" content="[[+thumb_width]]" />
 <meta property="og:image:height" content="[[+thumb_height]]" />
+<meta property="og:image:alt" content="[[+alt:empty=`[[*pagetitle:append=` cover image`]]`]]" />

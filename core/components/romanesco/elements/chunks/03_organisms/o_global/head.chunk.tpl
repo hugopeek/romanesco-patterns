@@ -5,8 +5,12 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-[[$openGraphMeta]]
+[[[[If?
+    &subject=`[[++opengraph_data]]`
+    &operator=`eq`
+    &operand=`1`
+    &then=`$openGraphMeta`
+]]]]
 
 <base href="[[!++site_url]]">
 
@@ -117,7 +121,7 @@
 
 [[- SCHEMA.ORG STRUCTURED DATA ]]
 [[[[If?
-    &subject=`[[++romanesco.structured_data]]`
+    &subject=`[[++structured_data]]`
     &operator=`eq`
     &operand=`1`
     &then=`$structuredDataSite`

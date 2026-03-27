@@ -4,6 +4,7 @@
 Released on ...
 
 Fixes and improvements:
+- Load structured and opengraph data conditionally
 - Fix 'multiple' indicator in FormBlocks dropdown select fields
 - Migrate FormBlocks multiple uploads field to latest AjaxUpload version
 - Load site CSS in manager for global background previews
@@ -138,7 +139,7 @@ New features:
 - Add lightbox option to Image CB
 
 Fixes and improvements:
-- Properly load form assets in login forms
+- Load form assets properly in login forms
 - Add fitted option to segment types (without border or padding)
 - Add TV input options for selecting user group(s)
 - Improve image caption layout and positioning
