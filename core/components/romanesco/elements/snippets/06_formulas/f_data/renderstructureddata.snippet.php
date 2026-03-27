@@ -27,7 +27,7 @@ try {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
-// Use the object initialized within the Romanesco class, to allow overwriting
+// Use the graph object initialized in the Romanesco class
 $graph = &$romanesco->structuredData;
 
 // Assorted array of relevant data
@@ -95,6 +95,7 @@ if ($data['clientType'] == 'organization') {
 if ($data['clientType'] == 'person') {
     $graph
         ->person()
+        ->identifier($data['siteURL'] . '#person')
         ->name($data['siteName'])
         ->url($data['siteURL'])
         ->telephone($data['clientPhone'])
@@ -108,8 +109,8 @@ $graph
     ->identifier($data['siteURL'] . "#website")
     ->name($data['siteName'])
     ->url($data['siteURL'])
-    ->publisher(Schema::organization()
-        ->identifier($data['siteURL'] . '#organization')
+    ->publisher(Schema::{$data['clientType']}()
+        ->identifier($data['siteURL'] . '#' . $data['clientType'])
     )
 ;
 
@@ -154,15 +155,7 @@ if ($data['toolbarVisible']) {
 }
 
 // Load custom properties
-$query = $modx->newQuery('modSnippet', [
-    'name' => 'renderStructuredDataTheme'
-]);
-$query->select('id');
-if ($modx->getValue($query->prepare())) {
-    $modx->runSnippet('renderStructuredDataTheme', $data);
-} else {
-    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not find renderStructuredDataTheme.');
-}
+$modx->runSnippet('renderStructuredDataTheme', ['data' => $data]);
 
 // Write everything to placeholders
 $modx->setPlaceholder('structured_data', json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
