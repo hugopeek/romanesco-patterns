@@ -2,14 +2,17 @@
 /**
  * renderStructuredData
  *
- * Turn given schema.org properties into a proper JSON-LD array.
+ * Turn given schema.org properties into a proper JSON+LD array.
  *
  * All types are collected in a central $graph object, which is initiated in the
  * Romanesco class. You can add / overwrite properties from any snippet that
  * references the graph, or by creating a renderStructuredDataTheme snippet.
  * This snippet will be run here and receives an array with all available data.
  *
- * The final JSON graph object is forwarded to the structured_data placeholder.
+ * The final JSON+LD object is forwarded to the structured_data placeholder.
+ *
+ * NB: Put this snippet at the bottom of the page, because the graph cannot be
+ * modified anymore once the placeholder is set!
  *
  * @var modX $modx
  * @var array $scriptProperties
@@ -157,7 +160,8 @@ if ($data['toolbarVisible']) {
 // Load custom properties
 $modx->runSnippet('renderStructuredDataTheme', ['data' => $data]);
 
-// Write everything to placeholders
+// Write everything to placeholder
+//$modx->regClientStartupHTMLBlock('<script type="application/ld+json">'.json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT).'</script>');
 $modx->setPlaceholder('structured_data', json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
 
 return '';

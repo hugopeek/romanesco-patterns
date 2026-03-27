@@ -22,6 +22,7 @@ if (!class_exists(Wa72\HtmlPageDom\HtmlPageCrawler::class)) {
     return;
 }
 
+use MODX\Revolution\modX;
 use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 switch ($modx->event->name) {
