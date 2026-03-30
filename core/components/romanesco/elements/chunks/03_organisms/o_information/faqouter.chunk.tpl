@@ -1,5 +1,5 @@
 [[+rows]]
 
-[[renderFaqData?
+[[structuredDataFAQ?
     &fieldIdx=`[[+field_type_idx]]`
 ]]

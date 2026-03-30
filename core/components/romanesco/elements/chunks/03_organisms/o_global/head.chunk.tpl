@@ -119,13 +119,10 @@
     &false=`++analytics_tracking_code`
 ]]]]
 
-[[- SCHEMA.ORG STRUCTURED DATA ]]
-[[[[If?
-    &subject=`[[++structured_data]]`
-    &operator=`eq`
-    &operand=`1`
-    &then=`$structuredDataSite`
-]]]]
+[[- SCHEMA.ORG STRUCTURED DATA
+    This is now loaded via the renderStructuredData snippet in the bottom script
+    section of the page.
+]]
 
 [[- DENY ACCESS TO HUB CONTEXT, IF MARKED AS PRIVATE ]]
 [[[[If?

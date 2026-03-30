@@ -16,22 +16,21 @@ try {
     $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
 }
 
-$siteName = $modx->getOption('site_name', $scriptProperties);
-$siteURL = $modx->getOption('site_url', $scriptProperties);
-$fieldIdx = $modx->getOption('fieldIdx', $scriptProperties);
-$url = $modx->makeUrl($modx->resource->id, null, null, 'full');
+if (!$romanesco->getConfigSetting('structured_data')) return;
 
-// Use the object initialized within the Romanesco class, to allow overwriting
+$data = $romanesco->getSchemaOptions([
+    'fieldIdx' => $modx->getOption('fieldIdx', $scriptProperties)
+]);
 $graph = &$romanesco->structuredData;
 
 // Get the current count of FAQ items added so far
-$currentCount = (int)$modx->getPlaceholder('faq_items_count') ?? 0;
+$currentCount = (int)$data['faqItemsCount'] ?? 0;
 
 $faqs = $modx->runSnippet('cbGetFieldContent', [
     'resource' => $modx->resource->get('id'),
     'field' => $modx->getOption('romanesco.cb_field_faq_id', $scriptProperties),
     'limit' => 1,
-    'offset' => $fieldIdx,
+    'offset' => $data['fieldIdx'],
     'returnAsJSON' => true
 ]);
 $faqs = json_decode($faqs, true);
@@ -48,19 +47,26 @@ foreach ($faqs[0]['rows'] as $idx => $faq) {
         ;
 }
 
-// Update the running count for the next snippet call
-$modx->setPlaceholder('faq_items_count', $currentCount + count($faqItems));
-
 // Retrieve previous items first if page has multiple FAQ blocks
-if ($fieldIdx > 0) {
-    $previousItems = $modx->getPlaceholder('faq_all_items') ?? [];
+if ($data['fieldIdx'] > 0) {
+    $previousItems = $data['faqItems'] ?? [];
     $allItems = array_merge($previousItems, $faqItems);
-    $graph->fAQPage()->mainEntity($allItems);
+    $graph
+        ->fAQPage()
+        ->mainEntity($allItems)
+    ;
 } else {
-    $graph->fAQPage()->mainEntity($faqItems);
+    $graph
+        ->fAQPage()
+        ->mainEntity($faqItems)
+        ->isPartOf(Schema::webPage()
+            ->identifier($data['url'])
+        )
+    ;
 }
 
-// Store all items for the next snippet call
-$modx->setPlaceholder('faq_all_items', $allItems ?? $faqItems);
+// Store data for the next snippet call
+$romanesco->setSchemaOption('faqItems', $allItems ?? $faqItems);
+$romanesco->setSchemaOption('faqItemsCount', $currentCount + count($faqItems));
 
-return '';
+return;

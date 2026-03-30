@@ -7,3 +7,4 @@
     &outputSeparator=``
     &where=`[[+alias_visibility:isnot=`1`:then=`[{"alias_visible:!=":"0"}]`:else=``]]`
 ]]
+[[structuredDataBreadcrumbs]]

@@ -265,6 +265,7 @@ categories:
       - name: f_data
         children:
           - name: f_dat_migx
+          - name: f_dat_structured
       - name: f_formblocks
         children:
           - name: f_fb_modifier
@@ -7855,15 +7856,7 @@ snippets:
         value: ''
     category: f_data
   - name: renderStructuredData
-    description: 'Add schema.org JSON-LD data in head. You can add / overwrite properties from any snippet that references the global structuredData graph, or by creating a renderStructuredDataTheme snippet.'
-    properties:
-      - name: elementStatus
-        value: experimental
-      - name: elementExample
-        value: ''
-    category: f_data
-  - name: renderFaqData
-    description: ''
+    description: 'Companion of the RenderStructuredData plugin. This snippet lets you add custom attributes to the global structuredData object.'
     properties:
       - name: elementStatus
         value: experimental
@@ -8572,6 +8565,46 @@ snippets:
       - name: elementExample
         value: ''
     category: f_dat_migx
+  - name: structuredDataBreadcrumbs
+    description: 'This adds a breadcrumb list to the schema, referencing all parent pages.'
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementExample
+        value: ''
+    category: f_dat_structured
+  - name: structuredDataOverview
+    description: 'This adds the CollectionPage type to the schema, when an overview is used in the content area.'
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementExample
+        value: ''
+    category: f_dat_structured
+  - name: structuredDataFAQ
+    description: 'Loops through all FAQ content blocks on a page and adds the questions + answers to the structured data in the head.'
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementExample
+        value: ''
+    category: f_dat_structured
+  - name: structuredDataCTA
+    description: 'Loops through all CTA content blocks on a page, finds a suitable action type and adds this to the structured data in the head.'
+    properties:
+      - name: elementStatus
+        value: experimental
+      - name: elementExample
+        value: ''
+    category: f_dat_structured
+  - name: structuredDataCTA
+    description: 'Loops through all CTA content blocks on a page, finds a suitable action type and adds this to the structured data in the head.'
+    properties:
+      - name: elementStatus
+        value: experimental
+      - name: elementExample
+        value: ''
+    category: f_dat_structured
 plugins:
   - name: setResourceIDs
     description: 'Looks for resource IDs of key Romanesco pages that were built by the Romanesco Backyard package. Updates system setting with corresponding ID if resource is found. Disabled by default.'
@@ -8679,6 +8712,14 @@ plugins:
     events:
       - name: OnHandleRequest
         priority: 10
+  - name: RenderStructuredData
+    description: 'Add schema.org JSON-LD data in head.'
+    properties:
+      - name: elementStatus
+        value: review
+    category: c_global
+    events:
+      - OnLoadWebDocument
   - name: ClearCustomCache
     description: 'Only clears cache partitions of navigation groups, to make sure save actions are immediately reflected on frontend. In the future, other partitions should be cleared on certain triggers too.'
     properties:

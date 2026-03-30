@@ -1,0 +1,74 @@
+{
+    "package": {
+        "elements": {
+            "snippets": [
+                {
+                    "name": "structuredDataBreadcrumbs",
+                    "description": "This adds a breadcrumb list to the schema, referencing all parent pages.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_dat_structured"
+                },{
+                    "name": "structuredDataOverview",
+                    "description": "This adds the CollectionPage type to the schema, when an overview is used in the content area.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_dat_structured"
+                },{
+                    "name": "structuredDataFAQ",
+                    "description": "Loops through all FAQ content blocks on a page and adds the questions + answers to the structured data in the head.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_dat_structured"
+                },{
+                    "name": "structuredDataCTA",
+                    "description": "Loops through all CTA content blocks on a page, finds a suitable action type and adds this to the structured data in the head.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_dat_structured"
+                },{
+                    "name": "structuredDataCTA",
+                    "description": "Loops through all CTA content blocks on a page, finds a suitable action type and adds this to the structured data in the head.",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "experimental"
+                        },{
+                            "name": "elementExample",
+                            "value": ""
+                        }
+                    ],
+                    "category": "f_dat_structured"
+                }
+            ]
+        }
+    }
+}

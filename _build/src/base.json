@@ -363,7 +363,8 @@
                         {
                             "name": "f_data",
                             "children": [
-                                {"name": "f_dat_migx"}
+                                {"name": "f_dat_migx"},
+                                {"name": "f_dat_structured"}
                             ]
                         },
                         {
