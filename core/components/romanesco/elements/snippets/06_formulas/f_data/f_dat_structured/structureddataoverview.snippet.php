@@ -18,7 +18,7 @@ $romanesco = $modx->romanesco;
 if (!$romanesco->getConfigSetting('structured_data')) return;
 
 $data = $romanesco->getSchemaOptions([
-    'type' => $modx->getOption('type', $scriptProperties, 'collection'),
+    'type' => $modx->getOption('type', $scriptProperties, 'CollectionPage'),
     'uid' => $modx->getOption('uid', $scriptProperties),
     'idx' => $modx->getOption('idx', $scriptProperties),
     'fieldIdx' => $modx->getOption('fieldIdx', $scriptProperties, 0),
@@ -30,7 +30,19 @@ if ($data['fieldIdx'] > 0) return;
 
 // Prepare different data types
 $collectionItems = $data['collectionItems'] ?? [];
+$collectionMentions = $data['collectionMentions'] ?? [];
+
 switch ($data['type']) {
+    case 'CollectionPage':
+        $graph
+            ->getOrCreate(CollectionPage::class)
+            ->identifier("{$data['url']}#collection")
+            ->isPartOf(Schema::webPage()
+                ->identifier($data['url'])
+            )
+        ;
+        break;
+
     case 'Article':
         $collectionItems[] = Schema::Article()
             ->headline($scriptProperties['headline'] ?? '')
@@ -43,6 +55,27 @@ switch ($data['type']) {
             ->dateModified($scriptProperties['dateModified'] ?? '')
             ->url($modx->makeUrl($scriptProperties['id'], null, null, 'full'))
         ;
+        $graph
+            ->collectionPage()
+            ->hasPart($collectionItems)
+        ;
+        $romanesco->setSchemaOption('collectionItems', $collectionItems);
+        break;
+
+    case 'Person':
+        $collectionMentions[] = Schema::Person()
+            ->name($scriptProperties['name'] ?? '')
+            ->jobTitle($scriptProperties['jobTitle'] ?? '')
+            ->memberOf(Schema::Organization()
+                ->identifier($data['siteURL'] . '#organization')
+            )
+            ->url($modx->makeUrl($scriptProperties['id'], null, null, 'full'))
+        ;
+        $graph
+            ->collectionPage()
+            ->mentions($collectionMentions)
+        ;
+        $romanesco->setSchemaOption('collectionMentions', $collectionMentions);
         break;
 
     default:
@@ -51,26 +84,12 @@ switch ($data['type']) {
             ->description($scriptProperties['description'] ?? '')
             ->url($modx->makeUrl($scriptProperties['id'], null, null, 'full'))
         ;
+        $graph
+            ->collectionPage()
+            ->hasPart($collectionItems)
+        ;
+        $romanesco->setSchemaOption('collectionItems', $collectionItems);
         break;
-}
-
-// Create or update graph
-if ($data['type'] == 'CollectionPage') {
-    $graph
-        ->getOrCreate(CollectionPage::class)
-        ->identifier("{$data['url']}#collection")
-        ->isPartOf(Schema::webPage()
-            ->identifier($data['url'])
-        )
-    ;
-} else {
-    $graph
-        ->collectionPage()
-        ->hasPart($collectionItems)
-    ;
-
-    // Store items for next row
-    $romanesco->setSchemaOption('collectionItems', $collectionItems);
 }
 
 return;

@@ -1,3 +1,11 @@
-<div class="[[+column_type]] testimonial" [[+row_tpl:containsnot=`logo`:then=`vocab="https://schema.org/" typeof="Review"`]]>
-    [[$[[+row_tpl]]? &unique_idx=`[[+idx]][[+page]][[+unique_idx]]`]]
+<div class="[[+column_type]] testimonial">
+    [[$[[+row_tpl]]? &unique_idx=`[[+unique_idx]]_[[+page:empty=`0`]]_[[+idx]]`]]
 </div>
+[[structuredDataOverview?
+    &type=`ItemPage`
+    &name=`[[+pagetitle]]`
+    &description=`[[+description:empty=`[[+introtext:stripForJS]]`]]`
+    &id=`[[+id]]`
+    &idx=`[[+idx]]`
+    &uid=`[[+unique_idx]]`
+]]

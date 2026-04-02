@@ -1,3 +1,11 @@
 <div class="[[+column_type]]">
-    [[$[[+row_tpl]]? &unique_idx=`[[+idx]][[+page]][[+unique_idx]]`]]
+    [[$[[+row_tpl]]? &unique_idx=`[[+unique_idx]]_[[+page:empty=`0`]]_[[+idx]]`]]
 </div>
+[[structuredDataOverview?
+    &type=`ItemPage`
+    &name=`[[+pagetitle]]`
+    &description=`[[+description:empty=`[[+introtext:stripForJS]]`]]`
+    &id=`[[+id]]`
+    &idx=`[[+idx]]`
+    &uid=`[[+unique_idx]]`
+]]

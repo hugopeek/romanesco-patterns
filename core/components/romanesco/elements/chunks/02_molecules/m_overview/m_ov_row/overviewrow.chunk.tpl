@@ -2,7 +2,7 @@
     [[$[[+row_tpl]]? &unique_idx=`[[+unique_idx]]_[[+page:empty=`0`]]_[[+idx]]`]]
 </section>
 [[structuredDataOverview?
-    &type=`itemPage`
+    &type=`ItemPage`
     &name=`[[+pagetitle]]`
     &description=`[[+description:empty=`[[+introtext:stripForJS]]`]]`
     &id=`[[+id]]`
