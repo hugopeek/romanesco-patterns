@@ -41,7 +41,7 @@
     &then=`$overviewSettingsPrepareMgr`
 ]]]]
 [[structuredDataOverview?
-    &type=`collection`
+    &type=`CollectionPage`
     &uid=`[[+prefix]]`
     &fieldIdx=`[[+field_type_idx]]`
 ]]
