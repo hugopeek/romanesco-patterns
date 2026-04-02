@@ -6,7 +6,7 @@
  *
  * @author Mark Hamstra
  *
- * @var modX $modx
+ * @var \MODX\Revolution\modX $modx
  */
 
 if ($modx->user instanceof MODX\Revolution\modUser) {

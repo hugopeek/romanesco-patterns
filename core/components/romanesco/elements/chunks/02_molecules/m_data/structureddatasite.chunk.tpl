@@ -1,1 +1,1 @@
-<script type="application/ld+json">[[+structured_data]]</script>
+<script id="structured-data" type="application/ld+json">[[+structured_data]]</script>

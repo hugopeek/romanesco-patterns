@@ -10,4 +10,3 @@
     &then=`$footerAdditional`
 ]]]]
 [[++footer_additional]]
-[[renderStructuredData]]

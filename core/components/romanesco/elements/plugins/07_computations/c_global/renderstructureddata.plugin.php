@@ -15,12 +15,23 @@
  *
  * @var modX $modx
  * @var array $scriptProperties
+ * @var Romanesco $romanesco
  * @package romanesco
  */
 
 use MODX\Revolution\modX;
 use FractalFarming\Romanesco\Romanesco;
 use Spatie\SchemaOrg\Schema;
+use Wa72\HtmlPageDom\HtmlPageCrawler;
+
+if (!($modx->romanesco instanceof Romanesco)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] Romanesco service has wrong type');
+    return;
+}
+$romanesco = $modx->romanesco;
+
+// Kill switch
+if (!$romanesco->getConfigSetting('structured_data')) return;
 
 switch ($modx->event->name) {
     case 'OnLoadWebDocument':
@@ -42,16 +53,6 @@ switch ($modx->event->name) {
                 break;
             }
         }
-
-        /** @var Romanesco $romanesco */
-        try {
-            $romanesco = $modx->services->get('romanesco');
-        } catch (\Psr\Container\NotFoundExceptionInterface $e) {
-            $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] ' . $e->getMessage());
-        }
-
-        // Kill switch
-        if (!$romanesco->getConfigSetting('structured_data')) break;
 
         // Assorted array of relevant data
         $data = $romanesco->getSchemaOptions();
@@ -76,9 +77,9 @@ switch ($modx->event->name) {
             ->description($data['description'] ?: strip_tags($data['introtext']))
             ->url($data['url'])
             ->inLanguage($romanesco->getContextSetting('cultureKey', 'web'))
-            ->isPartOf([
-                '@id' => $data['siteURL'] . '#website',
-            ])
+            ->isPartOf(Schema::webSite()
+                ->identifier($data['siteURL'] . '#website')
+            )
         ;
 
         if ($data['clientType'] == 'organization') {
@@ -118,6 +119,26 @@ switch ($modx->event->name) {
                 ->email($data['clientEmail'])
             ;
         }
+
+        break;
+
+    case 'OnWebPagePrerender':
+        $graph = &$romanesco->structuredData;
+        $data = $romanesco->getSchemaOptions();
+
+        $modx->runSnippet('structuredDataTheme', ['data' => $data]);
+
+        // Add consolidated JSON-LD graph to the HTML
+        // Setting a placeholder or using regClientStartupHtmlBlock doesn't work
+        //  here, so we're relying on our trusted friend HtmlPageDom again.
+        $content = &$modx->resource->_output;
+        $dom = new HtmlPageCrawler($content);
+
+        $dom->filter('head > script#structured-data')
+            ->setInnerHtml(json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+        ;
+
+        $content = $dom->saveHTML();
 
         break;
 }

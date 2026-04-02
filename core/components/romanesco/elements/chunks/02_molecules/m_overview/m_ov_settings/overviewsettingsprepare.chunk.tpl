@@ -40,3 +40,8 @@
     &operand=`__`
     &then=`$overviewSettingsPrepareMgr`
 ]]]]
+[[structuredDataOverview?
+    &type=`collection`
+    &uid=`[[+prefix]]`
+    &fieldIdx=`[[+field_type_idx]]`
+]]

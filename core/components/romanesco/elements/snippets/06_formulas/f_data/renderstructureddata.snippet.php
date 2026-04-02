@@ -2,6 +2,8 @@
 /**
  * renderStructuredData
  *
+ * NOT USED ANYMORE. ADDING DATA TO HTML IS HANDLED IN PLUGIN AGAIN.
+ *
  * Turn given schema.org properties into a proper JSON-LD array.
  *
  * All types are collected in a central $graph object, which is initiated in the
@@ -34,8 +36,8 @@ try {
 if (!$romanesco->getConfigSetting('structured_data')) return;
 
 // Load global graph
-$data = $romanesco->getSchemaOptions();
 $graph = &$romanesco->structuredData;
+$data = $romanesco->getSchemaOptions();
 
 // Load custom properties
 $modx->runSnippet('structuredDataTheme', ['data' => $data]);
