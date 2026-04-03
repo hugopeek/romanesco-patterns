@@ -76,7 +76,7 @@ switch ($modx->event->name) {
             ->name($data['longtitle'] ?: $data['pagetitle'])
             ->description($data['description'] ?: strip_tags($data['introtext']))
             ->url($data['url'])
-            ->inLanguage($romanesco->getContextSetting('cultureKey', 'web'))
+            ->inLanguage($data['language'])
             ->isPartOf(Schema::webSite()
                 ->identifier($data['siteURL'] . '#website')
             )
@@ -99,12 +99,12 @@ switch ($modx->event->name) {
                 )
                 ->logo(Schema::imageObject()
                     ->identifier($data['siteURL'] . "#logo")
-                    ->url(str_replace("//", "/", $data['siteURL'] . $data['logoPath']))
-                    ->caption($data['siteName'])
+                    ->url($data['siteURL'] . $data['logoPath'])
+                    ->caption($data['siteName'] . " logo")
                 )
                 ->image(Schema::imageObject()
                     ->identifier($data['siteURL'] . "#image")
-
+                    //@todo: which image(s) to fetch here?
                 )
             ;
         }
@@ -134,8 +134,8 @@ switch ($modx->event->name) {
         $content = &$modx->resource->_output;
         $dom = new HtmlPageCrawler($content);
 
-        $dom->filter('head > script#structured-data')
-            ->setInnerHtml(json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+        $dom->filter('script#structured-data')
+            ->setInnerHtml(json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT))
         ;
 
         $content = $dom->saveHTML();

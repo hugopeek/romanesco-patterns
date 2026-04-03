@@ -2,6 +2,16 @@
 /**
  * structuredDataOverview
  *
+ * This multifunctional snippet will build up a CollectionPage object,
+ * containing data from all Overview blocks on the page.
+ *
+ * This snippet can be called multiple times on a page, including within
+ * overview row templates. Always specify the type parameter to ensure the
+ * correct structured data is added to the graph.
+ *
+ * Important: When looping through overview items, the snippet relies on
+ * scriptProperties — not the central schema options — to add each item's data.
+ *
  * @var modX $modx
  * @var array $scriptProperties
  * @var Romanesco $romanesco
