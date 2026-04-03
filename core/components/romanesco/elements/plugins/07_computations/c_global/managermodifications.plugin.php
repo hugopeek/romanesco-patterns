@@ -45,6 +45,7 @@ switch ($modx->event->name) {
         // Load CSS for manager on different event
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/semantic.css?v=' . $versionCSS); # for CB chunk previews
         $modx->regClientCss($modx->getOption('base_url') . 'assets/components/romanescobackyard/css/manager.css?v=' . $versionCSS);
+        $modx->regClientCss($modx->getOption('base_url') . 'assets/semantic/dist/components/icon.min.css?v=' . $versionCSS);
 
         // Load JS and additional dependencies
         $controller->addHtml('<script src="/assets/components/romanescobackyard/js/jquery.min.js"></script>');
