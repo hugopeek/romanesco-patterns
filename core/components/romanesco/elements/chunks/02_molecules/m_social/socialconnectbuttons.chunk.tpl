@@ -1,5 +1,4 @@
-<span class="social connect buttons" vocab="https://schema.org/" typeof="[[++client_type:ucfirst:empty=`Organization`]]">
-    <meta property="name" content="[[++site_name]]">
+<span class="social connect buttons">
     [[migxLoopCollection?
         &packageName=`romanescobackyard`
         &classname=`FractalFarming\Romanesco\Model\SocialConnect`

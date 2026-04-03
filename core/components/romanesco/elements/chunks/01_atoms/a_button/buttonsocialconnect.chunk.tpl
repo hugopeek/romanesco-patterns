@@ -3,7 +3,6 @@
 <a class="ui [[+classes]] icon button [[+channel]]"
    title="[[+title:empty=`[[%romanesco.social.connect_[[+channel]]_[[+entity]]]]`]]"
    target="_blank"
-   href="[[+url:empty=`[[++social_[[+channel]]]]`]]"
-   property="sameAs">
+   href="[[+url:empty=`[[++social_[[+channel]]]]`]]">
     <i class="[[+icon:empty=`[[+channel]]`]] icon"></i>
 </a>
