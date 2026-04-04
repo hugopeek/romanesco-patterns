@@ -20,6 +20,7 @@
  */
 
 use MODX\Revolution\modX;
+use MODX\Revolution\modTemplate;
 use FractalFarming\Romanesco\Romanesco;
 use Spatie\SchemaOrg\Schema;
 use Wa72\HtmlPageDom\HtmlPageCrawler;
@@ -55,10 +56,39 @@ switch ($modx->event->name) {
         }
 
         // Assorted array of relevant data
-        $data = $romanesco->getSchemaOptions();
+        $data = $romanesco->getSchemaOptions([
+            'pageType' => 'WebPage',
+            'orgType' => 'Organization',
+        ]);
 
         // Reference the graph object initialized in the Romanesco class
         $graph = &$romanesco->structuredData;
+
+        // Establish the kind of template being used
+        $query = $modx
+            ->newQuery(modTemplate::class, [
+                'id' => $modx->resource->get('template')
+            ])
+            ->select('templatename')
+            ->prepare()
+        ;
+        $template = $modx->getValue($query);
+
+        // Set appropriate page type for each template
+        switch ($template) {
+            case str_contains($template, 'Overview'):
+                $data['pageType'] = 'CollectionPage';
+                break;
+            case str_contains($template, 'Detail'):
+                $data['pageType'] = 'WebPage';
+                break;
+            case str_contains($template, 'Article'):
+                $data['pageType'] = 'Article';
+                break;
+            case str_contains($template, 'Person'):
+                $data['pageType'] = 'ProfilePage';
+                break;
+        }
 
         // Add initial data types to each page
         $graph
