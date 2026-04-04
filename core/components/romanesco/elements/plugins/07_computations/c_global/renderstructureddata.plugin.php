@@ -91,64 +91,68 @@ switch ($modx->event->name) {
         }
 
         // Add initial data types to each page
+        // Website and Organization are only added on homepage
+        if ($modx->resource->get('id') == $data['siteStart']) {
+            $graph
+                ->webSite()
+                ->identifier($data['siteURL'] . "#website")
+                ->name($data['siteName'])
+                ->url($data['siteURL'])
+                ->publisher(Schema::{$data['clientType']}()
+                    ->identifier($data['siteURL'] . '#' . $data['clientType'])
+                )
+            ;
+            if ($data['clientType'] == 'organization') {
+                $graph
+                    ->{$data['orgType']}()
+                    ->identifier($data['siteURL'] . '#organization')
+                    ->name($data['siteName'])
+                    ->url($data['siteURL'])
+                    ->telephone($data['clientPhone'])
+                    ->email($data['clientEmail'])
+                    ->address(Schema::postalAddress()
+                        ->streetAddress($data['clientAddressStreet'])
+                        ->addressLocality($data['clientAddressLocality'])
+                        ->addressRegion($data['clientAddressRegion'])
+                        ->addressCountry($data['clientAddressCountry'])
+                        ->postalCode($data['clientAddressPostcode'])
+                    )
+                    ->logo(Schema::imageObject()
+                        ->identifier($data['siteURL'] . "#logo")
+                        ->url($data['siteURL'] . $data['logoPath'])
+                        ->caption($data['siteName'] . " logo")
+                    )
+                    ->image(Schema::imageObject()
+                        ->identifier($data['siteURL'] . "#image")
+                        //@todo: which image(s) to fetch here?
+                    )
+                ;
+            }
+            //@todo: Person type is not correct here
+            if ($data['clientType'] == 'person') {
+                $graph
+                    ->person()
+                    ->identifier($data['siteURL'] . '#person')
+                    ->name($data['siteName'])
+                    ->url($data['siteURL'])
+                    ->telephone($data['clientPhone'])
+                    ->email($data['clientEmail'])
+                ;
+            }
+        }
+
+        // Web page
         $graph
-            ->webSite()
-            ->identifier($data['siteURL'] . "#website")
-            ->name($data['siteName'])
-            ->url($data['siteURL'])
-            ->publisher(Schema::{$data['clientType']}()
-                ->identifier($data['siteURL'] . '#' . $data['clientType'])
-            )
-        ;
-        $graph
-            ->webPage()
+            ->{$data['pageType']}()
             ->identifier($data['url'])
             ->name($data['longtitle'] ?: $data['pagetitle'])
             ->description($data['description'] ?: strip_tags($data['introtext']))
             ->url($data['url'])
-            ->inLanguage($data['language'])
+            ->inLanguage($data['cultureKey'])
             ->isPartOf(Schema::webSite()
                 ->identifier($data['siteURL'] . '#website')
             )
         ;
-
-        if ($data['clientType'] == 'organization') {
-            $graph
-                ->organization()
-                ->identifier($data['siteURL'] . '#organization')
-                ->name($data['siteName'])
-                ->url($data['siteURL'])
-                ->telephone($data['clientPhone'])
-                ->email($data['clientEmail'])
-                ->address(Schema::postalAddress()
-                    ->streetAddress($data['clientAddressStreet'])
-                    ->addressLocality($data['clientAddressLocality'])
-                    ->addressRegion($data['clientAddressRegion'])
-                    ->addressCountry($data['clientAddressCountry'])
-                    ->postalCode($data['clientAddressPostcode'])
-                )
-                ->logo(Schema::imageObject()
-                    ->identifier($data['siteURL'] . "#logo")
-                    ->url($data['siteURL'] . $data['logoPath'])
-                    ->caption($data['siteName'] . " logo")
-                )
-                ->image(Schema::imageObject()
-                    ->identifier($data['siteURL'] . "#image")
-                    //@todo: which image(s) to fetch here?
-                )
-            ;
-        }
-
-        if ($data['clientType'] == 'person') {
-            $graph
-                ->person()
-                ->identifier($data['siteURL'] . '#person')
-                ->name($data['siteName'])
-                ->url($data['siteURL'])
-                ->telephone($data['clientPhone'])
-                ->email($data['clientEmail'])
-            ;
-        }
 
         break;
 
