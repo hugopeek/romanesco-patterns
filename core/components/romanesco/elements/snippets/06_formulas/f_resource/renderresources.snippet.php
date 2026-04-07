@@ -61,7 +61,12 @@
  * resources being summarized + first - 1]
  * outputSeparator - (Opt) An optional string to separate each tpl instance [default="\n"]
  *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
+
+use MODX\Revolution\modX;
+
 if (!function_exists('getDivisors')) {
     function getDivisors($integer) {
         $divisors = array();
@@ -400,9 +405,15 @@ $currentResourceIdentifier = $modx->resourceIdentifier;
 $currentElementCache = $modx->elementCache;
 
 // CUSTOM
-// Output script properties as placeholder
-foreach ($scriptProperties as $scriptProperty => $value) {
-    $modx->setPlaceholder($scriptProperty, $value);
+// Set host and script properties as placeholder
+$hostProperties = [];
+$prefix = $modx->getOption('prefix', $scriptProperties, 'host.');
+$hostProperties = $currentResource->toArray();
+foreach ($hostProperties as $property => $value) {
+    $modx->setPlaceholder($prefix . $property, $value);
+}
+foreach ($scriptProperties as $property => $value) {
+    $modx->setPlaceholder($property, $value);
 }
 
 /** @var modResource $resource */
@@ -468,9 +479,12 @@ $modx->resourceIdentifier = $currentResourceIdentifier;
 $modx->resource = $currentResource;
 
 // CUSTOM
-// Unset placeholders, so they don't spill over into the resource
-foreach ($scriptProperties as $scriptProperty => $value) {
-    $modx->unsetPlaceholder($scriptProperty);
+// Unset placeholders, so they don't spill over into the host resource itself
+foreach ($hostProperties as $property => $value) {
+    $modx->unsetPlaceholder($prefix . $property);
+}
+foreach ($scriptProperties as $property => $value) {
+    $modx->unsetPlaceholder($property);
 }
 
 /* output */

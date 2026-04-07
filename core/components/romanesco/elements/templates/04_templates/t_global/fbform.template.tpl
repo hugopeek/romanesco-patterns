@@ -17,7 +17,7 @@
     !FormItRetriever?
         &placeholderPrefix=``
         &storeLocation=`session`
-        &redirectToOnNotFound=`[[+first_step:isnot=`[[+host_id]]`:then=`[[+first_step]]`:else=``]]`
+        &redirectToOnNotFound=`[[+first_step:isnot=`[[+form_host.id]]`:then=`[[+first_step]]`:else=``]]`
     `
 ]]]]
 
@@ -64,7 +64,7 @@
 </div>
 `]]
 
-<form id="form-[[*alias]]" class="ui [[+form_size]] [[+form_layout:eq=`inline`:then=`equal width`]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+host_id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
+<form id="form-[[*alias]]" class="ui [[+form_size]] [[+form_layout:eq=`inline`:then=`equal width`]] [[+segment_type:eq=`none`:then=`basic`]] form" name="fb[[*id]]" action="[[~[[+form_host.id:empty=`0`]]]]" method="post" enctype="multipart/form-data">
 
     [[- STORE MULTI-PAGE FORM VALUES IN HIDDEN FIELDS ]]
     [[[[+multiple_steps:notempty=`

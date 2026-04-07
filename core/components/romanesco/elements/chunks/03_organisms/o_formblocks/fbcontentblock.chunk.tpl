@@ -7,11 +7,9 @@
 [[[[++formblocks.ajax_mode:eq=`1`:then=``:else=`!`]]renderResources?
     &parents=`-1`
     &resources=`[[+form_id]]`
+    &prefix=`form_host.`
 
     &form_id=`[[+form_id]]`
-    &host_id=`[[*id]]`
-    &host_pagetitle=`[[*pagetitle]]`
-    &host_menutitle=`[[*menutitle]]`
     &form_size=`[[+form_size]]`
     &form_layout=`[[+form_layout]]`
     &segment_type=`[[+segment_type]]`
