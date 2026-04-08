@@ -475,6 +475,12 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Add correct action to form if none is set
+        // This is a workaround to keep forms working inside CTAs.
+        $dom->filter('form[id*="form-"][action=""]')
+            ->setAttribute('action', $modx->makeUrl($modx->resource->get('id')))
+        ;
+
         // Disable steps following an active step
         $dom->filter('.ui.consecutive.steps .active.step')
             ->each(function (HtmlPageCrawler $step) {
