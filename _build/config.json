@@ -15126,7 +15126,8 @@
                     ],
                     "category": "c_global",
                     "events": [
-                        "OnLoadWebDocument"
+                        "OnLoadWebDocument",
+                        "OnWebPagePrerender"
                     ]
                 },
                 {
