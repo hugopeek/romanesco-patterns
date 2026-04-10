@@ -17,7 +17,9 @@
  */
 
 // source file
-$cssUrl = $modx->getOption('cssUrl', $scriptProperties, 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+use FractalFarming\Romanesco\Romanesco;
+
+$cssUrl = $modx->getOption('cssUrl', $scriptProperties, 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css');
 // scan options
 $regexPrefix = $modx->getOption('regexPrefix', $scriptProperties, 'fa-');
 // label text output options
@@ -36,7 +38,7 @@ if (empty($separator)) {
 }
 $excludeClasses = array_filter(array_map('trim', explode(',', $modx->getOption('excludeClasses', $scriptProperties, 'ul,li'))));
 // check cache
-$cacheKey = $modx->getOption('cacheKey', $scriptProperties, 'fontawesomecsssource');
+$cacheKey = $modx->getOption('cacheKey', $scriptProperties, 'icons_css');
 $provider = $modx->cacheManager->getCacheProvider('default');
 $css = $provider->get($cacheKey);
 if (!$css) {
@@ -62,4 +64,41 @@ if (preg_match_all($regex, $css, $matches)) {
         $output[] = $label . $operator . $icon . $outputPrefix;
     }
 }
+// custom social media classes
+if ($modx->romanesco instanceof Romanesco) {
+    // check cache
+    $cacheKey = $modx->getOption('cacheKey', $scriptProperties, 'icons_social');
+    $provider = $modx->cacheManager->getCacheProvider('default');
+    $socialIcons = $provider->get($cacheKey);
+    if (!$socialIcons) {
+        $socialShare = $modx->getCollection('FractalFarming\Romanesco\Model\SocialShare', ['deleted' => 0]);
+        $socialConnect = $modx->getCollection('FractalFarming\Romanesco\Model\SocialConnect', ['deleted' => 0]);
+        $socialIcons = [];
+        foreach ($socialShare as $channel) {
+            $name = $channel->get('name');
+            $icon = $channel->get('icon');
+            $alias = $modx->filterPathSegment($name);
+            $class = $icon ?: $alias;
+            $socialIcons[$modx->filterPathSegment($class)] = [
+                'label' => $name,
+                'class' => $class,
+            ];
+        }
+        foreach ($socialConnect as $channel) {
+            $name = $channel->get('name');
+            $icon = $channel->get('icon');
+            $alias = $modx->filterPathSegment($name);
+            $class = $icon ?: $alias;
+            $socialIcons[$modx->filterPathSegment($class)] = [
+                'label' => $name,
+                'class' => $class,
+            ];
+        }
+        $provider->set($cacheKey, $socialIcons, 0);
+    }
+    foreach($socialIcons as $icon) {
+        $output[] = $icon['label'] . $operator . $icon['class'] . $outputPrefix;
+    }
+}
+
 return implode($separator, $output);
