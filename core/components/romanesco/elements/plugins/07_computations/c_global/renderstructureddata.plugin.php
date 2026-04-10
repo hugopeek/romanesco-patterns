@@ -26,7 +26,7 @@ use Spatie\SchemaOrg\Schema;
 use Wa72\HtmlPageDom\HtmlPageCrawler;
 
 if (!($modx->romanesco instanceof Romanesco)) {
-    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] Romanesco service has wrong type');
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Romanesco3x] Romanesco service could not be loaded');
     return;
 }
 $romanesco = $modx->romanesco;
@@ -169,7 +169,7 @@ switch ($modx->event->name) {
         $dom = new HtmlPageCrawler($content);
 
         $dom->filter('script#structured-data')
-            ->setInnerHtml(json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT))
+            ->setInnerHtml(json_encode($graph, JSON_UNESCAPED_SLASHES))
         ;
 
         $content = $dom->saveHTML();
