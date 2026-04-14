@@ -20,8 +20,10 @@
  */
 
 use MODX\Revolution\modX;
+use MODX\Revolution\modChunk;
 use MODX\Revolution\modTemplate;
 use FractalFarming\Romanesco\Romanesco;
+use FractalFarming\Romanesco\Model\SocialConnectResource;
 use Spatie\SchemaOrg\Schema;
 use Wa72\HtmlPageDom\HtmlPageCrawler;
 
@@ -96,10 +98,10 @@ switch ($modx->event->name) {
             'orgType' => 'Organization',
         ];
 
-        // Reference the graph object initialized in the Romanesco class
-        $graph = &$romanesco->structuredData;
+        // Initialize main types
+        $webPage = Schema::webPage();
 
-        // Establish the kind of template being used
+        // Set appropriate data for each template
         $query = $modx
             ->newQuery(modTemplate::class, [
                 'id' => $modx->resource->get('template')
@@ -109,23 +111,75 @@ switch ($modx->event->name) {
         ;
         $template = $modx->getValue($query);
 
-        // Set appropriate page type for each template
         switch ($template) {
             case str_contains($template, 'Overview'):
                 $data['pageType'] = 'CollectionPage';
                 break;
+
             case str_contains($template, 'Detail'):
                 $data['pageType'] = 'WebPage';
                 break;
+
             case str_contains($template, 'Article'):
                 $data['pageType'] = 'Article';
                 break;
+
             case str_contains($template, 'Person'):
                 $data['pageType'] = 'ProfilePage';
+
+                // Get profile picture
+                $data['personImage'] = '';
+                if ($image = $modx->resource->getTVValue('person_image')) {
+                    $imagePath = $modx->runSnippet('ImagePlus', [
+                        'value' => $image,
+                        'options' => 'w=800&q=85&zc=1',
+                    ]);
+                    $data['personImage'] = $data['siteURL'] . ltrim($imagePath, '/');
+                }
+
+                // Get social connections attached to resource
+                $data['sameAs'] = [];
+                $socialConnections = $modx->getCollection(SocialConnectResource::class, [
+                    'parent_id' => $modx->resource?->get('id'),
+                ]);
+                foreach ($socialConnections as $connection) {
+                    $urlContent = $connection->get('url');
+                    $chunk = $modx->newObject(modChunk::class);
+                    $chunk->setContent($urlContent);
+                    $chunk->setCacheable(false);
+                    $data['sameAs'][] = $chunk->process([
+                        'username' => $connection->get('username'),
+                    ]);
+                }
+
+                // Get data from TVs
+                $data[] = [
+                    'personFirstname' => $modx->resource->getTVValue('person_firstname') ?? '',
+                    'personLastname' => $modx->resource->getTVValue('person_lastname') ?? '',
+                    'personJobtitle' => $modx->resource->getTVValue('person_jobtitle') ?? '',
+                    'personEmail' => $modx->resource->getTVValue('contact_email') ?? '',
+                    'personPhone' => $modx->resource->getTVValue('contact_phone') ?? '',
+                ];
+
+                $webPage = Schema::profilePage();
+                $webPage
+                    ->mainEntity(Schema::person()
+                        ->name($data['pagetitle'])
+                        ->email($data['personEmail'])
+                        ->telephone($data['personPhone'])
+                        ->jobTitle($data['personJobtitle'])
+                        ->sameAs($data['sameAs'])
+                        ->image(Schema::imageObject()
+                            ->url($data['personImage'])
+                        )
+                    )
+                ;
                 break;
         }
 
-        // Add initial data types to each page
+        // Reference the graph object initialized in the Romanesco class
+        $graph = &$romanesco->structuredData;
+
         // Website and Organization are only added on homepage
         if ($modx->resource->get('id') == $data['siteStart']) {
             $graph
@@ -177,17 +231,20 @@ switch ($modx->event->name) {
         }
 
         // Web page
-        $graph
-            ->{$data['pageType']}()
+        $webPage
             ->identifier($data['url'])
-            ->name($data['longtitle'] ?: $data['pagetitle'])
-            ->description($data['description'] ?: strip_tags($data['introtext']))
+            ->name($data['longtitle'] ?? $data['pagetitle'])
+            ->description($data['description'] ?? strip_tags($data['introtext']))
             ->url($data['url'])
             ->inLanguage($data['cultureKey'])
             ->isPartOf(Schema::webSite()
                 ->identifier($data['siteURL'] . '#website')
             )
         ;
+        $graph->add($webPage);
+
+        // Store options array for reuse
+        $romanesco->setSchemaOptions($data);
 
         break;
 
@@ -195,6 +252,7 @@ switch ($modx->event->name) {
         $graph = &$romanesco->structuredData;
         $data = $romanesco->getSchemaOptions();
 
+        // Load custom data (runsnippet doesn't run if snippet doesn't snip)
         $modx->runSnippet('structuredDataTheme', ['data' => $data]);
 
         // Add consolidated JSON-LD graph to the HTML
