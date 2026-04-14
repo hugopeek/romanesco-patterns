@@ -55,11 +55,46 @@ switch ($modx->event->name) {
             }
         }
 
+        // Get media source ID for logo path setting
+        $cgSetting = $modx->getObject('cgSetting', ['key' => 'logo_path']);
+        $logoPathMediaSourceID = (int)$cgSetting?->get('source') ?? '';
+
         // Assorted array of relevant data
-        $data = $romanesco->getSchemaOptions([
+        $data = [
+            // System / context
+            'siteStart' => $modx->getOption('site_start'),
+            'siteName' => $modx->getOption('site_name'),
+            'siteURL' => $modx->getOption('site_url'),
+            'httpHost' => $modx->getOption('http_host'),
+            'cultureKey' => $romanesco->getContextSetting('cultureKey', $modx->resource->get('context_key') ?? 'web', 'en'),
+
+            // ClientConfig
+            'clientType' => $romanesco->getConfigSetting('client_type'),
+            'clientPhone' => $romanesco->getConfigSetting('client_phone'),
+            'clientEmail' => $romanesco->getConfigSetting('client_email'),
+            'clientAddressStreet' => $romanesco->getConfigSetting('client_address_street'),
+            'clientAddressLocality' => $romanesco->getConfigSetting('client_address_locality'),
+            'clientAddressRegion' => $romanesco->getConfigSetting('client_address_region'),
+            'clientAddressCountry' => $romanesco->getConfigSetting('client_address_country'),
+            'clientAddressPostcode' => $romanesco->getConfigSetting('client_address_postcode'),
+            'clientAddressExtended' => $romanesco->getConfigSetting('client_address_extended'),
+            'logoPath' => $romanesco->getMediaSourcePath($logoPathMediaSourceID, $romanesco->getConfigSetting('logo_path')),
+
+            // Resource (if available)
+            'pagetitle' => $modx->resource->get('pagetitle') ?? '',
+            'longtitle' => $modx->resource->get('longtitle') ?? '',
+            'menutitle' => $modx->resource->get('menutitle') ?? '',
+            'description' => $modx->resource->get('description') ?? '',
+            'introtext' => strip_tags($modx->resource->get('introtext')) ?? '',
+            'url' => $modx->resource->get('id') ? $modx->makeUrl($modx->resource->get('id'), null, null, 'full') : '',
+            'context' => $modx->resource->get('context_key') ?? '',
+            'publishedon' => $modx->resource->get('publishedon') ?? '',
+            'editedon' => $modx->resource->get('editedon') ?? '',
+
+            // Schema types
             'pageType' => 'WebPage',
             'orgType' => 'Organization',
-        ]);
+        ];
 
         // Reference the graph object initialized in the Romanesco class
         $graph = &$romanesco->structuredData;
