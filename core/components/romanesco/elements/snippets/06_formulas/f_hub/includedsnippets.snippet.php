@@ -14,14 +14,12 @@ $string = $input;
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 
 // Create a list with all available snippets
-$snippetList = $modx->runSnippet('Rowboat', (array(
-    'table' => 'modx_site_snippets',
-    'tpl' => 'rawName',
-    'limit' => '0',
-    'columns' => '{ "name":"" }',
-    'outputSeparator' => '|'
-)
-));
+$snippets = $modx->getCollection('MODX\Revolution\modSnippet', []);
+$snippetList = [];
+foreach ($snippets as $snippet) {
+    $snippetList[] = $snippet->get('name');
+}
+$snippetList = implode('|', $snippetList);
 
 // Find included snippets by comparing them to the list
 $regex = '"(' . $snippetList . ')"';

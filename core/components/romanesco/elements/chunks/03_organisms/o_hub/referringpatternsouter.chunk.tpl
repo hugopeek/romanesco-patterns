@@ -4,7 +4,7 @@
         What all these snippet calls do, is query the database tables of each element type
         and look for signs of the given pattern name.
 
-        All Rowboat calls are nested into their parent If call using the mosquito technique.
+        All migxLoopCollection calls are nested into their parent If call using the mosquito technique.
         This ensures that no database queries are being performed unless the If criteria are met.
     ]]
 
@@ -20,8 +20,8 @@
         &operator=`inarray`
         &operand=`[[+pattern_list]]`
         &then=`
-            Rowboat?
-                &table=`modx_site_tmplvar_templates`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modTemplate`
                 &tpl=`assignedTemplatesRow`
                 &limit=`0`
                 &where=`{ "tmplvarid":"[[+tmplvarid]]" }`
@@ -34,8 +34,8 @@
         &operator=`inarray`
         &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism`
         &then=`
-            Rowboat?
-                &table=`modx_site_tmplvars`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modTemplateVar`
                 &tpl=`includedPatternsRow`
                 &sortBy=`name`
                 &limit=`0`
@@ -49,8 +49,8 @@
         &operator=`inarray`
         &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
-            Rowboat?
-                &table=`modx_site_htmlsnippets`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modChunk`
                 &tpl=`includedPatternsRow`
                 &sortBy=`static_file`
                 &limit=`0`
@@ -64,8 +64,8 @@
         &operator=`inarray`
         &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
-            Rowboat?
-                &table=`modx_site_snippets`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modSnippet`
                 &tpl=`includedPatternsRow`
                 &sortBy=`name`
                 &limit=`0`
@@ -79,8 +79,8 @@
         &operator=`inarray`
         &operand=`patternLayoutElectronTV,patternLayoutElectronSS,patternLayoutElectronCC,patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism,patternLayoutFormula`
         &then=`
-            Rowboat?
-                &table=`modx_site_templates`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modTemplate`
                 &tpl=`includedTemplatesRow`
                 &sortBy=`templatename`
                 &limit=`0`
@@ -94,8 +94,8 @@
         &operator=`inarray`
         &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism`
         &then=`
-            Rowboat?
-                &table=`modx_site_content`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modResource`
                 &tpl=`includedPagesRow`
                 &limit=`0`
                 &where=`{ "properties:LIKE":"%$[[+pattern_name]]%", "id:NOT LIKE":"[[*id]]", "published:=":"1" }`
@@ -108,8 +108,8 @@
         &operator=`inarray`
         &operand=`patternLayoutTemplate`
         &then=`
-            Rowboat?
-                &table=`modx_site_content`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modResource`
                 &tpl=`includedPagesRow`
                 &limit=`0`
                 &where=`{ "content:LIKE":"%[[+pattern_name]]%" }`
@@ -122,8 +122,8 @@
         &operator=`eq`
         &operand=`patternLayoutBosonField`
         &then=`
-            Rowboat?
-                &table=`modx_site_content`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modResource`
                 &tpl=`rawID`
                 &limit=`0`
                 &where=`{ "properties:LIKE":"%field__:[[+pattern_id]]___settings%" }`
@@ -137,8 +137,8 @@
         &operator=`eq`
         &operand=`patternLayoutBosonLayout`
         &then=`
-            Rowboat?
-                &table=`modx_site_content`
+            migxLoopCollection?
+                &classname=`MODX\Revolution\modResource`
                 &tpl=`rawID`
                 &limit=`0`
                 &where=`{ "properties:LIKE":"%layout__:[[+pattern_id]]___content%" }`

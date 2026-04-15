@@ -1,8 +1,6 @@
-[[!Rowboat?
-    &table=`modx_hits`
+[[!migxLoopCollection?
+    &packageName=`hits`
+    &classname=`Hit`
     &tpl=`hitCount`
-    &limit=`1`
-    &columns=`hit_count`
     &where=`{"hit_key":"[[+id]]"}`
-    &cacheResults=`0`
 ]]

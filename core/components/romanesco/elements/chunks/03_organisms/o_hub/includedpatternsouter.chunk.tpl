@@ -3,8 +3,8 @@
     &operator=`inarray`
     &operand=`patternLayoutAtom,patternLayoutMolecule,patternLayoutOrganism`
     &then=`
-        Rowboat?
-            &table=`modx_site_htmlsnippets`
+        migxLoopCollection?
+            &classname=`MODX\Revolution\modChunk`
             &tpl=`displayRawElement`
             &where=`{"name":"[[+pattern_name]]"}`
             &toPlaceholder=`[[+prefix]].raw_element`
@@ -16,8 +16,8 @@
     &operator=`eq`
     &operand=`patternLayoutTemplate`
     &then=`
-        Rowboat?
-            &table=`modx_site_templates`
+        migxLoopCollection?
+            &classname=`MODX\Revolution\modTemplate`
             &tpl=`displayRawTemplate`
             &where=`{"templatename":"[[+pattern_name]]"}`
             &toPlaceholder=`[[+prefix]].raw_element`
@@ -29,8 +29,8 @@
     &operator=`eq`
     &operand=`patternLayoutFormula`
     &then=`
-        Rowboat?
-            &table=`modx_site_snippets`
+        migxLoopCollection?
+            &classname=`MODX\Revolution\modSnippet`
             &tpl=`displayRawElement`
             &where=`{"name":"[[+pattern_name]]"}`
             &toPlaceholder=`[[+prefix]].raw_element`
@@ -42,8 +42,8 @@
     &operator=`eq`
     &operand=`patternLayoutComputation`
     &then=`
-        Rowboat?
-            &table=`modx_site_plugins`
+        migxLoopCollection?
+            &classname=`MODX\Revolution\modPlugin`
             &tpl=`displayRawPlugin`
             &where=`{"name":"[[+pattern_name]]"}`
             &toPlaceholder=`[[+prefix]].raw_element`
@@ -55,8 +55,9 @@
     &operator=`eq`
     &operand=`patternLayoutBosonField`
     &then=`
-        Rowboat?
-            &table=`modx_contentblocks_field`
+        migxLoopCollection?
+            &packageName=`contentblocks`
+            &classname=`cbField`
             &tpl=`displayRawContentBlock`
             &where=`{"id":"[[+pattern_id]]","parent":"0"}`
             &toPlaceholder=`[[+prefix]].raw_element`
@@ -68,8 +69,9 @@
     &operator=`eq`
     &operand=`patternLayoutBosonLayout`
     &then=`
-        Rowboat?
-            &table=`modx_contentblocks_layout`
+        migxLoopCollection?
+            &packageName=`contentblocks`
+            &classname=`cbLayout`
             &tpl=`displayRawContentBlock`
             &where=`{"id":"[[+pattern_id]]"}`
             &toPlaceholder=`[[+prefix]].raw_element`

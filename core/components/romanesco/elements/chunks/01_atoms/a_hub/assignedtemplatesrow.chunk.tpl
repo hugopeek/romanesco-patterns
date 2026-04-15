@@ -1,6 +1,6 @@
-[[Rowboat?
-    &table=`modx_site_templates`
+[[migxLoopCollection?
+    &classname=`MODX\Revolution\modTemplate`
     &tpl=`includedTemplatesRow`
-    &where=`{ "id":"[[+templateid]]" }`
+    &where=`{"id":"[[+templateid]]"}`
     &uid=`[[+id]]_[[+idx]]`
 ]]
