@@ -29,14 +29,14 @@ $showSource = $modx->getOption('showSource', $scriptProperties, 1);
 $optionsDelimiter = $modx->getOption('optionsDelimiter', $scriptProperties, '<br>');
 
 // Get the TV by name
-$tv = $modx->getObject('modTemplateVar', array('name'=>$tvName));
+$tv = $modx->getObject('MODX\Revolution\modTemplateVar', array('name'=>$tvName));
 
 if (!is_object($tv)) {
     return '';
 }
 
 // Render category name for clarity
-$query = $modx->newQuery('modCategory', array(
+$query = $modx->newQuery('MODX\Revolution\modCategory', array(
     'id' => $tv->get('category')
 ));
 $query->select('category');
@@ -45,7 +45,7 @@ $catName = $modx->getValue($query->prepare());
 // Render media source name for clarity
 $sourceID = $tv->get('source');
 if ($sourceID != false) {
-    $query = $modx->newQuery('modMediaSource', array(
+    $query = $modx->newQuery('MODX\Revolution\Sources\modMediaSource', array(
         'id' => $sourceID
     ));
     $query->select('name');
