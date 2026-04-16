@@ -1,13 +1,27 @@
 # Changelog for the Romanesco pattern library
 
 ## Romanesco Patterns 1.0.0-rc4
-Released on ...
+Released on April 16, 2026
+
+New features:
+- Migrate FormBlocks multiple uploads field to latest AjaxUpload version
+- Migrate, improve and expand rendering of structured data
 
 Fixes and improvements:
+- Remove Rowboat dependency
+- Load custom social channel classes in icon input lists
+- Avoid undefined variable errors in renderResources snippet
+- Add correct action to form if embedded in CTA
+- Avoid collisions between CTA and FormBlocks placeholders
+- Set structured data page type per template
+- Avoid unrelated type value leaking into social connect buttons
+- Remove microdata from social connect buttons
+- Load FUI icon CSS in manager
+- Don't show more overview items in manager preview than limit value
+- Add structured data for Overviews
+- Consolidate structured data for multiple FAQ blocks in single object
 - Load structured and opengraph data conditionally
-- Migrate and expand rendering of structured data
 - Fix 'multiple' indicator in FormBlocks dropdown select fields
-- Migrate FormBlocks multiple uploads field to latest AjaxUpload version
 - Load site CSS in manager for global background previews
 
 ## Romanesco Patterns 1.0.0-rc3
