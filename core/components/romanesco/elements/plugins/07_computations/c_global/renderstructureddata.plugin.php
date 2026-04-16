@@ -138,16 +138,24 @@ switch ($modx->event->name) {
                 }
 
                 // Get social connections attached to resource
-                $data['sameAs'] = [];
+                $resourceFields = $modx->resource->toArray();
+                $templateVars = $modx->resource->getTemplateVars();
+                foreach ($templateVars as $tv) {
+                    $resourceFields[$tv->get('name')] = $tv->get('value');
+                }
                 $socialConnections = $modx->getCollection(SocialConnectResource::class, [
-                    'parent_id' => $modx->resource?->get('id'),
+                    'parent_id' => $modx->resource->get('id'),
                 ]);
+                $data['sameAs'] = [];
                 foreach ($socialConnections as $connection) {
                     $urlContent = $connection->get('url');
                     $chunk = $modx->newObject(modChunk::class);
                     $chunk->setContent($urlContent);
+                    $chunk->setProperties($resourceFields);
                     $chunk->setCacheable(false);
                     $data['sameAs'][] = $chunk->process([
+                        'name' => $connection->get('name'),
+                        'title' => $connection->get('title'),
                         'username' => $connection->get('username'),
                     ]);
                 }
