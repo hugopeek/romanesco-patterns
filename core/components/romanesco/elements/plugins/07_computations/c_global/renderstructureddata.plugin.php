@@ -269,8 +269,13 @@ switch ($modx->event->name) {
         $content = &$modx->resource->_output;
         $dom = new HtmlPageCrawler($content);
 
+        // Minify the output based on config setting
+        $flags = JSON_UNESCAPED_SLASHES;
+        if (!$romanesco->getConfigSetting('minify_css_js')) {
+            $flags |= JSON_PRETTY_PRINT;
+        }
         $dom->filter('script#structured-data')
-            ->setInnerHtml(json_encode($graph, JSON_UNESCAPED_SLASHES))
+            ->setInnerHtml(json_encode($graph, $flags))
         ;
 
         $content = $dom->saveHTML();
