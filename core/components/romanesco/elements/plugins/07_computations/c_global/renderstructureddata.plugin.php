@@ -23,6 +23,7 @@ use MODX\Revolution\modX;
 use MODX\Revolution\modChunk;
 use MODX\Revolution\modTemplate;
 use FractalFarming\Romanesco\Romanesco;
+use FractalFarming\Romanesco\Model\SocialConnect;
 use FractalFarming\Romanesco\Model\SocialConnectResource;
 use Spatie\SchemaOrg\Schema;
 use Wa72\HtmlPageDom\HtmlPageCrawler;
@@ -145,6 +146,7 @@ switch ($modx->event->name) {
                 }
                 $socialConnections = $modx->getCollection(SocialConnectResource::class, [
                     'parent_id' => $modx->resource->get('id'),
+                    'active' => 1
                 ]);
                 $data['sameAs'] = [];
                 foreach ($socialConnections as $connection) {
@@ -200,6 +202,23 @@ switch ($modx->event->name) {
                 )
             ;
             if ($data['clientType'] == 'organization') {
+                $socialConnections = $modx->getCollection(SocialConnect::class, [
+                    'parent_id' => 0,
+                    'active' => 1
+                ]);
+                $data['sameAs'] = [];
+                foreach ($socialConnections as $connection) {
+                    $urlContent = $connection->get('url');
+                    $chunk = $modx->newObject(modChunk::class);
+                    $chunk->setContent($urlContent);
+                    $chunk->setCacheable(false);
+                    $data['sameAs'][] = $chunk->process([
+                        'name' => $connection->get('name'),
+                        'title' => $connection->get('title'),
+                        'username' => $connection->get('username'),
+                    ]);
+                }
+
                 $graph
                     ->{$data['orgType']}()
                     ->identifier($data['siteURL'] . '#organization')
@@ -207,6 +226,7 @@ switch ($modx->event->name) {
                     ->url($data['siteURL'])
                     ->telephone($data['clientPhone'])
                     ->email($data['clientEmail'])
+                    ->sameAs($data['sameAs'])
                     ->address(Schema::postalAddress()
                         ->streetAddress($data['clientAddressStreet'])
                         ->addressLocality($data['clientAddressLocality'])
