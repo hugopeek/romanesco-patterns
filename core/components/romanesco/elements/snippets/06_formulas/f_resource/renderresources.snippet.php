@@ -396,7 +396,7 @@ if (!empty($debug)) {
 $collection = $modx->getCollection('modResource', $criteria, $dbCacheFlag);
 
 $idx = !empty($idx) && $idx !== '0' ? (integer) $idx : 1;
-$first = isset($first) && empty($first) ? 1 : (integer) $first;
+$first = !empty($first) ? (integer) $first : 1;
 $last = empty($last) ? (count($collection) + $idx - 1) : (integer) $last;
 
 $maxIterations = empty($maxIterations) || (integer) $maxIterations < 1 ? 10 : (integer) $maxIterations;
