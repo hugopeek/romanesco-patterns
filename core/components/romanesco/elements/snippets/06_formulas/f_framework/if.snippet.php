@@ -108,6 +108,12 @@ if (isset($subject)) {
             case 'includes':
                 $output = strpos($subject,$operand) !== false ? $then : (isset($else) ? $else : '');
                 break;
+            case 'startswith':
+                $output = str_starts_with($subject,$operand) !== false ? $then : (isset($else) ? $else : '');
+                break;
+            case 'endswith':
+                $output = str_ends_with($subject,$operand) !== false ? $then : (isset($else) ? $else : '');
+                break;
             case 'numeric':
             case 'isnumeric':
                 $output = is_numeric($subject) !== false ? $then : (isset($else) ? $else : '');
