@@ -321,7 +321,7 @@ switch ($modx->event->name) {
         // Display bullets above list items in centered lists
         $dom->filter('.ui[class*="center aligned"]')
             ->each(function(HtmlPageCrawler $container) {
-                $container->filter('.ui.list')->addClass('vertical');
+                $container->filter('.ui.list:not(.horizontal)')->addClass('vertical');
                 $container->filter('.aligned:not(.center) .ui.vertical.list')->removeClass('vertical');
             })
         ;
