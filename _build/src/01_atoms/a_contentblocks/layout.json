@@ -120,6 +120,19 @@
                     ],
                     "category": "a_cb_layout"
                 },{
+                    "name": "cbLayoutSliderButtonPosition",
+                    "description": "",
+                    "properties": [
+                        {
+                            "name": "elementStatus",
+                            "value": "review"
+                        },{
+                            "name": "elementPreview",
+                            "value": ""
+                        }
+                    ],
+                    "category": "a_cb_layout"
+                },{
                     "name": "cbLayoutSliderPagination",
                     "description": "",
                     "properties": [
