@@ -391,6 +391,18 @@ switch ($modx->event->name) {
             })
         ;
 
+        // Positioning of nav buttons relative to nested slider
+        $dom->filter('.nested.slider')
+            ->each(function (HtmlPageCrawler $slider) {
+                if ($slider->filter('button.outside.compact')->count() > 0) {
+                    $slider->addClass('relative');
+                }
+                if ($slider->filter('.swiper-pagination')->count() > 0) {
+                    $slider->addClass('pagination');
+                }
+            })
+        ;
+
         // Fill lightbox with gallery images
         $lightbox = array();
         $lightbox =
