@@ -4399,6 +4399,14 @@ chunks:
       - name: elementPreview
         value: ''
     category: o_layout
+  - name: cbLayoutSidebarContentSidebar
+    description: 'NB: not referenced directly! This variant enables you to align centered content with adjacent Content + Sidebar layouts.'
+    properties:
+      - name: elementStatus
+        value: review
+      - name: elementPreview
+        value: ''
+    category: o_layout
   - name: cbLayoutPattern
     description: 'NB: not referenced directly! A customized section for displaying Romanesco patterns in the front-end library.'
     properties:
