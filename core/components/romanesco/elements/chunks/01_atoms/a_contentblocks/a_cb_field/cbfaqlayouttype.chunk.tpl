@@ -1,2 +1,2 @@
-Heading + text=faq
+Heading + Text=faq
 Accordion=accordion

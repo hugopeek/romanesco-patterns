@@ -1,4 +1,4 @@
 Team regular=overviewRowPersonBasic
-Team regular (Card)=overviewRowPersonBasicCard
+Team regular - Card=overviewRowPersonBasicCard
 Team tile=overviewRowPersonTile
 Team compact=overviewRowPersonCompact

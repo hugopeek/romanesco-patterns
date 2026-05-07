@@ -1,6 +1,6 @@
 Article regular=overviewRowArticleBasic
-Article regular (Card)=overviewRowArticleBasicCard
+Article regular - Card=overviewRowArticleBasicCard
 Article image=overviewRowArticleImageBasic
-Article image (Card)=overviewRowArticleImageTopCard
+Article image - Card=overviewRowArticleImageTopCard
 Article compact=overviewRowArticleCompact
 Article quote=overviewRowArticleQuote

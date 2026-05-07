@@ -1,5 +1,5 @@
-Inside slider, normal=inside
-Inside slider, stretched=inside stretched
-Outside, close to slider=outside compact
-Outside, near edge of parent container=outside
-Outside, near edge of parent, stretched=outside stretched
+Inside slider - Regular=inside
+Inside slider - Stretched=inside stretched
+Outside - Close to slider=outside compact
+Outside - Near edge of parent container=outside
+Outside - Near edge of parent - Stretched=outside stretched
