@@ -4041,7 +4041,15 @@ chunks:
     description: ''
     properties:
       - name: elementStatus
-        value: review
+        value: solid
+      - name: elementPreview
+        value: ''
+    category: m_layout
+  - name: cbLayoutBreakoutBox
+    description: 'NB: not referenced directly!'
+    properties:
+      - name: elementStatus
+        value: experimental
       - name: elementPreview
         value: ''
     category: m_layout
