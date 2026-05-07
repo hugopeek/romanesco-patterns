@@ -10,6 +10,7 @@
         &layout_column=`[[+layout_column]]`
         &uid=`[[+uid]]`
     ]]`
+    &uid=`[[+uid]]`
     &toPlaceholder=`scale`
 ]]
 [[responsiveImgSrcset?
