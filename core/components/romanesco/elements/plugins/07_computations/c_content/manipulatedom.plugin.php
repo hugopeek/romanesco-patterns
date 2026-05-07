@@ -353,6 +353,7 @@ switch ($modx->event->name) {
                     ->children('.nested.overview')
                     ->removeClass('stackable')
                     ->removeClass('doubling')
+                    ->removeClass('nested')
                     ->addClass('swiper-wrapper')
                 ;
                 $slider
