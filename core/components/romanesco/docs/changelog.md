@@ -1,5 +1,25 @@
 # Changelog for the Romanesco pattern library
 
+## Romanesco Patterns 1.0.0-rc5
+Released on ...
+
+New features:
+- Add sidebar-content-sidebar layout to ContentBlocks
+- Add breakout box layout to ContentBlocks
+- Generate favicons internally, using Vips and ImageMagick
+
+Fixes and improvements:
+- Fix leaking responsive image scale placeholders
+- Improve label text of all CB settings
+- Remove nested class from overview sliders
+- Position compact Swiper buttons relative to slider container
+- Add separate CB setting for slider nav positioning
+- Don't add vertical class to horizontal lists
+- Add startswith and endswith operators to If snippet
+- Set sameAs links for structured organization data
+- Minify structured data output based on config setting
+- Add accordion item to structured data if used as FAQ field template
+
 ## Romanesco Patterns 1.0.0-rc4
 Released on April 16, 2026
 
