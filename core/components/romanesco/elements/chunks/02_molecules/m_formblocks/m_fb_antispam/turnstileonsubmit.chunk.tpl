@@ -12,23 +12,38 @@
     window.addEventListener('DOMContentLoaded', function() {
 
         const form = document.querySelector('form[name="fb[[+form_id]]"]');
-        const submit = form.querySelector('input[name="fb[[+form_id]]-submit"][type="submit"]');
+        const submitButton = form.querySelector('input[name="fb[[+form_id]]-submit"][type="submit"]');
         const errorMessage = form.querySelector('.ui.error.message');
 
         if (!form) {
             console.error('Turnstile couldn\'t find its parent form.');
             return;
         }
-        if (!submit) {
+        if (!submitButton) {
             console.debug('Turnstile couldn\'t find the submit button.');
             return;
         }
 
-        submit.classList.add('disabled');
+        submitButton.classList.add('disabled');
+
+        // Failsafe: check for Turnstile completion if callback fails
+        let enableCheckInterval = setInterval(function() {
+            const turnstileResponse = form.querySelector('input[name="cf-turnstile-response"]');
+            if (turnstileResponse && turnstileResponse.value) {
+                submitButton.classList.remove('disabled');
+                clearInterval(enableCheckInterval);
+            }
+        }, 500);
+
+        // Clear interval after 10 seconds
+        setTimeout(function() {
+            clearInterval(enableCheckInterval);
+        }, 10000);
 
         window.onTurnstileSuccess[[+form_id]] = function (token) {
             //console.log('Challenge success', token);
-            submit.classList.remove('disabled');
+            clearInterval(enableCheckInterval);
+            submitButton.classList.remove('disabled');
         }
         window.onTurnstileError[[+form_id]] = function (errorCode) {
             //console.log('Challenge error:', errorCode);
@@ -39,7 +54,7 @@
         }
         window.onTurnstileExpired[[+form_id]] = function () {
             console.log('Cloudflare Turnstile token expired');
-            submit.classList.add('disabled');
+            submitButton.classList.add('disabled');
         }
     });
 </script>
