@@ -1,6 +1,9 @@
 e.preventDefault();
 const formData = $(this).serialize();
 
+// Provide feedback by showing a loading overlay
+$('.ui.form#form-[[*alias]] .dimmer').addClass('active');
+
 $.ajax({
     type: 'POST',
     url: '[[~[[*id]]? &scheme=`full` &mode=`ajax`]]',
@@ -20,15 +23,16 @@ $.ajax({
             window.location.href = data.redirect;
         }
 
-        // Avoid stunning the visitor by delaying the success message and showing a dimmer
-        $('.ui.form#form-[[*alias]] .dimmer').addClass('active');
-
+        // Avoid stunning the visitor by slightly delaying the success message
         setTimeout(function() {
             $('.ui.form#form-[[*alias]] .dimmer').removeClass('active');
             $('.ui.form#form-[[*alias]]').form('clear');
 
             if (window.turnstile) {
-                turnstile.reset();
+                const turnstileContainer = $('.ui.form#form-[[*alias]] .cf-turnstile')[0];
+                if (turnstileContainer) {
+                    turnstile.reset(turnstileContainer);
+                }
             }
 
             $('body')
@@ -45,7 +49,7 @@ $.ajax({
                     }
                 })
             ;
-        }, 1500)
+        }, 300)
     }
     else {
         console.log(data.errors);
@@ -54,15 +58,18 @@ $.ajax({
         message += '[[%formblocks.form.validation_error_message]]<br>';
 
         // Remove previously set error classes first
+        $('.ui.form#form-[[*alias]] .dimmer').removeClass('active');
         $('.ui.form#form-[[*alias]] .field.error').removeClass('error');
         $('.ui.form#form-[[*alias]] .grouped.fields.error').removeClass('error');
 
         $.each(data.errors, function(key, item) {
-            //message += key + '<br>';
-
             $('#' + key + '.field').addClass('error');
             $('#' + key + '.grouped.fields').addClass('error');
             $('#' + key).parents('.field').addClass('error');
+
+            if (key == 'turnstile') {
+                message += '[[%formblocks.validation.turnstile_error]]<br>';
+            }
         });
 
         $('body')
