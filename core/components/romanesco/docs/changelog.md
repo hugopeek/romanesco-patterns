@@ -5,10 +5,15 @@ Released on ...
 
 New features:
 - Add sidebar-content-sidebar layout to ContentBlocks
-- Add breakout box layout to ContentBlocks
+- Add Breakout Box layout to ContentBlocks
 - Generate favicons internally, using Vips and ImageMagick
 
 Fixes and improvements:
+- Preconnect to Cloudflare for loading Turnstile challenges
+- Make sure submit button is always enabled on Turnstile completion
+- Correctly reset Turnstile after each submission
+- Report Turnstile errors in toast message
+- Show loading overlay as soon as form is submitted
 - Fix potentially slow requests of Turnstile backend validation
 - Fix leaking responsive image scale placeholders
 - Improve label text of all CB settings
