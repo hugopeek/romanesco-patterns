@@ -9,6 +9,7 @@ New features:
 - Generate favicons internally, using Vips and ImageMagick
 
 Fixes and improvements:
+- Fix potentially slow requests of Turnstile backend validation
 - Fix leaking responsive image scale placeholders
 - Improve label text of all CB settings
 - Remove nested class from overview sliders
