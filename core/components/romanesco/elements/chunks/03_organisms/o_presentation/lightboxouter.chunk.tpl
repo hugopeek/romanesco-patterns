@@ -7,7 +7,7 @@
 
         <div class="swiper-pagination swiper-[[+uid]]"></div>
 
-        <button class="swiper-button-next swiper-[[+uid]]"></button>
-        <button class="swiper-button-prev swiper-[[+uid]]"></button>
+        <button class="swiper-button-next stretched swiper-[[+uid]]"></button>
+        <button class="swiper-button-prev stretched swiper-[[+uid]]"></button>
     </div>
 </div>
