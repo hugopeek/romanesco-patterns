@@ -21,6 +21,7 @@ $.ajax({
         // Redirect if response contains a redirect URL
         if (data.redirect) {
             window.location.href = data.redirect;
+            return;
         }
 
         // Avoid stunning the visitor by slightly delaying the success message

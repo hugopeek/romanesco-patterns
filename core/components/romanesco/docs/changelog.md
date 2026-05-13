@@ -9,6 +9,7 @@ New features:
 - Generate favicons internally, using Vips and ImageMagick
 
 Fixes and improvements:
+- Avoid popup response showing briefly before AJAX submit with redirect
 - Preconnect to Cloudflare for loading Turnstile challenges
 - Make sure submit button is always enabled on Turnstile completion
 - Correctly reset Turnstile after each submission
