@@ -8885,6 +8885,14 @@ systemSettings:
     type: textfield
     area: Performance
     value: '[[++img_quality]]'
+  - key: cache_warmup_concurrency
+    type: textfield
+    area: Performance
+    value: '3'
+  - key: cache_warmup_delay
+    type: textfield
+    area: Performance
+    value: '1'
   - key: semantic_dist_path
     type: textfield
     area: Paths

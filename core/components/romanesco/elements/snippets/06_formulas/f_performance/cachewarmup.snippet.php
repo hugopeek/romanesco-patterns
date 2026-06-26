@@ -13,13 +13,19 @@
 
 use MODX\Revolution\modX;
 use EliasHaeussler\CacheWarmup;
+use EliasHaeussler\CacheWarmup\Crawler\ConcurrentCrawler;
 
 $sitemapURL = $modx->getOption('sitemap_url', $scriptProperties, '');
+$concurrency = (int) $modx->getOption('concurrency', $scriptProperties, 1);
 
-// Instantiate
-$cacheWarmer = new CacheWarmup\CacheWarmer();
+$crawlerOptions = [
+    'concurrency' => $concurrency,
+];
 
-// Configure
+$crawler = new ConcurrentCrawler($crawlerOptions);
+$cacheWarmer = new CacheWarmup\CacheWarmer(crawler: $crawler);
+
+// Add sitemap
 $cacheWarmer->addSitemaps($sitemapURL);
 
 // Run
