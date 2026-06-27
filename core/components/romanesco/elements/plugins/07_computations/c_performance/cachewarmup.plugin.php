@@ -45,23 +45,9 @@ switch ($modx->event->name) {
 
         // Look for existing warmup task
         $task = $scheduler->getTask('romanesco', 'CacheWarmup');
-        $taskData = [
-            'sitemap_url' => $modx->makeUrl($sitemapID, '', '', 'full'),
-            'concurrency' => $concurrency,
-        ];
 
-        // Check if existing task is currently running (status 1)
-        $runningTask = false;
-        if ($task instanceof sTask) {
-            $runningTask = (bool) $modx->getObject('sTaskRun', [
-                'task' => $task->get('id'),
-                'status' => 1,
-                'executedon' => NULL,
-            ]);
-        }
-
-        // Create new task if none exists or current one is already running
-        if (!($task instanceof sTask) || $runningTask) {
+        // Create new task if none exists
+        if (!($task instanceof sTask)) {
             $task = $modx->newObject('sSnippetTask');
             $task->fromArray([
                 'class_key' => 'sSnippetTask',
@@ -76,22 +62,28 @@ switch ($modx->event->name) {
             }
         }
 
-        // Update if task is already pending
-        $pendingTasks = $modx->getCollection('sTaskRun', [
+        // Look for scheduled runs
+        $runs = $modx->getCollection('sTaskRun', [
             'task' => $task->get('id'),
             'status' => 0,
             'executedon' => NULL,
         ]);
-        if ($pendingTasks) {
+        $runData = [
+            'sitemap_url' => $modx->makeUrl($sitemapID, '', '', 'full'),
+            'concurrency' => $concurrency,
+        ];
+
+        // Update pending run
+        if ($runs) {
             // Update first pending run with new timing and data
-            $run = reset($pendingTasks);
+            $run = reset($runs);
             $run->setTiming('+' . $delay . ' minutes');
-            $run->set('data', $taskData);
+            $run->set('data', $runData);
             $run->save();
 
             // Remove any extra duplicate pending runs
             $first = true;
-            foreach ($pendingTasks as $run) {
+            foreach ($runs as $run) {
                 if ($first) { $first = false; continue; }
                 $run->remove();
             }
@@ -101,7 +93,7 @@ switch ($modx->event->name) {
         }
 
         // Schedule a new run
-        $task->schedule('+' . $delay . ' minutes', $taskData);
+        $task->schedule('+' . $delay . ' minutes', $runData);
         $modx->log(modX::LOG_LEVEL_INFO, '[CacheWarmup] Scheduled new warmup task.');
 
         break;
