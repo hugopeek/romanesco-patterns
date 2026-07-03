@@ -561,6 +561,11 @@ switch ($modx->event->name) {
         // Save manipulated DOM
         $content = $dom->saveHTML();
 
+        // Re-add DOCTYPE in case it gets stripped (by PHP 8.4?)
+        if (strncasecmp($content, '<!DOCTYPE', 9) !== 0) {
+            $content = '<!DOCTYPE html>' . "\n" . $content;
+        }
+
         // Cache HTML output
         if ($cacheFlag) {
             $modx->cacheManager->set($cacheElementKey, $content, 0, $cacheOptions);
